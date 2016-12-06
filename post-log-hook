@@ -11,3 +11,9 @@ git merge --ff-only origin/master
 git add "$1"
 git commit -m "Add $1"
 git push origin master
+# Call qrexec service to possibly notify other some other VM that log was
+# received from particular VM; can be used to send some notify, post-process
+# the log, or allow signing just built packages
+# use 'dom0' as a placeholder - qrexec policy will redirect it to the right VM
+# in Qubes 4.0, empty VM name will be allowed for this purpose
+qrexec-client-vm dom0 qubesbuilder.LogReceived+$QREXEC_REMOTE_DOMAIN
