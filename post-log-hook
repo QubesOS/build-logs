@@ -1,0 +1,13 @@
+#!/bin/sh
+
+exec >>~/logs-upload.log 2>&1
+set -e
+set -x
+cd ~/QubesIncomingBuildLog
+git fetch origin
+sign_status=$(git log -1 --format=%G? origin/master)
+[ "$sign_status" == "G" ]
+git merge --ff-only origin/master
+git add "$1"
+git commit -m "Add $1"
+git push origin master
