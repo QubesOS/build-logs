@@ -15,7 +15,7 @@ sign_status=$(git log -1 --format=%G? origin/master)
 [ "$sign_status" == "G" ]
 git merge --ff-only origin/master
 git add "$1"
-git commit -m "Add $1"
+git commit -m "Add $(realpath --relative-base=$PWD $1)"
 git push origin master
 # Call qrexec service to possibly notify other some other VM that log was
 # received from particular VM; can be used to send some notify, post-process
