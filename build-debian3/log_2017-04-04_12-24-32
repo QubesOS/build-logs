@@ -1,0 +1,967 @@
+2017-04-04 12:24:32.704581 +0000 > starting log
+2017-04-04 12:24:32.707528 +0000 build-debian3: > starting build with log
+2017-04-04 12:24:32.707620 +0000 build-debian3: >> make args: DISTS_VM= jessie stretch DIST_DOM0= BUILD_LOGS_URL= vmm-xen-vm-jessie=https://github.com/QubesOS/build-logs/tree/master/build-debian3/log_2017-04-04_12-13-29 vmm-xen-vm-stretch=https://github.com/QubesOS/build-logs/tree/master/build-debian3/log_2017-04-04_12-17-22 GIT_URL_=https://github.com/QubesOS/qubes-vmm-xen sign-all update-repo-current-testing
+2017-04-04 12:24:32.707661 +0000 build-debian3: >> MAKEFLAGS=
+2017-04-04 12:24:32.707691 +0000 build-debian3: >> COMPONENTS=vmm-xen
+2017-04-04 12:24:32.707715 +0000 build-debian3: >> DISTS_VM=
+2017-04-04 12:24:32.707737 +0000 build-debian3: >> DIST_DOM0=
+2017-04-04 12:24:32.707765 +0000 build-debian3: >> qubes-builder 7441b810b75dfc5e006b554985dc5e945e00ce20
+2017-04-04 12:24:32.707797 +0000 build-debian3: >> qubes-builder/qubes-src/vmm-xen 72135877f4f908d993046ccdb4cf50fdfbd27d16
+2017-04-04 12:24:32.707819 +0000 build-debian3: !! gc.tar.gz
+2017-04-04 12:24:32.707842 +0000 build-debian3: !! gmp-4.3.2.tar.bz2
+2017-04-04 12:24:32.707866 +0000 build-debian3: !! gmp-4.3.2.tar.bz2.sig
+2017-04-04 12:24:32.707889 +0000 build-debian3: !! grub-0.97.tar.gz
+2017-04-04 12:24:32.707910 +0000 build-debian3: !! grub-0.97.tar.gz.sig
+2017-04-04 12:24:32.707932 +0000 build-debian3: !! lwip-1.3.0.tar.gz
+2017-04-04 12:24:32.707953 +0000 build-debian3: !! lwip-1.3.0.tar.gz.sig
+2017-04-04 12:24:32.707974 +0000 build-debian3: !! newlib-1.16.0.tar.gz
+2017-04-04 12:24:32.707996 +0000 build-debian3: !! ocaml-3.11.0.tar.gz
+2017-04-04 12:24:32.708019 +0000 build-debian3: !! pciutils-2.2.9.tar.bz2
+2017-04-04 12:24:32.708045 +0000 build-debian3: !! pkgs/jessie/libxen-4.6_4.6.4-26+deb8u1_amd64.deb
+2017-04-04 12:24:32.708072 +0000 build-debian3: !! pkgs/jessie/libxen-dev_4.6.4-26+deb8u1_amd64.deb
+2017-04-04 12:24:32.708099 +0000 build-debian3: !! pkgs/jessie/libxenstore3.0_4.6.4-26+deb8u1_amd64.deb
+2017-04-04 12:24:32.708125 +0000 build-debian3: !! pkgs/jessie/xen-utils-common_4.6.4-26+deb8u1_all.deb
+2017-04-04 12:24:32.708151 +0000 build-debian3: !! pkgs/jessie/xen_4.6.4-26+deb8u1.debian.tar.xz
+2017-04-04 12:24:32.708176 +0000 build-debian3: !! pkgs/jessie/xen_4.6.4-26+deb8u1.dsc
+2017-04-04 12:24:32.708221 +0000 build-debian3: !! pkgs/jessie/xen_4.6.4-26+deb8u1_amd64.changes
+2017-04-04 12:24:32.708247 +0000 build-debian3: !! pkgs/jessie/xen_4.6.4.orig.tar.gz
+2017-04-04 12:24:32.708273 +0000 build-debian3: !! pkgs/jessie/xenstore-utils_4.6.4-26+deb8u1_amd64.deb
+2017-04-04 12:24:32.708300 +0000 build-debian3: !! pkgs/stretch/libxen-4.6-dbgsym_4.6.4-26+deb9u1_amd64.deb
+2017-04-04 12:24:32.708327 +0000 build-debian3: !! pkgs/stretch/libxen-4.6_4.6.4-26+deb9u1_amd64.deb
+2017-04-04 12:24:32.708352 +0000 build-debian3: !! pkgs/stretch/libxen-dev_4.6.4-26+deb9u1_amd64.deb
+2017-04-04 12:24:32.708377 +0000 build-debian3: !! pkgs/stretch/libxenstore3.0-dbgsym_4.6.4-26+deb9u1_amd64.deb
+2017-04-04 12:24:32.708403 +0000 build-debian3: !! pkgs/stretch/libxenstore3.0_4.6.4-26+deb9u1_amd64.deb
+2017-04-04 12:24:32.708428 +0000 build-debian3: !! pkgs/stretch/xen-utils-common_4.6.4-26+deb9u1_all.deb
+2017-04-04 12:24:32.708453 +0000 build-debian3: !! pkgs/stretch/xen_4.6.4-26+deb9u1.debian.tar.xz
+2017-04-04 12:24:32.708477 +0000 build-debian3: !! pkgs/stretch/xen_4.6.4-26+deb9u1.dsc
+2017-04-04 12:24:32.708503 +0000 build-debian3: !! pkgs/stretch/xen_4.6.4-26+deb9u1_amd64.buildinfo
+2017-04-04 12:24:32.708527 +0000 build-debian3: !! pkgs/stretch/xen_4.6.4-26+deb9u1_amd64.changes
+2017-04-04 12:24:32.708553 +0000 build-debian3: !! pkgs/stretch/xen_4.6.4.orig.tar.gz
+2017-04-04 12:24:32.708580 +0000 build-debian3: !! pkgs/stretch/xenstore-utils-dbgsym_4.6.4-26+deb9u1_amd64.deb
+2017-04-04 12:24:32.708608 +0000 build-debian3: !! pkgs/stretch/xenstore-utils_4.6.4-26+deb9u1_amd64.deb
+2017-04-04 12:24:32.708631 +0000 build-debian3: !! polarssl-1.1.4-gpl.tgz
+2017-04-04 12:24:32.708654 +0000 build-debian3: !! tboot-20090330.tar.gz
+2017-04-04 12:24:32.708675 +0000 build-debian3: !! tpm_emulator-0.7.4.tar.gz
+2017-04-04 12:24:32.708714 +0000 build-debian3: !! xen-4.6.4.tar.gz
+2017-04-04 12:24:32.708734 +0000 build-debian3: !! xen-4.6.4.tar.gz.sig
+2017-04-04 12:24:32.708753 +0000 build-debian3: !! zlib-1.2.3.tar.gz
+2017-04-04 12:24:32.708785 +0000 build-debian3: 69a9554d2d213392512d4ce41ec8c4993557e65c2b3dc4f568ac18695421cc08b7677c25f9a0ce03e94fb5e68a298fcac7ed09fb90007a2c998ff6ef78d3c651  gc.tar.gz
+2017-04-04 12:24:32.708821 +0000 build-debian3: 2e0b0fd23e6f10742a5517981e5171c6e88b0a93c83da701b296f5c0861d72c19782daab589a7eac3f9032152a0fc7eff7f5362db8fccc4859564a9aa82329cf  gmp-4.3.2.tar.bz2
+2017-04-04 12:24:32.708858 +0000 build-debian3: 954408a918d425c89e3b5fce52aa77b94af9e0929e11216dc65b47af0eb258f38ec6ca6e8680675f827a2408439c83d4fab161d8a5684d4617bef98bdd2e3992  gmp-4.3.2.tar.bz2.sig
+2017-04-04 12:24:32.708893 +0000 build-debian3: c2bc9ffc8583aeae71cee9ddcc4418969768d4e3764d47307da54f93981c0109fb07d84b061b3a3628bd00ba4d14a54742bc04848110eb3ae8ca25dbfbaabadb  grub-0.97.tar.gz
+2017-04-04 12:24:32.708924 +0000 build-debian3: 1c9365859a3f9220633d12ca6849e7f67c25acd0306111c602d371b634f734e4daf428ea372237679b07b30a4d115fcfea666adfc7bf79e4d786f4754a1f04c1  grub-0.97.tar.gz.sig
+2017-04-04 12:24:32.708955 +0000 build-debian3: 1465b58279af1647f909450e394fe002ca165f0ff4a0254bfa9fe0e64316f50facdde2729d79a4e632565b4500cf4d6c74192ac0dd3bc9fe09129bbd67ba089d  lwip-1.3.0.tar.gz
+2017-04-04 12:24:32.708987 +0000 build-debian3: 57a5e2200b822a7215446fab87ef62533b8790cd43fb5f119f5d7dd30c91b7be4eb7e4a00d951a5bddecf26b9f12f34ef55b8fc2dc37b46f006ff368f8618044  lwip-1.3.0.tar.gz.sig
+2017-04-04 12:24:32.714054 +0000 build-debian3: 40eb96bbc6736a16b6399e0cdb73e853d0d90b685c967e77899183446664d64570277a633fdafdefc351b46ce210a99115769a1d9f47ac749d7e82837d4d1ac3  newlib-1.16.0.tar.gz
+2017-04-04 12:24:32.726787 +0000 build-debian3: 61cacf14d1d90a11bd0599e7ad323350f3a3f30afb4ef5eaadc2108e5d6007dafbb83e955435ee49eeb0130955215923fa72d4e56196bec2396c166a54641955  ocaml-3.11.0.tar.gz
+2017-04-04 12:24:32.730325 +0000 build-debian3: 2b3d98d027e46d8c08037366dde6f0781ca03c610ef2b380984639e4ef39899ed8d8b8e4cd9c9dc54df101279b95879bd66bfd4d04ad07fef41e847ea7ae32b5  pciutils-2.2.9.tar.bz2
+2017-04-04 12:24:32.734258 +0000 build-debian3: d1f23acc7ea26c2437ae0a922de7162f42a1b004525f52725b196c2f9b7cc49f27629d95f8b68ec00a95f552930b4bfede41ce6a5137cc501b0e830c907a16a1  pkgs/jessie/libxen-4.6_4.6.4-26+deb8u1_amd64.deb
+2017-04-04 12:24:32.737523 +0000 build-debian3: 350f4aea38c667b073f5235c1c6fde16270f08348da9aaffb859f51cae9a010613fbd41022c872a2537ed3578a7c1ea17154bc11ace2961f8770b49caf3aed92  pkgs/jessie/libxen-dev_4.6.4-26+deb8u1_amd64.deb
+2017-04-04 12:24:32.738365 +0000 build-debian3: cd6f41d6b46bcd253b37821a35d36d62e41d1003230ddf63dfc5ac18b785cd712b5531168bf4fb916fad3dd39dee63a3cfffed1d4b40894477abcd6acb27c174  pkgs/jessie/libxenstore3.0_4.6.4-26+deb8u1_amd64.deb
+2017-04-04 12:24:32.740442 +0000 build-debian3: c5e15a231543f4e261dae327222244ea1691d2fd14f7505e394728a229a8e0d2793c8f6890953209b50ab6854f8961733f7761d4d968687c17797e61861be729  pkgs/jessie/xen-utils-common_4.6.4-26+deb8u1_all.deb
+2017-04-04 12:24:32.741242 +0000 build-debian3: 37a00499e577f28f9c44960cfe9e1202e3c38139e2291f50ff0f959206e80ea0e25ae588a62110f0203ea44e603fa2890f5bed3be0bb10d988105f2e56579c8d  pkgs/jessie/xen_4.6.4-26+deb8u1.debian.tar.xz
+2017-04-04 12:24:32.741564 +0000 build-debian3: 425881e6c27cdb6d64a4833e92a2934aabaf7f5942f4f18a7e3b0d2dd4ce91907f5fe43f4658e988bc943643054e2d56657a2a4744924e6566e325b31ce8517e  pkgs/jessie/xen_4.6.4-26+deb8u1.dsc
+2017-04-04 12:24:32.742051 +0000 build-debian3: 50569902bad8ea70841a55d869a938b078404379b5c27a18478f5e266382be0a3526ac230b4f2e8003d2afe4a07ca52e26bee7378640340ba137093fa0ec22e0  pkgs/jessie/xen_4.6.4-26+deb8u1_amd64.changes
+2017-04-04 12:24:32.830774 +0000 build-debian3: 4df16b58000fcab2be4c04b6f31005a80b32ccffdf296dc31c756e0b081223337b0944a3c3b7a5b59d4dc51100170e48f8c7f54c0a7eab0236b114845724462a  pkgs/jessie/xen_4.6.4.orig.tar.gz
+2017-04-04 12:24:32.830870 +0000 build-debian3: d5e5710118996d27cddcaf5b2a6105b7130a3449f6626faa61472520948220a645847df9b2324de44fd08a99d6e2bbeee3c2ca9737adc53aba80ce7667c5ea20  pkgs/jessie/xenstore-utils_4.6.4-26+deb8u1_amd64.deb
+2017-04-04 12:24:32.836183 +0000 build-debian3: 44d7675152bc9e01f99035d5fb4979f55348bcb496edbcc1e1b9a91c3f4ee644cca50ef81234e8b42959f1e9eda91c33873974cc383a6cfdf4271255e9e3e71e  pkgs/stretch/libxen-4.6-dbgsym_4.6.4-26+deb9u1_amd64.deb
+2017-04-04 12:24:32.837561 +0000 build-debian3: 31379d2fdb22a4015b627c38136732f4cc7f2f4785a06bcb48d17b8c2fad72bc1302d2b6edf03f0a3dab550e5d8f8c0d9cb6b03e9a21a40f422503eb7735f32d  pkgs/stretch/libxen-4.6_4.6.4-26+deb9u1_amd64.deb
+2017-04-04 12:24:32.839708 +0000 build-debian3: 91ede3be092e4f2ea91733f0997d3c4e8a83185cab9f6c46c60f41c6f4b4dbf1f13b231642b0273c4a779405ba90bcc0db653a8644e2e2315fc07787338fb0a7  pkgs/stretch/libxen-dev_4.6.4-26+deb9u1_amd64.deb
+2017-04-04 12:24:32.839796 +0000 build-debian3: 5084920d139d6528e4a8a9b44670ce136271110d6d3ca7f4fe08c2ef0fb236e38d7649e55121d47f7ae499fe39cb228159d059cc5a431a4c844522049d334719  pkgs/stretch/libxenstore3.0-dbgsym_4.6.4-26+deb9u1_amd64.deb
+2017-04-04 12:24:32.839944 +0000 build-debian3: 3dcb40366ffdbd6f2f7df001f9aff2d7a28c8b6ff1c7d5903b0079b6b9b9b3c1e869c0f55f92be3785bfa6b33b3f883e60b55eed4f41024c45dcc0836b181c26  pkgs/stretch/libxenstore3.0_4.6.4-26+deb9u1_amd64.deb
+2017-04-04 12:24:32.841054 +0000 build-debian3: d038d6448609ebf59391ae82ced37d1f48e033a71e754db3c14f76bd48ca526fe1e4f6f7052793e67fccf56611b57635a42124297d875478a7285c7525162e12  pkgs/stretch/xen-utils-common_4.6.4-26+deb9u1_all.deb
+2017-04-04 12:24:32.841220 +0000 build-debian3: ff744831fbd9d7cff42c8d03cb13719f9ed3f64476fcc4ecb302ad53cee52b6465844e29a51a0c96877dd3b88ed31d7f8988f115b24f12116555db7154194005  pkgs/stretch/xen_4.6.4-26+deb9u1.debian.tar.xz
+2017-04-04 12:24:32.841293 +0000 build-debian3: 38e2055821d68d6b1d560f1c6c067a3afe787b9ea75476713acc96081589b26d0ff9e8c4f02f74c477d16ebab861ca629a49db425fb36ee861fbc44f5b993432  pkgs/stretch/xen_4.6.4-26+deb9u1.dsc
+2017-04-04 12:24:32.841340 +0000 build-debian3: 03a784c082d4028632e29088c10cfe5dd9d821d9a02229e2545e9a97a3c3ed9c85a6678a5c200f2f192fd448d266f168581d112aaa9af5e72c0c36f956c97f4a  pkgs/stretch/xen_4.6.4-26+deb9u1_amd64.buildinfo
+2017-04-04 12:24:32.841381 +0000 build-debian3: 460632812c29f4cd4d4633d0941d63df753c417f439a863c0477f07105520bbd747844de7dbb09382adedd86e284628feba15406ef074dd075cd2e15db41d562  pkgs/stretch/xen_4.6.4-26+deb9u1_amd64.changes
+2017-04-04 12:24:32.903143 +0000 build-debian3: b2247944771db47fc27a4bde307417c4480d5f5b86bef25b6a06e49e8a06e2eb9dd7f75415097f9cf7433c54db7e62d2f008090c52f2fddc9156c9a9d3bb680e  pkgs/stretch/xen_4.6.4.orig.tar.gz
+2017-04-04 12:24:32.903264 +0000 build-debian3: 6b71c41a1480dcda79daffddc96685fcfa787f616159caf6e64d192a21ece83802f69828b5ddb60ed99d4a22baa5a4ca414a00effd525c324ce238e1b4ee0b15  pkgs/stretch/xenstore-utils-dbgsym_4.6.4-26+deb9u1_amd64.deb
+2017-04-04 12:24:32.903330 +0000 build-debian3: 8d21658aab9a52cdec0ead945c62e8fe9abe46f23c8a5d859b8b8284e387e72e7cd51eab990d0dd7869748ad20fee2a15c03d3e815b35bbc21870d541c6795b5  pkgs/stretch/xenstore-utils_4.6.4-26+deb9u1_amd64.deb
+2017-04-04 12:24:32.909371 +0000 build-debian3: 88da614e4d3f4409c4fd3bb3e44c7587ba051e3fed4e33d526069a67e8180212e1ea22da984656f50e290049f60ddca65383e5983c0f8884f648d71f698303ad  polarssl-1.1.4-gpl.tgz
+2017-04-04 12:24:32.911994 +0000 build-debian3: faa3af2ef1241fd908da6fb7f826dee0dad39de697fe14a35b2582a0b0baae29b41e824a0737b57809177b1fe09fdd73fd41a54e59ae98c2be77bd7dfccf93e6  tboot-20090330.tar.gz
+2017-04-04 12:24:32.915772 +0000 build-debian3: 4928b5b82f57645be9408362706ff2c4d9baa635b21b0d41b1c82930e8c60a759b1ea4fa74d7e6c7cae1b7692d006aa5cb72df0c3b88bf049779aa2b566f9d35  tpm_emulator-0.7.4.tar.gz
+2017-04-04 12:24:33.019911 +0000 build-debian3: e6278061a16829628030579e115a500970ff575eb6796189bfa1e2d7a8cbbf8aec2c2bd04c77cdc87226d6cc5eaee59d6c62cacb4e74b06e1f1379734b872938  xen-4.6.4.tar.gz
+2017-04-04 12:24:33.020373 +0000 build-debian3: cb1ad13ee49e583231ae4ccb99255eaf6079a5e93cfdf441ba08dbf97c41ac0cf11ea5a383f30b2f72c44aaef97f208aff63ab75171829054512b5299a877a57  xen-4.6.4.tar.gz.sig
+2017-04-04 12:24:33.031074 +0000 build-debian3: 021b958fcd0d346c4ba761bcf0cc40f3522de6186cf5a0a6ea34a70504ce9622b1c2626fce40675bc8282cf5f5ade18473656abc38050f72f5d6480507a2106e  zlib-1.2.3.tar.gz
+2017-04-04 12:24:33.203446 +0000 build-debian3: >> qubes-builder/qubes-src/vmm-xen/core-vchan-xen 0b146f2934a096a731a242b284f6610c10a7aded
+2017-04-04 12:24:33.383070 +0000 build-debian3: >> qubes-builder/qubes-src/vmm-xen/gui-agent-xen-hvm-stubdom be7d987a25fa4489d8b6e34ea15396c322cf1eaa
+2017-04-04 12:24:33.572235 +0000 build-debian3: >> qubes-builder/qubes-src/vmm-xen/gui-common c611481422aeff25feb0ffaf08cfe6139e358f6c
+2017-04-04 12:24:33.720733 +0000 build-debian3: ================================================================================
+2017-04-04 12:24:33.720798 +0000 build-debian3:                            B U I L D   I N F O                                  
+2017-04-04 12:24:33.720836 +0000 build-debian3: Items in red indicate it was automatically generated by configuration file(s)
+2017-04-04 12:24:33.721028 +0000 build-debian3: Items in white indicate it was automatically removed by configuration file(s)
+2017-04-04 12:24:33.721065 +0000 build-debian3: ================================================================================
+2017-04-04 12:24:33.721088 +0000 build-debian3: DISTS_VM:
+2017-04-04 12:24:33.724478 +0000 build-debian3:      jessie+standard, stretch, jessie
+2017-04-04 12:24:33.725860 +0000 build-debian3: DISTS_ALL:
+2017-04-04 12:24:33.730401 +0000 build-debian3:      jessie, stretch,
+2017-04-04 12:24:33.733273 +0000 build-debian3: DIST_DOM0:
+2017-04-04 12:24:33.736769 +0000 build-debian3:     
+2017-04-04 12:24:33.738163 +0000 build-debian3: BUILDER_PLUGINS:
+2017-04-04 12:24:33.743950 +0000 build-debian3:      builder-debian, mgmt-salt, builder-github,
+2017-04-04 12:24:33.745086 +0000 build-debian3: COMPONENTS:
+2017-04-04 12:24:33.749304 +0000 build-debian3:      vmm-xen,
+2017-04-04 12:24:33.751728 +0000 build-debian3: GIT_REPOS:
+2017-04-04 12:24:33.755191 +0000 build-debian3:      qubes-src/vmm-xen,
+2017-04-04 12:24:33.755459 +0000 build-debian3: TEMPLATE:
+2017-04-04 12:24:33.759178 +0000 build-debian3:     
+2017-04-04 12:24:33.759681 +0000 build-debian3: TEMPLATE_FLAVOR_DIR:
+2017-04-04 12:24:33.764013 +0000 build-debian3:     
+2017-04-04 12:24:33.767246 +0000 build-debian3: TEMPLATE_ALIAS:
+2017-04-04 12:24:33.769653 +0000 build-debian3:      wheezy:wheezy+standard, wheezy+gnome:wheezy+gnome+standard, wheezy+minimal:wheezy+minimal+no-recommends,
+2017-04-04 12:24:33.769719 +0000 build-debian3:      jessie:jessie+standard, jessie+gnome:jessie+gnome+standard, jessie+minimal:jessie+minimal+no-recommends,
+2017-04-04 12:24:33.772479 +0000 build-debian3: TEMPLATE_LABEL:
+2017-04-04 12:24:33.776165 +0000 build-debian3:      jessie+standard:debian-8, jessie+standard:jessie, fc20:fedora-20 fc21:fedora-21 fc22:fedora-22
+2017-04-04 12:24:33.776249 +0000 build-debian3:      fc23:fedora-23 fc20+minimal:fedora-20-minimal fc21+minimal:fedora-21-minimal fc23+minimal:fedora-23-minimal
+2017-04-04 12:24:33.776281 +0000 build-debian3:      wheezy:debian-7 wheezy+standard:debian-7 jessie:debian-8
+2017-04-04 12:24:33.778683 +0000 build-debian3: > running make
+2017-04-04 12:24:33.813605 +0000 build-debian3: Makefile:247: target 'sign-vm-jessie-vmm-xen' does not exist
+2017-04-04 12:24:33.813704 +0000 build-debian3: if [ -n "vmm-xen" -a "0" -ne 0 ]; then BRANCH=release3.1; branch_var="BRANCH_vmm_xen"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/vmm-xen > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2017-04-04 12:24:33.813733 +0000 build-debian3: SIGN_KEY=; \
+2017-04-04 12:24:33.813755 +0000 build-debian3: sign_key_var="SIGN_KEY_jessie"; \
+2017-04-04 12:24:33.813779 +0000 build-debian3: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2017-04-04 12:24:33.813803 +0000 build-debian3: if [ -r qubes-src/vmm-xen/Makefile.builder ]; then \
+2017-04-04 12:24:33.813850 +0000 build-debian3: .make --no-print-directory -f Makefile.generic \
+2017-04-04 12:24:33.813872 +0000 build-debian3: ..DIST=jessie \
+2017-04-04 12:24:33.813892 +0000 build-debian3: ..PACKAGE_SET=vm \
+2017-04-04 12:24:33.813912 +0000 build-debian3: ..COMPONENT=vmm-xen \
+2017-04-04 12:24:33.813931 +0000 build-debian3: ..SIGN_KEY=$SIGN_KEY \
+2017-04-04 12:24:33.813950 +0000 build-debian3: ..sign || exit 1; \
+2017-04-04 12:24:33.813972 +0000 build-debian3: elif [ -d qubes-src/vmm-xen/rpm ]; then \
+2017-04-04 12:24:33.813993 +0000 build-debian3: .# Old mechanism supported only for RPM
+2017-04-04 12:24:33.814018 +0000 build-debian3: FILE_LIST=""; for RPM in qubes-src/vmm-xen/rpm/*/*.rpm; do \
+2017-04-04 12:24:33.814046 +0000 build-debian3: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2017-04-04 12:24:33.814067 +0000 build-debian3: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2017-04-04 12:24:33.814085 +0000 build-debian3: ..fi ;\
+2017-04-04 12:24:33.814104 +0000 build-debian3: .done ; \
+2017-04-04 12:24:33.814123 +0000 build-debian3: .if [ -n "$FILE_LIST" ]; then \
+2017-04-04 12:24:33.814144 +0000 build-debian3: ..echo "--> Signing..."; \
+2017-04-04 12:24:33.814166 +0000 build-debian3: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2017-04-04 12:24:33.814187 +0000 build-debian3: ..if [ -n "$SIGN_KEY" ]; then \
+2017-04-04 12:24:33.814236 +0000 build-debian3: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2017-04-04 12:24:33.814257 +0000 build-debian3: ..fi; \
+2017-04-04 12:24:33.814284 +0000 build-debian3: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2017-04-04 12:24:33.814304 +0000 build-debian3: .fi; \
+2017-04-04 12:24:33.814322 +0000 build-debian3: fi
+2017-04-04 12:24:33.834174 +0000 build-debian3: /home/user/builder-r3.1/qubes-src/builder-debian/Makefile.debian:335: target 'sign' does not exist
+2017-04-04 12:24:33.834262 +0000 build-debian3: echo "Signing individual packages not supported in Debian, repository metadata are signed"
+2017-04-04 12:24:33.922758 +0000 build-debian3: Signing individual packages not supported in Debian, repository metadata are signed
+2017-04-04 12:24:33.924493 +0000 build-debian3: Makefile:247: target 'sign-vm-stretch-vmm-xen' does not exist
+2017-04-04 12:24:33.924593 +0000 build-debian3: if [ -n "vmm-xen" -a "0" -ne 0 ]; then BRANCH=release3.1; branch_var="BRANCH_vmm_xen"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/vmm-xen > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2017-04-04 12:24:33.924618 +0000 build-debian3: SIGN_KEY=; \
+2017-04-04 12:24:33.924639 +0000 build-debian3: sign_key_var="SIGN_KEY_stretch"; \
+2017-04-04 12:24:33.924663 +0000 build-debian3: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2017-04-04 12:24:33.924685 +0000 build-debian3: if [ -r qubes-src/vmm-xen/Makefile.builder ]; then \
+2017-04-04 12:24:33.924706 +0000 build-debian3: .make --no-print-directory -f Makefile.generic \
+2017-04-04 12:24:33.924723 +0000 build-debian3: ..DIST=stretch \
+2017-04-04 12:24:33.924741 +0000 build-debian3: ..PACKAGE_SET=vm \
+2017-04-04 12:24:33.924758 +0000 build-debian3: ..COMPONENT=vmm-xen \
+2017-04-04 12:24:33.924776 +0000 build-debian3: ..SIGN_KEY=$SIGN_KEY \
+2017-04-04 12:24:33.924793 +0000 build-debian3: ..sign || exit 1; \
+2017-04-04 12:24:33.924812 +0000 build-debian3: elif [ -d qubes-src/vmm-xen/rpm ]; then \
+2017-04-04 12:24:33.924834 +0000 build-debian3: .# Old mechanism supported only for RPM
+2017-04-04 12:24:33.924856 +0000 build-debian3: FILE_LIST=""; for RPM in qubes-src/vmm-xen/rpm/*/*.rpm; do \
+2017-04-04 12:24:33.924879 +0000 build-debian3: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2017-04-04 12:24:33.924898 +0000 build-debian3: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2017-04-04 12:24:33.924914 +0000 build-debian3: ..fi ;\
+2017-04-04 12:24:33.924945 +0000 build-debian3: .done ; \
+2017-04-04 12:24:33.924967 +0000 build-debian3: .if [ -n "$FILE_LIST" ]; then \
+2017-04-04 12:24:33.924985 +0000 build-debian3: ..echo "--> Signing..."; \
+2017-04-04 12:24:33.925005 +0000 build-debian3: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2017-04-04 12:24:33.925023 +0000 build-debian3: ..if [ -n "$SIGN_KEY" ]; then \
+2017-04-04 12:24:33.925043 +0000 build-debian3: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2017-04-04 12:24:33.925063 +0000 build-debian3: ..fi; \
+2017-04-04 12:24:33.925088 +0000 build-debian3: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2017-04-04 12:24:33.925104 +0000 build-debian3: .fi; \
+2017-04-04 12:24:33.925119 +0000 build-debian3: fi
+2017-04-04 12:24:33.936594 +0000 build-debian3: /home/user/builder-r3.1/qubes-src/builder-debian/Makefile.debian:335: target 'sign' does not exist
+2017-04-04 12:24:33.936677 +0000 build-debian3: echo "Signing individual packages not supported in Debian, repository metadata are signed"
+2017-04-04 12:24:34.065496 +0000 build-debian3: Signing individual packages not supported in Debian, repository metadata are signed
+2017-04-04 12:24:34.067825 +0000 build-debian3: Makefile:699: target 'internal-update-repo-current-testing.vm.jessie.vmm-xen' does not exist
+2017-04-04 12:24:34.067902 +0000 build-debian3: repo_base_var="LINUX_REPO_jessie_BASEDIR"; \
+2017-04-04 12:24:34.067946 +0000 build-debian3: if [ -n "${!repo_base_var}" ]; then \
+2017-04-04 12:24:34.067981 +0000 build-debian3: .repo_basedir="${!repo_base_var}"; \
+2017-04-04 12:24:34.068009 +0000 build-debian3: else \
+2017-04-04 12:24:34.068039 +0000 build-debian3: .repo_basedir="qubes-src/linux-deb/r3.1"; \
+2017-04-04 12:24:34.068063 +0000 build-debian3: fi; \
+2017-04-04 12:24:34.068092 +0000 build-debian3: if [ -r qubes-src/vmm-xen/Makefile.builder ]; then \
+2017-04-04 12:24:34.068118 +0000 build-debian3: .echo -n "Updating qubes-src/vmm-xen... "; \
+2017-04-04 12:24:34.068142 +0000 build-debian3: .if [ "0" -eq 1 ]; then \
+2017-04-04 12:24:34.068172 +0000 build-debian3: ..vtag=`git -C qubes-src/vmm-xen tag --points-at HEAD --list v*`; \
+2017-04-04 12:24:34.068218 +0000 build-debian3: ..if [ -z "$vtag" ]; then \
+2017-04-04 12:24:34.068244 +0000 build-debian3: ...echo "no version tag"; \
+2017-04-04 12:24:34.068266 +0000 build-debian3: ...exit 0; \
+2017-04-04 12:24:34.068287 +0000 build-debian3: ..fi; \
+2017-04-04 12:24:34.068308 +0000 build-debian3: .fi; \
+2017-04-04 12:24:34.068369 +0000 build-debian3: .component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=jessie PACKAGE_SET=vm COMPONENT=`basename qubes-src/vmm-xen` UPDATE_REPO=/home/user/builder-r3.1/$repo_basedir/current-testing/vm/jessie get-var GET_VAR=PACKAGE_LIST); \
+2017-04-04 12:24:34.068397 +0000 build-debian3: .if [ -z "$component_packages" ]; then \
+2017-04-04 12:24:34.068419 +0000 build-debian3: ..echo "no packages."; \
+2017-04-04 12:24:34.068439 +0000 build-debian3: ..exit 0; \
+2017-04-04 12:24:34.068459 +0000 build-debian3: .fi; \
+2017-04-04 12:24:34.068484 +0000 build-debian3: .make -s -f Makefile.generic DIST=jessie PACKAGE_SET=vm \
+2017-04-04 12:24:34.068508 +0000 build-debian3: ..COMPONENT=`basename qubes-src/vmm-xen` \
+2017-04-04 12:24:34.068531 +0000 build-debian3: ..SNAPSHOT_REPO=current-testing \
+2017-04-04 12:24:34.068558 +0000 build-debian3: ..TARGET_REPO=current-testing \
+2017-04-04 12:24:34.068586 +0000 build-debian3: ..UPDATE_REPO=/home/user/builder-r3.1/$repo_basedir/current-testing/vm/jessie \
+2017-04-04 12:24:34.068622 +0000 build-debian3: ..SNAPSHOT_FILE=/home/user/builder-r3.1/repo-latest-snapshot/current-testing-vm-jessie-`basename qubes-src/vmm-xen` \
+2017-04-04 12:24:34.068655 +0000 build-debian3: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-debian3/log_2017-04-04_12-13-29 \
+2017-04-04 12:24:34.068679 +0000 build-debian3: ..update-repo || exit 1; \
+2017-04-04 12:24:34.068710 +0000 build-debian3: elif make -C qubes-src/vmm-xen -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2017-04-04 12:24:34.068752 +0000 build-debian3: .echo "Updating qubes-src/vmm-xen... "; \
+2017-04-04 12:24:34.068779 +0000 build-debian3: .make -s -C qubes-src/vmm-xen update-repo-current-testing || exit 1; \
+2017-04-04 12:24:34.068799 +0000 build-debian3: else \
+2017-04-04 12:24:34.068824 +0000 build-debian3: .echo -n "Updating qubes-src/vmm-xen... skipping."; \
+2017-04-04 12:24:34.068846 +0000 build-debian3: fi; \
+2017-04-04 12:24:34.068865 +0000 build-debian3: echo
+2017-04-04 12:24:34.189662 +0000 build-debian3: Updating qubes-src/vmm-xen... /home/user/builder-r3.1/qubes-src/builder-debian/Makefile.debian:258: target 'update-repo-prepare' does not exist
+2017-04-04 12:24:34.189741 +0000 build-debian3: mkdir -p /home/user/builder-r3.1/qubes-src/linux-deb/r3.1/current-testing/vm/jessie/conf
+2017-04-04 12:24:34.442953 +0000 build-debian3: if [ ! -e /home/user/builder-r3.1/qubes-src/linux-deb/r3.1/current-testing/vm/jessie/conf/distributions ]; then \
+2017-04-04 12:24:34.443037 +0000 build-debian3: .touch /home/user/builder-r3.1/qubes-src/linux-deb/r3.1/current-testing/vm/jessie/conf/distributions; \
+2017-04-04 12:24:34.443070 +0000 build-debian3: fi
+2017-04-04 12:24:34.445519 +0000 build-debian3: grep jessie /home/user/builder-r3.1/qubes-src/linux-deb/r3.1/current-testing/vm/jessie/conf/distributions > /dev/null; \
+2017-04-04 12:24:34.445586 +0000 build-debian3: if [ $? -ne 0 ]; then \
+2017-04-04 12:24:34.445634 +0000 build-debian3: .echo "$aptdistributions" >> /home/user/builder-r3.1/qubes-src/linux-deb/r3.1/current-testing/vm/jessie/conf/distributions; \
+2017-04-04 12:24:34.445660 +0000 build-debian3: fi
+2017-04-04 12:24:34.456818 +0000 build-debian3: sudo umount chroot-debian/tmp/qubes-apt-repo chroot-debian/tmp/qubes-deb 2>/dev/null || true
+2017-04-04 12:24:34.496990 +0000 build-debian3: # Softlink to the first distribution called; it will be used to create and store repo
+2017-04-04 12:24:34.501220 +0000 build-debian3: if ! [ -L chroot-debian ]; then \
+2017-04-04 12:24:34.501315 +0000 build-debian3:     ln -sf chroot-jessie chroot-debian; \
+2017-04-04 12:24:34.501346 +0000 build-debian3: fi
+2017-04-04 12:24:34.504577 +0000 build-debian3: if ! [ -d chroot-debian/tmp/qubes-deb/deb ]; then \
+2017-04-04 12:24:34.504651 +0000 build-debian3: .mkdir -p chroot-debian/tmp/qubes-deb ;\
+2017-04-04 12:24:34.504699 +0000 build-debian3: .sudo mount --bind /home/user/builder-r3.1/qubes-packages-mirror-repo/jessie chroot-debian/tmp/qubes-deb ;\
+2017-04-04 12:24:34.504729 +0000 build-debian3: fi
+2017-04-04 12:24:34.537458 +0000 build-debian3: if ! [ -d chroot-debian/tmp/qubes-apt-repo/dists ]; then \
+2017-04-04 12:24:34.537522 +0000 build-debian3: .mkdir -p chroot-debian/tmp/qubes-apt-repo ;\
+2017-04-04 12:24:34.537568 +0000 build-debian3: .sudo mount --bind /home/user/builder-r3.1/qubes-src/linux-deb/r3.1/current-testing/vm/jessie chroot-debian/tmp/qubes-apt-repo ;\
+2017-04-04 12:24:34.537593 +0000 build-debian3: fi
+2017-04-04 12:24:34.904438 +0000 build-debian3: /home/user/builder-r3.1/qubes-src/builder-debian/Makefile.debian:286: target 'update-repo-do' does not exist
+2017-04-04 12:24:34.904516 +0000 build-debian3: if [ "X" != "X" ]; then \
+2017-04-04 12:24:34.904576 +0000 build-debian3: .sudo BACKEND_VMM=xen chroot chroot-debian su user -c "reprepro --ignore=surprisingbinary -b /tmp/qubes-apt-repo -T deb include jessie-testing /tmp/qubes-deb/deb/_amd64.changes" || exit 1; \
+2017-04-04 12:24:34.904607 +0000 build-debian3: else \
+2017-04-04 12:24:34.904656 +0000 build-debian3: .sudo BACKEND_VMM=xen chroot chroot-debian su user -c "reprepro --ignore=surprisingbinary -b /tmp/qubes-apt-repo -T deb include jessie-testing /tmp/qubes-deb/deb/xen_4.6.4-26+deb8u1_amd64.changes" || exit 1; \
+2017-04-04 12:24:34.904681 +0000 build-debian3: fi
+2017-04-04 12:24:35.549392 +0000 build-debian3: Exporting indices...
+2017-04-04 12:24:35.549459 +0000 build-debian3: Deleting files no longer referenced...
+2017-04-04 12:24:35.555385 +0000 build-debian3: sudo umount chroot-debian/tmp/qubes-apt-repo
+2017-04-04 12:24:35.598503 +0000 build-debian3: sudo umount chroot-debian/tmp/qubes-deb
+2017-04-04 12:24:35.637328 +0000 build-debian3: if [ "X" != "X" ]; then \
+2017-04-04 12:24:35.637402 +0000 build-debian3: .echo '$Source (== xen), Version (== )' > /home/user/builder-r3.1/repo-latest-snapshot/current-testing-vm-jessie-vmm-xen; \
+2017-04-04 12:24:35.637432 +0000 build-debian3: else \
+2017-04-04 12:24:35.637474 +0000 build-debian3: .echo '$Source (== xen), Version (== 2001:4.6.4-26+deb8u1)' > /home/user/builder-r3.1/repo-latest-snapshot/current-testing-vm-jessie-vmm-xen; \
+2017-04-04 12:24:35.637499 +0000 build-debian3: fi
+2017-04-04 12:24:35.841174 +0000 build-debian3: /home/user/builder-r3.1/qubes-src/builder-github//Makefile.github:21: target 'notify-github' does not exist
+2017-04-04 12:24:35.841276 +0000 build-debian3: [ -z "xen_4.6.4-26+deb8u1" ] || /home/user/builder-r3.1/qubes-src/builder-github//notify-issues \
+2017-04-04 12:24:35.841323 +0000 build-debian3: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-debian3/log_2017-04-04_12-13-29" \
+2017-04-04 12:24:35.841355 +0000 build-debian3: ."r3.1" \
+2017-04-04 12:24:35.841384 +0000 build-debian3: ."current-testing" \
+2017-04-04 12:24:35.841411 +0000 build-debian3: ."qubes-src/vmm-xen" \
+2017-04-04 12:24:35.841436 +0000 build-debian3: ."xen_4.6.4-26+deb8u1" \
+2017-04-04 12:24:35.841458 +0000 build-debian3: ."jessie" \
+2017-04-04 12:24:35.841481 +0000 build-debian3: ."vm" \
+2017-04-04 12:24:35.841512 +0000 build-debian3: ."/home/user/github-notify-state/r3.1-vmm-xen-vm-jessie-current-testing"
+2017-04-04 12:24:41.109158 +0000 build-debian3: WARNING: /home/user/github-notify-state/r3.1-vmm-xen-vm-jessie-current-testing does not exist, initializing with the current state
+2017-04-04 12:24:41.115281 +0000 build-debian3: 
+2017-04-04 12:24:41.116493 +0000 build-debian3: Makefile:680: update target 'internal-update-repo-current-testing.vm.jessie' due to: internal-update-repo-current-testing.vm.jessie.vmm-xen
+2017-04-04 12:24:41.116548 +0000 build-debian3: true
+2017-04-04 12:24:41.127358 +0000 build-debian3: Makefile:699: target 'internal-update-repo-current-testing.vm.stretch.vmm-xen' does not exist
+2017-04-04 12:24:41.127423 +0000 build-debian3: repo_base_var="LINUX_REPO_stretch_BASEDIR"; \
+2017-04-04 12:24:41.127455 +0000 build-debian3: if [ -n "${!repo_base_var}" ]; then \
+2017-04-04 12:24:41.127483 +0000 build-debian3: .repo_basedir="${!repo_base_var}"; \
+2017-04-04 12:24:41.127509 +0000 build-debian3: else \
+2017-04-04 12:24:41.127536 +0000 build-debian3: .repo_basedir="qubes-src/linux-deb/r3.1"; \
+2017-04-04 12:24:41.127557 +0000 build-debian3: fi; \
+2017-04-04 12:24:41.127581 +0000 build-debian3: if [ -r qubes-src/vmm-xen/Makefile.builder ]; then \
+2017-04-04 12:24:41.127604 +0000 build-debian3: .echo -n "Updating qubes-src/vmm-xen... "; \
+2017-04-04 12:24:41.127624 +0000 build-debian3: .if [ "0" -eq 1 ]; then \
+2017-04-04 12:24:41.127650 +0000 build-debian3: ..vtag=`git -C qubes-src/vmm-xen tag --points-at HEAD --list v*`; \
+2017-04-04 12:24:41.127669 +0000 build-debian3: ..if [ -z "$vtag" ]; then \
+2017-04-04 12:24:41.127690 +0000 build-debian3: ...echo "no version tag"; \
+2017-04-04 12:24:41.127707 +0000 build-debian3: ...exit 0; \
+2017-04-04 12:24:41.127725 +0000 build-debian3: ..fi; \
+2017-04-04 12:24:41.127741 +0000 build-debian3: .fi; \
+2017-04-04 12:24:41.127780 +0000 build-debian3: .component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=stretch PACKAGE_SET=vm COMPONENT=`basename qubes-src/vmm-xen` UPDATE_REPO=/home/user/builder-r3.1/$repo_basedir/current-testing/vm/stretch get-var GET_VAR=PACKAGE_LIST); \
+2017-04-04 12:24:41.127803 +0000 build-debian3: .if [ -z "$component_packages" ]; then \
+2017-04-04 12:24:41.127822 +0000 build-debian3: ..echo "no packages."; \
+2017-04-04 12:24:41.127841 +0000 build-debian3: ..exit 0; \
+2017-04-04 12:24:41.127860 +0000 build-debian3: .fi; \
+2017-04-04 12:24:41.127883 +0000 build-debian3: .make -s -f Makefile.generic DIST=stretch PACKAGE_SET=vm \
+2017-04-04 12:24:41.127907 +0000 build-debian3: ..COMPONENT=`basename qubes-src/vmm-xen` \
+2017-04-04 12:24:41.127946 +0000 build-debian3: ..SNAPSHOT_REPO=current-testing \
+2017-04-04 12:24:41.127972 +0000 build-debian3: ..TARGET_REPO=current-testing \
+2017-04-04 12:24:41.128000 +0000 build-debian3: ..UPDATE_REPO=/home/user/builder-r3.1/$repo_basedir/current-testing/vm/stretch \
+2017-04-04 12:24:41.128034 +0000 build-debian3: ..SNAPSHOT_FILE=/home/user/builder-r3.1/repo-latest-snapshot/current-testing-vm-stretch-`basename qubes-src/vmm-xen` \
+2017-04-04 12:24:41.128064 +0000 build-debian3: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-debian3/log_2017-04-04_12-17-22 \
+2017-04-04 12:24:41.128087 +0000 build-debian3: ..update-repo || exit 1; \
+2017-04-04 12:24:41.128115 +0000 build-debian3: elif make -C qubes-src/vmm-xen -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2017-04-04 12:24:41.128138 +0000 build-debian3: .echo "Updating qubes-src/vmm-xen... "; \
+2017-04-04 12:24:41.128164 +0000 build-debian3: .make -s -C qubes-src/vmm-xen update-repo-current-testing || exit 1; \
+2017-04-04 12:24:41.128182 +0000 build-debian3: else \
+2017-04-04 12:24:41.128228 +0000 build-debian3: .echo -n "Updating qubes-src/vmm-xen... skipping."; \
+2017-04-04 12:24:41.128248 +0000 build-debian3: fi; \
+2017-04-04 12:24:41.128266 +0000 build-debian3: echo
+2017-04-04 12:24:41.242108 +0000 build-debian3: Updating qubes-src/vmm-xen... /home/user/builder-r3.1/qubes-src/builder-debian/Makefile.debian:258: target 'update-repo-prepare' does not exist
+2017-04-04 12:24:41.242177 +0000 build-debian3: mkdir -p /home/user/builder-r3.1/qubes-src/linux-deb/r3.1/current-testing/vm/stretch/conf
+2017-04-04 12:24:41.556824 +0000 build-debian3: if [ ! -e /home/user/builder-r3.1/qubes-src/linux-deb/r3.1/current-testing/vm/stretch/conf/distributions ]; then \
+2017-04-04 12:24:41.556905 +0000 build-debian3: .touch /home/user/builder-r3.1/qubes-src/linux-deb/r3.1/current-testing/vm/stretch/conf/distributions; \
+2017-04-04 12:24:41.556937 +0000 build-debian3: fi
+2017-04-04 12:24:41.560755 +0000 build-debian3: grep stretch /home/user/builder-r3.1/qubes-src/linux-deb/r3.1/current-testing/vm/stretch/conf/distributions > /dev/null; \
+2017-04-04 12:24:41.560827 +0000 build-debian3: if [ $? -ne 0 ]; then \
+2017-04-04 12:24:41.560879 +0000 build-debian3: .echo "$aptdistributions" >> /home/user/builder-r3.1/qubes-src/linux-deb/r3.1/current-testing/vm/stretch/conf/distributions; \
+2017-04-04 12:24:41.560911 +0000 build-debian3: fi
+2017-04-04 12:24:41.567586 +0000 build-debian3: sudo umount chroot-debian/tmp/qubes-apt-repo chroot-debian/tmp/qubes-deb 2>/dev/null || true
+2017-04-04 12:24:41.592817 +0000 build-debian3: # Softlink to the first distribution called; it will be used to create and store repo
+2017-04-04 12:24:41.597750 +0000 build-debian3: if ! [ -L chroot-debian ]; then \
+2017-04-04 12:24:41.597823 +0000 build-debian3:     ln -sf chroot-stretch chroot-debian; \
+2017-04-04 12:24:41.597863 +0000 build-debian3: fi
+2017-04-04 12:24:41.601131 +0000 build-debian3: if ! [ -d chroot-debian/tmp/qubes-deb/deb ]; then \
+2017-04-04 12:24:41.601228 +0000 build-debian3: .mkdir -p chroot-debian/tmp/qubes-deb ;\
+2017-04-04 12:24:41.601283 +0000 build-debian3: .sudo mount --bind /home/user/builder-r3.1/qubes-packages-mirror-repo/stretch chroot-debian/tmp/qubes-deb ;\
+2017-04-04 12:24:41.601318 +0000 build-debian3: fi
+2017-04-04 12:24:41.638860 +0000 build-debian3: if ! [ -d chroot-debian/tmp/qubes-apt-repo/dists ]; then \
+2017-04-04 12:24:41.638932 +0000 build-debian3: .mkdir -p chroot-debian/tmp/qubes-apt-repo ;\
+2017-04-04 12:24:41.638991 +0000 build-debian3: .sudo mount --bind /home/user/builder-r3.1/qubes-src/linux-deb/r3.1/current-testing/vm/stretch chroot-debian/tmp/qubes-apt-repo ;\
+2017-04-04 12:24:41.639023 +0000 build-debian3: fi
+2017-04-04 12:24:42.089267 +0000 build-debian3: /home/user/builder-r3.1/qubes-src/builder-debian/Makefile.debian:286: target 'update-repo-do' does not exist
+2017-04-04 12:24:42.089363 +0000 build-debian3: if [ "X" != "X" ]; then \
+2017-04-04 12:24:42.089421 +0000 build-debian3: .sudo BACKEND_VMM=xen chroot chroot-debian su user -c "reprepro --ignore=surprisingbinary -b /tmp/qubes-apt-repo -T deb include stretch-testing /tmp/qubes-deb/deb/_amd64.changes" || exit 1; \
+2017-04-04 12:24:42.089469 +0000 build-debian3: else \
+2017-04-04 12:24:42.089520 +0000 build-debian3: .sudo BACKEND_VMM=xen chroot chroot-debian su user -c "reprepro --ignore=surprisingbinary -b /tmp/qubes-apt-repo -T deb include stretch-testing /tmp/qubes-deb/deb/xen_4.6.4-26+deb9u1_amd64.changes" || exit 1; \
+2017-04-04 12:24:42.089546 +0000 build-debian3: fi
+2017-04-04 12:24:42.557315 +0000 build-debian3: Unknown file type: 'efe9fdabd50a497d9a1e5f32ad87a8f2 9719 kernel optional xen_4.6.4-26+deb9u1_amd64.buildinfo', assuming source format...
+2017-04-04 12:24:42.581229 +0000 build-debian3: '/tmp/qubes-apt-repo/pool/main/x/xen/xenstore-utils-dbgsym_4.6.4-26+deb9u1_amd64.deb' has packagename 'xenstore-utils-dbgsym' not listed in the .changes file!
+2017-04-04 12:24:42.581323 +0000 build-debian3: Ignoring as --ignore=surprisingbinary given.
+2017-04-04 12:24:42.581760 +0000 build-debian3: '/tmp/qubes-apt-repo/pool/main/x/xen/libxenstore3.0-dbgsym_4.6.4-26+deb9u1_amd64.deb' has packagename 'libxenstore3.0-dbgsym' not listed in the .changes file!
+2017-04-04 12:24:42.581817 +0000 build-debian3: Ignoring as --ignore=surprisingbinary given.
+2017-04-04 12:24:42.581872 +0000 build-debian3: '/tmp/qubes-apt-repo/pool/main/x/xen/libxen-4.6-dbgsym_4.6.4-26+deb9u1_amd64.deb' has packagename 'libxen-4.6-dbgsym' not listed in the .changes file!
+2017-04-04 12:24:42.581907 +0000 build-debian3: Ignoring as --ignore=surprisingbinary given.
+2017-04-04 12:24:42.611448 +0000 build-debian3: Exporting indices...
+2017-04-04 12:24:42.611504 +0000 build-debian3: Deleting files no longer referenced...
+2017-04-04 12:24:42.616250 +0000 build-debian3: sudo umount chroot-debian/tmp/qubes-apt-repo
+2017-04-04 12:24:42.651079 +0000 build-debian3: sudo umount chroot-debian/tmp/qubes-deb
+2017-04-04 12:24:42.685077 +0000 build-debian3: if [ "X" != "X" ]; then \
+2017-04-04 12:24:42.685166 +0000 build-debian3: .echo '$Source (== xen), Version (== )' > /home/user/builder-r3.1/repo-latest-snapshot/current-testing-vm-stretch-vmm-xen; \
+2017-04-04 12:24:42.685237 +0000 build-debian3: else \
+2017-04-04 12:24:42.685290 +0000 build-debian3: .echo '$Source (== xen), Version (== 2001:4.6.4-26+deb9u1)' > /home/user/builder-r3.1/repo-latest-snapshot/current-testing-vm-stretch-vmm-xen; \
+2017-04-04 12:24:42.685321 +0000 build-debian3: fi
+2017-04-04 12:24:42.908553 +0000 build-debian3: /home/user/builder-r3.1/qubes-src/builder-github//Makefile.github:21: target 'notify-github' does not exist
+2017-04-04 12:24:42.908637 +0000 build-debian3: [ -z "xen_4.6.4-26+deb9u1" ] || /home/user/builder-r3.1/qubes-src/builder-github//notify-issues \
+2017-04-04 12:24:42.908687 +0000 build-debian3: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-debian3/log_2017-04-04_12-17-22" \
+2017-04-04 12:24:42.908719 +0000 build-debian3: ."r3.1" \
+2017-04-04 12:24:42.908747 +0000 build-debian3: ."current-testing" \
+2017-04-04 12:24:42.908773 +0000 build-debian3: ."qubes-src/vmm-xen" \
+2017-04-04 12:24:42.908796 +0000 build-debian3: ."xen_4.6.4-26+deb9u1" \
+2017-04-04 12:24:42.908815 +0000 build-debian3: ."stretch" \
+2017-04-04 12:24:42.908836 +0000 build-debian3: ."vm" \
+2017-04-04 12:24:42.908863 +0000 build-debian3: ."/home/user/github-notify-state/r3.1-vmm-xen-vm-stretch-current-testing"
+2017-04-04 12:24:46.014160 +0000 build-debian3: WARNING: /home/user/github-notify-state/r3.1-vmm-xen-vm-stretch-current-testing does not exist, initializing with the current state
+2017-04-04 12:24:46.019016 +0000 build-debian3: 
+2017-04-04 12:24:46.020079 +0000 build-debian3: Makefile:680: update target 'internal-update-repo-current-testing.vm.stretch' due to: internal-update-repo-current-testing.vm.stretch.vmm-xen
+2017-04-04 12:24:46.020141 +0000 build-debian3: true
+2017-04-04 12:24:46.023598 +0000 build-debian3: Makefile:742: target 'post-update-repo-current-testing' does not exist
+2017-04-04 12:24:46.023669 +0000 build-debian3: for dist in  jessie stretch; do \
+2017-04-04 12:24:46.023727 +0000 build-debian3: .repo_base_var="LINUX_REPO_${dist}_BASEDIR"; \
+2017-04-04 12:24:46.023757 +0000 build-debian3: .if [ -n "${!repo_base_var}" ]; then \
+2017-04-04 12:24:46.023785 +0000 build-debian3: ..repo_basedir="${!repo_base_var}"; \
+2017-04-04 12:24:46.023807 +0000 build-debian3: .else \
+2017-04-04 12:24:46.023832 +0000 build-debian3: ..repo_basedir="qubes-src/linux-deb/r3.1"; \
+2017-04-04 12:24:46.023853 +0000 build-debian3: .fi; \
+2017-04-04 12:24:46.023878 +0000 build-debian3: .repos_to_update="$repos_to_update $repo_basedir"; \
+2017-04-04 12:24:46.023896 +0000 build-debian3: done; \
+2017-04-04 12:24:46.023921 +0000 build-debian3: for repo in `echo $repos_to_update|tr ' ' '\n'|sort|uniq`; do \
+2017-04-04 12:24:46.023943 +0000 build-debian3: .[ -z "$repo" ] && continue; \
+2017-04-04 12:24:46.023970 +0000 build-debian3: .(cd $repo/.. && ./update_repo-current-testing.sh `basename $repo`); \
+2017-04-04 12:24:46.023991 +0000 build-debian3: done
+2017-04-04 12:24:46.120872 +0000 build-debian3: --> Processing repo: r3.1/vm/dists/jessie-testing...
+2017-04-04 12:24:46.697322 +0000 build-debian3: --> Processing repo: r3.1/vm/dists/stretch-testing...
+2017-04-04 12:24:47.327093 +0000 build-debian3: --> Processing repo: r3.1/vm/dists/wheezy-testing...
+2017-04-04 12:24:48.008521 +0000 build-debian3: Done.
+2017-04-04 12:24:48.019652 +0000 build-debian3: ~/builder-r3.1/qubes-src/linux-deb ~/builder-r3.1/qubes-src/linux-deb
+2017-04-04 12:24:49.453539 +0000 build-debian3: sending incremental file list
+2017-04-04 12:24:49.541157 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool": Operation not permitted (1)
+2017-04-04 12:24:49.541259 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main": Operation not permitted (1)
+2017-04-04 12:24:49.541315 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/libv": Operation not permitted (1)
+2017-04-04 12:24:49.541362 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/libv/libvchan-xen": Operation not permitted (1)
+2017-04-04 12:24:49.541411 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/libv/libvchan-xen/libvchan-xen-dev_3.1.0-1+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.541459 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/libv/libvchan-xen/libvchan-xen-dev_3.1.0-1+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.541502 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/libv/libvchan-xen/libvchan-xen-dev_3.1.0-1+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.541549 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/libv/libvchan-xen/libvchan-xen_3.1.0-1+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.541591 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/libv/libvchan-xen/libvchan-xen_3.1.0-1+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.541633 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/libv/libvchan-xen/libvchan-xen_3.1.0-1+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.541668 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q": Operation not permitted (1)
+2017-04-04 12:24:49.541704 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-core-agent": Operation not permitted (1)
+2017-04-04 12:24:49.541748 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-core-agent/qubes-core-agent-dbgsym_3.1.19-1+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.541791 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-core-agent/qubes-core-agent-dbgsym_3.1.20-1+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.541853 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-core-agent/qubes-core-agent_3.1.19-1+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.541896 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-core-agent/qubes-core-agent_3.1.19-1+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.541937 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-core-agent/qubes-core-agent_3.1.19-1+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.541974 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-core-agent/qubes-core-agent_3.1.20-1+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.542015 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-core-agent/qubes-core-agent_3.1.20-1+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.542053 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-core-agent/qubes-core-agent_3.1.20-1+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.542090 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-gpg-split": Operation not permitted (1)
+2017-04-04 12:24:49.542133 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-gpg-split/qubes-gpg-split-dbgsym_2.0.24-1+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.542176 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-gpg-split/qubes-gpg-split-tests_2.0.24-1+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.542240 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-gpg-split/qubes-gpg-split-tests_2.0.24-1+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.542285 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-gpg-split/qubes-gpg-split-tests_2.0.24-1+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.542327 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-gpg-split/qubes-gpg-split_2.0.24-1+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.542387 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-gpg-split/qubes-gpg-split_2.0.24-1+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.542429 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-gpg-split/qubes-gpg-split_2.0.24-1+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.542464 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-gui-agent": Operation not permitted (1)
+2017-04-04 12:24:49.542507 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-gui-agent/qubes-gui-agent-dbgsym_3.1.10+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.542547 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-gui-agent/qubes-gui-agent-dbgsym_3.1.8+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.542584 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-gui-agent/qubes-gui-agent_3.1.10+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.542625 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-gui-agent/qubes-gui-agent_3.1.10+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.542678 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-gui-agent/qubes-gui-agent_3.1.10+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.542718 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-gui-agent/qubes-gui-agent_3.1.8+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.542756 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-gui-agent/qubes-gui-agent_3.1.8+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.542795 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-gui-agent/qubes-gui-agent_3.1.8+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.542837 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-gui-agent/xserver-xorg-input-qubes-dbgsym_3.1.10+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.542876 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-gui-agent/xserver-xorg-input-qubes_3.1.10+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.542916 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-gui-agent/xserver-xorg-input-qubes_3.1.10+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.542957 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-gui-agent/xserver-xorg-input-qubes_3.1.10+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.542999 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-gui-agent/xserver-xorg-video-dummyqbs-dbgsym_3.1.10+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.543041 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-gui-agent/xserver-xorg-video-dummyqbs_3.1.10+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.543081 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-gui-agent/xserver-xorg-video-dummyqbs_3.1.10+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.543123 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-gui-agent/xserver-xorg-video-dummyqbs_3.1.10+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.543159 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-gui-common": Operation not permitted (1)
+2017-04-04 12:24:49.543220 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-gui-common/qubes-gui-common_3.0.3+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.543264 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-gui-common/qubes-gui-common_3.0.3+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.543305 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-gui-common/qubes-gui-common_3.0.3+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.543342 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-img-converter": Operation not permitted (1)
+2017-04-04 12:24:49.543384 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-img-converter/qubes-img-converter-vm_1.2.1-1+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.543442 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-img-converter/qubes-img-converter-vm_1.2.1-1+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.543499 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-img-converter/qubes-img-converter-vm_1.2.1-1+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.543542 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-img-converter/qubes-img-converter_1.2.2-1+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.543583 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-img-converter/qubes-img-converter_1.2.2-1+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.543627 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-img-converter/qubes-img-converter_1.2.2-1+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.543663 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-input-proxy": Operation not permitted (1)
+2017-04-04 12:24:49.543707 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-input-proxy/qubes-input-proxy-receiver-dbgsym_1.0.8-1+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.543749 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-input-proxy/qubes-input-proxy-receiver_1.0.8-1+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.543791 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-input-proxy/qubes-input-proxy-receiver_1.0.8-1+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.543834 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-input-proxy/qubes-input-proxy-receiver_1.0.8-1+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.543876 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-input-proxy/qubes-input-proxy-sender-dbgsym_1.0.8-1+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.543917 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-input-proxy/qubes-input-proxy-sender_1.0.8-1+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.543959 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-input-proxy/qubes-input-proxy-sender_1.0.8-1+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.543996 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-input-proxy/qubes-input-proxy-sender_1.0.8-1+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.544030 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-mgmt-salt": Operation not permitted (1)
+2017-04-04 12:24:49.544071 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-config_3.1.1-1+deb7u1_all.deb": Operation not permitted (1)
+2017-04-04 12:24:49.544114 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-config_3.1.1-1+deb8u1_all.deb": Operation not permitted (1)
+2017-04-04 12:24:49.544155 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-config_3.1.1-1+deb9u1_all.deb": Operation not permitted (1)
+2017-04-04 12:24:49.544218 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-dom0-formulas_3.1.1-1+deb7u1_all.deb": Operation not permitted (1)
+2017-04-04 12:24:49.544265 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-dom0-formulas_3.1.1-1+deb8u1_all.deb": Operation not permitted (1)
+2017-04-04 12:24:49.544324 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-dom0-formulas_3.1.1-1+deb9u1_all.deb": Operation not permitted (1)
+2017-04-04 12:24:49.544368 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-dom0_3.1.1-1+deb7u1_all.deb": Operation not permitted (1)
+2017-04-04 12:24:49.544411 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-dom0_3.1.1-1+deb8u1_all.deb": Operation not permitted (1)
+2017-04-04 12:24:49.544454 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-dom0_3.1.1-1+deb9u1_all.deb": Operation not permitted (1)
+2017-04-04 12:24:49.544512 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-shared-formulas_3.1.1-1+deb7u1_all.deb": Operation not permitted (1)
+2017-04-04 12:24:49.544557 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-shared-formulas_3.1.1-1+deb8u1_all.deb": Operation not permitted (1)
+2017-04-04 12:24:49.544601 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-shared-formulas_3.1.1-1+deb9u1_all.deb": Operation not permitted (1)
+2017-04-04 12:24:49.544645 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-vm-formulas_3.1.1-1+deb7u1_all.deb": Operation not permitted (1)
+2017-04-04 12:24:49.544688 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-vm-formulas_3.1.1-1+deb8u1_all.deb": Operation not permitted (1)
+2017-04-04 12:24:49.544731 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-vm-formulas_3.1.1-1+deb9u1_all.deb": Operation not permitted (1)
+2017-04-04 12:24:49.544772 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-vm_3.1.1-1+deb7u1_all.deb": Operation not permitted (1)
+2017-04-04 12:24:49.544813 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-vm_3.1.1-1+deb8u1_all.deb": Operation not permitted (1)
+2017-04-04 12:24:49.544854 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-vm_3.1.1-1+deb9u1_all.deb": Operation not permitted (1)
+2017-04-04 12:24:49.544895 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt_3.1.1-1+deb7u1_all.deb": Operation not permitted (1)
+2017-04-04 12:24:49.544937 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt_3.1.1-1+deb8u1_all.deb": Operation not permitted (1)
+2017-04-04 12:24:49.544975 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt_3.1.1-1+deb9u1_all.deb": Operation not permitted (1)
+2017-04-04 12:24:49.545013 +0000 build-debian3: rsync: failed to set times on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-pdf-converter": Operation not permitted (1)
+2017-04-04 12:24:49.545055 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-pdf-converter/qubes-pdf-converter_2.1.1-1+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.545093 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-thunderbird": Operation not permitted (1)
+2017-04-04 12:24:49.545149 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-thunderbird/qubes-thunderbird_1.2.8-1+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.545192 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-thunderbird/qubes-thunderbird_1.2.8-1+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.545252 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-thunderbird/qubes-thunderbird_1.2.8-1+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.545290 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-tor": Operation not permitted (1)
+2017-04-04 12:24:49.545331 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-tor/qubes-tor_0.1.14-1+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.545372 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-tor/qubes-tor_0.1.14-1+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.545412 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-tor/qubes-tor_0.1.14-1+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.545448 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-utils": Operation not permitted (1)
+2017-04-04 12:24:49.545489 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-utils/libqrexec-utils-dev_3.1.10+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.576161 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-utils/libqrexec-utils-dev_3.1.10+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.576280 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-utils/libqrexec-utils-dev_3.1.10+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.576341 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-utils/libqrexec-utils2-dbgsym_3.1.10+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.576390 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-utils/libqrexec-utils2_3.1.10+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.576436 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-utils/libqrexec-utils2_3.1.10+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.576480 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-utils/libqrexec-utils2_3.1.10+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.576523 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-utils/libqubes-rpc-filecopy-dev_3.1.10+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.576566 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-utils/libqubes-rpc-filecopy-dev_3.1.10+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.576608 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-utils/libqubes-rpc-filecopy-dev_3.1.10+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.576650 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-utils/libqubes-rpc-filecopy2-dbgsym_3.1.10+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.576691 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-utils/libqubes-rpc-filecopy2_3.1.10+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.576749 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-utils/libqubes-rpc-filecopy2_3.1.10+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.576789 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-utils/libqubes-rpc-filecopy2_3.1.10+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.576830 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-utils/qubes-kernel-vm-support_3.1.10+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.576869 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-utils/qubes-kernel-vm-support_3.1.10+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.576909 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-utils/qubes-kernel-vm-support_3.1.10+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.576948 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-utils/qubes-utils-dbgsym_3.1.10+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.576987 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-utils/qubes-utils_3.1.10+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.577026 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-utils/qubes-utils_3.1.10+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.577063 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubes-utils/qubes-utils_3.1.10+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.577100 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubesdb": Operation not permitted (1)
+2017-04-04 12:24:49.577139 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubesdb/libqubesdb-dbgsym_3.1.4-1+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.577178 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubesdb/libqubesdb_3.1.4-1+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.577241 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubesdb/libqubesdb_3.1.4-1+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.577281 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubesdb/libqubesdb_3.1.4-1+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.577338 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubesdb/qubesdb-dbgsym_3.1.4-1+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.577378 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubesdb/qubesdb-dev_3.1.4-1+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.577415 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubesdb/qubesdb-dev_3.1.4-1+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.577455 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubesdb/qubesdb-dev_3.1.4-1+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.577494 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubesdb/qubesdb-vm_3.1.4-1+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.577532 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubesdb/qubesdb-vm_3.1.4-1+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.577582 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubesdb/qubesdb-vm_3.1.4-1+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.577619 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubesdb/qubesdb_3.1.4-1+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.577656 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubesdb/qubesdb_3.1.4-1+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.577694 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/q/qubesdb/qubesdb_3.1.4-1+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.577726 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x": Operation not permitted (1)
+2017-04-04 12:24:49.577758 +0000 build-debian3: rsync: failed to set times on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen": Operation not permitted (1)
+2017-04-04 12:24:49.577796 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/libxen-4.6-dbgsym_4.6.1-20+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.577832 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/libxen-4.6_4.6.0-11+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.577869 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/libxen-4.6_4.6.0-11+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.577906 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/libxen-4.6_4.6.0-11+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.577942 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/libxen-4.6_4.6.1-17+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.577979 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/libxen-4.6_4.6.1-20+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.578018 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/libxen-4.6_4.6.1-20+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.578057 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/libxen-4.6_4.6.3-24+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.578097 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/libxen-dev_4.6.0-11+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.578135 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/libxen-dev_4.6.0-11+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.578174 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/libxen-dev_4.6.0-11+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.578234 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/libxen-dev_4.6.1-17+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.578273 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/libxen-dev_4.6.1-20+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.578310 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/libxen-dev_4.6.1-20+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.578348 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/libxen-dev_4.6.3-24+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.578388 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/libxenstore3.0-dbgsym_4.6.1-20+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.578457 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/libxenstore3.0_4.6.0-11+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.578498 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/libxenstore3.0_4.6.0-11+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.578538 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/libxenstore3.0_4.6.0-11+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.578580 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/libxenstore3.0_4.6.1-17+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.578618 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/libxenstore3.0_4.6.1-20+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.578658 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/libxenstore3.0_4.6.1-20+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.578697 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/libxenstore3.0_4.6.3-24+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.578736 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/xen-utils-common_4.6.0-11+deb7u1_all.deb": Operation not permitted (1)
+2017-04-04 12:24:49.578776 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/xen-utils-common_4.6.0-11+deb8u1_all.deb": Operation not permitted (1)
+2017-04-04 12:24:49.578815 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/xen-utils-common_4.6.0-11+deb9u1_all.deb": Operation not permitted (1)
+2017-04-04 12:24:49.578853 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/xen-utils-common_4.6.1-17+deb7u1_all.deb": Operation not permitted (1)
+2017-04-04 12:24:49.578891 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/xen-utils-common_4.6.1-20+deb8u1_all.deb": Operation not permitted (1)
+2017-04-04 12:24:49.578928 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/xen-utils-common_4.6.1-20+deb9u1_all.deb": Operation not permitted (1)
+2017-04-04 12:24:49.578965 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/xen-utils-common_4.6.3-24+deb7u1_all.deb": Operation not permitted (1)
+2017-04-04 12:24:49.579006 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/xenstore-utils-dbgsym_4.6.1-20+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.579041 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/xenstore-utils_4.6.0-11+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:49.579063 +0000 build-debian3: .d...p..... pool/
+2017-04-04 12:24:49.579085 +0000 build-debian3: .d...p..... pool/main/
+2017-04-04 12:24:49.579109 +0000 build-debian3: .d...p..... pool/main/libv/
+2017-04-04 12:24:49.579132 +0000 build-debian3: .d...p..... pool/main/libv/libvchan-xen/
+2017-04-04 12:24:49.579162 +0000 build-debian3: .f...p..... pool/main/libv/libvchan-xen/libvchan-xen-dev_3.1.0-1+deb7u1_amd64.deb
+2017-04-04 12:24:49.579191 +0000 build-debian3: .f...p..... pool/main/libv/libvchan-xen/libvchan-xen-dev_3.1.0-1+deb8u1_amd64.deb
+2017-04-04 12:24:49.579244 +0000 build-debian3: .f...p..... pool/main/libv/libvchan-xen/libvchan-xen-dev_3.1.0-1+deb9u1_amd64.deb
+2017-04-04 12:24:49.579275 +0000 build-debian3: .f...p..... pool/main/libv/libvchan-xen/libvchan-xen_3.1.0-1+deb7u1_amd64.deb
+2017-04-04 12:24:49.579321 +0000 build-debian3: .f...p..... pool/main/libv/libvchan-xen/libvchan-xen_3.1.0-1+deb8u1_amd64.deb
+2017-04-04 12:24:49.579351 +0000 build-debian3: .f...p..... pool/main/libv/libvchan-xen/libvchan-xen_3.1.0-1+deb9u1_amd64.deb
+2017-04-04 12:24:49.579376 +0000 build-debian3: .d...p..... pool/main/q/
+2017-04-04 12:24:49.579401 +0000 build-debian3: .d...p..... pool/main/q/qubes-core-agent/
+2017-04-04 12:24:49.579432 +0000 build-debian3: .f...p..... pool/main/q/qubes-core-agent/qubes-core-agent-dbgsym_3.1.19-1+deb9u1_amd64.deb
+2017-04-04 12:24:49.579463 +0000 build-debian3: .f...p..... pool/main/q/qubes-core-agent/qubes-core-agent-dbgsym_3.1.20-1+deb9u1_amd64.deb
+2017-04-04 12:24:49.579494 +0000 build-debian3: .f...p..... pool/main/q/qubes-core-agent/qubes-core-agent_3.1.19-1+deb7u1_amd64.deb
+2017-04-04 12:24:49.579525 +0000 build-debian3: .f...p..... pool/main/q/qubes-core-agent/qubes-core-agent_3.1.19-1+deb8u1_amd64.deb
+2017-04-04 12:24:49.579555 +0000 build-debian3: .f...p..... pool/main/q/qubes-core-agent/qubes-core-agent_3.1.19-1+deb9u1_amd64.deb
+2017-04-04 12:24:49.579586 +0000 build-debian3: .f...p..... pool/main/q/qubes-core-agent/qubes-core-agent_3.1.20-1+deb7u1_amd64.deb
+2017-04-04 12:24:49.579612 +0000 build-debian3: .f...p..... pool/main/q/qubes-core-agent/qubes-core-agent_3.1.20-1+deb8u1_amd64.deb
+2017-04-04 12:24:49.579638 +0000 build-debian3: .f...p..... pool/main/q/qubes-core-agent/qubes-core-agent_3.1.20-1+deb9u1_amd64.deb
+2017-04-04 12:24:49.579660 +0000 build-debian3: .d...p..... pool/main/q/qubes-gpg-split/
+2017-04-04 12:24:49.579687 +0000 build-debian3: .f...p..... pool/main/q/qubes-gpg-split/qubes-gpg-split-dbgsym_2.0.24-1+deb9u1_amd64.deb
+2017-04-04 12:24:49.579716 +0000 build-debian3: .f...p..... pool/main/q/qubes-gpg-split/qubes-gpg-split-tests_2.0.24-1+deb7u1_amd64.deb
+2017-04-04 12:24:49.579744 +0000 build-debian3: .f...p..... pool/main/q/qubes-gpg-split/qubes-gpg-split-tests_2.0.24-1+deb8u1_amd64.deb
+2017-04-04 12:24:49.579772 +0000 build-debian3: .f...p..... pool/main/q/qubes-gpg-split/qubes-gpg-split-tests_2.0.24-1+deb9u1_amd64.deb
+2017-04-04 12:24:49.579818 +0000 build-debian3: .f...p..... pool/main/q/qubes-gpg-split/qubes-gpg-split_2.0.24-1+deb7u1_amd64.deb
+2017-04-04 12:24:49.579846 +0000 build-debian3: .f...p..... pool/main/q/qubes-gpg-split/qubes-gpg-split_2.0.24-1+deb8u1_amd64.deb
+2017-04-04 12:24:49.579871 +0000 build-debian3: .f...p..... pool/main/q/qubes-gpg-split/qubes-gpg-split_2.0.24-1+deb9u1_amd64.deb
+2017-04-04 12:24:49.579893 +0000 build-debian3: .d...p..... pool/main/q/qubes-gui-agent/
+2017-04-04 12:24:49.579920 +0000 build-debian3: .f...p..... pool/main/q/qubes-gui-agent/qubes-gui-agent-dbgsym_3.1.10+deb9u1_amd64.deb
+2017-04-04 12:24:49.579949 +0000 build-debian3: .f...p..... pool/main/q/qubes-gui-agent/qubes-gui-agent-dbgsym_3.1.8+deb9u1_amd64.deb
+2017-04-04 12:24:49.579977 +0000 build-debian3: .f...p..... pool/main/q/qubes-gui-agent/qubes-gui-agent_3.1.10+deb7u1_amd64.deb
+2017-04-04 12:24:49.580004 +0000 build-debian3: .f...p..... pool/main/q/qubes-gui-agent/qubes-gui-agent_3.1.10+deb8u1_amd64.deb
+2017-04-04 12:24:49.580030 +0000 build-debian3: .f...p..... pool/main/q/qubes-gui-agent/qubes-gui-agent_3.1.10+deb9u1_amd64.deb
+2017-04-04 12:24:49.580058 +0000 build-debian3: .f...p..... pool/main/q/qubes-gui-agent/qubes-gui-agent_3.1.8+deb7u1_amd64.deb
+2017-04-04 12:24:49.580104 +0000 build-debian3: .f...p..... pool/main/q/qubes-gui-agent/qubes-gui-agent_3.1.8+deb8u1_amd64.deb
+2017-04-04 12:24:49.580134 +0000 build-debian3: .f...p..... pool/main/q/qubes-gui-agent/qubes-gui-agent_3.1.8+deb9u1_amd64.deb
+2017-04-04 12:24:49.580165 +0000 build-debian3: .f...p..... pool/main/q/qubes-gui-agent/xserver-xorg-input-qubes-dbgsym_3.1.10+deb9u1_amd64.deb
+2017-04-04 12:24:49.580214 +0000 build-debian3: .f...p..... pool/main/q/qubes-gui-agent/xserver-xorg-input-qubes_3.1.10+deb7u1_amd64.deb
+2017-04-04 12:24:49.580246 +0000 build-debian3: .f...p..... pool/main/q/qubes-gui-agent/xserver-xorg-input-qubes_3.1.10+deb8u1_amd64.deb
+2017-04-04 12:24:49.580291 +0000 build-debian3: .f...p..... pool/main/q/qubes-gui-agent/xserver-xorg-input-qubes_3.1.10+deb9u1_amd64.deb
+2017-04-04 12:24:49.580321 +0000 build-debian3: .f...p..... pool/main/q/qubes-gui-agent/xserver-xorg-video-dummyqbs-dbgsym_3.1.10+deb9u1_amd64.deb
+2017-04-04 12:24:49.580351 +0000 build-debian3: .f...p..... pool/main/q/qubes-gui-agent/xserver-xorg-video-dummyqbs_3.1.10+deb7u1_amd64.deb
+2017-04-04 12:24:49.580380 +0000 build-debian3: .f...p..... pool/main/q/qubes-gui-agent/xserver-xorg-video-dummyqbs_3.1.10+deb8u1_amd64.deb
+2017-04-04 12:24:49.580409 +0000 build-debian3: .f...p..... pool/main/q/qubes-gui-agent/xserver-xorg-video-dummyqbs_3.1.10+deb9u1_amd64.deb
+2017-04-04 12:24:49.580434 +0000 build-debian3: .d...p..... pool/main/q/qubes-gui-common/
+2017-04-04 12:24:49.580461 +0000 build-debian3: .f...p..... pool/main/q/qubes-gui-common/qubes-gui-common_3.0.3+deb7u1_amd64.deb
+2017-04-04 12:24:49.580488 +0000 build-debian3: .f...p..... pool/main/q/qubes-gui-common/qubes-gui-common_3.0.3+deb8u1_amd64.deb
+2017-04-04 12:24:49.580516 +0000 build-debian3: .f...p..... pool/main/q/qubes-gui-common/qubes-gui-common_3.0.3+deb9u1_amd64.deb
+2017-04-04 12:24:49.580540 +0000 build-debian3: .d...p..... pool/main/q/qubes-img-converter/
+2017-04-04 12:24:49.580568 +0000 build-debian3: .f...p..... pool/main/q/qubes-img-converter/qubes-img-converter-vm_1.2.1-1+deb7u1_amd64.deb
+2017-04-04 12:24:49.580598 +0000 build-debian3: .f...p..... pool/main/q/qubes-img-converter/qubes-img-converter-vm_1.2.1-1+deb8u1_amd64.deb
+2017-04-04 12:24:49.580629 +0000 build-debian3: .f...p..... pool/main/q/qubes-img-converter/qubes-img-converter-vm_1.2.1-1+deb9u1_amd64.deb
+2017-04-04 12:24:49.580657 +0000 build-debian3: .f...p..... pool/main/q/qubes-img-converter/qubes-img-converter_1.2.2-1+deb7u1_amd64.deb
+2017-04-04 12:24:49.580681 +0000 build-debian3: .f...p..... pool/main/q/qubes-img-converter/qubes-img-converter_1.2.2-1+deb8u1_amd64.deb
+2017-04-04 12:24:49.580704 +0000 build-debian3: .f...p..... pool/main/q/qubes-img-converter/qubes-img-converter_1.2.2-1+deb9u1_amd64.deb
+2017-04-04 12:24:49.580723 +0000 build-debian3: .d...p..... pool/main/q/qubes-input-proxy/
+2017-04-04 12:24:49.580749 +0000 build-debian3: .f...p..... pool/main/q/qubes-input-proxy/qubes-input-proxy-receiver-dbgsym_1.0.8-1+deb9u1_amd64.deb
+2017-04-04 12:24:49.580778 +0000 build-debian3: .f...p..... pool/main/q/qubes-input-proxy/qubes-input-proxy-receiver_1.0.8-1+deb7u1_amd64.deb
+2017-04-04 12:24:49.580804 +0000 build-debian3: .f...p..... pool/main/q/qubes-input-proxy/qubes-input-proxy-receiver_1.0.8-1+deb8u1_amd64.deb
+2017-04-04 12:24:49.580831 +0000 build-debian3: .f...p..... pool/main/q/qubes-input-proxy/qubes-input-proxy-receiver_1.0.8-1+deb9u1_amd64.deb
+2017-04-04 12:24:49.580858 +0000 build-debian3: .f...p..... pool/main/q/qubes-input-proxy/qubes-input-proxy-sender-dbgsym_1.0.8-1+deb9u1_amd64.deb
+2017-04-04 12:24:49.580885 +0000 build-debian3: .f...p..... pool/main/q/qubes-input-proxy/qubes-input-proxy-sender_1.0.8-1+deb7u1_amd64.deb
+2017-04-04 12:24:49.580910 +0000 build-debian3: .f...p..... pool/main/q/qubes-input-proxy/qubes-input-proxy-sender_1.0.8-1+deb8u1_amd64.deb
+2017-04-04 12:24:49.580936 +0000 build-debian3: .f...p..... pool/main/q/qubes-input-proxy/qubes-input-proxy-sender_1.0.8-1+deb9u1_amd64.deb
+2017-04-04 12:24:49.580957 +0000 build-debian3: .d...p..... pool/main/q/qubes-mgmt-salt/
+2017-04-04 12:24:49.580982 +0000 build-debian3: .f...p..... pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-config_3.1.1-1+deb7u1_all.deb
+2017-04-04 12:24:49.581007 +0000 build-debian3: .f...p..... pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-config_3.1.1-1+deb8u1_all.deb
+2017-04-04 12:24:49.581033 +0000 build-debian3: .f...p..... pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-config_3.1.1-1+deb9u1_all.deb
+2017-04-04 12:24:49.581060 +0000 build-debian3: .f...p..... pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-dom0-formulas_3.1.1-1+deb7u1_all.deb
+2017-04-04 12:24:49.581086 +0000 build-debian3: .f...p..... pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-dom0-formulas_3.1.1-1+deb8u1_all.deb
+2017-04-04 12:24:49.581125 +0000 build-debian3: .f...p..... pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-dom0-formulas_3.1.1-1+deb9u1_all.deb
+2017-04-04 12:24:49.581152 +0000 build-debian3: .f...p..... pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-dom0_3.1.1-1+deb7u1_all.deb
+2017-04-04 12:24:49.581178 +0000 build-debian3: .f...p..... pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-dom0_3.1.1-1+deb8u1_all.deb
+2017-04-04 12:24:49.581246 +0000 build-debian3: .f...p..... pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-dom0_3.1.1-1+deb9u1_all.deb
+2017-04-04 12:24:49.581273 +0000 build-debian3: .f...p..... pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-shared-formulas_3.1.1-1+deb7u1_all.deb
+2017-04-04 12:24:49.581300 +0000 build-debian3: .f...p..... pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-shared-formulas_3.1.1-1+deb8u1_all.deb
+2017-04-04 12:24:49.581327 +0000 build-debian3: .f...p..... pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-shared-formulas_3.1.1-1+deb9u1_all.deb
+2017-04-04 12:24:49.581353 +0000 build-debian3: .f...p..... pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-vm-formulas_3.1.1-1+deb7u1_all.deb
+2017-04-04 12:24:49.581379 +0000 build-debian3: .f...p..... pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-vm-formulas_3.1.1-1+deb8u1_all.deb
+2017-04-04 12:24:49.581405 +0000 build-debian3: .f...p..... pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-vm-formulas_3.1.1-1+deb9u1_all.deb
+2017-04-04 12:24:49.581430 +0000 build-debian3: .f...p..... pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-vm_3.1.1-1+deb7u1_all.deb
+2017-04-04 12:24:49.581458 +0000 build-debian3: .f...p..... pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-vm_3.1.1-1+deb8u1_all.deb
+2017-04-04 12:24:49.581484 +0000 build-debian3: .f...p..... pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt-vm_3.1.1-1+deb9u1_all.deb
+2017-04-04 12:24:49.581511 +0000 build-debian3: .f...p..... pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt_3.1.1-1+deb7u1_all.deb
+2017-04-04 12:24:49.581537 +0000 build-debian3: .f...p..... pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt_3.1.1-1+deb8u1_all.deb
+2017-04-04 12:24:49.581561 +0000 build-debian3: .f...p..... pool/main/q/qubes-mgmt-salt/qubes-mgmt-salt_3.1.1-1+deb9u1_all.deb
+2017-04-04 12:24:49.581582 +0000 build-debian3: .d..tp..... pool/main/q/qubes-pdf-converter/
+2017-04-04 12:24:49.581607 +0000 build-debian3: .f...p..... pool/main/q/qubes-pdf-converter/qubes-pdf-converter_2.1.1-1+deb7u1_amd64.deb
+2017-04-04 12:24:49.581627 +0000 build-debian3: .d...p..... pool/main/q/qubes-thunderbird/
+2017-04-04 12:24:49.581650 +0000 build-debian3: .f...p..... pool/main/q/qubes-thunderbird/qubes-thunderbird_1.2.8-1+deb7u1_amd64.deb
+2017-04-04 12:24:49.581675 +0000 build-debian3: .f...p..... pool/main/q/qubes-thunderbird/qubes-thunderbird_1.2.8-1+deb8u1_amd64.deb
+2017-04-04 12:24:49.581699 +0000 build-debian3: .f...p..... pool/main/q/qubes-thunderbird/qubes-thunderbird_1.2.8-1+deb9u1_amd64.deb
+2017-04-04 12:24:49.581719 +0000 build-debian3: .d...p..... pool/main/q/qubes-tor/
+2017-04-04 12:24:49.581742 +0000 build-debian3: .f...p..... pool/main/q/qubes-tor/qubes-tor_0.1.14-1+deb7u1_amd64.deb
+2017-04-04 12:24:49.581765 +0000 build-debian3: .f...p..... pool/main/q/qubes-tor/qubes-tor_0.1.14-1+deb8u1_amd64.deb
+2017-04-04 12:24:49.581787 +0000 build-debian3: .f...p..... pool/main/q/qubes-tor/qubes-tor_0.1.14-1+deb9u1_amd64.deb
+2017-04-04 12:24:49.581807 +0000 build-debian3: .d...p..... pool/main/q/qubes-utils/
+2017-04-04 12:24:49.581831 +0000 build-debian3: .f...p..... pool/main/q/qubes-utils/libqrexec-utils-dev_3.1.10+deb7u1_amd64.deb
+2017-04-04 12:24:49.581855 +0000 build-debian3: .f...p..... pool/main/q/qubes-utils/libqrexec-utils-dev_3.1.10+deb8u1_amd64.deb
+2017-04-04 12:24:49.581879 +0000 build-debian3: .f...p..... pool/main/q/qubes-utils/libqrexec-utils-dev_3.1.10+deb9u1_amd64.deb
+2017-04-04 12:24:49.581903 +0000 build-debian3: .f...p..... pool/main/q/qubes-utils/libqrexec-utils2-dbgsym_3.1.10+deb9u1_amd64.deb
+2017-04-04 12:24:49.581927 +0000 build-debian3: .f...p..... pool/main/q/qubes-utils/libqrexec-utils2_3.1.10+deb7u1_amd64.deb
+2017-04-04 12:24:49.581966 +0000 build-debian3: .f...p..... pool/main/q/qubes-utils/libqrexec-utils2_3.1.10+deb8u1_amd64.deb
+2017-04-04 12:24:49.581992 +0000 build-debian3: .f...p..... pool/main/q/qubes-utils/libqrexec-utils2_3.1.10+deb9u1_amd64.deb
+2017-04-04 12:24:49.582017 +0000 build-debian3: .f...p..... pool/main/q/qubes-utils/libqubes-rpc-filecopy-dev_3.1.10+deb7u1_amd64.deb
+2017-04-04 12:24:49.582042 +0000 build-debian3: .f...p..... pool/main/q/qubes-utils/libqubes-rpc-filecopy-dev_3.1.10+deb8u1_amd64.deb
+2017-04-04 12:24:49.582067 +0000 build-debian3: .f...p..... pool/main/q/qubes-utils/libqubes-rpc-filecopy-dev_3.1.10+deb9u1_amd64.deb
+2017-04-04 12:24:49.582092 +0000 build-debian3: .f...p..... pool/main/q/qubes-utils/libqubes-rpc-filecopy2-dbgsym_3.1.10+deb9u1_amd64.deb
+2017-04-04 12:24:49.582116 +0000 build-debian3: .f...p..... pool/main/q/qubes-utils/libqubes-rpc-filecopy2_3.1.10+deb7u1_amd64.deb
+2017-04-04 12:24:49.582140 +0000 build-debian3: .f...p..... pool/main/q/qubes-utils/libqubes-rpc-filecopy2_3.1.10+deb8u1_amd64.deb
+2017-04-04 12:24:49.582164 +0000 build-debian3: .f...p..... pool/main/q/qubes-utils/libqubes-rpc-filecopy2_3.1.10+deb9u1_amd64.deb
+2017-04-04 12:24:49.582189 +0000 build-debian3: .f...p..... pool/main/q/qubes-utils/qubes-kernel-vm-support_3.1.10+deb7u1_amd64.deb
+2017-04-04 12:24:49.582232 +0000 build-debian3: .f...p..... pool/main/q/qubes-utils/qubes-kernel-vm-support_3.1.10+deb8u1_amd64.deb
+2017-04-04 12:24:49.582257 +0000 build-debian3: .f...p..... pool/main/q/qubes-utils/qubes-kernel-vm-support_3.1.10+deb9u1_amd64.deb
+2017-04-04 12:24:49.582281 +0000 build-debian3: .f...p..... pool/main/q/qubes-utils/qubes-utils-dbgsym_3.1.10+deb9u1_amd64.deb
+2017-04-04 12:24:49.582305 +0000 build-debian3: .f...p..... pool/main/q/qubes-utils/qubes-utils_3.1.10+deb7u1_amd64.deb
+2017-04-04 12:24:49.582328 +0000 build-debian3: .f...p..... pool/main/q/qubes-utils/qubes-utils_3.1.10+deb8u1_amd64.deb
+2017-04-04 12:24:49.582351 +0000 build-debian3: .f...p..... pool/main/q/qubes-utils/qubes-utils_3.1.10+deb9u1_amd64.deb
+2017-04-04 12:24:49.582370 +0000 build-debian3: .d...p..... pool/main/q/qubesdb/
+2017-04-04 12:24:49.582394 +0000 build-debian3: .f...p..... pool/main/q/qubesdb/libqubesdb-dbgsym_3.1.4-1+deb9u1_amd64.deb
+2017-04-04 12:24:49.582417 +0000 build-debian3: .f...p..... pool/main/q/qubesdb/libqubesdb_3.1.4-1+deb7u1_amd64.deb
+2017-04-04 12:24:49.582439 +0000 build-debian3: .f...p..... pool/main/q/qubesdb/libqubesdb_3.1.4-1+deb8u1_amd64.deb
+2017-04-04 12:24:49.582461 +0000 build-debian3: .f...p..... pool/main/q/qubesdb/libqubesdb_3.1.4-1+deb9u1_amd64.deb
+2017-04-04 12:24:49.582484 +0000 build-debian3: .f...p..... pool/main/q/qubesdb/qubesdb-dbgsym_3.1.4-1+deb9u1_amd64.deb
+2017-04-04 12:24:49.582507 +0000 build-debian3: .f...p..... pool/main/q/qubesdb/qubesdb-dev_3.1.4-1+deb7u1_amd64.deb
+2017-04-04 12:24:49.582530 +0000 build-debian3: .f...p..... pool/main/q/qubesdb/qubesdb-dev_3.1.4-1+deb8u1_amd64.deb
+2017-04-04 12:24:49.582568 +0000 build-debian3: .f...p..... pool/main/q/qubesdb/qubesdb-dev_3.1.4-1+deb9u1_amd64.deb
+2017-04-04 12:24:49.582591 +0000 build-debian3: .f...p..... pool/main/q/qubesdb/qubesdb-vm_3.1.4-1+deb7u1_amd64.deb
+2017-04-04 12:24:49.582614 +0000 build-debian3: .f...p..... pool/main/q/qubesdb/qubesdb-vm_3.1.4-1+deb8u1_amd64.deb
+2017-04-04 12:24:49.582636 +0000 build-debian3: .f...p..... pool/main/q/qubesdb/qubesdb-vm_3.1.4-1+deb9u1_amd64.deb
+2017-04-04 12:24:49.582659 +0000 build-debian3: .f...p..... pool/main/q/qubesdb/qubesdb_3.1.4-1+deb7u1_amd64.deb
+2017-04-04 12:24:49.582682 +0000 build-debian3: .f...p..... pool/main/q/qubesdb/qubesdb_3.1.4-1+deb8u1_amd64.deb
+2017-04-04 12:24:49.582713 +0000 build-debian3: .f...p..... pool/main/q/qubesdb/qubesdb_3.1.4-1+deb9u1_amd64.deb
+2017-04-04 12:24:49.582755 +0000 build-debian3: .d...p..... pool/main/x/
+2017-04-04 12:24:49.582777 +0000 build-debian3: .d..tp..... pool/main/x/xen/
+2017-04-04 12:24:49.582803 +0000 build-debian3: .f...p..... pool/main/x/xen/libxen-4.6-dbgsym_4.6.1-20+deb9u1_amd64.deb
+2017-04-04 12:24:49.582828 +0000 build-debian3: <f+++++++++ pool/main/x/xen/libxen-4.6-dbgsym_4.6.4-26+deb9u1_amd64.deb
+2017-04-04 12:24:49.585400 +0000 build-debian3: .         32,768   2%    0.00kB/s    0:00:00  .      1,393,858 100%  162.25MB/s    0:00:00 (xfr#1, to-chk=49/189)
+2017-04-04 12:24:49.585462 +0000 build-debian3: .f...p..... pool/main/x/xen/libxen-4.6_4.6.0-11+deb7u1_amd64.deb
+2017-04-04 12:24:49.585494 +0000 build-debian3: .f...p..... pool/main/x/xen/libxen-4.6_4.6.0-11+deb8u1_amd64.deb
+2017-04-04 12:24:49.585521 +0000 build-debian3: .f...p..... pool/main/x/xen/libxen-4.6_4.6.0-11+deb9u1_amd64.deb
+2017-04-04 12:24:49.585548 +0000 build-debian3: .f...p..... pool/main/x/xen/libxen-4.6_4.6.1-17+deb7u1_amd64.deb
+2017-04-04 12:24:49.585575 +0000 build-debian3: .f...p..... pool/main/x/xen/libxen-4.6_4.6.1-20+deb8u1_amd64.deb
+2017-04-04 12:24:49.585602 +0000 build-debian3: .f...p..... pool/main/x/xen/libxen-4.6_4.6.1-20+deb9u1_amd64.deb
+2017-04-04 12:24:49.585628 +0000 build-debian3: .f...p..... pool/main/x/xen/libxen-4.6_4.6.3-24+deb7u1_amd64.deb
+2017-04-04 12:24:49.585656 +0000 build-debian3: <f+++++++++ pool/main/x/xen/libxen-4.6_4.6.4-26+deb8u1_amd64.deb
+2017-04-04 12:24:49.586892 +0000 build-debian3: .         32,768   9%    3.47MB/s    0:00:00  .        358,154 100%   34.16MB/s    0:00:00 (xfr#2, to-chk=41/189)
+2017-04-04 12:24:49.586950 +0000 build-debian3: <f+++++++++ pool/main/x/xen/libxen-4.6_4.6.4-26+deb9u1_amd64.deb
+2017-04-04 12:24:49.593791 +0000 build-debian3: .         32,768   9%    3.12MB/s    0:00:00  .        356,976 100%   21.28MB/s    0:00:00 (xfr#3, to-chk=40/189)
+2017-04-04 12:24:49.593862 +0000 build-debian3: .f...p..... pool/main/x/xen/libxen-dev_4.6.0-11+deb7u1_amd64.deb
+2017-04-04 12:24:49.593900 +0000 build-debian3: .f...p..... pool/main/x/xen/libxen-dev_4.6.0-11+deb8u1_amd64.deb
+2017-04-04 12:24:49.593933 +0000 build-debian3: .f...p..... pool/main/x/xen/libxen-dev_4.6.0-11+deb9u1_amd64.deb
+2017-04-04 12:24:49.593965 +0000 build-debian3: .f...p..... pool/main/x/xen/libxen-dev_4.6.1-17+deb7u1_amd64.deb
+2017-04-04 12:24:49.593991 +0000 build-debian3: .f...p..... pool/main/x/xen/libxen-dev_4.6.1-20+deb8u1_amd64.deb
+2017-04-04 12:24:49.594015 +0000 build-debian3: .f...p..... pool/main/x/xen/libxen-dev_4.6.1-20+deb9u1_amd64.deb
+2017-04-04 12:24:49.594039 +0000 build-debian3: .f...p..... pool/main/x/xen/libxen-dev_4.6.3-24+deb7u1_amd64.deb
+2017-04-04 12:24:49.594063 +0000 build-debian3: <f+++++++++ pool/main/x/xen/libxen-dev_4.6.4-26+deb8u1_amd64.deb
+2017-04-04 12:24:49.777592 +0000 build-debian3: .         32,768  10%    1.74MB/s    0:00:00  .        322,794 100%    1.54MB/s    0:00:00 (xfr#4, to-chk=32/189)
+2017-04-04 12:24:49.777649 +0000 build-debian3: <f+++++++++ pool/main/x/xen/libxen-dev_4.6.4-26+deb9u1_amd64.deb
+2017-04-04 12:24:50.057702 +0000 build-debian3: .         32,768  10%  114.29kB/s    0:00:02  .        324,666 100%  657.79kB/s    0:00:00 (xfr#5, to-chk=31/189)
+2017-04-04 12:24:50.057766 +0000 build-debian3: .f...p..... pool/main/x/xen/libxenstore3.0-dbgsym_4.6.1-20+deb9u1_amd64.deb
+2017-04-04 12:24:50.057799 +0000 build-debian3: <f+++++++++ pool/main/x/xen/libxenstore3.0-dbgsym_4.6.4-26+deb9u1_amd64.deb
+2017-04-04 12:24:50.163194 +0000 build-debian3: .         26,914 100%   44.78kB/s    0:00:00  .         26,914 100%   44.78kB/s    0:00:00 (xfr#6, to-chk=29/189)
+2017-04-04 12:24:50.163286 +0000 build-debian3: .f...p..... pool/main/x/xen/libxenstore3.0_4.6.0-11+deb7u1_amd64.deb
+2017-04-04 12:24:50.163329 +0000 build-debian3: .f...p..... pool/main/x/xen/libxenstore3.0_4.6.0-11+deb8u1_amd64.deb
+2017-04-04 12:24:50.163367 +0000 build-debian3: .f...p..... pool/main/x/xen/libxenstore3.0_4.6.0-11+deb9u1_amd64.deb
+2017-04-04 12:24:50.163401 +0000 build-debian3: .f...p..... pool/main/x/xen/libxenstore3.0_4.6.1-17+deb7u1_amd64.deb
+2017-04-04 12:24:50.163433 +0000 build-debian3: .f...p..... pool/main/x/xen/libxenstore3.0_4.6.1-20+deb8u1_amd64.deb
+2017-04-04 12:24:50.163475 +0000 build-debian3: .f...p..... pool/main/x/xen/libxenstore3.0_4.6.1-20+deb9u1_amd64.deb
+2017-04-04 12:24:50.163507 +0000 build-debian3: .f...p..... pool/main/x/xen/libxenstore3.0_4.6.3-24+deb7u1_amd64.deb
+2017-04-04 12:24:50.163550 +0000 build-debian3: <f+++++++++ pool/main/x/xen/libxenstore3.0_4.6.4-26+deb8u1_amd64.deb
+2017-04-04 12:24:50.163587 +0000 build-debian3: .         20,590 100%   34.25kB/s    0:00:00  .         20,590 100%   34.25kB/s    0:00:00 (xfr#7, to-chk=21/189)
+2017-04-04 12:24:50.163618 +0000 build-debian3: <f+++++++++ pool/main/x/xen/libxenstore3.0_4.6.4-26+deb9u1_amd64.deb
+2017-04-04 12:24:50.163653 +0000 build-debian3: .         20,538 100%   34.17kB/s    0:00:00  .         20,538 100%   34.17kB/s    0:00:00 (xfr#8, to-chk=20/189)
+2017-04-04 12:24:50.163685 +0000 build-debian3: .f...p..... pool/main/x/xen/xen-utils-common_4.6.0-11+deb7u1_all.deb
+2017-04-04 12:24:50.163714 +0000 build-debian3: .f...p..... pool/main/x/xen/xen-utils-common_4.6.0-11+deb8u1_all.deb
+2017-04-04 12:24:50.163744 +0000 build-debian3: .f...p..... pool/main/x/xen/xen-utils-common_4.6.0-11+deb9u1_all.deb
+2017-04-04 12:24:50.163773 +0000 build-debian3: .f...p..... pool/main/x/xen/xen-utils-common_4.6.1-17+deb7u1_all.deb
+2017-04-04 12:24:50.163801 +0000 build-debian3: .f...p..... pool/main/x/xen/xen-utils-common_4.6.1-20+deb8u1_all.deb
+2017-04-04 12:24:50.163828 +0000 build-debian3: .f...p..... pool/main/x/xen/xen-utils-common_4.6.1-20+deb9u1_all.deb
+2017-04-04 12:24:50.163858 +0000 build-debian3: .f...p..... pool/main/x/xen/xen-utils-common_4.6.3-24+deb7u1_all.deb
+2017-04-04 12:24:50.163887 +0000 build-debian3: <f+++++++++ pool/main/x/xen/xen-utils-common_4.6.4-26+deb8u1_all.deb
+2017-04-04 12:24:50.275170 +0000 build-debian3: .         32,768  21%   54.51kB/s    0:00:02  .        152,340 100%  213.14kB/s    0:00:00 (xfr#9, to-chk=12/189)
+2017-04-04 12:24:50.275264 +0000 build-debian3: <f+++++++++ pool/main/x/xen/xen-utils-common_4.6.4-26+deb9u1_all.deb
+2017-04-04 12:24:50.380728 +0000 build-debian3: .         32,768  21%   45.78kB/s    0:00:02  .        155,414 100%  188.54kB/s    0:00:00 (xfr#10, to-chk=11/189)
+2017-04-04 12:24:50.380787 +0000 build-debian3: .f...p..... pool/main/x/xen/xenstore-utils-dbgsym_4.6.1-20+deb9u1_amd64.deb
+2017-04-04 12:24:50.380814 +0000 build-debian3: <f+++++++++ pool/main/x/xen/xenstore-utils-dbgsym_4.6.4-26+deb9u1_amd64.deb
+2017-04-04 12:24:50.485087 +0000 build-debian3: .         17,034 100%   18.30kB/s    0:00:00  .         17,034 100%   18.30kB/s    0:00:00 (xfr#11, to-chk=9/189)
+2017-04-04 12:24:50.485150 +0000 build-debian3: .f...p..... pool/main/x/xen/xenstore-utils_4.6.0-11+deb7u1_amd64.deb
+2017-04-04 12:24:50.485191 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/xenstore-utils_4.6.0-11+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:50.485251 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/xenstore-utils_4.6.0-11+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:50.485288 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/xenstore-utils_4.6.1-17+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:50.485324 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/xenstore-utils_4.6.1-20+deb8u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:50.485355 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/xenstore-utils_4.6.1-20+deb9u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:50.485389 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/pool/main/x/xen/xenstore-utils_4.6.3-24+deb7u1_amd64.deb": Operation not permitted (1)
+2017-04-04 12:24:50.485416 +0000 build-debian3: .f...p..... pool/main/x/xen/xenstore-utils_4.6.0-11+deb8u1_amd64.deb
+2017-04-04 12:24:50.485443 +0000 build-debian3: .f...p..... pool/main/x/xen/xenstore-utils_4.6.0-11+deb9u1_amd64.deb
+2017-04-04 12:24:50.485469 +0000 build-debian3: .f...p..... pool/main/x/xen/xenstore-utils_4.6.1-17+deb7u1_amd64.deb
+2017-04-04 12:24:50.485494 +0000 build-debian3: .f...p..... pool/main/x/xen/xenstore-utils_4.6.1-20+deb8u1_amd64.deb
+2017-04-04 12:24:50.485533 +0000 build-debian3: .f...p..... pool/main/x/xen/xenstore-utils_4.6.1-20+deb9u1_amd64.deb
+2017-04-04 12:24:50.485561 +0000 build-debian3: .f...p..... pool/main/x/xen/xenstore-utils_4.6.3-24+deb7u1_amd64.deb
+2017-04-04 12:24:50.485586 +0000 build-debian3: <f+++++++++ pool/main/x/xen/xenstore-utils_4.6.4-26+deb8u1_amd64.deb
+2017-04-04 12:24:50.485618 +0000 build-debian3: .         17,138 100%   18.41kB/s    0:00:00  .         17,138 100%   18.41kB/s    0:00:00 (xfr#12, to-chk=1/189)
+2017-04-04 12:24:50.485647 +0000 build-debian3: <f+++++++++ pool/main/x/xen/xenstore-utils_4.6.4-26+deb9u1_amd64.deb
+2017-04-04 12:24:50.485679 +0000 build-debian3: .         17,252 100%   18.53kB/s    0:00:00  .         17,252 100%   18.53kB/s    0:00:00 (xfr#13, to-chk=0/189)
+2017-04-04 12:24:52.283658 +0000 build-debian3: rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1178) [sender=3.1.2]
+2017-04-04 12:24:52.284190 +0000 build-debian3: Syncing r3.1/vm/jessie...
+2017-04-04 12:24:52.532259 +0000 build-debian3: sending incremental file list
+2017-04-04 12:24:52.701930 +0000 build-debian3: rsync: failed to set times on "/pub/qubes/repo/deb/r3.1/vm/dists/jessie": Operation not permitted (1)
+2017-04-04 12:24:52.702001 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/jessie/main": Operation not permitted (1)
+2017-04-04 12:24:52.702040 +0000 build-debian3: rsync: failed to set times on "/pub/qubes/repo/deb/r3.1/vm/dists/jessie/main/binary-amd64": Operation not permitted (1)
+2017-04-04 12:24:52.702074 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/jessie/main/binary-amd64/Release": Operation not permitted (1)
+2017-04-04 12:24:52.702108 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/jessie/main/source": Operation not permitted (1)
+2017-04-04 12:24:52.702141 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/jessie/main/source/Release": Operation not permitted (1)
+2017-04-04 12:24:52.702174 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/jessie/main/source/Sources.gz": Operation not permitted (1)
+2017-04-04 12:24:52.702222 +0000 build-debian3: .d..tp..... jessie/
+2017-04-04 12:24:52.702247 +0000 build-debian3: .d...p..... jessie/main/
+2017-04-04 12:24:52.702270 +0000 build-debian3: .d..tp..... jessie/main/binary-amd64/
+2017-04-04 12:24:52.702293 +0000 build-debian3: .f...p..... jessie/main/binary-amd64/Release
+2017-04-04 12:24:52.702315 +0000 build-debian3: .d...p..... jessie/main/source/
+2017-04-04 12:24:52.702338 +0000 build-debian3: .f...p..... jessie/main/source/Release
+2017-04-04 12:24:52.702361 +0000 build-debian3: .f...p..... jessie/main/source/Sources.gz
+2017-04-04 12:24:52.776621 +0000 build-debian3: rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1178) [sender=3.1.2]
+2017-04-04 12:24:52.776781 +0000 build-debian3: Syncing r3.1/vm/jessie-securitytesting...
+2017-04-04 12:24:53.015251 +0000 build-debian3: sending incremental file list
+2017-04-04 12:24:53.188954 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/jessie-securitytesting": Operation not permitted (1)
+2017-04-04 12:24:53.189027 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/jessie-securitytesting/Release": Operation not permitted (1)
+2017-04-04 12:24:53.189072 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/jessie-securitytesting/main": Operation not permitted (1)
+2017-04-04 12:24:53.189115 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/jessie-securitytesting/main/binary-amd64": Operation not permitted (1)
+2017-04-04 12:24:53.189158 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/jessie-securitytesting/main/binary-amd64/Packages": Operation not permitted (1)
+2017-04-04 12:24:53.189240 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/jessie-securitytesting/main/binary-amd64/Packages.gz": Operation not permitted (1)
+2017-04-04 12:24:53.189285 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/jessie-securitytesting/main/binary-amd64/Release": Operation not permitted (1)
+2017-04-04 12:24:53.189321 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/jessie-securitytesting/main/source": Operation not permitted (1)
+2017-04-04 12:24:53.189358 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/jessie-securitytesting/main/source/Release": Operation not permitted (1)
+2017-04-04 12:24:53.189392 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/jessie-securitytesting/main/source/Sources.gz": Operation not permitted (1)
+2017-04-04 12:24:53.189418 +0000 build-debian3: .d...p..... jessie-securitytesting/
+2017-04-04 12:24:53.189444 +0000 build-debian3: .f...p..... jessie-securitytesting/Release
+2017-04-04 12:24:53.189470 +0000 build-debian3: .d...p..... jessie-securitytesting/main/
+2017-04-04 12:24:53.189497 +0000 build-debian3: .d...p..... jessie-securitytesting/main/binary-amd64/
+2017-04-04 12:24:53.189523 +0000 build-debian3: .f...p..... jessie-securitytesting/main/binary-amd64/Packages
+2017-04-04 12:24:53.189550 +0000 build-debian3: .f...p..... jessie-securitytesting/main/binary-amd64/Packages.gz
+2017-04-04 12:24:53.189575 +0000 build-debian3: .f...p..... jessie-securitytesting/main/binary-amd64/Release
+2017-04-04 12:24:53.189599 +0000 build-debian3: .d...p..... jessie-securitytesting/main/source/
+2017-04-04 12:24:53.189623 +0000 build-debian3: .f...p..... jessie-securitytesting/main/source/Release
+2017-04-04 12:24:53.189647 +0000 build-debian3: .f...p..... jessie-securitytesting/main/source/Sources.gz
+2017-04-04 12:24:53.260213 +0000 build-debian3: rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1178) [sender=3.1.2]
+2017-04-04 12:24:53.260295 +0000 build-debian3: Syncing r3.1/vm/jessie-testing...
+2017-04-04 12:24:53.498892 +0000 build-debian3: sending incremental file list
+2017-04-04 12:24:53.554207 +0000 build-debian3: rsync: failed to set times on "/pub/qubes/repo/deb/r3.1/vm/dists/jessie-testing": Operation not permitted (1)
+2017-04-04 12:24:53.554310 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/jessie-testing/main": Operation not permitted (1)
+2017-04-04 12:24:53.554375 +0000 build-debian3: rsync: failed to set times on "/pub/qubes/repo/deb/r3.1/vm/dists/jessie-testing/main/binary-amd64": Operation not permitted (1)
+2017-04-04 12:24:53.554424 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/jessie-testing/main/binary-amd64/Release": Operation not permitted (1)
+2017-04-04 12:24:53.554466 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/jessie-testing/main/source": Operation not permitted (1)
+2017-04-04 12:24:53.554506 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/jessie-testing/main/source/Release": Operation not permitted (1)
+2017-04-04 12:24:53.554545 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/jessie-testing/main/source/Sources.gz": Operation not permitted (1)
+2017-04-04 12:24:53.554569 +0000 build-debian3: .d..tp..... jessie-testing/
+2017-04-04 12:24:53.554594 +0000 build-debian3: <f..t...... jessie-testing/InRelease
+2017-04-04 12:24:53.554629 +0000 build-debian3: .          2,494 100%    0.00kB/s    0:00:00  .          2,494 100%    0.00kB/s    0:00:00 (xfr#1, to-chk=10/12)
+2017-04-04 12:24:53.554655 +0000 build-debian3: <f..t...... jessie-testing/Release
+2017-04-04 12:24:53.554686 +0000 build-debian3: .          1,626 100%    1.55MB/s    0:00:00  .          1,626 100%    1.55MB/s    0:00:00 (xfr#2, to-chk=9/12)
+2017-04-04 12:24:53.554728 +0000 build-debian3: <f..t...... jessie-testing/Release.gpg
+2017-04-04 12:24:53.554763 +0000 build-debian3: .            819 100%  799.80kB/s    0:00:00  .            819 100%  799.80kB/s    0:00:00 (xfr#3, to-chk=8/12)
+2017-04-04 12:24:53.554788 +0000 build-debian3: .d...p..... jessie-testing/main/
+2017-04-04 12:24:53.554812 +0000 build-debian3: .d..tp..... jessie-testing/main/binary-amd64/
+2017-04-04 12:24:53.554839 +0000 build-debian3: <f..t...... jessie-testing/main/binary-amd64/Packages
+2017-04-04 12:24:53.554871 +0000 build-debian3: .            700   2%  683.59kB/s    0:00:00  .         27,186 100%   25.93MB/s    0:00:00 (xfr#4, to-chk=4/12)
+2017-04-04 12:24:53.554898 +0000 build-debian3: <f.st...... jessie-testing/main/binary-amd64/Packages.gz
+2017-04-04 12:24:53.554930 +0000 build-debian3: .          7,849 100%    7.49MB/s    0:00:00  .          7,849 100%    7.49MB/s    0:00:00 (xfr#5, to-chk=3/12)
+2017-04-04 12:24:53.554956 +0000 build-debian3: .f...p..... jessie-testing/main/binary-amd64/Release
+2017-04-04 12:24:53.554980 +0000 build-debian3: .d...p..... jessie-testing/main/source/
+2017-04-04 12:24:53.555005 +0000 build-debian3: .f...p..... jessie-testing/main/source/Release
+2017-04-04 12:24:53.555030 +0000 build-debian3: .f...p..... jessie-testing/main/source/Sources.gz
+2017-04-04 12:24:53.681806 +0000 build-debian3: rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1178) [sender=3.1.2]
+2017-04-04 12:24:53.681866 +0000 build-debian3: Syncing r3.1/vm/stretch...
+2017-04-04 12:24:53.932485 +0000 build-debian3: sending incremental file list
+2017-04-04 12:24:53.975340 +0000 build-debian3: rsync: failed to set times on "/pub/qubes/repo/deb/r3.1/vm/dists/stretch": Operation not permitted (1)
+2017-04-04 12:24:53.975409 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/stretch/main": Operation not permitted (1)
+2017-04-04 12:24:53.975452 +0000 build-debian3: rsync: failed to set times on "/pub/qubes/repo/deb/r3.1/vm/dists/stretch/main/binary-amd64": Operation not permitted (1)
+2017-04-04 12:24:53.975491 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/stretch/main/binary-amd64/Release": Operation not permitted (1)
+2017-04-04 12:24:53.975528 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/stretch/main/source": Operation not permitted (1)
+2017-04-04 12:24:53.975564 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/stretch/main/source/Release": Operation not permitted (1)
+2017-04-04 12:24:53.975600 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/stretch/main/source/Sources.gz": Operation not permitted (1)
+2017-04-04 12:24:53.975624 +0000 build-debian3: .d..tp..... stretch/
+2017-04-04 12:24:53.975646 +0000 build-debian3: .d...p..... stretch/main/
+2017-04-04 12:24:53.975669 +0000 build-debian3: .d..tp..... stretch/main/binary-amd64/
+2017-04-04 12:24:53.975694 +0000 build-debian3: .f...p..... stretch/main/binary-amd64/Release
+2017-04-04 12:24:53.975717 +0000 build-debian3: .d...p..... stretch/main/source/
+2017-04-04 12:24:53.975741 +0000 build-debian3: .f...p..... stretch/main/source/Release
+2017-04-04 12:24:53.975764 +0000 build-debian3: .f...p..... stretch/main/source/Sources.gz
+2017-04-04 12:24:54.696503 +0000 build-debian3: rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1178) [sender=3.1.2]
+2017-04-04 12:24:54.696879 +0000 build-debian3: Syncing r3.1/vm/stretch-securitytesting...
+2017-04-04 12:24:56.456078 +0000 build-debian3: sending incremental file list
+2017-04-04 12:24:56.618506 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/stretch-securitytesting": Operation not permitted (1)
+2017-04-04 12:24:56.618575 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/stretch-securitytesting/Release": Operation not permitted (1)
+2017-04-04 12:24:56.618632 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/stretch-securitytesting/main": Operation not permitted (1)
+2017-04-04 12:24:56.618666 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/stretch-securitytesting/main/binary-amd64": Operation not permitted (1)
+2017-04-04 12:24:56.618700 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/stretch-securitytesting/main/binary-amd64/Packages": Operation not permitted (1)
+2017-04-04 12:24:56.618739 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/stretch-securitytesting/main/binary-amd64/Packages.gz": Operation not permitted (1)
+2017-04-04 12:24:56.618774 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/stretch-securitytesting/main/binary-amd64/Release": Operation not permitted (1)
+2017-04-04 12:24:56.618808 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/stretch-securitytesting/main/source": Operation not permitted (1)
+2017-04-04 12:24:56.618842 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/stretch-securitytesting/main/source/Release": Operation not permitted (1)
+2017-04-04 12:24:56.618878 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/stretch-securitytesting/main/source/Sources.gz": Operation not permitted (1)
+2017-04-04 12:24:56.618903 +0000 build-debian3: .d...p..... stretch-securitytesting/
+2017-04-04 12:24:56.618927 +0000 build-debian3: .f...p..... stretch-securitytesting/Release
+2017-04-04 12:24:56.618951 +0000 build-debian3: .d...p..... stretch-securitytesting/main/
+2017-04-04 12:24:56.618977 +0000 build-debian3: .d...p..... stretch-securitytesting/main/binary-amd64/
+2017-04-04 12:24:56.619004 +0000 build-debian3: .f...p..... stretch-securitytesting/main/binary-amd64/Packages
+2017-04-04 12:24:56.619032 +0000 build-debian3: .f...p..... stretch-securitytesting/main/binary-amd64/Packages.gz
+2017-04-04 12:24:56.619059 +0000 build-debian3: .f...p..... stretch-securitytesting/main/binary-amd64/Release
+2017-04-04 12:24:56.619082 +0000 build-debian3: .d...p..... stretch-securitytesting/main/source/
+2017-04-04 12:24:56.619106 +0000 build-debian3: .f...p..... stretch-securitytesting/main/source/Release
+2017-04-04 12:24:56.619129 +0000 build-debian3: .f...p..... stretch-securitytesting/main/source/Sources.gz
+2017-04-04 12:24:56.759837 +0000 build-debian3: rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1178) [sender=3.1.2]
+2017-04-04 12:24:56.760698 +0000 build-debian3: Syncing r3.1/vm/stretch-testing...
+2017-04-04 12:24:56.962518 +0000 build-debian3: sending incremental file list
+2017-04-04 12:24:57.051568 +0000 build-debian3: rsync: failed to set times on "/pub/qubes/repo/deb/r3.1/vm/dists/stretch-testing": Operation not permitted (1)
+2017-04-04 12:24:57.051643 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/stretch-testing/main": Operation not permitted (1)
+2017-04-04 12:24:57.051685 +0000 build-debian3: rsync: failed to set times on "/pub/qubes/repo/deb/r3.1/vm/dists/stretch-testing/main/binary-amd64": Operation not permitted (1)
+2017-04-04 12:24:57.051725 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/stretch-testing/main/binary-amd64/Release": Operation not permitted (1)
+2017-04-04 12:24:57.051762 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/stretch-testing/main/source": Operation not permitted (1)
+2017-04-04 12:24:57.051799 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/stretch-testing/main/source/Release": Operation not permitted (1)
+2017-04-04 12:24:57.051833 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/stretch-testing/main/source/Sources.gz": Operation not permitted (1)
+2017-04-04 12:24:57.052143 +0000 build-debian3: .d..tp..... stretch-testing/
+2017-04-04 12:24:57.052182 +0000 build-debian3: <f..t...... stretch-testing/InRelease
+2017-04-04 12:24:57.052236 +0000 build-debian3: .          2,499 100%    0.00kB/s    0:00:00  .          2,499 100%    0.00kB/s    0:00:00 (xfr#1, to-chk=10/12)
+2017-04-04 12:24:57.052262 +0000 build-debian3: <f..t...... stretch-testing/Release
+2017-04-04 12:24:57.052294 +0000 build-debian3: .          1,631 100%    1.56MB/s    0:00:00  .          1,631 100%    1.56MB/s    0:00:00 (xfr#2, to-chk=9/12)
+2017-04-04 12:24:57.052318 +0000 build-debian3: <f..t...... stretch-testing/Release.gpg
+2017-04-04 12:24:57.052351 +0000 build-debian3: .            819 100%  799.80kB/s    0:00:00  .            819 100%  799.80kB/s    0:00:00 (xfr#3, to-chk=8/12)
+2017-04-04 12:24:57.052375 +0000 build-debian3: .d...p..... stretch-testing/main/
+2017-04-04 12:24:57.052401 +0000 build-debian3: .d..tp..... stretch-testing/main/binary-amd64/
+2017-04-04 12:24:57.052427 +0000 build-debian3: <f.st...... stretch-testing/main/binary-amd64/Packages
+2017-04-04 12:24:57.052829 +0000 build-debian3: .            700   1%  683.59kB/s    0:00:00  .         38,267 100%   36.49MB/s    0:00:00 (xfr#4, to-chk=4/12)
+2017-04-04 12:24:57.052882 +0000 build-debian3: <f.st...... stretch-testing/main/binary-amd64/Packages.gz
+2017-04-04 12:24:57.052928 +0000 build-debian3: .         10,721 100%   10.22MB/s    0:00:00  .         10,721 100%   10.22MB/s    0:00:00 (xfr#5, to-chk=3/12)
+2017-04-04 12:24:57.052957 +0000 build-debian3: .f...p..... stretch-testing/main/binary-amd64/Release
+2017-04-04 12:24:57.052983 +0000 build-debian3: .d...p..... stretch-testing/main/source/
+2017-04-04 12:24:57.053009 +0000 build-debian3: .f...p..... stretch-testing/main/source/Release
+2017-04-04 12:24:57.053037 +0000 build-debian3: .f...p..... stretch-testing/main/source/Sources.gz
+2017-04-04 12:24:57.263032 +0000 build-debian3: rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1178) [sender=3.1.2]
+2017-04-04 12:24:57.263512 +0000 build-debian3: Syncing r3.1/vm/wheezy...
+2017-04-04 12:24:57.472615 +0000 build-debian3: sending incremental file list
+2017-04-04 12:24:57.545532 +0000 build-debian3: rsync: failed to set times on "/pub/qubes/repo/deb/r3.1/vm/dists/wheezy": Operation not permitted (1)
+2017-04-04 12:24:57.545598 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/wheezy/Release": Operation not permitted (1)
+2017-04-04 12:24:57.545634 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/wheezy/main": Operation not permitted (1)
+2017-04-04 12:24:57.545668 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/wheezy/main/binary-amd64": Operation not permitted (1)
+2017-04-04 12:24:57.545702 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/wheezy/main/binary-amd64/Packages": Operation not permitted (1)
+2017-04-04 12:24:57.545734 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/wheezy/main/binary-amd64/Packages.gz": Operation not permitted (1)
+2017-04-04 12:24:57.545766 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/wheezy/main/binary-amd64/Release": Operation not permitted (1)
+2017-04-04 12:24:57.545796 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/wheezy/main/source": Operation not permitted (1)
+2017-04-04 12:24:57.545828 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/wheezy/main/source/Release": Operation not permitted (1)
+2017-04-04 12:24:57.545858 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/wheezy/main/source/Sources.gz": Operation not permitted (1)
+2017-04-04 12:24:57.545893 +0000 build-debian3: .d..tp..... wheezy/
+2017-04-04 12:24:57.545915 +0000 build-debian3: .f...p..... wheezy/Release
+2017-04-04 12:24:57.545935 +0000 build-debian3: .d...p..... wheezy/main/
+2017-04-04 12:24:57.545956 +0000 build-debian3: .d...p..... wheezy/main/binary-amd64/
+2017-04-04 12:24:57.545980 +0000 build-debian3: .f...p..... wheezy/main/binary-amd64/Packages
+2017-04-04 12:24:57.546003 +0000 build-debian3: .f...p..... wheezy/main/binary-amd64/Packages.gz
+2017-04-04 12:24:57.546025 +0000 build-debian3: .f...p..... wheezy/main/binary-amd64/Release
+2017-04-04 12:24:57.546045 +0000 build-debian3: .d...p..... wheezy/main/source/
+2017-04-04 12:24:57.546065 +0000 build-debian3: .f...p..... wheezy/main/source/Release
+2017-04-04 12:24:57.546087 +0000 build-debian3: .f...p..... wheezy/main/source/Sources.gz
+2017-04-04 12:24:57.689556 +0000 build-debian3: rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1178) [sender=3.1.2]
+2017-04-04 12:24:57.689710 +0000 build-debian3: Syncing r3.1/vm/wheezy-securitytesting...
+2017-04-04 12:24:57.905452 +0000 build-debian3: sending incremental file list
+2017-04-04 12:24:57.981508 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/wheezy-securitytesting": Operation not permitted (1)
+2017-04-04 12:24:57.981580 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/wheezy-securitytesting/Release": Operation not permitted (1)
+2017-04-04 12:24:57.981621 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/wheezy-securitytesting/main": Operation not permitted (1)
+2017-04-04 12:24:57.981658 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/wheezy-securitytesting/main/binary-amd64": Operation not permitted (1)
+2017-04-04 12:24:57.981694 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/wheezy-securitytesting/main/binary-amd64/Packages": Operation not permitted (1)
+2017-04-04 12:24:57.981730 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/wheezy-securitytesting/main/binary-amd64/Packages.gz": Operation not permitted (1)
+2017-04-04 12:24:57.981766 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/wheezy-securitytesting/main/binary-amd64/Release": Operation not permitted (1)
+2017-04-04 12:24:57.981802 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/wheezy-securitytesting/main/source": Operation not permitted (1)
+2017-04-04 12:24:57.981837 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/wheezy-securitytesting/main/source/Release": Operation not permitted (1)
+2017-04-04 12:24:57.981871 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/wheezy-securitytesting/main/source/Sources.gz": Operation not permitted (1)
+2017-04-04 12:24:57.981904 +0000 build-debian3: .d...p..... wheezy-securitytesting/
+2017-04-04 12:24:57.981927 +0000 build-debian3: .f...p..... wheezy-securitytesting/Release
+2017-04-04 12:24:57.981949 +0000 build-debian3: .d...p..... wheezy-securitytesting/main/
+2017-04-04 12:24:57.981975 +0000 build-debian3: .d...p..... wheezy-securitytesting/main/binary-amd64/
+2017-04-04 12:24:57.982001 +0000 build-debian3: .f...p..... wheezy-securitytesting/main/binary-amd64/Packages
+2017-04-04 12:24:57.982027 +0000 build-debian3: .f...p..... wheezy-securitytesting/main/binary-amd64/Packages.gz
+2017-04-04 12:24:57.982054 +0000 build-debian3: .f...p..... wheezy-securitytesting/main/binary-amd64/Release
+2017-04-04 12:24:57.982078 +0000 build-debian3: .d...p..... wheezy-securitytesting/main/source/
+2017-04-04 12:24:57.982102 +0000 build-debian3: .f...p..... wheezy-securitytesting/main/source/Release
+2017-04-04 12:24:57.982126 +0000 build-debian3: .f...p..... wheezy-securitytesting/main/source/Sources.gz
+2017-04-04 12:24:58.118171 +0000 build-debian3: rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1178) [sender=3.1.2]
+2017-04-04 12:24:58.118582 +0000 build-debian3: Syncing r3.1/vm/wheezy-testing...
+2017-04-04 12:24:58.328310 +0000 build-debian3: sending incremental file list
+2017-04-04 12:24:58.401566 +0000 build-debian3: rsync: failed to set times on "/pub/qubes/repo/deb/r3.1/vm/dists/wheezy-testing": Operation not permitted (1)
+2017-04-04 12:24:58.401636 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/wheezy-testing/Release": Operation not permitted (1)
+2017-04-04 12:24:58.401679 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/wheezy-testing/main": Operation not permitted (1)
+2017-04-04 12:24:58.401719 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/wheezy-testing/main/binary-amd64": Operation not permitted (1)
+2017-04-04 12:24:58.401758 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/wheezy-testing/main/binary-amd64/Packages": Operation not permitted (1)
+2017-04-04 12:24:58.401798 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/wheezy-testing/main/binary-amd64/Packages.gz": Operation not permitted (1)
+2017-04-04 12:24:58.401836 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/wheezy-testing/main/binary-amd64/Release": Operation not permitted (1)
+2017-04-04 12:24:58.401872 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/wheezy-testing/main/source": Operation not permitted (1)
+2017-04-04 12:24:58.401909 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/wheezy-testing/main/source/Release": Operation not permitted (1)
+2017-04-04 12:24:58.401945 +0000 build-debian3: rsync: failed to set permissions on "/pub/qubes/repo/deb/r3.1/vm/dists/wheezy-testing/main/source/Sources.gz": Operation not permitted (1)
+2017-04-04 12:24:58.401969 +0000 build-debian3: .d..tp..... wheezy-testing/
+2017-04-04 12:24:58.401994 +0000 build-debian3: <f..t...... wheezy-testing/InRelease
+2017-04-04 12:24:58.402128 +0000 build-debian3: .            700  28%    0.00kB/s    0:00:00  .          2,494 100%    1.71MB/s    0:00:00 (xfr#1, to-chk=10/12)
+2017-04-04 12:24:58.402178 +0000 build-debian3: .f...p..... wheezy-testing/Release
+2017-04-04 12:24:58.402226 +0000 build-debian3: <f..t...... wheezy-testing/Release.gpg
+2017-04-04 12:24:58.402260 +0000 build-debian3: .            819 100%  799.80kB/s    0:00:00  .            819 100%  799.80kB/s    0:00:00 (xfr#2, to-chk=8/12)
+2017-04-04 12:24:58.402284 +0000 build-debian3: .d...p..... wheezy-testing/main/
+2017-04-04 12:24:58.402307 +0000 build-debian3: .d...p..... wheezy-testing/main/binary-amd64/
+2017-04-04 12:24:58.402332 +0000 build-debian3: .f...p..... wheezy-testing/main/binary-amd64/Packages
+2017-04-04 12:24:58.402358 +0000 build-debian3: .f...p..... wheezy-testing/main/binary-amd64/Packages.gz
+2017-04-04 12:24:58.402384 +0000 build-debian3: .f...p..... wheezy-testing/main/binary-amd64/Release
+2017-04-04 12:24:58.402409 +0000 build-debian3: .d...p..... wheezy-testing/main/source/
+2017-04-04 12:24:58.402434 +0000 build-debian3: .f...p..... wheezy-testing/main/source/Release
+2017-04-04 12:24:58.402461 +0000 build-debian3: .f...p..... wheezy-testing/main/source/Sources.gz
+2017-04-04 12:24:58.607479 +0000 build-debian3: rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1178) [sender=3.1.2]
+2017-04-04 12:24:58.607831 +0000 build-debian3: ~/builder-r3.1/qubes-src/linux-deb
+2017-04-04 12:24:58.609657 +0000 build-debian3: Makefile:671: update target 'update-repo-current-testing' due to: internal-update-repo-current-testing.vm.jessie internal-update-repo-current-testing.vm.stretch post-update-repo-current-testing
+2017-04-04 12:24:58.609714 +0000 build-debian3: true
+2017-04-04 12:24:58.614177 +0000 build-debian3: > done
+2017-04-04 12:26:01.029886 +0000 > closing log
