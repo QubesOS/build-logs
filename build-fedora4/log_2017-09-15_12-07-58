@@ -1,0 +1,966 @@
+2017-09-15 12:07:58.990595 +0000 > starting log
+2017-09-15 12:07:58.993121 +0000 build-fedora4: > starting build with log
+2017-09-15 12:07:58.993220 +0000 build-fedora4: >> make args: DISTS_VM= fc24 fc25 DIST_DOM0= BUILD_LOGS_URL= core-agent-linux-vm-fc24=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2017-09-15_12-06-57 core-agent-linux-vm-fc25=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2017-09-15_12-07-26 GIT_URL_core_agent_linux=https://github.com/QubesOS/qubes-core-agent-linux sign-all update-repo-current-testing
+2017-09-15 12:07:58.993260 +0000 build-fedora4: >> MAKEFLAGS=
+2017-09-15 12:07:58.993290 +0000 build-fedora4: >> COMPONENTS=core-agent-linux
+2017-09-15 12:07:58.993334 +0000 build-fedora4: >> DISTS_VM=
+2017-09-15 12:07:58.993355 +0000 build-fedora4: >> DIST_DOM0=
+2017-09-15 12:07:58.993379 +0000 build-fedora4: >> qubes-builder 726965f3fcb332ec684e4ab6223ee9e8159109b2
+2017-09-15 12:07:58.993408 +0000 build-fedora4: >> qubes-builder/qubes-src/core-agent-linux abb6d2347002ad4f53ccd27432582b6191d099bf
+2017-09-15 12:07:58.993431 +0000 build-fedora4: !! pkgs/fc24/core-agent.spec.list
+2017-09-15 12:07:58.993453 +0000 build-fedora4: !! pkgs/fc24/core-vm-doc.spec.list
+2017-09-15 12:07:58.993475 +0000 build-fedora4: !! pkgs/fc24/core-vm.spec.list
+2017-09-15 12:07:58.993499 +0000 build-fedora4: !! pkgs/fc24/noarch/qubes-core-vm-doc-3.2.18-1.noarch.rpm
+2017-09-15 12:07:58.993525 +0000 build-fedora4: !! pkgs/fc24/x86_64/python2-dnf-plugins-qubes-hooks-3.2.18-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.993554 +0000 build-fedora4: !! pkgs/fc24/x86_64/python2-dnf-plugins-qubes-hooks-4.0.0-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.993580 +0000 build-fedora4: !! pkgs/fc24/x86_64/python2-dnf-plugins-qubes-hooks-4.0.1-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.993607 +0000 build-fedora4: !! pkgs/fc24/x86_64/python2-dnf-plugins-qubes-hooks-4.0.2-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.993633 +0000 build-fedora4: !! pkgs/fc24/x86_64/python2-dnf-plugins-qubes-hooks-4.0.3-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.993658 +0000 build-fedora4: !! pkgs/fc24/x86_64/python2-dnf-plugins-qubes-hooks-4.0.4-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.993684 +0000 build-fedora4: !! pkgs/fc24/x86_64/python2-dnf-plugins-qubes-hooks-4.0.5-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.993708 +0000 build-fedora4: !! pkgs/fc24/x86_64/python2-dnf-plugins-qubes-hooks-4.0.6-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.993731 +0000 build-fedora4: !! pkgs/fc24/x86_64/python2-dnf-plugins-qubes-hooks-4.0.7-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.993756 +0000 build-fedora4: !! pkgs/fc24/x86_64/python2-dnf-plugins-qubes-hooks-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.993782 +0000 build-fedora4: !! pkgs/fc24/x86_64/python3-dnf-plugins-qubes-hooks-3.2.18-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.993806 +0000 build-fedora4: !! pkgs/fc24/x86_64/python3-dnf-plugins-qubes-hooks-4.0.0-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.993830 +0000 build-fedora4: !! pkgs/fc24/x86_64/python3-dnf-plugins-qubes-hooks-4.0.1-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.993855 +0000 build-fedora4: !! pkgs/fc24/x86_64/python3-dnf-plugins-qubes-hooks-4.0.2-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.993881 +0000 build-fedora4: !! pkgs/fc24/x86_64/python3-dnf-plugins-qubes-hooks-4.0.3-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.993906 +0000 build-fedora4: !! pkgs/fc24/x86_64/python3-dnf-plugins-qubes-hooks-4.0.4-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.993930 +0000 build-fedora4: !! pkgs/fc24/x86_64/python3-dnf-plugins-qubes-hooks-4.0.5-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.993956 +0000 build-fedora4: !! pkgs/fc24/x86_64/python3-dnf-plugins-qubes-hooks-4.0.6-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.993982 +0000 build-fedora4: !! pkgs/fc24/x86_64/python3-dnf-plugins-qubes-hooks-4.0.7-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994005 +0000 build-fedora4: !! pkgs/fc24/x86_64/python3-dnf-plugins-qubes-hooks-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994029 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-4.0.0-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994052 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-4.0.1-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994093 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-4.0.2-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994117 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-4.0.3-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994140 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-4.0.4-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994162 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-4.0.5-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994185 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-4.0.6-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994207 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-4.0.7-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994229 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994252 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-debuginfo-4.0.0-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994277 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-debuginfo-4.0.1-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994319 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-debuginfo-4.0.2-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994343 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-debuginfo-4.0.3-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994368 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-debuginfo-4.0.4-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994392 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-debuginfo-4.0.5-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994416 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-debuginfo-4.0.6-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994441 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-debuginfo-4.0.7-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994464 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-debuginfo-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994487 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-dom0-updates-4.0.0-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994511 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-dom0-updates-4.0.1-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994534 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-dom0-updates-4.0.2-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994558 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-dom0-updates-4.0.3-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994582 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-dom0-updates-4.0.4-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994605 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-dom0-updates-4.0.5-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994629 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-dom0-updates-4.0.6-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994681 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-dom0-updates-4.0.7-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994709 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-dom0-updates-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994733 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-nautilus-4.0.0-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994758 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-nautilus-4.0.1-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994783 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-nautilus-4.0.2-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994807 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-nautilus-4.0.3-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994832 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-nautilus-4.0.4-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994855 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-nautilus-4.0.5-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994878 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-nautilus-4.0.6-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994903 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-nautilus-4.0.7-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994928 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-nautilus-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994954 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-network-manager-4.0.0-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.994994 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-network-manager-4.0.1-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.995022 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-network-manager-4.0.2-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.995050 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-network-manager-4.0.3-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.995076 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-network-manager-4.0.4-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.995101 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-network-manager-4.0.5-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.995128 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-network-manager-4.0.6-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.995155 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-network-manager-4.0.7-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.995181 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-network-manager-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.995206 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-networking-4.0.0-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.995229 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-networking-4.0.1-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.995254 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-networking-4.0.2-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.995279 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-networking-4.0.3-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.995322 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-networking-4.0.4-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.995347 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-networking-4.0.5-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.995372 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-networking-4.0.6-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.995396 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-networking-4.0.7-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.995420 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-networking-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.995445 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-passwordless-root-4.0.0-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.995470 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-passwordless-root-4.0.1-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.995494 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-passwordless-root-4.0.2-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.995630 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-passwordless-root-4.0.3-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.995662 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-passwordless-root-4.0.4-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.995687 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-passwordless-root-4.0.5-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.995712 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-passwordless-root-4.0.6-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.995736 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-passwordless-root-4.0.7-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.995762 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-passwordless-root-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.995786 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-qrexec-4.0.0-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.995810 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-qrexec-4.0.1-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.995832 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-qrexec-4.0.2-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.995856 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-qrexec-4.0.3-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.995878 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-qrexec-4.0.4-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.995902 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-qrexec-4.0.5-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.995928 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-qrexec-4.0.6-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.995952 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-qrexec-4.0.7-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.995993 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-qrexec-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.996018 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-systemd-4.0.0-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.996040 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-systemd-4.0.1-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.996062 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-systemd-4.0.2-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.996083 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-systemd-4.0.3-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.996104 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-systemd-4.0.4-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.996125 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-systemd-4.0.5-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.996146 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-systemd-4.0.6-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.996167 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-systemd-4.0.7-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.996188 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-systemd-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.996209 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-sysvinit-4.0.0-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.996246 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-sysvinit-4.0.1-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.996269 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-sysvinit-4.0.2-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.996291 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-sysvinit-4.0.3-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.996330 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-sysvinit-4.0.4-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.996353 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-sysvinit-4.0.5-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.996375 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-sysvinit-4.0.6-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.996396 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-sysvinit-4.0.7-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.996417 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-agent-sysvinit-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.996438 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-vm-3.2.18-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.996459 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-vm-debuginfo-3.2.18-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.996480 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-vm-systemd-3.2.18-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.996502 +0000 build-fedora4: !! pkgs/fc24/x86_64/qubes-core-vm-sysvinit-3.2.18-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.996519 +0000 build-fedora4: !! pkgs/fc25/core-agent.spec.list
+2017-09-15 12:07:58.996537 +0000 build-fedora4: !! pkgs/fc25/core-vm-doc.spec.list
+2017-09-15 12:07:58.996554 +0000 build-fedora4: !! pkgs/fc25/core-vm.spec.list
+2017-09-15 12:07:58.996575 +0000 build-fedora4: !! pkgs/fc25/noarch/qubes-core-vm-doc-3.2.18-1.noarch.rpm
+2017-09-15 12:07:58.996597 +0000 build-fedora4: !! pkgs/fc25/x86_64/python2-dnf-plugins-qubes-hooks-3.2.18-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.996697 +0000 build-fedora4: !! pkgs/fc25/x86_64/python2-dnf-plugins-qubes-hooks-4.0.0-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.996720 +0000 build-fedora4: !! pkgs/fc25/x86_64/python2-dnf-plugins-qubes-hooks-4.0.1-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.996746 +0000 build-fedora4: !! pkgs/fc25/x86_64/python2-dnf-plugins-qubes-hooks-4.0.2-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.996768 +0000 build-fedora4: !! pkgs/fc25/x86_64/python2-dnf-plugins-qubes-hooks-4.0.3-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.996791 +0000 build-fedora4: !! pkgs/fc25/x86_64/python2-dnf-plugins-qubes-hooks-4.0.4-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.996812 +0000 build-fedora4: !! pkgs/fc25/x86_64/python2-dnf-plugins-qubes-hooks-4.0.5-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.996834 +0000 build-fedora4: !! pkgs/fc25/x86_64/python2-dnf-plugins-qubes-hooks-4.0.6-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.996868 +0000 build-fedora4: !! pkgs/fc25/x86_64/python2-dnf-plugins-qubes-hooks-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.996894 +0000 build-fedora4: !! pkgs/fc25/x86_64/python2-dnf-plugins-qubes-hooks-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.996919 +0000 build-fedora4: !! pkgs/fc25/x86_64/python3-dnf-plugins-qubes-hooks-3.2.18-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.996945 +0000 build-fedora4: !! pkgs/fc25/x86_64/python3-dnf-plugins-qubes-hooks-4.0.0-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.996971 +0000 build-fedora4: !! pkgs/fc25/x86_64/python3-dnf-plugins-qubes-hooks-4.0.1-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.996994 +0000 build-fedora4: !! pkgs/fc25/x86_64/python3-dnf-plugins-qubes-hooks-4.0.2-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997018 +0000 build-fedora4: !! pkgs/fc25/x86_64/python3-dnf-plugins-qubes-hooks-4.0.3-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997040 +0000 build-fedora4: !! pkgs/fc25/x86_64/python3-dnf-plugins-qubes-hooks-4.0.4-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997064 +0000 build-fedora4: !! pkgs/fc25/x86_64/python3-dnf-plugins-qubes-hooks-4.0.5-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997086 +0000 build-fedora4: !! pkgs/fc25/x86_64/python3-dnf-plugins-qubes-hooks-4.0.6-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997111 +0000 build-fedora4: !! pkgs/fc25/x86_64/python3-dnf-plugins-qubes-hooks-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997135 +0000 build-fedora4: !! pkgs/fc25/x86_64/python3-dnf-plugins-qubes-hooks-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997157 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-4.0.0-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997180 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-4.0.1-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997203 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-4.0.2-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997225 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-4.0.3-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997248 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-4.0.4-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997272 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-4.0.5-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997294 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-4.0.6-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997333 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997355 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997378 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-debuginfo-4.0.0-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997403 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-debuginfo-4.0.1-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997427 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-debuginfo-4.0.2-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997453 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-debuginfo-4.0.3-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997477 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-debuginfo-4.0.4-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997502 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-debuginfo-4.0.5-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997526 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-debuginfo-4.0.6-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997550 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-debuginfo-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997574 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-debuginfo-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997599 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-dom0-updates-4.0.0-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997624 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-dom0-updates-4.0.1-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997648 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-dom0-updates-4.0.2-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997673 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-dom0-updates-4.0.3-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997697 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-dom0-updates-4.0.4-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997748 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-dom0-updates-4.0.5-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997774 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-dom0-updates-4.0.6-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997799 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-dom0-updates-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997823 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-dom0-updates-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997846 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-nautilus-4.0.0-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997870 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-nautilus-4.0.1-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997894 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-nautilus-4.0.2-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997917 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-nautilus-4.0.3-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997939 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-nautilus-4.0.4-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997961 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-nautilus-4.0.5-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.997982 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-nautilus-4.0.6-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998003 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-nautilus-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998023 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-nautilus-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998046 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-network-manager-4.0.0-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998071 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-network-manager-4.0.1-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998096 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-network-manager-4.0.2-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998205 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-network-manager-4.0.3-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998234 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-network-manager-4.0.4-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998258 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-network-manager-4.0.5-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998283 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-network-manager-4.0.6-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998325 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-network-manager-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998347 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-network-manager-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998369 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-networking-4.0.0-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998391 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-networking-4.0.1-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998413 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-networking-4.0.2-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998434 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-networking-4.0.3-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998455 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-networking-4.0.4-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998476 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-networking-4.0.5-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998497 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-networking-4.0.6-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998518 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-networking-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998539 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-networking-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998562 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-passwordless-root-4.0.0-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998584 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-passwordless-root-4.0.1-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998622 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-passwordless-root-4.0.2-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998646 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-passwordless-root-4.0.3-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998672 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-passwordless-root-4.0.4-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998697 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-passwordless-root-4.0.5-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998722 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-passwordless-root-4.0.6-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998747 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-passwordless-root-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998771 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-passwordless-root-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998796 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-qrexec-4.0.0-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998820 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-qrexec-4.0.1-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998844 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-qrexec-4.0.2-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998866 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-qrexec-4.0.3-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998890 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-qrexec-4.0.4-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998914 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-qrexec-4.0.5-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998937 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-qrexec-4.0.6-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998962 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-qrexec-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.998986 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-qrexec-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.999009 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-systemd-4.0.0-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.999034 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-systemd-4.0.1-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.999058 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-systemd-4.0.2-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.999082 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-systemd-4.0.3-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.999106 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-systemd-4.0.4-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.999129 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-systemd-4.0.5-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.999153 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-systemd-4.0.6-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.999176 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-systemd-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.999217 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-systemd-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.999243 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-sysvinit-4.0.0-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.999268 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-sysvinit-4.0.1-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.999291 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-sysvinit-4.0.2-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.999335 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-sysvinit-4.0.3-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.999362 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-sysvinit-4.0.4-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.999388 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-sysvinit-4.0.5-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.999413 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-sysvinit-4.0.6-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.999440 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-sysvinit-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.999466 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-agent-sysvinit-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.999492 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-vm-3.2.18-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.999531 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-vm-debuginfo-3.2.18-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.999559 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-vm-systemd-3.2.18-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.999587 +0000 build-fedora4: !! pkgs/fc25/x86_64/qubes-core-vm-sysvinit-3.2.18-1.fc25.x86_64.rpm
+2017-09-15 12:07:58.999623 +0000 build-fedora4: 492a4330fee8bbaeb4c61ed955dbc4c5e9b5b078b78d77f99391c376b9515b4c1e7710f1f5dfd72337b3d94ba57a46c846fb079df2721b1b5b92908bc9d7675a  pkgs/fc24/core-agent.spec.list
+2017-09-15 12:07:58.999662 +0000 build-fedora4: 9733c1373cb32f633a9a2e8ef22d33e435a83196567cecda75933a94a621a56c2902d85bbd7006293d8b34ca29f1c35d9fb210cefe5f6a3ab54f483a61e1e2eb  pkgs/fc24/core-vm-doc.spec.list
+2017-09-15 12:07:58.999697 +0000 build-fedora4: f1e0de2e6e9c79d1bbfaed1121f14552d461b3dcc9fe7b8d4f732857f5e0a4ce0df6e4b1f41c7f9f2569c4f16d90f0f619351f8b3c81dd51fcd5e76afcb7119b  pkgs/fc24/core-vm.spec.list
+2017-09-15 12:07:58.999735 +0000 build-fedora4: dbb8f2ac61d72dce21ffc710cb13be64f9bc6017f071d31b9a32621844c7b0946d080334ab6eb0210b440145868329a46b7102c0836c8e7faad709c0b00e0f03  pkgs/fc24/noarch/qubes-core-vm-doc-3.2.18-1.noarch.rpm
+2017-09-15 12:07:58.999778 +0000 build-fedora4: bd90813faa5eb43157424b44cf305b41a06be761bb5b0a0bbf9d95b74bf0f8a56fb76e56a31680be6f0d9135287f4ef85eba01e85be61b70d66031b449cd48bc  pkgs/fc24/x86_64/python2-dnf-plugins-qubes-hooks-3.2.18-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.999820 +0000 build-fedora4: 5cd9cc3b103efc5bbe03cb786a9346b11117011084b0e17bc4da5f0f3a702c78a55e1928647d2183a55578704464c11edeff2b1dec3e4c08b320d19fceda6dc0  pkgs/fc24/x86_64/python2-dnf-plugins-qubes-hooks-4.0.0-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.999867 +0000 build-fedora4: f2b11c89c0f5cd582eb8b2bbe3e1377a015d557386a297ace70299358029b55545236b8283c21b679a4282b692c335fa4569eb19d093683c42e5e7623775917f  pkgs/fc24/x86_64/python2-dnf-plugins-qubes-hooks-4.0.1-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.999910 +0000 build-fedora4: 3ed96d4581e6a682cdb684e9fcb61c315bcec7e88e083af5376f10198a25ca8072b4e573d41c3b666cb8b25f16be5c8fe80995c2612c2a8fd337eeee13015403  pkgs/fc24/x86_64/python2-dnf-plugins-qubes-hooks-4.0.2-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.999954 +0000 build-fedora4: 055910b226bed1cdbde9baa5faa5ca9f21b10c9930fe0cf8a4b4dac8fe6cc30359de745e05d91029a266eb2a0c58d5e7bf51984c47d833608b5639190b29354e  pkgs/fc24/x86_64/python2-dnf-plugins-qubes-hooks-4.0.3-1.fc24.x86_64.rpm
+2017-09-15 12:07:58.999995 +0000 build-fedora4: 53b6f7639914f604ad4fbf5412b5445ac6de94cf1b7ac51031136a5ed0537200744978e6e0b08257c5cef2e9f32118c81fcdfc135b647e31ecda474b3e7f02a5  pkgs/fc24/x86_64/python2-dnf-plugins-qubes-hooks-4.0.4-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.000034 +0000 build-fedora4: 854a32bd0547aa0f64510505a4c686f54855c6eec238fa54bf4ffe5faf5c556ca17325931fef1fc40263d5c578cb9dae5dfe7e4df9b9ef1f803b83e0d90e000f  pkgs/fc24/x86_64/python2-dnf-plugins-qubes-hooks-4.0.5-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.000074 +0000 build-fedora4: 650bf5ff598c8b768538187e7acf83f89ed4bb8f7032e24d334a8b9d011f7442d0e29469205c638eb4fc0905f30cee22d09b4762f296f81934e2444d5f978d53  pkgs/fc24/x86_64/python2-dnf-plugins-qubes-hooks-4.0.6-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.000113 +0000 build-fedora4: b9d53fb13c78a70c907c0a127f059cb4a8c74f5f6e08adb1c939906808c5cc9990f249c4f6f8de3788a2d2f53932caa23027f96deb8b5a3fd21714e7216c37aa  pkgs/fc24/x86_64/python2-dnf-plugins-qubes-hooks-4.0.7-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.000151 +0000 build-fedora4: 4dacd6f95d78bd64889c9bd38aba7f310adebbc3e0438fe0369fc75a907793fc420e3452866c8256378bc7d30fb36e9998a89da3d0b52f9a74b30ccf90bcc658  pkgs/fc24/x86_64/python2-dnf-plugins-qubes-hooks-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.000190 +0000 build-fedora4: eb600380afc09e7b64e428bf1e26c58752da919542fb8b2d979df1b9a129953f16dd355c10b0d32b1a896c1269c26cd8865c65d8c25a8da0ae670be0b2c3d20b  pkgs/fc24/x86_64/python3-dnf-plugins-qubes-hooks-3.2.18-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.000228 +0000 build-fedora4: 7571421459b2fdce1090881fc670aff4e2d04411a33b8da99b23227bc3289df35c9f23f870d05eadbbb1660c579b439a7676fcf8dc0c9b1dc46014fdba0a0f44  pkgs/fc24/x86_64/python3-dnf-plugins-qubes-hooks-4.0.0-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.000297 +0000 build-fedora4: 20ce9d14515189720c23d6c0a696dd048e1e173b9963060134d27960ffc351184592cfef76fe088a3bfb5deb81f6b0fce707663ec56d7f489950957f3b2f9e86  pkgs/fc24/x86_64/python3-dnf-plugins-qubes-hooks-4.0.1-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.000418 +0000 build-fedora4: 2a3a48e58b1803adb0224d834634d32dc6a4cc5c47f99903ffd618ef0c7a6722690139252d28a51fc1fe47d4053de2c067ba47844704de3cc3912be3a0c2dc53  pkgs/fc24/x86_64/python3-dnf-plugins-qubes-hooks-4.0.2-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.000461 +0000 build-fedora4: 15498f6b83aa24e0fe9eaff1bfbcdf8269964d4933361628270e6d00d651a7a4e6ae33a8812f37da6ebbfcfdd7c20e418786d61b50ee0045cadcf759c21dbab8  pkgs/fc24/x86_64/python3-dnf-plugins-qubes-hooks-4.0.3-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.000503 +0000 build-fedora4: 2632cc5ff79c70a7d54dd75eb92be5047c08025b564f751b527858117f6ba038e235fabcd1b3c96751b1fb56884b2a8911cb88f409730de6b84efdb7517360b0  pkgs/fc24/x86_64/python3-dnf-plugins-qubes-hooks-4.0.4-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.000544 +0000 build-fedora4: 5f6434384727a357a04bf255403ac4742a54c6ab01cc2dfc4065af7ce7dc265cc03b8c18b04e3464746dcb4a2a544ebe1bfc04e055e46baabaf44e378e6c0955  pkgs/fc24/x86_64/python3-dnf-plugins-qubes-hooks-4.0.5-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.000582 +0000 build-fedora4: 97e93c6f52cc868dbc5ec9ea6a1888845d6867d136973301d0891a0896954adaf0eb37c36aa93c757555dad744df60c9635bb3851f0779c1b682a8be31ebd401  pkgs/fc24/x86_64/python3-dnf-plugins-qubes-hooks-4.0.6-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.000620 +0000 build-fedora4: 41f328bd7ec148396d4795c7d23bad741132b70bc22462252f5bdb8a97f60b1864204e5365fab1a5ad0f29487d1c2456f1458889a6ae44cba8065422dcdb77b1  pkgs/fc24/x86_64/python3-dnf-plugins-qubes-hooks-4.0.7-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.000657 +0000 build-fedora4: 09d315e743a7c80e25e71e5fe77106bdc720cca5f612bbab16b9b8157b4916447805256c3ce15a92f51a236115d86927fe1c3bb73bb2b41721a9fa6dceae5128  pkgs/fc24/x86_64/python3-dnf-plugins-qubes-hooks-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.000696 +0000 build-fedora4: 017e32fe7cd64fc786ca9febb3c21007e0df3526476f9ff65fd137b6d37421eae3aa680d3aa42a6cfd9bdc2b75c0a7d24b08b97453dda66829f54ff71bcb2b19  pkgs/fc24/x86_64/qubes-core-agent-4.0.0-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.000735 +0000 build-fedora4: 0a8858844848ac19f9fd4adb3e732f96343b431b476dbaba13712933ec515e7a13b6f36e0f3e7e54f156e7d8559f11d86715a26459f8f2992889d6ec9e925146  pkgs/fc24/x86_64/qubes-core-agent-4.0.1-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.000776 +0000 build-fedora4: 16ad342f6eb1f46a434cccbb9cb9ffb71744afdb114a3c70d3f161e3a280fa944de2ee2de380083b0f03a24eee1cdbf365063845c34607c8aed841f74efe2ac2  pkgs/fc24/x86_64/qubes-core-agent-4.0.2-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.000815 +0000 build-fedora4: 1988f676706a1c732e11151a4b066a9cc04b63fb32d2c3e1b59a5a0e88ba539f08859746f31560202c57cb44b9eab5d33d57f7c1d54fbcc6d3172b8fe3ea455b  pkgs/fc24/x86_64/qubes-core-agent-4.0.3-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.000852 +0000 build-fedora4: 553ed7f9faf0968f61f511a5e865d95e3737fa08acec4dc435472c8f428e03848b6ec733cf0639df5f870bd1ac841f3e2d53760a95c259e0f9806f5e5f5705d7  pkgs/fc24/x86_64/qubes-core-agent-4.0.4-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.000890 +0000 build-fedora4: af23fcf065bca86d1891c58268b9c55871c26b793589d00bcf09a9d63d9d3846dac790f8bc64d5458999ff4b510681f1d477457cfe54eaa6703bad2b0a420d81  pkgs/fc24/x86_64/qubes-core-agent-4.0.5-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.000928 +0000 build-fedora4: d306264e6e038fae4cceb59c75eafddbf97fc0833095855ac955339d72959b440ba222860ecfc3e331916292d610993acbeae296424e875ba97d2aefbb04b15c  pkgs/fc24/x86_64/qubes-core-agent-4.0.6-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.000966 +0000 build-fedora4: 9f33d6a93059364e2d9f20519f2d14e30a4d3be2475d872a57bfb4fd03281e5b70edc209e8c73fcad5640a87dff09584e5d49fd19d75f63595672c5198c32b0b  pkgs/fc24/x86_64/qubes-core-agent-4.0.7-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.001004 +0000 build-fedora4: 52d0536a376e926178fa3daa7c041094fac8beb124191c004bf3bd1153bf4ad041d33102fca72c51b6325714992728c2f6d042d746e59816097200de3b14d215  pkgs/fc24/x86_64/qubes-core-agent-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.001053 +0000 build-fedora4: 6e4e19ce82345026935bd9ee74f2cbd4817356b99cd2944249ef34aae53faab0f33cd0faf8a21a4be691b4042c8bbc1c4c4a84b03534aa27687c84685f0f997e  pkgs/fc24/x86_64/qubes-core-agent-debuginfo-4.0.0-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.001092 +0000 build-fedora4: c0b34ad05e5537085c94e1f0c6673dffe1deb36a7422597128d717f2844cb3fc388773289df7ae9d933a802f99c019529a633a86abb22e79d24c0b36442b8a76  pkgs/fc24/x86_64/qubes-core-agent-debuginfo-4.0.1-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.001131 +0000 build-fedora4: 3483715633ceae3803b669acdbf14468d70b26758e51bdfdd56e4d4edc345792a7a76e4bcbee7d5bc5806938574423c3befda690ba630218e341e56f9eed956a  pkgs/fc24/x86_64/qubes-core-agent-debuginfo-4.0.2-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.001170 +0000 build-fedora4: c79ef87f91f32a9fa5992377eb2b53e83bbc1bdeba9f1481790c17d7607fb271167eb3dde0d698b22c3b20c649541fdfd73905580afea6a692147fe5ddba28da  pkgs/fc24/x86_64/qubes-core-agent-debuginfo-4.0.3-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.001222 +0000 build-fedora4: 283fb109d75e0b16aeb549e6382a0b3884f0d8b02b3a93aff7273e3aba80812e9249fc4265d8e35a8897c0ca7899374de57e7af9309e460a12c8128c48794f6d  pkgs/fc24/x86_64/qubes-core-agent-debuginfo-4.0.4-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.001262 +0000 build-fedora4: 30435aa691f13350aa82c1bcbbcbac467ded29ea3ea5e38769912fd17fe5c00065a53b9b77b910565da4c502bd95484f8fa83493cef25f04a7f5438df9ce937f  pkgs/fc24/x86_64/qubes-core-agent-debuginfo-4.0.5-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.001315 +0000 build-fedora4: c7d70201fbe5d6b66068b6d4507801c2de22910709f554bac86237185c65c2b75e3ed92d2659c9e4a6ded7fe05fe38e51ee36c64f47c1ed18ebf4f0cf14532b1  pkgs/fc24/x86_64/qubes-core-agent-debuginfo-4.0.6-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.001359 +0000 build-fedora4: e5c48b6a24effee357405fe0cff527b2d8fa07d1314bb0738043c4d23ba87375c0e1a16db9dd97d0c00187290e2b0e9eaadc61d2eeca35fe0aa0011ec701e301  pkgs/fc24/x86_64/qubes-core-agent-debuginfo-4.0.7-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.001394 +0000 build-fedora4: 75bf77453c23de511751dc703e1f2ad94d48fd6d3e49fad427052cb75dc94a1e101d17a89601bcafb97b9ebcb35fc9980d60997f5a75f1761eb79d4e6b664761  pkgs/fc24/x86_64/qubes-core-agent-debuginfo-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.001433 +0000 build-fedora4: 2177e17cd626929c90efa0e43aef72f5fdb0ced3d9c1439789890cbf93b8a12d9a535a2cf4decd9d99c867559f2bd081ed025f7d8362e6c6fd9c1d6a65ed043d  pkgs/fc24/x86_64/qubes-core-agent-dom0-updates-4.0.0-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.001471 +0000 build-fedora4: f9f27fc59cfb86d5ac9a1a0a7f688140811aaaf4e962a11af0c71fa84d4f4e7b502f9565e2c020ea68e99f7489d46d6b8e5c93b553e89bfb4766ac0b769cb114  pkgs/fc24/x86_64/qubes-core-agent-dom0-updates-4.0.1-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.001510 +0000 build-fedora4: 572bfdede7a6a8f494a065ffc0f62133277456ee917eb25babbcd5236b9831892952bc72c0a8bfa999d68229be2b5c9ee615cac356338654b0597c35c7454a07  pkgs/fc24/x86_64/qubes-core-agent-dom0-updates-4.0.2-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.001550 +0000 build-fedora4: 25a6c15142e86d5a1abd2db7dc7052546cf1536b02460c160344f9f08164316b36a5d57f62e3faa315c0b2a740f426aea55037a9e4aad57d97a0f01561d90128  pkgs/fc24/x86_64/qubes-core-agent-dom0-updates-4.0.3-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.001590 +0000 build-fedora4: d4ac704188c23037240be1d2e224e451b8687e92ea943bfc83494625b51cc271460393c17c592182145f4eee693f434de893f5e6cd1d51d39d91ca9c065c6533  pkgs/fc24/x86_64/qubes-core-agent-dom0-updates-4.0.4-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.001629 +0000 build-fedora4: c75d9c2d4f66822459ce483cc98966f6292e44b50d5b5e4716e13a419d7230f21881b10442f584cad74181c343a3311d220226a376b3e3fff30236d4e1170547  pkgs/fc24/x86_64/qubes-core-agent-dom0-updates-4.0.5-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.001668 +0000 build-fedora4: a08fe44192df80b24ee52abe199640b2c56a68861697097eedb33b5a0710872f0ab7c3290e75d26ee05aceb640c72f2450407bd23dcf10d73a09746eb46c445b  pkgs/fc24/x86_64/qubes-core-agent-dom0-updates-4.0.6-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.001714 +0000 build-fedora4: 67030381004266e32319c6f4c43f1dc2f4a3c74059aab7aa86f179f779d4b202be2da7d6aa536f79c4f0798351fb4e530d7b9bafee89944ba7c8ca7eaf005c52  pkgs/fc24/x86_64/qubes-core-agent-dom0-updates-4.0.7-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.001820 +0000 build-fedora4: bffcbda69a3eedc48bd3ca7ae0ed79117ac7c9923cfad899911c273f377e854eaf29bb09fea7994053991ed5560104a6b3911565e4b2983f7fd84a8bce94c716  pkgs/fc24/x86_64/qubes-core-agent-dom0-updates-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.001863 +0000 build-fedora4: 5e234b010fd2866dbb53dec4e599024c6b88af2eabd5a7a63ad740119d7b6492d32aef406eecfe2e5d2b8fbad5d0679939312caa8912262ba17481e5188bb2ca  pkgs/fc24/x86_64/qubes-core-agent-nautilus-4.0.0-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.001905 +0000 build-fedora4: d7d3e2bd84339a2cceec2b39a11452dde3f302f2eff22246c53f8a7b7383f610cd95ecdf3fca617dc030a72f949e81afc605262b3adc62b66ab09c41f4dcaace  pkgs/fc24/x86_64/qubes-core-agent-nautilus-4.0.1-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.001945 +0000 build-fedora4: da0b804145f408b09db5dfec9be95be90b340cfab0fb3b5d0a01dc01aea0e931959ff525b3f3cd2e25b0b427393ebb6ff02aeb755066de840f7fcb691854b984  pkgs/fc24/x86_64/qubes-core-agent-nautilus-4.0.2-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.001986 +0000 build-fedora4: b6c47b4c0228b2924aa1b9df17867c2dea54f11b264f81600342bf44ad8b79f0b64d49311702650d8e18bd88a33c67fa8d67f24db98f5298e602e9b03949476c  pkgs/fc24/x86_64/qubes-core-agent-nautilus-4.0.3-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.002025 +0000 build-fedora4: 2549501000a1386cea81ba7503c83ff173c4800c893be386e5b05de96dfa73e8809cba32fa13a6d95a99055e995d658fb6900966012847fa52be13d72a5f2346  pkgs/fc24/x86_64/qubes-core-agent-nautilus-4.0.4-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.002065 +0000 build-fedora4: add5ba167b45e18ba8bbea3c501c17465e176aeb9564a6470e309e895ad432fab5d1ee47737b31a02afebda15dfbf0927bb4be9d2a530f727f1f60f0c1fac560  pkgs/fc24/x86_64/qubes-core-agent-nautilus-4.0.5-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.002118 +0000 build-fedora4: cdf4fa8b31e2cac0aedf02e40937694757227d2ef2ec337ae90f43dcd3acf14b9005afb543a859d9244e558c0c008b916b1055fdce9e9eae2d2e4085812510d7  pkgs/fc24/x86_64/qubes-core-agent-nautilus-4.0.6-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.002159 +0000 build-fedora4: 1d6cb8fb3d5108b8b98f5dee2be9244415f0f19fcc9c97025c652078f445a105f4c09ae91cbf8f47f838c7e6035f1e513e970a51e8c93855c5c470960acaa77d  pkgs/fc24/x86_64/qubes-core-agent-nautilus-4.0.7-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.002198 +0000 build-fedora4: 98f34d78dc1f7b7aeb72674af80505e1c467d6d9ca85bb10e27da82de246385884e9e1c7c2eb6db00aa0fbce4cfb583f54a07ba6f4bd262ec45ea348bccbb121  pkgs/fc24/x86_64/qubes-core-agent-nautilus-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.002238 +0000 build-fedora4: 63dcbb2f923abcdfc63da8b062b3c09989137e2d628265a7071a0cb4d07e5efbe6d8faca6bbd52a9a8fd8de7b9fd8e3b273c9ed6eecdf98d58498a60cde131a8  pkgs/fc24/x86_64/qubes-core-agent-network-manager-4.0.0-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.002280 +0000 build-fedora4: 5af1f03fb8b7cba2e8e028f7c5bafd31be259c02c128a88bcc9110560e2df15a877f009dd7017d42cc802de7ba554387d94679f895e9a446ea6136d5f3425645  pkgs/fc24/x86_64/qubes-core-agent-network-manager-4.0.1-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.002341 +0000 build-fedora4: 9cad6954a504d0f2af0e3bd766300139a0438268bfa7f841ecb38a3e2ea17951edb7a94d8fa9bdcc0b1fdcd80cd83ad12fd0e0722afbf7fba5d755f466d8d18f  pkgs/fc24/x86_64/qubes-core-agent-network-manager-4.0.2-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.002385 +0000 build-fedora4: 17a2f2397f1cecd70b2feabf06bdb18a3bb428a3697c26c70aa8f7f3359682be852b2f192953562dce86ce3b116e6477e64dd697064f1e2fa8a1a613ec2f473f  pkgs/fc24/x86_64/qubes-core-agent-network-manager-4.0.3-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.002427 +0000 build-fedora4: e257b564d312bae19ab897a94871332a33c89f7bb81b3e5cde9db71255352a698896f7bca6c006b853af017dd38e1b25559542e31b8e1cb4dbe8b24b42635e1f  pkgs/fc24/x86_64/qubes-core-agent-network-manager-4.0.4-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.002469 +0000 build-fedora4: 0bfd48249af21719efdf849709210c7ec9fdd9f309a80d3752541a02eedaba1d190bbd0a0b0296e3af53368e0985e79c28d9e6de1c4a2dfdfafb50d83c9cdb2c  pkgs/fc24/x86_64/qubes-core-agent-network-manager-4.0.5-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.002520 +0000 build-fedora4: 63e8b4b7d10bcddfe893da2fb954a8eb4c654a1d3275c04c923fc23b220bd21be7b41c67b0ebccfec83eaf104f46b3024e235130a2fa461b247dc27770793d8a  pkgs/fc24/x86_64/qubes-core-agent-network-manager-4.0.6-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.002558 +0000 build-fedora4: 72b107cac65d2726376a70e5ec81656d42e7ac22a61f3dd8af94e3ba6340eecef1df6f483a18faa7d1ea1bda98b148c13e9a5cb941f7eae7fadd5920fc5abcfd  pkgs/fc24/x86_64/qubes-core-agent-network-manager-4.0.7-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.002595 +0000 build-fedora4: 2920befad4cd2e26fec89777a9fe730ed87709025fe6879c062d1406e671ac0dd60273f5f553068c1a3ae20f0b56318b0e2b67c673d1107ed1d82de438b58537  pkgs/fc24/x86_64/qubes-core-agent-network-manager-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.002633 +0000 build-fedora4: 527d53b654bf1dfbd9dcc35e5da3a3ccb6a3ad94fd3347be0bcd074eca6d28a7b7119618d39cb47d6624043ddb0d7e47e0f8b685e02c394ddcf9905acda5db26  pkgs/fc24/x86_64/qubes-core-agent-networking-4.0.0-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.002671 +0000 build-fedora4: f5db9933d54b26d07271e95228f55c15a83f9ec5db38a640bb21d6e9f15537fc4ee55f23014116a9510f295804b971222357c509a91287f9534d804e7cb8d272  pkgs/fc24/x86_64/qubes-core-agent-networking-4.0.1-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.002712 +0000 build-fedora4: 762ef1d2b92513cc50b1212b113ec2ed2182b6ee0c972205b902373ab12b46cc31d679f8ba88df1bc778f1049c82b902487c96dbe9dc19aa97ab87fcaa212b04  pkgs/fc24/x86_64/qubes-core-agent-networking-4.0.2-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.002751 +0000 build-fedora4: 7b510c6da42ea3431f62bab4329730ac1bce06c6a06729e1f283c2753e35f53c26577aa503a304bb5c646e4dd9627e4ae5cace8da5fd77fe4327af929cf663a5  pkgs/fc24/x86_64/qubes-core-agent-networking-4.0.3-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.002791 +0000 build-fedora4: 3c7d9073976d09508588eb41188528daafd097740a9e7fa2672f95ea5c0e4153f494dfb5ec7a84f86a9113f1d8302d96cc4ad7f030f574937a64e8142cee7c0d  pkgs/fc24/x86_64/qubes-core-agent-networking-4.0.4-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.002832 +0000 build-fedora4: 7220c40942286a5cf6842b715dac5b295408ba6eda74f8fe447d3226dd4d6d2f7775957ac00b7bcb7ab9faa543d0d7e8622dfb7f2c168a8bd798ac968c6d4b30  pkgs/fc24/x86_64/qubes-core-agent-networking-4.0.5-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.002873 +0000 build-fedora4: 40b62487fa0f33847ffb928969d5c25683ed3c288545cfdd660a253fd61422548f510242fa6149aa278aff22cae2451bad0ee8b2aa9d31396d9ea6ee169b4955  pkgs/fc24/x86_64/qubes-core-agent-networking-4.0.6-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.002912 +0000 build-fedora4: ac5bb5503d2cbce486a6dc7d2f0e9703f2af3bee3024a94e3d1c377c64ee297f41fae099b0e3f3f18cf583e2d9c5f0bdfd0a9bc38b9e6c4f8bf72dde1d19314d  pkgs/fc24/x86_64/qubes-core-agent-networking-4.0.7-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.002953 +0000 build-fedora4: 45ee0b5f5f98a48b4cd13fa1510cc6282db3e0541277e1fa20d40961a503dad1fc6c6b850a6f8633b032ee62a88152308f65b003d10c050acd1fffedfde68525  pkgs/fc24/x86_64/qubes-core-agent-networking-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.003008 +0000 build-fedora4: 0fc3a878bc524c544f979bf0887ceae860aff3156c40fa28ab6e7c7c4265384c294e115c0daec605fe7d4103237e9216ccae3648cddb30c9bd121402fd902598  pkgs/fc24/x86_64/qubes-core-agent-passwordless-root-4.0.0-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.003049 +0000 build-fedora4: 145eec15e19a3833613b4060267050c7147d9e1b0c1af45209db481d9f35d2f90a15526c9d834419729cb742b7ea69766acd5ca87cb3b72d1ac86c49a8b1050f  pkgs/fc24/x86_64/qubes-core-agent-passwordless-root-4.0.1-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.003087 +0000 build-fedora4: 84a4ca18e2b5060554e74f0b7bef922c6bd9a34c56bf4caabf30d9a592971123d4b6cb40e1d19c3ecd7e656595525a8634bc7a64574c1675a7f3abb981280129  pkgs/fc24/x86_64/qubes-core-agent-passwordless-root-4.0.2-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.003126 +0000 build-fedora4: 223e6103a2a9326b1f0fe11a4d66623dc75fa9c8259c8e4f088da51dde171204d6d78eca749c24b4960f513ad24a671cd80ce9bf2af2bb08331e35ee8cdc8567  pkgs/fc24/x86_64/qubes-core-agent-passwordless-root-4.0.3-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.003179 +0000 build-fedora4: 10de6eed5871ef28e96609f95741d4c567b9edc1030b6ca691283c10da1a2152b337c7e355a6d50cf720013310d136a3d066c2899706cca9f77ed0cd425bd888  pkgs/fc24/x86_64/qubes-core-agent-passwordless-root-4.0.4-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.003218 +0000 build-fedora4: 7bc04dae7cdd958e82934569d5a5aabb454464bccae20e7679d7cac630c6213096f99854777f393a6af68d8be50cc0f99c467d6cafdc9bff173a6d0dbac8a5dd  pkgs/fc24/x86_64/qubes-core-agent-passwordless-root-4.0.5-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.003259 +0000 build-fedora4: 1c01e5e7064b56d84d818cfdb668bfe806226cdd1d999a72beb8b880cdbf6f612c4646f3e112d90d85183411f75b2e79f50361ed4f3c1f0f566fbd3837e1cb41  pkgs/fc24/x86_64/qubes-core-agent-passwordless-root-4.0.6-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.003321 +0000 build-fedora4: 82dd8d802429e0440e334e7e066b2efcec28e4fb80309b99bc599c0e24b8abca5172e4706c4b037989eebd974cc0983d255c74a4a6e771c94969f5fa69d8778f  pkgs/fc24/x86_64/qubes-core-agent-passwordless-root-4.0.7-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.003364 +0000 build-fedora4: 943464e1f2ed0c1e7483b3e58678be7d86f23062ff2edacff4479f9725ffd93910c405290c063df37b66d19454668e26bad221539dfe9891f701657c8bf30a53  pkgs/fc24/x86_64/qubes-core-agent-passwordless-root-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.003404 +0000 build-fedora4: 32780c5fd796684a3c874b06bc85e628b0318445f3f2cae73bc723168e6ebdd916389c8cda1f337db17e842b8b3942ab93b9941054d6636d58b0b0f2b896bf30  pkgs/fc24/x86_64/qubes-core-agent-qrexec-4.0.0-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.003443 +0000 build-fedora4: 1c2db7f6a479fb80599724f3541e0d3df790dbe2bf347c16304dc3ad00dfa8baa2d3ca678d23523ff831e2a5d0d066522e034071538579ab2c0231cdf5bf9afd  pkgs/fc24/x86_64/qubes-core-agent-qrexec-4.0.1-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.003483 +0000 build-fedora4: 9af5eb9111f8c3c2fd4d8d983f8932532d114b938548489a071edb1c33b7514e1c2653a806013caafbea90a290d86cae68b16d2e94750749b6e373e6fe0f99aa  pkgs/fc24/x86_64/qubes-core-agent-qrexec-4.0.2-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.003522 +0000 build-fedora4: ec4b75d27a4f7b6867461416af9bb4a3483588e8adb8a3911406b0615bdf215ff0e6a4871b6126da7f9d63677a4c84a857a2dfac87ce0a8578b5a78a1da555f3  pkgs/fc24/x86_64/qubes-core-agent-qrexec-4.0.3-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.003562 +0000 build-fedora4: 334ed2a69962748149660013ef427b5e671258007f630eaee1cfcba54cf613010ef49e847e69d28dade9f929ec7668de359c9ff91fa2f5f67c947db1828db490  pkgs/fc24/x86_64/qubes-core-agent-qrexec-4.0.4-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.003601 +0000 build-fedora4: d2d43cffe4de53d4418431dc9ddc6b29fc0b0eb91e91f503fbc7f573eae40935374c8cf619a5cc0b1ac6d776f126deb2d4ce15cdbf9163514a6d5ca6054a0f9e  pkgs/fc24/x86_64/qubes-core-agent-qrexec-4.0.5-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.003642 +0000 build-fedora4: b6f9ab69eb9bd56e768c9204bf223a7ca101dd9db7944f9059229f4844c4e32910bbce5f5a44098313ef3d71997433357adc415c4ac15413ed59708c33629fa4  pkgs/fc24/x86_64/qubes-core-agent-qrexec-4.0.6-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.003682 +0000 build-fedora4: 509ed126fa549b89dddd7c1e44bdf6d1f6c2c30fcf2826ab5a0be9056aca3f9ba3ed2d5e2480500c39702f9c7a12d68e8359eb13fb0b08f8fcb9036748998ac7  pkgs/fc24/x86_64/qubes-core-agent-qrexec-4.0.7-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.003722 +0000 build-fedora4: 2588829a60388be46573fea3ef0e144c4479b1cb0371b2d95d6ced32047b69b18f3723231adfc6e7a2713749ea05f154e0b78afcd0f2878cf49c2764666645df  pkgs/fc24/x86_64/qubes-core-agent-qrexec-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.003763 +0000 build-fedora4: 3f69809e7100ca71b99e6da2b9394eeed92c0669cf66e664d01999a42b6ce5f56300247f550c7e0edf809d61a697aec27b9d4f6b90041e604ea7b6eaf028d4f1  pkgs/fc24/x86_64/qubes-core-agent-systemd-4.0.0-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.003804 +0000 build-fedora4: 2bd5b938079f3f20f9f1cd6c2033811317665ad4ea31b8495bcaf26c91af70339a90d194c99ec5efd3c8742823f0e856113210a14d35d5eaeb5316d01df973f8  pkgs/fc24/x86_64/qubes-core-agent-systemd-4.0.1-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.003860 +0000 build-fedora4: 4210df730eea1aa475d676b6f0ba7eb4f2ac20d3eb6ed0c3b1e39cd28349cbbd4c81058cc71799ee6cdf5e28ff8173098ba35f37f4db5903694c7e84f811a1f4  pkgs/fc24/x86_64/qubes-core-agent-systemd-4.0.2-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.003911 +0000 build-fedora4: 45bc5b06af60db8bbc521d39f30ec4940bbf29fc403e3a05d61c747debcb5f6912fa9d97cd183188b21448bf5b4ec7ace0fc0264ef13dae7467b145acbcc7c9c  pkgs/fc24/x86_64/qubes-core-agent-systemd-4.0.3-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.003950 +0000 build-fedora4: 07c3a3294f841c6454fd8b6a7605a3554084fae89ecc98413e9cfb84b1f164ad1faa1b4895af31b88354300c78e0bd118ed5ddf3aed648a87d3fc0c511b425c9  pkgs/fc24/x86_64/qubes-core-agent-systemd-4.0.4-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.003990 +0000 build-fedora4: a03bba8865c6276b860512181b0a4de972de4bbce838e21f8405700a8edcd72ffaf43b06fcbcdb38474d6bd8b01f33e5dd9e03ab090dcb430a4f2ce09e30e988  pkgs/fc24/x86_64/qubes-core-agent-systemd-4.0.5-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.004031 +0000 build-fedora4: 4d45d9974e57c585b01368a6b2ad05e7dde4a7828513220f8d369e6321526b7393ac030333fc364d6c869fcdfe7726898ccefea104480902ef1d195a386ba65e  pkgs/fc24/x86_64/qubes-core-agent-systemd-4.0.6-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.004073 +0000 build-fedora4: a8c5ac34a2428407261ebbfacdc1e91bb71e23a6d76a0c5c7813305693e3a29330cdb2ba0146f0122828e538de99ab553a8ca1c48e90a6c9334564b1f10d819b  pkgs/fc24/x86_64/qubes-core-agent-systemd-4.0.7-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.004114 +0000 build-fedora4: 580c335c6fa07adddbf21d512b60736d38b4275043ed8848a91fe332ea3651a18537c1ebbe36739a1d18dbfdd45329e4231206397ed7170436c8bea6e758b3a3  pkgs/fc24/x86_64/qubes-core-agent-systemd-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.004159 +0000 build-fedora4: 943cb170abbe21178a2526637772e5ce3b7b15b41f76e12ac1ee74b0d25c37467078ee1cc008bf0c397209a382fed6763d48dba727ddddd6d506790ea1f32290  pkgs/fc24/x86_64/qubes-core-agent-sysvinit-4.0.0-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.004203 +0000 build-fedora4: c27dac57e8c5f392cc5550008319278d1c4e53e7e5b91de45772a354af1acfa2580940d85171cf4c8de6365f90cfcc0225d52ac60259bc7655f6c7dc04f4fd2f  pkgs/fc24/x86_64/qubes-core-agent-sysvinit-4.0.1-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.004247 +0000 build-fedora4: f27472e976416d3bf8f66a87ec6a379a07c84e2cf4c56a83f2c0de8437318d6d753b2e330f088f75351652a5ccd8e5c8fd51422f1c9e6c4e0ce0a52b8904b498  pkgs/fc24/x86_64/qubes-core-agent-sysvinit-4.0.2-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.004290 +0000 build-fedora4: fe0bc1b017c687c9ba7b72ca6b55644b47bb52ff82e11f829d3b2dbe3efc8fe8584c1eceb52c60a67ba93a5b494a592c7e49969636ac2cfcc87b1eabfbe2b2c6  pkgs/fc24/x86_64/qubes-core-agent-sysvinit-4.0.3-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.004356 +0000 build-fedora4: 15ceea574a6c181ad8820c149bb3767df92475c171737f3d6c660a8ae3f68dcef7edfa81908d795f6534bd54d87fc66662a05d01dd65a42b71951acc5cbb8d73  pkgs/fc24/x86_64/qubes-core-agent-sysvinit-4.0.4-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.004400 +0000 build-fedora4: 95711dbef73c3906f09756c652d5130c5a0b1e9d2bcb103a71ced5c43c07bb6015e4f608b03b0354707470191f2153555572839e6f5a06a417e408cce8c59e22  pkgs/fc24/x86_64/qubes-core-agent-sysvinit-4.0.5-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.004445 +0000 build-fedora4: 4e952211bab63e57e80d3880548cf6193ca4f1269dfdadf1ac817a12231dad48e0614348a9c9ea002bb2fd447bfe846d329ff762312ec395a4b362b8d2d1ca59  pkgs/fc24/x86_64/qubes-core-agent-sysvinit-4.0.6-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.004489 +0000 build-fedora4: d7ed9a1dfcdf7365be848f77ec91d2d58c5ca5666eb19fc60d2f454f2d199060a794d50d65a46dbd3b0ed66e8982974bc7385b4ee1afe8ade6c2d961f9a5724b  pkgs/fc24/x86_64/qubes-core-agent-sysvinit-4.0.7-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.004534 +0000 build-fedora4: e290985e8842bab33c89b405a18a9541d23dca31738231b018e4c99b41729db60c254f1433b5e200d1aa8697f7c9f59e0fc375f5370204ec46111c3d64132948  pkgs/fc24/x86_64/qubes-core-agent-sysvinit-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.004577 +0000 build-fedora4: d3450c69332c144aad2a8034781b8e8a263d721614564e5ec3c8ce20f914e1d8451c5e6a9c27e32aca524144707cf747d22c4fdade6e2a00ff6f3e12e3f6f1b7  pkgs/fc24/x86_64/qubes-core-vm-3.2.18-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.004632 +0000 build-fedora4: 9de5319bc73d4536a57301949d4c2d1af6ba0eb7acfa9ef35e3899fa3fc50de22944793bc3b555d9a6e69992a3b891ae169b7e3c17c258060abb7aa7971e6682  pkgs/fc24/x86_64/qubes-core-vm-debuginfo-3.2.18-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.004677 +0000 build-fedora4: aed79ef300f0fcf4cde2eb78edd0cc5302eb5b373e06054f6532c2a5705480a4393f6553d800daa2e2bddfa90134dab715383df9ba91d2d5e40ed8a153018816  pkgs/fc24/x86_64/qubes-core-vm-systemd-3.2.18-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.004721 +0000 build-fedora4: 77204ebc71b660b5d07a82e4c8ba08faf0c70627d47837f5a6cedf391e94491ccc29275adb9c30be47b1da6c48f3b70b3abbc7e8f248d372b964292da8f26ce9  pkgs/fc24/x86_64/qubes-core-vm-sysvinit-3.2.18-1.fc24.x86_64.rpm
+2017-09-15 12:07:59.004760 +0000 build-fedora4: 109084c7888662fc4128d9b29d6bee8ee41dc728cf77629032e6442641d1176f917ad699452cf665107c5d41ff96dd2e7705b066a81259d2d65c006eae2cf0ef  pkgs/fc25/core-agent.spec.list
+2017-09-15 12:07:59.004813 +0000 build-fedora4: 7551856d70a162ccc7f59a84bbd5bfbe09290b839c33688b79d321fa277e53aff5f11fe20834f3d1fd503200ab879ef9ed3428af773a0ee17399298a0ffdad99  pkgs/fc25/core-vm-doc.spec.list
+2017-09-15 12:07:59.004854 +0000 build-fedora4: 6f4b57389b129b8a2e039958b10192dbf03cdc0b8659fe30308544b582ce7160e0d6dfc6ae799c5ac31e9fa30cd1b4d5335815b6cc42d4c8838bcf834e3a9748  pkgs/fc25/core-vm.spec.list
+2017-09-15 12:07:59.004897 +0000 build-fedora4: 5f519f6b4d2dbc285bafca2cc325158e7df9645249eb14da8b30659358da37021b156e9bfa3ea7925fedf20385c885fe6852eb6053578803b3f2db1bb3f92b6f  pkgs/fc25/noarch/qubes-core-vm-doc-3.2.18-1.noarch.rpm
+2017-09-15 12:07:59.004943 +0000 build-fedora4: 132b9b571e7f7f20cddc28ecfc2f01b6d3039f02cdf08487a3d17cbbe9cac30bb7fe9b42c50a3edc0eaf6ef3a790f1cabf5f66038f0e70da55cdeadfa057e89e  pkgs/fc25/x86_64/python2-dnf-plugins-qubes-hooks-3.2.18-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.004990 +0000 build-fedora4: 43ea2935755ebf2ec4478d86725f4a99ed11a47b2b625b9fc7bc712da58e3c1740b5264db500d6fec58ab1d4529cc4534a694448ffff3304e4fe9326380954a3  pkgs/fc25/x86_64/python2-dnf-plugins-qubes-hooks-4.0.0-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.005035 +0000 build-fedora4: da6694ab356fbd1e847b62d85b85b49bc7a8cc1528ad0dbfa3920b567cf78873fd0981214caac08983a2c9d095187ef67370425c2091977538d67ee1f0bcc9c4  pkgs/fc25/x86_64/python2-dnf-plugins-qubes-hooks-4.0.1-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.005079 +0000 build-fedora4: ac5bbb59314d0a4eec6f9560c0d7f27bb2ff4933c46222e3313cc432fad7cfe8f0082c60e6b60568c7e9fcaf4742bef4e7b6c4fb22964a1b8443f4bc48408d68  pkgs/fc25/x86_64/python2-dnf-plugins-qubes-hooks-4.0.2-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.005125 +0000 build-fedora4: 76166eb2dbfb43fbd5609360b8c0eb268aaef554b53723411b1a30024d8e4bc2a4e7ff8ac4d8996266b8184404d5323930cec0c29f278cd8600505b56d687507  pkgs/fc25/x86_64/python2-dnf-plugins-qubes-hooks-4.0.3-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.005170 +0000 build-fedora4: 8bbc6dd9501373a6dcb5a3f1d794290135295646658b7c5b8fb8c020aa70e8994d9d01c109611e140bbf898f2c8d5b44f1942870af0b53654c2122c15ee4baab  pkgs/fc25/x86_64/python2-dnf-plugins-qubes-hooks-4.0.4-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.005217 +0000 build-fedora4: ce00519c6d90f979d1690f99d550974cd1e36b4e35aafbec259c56b9f0d299e1ea45e0245cb4b80a4f42abb104f69199f95ba149163e34098886cf9168cbc49b  pkgs/fc25/x86_64/python2-dnf-plugins-qubes-hooks-4.0.5-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.005262 +0000 build-fedora4: 6db481271a37b1efc0dfb5a4997b1c41f722de7dcad80a74094179665498ab885089d2c1eeabbd1cd1a1776c2f588dcbf180bdf65d4bc196af858fb8a8e0a272  pkgs/fc25/x86_64/python2-dnf-plugins-qubes-hooks-4.0.6-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.005326 +0000 build-fedora4: b64865915333d09248fb566b295865c4ff3fa4885680bbb3da03f555cbe4ec41faf365e6aba6da1ec52701ad9aa346d688211a90949f6db1ff0d70b100e50d8d  pkgs/fc25/x86_64/python2-dnf-plugins-qubes-hooks-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.005374 +0000 build-fedora4: 3ec25a01fdccac117ff15b2173431d5615011913b7b5e247ec8d9df4a96c5e87ef298208e8b42294a23b5089138f188ec8f5277cacdd8b41f9214028e7b4c749  pkgs/fc25/x86_64/python2-dnf-plugins-qubes-hooks-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.005426 +0000 build-fedora4: 4baaf3b6f87826e9d8ecc517c6690358278746b49295b4a836efe117b4b1c1b75d156db4571b151855fe15b397ce8b41742565ddbbaebfbbfc84b32e955ae147  pkgs/fc25/x86_64/python3-dnf-plugins-qubes-hooks-3.2.18-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.005467 +0000 build-fedora4: 00ec605ee07c7e7ba0c497c17aa305d28ce7c9d47decebf5524e81cb1ebc4d7c64a897cf45a5b6a2a40cbb2a79c29ae75cad4ca1369c070365108b6e6a9315b3  pkgs/fc25/x86_64/python3-dnf-plugins-qubes-hooks-4.0.0-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.005507 +0000 build-fedora4: 3109a4af3f32a47021024e6e88495f74aba839a01b813a077dff4a0e1be3f8deee5303104b328c33fcd9dcc46c93bd08cc0ae318be417768cab72d6b5a395d59  pkgs/fc25/x86_64/python3-dnf-plugins-qubes-hooks-4.0.1-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.005548 +0000 build-fedora4: bfe682e49978e602bc0a5191749f473ca9c5316c240b68cac5e667b0ecfe98e3ccf1247444946494713aac3873f33fadb45a547a56c61416a165a4aafce23ba6  pkgs/fc25/x86_64/python3-dnf-plugins-qubes-hooks-4.0.2-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.005589 +0000 build-fedora4: cbec23e857b77ea8288480d07297d73970a36fb2c79da30c99c3d9a3fd65ca0728b0f21338610752ba3a31640df379a7dfa9ac9572a444d5605e32f562cfbaf7  pkgs/fc25/x86_64/python3-dnf-plugins-qubes-hooks-4.0.3-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.005628 +0000 build-fedora4: a0392ac3118a528073430b844671eaaa77d77791e4f2372e89ccf6e6c804f277e0d49585a369347f29bf2ec16e4fc942e4063659ac71989ee281d8978c6be442  pkgs/fc25/x86_64/python3-dnf-plugins-qubes-hooks-4.0.4-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.005668 +0000 build-fedora4: d876ea9cd018bed6781fc492d96163d53f4677c2f5dd6fbfecb74e8341a13aebb542b46b6b3f8781c2dbe7c3a0a2fe4b4c16c44f916aa82302b5bb50bc3e86d5  pkgs/fc25/x86_64/python3-dnf-plugins-qubes-hooks-4.0.5-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.005708 +0000 build-fedora4: 8cadd65291c4dea52e95c798090e0352a15371b11db9fc2efaf2fab38471a8e75aeb0ea87b9f1e60504679abdc185444218ac93a778924d9988ded0f99d7b911  pkgs/fc25/x86_64/python3-dnf-plugins-qubes-hooks-4.0.6-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.005849 +0000 build-fedora4: 27f5b01f45c09452e325cd02e9d0bc868463d91b91b551672d08c75861822d202784a71ca696ac526946109a7879f6652e3b785503f6ff6c756c64997e229e62  pkgs/fc25/x86_64/python3-dnf-plugins-qubes-hooks-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.005894 +0000 build-fedora4: f26aab0a3427946a500e5bd15da91dabcd18edeb5475f1097a5c58e3b1b191868b8a22c81495367e2d62434234d14d03cc053729d204e6352132c6911f394c63  pkgs/fc25/x86_64/python3-dnf-plugins-qubes-hooks-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.005933 +0000 build-fedora4: 33516eeac7a8885ec436b3eac97d0e71c8e345dc374ab8bcc484d3f9d4dcd1a6f2b55a93c3542a783296b7261ba375ef7f704e66441b2ee589aca853e4aba6b8  pkgs/fc25/x86_64/qubes-core-agent-4.0.0-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.005974 +0000 build-fedora4: c782a53ae777ac85fcfc38664856b86da1690c25973af00487107cc3a0d474d46d48887ea363e80e203d090acca2e0d528bc475dcb3432f47f178a764236b2ee  pkgs/fc25/x86_64/qubes-core-agent-4.0.1-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.006010 +0000 build-fedora4: 37e7eb6cfd0fa55c144bcd381854b8b20c842574de5b455be51ab2dd66eff6f2a8e3aa0dde3817c5d3f27df343a870100c09ac4c847d6f4ae8e9f1f9ef6152ca  pkgs/fc25/x86_64/qubes-core-agent-4.0.2-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.006047 +0000 build-fedora4: 783de1e3a0d99041e51a190037de83629fd7ce247773a8f5ce4497eab3c1d007f6349ad92e2b8571f11c0b02661a3e9e562a47db43382b06325d5a08c73f5b50  pkgs/fc25/x86_64/qubes-core-agent-4.0.3-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.006085 +0000 build-fedora4: 2ea86fbefd809ab0de88bc0b402c42e882e0740f40cfe067cf7d8d4d416deca4b5809bd941fb3fe4bca992ee509d90ecc2ebaf06cefb4f55fa499ba1b449ed40  pkgs/fc25/x86_64/qubes-core-agent-4.0.4-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.006120 +0000 build-fedora4: 9794319ecb62fe10ca25368808eafa4b1856582429d77c715d78ff241b2a945e95b698f5e84247158bbd604b5da206490aabcb1b25a155e5eeb2b98afbbe2a4a  pkgs/fc25/x86_64/qubes-core-agent-4.0.5-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.006157 +0000 build-fedora4: 1a22ea1e2d21f1378eec1e1e0019b9a578ec8cf72239a2fa9816f1dc856261e9975f25543cb728a61cbad32cf93b3b827616cf28b6035989f949230c6eaa6623  pkgs/fc25/x86_64/qubes-core-agent-4.0.6-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.006208 +0000 build-fedora4: 92445c3a517fa292b48cd17a69d2fda9c01d625e1efe0fcdbd8adb123f454f57f5cbbe8f58fbf48635ab85a168a3d0b37f139b9430e4e28420812fb36a561783  pkgs/fc25/x86_64/qubes-core-agent-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.006247 +0000 build-fedora4: d344598d475a4486c6f4e4f8f7eb160745758f58b5804f2870d690cf6e75c3d8c8fd0b081dba6c92930ccbd92d876726af9c044e3399cf09953e2c5bb352ef7d  pkgs/fc25/x86_64/qubes-core-agent-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.006286 +0000 build-fedora4: 19395bcc07109993d1bf30b1878de0bb48b5d1bcd700f1bf051d52938543db6ca4bd25189c4169899590f75eb912ca15825d76356f57b10d426c0ed914d76d17  pkgs/fc25/x86_64/qubes-core-agent-debuginfo-4.0.0-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.006345 +0000 build-fedora4: 8bf95c2e5f873372e0981716f1870d8dc4ff5cfc894c7890bebfead776232aa97e21993cb41a5e3c906add6a0c899be81e57b09216c31668d09c8decbab77b46  pkgs/fc25/x86_64/qubes-core-agent-debuginfo-4.0.1-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.006387 +0000 build-fedora4: 16589dad0f9dc96bca2dffa2a01f05b8e22565bfd4f657794fd3b39b2d8a753c6d7d2592f78a0f186b18f1b57e02d6052d3cf1104374c249ee0948e48d14af9d  pkgs/fc25/x86_64/qubes-core-agent-debuginfo-4.0.2-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.006427 +0000 build-fedora4: 048c0ba5a0fa19bff15e3f828f95dd883b679f40f87aa2596118760ed2d75844f1c2ec3aaf1801c2839c3d6093c6c13e8aba5a0c206bdc65ecfcd4956b0e0a08  pkgs/fc25/x86_64/qubes-core-agent-debuginfo-4.0.3-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.006469 +0000 build-fedora4: f16e8c3a16acbde0fc3d408f014a5aa37f169c2ae5e8cf8673e54386af27c70c0c70cda8a9e75f70e40b8a92ecad40bdf7125576a047534e24615936a53393dc  pkgs/fc25/x86_64/qubes-core-agent-debuginfo-4.0.4-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.006509 +0000 build-fedora4: 59c745a395c6ff7162005fe38a367817beeea18b2969065cd9b8dbf6c03969b684f0227857b220fa70da39c706fb2e535030030223b7d027fb9130c44bf09068  pkgs/fc25/x86_64/qubes-core-agent-debuginfo-4.0.5-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.006551 +0000 build-fedora4: df820488718188a024f4e778e86f62cec665a14fb0aca187c843a146de95279ab967d0e42950bdd2ce5554f806f088c112ce7fd35d852a9a1dbdc0b3dbd2bd69  pkgs/fc25/x86_64/qubes-core-agent-debuginfo-4.0.6-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.006593 +0000 build-fedora4: bf9875a9a3198b0843ddbccbf6980b7166fd5a357d6ead0946ed55aeb0dc4b74e74aa06d4c6f78bad1169aa8ce11e8508ad90cec03ec5df9892f2d07368b77ab  pkgs/fc25/x86_64/qubes-core-agent-debuginfo-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.006635 +0000 build-fedora4: c087ef47394da8067c5b9457fcecbff26e73853613d829f0c77cdd8ff38ca5e23514549f41c4302d8cab80ed1364f24a66808cc03967fac6765d8ea03a8a7577  pkgs/fc25/x86_64/qubes-core-agent-debuginfo-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.006680 +0000 build-fedora4: 58482d52aafa37c0e5a2530d25326f83a763425396e8f2fb4641b14b54c5835b76392bf445491670721088e832024a73625638bf16177fb8950faf3f93487607  pkgs/fc25/x86_64/qubes-core-agent-dom0-updates-4.0.0-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.006737 +0000 build-fedora4: 7f1ec9af3ac7f2b4ee62906d0c87c97102bb3cdafb9464a92dc0604afcedb634ca4635a799772e864c33d10c7746e5b0cd4503fe08029ec1f2cb3b1d0a3f26e4  pkgs/fc25/x86_64/qubes-core-agent-dom0-updates-4.0.1-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.006783 +0000 build-fedora4: 25ed72ba4076db3f678a542bc0ca043f8d96f64f0dffe5c034ee85e7621b1884f9a42c98b865a6297ec94d18fe8276072e5acbc497af46e17da0ba2bdfad77b6  pkgs/fc25/x86_64/qubes-core-agent-dom0-updates-4.0.2-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.006827 +0000 build-fedora4: c9f8edceef887075b22548acb4fad2662c795439d4ef21b975b53b6761b499c9f0c821c8d799733ee38598d13e18453066d42dec73f60af2ddb9329d1126e354  pkgs/fc25/x86_64/qubes-core-agent-dom0-updates-4.0.3-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.006872 +0000 build-fedora4: 58bb33500eca1585618399ac00e3a44c09921a0390e1dd3ba94cb31f268c568ee9b8080f1c2767fe7b5abe54508af5ad3f143a837c354b12479797412e290fa6  pkgs/fc25/x86_64/qubes-core-agent-dom0-updates-4.0.4-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.006918 +0000 build-fedora4: f60e33e6f15828170de615a77bd7435ab30baefc691575a26457bf86f5ea80c966f2c7525aaaf5ae3caa0eae3d7b151f7c3033c072d916d4baf887bc245e65dc  pkgs/fc25/x86_64/qubes-core-agent-dom0-updates-4.0.5-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.006973 +0000 build-fedora4: d0818e3359245b3c220ee1f2eec5640c621204b21ac2c7dbc556f4c206f5b0dea804a602bc9ba084e0c7d19a82d6e08cbdf3a3a620c51ab49856c9ae6694924a  pkgs/fc25/x86_64/qubes-core-agent-dom0-updates-4.0.6-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.007020 +0000 build-fedora4: 3bbccd16c1c11a11870b90e4e2e57628ffed30e09e046ad4c1a4233b957973d4bcf6c0752d1f5dcf329e46fa184ce02638c9ff7db63b6f934245bf2f60a17f59  pkgs/fc25/x86_64/qubes-core-agent-dom0-updates-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.007064 +0000 build-fedora4: 33d021011a40c5b74d0a2c65b1ed70bf2a9a5aa4e6f2dd9276c2abe3c4521d0c4680610e533fcb0670456d9e9084dae6c1bdf9e4e0b80562c813fb60044ce2a5  pkgs/fc25/x86_64/qubes-core-agent-dom0-updates-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.007109 +0000 build-fedora4: 06c7a93392f8d1c4127d970d88add9eb192db48db83cc54efb764c79546c2e555c04370b17601dfed13011e93c0406ba24cff8100c0269d518f83bd2294b3fb4  pkgs/fc25/x86_64/qubes-core-agent-nautilus-4.0.0-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.007154 +0000 build-fedora4: 9d19590194d8bf952cda12b63560f5254f061147371d6f454902b8cc48787b0e611ec94e7b708c0e225b901e39c8ade9efe13b49d7d96936c9f129064ab606c4  pkgs/fc25/x86_64/qubes-core-agent-nautilus-4.0.1-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.007199 +0000 build-fedora4: 9c054d36ed120e75a8bd196bd765b2f1396df1939489795f21259ccf97991729c3fafe50a07a4b59e2517daab80a523f9c404b168d1b12246efa3e9e66fae95a  pkgs/fc25/x86_64/qubes-core-agent-nautilus-4.0.2-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.007245 +0000 build-fedora4: 73179dc2b5a58a8f09cb517dad17fa329a84cd7490b49ab45b116276667fab74b7fc9632fbe0a4d6e0578d0748d0033d8986844dc7104aca82724f7da7b59d98  pkgs/fc25/x86_64/qubes-core-agent-nautilus-4.0.3-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.007289 +0000 build-fedora4: 4a2a5f4bce91961f5ae8a9cab766e82060ad771f379ce95bfe085670e57ad48b95e1063f35989d2e35e139c3b1ee7ff965c90961c353676373a60a782f72524c  pkgs/fc25/x86_64/qubes-core-agent-nautilus-4.0.4-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.007355 +0000 build-fedora4: 42edede2803c8642d06178dbaebe3936edc79cbd980009d0c7678c3e2367a5ccb013df06666961bf4d13419cb043e15d95d4901d1eddce98ad379a6093eb2fb0  pkgs/fc25/x86_64/qubes-core-agent-nautilus-4.0.5-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.007402 +0000 build-fedora4: 0eea099a054669522a2a44718dd02d95d9ef4294ed6828671932b15599a7da8ab4c3022d70dcef8f78c28e544de24080d5247c781fd6d4c1d01026f0a584f1de  pkgs/fc25/x86_64/qubes-core-agent-nautilus-4.0.6-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.007446 +0000 build-fedora4: d9b4569f275d7639332af95180656f592a22c960e89a346807189b729cfa7a5deff32663f4bb7dec838ff706f0b8cf72ace6e48395bcf449fd99da9b41b428f5  pkgs/fc25/x86_64/qubes-core-agent-nautilus-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.007490 +0000 build-fedora4: 31fafc3295700658efdf9c698d5766bb4f95de2b73601a26370d5851bb1434fab54a585d126cff8bed1a565c870a085931bfd77e4a16a19590055bf3904ee5c5  pkgs/fc25/x86_64/qubes-core-agent-nautilus-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.007536 +0000 build-fedora4: d5d51a305e82e11a77078ebb86fb8742a45dd22b9ed166820d4174de6d331bb9bae00f17f14d2903c7a52b78cb25e8ee249ed9a406467024a16f6234d917798e  pkgs/fc25/x86_64/qubes-core-agent-network-manager-4.0.0-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.007579 +0000 build-fedora4: c10c0bcf0053df8c7e268a4e2d2d2196a04def21fc7b99fd47ffd1c3981522ba6938e37abefbc5d822ce187086d33f4c433cc894361616cc4b835ffeb1ca4501  pkgs/fc25/x86_64/qubes-core-agent-network-manager-4.0.1-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.007623 +0000 build-fedora4: 20222c49b9adad51cc859e8250b913c19ed5e0e1bbcaa126c88e6d1b9e0b84b00351491e94a93dde06d5f9617b6940feb946af9365def5efa203ec20b62a1a38  pkgs/fc25/x86_64/qubes-core-agent-network-manager-4.0.2-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.007677 +0000 build-fedora4: 4f132df9933e3fbe3d51d714cc68f55f2ef945f80a4c59e226e23628d986d8c7f735c5bd26fb9eb6f25bf0e0a31ceab110b2c4512c65e53ea08e1f7789dec03b  pkgs/fc25/x86_64/qubes-core-agent-network-manager-4.0.3-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.007730 +0000 build-fedora4: 0c257023ee15e85e29e48600df26b8afb540cd7df211a2e680ef44cc3938ffc35f51e0beb0851f2ea87a3ace338da701baca1a5994a6ec2352c7d1c9bbe0e631  pkgs/fc25/x86_64/qubes-core-agent-network-manager-4.0.4-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.007773 +0000 build-fedora4: feaf6f3ce85884eef147e9e4283e7be3d643d863159d1b87961585290fff6f89dbef252fa834fad71e6fbac888504658badcf0dea853d21c0bc0d154ddc3af42  pkgs/fc25/x86_64/qubes-core-agent-network-manager-4.0.5-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.007809 +0000 build-fedora4: db78681ca8a9a973c96ce38ba7461140d68478f9429dc1ababb7b1e887dda767d05380166d8fd383909a91d57d2a023a73524aedd60726c93e1984bb23a08362  pkgs/fc25/x86_64/qubes-core-agent-network-manager-4.0.6-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.007846 +0000 build-fedora4: ee58e83c83497fb62126f6ba3af46051ef00ef2b8f6e55e9e2f53f264ddd06012b8a4ec7dbcc7911aec3e8ca7de6780823b4642cd79a0c2606736a5c77d2a395  pkgs/fc25/x86_64/qubes-core-agent-network-manager-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.007885 +0000 build-fedora4: 9a10d082ed655c621e18f82288e93bc6e997420c7c890d50fa2db19ec25ec873b7475c43f821c4e7d71bd330c689963b33f0a9c05e8e9067617b9771f7717dcf  pkgs/fc25/x86_64/qubes-core-agent-network-manager-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.007925 +0000 build-fedora4: 78e0b8678dab8bcb17f1b3928d66e7dc9c7f79ae81bbbb888e0732e97e1d6584d76f897fb5af16175c961a01de6ce8dc7f0d67f7d238b591f74de7e81032d0e4  pkgs/fc25/x86_64/qubes-core-agent-networking-4.0.0-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.007965 +0000 build-fedora4: b22ab81540d02a554b295eecd2c28a5b5bcfa51a884f8292b32e2697ce781bea2340990bc16fe31a55a783cc4cd579da58c39cd9de381995c7fd88515a8ec435  pkgs/fc25/x86_64/qubes-core-agent-networking-4.0.1-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.008004 +0000 build-fedora4: 4103e877e0d0f17de9ebcacf68364c17816e63d98989e5d6e809e2552ab777f4d55f0d5b7903ce43c6270498d6d41c74f01536c8c37002de8ec4cb986fd71daf  pkgs/fc25/x86_64/qubes-core-agent-networking-4.0.2-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.008043 +0000 build-fedora4: b3e0d434b64aec9e010c11147ec47cdd58c5326ef81da725af8455b009171930ea89240c0dc728d8c9ef0fa46121825b0a94a38987659a1ff94b52deeb48ea3a  pkgs/fc25/x86_64/qubes-core-agent-networking-4.0.3-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.008083 +0000 build-fedora4: eba5129f396575026ffa0cc4e7b55ab6e3e2bf0e5b67c073f258b75bc57d2a3884917aaddba0ec3e230894210a6492101f323f8f7fddd326ca92b6fc77161122  pkgs/fc25/x86_64/qubes-core-agent-networking-4.0.4-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.008125 +0000 build-fedora4: eab9c922da2fbb573d7b7dee2a40fa85225d3330d8bb23d8434ec2e4d622c39a5435c8d05169be1ccc8d6d954fae0548db772f62449f2d245d7bceaba388ca39  pkgs/fc25/x86_64/qubes-core-agent-networking-4.0.5-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.008166 +0000 build-fedora4: cd36c21b3f6860aec1a1d9f4c4e4dbeadeaad8b0f8fc0ffbc64f94c69fed971b815398a8352addbb7ae7e5921d7cf8ef96d8650652f0bfae245de84bf66139f6  pkgs/fc25/x86_64/qubes-core-agent-networking-4.0.6-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.008207 +0000 build-fedora4: 0d554c5dcb0d9822d6cd557d845cbaadbc91908dbb12b5c6ddada69a8c1c40060b8783a9931c0efe30b7d6e967855673785172fe1d26d9202328ba45c1732b19  pkgs/fc25/x86_64/qubes-core-agent-networking-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.008247 +0000 build-fedora4: c1b4442bb665950fe022637c84efc9760f3052346f35869c4a35584307fce8369c5f2b019fac84c81a76d226a9f8c303ffab1e3d9f92d8dc27cc03a5277b9519  pkgs/fc25/x86_64/qubes-core-agent-networking-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.008289 +0000 build-fedora4: 921a3db3424b78d86c17fd6487e535c203519a599b58e1e0e01dd3f2c0781e8b7b91b7b13e65bb15775d014dd7be758d393c12dca3928103d85b61ce7f4d0ac9  pkgs/fc25/x86_64/qubes-core-agent-passwordless-root-4.0.0-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.008349 +0000 build-fedora4: 0e91607eb5c9073fe0a1bd5a21d7cc555b9dd4a1ecf967cde3ab7d5d8553a277e69d124bce6d4f6a4526427fd96faa5e2f90f6c12608efd7ed1c9bf3f1e23e7a  pkgs/fc25/x86_64/qubes-core-agent-passwordless-root-4.0.1-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.008390 +0000 build-fedora4: 5a5e8c7b589fddbd3bc208fc480c4558662acd9039b5b90630088d21b41e5b67799539f262fe6e6f8485d762796628976fc5e3d52e518cd3cd436daf7ff9010b  pkgs/fc25/x86_64/qubes-core-agent-passwordless-root-4.0.2-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.008440 +0000 build-fedora4: b591a76f8007a3c2e86f6155d092b59e4553d45aab486408b9078d6de6afade09379998da4e6483ac1d5c8dd5dbeb06702e0ef35d60e3a70f0bcade437810064  pkgs/fc25/x86_64/qubes-core-agent-passwordless-root-4.0.3-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.008479 +0000 build-fedora4: f70429030051cd9213b5f93ee3c456aadf05033d2637bc388644e95c5dd1676e0629b401d3cdf5d64039886aabf68288f8cc7c835410ac58cf66b2a2760284fb  pkgs/fc25/x86_64/qubes-core-agent-passwordless-root-4.0.4-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.008519 +0000 build-fedora4: 534001460ef6e96278d0227ffedc7413963ab533a41bc0d360ad4d98bcbaa79a3d429b6b3be1dccbd0f1eda247a92f02ea2d3ffb6af2ff69574d79d3aab30787  pkgs/fc25/x86_64/qubes-core-agent-passwordless-root-4.0.5-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.008573 +0000 build-fedora4: 3c792750063a7af5bee05121de568bde0a724f30cdc4938eb37ebb3b2caedafdb90f77dc6a45c47dad8be10723fa715cd979e264f3ee8b15e5a0092ad104ac59  pkgs/fc25/x86_64/qubes-core-agent-passwordless-root-4.0.6-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.008612 +0000 build-fedora4: f6306cef809e1809e0fdf06e7b745d702aa54daf875335169bfd5cfa510a1a6ccfcc13cfadcbb4eaac0a2a08e72cb322d9849342cae114cf37acc4ad00059742  pkgs/fc25/x86_64/qubes-core-agent-passwordless-root-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.008650 +0000 build-fedora4: c30e87407a9e398ba7b6dad519d536ef4d9f0727c3f4f8df61eab35ffac54ee4a381ba75632248f54b410229f8b588f6c3e96819f08ec5b5fe86b4a5c5793f78  pkgs/fc25/x86_64/qubes-core-agent-passwordless-root-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.008691 +0000 build-fedora4: edfcecc5bc58c204bf366bc030a1391ee0d3a714005ec05bffcce3e91aa8a61c9829dd898dfef874d10b5a927194b93183d19b923e33d32fb683d9908cdbc488  pkgs/fc25/x86_64/qubes-core-agent-qrexec-4.0.0-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.008854 +0000 build-fedora4: 00c48998221e65e1bad4f4d9989433c6b7587dbb575942c60fcf8400a60fef86c57e91e8afc7b87742ead807cc23b3c3efe80235f84a7c5ce2b5a2106e754054  pkgs/fc25/x86_64/qubes-core-agent-qrexec-4.0.1-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.008899 +0000 build-fedora4: deb9ac80479cdcf5d48dd3df81d51d2e1a834cdd13733f7ac9c96c91cd4aafedcc7ab2fff929d0565c732e5146a33509afeeaea80ed196ed4ea62728a8f97a2f  pkgs/fc25/x86_64/qubes-core-agent-qrexec-4.0.2-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.008940 +0000 build-fedora4: 7297a691ffbceb9785fa728eb9f6206156ebaece6834a540906c05ab128ba4469d340235f021319c18768d0dd7134a6324df8972b630898f502d405bd95edb7b  pkgs/fc25/x86_64/qubes-core-agent-qrexec-4.0.3-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.008982 +0000 build-fedora4: 38ee8e07fa7bb5923862fc8bfa107403d7b9f554ef152160d141450281cc0d7277df34b82ecf80bffcd996b46af9620fe94ca16035e208c38744dff137fb8fe1  pkgs/fc25/x86_64/qubes-core-agent-qrexec-4.0.4-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.009021 +0000 build-fedora4: 5436161c1d4b17f14ed7bd356b63c59e90d352fdfcf22fddd7f3f1bceb73144c9bee0ce9264aa52521eb04629a5081a129de2a840930ca8c42a8120489db1cf5  pkgs/fc25/x86_64/qubes-core-agent-qrexec-4.0.5-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.009059 +0000 build-fedora4: 60c91ad7f490ff7b1e033f43989fec88d953456111dcd8a3008f1ef115a60265882b50de4fb395875d0fec0a5236bd1144a1f3637ad86f7d34cb7f9cd3e7d5f3  pkgs/fc25/x86_64/qubes-core-agent-qrexec-4.0.6-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.009096 +0000 build-fedora4: 0010689dd2d58e8d0f822a27a749da23c75c91266f157d55232abcc176f0b7637fcc4e44ab580a90e093ed9a17b917e446fd99973f971e3e2c973b33a6510c4c  pkgs/fc25/x86_64/qubes-core-agent-qrexec-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.009133 +0000 build-fedora4: d6f6136f6aa84a00351cde425a5df196dfe55bb7e4c16ffd1376b192864a7533d67ed90f20287b66e63f9b4464a48e6ae790b217626367e8db440c56a5252de4  pkgs/fc25/x86_64/qubes-core-agent-qrexec-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.009171 +0000 build-fedora4: 1de0b40f18e7473c6eccc3ca596303bd66a0a26db7b4ab387fd5040ff192111775baf75b5b79da7c213f83a518243fe5ac332668c538b76a51d17b441a02d21e  pkgs/fc25/x86_64/qubes-core-agent-systemd-4.0.0-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.009223 +0000 build-fedora4: 9026fad88bd2d200cf710da0239d1ce430ffe7df4b1e12204c9653f0b98c225a5db661f30a26e35615d7353bef35180e9dc33806f1d43ac6a1f69b975d2713a6  pkgs/fc25/x86_64/qubes-core-agent-systemd-4.0.1-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.009262 +0000 build-fedora4: 7c41a8702d62bd06d9f7c53f10d9d08b9d0cc983fbfccab1f06bbc6f2d658b5ae34da4ead904da25b206c452801da26c64fc98278487371e10c24242ae3150a6  pkgs/fc25/x86_64/qubes-core-agent-systemd-4.0.2-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.009321 +0000 build-fedora4: bb86e744131fd4a915368275403151661213cdcb41c604090298505ea83800dde2eb3dbcb9619f478653e482631e85765b47fab64672a9ac34904d97c6145c1b  pkgs/fc25/x86_64/qubes-core-agent-systemd-4.0.3-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.009364 +0000 build-fedora4: ee7b9dc4cf1b950200e1d53391800f49b4b013f6988bb88ce692e714548ec02cf0a2c356b366336114e0941403f3d46c7d0d243f087b89ddcb6e4950d6f44412  pkgs/fc25/x86_64/qubes-core-agent-systemd-4.0.4-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.009404 +0000 build-fedora4: fa5630d08f1c2a5a53b1af8c1da7f71a292baeec6c57c8cd3c3ecfae39e8c3a1e00109f478a1d7a610b475b5875974c833036fdda3c19df4917d8f2b9db494e8  pkgs/fc25/x86_64/qubes-core-agent-systemd-4.0.5-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.009444 +0000 build-fedora4: 75bb1542f1ad48410bbd05d6e1b6791a7627d159a94aa42cba3c690162fd30d50f88b1c54d5253f5068606fa70e41f0c4427907b7f8c5d93197c070862b4d5a9  pkgs/fc25/x86_64/qubes-core-agent-systemd-4.0.6-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.009482 +0000 build-fedora4: 9dee6749c8a33557309155abff882bdd3e9e97769058ac87fd4a9dbfa1ce3a1d21a44fd3c2129e74a320871b161d35fa5c3f3db07fed85072fac026b03ea60f4  pkgs/fc25/x86_64/qubes-core-agent-systemd-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.009521 +0000 build-fedora4: 82d0b1e2e51798205f754842501bd53ab5c1303f2f77b4cff7c70ffab7acacd75e7811b0187a37f672488bc450f72a223317bd6c4221da33f8285529c081781b  pkgs/fc25/x86_64/qubes-core-agent-systemd-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.009576 +0000 build-fedora4: b8082fb35edbed5374f93509b9d84bf5f609aaa1bb47727ec7272b9a48937762f4ebc8b154cf167066aa0d80d1251106df1fdfc8b58defb04c777a0679b5b7fb  pkgs/fc25/x86_64/qubes-core-agent-sysvinit-4.0.0-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.009617 +0000 build-fedora4: 4df4d15fe739f63b2f7b31d1494611d390be5234f3c432cd291ecc2cc062d89c3873689d643084ee95d79851d619555247539cd0575867768790077b1a6448ea  pkgs/fc25/x86_64/qubes-core-agent-sysvinit-4.0.1-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.009659 +0000 build-fedora4: ab88f0f490ac29071947c51f09b04ad485afaf7c0ec54fe52a04db8c61a4118867f83ce7feef7b7b1c808b17e223567d1457a48927b60aa8881fa75a463002e6  pkgs/fc25/x86_64/qubes-core-agent-sysvinit-4.0.2-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.009700 +0000 build-fedora4: 9386f30787e146e709853ea5e0b7cfe53c6f75300602da3a4166e55f904ce17f0bf4d5de0dfdd3c11899f940f259817f67821c875c618e508875c66f2f9b0060  pkgs/fc25/x86_64/qubes-core-agent-sysvinit-4.0.3-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.009741 +0000 build-fedora4: a25fae064bc83cc1876244c42096f676a050ac337ad66b0dbb115bfbf37f3cabeceb173e7421c3e1581276b830e7e59dfd93275d1192cf9a8fbba81e48b6f9c1  pkgs/fc25/x86_64/qubes-core-agent-sysvinit-4.0.4-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.009782 +0000 build-fedora4: 3165986126c83a86ecfd3dc10906a1e10cd1796cda7f44a72b3e0ffc261ce724b56ca556bd608c3b261b01d48c5a8e1706c57e51ce13da4ae662d9b7b9c2f884  pkgs/fc25/x86_64/qubes-core-agent-sysvinit-4.0.5-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.009821 +0000 build-fedora4: 829adb1479bec7e77db27ab03c52e921273e20abe45e3930192d655e4f2825f2c509162e7ba76c24b8db9b86737d5c2d759a249f6f85e188921ca6391c60018d  pkgs/fc25/x86_64/qubes-core-agent-sysvinit-4.0.6-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.009971 +0000 build-fedora4: ab6103eeb0e1bc9c61967830a01c1b263d94f85a3641fe6fdeeb63e185267d141755734834e75468617585cd022fb74927f49e797e299f67c87cb213e1223ba2  pkgs/fc25/x86_64/qubes-core-agent-sysvinit-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.010013 +0000 build-fedora4: db5ba81f8093bfe6e325dc1478fa97003895989fc8c385c737139b3cb581059af270977d5166d1caf4d751480766c01d3f686a6b4d9d06e76fa92d01267adb14  pkgs/fc25/x86_64/qubes-core-agent-sysvinit-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.010064 +0000 build-fedora4: fc93074b58fdf611e60b90f4fe6e0478385a4e8d26e078a5fed993eeb772907e8ad6d900f9b276340b55af57fd79a35aaac1ecdc252f49abf63b991ebf282390  pkgs/fc25/x86_64/qubes-core-vm-3.2.18-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.010106 +0000 build-fedora4: 0e4dfa191485214b4ed0f4d22a50810ba4fbd04269ced7ed8379bcdcea56204e87f2f2c808763a4f7990396c3f07c2b513b7fd6760153a65f9c6995fe2e1181b  pkgs/fc25/x86_64/qubes-core-vm-debuginfo-3.2.18-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.010143 +0000 build-fedora4: 1ec51aea3f674e44a106158a950494e55693319a4816ba23c26297d6aedbe1ce166aa565cd4ae0a116e7250217ac1639ca29dae7be16a6c66c122c48b9b30b0f  pkgs/fc25/x86_64/qubes-core-vm-systemd-3.2.18-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.010181 +0000 build-fedora4: 94addee20bba9a4ae49bc431e35361cdd3d796c6e16c02c8224c8c08cfbec5e6599d57a9bd723afdb98882a29d1e108565f52833ec991f93cf9af4a88c208183  pkgs/fc25/x86_64/qubes-core-vm-sysvinit-3.2.18-1.fc25.x86_64.rpm
+2017-09-15 12:07:59.011399 +0000 build-fedora4: ================================================================================
+2017-09-15 12:07:59.011457 +0000 build-fedora4:                            B U I L D   I N F O                                  
+2017-09-15 12:07:59.011486 +0000 build-fedora4: Items in red indicate it was automatically generated by configuration file(s)
+2017-09-15 12:07:59.011514 +0000 build-fedora4: Items in white indicate it was automatically removed by configuration file(s)
+2017-09-15 12:07:59.011542 +0000 build-fedora4: ================================================================================
+2017-09-15 12:07:59.011561 +0000 build-fedora4: DISTS_VM:
+2017-09-15 12:07:59.011581 +0000 build-fedora4:      fc24, fc25,
+2017-09-15 12:07:59.011599 +0000 build-fedora4: DISTS_ALL:
+2017-09-15 12:07:59.011620 +0000 build-fedora4:      fc24, fc25,
+2017-09-15 12:07:59.011641 +0000 build-fedora4: DIST_DOM0:
+2017-09-15 12:07:59.011660 +0000 build-fedora4:     
+2017-09-15 12:07:59.011680 +0000 build-fedora4: BUILDER_PLUGINS:
+2017-09-15 12:07:59.013372 +0000 build-fedora4:      builder-fedora, mgmt-salt, builder-github,
+2017-09-15 12:07:59.013677 +0000 build-fedora4: COMPONENTS:
+2017-09-15 12:07:59.017277 +0000 build-fedora4:      core-agent-linux,
+2017-09-15 12:07:59.020736 +0000 build-fedora4: GIT_REPOS:
+2017-09-15 12:07:59.021091 +0000 build-fedora4:      qubes-src/core-agent-linux,
+2017-09-15 12:07:59.021657 +0000 build-fedora4: TEMPLATE:
+2017-09-15 12:07:59.025326 +0000 build-fedora4:     
+2017-09-15 12:07:59.026788 +0000 build-fedora4: TEMPLATE_FLAVOR_DIR:
+2017-09-15 12:07:59.029170 +0000 build-fedora4:     
+2017-09-15 12:07:59.029663 +0000 build-fedora4: TEMPLATE_ALIAS:
+2017-09-15 12:07:59.033086 +0000 build-fedora4:     
+2017-09-15 12:07:59.033668 +0000 build-fedora4: TEMPLATE_LABEL:
+2017-09-15 12:07:59.037402 +0000 build-fedora4:      fc24:fedora-24, fc25:fedora-25, fc20:fedora-20 fc21:fedora-21 fc22:fedora-22 fc23:fedora-23
+2017-09-15 12:07:59.077728 +0000 build-fedora4: > running make
+2017-09-15 12:07:59.109323 +0000 build-fedora4: Makefile:250: target 'sign-vm-fc24-core-agent-linux' does not exist
+2017-09-15 12:07:59.109466 +0000 build-fedora4: if [ -n "core-agent-linux" -a "0" -ne 0 ]; then BRANCH=master; branch_var="BRANCH_core_agent_linux"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/core-agent-linux > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2017-09-15 12:07:59.109512 +0000 build-fedora4: SIGN_KEY=5817A43B283DE5A9181A522E1848792F9E2795E9; \
+2017-09-15 12:07:59.109543 +0000 build-fedora4: sign_key_var="SIGN_KEY_fc24"; \
+2017-09-15 12:07:59.109571 +0000 build-fedora4: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2017-09-15 12:07:59.109599 +0000 build-fedora4: if [ -r qubes-src/core-agent-linux/Makefile.builder ]; then \
+2017-09-15 12:07:59.109642 +0000 build-fedora4: .make --no-print-directory -f Makefile.generic \
+2017-09-15 12:07:59.109666 +0000 build-fedora4: ..DIST=fc24 \
+2017-09-15 12:07:59.109687 +0000 build-fedora4: ..PACKAGE_SET=vm \
+2017-09-15 12:07:59.109709 +0000 build-fedora4: ..COMPONENT=core-agent-linux \
+2017-09-15 12:07:59.109730 +0000 build-fedora4: ..SIGN_KEY=$SIGN_KEY \
+2017-09-15 12:07:59.109751 +0000 build-fedora4: ..sign || exit 1; \
+2017-09-15 12:07:59.109774 +0000 build-fedora4: elif [ -d qubes-src/core-agent-linux/rpm ]; then \
+2017-09-15 12:07:59.109797 +0000 build-fedora4: .# Old mechanism supported only for RPM
+2017-09-15 12:07:59.109823 +0000 build-fedora4: FILE_LIST=""; for RPM in qubes-src/core-agent-linux/rpm/*/*.rpm; do \
+2017-09-15 12:07:59.109849 +0000 build-fedora4: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2017-09-15 12:07:59.109869 +0000 build-fedora4: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2017-09-15 12:07:59.109887 +0000 build-fedora4: ..fi ;\
+2017-09-15 12:07:59.109905 +0000 build-fedora4: .done ; \
+2017-09-15 12:07:59.109926 +0000 build-fedora4: .if [ -n "$FILE_LIST" ]; then \
+2017-09-15 12:07:59.109946 +0000 build-fedora4: ..echo "--> Signing..."; \
+2017-09-15 12:07:59.109967 +0000 build-fedora4: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2017-09-15 12:07:59.109987 +0000 build-fedora4: ..if [ -n "$SIGN_KEY" ]; then \
+2017-09-15 12:07:59.110007 +0000 build-fedora4: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2017-09-15 12:07:59.110024 +0000 build-fedora4: ..fi; \
+2017-09-15 12:07:59.110048 +0000 build-fedora4: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2017-09-15 12:07:59.110066 +0000 build-fedora4: .fi; \
+2017-09-15 12:07:59.110082 +0000 build-fedora4: fi
+2017-09-15 12:07:59.145231 +0000 build-fedora4: /home/user/builder-r4.0/qubes-src/builder-fedora/Makefile.fedora:189: target 'sign' does not exist
+2017-09-15 12:07:59.145394 +0000 build-fedora4: cd qubes-src/core-agent-linux && for pkg in pkgs/fc24/x86_64/python2-dnf-plugins-qubes-hooks-4.0.8-1.fc24.x86_64.rpm pkgs/fc24/x86_64/python3-dnf-plugins-qubes-hooks-4.0.8-1.fc24.x86_64.rpm pkgs/fc24/x86_64/qubes-core-agent-4.0.8-1.fc24.x86_64.rpm pkgs/fc24/x86_64/qubes-core-agent-debuginfo-4.0.8-1.fc24.x86_64.rpm pkgs/fc24/x86_64/qubes-core-agent-dom0-updates-4.0.8-1.fc24.x86_64.rpm pkgs/fc24/x86_64/qubes-core-agent-nautilus-4.0.8-1.fc24.x86_64.rpm pkgs/fc24/x86_64/qubes-core-agent-network-manager-4.0.8-1.fc24.x86_64.rpm pkgs/fc24/x86_64/qubes-core-agent-networking-4.0.8-1.fc24.x86_64.rpm pkgs/fc24/x86_64/qubes-core-agent-passwordless-root-4.0.8-1.fc24.x86_64.rpm pkgs/fc24/x86_64/qubes-core-agent-qrexec-4.0.8-1.fc24.x86_64.rpm pkgs/fc24/x86_64/qubes-core-agent-systemd-4.0.8-1.fc24.x86_64.rpm pkgs/fc24/x86_64/qubes-core-agent-sysvinit-4.0.8-1.fc24.x86_64.rpm ; do \
+2017-09-15 12:07:59.145428 +0000 build-fedora4: .if ! rpm -K $pkg | grep -qi pgp; then \
+2017-09-15 12:07:59.145462 +0000 build-fedora4: ..setsid -w rpmsign  --digest-algo=sha256 --key-id=5817A43B283DE5A9181A522E1848792F9E2795E9 --addsign $pkg </dev/null || exit 1; \
+2017-09-15 12:07:59.145482 +0000 build-fedora4: .fi; \
+2017-09-15 12:07:59.145499 +0000 build-fedora4: done
+2017-09-15 12:07:59.820479 +0000 build-fedora4: pkgs/fc24/x86_64/python2-dnf-plugins-qubes-hooks-4.0.8-1.fc24.x86_64.rpm:
+2017-09-15 12:08:00.429181 +0000 build-fedora4: pkgs/fc24/x86_64/python3-dnf-plugins-qubes-hooks-4.0.8-1.fc24.x86_64.rpm:
+2017-09-15 12:08:00.927422 +0000 build-fedora4: pkgs/fc24/x86_64/qubes-core-agent-4.0.8-1.fc24.x86_64.rpm:
+2017-09-15 12:08:01.432264 +0000 build-fedora4: pkgs/fc24/x86_64/qubes-core-agent-debuginfo-4.0.8-1.fc24.x86_64.rpm:
+2017-09-15 12:08:01.927398 +0000 build-fedora4: pkgs/fc24/x86_64/qubes-core-agent-dom0-updates-4.0.8-1.fc24.x86_64.rpm:
+2017-09-15 12:08:02.420051 +0000 build-fedora4: pkgs/fc24/x86_64/qubes-core-agent-nautilus-4.0.8-1.fc24.x86_64.rpm:
+2017-09-15 12:08:02.912105 +0000 build-fedora4: pkgs/fc24/x86_64/qubes-core-agent-network-manager-4.0.8-1.fc24.x86_64.rpm:
+2017-09-15 12:08:03.411718 +0000 build-fedora4: pkgs/fc24/x86_64/qubes-core-agent-networking-4.0.8-1.fc24.x86_64.rpm:
+2017-09-15 12:08:03.907283 +0000 build-fedora4: pkgs/fc24/x86_64/qubes-core-agent-passwordless-root-4.0.8-1.fc24.x86_64.rpm:
+2017-09-15 12:08:04.424132 +0000 build-fedora4: pkgs/fc24/x86_64/qubes-core-agent-qrexec-4.0.8-1.fc24.x86_64.rpm:
+2017-09-15 12:08:04.933028 +0000 build-fedora4: pkgs/fc24/x86_64/qubes-core-agent-systemd-4.0.8-1.fc24.x86_64.rpm:
+2017-09-15 12:08:05.418384 +0000 build-fedora4: pkgs/fc24/x86_64/qubes-core-agent-sysvinit-4.0.8-1.fc24.x86_64.rpm:
+2017-09-15 12:08:05.421566 +0000 build-fedora4: Makefile:250: target 'sign-vm-fc25-core-agent-linux' does not exist
+2017-09-15 12:08:05.421631 +0000 build-fedora4: if [ -n "core-agent-linux" -a "0" -ne 0 ]; then BRANCH=master; branch_var="BRANCH_core_agent_linux"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/core-agent-linux > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2017-09-15 12:08:05.421661 +0000 build-fedora4: SIGN_KEY=5817A43B283DE5A9181A522E1848792F9E2795E9; \
+2017-09-15 12:08:05.421676 +0000 build-fedora4: sign_key_var="SIGN_KEY_fc25"; \
+2017-09-15 12:08:05.421690 +0000 build-fedora4: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2017-09-15 12:08:05.421704 +0000 build-fedora4: if [ -r qubes-src/core-agent-linux/Makefile.builder ]; then \
+2017-09-15 12:08:05.421716 +0000 build-fedora4: .make --no-print-directory -f Makefile.generic \
+2017-09-15 12:08:05.421727 +0000 build-fedora4: ..DIST=fc25 \
+2017-09-15 12:08:05.421737 +0000 build-fedora4: ..PACKAGE_SET=vm \
+2017-09-15 12:08:05.421749 +0000 build-fedora4: ..COMPONENT=core-agent-linux \
+2017-09-15 12:08:05.421759 +0000 build-fedora4: ..SIGN_KEY=$SIGN_KEY \
+2017-09-15 12:08:05.421769 +0000 build-fedora4: ..sign || exit 1; \
+2017-09-15 12:08:05.421781 +0000 build-fedora4: elif [ -d qubes-src/core-agent-linux/rpm ]; then \
+2017-09-15 12:08:05.421792 +0000 build-fedora4: .# Old mechanism supported only for RPM
+2017-09-15 12:08:05.421805 +0000 build-fedora4: FILE_LIST=""; for RPM in qubes-src/core-agent-linux/rpm/*/*.rpm; do \
+2017-09-15 12:08:05.421819 +0000 build-fedora4: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2017-09-15 12:08:05.421829 +0000 build-fedora4: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2017-09-15 12:08:05.421839 +0000 build-fedora4: ..fi ;\
+2017-09-15 12:08:05.421849 +0000 build-fedora4: .done ; \
+2017-09-15 12:08:05.421860 +0000 build-fedora4: .if [ -n "$FILE_LIST" ]; then \
+2017-09-15 12:08:05.421871 +0000 build-fedora4: ..echo "--> Signing..."; \
+2017-09-15 12:08:05.421882 +0000 build-fedora4: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2017-09-15 12:08:05.421893 +0000 build-fedora4: ..if [ -n "$SIGN_KEY" ]; then \
+2017-09-15 12:08:05.421904 +0000 build-fedora4: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2017-09-15 12:08:05.421916 +0000 build-fedora4: ..fi; \
+2017-09-15 12:08:05.421929 +0000 build-fedora4: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2017-09-15 12:08:05.421938 +0000 build-fedora4: .fi; \
+2017-09-15 12:08:05.421947 +0000 build-fedora4: fi
+2017-09-15 12:08:05.447029 +0000 build-fedora4: /home/user/builder-r4.0/qubes-src/builder-fedora/Makefile.fedora:189: target 'sign' does not exist
+2017-09-15 12:08:05.447178 +0000 build-fedora4: cd qubes-src/core-agent-linux && for pkg in pkgs/fc25/x86_64/python2-dnf-plugins-qubes-hooks-4.0.8-1.fc25.x86_64.rpm pkgs/fc25/x86_64/python3-dnf-plugins-qubes-hooks-4.0.8-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-core-agent-4.0.8-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-core-agent-debuginfo-4.0.8-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-core-agent-dom0-updates-4.0.8-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-core-agent-nautilus-4.0.8-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-core-agent-network-manager-4.0.8-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-core-agent-networking-4.0.8-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-core-agent-passwordless-root-4.0.8-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-core-agent-qrexec-4.0.8-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-core-agent-systemd-4.0.8-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-core-agent-sysvinit-4.0.8-1.fc25.x86_64.rpm ; do \
+2017-09-15 12:08:05.447229 +0000 build-fedora4: .if ! rpm -K $pkg | grep -qi pgp; then \
+2017-09-15 12:08:05.447264 +0000 build-fedora4: ..setsid -w rpmsign  --digest-algo=sha256 --key-id=5817A43B283DE5A9181A522E1848792F9E2795E9 --addsign $pkg </dev/null || exit 1; \
+2017-09-15 12:08:05.447285 +0000 build-fedora4: .fi; \
+2017-09-15 12:08:05.447319 +0000 build-fedora4: done
+2017-09-15 12:08:05.967699 +0000 build-fedora4: pkgs/fc25/x86_64/python2-dnf-plugins-qubes-hooks-4.0.8-1.fc25.x86_64.rpm:
+2017-09-15 12:08:06.457496 +0000 build-fedora4: pkgs/fc25/x86_64/python3-dnf-plugins-qubes-hooks-4.0.8-1.fc25.x86_64.rpm:
+2017-09-15 12:08:06.896905 +0000 build-fedora4: pkgs/fc25/x86_64/qubes-core-agent-4.0.8-1.fc25.x86_64.rpm:
+2017-09-15 12:08:07.334038 +0000 build-fedora4: pkgs/fc25/x86_64/qubes-core-agent-debuginfo-4.0.8-1.fc25.x86_64.rpm:
+2017-09-15 12:08:07.770527 +0000 build-fedora4: pkgs/fc25/x86_64/qubes-core-agent-dom0-updates-4.0.8-1.fc25.x86_64.rpm:
+2017-09-15 12:08:08.212629 +0000 build-fedora4: pkgs/fc25/x86_64/qubes-core-agent-nautilus-4.0.8-1.fc25.x86_64.rpm:
+2017-09-15 12:08:08.677823 +0000 build-fedora4: pkgs/fc25/x86_64/qubes-core-agent-network-manager-4.0.8-1.fc25.x86_64.rpm:
+2017-09-15 12:08:09.249597 +0000 build-fedora4: pkgs/fc25/x86_64/qubes-core-agent-networking-4.0.8-1.fc25.x86_64.rpm:
+2017-09-15 12:08:09.745284 +0000 build-fedora4: pkgs/fc25/x86_64/qubes-core-agent-passwordless-root-4.0.8-1.fc25.x86_64.rpm:
+2017-09-15 12:08:10.282844 +0000 build-fedora4: pkgs/fc25/x86_64/qubes-core-agent-qrexec-4.0.8-1.fc25.x86_64.rpm:
+2017-09-15 12:08:10.783858 +0000 build-fedora4: pkgs/fc25/x86_64/qubes-core-agent-systemd-4.0.8-1.fc25.x86_64.rpm:
+2017-09-15 12:08:11.272626 +0000 build-fedora4: pkgs/fc25/x86_64/qubes-core-agent-sysvinit-4.0.8-1.fc25.x86_64.rpm:
+2017-09-15 12:08:11.274609 +0000 build-fedora4: Makefile:710: target 'internal-update-repo-current-testing.vm.fc24.core-agent-linux' does not exist
+2017-09-15 12:08:11.274690 +0000 build-fedora4: repo_base_var="LINUX_REPO_fc24_BASEDIR"; \
+2017-09-15 12:08:11.274734 +0000 build-fedora4: if [ -n "${!repo_base_var}" ]; then \
+2017-09-15 12:08:11.274770 +0000 build-fedora4: .repo_basedir="${!repo_base_var}"; \
+2017-09-15 12:08:11.274797 +0000 build-fedora4: else \
+2017-09-15 12:08:11.274825 +0000 build-fedora4: .repo_basedir="qubes-src/linux-yum/r4.0"; \
+2017-09-15 12:08:11.274847 +0000 build-fedora4: fi; \
+2017-09-15 12:08:11.274875 +0000 build-fedora4: if [ -r qubes-src/core-agent-linux/Makefile.builder ]; then \
+2017-09-15 12:08:11.274902 +0000 build-fedora4: .echo -n "Updating qubes-src/core-agent-linux... "; \
+2017-09-15 12:08:11.274926 +0000 build-fedora4: .if [ "0" -eq 1 ]; then \
+2017-09-15 12:08:11.274953 +0000 build-fedora4: ..vtag=`git -C qubes-src/core-agent-linux tag --points-at HEAD --list v*`; \
+2017-09-15 12:08:11.274978 +0000 build-fedora4: ..if [ -z "$vtag" ]; then \
+2017-09-15 12:08:11.275001 +0000 build-fedora4: ...echo "no version tag"; \
+2017-09-15 12:08:11.275022 +0000 build-fedora4: ...exit 0; \
+2017-09-15 12:08:11.275043 +0000 build-fedora4: ..fi; \
+2017-09-15 12:08:11.275064 +0000 build-fedora4: .fi; \
+2017-09-15 12:08:11.275112 +0000 build-fedora4: .component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc24 PACKAGE_SET=vm COMPONENT=`basename qubes-src/core-agent-linux` UPDATE_REPO=/home/user/builder-r4.0/$repo_basedir/current-testing/vm/fc24 get-var GET_VAR=PACKAGE_LIST); \
+2017-09-15 12:08:11.275139 +0000 build-fedora4: .if [ -z "$component_packages" ]; then \
+2017-09-15 12:08:11.275163 +0000 build-fedora4: ..echo "no packages."; \
+2017-09-15 12:08:11.275184 +0000 build-fedora4: ..exit 0; \
+2017-09-15 12:08:11.275204 +0000 build-fedora4: .fi; \
+2017-09-15 12:08:11.275230 +0000 build-fedora4: .make -s -f Makefile.generic DIST=fc24 PACKAGE_SET=vm \
+2017-09-15 12:08:11.275274 +0000 build-fedora4: ..COMPONENT=`basename qubes-src/core-agent-linux` \
+2017-09-15 12:08:11.275326 +0000 build-fedora4: ..SNAPSHOT_REPO=current-testing \
+2017-09-15 12:08:11.275355 +0000 build-fedora4: ..TARGET_REPO=current-testing \
+2017-09-15 12:08:11.275381 +0000 build-fedora4: ..UPDATE_REPO=/home/user/builder-r4.0/$repo_basedir/current-testing/vm/fc24 \
+2017-09-15 12:08:11.275415 +0000 build-fedora4: ..SNAPSHOT_FILE=/home/user/builder-r4.0/repo-latest-snapshot/current-testing-vm-fc24-`basename qubes-src/core-agent-linux` \
+2017-09-15 12:08:11.275450 +0000 build-fedora4: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2017-09-15_12-06-57 \
+2017-09-15 12:08:11.275476 +0000 build-fedora4: ..update-repo || exit 1; \
+2017-09-15 12:08:11.275507 +0000 build-fedora4: elif make -C qubes-src/core-agent-linux -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2017-09-15 12:08:11.275532 +0000 build-fedora4: .echo "Updating qubes-src/core-agent-linux... "; \
+2017-09-15 12:08:11.275559 +0000 build-fedora4: .make -s -C qubes-src/core-agent-linux update-repo-current-testing || exit 1; \
+2017-09-15 12:08:11.275578 +0000 build-fedora4: else \
+2017-09-15 12:08:11.275605 +0000 build-fedora4: .echo -n "Updating qubes-src/core-agent-linux... skipping."; \
+2017-09-15 12:08:11.275624 +0000 build-fedora4: fi; \
+2017-09-15 12:08:11.275643 +0000 build-fedora4: echo
+2017-09-15 12:08:11.333128 +0000 build-fedora4: Updating qubes-src/core-agent-linux... /home/user/builder-r4.0/qubes-src/builder-fedora/Makefile.fedora:165: target 'update-repo-do' does not exist
+2017-09-15 12:08:11.333198 +0000 build-fedora4: mkdir -p /home/user/builder-r4.0/qubes-src/linux-yum/r4.0/current-testing/vm/fc24/rpm
+2017-09-15 12:08:11.352292 +0000 build-fedora4: cd qubes-src/core-agent-linux && ln -f pkgs/fc24/x86_64/python2-dnf-plugins-qubes-hooks-4.0.8-1.fc24.x86_64.rpm pkgs/fc24/x86_64/python3-dnf-plugins-qubes-hooks-4.0.8-1.fc24.x86_64.rpm pkgs/fc24/x86_64/qubes-core-agent-4.0.8-1.fc24.x86_64.rpm pkgs/fc24/x86_64/qubes-core-agent-debuginfo-4.0.8-1.fc24.x86_64.rpm pkgs/fc24/x86_64/qubes-core-agent-dom0-updates-4.0.8-1.fc24.x86_64.rpm pkgs/fc24/x86_64/qubes-core-agent-nautilus-4.0.8-1.fc24.x86_64.rpm pkgs/fc24/x86_64/qubes-core-agent-network-manager-4.0.8-1.fc24.x86_64.rpm pkgs/fc24/x86_64/qubes-core-agent-networking-4.0.8-1.fc24.x86_64.rpm pkgs/fc24/x86_64/qubes-core-agent-passwordless-root-4.0.8-1.fc24.x86_64.rpm pkgs/fc24/x86_64/qubes-core-agent-qrexec-4.0.8-1.fc24.x86_64.rpm pkgs/fc24/x86_64/qubes-core-agent-systemd-4.0.8-1.fc24.x86_64.rpm pkgs/fc24/x86_64/qubes-core-agent-sysvinit-4.0.8-1.fc24.x86_64.rpm  /home/user/builder-r4.0/qubes-src/linux-yum/r4.0/current-testing/vm/fc24/rpm/
+2017-09-15 12:08:11.356995 +0000 build-fedora4: cd qubes-src/core-agent-linux && echo pkgs/fc24/x86_64/python2-dnf-plugins-qubes-hooks-4.0.8-1.fc24.x86_64.rpm pkgs/fc24/x86_64/python3-dnf-plugins-qubes-hooks-4.0.8-1.fc24.x86_64.rpm pkgs/fc24/x86_64/qubes-core-agent-4.0.8-1.fc24.x86_64.rpm pkgs/fc24/x86_64/qubes-core-agent-debuginfo-4.0.8-1.fc24.x86_64.rpm pkgs/fc24/x86_64/qubes-core-agent-dom0-updates-4.0.8-1.fc24.x86_64.rpm pkgs/fc24/x86_64/qubes-core-agent-nautilus-4.0.8-1.fc24.x86_64.rpm pkgs/fc24/x86_64/qubes-core-agent-network-manager-4.0.8-1.fc24.x86_64.rpm pkgs/fc24/x86_64/qubes-core-agent-networking-4.0.8-1.fc24.x86_64.rpm pkgs/fc24/x86_64/qubes-core-agent-passwordless-root-4.0.8-1.fc24.x86_64.rpm pkgs/fc24/x86_64/qubes-core-agent-qrexec-4.0.8-1.fc24.x86_64.rpm pkgs/fc24/x86_64/qubes-core-agent-systemd-4.0.8-1.fc24.x86_64.rpm pkgs/fc24/x86_64/qubes-core-agent-sysvinit-4.0.8-1.fc24.x86_64.rpm  > /home/user/builder-r4.0/repo-latest-snapshot/current-testing-vm-fc24-core-agent-linux
+2017-09-15 12:08:11.400301 +0000 build-fedora4: /home/user/builder-r4.0/qubes-src/builder-github//Makefile.github:21: target 'notify-github' does not exist
+2017-09-15 12:08:11.400389 +0000 build-fedora4: [ -z "python2-dnf-plugins-qubes-hooks-4.0.8-1.fc24" ] || /home/user/builder-r4.0/qubes-src/builder-github//notify-issues \
+2017-09-15 12:08:11.400450 +0000 build-fedora4: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2017-09-15_12-06-57" \
+2017-09-15 12:08:11.400476 +0000 build-fedora4: ."r4.0" \
+2017-09-15 12:08:11.400501 +0000 build-fedora4: ."current-testing" \
+2017-09-15 12:08:11.400528 +0000 build-fedora4: ."qubes-src/core-agent-linux" \
+2017-09-15 12:08:11.400553 +0000 build-fedora4: ."python2-dnf-plugins-qubes-hooks-4.0.8-1.fc24" \
+2017-09-15 12:08:11.400573 +0000 build-fedora4: ."fc24" \
+2017-09-15 12:08:11.400592 +0000 build-fedora4: ."vm" \
+2017-09-15 12:08:11.400620 +0000 build-fedora4: ."/home/user/github-notify-state/r4.0-core-agent-linux-vm-fc24-current-testing"
+2017-09-15 12:08:21.611356 +0000 build-fedora4: Adding a comment to issue #2945
+2017-09-15 12:08:21.611444 +0000 build-fedora4: Adding a comment to issue #1482
+2017-09-15 12:08:21.615406 +0000 build-fedora4: 
+2017-09-15 12:08:21.616753 +0000 build-fedora4: Makefile:691: update target 'internal-update-repo-current-testing.vm.fc24' due to: internal-update-repo-current-testing.vm.fc24.core-agent-linux
+2017-09-15 12:08:21.616790 +0000 build-fedora4: true
+2017-09-15 12:08:21.620033 +0000 build-fedora4: Makefile:710: target 'internal-update-repo-current-testing.vm.fc25.core-agent-linux' does not exist
+2017-09-15 12:08:21.620104 +0000 build-fedora4: repo_base_var="LINUX_REPO_fc25_BASEDIR"; \
+2017-09-15 12:08:21.620144 +0000 build-fedora4: if [ -n "${!repo_base_var}" ]; then \
+2017-09-15 12:08:21.620177 +0000 build-fedora4: .repo_basedir="${!repo_base_var}"; \
+2017-09-15 12:08:21.620203 +0000 build-fedora4: else \
+2017-09-15 12:08:21.620232 +0000 build-fedora4: .repo_basedir="qubes-src/linux-yum/r4.0"; \
+2017-09-15 12:08:21.620256 +0000 build-fedora4: fi; \
+2017-09-15 12:08:21.620286 +0000 build-fedora4: if [ -r qubes-src/core-agent-linux/Makefile.builder ]; then \
+2017-09-15 12:08:21.620341 +0000 build-fedora4: .echo -n "Updating qubes-src/core-agent-linux... "; \
+2017-09-15 12:08:21.620368 +0000 build-fedora4: .if [ "0" -eq 1 ]; then \
+2017-09-15 12:08:21.620400 +0000 build-fedora4: ..vtag=`git -C qubes-src/core-agent-linux tag --points-at HEAD --list v*`; \
+2017-09-15 12:08:21.620426 +0000 build-fedora4: ..if [ -z "$vtag" ]; then \
+2017-09-15 12:08:21.620449 +0000 build-fedora4: ...echo "no version tag"; \
+2017-09-15 12:08:21.620471 +0000 build-fedora4: ...exit 0; \
+2017-09-15 12:08:21.620491 +0000 build-fedora4: ..fi; \
+2017-09-15 12:08:21.620512 +0000 build-fedora4: .fi; \
+2017-09-15 12:08:21.620563 +0000 build-fedora4: .component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc25 PACKAGE_SET=vm COMPONENT=`basename qubes-src/core-agent-linux` UPDATE_REPO=/home/user/builder-r4.0/$repo_basedir/current-testing/vm/fc25 get-var GET_VAR=PACKAGE_LIST); \
+2017-09-15 12:08:21.620593 +0000 build-fedora4: .if [ -z "$component_packages" ]; then \
+2017-09-15 12:08:21.620616 +0000 build-fedora4: ..echo "no packages."; \
+2017-09-15 12:08:21.620636 +0000 build-fedora4: ..exit 0; \
+2017-09-15 12:08:21.620656 +0000 build-fedora4: .fi; \
+2017-09-15 12:08:21.620682 +0000 build-fedora4: .make -s -f Makefile.generic DIST=fc25 PACKAGE_SET=vm \
+2017-09-15 12:08:21.620709 +0000 build-fedora4: ..COMPONENT=`basename qubes-src/core-agent-linux` \
+2017-09-15 12:08:21.620734 +0000 build-fedora4: ..SNAPSHOT_REPO=current-testing \
+2017-09-15 12:08:21.620758 +0000 build-fedora4: ..TARGET_REPO=current-testing \
+2017-09-15 12:08:21.620788 +0000 build-fedora4: ..UPDATE_REPO=/home/user/builder-r4.0/$repo_basedir/current-testing/vm/fc25 \
+2017-09-15 12:08:21.620824 +0000 build-fedora4: ..SNAPSHOT_FILE=/home/user/builder-r4.0/repo-latest-snapshot/current-testing-vm-fc25-`basename qubes-src/core-agent-linux` \
+2017-09-15 12:08:21.620858 +0000 build-fedora4: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2017-09-15_12-07-26 \
+2017-09-15 12:08:21.620883 +0000 build-fedora4: ..update-repo || exit 1; \
+2017-09-15 12:08:21.620914 +0000 build-fedora4: elif make -C qubes-src/core-agent-linux -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2017-09-15 12:08:21.620959 +0000 build-fedora4: .echo "Updating qubes-src/core-agent-linux... "; \
+2017-09-15 12:08:21.620989 +0000 build-fedora4: .make -s -C qubes-src/core-agent-linux update-repo-current-testing || exit 1; \
+2017-09-15 12:08:21.621013 +0000 build-fedora4: else \
+2017-09-15 12:08:21.621041 +0000 build-fedora4: .echo -n "Updating qubes-src/core-agent-linux... skipping."; \
+2017-09-15 12:08:21.621062 +0000 build-fedora4: fi; \
+2017-09-15 12:08:21.621081 +0000 build-fedora4: echo
+2017-09-15 12:08:21.682270 +0000 build-fedora4: Updating qubes-src/core-agent-linux... /home/user/builder-r4.0/qubes-src/builder-fedora/Makefile.fedora:165: target 'update-repo-do' does not exist
+2017-09-15 12:08:21.682352 +0000 build-fedora4: mkdir -p /home/user/builder-r4.0/qubes-src/linux-yum/r4.0/current-testing/vm/fc25/rpm
+2017-09-15 12:08:21.702911 +0000 build-fedora4: cd qubes-src/core-agent-linux && ln -f pkgs/fc25/x86_64/python2-dnf-plugins-qubes-hooks-4.0.8-1.fc25.x86_64.rpm pkgs/fc25/x86_64/python3-dnf-plugins-qubes-hooks-4.0.8-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-core-agent-4.0.8-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-core-agent-debuginfo-4.0.8-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-core-agent-dom0-updates-4.0.8-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-core-agent-nautilus-4.0.8-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-core-agent-network-manager-4.0.8-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-core-agent-networking-4.0.8-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-core-agent-passwordless-root-4.0.8-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-core-agent-qrexec-4.0.8-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-core-agent-systemd-4.0.8-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-core-agent-sysvinit-4.0.8-1.fc25.x86_64.rpm  /home/user/builder-r4.0/qubes-src/linux-yum/r4.0/current-testing/vm/fc25/rpm/
+2017-09-15 12:08:21.708096 +0000 build-fedora4: cd qubes-src/core-agent-linux && echo pkgs/fc25/x86_64/python2-dnf-plugins-qubes-hooks-4.0.8-1.fc25.x86_64.rpm pkgs/fc25/x86_64/python3-dnf-plugins-qubes-hooks-4.0.8-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-core-agent-4.0.8-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-core-agent-debuginfo-4.0.8-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-core-agent-dom0-updates-4.0.8-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-core-agent-nautilus-4.0.8-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-core-agent-network-manager-4.0.8-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-core-agent-networking-4.0.8-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-core-agent-passwordless-root-4.0.8-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-core-agent-qrexec-4.0.8-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-core-agent-systemd-4.0.8-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-core-agent-sysvinit-4.0.8-1.fc25.x86_64.rpm  > /home/user/builder-r4.0/repo-latest-snapshot/current-testing-vm-fc25-core-agent-linux
+2017-09-15 12:08:21.753349 +0000 build-fedora4: /home/user/builder-r4.0/qubes-src/builder-github//Makefile.github:21: target 'notify-github' does not exist
+2017-09-15 12:08:21.753431 +0000 build-fedora4: [ -z "python2-dnf-plugins-qubes-hooks-4.0.8-1.fc25" ] || /home/user/builder-r4.0/qubes-src/builder-github//notify-issues \
+2017-09-15 12:08:21.753472 +0000 build-fedora4: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2017-09-15_12-07-26" \
+2017-09-15 12:08:21.753494 +0000 build-fedora4: ."r4.0" \
+2017-09-15 12:08:21.753514 +0000 build-fedora4: ."current-testing" \
+2017-09-15 12:08:21.753529 +0000 build-fedora4: ."qubes-src/core-agent-linux" \
+2017-09-15 12:08:21.753542 +0000 build-fedora4: ."python2-dnf-plugins-qubes-hooks-4.0.8-1.fc25" \
+2017-09-15 12:08:21.753552 +0000 build-fedora4: ."fc25" \
+2017-09-15 12:08:21.753561 +0000 build-fedora4: ."vm" \
+2017-09-15 12:08:21.753575 +0000 build-fedora4: ."/home/user/github-notify-state/r4.0-core-agent-linux-vm-fc25-current-testing"
+2017-09-15 12:08:30.015020 +0000 build-fedora4: Adding a comment to issue #2945
+2017-09-15 12:08:30.015085 +0000 build-fedora4: Adding a comment to issue #1482
+2017-09-15 12:08:30.018259 +0000 build-fedora4: 
+2017-09-15 12:08:30.018644 +0000 build-fedora4: Makefile:691: update target 'internal-update-repo-current-testing.vm.fc25' due to: internal-update-repo-current-testing.vm.fc25.core-agent-linux
+2017-09-15 12:08:30.018701 +0000 build-fedora4: true
+2017-09-15 12:08:30.021175 +0000 build-fedora4: Makefile:753: target 'post-update-repo-current-testing' does not exist
+2017-09-15 12:08:30.021227 +0000 build-fedora4: for dist in  fc24 fc25; do \
+2017-09-15 12:08:30.021256 +0000 build-fedora4: .repo_base_var="LINUX_REPO_${dist}_BASEDIR"; \
+2017-09-15 12:08:30.021280 +0000 build-fedora4: .if [ -n "${!repo_base_var}" ]; then \
+2017-09-15 12:08:30.021315 +0000 build-fedora4: ..repo_basedir="${!repo_base_var}"; \
+2017-09-15 12:08:30.021337 +0000 build-fedora4: .else \
+2017-09-15 12:08:30.021362 +0000 build-fedora4: ..repo_basedir="qubes-src/linux-yum/r4.0"; \
+2017-09-15 12:08:30.021381 +0000 build-fedora4: .fi; \
+2017-09-15 12:08:30.021404 +0000 build-fedora4: .repos_to_update="$repos_to_update $repo_basedir"; \
+2017-09-15 12:08:30.021421 +0000 build-fedora4: done; \
+2017-09-15 12:08:30.021445 +0000 build-fedora4: for repo in `echo $repos_to_update|tr ' ' '\n'|sort|uniq`; do \
+2017-09-15 12:08:30.021466 +0000 build-fedora4: .[ -z "$repo" ] && continue; \
+2017-09-15 12:08:30.021491 +0000 build-fedora4: .(cd $repo/.. && ./update_repo-current-testing.sh `basename $repo`); \
+2017-09-15 12:08:30.021508 +0000 build-fedora4: done
+2017-09-15 12:08:30.035178 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/dom0/fc20...
+2017-09-15 12:08:30.463749 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/dom0/fc25...
+2017-09-15 12:08:31.150155 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc20...
+2017-09-15 12:08:31.544708 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc21...
+2017-09-15 12:08:31.926099 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc22...
+2017-09-15 12:08:32.322119 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc23...
+2017-09-15 12:08:32.703843 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc24...
+2017-09-15 12:08:36.427010 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc25...
+2017-09-15 12:08:39.606711 +0000 build-fedora4: Done.
+2017-09-15 12:08:39.613680 +0000 build-fedora4: ~/builder-r4.0/qubes-src/linux-yum ~/builder-r4.0/qubes-src/linux-yum
+2017-09-15 12:08:39.615588 +0000 build-fedora4: Syncing r4.0...
+2017-09-15 12:08:40.614133 +0000 build-fedora4: sending incremental file list
+2017-09-15 12:08:40.740733 +0000 build-fedora4: .d..t...... current-testing/
+2017-09-15 12:08:40.740932 +0000 build-fedora4: .d..t...... current-testing/dom0/
+2017-09-15 12:08:40.741007 +0000 build-fedora4: .d..t...... current-testing/dom0/fc20/
+2017-09-15 12:08:40.741182 +0000 build-fedora4: .d..t...... current-testing/dom0/fc25/
+2017-09-15 12:08:40.742194 +0000 build-fedora4: .d..t...... current-testing/dom0/fc25/rpm/
+2017-09-15 12:08:40.742448 +0000 build-fedora4: <f..t...... current-testing/dom0/fc25/rpm/.gitignore
+2017-09-15 12:08:40.744058 +0000 build-fedora4: .              6 100%    0.00kB/s    0:00:00  .              6 100%    0.00kB/s    0:00:00 (xfr#1, ir-chk=1029/1038)
+2017-09-15 12:08:40.744159 +0000 build-fedora4: .d..t...... current-testing/vm/
+2017-09-15 12:08:40.744220 +0000 build-fedora4: .d..t...... current-testing/vm/fc20/
+2017-09-15 12:08:40.744342 +0000 build-fedora4: .d..t...... current-testing/vm/fc20/rpm/
+2017-09-15 12:08:40.744404 +0000 build-fedora4: <f..t...... current-testing/vm/fc20/rpm/.gitignore
+2017-09-15 12:08:40.744847 +0000 build-fedora4: .              6 100%    5.86kB/s    0:00:00  .              6 100%    5.86kB/s    0:00:00 (xfr#2, ir-chk=1002/1038)
+2017-09-15 12:08:40.744969 +0000 build-fedora4: .d..t...... current-testing/vm/fc21/
+2017-09-15 12:08:40.745058 +0000 build-fedora4: .d..t...... current-testing/vm/fc21/rpm/
+2017-09-15 12:08:40.745117 +0000 build-fedora4: <f..t...... current-testing/vm/fc21/rpm/.gitignore
+2017-09-15 12:08:40.745588 +0000 build-fedora4: .              6 100%    5.86kB/s    0:00:00  .              6 100%    5.86kB/s    0:00:00 (xfr#3, ir-chk=1000/1038)
+2017-09-15 12:08:40.745771 +0000 build-fedora4: .d..t...... current-testing/vm/fc22/
+2017-09-15 12:08:40.746415 +0000 build-fedora4: .d..t...... current-testing/vm/fc22/rpm/
+2017-09-15 12:08:40.746498 +0000 build-fedora4: <f..t...... current-testing/vm/fc22/rpm/.gitignore
+2017-09-15 12:08:40.747224 +0000 build-fedora4: .              6 100%    1.95kB/s    0:00:00  .              6 100%    1.95kB/s    0:00:00 (xfr#4, to-chk=1026/1066)
+2017-09-15 12:08:40.747385 +0000 build-fedora4: .d..t...... current-testing/vm/fc23/
+2017-09-15 12:08:40.747497 +0000 build-fedora4: .d..t...... current-testing/vm/fc23/rpm/
+2017-09-15 12:08:40.747616 +0000 build-fedora4: <f..t...... current-testing/vm/fc23/rpm/.gitignore
+2017-09-15 12:08:40.747933 +0000 build-fedora4: .              6 100%    1.46kB/s    0:00:00  .              6 100%    1.46kB/s    0:00:00 (xfr#5, to-chk=1024/1066)
+2017-09-15 12:08:40.748068 +0000 build-fedora4: .d..t...... current-testing/vm/fc24/
+2017-09-15 12:08:40.748161 +0000 build-fedora4: .d..t...... current-testing/vm/fc24/rpm/
+2017-09-15 12:08:40.748276 +0000 build-fedora4: <f..t...... current-testing/vm/fc24/rpm/.gitignore
+2017-09-15 12:08:40.749001 +0000 build-fedora4: .              6 100%    1.17kB/s    0:00:00  .              6 100%    1.17kB/s    0:00:00 (xfr#6, to-chk=1022/1066)
+2017-09-15 12:08:40.749179 +0000 build-fedora4: <f+++++++++ current-testing/vm/fc24/rpm/python2-dnf-plugins-qubes-hooks-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:08:40.749410 +0000 build-fedora4: .          9,054 100%    1.73MB/s    0:00:00  .          9,054 100%    1.73MB/s    0:00:00 (xfr#7, to-chk=1008/1066)
+2017-09-15 12:08:40.749541 +0000 build-fedora4: <f+++++++++ current-testing/vm/fc24/rpm/python3-dnf-plugins-qubes-hooks-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:08:40.749677 +0000 build-fedora4: .          8,962 100%    1.71MB/s    0:00:00  .          8,962 100%    1.71MB/s    0:00:00 (xfr#8, to-chk=975/1066)
+2017-09-15 12:08:40.749801 +0000 build-fedora4: <f+++++++++ current-testing/vm/fc24/rpm/qubes-core-agent-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:08:40.752448 +0000 build-fedora4: .         32,768  31%    5.21MB/s    0:00:00  .        104,370 100%   12.44MB/s    0:00:00 (xfr#9, to-chk=937/1066)
+2017-09-15 12:08:40.752639 +0000 build-fedora4: <f+++++++++ current-testing/vm/fc24/rpm/qubes-core-agent-debuginfo-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:08:40.753141 +0000 build-fedora4: .         32,768  40%    3.47MB/s    0:00:00  .         81,298 100%    8.61MB/s    0:00:00 (xfr#10, to-chk=928/1066)
+2017-09-15 12:08:40.753183 +0000 build-fedora4: <f+++++++++ current-testing/vm/fc24/rpm/qubes-core-agent-dom0-updates-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:08:40.753275 +0000 build-fedora4: .          8,478 100%  919.92kB/s    0:00:00  .          8,478 100%  919.92kB/s    0:00:00 (xfr#11, to-chk=919/1066)
+2017-09-15 12:08:40.753316 +0000 build-fedora4: <f+++++++++ current-testing/vm/fc24/rpm/qubes-core-agent-nautilus-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:08:40.753448 +0000 build-fedora4: .         10,794 100%    1.14MB/s    0:00:00  .         10,794 100%    1.14MB/s    0:00:00 (xfr#12, to-chk=910/1066)
+2017-09-15 12:08:40.753488 +0000 build-fedora4: <f+++++++++ current-testing/vm/fc24/rpm/qubes-core-agent-network-manager-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:08:40.753611 +0000 build-fedora4: .          9,462 100%  924.02kB/s    0:00:00  .          9,462 100%  924.02kB/s    0:00:00 (xfr#13, to-chk=901/1066)
+2017-09-15 12:08:40.753649 +0000 build-fedora4: <f+++++++++ current-testing/vm/fc24/rpm/qubes-core-agent-networking-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:08:40.753771 +0000 build-fedora4: .         17,074 100%    1.63MB/s    0:00:00  .         17,074 100%    1.63MB/s    0:00:00 (xfr#14, to-chk=892/1066)
+2017-09-15 12:08:40.753835 +0000 build-fedora4: <f+++++++++ current-testing/vm/fc24/rpm/qubes-core-agent-passwordless-root-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:08:40.753926 +0000 build-fedora4: .          8,742 100%  853.71kB/s    0:00:00  .          8,742 100%  853.71kB/s    0:00:00 (xfr#15, to-chk=883/1066)
+2017-09-15 12:08:40.753985 +0000 build-fedora4: <f+++++++++ current-testing/vm/fc24/rpm/qubes-core-agent-qrexec-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:08:40.754133 +0000 build-fedora4: .         30,694 100%    2.93MB/s    0:00:00  .         30,694 100%    2.93MB/s    0:00:00 (xfr#16, to-chk=874/1066)
+2017-09-15 12:08:40.754207 +0000 build-fedora4: <f+++++++++ current-testing/vm/fc24/rpm/qubes-core-agent-systemd-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:08:40.754300 +0000 build-fedora4: .         21,598 100%    2.06MB/s    0:00:00  .         21,598 100%    2.06MB/s    0:00:00 (xfr#17, to-chk=865/1066)
+2017-09-15 12:08:40.754386 +0000 build-fedora4: <f+++++++++ current-testing/vm/fc24/rpm/qubes-core-agent-sysvinit-4.0.8-1.fc24.x86_64.rpm
+2017-09-15 12:08:40.754492 +0000 build-fedora4: .         12,278 100%    1.17MB/s    0:00:00  .         12,278 100%    1.17MB/s    0:00:00 (xfr#18, to-chk=856/1066)
+2017-09-15 12:08:40.754528 +0000 build-fedora4: .d..t...... current-testing/vm/fc25/
+2017-09-15 12:08:40.754559 +0000 build-fedora4: .d..t...... current-testing/vm/fc25/rpm/
+2017-09-15 12:08:40.754613 +0000 build-fedora4: <f..t...... current-testing/vm/fc25/rpm/.gitignore
+2017-09-15 12:08:40.754979 +0000 build-fedora4: .              6 100%    0.53kB/s    0:00:00  .              6 100%    0.53kB/s    0:00:00 (xfr#19, to-chk=647/1066)
+2017-09-15 12:08:40.755016 +0000 build-fedora4: .f...p..... current-testing/vm/fc25/rpm/python2-dnf-plugins-qubes-hooks-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:08:40.755048 +0000 build-fedora4: <f+++++++++ current-testing/vm/fc25/rpm/python2-dnf-plugins-qubes-hooks-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:08:40.755088 +0000 build-fedora4: .          8,998 100%  798.83kB/s    0:00:00  .          8,998 100%  798.83kB/s    0:00:00 (xfr#20, to-chk=633/1066)
+2017-09-15 12:08:40.755118 +0000 build-fedora4: .f...p..... current-testing/vm/fc25/rpm/python3-dnf-plugins-qubes-hooks-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:08:40.755148 +0000 build-fedora4: <f+++++++++ current-testing/vm/fc25/rpm/python3-dnf-plugins-qubes-hooks-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:08:40.755190 +0000 build-fedora4: .          8,966 100%  795.99kB/s    0:00:00  .          8,966 100%  795.99kB/s    0:00:00 (xfr#21, to-chk=600/1066)
+2017-09-15 12:08:40.755217 +0000 build-fedora4: .f...p..... current-testing/vm/fc25/rpm/qubes-core-agent-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:08:40.755242 +0000 build-fedora4: <f+++++++++ current-testing/vm/fc25/rpm/qubes-core-agent-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:08:40.755774 +0000 build-fedora4: .         32,768  31%    2.84MB/s    0:00:00  .        104,462 100%    8.30MB/s    0:00:00 (xfr#22, to-chk=562/1066)
+2017-09-15 12:08:40.755818 +0000 build-fedora4: .f...p..... current-testing/vm/fc25/rpm/qubes-core-agent-debuginfo-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:08:40.755855 +0000 build-fedora4: <f+++++++++ current-testing/vm/fc25/rpm/qubes-core-agent-debuginfo-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:08:40.756124 +0000 build-fedora4: .         32,768  34%    2.60MB/s    0:00:00  .         95,002 100%    7.55MB/s    0:00:00 (xfr#23, to-chk=553/1066)
+2017-09-15 12:08:40.756163 +0000 build-fedora4: .f...p..... current-testing/vm/fc25/rpm/qubes-core-agent-dom0-updates-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:08:40.756200 +0000 build-fedora4: <f+++++++++ current-testing/vm/fc25/rpm/qubes-core-agent-dom0-updates-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:08:40.756312 +0000 build-fedora4: .          8,478 100%  689.94kB/s    0:00:00  .          8,478 100%  689.94kB/s    0:00:00 (xfr#24, to-chk=544/1066)
+2017-09-15 12:08:40.756350 +0000 build-fedora4: .f...p..... current-testing/vm/fc25/rpm/qubes-core-agent-nautilus-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:08:40.756383 +0000 build-fedora4: <f+++++++++ current-testing/vm/fc25/rpm/qubes-core-agent-nautilus-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:08:40.756440 +0000 build-fedora4: .         10,790 100%  878.09kB/s    0:00:00  .         10,790 100%  878.09kB/s    0:00:00 (xfr#25, to-chk=535/1066)
+2017-09-15 12:08:40.756472 +0000 build-fedora4: .f...p..... current-testing/vm/fc25/rpm/qubes-core-agent-network-manager-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:08:40.756518 +0000 build-fedora4: <f+++++++++ current-testing/vm/fc25/rpm/qubes-core-agent-network-manager-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:08:40.756552 +0000 build-fedora4: .          9,458 100%  769.69kB/s    0:00:00  .          9,458 100%  769.69kB/s    0:00:00 (xfr#26, to-chk=526/1066)
+2017-09-15 12:08:40.756582 +0000 build-fedora4: .f...p..... current-testing/vm/fc25/rpm/qubes-core-agent-networking-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:08:40.756612 +0000 build-fedora4: <f+++++++++ current-testing/vm/fc25/rpm/qubes-core-agent-networking-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:08:40.756654 +0000 build-fedora4: .         17,070 100%    1.25MB/s    0:00:00  .         17,070 100%    1.25MB/s    0:00:00 (xfr#27, to-chk=517/1066)
+2017-09-15 12:08:40.756683 +0000 build-fedora4: .f...p..... current-testing/vm/fc25/rpm/qubes-core-agent-passwordless-root-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:08:40.756712 +0000 build-fedora4: <f+++++++++ current-testing/vm/fc25/rpm/qubes-core-agent-passwordless-root-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:08:40.756744 +0000 build-fedora4: .          8,742 100%  656.70kB/s    0:00:00  .          8,742 100%  656.70kB/s    0:00:00 (xfr#28, to-chk=508/1066)
+2017-09-15 12:08:40.756773 +0000 build-fedora4: .f...p..... current-testing/vm/fc25/rpm/qubes-core-agent-qrexec-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:08:40.756803 +0000 build-fedora4: <f+++++++++ current-testing/vm/fc25/rpm/qubes-core-agent-qrexec-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:08:40.756839 +0000 build-fedora4: .         30,614 100%    2.25MB/s    0:00:00  .         30,614 100%    2.25MB/s    0:00:00 (xfr#29, to-chk=499/1066)
+2017-09-15 12:08:40.756868 +0000 build-fedora4: .f...p..... current-testing/vm/fc25/rpm/qubes-core-agent-systemd-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:08:40.756897 +0000 build-fedora4: <f+++++++++ current-testing/vm/fc25/rpm/qubes-core-agent-systemd-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:08:40.756934 +0000 build-fedora4: .         21,598 100%    1.58MB/s    0:00:00  .         21,598 100%    1.58MB/s    0:00:00 (xfr#30, to-chk=490/1066)
+2017-09-15 12:08:40.756966 +0000 build-fedora4: .f...p..... current-testing/vm/fc25/rpm/qubes-core-agent-sysvinit-4.0.7-1.fc25.x86_64.rpm
+2017-09-15 12:08:40.756988 +0000 build-fedora4: <f+++++++++ current-testing/vm/fc25/rpm/qubes-core-agent-sysvinit-4.0.8-1.fc25.x86_64.rpm
+2017-09-15 12:08:40.757010 +0000 build-fedora4: .         12,282 100%  922.63kB/s    0:00:00  .         12,282 100%  922.63kB/s    0:00:00 (xfr#31, to-chk=481/1066)
+2017-09-15 12:08:40.757030 +0000 build-fedora4: .d..t...... current/
+2017-09-15 12:08:40.757048 +0000 build-fedora4: .d..t...... current/dom0/
+2017-09-15 12:08:40.757068 +0000 build-fedora4: .d..t...... current/dom0/fc25/
+2017-09-15 12:08:40.757083 +0000 build-fedora4: .d..t...... current/dom0/fc25/rpm/
+2017-09-15 12:08:40.757095 +0000 build-fedora4: <f..t...... current/dom0/fc25/rpm/.gitignore
+2017-09-15 12:08:40.757327 +0000 build-fedora4: .              6 100%    0.45kB/s    0:00:00  .              6 100%    0.45kB/s    0:00:00 (xfr#32, to-chk=269/1066)
+2017-09-15 12:08:40.757355 +0000 build-fedora4: .d..t...... current/vm/
+2017-09-15 12:08:40.757369 +0000 build-fedora4: .d..t...... current/vm/fc17/
+2017-09-15 12:08:40.757380 +0000 build-fedora4: .d..t...... current/vm/fc17/rpm/
+2017-09-15 12:08:40.757391 +0000 build-fedora4: <f..t...... current/vm/fc17/rpm/.gitignore
+2017-09-15 12:08:40.757595 +0000 build-fedora4: .              6 100%    0.42kB/s    0:00:00  .              6 100%    0.42kB/s    0:00:00 (xfr#33, to-chk=260/1066)
+2017-09-15 12:08:40.757623 +0000 build-fedora4: .d..t...... current/vm/fc20/
+2017-09-15 12:08:40.757636 +0000 build-fedora4: .d..t...... current/vm/fc20/rpm/
+2017-09-15 12:08:40.757648 +0000 build-fedora4: <f..t...... current/vm/fc20/rpm/.gitignore
+2017-09-15 12:08:40.757861 +0000 build-fedora4: .              6 100%    0.42kB/s    0:00:00  .              6 100%    0.42kB/s    0:00:00 (xfr#34, to-chk=258/1066)
+2017-09-15 12:08:40.757895 +0000 build-fedora4: .d..t...... current/vm/fc21/
+2017-09-15 12:08:40.757907 +0000 build-fedora4: .d..t...... current/vm/fc21/rpm/
+2017-09-15 12:08:40.757919 +0000 build-fedora4: <f..t...... current/vm/fc21/rpm/.gitignore
+2017-09-15 12:08:40.758134 +0000 build-fedora4: .              6 100%    0.42kB/s    0:00:00  .              6 100%    0.42kB/s    0:00:00 (xfr#35, to-chk=256/1066)
+2017-09-15 12:08:40.758152 +0000 build-fedora4: .d..t...... current/vm/fc22/
+2017-09-15 12:08:40.758164 +0000 build-fedora4: .d..t...... current/vm/fc22/rpm/
+2017-09-15 12:08:40.758175 +0000 build-fedora4: <f..t...... current/vm/fc22/rpm/.gitignore
+2017-09-15 12:08:40.758424 +0000 build-fedora4: .              6 100%    0.42kB/s    0:00:00  .              6 100%    0.42kB/s    0:00:00 (xfr#36, to-chk=254/1066)
+2017-09-15 12:08:40.758449 +0000 build-fedora4: .d..t...... current/vm/fc23/
+2017-09-15 12:08:40.758461 +0000 build-fedora4: .d..t...... current/vm/fc23/rpm/
+2017-09-15 12:08:40.758472 +0000 build-fedora4: <f..t...... current/vm/fc23/rpm/.gitignore
+2017-09-15 12:08:40.758721 +0000 build-fedora4: .              6 100%    0.39kB/s    0:00:00  .              6 100%    0.39kB/s    0:00:00 (xfr#37, to-chk=252/1066)
+2017-09-15 12:08:40.758738 +0000 build-fedora4: .d..t...... current/vm/fc24/
+2017-09-15 12:08:40.758753 +0000 build-fedora4: rsync: failed to set times on "/pub/qubes/repo/yum/r4.0/current/vm/fc25": Operation not permitted (1)
+2017-09-15 12:08:40.758769 +0000 build-fedora4: rsync: failed to set times on "/pub/qubes/repo/yum/r4.0/current/vm/fc25/rpm": Operation not permitted (1)
+2017-09-15 12:08:40.758780 +0000 build-fedora4: .d..t...... current/vm/fc24/rpm/
+2017-09-15 12:08:40.758791 +0000 build-fedora4: <f..t...... current/vm/fc24/rpm/.gitignore
+2017-09-15 12:08:40.759018 +0000 build-fedora4: .              6 100%    0.39kB/s    0:00:00  .              6 100%    0.39kB/s    0:00:00 (xfr#38, to-chk=250/1066)
+2017-09-15 12:08:40.759044 +0000 build-fedora4: .d..t...... current/vm/fc25/
+2017-09-15 12:08:40.759059 +0000 build-fedora4: .d..t...... current/vm/fc25/rpm/
+2017-09-15 12:08:40.759071 +0000 build-fedora4: <f..t...... current/vm/fc25/rpm/.gitignore
+2017-09-15 12:08:40.759295 +0000 build-fedora4: .              6 100%    0.39kB/s    0:00:00  .              6 100%    0.39kB/s    0:00:00 (xfr#39, to-chk=163/1066)
+2017-09-15 12:08:40.759315 +0000 build-fedora4: .d..t...... security-testing/
+2017-09-15 12:08:40.759327 +0000 build-fedora4: .d..t...... security-testing/dom0/
+2017-09-15 12:08:40.759339 +0000 build-fedora4: .d..t...... security-testing/dom0/fc21/
+2017-09-15 12:08:40.759350 +0000 build-fedora4: .d..t...... security-testing/dom0/fc21/rpm/
+2017-09-15 12:08:40.759362 +0000 build-fedora4: <f..t...... security-testing/dom0/fc21/rpm/.gitignore
+2017-09-15 12:08:40.759576 +0000 build-fedora4: .              6 100%    0.37kB/s    0:00:00  .              6 100%    0.37kB/s    0:00:00 (xfr#40, to-chk=72/1066)
+2017-09-15 12:08:40.759594 +0000 build-fedora4: .d..t...... security-testing/dom0/fc25/
+2017-09-15 12:08:40.759606 +0000 build-fedora4: .d..t...... security-testing/dom0/fc25/rpm/
+2017-09-15 12:08:40.759617 +0000 build-fedora4: <f..t...... security-testing/dom0/fc25/rpm/.gitignore
+2017-09-15 12:08:40.759817 +0000 build-fedora4: .              6 100%    0.37kB/s    0:00:00  .              6 100%    0.37kB/s    0:00:00 (xfr#41, to-chk=70/1066)
+2017-09-15 12:08:40.759834 +0000 build-fedora4: .d..t...... security-testing/vm/
+2017-09-15 12:08:40.759846 +0000 build-fedora4: .d..t...... security-testing/vm/fc20/
+2017-09-15 12:08:40.789435 +0000 build-fedora4: .d..t...... security-testing/vm/fc20/rpm/
+2017-09-15 12:08:40.789482 +0000 build-fedora4: <f..t...... security-testing/vm/fc20/rpm/.gitignore
+2017-09-15 12:08:40.789776 +0000 build-fedora4: .              6 100%    0.13kB/s    0:00:00  .              6 100%    0.13kB/s    0:00:00 (xfr#42, to-chk=62/1066)
+2017-09-15 12:08:40.789811 +0000 build-fedora4: .d..t...... security-testing/vm/fc21/
+2017-09-15 12:08:40.789838 +0000 build-fedora4: .d..t...... security-testing/vm/fc21/rpm/
+2017-09-15 12:08:40.789864 +0000 build-fedora4: <f..t...... security-testing/vm/fc21/rpm/.gitignore
+2017-09-15 12:08:40.790145 +0000 build-fedora4: .              6 100%    0.13kB/s    0:00:00  .              6 100%    0.13kB/s    0:00:00 (xfr#43, to-chk=60/1066)
+2017-09-15 12:08:40.790181 +0000 build-fedora4: .d..t...... security-testing/vm/fc22/
+2017-09-15 12:08:40.790199 +0000 build-fedora4: .d..t...... security-testing/vm/fc22/rpm/
+2017-09-15 12:08:40.790212 +0000 build-fedora4: <f..t...... security-testing/vm/fc22/rpm/.gitignore
+2017-09-15 12:08:40.790448 +0000 build-fedora4: .              6 100%    0.13kB/s    0:00:00  .              6 100%    0.13kB/s    0:00:00 (xfr#44, to-chk=58/1066)
+2017-09-15 12:08:40.790469 +0000 build-fedora4: .d..t...... security-testing/vm/fc23/
+2017-09-15 12:08:40.790482 +0000 build-fedora4: .d..t...... security-testing/vm/fc23/rpm/
+2017-09-15 12:08:40.790494 +0000 build-fedora4: <f..t...... security-testing/vm/fc23/rpm/.gitignore
+2017-09-15 12:08:40.790691 +0000 build-fedora4: .              6 100%    0.12kB/s    0:00:00  .              6 100%    0.12kB/s    0:00:00 (xfr#45, to-chk=56/1066)
+2017-09-15 12:08:40.790720 +0000 build-fedora4: .d..t...... security-testing/vm/fc24/
+2017-09-15 12:08:40.790734 +0000 build-fedora4: .d..t...... security-testing/vm/fc24/rpm/
+2017-09-15 12:08:40.790746 +0000 build-fedora4: <f..t...... security-testing/vm/fc24/rpm/.gitignore
+2017-09-15 12:08:40.790976 +0000 build-fedora4: .              6 100%    0.12kB/s    0:00:00  .              6 100%    0.12kB/s    0:00:00 (xfr#46, to-chk=54/1066)
+2017-09-15 12:08:40.790999 +0000 build-fedora4: .d..t...... security-testing/vm/fc25/
+2017-09-15 12:08:40.791011 +0000 build-fedora4: .d..t...... security-testing/vm/fc25/rpm/
+2017-09-15 12:08:40.791023 +0000 build-fedora4: <f..t...... security-testing/vm/fc25/rpm/.gitignore
+2017-09-15 12:08:40.791229 +0000 build-fedora4: .              6 100%    0.12kB/s    0:00:00  .              6 100%    0.12kB/s    0:00:00 (xfr#47, to-chk=26/1066)
+2017-09-15 12:08:41.388267 +0000 build-fedora4: rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1178) [sender=3.1.2]
+2017-09-15 12:08:41.930665 +0000 build-fedora4: --> Processing repo: /pub/qubes/repo/yum/r4.0/current/dom0/fc20...
+2017-09-15 12:08:42.038837 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-09-15 12:08:42.984111 +0000 build-fedora4: --> Processing repo: /pub/qubes/repo/yum/r4.0/current/dom0/fc25...
+2017-09-15 12:08:43.095163 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-09-15 12:08:56.059550 +0000 build-fedora4: --> Processing repo: /pub/qubes/repo/yum/r4.0/current/vm/fc17...
+2017-09-15 12:08:56.167935 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-09-15 12:08:56.652827 +0000 build-fedora4: --> Processing repo: /pub/qubes/repo/yum/r4.0/current/vm/fc20...
+2017-09-15 12:08:56.760532 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-09-15 12:08:57.524639 +0000 build-fedora4: --> Processing repo: /pub/qubes/repo/yum/r4.0/current/vm/fc21...
+2017-09-15 12:08:57.632264 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-09-15 12:08:58.118025 +0000 build-fedora4: --> Processing repo: /pub/qubes/repo/yum/r4.0/current/vm/fc22...
+2017-09-15 12:08:58.225738 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-09-15 12:08:58.711785 +0000 build-fedora4: --> Processing repo: /pub/qubes/repo/yum/r4.0/current/vm/fc23...
+2017-09-15 12:08:58.819808 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-09-15 12:08:59.281361 +0000 build-fedora4: --> Processing repo: /pub/qubes/repo/yum/r4.0/current/vm/fc24...
+2017-09-15 12:08:59.390213 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-09-15 12:09:02.277501 +0000 build-fedora4: --> Processing repo: /pub/qubes/repo/yum/r4.0/current/vm/fc25...
+2017-09-15 12:09:02.389272 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-09-15 12:09:05.249023 +0000 build-fedora4: --> Processing repo: /pub/qubes/repo/yum/r4.0/current/vm/fc26...
+2017-09-15 12:09:05.356901 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-09-15 12:09:05.820083 +0000 build-fedora4: Done.
+2017-09-15 12:09:06.026993 +0000 build-fedora4: --> Processing repo: /pub/qubes/repo/yum/r4.0/current-testing/dom0/fc20...
+2017-09-15 12:09:06.135680 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-09-15 12:09:06.628439 +0000 build-fedora4: --> Processing repo: /pub/qubes/repo/yum/r4.0/current-testing/dom0/fc25...
+2017-09-15 12:09:06.746060 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-09-15 12:09:45.411145 +0000 build-fedora4: --> Processing repo: /pub/qubes/repo/yum/r4.0/current-testing/vm/fc20...
+2017-09-15 12:09:45.520170 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-09-15 12:09:46.014177 +0000 build-fedora4: --> Processing repo: /pub/qubes/repo/yum/r4.0/current-testing/vm/fc21...
+2017-09-15 12:09:46.123367 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-09-15 12:09:46.609207 +0000 build-fedora4: --> Processing repo: /pub/qubes/repo/yum/r4.0/current-testing/vm/fc22...
+2017-09-15 12:09:46.717670 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-09-15 12:09:47.204088 +0000 build-fedora4: --> Processing repo: /pub/qubes/repo/yum/r4.0/current-testing/vm/fc23...
+2017-09-15 12:09:47.312678 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-09-15 12:09:48.175195 +0000 build-fedora4: --> Processing repo: /pub/qubes/repo/yum/r4.0/current-testing/vm/fc24...
+2017-09-15 12:09:48.291044 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-09-15 12:09:57.643820 +0000 build-fedora4: --> Processing repo: /pub/qubes/repo/yum/r4.0/current-testing/vm/fc25...
+2017-09-15 12:09:57.759983 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-09-15 12:10:07.134952 +0000 build-fedora4: --> Processing repo: /pub/qubes/repo/yum/r4.0/current-testing/vm/fc26...
+2017-09-15 12:10:07.243938 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-09-15 12:10:08.135484 +0000 build-fedora4: Done.
+2017-09-15 12:10:08.340264 +0000 build-fedora4: --> Processing repo: /pub/qubes/repo/yum/r4.0/security-testing/dom0/fc20...
+2017-09-15 12:10:08.449184 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-09-15 12:10:08.924960 +0000 build-fedora4: --> Processing repo: /pub/qubes/repo/yum/r4.0/security-testing/dom0/fc21...
+2017-09-15 12:10:09.033792 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-09-15 12:10:09.513592 +0000 build-fedora4: --> Processing repo: /pub/qubes/repo/yum/r4.0/security-testing/dom0/fc25...
+2017-09-15 12:10:09.622933 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-09-15 12:10:16.917947 +0000 build-fedora4: --> Processing repo: /pub/qubes/repo/yum/r4.0/security-testing/vm/fc20...
+2017-09-15 12:10:17.025961 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-09-15 12:10:17.497078 +0000 build-fedora4: --> Processing repo: /pub/qubes/repo/yum/r4.0/security-testing/vm/fc21...
+2017-09-15 12:10:17.609078 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-09-15 12:10:18.173819 +0000 build-fedora4: --> Processing repo: /pub/qubes/repo/yum/r4.0/security-testing/vm/fc22...
+2017-09-15 12:10:18.282886 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-09-15 12:10:18.760282 +0000 build-fedora4: --> Processing repo: /pub/qubes/repo/yum/r4.0/security-testing/vm/fc23...
+2017-09-15 12:10:18.868498 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-09-15 12:10:19.331193 +0000 build-fedora4: --> Processing repo: /pub/qubes/repo/yum/r4.0/security-testing/vm/fc24...
+2017-09-15 12:10:19.439490 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-09-15 12:10:22.144280 +0000 build-fedora4: --> Processing repo: /pub/qubes/repo/yum/r4.0/security-testing/vm/fc25...
+2017-09-15 12:10:22.253234 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-09-15 12:10:24.880380 +0000 build-fedora4: --> Processing repo: /pub/qubes/repo/yum/r4.0/security-testing/vm/fc26...
+2017-09-15 12:10:24.988662 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-09-15 12:10:25.495968 +0000 build-fedora4: Done.
+2017-09-15 12:10:25.499033 +0000 build-fedora4: ~/builder-r4.0/qubes-src/linux-yum
+2017-09-15 12:10:25.503904 +0000 build-fedora4: Makefile:682: update target 'update-repo-current-testing' due to: internal-update-repo-current-testing.vm.fc24 internal-update-repo-current-testing.vm.fc25 post-update-repo-current-testing
+2017-09-15 12:10:25.504022 +0000 build-fedora4: true
+2017-09-15 12:10:25.514057 +0000 build-fedora4: > done
+2017-09-15 12:11:25.559437 +0000 > closing log
