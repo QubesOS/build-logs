@@ -1,0 +1,652 @@
+2017-12-23 01:32:43.753120 +0000 > starting log
+2017-12-23 01:32:43.755127 +0000 build-fedora3: > starting build with log
+2017-12-23 01:32:43.755246 +0000 build-fedora3: >> make args: DISTS_VM= fc23 fc24 fc25 fc26 DIST_DOM0= BUILD_LOGS_URL= app-linux-img-converter-vm-fc23=https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2017-12-23_01-29-59 app-linux-img-converter-vm-fc24=https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2017-12-23_01-30-28 app-linux-img-converter-vm-fc25=https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2017-12-23_01-30-57 app-linux-img-converter-vm-fc26=https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2017-12-23_01-31-30 GIT_URL_app_linux_img_converter=https://github.com/QubesOS/qubes-app-linux-img-converter sign-all update-repo-current-testing
+2017-12-23 01:32:43.755278 +0000 build-fedora3: >> MAKEFLAGS=
+2017-12-23 01:32:43.755303 +0000 build-fedora3: >> COMPONENTS=app-linux-img-converter
+2017-12-23 01:32:43.755323 +0000 build-fedora3: >> DISTS_VM=
+2017-12-23 01:32:43.755342 +0000 build-fedora3: >> DIST_DOM0=
+2017-12-23 01:32:43.755364 +0000 build-fedora3: >> qubes-builder 0d1319984bbb05db4402961ad9c71bbbde3480e2
+2017-12-23 01:32:43.755391 +0000 build-fedora3: >> qubes-builder/qubes-src/app-linux-img-converter 0ba11261139c4dd3df3e57f79672e2d520532750
+2017-12-23 01:32:43.755412 +0000 build-fedora3: !! pkgs/fc23/qimg-converter.spec.list
+2017-12-23 01:32:43.755434 +0000 build-fedora3: !! pkgs/fc23/x86_64/qubes-img-converter-1.2.3-1.fc23.x86_64.rpm
+2017-12-23 01:32:43.755455 +0000 build-fedora3: !! pkgs/fc23/x86_64/qubes-img-converter-1.2.4-1.fc23.x86_64.rpm
+2017-12-23 01:32:43.755478 +0000 build-fedora3: !! pkgs/fc23/x86_64/qubes-img-converter-dom0-1.2.3-1.fc23.x86_64.rpm
+2017-12-23 01:32:43.755497 +0000 build-fedora3: !! pkgs/fc24/qimg-converter.spec.list
+2017-12-23 01:32:43.755519 +0000 build-fedora3: !! pkgs/fc24/x86_64/qubes-img-converter-1.2.3-1.fc24.x86_64.rpm
+2017-12-23 01:32:43.755541 +0000 build-fedora3: !! pkgs/fc24/x86_64/qubes-img-converter-1.2.4-1.fc24.x86_64.rpm
+2017-12-23 01:32:43.755559 +0000 build-fedora3: !! pkgs/fc25/qimg-converter.spec.list
+2017-12-23 01:32:43.755581 +0000 build-fedora3: !! pkgs/fc25/x86_64/qubes-img-converter-1.2.3-1.fc25.x86_64.rpm
+2017-12-23 01:32:43.755604 +0000 build-fedora3: !! pkgs/fc25/x86_64/qubes-img-converter-1.2.4-1.fc25.x86_64.rpm
+2017-12-23 01:32:43.755624 +0000 build-fedora3: !! pkgs/fc26/qimg-converter.spec.list
+2017-12-23 01:32:43.755646 +0000 build-fedora3: !! pkgs/fc26/x86_64/qubes-img-converter-1.2.3-1.fc26.x86_64.rpm
+2017-12-23 01:32:43.755669 +0000 build-fedora3: !! pkgs/fc26/x86_64/qubes-img-converter-1.2.4-1.fc26.x86_64.rpm
+2017-12-23 01:32:43.755702 +0000 build-fedora3: cbe2a6ab4319de970b89eb3bab64b8ff1c1c16d69685b97c3e14eb84100c96b196a05bb45597ef4bfe79817ee347286041a76ab8b0ec9e488b5ab05dee7662d8  pkgs/fc23/qimg-converter.spec.list
+2017-12-23 01:32:43.755737 +0000 build-fedora3: 30b528576bd905a597f15dc3ab050e84085cb1845a2283cf38c1122e66b911dcb4331093141f841b48d327f7c771bdbbc906062e2bdc72c3ac18789c1a64d438  pkgs/fc23/x86_64/qubes-img-converter-1.2.3-1.fc23.x86_64.rpm
+2017-12-23 01:32:43.755773 +0000 build-fedora3: 19cdd54234157a3ec1eee35bce109759a2f784ca59618fce2d73112422e166fe833de098504bf775804183b3e7263029bef07659afec887055292cb2abb5c667  pkgs/fc23/x86_64/qubes-img-converter-1.2.4-1.fc23.x86_64.rpm
+2017-12-23 01:32:43.755811 +0000 build-fedora3: 5ffdb580dd4610faaae90508dc0dd1e25752757233df77e5a410371c14287f677ddc17007b78d10f14e925238ca29cff9b874a62e9fd15d66b5047528c7cde59  pkgs/fc23/x86_64/qubes-img-converter-dom0-1.2.3-1.fc23.x86_64.rpm
+2017-12-23 01:32:43.755843 +0000 build-fedora3: 00b9870a886e915f71b39a10c4f7e87191543dd7e3573277ca4dcaa6db209816aa6d212361d0e5a0846b9fa992b214feab332515f1e1babc46c10ee732a4aeb4  pkgs/fc24/qimg-converter.spec.list
+2017-12-23 01:32:43.755878 +0000 build-fedora3: f37a7045285814ebde99eb856ca653687c4023a0d5b8434d32da6b48563cdef5c014f05cf568a52dba85b1b7ec0b58ae079339331c6ded96e798a1b5d34111a1  pkgs/fc24/x86_64/qubes-img-converter-1.2.3-1.fc24.x86_64.rpm
+2017-12-23 01:32:43.755926 +0000 build-fedora3: f532d6db6fc9683b3de02dd1868e31f6d40a985f48c619d3415b6f8d5164b31a5b252c71c13b13c7f72ed9829da5a4b686bb32764d0b0243862bbc59858b04e0  pkgs/fc24/x86_64/qubes-img-converter-1.2.4-1.fc24.x86_64.rpm
+2017-12-23 01:32:43.755958 +0000 build-fedora3: 1cb1d139f01b06034c5bf552577f0282c4281673020596a2ea59d62dab57e471948eeb12409852e98d2a05797a0cf3c4cb92e47dd02b3d717efcac1aac36e988  pkgs/fc25/qimg-converter.spec.list
+2017-12-23 01:32:43.755992 +0000 build-fedora3: 6e4eb1b2ea06db88d9110e6358ae1424085374d27309da167144b5d03f445ad276f5b9a48eb2b8cc2458206c8508be0cb15f9e78765c2108c82312a5a09f004b  pkgs/fc25/x86_64/qubes-img-converter-1.2.3-1.fc25.x86_64.rpm
+2017-12-23 01:32:43.756026 +0000 build-fedora3: ccfe471f477d99837ce9778308674269578e6d2b142601dea4ae183de7630a5fba1749617fc73814d4e241a0bc8fce78d78993aa95dbb75da098efd737571450  pkgs/fc25/x86_64/qubes-img-converter-1.2.4-1.fc25.x86_64.rpm
+2017-12-23 01:32:43.756059 +0000 build-fedora3: 82592c9f1315985f4af9a243193564873f1e79a6293052f1037cf4dd3d2252a237c385ac1ac0938276a9a1e2070109406b2cc9317a7ad8a7c728c2cf035fb18a  pkgs/fc26/qimg-converter.spec.list
+2017-12-23 01:32:43.756093 +0000 build-fedora3: a290be1bbae3a563809b905a569363a563e48a5229dfedeb964c51f086a4dfa0054f7c06cec957f0dcfd5154dec57ed90cb5a247e9f407de6a9e57335f9af0c9  pkgs/fc26/x86_64/qubes-img-converter-1.2.3-1.fc26.x86_64.rpm
+2017-12-23 01:32:43.756129 +0000 build-fedora3: d68afbc3d0d144e9a13b82f873a5cca47fb8fd179b447789094116caed98c0bd9b5d2e6299519be1e5add65cdd4b9fceaea8ea8283d3cd9c87e83eba49f8cc01  pkgs/fc26/x86_64/qubes-img-converter-1.2.4-1.fc26.x86_64.rpm
+2017-12-23 01:32:43.756167 +0000 build-fedora3: ================================================================================
+2017-12-23 01:32:43.756209 +0000 build-fedora3:                            B U I L D   I N F O                                  
+2017-12-23 01:32:43.756236 +0000 build-fedora3: Items in red indicate it was automatically generated by configuration file(s)
+2017-12-23 01:32:43.756260 +0000 build-fedora3: Items in white indicate it was automatically removed by configuration file(s)
+2017-12-23 01:32:43.756284 +0000 build-fedora3: ================================================================================
+2017-12-23 01:32:43.756303 +0000 build-fedora3: DISTS_VM:
+2017-12-23 01:32:43.756323 +0000 build-fedora3:      fc23, fc24, fc25, fc26,
+2017-12-23 01:32:43.756341 +0000 build-fedora3: DISTS_ALL:
+2017-12-23 01:32:43.756360 +0000 build-fedora3:      fc23, fc24, fc25, fc26,
+2017-12-23 01:32:43.756378 +0000 build-fedora3: DIST_DOM0:
+2017-12-23 01:32:43.756396 +0000 build-fedora3:     
+2017-12-23 01:32:43.756416 +0000 build-fedora3: BUILDER_PLUGINS:
+2017-12-23 01:32:43.756438 +0000 build-fedora3:      builder-fedora, mgmt-salt, builder-github,
+2017-12-23 01:32:43.756456 +0000 build-fedora3: COMPONENTS:
+2017-12-23 01:32:43.756475 +0000 build-fedora3:      app-linux-img-converter,
+2017-12-23 01:32:43.756492 +0000 build-fedora3: GIT_REPOS:
+2017-12-23 01:32:43.756511 +0000 build-fedora3:      qubes-src/app-linux-img-converter,
+2017-12-23 01:32:43.756530 +0000 build-fedora3: TEMPLATE:
+2017-12-23 01:32:43.756547 +0000 build-fedora3:     
+2017-12-23 01:32:43.756565 +0000 build-fedora3: TEMPLATE_FLAVOR_DIR:
+2017-12-23 01:32:43.756581 +0000 build-fedora3:     
+2017-12-23 01:32:43.756597 +0000 build-fedora3: TEMPLATE_ALIAS:
+2017-12-23 01:32:43.756624 +0000 build-fedora3:      jessie:jessie+standard, jessie+gnome:jessie+gnome+standard, jessie+minimal:jessie+minimal+no-recommends,
+2017-12-23 01:32:43.756643 +0000 build-fedora3: TEMPLATE_LABEL:
+2017-12-23 01:32:43.756666 +0000 build-fedora3:      fc23:fedora-23, fc24:fedora-24, fc25:fedora-25, fc20:fedora-20 fc21:fedora-21 fc22:fedora-22
+2017-12-23 01:32:43.756693 +0000 build-fedora3:      fc20+minimal:fedora-20-minimal fc21+minimal:fedora-21-minimal fc23+minimal:fedora-23-minimal wheezy:debian-7
+2017-12-23 01:32:43.756717 +0000 build-fedora3:      wheezy+standard:debian-7 jessie:debian-8 jessie+standard:debian-8
+2017-12-23 01:32:43.757961 +0000 build-fedora3: > running make
+2017-12-23 01:32:43.802060 +0000 build-fedora3: Makefile:250: target 'sign-vm-fc23-app-linux-img-converter' does not exist
+2017-12-23 01:32:43.802190 +0000 build-fedora3: if [ -n "app-linux-img-converter" -a "0" -ne 0 ]; then BRANCH=release3.2; branch_var="BRANCH_app_linux_img_converter"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/app-linux-img-converter > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2017-12-23 01:32:43.802268 +0000 build-fedora3: SIGN_KEY=C52261BE0A823221D94CA1D1CB11CA1D03FA5082; \
+2017-12-23 01:32:43.802305 +0000 build-fedora3: sign_key_var="SIGN_KEY_fc23"; \
+2017-12-23 01:32:43.802339 +0000 build-fedora3: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2017-12-23 01:32:43.802369 +0000 build-fedora3: if [ -r qubes-src/app-linux-img-converter/Makefile.builder ]; then \
+2017-12-23 01:32:43.802394 +0000 build-fedora3: .make --no-print-directory -f Makefile.generic \
+2017-12-23 01:32:43.802413 +0000 build-fedora3: ..DIST=fc23 \
+2017-12-23 01:32:43.802430 +0000 build-fedora3: ..PACKAGE_SET=vm \
+2017-12-23 01:32:43.802449 +0000 build-fedora3: ..COMPONENT=app-linux-img-converter \
+2017-12-23 01:32:43.802467 +0000 build-fedora3: ..SIGN_KEY=$SIGN_KEY \
+2017-12-23 01:32:43.802483 +0000 build-fedora3: ..sign || exit 1; \
+2017-12-23 01:32:43.802504 +0000 build-fedora3: elif [ -d qubes-src/app-linux-img-converter/rpm ]; then \
+2017-12-23 01:32:43.802523 +0000 build-fedora3: .# Old mechanism supported only for RPM
+2017-12-23 01:32:43.802546 +0000 build-fedora3: FILE_LIST=""; for RPM in qubes-src/app-linux-img-converter/rpm/*/*.rpm; do \
+2017-12-23 01:32:43.802568 +0000 build-fedora3: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2017-12-23 01:32:43.802585 +0000 build-fedora3: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2017-12-23 01:32:43.802601 +0000 build-fedora3: ..fi ;\
+2017-12-23 01:32:43.802617 +0000 build-fedora3: .done ; \
+2017-12-23 01:32:43.802634 +0000 build-fedora3: .if [ -n "$FILE_LIST" ]; then \
+2017-12-23 01:32:43.802652 +0000 build-fedora3: ..echo "--> Signing..."; \
+2017-12-23 01:32:43.802669 +0000 build-fedora3: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2017-12-23 01:32:43.802687 +0000 build-fedora3: ..if [ -n "$SIGN_KEY" ]; then \
+2017-12-23 01:32:43.802704 +0000 build-fedora3: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2017-12-23 01:32:43.802719 +0000 build-fedora3: ..fi; \
+2017-12-23 01:32:43.802740 +0000 build-fedora3: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2017-12-23 01:32:43.802755 +0000 build-fedora3: .fi; \
+2017-12-23 01:32:43.802771 +0000 build-fedora3: fi
+2017-12-23 01:32:43.837327 +0000 build-fedora3: /home/user/builder-r3.2/qubes-src/builder-fedora/Makefile.fedora:194: target 'sign' does not exist
+2017-12-23 01:32:43.837388 +0000 build-fedora3: cd qubes-src/app-linux-img-converter && for pkg in pkgs/fc23/x86_64/qubes-img-converter-1.2.4-1.fc23.x86_64.rpm ; do \
+2017-12-23 01:32:43.837415 +0000 build-fedora3: .if ! rpm -K $pkg | grep -qi pgp; then \
+2017-12-23 01:32:43.837446 +0000 build-fedora3: ..setsid -w rpmsign  --digest-algo=sha256 --key-id=C52261BE0A823221D94CA1D1CB11CA1D03FA5082 --addsign $pkg </dev/null || exit 1; \
+2017-12-23 01:32:43.837466 +0000 build-fedora3: .fi; \
+2017-12-23 01:32:43.837484 +0000 build-fedora3: done
+2017-12-23 01:32:44.742841 +0000 build-fedora3: pkgs/fc23/x86_64/qubes-img-converter-1.2.4-1.fc23.x86_64.rpm:
+2017-12-23 01:32:44.745267 +0000 build-fedora3: Makefile:250: target 'sign-vm-fc24-app-linux-img-converter' does not exist
+2017-12-23 01:32:44.745377 +0000 build-fedora3: if [ -n "app-linux-img-converter" -a "0" -ne 0 ]; then BRANCH=release3.2; branch_var="BRANCH_app_linux_img_converter"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/app-linux-img-converter > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2017-12-23 01:32:44.745432 +0000 build-fedora3: SIGN_KEY=C52261BE0A823221D94CA1D1CB11CA1D03FA5082; \
+2017-12-23 01:32:44.745459 +0000 build-fedora3: sign_key_var="SIGN_KEY_fc24"; \
+2017-12-23 01:32:44.745486 +0000 build-fedora3: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2017-12-23 01:32:44.745528 +0000 build-fedora3: if [ -r qubes-src/app-linux-img-converter/Makefile.builder ]; then \
+2017-12-23 01:32:44.745554 +0000 build-fedora3: .make --no-print-directory -f Makefile.generic \
+2017-12-23 01:32:44.745575 +0000 build-fedora3: ..DIST=fc24 \
+2017-12-23 01:32:44.745594 +0000 build-fedora3: ..PACKAGE_SET=vm \
+2017-12-23 01:32:44.745616 +0000 build-fedora3: ..COMPONENT=app-linux-img-converter \
+2017-12-23 01:32:44.745636 +0000 build-fedora3: ..SIGN_KEY=$SIGN_KEY \
+2017-12-23 01:32:44.745656 +0000 build-fedora3: ..sign || exit 1; \
+2017-12-23 01:32:44.745679 +0000 build-fedora3: elif [ -d qubes-src/app-linux-img-converter/rpm ]; then \
+2017-12-23 01:32:44.745700 +0000 build-fedora3: .# Old mechanism supported only for RPM
+2017-12-23 01:32:44.745726 +0000 build-fedora3: FILE_LIST=""; for RPM in qubes-src/app-linux-img-converter/rpm/*/*.rpm; do \
+2017-12-23 01:32:44.745754 +0000 build-fedora3: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2017-12-23 01:32:44.745778 +0000 build-fedora3: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2017-12-23 01:32:44.745800 +0000 build-fedora3: ..fi ;\
+2017-12-23 01:32:44.745820 +0000 build-fedora3: .done ; \
+2017-12-23 01:32:44.745843 +0000 build-fedora3: .if [ -n "$FILE_LIST" ]; then \
+2017-12-23 01:32:44.745866 +0000 build-fedora3: ..echo "--> Signing..."; \
+2017-12-23 01:32:44.745890 +0000 build-fedora3: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2017-12-23 01:32:44.745913 +0000 build-fedora3: ..if [ -n "$SIGN_KEY" ]; then \
+2017-12-23 01:32:44.745936 +0000 build-fedora3: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2017-12-23 01:32:44.745955 +0000 build-fedora3: ..fi; \
+2017-12-23 01:32:44.745981 +0000 build-fedora3: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2017-12-23 01:32:44.746001 +0000 build-fedora3: .fi; \
+2017-12-23 01:32:44.746020 +0000 build-fedora3: fi
+2017-12-23 01:32:44.776032 +0000 build-fedora3: /home/user/builder-r3.2/qubes-src/builder-fedora/Makefile.fedora:194: target 'sign' does not exist
+2017-12-23 01:32:44.776121 +0000 build-fedora3: cd qubes-src/app-linux-img-converter && for pkg in pkgs/fc24/x86_64/qubes-img-converter-1.2.4-1.fc24.x86_64.rpm ; do \
+2017-12-23 01:32:44.776168 +0000 build-fedora3: .if ! rpm -K $pkg | grep -qi pgp; then \
+2017-12-23 01:32:44.776237 +0000 build-fedora3: ..setsid -w rpmsign  --digest-algo=sha256 --key-id=C52261BE0A823221D94CA1D1CB11CA1D03FA5082 --addsign $pkg </dev/null || exit 1; \
+2017-12-23 01:32:44.776267 +0000 build-fedora3: .fi; \
+2017-12-23 01:32:44.776291 +0000 build-fedora3: done
+2017-12-23 01:32:45.607013 +0000 build-fedora3: pkgs/fc24/x86_64/qubes-img-converter-1.2.4-1.fc24.x86_64.rpm:
+2017-12-23 01:32:45.609808 +0000 build-fedora3: Makefile:250: target 'sign-vm-fc25-app-linux-img-converter' does not exist
+2017-12-23 01:32:45.609905 +0000 build-fedora3: if [ -n "app-linux-img-converter" -a "0" -ne 0 ]; then BRANCH=release3.2; branch_var="BRANCH_app_linux_img_converter"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/app-linux-img-converter > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2017-12-23 01:32:45.609941 +0000 build-fedora3: SIGN_KEY=C52261BE0A823221D94CA1D1CB11CA1D03FA5082; \
+2017-12-23 01:32:45.609966 +0000 build-fedora3: sign_key_var="SIGN_KEY_fc25"; \
+2017-12-23 01:32:45.609990 +0000 build-fedora3: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2017-12-23 01:32:45.610028 +0000 build-fedora3: if [ -r qubes-src/app-linux-img-converter/Makefile.builder ]; then \
+2017-12-23 01:32:45.610052 +0000 build-fedora3: .make --no-print-directory -f Makefile.generic \
+2017-12-23 01:32:45.610071 +0000 build-fedora3: ..DIST=fc25 \
+2017-12-23 01:32:45.610089 +0000 build-fedora3: ..PACKAGE_SET=vm \
+2017-12-23 01:32:45.610110 +0000 build-fedora3: ..COMPONENT=app-linux-img-converter \
+2017-12-23 01:32:45.610130 +0000 build-fedora3: ..SIGN_KEY=$SIGN_KEY \
+2017-12-23 01:32:45.610148 +0000 build-fedora3: ..sign || exit 1; \
+2017-12-23 01:32:45.610169 +0000 build-fedora3: elif [ -d qubes-src/app-linux-img-converter/rpm ]; then \
+2017-12-23 01:32:45.610189 +0000 build-fedora3: .# Old mechanism supported only for RPM
+2017-12-23 01:32:45.610235 +0000 build-fedora3: FILE_LIST=""; for RPM in qubes-src/app-linux-img-converter/rpm/*/*.rpm; do \
+2017-12-23 01:32:45.610260 +0000 build-fedora3: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2017-12-23 01:32:45.610281 +0000 build-fedora3: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2017-12-23 01:32:45.610300 +0000 build-fedora3: ..fi ;\
+2017-12-23 01:32:45.610318 +0000 build-fedora3: .done ; \
+2017-12-23 01:32:45.610338 +0000 build-fedora3: .if [ -n "$FILE_LIST" ]; then \
+2017-12-23 01:32:45.610358 +0000 build-fedora3: ..echo "--> Signing..."; \
+2017-12-23 01:32:45.610378 +0000 build-fedora3: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2017-12-23 01:32:45.610398 +0000 build-fedora3: ..if [ -n "$SIGN_KEY" ]; then \
+2017-12-23 01:32:45.610419 +0000 build-fedora3: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2017-12-23 01:32:45.610436 +0000 build-fedora3: ..fi; \
+2017-12-23 01:32:45.610460 +0000 build-fedora3: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2017-12-23 01:32:45.610478 +0000 build-fedora3: .fi; \
+2017-12-23 01:32:45.610495 +0000 build-fedora3: fi
+2017-12-23 01:32:45.630244 +0000 build-fedora3: /home/user/builder-r3.2/qubes-src/builder-fedora/Makefile.fedora:194: target 'sign' does not exist
+2017-12-23 01:32:45.630323 +0000 build-fedora3: cd qubes-src/app-linux-img-converter && for pkg in pkgs/fc25/x86_64/qubes-img-converter-1.2.4-1.fc25.x86_64.rpm ; do \
+2017-12-23 01:32:45.630353 +0000 build-fedora3: .if ! rpm -K $pkg | grep -qi pgp; then \
+2017-12-23 01:32:45.630386 +0000 build-fedora3: ..setsid -w rpmsign  --digest-algo=sha256 --key-id=C52261BE0A823221D94CA1D1CB11CA1D03FA5082 --addsign $pkg </dev/null || exit 1; \
+2017-12-23 01:32:45.630406 +0000 build-fedora3: .fi; \
+2017-12-23 01:32:45.630424 +0000 build-fedora3: done
+2017-12-23 01:32:46.296087 +0000 build-fedora3: pkgs/fc25/x86_64/qubes-img-converter-1.2.4-1.fc25.x86_64.rpm:
+2017-12-23 01:32:46.298507 +0000 build-fedora3: Makefile:250: target 'sign-vm-fc26-app-linux-img-converter' does not exist
+2017-12-23 01:32:46.298612 +0000 build-fedora3: if [ -n "app-linux-img-converter" -a "0" -ne 0 ]; then BRANCH=release3.2; branch_var="BRANCH_app_linux_img_converter"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/app-linux-img-converter > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2017-12-23 01:32:46.298646 +0000 build-fedora3: SIGN_KEY=C52261BE0A823221D94CA1D1CB11CA1D03FA5082; \
+2017-12-23 01:32:46.298670 +0000 build-fedora3: sign_key_var="SIGN_KEY_fc26"; \
+2017-12-23 01:32:46.298694 +0000 build-fedora3: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2017-12-23 01:32:46.298720 +0000 build-fedora3: if [ -r qubes-src/app-linux-img-converter/Makefile.builder ]; then \
+2017-12-23 01:32:46.298744 +0000 build-fedora3: .make --no-print-directory -f Makefile.generic \
+2017-12-23 01:32:46.298763 +0000 build-fedora3: ..DIST=fc26 \
+2017-12-23 01:32:46.298783 +0000 build-fedora3: ..PACKAGE_SET=vm \
+2017-12-23 01:32:46.298805 +0000 build-fedora3: ..COMPONENT=app-linux-img-converter \
+2017-12-23 01:32:46.298843 +0000 build-fedora3: ..SIGN_KEY=$SIGN_KEY \
+2017-12-23 01:32:46.298864 +0000 build-fedora3: ..sign || exit 1; \
+2017-12-23 01:32:46.298888 +0000 build-fedora3: elif [ -d qubes-src/app-linux-img-converter/rpm ]; then \
+2017-12-23 01:32:46.298910 +0000 build-fedora3: .# Old mechanism supported only for RPM
+2017-12-23 01:32:46.298937 +0000 build-fedora3: FILE_LIST=""; for RPM in qubes-src/app-linux-img-converter/rpm/*/*.rpm; do \
+2017-12-23 01:32:46.298963 +0000 build-fedora3: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2017-12-23 01:32:46.298985 +0000 build-fedora3: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2017-12-23 01:32:46.299003 +0000 build-fedora3: ..fi ;\
+2017-12-23 01:32:46.299022 +0000 build-fedora3: .done ; \
+2017-12-23 01:32:46.299041 +0000 build-fedora3: .if [ -n "$FILE_LIST" ]; then \
+2017-12-23 01:32:46.299060 +0000 build-fedora3: ..echo "--> Signing..."; \
+2017-12-23 01:32:46.299081 +0000 build-fedora3: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2017-12-23 01:32:46.299100 +0000 build-fedora3: ..if [ -n "$SIGN_KEY" ]; then \
+2017-12-23 01:32:46.299122 +0000 build-fedora3: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2017-12-23 01:32:46.299140 +0000 build-fedora3: ..fi; \
+2017-12-23 01:32:46.299165 +0000 build-fedora3: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2017-12-23 01:32:46.299182 +0000 build-fedora3: .fi; \
+2017-12-23 01:32:46.299225 +0000 build-fedora3: fi
+2017-12-23 01:32:46.320874 +0000 build-fedora3: /home/user/builder-r3.2/qubes-src/builder-fedora/Makefile.fedora:194: target 'sign' does not exist
+2017-12-23 01:32:46.320937 +0000 build-fedora3: cd qubes-src/app-linux-img-converter && for pkg in pkgs/fc26/x86_64/qubes-img-converter-1.2.4-1.fc26.x86_64.rpm ; do \
+2017-12-23 01:32:46.320962 +0000 build-fedora3: .if ! rpm -K $pkg | grep -qi pgp; then \
+2017-12-23 01:32:46.320994 +0000 build-fedora3: ..setsid -w rpmsign  --digest-algo=sha256 --key-id=C52261BE0A823221D94CA1D1CB11CA1D03FA5082 --addsign $pkg </dev/null || exit 1; \
+2017-12-23 01:32:46.321013 +0000 build-fedora3: .fi; \
+2017-12-23 01:32:46.321031 +0000 build-fedora3: done
+2017-12-23 01:32:46.961942 +0000 build-fedora3: pkgs/fc26/x86_64/qubes-img-converter-1.2.4-1.fc26.x86_64.rpm:
+2017-12-23 01:32:46.962019 +0000 build-fedora3: Makefile:720: target 'internal-update-repo-current-testing.vm.fc23.app-linux-img-converter' does not exist
+2017-12-23 01:32:46.962049 +0000 build-fedora3: repo_base_var="LINUX_REPO_fc23_BASEDIR"; \
+2017-12-23 01:32:46.962074 +0000 build-fedora3: if [ -n "${!repo_base_var}" ]; then \
+2017-12-23 01:32:46.962096 +0000 build-fedora3: .repo_basedir="${!repo_base_var}"; \
+2017-12-23 01:32:46.962116 +0000 build-fedora3: else \
+2017-12-23 01:32:46.962139 +0000 build-fedora3: .repo_basedir="qubes-src/linux-yum/r3.2"; \
+2017-12-23 01:32:46.962157 +0000 build-fedora3: fi; \
+2017-12-23 01:32:46.962181 +0000 build-fedora3: if [ -r qubes-src/app-linux-img-converter/Makefile.builder ]; then \
+2017-12-23 01:32:46.962226 +0000 build-fedora3: .echo -n "Updating qubes-src/app-linux-img-converter... "; \
+2017-12-23 01:32:46.962247 +0000 build-fedora3: .if [ "0" -eq 1 ]; then \
+2017-12-23 01:32:46.962273 +0000 build-fedora3: ..vtag=`git -C qubes-src/app-linux-img-converter tag --points-at HEAD --list v*`; \
+2017-12-23 01:32:46.962295 +0000 build-fedora3: ..if [ -z "$vtag" ]; then \
+2017-12-23 01:32:46.962315 +0000 build-fedora3: ...echo "no version tag"; \
+2017-12-23 01:32:46.962334 +0000 build-fedora3: ...exit 0; \
+2017-12-23 01:32:46.962364 +0000 build-fedora3: ..fi; \
+2017-12-23 01:32:46.962382 +0000 build-fedora3: .fi; \
+2017-12-23 01:32:46.962424 +0000 build-fedora3: .component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc23 PACKAGE_SET=vm COMPONENT=`basename qubes-src/app-linux-img-converter` UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc23 get-var GET_VAR=PACKAGE_LIST); \
+2017-12-23 01:32:46.962448 +0000 build-fedora3: .if [ -z "$component_packages" ]; then \
+2017-12-23 01:32:46.962466 +0000 build-fedora3: ..echo "no packages."; \
+2017-12-23 01:32:46.962498 +0000 build-fedora3: ..exit 0; \
+2017-12-23 01:32:46.962515 +0000 build-fedora3: .fi; \
+2017-12-23 01:32:46.962536 +0000 build-fedora3: .make -s -f Makefile.generic DIST=fc23 PACKAGE_SET=vm \
+2017-12-23 01:32:46.962559 +0000 build-fedora3: ..COMPONENT=`basename qubes-src/app-linux-img-converter` \
+2017-12-23 01:32:46.962579 +0000 build-fedora3: ..SNAPSHOT_REPO=current-testing \
+2017-12-23 01:32:46.962598 +0000 build-fedora3: ..TARGET_REPO=current-testing \
+2017-12-23 01:32:46.962622 +0000 build-fedora3: ..UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc23 \
+2017-12-23 01:32:46.962653 +0000 build-fedora3: ..SNAPSHOT_FILE=/home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-fc23-`basename qubes-src/app-linux-img-converter` \
+2017-12-23 01:32:46.962680 +0000 build-fedora3: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2017-12-23_01-29-59 \
+2017-12-23 01:32:46.962702 +0000 build-fedora3: ..update-repo || exit 1; \
+2017-12-23 01:32:46.962732 +0000 build-fedora3: elif make -C qubes-src/app-linux-img-converter -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2017-12-23 01:32:46.962757 +0000 build-fedora3: .echo "Updating qubes-src/app-linux-img-converter... "; \
+2017-12-23 01:32:46.962784 +0000 build-fedora3: .make -s -C qubes-src/app-linux-img-converter update-repo-current-testing || exit 1; \
+2017-12-23 01:32:46.962804 +0000 build-fedora3: else \
+2017-12-23 01:32:46.962829 +0000 build-fedora3: .echo -n "Updating qubes-src/app-linux-img-converter... skipping."; \
+2017-12-23 01:32:46.962847 +0000 build-fedora3: fi; \
+2017-12-23 01:32:46.962865 +0000 build-fedora3: echo
+2017-12-23 01:32:47.024300 +0000 build-fedora3: Updating qubes-src/app-linux-img-converter... /home/user/builder-r3.2/qubes-src/builder-fedora/Makefile.fedora:170: target 'update-repo-do' does not exist
+2017-12-23 01:32:47.024363 +0000 build-fedora3: mkdir -p /home/user/builder-r3.2/qubes-src/linux-yum/r3.2/current-testing/vm/fc23/rpm
+2017-12-23 01:32:47.040515 +0000 build-fedora3: cd qubes-src/app-linux-img-converter && ln -f pkgs/fc23/x86_64/qubes-img-converter-1.2.4-1.fc23.x86_64.rpm  /home/user/builder-r3.2/qubes-src/linux-yum/r3.2/current-testing/vm/fc23/rpm/
+2017-12-23 01:32:47.043267 +0000 build-fedora3: cd qubes-src/app-linux-img-converter && echo pkgs/fc23/x86_64/qubes-img-converter-1.2.4-1.fc23.x86_64.rpm  > /home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-fc23-app-linux-img-converter
+2017-12-23 01:32:47.077582 +0000 build-fedora3: /home/user/builder-r3.2/qubes-src/builder-github//Makefile.github:21: target 'notify-github' does not exist
+2017-12-23 01:32:47.077634 +0000 build-fedora3: [ -z "qubes-img-converter-1.2.4-1.fc23" ] || /home/user/builder-r3.2/qubes-src/builder-github//notify-issues \
+2017-12-23 01:32:47.077655 +0000 build-fedora3: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2017-12-23_01-29-59" \
+2017-12-23 01:32:47.077667 +0000 build-fedora3: ."r3.2" \
+2017-12-23 01:32:47.077680 +0000 build-fedora3: ."current-testing" \
+2017-12-23 01:32:47.077693 +0000 build-fedora3: ."qubes-src/app-linux-img-converter" \
+2017-12-23 01:32:47.077708 +0000 build-fedora3: ."qubes-img-converter-1.2.4-1.fc23" \
+2017-12-23 01:32:47.077727 +0000 build-fedora3: ."fc23" \
+2017-12-23 01:32:47.077747 +0000 build-fedora3: ."vm" \
+2017-12-23 01:32:47.077772 +0000 build-fedora3: ."/home/user/github-notify-state/r3.2-app-linux-img-converter-vm-fc23-current-testing"
+2017-12-23 01:32:49.786133 +0000 build-fedora3: WARNING: /home/user/github-notify-state/r3.2-app-linux-img-converter-vm-fc23-current-testing does not exist, initializing with the current state
+2017-12-23 01:32:49.792382 +0000 build-fedora3: 
+2017-12-23 01:32:49.792451 +0000 build-fedora3: Makefile:701: update target 'internal-update-repo-current-testing.vm.fc23' due to: internal-update-repo-current-testing.vm.fc23.app-linux-img-converter
+2017-12-23 01:32:49.792476 +0000 build-fedora3: true
+2017-12-23 01:32:49.800782 +0000 build-fedora3: Makefile:720: target 'internal-update-repo-current-testing.vm.fc24.app-linux-img-converter' does not exist
+2017-12-23 01:32:49.800855 +0000 build-fedora3: repo_base_var="LINUX_REPO_fc24_BASEDIR"; \
+2017-12-23 01:32:49.800884 +0000 build-fedora3: if [ -n "${!repo_base_var}" ]; then \
+2017-12-23 01:32:49.800909 +0000 build-fedora3: .repo_basedir="${!repo_base_var}"; \
+2017-12-23 01:32:49.800930 +0000 build-fedora3: else \
+2017-12-23 01:32:49.800954 +0000 build-fedora3: .repo_basedir="qubes-src/linux-yum/r3.2"; \
+2017-12-23 01:32:49.800973 +0000 build-fedora3: fi; \
+2017-12-23 01:32:49.800998 +0000 build-fedora3: if [ -r qubes-src/app-linux-img-converter/Makefile.builder ]; then \
+2017-12-23 01:32:49.801024 +0000 build-fedora3: .echo -n "Updating qubes-src/app-linux-img-converter... "; \
+2017-12-23 01:32:49.801046 +0000 build-fedora3: .if [ "0" -eq 1 ]; then \
+2017-12-23 01:32:49.801073 +0000 build-fedora3: ..vtag=`git -C qubes-src/app-linux-img-converter tag --points-at HEAD --list v*`; \
+2017-12-23 01:32:49.801095 +0000 build-fedora3: ..if [ -z "$vtag" ]; then \
+2017-12-23 01:32:49.801116 +0000 build-fedora3: ...echo "no version tag"; \
+2017-12-23 01:32:49.801136 +0000 build-fedora3: ...exit 0; \
+2017-12-23 01:32:49.801153 +0000 build-fedora3: ..fi; \
+2017-12-23 01:32:49.801171 +0000 build-fedora3: .fi; \
+2017-12-23 01:32:49.801232 +0000 build-fedora3: .component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc24 PACKAGE_SET=vm COMPONENT=`basename qubes-src/app-linux-img-converter` UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc24 get-var GET_VAR=PACKAGE_LIST); \
+2017-12-23 01:32:49.801256 +0000 build-fedora3: .if [ -z "$component_packages" ]; then \
+2017-12-23 01:32:49.801276 +0000 build-fedora3: ..echo "no packages."; \
+2017-12-23 01:32:49.801293 +0000 build-fedora3: ..exit 0; \
+2017-12-23 01:32:49.801310 +0000 build-fedora3: .fi; \
+2017-12-23 01:32:49.801332 +0000 build-fedora3: .make -s -f Makefile.generic DIST=fc24 PACKAGE_SET=vm \
+2017-12-23 01:32:49.801355 +0000 build-fedora3: ..COMPONENT=`basename qubes-src/app-linux-img-converter` \
+2017-12-23 01:32:49.801374 +0000 build-fedora3: ..SNAPSHOT_REPO=current-testing \
+2017-12-23 01:32:49.801394 +0000 build-fedora3: ..TARGET_REPO=current-testing \
+2017-12-23 01:32:49.801419 +0000 build-fedora3: ..UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc24 \
+2017-12-23 01:32:49.801451 +0000 build-fedora3: ..SNAPSHOT_FILE=/home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-fc24-`basename qubes-src/app-linux-img-converter` \
+2017-12-23 01:32:49.801481 +0000 build-fedora3: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2017-12-23_01-30-28 \
+2017-12-23 01:32:49.801501 +0000 build-fedora3: ..update-repo || exit 1; \
+2017-12-23 01:32:49.801529 +0000 build-fedora3: elif make -C qubes-src/app-linux-img-converter -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2017-12-23 01:32:49.801553 +0000 build-fedora3: .echo "Updating qubes-src/app-linux-img-converter... "; \
+2017-12-23 01:32:49.801579 +0000 build-fedora3: .make -s -C qubes-src/app-linux-img-converter update-repo-current-testing || exit 1; \
+2017-12-23 01:32:49.801598 +0000 build-fedora3: else \
+2017-12-23 01:32:49.801622 +0000 build-fedora3: .echo -n "Updating qubes-src/app-linux-img-converter... skipping."; \
+2017-12-23 01:32:49.801639 +0000 build-fedora3: fi; \
+2017-12-23 01:32:49.801656 +0000 build-fedora3: echo
+2017-12-23 01:32:49.942277 +0000 build-fedora3: Updating qubes-src/app-linux-img-converter... /home/user/builder-r3.2/qubes-src/builder-fedora/Makefile.fedora:170: target 'update-repo-do' does not exist
+2017-12-23 01:32:49.942337 +0000 build-fedora3: mkdir -p /home/user/builder-r3.2/qubes-src/linux-yum/r3.2/current-testing/vm/fc24/rpm
+2017-12-23 01:32:49.965988 +0000 build-fedora3: cd qubes-src/app-linux-img-converter && ln -f pkgs/fc24/x86_64/qubes-img-converter-1.2.4-1.fc24.x86_64.rpm  /home/user/builder-r3.2/qubes-src/linux-yum/r3.2/current-testing/vm/fc24/rpm/
+2017-12-23 01:32:49.991952 +0000 build-fedora3: cd qubes-src/app-linux-img-converter && echo pkgs/fc24/x86_64/qubes-img-converter-1.2.4-1.fc24.x86_64.rpm  > /home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-fc24-app-linux-img-converter
+2017-12-23 01:32:50.023141 +0000 build-fedora3: /home/user/builder-r3.2/qubes-src/builder-github//Makefile.github:21: target 'notify-github' does not exist
+2017-12-23 01:32:50.023226 +0000 build-fedora3: [ -z "qubes-img-converter-1.2.4-1.fc24" ] || /home/user/builder-r3.2/qubes-src/builder-github//notify-issues \
+2017-12-23 01:32:50.023261 +0000 build-fedora3: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2017-12-23_01-30-28" \
+2017-12-23 01:32:50.023282 +0000 build-fedora3: ."r3.2" \
+2017-12-23 01:32:50.023302 +0000 build-fedora3: ."current-testing" \
+2017-12-23 01:32:50.023322 +0000 build-fedora3: ."qubes-src/app-linux-img-converter" \
+2017-12-23 01:32:50.023343 +0000 build-fedora3: ."qubes-img-converter-1.2.4-1.fc24" \
+2017-12-23 01:32:50.023359 +0000 build-fedora3: ."fc24" \
+2017-12-23 01:32:50.023376 +0000 build-fedora3: ."vm" \
+2017-12-23 01:32:50.023401 +0000 build-fedora3: ."/home/user/github-notify-state/r3.2-app-linux-img-converter-vm-fc24-current-testing"
+2017-12-23 01:32:52.683449 +0000 build-fedora3: WARNING: /home/user/github-notify-state/r3.2-app-linux-img-converter-vm-fc24-current-testing does not exist, initializing with the current state
+2017-12-23 01:32:52.688492 +0000 build-fedora3: 
+2017-12-23 01:32:52.689812 +0000 build-fedora3: Makefile:701: update target 'internal-update-repo-current-testing.vm.fc24' due to: internal-update-repo-current-testing.vm.fc24.app-linux-img-converter
+2017-12-23 01:32:52.689864 +0000 build-fedora3: true
+2017-12-23 01:32:52.692818 +0000 build-fedora3: Makefile:720: target 'internal-update-repo-current-testing.vm.fc25.app-linux-img-converter' does not exist
+2017-12-23 01:32:52.692876 +0000 build-fedora3: repo_base_var="LINUX_REPO_fc25_BASEDIR"; \
+2017-12-23 01:32:52.692906 +0000 build-fedora3: if [ -n "${!repo_base_var}" ]; then \
+2017-12-23 01:32:52.692932 +0000 build-fedora3: .repo_basedir="${!repo_base_var}"; \
+2017-12-23 01:32:52.692953 +0000 build-fedora3: else \
+2017-12-23 01:32:52.692978 +0000 build-fedora3: .repo_basedir="qubes-src/linux-yum/r3.2"; \
+2017-12-23 01:32:52.692997 +0000 build-fedora3: fi; \
+2017-12-23 01:32:52.693024 +0000 build-fedora3: if [ -r qubes-src/app-linux-img-converter/Makefile.builder ]; then \
+2017-12-23 01:32:52.693049 +0000 build-fedora3: .echo -n "Updating qubes-src/app-linux-img-converter... "; \
+2017-12-23 01:32:52.693070 +0000 build-fedora3: .if [ "0" -eq 1 ]; then \
+2017-12-23 01:32:52.693098 +0000 build-fedora3: ..vtag=`git -C qubes-src/app-linux-img-converter tag --points-at HEAD --list v*`; \
+2017-12-23 01:32:52.693122 +0000 build-fedora3: ..if [ -z "$vtag" ]; then \
+2017-12-23 01:32:52.693144 +0000 build-fedora3: ...echo "no version tag"; \
+2017-12-23 01:32:52.693164 +0000 build-fedora3: ...exit 0; \
+2017-12-23 01:32:52.693183 +0000 build-fedora3: ..fi; \
+2017-12-23 01:32:52.693204 +0000 build-fedora3: .fi; \
+2017-12-23 01:32:52.693282 +0000 build-fedora3: .component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc25 PACKAGE_SET=vm COMPONENT=`basename qubes-src/app-linux-img-converter` UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc25 get-var GET_VAR=PACKAGE_LIST); \
+2017-12-23 01:32:52.693309 +0000 build-fedora3: .if [ -z "$component_packages" ]; then \
+2017-12-23 01:32:52.693332 +0000 build-fedora3: ..echo "no packages."; \
+2017-12-23 01:32:52.693351 +0000 build-fedora3: ..exit 0; \
+2017-12-23 01:32:52.693369 +0000 build-fedora3: .fi; \
+2017-12-23 01:32:52.693393 +0000 build-fedora3: .make -s -f Makefile.generic DIST=fc25 PACKAGE_SET=vm \
+2017-12-23 01:32:52.693416 +0000 build-fedora3: ..COMPONENT=`basename qubes-src/app-linux-img-converter` \
+2017-12-23 01:32:52.693438 +0000 build-fedora3: ..SNAPSHOT_REPO=current-testing \
+2017-12-23 01:32:52.693459 +0000 build-fedora3: ..TARGET_REPO=current-testing \
+2017-12-23 01:32:52.693485 +0000 build-fedora3: ..UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc25 \
+2017-12-23 01:32:52.693534 +0000 build-fedora3: ..SNAPSHOT_FILE=/home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-fc25-`basename qubes-src/app-linux-img-converter` \
+2017-12-23 01:32:52.693566 +0000 build-fedora3: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2017-12-23_01-30-57 \
+2017-12-23 01:32:52.693588 +0000 build-fedora3: ..update-repo || exit 1; \
+2017-12-23 01:32:52.693618 +0000 build-fedora3: elif make -C qubes-src/app-linux-img-converter -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2017-12-23 01:32:52.693642 +0000 build-fedora3: .echo "Updating qubes-src/app-linux-img-converter... "; \
+2017-12-23 01:32:52.693670 +0000 build-fedora3: .make -s -C qubes-src/app-linux-img-converter update-repo-current-testing || exit 1; \
+2017-12-23 01:32:52.693690 +0000 build-fedora3: else \
+2017-12-23 01:32:52.693716 +0000 build-fedora3: .echo -n "Updating qubes-src/app-linux-img-converter... skipping."; \
+2017-12-23 01:32:52.693734 +0000 build-fedora3: fi; \
+2017-12-23 01:32:52.693816 +0000 build-fedora3: echo
+2017-12-23 01:32:52.859103 +0000 build-fedora3: Updating qubes-src/app-linux-img-converter... /home/user/builder-r3.2/qubes-src/builder-fedora/Makefile.fedora:170: target 'update-repo-do' does not exist
+2017-12-23 01:32:52.859168 +0000 build-fedora3: mkdir -p /home/user/builder-r3.2/qubes-src/linux-yum/r3.2/current-testing/vm/fc25/rpm
+2017-12-23 01:32:52.880568 +0000 build-fedora3: cd qubes-src/app-linux-img-converter && ln -f pkgs/fc25/x86_64/qubes-img-converter-1.2.4-1.fc25.x86_64.rpm  /home/user/builder-r3.2/qubes-src/linux-yum/r3.2/current-testing/vm/fc25/rpm/
+2017-12-23 01:32:52.884009 +0000 build-fedora3: cd qubes-src/app-linux-img-converter && echo pkgs/fc25/x86_64/qubes-img-converter-1.2.4-1.fc25.x86_64.rpm  > /home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-fc25-app-linux-img-converter
+2017-12-23 01:32:52.931768 +0000 build-fedora3: /home/user/builder-r3.2/qubes-src/builder-github//Makefile.github:21: target 'notify-github' does not exist
+2017-12-23 01:32:52.931833 +0000 build-fedora3: [ -z "qubes-img-converter-1.2.4-1.fc25" ] || /home/user/builder-r3.2/qubes-src/builder-github//notify-issues \
+2017-12-23 01:32:52.931868 +0000 build-fedora3: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2017-12-23_01-30-57" \
+2017-12-23 01:32:52.931890 +0000 build-fedora3: ."r3.2" \
+2017-12-23 01:32:52.931912 +0000 build-fedora3: ."current-testing" \
+2017-12-23 01:32:52.931934 +0000 build-fedora3: ."qubes-src/app-linux-img-converter" \
+2017-12-23 01:32:52.931955 +0000 build-fedora3: ."qubes-img-converter-1.2.4-1.fc25" \
+2017-12-23 01:32:52.931973 +0000 build-fedora3: ."fc25" \
+2017-12-23 01:32:52.931992 +0000 build-fedora3: ."vm" \
+2017-12-23 01:32:52.932018 +0000 build-fedora3: ."/home/user/github-notify-state/r3.2-app-linux-img-converter-vm-fc25-current-testing"
+2017-12-23 01:32:55.279165 +0000 build-fedora3: WARNING: /home/user/github-notify-state/r3.2-app-linux-img-converter-vm-fc25-current-testing does not exist, initializing with the current state
+2017-12-23 01:32:55.284266 +0000 build-fedora3: 
+2017-12-23 01:32:55.284339 +0000 build-fedora3: Makefile:701: update target 'internal-update-repo-current-testing.vm.fc25' due to: internal-update-repo-current-testing.vm.fc25.app-linux-img-converter
+2017-12-23 01:32:55.284366 +0000 build-fedora3: true
+2017-12-23 01:32:55.287997 +0000 build-fedora3: Makefile:720: target 'internal-update-repo-current-testing.vm.fc26.app-linux-img-converter' does not exist
+2017-12-23 01:32:55.288053 +0000 build-fedora3: repo_base_var="LINUX_REPO_fc26_BASEDIR"; \
+2017-12-23 01:32:55.288079 +0000 build-fedora3: if [ -n "${!repo_base_var}" ]; then \
+2017-12-23 01:32:55.288102 +0000 build-fedora3: .repo_basedir="${!repo_base_var}"; \
+2017-12-23 01:32:55.288122 +0000 build-fedora3: else \
+2017-12-23 01:32:55.288145 +0000 build-fedora3: .repo_basedir="qubes-src/linux-yum/r3.2"; \
+2017-12-23 01:32:55.288163 +0000 build-fedora3: fi; \
+2017-12-23 01:32:55.288220 +0000 build-fedora3: if [ -r qubes-src/app-linux-img-converter/Makefile.builder ]; then \
+2017-12-23 01:32:55.288247 +0000 build-fedora3: .echo -n "Updating qubes-src/app-linux-img-converter... "; \
+2017-12-23 01:32:55.288267 +0000 build-fedora3: .if [ "0" -eq 1 ]; then \
+2017-12-23 01:32:55.288295 +0000 build-fedora3: ..vtag=`git -C qubes-src/app-linux-img-converter tag --points-at HEAD --list v*`; \
+2017-12-23 01:32:55.288316 +0000 build-fedora3: ..if [ -z "$vtag" ]; then \
+2017-12-23 01:32:55.288336 +0000 build-fedora3: ...echo "no version tag"; \
+2017-12-23 01:32:55.288355 +0000 build-fedora3: ...exit 0; \
+2017-12-23 01:32:55.288372 +0000 build-fedora3: ..fi; \
+2017-12-23 01:32:55.288389 +0000 build-fedora3: .fi; \
+2017-12-23 01:32:55.288432 +0000 build-fedora3: .component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc26 PACKAGE_SET=vm COMPONENT=`basename qubes-src/app-linux-img-converter` UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc26 get-var GET_VAR=PACKAGE_LIST); \
+2017-12-23 01:32:55.288455 +0000 build-fedora3: .if [ -z "$component_packages" ]; then \
+2017-12-23 01:32:55.288475 +0000 build-fedora3: ..echo "no packages."; \
+2017-12-23 01:32:55.288493 +0000 build-fedora3: ..exit 0; \
+2017-12-23 01:32:55.288511 +0000 build-fedora3: .fi; \
+2017-12-23 01:32:55.288533 +0000 build-fedora3: .make -s -f Makefile.generic DIST=fc26 PACKAGE_SET=vm \
+2017-12-23 01:32:55.288556 +0000 build-fedora3: ..COMPONENT=`basename qubes-src/app-linux-img-converter` \
+2017-12-23 01:32:55.288576 +0000 build-fedora3: ..SNAPSHOT_REPO=current-testing \
+2017-12-23 01:32:55.288596 +0000 build-fedora3: ..TARGET_REPO=current-testing \
+2017-12-23 01:32:55.288620 +0000 build-fedora3: ..UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc26 \
+2017-12-23 01:32:55.288652 +0000 build-fedora3: ..SNAPSHOT_FILE=/home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-fc26-`basename qubes-src/app-linux-img-converter` \
+2017-12-23 01:32:55.288690 +0000 build-fedora3: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2017-12-23_01-31-30 \
+2017-12-23 01:32:55.288711 +0000 build-fedora3: ..update-repo || exit 1; \
+2017-12-23 01:32:55.288739 +0000 build-fedora3: elif make -C qubes-src/app-linux-img-converter -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2017-12-23 01:32:55.288764 +0000 build-fedora3: .echo "Updating qubes-src/app-linux-img-converter... "; \
+2017-12-23 01:32:55.288793 +0000 build-fedora3: .make -s -C qubes-src/app-linux-img-converter update-repo-current-testing || exit 1; \
+2017-12-23 01:32:55.288814 +0000 build-fedora3: else \
+2017-12-23 01:32:55.288839 +0000 build-fedora3: .echo -n "Updating qubes-src/app-linux-img-converter... skipping."; \
+2017-12-23 01:32:55.288857 +0000 build-fedora3: fi; \
+2017-12-23 01:32:55.288873 +0000 build-fedora3: echo
+2017-12-23 01:32:55.363903 +0000 build-fedora3: Updating qubes-src/app-linux-img-converter... /home/user/builder-r3.2/qubes-src/builder-fedora/Makefile.fedora:170: target 'update-repo-do' does not exist
+2017-12-23 01:32:55.363968 +0000 build-fedora3: mkdir -p /home/user/builder-r3.2/qubes-src/linux-yum/r3.2/current-testing/vm/fc26/rpm
+2017-12-23 01:32:55.392189 +0000 build-fedora3: cd qubes-src/app-linux-img-converter && ln -f pkgs/fc26/x86_64/qubes-img-converter-1.2.4-1.fc26.x86_64.rpm  /home/user/builder-r3.2/qubes-src/linux-yum/r3.2/current-testing/vm/fc26/rpm/
+2017-12-23 01:32:55.395676 +0000 build-fedora3: cd qubes-src/app-linux-img-converter && echo pkgs/fc26/x86_64/qubes-img-converter-1.2.4-1.fc26.x86_64.rpm  > /home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-fc26-app-linux-img-converter
+2017-12-23 01:32:55.463243 +0000 build-fedora3: /home/user/builder-r3.2/qubes-src/builder-github//Makefile.github:21: target 'notify-github' does not exist
+2017-12-23 01:32:55.463327 +0000 build-fedora3: [ -z "qubes-img-converter-1.2.4-1.fc26" ] || /home/user/builder-r3.2/qubes-src/builder-github//notify-issues \
+2017-12-23 01:32:55.463363 +0000 build-fedora3: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2017-12-23_01-31-30" \
+2017-12-23 01:32:55.463402 +0000 build-fedora3: ."r3.2" \
+2017-12-23 01:32:55.463427 +0000 build-fedora3: ."current-testing" \
+2017-12-23 01:32:55.463451 +0000 build-fedora3: ."qubes-src/app-linux-img-converter" \
+2017-12-23 01:32:55.463475 +0000 build-fedora3: ."qubes-img-converter-1.2.4-1.fc26" \
+2017-12-23 01:32:55.463495 +0000 build-fedora3: ."fc26" \
+2017-12-23 01:32:55.463514 +0000 build-fedora3: ."vm" \
+2017-12-23 01:32:55.463542 +0000 build-fedora3: ."/home/user/github-notify-state/r3.2-app-linux-img-converter-vm-fc26-current-testing"
+2017-12-23 01:33:00.480820 +0000 build-fedora3: Adding a comment to issue #3085
+2017-12-23 01:33:00.484997 +0000 build-fedora3: 
+2017-12-23 01:33:00.485587 +0000 build-fedora3: Makefile:701: update target 'internal-update-repo-current-testing.vm.fc26' due to: internal-update-repo-current-testing.vm.fc26.app-linux-img-converter
+2017-12-23 01:33:00.485633 +0000 build-fedora3: true
+2017-12-23 01:33:00.488451 +0000 build-fedora3: Makefile:763: target 'post-update-repo-current-testing' does not exist
+2017-12-23 01:33:00.488502 +0000 build-fedora3: for dist in  fc23 fc24 fc25 fc26; do \
+2017-12-23 01:33:00.488528 +0000 build-fedora3: .repo_base_var="LINUX_REPO_${dist}_BASEDIR"; \
+2017-12-23 01:33:00.488550 +0000 build-fedora3: .if [ -n "${!repo_base_var}" ]; then \
+2017-12-23 01:33:00.488571 +0000 build-fedora3: ..repo_basedir="${!repo_base_var}"; \
+2017-12-23 01:33:00.488589 +0000 build-fedora3: .else \
+2017-12-23 01:33:00.488612 +0000 build-fedora3: ..repo_basedir="qubes-src/linux-yum/r3.2"; \
+2017-12-23 01:33:00.488629 +0000 build-fedora3: .fi; \
+2017-12-23 01:33:00.488651 +0000 build-fedora3: .repos_to_update="$repos_to_update $repo_basedir"; \
+2017-12-23 01:33:00.488669 +0000 build-fedora3: done; \
+2017-12-23 01:33:00.488692 +0000 build-fedora3: for repo in `echo $repos_to_update|tr ' ' '\n'|sort|uniq`; do \
+2017-12-23 01:33:00.488712 +0000 build-fedora3: .[ -z "$repo" ] && continue; \
+2017-12-23 01:33:00.488738 +0000 build-fedora3: .(cd $repo/.. && ./update_repo-current-testing.sh `basename $repo`); \
+2017-12-23 01:33:00.488757 +0000 build-fedora3: done
+2017-12-23 01:33:00.506017 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/dom0/fc20...
+2017-12-23 01:33:00.851877 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/dom0/fc23...
+2017-12-23 01:33:03.385304 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/vm/fc22...
+2017-12-23 01:33:04.139545 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/vm/fc23...
+2017-12-23 01:33:10.809510 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/vm/fc24...
+2017-12-23 01:33:17.375776 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/vm/fc25...
+2017-12-23 01:33:23.763556 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/vm/fc26...
+2017-12-23 01:33:25.975378 +0000 build-fedora3: Done.
+2017-12-23 01:33:25.982671 +0000 build-fedora3: ~/builder-r3.2/qubes-src/linux-yum ~/builder-r3.2/qubes-src/linux-yum
+2017-12-23 01:33:25.984783 +0000 build-fedora3: Syncing r3.2...
+2017-12-23 01:33:26.076521 +0000 build-fedora3: sending incremental file list
+2017-12-23 01:33:26.160160 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing": Operation not permitted (1)
+2017-12-23 01:33:26.160238 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/dom0": Operation not permitted (1)
+2017-12-23 01:33:26.160270 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/dom0/fc20": Operation not permitted (1)
+2017-12-23 01:33:26.160302 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/dom0/fc20/rpm": Operation not permitted (1)
+2017-12-23 01:33:26.160333 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/dom0/fc23": Operation not permitted (1)
+2017-12-23 01:33:26.160360 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/dom0/fc23/rpm": Operation not permitted (1)
+2017-12-23 01:33:26.160402 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm": Operation not permitted (1)
+2017-12-23 01:33:26.160426 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc22": Operation not permitted (1)
+2017-12-23 01:33:26.160443 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc22/rpm": Operation not permitted (1)
+2017-12-23 01:33:26.160458 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc23": Operation not permitted (1)
+2017-12-23 01:33:26.160473 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc23/rpm": Operation not permitted (1)
+2017-12-23 01:33:26.160488 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc24": Operation not permitted (1)
+2017-12-23 01:33:26.160503 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc24/rpm": Operation not permitted (1)
+2017-12-23 01:33:26.160518 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc25": Operation not permitted (1)
+2017-12-23 01:33:26.160529 +0000 build-fedora3: .d..t...... current-testing/
+2017-12-23 01:33:26.160540 +0000 build-fedora3: .d..t...... current-testing/dom0/
+2017-12-23 01:33:26.160551 +0000 build-fedora3: .d..t...... current-testing/dom0/fc20/
+2017-12-23 01:33:26.160569 +0000 build-fedora3: .L..t...... current-testing/dom0/fc20/comps.xml -> ../../../comps-dom0.xml
+2017-12-23 01:33:26.160591 +0000 build-fedora3: .d..t...... current-testing/dom0/fc20/rpm/
+2017-12-23 01:33:26.160611 +0000 build-fedora3: .d..t...... current-testing/dom0/fc23/
+2017-12-23 01:33:26.160634 +0000 build-fedora3: .L..t...... current-testing/dom0/fc23/comps.xml -> ../../../comps-dom0.xml
+2017-12-23 01:33:26.160654 +0000 build-fedora3: .d..t...... current-testing/dom0/fc23/rpm/
+2017-12-23 01:33:26.160679 +0000 build-fedora3: <f..t...... current-testing/dom0/fc23/rpm/qubes-core-dom0-vaio-fixes-1.6.1-1.fc23.x86_64.rpm
+2017-12-23 01:33:26.161444 +0000 build-fedora3: .          2,092  29%    0.00kB/s    0:00:00  .          7,170 100%    4.84MB/s    0:00:00 (xfr#1, ir-chk=1097/1119)
+2017-12-23 01:33:26.161552 +0000 build-fedora3: .d..t...... current-testing/vm/
+2017-12-23 01:33:26.161583 +0000 build-fedora3: .d..t...... current-testing/vm/fc22/
+2017-12-23 01:33:26.161601 +0000 build-fedora3: .L..t...... current-testing/vm/fc22/comps.xml -> ../../../comps-vm.xml
+2017-12-23 01:33:26.161617 +0000 build-fedora3: .d..t...... current-testing/vm/fc22/rpm/
+2017-12-23 01:33:26.161631 +0000 build-fedora3: .d..t...... current-testing/vm/fc23/
+2017-12-23 01:33:26.161645 +0000 build-fedora3: .L..t...... current-testing/vm/fc23/comps.xml -> ../../../comps-vm.xml
+2017-12-23 01:33:26.164782 +0000 build-fedora3: .d..t...... current-testing/vm/fc23/rpm/
+2017-12-23 01:33:26.164842 +0000 build-fedora3: <f+++++++++ current-testing/vm/fc23/rpm/qubes-img-converter-1.2.4-1.fc23.x86_64.rpm
+2017-12-23 01:33:26.164888 +0000 build-fedora3: .         10,782 100%    3.43MB/s    0:00:00  .         10,782 100%    3.43MB/s    0:00:00 (xfr#2, ir-chk=1326/1455)
+2017-12-23 01:33:26.164905 +0000 build-fedora3: .d..t...... current-testing/vm/fc24/
+2017-12-23 01:33:26.164920 +0000 build-fedora3: .L..t...... current-testing/vm/fc24/comps.xml -> ../../../comps-vm.xml
+2017-12-23 01:33:26.165552 +0000 build-fedora3: .d..t...... current-testing/vm/fc24/rpm/
+2017-12-23 01:33:26.165604 +0000 build-fedora3: <f+++++++++ current-testing/vm/fc24/rpm/qubes-img-converter-1.2.4-1.fc24.x86_64.rpm
+2017-12-23 01:33:26.165653 +0000 build-fedora3: .         10,818 100%    2.58MB/s    0:00:00  .         10,818 100%    2.58MB/s    0:00:00 (xfr#3, ir-chk=1174/1553)
+2017-12-23 01:33:26.165912 +0000 build-fedora3: .d..t...... current-testing/vm/fc25/
+2017-12-23 01:33:26.165964 +0000 build-fedora3: .L..t...... current-testing/vm/fc25/comps.xml -> ../../../comps-vm.xml
+2017-12-23 01:33:26.183479 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc25/rpm": Operation not permitted (1)
+2017-12-23 01:33:26.183525 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc26": Operation not permitted (1)
+2017-12-23 01:33:26.183545 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc26/comps.xml": Operation not permitted (1)
+2017-12-23 01:33:26.183562 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc26/rpm": Operation not permitted (1)
+2017-12-23 01:33:26.183577 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current": Operation not permitted (1)
+2017-12-23 01:33:26.183593 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/dom0": Operation not permitted (1)
+2017-12-23 01:33:26.184327 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/dom0/fc20": Operation not permitted (1)
+2017-12-23 01:33:26.184369 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/dom0/fc20/rpm": Operation not permitted (1)
+2017-12-23 01:33:26.184399 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/dom0/fc23": Operation not permitted (1)
+2017-12-23 01:33:26.184426 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/dom0/fc23/rpm": Operation not permitted (1)
+2017-12-23 01:33:26.184452 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm": Operation not permitted (1)
+2017-12-23 01:33:26.184479 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc22": Operation not permitted (1)
+2017-12-23 01:33:26.184505 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc22/rpm": Operation not permitted (1)
+2017-12-23 01:33:26.184530 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc23": Operation not permitted (1)
+2017-12-23 01:33:26.186447 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc23/rpm": Operation not permitted (1)
+2017-12-23 01:33:26.187714 +0000 build-fedora3: .d..t...... current-testing/vm/fc25/rpm/
+2017-12-23 01:33:26.187765 +0000 build-fedora3: .f...p..... current-testing/vm/fc25/rpm/python2-dnf-plugins-qubes-hooks-3.2.17-1.fc25.x86_64.rpm
+2017-12-23 01:33:26.187796 +0000 build-fedora3: .f...p..... current-testing/vm/fc25/rpm/python3-dnf-plugins-qubes-hooks-3.2.17-1.fc25.x86_64.rpm
+2017-12-23 01:33:26.187822 +0000 build-fedora3: .f...p..... current-testing/vm/fc25/rpm/qubes-core-vm-3.2.17-1.fc25.x86_64.rpm
+2017-12-23 01:33:26.187849 +0000 build-fedora3: .f...p..... current-testing/vm/fc25/rpm/qubes-core-vm-debuginfo-3.2.17-1.fc25.x86_64.rpm
+2017-12-23 01:33:26.187874 +0000 build-fedora3: .f...p..... current-testing/vm/fc25/rpm/qubes-core-vm-doc-3.2.17-1.noarch.rpm
+2017-12-23 01:33:26.187900 +0000 build-fedora3: .f...p..... current-testing/vm/fc25/rpm/qubes-core-vm-systemd-3.2.17-1.fc25.x86_64.rpm
+2017-12-23 01:33:26.187926 +0000 build-fedora3: .f...p..... current-testing/vm/fc25/rpm/qubes-core-vm-sysvinit-3.2.17-1.fc25.x86_64.rpm
+2017-12-23 01:33:26.187951 +0000 build-fedora3: .f...p..... current-testing/vm/fc25/rpm/qubes-gui-vm-3.2.16-1.fc25.x86_64.rpm
+2017-12-23 01:33:26.187976 +0000 build-fedora3: .f...p..... current-testing/vm/fc25/rpm/qubes-gui-vm-debuginfo-3.2.16-1.fc25.x86_64.rpm
+2017-12-23 01:33:26.188002 +0000 build-fedora3: <f+++++++++ current-testing/vm/fc25/rpm/qubes-img-converter-1.2.4-1.fc25.x86_64.rpm
+2017-12-23 01:33:26.188041 +0000 build-fedora3: .         10,814 100%  406.17kB/s    0:00:00  .         10,814 100%  406.17kB/s    0:00:00 (xfr#4, ir-chk=1205/1834)
+2017-12-23 01:33:26.188068 +0000 build-fedora3: .f...p..... current-testing/vm/fc25/rpm/qubes-kernel-vm-support-3.2.4-1.fc25.x86_64.rpm
+2017-12-23 01:33:26.188115 +0000 build-fedora3: .f...p..... current-testing/vm/fc25/rpm/qubes-utils-3.2.4-1.fc25.x86_64.rpm
+2017-12-23 01:33:26.188155 +0000 build-fedora3: .f...p..... current-testing/vm/fc25/rpm/qubes-utils-debuginfo-3.2.4-1.fc25.x86_64.rpm
+2017-12-23 01:33:26.188188 +0000 build-fedora3: .f...p..... current-testing/vm/fc25/rpm/qubes-utils-devel-3.2.4-1.fc25.x86_64.rpm
+2017-12-23 01:33:26.188234 +0000 build-fedora3: .f...p..... current-testing/vm/fc25/rpm/qubes-utils-libs-3.2.4-1.fc25.x86_64.rpm
+2017-12-23 01:33:26.188256 +0000 build-fedora3: .d..t...... current-testing/vm/fc26/
+2017-12-23 01:33:26.188280 +0000 build-fedora3: .L..t...... current-testing/vm/fc26/comps.xml -> ../../../comps-vm.xml
+2017-12-23 01:33:26.188300 +0000 build-fedora3: .d..t...... current-testing/vm/fc26/rpm/
+2017-12-23 01:33:26.188322 +0000 build-fedora3: <f..t...... current-testing/vm/fc26/rpm/.gitignore
+2017-12-23 01:33:26.188910 +0000 build-fedora3: .              6 100%    0.22kB/s    0:00:00  .              6 100%    0.22kB/s    0:00:00 (xfr#5, to-chk=1053/1859)
+2017-12-23 01:33:26.188957 +0000 build-fedora3: <f+++++++++ current-testing/vm/fc26/rpm/qubes-img-converter-1.2.4-1.fc26.x86_64.rpm
+2017-12-23 01:33:26.189090 +0000 build-fedora3: .         10,842 100%  392.14kB/s    0:00:00  .         10,842 100%  392.14kB/s    0:00:00 (xfr#6, to-chk=1007/1859)
+2017-12-23 01:33:26.189118 +0000 build-fedora3: .d..t...... current/
+2017-12-23 01:33:26.189141 +0000 build-fedora3: .d..t...... current/dom0/
+2017-12-23 01:33:26.189161 +0000 build-fedora3: .d..t...... current/dom0/fc20/
+2017-12-23 01:33:26.189185 +0000 build-fedora3: .L..t...... current/dom0/fc20/comps.xml -> ../../../comps-dom0.xml
+2017-12-23 01:33:26.189222 +0000 build-fedora3: .d..t...... current/dom0/fc20/rpm/
+2017-12-23 01:33:26.189243 +0000 build-fedora3: .d..t...... current/dom0/fc23/
+2017-12-23 01:33:26.189266 +0000 build-fedora3: .L..t...... current/dom0/fc23/comps.xml -> ../../../comps-dom0.xml
+2017-12-23 01:33:26.189284 +0000 build-fedora3: .d..t...... current/dom0/fc23/rpm/
+2017-12-23 01:33:26.189301 +0000 build-fedora3: .d..t...... current/vm/
+2017-12-23 01:33:26.189321 +0000 build-fedora3: .d..t...... current/vm/fc22/
+2017-12-23 01:33:26.189344 +0000 build-fedora3: .L..t...... current/vm/fc22/comps.xml -> ../../../comps-vm.xml
+2017-12-23 01:33:26.189364 +0000 build-fedora3: .d..t...... current/vm/fc22/rpm/
+2017-12-23 01:33:26.189382 +0000 build-fedora3: .d..t...... current/vm/fc23/
+2017-12-23 01:33:26.189404 +0000 build-fedora3: .L..t...... current/vm/fc23/comps.xml -> ../../../comps-vm.xml
+2017-12-23 01:33:26.189424 +0000 build-fedora3: .d..t...... current/vm/fc23/rpm/
+2017-12-23 01:33:26.199125 +0000 build-fedora3: hf..t...... current/dom0/fc23/rpm/qubes-core-dom0-vaio-fixes-1.6.1-1.fc23.x86_64.rpm => current-testing/dom0/fc23/rpm/qubes-core-dom0-vaio-fixes-1.6.1-1.fc23.x86_64.rpm
+2017-12-23 01:33:26.199371 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc24": Operation not permitted (1)
+2017-12-23 01:33:26.201691 +0000 build-fedora3: .d..t...... current/vm/fc24/
+2017-12-23 01:33:26.201739 +0000 build-fedora3: .L..t...... current/vm/fc24/comps.xml -> ../../../comps-vm.xml
+2017-12-23 01:33:26.201770 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc24/rpm": Operation not permitted (1)
+2017-12-23 01:33:26.201800 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc25": Operation not permitted (1)
+2017-12-23 01:33:26.201821 +0000 build-fedora3: .d..t...... current/vm/fc24/rpm/
+2017-12-23 01:33:26.201840 +0000 build-fedora3: .d..t...... current/vm/fc25/
+2017-12-23 01:33:26.201862 +0000 build-fedora3: .L..t...... current/vm/fc25/comps.xml -> ../../../comps-vm.xml
+2017-12-23 01:33:26.206460 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc25/rpm": Operation not permitted (1)
+2017-12-23 01:33:26.206498 +0000 build-fedora3: .d..t...... current/vm/fc25/rpm/
+2017-12-23 01:33:26.214044 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc26": Operation not permitted (1)
+2017-12-23 01:33:26.214087 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc26/comps.xml": Operation not permitted (1)
+2017-12-23 01:33:26.214106 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc26/rpm": Operation not permitted (1)
+2017-12-23 01:33:26.214124 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing": Operation not permitted (1)
+2017-12-23 01:33:26.214151 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/dom0": Operation not permitted (1)
+2017-12-23 01:33:26.214180 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/dom0/fc20": Operation not permitted (1)
+2017-12-23 01:33:26.214232 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/dom0/fc20/rpm": Operation not permitted (1)
+2017-12-23 01:33:26.214264 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/dom0/fc23": Operation not permitted (1)
+2017-12-23 01:33:26.214296 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/dom0/fc23/rpm": Operation not permitted (1)
+2017-12-23 01:33:26.214320 +0000 build-fedora3: .d..t...... current/vm/fc26/
+2017-12-23 01:33:26.214347 +0000 build-fedora3: .L..t...... current/vm/fc26/comps.xml -> ../../../comps-vm.xml
+2017-12-23 01:33:26.214368 +0000 build-fedora3: .d..t...... current/vm/fc26/rpm/
+2017-12-23 01:33:26.214390 +0000 build-fedora3: <f..t...... current/vm/fc26/rpm/.gitignore
+2017-12-23 01:33:26.214430 +0000 build-fedora3: .              6 100%    0.11kB/s    0:00:00  .              6 100%    0.11kB/s    0:00:00 (xfr#7, to-chk=401/1859)
+2017-12-23 01:33:26.214455 +0000 build-fedora3: .d..t...... security-testing/
+2017-12-23 01:33:26.214472 +0000 build-fedora3: .d..t...... security-testing/dom0/
+2017-12-23 01:33:26.214483 +0000 build-fedora3: .d..t...... security-testing/dom0/fc20/
+2017-12-23 01:33:26.214497 +0000 build-fedora3: .L..t...... security-testing/dom0/fc20/comps.xml -> ../../../comps-dom0.xml
+2017-12-23 01:33:26.214509 +0000 build-fedora3: .d..t...... security-testing/dom0/fc20/rpm/
+2017-12-23 01:33:26.214520 +0000 build-fedora3: .d..t...... security-testing/dom0/fc23/
+2017-12-23 01:33:26.214533 +0000 build-fedora3: .L..t...... security-testing/dom0/fc23/comps.xml -> ../../../comps-dom0.xml
+2017-12-23 01:33:26.214544 +0000 build-fedora3: .d..t...... security-testing/dom0/fc23/rpm/
+2017-12-23 01:33:26.214564 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm": Operation not permitted (1)
+2017-12-23 01:33:26.214592 +0000 build-fedora3: .d..t...... security-testing/vm/
+2017-12-23 01:33:26.230313 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc22": Operation not permitted (1)
+2017-12-23 01:33:26.230359 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc22/rpm": Operation not permitted (1)
+2017-12-23 01:33:26.230379 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc23": Operation not permitted (1)
+2017-12-23 01:33:26.230402 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc23/rpm": Operation not permitted (1)
+2017-12-23 01:33:26.230430 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc24": Operation not permitted (1)
+2017-12-23 01:33:26.230444 +0000 build-fedora3: .d..t...... security-testing/vm/fc22/
+2017-12-23 01:33:26.230459 +0000 build-fedora3: .L..t...... security-testing/vm/fc22/comps.xml -> ../../../comps-vm.xml
+2017-12-23 01:33:26.230471 +0000 build-fedora3: .d..t...... security-testing/vm/fc22/rpm/
+2017-12-23 01:33:26.230482 +0000 build-fedora3: .d..t...... security-testing/vm/fc23/
+2017-12-23 01:33:26.230507 +0000 build-fedora3: .L..t...... security-testing/vm/fc23/comps.xml -> ../../../comps-vm.xml
+2017-12-23 01:33:26.230519 +0000 build-fedora3: .d..t...... security-testing/vm/fc23/rpm/
+2017-12-23 01:33:26.230530 +0000 build-fedora3: .d..t...... security-testing/vm/fc24/
+2017-12-23 01:33:26.230543 +0000 build-fedora3: .L..t...... security-testing/vm/fc24/comps.xml -> ../../../comps-vm.xml
+2017-12-23 01:33:26.232823 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc24/rpm": Operation not permitted (1)
+2017-12-23 01:33:26.232861 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc25": Operation not permitted (1)
+2017-12-23 01:33:26.232879 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc25/rpm": Operation not permitted (1)
+2017-12-23 01:33:26.233166 +0000 build-fedora3: .d..t...... security-testing/vm/fc24/rpm/
+2017-12-23 01:33:26.233199 +0000 build-fedora3: .d..t...... security-testing/vm/fc25/
+2017-12-23 01:33:26.233220 +0000 build-fedora3: .L..t...... security-testing/vm/fc25/comps.xml -> ../../../comps-vm.xml
+2017-12-23 01:33:26.233233 +0000 build-fedora3: .d..t...... security-testing/vm/fc25/rpm/
+2017-12-23 01:33:26.234102 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc26": Operation not permitted (1)
+2017-12-23 01:33:26.234145 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc26/comps.xml": Operation not permitted (1)
+2017-12-23 01:33:26.234171 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc26/rpm": Operation not permitted (1)
+2017-12-23 01:33:26.234213 +0000 build-fedora3: .d..t...... security-testing/vm/fc26/
+2017-12-23 01:33:26.234235 +0000 build-fedora3: .L..t...... security-testing/vm/fc26/comps.xml -> ../../../comps-vm.xml
+2017-12-23 01:33:26.234248 +0000 build-fedora3: .d..t...... security-testing/vm/fc26/rpm/
+2017-12-23 01:33:26.234260 +0000 build-fedora3: <f..t...... security-testing/vm/fc26/rpm/.gitignore
+2017-12-23 01:33:26.234520 +0000 build-fedora3: .              6 100%    0.08kB/s    0:00:00  .              6 100%    0.08kB/s    0:00:00 (xfr#8, to-chk=22/1859)
+2017-12-23 01:33:26.441753 +0000 build-fedora3: rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1178) [sender=3.1.2]
+2017-12-23 01:33:26.903576 +0000 build-fedora3: --> Processing repo: /pub/qubes/repo/yum/r3.2/current/dom0/fc20...
+2017-12-23 01:33:27.015540 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-12-23 01:33:27.673345 +0000 build-fedora3: --> Processing repo: /pub/qubes/repo/yum/r3.2/current/dom0/fc23...
+2017-12-23 01:33:27.790997 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-12-23 01:34:30.714143 +0000 build-fedora3: --> Processing repo: /pub/qubes/repo/yum/r3.2/current/vm/fc22...
+2017-12-23 01:34:30.831326 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-12-23 01:34:31.340985 +0000 build-fedora3: --> Processing repo: /pub/qubes/repo/yum/r3.2/current/vm/fc23...
+2017-12-23 01:34:31.459507 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-12-23 01:34:50.059366 +0000 build-fedora3: --> Processing repo: /pub/qubes/repo/yum/r3.2/current/vm/fc24...
+2017-12-23 01:34:50.178705 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-12-23 01:35:09.344991 +0000 build-fedora3: --> Processing repo: /pub/qubes/repo/yum/r3.2/current/vm/fc25...
+2017-12-23 01:35:09.457183 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-12-23 01:35:21.568258 +0000 build-fedora3: --> Processing repo: /pub/qubes/repo/yum/r3.2/current/vm/fc26...
+2017-12-23 01:35:21.681391 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-12-23 01:35:24.377107 +0000 build-fedora3: Done.
+2017-12-23 01:35:24.562379 +0000 build-fedora3: --> Processing repo: /pub/qubes/repo/yum/r3.2/current-testing/dom0/fc20...
+2017-12-23 01:35:24.673289 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-12-23 01:35:25.407668 +0000 build-fedora3: --> Processing repo: /pub/qubes/repo/yum/r3.2/current-testing/dom0/fc23...
+2017-12-23 01:35:25.532492 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-12-23 01:37:01.224841 +0000 build-fedora3: --> Processing repo: /pub/qubes/repo/yum/r3.2/current-testing/vm/fc22...
+2017-12-23 01:37:01.333142 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-12-23 01:37:01.884442 +0000 build-fedora3: --> Processing repo: /pub/qubes/repo/yum/r3.2/current-testing/vm/fc23...
+2017-12-23 01:37:02.003045 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-12-23 01:37:35.591896 +0000 build-fedora3: --> Processing repo: /pub/qubes/repo/yum/r3.2/current-testing/vm/fc24...
+2017-12-23 01:37:35.713125 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-12-23 01:38:07.281525 +0000 build-fedora3: --> Processing repo: /pub/qubes/repo/yum/r3.2/current-testing/vm/fc25...
+2017-12-23 01:38:07.382290 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-12-23 01:38:24.122015 +0000 build-fedora3: --> Processing repo: /pub/qubes/repo/yum/r3.2/current-testing/vm/fc26...
+2017-12-23 01:38:24.234550 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-12-23 01:38:27.898859 +0000 build-fedora3: Done.
+2017-12-23 01:38:28.079388 +0000 build-fedora3: --> Processing repo: /pub/qubes/repo/yum/r3.2/security-testing/dom0/fc20...
+2017-12-23 01:38:28.188255 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-12-23 01:38:28.605228 +0000 build-fedora3: --> Processing repo: /pub/qubes/repo/yum/r3.2/security-testing/dom0/fc23...
+2017-12-23 01:38:28.715183 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-12-23 01:38:45.492856 +0000 build-fedora3: --> Processing repo: /pub/qubes/repo/yum/r3.2/security-testing/vm/fc22...
+2017-12-23 01:38:45.602776 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-12-23 01:38:46.104333 +0000 build-fedora3: --> Processing repo: /pub/qubes/repo/yum/r3.2/security-testing/vm/fc23...
+2017-12-23 01:38:46.214017 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-12-23 01:38:55.508692 +0000 build-fedora3: --> Processing repo: /pub/qubes/repo/yum/r3.2/security-testing/vm/fc24...
+2017-12-23 01:38:55.620467 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-12-23 01:39:04.497003 +0000 build-fedora3: --> Processing repo: /pub/qubes/repo/yum/r3.2/security-testing/vm/fc25...
+2017-12-23 01:39:04.610831 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-12-23 01:39:12.661889 +0000 build-fedora3: --> Processing repo: /pub/qubes/repo/yum/r3.2/security-testing/vm/fc26...
+2017-12-23 01:39:12.771445 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2017-12-23 01:39:15.632548 +0000 build-fedora3: Done.
+2017-12-23 01:39:15.635765 +0000 build-fedora3: ~/builder-r3.2/qubes-src/linux-yum
+2017-12-23 01:39:15.639982 +0000 build-fedora3: Makefile:688: update target 'update-repo-current-testing' due to: internal-update-repo-current-testing.vm.fc23 internal-update-repo-current-testing.vm.fc24 internal-update-repo-current-testing.vm.fc25 internal-update-repo-current-testing.vm.fc26 post-update-repo-current-testing
+2017-12-23 01:39:15.640133 +0000 build-fedora3: true
+2017-12-23 01:39:15.648339 +0000 build-fedora3: > done
+2017-12-23 01:39:15.649193 +0000 > closing log
