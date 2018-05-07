@@ -1,0 +1,1662 @@
+2018-05-07 03:30:54.802276 +0000 > starting log
+2018-05-07 03:30:54.803577 +0000 build-fedora3: > starting build with log
+2018-05-07 03:30:54.803665 +0000 build-fedora3: >> make args: DISTS_VM= fc25 fc26 fc27 fc28 DIST_DOM0= BUILD_LOGS_URL= core-qubesdb-vm-fc25=https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2018-05-07_03-27-06 core-qubesdb-vm-fc26=https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2018-05-07_03-27-56 core-qubesdb-vm-fc27=https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2018-05-07_03-28-45 core-qubesdb-vm-fc28=https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2018-05-07_03-29-37 GIT_URL_core_qubesdb=https://github.com/QubesOS/qubes-core-qubesdb sign-all update-repo-current-testing
+2018-05-07 03:30:54.803688 +0000 build-fedora3: >> MAKEFLAGS=
+2018-05-07 03:30:54.803704 +0000 build-fedora3: >> COMPONENTS=core-qubesdb
+2018-05-07 03:30:54.803718 +0000 build-fedora3: >> DISTS_VM=
+2018-05-07 03:30:54.803732 +0000 build-fedora3: >> DIST_DOM0=
+2018-05-07 03:30:54.803747 +0000 build-fedora3: >> qubes-builder 0bc5e662e9738136d6482e44c083a8f215c58ceb
+2018-05-07 03:30:54.803764 +0000 build-fedora3: >> qubes-builder/qubes-src/core-qubesdb 5856ca9ea9620bb1b3992bd53656620b5a8d32e1
+2018-05-07 03:30:54.803779 +0000 build-fedora3: !! pkgs/fc23/qubes-db-vm.spec.list
+2018-05-07 03:30:54.803793 +0000 build-fedora3: !! pkgs/fc23/qubes-db.spec.list
+2018-05-07 03:30:54.803808 +0000 build-fedora3: !! pkgs/fc23/x86_64/qubes-db-3.2.3-1.fc23.x86_64.rpm
+2018-05-07 03:30:54.803823 +0000 build-fedora3: !! pkgs/fc23/x86_64/qubes-db-3.2.4-1.fc23.x86_64.rpm
+2018-05-07 03:30:54.803838 +0000 build-fedora3: !! pkgs/fc23/x86_64/qubes-db-debuginfo-3.2.3-1.fc23.x86_64.rpm
+2018-05-07 03:30:54.803853 +0000 build-fedora3: !! pkgs/fc23/x86_64/qubes-db-debuginfo-3.2.4-1.fc23.x86_64.rpm
+2018-05-07 03:30:54.803868 +0000 build-fedora3: !! pkgs/fc23/x86_64/qubes-db-devel-3.2.3-1.fc23.x86_64.rpm
+2018-05-07 03:30:54.803884 +0000 build-fedora3: !! pkgs/fc23/x86_64/qubes-db-devel-3.2.4-1.fc23.x86_64.rpm
+2018-05-07 03:30:54.803899 +0000 build-fedora3: !! pkgs/fc23/x86_64/qubes-db-dom0-3.2.3-1.fc23.x86_64.rpm
+2018-05-07 03:30:54.803924 +0000 build-fedora3: !! pkgs/fc23/x86_64/qubes-db-libs-3.2.3-1.fc23.x86_64.rpm
+2018-05-07 03:30:54.803949 +0000 build-fedora3: !! pkgs/fc23/x86_64/qubes-db-libs-3.2.4-1.fc23.x86_64.rpm
+2018-05-07 03:30:54.803975 +0000 build-fedora3: !! pkgs/fc23/x86_64/qubes-db-vm-3.2.3-1.fc23.x86_64.rpm
+2018-05-07 03:30:54.804001 +0000 build-fedora3: !! pkgs/fc23/x86_64/qubes-db-vm-3.2.4-1.fc23.x86_64.rpm
+2018-05-07 03:30:54.804017 +0000 build-fedora3: !! pkgs/fc24/qubes-db-vm.spec.list
+2018-05-07 03:30:54.804030 +0000 build-fedora3: !! pkgs/fc24/qubes-db.spec.list
+2018-05-07 03:30:54.804045 +0000 build-fedora3: !! pkgs/fc24/x86_64/qubes-db-3.2.3-1.fc24.x86_64.rpm
+2018-05-07 03:30:54.804060 +0000 build-fedora3: !! pkgs/fc24/x86_64/qubes-db-3.2.4-1.fc24.x86_64.rpm
+2018-05-07 03:30:54.804075 +0000 build-fedora3: !! pkgs/fc24/x86_64/qubes-db-debuginfo-3.2.3-1.fc24.x86_64.rpm
+2018-05-07 03:30:54.804090 +0000 build-fedora3: !! pkgs/fc24/x86_64/qubes-db-debuginfo-3.2.4-1.fc24.x86_64.rpm
+2018-05-07 03:30:54.804106 +0000 build-fedora3: !! pkgs/fc24/x86_64/qubes-db-devel-3.2.3-1.fc24.x86_64.rpm
+2018-05-07 03:30:54.804121 +0000 build-fedora3: !! pkgs/fc24/x86_64/qubes-db-devel-3.2.4-1.fc24.x86_64.rpm
+2018-05-07 03:30:54.804136 +0000 build-fedora3: !! pkgs/fc24/x86_64/qubes-db-libs-3.2.3-1.fc24.x86_64.rpm
+2018-05-07 03:30:54.804151 +0000 build-fedora3: !! pkgs/fc24/x86_64/qubes-db-libs-3.2.4-1.fc24.x86_64.rpm
+2018-05-07 03:30:54.804166 +0000 build-fedora3: !! pkgs/fc24/x86_64/qubes-db-vm-3.2.3-1.fc24.x86_64.rpm
+2018-05-07 03:30:54.804181 +0000 build-fedora3: !! pkgs/fc24/x86_64/qubes-db-vm-3.2.4-1.fc24.x86_64.rpm
+2018-05-07 03:30:54.804194 +0000 build-fedora3: !! pkgs/fc25/qubes-db-vm.spec.list
+2018-05-07 03:30:54.804208 +0000 build-fedora3: !! pkgs/fc25/qubes-db.spec.list
+2018-05-07 03:30:54.804223 +0000 build-fedora3: !! pkgs/fc25/x86_64/qubes-db-3.2.3-1.fc25.x86_64.rpm
+2018-05-07 03:30:54.804237 +0000 build-fedora3: !! pkgs/fc25/x86_64/qubes-db-3.2.4-1.fc25.x86_64.rpm
+2018-05-07 03:30:54.804263 +0000 build-fedora3: !! pkgs/fc25/x86_64/qubes-db-3.2.5-1.fc25.x86_64.rpm
+2018-05-07 03:30:54.804279 +0000 build-fedora3: !! pkgs/fc25/x86_64/qubes-db-debuginfo-3.2.3-1.fc25.x86_64.rpm
+2018-05-07 03:30:54.804295 +0000 build-fedora3: !! pkgs/fc25/x86_64/qubes-db-debuginfo-3.2.4-1.fc25.x86_64.rpm
+2018-05-07 03:30:54.804310 +0000 build-fedora3: !! pkgs/fc25/x86_64/qubes-db-debuginfo-3.2.5-1.fc25.x86_64.rpm
+2018-05-07 03:30:54.804326 +0000 build-fedora3: !! pkgs/fc25/x86_64/qubes-db-devel-3.2.3-1.fc25.x86_64.rpm
+2018-05-07 03:30:54.804341 +0000 build-fedora3: !! pkgs/fc25/x86_64/qubes-db-devel-3.2.4-1.fc25.x86_64.rpm
+2018-05-07 03:30:54.804356 +0000 build-fedora3: !! pkgs/fc25/x86_64/qubes-db-devel-3.2.5-1.fc25.x86_64.rpm
+2018-05-07 03:30:54.804371 +0000 build-fedora3: !! pkgs/fc25/x86_64/qubes-db-libs-3.2.3-1.fc25.x86_64.rpm
+2018-05-07 03:30:54.804386 +0000 build-fedora3: !! pkgs/fc25/x86_64/qubes-db-libs-3.2.4-1.fc25.x86_64.rpm
+2018-05-07 03:30:54.804401 +0000 build-fedora3: !! pkgs/fc25/x86_64/qubes-db-libs-3.2.5-1.fc25.x86_64.rpm
+2018-05-07 03:30:54.804415 +0000 build-fedora3: !! pkgs/fc25/x86_64/qubes-db-vm-3.2.3-1.fc25.x86_64.rpm
+2018-05-07 03:30:54.804430 +0000 build-fedora3: !! pkgs/fc25/x86_64/qubes-db-vm-3.2.4-1.fc25.x86_64.rpm
+2018-05-07 03:30:54.804445 +0000 build-fedora3: !! pkgs/fc25/x86_64/qubes-db-vm-3.2.5-1.fc25.x86_64.rpm
+2018-05-07 03:30:54.804459 +0000 build-fedora3: !! pkgs/fc26/qubes-db-vm.spec.list
+2018-05-07 03:30:54.804473 +0000 build-fedora3: !! pkgs/fc26/qubes-db.spec.list
+2018-05-07 03:30:54.804490 +0000 build-fedora3: !! pkgs/fc26/x86_64/qubes-db-3.2.4-1.fc26.x86_64.rpm
+2018-05-07 03:30:54.804515 +0000 build-fedora3: !! pkgs/fc26/x86_64/qubes-db-3.2.5-1.fc26.x86_64.rpm
+2018-05-07 03:30:54.804542 +0000 build-fedora3: !! pkgs/fc26/x86_64/qubes-db-debuginfo-3.2.4-1.fc26.x86_64.rpm
+2018-05-07 03:30:54.804560 +0000 build-fedora3: !! pkgs/fc26/x86_64/qubes-db-debuginfo-3.2.5-1.fc26.x86_64.rpm
+2018-05-07 03:30:54.804576 +0000 build-fedora3: !! pkgs/fc26/x86_64/qubes-db-devel-3.2.4-1.fc26.x86_64.rpm
+2018-05-07 03:30:54.804591 +0000 build-fedora3: !! pkgs/fc26/x86_64/qubes-db-devel-3.2.5-1.fc26.x86_64.rpm
+2018-05-07 03:30:54.804607 +0000 build-fedora3: !! pkgs/fc26/x86_64/qubes-db-libs-3.2.4-1.fc26.x86_64.rpm
+2018-05-07 03:30:54.804622 +0000 build-fedora3: !! pkgs/fc26/x86_64/qubes-db-libs-3.2.5-1.fc26.x86_64.rpm
+2018-05-07 03:30:54.804659 +0000 build-fedora3: !! pkgs/fc26/x86_64/qubes-db-vm-3.2.4-1.fc26.x86_64.rpm
+2018-05-07 03:30:54.804681 +0000 build-fedora3: !! pkgs/fc26/x86_64/qubes-db-vm-3.2.5-1.fc26.x86_64.rpm
+2018-05-07 03:30:54.804696 +0000 build-fedora3: !! pkgs/fc27/qubes-db-vm.spec.list
+2018-05-07 03:30:54.804711 +0000 build-fedora3: !! pkgs/fc27/qubes-db.spec.list
+2018-05-07 03:30:54.804725 +0000 build-fedora3: !! pkgs/fc27/x86_64/qubes-db-3.2.5-1.fc27.x86_64.rpm
+2018-05-07 03:30:54.804741 +0000 build-fedora3: !! pkgs/fc27/x86_64/qubes-db-debuginfo-3.2.5-1.fc27.x86_64.rpm
+2018-05-07 03:30:54.804756 +0000 build-fedora3: !! pkgs/fc27/x86_64/qubes-db-debugsource-3.2.5-1.fc27.x86_64.rpm
+2018-05-07 03:30:54.804772 +0000 build-fedora3: !! pkgs/fc27/x86_64/qubes-db-devel-3.2.5-1.fc27.x86_64.rpm
+2018-05-07 03:30:54.804798 +0000 build-fedora3: !! pkgs/fc27/x86_64/qubes-db-libs-3.2.5-1.fc27.x86_64.rpm
+2018-05-07 03:30:54.804815 +0000 build-fedora3: !! pkgs/fc27/x86_64/qubes-db-libs-debuginfo-3.2.5-1.fc27.x86_64.rpm
+2018-05-07 03:30:54.804831 +0000 build-fedora3: !! pkgs/fc27/x86_64/qubes-db-vm-3.2.5-1.fc27.x86_64.rpm
+2018-05-07 03:30:54.804845 +0000 build-fedora3: !! pkgs/fc28/qubes-db-vm.spec.list
+2018-05-07 03:30:54.804859 +0000 build-fedora3: !! pkgs/fc28/qubes-db.spec.list
+2018-05-07 03:30:54.804874 +0000 build-fedora3: !! pkgs/fc28/x86_64/qubes-db-3.2.5-1.fc28.x86_64.rpm
+2018-05-07 03:30:54.804889 +0000 build-fedora3: !! pkgs/fc28/x86_64/qubes-db-debuginfo-3.2.5-1.fc28.x86_64.rpm
+2018-05-07 03:30:54.804905 +0000 build-fedora3: !! pkgs/fc28/x86_64/qubes-db-debugsource-3.2.5-1.fc28.x86_64.rpm
+2018-05-07 03:30:54.804928 +0000 build-fedora3: !! pkgs/fc28/x86_64/qubes-db-devel-3.2.5-1.fc28.x86_64.rpm
+2018-05-07 03:30:54.804945 +0000 build-fedora3: !! pkgs/fc28/x86_64/qubes-db-libs-3.2.5-1.fc28.x86_64.rpm
+2018-05-07 03:30:54.804961 +0000 build-fedora3: !! pkgs/fc28/x86_64/qubes-db-libs-debuginfo-3.2.5-1.fc28.x86_64.rpm
+2018-05-07 03:30:54.804976 +0000 build-fedora3: !! pkgs/fc28/x86_64/qubes-db-vm-3.2.5-1.fc28.x86_64.rpm
+2018-05-07 03:30:54.804997 +0000 build-fedora3: 7a13f8ab221f83cec28accece2b428876ebcd53c1aefd557980803b019a8d8a344df0639169efb89be0663c113ae9deed64d96d4c2746792802ae71bfc877801  pkgs/fc23/qubes-db-vm.spec.list
+2018-05-07 03:30:54.805018 +0000 build-fedora3: b08676184a6124901a0f8fd1b3fcde090b843dc42966b527d8cd9df858b389dd78e4d8a64d50d308755927f143b5933cf7e9c5f779906dc6fe46d450c3b2f99f  pkgs/fc23/qubes-db.spec.list
+2018-05-07 03:30:54.805041 +0000 build-fedora3: c5d3d7d9956f8d3b735b950f76f498831899d42fb4b9dfd8a8d8278d28ce3a6df48d5785fadd5148d295642a6e2855cb5e325541865ab1036e770677bac2c736  pkgs/fc23/x86_64/qubes-db-3.2.3-1.fc23.x86_64.rpm
+2018-05-07 03:30:54.805063 +0000 build-fedora3: 4fc855553183c56f3d7086a65cc6a9106804bc4e0f597661898ae9204a914d16525675fe389949387cdf7094f2bc441cc3fa2284be865c6bcb7fc04ecb8b90bf  pkgs/fc23/x86_64/qubes-db-3.2.4-1.fc23.x86_64.rpm
+2018-05-07 03:30:54.805086 +0000 build-fedora3: e2442503a4bd60a99c1362489df9ff866aecc058ade3b638ce26e66bd922213f1136e656f09f5d2a562f12f21a93bf4d4299a5864f694b0e270370b9afa1c32a  pkgs/fc23/x86_64/qubes-db-debuginfo-3.2.3-1.fc23.x86_64.rpm
+2018-05-07 03:30:54.805109 +0000 build-fedora3: 724c691e0e3ed379a3e9f9ca7d67fedc3acf0cb849de93e2163ec70d367ad2dfa676e74f2e56742e24a6565600a32bf88a6b06a47de9820eaced071f8cedf4ac  pkgs/fc23/x86_64/qubes-db-debuginfo-3.2.4-1.fc23.x86_64.rpm
+2018-05-07 03:30:54.805131 +0000 build-fedora3: 5db32333a77c6b7be7771114aa3e017464d2e2344517b6eb0e87ea5af0dead833ea7c4fc30016b2fba1596be75746aba9464183082c2331aba7b0899fa13accd  pkgs/fc23/x86_64/qubes-db-devel-3.2.3-1.fc23.x86_64.rpm
+2018-05-07 03:30:54.805154 +0000 build-fedora3: 163e1c579a22638916d206aed1b47eae41bcb36a2272173b787374ec219359e73827f931b564f19d06345c91d3cc557771ebf45571682977532d06e4973cbba5  pkgs/fc23/x86_64/qubes-db-devel-3.2.4-1.fc23.x86_64.rpm
+2018-05-07 03:30:54.805176 +0000 build-fedora3: c10e79fed827cfc6408cdc5d96b9419f32074ba6494306afb9b1acea9556e99efa0f79717d96b808f8662291ba6ab133d0fae388f7a141f51cbd62ff75272f15  pkgs/fc23/x86_64/qubes-db-dom0-3.2.3-1.fc23.x86_64.rpm
+2018-05-07 03:30:54.805198 +0000 build-fedora3: 95c2df663fac42c77014ad4d1099373023df5a1b5673fd6c7de3df41c7b06da591db79da64a528a5f42095b394941130098e94228c6c76747563d910dc984447  pkgs/fc23/x86_64/qubes-db-libs-3.2.3-1.fc23.x86_64.rpm
+2018-05-07 03:30:54.805221 +0000 build-fedora3: d4ced331fb9581dad9747cf751411ba7876495ce95ebc5c8da40c7b304d863469f3466f1480493d4f7188c6fcd693faeddf76e61c79ad45fb5e13d83c9f3c87b  pkgs/fc23/x86_64/qubes-db-libs-3.2.4-1.fc23.x86_64.rpm
+2018-05-07 03:30:54.805242 +0000 build-fedora3: d86e28e1a1565c302a4ed08e59772c15da17e8f4f3bee8b7ce3aea2d0e08b07613303322c5588dd60077f2b3eb8f3201037bde3d9962c8a07a6d4b77ce8accce  pkgs/fc23/x86_64/qubes-db-vm-3.2.3-1.fc23.x86_64.rpm
+2018-05-07 03:30:54.805265 +0000 build-fedora3: 41f799d4c811d97565525f527d5aca42e61376daafdb3d3786b22e689fb86287ded242788572274a3c0f5f34a0288328f6d9efb772082cb2b7817384f6b9ee4c  pkgs/fc23/x86_64/qubes-db-vm-3.2.4-1.fc23.x86_64.rpm
+2018-05-07 03:30:54.805286 +0000 build-fedora3: 27e400db21abc2e0f9457e33971148f7a53e5f0264a6c58dd0bc376533ba1821f1c8748798e810defaab45db095138d7242f6cc1e4d8e473ad3a8e2aea77f820  pkgs/fc24/qubes-db-vm.spec.list
+2018-05-07 03:30:54.805307 +0000 build-fedora3: f31661d1203b45bce9d01f80886852032bc45d70a48a65ab9c5b8894bb6e0881060da2f02cd3167910621ba2afca95000f13eab0ae0c1832abb1b588e2c0c168  pkgs/fc24/qubes-db.spec.list
+2018-05-07 03:30:54.805329 +0000 build-fedora3: 166dd2ad0ca438a9966b5c160cee3d9f3f46ca58a9d8b288c8990032dd2c3e5cb1e48897eedf9ef776751ed37481e235a6ccea2350020b4c06128add5b56e656  pkgs/fc24/x86_64/qubes-db-3.2.3-1.fc24.x86_64.rpm
+2018-05-07 03:30:54.805351 +0000 build-fedora3: 06f64f15c3ae0971e1b9f919025b0d2d424b8e020c031a4789a3d8acbc8bbf4d8e954191649583749c7caf91dcb000cdbd7b53592c01b888ab8669d3f9ce35c5  pkgs/fc24/x86_64/qubes-db-3.2.4-1.fc24.x86_64.rpm
+2018-05-07 03:30:54.805380 +0000 build-fedora3: be02996a112d7b23f29fc8248fbc9e61883d51bd3f9603c1d9014406fae49ed7c1066668a2a76aa798db2d5233e90d06e466eff0db22e43474bfc2167236b53b  pkgs/fc24/x86_64/qubes-db-debuginfo-3.2.3-1.fc24.x86_64.rpm
+2018-05-07 03:30:54.805403 +0000 build-fedora3: f094d88de7c2cab9e6d277c46e681f1276312fde70cd9c44932b72127450765d315bd4be0b3c1e547db10c258110c3c97e8cfd7faf1f5204fd9a7d413c398a6b  pkgs/fc24/x86_64/qubes-db-debuginfo-3.2.4-1.fc24.x86_64.rpm
+2018-05-07 03:30:54.805432 +0000 build-fedora3: 35c280258328bb5b94dbf443a0beb33ea7595f444ed54aa446f553457780b4c29af1cd52da8496b83fa1df1f221c32ac11b2f6b9112f270629738c50ad516275  pkgs/fc24/x86_64/qubes-db-devel-3.2.3-1.fc24.x86_64.rpm
+2018-05-07 03:30:54.805456 +0000 build-fedora3: eceb953eaae658cfee4e6b14f9682e430668e0e346f8f919312d23017e9a6a5fa6f6e4839683495f732de714cc8b0b5fee728bf1b4ce1f8e3800e352ecf048c8  pkgs/fc24/x86_64/qubes-db-devel-3.2.4-1.fc24.x86_64.rpm
+2018-05-07 03:30:54.805478 +0000 build-fedora3: 82b068eb0ecc7d636275ba6b19c6c335d63458bb9cca63a85920c772c1a8fe21c0e21112b4b0cfb2a13db3e0a275ea206a7a5aff2ad592eab66edaee09641870  pkgs/fc24/x86_64/qubes-db-libs-3.2.3-1.fc24.x86_64.rpm
+2018-05-07 03:30:54.805500 +0000 build-fedora3: df9019a1a2eea96225afdb85c082dae58ffed225afe1645bbb865ea4f307b55f757a265b6a6ddd23b19654e80df9b8b5fc5ee85b5f83fb2250d009f595d8fbc3  pkgs/fc24/x86_64/qubes-db-libs-3.2.4-1.fc24.x86_64.rpm
+2018-05-07 03:30:54.805522 +0000 build-fedora3: 44593bca3cfd0ee5e8591469dd63d3ddb0a6d4be929a6aee94249e132cb0f1fa0dfd995ab2be06c1a672f3853dcf125d1b402b4f3a0ef673241496e7d0c60a72  pkgs/fc24/x86_64/qubes-db-vm-3.2.3-1.fc24.x86_64.rpm
+2018-05-07 03:30:54.805545 +0000 build-fedora3: 877ac5d9757e182c1cad725cbdb3761fa5230b20bd50cc3888fc43df3ccd44070f99480a348436f4900888452a0b8d7b62ebd6fcbfdf9f238ade51b71123a5de  pkgs/fc24/x86_64/qubes-db-vm-3.2.4-1.fc24.x86_64.rpm
+2018-05-07 03:30:54.805565 +0000 build-fedora3: 7d204538c1264e368a61afee26d067cbde4203e94dfe8eff63753ee4e68abe0f95cc26a7c8c200435920a74a2a050aad499d12bc2b8baed9b018c0103446df25  pkgs/fc25/qubes-db-vm.spec.list
+2018-05-07 03:30:54.805586 +0000 build-fedora3: 14ed3e254a035c70d02d9cd6fa4078ba54d93ed973609a5246733a0f92a3a22fb957f34a1fd480861054db9ee2c5e0ab92fce82b84d1eb7c0ea619131893d6f2  pkgs/fc25/qubes-db.spec.list
+2018-05-07 03:30:54.805608 +0000 build-fedora3: 04dc26ee99e45b0983a1a1cff3bf545852e44027de0fbf8fd4ecad69177fcb71ace27c8863550d8dda398ac89dbbe82567e125eb6d6a51e5385fbc1bdd73807a  pkgs/fc25/x86_64/qubes-db-3.2.3-1.fc25.x86_64.rpm
+2018-05-07 03:30:54.805630 +0000 build-fedora3: 4cd1fbd1ea1d14f1309fb1ad881b2068ceb989afdc5cc751a44030f3456873d19d4d71c8f25ab18840e529c3dcf2ca6d4c16639039dcf4482511ae4e890c5d7b  pkgs/fc25/x86_64/qubes-db-3.2.4-1.fc25.x86_64.rpm
+2018-05-07 03:30:54.805676 +0000 build-fedora3: 1155faae5e5d57b6e1536b14b9cc626b97ab52643c029baa6a43e755d7391eca556e105dab7821e15c3554e7a3464c0f0723e5ea1e7aaefa81cbb0836ad19e2f  pkgs/fc25/x86_64/qubes-db-3.2.5-1.fc25.x86_64.rpm
+2018-05-07 03:30:54.805700 +0000 build-fedora3: dab71d645f200fc5686693c874be1de029bcae59e37b6ca3a551cc351fd790de021cacd04ee0c2acf7244aff56f21e0bbc6752770ec0cf36656ce48c9f164c9b  pkgs/fc25/x86_64/qubes-db-debuginfo-3.2.3-1.fc25.x86_64.rpm
+2018-05-07 03:30:54.805723 +0000 build-fedora3: 85053060416505f7e256b5cf106500feec88a980c3589a6472fe578a006c7a3ea91c9907318f1d101228d308c5824dc7f60dbe9541172a0472046e84eb6c760d  pkgs/fc25/x86_64/qubes-db-debuginfo-3.2.4-1.fc25.x86_64.rpm
+2018-05-07 03:30:54.805746 +0000 build-fedora3: 55fccc9019c13de5c238e435b61eb3d2d21d72ff17514d4cccd4301278d8821f9eafa90f63dfbe68dd6a56f21dd49528b618fd6f4251df1550f9d6f95bfae55c  pkgs/fc25/x86_64/qubes-db-debuginfo-3.2.5-1.fc25.x86_64.rpm
+2018-05-07 03:30:54.805768 +0000 build-fedora3: 4675aa34167028db781e908f8be279e2aa10ade24186ddfe98bc98418284fb1895f450db2f55d162a75a5e82a9e90567eab80ad8e925947a73206dc65e9aa55c  pkgs/fc25/x86_64/qubes-db-devel-3.2.3-1.fc25.x86_64.rpm
+2018-05-07 03:30:54.805797 +0000 build-fedora3: 95c61a40c9d076a9c96603ac89cff8209fcfbdfb4f77963c711ab3e673f82d77ae32d56e600b577e9bce0ae190e54e3f5d246b558bbcbda4c6a5f7b3e7f419a9  pkgs/fc25/x86_64/qubes-db-devel-3.2.4-1.fc25.x86_64.rpm
+2018-05-07 03:30:54.805820 +0000 build-fedora3: 1c4028e75eee0a08faa3c59fb9dc57054bebbf2a074a0b052a450515bada60c33692320de4a2f65ec1b2487d63f0e358decd2a39e1989c93b4e828bdff46415c  pkgs/fc25/x86_64/qubes-db-devel-3.2.5-1.fc25.x86_64.rpm
+2018-05-07 03:30:54.805842 +0000 build-fedora3: 98ef56a87dc0bb06dd21850d2bb98afad2e75f3dae6dea5c359208b5979496db3c773201ba8554391945f3443ba8b4641b31dec28fbacef117bef9d38d52fddd  pkgs/fc25/x86_64/qubes-db-libs-3.2.3-1.fc25.x86_64.rpm
+2018-05-07 03:30:54.805864 +0000 build-fedora3: 6e323479686956f6bfdd384b70248507722af2560ed670b5a45ee7906153f3bf710e7c1d03ed6299551ddbbc499d7409913354f7b6dd9d03bb4c78ddd4b4e29f  pkgs/fc25/x86_64/qubes-db-libs-3.2.4-1.fc25.x86_64.rpm
+2018-05-07 03:30:54.805886 +0000 build-fedora3: 1d8ae775913bc544c02572f2ae68d7a5200b2a6db166f2cd5734181bf610b6e9e51de872ed05f66238e0814dbdf277462cb6a97e6bc91f1decae1bfca99462bc  pkgs/fc25/x86_64/qubes-db-libs-3.2.5-1.fc25.x86_64.rpm
+2018-05-07 03:30:54.805909 +0000 build-fedora3: 39e13badd7d80ced9f3e29567d3e2fa7276a0913886bd1cf4a9e50165c5554fb60f3c758b44731e2c623c21c226bee5c569ae66c8865f0a8e11e6e78bf45282f  pkgs/fc25/x86_64/qubes-db-vm-3.2.3-1.fc25.x86_64.rpm
+2018-05-07 03:30:54.805931 +0000 build-fedora3: 33ce6da5ffedc0c750196938fc717e8206eeab1771fc910f5b29dc5ca4550b6cab79b29b81e63ffaacb76f5cacb5a5e7d83dbc3ef7ac44cdb88a80ed11602083  pkgs/fc25/x86_64/qubes-db-vm-3.2.4-1.fc25.x86_64.rpm
+2018-05-07 03:30:54.805961 +0000 build-fedora3: bb2bb2441390010db3aa56812679c651c995aefd261f828b31259cbcd482735eec013a593aced460876cde07a4fd994d6734b8171d3a20bfb6eaa4d6faecc051  pkgs/fc25/x86_64/qubes-db-vm-3.2.5-1.fc25.x86_64.rpm
+2018-05-07 03:30:54.805983 +0000 build-fedora3: 90e205c8e8d5ba83de55b411e909e4f18abce57171459ecb1aa9f2a4b3e1c84c041cc3c3a760d21dfa5f54a2cf899d3a3b4245b0e2c963b9969e774f1c892940  pkgs/fc26/qubes-db-vm.spec.list
+2018-05-07 03:30:54.806004 +0000 build-fedora3: 638e63feedf42f1537d544527eb44bb41cc9ef6482bef2b56c20f60c8b792384adab5a45fc03038421c27e46058c6c000a0b6aad6540097fc5dfd95205ac31bd  pkgs/fc26/qubes-db.spec.list
+2018-05-07 03:30:54.806026 +0000 build-fedora3: 556eea15ee50d08592151f040807b8bdbd7e4f216f12e69695b43a5cc53ff28924f4c1d327886ebb63fe1ab03d76a4a539734b8a1d5c499c41d84e47402137eb  pkgs/fc26/x86_64/qubes-db-3.2.4-1.fc26.x86_64.rpm
+2018-05-07 03:30:54.806048 +0000 build-fedora3: 2dbe535eb3ffc544249d3ff7b08840cb9bca9086b6ed545e0dd37ea56a1ba7052a6394e5964fb3e17c8344c6984a9a49937e1121f70436d8ae3cf9848ecafc68  pkgs/fc26/x86_64/qubes-db-3.2.5-1.fc26.x86_64.rpm
+2018-05-07 03:30:54.806070 +0000 build-fedora3: 704dcb3b20c4d320c10ab40a72b6f80e351ad68b3056b42e932c734c626216a6988067a77b55a26f5d29283963e9c591b8584b2361249bac408dcc062a229459  pkgs/fc26/x86_64/qubes-db-debuginfo-3.2.4-1.fc26.x86_64.rpm
+2018-05-07 03:30:54.806092 +0000 build-fedora3: 61f47f2863c421c5cd2e40cbfb501b258a329f3c4beee996896aa47cc9cae5969a4118557d2a38a9a52ee800462ee8fbe3f3deb2864cf2c99e0d49756b27fae0  pkgs/fc26/x86_64/qubes-db-debuginfo-3.2.5-1.fc26.x86_64.rpm
+2018-05-07 03:30:54.806114 +0000 build-fedora3: 331f1f2d636fd05630de64b1b09a54cca16240dd572f9390e648f74ff9319f4d07e2f974030e1c0836cb1210db502b283b6335daa16f0fc3d2f01e481084a121  pkgs/fc26/x86_64/qubes-db-devel-3.2.4-1.fc26.x86_64.rpm
+2018-05-07 03:30:54.806136 +0000 build-fedora3: 0e487a4cd43dad15b8482ecd17f9c9d676e5613653f22a60ad83a36da7afd647975d613940dc030e5dbf3029aef3d29e3f965be2641319aa5c839ec866560ddf  pkgs/fc26/x86_64/qubes-db-devel-3.2.5-1.fc26.x86_64.rpm
+2018-05-07 03:30:54.806158 +0000 build-fedora3: 619b31e941a13185a141bb16841c5eb6e0abcdb5d62de18ce2f7c1f390ab8d0f1702ef993e8325105f7184fcbe5331b521d2904f550701873944a726e8b1e08d  pkgs/fc26/x86_64/qubes-db-libs-3.2.4-1.fc26.x86_64.rpm
+2018-05-07 03:30:54.806180 +0000 build-fedora3: 49731f67e356d8b9011b8daee204887444af0b7e820b6499790f49b834a5fa8f334c90462d056762916ccdd45972aef5dbecaf7af252f42155c39472a213e69f  pkgs/fc26/x86_64/qubes-db-libs-3.2.5-1.fc26.x86_64.rpm
+2018-05-07 03:30:54.806209 +0000 build-fedora3: a2f27a54512ec6f76d00da8a7ef4b417df5098d79113e5078b0b6920125bbc21a9f1e7cdf686758d10db40896dff6891395cbfd3ba6504943e0eb9d2dc775f7e  pkgs/fc26/x86_64/qubes-db-vm-3.2.4-1.fc26.x86_64.rpm
+2018-05-07 03:30:54.806231 +0000 build-fedora3: 2686305e71ab848fd2b5179ac184f8239d47a8b088e2f9ebbdaee0037682aada9f29d180421b1ae8100f5691fc258af33f723f9839a1aa28dcbc01a9ba22e901  pkgs/fc26/x86_64/qubes-db-vm-3.2.5-1.fc26.x86_64.rpm
+2018-05-07 03:30:54.806252 +0000 build-fedora3: b9a12a8e001e9f984033a770b072d4134f7f7b905b72e20ec7d3dafeef01341c599700677f4317cdf33533d33cd211f15dca5c4beed538797277f07560af06b4  pkgs/fc27/qubes-db-vm.spec.list
+2018-05-07 03:30:54.806273 +0000 build-fedora3: 1c4d96090358167ccf9fd9014709b309e352ac38cc92a7d91851bdd8c17f2552c1124cc25ab0a65c4ae1c466d5bb680866d00ff0e16b30c318993e7c3df0295d  pkgs/fc27/qubes-db.spec.list
+2018-05-07 03:30:54.806295 +0000 build-fedora3: 9e963bdbd7906a240a89ec762993c8f64d14d5555c5dcc24d960b7b7505b77a7f86a556e7f934b40994b9a5257023e9f917e9fc4075c4ced26d6153c8842ac03  pkgs/fc27/x86_64/qubes-db-3.2.5-1.fc27.x86_64.rpm
+2018-05-07 03:30:54.806317 +0000 build-fedora3: 496b7d1902039c70ea2e207001100b6156b6b143b51ec1efbb2d7ec3485423ee530a638dbc24fc8fbcbe5138997bdd11b46a2f1fb2a6a8a04cd6edc2e7eed365  pkgs/fc27/x86_64/qubes-db-debuginfo-3.2.5-1.fc27.x86_64.rpm
+2018-05-07 03:30:54.806340 +0000 build-fedora3: ce23302902b27ef4a69d8f37b209980a621c04404587d2f95654e1683a2ec0c591c8e3b36bd8ba0ce8e5a7a3e9dcbb5dc4abc59fe45d99535f64442b054b576d  pkgs/fc27/x86_64/qubes-db-debugsource-3.2.5-1.fc27.x86_64.rpm
+2018-05-07 03:30:54.806362 +0000 build-fedora3: 6ca945ec1d99513cd9f674b5a2034c7d1620f6900fe2639f6aa6bf85c43b41096c2e3c03ffb8570038f3f4c6c4e31f009697e4c99d45761a1085855924c33519  pkgs/fc27/x86_64/qubes-db-devel-3.2.5-1.fc27.x86_64.rpm
+2018-05-07 03:30:54.806384 +0000 build-fedora3: c77b704e06a02eb41353ee06e4cf4f66f18f653802adb581e183a9c97f8f5ee8982c162df58f2b034a62a59ee43ecad3eddf618babc6a2593c03ce20ba53c5f6  pkgs/fc27/x86_64/qubes-db-libs-3.2.5-1.fc27.x86_64.rpm
+2018-05-07 03:30:54.806407 +0000 build-fedora3: 229095e1fbb2c95b4e0a869ee2cdd5fb4a4f78768f1907c1eb259725a9b7411c8f37463c80093dab80a387d75ddc929857cd67155f06faf748b07b3c804d6787  pkgs/fc27/x86_64/qubes-db-libs-debuginfo-3.2.5-1.fc27.x86_64.rpm
+2018-05-07 03:30:54.806433 +0000 build-fedora3: 0a650c91fb979677209f91dfba41836d6e1281140c0361e2d02d185903559eb4fb61c9cd264f1e544fd191717202a622bed972e6ac9dc05aa6ae6d65673f0312  pkgs/fc27/x86_64/qubes-db-vm-3.2.5-1.fc27.x86_64.rpm
+2018-05-07 03:30:54.806454 +0000 build-fedora3: 64ffee116bdcc670d5425046c849edabf5877528360a6127bf56c5838e07e0eeb1e2d6af84c8478134cdb2f530efc97257fdf39097f6aa1793e7b5299246fea1  pkgs/fc28/qubes-db-vm.spec.list
+2018-05-07 03:30:54.806490 +0000 build-fedora3: cfd00c698eed606c7bffba52aad26e4f5f65547b813a561c8be3b152e1beaf56a343ec02a539adf51222c2eef2d11335fcdb7148e079fd2f708f8875c5a7f5b1  pkgs/fc28/qubes-db.spec.list
+2018-05-07 03:30:54.806513 +0000 build-fedora3: bdbc841f9cf6b753e6b36d8c13483432f84694a9106393b51f9274ac1927cda8a3ef37a210c62b80b2de727090103320eb9d0d268d8f7c381a76d9edfeb8b1eb  pkgs/fc28/x86_64/qubes-db-3.2.5-1.fc28.x86_64.rpm
+2018-05-07 03:30:54.806535 +0000 build-fedora3: e4f2b74bdd2aaeff820b97eea6a76a37f9b168e97ab943324dc54ed6aca0197432527370ac7328fc086592580f701f933ba1528a9ce76fa610865548c26f9ced  pkgs/fc28/x86_64/qubes-db-debuginfo-3.2.5-1.fc28.x86_64.rpm
+2018-05-07 03:30:54.806558 +0000 build-fedora3: d13eb88a91ee905ed069d1a3bd23a3e81b134f51a591c40c0da63d452a4f8f3e7b731390a76309a895725ba0efd5223838298ba4928b03f4f5ab26c8c9237bf5  pkgs/fc28/x86_64/qubes-db-debugsource-3.2.5-1.fc28.x86_64.rpm
+2018-05-07 03:30:54.806580 +0000 build-fedora3: 70f455bc008e6b4e5287da8dbb3a8addf9aee7d52fbd405ae8e36350b039f9b96e37b1db728772d2a1aca93c486b0bd1d61593beced3566fe1a3247edc7dd5d4  pkgs/fc28/x86_64/qubes-db-devel-3.2.5-1.fc28.x86_64.rpm
+2018-05-07 03:30:54.806602 +0000 build-fedora3: c51acfb3afc6394b85f06d9d7f70616b971601724ad592b0de2220d5d74873e52a1ea3c558c5832af530c6a618314961fcc37560f48ffb58c9defe2e8c970b75  pkgs/fc28/x86_64/qubes-db-libs-3.2.5-1.fc28.x86_64.rpm
+2018-05-07 03:30:54.806631 +0000 build-fedora3: 21e6c05284db49663cf067d3516596a3f4ee01a790d15b91b9743a840384c6b749062f017b9cebc3e6ed70e0a6fe09fcb7793588e16fa64e2996ad216a78ab51  pkgs/fc28/x86_64/qubes-db-libs-debuginfo-3.2.5-1.fc28.x86_64.rpm
+2018-05-07 03:30:54.806698 +0000 build-fedora3: bb0ec57f028b1155a95df968b93dec2434d7d160b83a962bcf504ad78dfed06fe87afdbdec63ec926187e99f668d16a6a27540283202a141b409d813bd798fa6  pkgs/fc28/x86_64/qubes-db-vm-3.2.5-1.fc28.x86_64.rpm
+2018-05-07 03:30:54.806716 +0000 build-fedora3: ================================================================================
+2018-05-07 03:30:54.806733 +0000 build-fedora3:                            B U I L D   I N F O                                  
+2018-05-07 03:30:54.806750 +0000 build-fedora3: Items in red indicate it was automatically generated by configuration file(s)
+2018-05-07 03:30:54.806766 +0000 build-fedora3: Items in white indicate it was automatically removed by configuration file(s)
+2018-05-07 03:30:54.806783 +0000 build-fedora3: ================================================================================
+2018-05-07 03:30:54.806796 +0000 build-fedora3: DISTS_VM:
+2018-05-07 03:30:54.806811 +0000 build-fedora3:      fc25, fc26, fc27, fc28,
+2018-05-07 03:30:54.806824 +0000 build-fedora3: DISTS_ALL:
+2018-05-07 03:30:54.806838 +0000 build-fedora3:      fc25, fc26, fc27, fc28,
+2018-05-07 03:30:54.806851 +0000 build-fedora3: DIST_DOM0:
+2018-05-07 03:30:54.806863 +0000 build-fedora3:     
+2018-05-07 03:30:54.806876 +0000 build-fedora3: BUILDER_PLUGINS:
+2018-05-07 03:30:54.806891 +0000 build-fedora3:      builder-fedora, mgmt-salt, linux-yum, builder-github,
+2018-05-07 03:30:54.806904 +0000 build-fedora3: COMPONENTS:
+2018-05-07 03:30:54.806917 +0000 build-fedora3:      core-qubesdb,
+2018-05-07 03:30:54.806930 +0000 build-fedora3: GIT_REPOS:
+2018-05-07 03:30:54.806944 +0000 build-fedora3:      qubes-src/core-qubesdb,
+2018-05-07 03:30:54.806956 +0000 build-fedora3: TEMPLATE:
+2018-05-07 03:30:54.806968 +0000 build-fedora3:     
+2018-05-07 03:30:54.806982 +0000 build-fedora3: TEMPLATE_FLAVOR_DIR:
+2018-05-07 03:30:54.811137 +0000 build-fedora3:     
+2018-05-07 03:30:54.813436 +0000 build-fedora3: TEMPLATE_ALIAS:
+2018-05-07 03:30:54.821493 +0000 build-fedora3:      jessie:jessie+standard, jessie+gnome:jessie+gnome+standard, jessie+minimal:jessie+minimal+no-recommends,
+2018-05-07 03:30:54.821530 +0000 build-fedora3:      stretch:stretch+standard, stretch+gnome:stretch+gnome+standard,
+2018-05-07 03:30:54.821548 +0000 build-fedora3:      stretch+minimal:stretch+minimal+no-recommends,
+2018-05-07 03:30:54.822013 +0000 build-fedora3: TEMPLATE_LABEL:
+2018-05-07 03:30:54.829901 +0000 build-fedora3:      fc25:fedora-25, fc26:fedora-26, fc20:fedora-20 fc21:fedora-21 fc22:fedora-22 fc23:fedora-23 fc24:fedora-24
+2018-05-07 03:30:54.829961 +0000 build-fedora3:      fc20+minimal:fedora-20-minimal fc21+minimal:fedora-21-minimal fc23+minimal:fedora-23-minimal
+2018-05-07 03:30:54.829997 +0000 build-fedora3:      fc24+minimal:fedora-24-minimal fc25+minimal:fedora-25-minimal fc26+minimal:fedora-26-minimal
+2018-05-07 03:30:54.830029 +0000 build-fedora3:      fc25+xfce:fedora-25-xfce fc26+xfce:fedora-26-xfce wheezy:debian-7 wheezy+standard:debian-7
+2018-05-07 03:30:54.830058 +0000 build-fedora3:      jessie:debian-8 jessie+standard:debian-8 stretch:debian-9 stretch+standard:debian-9 centos7:centos-7
+2018-05-07 03:30:54.830083 +0000 build-fedora3:      centos7+minimal:centos-7-minimal
+2018-05-07 03:30:54.878313 +0000 build-fedora3: > running make
+2018-05-07 03:30:54.925495 +0000 build-fedora3: Makefile:250: target 'sign-vm-fc25-core-qubesdb' does not exist
+2018-05-07 03:30:54.925587 +0000 build-fedora3: if [ -n "core-qubesdb" -a "0" -ne 0 ]; then BRANCH=release3.2; branch_var="BRANCH_core_qubesdb"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/core-qubesdb > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2018-05-07 03:30:54.925663 +0000 build-fedora3: SIGN_KEY=C52261BE0A823221D94CA1D1CB11CA1D03FA5082; \
+2018-05-07 03:30:54.925692 +0000 build-fedora3: sign_key_var="SIGN_KEY_fc25"; \
+2018-05-07 03:30:54.925720 +0000 build-fedora3: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2018-05-07 03:30:54.925746 +0000 build-fedora3: if [ -r qubes-src/core-qubesdb/Makefile.builder ]; then \
+2018-05-07 03:30:54.925771 +0000 build-fedora3: .make --no-print-directory -f Makefile.generic \
+2018-05-07 03:30:54.925794 +0000 build-fedora3: ..DIST=fc25 \
+2018-05-07 03:30:54.925816 +0000 build-fedora3: ..PACKAGE_SET=vm \
+2018-05-07 03:30:54.925840 +0000 build-fedora3: ..COMPONENT=core-qubesdb \
+2018-05-07 03:30:54.925865 +0000 build-fedora3: ..SIGN_KEY=$SIGN_KEY \
+2018-05-07 03:30:54.925888 +0000 build-fedora3: ..sign || exit 1; \
+2018-05-07 03:30:54.925914 +0000 build-fedora3: elif [ -d qubes-src/core-qubesdb/rpm ]; then \
+2018-05-07 03:30:54.925940 +0000 build-fedora3: .# Old mechanism supported only for RPM
+2018-05-07 03:30:54.925970 +0000 build-fedora3: FILE_LIST=""; for RPM in qubes-src/core-qubesdb/rpm/*/*.rpm; do \
+2018-05-07 03:30:54.925998 +0000 build-fedora3: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2018-05-07 03:30:54.926023 +0000 build-fedora3: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2018-05-07 03:30:54.926044 +0000 build-fedora3: ..fi ;\
+2018-05-07 03:30:54.926067 +0000 build-fedora3: .done ; \
+2018-05-07 03:30:54.926093 +0000 build-fedora3: .if [ -n "$FILE_LIST" ]; then \
+2018-05-07 03:30:54.926117 +0000 build-fedora3: ..echo "--> Signing..."; \
+2018-05-07 03:30:54.926139 +0000 build-fedora3: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2018-05-07 03:30:54.926163 +0000 build-fedora3: ..if [ -n "$SIGN_KEY" ]; then \
+2018-05-07 03:30:54.926186 +0000 build-fedora3: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2018-05-07 03:30:54.926206 +0000 build-fedora3: ..fi; \
+2018-05-07 03:30:54.926234 +0000 build-fedora3: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2018-05-07 03:30:54.926257 +0000 build-fedora3: .fi; \
+2018-05-07 03:30:54.926278 +0000 build-fedora3: fi
+2018-05-07 03:30:54.944789 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-05-07 03:30:54.944843 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:30:54.946438 +0000 build-fedora3: ++ basename qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in
+2018-05-07 03:30:54.949343 +0000 build-fedora3: + [[ xqubes-db.spec.in == \x\.\i\n ]]
+2018-05-07 03:30:54.949396 +0000 build-fedora3: + '[' -r qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in ']'
+2018-05-07 03:30:54.950390 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-05-07 03:30:54.953321 +0000 build-fedora3: + tmp_spec=/tmp/tmp.cn9sGH.spec
+2018-05-07 03:30:54.954412 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-05-07 03:30:54.957450 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in /tmp/tmp.cn9sGH.spec
+2018-05-07 03:30:54.961790 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:30:54.961846 +0000 build-fedora3: + '[' -z qubes-src/core-qubesdb ']'
+2018-05-07 03:30:54.961895 +0000 build-fedora3: + cp qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:30:54.968259 +0000 build-fedora3: + read ver
+2018-05-07 03:30:54.969137 +0000 build-fedora3: + cat qubes-src/core-qubesdb/version
+2018-05-07 03:30:54.971308 +0000 build-fedora3: + '[' x == x ']'
+2018-05-07 03:30:54.971379 +0000 build-fedora3: + sed -i 's|@VERSION@|3.2.5|g' qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:30:54.977912 +0000 build-fedora3: + vnum=1
+2018-05-07 03:30:54.977963 +0000 build-fedora3: + read ver
+2018-05-07 03:30:54.977992 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/rel ']'
+2018-05-07 03:30:54.979077 +0000 build-fedora3: ++ cat qubes-src/core-qubesdb/rel
+2018-05-07 03:30:54.983499 +0000 build-fedora3: ++ echo 1
+2018-05-07 03:30:54.983562 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:30:54.988999 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/changelog ']'
+2018-05-07 03:30:54.989057 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:30:54.994006 +0000 build-fedora3: + cat qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:30:54.997280 +0000 build-fedora3: + rm -rf qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:30:55.001338 +0000 build-fedora3: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile /tmp/tmp.cn9sGH.spec
+2018-05-07 03:30:55.098234 +0000 build-fedora3: + rm -f /tmp/tmp.cn9sGH.spec
+2018-05-07 03:30:55.142302 +0000 build-fedora3: /home/user/builder-r3.2/qubes-src/builder-fedora/Makefile.rpmbuilder:164: target 'sign' does not exist
+2018-05-07 03:30:55.142383 +0000 build-fedora3: cd qubes-src/core-qubesdb && for pkg in pkgs/fc25/x86_64/qubes-db-3.2.5-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-db-debuginfo-3.2.5-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-db-devel-3.2.5-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-db-libs-3.2.5-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-db-vm-3.2.5-1.fc25.x86_64.rpm ; do \
+2018-05-07 03:30:55.142414 +0000 build-fedora3: .if ! rpm -K $pkg | grep -qi pgp; then \
+2018-05-07 03:30:55.142449 +0000 build-fedora3: ..setsid -w rpmsign  --digest-algo=sha256 --key-id=C52261BE0A823221D94CA1D1CB11CA1D03FA5082 --addsign $pkg </dev/null || exit 1; \
+2018-05-07 03:30:55.142473 +0000 build-fedora3: .fi; \
+2018-05-07 03:30:55.142494 +0000 build-fedora3: done
+2018-05-07 03:30:55.192666 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-05-07 03:30:55.192739 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:30:55.194220 +0000 build-fedora3: ++ basename qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in
+2018-05-07 03:30:55.197148 +0000 build-fedora3: + [[ xqubes-db.spec.in == \x\.\i\n ]]
+2018-05-07 03:30:55.197207 +0000 build-fedora3: + '[' -r qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in ']'
+2018-05-07 03:30:55.198083 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-05-07 03:30:55.201149 +0000 build-fedora3: + tmp_spec=/tmp/tmp.M8NIRx.spec
+2018-05-07 03:30:55.202164 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-05-07 03:30:55.205221 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in /tmp/tmp.M8NIRx.spec
+2018-05-07 03:30:55.209442 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:30:55.209506 +0000 build-fedora3: + '[' -z qubes-src/core-qubesdb ']'
+2018-05-07 03:30:55.209566 +0000 build-fedora3: + cp qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:30:55.215807 +0000 build-fedora3: + cat qubes-src/core-qubesdb/version
+2018-05-07 03:30:55.216750 +0000 build-fedora3: + read ver
+2018-05-07 03:30:55.219339 +0000 build-fedora3: + '[' x == x ']'
+2018-05-07 03:30:55.219414 +0000 build-fedora3: + sed -i 's|@VERSION@|3.2.5|g' qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:30:55.225399 +0000 build-fedora3: + vnum=1
+2018-05-07 03:30:55.225453 +0000 build-fedora3: + read ver
+2018-05-07 03:30:55.225484 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/rel ']'
+2018-05-07 03:30:55.226522 +0000 build-fedora3: ++ cat qubes-src/core-qubesdb/rel
+2018-05-07 03:30:55.231252 +0000 build-fedora3: ++ echo 1
+2018-05-07 03:30:55.231314 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:30:55.236426 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/changelog ']'
+2018-05-07 03:30:55.236483 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:30:55.241501 +0000 build-fedora3: + cat qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:30:55.245057 +0000 build-fedora3: + rm -rf qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:30:55.248279 +0000 build-fedora3: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile /tmp/tmp.M8NIRx.spec
+2018-05-07 03:30:55.344824 +0000 build-fedora3: + rm -f /tmp/tmp.M8NIRx.spec
+2018-05-07 03:30:56.169807 +0000 build-fedora3: pkgs/fc25/x86_64/qubes-db-3.2.5-1.fc25.x86_64.rpm:
+2018-05-07 03:30:56.959112 +0000 build-fedora3: pkgs/fc25/x86_64/qubes-db-debuginfo-3.2.5-1.fc25.x86_64.rpm:
+2018-05-07 03:30:57.763497 +0000 build-fedora3: pkgs/fc25/x86_64/qubes-db-devel-3.2.5-1.fc25.x86_64.rpm:
+2018-05-07 03:30:58.565783 +0000 build-fedora3: pkgs/fc25/x86_64/qubes-db-libs-3.2.5-1.fc25.x86_64.rpm:
+2018-05-07 03:30:59.354996 +0000 build-fedora3: pkgs/fc25/x86_64/qubes-db-vm-3.2.5-1.fc25.x86_64.rpm:
+2018-05-07 03:30:59.357591 +0000 build-fedora3: Makefile:250: target 'sign-vm-fc26-core-qubesdb' does not exist
+2018-05-07 03:30:59.357686 +0000 build-fedora3: if [ -n "core-qubesdb" -a "0" -ne 0 ]; then BRANCH=release3.2; branch_var="BRANCH_core_qubesdb"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/core-qubesdb > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2018-05-07 03:30:59.357711 +0000 build-fedora3: SIGN_KEY=C52261BE0A823221D94CA1D1CB11CA1D03FA5082; \
+2018-05-07 03:30:59.357729 +0000 build-fedora3: sign_key_var="SIGN_KEY_fc26"; \
+2018-05-07 03:30:59.357747 +0000 build-fedora3: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2018-05-07 03:30:59.357763 +0000 build-fedora3: if [ -r qubes-src/core-qubesdb/Makefile.builder ]; then \
+2018-05-07 03:30:59.357779 +0000 build-fedora3: .make --no-print-directory -f Makefile.generic \
+2018-05-07 03:30:59.357793 +0000 build-fedora3: ..DIST=fc26 \
+2018-05-07 03:30:59.357806 +0000 build-fedora3: ..PACKAGE_SET=vm \
+2018-05-07 03:30:59.357821 +0000 build-fedora3: ..COMPONENT=core-qubesdb \
+2018-05-07 03:30:59.357834 +0000 build-fedora3: ..SIGN_KEY=$SIGN_KEY \
+2018-05-07 03:30:59.357848 +0000 build-fedora3: ..sign || exit 1; \
+2018-05-07 03:30:59.357863 +0000 build-fedora3: elif [ -d qubes-src/core-qubesdb/rpm ]; then \
+2018-05-07 03:30:59.357877 +0000 build-fedora3: .# Old mechanism supported only for RPM
+2018-05-07 03:30:59.357906 +0000 build-fedora3: FILE_LIST=""; for RPM in qubes-src/core-qubesdb/rpm/*/*.rpm; do \
+2018-05-07 03:30:59.357938 +0000 build-fedora3: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2018-05-07 03:30:59.357964 +0000 build-fedora3: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2018-05-07 03:30:59.357987 +0000 build-fedora3: ..fi ;\
+2018-05-07 03:30:59.358011 +0000 build-fedora3: .done ; \
+2018-05-07 03:30:59.358036 +0000 build-fedora3: .if [ -n "$FILE_LIST" ]; then \
+2018-05-07 03:30:59.358060 +0000 build-fedora3: ..echo "--> Signing..."; \
+2018-05-07 03:30:59.358087 +0000 build-fedora3: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2018-05-07 03:30:59.358103 +0000 build-fedora3: ..if [ -n "$SIGN_KEY" ]; then \
+2018-05-07 03:30:59.358134 +0000 build-fedora3: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2018-05-07 03:30:59.358154 +0000 build-fedora3: ..fi; \
+2018-05-07 03:30:59.358172 +0000 build-fedora3: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2018-05-07 03:30:59.358185 +0000 build-fedora3: .fi; \
+2018-05-07 03:30:59.358198 +0000 build-fedora3: fi
+2018-05-07 03:30:59.380164 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-05-07 03:30:59.381216 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:30:59.385786 +0000 build-fedora3: ++ basename qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in
+2018-05-07 03:30:59.389269 +0000 build-fedora3: + [[ xqubes-db.spec.in == \x\.\i\n ]]
+2018-05-07 03:30:59.389302 +0000 build-fedora3: + '[' -r qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in ']'
+2018-05-07 03:30:59.390565 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-05-07 03:30:59.394259 +0000 build-fedora3: + tmp_spec=/tmp/tmp.pUJx8J.spec
+2018-05-07 03:30:59.395537 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-05-07 03:30:59.399174 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in /tmp/tmp.pUJx8J.spec
+2018-05-07 03:30:59.404321 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:30:59.404376 +0000 build-fedora3: + '[' -z qubes-src/core-qubesdb ']'
+2018-05-07 03:30:59.404466 +0000 build-fedora3: + cp qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:30:59.412393 +0000 build-fedora3: + read ver
+2018-05-07 03:30:59.413668 +0000 build-fedora3: + cat qubes-src/core-qubesdb/version
+2018-05-07 03:30:59.417149 +0000 build-fedora3: + '[' x == x ']'
+2018-05-07 03:30:59.417193 +0000 build-fedora3: + sed -i 's|@VERSION@|3.2.5|g' qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:30:59.423291 +0000 build-fedora3: + vnum=1
+2018-05-07 03:30:59.423331 +0000 build-fedora3: + read ver
+2018-05-07 03:30:59.424352 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/rel ']'
+2018-05-07 03:30:59.425763 +0000 build-fedora3: ++ cat qubes-src/core-qubesdb/rel
+2018-05-07 03:30:59.431636 +0000 build-fedora3: ++ echo 1
+2018-05-07 03:30:59.431676 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:30:59.438130 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/changelog ']'
+2018-05-07 03:30:59.438173 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:30:59.444539 +0000 build-fedora3: + cat qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:30:59.449646 +0000 build-fedora3: + rm -rf qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:30:59.454285 +0000 build-fedora3: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile /tmp/tmp.pUJx8J.spec
+2018-05-07 03:30:59.585019 +0000 build-fedora3: + rm -f /tmp/tmp.pUJx8J.spec
+2018-05-07 03:30:59.629364 +0000 build-fedora3: /home/user/builder-r3.2/qubes-src/builder-fedora/Makefile.rpmbuilder:164: target 'sign' does not exist
+2018-05-07 03:30:59.629450 +0000 build-fedora3: cd qubes-src/core-qubesdb && for pkg in pkgs/fc26/x86_64/qubes-db-3.2.5-1.fc26.x86_64.rpm pkgs/fc26/x86_64/qubes-db-debuginfo-3.2.5-1.fc26.x86_64.rpm pkgs/fc26/x86_64/qubes-db-devel-3.2.5-1.fc26.x86_64.rpm pkgs/fc26/x86_64/qubes-db-libs-3.2.5-1.fc26.x86_64.rpm pkgs/fc26/x86_64/qubes-db-vm-3.2.5-1.fc26.x86_64.rpm ; do \
+2018-05-07 03:30:59.629485 +0000 build-fedora3: .if ! rpm -K $pkg | grep -qi pgp; then \
+2018-05-07 03:30:59.629522 +0000 build-fedora3: ..setsid -w rpmsign  --digest-algo=sha256 --key-id=C52261BE0A823221D94CA1D1CB11CA1D03FA5082 --addsign $pkg </dev/null || exit 1; \
+2018-05-07 03:30:59.629546 +0000 build-fedora3: .fi; \
+2018-05-07 03:30:59.629569 +0000 build-fedora3: done
+2018-05-07 03:30:59.682609 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-05-07 03:30:59.682706 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:30:59.684343 +0000 build-fedora3: ++ basename qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in
+2018-05-07 03:30:59.687329 +0000 build-fedora3: + [[ xqubes-db.spec.in == \x\.\i\n ]]
+2018-05-07 03:30:59.687388 +0000 build-fedora3: + '[' -r qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in ']'
+2018-05-07 03:30:59.688425 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-05-07 03:30:59.691471 +0000 build-fedora3: + tmp_spec=/tmp/tmp.qlQYkw.spec
+2018-05-07 03:30:59.692476 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-05-07 03:30:59.695298 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in /tmp/tmp.qlQYkw.spec
+2018-05-07 03:30:59.699588 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:30:59.699669 +0000 build-fedora3: + '[' -z qubes-src/core-qubesdb ']'
+2018-05-07 03:30:59.699714 +0000 build-fedora3: + cp qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:30:59.706047 +0000 build-fedora3: + read ver
+2018-05-07 03:30:59.707100 +0000 build-fedora3: + cat qubes-src/core-qubesdb/version
+2018-05-07 03:30:59.709336 +0000 build-fedora3: + '[' x == x ']'
+2018-05-07 03:30:59.709405 +0000 build-fedora3: + sed -i 's|@VERSION@|3.2.5|g' qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:30:59.716437 +0000 build-fedora3: + vnum=1
+2018-05-07 03:30:59.716489 +0000 build-fedora3: + read ver
+2018-05-07 03:30:59.716518 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/rel ']'
+2018-05-07 03:30:59.717502 +0000 build-fedora3: ++ cat qubes-src/core-qubesdb/rel
+2018-05-07 03:30:59.722291 +0000 build-fedora3: ++ echo 1
+2018-05-07 03:30:59.722353 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:30:59.727289 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/changelog ']'
+2018-05-07 03:30:59.727348 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:30:59.732650 +0000 build-fedora3: + cat qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:30:59.736154 +0000 build-fedora3: + rm -rf qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:30:59.739347 +0000 build-fedora3: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile /tmp/tmp.qlQYkw.spec
+2018-05-07 03:30:59.836336 +0000 build-fedora3: + rm -f /tmp/tmp.qlQYkw.spec
+2018-05-07 03:31:00.646997 +0000 build-fedora3: pkgs/fc26/x86_64/qubes-db-3.2.5-1.fc26.x86_64.rpm:
+2018-05-07 03:31:01.470839 +0000 build-fedora3: pkgs/fc26/x86_64/qubes-db-debuginfo-3.2.5-1.fc26.x86_64.rpm:
+2018-05-07 03:31:02.282472 +0000 build-fedora3: pkgs/fc26/x86_64/qubes-db-devel-3.2.5-1.fc26.x86_64.rpm:
+2018-05-07 03:31:03.091160 +0000 build-fedora3: pkgs/fc26/x86_64/qubes-db-libs-3.2.5-1.fc26.x86_64.rpm:
+2018-05-07 03:31:03.894127 +0000 build-fedora3: pkgs/fc26/x86_64/qubes-db-vm-3.2.5-1.fc26.x86_64.rpm:
+2018-05-07 03:31:03.896144 +0000 build-fedora3: Makefile:250: target 'sign-vm-fc27-core-qubesdb' does not exist
+2018-05-07 03:31:03.896239 +0000 build-fedora3: if [ -n "core-qubesdb" -a "0" -ne 0 ]; then BRANCH=release3.2; branch_var="BRANCH_core_qubesdb"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/core-qubesdb > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2018-05-07 03:31:03.896272 +0000 build-fedora3: SIGN_KEY=C52261BE0A823221D94CA1D1CB11CA1D03FA5082; \
+2018-05-07 03:31:03.896297 +0000 build-fedora3: sign_key_var="SIGN_KEY_fc27"; \
+2018-05-07 03:31:03.896323 +0000 build-fedora3: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2018-05-07 03:31:03.896348 +0000 build-fedora3: if [ -r qubes-src/core-qubesdb/Makefile.builder ]; then \
+2018-05-07 03:31:03.896372 +0000 build-fedora3: .make --no-print-directory -f Makefile.generic \
+2018-05-07 03:31:03.896393 +0000 build-fedora3: ..DIST=fc27 \
+2018-05-07 03:31:03.896414 +0000 build-fedora3: ..PACKAGE_SET=vm \
+2018-05-07 03:31:03.896435 +0000 build-fedora3: ..COMPONENT=core-qubesdb \
+2018-05-07 03:31:03.896457 +0000 build-fedora3: ..SIGN_KEY=$SIGN_KEY \
+2018-05-07 03:31:03.896479 +0000 build-fedora3: ..sign || exit 1; \
+2018-05-07 03:31:03.896505 +0000 build-fedora3: elif [ -d qubes-src/core-qubesdb/rpm ]; then \
+2018-05-07 03:31:03.896530 +0000 build-fedora3: .# Old mechanism supported only for RPM
+2018-05-07 03:31:03.896556 +0000 build-fedora3: FILE_LIST=""; for RPM in qubes-src/core-qubesdb/rpm/*/*.rpm; do \
+2018-05-07 03:31:03.896584 +0000 build-fedora3: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2018-05-07 03:31:03.896628 +0000 build-fedora3: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2018-05-07 03:31:03.896696 +0000 build-fedora3: ..fi ;\
+2018-05-07 03:31:03.896721 +0000 build-fedora3: .done ; \
+2018-05-07 03:31:03.896745 +0000 build-fedora3: .if [ -n "$FILE_LIST" ]; then \
+2018-05-07 03:31:03.896769 +0000 build-fedora3: ..echo "--> Signing..."; \
+2018-05-07 03:31:03.896797 +0000 build-fedora3: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2018-05-07 03:31:03.896821 +0000 build-fedora3: ..if [ -n "$SIGN_KEY" ]; then \
+2018-05-07 03:31:03.896846 +0000 build-fedora3: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2018-05-07 03:31:03.896868 +0000 build-fedora3: ..fi; \
+2018-05-07 03:31:03.896898 +0000 build-fedora3: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2018-05-07 03:31:03.896920 +0000 build-fedora3: .fi; \
+2018-05-07 03:31:03.896948 +0000 build-fedora3: fi
+2018-05-07 03:31:03.915315 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-05-07 03:31:03.915366 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:03.917143 +0000 build-fedora3: ++ basename qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in
+2018-05-07 03:31:03.919489 +0000 build-fedora3: + [[ xqubes-db.spec.in == \x\.\i\n ]]
+2018-05-07 03:31:03.919556 +0000 build-fedora3: + '[' -r qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in ']'
+2018-05-07 03:31:03.921158 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-05-07 03:31:03.924252 +0000 build-fedora3: + tmp_spec=/tmp/tmp.TCiE4h.spec
+2018-05-07 03:31:03.925898 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-05-07 03:31:03.928404 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in /tmp/tmp.TCiE4h.spec
+2018-05-07 03:31:03.933967 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:03.934008 +0000 build-fedora3: + '[' -z qubes-src/core-qubesdb ']'
+2018-05-07 03:31:03.934031 +0000 build-fedora3: + cp qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:03.940479 +0000 build-fedora3: + cat qubes-src/core-qubesdb/version
+2018-05-07 03:31:03.941367 +0000 build-fedora3: + read ver
+2018-05-07 03:31:03.942871 +0000 build-fedora3: + '[' x == x ']'
+2018-05-07 03:31:03.943024 +0000 build-fedora3: + sed -i 's|@VERSION@|3.2.5|g' qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:03.949205 +0000 build-fedora3: + vnum=1
+2018-05-07 03:31:03.949257 +0000 build-fedora3: + read ver
+2018-05-07 03:31:03.949873 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/rel ']'
+2018-05-07 03:31:03.951507 +0000 build-fedora3: ++ cat qubes-src/core-qubesdb/rel
+2018-05-07 03:31:03.955122 +0000 build-fedora3: ++ echo 1
+2018-05-07 03:31:03.955755 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:03.961088 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/changelog ']'
+2018-05-07 03:31:03.961140 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:03.966655 +0000 build-fedora3: + cat qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:03.970275 +0000 build-fedora3: + rm -rf qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:03.973830 +0000 build-fedora3: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile /tmp/tmp.TCiE4h.spec
+2018-05-07 03:31:04.073647 +0000 build-fedora3: + rm -f /tmp/tmp.TCiE4h.spec
+2018-05-07 03:31:04.122089 +0000 build-fedora3: /home/user/builder-r3.2/qubes-src/builder-fedora/Makefile.rpmbuilder:164: target 'sign' does not exist
+2018-05-07 03:31:04.122174 +0000 build-fedora3: cd qubes-src/core-qubesdb && for pkg in pkgs/fc27/x86_64/qubes-db-3.2.5-1.fc27.x86_64.rpm pkgs/fc27/x86_64/qubes-db-debuginfo-3.2.5-1.fc27.x86_64.rpm pkgs/fc27/x86_64/qubes-db-debugsource-3.2.5-1.fc27.x86_64.rpm pkgs/fc27/x86_64/qubes-db-devel-3.2.5-1.fc27.x86_64.rpm pkgs/fc27/x86_64/qubes-db-libs-3.2.5-1.fc27.x86_64.rpm pkgs/fc27/x86_64/qubes-db-libs-debuginfo-3.2.5-1.fc27.x86_64.rpm pkgs/fc27/x86_64/qubes-db-vm-3.2.5-1.fc27.x86_64.rpm ; do \
+2018-05-07 03:31:04.122214 +0000 build-fedora3: .if ! rpm -K $pkg | grep -qi pgp; then \
+2018-05-07 03:31:04.122237 +0000 build-fedora3: ..setsid -w rpmsign  --digest-algo=sha256 --key-id=C52261BE0A823221D94CA1D1CB11CA1D03FA5082 --addsign $pkg </dev/null || exit 1; \
+2018-05-07 03:31:04.122253 +0000 build-fedora3: .fi; \
+2018-05-07 03:31:04.122267 +0000 build-fedora3: done
+2018-05-07 03:31:04.177206 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-05-07 03:31:04.177258 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:04.178882 +0000 build-fedora3: ++ basename qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in
+2018-05-07 03:31:04.181535 +0000 build-fedora3: + [[ xqubes-db.spec.in == \x\.\i\n ]]
+2018-05-07 03:31:04.181592 +0000 build-fedora3: + '[' -r qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in ']'
+2018-05-07 03:31:04.183070 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-05-07 03:31:04.185680 +0000 build-fedora3: + tmp_spec=/tmp/tmp.nI7jqV.spec
+2018-05-07 03:31:04.187265 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-05-07 03:31:04.189897 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in /tmp/tmp.nI7jqV.spec
+2018-05-07 03:31:04.194538 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:04.194592 +0000 build-fedora3: + '[' -z qubes-src/core-qubesdb ']'
+2018-05-07 03:31:04.194628 +0000 build-fedora3: + cp qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:04.201248 +0000 build-fedora3: + cat qubes-src/core-qubesdb/version
+2018-05-07 03:31:04.201472 +0000 build-fedora3: + read ver
+2018-05-07 03:31:04.203862 +0000 build-fedora3: + '[' x == x ']'
+2018-05-07 03:31:04.204022 +0000 build-fedora3: + sed -i 's|@VERSION@|3.2.5|g' qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:04.209007 +0000 build-fedora3: + vnum=1
+2018-05-07 03:31:04.209048 +0000 build-fedora3: + read ver
+2018-05-07 03:31:04.209725 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/rel ']'
+2018-05-07 03:31:04.211392 +0000 build-fedora3: ++ cat qubes-src/core-qubesdb/rel
+2018-05-07 03:31:04.215698 +0000 build-fedora3: ++ echo 1
+2018-05-07 03:31:04.216322 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:04.221391 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/changelog ']'
+2018-05-07 03:31:04.221450 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:04.226284 +0000 build-fedora3: + cat qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:04.229857 +0000 build-fedora3: + rm -rf qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:04.233486 +0000 build-fedora3: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile /tmp/tmp.nI7jqV.spec
+2018-05-07 03:31:04.329435 +0000 build-fedora3: + rm -f /tmp/tmp.nI7jqV.spec
+2018-05-07 03:31:05.162978 +0000 build-fedora3: pkgs/fc27/x86_64/qubes-db-3.2.5-1.fc27.x86_64.rpm:
+2018-05-07 03:31:05.964945 +0000 build-fedora3: pkgs/fc27/x86_64/qubes-db-debuginfo-3.2.5-1.fc27.x86_64.rpm:
+2018-05-07 03:31:06.765368 +0000 build-fedora3: pkgs/fc27/x86_64/qubes-db-debugsource-3.2.5-1.fc27.x86_64.rpm:
+2018-05-07 03:31:07.565549 +0000 build-fedora3: pkgs/fc27/x86_64/qubes-db-devel-3.2.5-1.fc27.x86_64.rpm:
+2018-05-07 03:31:08.355803 +0000 build-fedora3: pkgs/fc27/x86_64/qubes-db-libs-3.2.5-1.fc27.x86_64.rpm:
+2018-05-07 03:31:09.170324 +0000 build-fedora3: pkgs/fc27/x86_64/qubes-db-libs-debuginfo-3.2.5-1.fc27.x86_64.rpm:
+2018-05-07 03:31:09.972152 +0000 build-fedora3: pkgs/fc27/x86_64/qubes-db-vm-3.2.5-1.fc27.x86_64.rpm:
+2018-05-07 03:31:09.973218 +0000 build-fedora3: Makefile:250: target 'sign-vm-fc28-core-qubesdb' does not exist
+2018-05-07 03:31:09.973328 +0000 build-fedora3: if [ -n "core-qubesdb" -a "0" -ne 0 ]; then BRANCH=release3.2; branch_var="BRANCH_core_qubesdb"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/core-qubesdb > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2018-05-07 03:31:09.973364 +0000 build-fedora3: SIGN_KEY=C52261BE0A823221D94CA1D1CB11CA1D03FA5082; \
+2018-05-07 03:31:09.973394 +0000 build-fedora3: sign_key_var="SIGN_KEY_fc28"; \
+2018-05-07 03:31:09.973423 +0000 build-fedora3: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2018-05-07 03:31:09.973451 +0000 build-fedora3: if [ -r qubes-src/core-qubesdb/Makefile.builder ]; then \
+2018-05-07 03:31:09.973477 +0000 build-fedora3: .make --no-print-directory -f Makefile.generic \
+2018-05-07 03:31:09.973500 +0000 build-fedora3: ..DIST=fc28 \
+2018-05-07 03:31:09.973522 +0000 build-fedora3: ..PACKAGE_SET=vm \
+2018-05-07 03:31:09.973546 +0000 build-fedora3: ..COMPONENT=core-qubesdb \
+2018-05-07 03:31:09.973569 +0000 build-fedora3: ..SIGN_KEY=$SIGN_KEY \
+2018-05-07 03:31:09.973591 +0000 build-fedora3: ..sign || exit 1; \
+2018-05-07 03:31:09.973614 +0000 build-fedora3: elif [ -d qubes-src/core-qubesdb/rpm ]; then \
+2018-05-07 03:31:09.973674 +0000 build-fedora3: .# Old mechanism supported only for RPM
+2018-05-07 03:31:09.973702 +0000 build-fedora3: FILE_LIST=""; for RPM in qubes-src/core-qubesdb/rpm/*/*.rpm; do \
+2018-05-07 03:31:09.973727 +0000 build-fedora3: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2018-05-07 03:31:09.973749 +0000 build-fedora3: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2018-05-07 03:31:09.973770 +0000 build-fedora3: ..fi ;\
+2018-05-07 03:31:09.973792 +0000 build-fedora3: .done ; \
+2018-05-07 03:31:09.973814 +0000 build-fedora3: .if [ -n "$FILE_LIST" ]; then \
+2018-05-07 03:31:09.973836 +0000 build-fedora3: ..echo "--> Signing..."; \
+2018-05-07 03:31:09.973859 +0000 build-fedora3: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2018-05-07 03:31:09.973880 +0000 build-fedora3: ..if [ -n "$SIGN_KEY" ]; then \
+2018-05-07 03:31:09.973902 +0000 build-fedora3: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2018-05-07 03:31:09.973921 +0000 build-fedora3: ..fi; \
+2018-05-07 03:31:09.973953 +0000 build-fedora3: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2018-05-07 03:31:09.973974 +0000 build-fedora3: .fi; \
+2018-05-07 03:31:09.973994 +0000 build-fedora3: fi
+2018-05-07 03:31:09.992459 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-05-07 03:31:09.992514 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:09.994075 +0000 build-fedora3: ++ basename qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in
+2018-05-07 03:31:09.996591 +0000 build-fedora3: + [[ xqubes-db.spec.in == \x\.\i\n ]]
+2018-05-07 03:31:09.996676 +0000 build-fedora3: + '[' -r qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in ']'
+2018-05-07 03:31:09.998237 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-05-07 03:31:10.000768 +0000 build-fedora3: + tmp_spec=/tmp/tmp.waZFqv.spec
+2018-05-07 03:31:10.002508 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-05-07 03:31:10.005690 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in /tmp/tmp.waZFqv.spec
+2018-05-07 03:31:10.011500 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:10.011553 +0000 build-fedora3: + '[' -z qubes-src/core-qubesdb ']'
+2018-05-07 03:31:10.011589 +0000 build-fedora3: + cp qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:10.018921 +0000 build-fedora3: + cat qubes-src/core-qubesdb/version
+2018-05-07 03:31:10.018974 +0000 build-fedora3: + read ver
+2018-05-07 03:31:10.021265 +0000 build-fedora3: + '[' x == x ']'
+2018-05-07 03:31:10.021346 +0000 build-fedora3: + sed -i 's|@VERSION@|3.2.5|g' qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:10.027283 +0000 build-fedora3: + vnum=1
+2018-05-07 03:31:10.027336 +0000 build-fedora3: + read ver
+2018-05-07 03:31:10.027918 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/rel ']'
+2018-05-07 03:31:10.029540 +0000 build-fedora3: ++ cat qubes-src/core-qubesdb/rel
+2018-05-07 03:31:10.033175 +0000 build-fedora3: ++ echo 1
+2018-05-07 03:31:10.033922 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:10.038945 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/changelog ']'
+2018-05-07 03:31:10.038990 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:10.044098 +0000 build-fedora3: + cat qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:10.048118 +0000 build-fedora3: + rm -rf qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:10.052183 +0000 build-fedora3: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile /tmp/tmp.waZFqv.spec
+2018-05-07 03:31:10.156602 +0000 build-fedora3: + rm -f /tmp/tmp.waZFqv.spec
+2018-05-07 03:31:10.207678 +0000 build-fedora3: /home/user/builder-r3.2/qubes-src/builder-fedora/Makefile.rpmbuilder:164: target 'sign' does not exist
+2018-05-07 03:31:10.207794 +0000 build-fedora3: cd qubes-src/core-qubesdb && for pkg in pkgs/fc28/x86_64/qubes-db-3.2.5-1.fc28.x86_64.rpm pkgs/fc28/x86_64/qubes-db-debuginfo-3.2.5-1.fc28.x86_64.rpm pkgs/fc28/x86_64/qubes-db-debugsource-3.2.5-1.fc28.x86_64.rpm pkgs/fc28/x86_64/qubes-db-devel-3.2.5-1.fc28.x86_64.rpm pkgs/fc28/x86_64/qubes-db-libs-3.2.5-1.fc28.x86_64.rpm pkgs/fc28/x86_64/qubes-db-libs-debuginfo-3.2.5-1.fc28.x86_64.rpm pkgs/fc28/x86_64/qubes-db-vm-3.2.5-1.fc28.x86_64.rpm ; do \
+2018-05-07 03:31:10.207833 +0000 build-fedora3: .if ! rpm -K $pkg | grep -qi pgp; then \
+2018-05-07 03:31:10.207871 +0000 build-fedora3: ..setsid -w rpmsign  --digest-algo=sha256 --key-id=C52261BE0A823221D94CA1D1CB11CA1D03FA5082 --addsign $pkg </dev/null || exit 1; \
+2018-05-07 03:31:10.207896 +0000 build-fedora3: .fi; \
+2018-05-07 03:31:10.207918 +0000 build-fedora3: done
+2018-05-07 03:31:10.259317 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-05-07 03:31:10.259368 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:10.260856 +0000 build-fedora3: ++ basename qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in
+2018-05-07 03:31:10.263840 +0000 build-fedora3: + [[ xqubes-db.spec.in == \x\.\i\n ]]
+2018-05-07 03:31:10.263909 +0000 build-fedora3: + '[' -r qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in ']'
+2018-05-07 03:31:10.265523 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-05-07 03:31:10.268221 +0000 build-fedora3: + tmp_spec=/tmp/tmp.PMLn4C.spec
+2018-05-07 03:31:10.269769 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-05-07 03:31:10.272258 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in /tmp/tmp.PMLn4C.spec
+2018-05-07 03:31:10.276938 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:10.276981 +0000 build-fedora3: + '[' -z qubes-src/core-qubesdb ']'
+2018-05-07 03:31:10.277005 +0000 build-fedora3: + cp qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:10.283810 +0000 build-fedora3: + cat qubes-src/core-qubesdb/version
+2018-05-07 03:31:10.284255 +0000 build-fedora3: + read ver
+2018-05-07 03:31:10.286679 +0000 build-fedora3: + '[' x == x ']'
+2018-05-07 03:31:10.286873 +0000 build-fedora3: + sed -i 's|@VERSION@|3.2.5|g' qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:10.291945 +0000 build-fedora3: + vnum=1
+2018-05-07 03:31:10.292001 +0000 build-fedora3: + read ver
+2018-05-07 03:31:10.292653 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/rel ']'
+2018-05-07 03:31:10.294182 +0000 build-fedora3: ++ cat qubes-src/core-qubesdb/rel
+2018-05-07 03:31:10.298145 +0000 build-fedora3: ++ echo 1
+2018-05-07 03:31:10.298897 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:10.304743 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/changelog ']'
+2018-05-07 03:31:10.304799 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:10.310662 +0000 build-fedora3: + cat qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:10.314695 +0000 build-fedora3: + rm -rf qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:10.318664 +0000 build-fedora3: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile /tmp/tmp.PMLn4C.spec
+2018-05-07 03:31:10.417200 +0000 build-fedora3: + rm -f /tmp/tmp.PMLn4C.spec
+2018-05-07 03:31:11.240714 +0000 build-fedora3: pkgs/fc28/x86_64/qubes-db-3.2.5-1.fc28.x86_64.rpm:
+2018-05-07 03:31:12.044557 +0000 build-fedora3: pkgs/fc28/x86_64/qubes-db-debuginfo-3.2.5-1.fc28.x86_64.rpm:
+2018-05-07 03:31:12.843439 +0000 build-fedora3: pkgs/fc28/x86_64/qubes-db-debugsource-3.2.5-1.fc28.x86_64.rpm:
+2018-05-07 03:31:13.644410 +0000 build-fedora3: pkgs/fc28/x86_64/qubes-db-devel-3.2.5-1.fc28.x86_64.rpm:
+2018-05-07 03:31:14.429792 +0000 build-fedora3: pkgs/fc28/x86_64/qubes-db-libs-3.2.5-1.fc28.x86_64.rpm:
+2018-05-07 03:31:15.224409 +0000 build-fedora3: pkgs/fc28/x86_64/qubes-db-libs-debuginfo-3.2.5-1.fc28.x86_64.rpm:
+2018-05-07 03:31:16.025813 +0000 build-fedora3: pkgs/fc28/x86_64/qubes-db-vm-3.2.5-1.fc28.x86_64.rpm:
+2018-05-07 03:31:16.027781 +0000 build-fedora3: Makefile:721: target 'internal-update-repo-current-testing.vm.fc25.core-qubesdb' does not exist
+2018-05-07 03:31:16.027846 +0000 build-fedora3: repo_base_var="LINUX_REPO_fc25_BASEDIR"; \
+2018-05-07 03:31:16.027876 +0000 build-fedora3: if [ -n "${!repo_base_var}" ]; then \
+2018-05-07 03:31:16.027903 +0000 build-fedora3: .repo_basedir="${!repo_base_var}"; \
+2018-05-07 03:31:16.027927 +0000 build-fedora3: else \
+2018-05-07 03:31:16.027958 +0000 build-fedora3: .repo_basedir="qubes-src/linux-yum/r3.2"; \
+2018-05-07 03:31:16.027979 +0000 build-fedora3: fi; \
+2018-05-07 03:31:16.028005 +0000 build-fedora3: if [ -r qubes-src/core-qubesdb/Makefile.builder ]; then \
+2018-05-07 03:31:16.028031 +0000 build-fedora3: .echo -n "Updating qubes-src/core-qubesdb... "; \
+2018-05-07 03:31:16.028053 +0000 build-fedora3: .if [ "0" -eq 1 ]; then \
+2018-05-07 03:31:16.028080 +0000 build-fedora3: ..vtag=`git -C qubes-src/core-qubesdb tag --points-at HEAD --list v*`; \
+2018-05-07 03:31:16.028106 +0000 build-fedora3: ..if [ -z "$vtag" ]; then \
+2018-05-07 03:31:16.028128 +0000 build-fedora3: ...echo "no version tag"; \
+2018-05-07 03:31:16.028150 +0000 build-fedora3: ...exit 0; \
+2018-05-07 03:31:16.028172 +0000 build-fedora3: ..fi; \
+2018-05-07 03:31:16.028192 +0000 build-fedora3: .fi; \
+2018-05-07 03:31:16.028234 +0000 build-fedora3: .component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc25 PACKAGE_SET=vm COMPONENT=`basename qubes-src/core-qubesdb` UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc25 get-var GET_VAR=PACKAGE_LIST); \
+2018-05-07 03:31:16.028260 +0000 build-fedora3: .if [ -z "$component_packages" ]; then \
+2018-05-07 03:31:16.028284 +0000 build-fedora3: ..echo "no packages."; \
+2018-05-07 03:31:16.028305 +0000 build-fedora3: ..exit 0; \
+2018-05-07 03:31:16.028326 +0000 build-fedora3: .fi; \
+2018-05-07 03:31:16.028351 +0000 build-fedora3: .make -s -f Makefile.generic DIST=fc25 PACKAGE_SET=vm \
+2018-05-07 03:31:16.028378 +0000 build-fedora3: ..COMPONENT=`basename qubes-src/core-qubesdb` \
+2018-05-07 03:31:16.028403 +0000 build-fedora3: ..SNAPSHOT_REPO=current-testing \
+2018-05-07 03:31:16.028427 +0000 build-fedora3: ..TARGET_REPO=current-testing \
+2018-05-07 03:31:16.028453 +0000 build-fedora3: ..UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc25 \
+2018-05-07 03:31:16.028486 +0000 build-fedora3: ..SNAPSHOT_FILE=/home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-fc25-`basename qubes-src/core-qubesdb` \
+2018-05-07 03:31:16.028539 +0000 build-fedora3: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2018-05-07_03-27-06 \
+2018-05-07 03:31:16.028565 +0000 build-fedora3: ..update-repo || exit 1; \
+2018-05-07 03:31:16.028596 +0000 build-fedora3: elif make -C qubes-src/core-qubesdb -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2018-05-07 03:31:16.028624 +0000 build-fedora3: .echo "Updating qubes-src/core-qubesdb... "; \
+2018-05-07 03:31:16.028693 +0000 build-fedora3: .make -s -C qubes-src/core-qubesdb update-repo-current-testing || exit 1; \
+2018-05-07 03:31:16.028716 +0000 build-fedora3: else \
+2018-05-07 03:31:16.028741 +0000 build-fedora3: .echo -n "Updating qubes-src/core-qubesdb... skipping."; \
+2018-05-07 03:31:16.028764 +0000 build-fedora3: fi; \
+2018-05-07 03:31:16.028787 +0000 build-fedora3: echo
+2018-05-07 03:31:16.052530 +0000 build-fedora3: Updating qubes-src/core-qubesdb... + ERR_OUTPUT=/dev/stderr
+2018-05-07 03:31:16.052585 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:16.054229 +0000 build-fedora3: ++ basename qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in
+2018-05-07 03:31:16.056797 +0000 build-fedora3: + [[ xqubes-db.spec.in == \x\.\i\n ]]
+2018-05-07 03:31:16.056854 +0000 build-fedora3: + '[' -r qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in ']'
+2018-05-07 03:31:16.058348 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-05-07 03:31:16.060960 +0000 build-fedora3: + tmp_spec=/tmp/tmp.Tswz3A.spec
+2018-05-07 03:31:16.062465 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-05-07 03:31:16.065180 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in /tmp/tmp.Tswz3A.spec
+2018-05-07 03:31:16.070739 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:16.070782 +0000 build-fedora3: + '[' -z qubes-src/core-qubesdb ']'
+2018-05-07 03:31:16.070805 +0000 build-fedora3: + cp qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:16.076894 +0000 build-fedora3: + cat qubes-src/core-qubesdb/version
+2018-05-07 03:31:16.077610 +0000 build-fedora3: + read ver
+2018-05-07 03:31:16.079377 +0000 build-fedora3: + '[' x == x ']'
+2018-05-07 03:31:16.079449 +0000 build-fedora3: + sed -i 's|@VERSION@|3.2.5|g' qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:16.085253 +0000 build-fedora3: + vnum=1
+2018-05-07 03:31:16.085294 +0000 build-fedora3: + read ver
+2018-05-07 03:31:16.085965 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/rel ']'
+2018-05-07 03:31:16.087638 +0000 build-fedora3: ++ cat qubes-src/core-qubesdb/rel
+2018-05-07 03:31:16.091895 +0000 build-fedora3: ++ echo 1
+2018-05-07 03:31:16.092612 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:16.098421 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/changelog ']'
+2018-05-07 03:31:16.098467 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:16.103807 +0000 build-fedora3: + cat qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:16.107922 +0000 build-fedora3: + rm -rf qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:16.112333 +0000 build-fedora3: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile /tmp/tmp.Tswz3A.spec
+2018-05-07 03:31:16.222576 +0000 build-fedora3: + rm -f /tmp/tmp.Tswz3A.spec
+2018-05-07 03:31:16.242103 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-05-07 03:31:16.242146 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:16.243788 +0000 build-fedora3: ++ basename qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in
+2018-05-07 03:31:16.246318 +0000 build-fedora3: + [[ xqubes-db.spec.in == \x\.\i\n ]]
+2018-05-07 03:31:16.246389 +0000 build-fedora3: + '[' -r qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in ']'
+2018-05-07 03:31:16.247912 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-05-07 03:31:16.250698 +0000 build-fedora3: + tmp_spec=/tmp/tmp.ildl6i.spec
+2018-05-07 03:31:16.252320 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-05-07 03:31:16.254858 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in /tmp/tmp.ildl6i.spec
+2018-05-07 03:31:16.259579 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:16.259622 +0000 build-fedora3: + '[' -z qubes-src/core-qubesdb ']'
+2018-05-07 03:31:16.259674 +0000 build-fedora3: + cp qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:16.266288 +0000 build-fedora3: + cat qubes-src/core-qubesdb/version
+2018-05-07 03:31:16.266710 +0000 build-fedora3: + read ver
+2018-05-07 03:31:16.269146 +0000 build-fedora3: + '[' x == x ']'
+2018-05-07 03:31:16.269208 +0000 build-fedora3: + sed -i 's|@VERSION@|3.2.5|g' qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:16.274874 +0000 build-fedora3: + vnum=1
+2018-05-07 03:31:16.274916 +0000 build-fedora3: + read ver
+2018-05-07 03:31:16.275615 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/rel ']'
+2018-05-07 03:31:16.277220 +0000 build-fedora3: ++ cat qubes-src/core-qubesdb/rel
+2018-05-07 03:31:16.280993 +0000 build-fedora3: ++ echo 1
+2018-05-07 03:31:16.281720 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:16.286882 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/changelog ']'
+2018-05-07 03:31:16.286940 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:16.291894 +0000 build-fedora3: + cat qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:16.295580 +0000 build-fedora3: + rm -rf qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:16.299343 +0000 build-fedora3: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile /tmp/tmp.ildl6i.spec
+2018-05-07 03:31:16.395286 +0000 build-fedora3: + rm -f /tmp/tmp.ildl6i.spec
+2018-05-07 03:31:16.431836 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-05-07 03:31:16.431889 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:16.433405 +0000 build-fedora3: ++ basename qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in
+2018-05-07 03:31:16.435937 +0000 build-fedora3: + [[ xqubes-db.spec.in == \x\.\i\n ]]
+2018-05-07 03:31:16.436009 +0000 build-fedora3: + '[' -r qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in ']'
+2018-05-07 03:31:16.437615 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-05-07 03:31:16.440161 +0000 build-fedora3: + tmp_spec=/tmp/tmp.3CwMYA.spec
+2018-05-07 03:31:16.441710 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-05-07 03:31:16.444230 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in /tmp/tmp.3CwMYA.spec
+2018-05-07 03:31:16.449242 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:16.449299 +0000 build-fedora3: + '[' -z qubes-src/core-qubesdb ']'
+2018-05-07 03:31:16.449335 +0000 build-fedora3: + cp qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:16.456090 +0000 build-fedora3: + cat qubes-src/core-qubesdb/version
+2018-05-07 03:31:16.456502 +0000 build-fedora3: + read ver
+2018-05-07 03:31:16.458991 +0000 build-fedora3: + '[' x == x ']'
+2018-05-07 03:31:16.459160 +0000 build-fedora3: + sed -i 's|@VERSION@|3.2.5|g' qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:16.464820 +0000 build-fedora3: + vnum=1
+2018-05-07 03:31:16.464871 +0000 build-fedora3: + read ver
+2018-05-07 03:31:16.465493 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/rel ']'
+2018-05-07 03:31:16.467000 +0000 build-fedora3: ++ cat qubes-src/core-qubesdb/rel
+2018-05-07 03:31:16.470586 +0000 build-fedora3: ++ echo 1
+2018-05-07 03:31:16.471170 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:16.476348 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/changelog ']'
+2018-05-07 03:31:16.476407 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:16.481292 +0000 build-fedora3: + cat qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:16.484750 +0000 build-fedora3: + rm -rf qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:16.488484 +0000 build-fedora3: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile /tmp/tmp.3CwMYA.spec
+2018-05-07 03:31:16.588944 +0000 build-fedora3: + rm -f /tmp/tmp.3CwMYA.spec
+2018-05-07 03:31:16.681868 +0000 build-fedora3: /home/user/builder-r3.2/qubes-src/builder-fedora/Makefile.rpmbuilder:140: target 'update-repo-do' does not exist
+2018-05-07 03:31:16.681933 +0000 build-fedora3: mkdir -p /home/user/builder-r3.2/qubes-src/linux-yum/r3.2/current-testing/vm/fc25/rpm
+2018-05-07 03:31:16.733704 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-05-07 03:31:16.733796 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:16.735471 +0000 build-fedora3: ++ basename qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in
+2018-05-07 03:31:16.738288 +0000 build-fedora3: + [[ xqubes-db.spec.in == \x\.\i\n ]]
+2018-05-07 03:31:16.738375 +0000 build-fedora3: + '[' -r qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in ']'
+2018-05-07 03:31:16.739981 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-05-07 03:31:16.743210 +0000 build-fedora3: + tmp_spec=/tmp/tmp.AglP9K.spec
+2018-05-07 03:31:16.744941 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-05-07 03:31:16.747724 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in /tmp/tmp.AglP9K.spec
+2018-05-07 03:31:16.752441 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:16.752507 +0000 build-fedora3: + '[' -z qubes-src/core-qubesdb ']'
+2018-05-07 03:31:16.752552 +0000 build-fedora3: + cp qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:16.758823 +0000 build-fedora3: + cat qubes-src/core-qubesdb/version
+2018-05-07 03:31:16.759642 +0000 build-fedora3: + read ver
+2018-05-07 03:31:16.761480 +0000 build-fedora3: + '[' x == x ']'
+2018-05-07 03:31:16.761648 +0000 build-fedora3: + sed -i 's|@VERSION@|3.2.5|g' qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:16.766521 +0000 build-fedora3: + vnum=1
+2018-05-07 03:31:16.766573 +0000 build-fedora3: + read ver
+2018-05-07 03:31:16.767155 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/rel ']'
+2018-05-07 03:31:16.768655 +0000 build-fedora3: ++ cat qubes-src/core-qubesdb/rel
+2018-05-07 03:31:16.772289 +0000 build-fedora3: ++ echo 1
+2018-05-07 03:31:16.772901 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:16.777972 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/changelog ']'
+2018-05-07 03:31:16.778029 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:16.782827 +0000 build-fedora3: + cat qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:16.786485 +0000 build-fedora3: + rm -rf qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:16.790018 +0000 build-fedora3: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile /tmp/tmp.AglP9K.spec
+2018-05-07 03:31:16.896000 +0000 build-fedora3: + rm -f /tmp/tmp.AglP9K.spec
+2018-05-07 03:31:16.911921 +0000 build-fedora3: cd qubes-src/core-qubesdb && ln -f pkgs/fc25/x86_64/qubes-db-3.2.5-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-db-debuginfo-3.2.5-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-db-devel-3.2.5-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-db-libs-3.2.5-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-db-vm-3.2.5-1.fc25.x86_64.rpm  /home/user/builder-r3.2/qubes-src/linux-yum/r3.2/current-testing/vm/fc25/rpm/
+2018-05-07 03:31:16.920786 +0000 build-fedora3: cd qubes-src/core-qubesdb && echo pkgs/fc25/x86_64/qubes-db-3.2.5-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-db-debuginfo-3.2.5-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-db-devel-3.2.5-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-db-libs-3.2.5-1.fc25.x86_64.rpm pkgs/fc25/x86_64/qubes-db-vm-3.2.5-1.fc25.x86_64.rpm  > /home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-fc25-core-qubesdb
+2018-05-07 03:31:17.035938 +0000 build-fedora3: /home/user/builder-r3.2/qubes-src/builder-github//Makefile.github:21: target 'notify-github' does not exist
+2018-05-07 03:31:17.035995 +0000 build-fedora3: [ -z "qubes-db-3.2.5-1.fc25" ] || /home/user/builder-r3.2/qubes-src/builder-github//notify-issues \
+2018-05-07 03:31:17.036038 +0000 build-fedora3: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2018-05-07_03-27-06" \
+2018-05-07 03:31:17.036067 +0000 build-fedora3: ."r3.2" \
+2018-05-07 03:31:17.036095 +0000 build-fedora3: ."current-testing" \
+2018-05-07 03:31:17.036123 +0000 build-fedora3: ."qubes-src/core-qubesdb" \
+2018-05-07 03:31:17.036144 +0000 build-fedora3: ."qubes-db-3.2.5-1.fc25" \
+2018-05-07 03:31:17.036160 +0000 build-fedora3: ."fc25" \
+2018-05-07 03:31:17.036175 +0000 build-fedora3: ."vm" \
+2018-05-07 03:31:17.036194 +0000 build-fedora3: ."/home/user/github-notify-state/r3.2-core-qubesdb-vm-fc25-current-testing"
+2018-05-07 03:31:17.137192 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-05-07 03:31:17.137251 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:17.138761 +0000 build-fedora3: ++ basename qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in
+2018-05-07 03:31:17.141753 +0000 build-fedora3: + [[ xqubes-db.spec.in == \x\.\i\n ]]
+2018-05-07 03:31:17.141820 +0000 build-fedora3: + '[' -r qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in ']'
+2018-05-07 03:31:17.143346 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-05-07 03:31:17.146463 +0000 build-fedora3: + tmp_spec=/tmp/tmp.ecEac4.spec
+2018-05-07 03:31:17.148003 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-05-07 03:31:17.150667 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in /tmp/tmp.ecEac4.spec
+2018-05-07 03:31:17.155324 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:17.155380 +0000 build-fedora3: + '[' -z qubes-src/core-qubesdb ']'
+2018-05-07 03:31:17.155419 +0000 build-fedora3: + cp qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:17.161403 +0000 build-fedora3: + cat qubes-src/core-qubesdb/version
+2018-05-07 03:31:17.161966 +0000 build-fedora3: + read ver
+2018-05-07 03:31:17.164174 +0000 build-fedora3: + '[' x == x ']'
+2018-05-07 03:31:17.164331 +0000 build-fedora3: + sed -i 's|@VERSION@|3.2.5|g' qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:17.170327 +0000 build-fedora3: + vnum=1
+2018-05-07 03:31:17.170368 +0000 build-fedora3: + read ver
+2018-05-07 03:31:17.171014 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/rel ']'
+2018-05-07 03:31:17.172730 +0000 build-fedora3: ++ cat qubes-src/core-qubesdb/rel
+2018-05-07 03:31:17.176839 +0000 build-fedora3: ++ echo 1
+2018-05-07 03:31:17.177476 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:17.183682 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/changelog ']'
+2018-05-07 03:31:17.183756 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:17.189593 +0000 build-fedora3: + cat qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:17.193880 +0000 build-fedora3: + rm -rf qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:17.198040 +0000 build-fedora3: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile /tmp/tmp.ecEac4.spec
+2018-05-07 03:31:17.298909 +0000 build-fedora3: + rm -f /tmp/tmp.ecEac4.spec
+2018-05-07 03:31:25.962664 +0000 build-fedora3: WARNING: message template /home/user/builder-r3.2/qubes-src/builder-github/message-current-testing-vm doesn't exist, not adding comments
+2018-05-07 03:31:25.962734 +0000 build-fedora3: Adding a comment to issue #3146
+2018-05-07 03:31:25.967117 +0000 build-fedora3: 
+2018-05-07 03:31:25.967516 +0000 build-fedora3: Makefile:702: update target 'internal-update-repo-current-testing.vm.fc25' due to: internal-update-repo-current-testing.vm.fc25.core-qubesdb
+2018-05-07 03:31:25.967541 +0000 build-fedora3: true
+2018-05-07 03:31:25.971117 +0000 build-fedora3: Makefile:721: target 'internal-update-repo-current-testing.vm.fc26.core-qubesdb' does not exist
+2018-05-07 03:31:25.971170 +0000 build-fedora3: repo_base_var="LINUX_REPO_fc26_BASEDIR"; \
+2018-05-07 03:31:25.971201 +0000 build-fedora3: if [ -n "${!repo_base_var}" ]; then \
+2018-05-07 03:31:25.971229 +0000 build-fedora3: .repo_basedir="${!repo_base_var}"; \
+2018-05-07 03:31:25.971251 +0000 build-fedora3: else \
+2018-05-07 03:31:25.971278 +0000 build-fedora3: .repo_basedir="qubes-src/linux-yum/r3.2"; \
+2018-05-07 03:31:25.971300 +0000 build-fedora3: fi; \
+2018-05-07 03:31:25.971328 +0000 build-fedora3: if [ -r qubes-src/core-qubesdb/Makefile.builder ]; then \
+2018-05-07 03:31:25.971355 +0000 build-fedora3: .echo -n "Updating qubes-src/core-qubesdb... "; \
+2018-05-07 03:31:25.971381 +0000 build-fedora3: .if [ "0" -eq 1 ]; then \
+2018-05-07 03:31:25.971415 +0000 build-fedora3: ..vtag=`git -C qubes-src/core-qubesdb tag --points-at HEAD --list v*`; \
+2018-05-07 03:31:25.971440 +0000 build-fedora3: ..if [ -z "$vtag" ]; then \
+2018-05-07 03:31:25.971462 +0000 build-fedora3: ...echo "no version tag"; \
+2018-05-07 03:31:25.971484 +0000 build-fedora3: ...exit 0; \
+2018-05-07 03:31:25.971505 +0000 build-fedora3: ..fi; \
+2018-05-07 03:31:25.971525 +0000 build-fedora3: .fi; \
+2018-05-07 03:31:25.971567 +0000 build-fedora3: .component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc26 PACKAGE_SET=vm COMPONENT=`basename qubes-src/core-qubesdb` UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc26 get-var GET_VAR=PACKAGE_LIST); \
+2018-05-07 03:31:25.971593 +0000 build-fedora3: .if [ -z "$component_packages" ]; then \
+2018-05-07 03:31:25.971615 +0000 build-fedora3: ..echo "no packages."; \
+2018-05-07 03:31:25.971655 +0000 build-fedora3: ..exit 0; \
+2018-05-07 03:31:25.971677 +0000 build-fedora3: .fi; \
+2018-05-07 03:31:25.971703 +0000 build-fedora3: .make -s -f Makefile.generic DIST=fc26 PACKAGE_SET=vm \
+2018-05-07 03:31:25.971728 +0000 build-fedora3: ..COMPONENT=`basename qubes-src/core-qubesdb` \
+2018-05-07 03:31:25.971752 +0000 build-fedora3: ..SNAPSHOT_REPO=current-testing \
+2018-05-07 03:31:25.971776 +0000 build-fedora3: ..TARGET_REPO=current-testing \
+2018-05-07 03:31:25.971806 +0000 build-fedora3: ..UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc26 \
+2018-05-07 03:31:25.971838 +0000 build-fedora3: ..SNAPSHOT_FILE=/home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-fc26-`basename qubes-src/core-qubesdb` \
+2018-05-07 03:31:25.971868 +0000 build-fedora3: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2018-05-07_03-27-56 \
+2018-05-07 03:31:25.971892 +0000 build-fedora3: ..update-repo || exit 1; \
+2018-05-07 03:31:25.971928 +0000 build-fedora3: elif make -C qubes-src/core-qubesdb -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2018-05-07 03:31:25.971955 +0000 build-fedora3: .echo "Updating qubes-src/core-qubesdb... "; \
+2018-05-07 03:31:25.971983 +0000 build-fedora3: .make -s -C qubes-src/core-qubesdb update-repo-current-testing || exit 1; \
+2018-05-07 03:31:25.972006 +0000 build-fedora3: else \
+2018-05-07 03:31:25.972034 +0000 build-fedora3: .echo -n "Updating qubes-src/core-qubesdb... skipping."; \
+2018-05-07 03:31:25.972073 +0000 build-fedora3: fi; \
+2018-05-07 03:31:25.972095 +0000 build-fedora3: echo
+2018-05-07 03:31:25.994259 +0000 build-fedora3: Updating qubes-src/core-qubesdb... + ERR_OUTPUT=/dev/stderr
+2018-05-07 03:31:25.994310 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:25.995609 +0000 build-fedora3: ++ basename qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in
+2018-05-07 03:31:25.997846 +0000 build-fedora3: + [[ xqubes-db.spec.in == \x\.\i\n ]]
+2018-05-07 03:31:25.997934 +0000 build-fedora3: + '[' -r qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in ']'
+2018-05-07 03:31:25.999226 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-05-07 03:31:26.001562 +0000 build-fedora3: + tmp_spec=/tmp/tmp.4hzjiT.spec
+2018-05-07 03:31:26.002846 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-05-07 03:31:26.005121 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in /tmp/tmp.4hzjiT.spec
+2018-05-07 03:31:26.009398 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:26.009435 +0000 build-fedora3: + '[' -z qubes-src/core-qubesdb ']'
+2018-05-07 03:31:26.009480 +0000 build-fedora3: + cp qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:26.014744 +0000 build-fedora3: + cat qubes-src/core-qubesdb/version
+2018-05-07 03:31:26.015239 +0000 build-fedora3: + read ver
+2018-05-07 03:31:26.017043 +0000 build-fedora3: + '[' x == x ']'
+2018-05-07 03:31:26.017085 +0000 build-fedora3: + sed -i 's|@VERSION@|3.2.5|g' qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:26.021868 +0000 build-fedora3: + vnum=1
+2018-05-07 03:31:26.021908 +0000 build-fedora3: + read ver
+2018-05-07 03:31:26.022506 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/rel ']'
+2018-05-07 03:31:26.023861 +0000 build-fedora3: ++ cat qubes-src/core-qubesdb/rel
+2018-05-07 03:31:26.027339 +0000 build-fedora3: ++ echo 1
+2018-05-07 03:31:26.027943 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:26.032654 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/changelog ']'
+2018-05-07 03:31:26.032726 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:26.037315 +0000 build-fedora3: + cat qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:26.040609 +0000 build-fedora3: + rm -rf qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:26.043896 +0000 build-fedora3: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile /tmp/tmp.4hzjiT.spec
+2018-05-07 03:31:26.135976 +0000 build-fedora3: + rm -f /tmp/tmp.4hzjiT.spec
+2018-05-07 03:31:26.152141 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-05-07 03:31:26.152183 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:26.153547 +0000 build-fedora3: ++ basename qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in
+2018-05-07 03:31:26.155850 +0000 build-fedora3: + [[ xqubes-db.spec.in == \x\.\i\n ]]
+2018-05-07 03:31:26.155912 +0000 build-fedora3: + '[' -r qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in ']'
+2018-05-07 03:31:26.157268 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-05-07 03:31:26.159593 +0000 build-fedora3: + tmp_spec=/tmp/tmp.t0paSv.spec
+2018-05-07 03:31:26.160904 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-05-07 03:31:26.163261 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in /tmp/tmp.t0paSv.spec
+2018-05-07 03:31:26.167606 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:26.167643 +0000 build-fedora3: + '[' -z qubes-src/core-qubesdb ']'
+2018-05-07 03:31:26.167680 +0000 build-fedora3: + cp qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:26.173039 +0000 build-fedora3: + cat qubes-src/core-qubesdb/version
+2018-05-07 03:31:26.173506 +0000 build-fedora3: + read ver
+2018-05-07 03:31:26.175284 +0000 build-fedora3: + '[' x == x ']'
+2018-05-07 03:31:26.175327 +0000 build-fedora3: + sed -i 's|@VERSION@|3.2.5|g' qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:26.180122 +0000 build-fedora3: + vnum=1
+2018-05-07 03:31:26.180173 +0000 build-fedora3: + read ver
+2018-05-07 03:31:26.180739 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/rel ']'
+2018-05-07 03:31:26.182108 +0000 build-fedora3: ++ cat qubes-src/core-qubesdb/rel
+2018-05-07 03:31:26.185417 +0000 build-fedora3: ++ echo 1
+2018-05-07 03:31:26.186019 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:26.190841 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/changelog ']'
+2018-05-07 03:31:26.190885 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:26.195488 +0000 build-fedora3: + cat qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:26.198851 +0000 build-fedora3: + rm -rf qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:26.202241 +0000 build-fedora3: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile /tmp/tmp.t0paSv.spec
+2018-05-07 03:31:26.294626 +0000 build-fedora3: + rm -f /tmp/tmp.t0paSv.spec
+2018-05-07 03:31:26.328608 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-05-07 03:31:26.328651 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:26.330061 +0000 build-fedora3: ++ basename qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in
+2018-05-07 03:31:26.332451 +0000 build-fedora3: + [[ xqubes-db.spec.in == \x\.\i\n ]]
+2018-05-07 03:31:26.332559 +0000 build-fedora3: + '[' -r qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in ']'
+2018-05-07 03:31:26.333937 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-05-07 03:31:26.336278 +0000 build-fedora3: + tmp_spec=/tmp/tmp.T9FUNV.spec
+2018-05-07 03:31:26.337650 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-05-07 03:31:26.340033 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in /tmp/tmp.T9FUNV.spec
+2018-05-07 03:31:26.344348 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:26.344376 +0000 build-fedora3: + '[' -z qubes-src/core-qubesdb ']'
+2018-05-07 03:31:26.344396 +0000 build-fedora3: + cp qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:26.349790 +0000 build-fedora3: + cat qubes-src/core-qubesdb/version
+2018-05-07 03:31:26.350456 +0000 build-fedora3: + read ver
+2018-05-07 03:31:26.352183 +0000 build-fedora3: + '[' x == x ']'
+2018-05-07 03:31:26.352297 +0000 build-fedora3: + sed -i 's|@VERSION@|3.2.5|g' qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:26.357056 +0000 build-fedora3: + vnum=1
+2018-05-07 03:31:26.357099 +0000 build-fedora3: + read ver
+2018-05-07 03:31:26.357664 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/rel ']'
+2018-05-07 03:31:26.359004 +0000 build-fedora3: ++ cat qubes-src/core-qubesdb/rel
+2018-05-07 03:31:26.362306 +0000 build-fedora3: ++ echo 1
+2018-05-07 03:31:26.362858 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:26.368112 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/changelog ']'
+2018-05-07 03:31:26.368160 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:26.373321 +0000 build-fedora3: + cat qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:26.376972 +0000 build-fedora3: + rm -rf qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:26.380608 +0000 build-fedora3: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile /tmp/tmp.T9FUNV.spec
+2018-05-07 03:31:26.473132 +0000 build-fedora3: + rm -f /tmp/tmp.T9FUNV.spec
+2018-05-07 03:31:26.552379 +0000 build-fedora3: /home/user/builder-r3.2/qubes-src/builder-fedora/Makefile.rpmbuilder:140: target 'update-repo-do' does not exist
+2018-05-07 03:31:26.552449 +0000 build-fedora3: mkdir -p /home/user/builder-r3.2/qubes-src/linux-yum/r3.2/current-testing/vm/fc26/rpm
+2018-05-07 03:31:26.602998 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-05-07 03:31:26.603049 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:26.604367 +0000 build-fedora3: ++ basename qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in
+2018-05-07 03:31:26.606630 +0000 build-fedora3: + [[ xqubes-db.spec.in == \x\.\i\n ]]
+2018-05-07 03:31:26.606715 +0000 build-fedora3: + '[' -r qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in ']'
+2018-05-07 03:31:26.607991 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-05-07 03:31:26.610392 +0000 build-fedora3: + tmp_spec=/tmp/tmp.GjocpE.spec
+2018-05-07 03:31:26.611655 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-05-07 03:31:26.613952 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in /tmp/tmp.GjocpE.spec
+2018-05-07 03:31:26.618325 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:26.618371 +0000 build-fedora3: + '[' -z qubes-src/core-qubesdb ']'
+2018-05-07 03:31:26.618398 +0000 build-fedora3: + cp qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:26.623749 +0000 build-fedora3: + cat qubes-src/core-qubesdb/version
+2018-05-07 03:31:26.624315 +0000 build-fedora3: + read ver
+2018-05-07 03:31:26.625848 +0000 build-fedora3: + '[' x == x ']'
+2018-05-07 03:31:26.625908 +0000 build-fedora3: + sed -i 's|@VERSION@|3.2.5|g' qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:26.630838 +0000 build-fedora3: + vnum=1
+2018-05-07 03:31:26.630888 +0000 build-fedora3: + read ver
+2018-05-07 03:31:26.631441 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/rel ']'
+2018-05-07 03:31:26.632793 +0000 build-fedora3: ++ cat qubes-src/core-qubesdb/rel
+2018-05-07 03:31:26.636171 +0000 build-fedora3: ++ echo 1
+2018-05-07 03:31:26.636719 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:26.641602 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/changelog ']'
+2018-05-07 03:31:26.641647 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:26.646157 +0000 build-fedora3: + cat qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:26.649517 +0000 build-fedora3: + rm -rf qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:26.652896 +0000 build-fedora3: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile /tmp/tmp.GjocpE.spec
+2018-05-07 03:31:26.745268 +0000 build-fedora3: + rm -f /tmp/tmp.GjocpE.spec
+2018-05-07 03:31:26.764667 +0000 build-fedora3: cd qubes-src/core-qubesdb && ln -f pkgs/fc26/x86_64/qubes-db-3.2.5-1.fc26.x86_64.rpm pkgs/fc26/x86_64/qubes-db-debuginfo-3.2.5-1.fc26.x86_64.rpm pkgs/fc26/x86_64/qubes-db-devel-3.2.5-1.fc26.x86_64.rpm pkgs/fc26/x86_64/qubes-db-libs-3.2.5-1.fc26.x86_64.rpm pkgs/fc26/x86_64/qubes-db-vm-3.2.5-1.fc26.x86_64.rpm  /home/user/builder-r3.2/qubes-src/linux-yum/r3.2/current-testing/vm/fc26/rpm/
+2018-05-07 03:31:26.771895 +0000 build-fedora3: cd qubes-src/core-qubesdb && echo pkgs/fc26/x86_64/qubes-db-3.2.5-1.fc26.x86_64.rpm pkgs/fc26/x86_64/qubes-db-debuginfo-3.2.5-1.fc26.x86_64.rpm pkgs/fc26/x86_64/qubes-db-devel-3.2.5-1.fc26.x86_64.rpm pkgs/fc26/x86_64/qubes-db-libs-3.2.5-1.fc26.x86_64.rpm pkgs/fc26/x86_64/qubes-db-vm-3.2.5-1.fc26.x86_64.rpm  > /home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-fc26-core-qubesdb
+2018-05-07 03:31:26.885960 +0000 build-fedora3: /home/user/builder-r3.2/qubes-src/builder-github//Makefile.github:21: target 'notify-github' does not exist
+2018-05-07 03:31:26.886021 +0000 build-fedora3: [ -z "qubes-db-3.2.5-1.fc26" ] || /home/user/builder-r3.2/qubes-src/builder-github//notify-issues \
+2018-05-07 03:31:26.886047 +0000 build-fedora3: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2018-05-07_03-27-56" \
+2018-05-07 03:31:26.886065 +0000 build-fedora3: ."r3.2" \
+2018-05-07 03:31:26.886089 +0000 build-fedora3: ."current-testing" \
+2018-05-07 03:31:26.886106 +0000 build-fedora3: ."qubes-src/core-qubesdb" \
+2018-05-07 03:31:26.886121 +0000 build-fedora3: ."qubes-db-3.2.5-1.fc26" \
+2018-05-07 03:31:26.886135 +0000 build-fedora3: ."fc26" \
+2018-05-07 03:31:26.886149 +0000 build-fedora3: ."vm" \
+2018-05-07 03:31:26.886166 +0000 build-fedora3: ."/home/user/github-notify-state/r3.2-core-qubesdb-vm-fc26-current-testing"
+2018-05-07 03:31:26.982523 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-05-07 03:31:26.982573 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:26.983887 +0000 build-fedora3: ++ basename qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in
+2018-05-07 03:31:26.986068 +0000 build-fedora3: + [[ xqubes-db.spec.in == \x\.\i\n ]]
+2018-05-07 03:31:26.986130 +0000 build-fedora3: + '[' -r qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in ']'
+2018-05-07 03:31:26.987464 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-05-07 03:31:26.989806 +0000 build-fedora3: + tmp_spec=/tmp/tmp.jFE3so.spec
+2018-05-07 03:31:26.991131 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-05-07 03:31:26.993400 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in /tmp/tmp.jFE3so.spec
+2018-05-07 03:31:26.997883 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:26.997917 +0000 build-fedora3: + '[' -z qubes-src/core-qubesdb ']'
+2018-05-07 03:31:26.997938 +0000 build-fedora3: + cp qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:27.003445 +0000 build-fedora3: + cat qubes-src/core-qubesdb/version
+2018-05-07 03:31:27.004034 +0000 build-fedora3: + read ver
+2018-05-07 03:31:27.005849 +0000 build-fedora3: + '[' x == x ']'
+2018-05-07 03:31:27.005959 +0000 build-fedora3: + sed -i 's|@VERSION@|3.2.5|g' qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:27.010781 +0000 build-fedora3: + vnum=1
+2018-05-07 03:31:27.010823 +0000 build-fedora3: + read ver
+2018-05-07 03:31:27.011388 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/rel ']'
+2018-05-07 03:31:27.012754 +0000 build-fedora3: ++ cat qubes-src/core-qubesdb/rel
+2018-05-07 03:31:27.016127 +0000 build-fedora3: ++ echo 1
+2018-05-07 03:31:27.016681 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:27.021594 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/changelog ']'
+2018-05-07 03:31:27.021639 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:27.026582 +0000 build-fedora3: + cat qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:27.029916 +0000 build-fedora3: + rm -rf qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:27.033293 +0000 build-fedora3: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile /tmp/tmp.jFE3so.spec
+2018-05-07 03:31:27.126442 +0000 build-fedora3: + rm -f /tmp/tmp.jFE3so.spec
+2018-05-07 03:31:38.381742 +0000 build-fedora3: Adding a comment to issue #3146
+2018-05-07 03:31:38.386527 +0000 build-fedora3: 
+2018-05-07 03:31:38.386923 +0000 build-fedora3: Makefile:702: update target 'internal-update-repo-current-testing.vm.fc26' due to: internal-update-repo-current-testing.vm.fc26.core-qubesdb
+2018-05-07 03:31:38.386947 +0000 build-fedora3: true
+2018-05-07 03:31:38.390553 +0000 build-fedora3: Makefile:721: target 'internal-update-repo-current-testing.vm.fc27.core-qubesdb' does not exist
+2018-05-07 03:31:38.390586 +0000 build-fedora3: repo_base_var="LINUX_REPO_fc27_BASEDIR"; \
+2018-05-07 03:31:38.390617 +0000 build-fedora3: if [ -n "${!repo_base_var}" ]; then \
+2018-05-07 03:31:38.390661 +0000 build-fedora3: .repo_basedir="${!repo_base_var}"; \
+2018-05-07 03:31:38.390677 +0000 build-fedora3: else \
+2018-05-07 03:31:38.390694 +0000 build-fedora3: .repo_basedir="qubes-src/linux-yum/r3.2"; \
+2018-05-07 03:31:38.390708 +0000 build-fedora3: fi; \
+2018-05-07 03:31:38.390724 +0000 build-fedora3: if [ -r qubes-src/core-qubesdb/Makefile.builder ]; then \
+2018-05-07 03:31:38.390740 +0000 build-fedora3: .echo -n "Updating qubes-src/core-qubesdb... "; \
+2018-05-07 03:31:38.390754 +0000 build-fedora3: .if [ "0" -eq 1 ]; then \
+2018-05-07 03:31:38.390771 +0000 build-fedora3: ..vtag=`git -C qubes-src/core-qubesdb tag --points-at HEAD --list v*`; \
+2018-05-07 03:31:38.390785 +0000 build-fedora3: ..if [ -z "$vtag" ]; then \
+2018-05-07 03:31:38.390799 +0000 build-fedora3: ...echo "no version tag"; \
+2018-05-07 03:31:38.390812 +0000 build-fedora3: ...exit 0; \
+2018-05-07 03:31:38.390829 +0000 build-fedora3: ..fi; \
+2018-05-07 03:31:38.390842 +0000 build-fedora3: .fi; \
+2018-05-07 03:31:38.390867 +0000 build-fedora3: .component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc27 PACKAGE_SET=vm COMPONENT=`basename qubes-src/core-qubesdb` UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc27 get-var GET_VAR=PACKAGE_LIST); \
+2018-05-07 03:31:38.390883 +0000 build-fedora3: .if [ -z "$component_packages" ]; then \
+2018-05-07 03:31:38.390897 +0000 build-fedora3: ..echo "no packages."; \
+2018-05-07 03:31:38.390910 +0000 build-fedora3: ..exit 0; \
+2018-05-07 03:31:38.390923 +0000 build-fedora3: .fi; \
+2018-05-07 03:31:38.390938 +0000 build-fedora3: .make -s -f Makefile.generic DIST=fc27 PACKAGE_SET=vm \
+2018-05-07 03:31:38.390953 +0000 build-fedora3: ..COMPONENT=`basename qubes-src/core-qubesdb` \
+2018-05-07 03:31:38.390968 +0000 build-fedora3: ..SNAPSHOT_REPO=current-testing \
+2018-05-07 03:31:38.390982 +0000 build-fedora3: ..TARGET_REPO=current-testing \
+2018-05-07 03:31:38.390998 +0000 build-fedora3: ..UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc27 \
+2018-05-07 03:31:38.391017 +0000 build-fedora3: ..SNAPSHOT_FILE=/home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-fc27-`basename qubes-src/core-qubesdb` \
+2018-05-07 03:31:38.391036 +0000 build-fedora3: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2018-05-07_03-28-45 \
+2018-05-07 03:31:38.391051 +0000 build-fedora3: ..update-repo || exit 1; \
+2018-05-07 03:31:38.391068 +0000 build-fedora3: elif make -C qubes-src/core-qubesdb -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2018-05-07 03:31:38.391084 +0000 build-fedora3: .echo "Updating qubes-src/core-qubesdb... "; \
+2018-05-07 03:31:38.391110 +0000 build-fedora3: .make -s -C qubes-src/core-qubesdb update-repo-current-testing || exit 1; \
+2018-05-07 03:31:38.391132 +0000 build-fedora3: else \
+2018-05-07 03:31:38.391160 +0000 build-fedora3: .echo -n "Updating qubes-src/core-qubesdb... skipping."; \
+2018-05-07 03:31:38.391178 +0000 build-fedora3: fi; \
+2018-05-07 03:31:38.391191 +0000 build-fedora3: echo
+2018-05-07 03:31:38.414435 +0000 build-fedora3: Updating qubes-src/core-qubesdb... + ERR_OUTPUT=/dev/stderr
+2018-05-07 03:31:38.414487 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:38.415828 +0000 build-fedora3: ++ basename qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in
+2018-05-07 03:31:38.418194 +0000 build-fedora3: + [[ xqubes-db.spec.in == \x\.\i\n ]]
+2018-05-07 03:31:38.418255 +0000 build-fedora3: + '[' -r qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in ']'
+2018-05-07 03:31:38.419592 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-05-07 03:31:38.421969 +0000 build-fedora3: + tmp_spec=/tmp/tmp.u90qoh.spec
+2018-05-07 03:31:38.423313 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-05-07 03:31:38.425571 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in /tmp/tmp.u90qoh.spec
+2018-05-07 03:31:38.429930 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:38.429962 +0000 build-fedora3: + '[' -z qubes-src/core-qubesdb ']'
+2018-05-07 03:31:38.429983 +0000 build-fedora3: + cp qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:38.435600 +0000 build-fedora3: + cat qubes-src/core-qubesdb/version
+2018-05-07 03:31:38.436299 +0000 build-fedora3: + read ver
+2018-05-07 03:31:38.437888 +0000 build-fedora3: + '[' x == x ']'
+2018-05-07 03:31:38.438000 +0000 build-fedora3: + sed -i 's|@VERSION@|3.2.5|g' qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:38.442825 +0000 build-fedora3: + vnum=1
+2018-05-07 03:31:38.442858 +0000 build-fedora3: + read ver
+2018-05-07 03:31:38.443389 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/rel ']'
+2018-05-07 03:31:38.444794 +0000 build-fedora3: ++ cat qubes-src/core-qubesdb/rel
+2018-05-07 03:31:38.448147 +0000 build-fedora3: ++ echo 1
+2018-05-07 03:31:38.448702 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:38.453452 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/changelog ']'
+2018-05-07 03:31:38.453491 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:38.458168 +0000 build-fedora3: + cat qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:38.461533 +0000 build-fedora3: + rm -rf qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:38.464864 +0000 build-fedora3: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile /tmp/tmp.u90qoh.spec
+2018-05-07 03:31:38.557050 +0000 build-fedora3: + rm -f /tmp/tmp.u90qoh.spec
+2018-05-07 03:31:38.573745 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-05-07 03:31:38.573786 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:38.575147 +0000 build-fedora3: ++ basename qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in
+2018-05-07 03:31:38.577361 +0000 build-fedora3: + [[ xqubes-db.spec.in == \x\.\i\n ]]
+2018-05-07 03:31:38.577417 +0000 build-fedora3: + '[' -r qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in ']'
+2018-05-07 03:31:38.578745 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-05-07 03:31:38.580997 +0000 build-fedora3: + tmp_spec=/tmp/tmp.Vn4Xs8.spec
+2018-05-07 03:31:38.582311 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-05-07 03:31:38.584617 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in /tmp/tmp.Vn4Xs8.spec
+2018-05-07 03:31:38.589013 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:38.589066 +0000 build-fedora3: + '[' -z qubes-src/core-qubesdb ']'
+2018-05-07 03:31:38.589104 +0000 build-fedora3: + cp qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:38.594396 +0000 build-fedora3: + cat qubes-src/core-qubesdb/version
+2018-05-07 03:31:38.594907 +0000 build-fedora3: + read ver
+2018-05-07 03:31:38.596594 +0000 build-fedora3: + '[' x == x ']'
+2018-05-07 03:31:38.596651 +0000 build-fedora3: + sed -i 's|@VERSION@|3.2.5|g' qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:38.601415 +0000 build-fedora3: + vnum=1
+2018-05-07 03:31:38.601464 +0000 build-fedora3: + read ver
+2018-05-07 03:31:38.602003 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/rel ']'
+2018-05-07 03:31:38.603408 +0000 build-fedora3: ++ cat qubes-src/core-qubesdb/rel
+2018-05-07 03:31:38.606837 +0000 build-fedora3: ++ echo 1
+2018-05-07 03:31:38.607345 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:38.612200 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/changelog ']'
+2018-05-07 03:31:38.612244 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:38.616869 +0000 build-fedora3: + cat qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:38.620247 +0000 build-fedora3: + rm -rf qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:38.623574 +0000 build-fedora3: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile /tmp/tmp.Vn4Xs8.spec
+2018-05-07 03:31:38.716259 +0000 build-fedora3: + rm -f /tmp/tmp.Vn4Xs8.spec
+2018-05-07 03:31:38.750181 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-05-07 03:31:38.750239 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:38.751730 +0000 build-fedora3: ++ basename qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in
+2018-05-07 03:31:38.754349 +0000 build-fedora3: + [[ xqubes-db.spec.in == \x\.\i\n ]]
+2018-05-07 03:31:38.754416 +0000 build-fedora3: + '[' -r qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in ']'
+2018-05-07 03:31:38.755938 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-05-07 03:31:38.758553 +0000 build-fedora3: + tmp_spec=/tmp/tmp.hXSmJA.spec
+2018-05-07 03:31:38.760054 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-05-07 03:31:38.762698 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in /tmp/tmp.hXSmJA.spec
+2018-05-07 03:31:38.767609 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:38.767705 +0000 build-fedora3: + '[' -z qubes-src/core-qubesdb ']'
+2018-05-07 03:31:38.767747 +0000 build-fedora3: + cp qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:38.773661 +0000 build-fedora3: + cat qubes-src/core-qubesdb/version
+2018-05-07 03:31:38.774344 +0000 build-fedora3: + read ver
+2018-05-07 03:31:38.776117 +0000 build-fedora3: + '[' x == x ']'
+2018-05-07 03:31:38.776257 +0000 build-fedora3: + sed -i 's|@VERSION@|3.2.5|g' qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:38.781436 +0000 build-fedora3: + vnum=1
+2018-05-07 03:31:38.781489 +0000 build-fedora3: + read ver
+2018-05-07 03:31:38.782128 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/rel ']'
+2018-05-07 03:31:38.783676 +0000 build-fedora3: ++ cat qubes-src/core-qubesdb/rel
+2018-05-07 03:31:38.787429 +0000 build-fedora3: ++ echo 1
+2018-05-07 03:31:38.788106 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:38.793416 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/changelog ']'
+2018-05-07 03:31:38.793465 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:38.798538 +0000 build-fedora3: + cat qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:38.802479 +0000 build-fedora3: + rm -rf qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:38.806007 +0000 build-fedora3: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile /tmp/tmp.hXSmJA.spec
+2018-05-07 03:31:38.899014 +0000 build-fedora3: + rm -f /tmp/tmp.hXSmJA.spec
+2018-05-07 03:31:38.991862 +0000 build-fedora3: /home/user/builder-r3.2/qubes-src/builder-fedora/Makefile.rpmbuilder:140: target 'update-repo-do' does not exist
+2018-05-07 03:31:38.991918 +0000 build-fedora3: mkdir -p /home/user/builder-r3.2/qubes-src/linux-yum/r3.2/current-testing/vm/fc27/rpm
+2018-05-07 03:31:39.041123 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-05-07 03:31:39.041169 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:39.042697 +0000 build-fedora3: ++ basename qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in
+2018-05-07 03:31:39.045424 +0000 build-fedora3: + [[ xqubes-db.spec.in == \x\.\i\n ]]
+2018-05-07 03:31:39.045512 +0000 build-fedora3: + '[' -r qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in ']'
+2018-05-07 03:31:39.047176 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-05-07 03:31:39.050166 +0000 build-fedora3: + tmp_spec=/tmp/tmp.PgC4gv.spec
+2018-05-07 03:31:39.051822 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-05-07 03:31:39.054706 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in /tmp/tmp.PgC4gv.spec
+2018-05-07 03:31:39.060245 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:39.060287 +0000 build-fedora3: + '[' -z qubes-src/core-qubesdb ']'
+2018-05-07 03:31:39.060314 +0000 build-fedora3: + cp qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:39.066235 +0000 build-fedora3: + cat qubes-src/core-qubesdb/version
+2018-05-07 03:31:39.066849 +0000 build-fedora3: + read ver
+2018-05-07 03:31:39.068515 +0000 build-fedora3: + '[' x == x ']'
+2018-05-07 03:31:39.068567 +0000 build-fedora3: + sed -i 's|@VERSION@|3.2.5|g' qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:39.073344 +0000 build-fedora3: + vnum=1
+2018-05-07 03:31:39.073388 +0000 build-fedora3: + read ver
+2018-05-07 03:31:39.074078 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/rel ']'
+2018-05-07 03:31:39.075425 +0000 build-fedora3: ++ cat qubes-src/core-qubesdb/rel
+2018-05-07 03:31:39.078773 +0000 build-fedora3: ++ echo 1
+2018-05-07 03:31:39.079322 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:39.084048 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/changelog ']'
+2018-05-07 03:31:39.084093 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:39.088659 +0000 build-fedora3: + cat qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:39.091898 +0000 build-fedora3: + rm -rf qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:39.095199 +0000 build-fedora3: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile /tmp/tmp.PgC4gv.spec
+2018-05-07 03:31:39.187385 +0000 build-fedora3: + rm -f /tmp/tmp.PgC4gv.spec
+2018-05-07 03:31:39.206604 +0000 build-fedora3: cd qubes-src/core-qubesdb && ln -f pkgs/fc27/x86_64/qubes-db-3.2.5-1.fc27.x86_64.rpm pkgs/fc27/x86_64/qubes-db-debuginfo-3.2.5-1.fc27.x86_64.rpm pkgs/fc27/x86_64/qubes-db-debugsource-3.2.5-1.fc27.x86_64.rpm pkgs/fc27/x86_64/qubes-db-devel-3.2.5-1.fc27.x86_64.rpm pkgs/fc27/x86_64/qubes-db-libs-3.2.5-1.fc27.x86_64.rpm pkgs/fc27/x86_64/qubes-db-libs-debuginfo-3.2.5-1.fc27.x86_64.rpm pkgs/fc27/x86_64/qubes-db-vm-3.2.5-1.fc27.x86_64.rpm  /home/user/builder-r3.2/qubes-src/linux-yum/r3.2/current-testing/vm/fc27/rpm/
+2018-05-07 03:31:39.212184 +0000 build-fedora3: cd qubes-src/core-qubesdb && echo pkgs/fc27/x86_64/qubes-db-3.2.5-1.fc27.x86_64.rpm pkgs/fc27/x86_64/qubes-db-debuginfo-3.2.5-1.fc27.x86_64.rpm pkgs/fc27/x86_64/qubes-db-debugsource-3.2.5-1.fc27.x86_64.rpm pkgs/fc27/x86_64/qubes-db-devel-3.2.5-1.fc27.x86_64.rpm pkgs/fc27/x86_64/qubes-db-libs-3.2.5-1.fc27.x86_64.rpm pkgs/fc27/x86_64/qubes-db-libs-debuginfo-3.2.5-1.fc27.x86_64.rpm pkgs/fc27/x86_64/qubes-db-vm-3.2.5-1.fc27.x86_64.rpm  > /home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-fc27-core-qubesdb
+2018-05-07 03:31:39.314178 +0000 build-fedora3: /home/user/builder-r3.2/qubes-src/builder-github//Makefile.github:21: target 'notify-github' does not exist
+2018-05-07 03:31:39.314254 +0000 build-fedora3: [ -z "qubes-db-3.2.5-1.fc27" ] || /home/user/builder-r3.2/qubes-src/builder-github//notify-issues \
+2018-05-07 03:31:39.314303 +0000 build-fedora3: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2018-05-07_03-28-45" \
+2018-05-07 03:31:39.314337 +0000 build-fedora3: ."r3.2" \
+2018-05-07 03:31:39.314370 +0000 build-fedora3: ."current-testing" \
+2018-05-07 03:31:39.314402 +0000 build-fedora3: ."qubes-src/core-qubesdb" \
+2018-05-07 03:31:39.314430 +0000 build-fedora3: ."qubes-db-3.2.5-1.fc27" \
+2018-05-07 03:31:39.314457 +0000 build-fedora3: ."fc27" \
+2018-05-07 03:31:39.314485 +0000 build-fedora3: ."vm" \
+2018-05-07 03:31:39.314518 +0000 build-fedora3: ."/home/user/github-notify-state/r3.2-core-qubesdb-vm-fc27-current-testing"
+2018-05-07 03:31:39.426743 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-05-07 03:31:39.426794 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:39.428154 +0000 build-fedora3: ++ basename qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in
+2018-05-07 03:31:39.430386 +0000 build-fedora3: + [[ xqubes-db.spec.in == \x\.\i\n ]]
+2018-05-07 03:31:39.430453 +0000 build-fedora3: + '[' -r qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in ']'
+2018-05-07 03:31:39.431836 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-05-07 03:31:39.434084 +0000 build-fedora3: + tmp_spec=/tmp/tmp.i01QwU.spec
+2018-05-07 03:31:39.435452 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-05-07 03:31:39.437613 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in /tmp/tmp.i01QwU.spec
+2018-05-07 03:31:39.442002 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:39.442039 +0000 build-fedora3: + '[' -z qubes-src/core-qubesdb ']'
+2018-05-07 03:31:39.442060 +0000 build-fedora3: + cp qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:39.447291 +0000 build-fedora3: + cat qubes-src/core-qubesdb/version
+2018-05-07 03:31:39.447788 +0000 build-fedora3: + read ver
+2018-05-07 03:31:39.449565 +0000 build-fedora3: + '[' x == x ']'
+2018-05-07 03:31:39.449608 +0000 build-fedora3: + sed -i 's|@VERSION@|3.2.5|g' qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:39.454338 +0000 build-fedora3: + vnum=1
+2018-05-07 03:31:39.454378 +0000 build-fedora3: + read ver
+2018-05-07 03:31:39.454926 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/rel ']'
+2018-05-07 03:31:39.456355 +0000 build-fedora3: ++ cat qubes-src/core-qubesdb/rel
+2018-05-07 03:31:39.459773 +0000 build-fedora3: ++ echo 1
+2018-05-07 03:31:39.460286 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:39.465027 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/changelog ']'
+2018-05-07 03:31:39.465081 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:39.469599 +0000 build-fedora3: + cat qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:39.472862 +0000 build-fedora3: + rm -rf qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:39.476201 +0000 build-fedora3: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile /tmp/tmp.i01QwU.spec
+2018-05-07 03:31:39.568492 +0000 build-fedora3: + rm -f /tmp/tmp.i01QwU.spec
+2018-05-07 03:31:45.278547 +0000 build-fedora3: WARNING: /home/user/github-notify-state/r3.2-core-qubesdb-vm-fc27-current-testing does not exist, initializing with the current state
+2018-05-07 03:31:45.282970 +0000 build-fedora3: 
+2018-05-07 03:31:45.283386 +0000 build-fedora3: Makefile:702: update target 'internal-update-repo-current-testing.vm.fc27' due to: internal-update-repo-current-testing.vm.fc27.core-qubesdb
+2018-05-07 03:31:45.283427 +0000 build-fedora3: true
+2018-05-07 03:31:45.287060 +0000 build-fedora3: Makefile:721: target 'internal-update-repo-current-testing.vm.fc28.core-qubesdb' does not exist
+2018-05-07 03:31:45.287108 +0000 build-fedora3: repo_base_var="LINUX_REPO_fc28_BASEDIR"; \
+2018-05-07 03:31:45.287136 +0000 build-fedora3: if [ -n "${!repo_base_var}" ]; then \
+2018-05-07 03:31:45.287157 +0000 build-fedora3: .repo_basedir="${!repo_base_var}"; \
+2018-05-07 03:31:45.287172 +0000 build-fedora3: else \
+2018-05-07 03:31:45.287189 +0000 build-fedora3: .repo_basedir="qubes-src/linux-yum/r3.2"; \
+2018-05-07 03:31:45.287202 +0000 build-fedora3: fi; \
+2018-05-07 03:31:45.287218 +0000 build-fedora3: if [ -r qubes-src/core-qubesdb/Makefile.builder ]; then \
+2018-05-07 03:31:45.287233 +0000 build-fedora3: .echo -n "Updating qubes-src/core-qubesdb... "; \
+2018-05-07 03:31:45.287247 +0000 build-fedora3: .if [ "0" -eq 1 ]; then \
+2018-05-07 03:31:45.287279 +0000 build-fedora3: ..vtag=`git -C qubes-src/core-qubesdb tag --points-at HEAD --list v*`; \
+2018-05-07 03:31:45.287294 +0000 build-fedora3: ..if [ -z "$vtag" ]; then \
+2018-05-07 03:31:45.287309 +0000 build-fedora3: ...echo "no version tag"; \
+2018-05-07 03:31:45.287322 +0000 build-fedora3: ...exit 0; \
+2018-05-07 03:31:45.287335 +0000 build-fedora3: ..fi; \
+2018-05-07 03:31:45.287348 +0000 build-fedora3: .fi; \
+2018-05-07 03:31:45.287373 +0000 build-fedora3: .component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc28 PACKAGE_SET=vm COMPONENT=`basename qubes-src/core-qubesdb` UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc28 get-var GET_VAR=PACKAGE_LIST); \
+2018-05-07 03:31:45.287390 +0000 build-fedora3: .if [ -z "$component_packages" ]; then \
+2018-05-07 03:31:45.287404 +0000 build-fedora3: ..echo "no packages."; \
+2018-05-07 03:31:45.287417 +0000 build-fedora3: ..exit 0; \
+2018-05-07 03:31:45.287430 +0000 build-fedora3: .fi; \
+2018-05-07 03:31:45.287445 +0000 build-fedora3: .make -s -f Makefile.generic DIST=fc28 PACKAGE_SET=vm \
+2018-05-07 03:31:45.287460 +0000 build-fedora3: ..COMPONENT=`basename qubes-src/core-qubesdb` \
+2018-05-07 03:31:45.287475 +0000 build-fedora3: ..SNAPSHOT_REPO=current-testing \
+2018-05-07 03:31:45.287489 +0000 build-fedora3: ..TARGET_REPO=current-testing \
+2018-05-07 03:31:45.287505 +0000 build-fedora3: ..UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc28 \
+2018-05-07 03:31:45.287524 +0000 build-fedora3: ..SNAPSHOT_FILE=/home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-fc28-`basename qubes-src/core-qubesdb` \
+2018-05-07 03:31:45.287543 +0000 build-fedora3: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2018-05-07_03-29-37 \
+2018-05-07 03:31:45.287557 +0000 build-fedora3: ..update-repo || exit 1; \
+2018-05-07 03:31:45.287575 +0000 build-fedora3: elif make -C qubes-src/core-qubesdb -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2018-05-07 03:31:45.287590 +0000 build-fedora3: .echo "Updating qubes-src/core-qubesdb... "; \
+2018-05-07 03:31:45.287606 +0000 build-fedora3: .make -s -C qubes-src/core-qubesdb update-repo-current-testing || exit 1; \
+2018-05-07 03:31:45.287620 +0000 build-fedora3: else \
+2018-05-07 03:31:45.287665 +0000 build-fedora3: .echo -n "Updating qubes-src/core-qubesdb... skipping."; \
+2018-05-07 03:31:45.287680 +0000 build-fedora3: fi; \
+2018-05-07 03:31:45.287693 +0000 build-fedora3: echo
+2018-05-07 03:31:45.309960 +0000 build-fedora3: Updating qubes-src/core-qubesdb... + ERR_OUTPUT=/dev/stderr
+2018-05-07 03:31:45.310012 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:45.311415 +0000 build-fedora3: ++ basename qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in
+2018-05-07 03:31:45.313681 +0000 build-fedora3: + [[ xqubes-db.spec.in == \x\.\i\n ]]
+2018-05-07 03:31:45.313764 +0000 build-fedora3: + '[' -r qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in ']'
+2018-05-07 03:31:45.315186 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-05-07 03:31:45.317482 +0000 build-fedora3: + tmp_spec=/tmp/tmp.lqtIaW.spec
+2018-05-07 03:31:45.318813 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-05-07 03:31:45.321105 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in /tmp/tmp.lqtIaW.spec
+2018-05-07 03:31:45.325535 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:45.325574 +0000 build-fedora3: + '[' -z qubes-src/core-qubesdb ']'
+2018-05-07 03:31:45.325596 +0000 build-fedora3: + cp qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:45.330920 +0000 build-fedora3: + cat qubes-src/core-qubesdb/version
+2018-05-07 03:31:45.331438 +0000 build-fedora3: + read ver
+2018-05-07 03:31:45.333227 +0000 build-fedora3: + '[' x == x ']'
+2018-05-07 03:31:45.333269 +0000 build-fedora3: + sed -i 's|@VERSION@|3.2.5|g' qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:45.338011 +0000 build-fedora3: + vnum=1
+2018-05-07 03:31:45.338067 +0000 build-fedora3: + read ver
+2018-05-07 03:31:45.338636 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/rel ']'
+2018-05-07 03:31:45.340051 +0000 build-fedora3: ++ cat qubes-src/core-qubesdb/rel
+2018-05-07 03:31:45.343450 +0000 build-fedora3: ++ echo 1
+2018-05-07 03:31:45.343991 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:45.348767 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/changelog ']'
+2018-05-07 03:31:45.348823 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:45.353401 +0000 build-fedora3: + cat qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:45.356762 +0000 build-fedora3: + rm -rf qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:45.360098 +0000 build-fedora3: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile /tmp/tmp.lqtIaW.spec
+2018-05-07 03:31:45.452575 +0000 build-fedora3: + rm -f /tmp/tmp.lqtIaW.spec
+2018-05-07 03:31:45.468968 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-05-07 03:31:45.469020 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:45.470257 +0000 build-fedora3: ++ basename qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in
+2018-05-07 03:31:45.472552 +0000 build-fedora3: + [[ xqubes-db.spec.in == \x\.\i\n ]]
+2018-05-07 03:31:45.472640 +0000 build-fedora3: + '[' -r qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in ']'
+2018-05-07 03:31:45.473879 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-05-07 03:31:45.476286 +0000 build-fedora3: + tmp_spec=/tmp/tmp.IeInMi.spec
+2018-05-07 03:31:45.477551 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-05-07 03:31:45.479841 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in /tmp/tmp.IeInMi.spec
+2018-05-07 03:31:45.484224 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:45.484283 +0000 build-fedora3: + '[' -z qubes-src/core-qubesdb ']'
+2018-05-07 03:31:45.484320 +0000 build-fedora3: + cp qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:45.489636 +0000 build-fedora3: + cat qubes-src/core-qubesdb/version
+2018-05-07 03:31:45.490193 +0000 build-fedora3: + read ver
+2018-05-07 03:31:45.491994 +0000 build-fedora3: + '[' x == x ']'
+2018-05-07 03:31:45.492093 +0000 build-fedora3: + sed -i 's|@VERSION@|3.2.5|g' qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:45.496919 +0000 build-fedora3: + vnum=1
+2018-05-07 03:31:45.496969 +0000 build-fedora3: + read ver
+2018-05-07 03:31:45.497514 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/rel ']'
+2018-05-07 03:31:45.498864 +0000 build-fedora3: ++ cat qubes-src/core-qubesdb/rel
+2018-05-07 03:31:45.502294 +0000 build-fedora3: ++ echo 1
+2018-05-07 03:31:45.502876 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:45.507671 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/changelog ']'
+2018-05-07 03:31:45.507713 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:45.512398 +0000 build-fedora3: + cat qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:45.515869 +0000 build-fedora3: + rm -rf qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:45.519261 +0000 build-fedora3: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile /tmp/tmp.IeInMi.spec
+2018-05-07 03:31:45.611396 +0000 build-fedora3: + rm -f /tmp/tmp.IeInMi.spec
+2018-05-07 03:31:45.644873 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-05-07 03:31:45.644926 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:45.646265 +0000 build-fedora3: ++ basename qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in
+2018-05-07 03:31:45.648475 +0000 build-fedora3: + [[ xqubes-db.spec.in == \x\.\i\n ]]
+2018-05-07 03:31:45.648558 +0000 build-fedora3: + '[' -r qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in ']'
+2018-05-07 03:31:45.649903 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-05-07 03:31:45.652242 +0000 build-fedora3: + tmp_spec=/tmp/tmp.zZqiGr.spec
+2018-05-07 03:31:45.653549 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-05-07 03:31:45.655801 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in /tmp/tmp.zZqiGr.spec
+2018-05-07 03:31:45.660190 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:45.660245 +0000 build-fedora3: + '[' -z qubes-src/core-qubesdb ']'
+2018-05-07 03:31:45.660281 +0000 build-fedora3: + cp qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:45.665500 +0000 build-fedora3: + cat qubes-src/core-qubesdb/version
+2018-05-07 03:31:45.665977 +0000 build-fedora3: + read ver
+2018-05-07 03:31:45.667879 +0000 build-fedora3: + '[' x == x ']'
+2018-05-07 03:31:45.667937 +0000 build-fedora3: + sed -i 's|@VERSION@|3.2.5|g' qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:45.672612 +0000 build-fedora3: + vnum=1
+2018-05-07 03:31:45.672690 +0000 build-fedora3: + read ver
+2018-05-07 03:31:45.673211 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/rel ']'
+2018-05-07 03:31:45.674595 +0000 build-fedora3: ++ cat qubes-src/core-qubesdb/rel
+2018-05-07 03:31:45.677967 +0000 build-fedora3: ++ echo 1
+2018-05-07 03:31:45.678527 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:45.683336 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/changelog ']'
+2018-05-07 03:31:45.683400 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:45.688009 +0000 build-fedora3: + cat qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:45.691398 +0000 build-fedora3: + rm -rf qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:45.694701 +0000 build-fedora3: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile /tmp/tmp.zZqiGr.spec
+2018-05-07 03:31:45.787789 +0000 build-fedora3: + rm -f /tmp/tmp.zZqiGr.spec
+2018-05-07 03:31:45.867898 +0000 build-fedora3: /home/user/builder-r3.2/qubes-src/builder-fedora/Makefile.rpmbuilder:140: target 'update-repo-do' does not exist
+2018-05-07 03:31:45.867946 +0000 build-fedora3: mkdir -p /home/user/builder-r3.2/qubes-src/linux-yum/r3.2/current-testing/vm/fc28/rpm
+2018-05-07 03:31:45.914696 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-05-07 03:31:45.914793 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:45.916112 +0000 build-fedora3: ++ basename qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in
+2018-05-07 03:31:45.918372 +0000 build-fedora3: + [[ xqubes-db.spec.in == \x\.\i\n ]]
+2018-05-07 03:31:45.918435 +0000 build-fedora3: + '[' -r qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in ']'
+2018-05-07 03:31:45.919826 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-05-07 03:31:45.922061 +0000 build-fedora3: + tmp_spec=/tmp/tmp.JJ849H.spec
+2018-05-07 03:31:45.923477 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-05-07 03:31:45.925630 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in /tmp/tmp.JJ849H.spec
+2018-05-07 03:31:45.929876 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:45.929928 +0000 build-fedora3: + '[' -z qubes-src/core-qubesdb ']'
+2018-05-07 03:31:45.929964 +0000 build-fedora3: + cp qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:45.935338 +0000 build-fedora3: + cat qubes-src/core-qubesdb/version
+2018-05-07 03:31:45.935845 +0000 build-fedora3: + read ver
+2018-05-07 03:31:45.937817 +0000 build-fedora3: + '[' x == x ']'
+2018-05-07 03:31:45.937871 +0000 build-fedora3: + sed -i 's|@VERSION@|3.2.5|g' qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:45.942665 +0000 build-fedora3: + vnum=1
+2018-05-07 03:31:45.942730 +0000 build-fedora3: + read ver
+2018-05-07 03:31:45.943228 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/rel ']'
+2018-05-07 03:31:45.944582 +0000 build-fedora3: ++ cat qubes-src/core-qubesdb/rel
+2018-05-07 03:31:45.947930 +0000 build-fedora3: ++ echo 1
+2018-05-07 03:31:45.948442 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:45.953182 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/changelog ']'
+2018-05-07 03:31:45.953224 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:45.957867 +0000 build-fedora3: + cat qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:45.961217 +0000 build-fedora3: + rm -rf qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:45.964485 +0000 build-fedora3: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile /tmp/tmp.JJ849H.spec
+2018-05-07 03:31:46.057056 +0000 build-fedora3: + rm -f /tmp/tmp.JJ849H.spec
+2018-05-07 03:31:46.069824 +0000 build-fedora3: cd qubes-src/core-qubesdb && ln -f pkgs/fc28/x86_64/qubes-db-3.2.5-1.fc28.x86_64.rpm pkgs/fc28/x86_64/qubes-db-debuginfo-3.2.5-1.fc28.x86_64.rpm pkgs/fc28/x86_64/qubes-db-debugsource-3.2.5-1.fc28.x86_64.rpm pkgs/fc28/x86_64/qubes-db-devel-3.2.5-1.fc28.x86_64.rpm pkgs/fc28/x86_64/qubes-db-libs-3.2.5-1.fc28.x86_64.rpm pkgs/fc28/x86_64/qubes-db-libs-debuginfo-3.2.5-1.fc28.x86_64.rpm pkgs/fc28/x86_64/qubes-db-vm-3.2.5-1.fc28.x86_64.rpm  /home/user/builder-r3.2/qubes-src/linux-yum/r3.2/current-testing/vm/fc28/rpm/
+2018-05-07 03:31:46.075357 +0000 build-fedora3: cd qubes-src/core-qubesdb && echo pkgs/fc28/x86_64/qubes-db-3.2.5-1.fc28.x86_64.rpm pkgs/fc28/x86_64/qubes-db-debuginfo-3.2.5-1.fc28.x86_64.rpm pkgs/fc28/x86_64/qubes-db-debugsource-3.2.5-1.fc28.x86_64.rpm pkgs/fc28/x86_64/qubes-db-devel-3.2.5-1.fc28.x86_64.rpm pkgs/fc28/x86_64/qubes-db-libs-3.2.5-1.fc28.x86_64.rpm pkgs/fc28/x86_64/qubes-db-libs-debuginfo-3.2.5-1.fc28.x86_64.rpm pkgs/fc28/x86_64/qubes-db-vm-3.2.5-1.fc28.x86_64.rpm  > /home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-fc28-core-qubesdb
+2018-05-07 03:31:46.172675 +0000 build-fedora3: /home/user/builder-r3.2/qubes-src/builder-github//Makefile.github:21: target 'notify-github' does not exist
+2018-05-07 03:31:46.172751 +0000 build-fedora3: [ -z "qubes-db-3.2.5-1.fc28" ] || /home/user/builder-r3.2/qubes-src/builder-github//notify-issues \
+2018-05-07 03:31:46.172778 +0000 build-fedora3: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2018-05-07_03-29-37" \
+2018-05-07 03:31:46.172796 +0000 build-fedora3: ."r3.2" \
+2018-05-07 03:31:46.172813 +0000 build-fedora3: ."current-testing" \
+2018-05-07 03:31:46.172829 +0000 build-fedora3: ."qubes-src/core-qubesdb" \
+2018-05-07 03:31:46.172845 +0000 build-fedora3: ."qubes-db-3.2.5-1.fc28" \
+2018-05-07 03:31:46.172860 +0000 build-fedora3: ."fc28" \
+2018-05-07 03:31:46.172875 +0000 build-fedora3: ."vm" \
+2018-05-07 03:31:46.172893 +0000 build-fedora3: ."/home/user/github-notify-state/r3.2-core-qubesdb-vm-fc28-current-testing"
+2018-05-07 03:31:46.265450 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-05-07 03:31:46.265493 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:46.266841 +0000 build-fedora3: ++ basename qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in
+2018-05-07 03:31:46.269231 +0000 build-fedora3: + [[ xqubes-db.spec.in == \x\.\i\n ]]
+2018-05-07 03:31:46.269286 +0000 build-fedora3: + '[' -r qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in ']'
+2018-05-07 03:31:46.270584 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-05-07 03:31:46.273055 +0000 build-fedora3: + tmp_spec=/tmp/tmp.oahx21.spec
+2018-05-07 03:31:46.274392 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-05-07 03:31:46.276723 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in /tmp/tmp.oahx21.spec
+2018-05-07 03:31:46.281099 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-05-07 03:31:46.281137 +0000 build-fedora3: + '[' -z qubes-src/core-qubesdb ']'
+2018-05-07 03:31:46.281160 +0000 build-fedora3: + cp qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:46.286617 +0000 build-fedora3: + cat qubes-src/core-qubesdb/version
+2018-05-07 03:31:46.287028 +0000 build-fedora3: + read ver
+2018-05-07 03:31:46.288923 +0000 build-fedora3: + '[' x == x ']'
+2018-05-07 03:31:46.288982 +0000 build-fedora3: + sed -i 's|@VERSION@|3.2.5|g' qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:46.293761 +0000 build-fedora3: + vnum=1
+2018-05-07 03:31:46.293810 +0000 build-fedora3: + read ver
+2018-05-07 03:31:46.294361 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/rel ']'
+2018-05-07 03:31:46.295790 +0000 build-fedora3: ++ cat qubes-src/core-qubesdb/rel
+2018-05-07 03:31:46.299127 +0000 build-fedora3: ++ echo 1
+2018-05-07 03:31:46.299688 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:46.304442 +0000 build-fedora3: + '[' -e qubes-src/core-qubesdb/changelog ']'
+2018-05-07 03:31:46.304485 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:46.309090 +0000 build-fedora3: + cat qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:46.312496 +0000 build-fedora3: + rm -rf qubes-src/core-qubesdb/rpm_spec/qubes-db.spec.in.tmp
+2018-05-07 03:31:46.315922 +0000 build-fedora3: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile /tmp/tmp.oahx21.spec
+2018-05-07 03:31:46.408163 +0000 build-fedora3: + rm -f /tmp/tmp.oahx21.spec
+2018-05-07 03:31:52.179551 +0000 build-fedora3: WARNING: /home/user/github-notify-state/r3.2-core-qubesdb-vm-fc28-current-testing does not exist, initializing with the current state
+2018-05-07 03:31:52.183897 +0000 build-fedora3: 
+2018-05-07 03:31:52.184262 +0000 build-fedora3: Makefile:702: update target 'internal-update-repo-current-testing.vm.fc28' due to: internal-update-repo-current-testing.vm.fc28.core-qubesdb
+2018-05-07 03:31:52.184286 +0000 build-fedora3: true
+2018-05-07 03:31:52.187828 +0000 build-fedora3: Makefile:764: target 'post-update-repo-current-testing' does not exist
+2018-05-07 03:31:52.187861 +0000 build-fedora3: for dist in  fc25 fc26 fc27 fc28; do \
+2018-05-07 03:31:52.187879 +0000 build-fedora3: .repo_base_var="LINUX_REPO_${dist}_BASEDIR"; \
+2018-05-07 03:31:52.187895 +0000 build-fedora3: .if [ -n "${!repo_base_var}" ]; then \
+2018-05-07 03:31:52.187910 +0000 build-fedora3: ..repo_basedir="${!repo_base_var}"; \
+2018-05-07 03:31:52.187924 +0000 build-fedora3: .else \
+2018-05-07 03:31:52.187940 +0000 build-fedora3: ..repo_basedir="qubes-src/linux-yum/r3.2"; \
+2018-05-07 03:31:52.187954 +0000 build-fedora3: .fi; \
+2018-05-07 03:31:52.187970 +0000 build-fedora3: .repos_to_update="$repos_to_update $repo_basedir"; \
+2018-05-07 03:31:52.187983 +0000 build-fedora3: done; \
+2018-05-07 03:31:52.187999 +0000 build-fedora3: for repo in `echo $repos_to_update|tr ' ' '\n'|sort|uniq`; do \
+2018-05-07 03:31:52.188013 +0000 build-fedora3: .[ -z "$repo" ] && continue; \
+2018-05-07 03:31:52.188030 +0000 build-fedora3: .(cd $repo/.. && ./update_repo-current-testing.sh `basename $repo`); \
+2018-05-07 03:31:52.188043 +0000 build-fedora3: done
+2018-05-07 03:31:52.227517 +0000 build-fedora3: which: no mkmetalink in (/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/user/.local/bin:/home/user/bin:/home/user/builder-r3.2/qubes-src/builder-fedora/tools)
+2018-05-07 03:31:52.241352 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/dom0/fc20...
+2018-05-07 03:31:52.762521 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/dom0/fc23...
+2018-05-07 03:31:55.099567 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/vm/centos7...
+2018-05-07 03:31:55.598883 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/vm/fc22...
+2018-05-07 03:31:56.040214 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/vm/fc23...
+2018-05-07 03:32:00.927973 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/vm/fc24...
+2018-05-07 03:32:05.987422 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/vm/fc25...
+2018-05-07 03:32:12.144603 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/vm/fc26...
+2018-05-07 03:32:15.486639 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/vm/fc27...
+2018-05-07 03:32:16.540260 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/vm/fc28...
+2018-05-07 03:32:17.640465 +0000 build-fedora3: Done.
+2018-05-07 03:32:17.652489 +0000 build-fedora3: ~/builder-r3.2/qubes-src/linux-yum ~/builder-r3.2/qubes-src/linux-yum
+2018-05-07 03:32:17.656022 +0000 build-fedora3: Syncing r3.2...
+2018-05-07 03:32:18.721176 +0000 build-fedora3: sending incremental file list
+2018-05-07 03:32:19.364118 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing": Operation not permitted (1)
+2018-05-07 03:32:19.364334 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/dom0": Operation not permitted (1)
+2018-05-07 03:32:19.364493 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/dom0/fc20": Operation not permitted (1)
+2018-05-07 03:32:19.364729 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/dom0/fc20/rpm": Operation not permitted (1)
+2018-05-07 03:32:19.364880 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/dom0/fc23": Operation not permitted (1)
+2018-05-07 03:32:19.365019 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/dom0/fc23/rpm": Operation not permitted (1)
+2018-05-07 03:32:19.365153 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm": Operation not permitted (1)
+2018-05-07 03:32:19.365287 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc22": Operation not permitted (1)
+2018-05-07 03:32:19.365425 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc22/rpm": Operation not permitted (1)
+2018-05-07 03:32:19.365564 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc23": Operation not permitted (1)
+2018-05-07 03:32:19.365770 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc23/rpm": Operation not permitted (1)
+2018-05-07 03:32:19.365927 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc24": Operation not permitted (1)
+2018-05-07 03:32:19.366034 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc24/rpm": Operation not permitted (1)
+2018-05-07 03:32:19.366114 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc25": Operation not permitted (1)
+2018-05-07 03:32:19.366176 +0000 build-fedora3: .d..t...... current-testing/
+2018-05-07 03:32:19.366280 +0000 build-fedora3: .d..t...... current-testing/dom0/
+2018-05-07 03:32:19.366345 +0000 build-fedora3: .d..t...... current-testing/dom0/fc20/
+2018-05-07 03:32:19.366416 +0000 build-fedora3: .L..t...... current-testing/dom0/fc20/comps.xml -> ../../../comps-dom0.xml
+2018-05-07 03:32:19.366518 +0000 build-fedora3: .d..t...... current-testing/dom0/fc20/rpm/
+2018-05-07 03:32:19.366623 +0000 build-fedora3: .d..t...... current-testing/dom0/fc23/
+2018-05-07 03:32:19.366813 +0000 build-fedora3: .L..t...... current-testing/dom0/fc23/comps.xml -> ../../../comps-dom0.xml
+2018-05-07 03:32:19.367004 +0000 build-fedora3: .d..t...... current-testing/dom0/fc23/rpm/
+2018-05-07 03:32:19.367084 +0000 build-fedora3: <f..t...... current-testing/dom0/fc23/rpm/qubes-core-dom0-vaio-fixes-1.6.1-1.fc23.x86_64.rpm
+2018-05-07 03:32:19.369702 +0000 build-fedora3: .          2,092  29%    0.00kB/s    0:00:00  .          7,170 100%    4.84MB/s    0:00:00 (xfr#1, ir-chk=1071/1093)
+2018-05-07 03:32:19.369814 +0000 build-fedora3: .d..t...... current-testing/vm/
+2018-05-07 03:32:19.369926 +0000 build-fedora3: .d..t...... current-testing/vm/centos7/
+2018-05-07 03:32:19.370050 +0000 build-fedora3: .L..t...... current-testing/vm/centos7/comps.xml -> ../../../comps-vm.xml
+2018-05-07 03:32:19.370167 +0000 build-fedora3: .d..t...... current-testing/vm/centos7/rpm/
+2018-05-07 03:32:19.370283 +0000 build-fedora3: <f..t...... current-testing/vm/centos7/rpm/.gitignore
+2018-05-07 03:32:19.370833 +0000 build-fedora3: .              6 100%    5.86kB/s    0:00:00  .              6 100%    5.86kB/s    0:00:00 (xfr#2, ir-chk=1037/1093)
+2018-05-07 03:32:19.370964 +0000 build-fedora3: .d..t...... current-testing/vm/fc22/
+2018-05-07 03:32:19.371076 +0000 build-fedora3: .L..t...... current-testing/vm/fc22/comps.xml -> ../../../comps-vm.xml
+2018-05-07 03:32:19.371192 +0000 build-fedora3: .d..t...... current-testing/vm/fc22/rpm/
+2018-05-07 03:32:19.371305 +0000 build-fedora3: .d..t...... current-testing/vm/fc23/
+2018-05-07 03:32:19.371385 +0000 build-fedora3: .L..t...... current-testing/vm/fc23/comps.xml -> ../../../comps-vm.xml
+2018-05-07 03:32:19.377263 +0000 build-fedora3: .d..t...... current-testing/vm/fc23/rpm/
+2018-05-07 03:32:19.377347 +0000 build-fedora3: .d..t...... current-testing/vm/fc24/
+2018-05-07 03:32:19.377418 +0000 build-fedora3: .L..t...... current-testing/vm/fc24/comps.xml -> ../../../comps-vm.xml
+2018-05-07 03:32:19.389492 +0000 build-fedora3: .d..t...... current-testing/vm/fc24/rpm/
+2018-05-07 03:32:19.389559 +0000 build-fedora3: .d..t...... current-testing/vm/fc25/
+2018-05-07 03:32:19.389606 +0000 build-fedora3: .L..t...... current-testing/vm/fc25/comps.xml -> ../../../comps-vm.xml
+2018-05-07 03:32:19.576979 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc25/rpm": Operation not permitted (1)
+2018-05-07 03:32:19.586961 +0000 build-fedora3: .d..t...... current-testing/vm/fc25/rpm/
+2018-05-07 03:32:19.587194 +0000 build-fedora3: .f...p..... current-testing/vm/fc25/rpm/python2-dnf-plugins-qubes-hooks-3.2.17-1.fc25.x86_64.rpm
+2018-05-07 03:32:19.587352 +0000 build-fedora3: .f...p..... current-testing/vm/fc25/rpm/python3-dnf-plugins-qubes-hooks-3.2.17-1.fc25.x86_64.rpm
+2018-05-07 03:32:19.587483 +0000 build-fedora3: .f...p..... current-testing/vm/fc25/rpm/qubes-core-vm-3.2.17-1.fc25.x86_64.rpm
+2018-05-07 03:32:19.587610 +0000 build-fedora3: .f...p..... current-testing/vm/fc25/rpm/qubes-core-vm-debuginfo-3.2.17-1.fc25.x86_64.rpm
+2018-05-07 03:32:19.587864 +0000 build-fedora3: .f...p..... current-testing/vm/fc25/rpm/qubes-core-vm-doc-3.2.17-1.noarch.rpm
+2018-05-07 03:32:19.588002 +0000 build-fedora3: .f...p..... current-testing/vm/fc25/rpm/qubes-core-vm-systemd-3.2.17-1.fc25.x86_64.rpm
+2018-05-07 03:32:19.588128 +0000 build-fedora3: .f...p..... current-testing/vm/fc25/rpm/qubes-core-vm-sysvinit-3.2.17-1.fc25.x86_64.rpm
+2018-05-07 03:32:19.588250 +0000 build-fedora3: <f+++++++++ current-testing/vm/fc25/rpm/qubes-db-3.2.5-1.fc25.x86_64.rpm
+2018-05-07 03:32:19.588442 +0000 build-fedora3: .         23,410 100%  104.87kB/s    0:00:00  .         23,410 100%  104.87kB/s    0:00:00 (xfr#3, ir-chk=1330/2122)
+2018-05-07 03:32:19.588592 +0000 build-fedora3: <f+++++++++ current-testing/vm/fc25/rpm/qubes-db-debuginfo-3.2.5-1.fc25.x86_64.rpm
+2018-05-07 03:32:19.592237 +0000 build-fedora3: .         32,768  44%  146.12kB/s    0:00:00  .         74,046 100%  328.68kB/s    0:00:00 (xfr#4, ir-chk=1328/2122)
+2018-05-07 03:32:19.592441 +0000 build-fedora3: <f+++++++++ current-testing/vm/fc25/rpm/qubes-db-devel-3.2.5-1.fc25.x86_64.rpm
+2018-05-07 03:32:19.592697 +0000 build-fedora3: .          9,498 100%   42.16kB/s    0:00:00  .          9,498 100%   42.16kB/s    0:00:00 (xfr#5, ir-chk=1326/2122)
+2018-05-07 03:32:19.592798 +0000 build-fedora3: <f+++++++++ current-testing/vm/fc25/rpm/qubes-db-libs-3.2.5-1.fc25.x86_64.rpm
+2018-05-07 03:32:19.592933 +0000 build-fedora3: .         17,274 100%   75.99kB/s    0:00:00  .         17,274 100%   75.99kB/s    0:00:00 (xfr#6, ir-chk=1324/2122)
+2018-05-07 03:32:19.593060 +0000 build-fedora3: <f+++++++++ current-testing/vm/fc25/rpm/qubes-db-vm-3.2.5-1.fc25.x86_64.rpm
+2018-05-07 03:32:19.593270 +0000 build-fedora3: .          6,754 100%   29.58kB/s    0:00:00  .          6,754 100%   29.58kB/s    0:00:00 (xfr#7, ir-chk=1322/2122)
+2018-05-07 03:32:19.593415 +0000 build-fedora3: .f...p..... current-testing/vm/fc25/rpm/qubes-gui-vm-3.2.16-1.fc25.x86_64.rpm
+2018-05-07 03:32:19.593546 +0000 build-fedora3: .f...p..... current-testing/vm/fc25/rpm/qubes-gui-vm-debuginfo-3.2.16-1.fc25.x86_64.rpm
+2018-05-07 03:32:19.593732 +0000 build-fedora3: .f...p..... current-testing/vm/fc25/rpm/qubes-kernel-vm-support-3.2.4-1.fc25.x86_64.rpm
+2018-05-07 03:32:19.593859 +0000 build-fedora3: .f...p..... current-testing/vm/fc25/rpm/qubes-utils-3.2.4-1.fc25.x86_64.rpm
+2018-05-07 03:32:19.593953 +0000 build-fedora3: .f...p..... current-testing/vm/fc25/rpm/qubes-utils-debuginfo-3.2.4-1.fc25.x86_64.rpm
+2018-05-07 03:32:19.594027 +0000 build-fedora3: .f...p..... current-testing/vm/fc25/rpm/qubes-utils-devel-3.2.4-1.fc25.x86_64.rpm
+2018-05-07 03:32:19.594097 +0000 build-fedora3: .f...p..... current-testing/vm/fc25/rpm/qubes-utils-libs-3.2.4-1.fc25.x86_64.rpm
+2018-05-07 03:32:19.743875 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc26": Operation not permitted (1)
+2018-05-07 03:32:19.744028 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc26/comps.xml": Operation not permitted (1)
+2018-05-07 03:32:19.744123 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc26/rpm": Operation not permitted (1)
+2018-05-07 03:32:19.967191 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current": Operation not permitted (1)
+2018-05-07 03:32:19.967340 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/dom0": Operation not permitted (1)
+2018-05-07 03:32:19.967432 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/dom0/fc20": Operation not permitted (1)
+2018-05-07 03:32:19.967515 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/dom0/fc20/rpm": Operation not permitted (1)
+2018-05-07 03:32:19.967593 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/dom0/fc23": Operation not permitted (1)
+2018-05-07 03:32:19.967771 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/dom0/fc23/rpm": Operation not permitted (1)
+2018-05-07 03:32:19.967857 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm": Operation not permitted (1)
+2018-05-07 03:32:19.967996 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc22": Operation not permitted (1)
+2018-05-07 03:32:19.968121 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc22/rpm": Operation not permitted (1)
+2018-05-07 03:32:19.968233 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc23": Operation not permitted (1)
+2018-05-07 03:32:19.969325 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc23/rpm": Operation not permitted (1)
+2018-05-07 03:32:19.969415 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc24": Operation not permitted (1)
+2018-05-07 03:32:19.973330 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc24/rpm": Operation not permitted (1)
+2018-05-07 03:32:19.973573 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc25": Operation not permitted (1)
+2018-05-07 03:32:19.973710 +0000 build-fedora3: .d..t...... current-testing/vm/fc26/
+2018-05-07 03:32:19.973823 +0000 build-fedora3: .L..t...... current-testing/vm/fc26/comps.xml -> ../../../comps-vm.xml
+2018-05-07 03:32:20.001850 +0000 build-fedora3: .d..t...... current-testing/vm/fc26/rpm/
+2018-05-07 03:32:20.002041 +0000 build-fedora3: <f..t...... current-testing/vm/fc26/rpm/.gitignore
+2018-05-07 03:32:20.002891 +0000 build-fedora3: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#8, ir-chk=1328/2424)
+2018-05-07 03:32:20.003062 +0000 build-fedora3: <f+++++++++ current-testing/vm/fc26/rpm/qubes-db-3.2.5-1.fc26.x86_64.rpm
+2018-05-07 03:32:20.003252 +0000 build-fedora3: .         23,154 100%   35.72kB/s    0:00:00  .         23,154 100%   35.66kB/s    0:00:00 (xfr#9, ir-chk=1249/2424)
+2018-05-07 03:32:20.003423 +0000 build-fedora3: <f+++++++++ current-testing/vm/fc26/rpm/qubes-db-debuginfo-3.2.5-1.fc26.x86_64.rpm
+2018-05-07 03:32:20.009378 +0000 build-fedora3: .         32,768  44%   50.39kB/s    0:00:00  .         74,126 100%  114.00kB/s    0:00:00 (xfr#10, ir-chk=1247/2424)
+2018-05-07 03:32:20.009584 +0000 build-fedora3: <f+++++++++ current-testing/vm/fc26/rpm/qubes-db-devel-3.2.5-1.fc26.x86_64.rpm
+2018-05-07 03:32:20.009824 +0000 build-fedora3: .          9,494 100%   14.58kB/s    0:00:00  .          9,494 100%   14.58kB/s    0:00:00 (xfr#11, ir-chk=1245/2424)
+2018-05-07 03:32:20.009958 +0000 build-fedora3: <f+++++++++ current-testing/vm/fc26/rpm/qubes-db-libs-3.2.5-1.fc26.x86_64.rpm
+2018-05-07 03:32:20.010099 +0000 build-fedora3: .         17,154 100%   26.34kB/s    0:00:00  .         17,154 100%   26.34kB/s    0:00:00 (xfr#12, ir-chk=1243/2424)
+2018-05-07 03:32:20.010221 +0000 build-fedora3: <f+++++++++ current-testing/vm/fc26/rpm/qubes-db-vm-3.2.5-1.fc26.x86_64.rpm
+2018-05-07 03:32:20.010359 +0000 build-fedora3: .          6,754 100%   10.37kB/s    0:00:00  .          6,754 100%   10.37kB/s    0:00:00 (xfr#13, ir-chk=1241/2424)
+2018-05-07 03:32:20.010466 +0000 build-fedora3: .d..t...... current-testing/vm/fc27/
+2018-05-07 03:32:20.010573 +0000 build-fedora3: .d..t...... current-testing/vm/fc27/rpm/
+2018-05-07 03:32:20.010748 +0000 build-fedora3: <f+++++++++ current-testing/vm/fc27/rpm/qubes-db-3.2.5-1.fc27.x86_64.rpm
+2018-05-07 03:32:20.010894 +0000 build-fedora3: .         24,080 100%   36.92kB/s    0:00:00  .         24,080 100%   36.92kB/s    0:00:00 (xfr#14, ir-chk=1067/2424)
+2018-05-07 03:32:20.011021 +0000 build-fedora3: <f+++++++++ current-testing/vm/fc27/rpm/qubes-db-debuginfo-3.2.5-1.fc27.x86_64.rpm
+2018-05-07 03:32:20.011182 +0000 build-fedora3: .         31,436 100%   48.12kB/s    0:00:00  .         31,436 100%   48.12kB/s    0:00:00 (xfr#15, ir-chk=1066/2424)
+2018-05-07 03:32:20.011316 +0000 build-fedora3: <f+++++++++ current-testing/vm/fc27/rpm/qubes-db-debugsource-3.2.5-1.fc27.x86_64.rpm
+2018-05-07 03:32:20.011460 +0000 build-fedora3: .         32,300 100%   49.36kB/s    0:00:00  .         32,300 100%   49.36kB/s    0:00:00 (xfr#16, ir-chk=1065/2424)
+2018-05-07 03:32:20.011543 +0000 build-fedora3: <f+++++++++ current-testing/vm/fc27/rpm/qubes-db-devel-3.2.5-1.fc27.x86_64.rpm
+2018-05-07 03:32:20.011712 +0000 build-fedora3: .          9,708 100%   14.81kB/s    0:00:00  .          9,708 100%   14.81kB/s    0:00:00 (xfr#17, ir-chk=1064/2424)
+2018-05-07 03:32:20.011837 +0000 build-fedora3: <f+++++++++ current-testing/vm/fc27/rpm/qubes-db-libs-3.2.5-1.fc27.x86_64.rpm
+2018-05-07 03:32:20.011930 +0000 build-fedora3: .         18,172 100%   27.69kB/s    0:00:00  .         18,172 100%   27.69kB/s    0:00:00 (xfr#18, ir-chk=1063/2424)
+2018-05-07 03:32:20.012045 +0000 build-fedora3: <f+++++++++ current-testing/vm/fc27/rpm/qubes-db-libs-debuginfo-3.2.5-1.fc27.x86_64.rpm
+2018-05-07 03:32:20.012192 +0000 build-fedora3: .         26,116 100%   39.79kB/s    0:00:00  .         26,116 100%   39.79kB/s    0:00:00 (xfr#19, ir-chk=1062/2424)
+2018-05-07 03:32:20.012324 +0000 build-fedora3: <f+++++++++ current-testing/vm/fc27/rpm/qubes-db-vm-3.2.5-1.fc27.x86_64.rpm
+2018-05-07 03:32:20.012409 +0000 build-fedora3: .          6,968 100%   10.62kB/s    0:00:00  .          6,968 100%   10.60kB/s    0:00:00 (xfr#20, ir-chk=1061/2424)
+2018-05-07 03:32:20.012486 +0000 build-fedora3: .d..t...... current-testing/vm/fc28/
+2018-05-07 03:32:20.018054 +0000 build-fedora3: .d..t...... current-testing/vm/fc28/rpm/
+2018-05-07 03:32:20.018253 +0000 build-fedora3: <f+++++++++ current-testing/vm/fc28/rpm/qubes-db-3.2.5-1.fc28.x86_64.rpm
+2018-05-07 03:32:20.018417 +0000 build-fedora3: .         24,336 100%   36.73kB/s    0:00:00  .         24,336 100%   36.68kB/s    0:00:00 (xfr#21, ir-chk=1151/2547)
+2018-05-07 03:32:20.018554 +0000 build-fedora3: <f+++++++++ current-testing/vm/fc28/rpm/qubes-db-debuginfo-3.2.5-1.fc28.x86_64.rpm
+2018-05-07 03:32:20.018766 +0000 build-fedora3: .         32,768  96%   49.38kB/s    0:00:00  .         34,084 100%   51.37kB/s    0:00:00 (xfr#22, ir-chk=1150/2547)
+2018-05-07 03:32:20.018897 +0000 build-fedora3: <f+++++++++ current-testing/vm/fc28/rpm/qubes-db-debugsource-3.2.5-1.fc28.x86_64.rpm
+2018-05-07 03:32:20.019698 +0000 build-fedora3: .         32,400 100%   48.68kB/s    0:00:00  .         32,400 100%   48.68kB/s    0:00:00 (xfr#23, ir-chk=1149/2547)
+2018-05-07 03:32:20.019797 +0000 build-fedora3: <f+++++++++ current-testing/vm/fc28/rpm/qubes-db-devel-3.2.5-1.fc28.x86_64.rpm
+2018-05-07 03:32:20.020201 +0000 build-fedora3: .          9,804 100%   14.73kB/s    0:00:00  .          9,804 100%   14.71kB/s    0:00:00 (xfr#24, ir-chk=1148/2547)
+2018-05-07 03:32:20.020288 +0000 build-fedora3: <f+++++++++ current-testing/vm/fc28/rpm/qubes-db-libs-3.2.5-1.fc28.x86_64.rpm
+2018-05-07 03:32:20.020604 +0000 build-fedora3: .         16,576 100%   24.87kB/s    0:00:00  .         16,576 100%   24.87kB/s    0:00:00 (xfr#25, ir-chk=1147/2547)
+2018-05-07 03:32:20.020755 +0000 build-fedora3: <f+++++++++ current-testing/vm/fc28/rpm/qubes-db-libs-debuginfo-3.2.5-1.fc28.x86_64.rpm
+2018-05-07 03:32:20.022900 +0000 build-fedora3: .         27,964 100%   41.82kB/s    0:00:00  .         27,964 100%   41.82kB/s    0:00:00 (xfr#26, ir-chk=1146/2547)
+2018-05-07 03:32:20.023052 +0000 build-fedora3: <f+++++++++ current-testing/vm/fc28/rpm/qubes-db-vm-3.2.5-1.fc28.x86_64.rpm
+2018-05-07 03:32:20.023240 +0000 build-fedora3: .          7,060 100%   10.56kB/s    0:00:00  .          7,060 100%   10.56kB/s    0:00:00 (xfr#27, ir-chk=1145/2547)
+2018-05-07 03:32:20.023354 +0000 build-fedora3: .d..t...... current/
+2018-05-07 03:32:20.023418 +0000 build-fedora3: .d..t...... current/dom0/
+2018-05-07 03:32:20.023443 +0000 build-fedora3: .d..t...... current/dom0/fc20/
+2018-05-07 03:32:20.023472 +0000 build-fedora3: .L..t...... current/dom0/fc20/comps.xml -> ../../../comps-dom0.xml
+2018-05-07 03:32:20.023497 +0000 build-fedora3: .d..t...... current/dom0/fc20/rpm/
+2018-05-07 03:32:20.023518 +0000 build-fedora3: .d..t...... current/dom0/fc23/
+2018-05-07 03:32:20.023546 +0000 build-fedora3: .L..t...... current/dom0/fc23/comps.xml -> ../../../comps-dom0.xml
+2018-05-07 03:32:20.023569 +0000 build-fedora3: .d..t...... current/dom0/fc23/rpm/
+2018-05-07 03:32:20.023593 +0000 build-fedora3: hf..t...... current/dom0/fc23/rpm/qubes-core-dom0-vaio-fixes-1.6.1-1.fc23.x86_64.rpm => current-testing/dom0/fc23/rpm/qubes-core-dom0-vaio-fixes-1.6.1-1.fc23.x86_64.rpm
+2018-05-07 03:32:20.023608 +0000 build-fedora3: .d..t...... current/vm/
+2018-05-07 03:32:20.023622 +0000 build-fedora3: .d..t...... current/vm/centos7/
+2018-05-07 03:32:20.023660 +0000 build-fedora3: .L..t...... current/vm/centos7/comps.xml -> ../../../comps-vm.xml
+2018-05-07 03:32:20.023681 +0000 build-fedora3: .d..t...... current/vm/centos7/rpm/
+2018-05-07 03:32:20.023697 +0000 build-fedora3: <f..t...... current/vm/centos7/rpm/.gitignore
+2018-05-07 03:32:20.023724 +0000 build-fedora3: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#28, ir-chk=1077/2547)
+2018-05-07 03:32:20.023757 +0000 build-fedora3: .d..t...... current/vm/fc22/
+2018-05-07 03:32:20.023786 +0000 build-fedora3: .L..t...... current/vm/fc22/comps.xml -> ../../../comps-vm.xml
+2018-05-07 03:32:20.023803 +0000 build-fedora3: .d..t...... current/vm/fc22/rpm/
+2018-05-07 03:32:20.023817 +0000 build-fedora3: .d..t...... current/vm/fc23/
+2018-05-07 03:32:20.023833 +0000 build-fedora3: .L..t...... current/vm/fc23/comps.xml -> ../../../comps-vm.xml
+2018-05-07 03:32:20.025689 +0000 build-fedora3: .d..t...... current/vm/fc23/rpm/
+2018-05-07 03:32:20.026878 +0000 build-fedora3: .d..t...... current/vm/fc24/
+2018-05-07 03:32:20.026914 +0000 build-fedora3: .L..t...... current/vm/fc24/comps.xml -> ../../../comps-vm.xml
+2018-05-07 03:32:20.027958 +0000 build-fedora3: .d..t...... current/vm/fc24/rpm/
+2018-05-07 03:32:20.027990 +0000 build-fedora3: .d..t...... current/vm/fc25/
+2018-05-07 03:32:20.028019 +0000 build-fedora3: .L..t...... current/vm/fc25/comps.xml -> ../../../comps-vm.xml
+2018-05-07 03:32:20.028050 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc25/rpm": Operation not permitted (1)
+2018-05-07 03:32:20.028069 +0000 build-fedora3: .d..t...... current/vm/fc25/rpm/
+2018-05-07 03:32:20.152306 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc26": Operation not permitted (1)
+2018-05-07 03:32:20.152457 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc26/comps.xml": Operation not permitted (1)
+2018-05-07 03:32:20.152549 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc26/rpm": Operation not permitted (1)
+2018-05-07 03:32:20.321314 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing": Operation not permitted (1)
+2018-05-07 03:32:20.321463 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/dom0": Operation not permitted (1)
+2018-05-07 03:32:20.321557 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/dom0/fc20": Operation not permitted (1)
+2018-05-07 03:32:20.321741 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/dom0/fc20/rpm": Operation not permitted (1)
+2018-05-07 03:32:20.321835 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/dom0/fc23": Operation not permitted (1)
+2018-05-07 03:32:20.321915 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/dom0/fc23/rpm": Operation not permitted (1)
+2018-05-07 03:32:20.321993 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm": Operation not permitted (1)
+2018-05-07 03:32:20.322070 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc22": Operation not permitted (1)
+2018-05-07 03:32:20.322148 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc22/rpm": Operation not permitted (1)
+2018-05-07 03:32:20.322225 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc23": Operation not permitted (1)
+2018-05-07 03:32:20.322303 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc23/rpm": Operation not permitted (1)
+2018-05-07 03:32:20.369230 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc24": Operation not permitted (1)
+2018-05-07 03:32:20.369375 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc24/rpm": Operation not permitted (1)
+2018-05-07 03:32:20.445337 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc25": Operation not permitted (1)
+2018-05-07 03:32:20.445486 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc25/rpm": Operation not permitted (1)
+2018-05-07 03:32:20.445578 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc26": Operation not permitted (1)
+2018-05-07 03:32:20.445763 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc26/comps.xml": Operation not permitted (1)
+2018-05-07 03:32:20.535329 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc26/rpm": Operation not permitted (1)
+2018-05-07 03:32:20.535483 +0000 build-fedora3: .d..t...... current/vm/fc26/
+2018-05-07 03:32:20.535621 +0000 build-fedora3: .L..t...... current/vm/fc26/comps.xml -> ../../../comps-vm.xml
+2018-05-07 03:32:20.535858 +0000 build-fedora3: .d..t...... current/vm/fc26/rpm/
+2018-05-07 03:32:20.535974 +0000 build-fedora3: <f..t...... current/vm/fc26/rpm/.gitignore
+2018-05-07 03:32:20.536989 +0000 build-fedora3: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:01 (xfr#29, to-chk=628/2753)
+2018-05-07 03:32:20.537167 +0000 build-fedora3: .d..t...... current/vm/fc27/
+2018-05-07 03:32:20.537295 +0000 build-fedora3: .d..t...... current/vm/fc28/
+2018-05-07 03:32:20.537406 +0000 build-fedora3: .d..t...... security-testing/
+2018-05-07 03:32:20.537518 +0000 build-fedora3: .d..t...... security-testing/dom0/
+2018-05-07 03:32:20.537628 +0000 build-fedora3: .d..t...... security-testing/dom0/fc20/
+2018-05-07 03:32:20.537807 +0000 build-fedora3: .L..t...... security-testing/dom0/fc20/comps.xml -> ../../../comps-dom0.xml
+2018-05-07 03:32:20.537929 +0000 build-fedora3: .d..t...... security-testing/dom0/fc20/rpm/
+2018-05-07 03:32:20.538044 +0000 build-fedora3: .d..t...... security-testing/dom0/fc23/
+2018-05-07 03:32:20.538169 +0000 build-fedora3: .L..t...... security-testing/dom0/fc23/comps.xml -> ../../../comps-dom0.xml
+2018-05-07 03:32:20.538258 +0000 build-fedora3: .d..t...... security-testing/dom0/fc23/rpm/
+2018-05-07 03:32:20.538319 +0000 build-fedora3: .d..t...... security-testing/vm/
+2018-05-07 03:32:20.538380 +0000 build-fedora3: .d..t...... security-testing/vm/centos7/
+2018-05-07 03:32:20.538450 +0000 build-fedora3: .L..t...... security-testing/vm/centos7/comps.xml -> ../../../comps-vm.xml
+2018-05-07 03:32:20.538512 +0000 build-fedora3: .d..t...... security-testing/vm/centos7/rpm/
+2018-05-07 03:32:20.538595 +0000 build-fedora3: <f..t...... security-testing/vm/centos7/rpm/.gitignore
+2018-05-07 03:32:20.538828 +0000 build-fedora3: .              6 100%    5.86kB/s    0:00:00  .              6 100%    5.86kB/s    0:00:00 (xfr#30, to-chk=455/2753)
+2018-05-07 03:32:20.538945 +0000 build-fedora3: .d..t...... security-testing/vm/fc22/
+2018-05-07 03:32:20.539069 +0000 build-fedora3: .L..t...... security-testing/vm/fc22/comps.xml -> ../../../comps-vm.xml
+2018-05-07 03:32:20.539182 +0000 build-fedora3: .d..t...... security-testing/vm/fc22/rpm/
+2018-05-07 03:32:20.539291 +0000 build-fedora3: .d..t...... security-testing/vm/fc23/
+2018-05-07 03:32:20.539407 +0000 build-fedora3: .L..t...... security-testing/vm/fc23/comps.xml -> ../../../comps-vm.xml
+2018-05-07 03:32:20.539519 +0000 build-fedora3: .d..t...... security-testing/vm/fc23/rpm/
+2018-05-07 03:32:20.539625 +0000 build-fedora3: .d..t...... security-testing/vm/fc24/
+2018-05-07 03:32:20.539802 +0000 build-fedora3: .L..t...... security-testing/vm/fc24/comps.xml -> ../../../comps-vm.xml
+2018-05-07 03:32:20.539910 +0000 build-fedora3: .d..t...... security-testing/vm/fc24/rpm/
+2018-05-07 03:32:20.540015 +0000 build-fedora3: .d..t...... security-testing/vm/fc25/
+2018-05-07 03:32:20.540103 +0000 build-fedora3: .L..t...... security-testing/vm/fc25/comps.xml -> ../../../comps-vm.xml
+2018-05-07 03:32:20.540167 +0000 build-fedora3: .d..t...... security-testing/vm/fc25/rpm/
+2018-05-07 03:32:20.540226 +0000 build-fedora3: .d..t...... security-testing/vm/fc26/
+2018-05-07 03:32:20.540294 +0000 build-fedora3: .L..t...... security-testing/vm/fc26/comps.xml -> ../../../comps-vm.xml
+2018-05-07 03:32:20.540355 +0000 build-fedora3: .d..t...... security-testing/vm/fc26/rpm/
+2018-05-07 03:32:20.540459 +0000 build-fedora3: <f..t...... security-testing/vm/fc26/rpm/.gitignore
+2018-05-07 03:32:20.540576 +0000 build-fedora3: .              6 100%    2.93kB/s    0:00:00  .              6 100%    1.95kB/s    0:00:00 (xfr#31, to-chk=69/2753)
+2018-05-07 03:32:20.540688 +0000 build-fedora3: .d..t...... security-testing/vm/fc27/
+2018-05-07 03:32:20.540753 +0000 build-fedora3: .d..t...... security-testing/vm/fc28/
+2018-05-07 03:32:20.631338 +0000 build-fedora3: rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1189) [sender=3.1.3]
+2018-05-07 03:32:21.190841 +0000 build-fedora3: --> Processing repo: r3.2/current/dom0/fc20...
+2018-05-07 03:32:21.482523 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-07 03:32:25.345017 +0000 build-fedora3: --> Processing repo: r3.2/current/dom0/fc23...
+2018-05-07 03:32:25.515071 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-07 03:33:47.992066 +0000 build-fedora3: --> Processing repo: r3.2/current/vm/centos7...
+2018-05-07 03:33:48.089480 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-07 03:33:50.937765 +0000 build-fedora3: --> Processing repo: r3.2/current/vm/fc22...
+2018-05-07 03:33:51.024928 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-07 03:33:54.513670 +0000 build-fedora3: --> Processing repo: r3.2/current/vm/fc23...
+2018-05-07 03:33:54.668484 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-07 03:34:19.425745 +0000 build-fedora3: --> Processing repo: r3.2/current/vm/fc24...
+2018-05-07 03:34:19.532629 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-07 03:34:43.633864 +0000 build-fedora3: --> Processing repo: r3.2/current/vm/fc25...
+2018-05-07 03:34:43.741825 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-07 03:35:00.777513 +0000 build-fedora3: --> Processing repo: r3.2/current/vm/fc26...
+2018-05-07 03:35:00.883248 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-07 03:35:07.913609 +0000 build-fedora3: --> Processing repo: r3.2/current/vm/fc27...
+2018-05-07 03:35:08.015723 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-07 03:35:11.662607 +0000 build-fedora3: --> Processing repo: r3.2/current/vm/fc28...
+2018-05-07 03:35:11.760219 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-07 03:35:15.234288 +0000 build-fedora3: Done.
+2018-05-07 03:35:15.489835 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/dom0/fc20...
+2018-05-07 03:35:15.592619 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-07 03:35:18.819285 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/dom0/fc23...
+2018-05-07 03:35:18.930750 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-07 03:37:54.414287 +0000 build-fedora3: Traceback (most recent call last):
+2018-05-07 03:37:54.414484 +0000 build-fedora3:   File "/usr/local/share/createrepo/genpkgmetadata.py", line 320, in <module>
+2018-05-07 03:37:54.415149 +0000 build-fedora3:     main(sys.argv[1:])
+2018-05-07 03:37:54.415245 +0000 build-fedora3:   File "/usr/local/share/createrepo/genpkgmetadata.py", line 292, in main
+2018-05-07 03:37:54.415312 +0000 build-fedora3:     mdgen.doRepoMetadata()
+2018-05-07 03:37:54.415393 +0000 build-fedora3:   File "/usr/local/lib/python2.7/site-packages/createrepo/__init__.py", line 1230, in doRepoMetadata
+2018-05-07 03:37:54.415459 +0000 build-fedora3:     while data.read(zfo, 2**16):
+2018-05-07 03:37:54.415529 +0000 build-fedora3:   File "/usr/local/lib/python2.7/site-packages/yum/misc.py", line 264, in read
+2018-05-07 03:37:54.415629 +0000 build-fedora3:     data = fo.read(size)
+2018-05-07 03:37:54.415794 +0000 build-fedora3:   File "/usr/local/lib/python2.7/gzip.py", line 268, in read
+2018-05-07 03:37:54.415856 +0000 build-fedora3:     self._read(readsize)
+2018-05-07 03:37:54.415921 +0000 build-fedora3:   File "/usr/local/lib/python2.7/gzip.py", line 319, in _read
+2018-05-07 03:37:54.415985 +0000 build-fedora3:     uncompress = self.decompress.decompress(buf)
+2018-05-07 03:37:54.416054 +0000 build-fedora3: zlib.error: Error -3 while decompressing: invalid stored block lengths
+2018-05-07 03:37:54.668155 +0000 build-fedora3: --> Processing repo: r3.2/security-testing/dom0/fc20...
+2018-05-07 03:37:54.768402 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-07 03:37:57.862584 +0000 build-fedora3: --> Processing repo: r3.2/security-testing/dom0/fc23...
+2018-05-07 03:37:57.967038 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-07 03:38:22.012351 +0000 build-fedora3: --> Processing repo: r3.2/security-testing/vm/centos7...
+2018-05-07 03:38:22.112023 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-07 03:38:25.051018 +0000 build-fedora3: --> Processing repo: r3.2/security-testing/vm/fc22...
+2018-05-07 03:38:25.149281 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-07 03:38:27.841551 +0000 build-fedora3: --> Processing repo: r3.2/security-testing/vm/fc23...
+2018-05-07 03:38:27.946092 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-07 03:38:41.222286 +0000 build-fedora3: --> Processing repo: r3.2/security-testing/vm/fc24...
+2018-05-07 03:38:41.330626 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-07 03:38:54.805382 +0000 build-fedora3: --> Processing repo: r3.2/security-testing/vm/fc25...
+2018-05-07 03:38:54.908455 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-07 03:39:08.400204 +0000 build-fedora3: --> Processing repo: r3.2/security-testing/vm/fc26...
+2018-05-07 03:39:08.507016 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-07 03:39:15.715847 +0000 build-fedora3: --> Processing repo: r3.2/security-testing/vm/fc27...
+2018-05-07 03:39:15.788600 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-07 03:39:18.156620 +0000 build-fedora3: --> Processing repo: r3.2/security-testing/vm/fc28...
+2018-05-07 03:39:18.256148 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-07 03:39:21.246120 +0000 build-fedora3: Done.
+2018-05-07 03:39:21.251006 +0000 build-fedora3: ~/builder-r3.2/qubes-src/linux-yum
+2018-05-07 03:39:21.258399 +0000 build-fedora3: Makefile:689: update target 'update-repo-current-testing' due to: internal-update-repo-current-testing.vm.fc25 internal-update-repo-current-testing.vm.fc26 internal-update-repo-current-testing.vm.fc27 internal-update-repo-current-testing.vm.fc28 post-update-repo-current-testing
+2018-05-07 03:39:21.258600 +0000 build-fedora3: true
+2018-05-07 03:39:21.266405 +0000 build-fedora3: > done
+2018-05-07 03:40:21.302009 +0000 > closing log
