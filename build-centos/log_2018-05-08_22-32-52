@@ -1,0 +1,642 @@
+2018-05-08 22:32:52.652120 +0000 > starting log
+2018-05-08 22:32:52.654168 +0000 build-centos: > starting build with log
+2018-05-08 22:32:52.654229 +0000 build-centos: >> make args: DISTS_VM= centos7 DIST_DOM0= BUILD_LOGS_URL= vmm-xen-vm-centos7=https://github.com/QubesOS/build-logs/tree/master/build-centos/log_2018-05-08_21-54-58 GIT_URL_vmm_xen=https://github.com/QubesOS/qubes-vmm-xen sign-all update-repo-current-testing
+2018-05-08 22:32:52.654256 +0000 build-centos: >> MAKEFLAGS=
+2018-05-08 22:32:52.654279 +0000 build-centos: >> COMPONENTS=vmm-xen
+2018-05-08 22:32:52.654300 +0000 build-centos: >> DISTS_VM=
+2018-05-08 22:32:52.654320 +0000 build-centos: >> DIST_DOM0=
+2018-05-08 22:32:52.654344 +0000 build-centos: >> qubes-builder 62b154ae585748c59d185a9ffcdd3d0098724783
+2018-05-08 22:32:52.654371 +0000 build-centos: >> qubes-builder/qubes-src/vmm-xen 487572a2ffd962bd1eb9e024195c3305aed335d6
+2018-05-08 22:32:52.789032 +0000 build-centos: !! gc.tar.gz
+2018-05-08 22:32:52.789088 +0000 build-centos: !! gmp-4.3.2.tar.bz2
+2018-05-08 22:32:52.789118 +0000 build-centos: !! gmp-4.3.2.tar.bz2.sig
+2018-05-08 22:32:52.789144 +0000 build-centos: !! grub-0.97.tar.gz
+2018-05-08 22:32:52.789168 +0000 build-centos: !! grub-0.97.tar.gz.sig
+2018-05-08 22:32:52.789191 +0000 build-centos: !! lwip-1.3.0.tar.gz
+2018-05-08 22:32:52.789214 +0000 build-centos: !! lwip-1.3.0.tar.gz.sig
+2018-05-08 22:32:52.789237 +0000 build-centos: !! newlib-1.16.0.tar.gz
+2018-05-08 22:32:52.789261 +0000 build-centos: !! ocaml-3.11.0.tar.gz
+2018-05-08 22:32:52.789286 +0000 build-centos: !! pciutils-2.2.9.tar.bz2
+2018-05-08 22:32:52.789316 +0000 build-centos: !! pkgs/centos7/x86_64/xen-4.6.6-37.el7.centos.x86_64.rpm
+2018-05-08 22:32:52.789345 +0000 build-centos: !! pkgs/centos7/x86_64/xen-4.6.6-38.el7.centos.x86_64.rpm
+2018-05-08 22:32:52.789372 +0000 build-centos: !! pkgs/centos7/x86_64/xen-4.6.6-39.centos7.x86_64.rpm
+2018-05-08 22:32:52.789400 +0000 build-centos: !! pkgs/centos7/x86_64/xen-4.6.6-40.centos7.x86_64.rpm
+2018-05-08 22:32:52.789456 +0000 build-centos: !! pkgs/centos7/x86_64/xen-debuginfo-4.6.6-37.el7.centos.x86_64.rpm
+2018-05-08 22:32:52.789486 +0000 build-centos: !! pkgs/centos7/x86_64/xen-debuginfo-4.6.6-38.el7.centos.x86_64.rpm
+2018-05-08 22:32:52.789514 +0000 build-centos: !! pkgs/centos7/x86_64/xen-debuginfo-4.6.6-39.centos7.x86_64.rpm
+2018-05-08 22:32:52.789541 +0000 build-centos: !! pkgs/centos7/x86_64/xen-debuginfo-4.6.6-40.centos7.x86_64.rpm
+2018-05-08 22:32:52.789568 +0000 build-centos: !! pkgs/centos7/x86_64/xen-devel-4.6.6-37.el7.centos.x86_64.rpm
+2018-05-08 22:32:52.789602 +0000 build-centos: !! pkgs/centos7/x86_64/xen-devel-4.6.6-38.el7.centos.x86_64.rpm
+2018-05-08 22:32:52.789629 +0000 build-centos: !! pkgs/centos7/x86_64/xen-devel-4.6.6-39.centos7.x86_64.rpm
+2018-05-08 22:32:52.789655 +0000 build-centos: !! pkgs/centos7/x86_64/xen-devel-4.6.6-40.centos7.x86_64.rpm
+2018-05-08 22:32:52.789680 +0000 build-centos: !! pkgs/centos7/x86_64/xen-doc-4.6.6-37.el7.centos.x86_64.rpm
+2018-05-08 22:32:52.789707 +0000 build-centos: !! pkgs/centos7/x86_64/xen-doc-4.6.6-38.el7.centos.x86_64.rpm
+2018-05-08 22:32:52.789734 +0000 build-centos: !! pkgs/centos7/x86_64/xen-doc-4.6.6-39.centos7.x86_64.rpm
+2018-05-08 22:32:52.789759 +0000 build-centos: !! pkgs/centos7/x86_64/xen-doc-4.6.6-40.centos7.x86_64.rpm
+2018-05-08 22:32:52.789785 +0000 build-centos: !! pkgs/centos7/x86_64/xen-hvm-4.6.6-37.el7.centos.x86_64.rpm
+2018-05-08 22:32:52.789810 +0000 build-centos: !! pkgs/centos7/x86_64/xen-hvm-4.6.6-38.el7.centos.x86_64.rpm
+2018-05-08 22:32:52.789836 +0000 build-centos: !! pkgs/centos7/x86_64/xen-hvm-4.6.6-39.centos7.x86_64.rpm
+2018-05-08 22:32:52.789862 +0000 build-centos: !! pkgs/centos7/x86_64/xen-hvm-4.6.6-40.centos7.x86_64.rpm
+2018-05-08 22:32:52.789890 +0000 build-centos: !! pkgs/centos7/x86_64/xen-hypervisor-4.6.6-37.el7.centos.x86_64.rpm
+2018-05-08 22:32:52.789918 +0000 build-centos: !! pkgs/centos7/x86_64/xen-hypervisor-4.6.6-38.el7.centos.x86_64.rpm
+2018-05-08 22:32:52.789945 +0000 build-centos: !! pkgs/centos7/x86_64/xen-hypervisor-4.6.6-39.centos7.x86_64.rpm
+2018-05-08 22:32:52.789995 +0000 build-centos: !! pkgs/centos7/x86_64/xen-hypervisor-4.6.6-40.centos7.x86_64.rpm
+2018-05-08 22:32:52.790022 +0000 build-centos: !! pkgs/centos7/x86_64/xen-libs-4.6.6-37.el7.centos.x86_64.rpm
+2018-05-08 22:32:52.790048 +0000 build-centos: !! pkgs/centos7/x86_64/xen-libs-4.6.6-38.el7.centos.x86_64.rpm
+2018-05-08 22:32:52.790072 +0000 build-centos: !! pkgs/centos7/x86_64/xen-libs-4.6.6-39.centos7.x86_64.rpm
+2018-05-08 22:32:52.790099 +0000 build-centos: !! pkgs/centos7/x86_64/xen-libs-4.6.6-40.centos7.x86_64.rpm
+2018-05-08 22:32:52.790127 +0000 build-centos: !! pkgs/centos7/x86_64/xen-licenses-4.6.6-37.el7.centos.x86_64.rpm
+2018-05-08 22:32:52.790154 +0000 build-centos: !! pkgs/centos7/x86_64/xen-licenses-4.6.6-38.el7.centos.x86_64.rpm
+2018-05-08 22:32:52.790180 +0000 build-centos: !! pkgs/centos7/x86_64/xen-licenses-4.6.6-39.centos7.x86_64.rpm
+2018-05-08 22:32:52.790208 +0000 build-centos: !! pkgs/centos7/x86_64/xen-licenses-4.6.6-40.centos7.x86_64.rpm
+2018-05-08 22:32:52.790234 +0000 build-centos: !! pkgs/centos7/x86_64/xen-qemu-tools-4.6.6-37.el7.centos.x86_64.rpm
+2018-05-08 22:32:52.790262 +0000 build-centos: !! pkgs/centos7/x86_64/xen-qemu-tools-4.6.6-38.el7.centos.x86_64.rpm
+2018-05-08 22:32:52.790288 +0000 build-centos: !! pkgs/centos7/x86_64/xen-qemu-tools-4.6.6-39.centos7.x86_64.rpm
+2018-05-08 22:32:52.790314 +0000 build-centos: !! pkgs/centos7/x86_64/xen-qemu-tools-4.6.6-40.centos7.x86_64.rpm
+2018-05-08 22:32:52.790342 +0000 build-centos: !! pkgs/centos7/x86_64/xen-qubes-vm-4.6.6-37.el7.centos.x86_64.rpm
+2018-05-08 22:32:52.790368 +0000 build-centos: !! pkgs/centos7/x86_64/xen-qubes-vm-4.6.6-38.el7.centos.x86_64.rpm
+2018-05-08 22:32:52.790394 +0000 build-centos: !! pkgs/centos7/x86_64/xen-qubes-vm-4.6.6-39.centos7.x86_64.rpm
+2018-05-08 22:32:52.790420 +0000 build-centos: !! pkgs/centos7/x86_64/xen-qubes-vm-4.6.6-40.centos7.x86_64.rpm
+2018-05-08 22:32:52.790470 +0000 build-centos: !! pkgs/centos7/x86_64/xen-runtime-4.6.6-37.el7.centos.x86_64.rpm
+2018-05-08 22:32:52.790497 +0000 build-centos: !! pkgs/centos7/x86_64/xen-runtime-4.6.6-38.el7.centos.x86_64.rpm
+2018-05-08 22:32:52.790523 +0000 build-centos: !! pkgs/centos7/x86_64/xen-runtime-4.6.6-39.centos7.x86_64.rpm
+2018-05-08 22:32:52.790549 +0000 build-centos: !! pkgs/centos7/x86_64/xen-runtime-4.6.6-40.centos7.x86_64.rpm
+2018-05-08 22:32:52.790572 +0000 build-centos: !! pkgs/centos7/xen.spec.list
+2018-05-08 22:32:52.790595 +0000 build-centos: !! polarssl-1.1.4-gpl.tgz
+2018-05-08 22:32:52.790617 +0000 build-centos: !! tboot-20090330.tar.gz
+2018-05-08 22:32:52.790638 +0000 build-centos: !! tpm_emulator-0.7.4.tar.gz
+2018-05-08 22:32:52.790659 +0000 build-centos: !! xen-4.6.6.tar.gz
+2018-05-08 22:32:52.790680 +0000 build-centos: !! xen-4.6.6.tar.gz.sig
+2018-05-08 22:32:52.790703 +0000 build-centos: !! zlib-1.2.3.tar.gz
+2018-05-08 22:32:52.939324 +0000 build-centos: 69a9554d2d213392512d4ce41ec8c4993557e65c2b3dc4f568ac18695421cc08b7677c25f9a0ce03e94fb5e68a298fcac7ed09fb90007a2c998ff6ef78d3c651  gc.tar.gz
+2018-05-08 22:32:52.975259 +0000 build-centos: 2e0b0fd23e6f10742a5517981e5171c6e88b0a93c83da701b296f5c0861d72c19782daab589a7eac3f9032152a0fc7eff7f5362db8fccc4859564a9aa82329cf  gmp-4.3.2.tar.bz2
+2018-05-08 22:32:52.975635 +0000 build-centos: 954408a918d425c89e3b5fce52aa77b94af9e0929e11216dc65b47af0eb258f38ec6ca6e8680675f827a2408439c83d4fab161d8a5684d4617bef98bdd2e3992  gmp-4.3.2.tar.bz2.sig
+2018-05-08 22:32:52.988269 +0000 build-centos: c2bc9ffc8583aeae71cee9ddcc4418969768d4e3764d47307da54f93981c0109fb07d84b061b3a3628bd00ba4d14a54742bc04848110eb3ae8ca25dbfbaabadb  grub-0.97.tar.gz
+2018-05-08 22:32:52.990402 +0000 build-centos: 1c9365859a3f9220633d12ca6849e7f67c25acd0306111c602d371b634f734e4daf428ea372237679b07b30a4d115fcfea666adfc7bf79e4d786f4754a1f04c1  grub-0.97.tar.gz.sig
+2018-05-08 22:32:52.993745 +0000 build-centos: 1465b58279af1647f909450e394fe002ca165f0ff4a0254bfa9fe0e64316f50facdde2729d79a4e632565b4500cf4d6c74192ac0dd3bc9fe09129bbd67ba089d  lwip-1.3.0.tar.gz
+2018-05-08 22:32:52.995820 +0000 build-centos: 57a5e2200b822a7215446fab87ef62533b8790cd43fb5f119f5d7dd30c91b7be4eb7e4a00d951a5bddecf26b9f12f34ef55b8fc2dc37b46f006ff368f8618044  lwip-1.3.0.tar.gz.sig
+2018-05-08 22:32:53.074779 +0000 build-centos: 40eb96bbc6736a16b6399e0cdb73e853d0d90b685c967e77899183446664d64570277a633fdafdefc351b46ce210a99115769a1d9f47ac749d7e82837d4d1ac3  newlib-1.16.0.tar.gz
+2018-05-08 22:32:53.095382 +0000 build-centos: 61cacf14d1d90a11bd0599e7ad323350f3a3f30afb4ef5eaadc2108e5d6007dafbb83e955435ee49eeb0130955215923fa72d4e56196bec2396c166a54641955  ocaml-3.11.0.tar.gz
+2018-05-08 22:32:53.099735 +0000 build-centos: 2b3d98d027e46d8c08037366dde6f0781ca03c610ef2b380984639e4ef39899ed8d8b8e4cd9c9dc54df101279b95879bd66bfd4d04ad07fef41e847ea7ae32b5  pciutils-2.2.9.tar.bz2
+2018-05-08 22:32:53.106404 +0000 build-centos: 07f6f79a4c38fbc6040f1903550f40a4bc3a3ebe7a27ed9326094666b4875d5c15973d68f2716adb1ecc40d51ca27f58c5452d8e1ce898290d4c730497f1d31d  pkgs/centos7/x86_64/xen-4.6.6-37.el7.centos.x86_64.rpm
+2018-05-08 22:32:53.113950 +0000 build-centos: ed296c018640eeee725a289eebad3f609e94c5e0c98111f23e0bb60c8c3a3737bb8624598b11d8846d5c718847c2f02ab30a11b812a36332869a40de357370cc  pkgs/centos7/x86_64/xen-4.6.6-38.el7.centos.x86_64.rpm
+2018-05-08 22:32:53.119675 +0000 build-centos: fcc30f677bcfb81c775c95240e936dd5877d5a8773f9fb4e7dd8a2192c7af2665ceb40b6f8be91d436971b71a700a96fd9d8b7d5be826fc736772414b2bb8d61  pkgs/centos7/x86_64/xen-4.6.6-39.centos7.x86_64.rpm
+2018-05-08 22:32:53.120680 +0000 build-centos: ea6e8266f532edaa3578d48ebbbc2eec3bd33d5865e798ea2d0e42a22e2fa6d3d83dc951c2c3b0b03f85a0bf07e5520ef08c4736b2889397af912c2c154ec4dc  pkgs/centos7/x86_64/xen-4.6.6-40.centos7.x86_64.rpm
+2018-05-08 22:32:53.191106 +0000 build-centos: 5f5021575f0f18694d945dbb27e3ae709e8e802861792a733a2ba4659e0447d59f304412e150eb264a6b3508f084c8b0362379594126b79ad3c413c83ec528e1  pkgs/centos7/x86_64/xen-debuginfo-4.6.6-37.el7.centos.x86_64.rpm
+2018-05-08 22:32:53.284376 +0000 build-centos: af632fc51ce6030a40955f4aa976ce1527e9d73fc64c0fa1aeff4af0462eaa3a32f2bbebd63b9744dc7cc82dc2ef6422848dc1c97f7e916de480c6d9471272d7  pkgs/centos7/x86_64/xen-debuginfo-4.6.6-38.el7.centos.x86_64.rpm
+2018-05-08 22:32:53.361235 +0000 build-centos: b00815bcadf61fd1c2aa7d8463caa23a3f2c38461c436c18210c5e7935598e1c3a8699b0884b6055c3e6076af946a62bcdb161f3e5812e95f8a8c02ff3b2c8cf  pkgs/centos7/x86_64/xen-debuginfo-4.6.6-39.centos7.x86_64.rpm
+2018-05-08 22:32:53.400129 +0000 build-centos: 3b2361704c3ef9b0ddcf877db0cb2155e02164d442687467121079beeecedf82e3f703cdd2ba781dd270f5cf235e08cf3b36f9c9d7c20ba08b5721965fb718e3  pkgs/centos7/x86_64/xen-debuginfo-4.6.6-40.centos7.x86_64.rpm
+2018-05-08 22:32:53.417251 +0000 build-centos: 8f043e8220c3b9062560f0feaf701bcca5f04e05684cf7c1d317007bbaff63640fb1bc43f66d837fcfdc817e47d51c6123eb0ac7084a9977fd77bc09400b4949  pkgs/centos7/x86_64/xen-devel-4.6.6-37.el7.centos.x86_64.rpm
+2018-05-08 22:32:53.418256 +0000 build-centos: 25cc2cec32b3ce50e28413b56e5258bcd3a4c685c430de6fa84d91bb666e94890b87199a0be94dd87b2374aaaacc7a9aacce924f959f064e6d4ccf77c27346d7  pkgs/centos7/x86_64/xen-devel-4.6.6-38.el7.centos.x86_64.rpm
+2018-05-08 22:32:53.426375 +0000 build-centos: d95e368e2e084cf475ee7fc1b4cef1c328133268d8fe6c827c8b1fe31d28eda2b5f503624ff7d3a4acfc847ff631b9c55d490c36c889a0cc9156da9860f4fc52  pkgs/centos7/x86_64/xen-devel-4.6.6-39.centos7.x86_64.rpm
+2018-05-08 22:32:53.428872 +0000 build-centos: e9f8110f502dae1dcb5a2f6ebeed5b0c286428ec6212071b1b800bb4ce96195328df3101746f80d6c2d7912407c74d33f9a00cf862c80859fbe9fd3eca76324f  pkgs/centos7/x86_64/xen-devel-4.6.6-40.centos7.x86_64.rpm
+2018-05-08 22:32:53.439135 +0000 build-centos: 008c426a241a8f1dadc0e98cd2109b7e953eadd3b4308d56835d5b3053fd0d2c2f239b1346f4c65479b67ba7d913cb9fbcfb31d7d2c6f7452164864f85b937c4  pkgs/centos7/x86_64/xen-doc-4.6.6-37.el7.centos.x86_64.rpm
+2018-05-08 22:32:53.444628 +0000 build-centos: 5cfa29cde350b63d48605bc5c2bb854736298e6f72d0a6fbecdbd7c32b1b8fe0ddae1d6cf05c68f6dfad20638650c5415e09d1a3738f1f8682ebfcf6c4f47b3e  pkgs/centos7/x86_64/xen-doc-4.6.6-38.el7.centos.x86_64.rpm
+2018-05-08 22:32:53.448253 +0000 build-centos: 3168eaa9b307c3c0b2d113eb5106bc96d2827f4f1b90aa2325a53cb93b067f40a69730e6bd3ac0e3bda742a2b93a23f3340c597587c33c4d26ef9ccad4e64b99  pkgs/centos7/x86_64/xen-doc-4.6.6-39.centos7.x86_64.rpm
+2018-05-08 22:32:53.449766 +0000 build-centos: c10620658d58abdb8dcb7c3880898dfca40ab863b17d30e1373609be60db7fca72d65a766424abe54436ccb33c1678e8474e453e04b59473d51c316958cb0bab  pkgs/centos7/x86_64/xen-doc-4.6.6-40.centos7.x86_64.rpm
+2018-05-08 22:32:53.503556 +0000 build-centos: 4d4ec6b70366a16136b253dee87d086c46e0ee56259620079354e212b767e8271afdd6932641eaa16a97e31b27e1371012a7e7c3d9d2da4072c8200cd9747d87  pkgs/centos7/x86_64/xen-hvm-4.6.6-37.el7.centos.x86_64.rpm
+2018-05-08 22:32:53.566441 +0000 build-centos: 1092750fdd73eb4d432bbf129226301893971ada789a11e941ba09093e4085a8b5b4f7412d9ce68f2708c50ae923bca55497116bb2100973d92e7dfbb6934a7c  pkgs/centos7/x86_64/xen-hvm-4.6.6-38.el7.centos.x86_64.rpm
+2018-05-08 22:32:53.640041 +0000 build-centos: ee70df2571da811820086704802008d77f75e50c59dac39c4fcac63eedd9ec5c53c9e1de8e02d4975a91de01d4966937e75eb2d7f42da9b88306e04d93af6f4b  pkgs/centos7/x86_64/xen-hvm-4.6.6-39.centos7.x86_64.rpm
+2018-05-08 22:32:53.701601 +0000 build-centos: 2d72784fb6d327229461a553c26c1bd6ecd6e998f79b1bdb1ac20072274ef177b1e64454c0e5bfddf34e7c5873d03ae42c48440f670f5e3f6b55137f6440e889  pkgs/centos7/x86_64/xen-hvm-4.6.6-40.centos7.x86_64.rpm
+2018-05-08 22:32:53.717401 +0000 build-centos: 7159f71e3d9f7b5de70746dd79b84583e611007148c6b36519846a8add4fc9e1496c690fcb6d22531dda747b144ca88f3fe1e28baee3dae4fdb8ec79f2b877ba  pkgs/centos7/x86_64/xen-hypervisor-4.6.6-37.el7.centos.x86_64.rpm
+2018-05-08 22:32:53.743967 +0000 build-centos: 78354967b9335adfc4e9cfb00134e5cf30dcc14b48cca62034688f325ac3cacdb763126a4580a161fe2a2e7b896a534f7e1e62461bfcd330b9292b7191495204  pkgs/centos7/x86_64/xen-hypervisor-4.6.6-38.el7.centos.x86_64.rpm
+2018-05-08 22:32:53.809241 +0000 build-centos: c2a58906a6f715a12bc6a6f5cd7949f5d91b5885660b2a3e8523e1b1360e6e35bc25dc6b932f5e2b43fa6c0588306b318d023996064578605ed7776b8148dbb8  pkgs/centos7/x86_64/xen-hypervisor-4.6.6-39.centos7.x86_64.rpm
+2018-05-08 22:32:53.828043 +0000 build-centos: 3d602f4cc7ad1466a1550ba004bceb1fbd450a792b150708d95e9b18c774504b4c74f68b0604c370bcdaff93a9a04ec5424158ddba880a85799e031ceb03d5df  pkgs/centos7/x86_64/xen-hypervisor-4.6.6-40.centos7.x86_64.rpm
+2018-05-08 22:32:53.832550 +0000 build-centos: b43672c5a6df0a102bd365688369f2b00de72e758e13451ce464f4ff0f0da8e0d39cc57af02020950f3271148a7b6aa0979a02bc7ad66c34fe84c7c349767ec3  pkgs/centos7/x86_64/xen-libs-4.6.6-37.el7.centos.x86_64.rpm
+2018-05-08 22:32:53.839367 +0000 build-centos: d85ba4beb93d7f330e1463848831f43b1fd6d9086d9e359fcf23859ac8546acafa7f356c5fde48e06d470dd13f71d7f86e2deb9434903226fe2933d4b5726748  pkgs/centos7/x86_64/xen-libs-4.6.6-38.el7.centos.x86_64.rpm
+2018-05-08 22:32:53.844613 +0000 build-centos: d917909f08ca521f4e949a7fd64f642971c58c615ea3642d562e1805e9d3b13b672ba592d43c64f11f691af444ba8024721724de08ef0b9a3def1f0bf36e5d86  pkgs/centos7/x86_64/xen-libs-4.6.6-39.centos7.x86_64.rpm
+2018-05-08 22:32:53.846981 +0000 build-centos: 707b9f513af68401de6f2a1020aa9572dc76f1d36c349a2544c0940a6319cc1f00b2967d96b79d1e2d22be28a0f0a998a9db4364e58a59eecd2aeb6f9ed06856  pkgs/centos7/x86_64/xen-libs-4.6.6-40.centos7.x86_64.rpm
+2018-05-08 22:32:53.851982 +0000 build-centos: 97b0a9e1f307086be1a66290414729e9ff1b433a2469242b86f76d9225623ee29da3e936202fd2b3aee573ad1ede59aa6e586915c2e688a8350db8b0ccfa6f63  pkgs/centos7/x86_64/xen-licenses-4.6.6-37.el7.centos.x86_64.rpm
+2018-05-08 22:32:53.855155 +0000 build-centos: 3b81f77256a768df22cf64dd4a1c6330fc345265a87e2c295c922627d6c90dbddc2ccb9baad14ea0319bcc210de81f071a60933f8d16dd2d712b213a5ef07b25  pkgs/centos7/x86_64/xen-licenses-4.6.6-38.el7.centos.x86_64.rpm
+2018-05-08 22:32:53.858974 +0000 build-centos: 42b3cc8db1e5dadc901975e8af9c77bdec36a253ce03f9ab0f4e0d5b8de12995e96973d3656eb139c65ff420c104dd52aa1459bc06215098ec1450a4c5a97dc8  pkgs/centos7/x86_64/xen-licenses-4.6.6-39.centos7.x86_64.rpm
+2018-05-08 22:32:53.860638 +0000 build-centos: 8b66b8d8b00412207864b5b40a6c1c42208a03f2053a172e910509cd1c0f2c4215447d68390622252f35eca29748f6eb4ab246cb43ca7d187448c72d384c9e27  pkgs/centos7/x86_64/xen-licenses-4.6.6-40.centos7.x86_64.rpm
+2018-05-08 22:32:53.860725 +0000 build-centos: 5c83eebcb229d47a88398669b6fe69aee1a7cb2fff383df096192895205f1275f5f6c1550dfebc84a2c739b45c1e6a15caf24c83588a040b67b30b16c577eb84  pkgs/centos7/x86_64/xen-qemu-tools-4.6.6-37.el7.centos.x86_64.rpm
+2018-05-08 22:32:53.861443 +0000 build-centos: 241c9bb3dbc6c7ad856bb5e3447d61b13a4dfad9d242c70daf253b72b7ebb87f071ab63888b36f36594bfe60a778dd0bde9daa86a46137e9fa741fe03338ef0a  pkgs/centos7/x86_64/xen-qemu-tools-4.6.6-38.el7.centos.x86_64.rpm
+2018-05-08 22:32:53.892358 +0000 build-centos: 62fdbb7ddd5701c88b01b0200a66bec594bfa432b4a3f31fed6e73fe4aa10975bcac07210ccf55801adbd845c9c9db8725d0222f867fc8b4567b51b0fed18f38  pkgs/centos7/x86_64/xen-qemu-tools-4.6.6-39.centos7.x86_64.rpm
+2018-05-08 22:32:53.892449 +0000 build-centos: 569a94e9c90edc366fa92fee3fa27b5baeb884f9e5eabbb8ec8f517d861b414cb74881c7ceae716283216be303be638ab618548e311a68bbebfc960542bf107b  pkgs/centos7/x86_64/xen-qemu-tools-4.6.6-40.centos7.x86_64.rpm
+2018-05-08 22:32:53.896116 +0000 build-centos: 91af4266811e8846128c787e85b473b2bd2fc0d8eb53cd80d10f64ba1e193fedf97bc0df79570509d2a8e419be2313aeb8c719d2c23010c6b508214f0a3f7827  pkgs/centos7/x86_64/xen-qubes-vm-4.6.6-37.el7.centos.x86_64.rpm
+2018-05-08 22:32:53.899556 +0000 build-centos: 5a43db71916ef19c4a16fd862f763480a07fa7f3502eff7332706a989ca2c69c90ac51232f34b229ff8fdd17e612983c823997bba03165ac26ab2dd1cefd8746  pkgs/centos7/x86_64/xen-qubes-vm-4.6.6-38.el7.centos.x86_64.rpm
+2018-05-08 22:32:53.903697 +0000 build-centos: 25e6f3748411df911478285432a512b39671a2935a5f817c75e43542d363ef335db36b9182a30f7ea04b2761505b7290cc0e9a570621136b2243e113b0cd8fba  pkgs/centos7/x86_64/xen-qubes-vm-4.6.6-39.centos7.x86_64.rpm
+2018-05-08 22:32:53.905235 +0000 build-centos: ac27a936f016003b62f8d97ce1996a840c14ed1fbf57ba6b988c5ba8a4254dc29e998bb6d039e9c3eb5c0b8a3a973c60351a51dbb074238ec7202768f50a975b  pkgs/centos7/x86_64/xen-qubes-vm-4.6.6-40.centos7.x86_64.rpm
+2018-05-08 22:32:54.006596 +0000 build-centos: 68c35d87d6393227226923b3560cc694b583919a0e5101d5db58100fbb1421a642481c6b4bf0a19ba83964c29ad2fb4044c650f85457dfe1902ba6e8f2f6241e  pkgs/centos7/x86_64/xen-runtime-4.6.6-37.el7.centos.x86_64.rpm
+2018-05-08 22:32:54.114761 +0000 build-centos: e8152a88c447ce8f94aa7a43e23827ceaa069ab6b6c6d421a312a3869b8e1b8cf1beafcefc2d9847964dfe5093ebed13712ad90c1527ed9d2ec4cce41863ae04  pkgs/centos7/x86_64/xen-runtime-4.6.6-38.el7.centos.x86_64.rpm
+2018-05-08 22:32:54.213906 +0000 build-centos: 5fba11dad0291c068d33d6860e42e77cf145e03c589d2120aede5bc121a3520e28fb45a504f3daaab0832a9be928c437862249e707d8d997d174d1f9995e7a15  pkgs/centos7/x86_64/xen-runtime-4.6.6-39.centos7.x86_64.rpm
+2018-05-08 22:32:54.239689 +0000 build-centos: 16414b49aa50039a18e769d264ffc3c486dca46e30988b736062c4e5ad61f35cbe2419430ce4d76dce78aa65a302f0e3bca73820931b48241d0e95a135ea6ec5  pkgs/centos7/x86_64/xen-runtime-4.6.6-40.centos7.x86_64.rpm
+2018-05-08 22:32:54.239760 +0000 build-centos: 3156cdd154fa6884c7bb68c76fdfc61db5ca2bfff09abc8d78535a521800ea9e350f45dd119d97f290717417059c6d7d669f92f58b1be70b63ca4eb32eccf256  pkgs/centos7/xen.spec.list
+2018-05-08 22:32:54.243447 +0000 build-centos: 88da614e4d3f4409c4fd3bb3e44c7587ba051e3fed4e33d526069a67e8180212e1ea22da984656f50e290049f60ddca65383e5983c0f8884f648d71f698303ad  polarssl-1.1.4-gpl.tgz
+2018-05-08 22:32:54.247818 +0000 build-centos: faa3af2ef1241fd908da6fb7f826dee0dad39de697fe14a35b2582a0b0baae29b41e824a0737b57809177b1fe09fdd73fd41a54e59ae98c2be77bd7dfccf93e6  tboot-20090330.tar.gz
+2018-05-08 22:32:54.266996 +0000 build-centos: 4928b5b82f57645be9408362706ff2c4d9baa635b21b0d41b1c82930e8c60a759b1ea4fa74d7e6c7cae1b7692d006aa5cb72df0c3b88bf049779aa2b566f9d35  tpm_emulator-0.7.4.tar.gz
+2018-05-08 22:32:54.458294 +0000 build-centos: 4683fe6c44dce3a6f9ff410d026f39094ccd6937ea0052f08ef5e066172ee840548322654cc15d7ded9f5bce10d43b5e46f6a04f16ef3c03ea3ba2cc2f7724ec  xen-4.6.6.tar.gz
+2018-05-08 22:32:54.460083 +0000 build-centos: 88e62b753d90b405f98ce62a382ba70cb0eba5a4c0c1a6d5c8419aa5a89fe1d0196b120e7f54d6a0dd3c50acf4cc7096678f83158540d420b430ba53f803f710  xen-4.6.6.tar.gz.sig
+2018-05-08 22:32:54.473519 +0000 build-centos: 021b958fcd0d346c4ba761bcf0cc40f3522de6186cf5a0a6ea34a70504ce9622b1c2626fce40675bc8282cf5f5ade18473656abc38050f72f5d6480507a2106e  zlib-1.2.3.tar.gz
+2018-05-08 22:32:54.855918 +0000 build-centos: >> qubes-builder/qubes-src/vmm-xen/core-vchan-xen 398db79c88e764ee038ffd112709f131ab25c0e9
+2018-05-08 22:32:55.577662 +0000 build-centos: >> qubes-builder/qubes-src/vmm-xen/gui-agent-xen-hvm-stubdom 5f57a593f3ff714241258ee4d715b5c075e4211b
+2018-05-08 22:32:55.980895 +0000 build-centos: >> qubes-builder/qubes-src/vmm-xen/gui-common c611481422aeff25feb0ffaf08cfe6139e358f6c
+2018-05-08 22:32:56.355253 +0000 build-centos: ================================================================================
+2018-05-08 22:32:56.355311 +0000 build-centos:                            B U I L D   I N F O                                  
+2018-05-08 22:32:56.355342 +0000 build-centos: Items in red indicate it was automatically generated by configuration file(s)
+2018-05-08 22:32:56.355370 +0000 build-centos: Items in white indicate it was automatically removed by configuration file(s)
+2018-05-08 22:32:56.355397 +0000 build-centos: ================================================================================
+2018-05-08 22:32:56.355416 +0000 build-centos: DISTS_VM:
+2018-05-08 22:32:56.395413 +0000 build-centos:      centos7,
+2018-05-08 22:32:56.397588 +0000 build-centos: DISTS_ALL:
+2018-05-08 22:32:56.407960 +0000 build-centos:      centos7,
+2018-05-08 22:32:56.409275 +0000 build-centos: DIST_DOM0:
+2018-05-08 22:32:56.420407 +0000 build-centos:     
+2018-05-08 22:32:56.422838 +0000 build-centos: BUILDER_PLUGINS:
+2018-05-08 22:32:56.433097 +0000 build-centos:      builder-rpm, mgmt-salt, mgmt-salt, builder-github,
+2018-05-08 22:32:56.434397 +0000 build-centos: COMPONENTS:
+2018-05-08 22:32:56.446088 +0000 build-centos:      vmm-xen,
+2018-05-08 22:32:56.448442 +0000 build-centos: GIT_REPOS:
+2018-05-08 22:32:56.460118 +0000 build-centos:      qubes-src/vmm-xen,
+2018-05-08 22:32:56.463821 +0000 build-centos: TEMPLATE:
+2018-05-08 22:32:56.473337 +0000 build-centos:     
+2018-05-08 22:32:56.475856 +0000 build-centos: TEMPLATE_FLAVOR_DIR:
+2018-05-08 22:32:56.487302 +0000 build-centos:     
+2018-05-08 22:32:56.489723 +0000 build-centos: TEMPLATE_ALIAS:
+2018-05-08 22:32:56.501466 +0000 build-centos:      jessie:jessie+standard, jessie+gnome:jessie+gnome+standard, jessie+minimal:jessie+minimal+no-recommends,
+2018-05-08 22:32:56.501559 +0000 build-centos:      stretch:stretch+standard, stretch+gnome:stretch+gnome+standard,
+2018-05-08 22:32:56.501602 +0000 build-centos:      stretch+minimal:stretch+minimal+no-recommends,
+2018-05-08 22:32:56.503809 +0000 build-centos: TEMPLATE_LABEL:
+2018-05-08 22:32:56.514113 +0000 build-centos:      centos7:centos-7, fc20:fedora-20 fc21:fedora-21 fc22:fedora-22 fc23:fedora-23 fc24:fedora-24 fc25:fedora-25
+2018-05-08 22:32:56.514190 +0000 build-centos:      fc26:fedora-26 fc20+minimal:fedora-20-minimal fc21+minimal:fedora-21-minimal fc23+minimal:fedora-23-minimal
+2018-05-08 22:32:56.514244 +0000 build-centos:      fc24+minimal:fedora-24-minimal fc25+minimal:fedora-25-minimal fc26+minimal:fedora-26-minimal
+2018-05-08 22:32:56.514284 +0000 build-centos:      fc25+xfce:fedora-25-xfce fc26+xfce:fedora-26-xfce wheezy:debian-7 wheezy+standard:debian-7 jessie:debian-8
+2018-05-08 22:32:56.514322 +0000 build-centos:      jessie+standard:debian-8 stretch:debian-9 stretch+standard:debian-9 centos7+minimal:centos-7-minimal
+2018-05-08 22:32:56.581982 +0000 build-centos: > running make
+2018-05-08 22:32:56.701266 +0000 build-centos: Makefile:250: target 'sign-vm-centos7-vmm-xen' does not exist
+2018-05-08 22:32:56.701357 +0000 build-centos: if [ -n "vmm-xen" -a "0" -ne 0 ]; then BRANCH=release3.2; branch_var="BRANCH_vmm_xen"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/vmm-xen > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2018-05-08 22:32:56.701411 +0000 build-centos: SIGN_KEY=7771FEAD4528AAC462E67DCA919E9536E37D7327; \
+2018-05-08 22:32:56.701461 +0000 build-centos: sign_key_var="SIGN_KEY_centos7"; \
+2018-05-08 22:32:56.701489 +0000 build-centos: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2018-05-08 22:32:56.701514 +0000 build-centos: if [ -r qubes-src/vmm-xen/Makefile.builder ]; then \
+2018-05-08 22:32:56.701540 +0000 build-centos: .make --no-print-directory -f Makefile.generic \
+2018-05-08 22:32:56.701564 +0000 build-centos: ..DIST=centos7 \
+2018-05-08 22:32:56.701587 +0000 build-centos: ..PACKAGE_SET=vm \
+2018-05-08 22:32:56.701609 +0000 build-centos: ..COMPONENT=vmm-xen \
+2018-05-08 22:32:56.701632 +0000 build-centos: ..SIGN_KEY=$SIGN_KEY \
+2018-05-08 22:32:56.701655 +0000 build-centos: ..sign || exit 1; \
+2018-05-08 22:32:56.701679 +0000 build-centos: elif [ -d qubes-src/vmm-xen/rpm ]; then \
+2018-05-08 22:32:56.701704 +0000 build-centos: .# Old mechanism supported only for RPM
+2018-05-08 22:32:56.701733 +0000 build-centos: FILE_LIST=""; for RPM in qubes-src/vmm-xen/rpm/*/*.rpm; do \
+2018-05-08 22:32:56.701761 +0000 build-centos: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2018-05-08 22:32:56.701784 +0000 build-centos: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2018-05-08 22:32:56.701805 +0000 build-centos: ..fi ;\
+2018-05-08 22:32:56.701826 +0000 build-centos: .done ; \
+2018-05-08 22:32:56.701850 +0000 build-centos: .if [ -n "$FILE_LIST" ]; then \
+2018-05-08 22:32:56.701873 +0000 build-centos: ..echo "--> Signing..."; \
+2018-05-08 22:32:56.701898 +0000 build-centos: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2018-05-08 22:32:56.701921 +0000 build-centos: ..if [ -n "$SIGN_KEY" ]; then \
+2018-05-08 22:32:56.701943 +0000 build-centos: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2018-05-08 22:32:56.701963 +0000 build-centos: ..fi; \
+2018-05-08 22:32:56.701989 +0000 build-centos: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2018-05-08 22:32:56.702009 +0000 build-centos: .fi; \
+2018-05-08 22:32:56.702027 +0000 build-centos: fi
+2018-05-08 22:32:56.754775 +0000 build-centos: + ERR_OUTPUT=/dev/stderr
+2018-05-08 22:32:56.754829 +0000 build-centos: + '[' 2 -lt 2 ']'
+2018-05-08 22:32:56.757198 +0000 build-centos: ++ basename qubes-src/vmm-xen/xen.spec.in
+2018-05-08 22:32:56.760981 +0000 build-centos: + [[ xxen.spec.in == \x\.\i\n ]]
+2018-05-08 22:32:56.761040 +0000 build-centos: + '[' -r qubes-src/vmm-xen/xen.spec.in ']'
+2018-05-08 22:32:56.761074 +0000 build-centos: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile qubes-src/vmm-xen/xen.spec
+2018-05-08 22:32:57.051608 +0000 build-centos: warning: Macro %version defined but not used within scope
+2018-05-08 22:32:57.051665 +0000 build-centos: warning: Macro %rel defined but not used within scope
+2018-05-08 22:32:57.062178 +0000 build-centos: cat: version: No such file or directory
+2018-05-08 22:32:57.063417 +0000 build-centos: error: line 42: Empty tag: Version:
+2018-05-08 22:32:57.063498 +0000 build-centos: error: query of specfile qubes-src/vmm-xen/xen.spec failed, can't parse
+2018-05-08 22:32:57.190644 +0000 build-centos: /home/user/builder-r3.2/qubes-src/builder-rpm/Makefile.rpmbuilder:164: target 'sign' does not exist
+2018-05-08 22:32:57.190769 +0000 build-centos: cd qubes-src/vmm-xen && for pkg in pkgs/centos7/x86_64/xen-4.6.6-40.centos7.x86_64.rpm pkgs/centos7/x86_64/xen-debuginfo-4.6.6-40.centos7.x86_64.rpm pkgs/centos7/x86_64/xen-devel-4.6.6-40.centos7.x86_64.rpm pkgs/centos7/x86_64/xen-doc-4.6.6-40.centos7.x86_64.rpm pkgs/centos7/x86_64/xen-hvm-4.6.6-40.centos7.x86_64.rpm pkgs/centos7/x86_64/xen-hypervisor-4.6.6-40.centos7.x86_64.rpm pkgs/centos7/x86_64/xen-libs-4.6.6-40.centos7.x86_64.rpm pkgs/centos7/x86_64/xen-licenses-4.6.6-40.centos7.x86_64.rpm pkgs/centos7/x86_64/xen-qemu-tools-4.6.6-40.centos7.x86_64.rpm pkgs/centos7/x86_64/xen-qubes-vm-4.6.6-40.centos7.x86_64.rpm pkgs/centos7/x86_64/xen-runtime-4.6.6-40.centos7.x86_64.rpm ; do \
+2018-05-08 22:32:57.190828 +0000 build-centos: .if ! rpm -K $pkg | grep -qi pgp; then \
+2018-05-08 22:32:57.190874 +0000 build-centos: ..setsid -w rpmsign  --digest-algo=sha256 --key-id=7771FEAD4528AAC462E67DCA919E9536E37D7327 --addsign $pkg </dev/null || exit 1; \
+2018-05-08 22:32:57.190902 +0000 build-centos: .fi; \
+2018-05-08 22:32:57.190926 +0000 build-centos: done
+2018-05-08 22:32:57.246443 +0000 build-centos: + ERR_OUTPUT=/dev/stderr
+2018-05-08 22:32:57.246518 +0000 build-centos: + '[' 2 -lt 2 ']'
+2018-05-08 22:32:57.248447 +0000 build-centos: ++ basename qubes-src/vmm-xen/xen.spec.in
+2018-05-08 22:32:57.252503 +0000 build-centos: + [[ xxen.spec.in == \x\.\i\n ]]
+2018-05-08 22:32:57.252556 +0000 build-centos: + '[' -r qubes-src/vmm-xen/xen.spec.in ']'
+2018-05-08 22:32:57.252586 +0000 build-centos: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile qubes-src/vmm-xen/xen.spec
+2018-05-08 22:32:57.369094 +0000 build-centos: warning: Macro %version defined but not used within scope
+2018-05-08 22:32:57.369256 +0000 build-centos: warning: Macro %rel defined but not used within scope
+2018-05-08 22:32:57.378653 +0000 build-centos: cat: version: No such file or directory
+2018-05-08 22:32:57.381169 +0000 build-centos: error: line 42: Empty tag: Version:
+2018-05-08 22:32:57.381225 +0000 build-centos: error: query of specfile qubes-src/vmm-xen/xen.spec failed, can't parse
+2018-05-08 22:32:58.960454 +0000 build-centos: pkgs/centos7/x86_64/xen-4.6.6-40.centos7.x86_64.rpm:
+2018-05-08 22:33:00.743982 +0000 build-centos: pkgs/centos7/x86_64/xen-debuginfo-4.6.6-40.centos7.x86_64.rpm:
+2018-05-08 22:33:01.916427 +0000 build-centos: pkgs/centos7/x86_64/xen-devel-4.6.6-40.centos7.x86_64.rpm:
+2018-05-08 22:33:03.105333 +0000 build-centos: pkgs/centos7/x86_64/xen-doc-4.6.6-40.centos7.x86_64.rpm:
+2018-05-08 22:33:03.895669 +0000 build-centos: Error while vchan send, exiting
+2018-05-08 22:33:04.451473 +0000 build-centos: pkgs/centos7/x86_64/xen-hvm-4.6.6-40.centos7.x86_64.rpm:
+2018-05-08 22:33:05.794802 +0000 build-centos: pkgs/centos7/x86_64/xen-hypervisor-4.6.6-40.centos7.x86_64.rpm:
+2018-05-08 22:33:06.949492 +0000 build-centos: pkgs/centos7/x86_64/xen-libs-4.6.6-40.centos7.x86_64.rpm:
+2018-05-08 22:33:08.088176 +0000 build-centos: pkgs/centos7/x86_64/xen-licenses-4.6.6-40.centos7.x86_64.rpm:
+2018-05-08 22:33:09.323775 +0000 build-centos: pkgs/centos7/x86_64/xen-qemu-tools-4.6.6-40.centos7.x86_64.rpm:
+2018-05-08 22:33:10.458895 +0000 build-centos: pkgs/centos7/x86_64/xen-qubes-vm-4.6.6-40.centos7.x86_64.rpm:
+2018-05-08 22:33:11.962631 +0000 build-centos: pkgs/centos7/x86_64/xen-runtime-4.6.6-40.centos7.x86_64.rpm:
+2018-05-08 22:33:11.965581 +0000 build-centos: Makefile:721: target 'internal-update-repo-current-testing.vm.centos7.vmm-xen' does not exist
+2018-05-08 22:33:11.965640 +0000 build-centos: repo_base_var="LINUX_REPO_centos7_BASEDIR"; \
+2018-05-08 22:33:11.965670 +0000 build-centos: if [ -n "${!repo_base_var}" ]; then \
+2018-05-08 22:33:11.965699 +0000 build-centos: .repo_basedir="${!repo_base_var}"; \
+2018-05-08 22:33:11.965722 +0000 build-centos: else \
+2018-05-08 22:33:11.965751 +0000 build-centos: .repo_basedir="qubes-src/linux-yum/r3.2"; \
+2018-05-08 22:33:11.965774 +0000 build-centos: fi; \
+2018-05-08 22:33:11.965801 +0000 build-centos: if [ -r qubes-src/vmm-xen/Makefile.builder ]; then \
+2018-05-08 22:33:11.965828 +0000 build-centos: .echo -n "Updating qubes-src/vmm-xen... "; \
+2018-05-08 22:33:11.965854 +0000 build-centos: .if [ "0" -eq 1 ]; then \
+2018-05-08 22:33:11.965888 +0000 build-centos: ..vtag=`git -C qubes-src/vmm-xen tag --points-at HEAD --list v*`; \
+2018-05-08 22:33:11.965915 +0000 build-centos: ..if [ -z "$vtag" ]; then \
+2018-05-08 22:33:11.965941 +0000 build-centos: ...echo ".[1m.[31mno version tag.(B.[m"; \
+2018-05-08 22:33:11.965964 +0000 build-centos: ...exit 0; \
+2018-05-08 22:33:11.965986 +0000 build-centos: ..fi; \
+2018-05-08 22:33:11.966009 +0000 build-centos: .fi; \
+2018-05-08 22:33:11.966054 +0000 build-centos: .component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=centos7 PACKAGE_SET=vm COMPONENT=`basename qubes-src/vmm-xen` UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/centos7 get-var GET_VAR=PACKAGE_LIST); \
+2018-05-08 22:33:11.966100 +0000 build-centos: .if [ -z "$component_packages" ]; then \
+2018-05-08 22:33:11.966125 +0000 build-centos: ..echo "no packages."; \
+2018-05-08 22:33:11.966146 +0000 build-centos: ..exit 0; \
+2018-05-08 22:33:11.966168 +0000 build-centos: .fi; \
+2018-05-08 22:33:11.966195 +0000 build-centos: .make -s -f Makefile.generic DIST=centos7 PACKAGE_SET=vm \
+2018-05-08 22:33:11.966219 +0000 build-centos: ..COMPONENT=`basename qubes-src/vmm-xen` \
+2018-05-08 22:33:11.966243 +0000 build-centos: ..SNAPSHOT_REPO=current-testing \
+2018-05-08 22:33:11.966268 +0000 build-centos: ..TARGET_REPO=current-testing \
+2018-05-08 22:33:11.966298 +0000 build-centos: ..UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/centos7 \
+2018-05-08 22:33:11.966331 +0000 build-centos: ..SNAPSHOT_FILE=/home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-centos7-`basename qubes-src/vmm-xen` \
+2018-05-08 22:33:11.966363 +0000 build-centos: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-centos/log_2018-05-08_21-54-58 \
+2018-05-08 22:33:11.966389 +0000 build-centos: ..update-repo || exit 1; \
+2018-05-08 22:33:11.966418 +0000 build-centos: elif make -C qubes-src/vmm-xen -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2018-05-08 22:33:11.966471 +0000 build-centos: .echo "Updating qubes-src/vmm-xen... "; \
+2018-05-08 22:33:11.966500 +0000 build-centos: .make -s -C qubes-src/vmm-xen update-repo-current-testing || exit 1; \
+2018-05-08 22:33:11.966523 +0000 build-centos: else \
+2018-05-08 22:33:11.966551 +0000 build-centos: .echo -n "Updating qubes-src/vmm-xen... skipping."; \
+2018-05-08 22:33:11.966572 +0000 build-centos: fi; \
+2018-05-08 22:33:11.966593 +0000 build-centos: echo
+2018-05-08 22:33:12.003125 +0000 build-centos: Updating qubes-src/vmm-xen... + ERR_OUTPUT=/dev/stderr
+2018-05-08 22:33:12.003181 +0000 build-centos: + '[' 2 -lt 2 ']'
+2018-05-08 22:33:12.004746 +0000 build-centos: ++ basename qubes-src/vmm-xen/xen.spec.in
+2018-05-08 22:33:12.009247 +0000 build-centos: + [[ xxen.spec.in == \x\.\i\n ]]
+2018-05-08 22:33:12.009301 +0000 build-centos: + '[' -r qubes-src/vmm-xen/xen.spec.in ']'
+2018-05-08 22:33:12.009333 +0000 build-centos: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile qubes-src/vmm-xen/xen.spec
+2018-05-08 22:33:12.069273 +0000 build-centos: warning: Macro %version defined but not used within scope
+2018-05-08 22:33:12.069331 +0000 build-centos: warning: Macro %rel defined but not used within scope
+2018-05-08 22:33:12.079312 +0000 build-centos: cat: version: No such file or directory
+2018-05-08 22:33:12.082058 +0000 build-centos: error: line 42: Empty tag: Version:
+2018-05-08 22:33:12.082117 +0000 build-centos: error: query of specfile qubes-src/vmm-xen/xen.spec failed, can't parse
+2018-05-08 22:33:12.108254 +0000 build-centos: + ERR_OUTPUT=/dev/stderr
+2018-05-08 22:33:12.108311 +0000 build-centos: + '[' 2 -lt 2 ']'
+2018-05-08 22:33:12.110786 +0000 build-centos: ++ basename qubes-src/vmm-xen/xen.spec.in
+2018-05-08 22:33:12.117743 +0000 build-centos: + [[ xxen.spec.in == \x\.\i\n ]]
+2018-05-08 22:33:12.117804 +0000 build-centos: + '[' -r qubes-src/vmm-xen/xen.spec.in ']'
+2018-05-08 22:33:12.117845 +0000 build-centos: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile qubes-src/vmm-xen/xen.spec
+2018-05-08 22:33:12.185917 +0000 build-centos: warning: Macro %version defined but not used within scope
+2018-05-08 22:33:12.187258 +0000 build-centos: warning: Macro %rel defined but not used within scope
+2018-05-08 22:33:12.196751 +0000 build-centos: cat: version: No such file or directory
+2018-05-08 22:33:12.197997 +0000 build-centos: error: line 42: Empty tag: Version:
+2018-05-08 22:33:12.198053 +0000 build-centos: error: query of specfile qubes-src/vmm-xen/xen.spec failed, can't parse
+2018-05-08 22:33:12.245882 +0000 build-centos: + ERR_OUTPUT=/dev/stderr
+2018-05-08 22:33:12.248046 +0000 build-centos: + '[' 2 -lt 2 ']'
+2018-05-08 22:33:12.251780 +0000 build-centos: ++ basename qubes-src/vmm-xen/xen.spec.in
+2018-05-08 22:33:12.255951 +0000 build-centos: + [[ xxen.spec.in == \x\.\i\n ]]
+2018-05-08 22:33:12.256006 +0000 build-centos: + '[' -r qubes-src/vmm-xen/xen.spec.in ']'
+2018-05-08 22:33:12.256039 +0000 build-centos: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile qubes-src/vmm-xen/xen.spec
+2018-05-08 22:33:12.313661 +0000 build-centos: warning: Macro %version defined but not used within scope
+2018-05-08 22:33:12.314841 +0000 build-centos: warning: Macro %rel defined but not used within scope
+2018-05-08 22:33:12.325553 +0000 build-centos: cat: version: No such file or directory
+2018-05-08 22:33:12.328111 +0000 build-centos: error: line 42: Empty tag: Version:
+2018-05-08 22:33:12.328180 +0000 build-centos: error: query of specfile qubes-src/vmm-xen/xen.spec failed, can't parse
+2018-05-08 22:33:12.390022 +0000 build-centos: /home/user/builder-r3.2/qubes-src/builder-rpm/Makefile.rpmbuilder:140: target 'update-repo-do' does not exist
+2018-05-08 22:33:12.390089 +0000 build-centos: mkdir -p /home/user/builder-r3.2/qubes-src/linux-yum/r3.2/current-testing/vm/centos7/rpm
+2018-05-08 22:33:12.436879 +0000 build-centos: + ERR_OUTPUT=/dev/stderr
+2018-05-08 22:33:12.437033 +0000 build-centos: + '[' 2 -lt 2 ']'
+2018-05-08 22:33:12.439227 +0000 build-centos: ++ basename qubes-src/vmm-xen/xen.spec.in
+2018-05-08 22:33:12.444104 +0000 build-centos: + [[ xxen.spec.in == \x\.\i\n ]]
+2018-05-08 22:33:12.444161 +0000 build-centos: + '[' -r qubes-src/vmm-xen/xen.spec.in ']'
+2018-05-08 22:33:12.444196 +0000 build-centos: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile qubes-src/vmm-xen/xen.spec
+2018-05-08 22:33:12.498832 +0000 build-centos: warning: Macro %version defined but not used within scope
+2018-05-08 22:33:12.498890 +0000 build-centos: warning: Macro %rel defined but not used within scope
+2018-05-08 22:33:12.509310 +0000 build-centos: cat: version: No such file or directory
+2018-05-08 22:33:12.509367 +0000 build-centos: error: line 42: Empty tag: Version:
+2018-05-08 22:33:12.513011 +0000 build-centos: error: query of specfile qubes-src/vmm-xen/xen.spec failed, can't parse
+2018-05-08 22:33:12.538400 +0000 build-centos: cd qubes-src/vmm-xen && ln -f pkgs/centos7/x86_64/xen-4.6.6-40.centos7.x86_64.rpm pkgs/centos7/x86_64/xen-debuginfo-4.6.6-40.centos7.x86_64.rpm pkgs/centos7/x86_64/xen-devel-4.6.6-40.centos7.x86_64.rpm pkgs/centos7/x86_64/xen-doc-4.6.6-40.centos7.x86_64.rpm pkgs/centos7/x86_64/xen-hvm-4.6.6-40.centos7.x86_64.rpm pkgs/centos7/x86_64/xen-hypervisor-4.6.6-40.centos7.x86_64.rpm pkgs/centos7/x86_64/xen-libs-4.6.6-40.centos7.x86_64.rpm pkgs/centos7/x86_64/xen-licenses-4.6.6-40.centos7.x86_64.rpm pkgs/centos7/x86_64/xen-qemu-tools-4.6.6-40.centos7.x86_64.rpm pkgs/centos7/x86_64/xen-qubes-vm-4.6.6-40.centos7.x86_64.rpm pkgs/centos7/x86_64/xen-runtime-4.6.6-40.centos7.x86_64.rpm  /home/user/builder-r3.2/qubes-src/linux-yum/r3.2/current-testing/vm/centos7/rpm/
+2018-05-08 22:33:12.548141 +0000 build-centos: cd qubes-src/vmm-xen && echo pkgs/centos7/x86_64/xen-4.6.6-40.centos7.x86_64.rpm pkgs/centos7/x86_64/xen-debuginfo-4.6.6-40.centos7.x86_64.rpm pkgs/centos7/x86_64/xen-devel-4.6.6-40.centos7.x86_64.rpm pkgs/centos7/x86_64/xen-doc-4.6.6-40.centos7.x86_64.rpm pkgs/centos7/x86_64/xen-hvm-4.6.6-40.centos7.x86_64.rpm pkgs/centos7/x86_64/xen-hypervisor-4.6.6-40.centos7.x86_64.rpm pkgs/centos7/x86_64/xen-libs-4.6.6-40.centos7.x86_64.rpm pkgs/centos7/x86_64/xen-licenses-4.6.6-40.centos7.x86_64.rpm pkgs/centos7/x86_64/xen-qemu-tools-4.6.6-40.centos7.x86_64.rpm pkgs/centos7/x86_64/xen-qubes-vm-4.6.6-40.centos7.x86_64.rpm pkgs/centos7/x86_64/xen-runtime-4.6.6-40.centos7.x86_64.rpm  > /home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-centos7-vmm-xen
+2018-05-08 22:33:12.643145 +0000 build-centos: /home/user/builder-r3.2/qubes-src/builder-github//Makefile.github:21: target 'notify-github' does not exist
+2018-05-08 22:33:12.643212 +0000 build-centos: [ -z "xen-4.6.6-40.centos7" ] || /home/user/builder-r3.2/qubes-src/builder-github//notify-issues \
+2018-05-08 22:33:12.643271 +0000 build-centos: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-centos/log_2018-05-08_21-54-58" \
+2018-05-08 22:33:12.643301 +0000 build-centos: ."r3.2" \
+2018-05-08 22:33:12.643328 +0000 build-centos: ."current-testing" \
+2018-05-08 22:33:12.643355 +0000 build-centos: ."qubes-src/vmm-xen" \
+2018-05-08 22:33:12.643381 +0000 build-centos: ."xen-4.6.6-40.centos7" \
+2018-05-08 22:33:12.643405 +0000 build-centos: ."centos7" \
+2018-05-08 22:33:12.643452 +0000 build-centos: ."vm" \
+2018-05-08 22:33:12.643486 +0000 build-centos: ."/home/user/github-notify-state/r3.2-vmm-xen-vm-centos7-current-testing"
+2018-05-08 22:33:12.723858 +0000 build-centos: + ERR_OUTPUT=/dev/stderr
+2018-05-08 22:33:12.724016 +0000 build-centos: + '[' 2 -lt 2 ']'
+2018-05-08 22:33:12.726210 +0000 build-centos: ++ basename qubes-src/vmm-xen/xen.spec.in
+2018-05-08 22:33:12.730502 +0000 build-centos: + [[ xxen.spec.in == \x\.\i\n ]]
+2018-05-08 22:33:12.730563 +0000 build-centos: + '[' -r qubes-src/vmm-xen/xen.spec.in ']'
+2018-05-08 22:33:12.730604 +0000 build-centos: + rpm -q --qf '%{NAME}-%{VERSION}.tar.gz\n' --specfile qubes-src/vmm-xen/xen.spec
+2018-05-08 22:33:12.785686 +0000 build-centos: warning: Macro %version defined but not used within scope
+2018-05-08 22:33:12.785844 +0000 build-centos: warning: Macro %rel defined but not used within scope
+2018-05-08 22:33:12.796032 +0000 build-centos: cat: version: No such file or directory
+2018-05-08 22:33:12.799028 +0000 build-centos: error: line 42: Empty tag: Version:
+2018-05-08 22:33:12.799086 +0000 build-centos: error: query of specfile qubes-src/vmm-xen/xen.spec failed, can't parse
+2018-05-08 22:33:20.613902 +0000 build-centos: 
+2018-05-08 22:33:20.613970 +0000 build-centos: Makefile:702: update target 'internal-update-repo-current-testing.vm.centos7' due to: internal-update-repo-current-testing.vm.centos7.vmm-xen
+2018-05-08 22:33:20.613999 +0000 build-centos: true
+2018-05-08 22:33:20.620143 +0000 build-centos: Makefile:764: target 'post-update-repo-current-testing' does not exist
+2018-05-08 22:33:20.620198 +0000 build-centos: for dist in  centos7; do \
+2018-05-08 22:33:20.620228 +0000 build-centos: .repo_base_var="LINUX_REPO_${dist}_BASEDIR"; \
+2018-05-08 22:33:20.620255 +0000 build-centos: .if [ -n "${!repo_base_var}" ]; then \
+2018-05-08 22:33:20.620281 +0000 build-centos: ..repo_basedir="${!repo_base_var}"; \
+2018-05-08 22:33:20.620304 +0000 build-centos: .else \
+2018-05-08 22:33:20.620330 +0000 build-centos: ..repo_basedir="qubes-src/linux-yum/r3.2"; \
+2018-05-08 22:33:20.620351 +0000 build-centos: .fi; \
+2018-05-08 22:33:20.620378 +0000 build-centos: .repos_to_update="$repos_to_update $repo_basedir"; \
+2018-05-08 22:33:20.620400 +0000 build-centos: done; \
+2018-05-08 22:33:20.620449 +0000 build-centos: for repo in `echo $repos_to_update|tr ' ' '\n'|sort|uniq`; do \
+2018-05-08 22:33:20.620475 +0000 build-centos: .[ -z "$repo" ] && continue; \
+2018-05-08 22:33:20.620504 +0000 build-centos: .(cd $repo/.. && ./update_repo-current-testing.sh `basename $repo`); \
+2018-05-08 22:33:20.620528 +0000 build-centos: done
+2018-05-08 22:33:20.685694 +0000 build-centos: --> Processing repo: r3.2/current-testing/dom0/fc20...
+2018-05-08 22:33:22.127991 +0000 build-centos: --> Processing repo: r3.2/current-testing/dom0/fc23...
+2018-05-08 22:33:23.348751 +0000 build-centos: --> Processing repo: r3.2/current-testing/vm/centos7...
+2018-05-08 22:33:28.649190 +0000 build-centos: --> Processing repo: r3.2/current-testing/vm/fc22...
+2018-05-08 22:33:29.783010 +0000 build-centos: --> Processing repo: r3.2/current-testing/vm/fc23...
+2018-05-08 22:33:31.298520 +0000 build-centos: --> Processing repo: r3.2/current-testing/vm/fc24...
+2018-05-08 22:33:32.288309 +0000 build-centos: --> Processing repo: r3.2/current-testing/vm/fc25...
+2018-05-08 22:33:33.586892 +0000 build-centos: --> Processing repo: r3.2/current-testing/vm/fc26...
+2018-05-08 22:33:35.606068 +0000 build-centos: Done.
+2018-05-08 22:33:35.635785 +0000 build-centos: ~/builder-r3.2/qubes-src/linux-yum ~/builder-r3.2/qubes-src/linux-yum
+2018-05-08 22:33:35.649349 +0000 build-centos: Syncing r3.2...
+2018-05-08 22:33:37.072650 +0000 build-centos: sending incremental file list
+2018-05-08 22:33:37.261989 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing": Operation not permitted (1)
+2018-05-08 22:33:37.262052 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/dom0": Operation not permitted (1)
+2018-05-08 22:33:37.262088 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/dom0/fc20": Operation not permitted (1)
+2018-05-08 22:33:37.262120 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/dom0/fc20/rpm": Operation not permitted (1)
+2018-05-08 22:33:37.262154 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/dom0/fc23": Operation not permitted (1)
+2018-05-08 22:33:37.262188 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/dom0/fc23/rpm": Operation not permitted (1)
+2018-05-08 22:33:37.262220 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm": Operation not permitted (1)
+2018-05-08 22:33:37.262254 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc22": Operation not permitted (1)
+2018-05-08 22:33:37.262289 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc22/rpm": Operation not permitted (1)
+2018-05-08 22:33:37.262327 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc23": Operation not permitted (1)
+2018-05-08 22:33:37.262358 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc23/rpm": Operation not permitted (1)
+2018-05-08 22:33:37.262390 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc24": Operation not permitted (1)
+2018-05-08 22:33:37.262422 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc24/rpm": Operation not permitted (1)
+2018-05-08 22:33:37.262477 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc25": Operation not permitted (1)
+2018-05-08 22:33:37.262510 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc25/rpm": Operation not permitted (1)
+2018-05-08 22:33:37.262541 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc26": Operation not permitted (1)
+2018-05-08 22:33:37.262576 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc26/comps.xml": Operation not permitted (1)
+2018-05-08 22:33:37.262607 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc26/rpm": Operation not permitted (1)
+2018-05-08 22:33:37.262638 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current": Operation not permitted (1)
+2018-05-08 22:33:37.262668 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/dom0": Operation not permitted (1)
+2018-05-08 22:33:37.262698 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/dom0/fc20": Operation not permitted (1)
+2018-05-08 22:33:37.262721 +0000 build-centos: .d..t...... current-testing/
+2018-05-08 22:33:37.262747 +0000 build-centos: .d..t...... current-testing/dom0/
+2018-05-08 22:33:37.262770 +0000 build-centos: .d..t...... current-testing/dom0/fc20/
+2018-05-08 22:33:37.262797 +0000 build-centos: .L..t...... current-testing/dom0/fc20/comps.xml -> ../../../comps-dom0.xml
+2018-05-08 22:33:37.262820 +0000 build-centos: .d..t...... current-testing/dom0/fc20/rpm/
+2018-05-08 22:33:37.262845 +0000 build-centos: <f..t...... current-testing/dom0/fc20/rpm/.gitignore
+2018-05-08 22:33:37.263045 +0000 build-centos: .              6 100%    0.00kB/s    0:00:00  .              6 100%    0.00kB/s    0:00:00 (xfr#1, to-chk=242/252)
+2018-05-08 22:33:37.263074 +0000 build-centos: .d..t...... current-testing/dom0/fc23/
+2018-05-08 22:33:37.263102 +0000 build-centos: .L..t...... current-testing/dom0/fc23/comps.xml -> ../../../comps-dom0.xml
+2018-05-08 22:33:37.263126 +0000 build-centos: .d..t...... current-testing/dom0/fc23/rpm/
+2018-05-08 22:33:37.263154 +0000 build-centos: <f..t...... current-testing/dom0/fc23/rpm/.gitignore
+2018-05-08 22:33:37.268918 +0000 build-centos: .              6 100%    1.17kB/s    0:00:00  .              6 100%    1.17kB/s    0:00:00 (xfr#2, to-chk=239/252)
+2018-05-08 22:33:37.268976 +0000 build-centos: .d..t...... current-testing/vm/
+2018-05-08 22:33:37.269006 +0000 build-centos: .d..t...... current-testing/vm/centos7/
+2018-05-08 22:33:37.269036 +0000 build-centos: .L..t...... current-testing/vm/centos7/comps.xml -> ../../../comps-vm.xml
+2018-05-08 22:33:37.269063 +0000 build-centos: .d..t...... current-testing/vm/centos7/rpm/
+2018-05-08 22:33:37.269089 +0000 build-centos: <f..t...... current-testing/vm/centos7/rpm/.gitignore
+2018-05-08 22:33:37.322020 +0000 build-centos: .              6 100%    0.10kB/s    0:00:00  .              6 100%    0.10kB/s    0:00:00 (xfr#3, to-chk=230/252)
+2018-05-08 22:33:37.322085 +0000 build-centos: <f+++++++++ current-testing/vm/centos7/rpm/xen-4.6.6-40.centos7.x86_64.rpm
+2018-05-08 22:33:37.322126 +0000 build-centos: .         32,768  26%  561.40kB/s    0:00:00  .        123,480 100%    2.07MB/s    0:00:00 (xfr#4, to-chk=134/252)
+2018-05-08 22:33:37.322158 +0000 build-centos: <f+++++++++ current-testing/vm/centos7/rpm/xen-debuginfo-4.6.6-40.centos7.x86_64.rpm
+2018-05-08 22:33:42.989533 +0000 build-centos: .         32,768   0%  561.40kB/s    0:00:19  .      3,375,104  31%    3.22MB/s    0:00:02  .      4,947,968  46%    2.32MB/s    0:00:02  .      6,520,832  60%    2.03MB/s    0:00:02  .      8,093,696  75%    1.88MB/s    0:00:01  .      9,666,560  90%    1.45MB/s    0:00:00  .     10,699,616 100%    1.78MB/s    0:00:05 (xfr#5, to-chk=130/252)
+2018-05-08 22:33:42.989597 +0000 build-centos: <f+++++++++ current-testing/vm/centos7/rpm/xen-devel-4.6.6-40.centos7.x86_64.rpm
+2018-05-08 22:33:43.160036 +0000 build-centos: .         32,768  11%   46.78kB/s    0:00:05  .        274,936 100%  349.14kB/s    0:00:00 (xfr#6, to-chk=126/252)
+2018-05-08 22:33:43.160099 +0000 build-centos: <f+++++++++ current-testing/vm/centos7/rpm/xen-doc-4.6.6-40.centos7.x86_64.rpm
+2018-05-08 22:33:43.505009 +0000 build-centos: .         32,768   7%   37.25kB/s    0:00:10  .        294,912  71%  279.88kB/s    0:00:00  .        415,000 100%  364.13kB/s    0:00:01 (xfr#7, to-chk=122/252)
+2018-05-08 22:33:43.505070 +0000 build-centos: <f+++++++++ current-testing/vm/centos7/rpm/xen-hvm-4.6.6-40.centos7.x86_64.rpm
+2018-05-08 22:33:47.033290 +0000 build-centos: .         32,768   0%  385.54kB/s    0:00:14  .      1,441,792  26%    1.33MB/s    0:00:02  .      3,014,656  55%    1.39MB/s    0:00:01  .      4,587,520  84%    1.41MB/s    0:00:00  .      5,455,272 100%    1.44MB/s    0:00:03 (xfr#8, to-chk=118/252)
+2018-05-08 22:33:47.033352 +0000 build-centos: <f+++++++++ current-testing/vm/centos7/rpm/xen-hypervisor-4.6.6-40.centos7.x86_64.rpm
+2018-05-08 22:33:51.423448 +0000 build-centos: .         32,768   0%   61.90kB/s    0:01:47  .        688,128  10%  649.90kB/s    0:00:09  .      2,260,992  33%    1.04MB/s    0:00:04  .      3,833,856  57%    1.18MB/s    0:00:02  .      5,406,720  80%    1.25MB/s    0:00:00  .      6,684,004 100%    1.30MB/s    0:00:04 (xfr#9, to-chk=114/252)
+2018-05-08 22:33:51.423527 +0000 build-centos: <f+++++++++ current-testing/vm/centos7/rpm/xen-libs-4.6.6-40.centos7.x86_64.rpm
+2018-05-08 22:33:51.856246 +0000 build-centos: .         32,768   5%   41.08kB/s    0:00:13  .        294,912  51%  276.92kB/s    0:00:01  .        574,140 100%  462.99kB/s    0:00:01 (xfr#10, to-chk=110/252)
+2018-05-08 22:33:51.856410 +0000 build-centos: <f+++++++++ current-testing/vm/centos7/rpm/xen-licenses-4.6.6-40.centos7.x86_64.rpm
+2018-05-08 22:33:51.856603 +0000 build-centos: .         32,768  31%  187.13kB/s    0:00:00  .        102,896 100%  584.21kB/s    0:00:00 (xfr#11, to-chk=106/252)
+2018-05-08 22:33:51.856746 +0000 build-centos: <f+++++++++ current-testing/vm/centos7/rpm/xen-qemu-tools-4.6.6-40.centos7.x86_64.rpm
+2018-05-08 22:33:51.941263 +0000 build-centos: .         32,768  48%  125.49kB/s    0:00:00  .         67,456 100%  257.32kB/s    0:00:00 (xfr#12, to-chk=102/252)
+2018-05-08 22:33:51.941328 +0000 build-centos: <f+++++++++ current-testing/vm/centos7/rpm/xen-qubes-vm-4.6.6-40.centos7.x86_64.rpm
+2018-05-08 22:33:52.030097 +0000 build-centos: .         32,768  16%  125.00kB/s    0:00:01  .        192,880 100%  545.97kB/s    0:00:00 (xfr#13, to-chk=98/252)
+2018-05-08 22:33:52.030308 +0000 build-centos: <f+++++++++ current-testing/vm/centos7/rpm/xen-runtime-4.6.6-40.centos7.x86_64.rpm
+2018-05-08 22:33:57.206291 +0000 build-centos: .         32,768   0%   92.49kB/s    0:01:23  .        950,272  12%  898.35kB/s    0:00:07  .      2,523,136  32%    1.16MB/s    0:00:04  .      4,096,000  52%    1.26MB/s    0:00:02  .      5,668,864  72%    1.31MB/s    0:00:01  .      7,241,728  92%    1.45MB/s    0:00:00  .      7,797,928 100%    1.35MB/s    0:00:05 (xfr#14, to-chk=94/252)
+2018-05-08 22:33:57.206353 +0000 build-centos: .d..t...... current-testing/vm/fc22/
+2018-05-08 22:33:57.206391 +0000 build-centos: .L..t...... current-testing/vm/fc22/comps.xml -> ../../../comps-vm.xml
+2018-05-08 22:33:57.206419 +0000 build-centos: .d..t...... current-testing/vm/fc22/rpm/
+2018-05-08 22:33:57.206471 +0000 build-centos: <f..t...... current-testing/vm/fc22/rpm/.gitignore
+2018-05-08 22:33:57.206508 +0000 build-centos: .              6 100%    0.02kB/s    0:00:00  .              6 100%    0.02kB/s    0:00:00 (xfr#15, to-chk=91/252)
+2018-05-08 22:33:57.206536 +0000 build-centos: .d..t...... current-testing/vm/fc23/
+2018-05-08 22:33:57.206566 +0000 build-centos: .L..t...... current-testing/vm/fc23/comps.xml -> ../../../comps-vm.xml
+2018-05-08 22:33:57.206593 +0000 build-centos: .d..t...... current-testing/vm/fc23/rpm/
+2018-05-08 22:33:57.206619 +0000 build-centos: <f..t...... current-testing/vm/fc23/rpm/.gitignore
+2018-05-08 22:33:57.207000 +0000 build-centos: .              6 100%    0.02kB/s    0:00:00  .              6 100%    0.02kB/s    0:00:00 (xfr#16, to-chk=88/252)
+2018-05-08 22:33:57.207045 +0000 build-centos: .d..t...... current-testing/vm/fc24/
+2018-05-08 22:33:57.207077 +0000 build-centos: .L..t...... current-testing/vm/fc24/comps.xml -> ../../../comps-vm.xml
+2018-05-08 22:33:57.207101 +0000 build-centos: .d..t...... current-testing/vm/fc24/rpm/
+2018-05-08 22:33:57.207125 +0000 build-centos: <f..t...... current-testing/vm/fc24/rpm/.gitignore
+2018-05-08 22:33:57.208044 +0000 build-centos: .              6 100%    0.02kB/s    0:00:00  .              6 100%    0.02kB/s    0:00:00 (xfr#17, to-chk=85/252)
+2018-05-08 22:33:57.208087 +0000 build-centos: .d..t...... current-testing/vm/fc25/
+2018-05-08 22:33:57.208117 +0000 build-centos: .L..t...... current-testing/vm/fc25/comps.xml -> ../../../comps-vm.xml
+2018-05-08 22:33:57.208141 +0000 build-centos: .d..t...... current-testing/vm/fc25/rpm/
+2018-05-08 22:33:57.208168 +0000 build-centos: <f..t...... current-testing/vm/fc25/rpm/.gitignore
+2018-05-08 22:33:57.209188 +0000 build-centos: .              6 100%    0.02kB/s    0:00:00  .              6 100%    0.02kB/s    0:00:00 (xfr#18, to-chk=82/252)
+2018-05-08 22:33:57.209242 +0000 build-centos: .d..t...... current-testing/vm/fc26/
+2018-05-08 22:33:57.209278 +0000 build-centos: .L..t...... current-testing/vm/fc26/comps.xml -> ../../../comps-vm.xml
+2018-05-08 22:33:57.209306 +0000 build-centos: .d..t...... current-testing/vm/fc26/rpm/
+2018-05-08 22:33:57.209335 +0000 build-centos: <f..t...... current-testing/vm/fc26/rpm/.gitignore
+2018-05-08 22:33:57.212409 +0000 build-centos: .              6 100%    0.02kB/s    0:00:00  .              6 100%    0.02kB/s    0:00:00 (xfr#19, to-chk=79/252)
+2018-05-08 22:33:57.212507 +0000 build-centos: .d..t...... current/
+2018-05-08 22:33:57.212542 +0000 build-centos: .d..t...... current/dom0/
+2018-05-08 22:33:57.212571 +0000 build-centos: .d..t...... current/dom0/fc20/
+2018-05-08 22:33:57.212604 +0000 build-centos: .L..t...... current/dom0/fc20/comps.xml -> ../../../comps-dom0.xml
+2018-05-08 22:33:57.212641 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/dom0/fc20/rpm": Operation not permitted (1)
+2018-05-08 22:33:57.212678 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/dom0/fc23": Operation not permitted (1)
+2018-05-08 22:33:57.212714 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/dom0/fc23/rpm": Operation not permitted (1)
+2018-05-08 22:33:57.212754 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm": Operation not permitted (1)
+2018-05-08 22:33:57.212790 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc22": Operation not permitted (1)
+2018-05-08 22:33:57.212826 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc22/rpm": Operation not permitted (1)
+2018-05-08 22:33:57.212860 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc23": Operation not permitted (1)
+2018-05-08 22:33:57.212895 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc23/rpm": Operation not permitted (1)
+2018-05-08 22:33:57.212928 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc24": Operation not permitted (1)
+2018-05-08 22:33:57.212964 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc24/rpm": Operation not permitted (1)
+2018-05-08 22:33:57.212999 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc25": Operation not permitted (1)
+2018-05-08 22:33:57.213035 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc25/rpm": Operation not permitted (1)
+2018-05-08 22:33:57.213069 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc26": Operation not permitted (1)
+2018-05-08 22:33:57.213102 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc26/comps.xml": Operation not permitted (1)
+2018-05-08 22:33:57.213133 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc26/rpm": Operation not permitted (1)
+2018-05-08 22:33:57.213165 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing": Operation not permitted (1)
+2018-05-08 22:33:57.213199 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/dom0": Operation not permitted (1)
+2018-05-08 22:33:57.213233 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/dom0/fc20": Operation not permitted (1)
+2018-05-08 22:33:57.213271 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/dom0/fc20/rpm": Operation not permitted (1)
+2018-05-08 22:33:57.213307 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/dom0/fc23": Operation not permitted (1)
+2018-05-08 22:33:57.213342 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/dom0/fc23/rpm": Operation not permitted (1)
+2018-05-08 22:33:57.213375 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm": Operation not permitted (1)
+2018-05-08 22:33:57.213410 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc22": Operation not permitted (1)
+2018-05-08 22:33:57.213469 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc22/rpm": Operation not permitted (1)
+2018-05-08 22:33:57.213505 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc23": Operation not permitted (1)
+2018-05-08 22:33:57.213558 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc23/rpm": Operation not permitted (1)
+2018-05-08 22:33:57.213593 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc24": Operation not permitted (1)
+2018-05-08 22:33:57.213627 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc24/rpm": Operation not permitted (1)
+2018-05-08 22:33:57.213661 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc25": Operation not permitted (1)
+2018-05-08 22:33:57.213697 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc25/rpm": Operation not permitted (1)
+2018-05-08 22:33:57.213733 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc26": Operation not permitted (1)
+2018-05-08 22:33:57.213785 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc26/comps.xml": Operation not permitted (1)
+2018-05-08 22:33:57.213820 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc26/rpm": Operation not permitted (1)
+2018-05-08 22:33:57.213849 +0000 build-centos: .d..t...... current/dom0/fc20/rpm/
+2018-05-08 22:33:57.214170 +0000 build-centos: <f..t...... current/dom0/fc20/rpm/.gitignore
+2018-05-08 22:33:57.215075 +0000 build-centos: .              6 100%    0.02kB/s    0:00:00  .              6 100%    0.02kB/s    0:00:00 (xfr#20, to-chk=72/252)
+2018-05-08 22:33:57.215129 +0000 build-centos: .d..t...... current/dom0/fc23/
+2018-05-08 22:33:57.215163 +0000 build-centos: .L..t...... current/dom0/fc23/comps.xml -> ../../../comps-dom0.xml
+2018-05-08 22:33:57.215190 +0000 build-centos: .d..t...... current/dom0/fc23/rpm/
+2018-05-08 22:33:57.215218 +0000 build-centos: <f..t...... current/dom0/fc23/rpm/.gitignore
+2018-05-08 22:33:57.216823 +0000 build-centos: .              6 100%    0.02kB/s    0:00:00  .              6 100%    0.02kB/s    0:00:00 (xfr#21, to-chk=69/252)
+2018-05-08 22:33:57.216884 +0000 build-centos: .d..t...... current/vm/
+2018-05-08 22:33:57.216919 +0000 build-centos: .d..t...... current/vm/centos7/
+2018-05-08 22:33:57.216953 +0000 build-centos: .L..t...... current/vm/centos7/comps.xml -> ../../../comps-vm.xml
+2018-05-08 22:33:57.216983 +0000 build-centos: .d..t...... current/vm/centos7/rpm/
+2018-05-08 22:33:57.217013 +0000 build-centos: <f..t...... current/vm/centos7/rpm/.gitignore
+2018-05-08 22:33:57.218106 +0000 build-centos: .              6 100%    0.02kB/s    0:00:00  .              6 100%    0.02kB/s    0:00:00 (xfr#22, to-chk=60/252)
+2018-05-08 22:33:57.218162 +0000 build-centos: .d..t...... current/vm/fc22/
+2018-05-08 22:33:57.218204 +0000 build-centos: .L..t...... current/vm/fc22/comps.xml -> ../../../comps-vm.xml
+2018-05-08 22:33:57.218237 +0000 build-centos: .d..t...... current/vm/fc22/rpm/
+2018-05-08 22:33:57.218267 +0000 build-centos: <f..t...... current/vm/fc22/rpm/.gitignore
+2018-05-08 22:33:57.220144 +0000 build-centos: .              6 100%    0.02kB/s    0:00:00  .              6 100%    0.02kB/s    0:00:00 (xfr#23, to-chk=57/252)
+2018-05-08 22:33:57.220206 +0000 build-centos: .d..t...... current/vm/fc23/
+2018-05-08 22:33:57.220242 +0000 build-centos: .L..t...... current/vm/fc23/comps.xml -> ../../../comps-vm.xml
+2018-05-08 22:33:57.220273 +0000 build-centos: .d..t...... current/vm/fc23/rpm/
+2018-05-08 22:33:57.220303 +0000 build-centos: <f..t...... current/vm/fc23/rpm/.gitignore
+2018-05-08 22:33:57.221517 +0000 build-centos: .              6 100%    0.02kB/s    0:00:00  .              6 100%    0.02kB/s    0:00:00 (xfr#24, to-chk=54/252)
+2018-05-08 22:33:57.221578 +0000 build-centos: .d..t...... current/vm/fc24/
+2018-05-08 22:33:57.221613 +0000 build-centos: .L..t...... current/vm/fc24/comps.xml -> ../../../comps-vm.xml
+2018-05-08 22:33:57.221641 +0000 build-centos: .d..t...... current/vm/fc24/rpm/
+2018-05-08 22:33:57.221689 +0000 build-centos: <f..t...... current/vm/fc24/rpm/.gitignore
+2018-05-08 22:33:57.222907 +0000 build-centos: .              6 100%    0.02kB/s    0:00:00  .              6 100%    0.02kB/s    0:00:00 (xfr#25, to-chk=51/252)
+2018-05-08 22:33:57.222959 +0000 build-centos: .d..t...... current/vm/fc25/
+2018-05-08 22:33:57.222988 +0000 build-centos: .L..t...... current/vm/fc25/comps.xml -> ../../../comps-vm.xml
+2018-05-08 22:33:57.223012 +0000 build-centos: .d..t...... current/vm/fc25/rpm/
+2018-05-08 22:33:57.223035 +0000 build-centos: <f..t...... current/vm/fc25/rpm/.gitignore
+2018-05-08 22:33:57.223949 +0000 build-centos: .              6 100%    0.02kB/s    0:00:00  .              6 100%    0.02kB/s    0:00:00 (xfr#26, to-chk=48/252)
+2018-05-08 22:33:57.223994 +0000 build-centos: .d..t...... current/vm/fc26/
+2018-05-08 22:33:57.224022 +0000 build-centos: .L..t...... current/vm/fc26/comps.xml -> ../../../comps-vm.xml
+2018-05-08 22:33:57.224045 +0000 build-centos: .d..t...... current/vm/fc26/rpm/
+2018-05-08 22:33:57.224068 +0000 build-centos: <f..t...... current/vm/fc26/rpm/.gitignore
+2018-05-08 22:33:57.225018 +0000 build-centos: .              6 100%    0.02kB/s    0:00:00  .              6 100%    0.02kB/s    0:00:00 (xfr#27, to-chk=45/252)
+2018-05-08 22:33:57.225072 +0000 build-centos: .d..t...... security-testing/
+2018-05-08 22:33:57.225102 +0000 build-centos: .d..t...... security-testing/dom0/
+2018-05-08 22:33:57.225128 +0000 build-centos: .d..t...... security-testing/dom0/fc20/
+2018-05-08 22:33:57.225157 +0000 build-centos: .L..t...... security-testing/dom0/fc20/comps.xml -> ../../../comps-dom0.xml
+2018-05-08 22:33:57.225184 +0000 build-centos: .d..t...... security-testing/dom0/fc20/rpm/
+2018-05-08 22:33:57.225211 +0000 build-centos: <f..t...... security-testing/dom0/fc20/rpm/.gitignore
+2018-05-08 22:33:57.226613 +0000 build-centos: .              6 100%    0.02kB/s    0:00:00  .              6 100%    0.02kB/s    0:00:00 (xfr#28, to-chk=38/252)
+2018-05-08 22:33:57.226668 +0000 build-centos: .d..t...... security-testing/dom0/fc23/
+2018-05-08 22:33:57.226702 +0000 build-centos: .L..t...... security-testing/dom0/fc23/comps.xml -> ../../../comps-dom0.xml
+2018-05-08 22:33:57.226732 +0000 build-centos: .d..t...... security-testing/dom0/fc23/rpm/
+2018-05-08 22:33:57.226759 +0000 build-centos: <f..t...... security-testing/dom0/fc23/rpm/.gitignore
+2018-05-08 22:33:57.227621 +0000 build-centos: .              6 100%    0.02kB/s    0:00:00  .              6 100%    0.02kB/s    0:00:00 (xfr#29, to-chk=35/252)
+2018-05-08 22:33:57.227664 +0000 build-centos: .d..t...... security-testing/vm/
+2018-05-08 22:33:57.227694 +0000 build-centos: .d..t...... security-testing/vm/centos7/
+2018-05-08 22:33:57.227722 +0000 build-centos: .L..t...... security-testing/vm/centos7/comps.xml -> ../../../comps-vm.xml
+2018-05-08 22:33:57.227750 +0000 build-centos: .d..t...... security-testing/vm/centos7/rpm/
+2018-05-08 22:33:57.227776 +0000 build-centos: <f..t...... security-testing/vm/centos7/rpm/.gitignore
+2018-05-08 22:33:57.229460 +0000 build-centos: .              6 100%    0.02kB/s    0:00:00  .              6 100%    0.02kB/s    0:00:00 (xfr#30, to-chk=26/252)
+2018-05-08 22:33:57.229531 +0000 build-centos: .d..t...... security-testing/vm/fc22/
+2018-05-08 22:33:57.229562 +0000 build-centos: .L..t...... security-testing/vm/fc22/comps.xml -> ../../../comps-vm.xml
+2018-05-08 22:33:57.229587 +0000 build-centos: .d..t...... security-testing/vm/fc22/rpm/
+2018-05-08 22:33:57.229618 +0000 build-centos: <f..t...... security-testing/vm/fc22/rpm/.gitignore
+2018-05-08 22:33:57.230638 +0000 build-centos: .              6 100%    0.02kB/s    0:00:00  .              6 100%    0.02kB/s    0:00:00 (xfr#31, to-chk=12/252)
+2018-05-08 22:33:57.230695 +0000 build-centos: .d..t...... security-testing/vm/fc23/
+2018-05-08 22:33:57.230730 +0000 build-centos: .L..t...... security-testing/vm/fc23/comps.xml -> ../../../comps-vm.xml
+2018-05-08 22:33:57.230756 +0000 build-centos: .d..t...... security-testing/vm/fc23/rpm/
+2018-05-08 22:33:57.230807 +0000 build-centos: <f..t...... security-testing/vm/fc23/rpm/.gitignore
+2018-05-08 22:33:57.231711 +0000 build-centos: .              6 100%    0.02kB/s    0:00:00  .              6 100%    0.02kB/s    0:00:00 (xfr#32, to-chk=9/252)
+2018-05-08 22:33:57.231769 +0000 build-centos: .d..t...... security-testing/vm/fc24/
+2018-05-08 22:33:57.231806 +0000 build-centos: .L..t...... security-testing/vm/fc24/comps.xml -> ../../../comps-vm.xml
+2018-05-08 22:33:57.231838 +0000 build-centos: .d..t...... security-testing/vm/fc24/rpm/
+2018-05-08 22:33:57.231871 +0000 build-centos: <f..t...... security-testing/vm/fc24/rpm/.gitignore
+2018-05-08 22:33:57.232628 +0000 build-centos: .              6 100%    0.02kB/s    0:00:00  .              6 100%    0.02kB/s    0:00:00 (xfr#33, to-chk=6/252)
+2018-05-08 22:33:57.232681 +0000 build-centos: .d..t...... security-testing/vm/fc25/
+2018-05-08 22:33:57.232718 +0000 build-centos: .L..t...... security-testing/vm/fc25/comps.xml -> ../../../comps-vm.xml
+2018-05-08 22:33:57.232752 +0000 build-centos: .d..t...... security-testing/vm/fc25/rpm/
+2018-05-08 22:33:57.232782 +0000 build-centos: <f..t...... security-testing/vm/fc25/rpm/.gitignore
+2018-05-08 22:33:57.233734 +0000 build-centos: .              6 100%    0.02kB/s    0:00:00  .              6 100%    0.02kB/s    0:00:00 (xfr#34, to-chk=3/252)
+2018-05-08 22:33:57.233784 +0000 build-centos: .d..t...... security-testing/vm/fc26/
+2018-05-08 22:33:57.233816 +0000 build-centos: .L..t...... security-testing/vm/fc26/comps.xml -> ../../../comps-vm.xml
+2018-05-08 22:33:57.233841 +0000 build-centos: .d..t...... security-testing/vm/fc26/rpm/
+2018-05-08 22:33:57.233866 +0000 build-centos: <f..t...... security-testing/vm/fc26/rpm/.gitignore
+2018-05-08 22:33:57.233899 +0000 build-centos: .              6 100%    0.02kB/s    0:00:00  .              6 100%    0.02kB/s    0:00:00 (xfr#35, to-chk=0/252)
+2018-05-08 22:33:58.790225 +0000 build-centos: rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1189) [sender=3.1.3]
+2018-05-08 22:33:59.265883 +0000 build-centos: --> Processing repo: /pub/qubes/repo/yum/r3.2/current/dom0/fc20...
+2018-05-08 22:33:59.516642 +0000 build-centos: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-08 22:34:00.112684 +0000 build-centos: --> Processing repo: /pub/qubes/repo/yum/r3.2/current/dom0/fc23...
+2018-05-08 22:34:00.220372 +0000 build-centos: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-08 22:35:17.278311 +0000 build-centos: --> Processing repo: /pub/qubes/repo/yum/r3.2/current/vm/centos7...
+2018-05-08 22:35:17.374441 +0000 build-centos: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-08 22:35:17.879204 +0000 build-centos: --> Processing repo: /pub/qubes/repo/yum/r3.2/current/vm/fc22...
+2018-05-08 22:35:17.989864 +0000 build-centos: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-08 22:35:18.573203 +0000 build-centos: --> Processing repo: /pub/qubes/repo/yum/r3.2/current/vm/fc23...
+2018-05-08 22:35:18.707387 +0000 build-centos: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-08 22:35:39.765505 +0000 build-centos: --> Processing repo: /pub/qubes/repo/yum/r3.2/current/vm/fc24...
+2018-05-08 22:35:39.854405 +0000 build-centos: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-08 22:36:00.865849 +0000 build-centos: --> Processing repo: /pub/qubes/repo/yum/r3.2/current/vm/fc25...
+2018-05-08 22:36:00.971328 +0000 build-centos: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-08 22:36:15.325948 +0000 build-centos: --> Processing repo: /pub/qubes/repo/yum/r3.2/current/vm/fc26...
+2018-05-08 22:36:15.442878 +0000 build-centos: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-08 22:36:19.489093 +0000 build-centos: --> Processing repo: /pub/qubes/repo/yum/r3.2/current/vm/fc27...
+2018-05-08 22:36:19.584517 +0000 build-centos: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-08 22:36:20.058402 +0000 build-centos: --> Processing repo: /pub/qubes/repo/yum/r3.2/current/vm/fc28...
+2018-05-08 22:36:20.152823 +0000 build-centos: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-08 22:36:20.840579 +0000 build-centos: Done.
+2018-05-08 22:36:21.092528 +0000 build-centos: --> Processing repo: /pub/qubes/repo/yum/r3.2/current-testing/dom0/fc20...
+2018-05-08 22:36:21.219835 +0000 build-centos: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-08 22:36:21.712431 +0000 build-centos: --> Processing repo: /pub/qubes/repo/yum/r3.2/current-testing/dom0/fc23...
+2018-05-08 22:36:21.851535 +0000 build-centos: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-08 22:39:15.543767 +0000 build-centos: --> Processing repo: /pub/qubes/repo/yum/r3.2/current-testing/vm/centos7...
+2018-05-08 22:39:15.709910 +0000 build-centos: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-08 22:39:20.660352 +0000 build-centos: --> Processing repo: /pub/qubes/repo/yum/r3.2/current-testing/vm/fc22...
+2018-05-08 22:39:20.781506 +0000 build-centos: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-08 22:39:21.346456 +0000 build-centos: --> Processing repo: /pub/qubes/repo/yum/r3.2/current-testing/vm/fc23...
+2018-05-08 22:39:21.478894 +0000 build-centos: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-08 22:40:00.541914 +0000 build-centos: --> Processing repo: /pub/qubes/repo/yum/r3.2/current-testing/vm/fc24...
+2018-05-08 22:40:00.655404 +0000 build-centos: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-08 22:40:36.939858 +0000 build-centos: --> Processing repo: /pub/qubes/repo/yum/r3.2/current-testing/vm/fc25...
+2018-05-08 22:40:37.071668 +0000 build-centos: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-08 22:41:01.623069 +0000 build-centos: --> Processing repo: /pub/qubes/repo/yum/r3.2/current-testing/vm/fc26...
+2018-05-08 22:41:01.745548 +0000 build-centos: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-08 22:41:12.528779 +0000 build-centos: --> Processing repo: /pub/qubes/repo/yum/r3.2/current-testing/vm/fc27...
+2018-05-08 22:41:12.642037 +0000 build-centos: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-08 22:41:16.600813 +0000 build-centos: --> Processing repo: /pub/qubes/repo/yum/r3.2/current-testing/vm/fc28...
+2018-05-08 22:41:16.706432 +0000 build-centos: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-08 22:41:20.853992 +0000 build-centos: Done.
+2018-05-08 22:41:21.195136 +0000 build-centos: --> Processing repo: /pub/qubes/repo/yum/r3.2/security-testing/dom0/fc20...
+2018-05-08 22:41:21.298083 +0000 build-centos: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-08 22:41:21.877529 +0000 build-centos: --> Processing repo: /pub/qubes/repo/yum/r3.2/security-testing/dom0/fc23...
+2018-05-08 22:41:21.989977 +0000 build-centos: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-08 22:41:46.677886 +0000 build-centos: --> Processing repo: /pub/qubes/repo/yum/r3.2/security-testing/vm/centos7...
+2018-05-08 22:41:46.811708 +0000 build-centos: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-08 22:41:48.778081 +0000 build-centos: --> Processing repo: /pub/qubes/repo/yum/r3.2/security-testing/vm/fc22...
+2018-05-08 22:41:48.894217 +0000 build-centos: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-08 22:41:49.383496 +0000 build-centos: --> Processing repo: /pub/qubes/repo/yum/r3.2/security-testing/vm/fc23...
+2018-05-08 22:41:49.515004 +0000 build-centos: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-08 22:42:01.139144 +0000 build-centos: --> Processing repo: /pub/qubes/repo/yum/r3.2/security-testing/vm/fc24...
+2018-05-08 22:42:01.243397 +0000 build-centos: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-08 22:42:13.205851 +0000 build-centos: --> Processing repo: /pub/qubes/repo/yum/r3.2/security-testing/vm/fc25...
+2018-05-08 22:42:13.325339 +0000 build-centos: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-08 22:42:26.316677 +0000 build-centos: --> Processing repo: /pub/qubes/repo/yum/r3.2/security-testing/vm/fc26...
+2018-05-08 22:42:26.423773 +0000 build-centos: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-08 22:42:32.742011 +0000 build-centos: --> Processing repo: /pub/qubes/repo/yum/r3.2/security-testing/vm/fc27...
+2018-05-08 22:42:32.848341 +0000 build-centos: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-08 22:42:35.949237 +0000 build-centos: --> Processing repo: /pub/qubes/repo/yum/r3.2/security-testing/vm/fc28...
+2018-05-08 22:42:36.361181 +0000 build-centos: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-05-08 22:42:38.156910 +0000 build-centos: Done.
+2018-05-08 22:42:38.160587 +0000 build-centos: ~/builder-r3.2/qubes-src/linux-yum
+2018-05-08 22:42:38.163107 +0000 build-centos: Makefile:689: update target 'update-repo-current-testing' due to: internal-update-repo-current-testing.vm.centos7 post-update-repo-current-testing
+2018-05-08 22:42:38.163162 +0000 build-centos: true
+2018-05-08 22:42:38.168607 +0000 build-centos: > done
+2018-05-08 22:44:52.622998 +0000 > closing log
