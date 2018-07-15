@@ -1,0 +1,1668 @@
+2018-07-15 22:13:11.791114 +0000 > starting log
+2018-07-15 22:13:11.793289 +0000 build-fedora3: > starting build with log
+2018-07-15 22:13:11.793402 +0000 build-fedora3: >> make args: DISTS_VM= fc25 fc26 fc27 fc28 DIST_DOM0= BUILD_LOGS_URL= app-thunderbird-vm-fc25=https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2018-07-15_21-47-47 app-thunderbird-vm-fc26=https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2018-07-15_21-48-51 app-thunderbird-vm-fc27=https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2018-07-15_21-49-54 app-thunderbird-vm-fc28=https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2018-07-15_21-57-07 GIT_URL_app_thunderbird=https://github.com/QubesOS/qubes-app-thunderbird sign-all update-repo-current-testing
+2018-07-15 22:13:11.793438 +0000 build-fedora3: >> MAKEFLAGS=
+2018-07-15 22:13:11.793465 +0000 build-fedora3: >> COMPONENTS=app-thunderbird
+2018-07-15 22:13:11.793488 +0000 build-fedora3: >> DISTS_VM=
+2018-07-15 22:13:11.793511 +0000 build-fedora3: >> DIST_DOM0=
+2018-07-15 22:13:11.793538 +0000 build-fedora3: >> qubes-builder 793688b73c2febcc877a1eebce1b986b7abb1d9d
+2018-07-15 22:13:11.793569 +0000 build-fedora3: >> qubes-builder/qubes-src/app-thunderbird b0a4cc3277453c9591a8f00c4d4e3823e1bf6ed6
+2018-07-15 22:13:11.793596 +0000 build-fedora3: !! pkgs/fc23/thunderbird-qubes.spec.list
+2018-07-15 22:13:11.793624 +0000 build-fedora3: !! pkgs/fc23/x86_64/thunderbird-qubes-1.2.8-1.fc23.x86_64.rpm
+2018-07-15 22:13:11.793653 +0000 build-fedora3: !! pkgs/fc23/x86_64/thunderbird-qubes-1.2.9-1.fc23.x86_64.rpm
+2018-07-15 22:13:11.793679 +0000 build-fedora3: !! pkgs/fc24/thunderbird-qubes.spec.list
+2018-07-15 22:13:11.793707 +0000 build-fedora3: !! pkgs/fc24/x86_64/thunderbird-qubes-1.2.8-1.fc24.x86_64.rpm
+2018-07-15 22:13:11.793734 +0000 build-fedora3: !! pkgs/fc24/x86_64/thunderbird-qubes-1.2.9-1.fc24.x86_64.rpm
+2018-07-15 22:13:11.793762 +0000 build-fedora3: !! pkgs/fc25/noarch/thunderbird-qubes-1.2.10-1.fc25.noarch.rpm
+2018-07-15 22:13:11.793790 +0000 build-fedora3: !! pkgs/fc25/noarch/thunderbird-qubes-1.2.11-1.fc25.noarch.rpm
+2018-07-15 22:13:11.793816 +0000 build-fedora3: !! pkgs/fc25/thunderbird-qubes.spec.list
+2018-07-15 22:13:11.793844 +0000 build-fedora3: !! pkgs/fc25/x86_64/thunderbird-qubes-1.2.8-1.fc25.x86_64.rpm
+2018-07-15 22:13:11.793873 +0000 build-fedora3: !! pkgs/fc25/x86_64/thunderbird-qubes-1.2.9-1.fc25.x86_64.rpm
+2018-07-15 22:13:11.793903 +0000 build-fedora3: !! pkgs/fc26/noarch/thunderbird-qubes-1.2.10-1.fc26.noarch.rpm
+2018-07-15 22:13:11.793931 +0000 build-fedora3: !! pkgs/fc26/noarch/thunderbird-qubes-1.2.11-1.fc26.noarch.rpm
+2018-07-15 22:13:11.794006 +0000 build-fedora3: !! pkgs/fc26/thunderbird-qubes.spec.list
+2018-07-15 22:13:11.794083 +0000 build-fedora3: !! pkgs/fc26/x86_64/thunderbird-qubes-1.2.9-1.fc26.x86_64.rpm
+2018-07-15 22:13:11.794114 +0000 build-fedora3: !! pkgs/fc27/noarch/thunderbird-qubes-1.2.10-1.fc27.noarch.rpm
+2018-07-15 22:13:11.794143 +0000 build-fedora3: !! pkgs/fc27/noarch/thunderbird-qubes-1.2.11-1.fc27.noarch.rpm
+2018-07-15 22:13:11.794169 +0000 build-fedora3: !! pkgs/fc27/thunderbird-qubes.spec.list
+2018-07-15 22:13:11.794198 +0000 build-fedora3: !! pkgs/fc28/noarch/thunderbird-qubes-1.2.10-1.fc28.noarch.rpm
+2018-07-15 22:13:11.794227 +0000 build-fedora3: !! pkgs/fc28/noarch/thunderbird-qubes-1.2.11-1.fc28.noarch.rpm
+2018-07-15 22:13:11.794253 +0000 build-fedora3: !! pkgs/fc28/thunderbird-qubes.spec.list
+2018-07-15 22:13:11.794295 +0000 build-fedora3: 602178f9d017ca97fa3c72dc0bc26427c82f50aa63df1617f2e8b47a51a692ef93fb74f9fc1b5af73bc7fba6630a75ea11f89884e409b6beb014330783bfcd2b  pkgs/fc23/thunderbird-qubes.spec.list
+2018-07-15 22:13:11.794356 +0000 build-fedora3: 81daeb59869685727ef1466bef16e33d1de18f7d30976dbee518433155aef3ef163534d54d54b0ec23a77e348cf5cdbd17d860031bbd4c0e5ed3dd487d3cdb8b  pkgs/fc23/x86_64/thunderbird-qubes-1.2.8-1.fc23.x86_64.rpm
+2018-07-15 22:13:11.794402 +0000 build-fedora3: 211fcf5c568512eba24664946ce0968701f0d8e64c2ec362483560fe7de6eb8c27ea008265186c268d4a5ff9b52d01ab180b818cc7a3e6f66f88c49676ba2407  pkgs/fc23/x86_64/thunderbird-qubes-1.2.9-1.fc23.x86_64.rpm
+2018-07-15 22:13:11.794462 +0000 build-fedora3: 2efdad1a8262b9152c6c3494a084580f22f85eb4744259732c5c1b25e00a417e0b41900ed16fe9fae014059c085e5dc29b63857d5995044a43296f2ee2955138  pkgs/fc24/thunderbird-qubes.spec.list
+2018-07-15 22:13:11.794507 +0000 build-fedora3: 9b4fb9da2e6414e1c57499525667f7663ed882a207753bdc166c4ab3c0e948eef899b47570b325206fde759b89c3f93bcf7456fb692400ee64911a9036d528e6  pkgs/fc24/x86_64/thunderbird-qubes-1.2.8-1.fc24.x86_64.rpm
+2018-07-15 22:13:11.794553 +0000 build-fedora3: bc5e1611c14b0d226fbb0be62a92568f438a92abbb3645ed413e1d8373d0b115a5ce04302807a1c1f3432672ce012d3b8bfaa5971ed64b08cb6b814f0d6111e2  pkgs/fc24/x86_64/thunderbird-qubes-1.2.9-1.fc24.x86_64.rpm
+2018-07-15 22:13:11.794598 +0000 build-fedora3: 763789fd8064684ed2b89b3322b1eff6b1357cabaf835f1f75bdc42a6d83436a582fee7333ebab70df29a36da1b26d2183ac0615422c5753d44c5e927e4085bb  pkgs/fc25/noarch/thunderbird-qubes-1.2.10-1.fc25.noarch.rpm
+2018-07-15 22:13:11.794641 +0000 build-fedora3: 0a3fd2b6526138871fe4c4f262b6cba7c3a67af97d777c2f0f3db1cd473e59018d7cd5d018752bb0635319c075a3520858359fff44385f84cef6cd9d4282ff80  pkgs/fc25/noarch/thunderbird-qubes-1.2.11-1.fc25.noarch.rpm
+2018-07-15 22:13:11.794682 +0000 build-fedora3: 340d91cd1f0cd3e168904128fac63aea5263ef8e3acbd34902350992badd8d1173839cf2d7641fdee1e78a270a6d4aff27a2e2ce3377ef262e054c3fe65c4b2f  pkgs/fc25/thunderbird-qubes.spec.list
+2018-07-15 22:13:11.794726 +0000 build-fedora3: e5c4d903e8461661545ec958a9618ac67fcf0a56433309af348762d491ae782ff1057c0606524f2f31433c9ee9eff98cc620f9626d7863dad13f977122c1baf5  pkgs/fc25/x86_64/thunderbird-qubes-1.2.8-1.fc25.x86_64.rpm
+2018-07-15 22:13:11.794771 +0000 build-fedora3: 18396a5cd1bd72192c022df347fa76c932cb5d267baf3cf7417df1ded292b5bf7271a3478ae38cbb0fbb1e8c0e481681901bc8cb2280c8a00c41987c19880a1f  pkgs/fc25/x86_64/thunderbird-qubes-1.2.9-1.fc25.x86_64.rpm
+2018-07-15 22:13:11.794835 +0000 build-fedora3: bc71fbef0f3b7a3f497013bf7ab157382e318780065b43c09534609f3281f24e9496a3779fd40ef39820a18e07ae72ad69c25878aeff8298d77548753ee83c37  pkgs/fc26/noarch/thunderbird-qubes-1.2.10-1.fc26.noarch.rpm
+2018-07-15 22:13:11.794880 +0000 build-fedora3: 37fa055d9716100944d612cca67021abaa102a12354bcc0c99cfb8221b34c033acde43ff0ad169d94b6d15612d6ef290fa9263a5f02f5328285d6ce3a262c5d0  pkgs/fc26/noarch/thunderbird-qubes-1.2.11-1.fc26.noarch.rpm
+2018-07-15 22:13:11.794923 +0000 build-fedora3: cd9e3e84b073571ae75611343bbc6e6671fb0c06c610609cc5ba4b5a17f3ce1d93e39b20164ea1a097c691064e01488edb68fb783aab00f411d5f3e36dedcc69  pkgs/fc26/thunderbird-qubes.spec.list
+2018-07-15 22:13:11.794987 +0000 build-fedora3: 78e01f34c8ed4c302e2b249d017e29c0b7205bdd296eb0c1a0bece5ad54061748eaa051bed21c4e2eeced0bda9c27b6318b75efdb479d44d0a7a6a400a0c7179  pkgs/fc26/x86_64/thunderbird-qubes-1.2.9-1.fc26.x86_64.rpm
+2018-07-15 22:13:11.795033 +0000 build-fedora3: 8ec36da63b66e7b27a8fdbd9a37f7cfce0639d8ebd6c1477c577c576e86282df7a41675a81bfda64074bc204f1ce89b86b6f008b07a27936e3930dda6b810d73  pkgs/fc27/noarch/thunderbird-qubes-1.2.10-1.fc27.noarch.rpm
+2018-07-15 22:13:11.795077 +0000 build-fedora3: 7b4429af592e97f955c9e57f5fd422a01a6a1ac0a4545435ab3f1f092699029d64c9b5e4ba14704ad93459283728c9a972b8513cc31420f811a7f69482099dcd  pkgs/fc27/noarch/thunderbird-qubes-1.2.11-1.fc27.noarch.rpm
+2018-07-15 22:13:11.795118 +0000 build-fedora3: 12b2e17c6bc22c7837cf94eb627914dfaa80c959e4e64faf62a5d5729fed0ef451281986635522b0ac62800ffdeefc0b993c72720649820dcf5ca7bf56749f64  pkgs/fc27/thunderbird-qubes.spec.list
+2018-07-15 22:13:11.795162 +0000 build-fedora3: 8893b20b26d1d54d98a1dc2a676eee7f639e211dc051e5d7161d50c0c4e6270770e0796331dbeba84fbdaea5d5ebfcf01aadf62738ab174da48ea4ec8b156436  pkgs/fc28/noarch/thunderbird-qubes-1.2.10-1.fc28.noarch.rpm
+2018-07-15 22:13:11.795207 +0000 build-fedora3: 9e181122b9cd315728bab962c9e7f58be4cc9df1118a886fb563b59cfeaf55bad23482e74e90ad6a80dcb6619d711f3652744f91e57fed8a7d290802eee62b34  pkgs/fc28/noarch/thunderbird-qubes-1.2.11-1.fc28.noarch.rpm
+2018-07-15 22:13:11.795250 +0000 build-fedora3: 292345283e45d11e8be8b6badf35d4d5c9e95d8eeffbdf2b1f55be60f9ebbc98cefa1cd4a08d8f43f61a673161b0f57998973055674a5ca5b09cd482dbc24b93  pkgs/fc28/thunderbird-qubes.spec.list
+2018-07-15 22:13:12.202665 +0000 build-fedora3: ================================================================================
+2018-07-15 22:13:12.202731 +0000 build-fedora3:                            B U I L D   I N F O                                  
+2018-07-15 22:13:12.202769 +0000 build-fedora3: Items in red indicate it was automatically generated by configuration file(s)
+2018-07-15 22:13:12.202803 +0000 build-fedora3: Items in white indicate it was automatically removed by configuration file(s)
+2018-07-15 22:13:12.202843 +0000 build-fedora3: ================================================================================
+2018-07-15 22:13:12.202868 +0000 build-fedora3: DISTS_VM:
+2018-07-15 22:13:12.230009 +0000 build-fedora3:      fc25, fc26, fc27, fc28,
+2018-07-15 22:13:12.231969 +0000 build-fedora3: DISTS_ALL:
+2018-07-15 22:13:12.252643 +0000 build-fedora3:      fc25, fc26, fc27, fc28,
+2018-07-15 22:13:12.254141 +0000 build-fedora3: DIST_DOM0:
+2018-07-15 22:13:12.304502 +0000 build-fedora3:     
+2018-07-15 22:13:12.306758 +0000 build-fedora3: BUILDER_PLUGINS:
+2018-07-15 22:13:12.321863 +0000 build-fedora3:      builder-rpm, mgmt-salt, linux-yum, builder-github,
+2018-07-15 22:13:12.324805 +0000 build-fedora3: COMPONENTS:
+2018-07-15 22:13:12.335331 +0000 build-fedora3:      app-thunderbird,
+2018-07-15 22:13:12.338034 +0000 build-fedora3: GIT_REPOS:
+2018-07-15 22:13:12.347934 +0000 build-fedora3:      qubes-src/app-thunderbird,
+2018-07-15 22:13:12.353011 +0000 build-fedora3: TEMPLATE:
+2018-07-15 22:13:12.371148 +0000 build-fedora3:     
+2018-07-15 22:13:12.374761 +0000 build-fedora3: TEMPLATE_FLAVOR_DIR:
+2018-07-15 22:13:12.395938 +0000 build-fedora3:     
+2018-07-15 22:13:12.411975 +0000 build-fedora3: TEMPLATE_ALIAS:
+2018-07-15 22:13:12.441359 +0000 build-fedora3:      jessie:jessie+standard, jessie+gnome:jessie+gnome+standard, jessie+minimal:jessie+minimal+no-recommends,
+2018-07-15 22:13:12.441423 +0000 build-fedora3:      stretch:stretch+standard, stretch+gnome:stretch+gnome+standard,
+2018-07-15 22:13:12.441458 +0000 build-fedora3:      stretch+minimal:stretch+minimal+no-recommends,
+2018-07-15 22:13:12.443601 +0000 build-fedora3: TEMPLATE_LABEL:
+2018-07-15 22:13:12.458194 +0000 build-fedora3:      fc25:fedora-25, fc26:fedora-26, fc27:fedora-27, fc28:fedora-28, fc20:fedora-20 fc21:fedora-21
+2018-07-15 22:13:12.458260 +0000 build-fedora3:      fc22:fedora-22 fc23:fedora-23 fc24:fedora-24 fc20+minimal:fedora-20-minimal fc21+minimal:fedora-21-minimal
+2018-07-15 22:13:12.458296 +0000 build-fedora3:      fc23+minimal:fedora-23-minimal fc24+minimal:fedora-24-minimal fc25+minimal:fedora-25-minimal
+2018-07-15 22:13:12.458329 +0000 build-fedora3:      fc26+minimal:fedora-26-minimal fc25+xfce:fedora-25-xfce fc26+xfce:fedora-26-xfce wheezy:debian-7
+2018-07-15 22:13:12.458365 +0000 build-fedora3:      wheezy+standard:debian-7 jessie:debian-8 jessie+standard:debian-8 stretch:debian-9 stretch+standard:debian-9
+2018-07-15 22:13:12.458396 +0000 build-fedora3:      centos7:centos-7 centos7+minimal:centos-7-minimal centos7+xfce:centos-7-xfce
+2018-07-15 22:13:12.560492 +0000 build-fedora3: > running make
+2018-07-15 22:13:12.628113 +0000 build-fedora3: Makefile:256: target 'sign.vm.fc25.app-thunderbird' does not exist
+2018-07-15 22:13:12.628226 +0000 build-fedora3: if [ -n "app-thunderbird" -a "0" -ne 0 ]; then BRANCH=release3.2; branch_var="BRANCH_app_thunderbird"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/app-thunderbird > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2018-07-15 22:13:12.628266 +0000 build-fedora3: SIGN_KEY=C52261BE0A823221D94CA1D1CB11CA1D03FA5082; \
+2018-07-15 22:13:12.628297 +0000 build-fedora3: sign_key_var="SIGN_KEY_${DIST%%+*}"; \
+2018-07-15 22:13:12.628348 +0000 build-fedora3: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2018-07-15 22:13:12.628378 +0000 build-fedora3: if [ "app-thunderbird" = linux-template-builder ]; then
+2018-07-15 22:13:12.628412 +0000 build-fedora3: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc25 template-name)
+2018-07-15 22:13:12.628434 +0000 build-fedora3: fi
+2018-07-15 22:13:12.628463 +0000 build-fedora3: if [ -r qubes-src/app-thunderbird/Makefile.builder ]; then \
+2018-07-15 22:13:12.628490 +0000 build-fedora3: .make --no-print-directory -f Makefile.generic \
+2018-07-15 22:13:12.628513 +0000 build-fedora3: ..DIST=fc25 \
+2018-07-15 22:13:12.628538 +0000 build-fedora3: ..PACKAGE_SET=vm \
+2018-07-15 22:13:12.628562 +0000 build-fedora3: ..COMPONENT=app-thunderbird \
+2018-07-15 22:13:12.628588 +0000 build-fedora3: ..SIGN_KEY=$SIGN_KEY \
+2018-07-15 22:13:12.628611 +0000 build-fedora3: ..sign || exit 1; \
+2018-07-15 22:13:12.628639 +0000 build-fedora3: elif [ -d qubes-src/app-thunderbird/rpm ]; then \
+2018-07-15 22:13:12.628665 +0000 build-fedora3: .# Old mechanism supported only for RPM
+2018-07-15 22:13:12.628694 +0000 build-fedora3: FILE_LIST=""; for RPM in qubes-src/app-thunderbird/rpm/*/*.rpm; do \
+2018-07-15 22:13:12.628723 +0000 build-fedora3: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2018-07-15 22:13:12.628749 +0000 build-fedora3: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2018-07-15 22:13:12.628772 +0000 build-fedora3: ..fi ;\
+2018-07-15 22:13:12.628794 +0000 build-fedora3: .done ; \
+2018-07-15 22:13:12.628818 +0000 build-fedora3: .if [ -n "$FILE_LIST" ]; then \
+2018-07-15 22:13:12.628842 +0000 build-fedora3: ..echo "--> Signing..."; \
+2018-07-15 22:13:12.628867 +0000 build-fedora3: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2018-07-15 22:13:12.628891 +0000 build-fedora3: ..if [ -n "$SIGN_KEY" ]; then \
+2018-07-15 22:13:12.628916 +0000 build-fedora3: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2018-07-15 22:13:12.628937 +0000 build-fedora3: ..fi; \
+2018-07-15 22:13:12.628972 +0000 build-fedora3: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2018-07-15 22:13:12.628993 +0000 build-fedora3: .fi; \
+2018-07-15 22:13:12.629059 +0000 build-fedora3: fi
+2018-07-15 22:13:12.728200 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-07-15 22:13:12.728257 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:12.730839 +0000 build-fedora3: ++ basename qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in
+2018-07-15 22:13:12.736332 +0000 build-fedora3: + [[ xthunderbird-qubes.spec.in == \x\.\i\n ]]
+2018-07-15 22:13:12.736398 +0000 build-fedora3: + '[' -r qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in ']'
+2018-07-15 22:13:12.738152 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-07-15 22:13:12.743343 +0000 build-fedora3: + tmp_spec=/tmp/tmp.IiZhBC.spec
+2018-07-15 22:13:12.747020 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:12.757893 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/generate-spec qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in /tmp/tmp.IiZhBC.spec
+2018-07-15 22:13:12.765159 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:12.766407 +0000 build-fedora3: + '[' -z qubes-src/app-thunderbird ']'
+2018-07-15 22:13:12.766470 +0000 build-fedora3: + cp qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:12.777801 +0000 build-fedora3: + read ver
+2018-07-15 22:13:12.778980 +0000 build-fedora3: + cat qubes-src/app-thunderbird/version
+2018-07-15 22:13:12.787705 +0000 build-fedora3: + '[' x == x ']'
+2018-07-15 22:13:12.787770 +0000 build-fedora3: + sed -i 's|@VERSION@|1.2.11|g' qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:12.798466 +0000 build-fedora3: + vnum=1
+2018-07-15 22:13:12.798520 +0000 build-fedora3: + read ver
+2018-07-15 22:13:12.798551 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/rel ']'
+2018-07-15 22:13:12.801788 +0000 build-fedora3: ++ cat qubes-src/app-thunderbird/rel
+2018-07-15 22:13:12.807852 +0000 build-fedora3: ++ echo 1
+2018-07-15 22:13:12.808278 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:12.815790 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/changelog ']'
+2018-07-15 22:13:12.815853 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:12.825510 +0000 build-fedora3: + cat qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:12.854355 +0000 build-fedora3: + rm -rf qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:12.867294 +0000 build-fedora3: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-07-15 22:13:12.871109 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:12.877043 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.IiZhBC.spec
+2018-07-15 22:13:13.110645 +0000 build-fedora3: + rm -f /tmp/tmp.IiZhBC.spec
+2018-07-15 22:13:13.184234 +0000 build-fedora3: /home/user/builder-r3.2/qubes-src/builder-rpm/Makefile.rpmbuilder:171: target 'sign' does not exist
+2018-07-15 22:13:13.184304 +0000 build-fedora3: cd qubes-src/app-thunderbird && for pkg in pkgs/fc25/noarch/thunderbird-qubes-1.2.11-1.fc25.noarch.rpm ; do \
+2018-07-15 22:13:13.184338 +0000 build-fedora3: .if ! rpm -K $pkg | grep -qi pgp; then \
+2018-07-15 22:13:13.184379 +0000 build-fedora3: ..setsid -w rpmsign  --digest-algo=sha256 --key-id=C52261BE0A823221D94CA1D1CB11CA1D03FA5082 --addsign $pkg </dev/null || exit 1; \
+2018-07-15 22:13:13.184406 +0000 build-fedora3: .fi; \
+2018-07-15 22:13:13.184431 +0000 build-fedora3: done
+2018-07-15 22:13:13.243228 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-07-15 22:13:13.245475 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:13.247718 +0000 build-fedora3: ++ basename qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in
+2018-07-15 22:13:13.252229 +0000 build-fedora3: + [[ xthunderbird-qubes.spec.in == \x\.\i\n ]]
+2018-07-15 22:13:13.252290 +0000 build-fedora3: + '[' -r qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in ']'
+2018-07-15 22:13:13.255284 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-07-15 22:13:13.261805 +0000 build-fedora3: + tmp_spec=/tmp/tmp.JypJNL.spec
+2018-07-15 22:13:13.263967 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:13.270460 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/generate-spec qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in /tmp/tmp.JypJNL.spec
+2018-07-15 22:13:13.276463 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:13.276519 +0000 build-fedora3: + '[' -z qubes-src/app-thunderbird ']'
+2018-07-15 22:13:13.276564 +0000 build-fedora3: + cp qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:13.288367 +0000 build-fedora3: + cat qubes-src/app-thunderbird/version
+2018-07-15 22:13:13.290152 +0000 build-fedora3: + read ver
+2018-07-15 22:13:13.293745 +0000 build-fedora3: + '[' x == x ']'
+2018-07-15 22:13:13.293816 +0000 build-fedora3: + sed -i 's|@VERSION@|1.2.11|g' qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:13.304565 +0000 build-fedora3: + vnum=1
+2018-07-15 22:13:13.304616 +0000 build-fedora3: + read ver
+2018-07-15 22:13:13.304646 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/rel ']'
+2018-07-15 22:13:13.306096 +0000 build-fedora3: ++ cat qubes-src/app-thunderbird/rel
+2018-07-15 22:13:13.313984 +0000 build-fedora3: ++ echo 1
+2018-07-15 22:13:13.315433 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:13.346301 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/changelog ']'
+2018-07-15 22:13:13.346363 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:13.357584 +0000 build-fedora3: + cat qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:13.364093 +0000 build-fedora3: + rm -rf qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:13.370783 +0000 build-fedora3: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-07-15 22:13:13.373188 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:13.378215 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.JypJNL.spec
+2018-07-15 22:13:13.603786 +0000 build-fedora3: + rm -f /tmp/tmp.JypJNL.spec
+2018-07-15 22:13:15.065186 +0000 build-fedora3: pkgs/fc25/noarch/thunderbird-qubes-1.2.11-1.fc25.noarch.rpm:
+2018-07-15 22:13:15.066845 +0000 build-fedora3: Makefile:256: target 'sign.vm.fc26.app-thunderbird' does not exist
+2018-07-15 22:13:15.066952 +0000 build-fedora3: if [ -n "app-thunderbird" -a "0" -ne 0 ]; then BRANCH=release3.2; branch_var="BRANCH_app_thunderbird"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/app-thunderbird > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2018-07-15 22:13:15.067035 +0000 build-fedora3: SIGN_KEY=C52261BE0A823221D94CA1D1CB11CA1D03FA5082; \
+2018-07-15 22:13:15.067065 +0000 build-fedora3: sign_key_var="SIGN_KEY_${DIST%%+*}"; \
+2018-07-15 22:13:15.067096 +0000 build-fedora3: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2018-07-15 22:13:15.067126 +0000 build-fedora3: if [ "app-thunderbird" = linux-template-builder ]; then
+2018-07-15 22:13:15.067162 +0000 build-fedora3: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc26 template-name)
+2018-07-15 22:13:15.067188 +0000 build-fedora3: fi
+2018-07-15 22:13:15.067218 +0000 build-fedora3: if [ -r qubes-src/app-thunderbird/Makefile.builder ]; then \
+2018-07-15 22:13:15.067247 +0000 build-fedora3: .make --no-print-directory -f Makefile.generic \
+2018-07-15 22:13:15.067273 +0000 build-fedora3: ..DIST=fc26 \
+2018-07-15 22:13:15.067297 +0000 build-fedora3: ..PACKAGE_SET=vm \
+2018-07-15 22:13:15.067322 +0000 build-fedora3: ..COMPONENT=app-thunderbird \
+2018-07-15 22:13:15.067348 +0000 build-fedora3: ..SIGN_KEY=$SIGN_KEY \
+2018-07-15 22:13:15.067372 +0000 build-fedora3: ..sign || exit 1; \
+2018-07-15 22:13:15.067400 +0000 build-fedora3: elif [ -d qubes-src/app-thunderbird/rpm ]; then \
+2018-07-15 22:13:15.067426 +0000 build-fedora3: .# Old mechanism supported only for RPM
+2018-07-15 22:13:15.067456 +0000 build-fedora3: FILE_LIST=""; for RPM in qubes-src/app-thunderbird/rpm/*/*.rpm; do \
+2018-07-15 22:13:15.067488 +0000 build-fedora3: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2018-07-15 22:13:15.067515 +0000 build-fedora3: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2018-07-15 22:13:15.067545 +0000 build-fedora3: ..fi ;\
+2018-07-15 22:13:15.067569 +0000 build-fedora3: .done ; \
+2018-07-15 22:13:15.067596 +0000 build-fedora3: .if [ -n "$FILE_LIST" ]; then \
+2018-07-15 22:13:15.067622 +0000 build-fedora3: ..echo "--> Signing..."; \
+2018-07-15 22:13:15.067651 +0000 build-fedora3: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2018-07-15 22:13:15.067679 +0000 build-fedora3: ..if [ -n "$SIGN_KEY" ]; then \
+2018-07-15 22:13:15.067707 +0000 build-fedora3: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2018-07-15 22:13:15.067731 +0000 build-fedora3: ..fi; \
+2018-07-15 22:13:15.067762 +0000 build-fedora3: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2018-07-15 22:13:15.067786 +0000 build-fedora3: .fi; \
+2018-07-15 22:13:15.067835 +0000 build-fedora3: fi
+2018-07-15 22:13:15.108202 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-07-15 22:13:15.108264 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:15.112961 +0000 build-fedora3: ++ basename qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in
+2018-07-15 22:13:15.115764 +0000 build-fedora3: + [[ xthunderbird-qubes.spec.in == \x\.\i\n ]]
+2018-07-15 22:13:15.115823 +0000 build-fedora3: + '[' -r qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in ']'
+2018-07-15 22:13:15.118302 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-07-15 22:13:15.122005 +0000 build-fedora3: + tmp_spec=/tmp/tmp.iIyyRI.spec
+2018-07-15 22:13:15.124373 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:15.130756 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/generate-spec qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in /tmp/tmp.iIyyRI.spec
+2018-07-15 22:13:15.138369 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:15.138426 +0000 build-fedora3: + '[' -z qubes-src/app-thunderbird ']'
+2018-07-15 22:13:15.138468 +0000 build-fedora3: + cp qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:15.149697 +0000 build-fedora3: + read ver
+2018-07-15 22:13:15.150056 +0000 build-fedora3: + cat qubes-src/app-thunderbird/version
+2018-07-15 22:13:15.155741 +0000 build-fedora3: + '[' x == x ']'
+2018-07-15 22:13:15.155804 +0000 build-fedora3: + sed -i 's|@VERSION@|1.2.11|g' qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:15.163328 +0000 build-fedora3: + vnum=1
+2018-07-15 22:13:15.163382 +0000 build-fedora3: + read ver
+2018-07-15 22:13:15.163414 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/rel ']'
+2018-07-15 22:13:15.165714 +0000 build-fedora3: ++ cat qubes-src/app-thunderbird/rel
+2018-07-15 22:13:15.171015 +0000 build-fedora3: ++ echo 1
+2018-07-15 22:13:15.171977 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:15.181098 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/changelog ']'
+2018-07-15 22:13:15.181160 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:15.188501 +0000 build-fedora3: + cat qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:15.194817 +0000 build-fedora3: + rm -rf qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:15.200305 +0000 build-fedora3: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-07-15 22:13:15.202482 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:15.211188 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.iIyyRI.spec
+2018-07-15 22:13:15.442043 +0000 build-fedora3: + rm -f /tmp/tmp.iIyyRI.spec
+2018-07-15 22:13:15.485137 +0000 build-fedora3: /home/user/builder-r3.2/qubes-src/builder-rpm/Makefile.rpmbuilder:171: target 'sign' does not exist
+2018-07-15 22:13:15.485204 +0000 build-fedora3: cd qubes-src/app-thunderbird && for pkg in pkgs/fc26/noarch/thunderbird-qubes-1.2.11-1.fc26.noarch.rpm ; do \
+2018-07-15 22:13:15.485248 +0000 build-fedora3: .if ! rpm -K $pkg | grep -qi pgp; then \
+2018-07-15 22:13:15.485292 +0000 build-fedora3: ..setsid -w rpmsign  --digest-algo=sha256 --key-id=C52261BE0A823221D94CA1D1CB11CA1D03FA5082 --addsign $pkg </dev/null || exit 1; \
+2018-07-15 22:13:15.485322 +0000 build-fedora3: .fi; \
+2018-07-15 22:13:15.485347 +0000 build-fedora3: done
+2018-07-15 22:13:15.539043 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-07-15 22:13:15.539096 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:15.541384 +0000 build-fedora3: ++ basename qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in
+2018-07-15 22:13:15.545997 +0000 build-fedora3: + [[ xthunderbird-qubes.spec.in == \x\.\i\n ]]
+2018-07-15 22:13:15.546109 +0000 build-fedora3: + '[' -r qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in ']'
+2018-07-15 22:13:15.548475 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-07-15 22:13:15.553153 +0000 build-fedora3: + tmp_spec=/tmp/tmp.cOa5Oe.spec
+2018-07-15 22:13:15.555495 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:15.559916 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/generate-spec qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in /tmp/tmp.cOa5Oe.spec
+2018-07-15 22:13:15.565975 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:15.566055 +0000 build-fedora3: + '[' -z qubes-src/app-thunderbird ']'
+2018-07-15 22:13:15.566097 +0000 build-fedora3: + cp qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:15.575632 +0000 build-fedora3: + read ver
+2018-07-15 22:13:15.579428 +0000 build-fedora3: + cat qubes-src/app-thunderbird/version
+2018-07-15 22:13:15.584740 +0000 build-fedora3: + '[' x == x ']'
+2018-07-15 22:13:15.584804 +0000 build-fedora3: + sed -i 's|@VERSION@|1.2.11|g' qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:15.593638 +0000 build-fedora3: + vnum=1
+2018-07-15 22:13:15.593694 +0000 build-fedora3: + read ver
+2018-07-15 22:13:15.593724 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/rel ']'
+2018-07-15 22:13:15.595374 +0000 build-fedora3: ++ cat qubes-src/app-thunderbird/rel
+2018-07-15 22:13:15.603149 +0000 build-fedora3: ++ echo 1
+2018-07-15 22:13:15.603215 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:15.611451 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/changelog ']'
+2018-07-15 22:13:15.611517 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:15.619390 +0000 build-fedora3: + cat qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:15.625920 +0000 build-fedora3: + rm -rf qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:15.632035 +0000 build-fedora3: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-07-15 22:13:15.634395 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:15.639985 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.cOa5Oe.spec
+2018-07-15 22:13:15.790489 +0000 build-fedora3: + rm -f /tmp/tmp.cOa5Oe.spec
+2018-07-15 22:13:17.723737 +0000 build-fedora3: pkgs/fc26/noarch/thunderbird-qubes-1.2.11-1.fc26.noarch.rpm:
+2018-07-15 22:13:17.727505 +0000 build-fedora3: Makefile:256: target 'sign.vm.fc27.app-thunderbird' does not exist
+2018-07-15 22:13:17.727615 +0000 build-fedora3: if [ -n "app-thunderbird" -a "0" -ne 0 ]; then BRANCH=release3.2; branch_var="BRANCH_app_thunderbird"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/app-thunderbird > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2018-07-15 22:13:17.727654 +0000 build-fedora3: SIGN_KEY=C52261BE0A823221D94CA1D1CB11CA1D03FA5082; \
+2018-07-15 22:13:17.727681 +0000 build-fedora3: sign_key_var="SIGN_KEY_${DIST%%+*}"; \
+2018-07-15 22:13:17.727710 +0000 build-fedora3: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2018-07-15 22:13:17.727737 +0000 build-fedora3: if [ "app-thunderbird" = linux-template-builder ]; then
+2018-07-15 22:13:17.727770 +0000 build-fedora3: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc27 template-name)
+2018-07-15 22:13:17.727810 +0000 build-fedora3: fi
+2018-07-15 22:13:17.727854 +0000 build-fedora3: if [ -r qubes-src/app-thunderbird/Makefile.builder ]; then \
+2018-07-15 22:13:17.727889 +0000 build-fedora3: .make --no-print-directory -f Makefile.generic \
+2018-07-15 22:13:17.727916 +0000 build-fedora3: ..DIST=fc27 \
+2018-07-15 22:13:17.727944 +0000 build-fedora3: ..PACKAGE_SET=vm \
+2018-07-15 22:13:17.728022 +0000 build-fedora3: ..COMPONENT=app-thunderbird \
+2018-07-15 22:13:17.728054 +0000 build-fedora3: ..SIGN_KEY=$SIGN_KEY \
+2018-07-15 22:13:17.728078 +0000 build-fedora3: ..sign || exit 1; \
+2018-07-15 22:13:17.728105 +0000 build-fedora3: elif [ -d qubes-src/app-thunderbird/rpm ]; then \
+2018-07-15 22:13:17.728130 +0000 build-fedora3: .# Old mechanism supported only for RPM
+2018-07-15 22:13:17.728158 +0000 build-fedora3: FILE_LIST=""; for RPM in qubes-src/app-thunderbird/rpm/*/*.rpm; do \
+2018-07-15 22:13:17.728186 +0000 build-fedora3: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2018-07-15 22:13:17.728211 +0000 build-fedora3: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2018-07-15 22:13:17.728235 +0000 build-fedora3: ..fi ;\
+2018-07-15 22:13:17.728257 +0000 build-fedora3: .done ; \
+2018-07-15 22:13:17.728279 +0000 build-fedora3: .if [ -n "$FILE_LIST" ]; then \
+2018-07-15 22:13:17.728304 +0000 build-fedora3: ..echo "--> Signing..."; \
+2018-07-15 22:13:17.728328 +0000 build-fedora3: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2018-07-15 22:13:17.728351 +0000 build-fedora3: ..if [ -n "$SIGN_KEY" ]; then \
+2018-07-15 22:13:17.728376 +0000 build-fedora3: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2018-07-15 22:13:17.728399 +0000 build-fedora3: ..fi; \
+2018-07-15 22:13:17.728436 +0000 build-fedora3: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2018-07-15 22:13:17.728469 +0000 build-fedora3: .fi; \
+2018-07-15 22:13:17.728500 +0000 build-fedora3: fi
+2018-07-15 22:13:17.749958 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-07-15 22:13:17.750031 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:17.751854 +0000 build-fedora3: ++ basename qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in
+2018-07-15 22:13:17.754412 +0000 build-fedora3: + [[ xthunderbird-qubes.spec.in == \x\.\i\n ]]
+2018-07-15 22:13:17.754619 +0000 build-fedora3: + '[' -r qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in ']'
+2018-07-15 22:13:17.757575 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-07-15 22:13:17.759912 +0000 build-fedora3: + tmp_spec=/tmp/tmp.OsMlTj.spec
+2018-07-15 22:13:17.761610 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:17.767130 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/generate-spec qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in /tmp/tmp.OsMlTj.spec
+2018-07-15 22:13:17.773625 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:17.773673 +0000 build-fedora3: + '[' -z qubes-src/app-thunderbird ']'
+2018-07-15 22:13:17.773702 +0000 build-fedora3: + cp qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:17.782175 +0000 build-fedora3: + cat qubes-src/app-thunderbird/version
+2018-07-15 22:13:17.783000 +0000 build-fedora3: + read ver
+2018-07-15 22:13:17.786049 +0000 build-fedora3: + '[' x == x ']'
+2018-07-15 22:13:17.786304 +0000 build-fedora3: + sed -i 's|@VERSION@|1.2.11|g' qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:19.103764 +0000 build-fedora3: + vnum=1
+2018-07-15 22:13:19.103819 +0000 build-fedora3: + read ver
+2018-07-15 22:13:19.104372 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/rel ']'
+2018-07-15 22:13:19.107505 +0000 build-fedora3: ++ cat qubes-src/app-thunderbird/rel
+2018-07-15 22:13:19.113090 +0000 build-fedora3: ++ echo 1
+2018-07-15 22:13:19.114094 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:19.171540 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/changelog ']'
+2018-07-15 22:13:19.171608 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:19.209116 +0000 build-fedora3: + cat qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:19.215436 +0000 build-fedora3: + rm -rf qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:19.230375 +0000 build-fedora3: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-07-15 22:13:19.235414 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:19.269298 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.OsMlTj.spec
+2018-07-15 22:13:19.462645 +0000 build-fedora3: + rm -f /tmp/tmp.OsMlTj.spec
+2018-07-15 22:13:19.507543 +0000 build-fedora3: /home/user/builder-r3.2/qubes-src/builder-rpm/Makefile.rpmbuilder:171: target 'sign' does not exist
+2018-07-15 22:13:19.507612 +0000 build-fedora3: cd qubes-src/app-thunderbird && for pkg in pkgs/fc27/noarch/thunderbird-qubes-1.2.11-1.fc27.noarch.rpm ; do \
+2018-07-15 22:13:19.507646 +0000 build-fedora3: .if ! rpm -K $pkg | grep -qi pgp; then \
+2018-07-15 22:13:19.507690 +0000 build-fedora3: ..setsid -w rpmsign  --digest-algo=sha256 --key-id=C52261BE0A823221D94CA1D1CB11CA1D03FA5082 --addsign $pkg </dev/null || exit 1; \
+2018-07-15 22:13:19.507716 +0000 build-fedora3: .fi; \
+2018-07-15 22:13:19.507739 +0000 build-fedora3: done
+2018-07-15 22:13:19.581414 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-07-15 22:13:19.581468 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:19.582517 +0000 build-fedora3: ++ basename qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in
+2018-07-15 22:13:19.617192 +0000 build-fedora3: + [[ xthunderbird-qubes.spec.in == \x\.\i\n ]]
+2018-07-15 22:13:19.617271 +0000 build-fedora3: + '[' -r qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in ']'
+2018-07-15 22:13:19.635790 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-07-15 22:13:19.671582 +0000 build-fedora3: + tmp_spec=/tmp/tmp.5nC4Jz.spec
+2018-07-15 22:13:19.672874 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:19.677019 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/generate-spec qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in /tmp/tmp.5nC4Jz.spec
+2018-07-15 22:13:19.684941 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:19.685021 +0000 build-fedora3: + '[' -z qubes-src/app-thunderbird ']'
+2018-07-15 22:13:19.685065 +0000 build-fedora3: + cp qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:19.694095 +0000 build-fedora3: + cat qubes-src/app-thunderbird/version
+2018-07-15 22:13:19.694149 +0000 build-fedora3: + read ver
+2018-07-15 22:13:19.699234 +0000 build-fedora3: + '[' x == x ']'
+2018-07-15 22:13:19.699299 +0000 build-fedora3: + sed -i 's|@VERSION@|1.2.11|g' qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:19.708277 +0000 build-fedora3: + vnum=1
+2018-07-15 22:13:19.708332 +0000 build-fedora3: + read ver
+2018-07-15 22:13:19.709539 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/rel ']'
+2018-07-15 22:13:19.712035 +0000 build-fedora3: ++ cat qubes-src/app-thunderbird/rel
+2018-07-15 22:13:19.718039 +0000 build-fedora3: ++ echo 1
+2018-07-15 22:13:19.719854 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:19.727033 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/changelog ']'
+2018-07-15 22:13:19.727096 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:19.733953 +0000 build-fedora3: + cat qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:19.739964 +0000 build-fedora3: + rm -rf qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:19.746403 +0000 build-fedora3: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-07-15 22:13:19.746883 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:19.750945 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.5nC4Jz.spec
+2018-07-15 22:13:19.918648 +0000 build-fedora3: + rm -f /tmp/tmp.5nC4Jz.spec
+2018-07-15 22:13:21.261028 +0000 build-fedora3: pkgs/fc27/noarch/thunderbird-qubes-1.2.11-1.fc27.noarch.rpm:
+2018-07-15 22:13:21.266246 +0000 build-fedora3: Makefile:256: target 'sign.vm.fc28.app-thunderbird' does not exist
+2018-07-15 22:13:21.266349 +0000 build-fedora3: if [ -n "app-thunderbird" -a "0" -ne 0 ]; then BRANCH=release3.2; branch_var="BRANCH_app_thunderbird"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/app-thunderbird > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2018-07-15 22:13:21.266398 +0000 build-fedora3: SIGN_KEY=C52261BE0A823221D94CA1D1CB11CA1D03FA5082; \
+2018-07-15 22:13:21.266426 +0000 build-fedora3: sign_key_var="SIGN_KEY_${DIST%%+*}"; \
+2018-07-15 22:13:21.266454 +0000 build-fedora3: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2018-07-15 22:13:21.266482 +0000 build-fedora3: if [ "app-thunderbird" = linux-template-builder ]; then
+2018-07-15 22:13:21.266514 +0000 build-fedora3: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc28 template-name)
+2018-07-15 22:13:21.266541 +0000 build-fedora3: fi
+2018-07-15 22:13:21.266570 +0000 build-fedora3: if [ -r qubes-src/app-thunderbird/Makefile.builder ]; then \
+2018-07-15 22:13:21.266598 +0000 build-fedora3: .make --no-print-directory -f Makefile.generic \
+2018-07-15 22:13:21.266621 +0000 build-fedora3: ..DIST=fc28 \
+2018-07-15 22:13:21.266645 +0000 build-fedora3: ..PACKAGE_SET=vm \
+2018-07-15 22:13:21.266674 +0000 build-fedora3: ..COMPONENT=app-thunderbird \
+2018-07-15 22:13:21.266699 +0000 build-fedora3: ..SIGN_KEY=$SIGN_KEY \
+2018-07-15 22:13:21.266724 +0000 build-fedora3: ..sign || exit 1; \
+2018-07-15 22:13:21.266751 +0000 build-fedora3: elif [ -d qubes-src/app-thunderbird/rpm ]; then \
+2018-07-15 22:13:21.266777 +0000 build-fedora3: .# Old mechanism supported only for RPM
+2018-07-15 22:13:21.266806 +0000 build-fedora3: FILE_LIST=""; for RPM in qubes-src/app-thunderbird/rpm/*/*.rpm; do \
+2018-07-15 22:13:21.266836 +0000 build-fedora3: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2018-07-15 22:13:21.266862 +0000 build-fedora3: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2018-07-15 22:13:21.266884 +0000 build-fedora3: ..fi ;\
+2018-07-15 22:13:21.266907 +0000 build-fedora3: .done ; \
+2018-07-15 22:13:21.266932 +0000 build-fedora3: .if [ -n "$FILE_LIST" ]; then \
+2018-07-15 22:13:21.266980 +0000 build-fedora3: ..echo "--> Signing..."; \
+2018-07-15 22:13:21.267009 +0000 build-fedora3: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2018-07-15 22:13:21.267033 +0000 build-fedora3: ..if [ -n "$SIGN_KEY" ]; then \
+2018-07-15 22:13:21.267059 +0000 build-fedora3: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2018-07-15 22:13:21.267082 +0000 build-fedora3: ..fi; \
+2018-07-15 22:13:21.267112 +0000 build-fedora3: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2018-07-15 22:13:21.267134 +0000 build-fedora3: .fi; \
+2018-07-15 22:13:21.267154 +0000 build-fedora3: fi
+2018-07-15 22:13:21.302975 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-07-15 22:13:21.303069 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:21.306415 +0000 build-fedora3: ++ basename qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in
+2018-07-15 22:13:21.311576 +0000 build-fedora3: + [[ xthunderbird-qubes.spec.in == \x\.\i\n ]]
+2018-07-15 22:13:21.311660 +0000 build-fedora3: + '[' -r qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in ']'
+2018-07-15 22:13:21.316119 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-07-15 22:13:21.326169 +0000 build-fedora3: + tmp_spec=/tmp/tmp.jTQx2o.spec
+2018-07-15 22:13:21.326237 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:21.326279 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/generate-spec qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in /tmp/tmp.jTQx2o.spec
+2018-07-15 22:13:21.334118 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:21.334173 +0000 build-fedora3: + '[' -z qubes-src/app-thunderbird ']'
+2018-07-15 22:13:21.334213 +0000 build-fedora3: + cp qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:21.343243 +0000 build-fedora3: + read ver
+2018-07-15 22:13:21.345175 +0000 build-fedora3: + cat qubes-src/app-thunderbird/version
+2018-07-15 22:13:21.349365 +0000 build-fedora3: + '[' x == x ']'
+2018-07-15 22:13:21.349428 +0000 build-fedora3: + sed -i 's|@VERSION@|1.2.11|g' qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:21.358285 +0000 build-fedora3: + vnum=1
+2018-07-15 22:13:21.358343 +0000 build-fedora3: + read ver
+2018-07-15 22:13:21.358693 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/rel ']'
+2018-07-15 22:13:21.361664 +0000 build-fedora3: ++ cat qubes-src/app-thunderbird/rel
+2018-07-15 22:13:21.387261 +0000 build-fedora3: ++ echo 1
+2018-07-15 22:13:21.392818 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:21.396826 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/changelog ']'
+2018-07-15 22:13:21.396898 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:21.405493 +0000 build-fedora3: + cat qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:21.412977 +0000 build-fedora3: + rm -rf qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:21.418429 +0000 build-fedora3: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-07-15 22:13:21.421057 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:21.425705 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.jTQx2o.spec
+2018-07-15 22:13:21.552281 +0000 build-fedora3: + rm -f /tmp/tmp.jTQx2o.spec
+2018-07-15 22:13:21.591754 +0000 build-fedora3: /home/user/builder-r3.2/qubes-src/builder-rpm/Makefile.rpmbuilder:171: target 'sign' does not exist
+2018-07-15 22:13:21.591815 +0000 build-fedora3: cd qubes-src/app-thunderbird && for pkg in pkgs/fc28/noarch/thunderbird-qubes-1.2.11-1.fc28.noarch.rpm ; do \
+2018-07-15 22:13:21.591845 +0000 build-fedora3: .if ! rpm -K $pkg | grep -qi pgp; then \
+2018-07-15 22:13:21.591888 +0000 build-fedora3: ..setsid -w rpmsign  --digest-algo=sha256 --key-id=C52261BE0A823221D94CA1D1CB11CA1D03FA5082 --addsign $pkg </dev/null || exit 1; \
+2018-07-15 22:13:21.591912 +0000 build-fedora3: .fi; \
+2018-07-15 22:13:21.591933 +0000 build-fedora3: done
+2018-07-15 22:13:21.636775 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-07-15 22:13:21.636827 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:21.644926 +0000 build-fedora3: ++ basename qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in
+2018-07-15 22:13:21.648363 +0000 build-fedora3: + [[ xthunderbird-qubes.spec.in == \x\.\i\n ]]
+2018-07-15 22:13:21.648547 +0000 build-fedora3: + '[' -r qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in ']'
+2018-07-15 22:13:21.652434 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-07-15 22:13:21.656264 +0000 build-fedora3: + tmp_spec=/tmp/tmp.OI1hSa.spec
+2018-07-15 22:13:21.659547 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:21.663426 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/generate-spec qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in /tmp/tmp.OI1hSa.spec
+2018-07-15 22:13:21.670630 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:21.670889 +0000 build-fedora3: + '[' -z qubes-src/app-thunderbird ']'
+2018-07-15 22:13:21.670947 +0000 build-fedora3: + cp qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:21.681062 +0000 build-fedora3: + read ver
+2018-07-15 22:13:21.682413 +0000 build-fedora3: + cat qubes-src/app-thunderbird/version
+2018-07-15 22:13:21.685670 +0000 build-fedora3: + '[' x == x ']'
+2018-07-15 22:13:21.685737 +0000 build-fedora3: + sed -i 's|@VERSION@|1.2.11|g' qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:21.690969 +0000 build-fedora3: + vnum=1
+2018-07-15 22:13:21.692250 +0000 build-fedora3: + read ver
+2018-07-15 22:13:21.692305 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/rel ']'
+2018-07-15 22:13:21.693897 +0000 build-fedora3: ++ cat qubes-src/app-thunderbird/rel
+2018-07-15 22:13:21.698945 +0000 build-fedora3: ++ echo 1
+2018-07-15 22:13:21.700161 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:22.753153 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/changelog ']'
+2018-07-15 22:13:22.753222 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:22.779222 +0000 build-fedora3: + cat qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:22.779283 +0000 build-fedora3: + rm -rf qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:22.779313 +0000 build-fedora3: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-07-15 22:13:22.788734 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:22.788809 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.OI1hSa.spec
+2018-07-15 22:13:22.967756 +0000 build-fedora3: + rm -f /tmp/tmp.OI1hSa.spec
+2018-07-15 22:13:24.242136 +0000 build-fedora3: pkgs/fc28/noarch/thunderbird-qubes-1.2.11-1.fc28.noarch.rpm:
+2018-07-15 22:13:24.247084 +0000 build-fedora3: Makefile:765: target 'internal-update-repo-current-testing.vm.fc25.app-thunderbird' does not exist
+2018-07-15 22:13:24.247151 +0000 build-fedora3: repo_base_var="LINUX_REPO_fc25_BASEDIR"; \
+2018-07-15 22:13:24.247192 +0000 build-fedora3: if [ "app-thunderbird" = linux-template-builder ]; then \
+2018-07-15 22:13:24.247229 +0000 build-fedora3: .# templates belongs to dom0 repository, even though PACKAGE_SET=vm
+2018-07-15 22:13:24.247259 +0000 build-fedora3: repo_base_var="LINUX_REPO__BASEDIR"; \
+2018-07-15 22:13:24.247283 +0000 build-fedora3: fi; \
+2018-07-15 22:13:24.247312 +0000 build-fedora3: if [ -n "${!repo_base_var}" ]; then \
+2018-07-15 22:13:24.247340 +0000 build-fedora3: .repo_basedir="${!repo_base_var}"; \
+2018-07-15 22:13:24.247361 +0000 build-fedora3: else \
+2018-07-15 22:13:24.247388 +0000 build-fedora3: .repo_basedir="qubes-src/linux-yum/r3.2"; \
+2018-07-15 22:13:24.247409 +0000 build-fedora3: fi; \
+2018-07-15 22:13:24.247436 +0000 build-fedora3: if [ -r qubes-src/app-thunderbird/Makefile.builder ]; then \
+2018-07-15 22:13:24.247463 +0000 build-fedora3: .echo -n "Updating qubes-src/app-thunderbird... "; \
+2018-07-15 22:13:24.247486 +0000 build-fedora3: .if [ "0" -eq 1 ]; then \
+2018-07-15 22:13:24.247516 +0000 build-fedora3: ..vtag=`git -C qubes-src/app-thunderbird tag --points-at HEAD --list v*`; \
+2018-07-15 22:13:24.247557 +0000 build-fedora3: ..if [ -z "$vtag" ]; then \
+2018-07-15 22:13:24.247591 +0000 build-fedora3: ...echo "no version tag"; \
+2018-07-15 22:13:24.247646 +0000 build-fedora3: ...exit 0; \
+2018-07-15 22:13:24.247680 +0000 build-fedora3: ..fi; \
+2018-07-15 22:13:24.247705 +0000 build-fedora3: .fi; \
+2018-07-15 22:13:24.247732 +0000 build-fedora3: .if [ "app-thunderbird" = linux-template-builder ]; then
+2018-07-15 22:13:24.247765 +0000 build-fedora3: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc25 template-name)
+2018-07-15 22:13:24.247787 +0000 build-fedora3: fi
+2018-07-15 22:13:24.247836 +0000 build-fedora3: component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc25 PACKAGE_SET=vm COMPONENT=`basename qubes-src/app-thunderbird` UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc25 get-var GET_VAR=PACKAGE_LIST); \
+2018-07-15 22:13:24.247866 +0000 build-fedora3: .if [ -z "$component_packages" ]; then \
+2018-07-15 22:13:24.247891 +0000 build-fedora3: ..echo "no packages."; \
+2018-07-15 22:13:24.247913 +0000 build-fedora3: ..exit 0; \
+2018-07-15 22:13:24.247934 +0000 build-fedora3: .fi; \
+2018-07-15 22:13:24.247987 +0000 build-fedora3: .make -s -f Makefile.generic DIST=fc25 PACKAGE_SET=vm \
+2018-07-15 22:13:24.248016 +0000 build-fedora3: ..COMPONENT=`basename qubes-src/app-thunderbird` \
+2018-07-15 22:13:24.248042 +0000 build-fedora3: ..SNAPSHOT_REPO=current-testing \
+2018-07-15 22:13:24.248067 +0000 build-fedora3: ..TARGET_REPO=current-testing \
+2018-07-15 22:13:24.248098 +0000 build-fedora3: ..UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc25 \
+2018-07-15 22:13:24.248132 +0000 build-fedora3: ..SNAPSHOT_FILE=/home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-fc25-`basename qubes-src/app-thunderbird` \
+2018-07-15 22:13:24.248167 +0000 build-fedora3: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2018-07-15_21-47-47 \
+2018-07-15 22:13:24.248192 +0000 build-fedora3: ..update-repo || exit 1; \
+2018-07-15 22:13:24.248224 +0000 build-fedora3: elif make -C qubes-src/app-thunderbird -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2018-07-15 22:13:24.248252 +0000 build-fedora3: .echo "Updating qubes-src/app-thunderbird... "; \
+2018-07-15 22:13:24.248284 +0000 build-fedora3: .DIST=fc25 UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc25 \
+2018-07-15 22:13:24.248315 +0000 build-fedora3: .make -s -C qubes-src/app-thunderbird update-repo-current-testing || exit 1; \
+2018-07-15 22:13:24.248337 +0000 build-fedora3: else \
+2018-07-15 22:13:24.248363 +0000 build-fedora3: .echo -n "Updating qubes-src/app-thunderbird... skipping."; \
+2018-07-15 22:13:24.248386 +0000 build-fedora3: fi; \
+2018-07-15 22:13:24.248407 +0000 build-fedora3: echo
+2018-07-15 22:13:24.297896 +0000 build-fedora3: Updating qubes-src/app-thunderbird... + ERR_OUTPUT=/dev/stderr
+2018-07-15 22:13:24.297952 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:24.299120 +0000 build-fedora3: ++ basename qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in
+2018-07-15 22:13:24.303518 +0000 build-fedora3: + [[ xthunderbird-qubes.spec.in == \x\.\i\n ]]
+2018-07-15 22:13:24.304239 +0000 build-fedora3: + '[' -r qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in ']'
+2018-07-15 22:13:24.306603 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-07-15 22:13:24.311540 +0000 build-fedora3: + tmp_spec=/tmp/tmp.MJGXEd.spec
+2018-07-15 22:13:24.317907 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:24.323255 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/generate-spec qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in /tmp/tmp.MJGXEd.spec
+2018-07-15 22:13:24.332396 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:24.332467 +0000 build-fedora3: + '[' -z qubes-src/app-thunderbird ']'
+2018-07-15 22:13:24.332521 +0000 build-fedora3: + cp qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:24.348807 +0000 build-fedora3: + cat qubes-src/app-thunderbird/version
+2018-07-15 22:13:24.350086 +0000 build-fedora3: + read ver
+2018-07-15 22:13:24.353395 +0000 build-fedora3: + '[' x == x ']'
+2018-07-15 22:13:24.353458 +0000 build-fedora3: + sed -i 's|@VERSION@|1.2.11|g' qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:24.361153 +0000 build-fedora3: + vnum=1
+2018-07-15 22:13:24.361224 +0000 build-fedora3: + read ver
+2018-07-15 22:13:24.362135 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/rel ']'
+2018-07-15 22:13:24.364435 +0000 build-fedora3: ++ cat qubes-src/app-thunderbird/rel
+2018-07-15 22:13:24.368919 +0000 build-fedora3: ++ echo 1
+2018-07-15 22:13:24.369473 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:24.382069 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/changelog ']'
+2018-07-15 22:13:24.382140 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:24.386905 +0000 build-fedora3: + cat qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:24.393428 +0000 build-fedora3: + rm -rf qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:24.399100 +0000 build-fedora3: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-07-15 22:13:24.401383 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:24.405086 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.MJGXEd.spec
+2018-07-15 22:13:24.536331 +0000 build-fedora3: + rm -f /tmp/tmp.MJGXEd.spec
+2018-07-15 22:13:24.572619 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-07-15 22:13:24.572679 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:24.574061 +0000 build-fedora3: ++ basename qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in
+2018-07-15 22:13:24.578258 +0000 build-fedora3: + [[ xthunderbird-qubes.spec.in == \x\.\i\n ]]
+2018-07-15 22:13:24.578317 +0000 build-fedora3: + '[' -r qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in ']'
+2018-07-15 22:13:24.580581 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-07-15 22:13:24.583957 +0000 build-fedora3: + tmp_spec=/tmp/tmp.QNmIue.spec
+2018-07-15 22:13:24.587804 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:24.591145 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/generate-spec qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in /tmp/tmp.QNmIue.spec
+2018-07-15 22:13:24.599372 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:24.599431 +0000 build-fedora3: + '[' -z qubes-src/app-thunderbird ']'
+2018-07-15 22:13:24.599472 +0000 build-fedora3: + cp qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:24.609625 +0000 build-fedora3: + read ver
+2018-07-15 22:13:24.611502 +0000 build-fedora3: + cat qubes-src/app-thunderbird/version
+2018-07-15 22:13:24.615917 +0000 build-fedora3: + '[' x == x ']'
+2018-07-15 22:13:24.615997 +0000 build-fedora3: + sed -i 's|@VERSION@|1.2.11|g' qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:24.625101 +0000 build-fedora3: + vnum=1
+2018-07-15 22:13:24.625156 +0000 build-fedora3: + read ver
+2018-07-15 22:13:24.625186 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/rel ']'
+2018-07-15 22:13:24.626960 +0000 build-fedora3: ++ cat qubes-src/app-thunderbird/rel
+2018-07-15 22:13:24.633407 +0000 build-fedora3: ++ echo 1
+2018-07-15 22:13:24.634672 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:24.642983 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/changelog ']'
+2018-07-15 22:13:24.643071 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:24.651339 +0000 build-fedora3: + cat qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:24.657019 +0000 build-fedora3: + rm -rf qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:24.664340 +0000 build-fedora3: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-07-15 22:13:24.666062 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:24.676662 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.QNmIue.spec
+2018-07-15 22:13:24.828649 +0000 build-fedora3: + rm -f /tmp/tmp.QNmIue.spec
+2018-07-15 22:13:24.891414 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-07-15 22:13:24.891475 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:24.894124 +0000 build-fedora3: ++ basename qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in
+2018-07-15 22:13:24.953591 +0000 build-fedora3: + [[ xthunderbird-qubes.spec.in == \x\.\i\n ]]
+2018-07-15 22:13:24.953653 +0000 build-fedora3: + '[' -r qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in ']'
+2018-07-15 22:13:24.953683 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-07-15 22:13:24.953708 +0000 build-fedora3: + tmp_spec=/tmp/tmp.jNmAC1.spec
+2018-07-15 22:13:24.953737 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:24.953774 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/generate-spec qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in /tmp/tmp.jNmAC1.spec
+2018-07-15 22:13:24.953797 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:24.953821 +0000 build-fedora3: + '[' -z qubes-src/app-thunderbird ']'
+2018-07-15 22:13:24.953853 +0000 build-fedora3: + cp qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:24.953877 +0000 build-fedora3: + read ver
+2018-07-15 22:13:24.953902 +0000 build-fedora3: + cat qubes-src/app-thunderbird/version
+2018-07-15 22:13:24.953924 +0000 build-fedora3: + '[' x == x ']'
+2018-07-15 22:13:24.953955 +0000 build-fedora3: + sed -i 's|@VERSION@|1.2.11|g' qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:24.954015 +0000 build-fedora3: + vnum=1
+2018-07-15 22:13:24.954036 +0000 build-fedora3: + read ver
+2018-07-15 22:13:24.954061 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/rel ']'
+2018-07-15 22:13:24.954085 +0000 build-fedora3: ++ cat qubes-src/app-thunderbird/rel
+2018-07-15 22:13:24.954105 +0000 build-fedora3: ++ echo 1
+2018-07-15 22:13:24.954137 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:24.962805 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/changelog ']'
+2018-07-15 22:13:24.962866 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:24.971461 +0000 build-fedora3: + cat qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:24.979105 +0000 build-fedora3: + rm -rf qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:24.991633 +0000 build-fedora3: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-07-15 22:13:24.991709 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:25.020907 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.jNmAC1.spec
+2018-07-15 22:13:25.128050 +0000 build-fedora3: + rm -f /tmp/tmp.jNmAC1.spec
+2018-07-15 22:13:25.244466 +0000 build-fedora3: /home/user/builder-r3.2/qubes-src/builder-rpm/Makefile.rpmbuilder:142: target 'update-repo-do' does not exist
+2018-07-15 22:13:25.244546 +0000 build-fedora3: mkdir -p /home/user/builder-r3.2/qubes-src/linux-yum/r3.2/current-testing/vm/fc25/rpm
+2018-07-15 22:13:25.295390 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-07-15 22:13:25.295455 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:25.298369 +0000 build-fedora3: ++ basename qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in
+2018-07-15 22:13:25.302353 +0000 build-fedora3: + [[ xthunderbird-qubes.spec.in == \x\.\i\n ]]
+2018-07-15 22:13:25.302435 +0000 build-fedora3: + '[' -r qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in ']'
+2018-07-15 22:13:25.305413 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-07-15 22:13:25.310210 +0000 build-fedora3: + tmp_spec=/tmp/tmp.KsehOE.spec
+2018-07-15 22:13:25.311562 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:25.315791 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/generate-spec qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in /tmp/tmp.KsehOE.spec
+2018-07-15 22:13:25.323474 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:25.323538 +0000 build-fedora3: + '[' -z qubes-src/app-thunderbird ']'
+2018-07-15 22:13:25.323583 +0000 build-fedora3: + cp qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:25.390027 +0000 build-fedora3: + cat qubes-src/app-thunderbird/version
+2018-07-15 22:13:25.390076 +0000 build-fedora3: + read ver
+2018-07-15 22:13:25.393492 +0000 build-fedora3: + '[' x == x ']'
+2018-07-15 22:13:25.393562 +0000 build-fedora3: + sed -i 's|@VERSION@|1.2.11|g' qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:25.400897 +0000 build-fedora3: + vnum=1
+2018-07-15 22:13:25.400953 +0000 build-fedora3: + read ver
+2018-07-15 22:13:25.402398 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/rel ']'
+2018-07-15 22:13:25.404816 +0000 build-fedora3: ++ cat qubes-src/app-thunderbird/rel
+2018-07-15 22:13:25.410029 +0000 build-fedora3: ++ echo 1
+2018-07-15 22:13:25.413496 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:25.418896 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/changelog ']'
+2018-07-15 22:13:25.418975 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:25.426037 +0000 build-fedora3: + cat qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:25.432233 +0000 build-fedora3: + rm -rf qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:25.442298 +0000 build-fedora3: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-07-15 22:13:25.448596 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:25.452572 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.KsehOE.spec
+2018-07-15 22:13:25.585479 +0000 build-fedora3: + rm -f /tmp/tmp.KsehOE.spec
+2018-07-15 22:13:25.607097 +0000 build-fedora3: if [ -n "pkgs/fc25/noarch/thunderbird-qubes-1.2.11-1.fc25.noarch.rpm" ]; then \
+2018-07-15 22:13:25.607171 +0000 build-fedora3: .cd qubes-src/app-thunderbird && ln -f pkgs/fc25/noarch/thunderbird-qubes-1.2.11-1.fc25.noarch.rpm  /home/user/builder-r3.2/qubes-src/linux-yum/r3.2/current-testing/vm/fc25/rpm/; \
+2018-07-15 22:13:25.607199 +0000 build-fedora3: else \
+2018-07-15 22:13:25.607233 +0000 build-fedora3: .echo "`tput bold`No packages defined by rpm_spec/thunderbird-qubes.spec, syntax error?`tput sgr0`"; \
+2018-07-15 22:13:25.607258 +0000 build-fedora3: .exit 1; \
+2018-07-15 22:13:25.607278 +0000 build-fedora3: fi
+2018-07-15 22:13:25.617871 +0000 build-fedora3: cd qubes-src/app-thunderbird && echo pkgs/fc25/noarch/thunderbird-qubes-1.2.11-1.fc25.noarch.rpm  > /home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-fc25-app-thunderbird
+2018-07-15 22:13:25.676930 +0000 build-fedora3: /home/user/builder-r3.2/qubes-src/builder-github//Makefile.github:18: target 'notify-github' does not exist
+2018-07-15 22:13:25.677055 +0000 build-fedora3: [ -z "thunderbird-qubes-1.2.11-1.fc25" ] || /home/user/builder-r3.2/qubes-src/builder-github//notify-issues \
+2018-07-15 22:13:25.677095 +0000 build-fedora3: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2018-07-15_21-47-47" \
+2018-07-15 22:13:25.677121 +0000 build-fedora3: .upload \
+2018-07-15 22:13:25.677145 +0000 build-fedora3: ."r3.2" \
+2018-07-15 22:13:25.677170 +0000 build-fedora3: ."qubes-src/app-thunderbird" \
+2018-07-15 22:13:25.677200 +0000 build-fedora3: ."thunderbird-qubes-1.2.11-1.fc25" \
+2018-07-15 22:13:25.677224 +0000 build-fedora3: ."fc25" \
+2018-07-15 22:13:25.677245 +0000 build-fedora3: ."vm" \
+2018-07-15 22:13:25.677267 +0000 build-fedora3: ."current-testing" \
+2018-07-15 22:13:25.677298 +0000 build-fedora3: ."/home/user/github-notify-state/r3.2-app-thunderbird-vm-fc25-current-testing"
+2018-07-15 22:13:25.746352 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-07-15 22:13:25.746406 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:25.748087 +0000 build-fedora3: ++ basename qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in
+2018-07-15 22:13:25.751231 +0000 build-fedora3: + [[ xthunderbird-qubes.spec.in == \x\.\i\n ]]
+2018-07-15 22:13:25.751296 +0000 build-fedora3: + '[' -r qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in ']'
+2018-07-15 22:13:25.753079 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-07-15 22:13:25.756101 +0000 build-fedora3: + tmp_spec=/tmp/tmp.10r2BZ.spec
+2018-07-15 22:13:25.757826 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:25.761079 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/generate-spec qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in /tmp/tmp.10r2BZ.spec
+2018-07-15 22:13:25.766351 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:25.766410 +0000 build-fedora3: + '[' -z qubes-src/app-thunderbird ']'
+2018-07-15 22:13:25.766452 +0000 build-fedora3: + cp qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:25.774662 +0000 build-fedora3: + cat qubes-src/app-thunderbird/version
+2018-07-15 22:13:25.774715 +0000 build-fedora3: + read ver
+2018-07-15 22:13:25.777054 +0000 build-fedora3: + '[' x == x ']'
+2018-07-15 22:13:25.777119 +0000 build-fedora3: + sed -i 's|@VERSION@|1.2.11|g' qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:25.783133 +0000 build-fedora3: + vnum=1
+2018-07-15 22:13:25.783196 +0000 build-fedora3: + read ver
+2018-07-15 22:13:25.784672 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/rel ']'
+2018-07-15 22:13:25.786057 +0000 build-fedora3: ++ cat qubes-src/app-thunderbird/rel
+2018-07-15 22:13:25.790727 +0000 build-fedora3: ++ echo 1
+2018-07-15 22:13:25.791824 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:25.798458 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/changelog ']'
+2018-07-15 22:13:25.798515 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:25.805437 +0000 build-fedora3: + cat qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:25.809937 +0000 build-fedora3: + rm -rf qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:25.814798 +0000 build-fedora3: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-07-15 22:13:25.816465 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:25.819575 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.10r2BZ.spec
+2018-07-15 22:13:25.937409 +0000 build-fedora3: + rm -f /tmp/tmp.10r2BZ.spec
+2018-07-15 22:13:30.578434 +0000 build-fedora3: WARNING: message template /home/user/builder-r3.2/qubes-src/builder-github/message-current-testing-vm doesn't exist, not adding comments
+2018-07-15 22:13:30.584011 +0000 build-fedora3: 
+2018-07-15 22:13:30.586849 +0000 build-fedora3: Makefile:740: update target 'internal-update-repo-current-testing.vm.fc25' due to: internal-update-repo-current-testing.vm.fc25.app-thunderbird
+2018-07-15 22:13:30.586906 +0000 build-fedora3: true
+2018-07-15 22:13:30.590362 +0000 build-fedora3: Makefile:765: target 'internal-update-repo-current-testing.vm.fc26.app-thunderbird' does not exist
+2018-07-15 22:13:30.590421 +0000 build-fedora3: repo_base_var="LINUX_REPO_fc26_BASEDIR"; \
+2018-07-15 22:13:30.590454 +0000 build-fedora3: if [ "app-thunderbird" = linux-template-builder ]; then \
+2018-07-15 22:13:30.590484 +0000 build-fedora3: .# templates belongs to dom0 repository, even though PACKAGE_SET=vm
+2018-07-15 22:13:30.590510 +0000 build-fedora3: repo_base_var="LINUX_REPO__BASEDIR"; \
+2018-07-15 22:13:30.590533 +0000 build-fedora3: fi; \
+2018-07-15 22:13:30.590560 +0000 build-fedora3: if [ -n "${!repo_base_var}" ]; then \
+2018-07-15 22:13:30.590585 +0000 build-fedora3: .repo_basedir="${!repo_base_var}"; \
+2018-07-15 22:13:30.590608 +0000 build-fedora3: else \
+2018-07-15 22:13:30.590634 +0000 build-fedora3: .repo_basedir="qubes-src/linux-yum/r3.2"; \
+2018-07-15 22:13:30.590657 +0000 build-fedora3: fi; \
+2018-07-15 22:13:30.590685 +0000 build-fedora3: if [ -r qubes-src/app-thunderbird/Makefile.builder ]; then \
+2018-07-15 22:13:30.590713 +0000 build-fedora3: .echo -n "Updating qubes-src/app-thunderbird... "; \
+2018-07-15 22:13:30.590738 +0000 build-fedora3: .if [ "0" -eq 1 ]; then \
+2018-07-15 22:13:30.590768 +0000 build-fedora3: ..vtag=`git -C qubes-src/app-thunderbird tag --points-at HEAD --list v*`; \
+2018-07-15 22:13:30.590792 +0000 build-fedora3: ..if [ -z "$vtag" ]; then \
+2018-07-15 22:13:30.590816 +0000 build-fedora3: ...echo "no version tag"; \
+2018-07-15 22:13:30.590844 +0000 build-fedora3: ...exit 0; \
+2018-07-15 22:13:30.590867 +0000 build-fedora3: ..fi; \
+2018-07-15 22:13:30.590890 +0000 build-fedora3: .fi; \
+2018-07-15 22:13:30.590917 +0000 build-fedora3: .if [ "app-thunderbird" = linux-template-builder ]; then
+2018-07-15 22:13:30.590950 +0000 build-fedora3: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc26 template-name)
+2018-07-15 22:13:30.591001 +0000 build-fedora3: fi
+2018-07-15 22:13:30.591051 +0000 build-fedora3: component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc26 PACKAGE_SET=vm COMPONENT=`basename qubes-src/app-thunderbird` UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc26 get-var GET_VAR=PACKAGE_LIST); \
+2018-07-15 22:13:30.591080 +0000 build-fedora3: .if [ -z "$component_packages" ]; then \
+2018-07-15 22:13:30.591106 +0000 build-fedora3: ..echo "no packages."; \
+2018-07-15 22:13:30.591130 +0000 build-fedora3: ..exit 0; \
+2018-07-15 22:13:30.591154 +0000 build-fedora3: .fi; \
+2018-07-15 22:13:30.591182 +0000 build-fedora3: .make -s -f Makefile.generic DIST=fc26 PACKAGE_SET=vm \
+2018-07-15 22:13:30.591209 +0000 build-fedora3: ..COMPONENT=`basename qubes-src/app-thunderbird` \
+2018-07-15 22:13:30.591233 +0000 build-fedora3: ..SNAPSHOT_REPO=current-testing \
+2018-07-15 22:13:30.591257 +0000 build-fedora3: ..TARGET_REPO=current-testing \
+2018-07-15 22:13:30.591286 +0000 build-fedora3: ..UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc26 \
+2018-07-15 22:13:30.591322 +0000 build-fedora3: ..SNAPSHOT_FILE=/home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-fc26-`basename qubes-src/app-thunderbird` \
+2018-07-15 22:13:30.591357 +0000 build-fedora3: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2018-07-15_21-48-51 \
+2018-07-15 22:13:30.591383 +0000 build-fedora3: ..update-repo || exit 1; \
+2018-07-15 22:13:30.591414 +0000 build-fedora3: elif make -C qubes-src/app-thunderbird -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2018-07-15 22:13:30.591461 +0000 build-fedora3: .echo "Updating qubes-src/app-thunderbird... "; \
+2018-07-15 22:13:30.591515 +0000 build-fedora3: .DIST=fc26 UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc26 \
+2018-07-15 22:13:30.591547 +0000 build-fedora3: .make -s -C qubes-src/app-thunderbird update-repo-current-testing || exit 1; \
+2018-07-15 22:13:30.591570 +0000 build-fedora3: else \
+2018-07-15 22:13:30.591598 +0000 build-fedora3: .echo -n "Updating qubes-src/app-thunderbird... skipping."; \
+2018-07-15 22:13:30.591620 +0000 build-fedora3: fi; \
+2018-07-15 22:13:30.591640 +0000 build-fedora3: echo
+2018-07-15 22:13:30.632831 +0000 build-fedora3: Updating qubes-src/app-thunderbird... + ERR_OUTPUT=/dev/stderr
+2018-07-15 22:13:30.632893 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:30.635452 +0000 build-fedora3: ++ basename qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in
+2018-07-15 22:13:30.639006 +0000 build-fedora3: + [[ xthunderbird-qubes.spec.in == \x\.\i\n ]]
+2018-07-15 22:13:30.639083 +0000 build-fedora3: + '[' -r qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in ']'
+2018-07-15 22:13:30.641940 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-07-15 22:13:30.645592 +0000 build-fedora3: + tmp_spec=/tmp/tmp.ZC7ov4.spec
+2018-07-15 22:13:30.648115 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:30.654525 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/generate-spec qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in /tmp/tmp.ZC7ov4.spec
+2018-07-15 22:13:30.658435 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:30.658493 +0000 build-fedora3: + '[' -z qubes-src/app-thunderbird ']'
+2018-07-15 22:13:30.658883 +0000 build-fedora3: + cp qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:30.668000 +0000 build-fedora3: + cat qubes-src/app-thunderbird/version
+2018-07-15 22:13:30.668196 +0000 build-fedora3: + read ver
+2018-07-15 22:13:30.672384 +0000 build-fedora3: + '[' x == x ']'
+2018-07-15 22:13:30.672449 +0000 build-fedora3: + sed -i 's|@VERSION@|1.2.11|g' qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:30.679723 +0000 build-fedora3: + vnum=1
+2018-07-15 22:13:30.679776 +0000 build-fedora3: + read ver
+2018-07-15 22:13:30.681316 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/rel ']'
+2018-07-15 22:13:30.683876 +0000 build-fedora3: ++ cat qubes-src/app-thunderbird/rel
+2018-07-15 22:13:30.690198 +0000 build-fedora3: ++ echo 1
+2018-07-15 22:13:30.692377 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:30.700568 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/changelog ']'
+2018-07-15 22:13:30.700628 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:30.707729 +0000 build-fedora3: + cat qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:30.713566 +0000 build-fedora3: + rm -rf qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:30.719474 +0000 build-fedora3: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-07-15 22:13:30.720951 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:30.727673 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.ZC7ov4.spec
+2018-07-15 22:13:30.860321 +0000 build-fedora3: + rm -f /tmp/tmp.ZC7ov4.spec
+2018-07-15 22:13:30.886828 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-07-15 22:13:30.886885 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:30.889318 +0000 build-fedora3: ++ basename qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in
+2018-07-15 22:13:30.893301 +0000 build-fedora3: + [[ xthunderbird-qubes.spec.in == \x\.\i\n ]]
+2018-07-15 22:13:30.893380 +0000 build-fedora3: + '[' -r qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in ']'
+2018-07-15 22:13:30.895855 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-07-15 22:13:30.899232 +0000 build-fedora3: + tmp_spec=/tmp/tmp.Tw4rZK.spec
+2018-07-15 22:13:30.901778 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:30.906626 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/generate-spec qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in /tmp/tmp.Tw4rZK.spec
+2018-07-15 22:13:30.914581 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:30.914639 +0000 build-fedora3: + '[' -z qubes-src/app-thunderbird ']'
+2018-07-15 22:13:30.914677 +0000 build-fedora3: + cp qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:30.924008 +0000 build-fedora3: + read ver
+2018-07-15 22:13:30.924104 +0000 build-fedora3: + cat qubes-src/app-thunderbird/version
+2018-07-15 22:13:30.928154 +0000 build-fedora3: + '[' x == x ']'
+2018-07-15 22:13:30.928400 +0000 build-fedora3: + sed -i 's|@VERSION@|1.2.11|g' qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:30.935792 +0000 build-fedora3: + vnum=1
+2018-07-15 22:13:30.935857 +0000 build-fedora3: + read ver
+2018-07-15 22:13:30.936868 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/rel ']'
+2018-07-15 22:13:30.939019 +0000 build-fedora3: ++ cat qubes-src/app-thunderbird/rel
+2018-07-15 22:13:30.944300 +0000 build-fedora3: ++ echo 1
+2018-07-15 22:13:30.945293 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:30.953048 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/changelog ']'
+2018-07-15 22:13:30.953125 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:30.960810 +0000 build-fedora3: + cat qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:30.967102 +0000 build-fedora3: + rm -rf qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:30.972343 +0000 build-fedora3: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-07-15 22:13:30.974205 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:30.978551 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.Tw4rZK.spec
+2018-07-15 22:13:31.116546 +0000 build-fedora3: + rm -f /tmp/tmp.Tw4rZK.spec
+2018-07-15 22:13:31.174356 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-07-15 22:13:31.174412 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:31.177193 +0000 build-fedora3: ++ basename qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in
+2018-07-15 22:13:31.183627 +0000 build-fedora3: + [[ xthunderbird-qubes.spec.in == \x\.\i\n ]]
+2018-07-15 22:13:31.183707 +0000 build-fedora3: + '[' -r qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in ']'
+2018-07-15 22:13:31.183750 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-07-15 22:13:31.187408 +0000 build-fedora3: + tmp_spec=/tmp/tmp.iLPQkf.spec
+2018-07-15 22:13:31.189630 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:31.193486 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/generate-spec qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in /tmp/tmp.iLPQkf.spec
+2018-07-15 22:13:31.199931 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:31.200031 +0000 build-fedora3: + '[' -z qubes-src/app-thunderbird ']'
+2018-07-15 22:13:31.200100 +0000 build-fedora3: + cp qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:31.298335 +0000 build-fedora3: + cat qubes-src/app-thunderbird/version
+2018-07-15 22:13:31.299498 +0000 build-fedora3: + read ver
+2018-07-15 22:13:31.303467 +0000 build-fedora3: + '[' x == x ']'
+2018-07-15 22:13:31.303540 +0000 build-fedora3: + sed -i 's|@VERSION@|1.2.11|g' qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:31.327851 +0000 build-fedora3: + vnum=1
+2018-07-15 22:13:31.327920 +0000 build-fedora3: + read ver
+2018-07-15 22:13:31.328004 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/rel ']'
+2018-07-15 22:13:31.328038 +0000 build-fedora3: ++ cat qubes-src/app-thunderbird/rel
+2018-07-15 22:13:31.328065 +0000 build-fedora3: ++ echo 1
+2018-07-15 22:13:31.328100 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:31.335759 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/changelog ']'
+2018-07-15 22:13:31.335836 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:31.336921 +0000 build-fedora3: + cat qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:31.367748 +0000 build-fedora3: + rm -rf qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:31.377025 +0000 build-fedora3: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-07-15 22:13:31.377108 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:31.377147 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.iLPQkf.spec
+2018-07-15 22:13:31.526507 +0000 build-fedora3: + rm -f /tmp/tmp.iLPQkf.spec
+2018-07-15 22:13:31.628103 +0000 build-fedora3: /home/user/builder-r3.2/qubes-src/builder-rpm/Makefile.rpmbuilder:142: target 'update-repo-do' does not exist
+2018-07-15 22:13:31.628166 +0000 build-fedora3: mkdir -p /home/user/builder-r3.2/qubes-src/linux-yum/r3.2/current-testing/vm/fc26/rpm
+2018-07-15 22:13:31.685388 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-07-15 22:13:31.685569 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:31.687999 +0000 build-fedora3: ++ basename qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in
+2018-07-15 22:13:31.692384 +0000 build-fedora3: + [[ xthunderbird-qubes.spec.in == \x\.\i\n ]]
+2018-07-15 22:13:31.692443 +0000 build-fedora3: + '[' -r qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in ']'
+2018-07-15 22:13:31.694987 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-07-15 22:13:31.699355 +0000 build-fedora3: + tmp_spec=/tmp/tmp.rzf0c5.spec
+2018-07-15 22:13:31.700702 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:31.704416 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/generate-spec qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in /tmp/tmp.rzf0c5.spec
+2018-07-15 22:13:31.711239 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:31.711298 +0000 build-fedora3: + '[' -z qubes-src/app-thunderbird ']'
+2018-07-15 22:13:31.711341 +0000 build-fedora3: + cp qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:31.725113 +0000 build-fedora3: + cat qubes-src/app-thunderbird/version
+2018-07-15 22:13:31.725168 +0000 build-fedora3: + read ver
+2018-07-15 22:13:31.730422 +0000 build-fedora3: + '[' x == x ']'
+2018-07-15 22:13:31.730488 +0000 build-fedora3: + sed -i 's|@VERSION@|1.2.11|g' qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:31.736493 +0000 build-fedora3: + vnum=1
+2018-07-15 22:13:31.736549 +0000 build-fedora3: + read ver
+2018-07-15 22:13:31.736579 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/rel ']'
+2018-07-15 22:13:31.738054 +0000 build-fedora3: ++ cat qubes-src/app-thunderbird/rel
+2018-07-15 22:13:31.744278 +0000 build-fedora3: ++ echo 1
+2018-07-15 22:13:31.749324 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:31.752845 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/changelog ']'
+2018-07-15 22:13:31.752909 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:31.760951 +0000 build-fedora3: + cat qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:31.765714 +0000 build-fedora3: + rm -rf qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:31.771759 +0000 build-fedora3: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-07-15 22:13:31.773345 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:31.777065 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.rzf0c5.spec
+2018-07-15 22:13:31.909318 +0000 build-fedora3: + rm -f /tmp/tmp.rzf0c5.spec
+2018-07-15 22:13:31.932025 +0000 build-fedora3: if [ -n "pkgs/fc26/noarch/thunderbird-qubes-1.2.11-1.fc26.noarch.rpm" ]; then \
+2018-07-15 22:13:31.932137 +0000 build-fedora3: .cd qubes-src/app-thunderbird && ln -f pkgs/fc26/noarch/thunderbird-qubes-1.2.11-1.fc26.noarch.rpm  /home/user/builder-r3.2/qubes-src/linux-yum/r3.2/current-testing/vm/fc26/rpm/; \
+2018-07-15 22:13:31.932165 +0000 build-fedora3: else \
+2018-07-15 22:13:31.932199 +0000 build-fedora3: .echo "`tput bold`No packages defined by rpm_spec/thunderbird-qubes.spec, syntax error?`tput sgr0`"; \
+2018-07-15 22:13:31.932222 +0000 build-fedora3: .exit 1; \
+2018-07-15 22:13:31.932242 +0000 build-fedora3: fi
+2018-07-15 22:13:31.944359 +0000 build-fedora3: cd qubes-src/app-thunderbird && echo pkgs/fc26/noarch/thunderbird-qubes-1.2.11-1.fc26.noarch.rpm  > /home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-fc26-app-thunderbird
+2018-07-15 22:13:32.017210 +0000 build-fedora3: /home/user/builder-r3.2/qubes-src/builder-github//Makefile.github:18: target 'notify-github' does not exist
+2018-07-15 22:13:32.017280 +0000 build-fedora3: [ -z "thunderbird-qubes-1.2.11-1.fc26" ] || /home/user/builder-r3.2/qubes-src/builder-github//notify-issues \
+2018-07-15 22:13:32.017318 +0000 build-fedora3: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2018-07-15_21-48-51" \
+2018-07-15 22:13:32.017342 +0000 build-fedora3: .upload \
+2018-07-15 22:13:32.017365 +0000 build-fedora3: ."r3.2" \
+2018-07-15 22:13:32.017389 +0000 build-fedora3: ."qubes-src/app-thunderbird" \
+2018-07-15 22:13:32.017413 +0000 build-fedora3: ."thunderbird-qubes-1.2.11-1.fc26" \
+2018-07-15 22:13:32.017435 +0000 build-fedora3: ."fc26" \
+2018-07-15 22:13:32.017455 +0000 build-fedora3: ."vm" \
+2018-07-15 22:13:32.017479 +0000 build-fedora3: ."current-testing" \
+2018-07-15 22:13:32.017508 +0000 build-fedora3: ."/home/user/github-notify-state/r3.2-app-thunderbird-vm-fc26-current-testing"
+2018-07-15 22:13:32.099235 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-07-15 22:13:32.099295 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:32.101696 +0000 build-fedora3: ++ basename qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in
+2018-07-15 22:13:32.105435 +0000 build-fedora3: + [[ xthunderbird-qubes.spec.in == \x\.\i\n ]]
+2018-07-15 22:13:32.105498 +0000 build-fedora3: + '[' -r qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in ']'
+2018-07-15 22:13:32.108341 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-07-15 22:13:32.112174 +0000 build-fedora3: + tmp_spec=/tmp/tmp.ecPQ1e.spec
+2018-07-15 22:13:32.114373 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:32.118172 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/generate-spec qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in /tmp/tmp.ecPQ1e.spec
+2018-07-15 22:13:32.125105 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:32.126312 +0000 build-fedora3: + '[' -z qubes-src/app-thunderbird ']'
+2018-07-15 22:13:32.126397 +0000 build-fedora3: + cp qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:32.135234 +0000 build-fedora3: + cat qubes-src/app-thunderbird/version
+2018-07-15 22:13:32.139300 +0000 build-fedora3: + read ver
+2018-07-15 22:13:32.139355 +0000 build-fedora3: + '[' x == x ']'
+2018-07-15 22:13:32.139391 +0000 build-fedora3: + sed -i 's|@VERSION@|1.2.11|g' qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:32.147677 +0000 build-fedora3: + vnum=1
+2018-07-15 22:13:32.147731 +0000 build-fedora3: + read ver
+2018-07-15 22:13:32.147773 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/rel ']'
+2018-07-15 22:13:32.150253 +0000 build-fedora3: ++ cat qubes-src/app-thunderbird/rel
+2018-07-15 22:13:32.155973 +0000 build-fedora3: ++ echo 1
+2018-07-15 22:13:32.157099 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:32.164382 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/changelog ']'
+2018-07-15 22:13:32.164445 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:32.172383 +0000 build-fedora3: + cat qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:32.177194 +0000 build-fedora3: + rm -rf qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:32.182774 +0000 build-fedora3: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-07-15 22:13:32.185114 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:32.189686 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.ecPQ1e.spec
+2018-07-15 22:13:32.320686 +0000 build-fedora3: + rm -f /tmp/tmp.ecPQ1e.spec
+2018-07-15 22:13:35.467167 +0000 build-fedora3: 
+2018-07-15 22:13:35.468616 +0000 build-fedora3: Makefile:740: update target 'internal-update-repo-current-testing.vm.fc26' due to: internal-update-repo-current-testing.vm.fc26.app-thunderbird
+2018-07-15 22:13:35.468681 +0000 build-fedora3: true
+2018-07-15 22:13:35.474814 +0000 build-fedora3: Makefile:765: target 'internal-update-repo-current-testing.vm.fc27.app-thunderbird' does not exist
+2018-07-15 22:13:35.474873 +0000 build-fedora3: repo_base_var="LINUX_REPO_fc27_BASEDIR"; \
+2018-07-15 22:13:35.474905 +0000 build-fedora3: if [ "app-thunderbird" = linux-template-builder ]; then \
+2018-07-15 22:13:35.474937 +0000 build-fedora3: .# templates belongs to dom0 repository, even though PACKAGE_SET=vm
+2018-07-15 22:13:35.475005 +0000 build-fedora3: repo_base_var="LINUX_REPO__BASEDIR"; \
+2018-07-15 22:13:35.475032 +0000 build-fedora3: fi; \
+2018-07-15 22:13:35.475058 +0000 build-fedora3: if [ -n "${!repo_base_var}" ]; then \
+2018-07-15 22:13:35.475085 +0000 build-fedora3: .repo_basedir="${!repo_base_var}"; \
+2018-07-15 22:13:35.475109 +0000 build-fedora3: else \
+2018-07-15 22:13:35.475136 +0000 build-fedora3: .repo_basedir="qubes-src/linux-yum/r3.2"; \
+2018-07-15 22:13:35.475159 +0000 build-fedora3: fi; \
+2018-07-15 22:13:35.475187 +0000 build-fedora3: if [ -r qubes-src/app-thunderbird/Makefile.builder ]; then \
+2018-07-15 22:13:35.475215 +0000 build-fedora3: .echo -n "Updating qubes-src/app-thunderbird... "; \
+2018-07-15 22:13:35.475241 +0000 build-fedora3: .if [ "0" -eq 1 ]; then \
+2018-07-15 22:13:35.475271 +0000 build-fedora3: ..vtag=`git -C qubes-src/app-thunderbird tag --points-at HEAD --list v*`; \
+2018-07-15 22:13:35.475296 +0000 build-fedora3: ..if [ -z "$vtag" ]; then \
+2018-07-15 22:13:35.475319 +0000 build-fedora3: ...echo "no version tag"; \
+2018-07-15 22:13:35.475341 +0000 build-fedora3: ...exit 0; \
+2018-07-15 22:13:35.475363 +0000 build-fedora3: ..fi; \
+2018-07-15 22:13:35.475384 +0000 build-fedora3: .fi; \
+2018-07-15 22:13:35.475410 +0000 build-fedora3: .if [ "app-thunderbird" = linux-template-builder ]; then
+2018-07-15 22:13:35.475465 +0000 build-fedora3: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc27 template-name)
+2018-07-15 22:13:35.475489 +0000 build-fedora3: fi
+2018-07-15 22:13:35.475535 +0000 build-fedora3: component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc27 PACKAGE_SET=vm COMPONENT=`basename qubes-src/app-thunderbird` UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc27 get-var GET_VAR=PACKAGE_LIST); \
+2018-07-15 22:13:35.475562 +0000 build-fedora3: .if [ -z "$component_packages" ]; then \
+2018-07-15 22:13:35.475585 +0000 build-fedora3: ..echo "no packages."; \
+2018-07-15 22:13:35.475608 +0000 build-fedora3: ..exit 0; \
+2018-07-15 22:13:35.475629 +0000 build-fedora3: .fi; \
+2018-07-15 22:13:35.475661 +0000 build-fedora3: .make -s -f Makefile.generic DIST=fc27 PACKAGE_SET=vm \
+2018-07-15 22:13:35.475688 +0000 build-fedora3: ..COMPONENT=`basename qubes-src/app-thunderbird` \
+2018-07-15 22:13:35.475712 +0000 build-fedora3: ..SNAPSHOT_REPO=current-testing \
+2018-07-15 22:13:35.475735 +0000 build-fedora3: ..TARGET_REPO=current-testing \
+2018-07-15 22:13:35.475763 +0000 build-fedora3: ..UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc27 \
+2018-07-15 22:13:35.475798 +0000 build-fedora3: ..SNAPSHOT_FILE=/home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-fc27-`basename qubes-src/app-thunderbird` \
+2018-07-15 22:13:35.475831 +0000 build-fedora3: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2018-07-15_21-49-54 \
+2018-07-15 22:13:35.475855 +0000 build-fedora3: ..update-repo || exit 1; \
+2018-07-15 22:13:35.475887 +0000 build-fedora3: elif make -C qubes-src/app-thunderbird -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2018-07-15 22:13:35.475916 +0000 build-fedora3: .echo "Updating qubes-src/app-thunderbird... "; \
+2018-07-15 22:13:35.475946 +0000 build-fedora3: .DIST=fc27 UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc27 \
+2018-07-15 22:13:35.475996 +0000 build-fedora3: .make -s -C qubes-src/app-thunderbird update-repo-current-testing || exit 1; \
+2018-07-15 22:13:35.476020 +0000 build-fedora3: else \
+2018-07-15 22:13:35.476049 +0000 build-fedora3: .echo -n "Updating qubes-src/app-thunderbird... skipping."; \
+2018-07-15 22:13:35.476071 +0000 build-fedora3: fi; \
+2018-07-15 22:13:35.476093 +0000 build-fedora3: echo
+2018-07-15 22:13:35.541209 +0000 build-fedora3: Updating qubes-src/app-thunderbird... + ERR_OUTPUT=/dev/stderr
+2018-07-15 22:13:35.541278 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:35.580941 +0000 build-fedora3: ++ basename qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in
+2018-07-15 22:13:35.587899 +0000 build-fedora3: + [[ xthunderbird-qubes.spec.in == \x\.\i\n ]]
+2018-07-15 22:13:35.588003 +0000 build-fedora3: + '[' -r qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in ']'
+2018-07-15 22:13:35.588050 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-07-15 22:13:35.595520 +0000 build-fedora3: + tmp_spec=/tmp/tmp.uzLB0q.spec
+2018-07-15 22:13:35.595599 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:35.601834 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/generate-spec qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in /tmp/tmp.uzLB0q.spec
+2018-07-15 22:13:35.608440 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:35.608500 +0000 build-fedora3: + '[' -z qubes-src/app-thunderbird ']'
+2018-07-15 22:13:35.608543 +0000 build-fedora3: + cp qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:35.618078 +0000 build-fedora3: + cat qubes-src/app-thunderbird/version
+2018-07-15 22:13:35.619069 +0000 build-fedora3: + read ver
+2018-07-15 22:13:35.621926 +0000 build-fedora3: + '[' x == x ']'
+2018-07-15 22:13:35.622027 +0000 build-fedora3: + sed -i 's|@VERSION@|1.2.11|g' qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:35.632487 +0000 build-fedora3: + vnum=1
+2018-07-15 22:13:35.632541 +0000 build-fedora3: + read ver
+2018-07-15 22:13:35.632572 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/rel ']'
+2018-07-15 22:13:35.633885 +0000 build-fedora3: ++ cat qubes-src/app-thunderbird/rel
+2018-07-15 22:13:35.643402 +0000 build-fedora3: ++ echo 1
+2018-07-15 22:13:35.643469 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:35.650627 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/changelog ']'
+2018-07-15 22:13:35.650692 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:35.659403 +0000 build-fedora3: + cat qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:35.664969 +0000 build-fedora3: + rm -rf qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:35.670988 +0000 build-fedora3: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-07-15 22:13:35.672204 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:35.677100 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.uzLB0q.spec
+2018-07-15 22:13:35.829633 +0000 build-fedora3: + rm -f /tmp/tmp.uzLB0q.spec
+2018-07-15 22:13:35.864608 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-07-15 22:13:35.864683 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:35.867230 +0000 build-fedora3: ++ basename qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in
+2018-07-15 22:13:35.873435 +0000 build-fedora3: + [[ xthunderbird-qubes.spec.in == \x\.\i\n ]]
+2018-07-15 22:13:35.873510 +0000 build-fedora3: + '[' -r qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in ']'
+2018-07-15 22:13:35.874962 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-07-15 22:13:35.883426 +0000 build-fedora3: + tmp_spec=/tmp/tmp.teYFQs.spec
+2018-07-15 22:13:35.886316 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:35.889531 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/generate-spec qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in /tmp/tmp.teYFQs.spec
+2018-07-15 22:13:35.897115 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:35.897173 +0000 build-fedora3: + '[' -z qubes-src/app-thunderbird ']'
+2018-07-15 22:13:35.897214 +0000 build-fedora3: + cp qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:35.908450 +0000 build-fedora3: + cat qubes-src/app-thunderbird/version
+2018-07-15 22:13:35.908506 +0000 build-fedora3: + read ver
+2018-07-15 22:13:35.910459 +0000 build-fedora3: + '[' x == x ']'
+2018-07-15 22:13:35.910528 +0000 build-fedora3: + sed -i 's|@VERSION@|1.2.11|g' qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:35.919707 +0000 build-fedora3: + vnum=1
+2018-07-15 22:13:35.919770 +0000 build-fedora3: + read ver
+2018-07-15 22:13:35.920186 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/rel ']'
+2018-07-15 22:13:35.922743 +0000 build-fedora3: ++ cat qubes-src/app-thunderbird/rel
+2018-07-15 22:13:35.928675 +0000 build-fedora3: ++ echo 1
+2018-07-15 22:13:35.930238 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:35.941000 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/changelog ']'
+2018-07-15 22:13:35.941101 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:35.946231 +0000 build-fedora3: + cat qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:35.950873 +0000 build-fedora3: + rm -rf qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:35.956385 +0000 build-fedora3: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-07-15 22:13:35.958637 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:35.963462 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.teYFQs.spec
+2018-07-15 22:13:36.102637 +0000 build-fedora3: + rm -f /tmp/tmp.teYFQs.spec
+2018-07-15 22:13:36.161034 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-07-15 22:13:36.161089 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:36.164255 +0000 build-fedora3: ++ basename qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in
+2018-07-15 22:13:36.167999 +0000 build-fedora3: + [[ xthunderbird-qubes.spec.in == \x\.\i\n ]]
+2018-07-15 22:13:36.168077 +0000 build-fedora3: + '[' -r qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in ']'
+2018-07-15 22:13:36.170581 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-07-15 22:13:36.174221 +0000 build-fedora3: + tmp_spec=/tmp/tmp.QfM5QW.spec
+2018-07-15 22:13:36.176365 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:36.181094 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/generate-spec qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in /tmp/tmp.QfM5QW.spec
+2018-07-15 22:13:36.188544 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:36.188612 +0000 build-fedora3: + '[' -z qubes-src/app-thunderbird ']'
+2018-07-15 22:13:36.188666 +0000 build-fedora3: + cp qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:36.197397 +0000 build-fedora3: + cat qubes-src/app-thunderbird/version
+2018-07-15 22:13:36.200208 +0000 build-fedora3: + read ver
+2018-07-15 22:13:36.201388 +0000 build-fedora3: + '[' x == x ']'
+2018-07-15 22:13:36.201470 +0000 build-fedora3: + sed -i 's|@VERSION@|1.2.11|g' qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:36.210008 +0000 build-fedora3: + vnum=1
+2018-07-15 22:13:36.210086 +0000 build-fedora3: + read ver
+2018-07-15 22:13:36.210124 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/rel ']'
+2018-07-15 22:13:36.213098 +0000 build-fedora3: ++ cat qubes-src/app-thunderbird/rel
+2018-07-15 22:13:36.218097 +0000 build-fedora3: ++ echo 1
+2018-07-15 22:13:36.219393 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:36.226782 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/changelog ']'
+2018-07-15 22:13:36.226845 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:36.234980 +0000 build-fedora3: + cat qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:36.241240 +0000 build-fedora3: + rm -rf qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:36.245874 +0000 build-fedora3: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-07-15 22:13:36.247390 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:36.251528 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.QfM5QW.spec
+2018-07-15 22:13:36.394492 +0000 build-fedora3: + rm -f /tmp/tmp.QfM5QW.spec
+2018-07-15 22:13:36.503455 +0000 build-fedora3: /home/user/builder-r3.2/qubes-src/builder-rpm/Makefile.rpmbuilder:142: target 'update-repo-do' does not exist
+2018-07-15 22:13:36.503540 +0000 build-fedora3: mkdir -p /home/user/builder-r3.2/qubes-src/linux-yum/r3.2/current-testing/vm/fc27/rpm
+2018-07-15 22:13:36.554384 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-07-15 22:13:36.554454 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:36.557105 +0000 build-fedora3: ++ basename qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in
+2018-07-15 22:13:36.561080 +0000 build-fedora3: + [[ xthunderbird-qubes.spec.in == \x\.\i\n ]]
+2018-07-15 22:13:36.561156 +0000 build-fedora3: + '[' -r qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in ']'
+2018-07-15 22:13:36.562696 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-07-15 22:13:36.566488 +0000 build-fedora3: + tmp_spec=/tmp/tmp.wyUjyH.spec
+2018-07-15 22:13:36.568933 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:36.573860 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/generate-spec qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in /tmp/tmp.wyUjyH.spec
+2018-07-15 22:13:36.580336 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:36.580394 +0000 build-fedora3: + '[' -z qubes-src/app-thunderbird ']'
+2018-07-15 22:13:36.580439 +0000 build-fedora3: + cp qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:36.589310 +0000 build-fedora3: + cat qubes-src/app-thunderbird/version
+2018-07-15 22:13:36.592717 +0000 build-fedora3: + read ver
+2018-07-15 22:13:36.592769 +0000 build-fedora3: + '[' x == x ']'
+2018-07-15 22:13:36.592807 +0000 build-fedora3: + sed -i 's|@VERSION@|1.2.11|g' qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:36.602264 +0000 build-fedora3: + vnum=1
+2018-07-15 22:13:36.602319 +0000 build-fedora3: + read ver
+2018-07-15 22:13:36.603419 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/rel ']'
+2018-07-15 22:13:36.605622 +0000 build-fedora3: ++ cat qubes-src/app-thunderbird/rel
+2018-07-15 22:13:36.612727 +0000 build-fedora3: ++ echo 1
+2018-07-15 22:13:36.612804 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:36.621927 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/changelog ']'
+2018-07-15 22:13:36.622011 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:36.630003 +0000 build-fedora3: + cat qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:36.636398 +0000 build-fedora3: + rm -rf qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:36.641918 +0000 build-fedora3: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-07-15 22:13:36.644389 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:36.648240 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.wyUjyH.spec
+2018-07-15 22:13:36.789605 +0000 build-fedora3: + rm -f /tmp/tmp.wyUjyH.spec
+2018-07-15 22:13:36.813342 +0000 build-fedora3: if [ -n "pkgs/fc27/noarch/thunderbird-qubes-1.2.11-1.fc27.noarch.rpm" ]; then \
+2018-07-15 22:13:36.813426 +0000 build-fedora3: .cd qubes-src/app-thunderbird && ln -f pkgs/fc27/noarch/thunderbird-qubes-1.2.11-1.fc27.noarch.rpm  /home/user/builder-r3.2/qubes-src/linux-yum/r3.2/current-testing/vm/fc27/rpm/; \
+2018-07-15 22:13:36.813458 +0000 build-fedora3: else \
+2018-07-15 22:13:36.813494 +0000 build-fedora3: .echo "`tput bold`No packages defined by rpm_spec/thunderbird-qubes.spec, syntax error?`tput sgr0`"; \
+2018-07-15 22:13:36.813518 +0000 build-fedora3: .exit 1; \
+2018-07-15 22:13:36.813541 +0000 build-fedora3: fi
+2018-07-15 22:13:36.825351 +0000 build-fedora3: cd qubes-src/app-thunderbird && echo pkgs/fc27/noarch/thunderbird-qubes-1.2.11-1.fc27.noarch.rpm  > /home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-fc27-app-thunderbird
+2018-07-15 22:13:36.896084 +0000 build-fedora3: /home/user/builder-r3.2/qubes-src/builder-github//Makefile.github:18: target 'notify-github' does not exist
+2018-07-15 22:13:36.896163 +0000 build-fedora3: [ -z "thunderbird-qubes-1.2.11-1.fc27" ] || /home/user/builder-r3.2/qubes-src/builder-github//notify-issues \
+2018-07-15 22:13:36.896236 +0000 build-fedora3: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2018-07-15_21-49-54" \
+2018-07-15 22:13:36.896268 +0000 build-fedora3: .upload \
+2018-07-15 22:13:36.896294 +0000 build-fedora3: ."r3.2" \
+2018-07-15 22:13:36.896321 +0000 build-fedora3: ."qubes-src/app-thunderbird" \
+2018-07-15 22:13:36.896348 +0000 build-fedora3: ."thunderbird-qubes-1.2.11-1.fc27" \
+2018-07-15 22:13:36.896370 +0000 build-fedora3: ."fc27" \
+2018-07-15 22:13:36.896392 +0000 build-fedora3: ."vm" \
+2018-07-15 22:13:36.896415 +0000 build-fedora3: ."current-testing" \
+2018-07-15 22:13:36.896450 +0000 build-fedora3: ."/home/user/github-notify-state/r3.2-app-thunderbird-vm-fc27-current-testing"
+2018-07-15 22:13:36.977161 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-07-15 22:13:36.977232 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:36.979874 +0000 build-fedora3: ++ basename qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in
+2018-07-15 22:13:36.983777 +0000 build-fedora3: + [[ xthunderbird-qubes.spec.in == \x\.\i\n ]]
+2018-07-15 22:13:36.983850 +0000 build-fedora3: + '[' -r qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in ']'
+2018-07-15 22:13:36.986395 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-07-15 22:13:36.990153 +0000 build-fedora3: + tmp_spec=/tmp/tmp.ejBMb0.spec
+2018-07-15 22:13:36.991588 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:36.997166 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/generate-spec qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in /tmp/tmp.ejBMb0.spec
+2018-07-15 22:13:37.003989 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:37.004100 +0000 build-fedora3: + '[' -z qubes-src/app-thunderbird ']'
+2018-07-15 22:13:37.004155 +0000 build-fedora3: + cp qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:37.013527 +0000 build-fedora3: + read ver
+2018-07-15 22:13:37.016428 +0000 build-fedora3: + cat qubes-src/app-thunderbird/version
+2018-07-15 22:13:37.019115 +0000 build-fedora3: + '[' x == x ']'
+2018-07-15 22:13:37.019397 +0000 build-fedora3: + sed -i 's|@VERSION@|1.2.11|g' qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:37.028613 +0000 build-fedora3: + vnum=1
+2018-07-15 22:13:37.028684 +0000 build-fedora3: + read ver
+2018-07-15 22:13:37.030313 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/rel ']'
+2018-07-15 22:13:37.031744 +0000 build-fedora3: ++ cat qubes-src/app-thunderbird/rel
+2018-07-15 22:13:37.036175 +0000 build-fedora3: ++ echo 1
+2018-07-15 22:13:37.037104 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:37.042884 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/changelog ']'
+2018-07-15 22:13:37.042947 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:37.048981 +0000 build-fedora3: + cat qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:37.054536 +0000 build-fedora3: + rm -rf qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:37.059985 +0000 build-fedora3: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-07-15 22:13:37.062150 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:37.066063 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.ejBMb0.spec
+2018-07-15 22:13:37.187018 +0000 build-fedora3: + rm -f /tmp/tmp.ejBMb0.spec
+2018-07-15 22:13:40.676726 +0000 build-fedora3: WARNING: message template /home/user/builder-r3.2/qubes-src/builder-github/message-current-testing-vm doesn't exist, not adding comments
+2018-07-15 22:13:40.683023 +0000 build-fedora3: 
+2018-07-15 22:13:40.683118 +0000 build-fedora3: Makefile:740: update target 'internal-update-repo-current-testing.vm.fc27' due to: internal-update-repo-current-testing.vm.fc27.app-thunderbird
+2018-07-15 22:13:40.683148 +0000 build-fedora3: true
+2018-07-15 22:13:40.690170 +0000 build-fedora3: Makefile:765: target 'internal-update-repo-current-testing.vm.fc28.app-thunderbird' does not exist
+2018-07-15 22:13:40.690231 +0000 build-fedora3: repo_base_var="LINUX_REPO_fc28_BASEDIR"; \
+2018-07-15 22:13:40.690265 +0000 build-fedora3: if [ "app-thunderbird" = linux-template-builder ]; then \
+2018-07-15 22:13:40.690300 +0000 build-fedora3: .# templates belongs to dom0 repository, even though PACKAGE_SET=vm
+2018-07-15 22:13:40.690328 +0000 build-fedora3: repo_base_var="LINUX_REPO__BASEDIR"; \
+2018-07-15 22:13:40.690354 +0000 build-fedora3: fi; \
+2018-07-15 22:13:40.690383 +0000 build-fedora3: if [ -n "${!repo_base_var}" ]; then \
+2018-07-15 22:13:40.690411 +0000 build-fedora3: .repo_basedir="${!repo_base_var}"; \
+2018-07-15 22:13:40.690437 +0000 build-fedora3: else \
+2018-07-15 22:13:40.690467 +0000 build-fedora3: .repo_basedir="qubes-src/linux-yum/r3.2"; \
+2018-07-15 22:13:40.690492 +0000 build-fedora3: fi; \
+2018-07-15 22:13:40.690522 +0000 build-fedora3: if [ -r qubes-src/app-thunderbird/Makefile.builder ]; then \
+2018-07-15 22:13:40.690551 +0000 build-fedora3: .echo -n "Updating qubes-src/app-thunderbird... "; \
+2018-07-15 22:13:40.690578 +0000 build-fedora3: .if [ "0" -eq 1 ]; then \
+2018-07-15 22:13:40.690611 +0000 build-fedora3: ..vtag=`git -C qubes-src/app-thunderbird tag --points-at HEAD --list v*`; \
+2018-07-15 22:13:40.690639 +0000 build-fedora3: ..if [ -z "$vtag" ]; then \
+2018-07-15 22:13:40.690670 +0000 build-fedora3: ...echo "no version tag"; \
+2018-07-15 22:13:40.690695 +0000 build-fedora3: ...exit 0; \
+2018-07-15 22:13:40.690720 +0000 build-fedora3: ..fi; \
+2018-07-15 22:13:40.690743 +0000 build-fedora3: .fi; \
+2018-07-15 22:13:40.690772 +0000 build-fedora3: .if [ "app-thunderbird" = linux-template-builder ]; then
+2018-07-15 22:13:40.690807 +0000 build-fedora3: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc28 template-name)
+2018-07-15 22:13:40.690833 +0000 build-fedora3: fi
+2018-07-15 22:13:40.690884 +0000 build-fedora3: component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc28 PACKAGE_SET=vm COMPONENT=`basename qubes-src/app-thunderbird` UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc28 get-var GET_VAR=PACKAGE_LIST); \
+2018-07-15 22:13:40.690917 +0000 build-fedora3: .if [ -z "$component_packages" ]; then \
+2018-07-15 22:13:40.690947 +0000 build-fedora3: ..echo "no packages."; \
+2018-07-15 22:13:40.691024 +0000 build-fedora3: ..exit 0; \
+2018-07-15 22:13:40.691052 +0000 build-fedora3: .fi; \
+2018-07-15 22:13:40.691084 +0000 build-fedora3: .make -s -f Makefile.generic DIST=fc28 PACKAGE_SET=vm \
+2018-07-15 22:13:40.691116 +0000 build-fedora3: ..COMPONENT=`basename qubes-src/app-thunderbird` \
+2018-07-15 22:13:40.691146 +0000 build-fedora3: ..SNAPSHOT_REPO=current-testing \
+2018-07-15 22:13:40.691173 +0000 build-fedora3: ..TARGET_REPO=current-testing \
+2018-07-15 22:13:40.691204 +0000 build-fedora3: ..UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc28 \
+2018-07-15 22:13:40.691242 +0000 build-fedora3: ..SNAPSHOT_FILE=/home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-fc28-`basename qubes-src/app-thunderbird` \
+2018-07-15 22:13:40.691278 +0000 build-fedora3: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2018-07-15_21-57-07 \
+2018-07-15 22:13:40.691303 +0000 build-fedora3: ..update-repo || exit 1; \
+2018-07-15 22:13:40.691335 +0000 build-fedora3: elif make -C qubes-src/app-thunderbird -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2018-07-15 22:13:40.691362 +0000 build-fedora3: .echo "Updating qubes-src/app-thunderbird... "; \
+2018-07-15 22:13:40.691392 +0000 build-fedora3: .DIST=fc28 UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc28 \
+2018-07-15 22:13:40.691442 +0000 build-fedora3: .make -s -C qubes-src/app-thunderbird update-repo-current-testing || exit 1; \
+2018-07-15 22:13:40.691464 +0000 build-fedora3: else \
+2018-07-15 22:13:40.691492 +0000 build-fedora3: .echo -n "Updating qubes-src/app-thunderbird... skipping."; \
+2018-07-15 22:13:40.691513 +0000 build-fedora3: fi; \
+2018-07-15 22:13:40.691534 +0000 build-fedora3: echo
+2018-07-15 22:13:40.744267 +0000 build-fedora3: Updating qubes-src/app-thunderbird... + ERR_OUTPUT=/dev/stderr
+2018-07-15 22:13:40.744324 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:40.752266 +0000 build-fedora3: ++ basename qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in
+2018-07-15 22:13:40.757901 +0000 build-fedora3: + [[ xthunderbird-qubes.spec.in == \x\.\i\n ]]
+2018-07-15 22:13:40.758004 +0000 build-fedora3: + '[' -r qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in ']'
+2018-07-15 22:13:40.759833 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-07-15 22:13:40.765126 +0000 build-fedora3: + tmp_spec=/tmp/tmp.PLXfda.spec
+2018-07-15 22:13:40.766464 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:40.771441 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/generate-spec qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in /tmp/tmp.PLXfda.spec
+2018-07-15 22:13:40.778406 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:40.778473 +0000 build-fedora3: + '[' -z qubes-src/app-thunderbird ']'
+2018-07-15 22:13:40.778531 +0000 build-fedora3: + cp qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:40.792214 +0000 build-fedora3: + cat qubes-src/app-thunderbird/version
+2018-07-15 22:13:40.794411 +0000 build-fedora3: + read ver
+2018-07-15 22:13:40.810523 +0000 build-fedora3: + '[' x == x ']'
+2018-07-15 22:13:40.810584 +0000 build-fedora3: + sed -i 's|@VERSION@|1.2.11|g' qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:40.810613 +0000 build-fedora3: + vnum=1
+2018-07-15 22:13:40.810638 +0000 build-fedora3: + read ver
+2018-07-15 22:13:40.810670 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/rel ']'
+2018-07-15 22:13:40.811100 +0000 build-fedora3: ++ cat qubes-src/app-thunderbird/rel
+2018-07-15 22:13:40.827850 +0000 build-fedora3: ++ echo 1
+2018-07-15 22:13:40.830550 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:40.840611 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/changelog ']'
+2018-07-15 22:13:40.840685 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:40.881573 +0000 build-fedora3: + cat qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:40.887319 +0000 build-fedora3: + rm -rf qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:40.932098 +0000 build-fedora3: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-07-15 22:13:40.932174 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:40.932224 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.PLXfda.spec
+2018-07-15 22:13:41.064144 +0000 build-fedora3: + rm -f /tmp/tmp.PLXfda.spec
+2018-07-15 22:13:41.099118 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-07-15 22:13:41.099175 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:41.100414 +0000 build-fedora3: ++ basename qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in
+2018-07-15 22:13:41.105982 +0000 build-fedora3: + [[ xthunderbird-qubes.spec.in == \x\.\i\n ]]
+2018-07-15 22:13:41.106114 +0000 build-fedora3: + '[' -r qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in ']'
+2018-07-15 22:13:41.108944 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-07-15 22:13:41.116394 +0000 build-fedora3: + tmp_spec=/tmp/tmp.8pCgHA.spec
+2018-07-15 22:13:41.118825 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:41.122820 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/generate-spec qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in /tmp/tmp.8pCgHA.spec
+2018-07-15 22:13:41.130799 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:41.130865 +0000 build-fedora3: + '[' -z qubes-src/app-thunderbird ']'
+2018-07-15 22:13:41.130915 +0000 build-fedora3: + cp qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:41.142276 +0000 build-fedora3: + cat qubes-src/app-thunderbird/version
+2018-07-15 22:13:41.144199 +0000 build-fedora3: + read ver
+2018-07-15 22:13:41.152349 +0000 build-fedora3: + '[' x == x ']'
+2018-07-15 22:13:41.152422 +0000 build-fedora3: + sed -i 's|@VERSION@|1.2.11|g' qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:41.161196 +0000 build-fedora3: + vnum=1
+2018-07-15 22:13:41.161260 +0000 build-fedora3: + read ver
+2018-07-15 22:13:41.161301 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/rel ']'
+2018-07-15 22:13:41.161333 +0000 build-fedora3: ++ cat qubes-src/app-thunderbird/rel
+2018-07-15 22:13:41.209693 +0000 build-fedora3: ++ echo 1
+2018-07-15 22:13:41.211334 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:41.225871 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/changelog ']'
+2018-07-15 22:13:41.225947 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:41.227524 +0000 build-fedora3: + cat qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:41.234308 +0000 build-fedora3: + rm -rf qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:41.243254 +0000 build-fedora3: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-07-15 22:13:41.243322 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:41.259898 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.8pCgHA.spec
+2018-07-15 22:13:41.404389 +0000 build-fedora3: + rm -f /tmp/tmp.8pCgHA.spec
+2018-07-15 22:13:41.465439 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-07-15 22:13:41.465496 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:41.468574 +0000 build-fedora3: ++ basename qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in
+2018-07-15 22:13:41.472845 +0000 build-fedora3: + [[ xthunderbird-qubes.spec.in == \x\.\i\n ]]
+2018-07-15 22:13:41.472920 +0000 build-fedora3: + '[' -r qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in ']'
+2018-07-15 22:13:41.475252 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-07-15 22:13:41.479397 +0000 build-fedora3: + tmp_spec=/tmp/tmp.DSDro1.spec
+2018-07-15 22:13:41.481644 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:41.485574 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/generate-spec qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in /tmp/tmp.DSDro1.spec
+2018-07-15 22:13:41.493474 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:41.493531 +0000 build-fedora3: + '[' -z qubes-src/app-thunderbird ']'
+2018-07-15 22:13:41.493571 +0000 build-fedora3: + cp qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:41.503674 +0000 build-fedora3: + cat qubes-src/app-thunderbird/version
+2018-07-15 22:13:41.505001 +0000 build-fedora3: + read ver
+2018-07-15 22:13:41.508009 +0000 build-fedora3: + '[' x == x ']'
+2018-07-15 22:13:41.508509 +0000 build-fedora3: + sed -i 's|@VERSION@|1.2.11|g' qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:41.519771 +0000 build-fedora3: + vnum=1
+2018-07-15 22:13:41.519839 +0000 build-fedora3: + read ver
+2018-07-15 22:13:41.521036 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/rel ']'
+2018-07-15 22:13:41.523062 +0000 build-fedora3: ++ cat qubes-src/app-thunderbird/rel
+2018-07-15 22:13:41.603329 +0000 build-fedora3: ++ echo 1
+2018-07-15 22:13:41.603393 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:41.610623 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/changelog ']'
+2018-07-15 22:13:41.610687 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:41.618244 +0000 build-fedora3: + cat qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:41.624428 +0000 build-fedora3: + rm -rf qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:41.630531 +0000 build-fedora3: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-07-15 22:13:41.633789 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:41.640686 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.DSDro1.spec
+2018-07-15 22:13:41.777308 +0000 build-fedora3: + rm -f /tmp/tmp.DSDro1.spec
+2018-07-15 22:13:41.905852 +0000 build-fedora3: /home/user/builder-r3.2/qubes-src/builder-rpm/Makefile.rpmbuilder:142: target 'update-repo-do' does not exist
+2018-07-15 22:13:41.905920 +0000 build-fedora3: mkdir -p /home/user/builder-r3.2/qubes-src/linux-yum/r3.2/current-testing/vm/fc28/rpm
+2018-07-15 22:13:41.976427 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-07-15 22:13:41.976490 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:41.976537 +0000 build-fedora3: ++ basename qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in
+2018-07-15 22:13:41.979404 +0000 build-fedora3: + [[ xthunderbird-qubes.spec.in == \x\.\i\n ]]
+2018-07-15 22:13:41.979463 +0000 build-fedora3: + '[' -r qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in ']'
+2018-07-15 22:13:41.982824 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-07-15 22:13:41.986549 +0000 build-fedora3: + tmp_spec=/tmp/tmp.mdqXgI.spec
+2018-07-15 22:13:41.988553 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:41.994391 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/generate-spec qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in /tmp/tmp.mdqXgI.spec
+2018-07-15 22:13:42.001165 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:42.001233 +0000 build-fedora3: + '[' -z qubes-src/app-thunderbird ']'
+2018-07-15 22:13:42.001285 +0000 build-fedora3: + cp qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:42.010615 +0000 build-fedora3: + cat qubes-src/app-thunderbird/version
+2018-07-15 22:13:42.012308 +0000 build-fedora3: + read ver
+2018-07-15 22:13:42.017157 +0000 build-fedora3: + '[' x == x ']'
+2018-07-15 22:13:42.017228 +0000 build-fedora3: + sed -i 's|@VERSION@|1.2.11|g' qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:42.026199 +0000 build-fedora3: + vnum=1
+2018-07-15 22:13:42.026264 +0000 build-fedora3: + read ver
+2018-07-15 22:13:42.027687 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/rel ']'
+2018-07-15 22:13:42.037608 +0000 build-fedora3: ++ cat qubes-src/app-thunderbird/rel
+2018-07-15 22:13:42.044820 +0000 build-fedora3: ++ echo 1
+2018-07-15 22:13:42.044882 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:42.052427 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/changelog ']'
+2018-07-15 22:13:42.052489 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:42.063233 +0000 build-fedora3: + cat qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:42.067373 +0000 build-fedora3: + rm -rf qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:42.080509 +0000 build-fedora3: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-07-15 22:13:42.080585 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:42.087193 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.mdqXgI.spec
+2018-07-15 22:13:42.240641 +0000 build-fedora3: + rm -f /tmp/tmp.mdqXgI.spec
+2018-07-15 22:13:42.263110 +0000 build-fedora3: if [ -n "pkgs/fc28/noarch/thunderbird-qubes-1.2.11-1.fc28.noarch.rpm" ]; then \
+2018-07-15 22:13:42.263181 +0000 build-fedora3: .cd qubes-src/app-thunderbird && ln -f pkgs/fc28/noarch/thunderbird-qubes-1.2.11-1.fc28.noarch.rpm  /home/user/builder-r3.2/qubes-src/linux-yum/r3.2/current-testing/vm/fc28/rpm/; \
+2018-07-15 22:13:42.263205 +0000 build-fedora3: else \
+2018-07-15 22:13:42.263237 +0000 build-fedora3: .echo "`tput bold`No packages defined by rpm_spec/thunderbird-qubes.spec, syntax error?`tput sgr0`"; \
+2018-07-15 22:13:42.263257 +0000 build-fedora3: .exit 1; \
+2018-07-15 22:13:42.263275 +0000 build-fedora3: fi
+2018-07-15 22:13:42.272610 +0000 build-fedora3: cd qubes-src/app-thunderbird && echo pkgs/fc28/noarch/thunderbird-qubes-1.2.11-1.fc28.noarch.rpm  > /home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-fc28-app-thunderbird
+2018-07-15 22:13:42.351494 +0000 build-fedora3: /home/user/builder-r3.2/qubes-src/builder-github//Makefile.github:18: target 'notify-github' does not exist
+2018-07-15 22:13:42.351562 +0000 build-fedora3: [ -z "thunderbird-qubes-1.2.11-1.fc28" ] || /home/user/builder-r3.2/qubes-src/builder-github//notify-issues \
+2018-07-15 22:13:42.351605 +0000 build-fedora3: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-fedora3/log_2018-07-15_21-57-07" \
+2018-07-15 22:13:42.351632 +0000 build-fedora3: .upload \
+2018-07-15 22:13:42.351658 +0000 build-fedora3: ."r3.2" \
+2018-07-15 22:13:42.351683 +0000 build-fedora3: ."qubes-src/app-thunderbird" \
+2018-07-15 22:13:42.351708 +0000 build-fedora3: ."thunderbird-qubes-1.2.11-1.fc28" \
+2018-07-15 22:13:42.351730 +0000 build-fedora3: ."fc28" \
+2018-07-15 22:13:42.351750 +0000 build-fedora3: ."vm" \
+2018-07-15 22:13:42.351772 +0000 build-fedora3: ."current-testing" \
+2018-07-15 22:13:42.351802 +0000 build-fedora3: ."/home/user/github-notify-state/r3.2-app-thunderbird-vm-fc28-current-testing"
+2018-07-15 22:13:42.452415 +0000 build-fedora3: + ERR_OUTPUT=/dev/stderr
+2018-07-15 22:13:42.452476 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:42.467306 +0000 build-fedora3: ++ basename qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in
+2018-07-15 22:13:42.467364 +0000 build-fedora3: + [[ xthunderbird-qubes.spec.in == \x\.\i\n ]]
+2018-07-15 22:13:42.467397 +0000 build-fedora3: + '[' -r qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in ']'
+2018-07-15 22:13:42.467424 +0000 build-fedora3: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-07-15 22:13:42.472830 +0000 build-fedora3: + tmp_spec=/tmp/tmp.takxDg.spec
+2018-07-15 22:13:42.475742 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:42.480612 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/generate-spec qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in /tmp/tmp.takxDg.spec
+2018-07-15 22:13:42.486902 +0000 build-fedora3: + '[' 2 -lt 2 ']'
+2018-07-15 22:13:42.487002 +0000 build-fedora3: + '[' -z qubes-src/app-thunderbird ']'
+2018-07-15 22:13:42.487052 +0000 build-fedora3: + cp qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:42.496171 +0000 build-fedora3: + cat qubes-src/app-thunderbird/version
+2018-07-15 22:13:42.497153 +0000 build-fedora3: + read ver
+2018-07-15 22:13:42.501165 +0000 build-fedora3: + '[' x == x ']'
+2018-07-15 22:13:42.501240 +0000 build-fedora3: + sed -i 's|@VERSION@|1.2.11|g' qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:42.511498 +0000 build-fedora3: + vnum=1
+2018-07-15 22:13:42.511571 +0000 build-fedora3: + read ver
+2018-07-15 22:13:42.511619 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/rel ']'
+2018-07-15 22:13:42.512858 +0000 build-fedora3: ++ cat qubes-src/app-thunderbird/rel
+2018-07-15 22:13:42.519706 +0000 build-fedora3: ++ echo 1
+2018-07-15 22:13:42.520509 +0000 build-fedora3: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:42.529393 +0000 build-fedora3: + '[' -e qubes-src/app-thunderbird/changelog ']'
+2018-07-15 22:13:42.529464 +0000 build-fedora3: + sed -i /@CHANGELOG@/d qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:42.537353 +0000 build-fedora3: + cat qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:42.542643 +0000 build-fedora3: + rm -rf qubes-src/app-thunderbird/rpm_spec/thunderbird-qubes.spec.in.tmp
+2018-07-15 22:13:42.548947 +0000 build-fedora3: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-07-15 22:13:42.550731 +0000 build-fedora3: ++ dirname /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/query-spec
+2018-07-15 22:13:42.555144 +0000 build-fedora3: + /home/user/builder-r3.2/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.takxDg.spec
+2018-07-15 22:13:42.692131 +0000 build-fedora3: + rm -f /tmp/tmp.takxDg.spec
+2018-07-15 22:13:45.547170 +0000 build-fedora3: WARNING: message template /home/user/builder-r3.2/qubes-src/builder-github/message-current-testing-vm doesn't exist, not adding comments
+2018-07-15 22:13:45.552364 +0000 build-fedora3: 
+2018-07-15 22:13:45.552976 +0000 build-fedora3: Makefile:740: update target 'internal-update-repo-current-testing.vm.fc28' due to: internal-update-repo-current-testing.vm.fc28.app-thunderbird
+2018-07-15 22:13:45.553067 +0000 build-fedora3: true
+2018-07-15 22:13:45.557503 +0000 build-fedora3: Makefile:819: target 'post-update-repo-current-testing' does not exist
+2018-07-15 22:13:45.557555 +0000 build-fedora3: for dist in  fc25 fc26 fc27 fc28; do \
+2018-07-15 22:13:45.557578 +0000 build-fedora3: .repo_base_var="LINUX_REPO_${dist}_BASEDIR"; \
+2018-07-15 22:13:45.557595 +0000 build-fedora3: .if [ -n "${!repo_base_var}" ]; then \
+2018-07-15 22:13:45.557611 +0000 build-fedora3: ..repo_basedir="${!repo_base_var}"; \
+2018-07-15 22:13:45.557625 +0000 build-fedora3: .else \
+2018-07-15 22:13:45.557641 +0000 build-fedora3: ..repo_basedir="qubes-src/linux-yum/r3.2"; \
+2018-07-15 22:13:45.557662 +0000 build-fedora3: .fi; \
+2018-07-15 22:13:45.557689 +0000 build-fedora3: .repos_to_update="$repos_to_update $repo_basedir"; \
+2018-07-15 22:13:45.557706 +0000 build-fedora3: done; \
+2018-07-15 22:13:45.557723 +0000 build-fedora3: for repo in `echo $repos_to_update|tr ' ' '\n'|sort|uniq`; do \
+2018-07-15 22:13:45.557738 +0000 build-fedora3: .[ -z "$repo" ] && continue; \
+2018-07-15 22:13:45.557755 +0000 build-fedora3: .[ -x "$repo/../update_repo-current-testing.sh" ] || continue; \
+2018-07-15 22:13:45.557771 +0000 build-fedora3: .(cd $repo/.. && ./update_repo-current-testing.sh r3.2); \
+2018-07-15 22:13:45.557784 +0000 build-fedora3: done
+2018-07-15 22:13:53.211885 +0000 build-fedora3: which: no mkmetalink in (/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/user/.local/bin:/home/user/bin:/home/user/builder-r3.2/qubes-src/builder-rpm/tools)
+2018-07-15 22:13:53.239993 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/dom0/fc20...
+2018-07-15 22:13:56.110617 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/dom0/fc23...
+2018-07-15 22:13:58.298003 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/vm/centos7...
+2018-07-15 22:13:58.851924 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/vm/fc22...
+2018-07-15 22:13:59.419764 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/vm/fc23...
+2018-07-15 22:14:00.716380 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/vm/fc24...
+2018-07-15 22:14:02.237366 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/vm/fc25...
+2018-07-15 22:14:04.402216 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/vm/fc26...
+2018-07-15 22:14:06.096132 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/vm/fc27...
+2018-07-15 22:14:08.042189 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/vm/fc28...
+2018-07-15 22:14:10.111717 +0000 build-fedora3: Done.
+2018-07-15 22:14:10.132233 +0000 build-fedora3: ~/builder-r3.2/qubes-src/linux-yum ~/builder-r3.2/qubes-src/linux-yum
+2018-07-15 22:14:10.136346 +0000 build-fedora3: Syncing r3.2...
+2018-07-15 22:14:11.248444 +0000 build-fedora3: sending incremental file list
+2018-07-15 22:14:11.390750 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing": Operation not permitted (1)
+2018-07-15 22:14:11.390902 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/dom0": Operation not permitted (1)
+2018-07-15 22:14:11.391063 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/dom0/fc20": Operation not permitted (1)
+2018-07-15 22:14:11.391164 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/dom0/fc20/rpm": Operation not permitted (1)
+2018-07-15 22:14:11.391252 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/dom0/fc23": Operation not permitted (1)
+2018-07-15 22:14:11.391335 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/dom0/fc23/rpm": Operation not permitted (1)
+2018-07-15 22:14:11.391413 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm": Operation not permitted (1)
+2018-07-15 22:14:11.391494 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc22": Operation not permitted (1)
+2018-07-15 22:14:11.391575 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc22/rpm": Operation not permitted (1)
+2018-07-15 22:14:11.391655 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc23": Operation not permitted (1)
+2018-07-15 22:14:11.391736 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc23/rpm": Operation not permitted (1)
+2018-07-15 22:14:11.391816 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc24": Operation not permitted (1)
+2018-07-15 22:14:11.391913 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc24/rpm": Operation not permitted (1)
+2018-07-15 22:14:11.392040 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc25": Operation not permitted (1)
+2018-07-15 22:14:11.392126 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc25/rpm": Operation not permitted (1)
+2018-07-15 22:14:11.392207 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc26": Operation not permitted (1)
+2018-07-15 22:14:11.392288 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc26/comps.xml": Operation not permitted (1)
+2018-07-15 22:14:11.392369 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current-testing/vm/fc26/rpm": Operation not permitted (1)
+2018-07-15 22:14:11.486219 +0000 build-fedora3: .d..t...... current-testing/
+2018-07-15 22:14:11.486405 +0000 build-fedora3: .d..t...... current-testing/dom0/
+2018-07-15 22:14:11.486511 +0000 build-fedora3: .d..t...... current-testing/dom0/fc20/
+2018-07-15 22:14:11.486642 +0000 build-fedora3: .L..t...... current-testing/dom0/fc20/comps.xml -> ../../../comps-dom0.xml
+2018-07-15 22:14:11.486713 +0000 build-fedora3: .d..t...... current-testing/dom0/fc20/rpm/
+2018-07-15 22:14:11.486816 +0000 build-fedora3: <f..t...... current-testing/dom0/fc20/rpm/.gitignore
+2018-07-15 22:14:11.489894 +0000 build-fedora3: .              6 100%    0.00kB/s    0:00:00  .              6 100%    0.00kB/s    0:00:00 (xfr#1, ir-chk=1021/1031)
+2018-07-15 22:14:11.490114 +0000 build-fedora3: .d..t...... current-testing/dom0/fc23/
+2018-07-15 22:14:11.490303 +0000 build-fedora3: .L..t...... current-testing/dom0/fc23/comps.xml -> ../../../comps-dom0.xml
+2018-07-15 22:14:11.509832 +0000 build-fedora3: .d..t...... current-testing/dom0/fc23/rpm/
+2018-07-15 22:14:11.510144 +0000 build-fedora3: <f..t...... current-testing/dom0/fc23/rpm/.gitignore
+2018-07-15 22:14:11.510944 +0000 build-fedora3: .              6 100%    0.28kB/s    0:00:00  .              6 100%    0.28kB/s    0:00:00 (xfr#2, ir-chk=1163/1176)
+2018-07-15 22:14:11.511119 +0000 build-fedora3: <f..t...... current-testing/dom0/fc23/rpm/qubes-core-dom0-vaio-fixes-1.6.1-1.fc23.x86_64.rpm
+2018-07-15 22:14:11.512645 +0000 build-fedora3: .          2,092  29%   97.28kB/s    0:00:00  .          7,170 100%  318.27kB/s    0:00:00 (xfr#3, ir-chk=1154/1176)
+2018-07-15 22:14:11.512820 +0000 build-fedora3: .d..t...... current-testing/vm/
+2018-07-15 22:14:11.513026 +0000 build-fedora3: .d..t...... current-testing/vm/centos7/
+2018-07-15 22:14:11.513197 +0000 build-fedora3: .L..t...... current-testing/vm/centos7/comps.xml -> ../../../comps-vm.xml
+2018-07-15 22:14:11.513386 +0000 build-fedora3: .d..t...... current-testing/vm/centos7/rpm/
+2018-07-15 22:14:11.513514 +0000 build-fedora3: <f..t...... current-testing/vm/centos7/rpm/.gitignore
+2018-07-15 22:14:11.514694 +0000 build-fedora3: .              6 100%    0.24kB/s    0:00:00  .              6 100%    0.24kB/s    0:00:00 (xfr#4, ir-chk=1120/1176)
+2018-07-15 22:14:11.514801 +0000 build-fedora3: .d..t...... current-testing/vm/fc22/
+2018-07-15 22:14:11.514882 +0000 build-fedora3: .L..t...... current-testing/vm/fc22/comps.xml -> ../../../comps-vm.xml
+2018-07-15 22:14:11.514950 +0000 build-fedora3: .d..t...... current-testing/vm/fc22/rpm/
+2018-07-15 22:14:11.515084 +0000 build-fedora3: <f..t...... current-testing/vm/fc22/rpm/.gitignore
+2018-07-15 22:14:11.516131 +0000 build-fedora3: .              6 100%    0.23kB/s    0:00:00  .              6 100%    0.23kB/s    0:00:00 (xfr#5, ir-chk=1117/1176)
+2018-07-15 22:14:11.516230 +0000 build-fedora3: .d..t...... current-testing/vm/fc23/
+2018-07-15 22:14:11.516310 +0000 build-fedora3: .L..t...... current-testing/vm/fc23/comps.xml -> ../../../comps-vm.xml
+2018-07-15 22:14:11.516384 +0000 build-fedora3: .d..t...... current-testing/vm/fc23/rpm/
+2018-07-15 22:14:11.516453 +0000 build-fedora3: <f..t...... current-testing/vm/fc23/rpm/.gitignore
+2018-07-15 22:14:11.517258 +0000 build-fedora3: .              6 100%    0.22kB/s    0:00:00  .              6 100%    0.22kB/s    0:00:00 (xfr#6, ir-chk=1114/1176)
+2018-07-15 22:14:11.517340 +0000 build-fedora3: .d..t...... current-testing/vm/fc24/
+2018-07-15 22:14:11.517414 +0000 build-fedora3: .L..t...... current-testing/vm/fc24/comps.xml -> ../../../comps-vm.xml
+2018-07-15 22:14:11.531816 +0000 build-fedora3: .d..t...... current-testing/vm/fc24/rpm/
+2018-07-15 22:14:11.531946 +0000 build-fedora3: <f..t...... current-testing/vm/fc24/rpm/.gitignore
+2018-07-15 22:14:11.532262 +0000 build-fedora3: .              6 100%    0.14kB/s    0:00:00  .              6 100%    0.14kB/s    0:00:00 (xfr#7, ir-chk=1147/1310)
+2018-07-15 22:14:11.532313 +0000 build-fedora3: .d..t...... current-testing/vm/fc25/
+2018-07-15 22:14:11.532354 +0000 build-fedora3: .L..t...... current-testing/vm/fc25/comps.xml -> ../../../comps-vm.xml
+2018-07-15 22:14:11.533223 +0000 build-fedora3: .d..t...... current-testing/vm/fc25/rpm/
+2018-07-15 22:14:11.533294 +0000 build-fedora3: <f..t...... current-testing/vm/fc25/rpm/.gitignore
+2018-07-15 22:14:11.533678 +0000 build-fedora3: .              6 100%    0.13kB/s    0:00:00  .              6 100%    0.13kB/s    0:00:00 (xfr#8, ir-chk=1147/1411)
+2018-07-15 22:14:11.533780 +0000 build-fedora3: <f+++++++++ current-testing/vm/fc25/rpm/thunderbird-qubes-1.2.11-1.fc25.noarch.rpm
+2018-07-15 22:14:11.533818 +0000 build-fedora3: .         11,166 100%  247.82kB/s    0:00:00  .         11,166 100%  247.82kB/s    0:00:00 (xfr#9, ir-chk=1045/1411)
+2018-07-15 22:14:11.536908 +0000 build-fedora3: .d..t...... current-testing/vm/fc26/
+2018-07-15 22:14:11.536997 +0000 build-fedora3: .L..t...... current-testing/vm/fc26/comps.xml -> ../../../comps-vm.xml
+2018-07-15 22:14:11.542306 +0000 build-fedora3: .d..t...... current-testing/vm/fc26/rpm/
+2018-07-15 22:14:11.542355 +0000 build-fedora3: <f..t...... current-testing/vm/fc26/rpm/.gitignore
+2018-07-15 22:14:11.542858 +0000 build-fedora3: .              6 100%    0.11kB/s    0:00:00  .              6 100%    0.11kB/s    0:00:00 (xfr#10, ir-chk=1133/1547)
+2018-07-15 22:14:11.542907 +0000 build-fedora3: <f+++++++++ current-testing/vm/fc26/rpm/thunderbird-qubes-1.2.11-1.fc26.noarch.rpm
+2018-07-15 22:14:11.543048 +0000 build-fedora3: .         11,170 100%  205.82kB/s    0:00:00  .         11,170 100%  205.82kB/s    0:00:00 (xfr#11, ir-chk=1034/1547)
+2018-07-15 22:14:11.543344 +0000 build-fedora3: .d..t...... current-testing/vm/fc27/
+2018-07-15 22:14:11.543388 +0000 build-fedora3: .L..t...... current-testing/vm/fc27/comps.xml -> ../../../comps-vm.xml
+2018-07-15 22:14:11.589062 +0000 build-fedora3: .d..t...... current-testing/vm/fc27/rpm/
+2018-07-15 22:14:11.589172 +0000 build-fedora3: <f..t...... current-testing/vm/fc27/rpm/.gitignore
+2018-07-15 22:14:11.590491 +0000 build-fedora3: .              6 100%    0.06kB/s    0:00:00  .              6 100%    0.06kB/s    0:00:00 (xfr#12, ir-chk=1243/1793)
+2018-07-15 22:14:11.590569 +0000 build-fedora3: <f+++++++++ current-testing/vm/fc27/rpm/thunderbird-qubes-1.2.11-1.fc27.noarch.rpm
+2018-07-15 22:14:11.590653 +0000 build-fedora3: .         11,376 100%  111.09kB/s    0:00:00  .         11,376 100%  111.09kB/s    0:00:00 (xfr#13, ir-chk=1165/1793)
+2018-07-15 22:14:11.590742 +0000 build-fedora3: .d..t...... current-testing/vm/fc28/
+2018-07-15 22:14:11.590805 +0000 build-fedora3: .L..t...... current-testing/vm/fc28/comps.xml -> ../../../comps-vm.xml
+2018-07-15 22:14:11.590855 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current": Operation not permitted (1)
+2018-07-15 22:14:11.590904 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/dom0": Operation not permitted (1)
+2018-07-15 22:14:11.590953 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/dom0/fc20": Operation not permitted (1)
+2018-07-15 22:14:11.591073 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/dom0/fc20/rpm": Operation not permitted (1)
+2018-07-15 22:14:11.591125 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/dom0/fc23": Operation not permitted (1)
+2018-07-15 22:14:11.591172 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/dom0/fc23/rpm": Operation not permitted (1)
+2018-07-15 22:14:11.591235 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm": Operation not permitted (1)
+2018-07-15 22:14:11.591320 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc22": Operation not permitted (1)
+2018-07-15 22:14:11.591372 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc22/rpm": Operation not permitted (1)
+2018-07-15 22:14:11.591485 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc23": Operation not permitted (1)
+2018-07-15 22:14:11.591573 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc23/rpm": Operation not permitted (1)
+2018-07-15 22:14:11.591652 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc24": Operation not permitted (1)
+2018-07-15 22:14:11.591750 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc24/rpm": Operation not permitted (1)
+2018-07-15 22:14:11.638411 +0000 build-fedora3: .d..t...... current-testing/vm/fc28/rpm/
+2018-07-15 22:14:11.638600 +0000 build-fedora3: <f..t...... current-testing/vm/fc28/rpm/.gitignore
+2018-07-15 22:14:11.639604 +0000 build-fedora3: .              6 100%    0.04kB/s    0:00:00  .              6 100%    0.04kB/s    0:00:00 (xfr#14, ir-chk=1281/1960)
+2018-07-15 22:14:11.640382 +0000 build-fedora3: <f+++++++++ current-testing/vm/fc28/rpm/thunderbird-qubes-1.2.11-1.fc28.noarch.rpm
+2018-07-15 22:14:11.640601 +0000 build-fedora3: .         11,464 100%   74.64kB/s    0:00:00  .         11,464 100%   74.64kB/s    0:00:00 (xfr#15, ir-chk=1203/1960)
+2018-07-15 22:14:11.640717 +0000 build-fedora3: .d..t...... current/
+2018-07-15 22:14:11.640790 +0000 build-fedora3: .d..t...... current/dom0/
+2018-07-15 22:14:11.640856 +0000 build-fedora3: .d..t...... current/dom0/fc20/
+2018-07-15 22:14:11.641111 +0000 build-fedora3: .L..t...... current/dom0/fc20/comps.xml -> ../../../comps-dom0.xml
+2018-07-15 22:14:11.641277 +0000 build-fedora3: .d..t...... current/dom0/fc20/rpm/
+2018-07-15 22:14:11.641401 +0000 build-fedora3: <f..t...... current/dom0/fc20/rpm/.gitignore
+2018-07-15 22:14:11.641806 +0000 build-fedora3: .              6 100%    0.04kB/s    0:00:00  .              6 100%    0.04kB/s    0:00:00 (xfr#16, ir-chk=1148/1960)
+2018-07-15 22:14:11.642054 +0000 build-fedora3: .d..t...... current/dom0/fc23/
+2018-07-15 22:14:11.642155 +0000 build-fedora3: .L..t...... current/dom0/fc23/comps.xml -> ../../../comps-dom0.xml
+2018-07-15 22:14:11.642223 +0000 build-fedora3: .d..t...... current/dom0/fc23/rpm/
+2018-07-15 22:14:11.642336 +0000 build-fedora3: <f..t...... current/dom0/fc23/rpm/.gitignore
+2018-07-15 22:14:11.643153 +0000 build-fedora3: .              6 100%    0.04kB/s    0:00:00  .              6 100%    0.04kB/s    0:00:00 (xfr#17, ir-chk=1145/1960)
+2018-07-15 22:14:11.643341 +0000 build-fedora3: .d..t...... current/vm/
+2018-07-15 22:14:11.643438 +0000 build-fedora3: .d..t...... current/vm/centos7/
+2018-07-15 22:14:11.643524 +0000 build-fedora3: .L..t...... current/vm/centos7/comps.xml -> ../../../comps-vm.xml
+2018-07-15 22:14:11.643596 +0000 build-fedora3: .d..t...... current/vm/centos7/rpm/
+2018-07-15 22:14:11.643690 +0000 build-fedora3: <f..t...... current/vm/centos7/rpm/.gitignore
+2018-07-15 22:14:11.644758 +0000 build-fedora3: .              6 100%    0.04kB/s    0:00:00  .              6 100%    0.04kB/s    0:00:00 (xfr#18, ir-chk=1116/1960)
+2018-07-15 22:14:11.645059 +0000 build-fedora3: .d..t...... current/vm/fc22/
+2018-07-15 22:14:11.645235 +0000 build-fedora3: .L..t...... current/vm/fc22/comps.xml -> ../../../comps-vm.xml
+2018-07-15 22:14:11.645382 +0000 build-fedora3: .d..t...... current/vm/fc22/rpm/
+2018-07-15 22:14:11.645664 +0000 build-fedora3: <f..t...... current/vm/fc22/rpm/.gitignore
+2018-07-15 22:14:11.646682 +0000 build-fedora3: .              6 100%    0.04kB/s    0:00:00  .              6 100%    0.04kB/s    0:00:00 (xfr#19, ir-chk=1113/1960)
+2018-07-15 22:14:11.646831 +0000 build-fedora3: .d..t...... current/vm/fc23/
+2018-07-15 22:14:11.647024 +0000 build-fedora3: .L..t...... current/vm/fc23/comps.xml -> ../../../comps-vm.xml
+2018-07-15 22:14:11.647160 +0000 build-fedora3: .d..t...... current/vm/fc23/rpm/
+2018-07-15 22:14:11.647358 +0000 build-fedora3: <f..t...... current/vm/fc23/rpm/.gitignore
+2018-07-15 22:14:11.648522 +0000 build-fedora3: .              6 100%    0.04kB/s    0:00:00  .              6 100%    0.04kB/s    0:00:00 (xfr#20, ir-chk=1110/1960)
+2018-07-15 22:14:11.648713 +0000 build-fedora3: .d..t...... current/vm/fc24/
+2018-07-15 22:14:11.648892 +0000 build-fedora3: .L..t...... current/vm/fc24/comps.xml -> ../../../comps-vm.xml
+2018-07-15 22:14:11.665436 +0000 build-fedora3: .d..t...... current/vm/fc24/rpm/
+2018-07-15 22:14:11.665487 +0000 build-fedora3: <f..t...... current/vm/fc24/rpm/.gitignore
+2018-07-15 22:14:11.665829 +0000 build-fedora3: .              6 100%    0.03kB/s    0:00:00  .              6 100%    0.03kB/s    0:00:00 (xfr#21, ir-chk=1119/2061)
+2018-07-15 22:14:11.666367 +0000 build-fedora3: hf..t...... current/dom0/fc23/rpm/qubes-core-dom0-vaio-fixes-1.6.1-1.fc23.x86_64.rpm => current-testing/dom0/fc23/rpm/qubes-core-dom0-vaio-fixes-1.6.1-1.fc23.x86_64.rpm
+2018-07-15 22:14:11.666590 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc25": Operation not permitted (1)
+2018-07-15 22:14:11.666617 +0000 build-fedora3: .d..t...... current/vm/fc25/
+2018-07-15 22:14:11.666637 +0000 build-fedora3: .L..t...... current/vm/fc25/comps.xml -> ../../../comps-vm.xml
+2018-07-15 22:14:11.666658 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc25/rpm": Operation not permitted (1)
+2018-07-15 22:14:11.666678 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc26": Operation not permitted (1)
+2018-07-15 22:14:11.666698 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc26/comps.xml": Operation not permitted (1)
+2018-07-15 22:14:11.666728 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/current/vm/fc26/rpm": Operation not permitted (1)
+2018-07-15 22:14:11.666764 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing": Operation not permitted (1)
+2018-07-15 22:14:11.666787 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/dom0": Operation not permitted (1)
+2018-07-15 22:14:11.666807 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/dom0/fc20": Operation not permitted (1)
+2018-07-15 22:14:11.666828 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/dom0/fc20/rpm": Operation not permitted (1)
+2018-07-15 22:14:11.666848 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/dom0/fc23": Operation not permitted (1)
+2018-07-15 22:14:11.666868 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/dom0/fc23/rpm": Operation not permitted (1)
+2018-07-15 22:14:11.666887 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm": Operation not permitted (1)
+2018-07-15 22:14:11.666906 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc22": Operation not permitted (1)
+2018-07-15 22:14:11.666926 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc22/rpm": Operation not permitted (1)
+2018-07-15 22:14:11.667350 +0000 build-fedora3: .d..t...... current/vm/fc25/rpm/
+2018-07-15 22:14:11.667382 +0000 build-fedora3: <f..t...... current/vm/fc25/rpm/.gitignore
+2018-07-15 22:14:11.667815 +0000 build-fedora3: .              6 100%    0.03kB/s    0:00:00  .              6 100%    0.03kB/s    0:00:00 (xfr#22, to-chk=1095/2129)
+2018-07-15 22:14:11.667864 +0000 build-fedora3: .d..t...... current/vm/fc26/
+2018-07-15 22:14:11.667904 +0000 build-fedora3: .L..t...... current/vm/fc26/comps.xml -> ../../../comps-vm.xml
+2018-07-15 22:14:11.667948 +0000 build-fedora3: .d..t...... current/vm/fc26/rpm/
+2018-07-15 22:14:11.667986 +0000 build-fedora3: <f..t...... current/vm/fc26/rpm/.gitignore
+2018-07-15 22:14:11.668279 +0000 build-fedora3: .              6 100%    0.03kB/s    0:00:00  .              6 100%    0.03kB/s    0:00:00 (xfr#23, to-chk=950/2129)
+2018-07-15 22:14:11.668329 +0000 build-fedora3: .d..t...... current/vm/fc27/
+2018-07-15 22:14:11.668367 +0000 build-fedora3: .L..t...... current/vm/fc27/comps.xml -> ../../../comps-vm.xml
+2018-07-15 22:14:11.668405 +0000 build-fedora3: .d..t...... current/vm/fc27/rpm/
+2018-07-15 22:14:11.668454 +0000 build-fedora3: <f..t...... current/vm/fc27/rpm/.gitignore
+2018-07-15 22:14:11.668866 +0000 build-fedora3: .              6 100%    0.03kB/s    0:00:00  .              6 100%    0.03kB/s    0:00:00 (xfr#24, to-chk=816/2129)
+2018-07-15 22:14:11.668938 +0000 build-fedora3: .d..t...... current/vm/fc28/
+2018-07-15 22:14:11.668980 +0000 build-fedora3: .L..t...... current/vm/fc28/comps.xml -> ../../../comps-vm.xml
+2018-07-15 22:14:11.668998 +0000 build-fedora3: .d..t...... current/vm/fc28/rpm/
+2018-07-15 22:14:11.669014 +0000 build-fedora3: <f..t...... current/vm/fc28/rpm/.gitignore
+2018-07-15 22:14:11.669407 +0000 build-fedora3: .              6 100%    0.03kB/s    0:00:00  .              6 100%    0.03kB/s    0:00:00 (xfr#25, to-chk=715/2129)
+2018-07-15 22:14:11.669432 +0000 build-fedora3: .d..t...... security-testing/
+2018-07-15 22:14:11.669448 +0000 build-fedora3: .d..t...... security-testing/dom0/
+2018-07-15 22:14:11.669463 +0000 build-fedora3: .d..t...... security-testing/dom0/fc20/
+2018-07-15 22:14:11.669481 +0000 build-fedora3: .L..t...... security-testing/dom0/fc20/comps.xml -> ../../../comps-dom0.xml
+2018-07-15 22:14:11.669496 +0000 build-fedora3: .d..t...... security-testing/dom0/fc20/rpm/
+2018-07-15 22:14:11.669524 +0000 build-fedora3: <f..t...... security-testing/dom0/fc20/rpm/.gitignore
+2018-07-15 22:14:11.669797 +0000 build-fedora3: .              6 100%    0.03kB/s    0:00:00  .              6 100%    0.03kB/s    0:00:00 (xfr#26, to-chk=610/2129)
+2018-07-15 22:14:11.669896 +0000 build-fedora3: .d..t...... security-testing/dom0/fc23/
+2018-07-15 22:14:11.669919 +0000 build-fedora3: .L..t...... security-testing/dom0/fc23/comps.xml -> ../../../comps-dom0.xml
+2018-07-15 22:14:11.669936 +0000 build-fedora3: .d..t...... security-testing/dom0/fc23/rpm/
+2018-07-15 22:14:11.669962 +0000 build-fedora3: <f..t...... security-testing/dom0/fc23/rpm/.gitignore
+2018-07-15 22:14:11.670272 +0000 build-fedora3: .              6 100%    0.03kB/s    0:00:00  .              6 100%    0.03kB/s    0:00:00 (xfr#27, to-chk=607/2129)
+2018-07-15 22:14:11.670304 +0000 build-fedora3: .d..t...... security-testing/vm/
+2018-07-15 22:14:11.670322 +0000 build-fedora3: .d..t...... security-testing/vm/centos7/
+2018-07-15 22:14:11.670340 +0000 build-fedora3: .L..t...... security-testing/vm/centos7/comps.xml -> ../../../comps-vm.xml
+2018-07-15 22:14:11.670356 +0000 build-fedora3: .d..t...... security-testing/vm/centos7/rpm/
+2018-07-15 22:14:11.670380 +0000 build-fedora3: <f..t...... security-testing/vm/centos7/rpm/.gitignore
+2018-07-15 22:14:11.670674 +0000 build-fedora3: .              6 100%    0.03kB/s    0:00:00  .              6 100%    0.03kB/s    0:00:00 (xfr#28, to-chk=585/2129)
+2018-07-15 22:14:11.670753 +0000 build-fedora3: .d..t...... security-testing/vm/fc22/
+2018-07-15 22:14:11.670825 +0000 build-fedora3: .L..t...... security-testing/vm/fc22/comps.xml -> ../../../comps-vm.xml
+2018-07-15 22:14:11.670852 +0000 build-fedora3: .d..t...... security-testing/vm/fc22/rpm/
+2018-07-15 22:14:11.670890 +0000 build-fedora3: <f..t...... security-testing/vm/fc22/rpm/.gitignore
+2018-07-15 22:14:11.671393 +0000 build-fedora3: .              6 100%    0.03kB/s    0:00:00  .              6 100%    0.03kB/s    0:00:00 (xfr#29, to-chk=582/2129)
+2018-07-15 22:14:11.671443 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc23": Operation not permitted (1)
+2018-07-15 22:14:11.671468 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc23/rpm": Operation not permitted (1)
+2018-07-15 22:14:11.671488 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc24": Operation not permitted (1)
+2018-07-15 22:14:11.671513 +0000 build-fedora3: .d..t...... security-testing/vm/fc23/
+2018-07-15 22:14:11.671532 +0000 build-fedora3: .L..t...... security-testing/vm/fc23/comps.xml -> ../../../comps-vm.xml
+2018-07-15 22:14:11.671587 +0000 build-fedora3: .d..t...... security-testing/vm/fc23/rpm/
+2018-07-15 22:14:11.671627 +0000 build-fedora3: <f..t...... security-testing/vm/fc23/rpm/.gitignore
+2018-07-15 22:14:11.671868 +0000 build-fedora3: .              6 100%    0.03kB/s    0:00:00  .              6 100%    0.03kB/s    0:00:00 (xfr#30, to-chk=579/2129)
+2018-07-15 22:14:11.671941 +0000 build-fedora3: .d..t...... security-testing/vm/fc24/
+2018-07-15 22:14:11.671986 +0000 build-fedora3: .L..t...... security-testing/vm/fc24/comps.xml -> ../../../comps-vm.xml
+2018-07-15 22:14:11.712180 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc24/rpm": Operation not permitted (1)
+2018-07-15 22:14:11.712435 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc25": Operation not permitted (1)
+2018-07-15 22:14:11.712662 +0000 build-fedora3: .d..t...... security-testing/vm/fc24/rpm/
+2018-07-15 22:14:11.712768 +0000 build-fedora3: <f..t...... security-testing/vm/fc24/rpm/.gitignore
+2018-07-15 22:14:11.714428 +0000 build-fedora3: .              6 100%    0.03kB/s    0:00:00  .              6 100%    0.03kB/s    0:00:00 (xfr#31, to-chk=456/2129)
+2018-07-15 22:14:11.714618 +0000 build-fedora3: .d..t...... security-testing/vm/fc25/
+2018-07-15 22:14:11.715637 +0000 build-fedora3: .L..t...... security-testing/vm/fc25/comps.xml -> ../../../comps-vm.xml
+2018-07-15 22:14:11.717427 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc25/rpm": Operation not permitted (1)
+2018-07-15 22:14:11.717627 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc26": Operation not permitted (1)
+2018-07-15 22:14:11.717741 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc26/comps.xml": Operation not permitted (1)
+2018-07-15 22:14:11.717833 +0000 build-fedora3: rsync: failed to set times on "/pub/qubes/repo/yum/r3.2/security-testing/vm/fc26/rpm": Operation not permitted (1)
+2018-07-15 22:14:11.717902 +0000 build-fedora3: .d..t...... security-testing/vm/fc25/rpm/
+2018-07-15 22:14:11.718031 +0000 build-fedora3: <f..t...... security-testing/vm/fc25/rpm/.gitignore
+2018-07-15 22:14:11.718810 +0000 build-fedora3: .              6 100%    0.03kB/s    0:00:00  .              6 100%    0.03kB/s    0:00:00 (xfr#32, to-chk=333/2129)
+2018-07-15 22:14:11.719102 +0000 build-fedora3: .d..t...... security-testing/vm/fc26/
+2018-07-15 22:14:11.719222 +0000 build-fedora3: .L..t...... security-testing/vm/fc26/comps.xml -> ../../../comps-vm.xml
+2018-07-15 22:14:11.719296 +0000 build-fedora3: .d..t...... security-testing/vm/fc26/rpm/
+2018-07-15 22:14:11.719401 +0000 build-fedora3: <f..t...... security-testing/vm/fc26/rpm/.gitignore
+2018-07-15 22:14:11.720663 +0000 build-fedora3: .              6 100%    0.03kB/s    0:00:00  .              6 100%    0.03kB/s    0:00:00 (xfr#33, to-chk=166/2129)
+2018-07-15 22:14:11.761460 +0000 build-fedora3: .d..t...... security-testing/vm/fc27/
+2018-07-15 22:14:11.761660 +0000 build-fedora3: .d..t...... security-testing/vm/fc27/rpm/
+2018-07-15 22:14:11.761757 +0000 build-fedora3: <f..t...... security-testing/vm/fc27/rpm/.gitignore
+2018-07-15 22:14:11.762595 +0000 build-fedora3: .              6 100%    0.02kB/s    0:00:00  .              6 100%    0.02kB/s    0:00:00 (xfr#34, to-chk=66/2129)
+2018-07-15 22:14:11.762803 +0000 build-fedora3: .d..t...... security-testing/vm/fc28/
+2018-07-15 22:14:11.763030 +0000 build-fedora3: .d..t...... security-testing/vm/fc28/rpm/
+2018-07-15 22:14:11.763159 +0000 build-fedora3: <f..t...... security-testing/vm/fc28/rpm/.gitignore
+2018-07-15 22:14:11.763869 +0000 build-fedora3: .              6 100%    0.02kB/s    0:00:00  .              6 100%    0.02kB/s    0:00:00 (xfr#35, to-chk=32/2129)
+2018-07-15 22:14:11.997111 +0000 build-fedora3: rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1189) [sender=3.1.3]
+2018-07-15 22:14:12.489018 +0000 build-fedora3: --> Processing repo: r3.2/current/dom0/fc20...
+2018-07-15 22:14:12.589436 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-07-15 22:14:13.387859 +0000 build-fedora3: --> Processing repo: r3.2/current/dom0/fc23...
+2018-07-15 22:14:13.495129 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-07-15 22:15:44.588048 +0000 build-fedora3: --> Processing repo: r3.2/current/vm/centos7...
+2018-07-15 22:15:44.687388 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-07-15 22:15:47.874284 +0000 build-fedora3: --> Processing repo: r3.2/current/vm/fc22...
+2018-07-15 22:15:47.969355 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-07-15 22:15:48.763821 +0000 build-fedora3: --> Processing repo: r3.2/current/vm/fc23...
+2018-07-15 22:15:48.866624 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-07-15 22:16:10.008906 +0000 build-fedora3: --> Processing repo: r3.2/current/vm/fc24...
+2018-07-15 22:16:10.112568 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-07-15 22:16:31.548582 +0000 build-fedora3: --> Processing repo: r3.2/current/vm/fc25...
+2018-07-15 22:16:31.628170 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-07-15 22:16:49.487304 +0000 build-fedora3: --> Processing repo: r3.2/current/vm/fc26...
+2018-07-15 22:16:49.588247 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-07-15 22:16:56.488124 +0000 build-fedora3: --> Processing repo: r3.2/current/vm/fc27...
+2018-07-15 22:16:56.587548 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-07-15 22:17:00.974730 +0000 build-fedora3: --> Processing repo: r3.2/current/vm/fc28...
+2018-07-15 22:17:01.074443 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-07-15 22:17:05.278160 +0000 build-fedora3: Done.
+2018-07-15 22:17:05.476596 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/dom0/fc20...
+2018-07-15 22:17:05.576039 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-07-15 22:17:06.393524 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/dom0/fc23...
+2018-07-15 22:17:06.501276 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-07-15 22:20:14.280571 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/vm/centos7...
+2018-07-15 22:20:14.388784 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-07-15 22:20:21.475540 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/vm/fc22...
+2018-07-15 22:20:21.571160 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-07-15 22:20:22.324728 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/vm/fc23...
+2018-07-15 22:20:22.432220 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-07-15 22:21:01.782055 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/vm/fc24...
+2018-07-15 22:21:01.888802 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-07-15 22:21:38.036780 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/vm/fc25...
+2018-07-15 22:21:38.142587 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-07-15 22:22:04.946117 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/vm/fc26...
+2018-07-15 22:22:05.050924 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-07-15 22:22:16.231769 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/vm/fc27...
+2018-07-15 22:22:16.334561 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-07-15 22:22:21.939426 +0000 build-fedora3: --> Processing repo: r3.2/current-testing/vm/fc28...
+2018-07-15 22:22:22.041177 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-07-15 22:22:27.754730 +0000 build-fedora3: Done.
+2018-07-15 22:22:27.949762 +0000 build-fedora3: --> Processing repo: r3.2/security-testing/dom0/fc20...
+2018-07-15 22:22:28.045153 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-07-15 22:22:28.847488 +0000 build-fedora3: --> Processing repo: r3.2/security-testing/dom0/fc23...
+2018-07-15 22:22:28.949056 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-07-15 22:22:53.461707 +0000 build-fedora3: --> Processing repo: r3.2/security-testing/vm/centos7...
+2018-07-15 22:22:53.564426 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-07-15 22:22:57.411114 +0000 build-fedora3: --> Processing repo: r3.2/security-testing/vm/fc22...
+2018-07-15 22:22:57.510309 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-07-15 22:22:58.260152 +0000 build-fedora3: --> Processing repo: r3.2/security-testing/vm/fc23...
+2018-07-15 22:22:58.363849 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-07-15 22:23:10.228161 +0000 build-fedora3: --> Processing repo: r3.2/security-testing/vm/fc24...
+2018-07-15 22:23:10.332075 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-07-15 22:23:21.763402 +0000 build-fedora3: --> Processing repo: r3.2/security-testing/vm/fc25...
+2018-07-15 22:23:21.864429 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-07-15 22:23:36.373151 +0000 build-fedora3: --> Processing repo: r3.2/security-testing/vm/fc26...
+2018-07-15 22:23:36.474514 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-07-15 22:23:44.685143 +0000 build-fedora3: --> Processing repo: r3.2/security-testing/vm/fc27...
+2018-07-15 22:23:44.789012 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-07-15 22:23:48.556466 +0000 build-fedora3: --> Processing repo: r3.2/security-testing/vm/fc28...
+2018-07-15 22:23:48.660702 +0000 build-fedora3: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-07-15 22:23:52.427538 +0000 build-fedora3: Done.
+2018-07-15 22:23:52.431074 +0000 build-fedora3: ~/builder-r3.2/qubes-src/linux-yum
+2018-07-15 22:23:52.438484 +0000 build-fedora3: Makefile:725: update target 'update-repo-current-testing' due to: internal-update-repo-current-testing.vm.fc25 internal-update-repo-current-testing.vm.fc26 internal-update-repo-current-testing.vm.fc27 internal-update-repo-current-testing.vm.fc28 post-update-repo-current-testing
+2018-07-15 22:23:52.438613 +0000 build-fedora3: true
+2018-07-15 22:23:52.453407 +0000 build-fedora3: > done
+2018-07-15 22:24:52.449468 +0000 > closing log
