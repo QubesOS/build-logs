@@ -1,0 +1,1698 @@
+2018-09-10 20:14:22.644588 +0000 > starting log
+2018-09-10 20:14:22.665994 +0000 build-apps: > starting build with log
+2018-09-10 20:14:22.666168 +0000 build-apps: >> make args: DISTS_VM= buster fc24 fc25 fc26 stretch DIST_DOM0=fc23 BUILD_LOGS_URL= app-u2f-dom0-fc23=https://github.com/QubesOS/build-logs/tree/master/build-apps/log_2018-09-10_20-08-28 app-u2f-vm-buster=https://github.com/QubesOS/build-logs/tree/master/build-apps/log_2018-09-10_20-09-10 app-u2f-vm-fc24=https://github.com/QubesOS/build-logs/tree/master/build-apps/log_2018-09-10_20-10-09 app-u2f-vm-fc25=https://github.com/QubesOS/build-logs/tree/master/build-apps/log_2018-09-10_20-11-05 app-u2f-vm-fc26=https://github.com/QubesOS/build-logs/tree/master/build-apps/log_2018-09-10_20-12-14 app-u2f-vm-stretch=https://github.com/QubesOS/build-logs/tree/master/build-apps/log_2018-09-10_20-13-27 GIT_URL_app_u2f=ssh://git@github.com/QubesOS/qubes-app-u2f sign-all update-repo-current-testing
+2018-09-10 20:14:22.666212 +0000 build-apps: >> MAKEFLAGS=
+2018-09-10 20:14:22.666255 +0000 build-apps: >> COMPONENTS=app-u2f
+2018-09-10 20:14:22.666290 +0000 build-apps: >> DISTS_VM=
+2018-09-10 20:14:22.666315 +0000 build-apps: >> DIST_DOM0=
+2018-09-10 20:14:22.666347 +0000 build-apps: >> qubes-builder 189334a2dda93323bdbd50d84091acbd9553c948
+2018-09-10 20:14:22.666377 +0000 build-apps: >> qubes-builder/qubes-src/app-u2f 384d3f557febf19bc97bbe1fb0d18c4ef2d2fda2
+2018-09-10 20:14:22.666401 +0000 build-apps: !! pkgs/buster/qubes-u2f_1.2.0+deb10u1.dsc
+2018-09-10 20:14:22.666425 +0000 build-apps: !! pkgs/buster/qubes-u2f_1.2.0+deb10u1.tar.xz
+2018-09-10 20:14:22.666453 +0000 build-apps: !! pkgs/buster/qubes-u2f_1.2.0+deb10u1_all.deb
+2018-09-10 20:14:22.666481 +0000 build-apps: !! pkgs/buster/qubes-u2f_1.2.0+deb10u1_amd64.buildinfo
+2018-09-10 20:14:22.666506 +0000 build-apps: !! pkgs/buster/qubes-u2f_1.2.0+deb10u1_amd64.changes
+2018-09-10 20:14:22.666529 +0000 build-apps: !! pkgs/buster/qubes-u2f_1.2.2+deb10u1.dsc
+2018-09-10 20:14:22.666552 +0000 build-apps: !! pkgs/buster/qubes-u2f_1.2.2+deb10u1.tar.xz
+2018-09-10 20:14:22.666575 +0000 build-apps: !! pkgs/buster/qubes-u2f_1.2.2+deb10u1_all.deb
+2018-09-10 20:14:22.666599 +0000 build-apps: !! pkgs/buster/qubes-u2f_1.2.2+deb10u1_amd64.buildinfo
+2018-09-10 20:14:22.666623 +0000 build-apps: !! pkgs/buster/qubes-u2f_1.2.2+deb10u1_amd64.changes
+2018-09-10 20:14:22.666647 +0000 build-apps: !! pkgs/fc23/noarch/qubes-u2f-dom0-1.2.0-1.fc23.noarch.rpm
+2018-09-10 20:14:22.666672 +0000 build-apps: !! pkgs/fc23/noarch/qubes-u2f-dom0-1.2.1-1.fc23.noarch.rpm
+2018-09-10 20:14:22.666696 +0000 build-apps: !! pkgs/fc23/noarch/qubes-u2f-dom0-1.2.2-1.fc23.noarch.rpm
+2018-09-10 20:14:22.666718 +0000 build-apps: !! pkgs/fc23/qubes-u2f-dom0.spec.list
+2018-09-10 20:14:22.666802 +0000 build-apps: !! pkgs/fc24/noarch/qubes-u2f-1.2.0-1.fc24.noarch.rpm
+2018-09-10 20:14:22.666832 +0000 build-apps: !! pkgs/fc24/noarch/qubes-u2f-1.2.2-1.fc24.noarch.rpm
+2018-09-10 20:14:22.666857 +0000 build-apps: !! pkgs/fc24/qubes-u2f.spec.list
+2018-09-10 20:14:22.666882 +0000 build-apps: !! pkgs/fc25/noarch/qubes-u2f-1.2.0-1.fc25.noarch.rpm
+2018-09-10 20:14:22.666908 +0000 build-apps: !! pkgs/fc25/noarch/qubes-u2f-1.2.2-1.fc25.noarch.rpm
+2018-09-10 20:14:22.666933 +0000 build-apps: !! pkgs/fc25/qubes-u2f.spec.list
+2018-09-10 20:14:22.666962 +0000 build-apps: !! pkgs/fc26/noarch/qubes-u2f-1.2.0-1.fc26.noarch.rpm
+2018-09-10 20:14:22.666989 +0000 build-apps: !! pkgs/fc26/noarch/qubes-u2f-1.2.2-1.fc26.noarch.rpm
+2018-09-10 20:14:22.667015 +0000 build-apps: !! pkgs/fc26/qubes-u2f.spec.list
+2018-09-10 20:14:22.667042 +0000 build-apps: !! pkgs/stretch/qubes-u2f_1.2.0+deb9u1.dsc
+2018-09-10 20:14:22.667071 +0000 build-apps: !! pkgs/stretch/qubes-u2f_1.2.0+deb9u1.tar.xz
+2018-09-10 20:14:22.667098 +0000 build-apps: !! pkgs/stretch/qubes-u2f_1.2.0+deb9u1_all.deb
+2018-09-10 20:14:22.667160 +0000 build-apps: !! pkgs/stretch/qubes-u2f_1.2.0+deb9u1_amd64.buildinfo
+2018-09-10 20:14:22.667188 +0000 build-apps: !! pkgs/stretch/qubes-u2f_1.2.0+deb9u1_amd64.changes
+2018-09-10 20:14:22.667220 +0000 build-apps: !! pkgs/stretch/qubes-u2f_1.2.2+deb9u1.dsc
+2018-09-10 20:14:22.667270 +0000 build-apps: !! pkgs/stretch/qubes-u2f_1.2.2+deb9u1.tar.xz
+2018-09-10 20:14:22.667297 +0000 build-apps: !! pkgs/stretch/qubes-u2f_1.2.2+deb9u1_all.deb
+2018-09-10 20:14:22.667326 +0000 build-apps: !! pkgs/stretch/qubes-u2f_1.2.2+deb9u1_amd64.buildinfo
+2018-09-10 20:14:22.667353 +0000 build-apps: !! pkgs/stretch/qubes-u2f_1.2.2+deb9u1_amd64.changes
+2018-09-10 20:14:22.667395 +0000 build-apps: 75f636a76339b32233e01e4ab3821474c2d785781d67f5189fd4cf5e858a15fbfc8ea8072e85ea37418206290f27982c914aa7948e939c9ba6c0f3066c1f9e96  pkgs/buster/qubes-u2f_1.2.0+deb10u1.dsc
+2018-09-10 20:14:22.667459 +0000 build-apps: 2b3090b9a2d1116f82b5168ec06b0c114641206b2bc05fb9f67465d15a044d58069deda3511c69d9793c1632878501b15c4cffa703502c4917c9ec70f77c9dff  pkgs/buster/qubes-u2f_1.2.0+deb10u1.tar.xz
+2018-09-10 20:14:22.667503 +0000 build-apps: 462ae98b58ccfdb84343145d8612fd11635cdde500e0edff867c8df5a569735d0673ec5582fa02e031af1e708955202d5a46ca83e98f0de561856d9e9be0eba9  pkgs/buster/qubes-u2f_1.2.0+deb10u1_all.deb
+2018-09-10 20:14:22.667547 +0000 build-apps: e87a89aa265ef31d324e2c1c1df25dec8693b8b66ca0c3ed4995c3097359b4f4ec9f700b0d09d7de542798e4efe2c72cda3770a032bedf93834300d768f8101d  pkgs/buster/qubes-u2f_1.2.0+deb10u1_amd64.buildinfo
+2018-09-10 20:14:22.667589 +0000 build-apps: cdcf9f8ba6db2974364728682b5d39366b6f4a9504f7b2cacb35a01188c027ea84b834054c7778727374e38fe0971c72b711a5df4e2208b632ead10a74984c6d  pkgs/buster/qubes-u2f_1.2.0+deb10u1_amd64.changes
+2018-09-10 20:14:22.667632 +0000 build-apps: e47a520f296a31240abc111088017299df938f792f5e54d7fd5d50c0c7701b97400c8d8b4dd04d44b91f5e188116010081f05dbe7610e28f7ce52e0beb95eb73  pkgs/buster/qubes-u2f_1.2.2+deb10u1.dsc
+2018-09-10 20:14:22.667675 +0000 build-apps: f2548f36737679c74709cc5095102f992d6a50d5d6fdb9e96f5b2224fff817863d91bd430e6906ff7374269e15d14a25710915ba55ce18dc5740ab6dfb82b396  pkgs/buster/qubes-u2f_1.2.2+deb10u1.tar.xz
+2018-09-10 20:14:22.667718 +0000 build-apps: 346ad7d39e1b5873d48cf2625fd3c8828ed9c63d41be632c014f01f8b0b22075bb2a4292ac48ea6b0de351d29f7bcec0d016a1da9dc80edab00846ac690d2195  pkgs/buster/qubes-u2f_1.2.2+deb10u1_all.deb
+2018-09-10 20:14:22.667914 +0000 build-apps: 59f9e5487a4b8d42efa66538022b75259b0552403d5c19d641cde4b9bf42d9865340e0667a137548d5e56b0a603f6a30ae9185e766fda85673540ea2a1e50948  pkgs/buster/qubes-u2f_1.2.2+deb10u1_amd64.buildinfo
+2018-09-10 20:14:22.667967 +0000 build-apps: ab3e3e16a37a98c4f4d0c9e7eada81915fa4fb5af18809573328e1f7e78971f6d8e5a1bdf92d1ef77920cfd98bf6edfdc302431b98967027722c34ddf44292ea  pkgs/buster/qubes-u2f_1.2.2+deb10u1_amd64.changes
+2018-09-10 20:14:22.668015 +0000 build-apps: 952740a01fb93049ef400a0e4fc2194dd8f5b19e7ad84aaaf01493d66d480d3fbf4955b445722bf99b8897b9851890899b7d39a5022af04641242b436a8e2381  pkgs/fc23/noarch/qubes-u2f-dom0-1.2.0-1.fc23.noarch.rpm
+2018-09-10 20:14:22.668060 +0000 build-apps: eebcb429ff9dbc2f5f05d9f6530b97bdbbabc4bc9d50847fc4fa6f89f4b83b7b830538158c2389558173d23a632050527a400c7968a6423fc718281406dd09f0  pkgs/fc23/noarch/qubes-u2f-dom0-1.2.1-1.fc23.noarch.rpm
+2018-09-10 20:14:22.668108 +0000 build-apps: 13cbf102bcae28d120d33f8bb488643c443193ea935bdd5a7e84776ebd36b14b2f80dd44568c48ffb5fc038d79b1831cb63d94563155848c81d4b7a8ea05e93c  pkgs/fc23/noarch/qubes-u2f-dom0-1.2.2-1.fc23.noarch.rpm
+2018-09-10 20:14:22.668152 +0000 build-apps: b7d186ad34e32a069282da5f6c4bed0f257a6c6e0918e0abedfc9e0cf0a9a1c8e3dda6e1a972eafb99aabc3fe04e72b0c4798c118bfd237b9fea8add38002cad  pkgs/fc23/qubes-u2f-dom0.spec.list
+2018-09-10 20:14:22.668219 +0000 build-apps: d80e53b17487c37b02c8c19c05d8df63e6ca966f33857c3ffd1eb65e7f7d1afe9655d0cd9bbac12dc44f5b8b5ff923f23ef85b60d1b292638dff323bfe67c8d6  pkgs/fc24/noarch/qubes-u2f-1.2.0-1.fc24.noarch.rpm
+2018-09-10 20:14:22.668263 +0000 build-apps: d107b888bf5d69d29a0cec2f24a4fbd55de85cd59a601f798f3a47a660559ff52f2ffb19484f90d0c34b51190ddb7151cc930b9a7dd8a4c809b1394709c47cbf  pkgs/fc24/noarch/qubes-u2f-1.2.2-1.fc24.noarch.rpm
+2018-09-10 20:14:22.668302 +0000 build-apps: e2ee8948a0e315d02e6312795de9a6c59c7e7a0526e371eb2d8415d78bbef7690d2eee755fe8d5492585daf474e2d184478c13d161a287116fc152f0b7464afb  pkgs/fc24/qubes-u2f.spec.list
+2018-09-10 20:14:22.668364 +0000 build-apps: 782b7c1b41f24783cd4d75c41dbac67082613395bd484854d873103d4885f45989d79f46b1ae019f55ca50b971f99c15924d81f4cb453cb8653843d522fe4a84  pkgs/fc25/noarch/qubes-u2f-1.2.0-1.fc25.noarch.rpm
+2018-09-10 20:14:22.668406 +0000 build-apps: 7e6dd77684bc06ba889b28c7746def8f9aec379e29938ea90743c95eb3a3843d3a4138ed610aff977544f3d5b5a882a789c41f9ae753e1920e6c03b1f8e98bf3  pkgs/fc25/noarch/qubes-u2f-1.2.2-1.fc25.noarch.rpm
+2018-09-10 20:14:22.668451 +0000 build-apps: 6f2280ba54214cdfd3c46c6be666e336720cc5b0b14e24443c285bbc2ac47756a53da56bc368b7dbdc8dbc713b0521a7c1cf20bf50c1ef27d74b7725365ea937  pkgs/fc25/qubes-u2f.spec.list
+2018-09-10 20:14:22.668493 +0000 build-apps: c675e93ae1ef3bcc1a65aced823ed18bf009756ca72ed02f2545ff529dc6ce0922a9b1c08905d0c191ca3e3dbafcdbb362327371f8726bdc18a82ebbd604992e  pkgs/fc26/noarch/qubes-u2f-1.2.0-1.fc26.noarch.rpm
+2018-09-10 20:14:22.668534 +0000 build-apps: 4191f0499b46b7686e1cd4d83f91617b408ae4f6359b973fd9db41c181398c3cd1089b8aa13e928b3e7c47f5498a833b1dfec1ba3467419d6520c280f3e66fbf  pkgs/fc26/noarch/qubes-u2f-1.2.2-1.fc26.noarch.rpm
+2018-09-10 20:14:22.668573 +0000 build-apps: d8962186eaa8daa14895b5485a23738aedcb004e26867b72fee1623abb0d38dc0e661a1f34147536706ce2e8faee57caeeacafff93fe7263fec67317ed82e85f  pkgs/fc26/qubes-u2f.spec.list
+2018-09-10 20:14:22.668613 +0000 build-apps: 074bb4e1572c95981f3f061bffeaf79f81a920c74156a244e3d219a950f99065bb08e6cc259da8f83307e915a78ac4c9ff6b3116ad2fd845bf42d46c5abae0c2  pkgs/stretch/qubes-u2f_1.2.0+deb9u1.dsc
+2018-09-10 20:14:22.668655 +0000 build-apps: 5db61fc0a3b90b451e8064e31bb1505759d8aacbc40d97b38965b4e5692240ad9f52ae4599f45d202dd39fc8f76287ecba5c86ba29c92b9184a6c340644161ec  pkgs/stretch/qubes-u2f_1.2.0+deb9u1.tar.xz
+2018-09-10 20:14:22.668696 +0000 build-apps: 65993b0915680014f6394877b9e59d32dd0982119b2f127b590a9bc54ad98f70dedd010bad95af7ffac88eadfd6f109c3ce5ec8cd8d5a24c628814aff1bc1881  pkgs/stretch/qubes-u2f_1.2.0+deb9u1_all.deb
+2018-09-10 20:14:22.668739 +0000 build-apps: 96706ffb47be286ab2ed4336e587e2743b1bf83fafce2726d8445ea23df68656db844f2bae972ba9effa591b8d6bbe13f23a09f0c4d0d85884b6493539dd9240  pkgs/stretch/qubes-u2f_1.2.0+deb9u1_amd64.buildinfo
+2018-09-10 20:14:22.668783 +0000 build-apps: a5c29bc1ae826c1644db47202cd10969b9d4fb153e428b96f156db4a7f6e2e992ce5bad211a0558bbf569cb9f700596eda1f48fbed0be208318bffd2a7e63208  pkgs/stretch/qubes-u2f_1.2.0+deb9u1_amd64.changes
+2018-09-10 20:14:22.668826 +0000 build-apps: 1fc5fa5a5be902aa331344e079f818714c1aa47ebf4d80f397b08b5a4898c889f814ef370944c2bca11bd5a8beacbd8d7d49a309989b22c4b0c97c9ce2df44e9  pkgs/stretch/qubes-u2f_1.2.2+deb9u1.dsc
+2018-09-10 20:14:22.668868 +0000 build-apps: c0fe073a406ea15ffcf45f43bccb6327130bdc21b297b9f8553c27ccb8167474435dcdab9804d92cfbc47c4f133ac3e361636314b72e3355ad01f32a6b04d214  pkgs/stretch/qubes-u2f_1.2.2+deb9u1.tar.xz
+2018-09-10 20:14:22.668988 +0000 build-apps: 11dfd584b71b8e614ba76b62d8377e5a1335b0cb53b5e88ce8405e9e7138bebbae5b29d2b7e2245a75a393853e23d8953adbbf34df9dd254e20c4b09c272241a  pkgs/stretch/qubes-u2f_1.2.2+deb9u1_all.deb
+2018-09-10 20:14:22.669064 +0000 build-apps: ea9cf547dbfabe40173722726fe8e9ccc68d9e68ed3bc3c81c38d5292b2f7ff9acc810c62b7d7faf2b24439eadf1d50e78a27ad71cdd0cd448129aa57179fed4  pkgs/stretch/qubes-u2f_1.2.2+deb9u1_amd64.buildinfo
+2018-09-10 20:14:22.669114 +0000 build-apps: 202c9bf65361df74f22479fb397c8af228d9df927e0b5c67fd7e9b11048900735845a4c80005d23c34b896f300a078bd21d4f3d077df9154383adfeade3a5b92  pkgs/stretch/qubes-u2f_1.2.2+deb9u1_amd64.changes
+2018-09-10 20:14:22.868792 +0000 build-apps: ================================================================================
+2018-09-10 20:14:22.868857 +0000 build-apps:                            B U I L D   I N F O                                  
+2018-09-10 20:14:22.868893 +0000 build-apps: Items in red indicate it was automatically generated by configuration file(s)
+2018-09-10 20:14:22.868926 +0000 build-apps: Items in white indicate it was automatically removed by configuration file(s)
+2018-09-10 20:14:22.868979 +0000 build-apps: ================================================================================
+2018-09-10 20:14:22.869005 +0000 build-apps: DISTS_VM:
+2018-09-10 20:14:22.910528 +0000 build-apps:      fc24, fc25, fc26, stretch, buster,
+2018-09-10 20:14:22.913243 +0000 build-apps: DISTS_ALL:
+2018-09-10 20:14:22.924985 +0000 build-apps:      buster, fc23, fc24, fc25, fc26, stretch,
+2018-09-10 20:14:22.927479 +0000 build-apps: DIST_DOM0:
+2018-09-10 20:14:22.942695 +0000 build-apps:      fc23,
+2018-09-10 20:14:22.943941 +0000 build-apps: BUILDER_PLUGINS:
+2018-09-10 20:14:22.964535 +0000 build-apps:      builder-fedora, builder-debian, builder-github,
+2018-09-10 20:14:22.966497 +0000 build-apps: COMPONENTS:
+2018-09-10 20:14:22.983571 +0000 build-apps:      app-u2f,
+2018-09-10 20:14:22.987860 +0000 build-apps: GIT_REPOS:
+2018-09-10 20:14:23.000707 +0000 build-apps:      qubes-src/app-u2f,
+2018-09-10 20:14:23.003306 +0000 build-apps: TEMPLATE:
+2018-09-10 20:14:23.013957 +0000 build-apps:     
+2018-09-10 20:14:23.016660 +0000 build-apps: TEMPLATE_FLAVOR_DIR:
+2018-09-10 20:14:23.034893 +0000 build-apps:     
+2018-09-10 20:14:23.037495 +0000 build-apps: TEMPLATE_ALIAS:
+2018-09-10 20:14:23.054483 +0000 build-apps:      jessie:jessie+standard, jessie+gnome:jessie+gnome+standard, jessie+minimal:jessie+minimal+no-recommends,
+2018-09-10 20:14:23.058247 +0000 build-apps: TEMPLATE_LABEL:
+2018-09-10 20:14:23.069174 +0000 build-apps:      fc24:fedora-24, fc25:fedora-25, fc26:fedora-26, fc20:fedora-20 fc21:fedora-21 fc22:fedora-22 fc23:fedora-23
+2018-09-10 20:14:23.069272 +0000 build-apps:      fc20+minimal:fedora-20-minimal fc21+minimal:fedora-21-minimal fc23+minimal:fedora-23-minimal
+2018-09-10 20:14:23.069321 +0000 build-apps:      fc24+minimal:fedora-24-minimal fc25+minimal:fedora-25-minimal fc26+minimal:fedora-26-minimal
+2018-09-10 20:14:23.069369 +0000 build-apps:      wheezy:debian-7 wheezy+standard:debian-7 jessie:debian-8 jessie+standard:debian-8 centos7:centos-7
+2018-09-10 20:14:23.069411 +0000 build-apps:      centos7+minimal:centos-7-minimal
+2018-09-10 20:14:23.180335 +0000 build-apps: > running make
+2018-09-10 20:14:23.253488 +0000 build-apps: Makefile:257: target 'sign.dom0.fc23.app-u2f' does not exist
+2018-09-10 20:14:23.253601 +0000 build-apps: if [ -n "app-u2f" -a "0" -ne 0 ]; then BRANCH=master; branch_var="BRANCH_app_u2f"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/app-u2f > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2018-09-10 20:14:23.253643 +0000 build-apps: SIGN_KEY=40073D3B3E54DAE075AEFCD26E7C1EFBB7592C23; \
+2018-09-10 20:14:23.253674 +0000 build-apps: sign_key_var="SIGN_KEY_${DIST%%+*}"; \
+2018-09-10 20:14:23.253706 +0000 build-apps: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2018-09-10 20:14:23.253736 +0000 build-apps: if [ "app-u2f" = linux-template-builder ]; then
+2018-09-10 20:14:23.253774 +0000 build-apps: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc23 template-name)
+2018-09-10 20:14:23.253799 +0000 build-apps: fi
+2018-09-10 20:14:23.253828 +0000 build-apps: if [ -r qubes-src/app-u2f/Makefile.builder ]; then \
+2018-09-10 20:14:23.253858 +0000 build-apps: .make --no-print-directory -f Makefile.generic \
+2018-09-10 20:14:23.253883 +0000 build-apps: ..DIST=fc23 \
+2018-09-10 20:14:23.253909 +0000 build-apps: ..PACKAGE_SET=dom0 \
+2018-09-10 20:14:23.253934 +0000 build-apps: ..COMPONENT=app-u2f \
+2018-09-10 20:14:23.253960 +0000 build-apps: ..SIGN_KEY=$SIGN_KEY \
+2018-09-10 20:14:23.253985 +0000 build-apps: ..sign || exit 1; \
+2018-09-10 20:14:23.254014 +0000 build-apps: elif [ -d qubes-src/app-u2f/rpm ]; then \
+2018-09-10 20:14:23.254042 +0000 build-apps: .# Old mechanism supported only for RPM
+2018-09-10 20:14:23.254072 +0000 build-apps: FILE_LIST=""; for RPM in qubes-src/app-u2f/rpm/*/*.rpm; do \
+2018-09-10 20:14:23.254140 +0000 build-apps: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2018-09-10 20:14:23.254228 +0000 build-apps: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2018-09-10 20:14:23.254259 +0000 build-apps: ..fi ;\
+2018-09-10 20:14:23.254286 +0000 build-apps: .done ; \
+2018-09-10 20:14:23.254314 +0000 build-apps: .if [ -n "$FILE_LIST" ]; then \
+2018-09-10 20:14:23.254341 +0000 build-apps: ..echo "--> Signing..."; \
+2018-09-10 20:14:23.254368 +0000 build-apps: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2018-09-10 20:14:23.254395 +0000 build-apps: ..if [ -n "$SIGN_KEY" ]; then \
+2018-09-10 20:14:23.254422 +0000 build-apps: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2018-09-10 20:14:23.254446 +0000 build-apps: ..fi; \
+2018-09-10 20:14:23.254478 +0000 build-apps: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2018-09-10 20:14:23.254503 +0000 build-apps: .fi; \
+2018-09-10 20:14:23.254526 +0000 build-apps: fi
+2018-09-10 20:14:23.304105 +0000 build-apps: + ERR_OUTPUT=/dev/stderr
+2018-09-10 20:14:23.304190 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:14:23.306378 +0000 build-apps: ++ basename qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in
+2018-09-10 20:14:23.311293 +0000 build-apps: + [[ xqubes-u2f-dom0.spec.in == \x\.\i\n ]]
+2018-09-10 20:14:23.311356 +0000 build-apps: + '[' -r qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in ']'
+2018-09-10 20:14:23.313858 +0000 build-apps: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-09-10 20:14:23.320913 +0000 build-apps: + tmp_spec=/tmp/tmp.zUy20j.spec
+2018-09-10 20:14:23.322519 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:14:23.327476 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in /tmp/tmp.zUy20j.spec
+2018-09-10 20:14:23.335191 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:14:23.335258 +0000 build-apps: + '[' -z qubes-src/app-u2f ']'
+2018-09-10 20:14:23.335426 +0000 build-apps: + cp qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:14:23.352820 +0000 build-apps: + read ver
+2018-09-10 20:14:23.353819 +0000 build-apps: + cat qubes-src/app-u2f/version
+2018-09-10 20:14:23.361446 +0000 build-apps: + '[' x = x ']'
+2018-09-10 20:14:23.361512 +0000 build-apps: + sed -i 's|@VERSION@|1.2.2|g' qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:14:23.371015 +0000 build-apps: + vnum=1
+2018-09-10 20:14:23.371074 +0000 build-apps: + read ver
+2018-09-10 20:14:23.372208 +0000 build-apps: + '[' -e qubes-src/app-u2f/rel ']'
+2018-09-10 20:14:23.375478 +0000 build-apps: ++ cat qubes-src/app-u2f/rel
+2018-09-10 20:14:23.384455 +0000 build-apps: ++ echo 1
+2018-09-10 20:14:23.386676 +0000 build-apps: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:14:23.395672 +0000 build-apps: + '[' -e qubes-src/app-u2f/changelog ']'
+2018-09-10 20:14:23.395733 +0000 build-apps: + sed -i /@CHANGELOG@/d qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:14:23.403661 +0000 build-apps: + cat qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:14:23.410967 +0000 build-apps: + rm -rf qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:14:23.419384 +0000 build-apps: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-09-10 20:14:23.423352 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:14:23.427731 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.zUy20j.spec
+2018-09-10 20:14:23.611447 +0000 build-apps: + rm -f /tmp/tmp.zUy20j.spec
+2018-09-10 20:14:23.666704 +0000 build-apps: /home/user/builder-r3.2/qubes-src/builder-fedora/Makefile.rpmbuilder:171: target 'sign' does not exist
+2018-09-10 20:14:23.666772 +0000 build-apps: cd qubes-src/app-u2f && for pkg in pkgs/fc23/noarch/qubes-u2f-dom0-1.2.2-1.fc23.noarch.rpm ; do \
+2018-09-10 20:14:23.666831 +0000 build-apps: .if ! rpm -K $pkg | grep -qi pgp; then \
+2018-09-10 20:14:23.666872 +0000 build-apps: ..setsid -w rpmsign  --digest-algo=sha256 --key-id=40073D3B3E54DAE075AEFCD26E7C1EFBB7592C23 --addsign $pkg </dev/null || exit 1; \
+2018-09-10 20:14:23.666898 +0000 build-apps: .fi; \
+2018-09-10 20:14:23.666921 +0000 build-apps: done
+2018-09-10 20:14:23.731105 +0000 build-apps: + ERR_OUTPUT=/dev/stderr
+2018-09-10 20:14:23.731321 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:14:23.733726 +0000 build-apps: ++ basename qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in
+2018-09-10 20:14:23.742466 +0000 build-apps: + [[ xqubes-u2f-dom0.spec.in == \x\.\i\n ]]
+2018-09-10 20:14:23.742525 +0000 build-apps: + '[' -r qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in ']'
+2018-09-10 20:14:23.744149 +0000 build-apps: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-09-10 20:14:23.752876 +0000 build-apps: + tmp_spec=/tmp/tmp.nKAgRX.spec
+2018-09-10 20:14:23.754442 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:14:23.761625 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in /tmp/tmp.nKAgRX.spec
+2018-09-10 20:14:23.769568 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:14:23.769624 +0000 build-apps: + '[' -z qubes-src/app-u2f ']'
+2018-09-10 20:14:23.769782 +0000 build-apps: + cp qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:14:23.786340 +0000 build-apps: + read ver
+2018-09-10 20:14:23.787432 +0000 build-apps: + cat qubes-src/app-u2f/version
+2018-09-10 20:14:23.796188 +0000 build-apps: + '[' x = x ']'
+2018-09-10 20:14:23.796256 +0000 build-apps: + sed -i 's|@VERSION@|1.2.2|g' qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:14:23.806338 +0000 build-apps: + vnum=1
+2018-09-10 20:14:23.806396 +0000 build-apps: + read ver
+2018-09-10 20:14:23.806429 +0000 build-apps: + '[' -e qubes-src/app-u2f/rel ']'
+2018-09-10 20:14:23.808888 +0000 build-apps: ++ cat qubes-src/app-u2f/rel
+2018-09-10 20:14:23.821611 +0000 build-apps: ++ echo 1
+2018-09-10 20:14:23.821682 +0000 build-apps: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:14:23.830368 +0000 build-apps: + '[' -e qubes-src/app-u2f/changelog ']'
+2018-09-10 20:14:23.830431 +0000 build-apps: + sed -i /@CHANGELOG@/d qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:14:23.842865 +0000 build-apps: + cat qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:14:23.848075 +0000 build-apps: + rm -rf qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:14:23.855436 +0000 build-apps: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-09-10 20:14:23.856988 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:14:23.869522 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.nKAgRX.spec
+2018-09-10 20:14:24.122316 +0000 build-apps: + rm -f /tmp/tmp.nKAgRX.spec
+2018-09-10 20:14:25.642748 +0000 build-apps: pkgs/fc23/noarch/qubes-u2f-dom0-1.2.2-1.fc23.noarch.rpm:
+2018-09-10 20:14:25.644946 +0000 build-apps: Makefile:257: target 'sign.vm.buster.app-u2f' does not exist
+2018-09-10 20:14:25.645061 +0000 build-apps: if [ -n "app-u2f" -a "0" -ne 0 ]; then BRANCH=master; branch_var="BRANCH_app_u2f"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/app-u2f > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2018-09-10 20:14:25.645148 +0000 build-apps: SIGN_KEY=40073D3B3E54DAE075AEFCD26E7C1EFBB7592C23; \
+2018-09-10 20:14:25.645183 +0000 build-apps: sign_key_var="SIGN_KEY_${DIST%%+*}"; \
+2018-09-10 20:14:25.645236 +0000 build-apps: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2018-09-10 20:14:25.645265 +0000 build-apps: if [ "app-u2f" = linux-template-builder ]; then
+2018-09-10 20:14:25.645312 +0000 build-apps: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=buster template-name)
+2018-09-10 20:14:25.645336 +0000 build-apps: fi
+2018-09-10 20:14:25.645363 +0000 build-apps: if [ -r qubes-src/app-u2f/Makefile.builder ]; then \
+2018-09-10 20:14:25.645392 +0000 build-apps: .make --no-print-directory -f Makefile.generic \
+2018-09-10 20:14:25.645417 +0000 build-apps: ..DIST=buster \
+2018-09-10 20:14:25.645440 +0000 build-apps: ..PACKAGE_SET=vm \
+2018-09-10 20:14:25.645463 +0000 build-apps: ..COMPONENT=app-u2f \
+2018-09-10 20:14:25.645485 +0000 build-apps: ..SIGN_KEY=$SIGN_KEY \
+2018-09-10 20:14:25.645507 +0000 build-apps: ..sign || exit 1; \
+2018-09-10 20:14:25.645533 +0000 build-apps: elif [ -d qubes-src/app-u2f/rpm ]; then \
+2018-09-10 20:14:25.645558 +0000 build-apps: .# Old mechanism supported only for RPM
+2018-09-10 20:14:25.645584 +0000 build-apps: FILE_LIST=""; for RPM in qubes-src/app-u2f/rpm/*/*.rpm; do \
+2018-09-10 20:14:25.645612 +0000 build-apps: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2018-09-10 20:14:25.645635 +0000 build-apps: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2018-09-10 20:14:25.645657 +0000 build-apps: ..fi ;\
+2018-09-10 20:14:25.645680 +0000 build-apps: .done ; \
+2018-09-10 20:14:25.645705 +0000 build-apps: .if [ -n "$FILE_LIST" ]; then \
+2018-09-10 20:14:25.645730 +0000 build-apps: ..echo "--> Signing..."; \
+2018-09-10 20:14:25.645756 +0000 build-apps: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2018-09-10 20:14:25.645781 +0000 build-apps: ..if [ -n "$SIGN_KEY" ]; then \
+2018-09-10 20:14:25.645807 +0000 build-apps: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2018-09-10 20:14:25.645830 +0000 build-apps: ..fi; \
+2018-09-10 20:14:25.645859 +0000 build-apps: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2018-09-10 20:14:25.645883 +0000 build-apps: .fi; \
+2018-09-10 20:14:25.645906 +0000 build-apps: fi
+2018-09-10 20:14:26.015279 +0000 build-apps: /home/user/builder-r3.2/qubes-src/builder-debian/Makefile.debian:357: target 'sign' does not exist
+2018-09-10 20:14:26.015345 +0000 build-apps: /home/user/builder-r3.2/qubes-src/builder-debian//scripts/signfile \
+2018-09-10 20:14:26.015384 +0000 build-apps: ./home/user/builder-r3.2/qubes-packages-mirror-repo/buster/deb/qubes-u2f_1.2.2+deb10u1_amd64.changes
+2018-09-10 20:14:27.165771 +0000 build-apps: /home/user/builder-r3.2/qubes-src/builder-debian//scripts/signfile \
+2018-09-10 20:14:27.165864 +0000 build-apps: ./home/user/builder-r3.2/qubes-packages-mirror-repo/buster/deb/qubes-u2f_1.2.2+deb10u1.dsc
+2018-09-10 20:14:27.932138 +0000 build-apps: Makefile:257: target 'sign.vm.fc24.app-u2f' does not exist
+2018-09-10 20:14:27.932265 +0000 build-apps: if [ -n "app-u2f" -a "0" -ne 0 ]; then BRANCH=master; branch_var="BRANCH_app_u2f"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/app-u2f > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2018-09-10 20:14:27.932309 +0000 build-apps: SIGN_KEY=40073D3B3E54DAE075AEFCD26E7C1EFBB7592C23; \
+2018-09-10 20:14:27.932338 +0000 build-apps: sign_key_var="SIGN_KEY_${DIST%%+*}"; \
+2018-09-10 20:14:27.932367 +0000 build-apps: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2018-09-10 20:14:27.932395 +0000 build-apps: if [ "app-u2f" = linux-template-builder ]; then
+2018-09-10 20:14:27.932429 +0000 build-apps: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc24 template-name)
+2018-09-10 20:14:27.932452 +0000 build-apps: fi
+2018-09-10 20:14:27.932479 +0000 build-apps: if [ -r qubes-src/app-u2f/Makefile.builder ]; then \
+2018-09-10 20:14:27.932528 +0000 build-apps: .make --no-print-directory -f Makefile.generic \
+2018-09-10 20:14:27.932552 +0000 build-apps: ..DIST=fc24 \
+2018-09-10 20:14:27.932576 +0000 build-apps: ..PACKAGE_SET=vm \
+2018-09-10 20:14:27.932601 +0000 build-apps: ..COMPONENT=app-u2f \
+2018-09-10 20:14:27.932625 +0000 build-apps: ..SIGN_KEY=$SIGN_KEY \
+2018-09-10 20:14:27.932650 +0000 build-apps: ..sign || exit 1; \
+2018-09-10 20:14:27.932676 +0000 build-apps: elif [ -d qubes-src/app-u2f/rpm ]; then \
+2018-09-10 20:14:27.932703 +0000 build-apps: .# Old mechanism supported only for RPM
+2018-09-10 20:14:27.932732 +0000 build-apps: FILE_LIST=""; for RPM in qubes-src/app-u2f/rpm/*/*.rpm; do \
+2018-09-10 20:14:27.932763 +0000 build-apps: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2018-09-10 20:14:27.932790 +0000 build-apps: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2018-09-10 20:14:27.932814 +0000 build-apps: ..fi ;\
+2018-09-10 20:14:27.932839 +0000 build-apps: .done ; \
+2018-09-10 20:14:27.932865 +0000 build-apps: .if [ -n "$FILE_LIST" ]; then \
+2018-09-10 20:14:27.932891 +0000 build-apps: ..echo "--> Signing..."; \
+2018-09-10 20:14:27.932918 +0000 build-apps: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2018-09-10 20:14:27.932945 +0000 build-apps: ..if [ -n "$SIGN_KEY" ]; then \
+2018-09-10 20:14:27.932970 +0000 build-apps: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2018-09-10 20:14:27.932994 +0000 build-apps: ..fi; \
+2018-09-10 20:14:27.933024 +0000 build-apps: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2018-09-10 20:14:27.933047 +0000 build-apps: .fi; \
+2018-09-10 20:14:27.933068 +0000 build-apps: fi
+2018-09-10 20:14:27.975188 +0000 build-apps: + ERR_OUTPUT=/dev/stderr
+2018-09-10 20:14:27.975246 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:14:27.977101 +0000 build-apps: ++ basename qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in
+2018-09-10 20:14:27.982717 +0000 build-apps: + [[ xqubes-u2f.spec.in == \x\.\i\n ]]
+2018-09-10 20:14:27.983982 +0000 build-apps: + '[' -r qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in ']'
+2018-09-10 20:14:27.985512 +0000 build-apps: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-09-10 20:14:27.990297 +0000 build-apps: + tmp_spec=/tmp/tmp.YqaRj2.spec
+2018-09-10 20:14:27.992041 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:14:27.998331 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in /tmp/tmp.YqaRj2.spec
+2018-09-10 20:14:28.006780 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:14:28.006844 +0000 build-apps: + '[' -z qubes-src/app-u2f ']'
+2018-09-10 20:14:28.006884 +0000 build-apps: + cp qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:28.016966 +0000 build-apps: + cat qubes-src/app-u2f/version
+2018-09-10 20:14:28.018999 +0000 build-apps: + read ver
+2018-09-10 20:14:28.023287 +0000 build-apps: + '[' x = x ']'
+2018-09-10 20:14:28.023351 +0000 build-apps: + sed -i 's|@VERSION@|1.2.2|g' qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:28.035218 +0000 build-apps: + vnum=1
+2018-09-10 20:14:28.035272 +0000 build-apps: + read ver
+2018-09-10 20:14:28.035301 +0000 build-apps: + '[' -e qubes-src/app-u2f/rel ']'
+2018-09-10 20:14:28.036510 +0000 build-apps: ++ cat qubes-src/app-u2f/rel
+2018-09-10 20:14:28.045368 +0000 build-apps: ++ echo 1
+2018-09-10 20:14:28.045567 +0000 build-apps: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:28.055511 +0000 build-apps: + '[' -e qubes-src/app-u2f/changelog ']'
+2018-09-10 20:14:28.055579 +0000 build-apps: + sed -i /@CHANGELOG@/d qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:28.066894 +0000 build-apps: + cat qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:28.074271 +0000 build-apps: + rm -rf qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:28.081425 +0000 build-apps: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-09-10 20:14:28.085146 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:14:28.090171 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.YqaRj2.spec
+2018-09-10 20:14:28.291019 +0000 build-apps: + rm -f /tmp/tmp.YqaRj2.spec
+2018-09-10 20:14:28.339622 +0000 build-apps: /home/user/builder-r3.2/qubes-src/builder-fedora/Makefile.rpmbuilder:171: target 'sign' does not exist
+2018-09-10 20:14:28.339690 +0000 build-apps: cd qubes-src/app-u2f && for pkg in pkgs/fc24/noarch/qubes-u2f-1.2.2-1.fc24.noarch.rpm ; do \
+2018-09-10 20:14:28.339724 +0000 build-apps: .if ! rpm -K $pkg | grep -qi pgp; then \
+2018-09-10 20:14:28.339765 +0000 build-apps: ..setsid -w rpmsign  --digest-algo=sha256 --key-id=40073D3B3E54DAE075AEFCD26E7C1EFBB7592C23 --addsign $pkg </dev/null || exit 1; \
+2018-09-10 20:14:28.339792 +0000 build-apps: .fi; \
+2018-09-10 20:14:28.339816 +0000 build-apps: done
+2018-09-10 20:14:28.412738 +0000 build-apps: + ERR_OUTPUT=/dev/stderr
+2018-09-10 20:14:28.412795 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:14:28.414456 +0000 build-apps: ++ basename qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in
+2018-09-10 20:14:28.420242 +0000 build-apps: + [[ xqubes-u2f.spec.in == \x\.\i\n ]]
+2018-09-10 20:14:28.420300 +0000 build-apps: + '[' -r qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in ']'
+2018-09-10 20:14:28.428534 +0000 build-apps: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-09-10 20:14:28.431664 +0000 build-apps: + tmp_spec=/tmp/tmp.cGZRbQ.spec
+2018-09-10 20:14:28.431730 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:14:28.435578 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in /tmp/tmp.cGZRbQ.spec
+2018-09-10 20:14:28.452674 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:14:28.452730 +0000 build-apps: + '[' -z qubes-src/app-u2f ']'
+2018-09-10 20:14:28.452780 +0000 build-apps: + cp qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:28.484672 +0000 build-apps: + read ver
+2018-09-10 20:14:28.489646 +0000 build-apps: + cat qubes-src/app-u2f/version
+2018-09-10 20:14:28.497767 +0000 build-apps: + '[' x = x ']'
+2018-09-10 20:14:28.497836 +0000 build-apps: + sed -i 's|@VERSION@|1.2.2|g' qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:28.510339 +0000 build-apps: + vnum=1
+2018-09-10 20:14:28.510397 +0000 build-apps: + read ver
+2018-09-10 20:14:28.512645 +0000 build-apps: + '[' -e qubes-src/app-u2f/rel ']'
+2018-09-10 20:14:28.515964 +0000 build-apps: ++ cat qubes-src/app-u2f/rel
+2018-09-10 20:14:28.524554 +0000 build-apps: ++ echo 1
+2018-09-10 20:14:28.524625 +0000 build-apps: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:28.533518 +0000 build-apps: + '[' -e qubes-src/app-u2f/changelog ']'
+2018-09-10 20:14:28.533580 +0000 build-apps: + sed -i /@CHANGELOG@/d qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:28.546154 +0000 build-apps: + cat qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:28.567268 +0000 build-apps: + rm -rf qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:28.574713 +0000 build-apps: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-09-10 20:14:28.578676 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:14:28.587760 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.cGZRbQ.spec
+2018-09-10 20:14:28.745017 +0000 build-apps: + rm -f /tmp/tmp.cGZRbQ.spec
+2018-09-10 20:14:30.314755 +0000 build-apps: pkgs/fc24/noarch/qubes-u2f-1.2.2-1.fc24.noarch.rpm:
+2018-09-10 20:14:30.323617 +0000 build-apps: Makefile:257: target 'sign.vm.fc25.app-u2f' does not exist
+2018-09-10 20:14:30.323725 +0000 build-apps: if [ -n "app-u2f" -a "0" -ne 0 ]; then BRANCH=master; branch_var="BRANCH_app_u2f"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/app-u2f > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2018-09-10 20:14:30.323788 +0000 build-apps: SIGN_KEY=40073D3B3E54DAE075AEFCD26E7C1EFBB7592C23; \
+2018-09-10 20:14:30.323820 +0000 build-apps: sign_key_var="SIGN_KEY_${DIST%%+*}"; \
+2018-09-10 20:14:30.323857 +0000 build-apps: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2018-09-10 20:14:30.323885 +0000 build-apps: if [ "app-u2f" = linux-template-builder ]; then
+2018-09-10 20:14:30.323920 +0000 build-apps: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc25 template-name)
+2018-09-10 20:14:30.323944 +0000 build-apps: fi
+2018-09-10 20:14:30.323971 +0000 build-apps: if [ -r qubes-src/app-u2f/Makefile.builder ]; then \
+2018-09-10 20:14:30.323998 +0000 build-apps: .make --no-print-directory -f Makefile.generic \
+2018-09-10 20:14:30.324021 +0000 build-apps: ..DIST=fc25 \
+2018-09-10 20:14:30.324045 +0000 build-apps: ..PACKAGE_SET=vm \
+2018-09-10 20:14:30.324068 +0000 build-apps: ..COMPONENT=app-u2f \
+2018-09-10 20:14:30.324093 +0000 build-apps: ..SIGN_KEY=$SIGN_KEY \
+2018-09-10 20:14:30.324160 +0000 build-apps: ..sign || exit 1; \
+2018-09-10 20:14:30.324187 +0000 build-apps: elif [ -d qubes-src/app-u2f/rpm ]; then \
+2018-09-10 20:14:30.324214 +0000 build-apps: .# Old mechanism supported only for RPM
+2018-09-10 20:14:30.324244 +0000 build-apps: FILE_LIST=""; for RPM in qubes-src/app-u2f/rpm/*/*.rpm; do \
+2018-09-10 20:14:30.324273 +0000 build-apps: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2018-09-10 20:14:30.324300 +0000 build-apps: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2018-09-10 20:14:30.324323 +0000 build-apps: ..fi ;\
+2018-09-10 20:14:30.324346 +0000 build-apps: .done ; \
+2018-09-10 20:14:30.324371 +0000 build-apps: .if [ -n "$FILE_LIST" ]; then \
+2018-09-10 20:14:30.324395 +0000 build-apps: ..echo "--> Signing..."; \
+2018-09-10 20:14:30.324420 +0000 build-apps: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2018-09-10 20:14:30.324450 +0000 build-apps: ..if [ -n "$SIGN_KEY" ]; then \
+2018-09-10 20:14:30.324475 +0000 build-apps: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2018-09-10 20:14:30.324496 +0000 build-apps: ..fi; \
+2018-09-10 20:14:30.324526 +0000 build-apps: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2018-09-10 20:14:30.324549 +0000 build-apps: .fi; \
+2018-09-10 20:14:30.324570 +0000 build-apps: fi
+2018-09-10 20:14:30.357520 +0000 build-apps: + ERR_OUTPUT=/dev/stderr
+2018-09-10 20:14:30.357577 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:14:30.360664 +0000 build-apps: ++ basename qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in
+2018-09-10 20:14:30.369435 +0000 build-apps: + [[ xqubes-u2f.spec.in == \x\.\i\n ]]
+2018-09-10 20:14:30.369496 +0000 build-apps: + '[' -r qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in ']'
+2018-09-10 20:14:30.372055 +0000 build-apps: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-09-10 20:14:30.380126 +0000 build-apps: + tmp_spec=/tmp/tmp.7i02IF.spec
+2018-09-10 20:14:30.381942 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:14:30.388235 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in /tmp/tmp.7i02IF.spec
+2018-09-10 20:14:30.402111 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:14:30.402199 +0000 build-apps: + '[' -z qubes-src/app-u2f ']'
+2018-09-10 20:14:30.402244 +0000 build-apps: + cp qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:30.416938 +0000 build-apps: + cat qubes-src/app-u2f/version
+2018-09-10 20:14:30.424086 +0000 build-apps: + read ver
+2018-09-10 20:14:30.424300 +0000 build-apps: + '[' x = x ']'
+2018-09-10 20:14:30.424365 +0000 build-apps: + sed -i 's|@VERSION@|1.2.2|g' qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:30.434642 +0000 build-apps: + vnum=1
+2018-09-10 20:14:30.434699 +0000 build-apps: + read ver
+2018-09-10 20:14:30.435134 +0000 build-apps: + '[' -e qubes-src/app-u2f/rel ']'
+2018-09-10 20:14:30.438584 +0000 build-apps: ++ cat qubes-src/app-u2f/rel
+2018-09-10 20:14:30.447338 +0000 build-apps: ++ echo 1
+2018-09-10 20:14:30.447407 +0000 build-apps: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:30.456439 +0000 build-apps: + '[' -e qubes-src/app-u2f/changelog ']'
+2018-09-10 20:14:30.456510 +0000 build-apps: + sed -i /@CHANGELOG@/d qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:30.466284 +0000 build-apps: + cat qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:30.475506 +0000 build-apps: + rm -rf qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:30.481397 +0000 build-apps: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-09-10 20:14:30.483001 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:14:30.491419 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.7i02IF.spec
+2018-09-10 20:14:30.663622 +0000 build-apps: + rm -f /tmp/tmp.7i02IF.spec
+2018-09-10 20:14:30.727171 +0000 build-apps: /home/user/builder-r3.2/qubes-src/builder-fedora/Makefile.rpmbuilder:171: target 'sign' does not exist
+2018-09-10 20:14:30.727282 +0000 build-apps: cd qubes-src/app-u2f && for pkg in pkgs/fc25/noarch/qubes-u2f-1.2.2-1.fc25.noarch.rpm ; do \
+2018-09-10 20:14:30.727318 +0000 build-apps: .if ! rpm -K $pkg | grep -qi pgp; then \
+2018-09-10 20:14:30.727362 +0000 build-apps: ..setsid -w rpmsign  --digest-algo=sha256 --key-id=40073D3B3E54DAE075AEFCD26E7C1EFBB7592C23 --addsign $pkg </dev/null || exit 1; \
+2018-09-10 20:14:30.727400 +0000 build-apps: .fi; \
+2018-09-10 20:14:30.727429 +0000 build-apps: done
+2018-09-10 20:14:30.784384 +0000 build-apps: + ERR_OUTPUT=/dev/stderr
+2018-09-10 20:14:30.784447 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:14:30.789644 +0000 build-apps: ++ basename qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in
+2018-09-10 20:14:30.791723 +0000 build-apps: + [[ xqubes-u2f.spec.in == \x\.\i\n ]]
+2018-09-10 20:14:30.791790 +0000 build-apps: + '[' -r qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in ']'
+2018-09-10 20:14:30.793873 +0000 build-apps: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-09-10 20:14:30.798621 +0000 build-apps: + tmp_spec=/tmp/tmp.ixrqqy.spec
+2018-09-10 20:14:30.799990 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:14:30.808128 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in /tmp/tmp.ixrqqy.spec
+2018-09-10 20:14:30.818814 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:14:30.819381 +0000 build-apps: + '[' -z qubes-src/app-u2f ']'
+2018-09-10 20:14:30.819437 +0000 build-apps: + cp qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:30.846939 +0000 build-apps: + read ver
+2018-09-10 20:14:30.849541 +0000 build-apps: + cat qubes-src/app-u2f/version
+2018-09-10 20:14:30.873143 +0000 build-apps: + '[' x = x ']'
+2018-09-10 20:14:30.873256 +0000 build-apps: + sed -i 's|@VERSION@|1.2.2|g' qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:30.887203 +0000 build-apps: + vnum=1
+2018-09-10 20:14:30.887258 +0000 build-apps: + read ver
+2018-09-10 20:14:30.887289 +0000 build-apps: + '[' -e qubes-src/app-u2f/rel ']'
+2018-09-10 20:14:30.888523 +0000 build-apps: ++ cat qubes-src/app-u2f/rel
+2018-09-10 20:14:30.895031 +0000 build-apps: ++ echo 1
+2018-09-10 20:14:30.897564 +0000 build-apps: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:30.905036 +0000 build-apps: + '[' -e qubes-src/app-u2f/changelog ']'
+2018-09-10 20:14:30.905121 +0000 build-apps: + sed -i /@CHANGELOG@/d qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:30.914309 +0000 build-apps: + cat qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:30.924151 +0000 build-apps: + rm -rf qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:30.928047 +0000 build-apps: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-09-10 20:14:30.929968 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:14:30.937474 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.ixrqqy.spec
+2018-09-10 20:14:31.126151 +0000 build-apps: + rm -f /tmp/tmp.ixrqqy.spec
+2018-09-10 20:14:32.885388 +0000 build-apps: pkgs/fc25/noarch/qubes-u2f-1.2.2-1.fc25.noarch.rpm:
+2018-09-10 20:14:32.894229 +0000 build-apps: Makefile:257: target 'sign.vm.fc26.app-u2f' does not exist
+2018-09-10 20:14:32.894370 +0000 build-apps: if [ -n "app-u2f" -a "0" -ne 0 ]; then BRANCH=master; branch_var="BRANCH_app_u2f"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/app-u2f > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2018-09-10 20:14:32.894431 +0000 build-apps: SIGN_KEY=40073D3B3E54DAE075AEFCD26E7C1EFBB7592C23; \
+2018-09-10 20:14:32.894473 +0000 build-apps: sign_key_var="SIGN_KEY_${DIST%%+*}"; \
+2018-09-10 20:14:32.894514 +0000 build-apps: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2018-09-10 20:14:32.894551 +0000 build-apps: if [ "app-u2f" = linux-template-builder ]; then
+2018-09-10 20:14:32.894593 +0000 build-apps: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc26 template-name)
+2018-09-10 20:14:32.894620 +0000 build-apps: fi
+2018-09-10 20:14:32.894652 +0000 build-apps: if [ -r qubes-src/app-u2f/Makefile.builder ]; then \
+2018-09-10 20:14:32.894683 +0000 build-apps: .make --no-print-directory -f Makefile.generic \
+2018-09-10 20:14:32.894710 +0000 build-apps: ..DIST=fc26 \
+2018-09-10 20:14:32.894736 +0000 build-apps: ..PACKAGE_SET=vm \
+2018-09-10 20:14:32.894764 +0000 build-apps: ..COMPONENT=app-u2f \
+2018-09-10 20:14:32.894790 +0000 build-apps: ..SIGN_KEY=$SIGN_KEY \
+2018-09-10 20:14:32.894814 +0000 build-apps: ..sign || exit 1; \
+2018-09-10 20:14:32.894842 +0000 build-apps: elif [ -d qubes-src/app-u2f/rpm ]; then \
+2018-09-10 20:14:32.894870 +0000 build-apps: .# Old mechanism supported only for RPM
+2018-09-10 20:14:32.894900 +0000 build-apps: FILE_LIST=""; for RPM in qubes-src/app-u2f/rpm/*/*.rpm; do \
+2018-09-10 20:14:32.894932 +0000 build-apps: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2018-09-10 20:14:32.894966 +0000 build-apps: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2018-09-10 20:14:32.894990 +0000 build-apps: ..fi ;\
+2018-09-10 20:14:32.895015 +0000 build-apps: .done ; \
+2018-09-10 20:14:32.895040 +0000 build-apps: .if [ -n "$FILE_LIST" ]; then \
+2018-09-10 20:14:32.895065 +0000 build-apps: ..echo "--> Signing..."; \
+2018-09-10 20:14:32.895092 +0000 build-apps: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2018-09-10 20:14:32.895145 +0000 build-apps: ..if [ -n "$SIGN_KEY" ]; then \
+2018-09-10 20:14:32.895174 +0000 build-apps: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2018-09-10 20:14:32.895197 +0000 build-apps: ..fi; \
+2018-09-10 20:14:32.895232 +0000 build-apps: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2018-09-10 20:14:32.895269 +0000 build-apps: .fi; \
+2018-09-10 20:14:32.895301 +0000 build-apps: fi
+2018-09-10 20:14:32.944875 +0000 build-apps: + ERR_OUTPUT=/dev/stderr
+2018-09-10 20:14:32.945097 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:14:32.951660 +0000 build-apps: ++ basename qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in
+2018-09-10 20:14:32.959324 +0000 build-apps: + [[ xqubes-u2f.spec.in == \x\.\i\n ]]
+2018-09-10 20:14:32.959398 +0000 build-apps: + '[' -r qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in ']'
+2018-09-10 20:14:32.961595 +0000 build-apps: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-09-10 20:14:32.969350 +0000 build-apps: + tmp_spec=/tmp/tmp.RqQjbR.spec
+2018-09-10 20:14:32.970626 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:14:32.975622 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in /tmp/tmp.RqQjbR.spec
+2018-09-10 20:14:32.983017 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:14:32.983076 +0000 build-apps: + '[' -z qubes-src/app-u2f ']'
+2018-09-10 20:14:32.983281 +0000 build-apps: + cp qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:32.994814 +0000 build-apps: + read ver
+2018-09-10 20:14:32.996986 +0000 build-apps: + cat qubes-src/app-u2f/version
+2018-09-10 20:14:33.004272 +0000 build-apps: + '[' x = x ']'
+2018-09-10 20:14:33.004335 +0000 build-apps: + sed -i 's|@VERSION@|1.2.2|g' qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:33.020170 +0000 build-apps: + vnum=1
+2018-09-10 20:14:33.020256 +0000 build-apps: + read ver
+2018-09-10 20:14:33.020300 +0000 build-apps: + '[' -e qubes-src/app-u2f/rel ']'
+2018-09-10 20:14:33.021828 +0000 build-apps: ++ cat qubes-src/app-u2f/rel
+2018-09-10 20:14:33.035376 +0000 build-apps: ++ echo 1
+2018-09-10 20:14:33.037125 +0000 build-apps: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:33.063485 +0000 build-apps: + '[' -e qubes-src/app-u2f/changelog ']'
+2018-09-10 20:14:33.063549 +0000 build-apps: + sed -i /@CHANGELOG@/d qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:33.081168 +0000 build-apps: + cat qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:33.087846 +0000 build-apps: + rm -rf qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:33.101666 +0000 build-apps: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-09-10 20:14:33.103411 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:14:33.108348 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.RqQjbR.spec
+2018-09-10 20:14:33.332532 +0000 build-apps: + rm -f /tmp/tmp.RqQjbR.spec
+2018-09-10 20:14:33.374543 +0000 build-apps: /home/user/builder-r3.2/qubes-src/builder-fedora/Makefile.rpmbuilder:171: target 'sign' does not exist
+2018-09-10 20:14:33.374612 +0000 build-apps: cd qubes-src/app-u2f && for pkg in pkgs/fc26/noarch/qubes-u2f-1.2.2-1.fc26.noarch.rpm ; do \
+2018-09-10 20:14:33.374645 +0000 build-apps: .if ! rpm -K $pkg | grep -qi pgp; then \
+2018-09-10 20:14:33.374684 +0000 build-apps: ..setsid -w rpmsign  --digest-algo=sha256 --key-id=40073D3B3E54DAE075AEFCD26E7C1EFBB7592C23 --addsign $pkg </dev/null || exit 1; \
+2018-09-10 20:14:33.374710 +0000 build-apps: .fi; \
+2018-09-10 20:14:33.374735 +0000 build-apps: done
+2018-09-10 20:14:33.432431 +0000 build-apps: + ERR_OUTPUT=/dev/stderr
+2018-09-10 20:14:33.432492 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:14:33.436095 +0000 build-apps: ++ basename qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in
+2018-09-10 20:14:33.441835 +0000 build-apps: + [[ xqubes-u2f.spec.in == \x\.\i\n ]]
+2018-09-10 20:14:33.442657 +0000 build-apps: + '[' -r qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in ']'
+2018-09-10 20:14:33.449863 +0000 build-apps: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-09-10 20:14:33.460548 +0000 build-apps: + tmp_spec=/tmp/tmp.cwcikk.spec
+2018-09-10 20:14:33.461711 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:14:33.467212 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in /tmp/tmp.cwcikk.spec
+2018-09-10 20:14:33.474604 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:14:33.474692 +0000 build-apps: + '[' -z qubes-src/app-u2f ']'
+2018-09-10 20:14:33.474887 +0000 build-apps: + cp qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:33.488751 +0000 build-apps: + read ver
+2018-09-10 20:14:33.491365 +0000 build-apps: + cat qubes-src/app-u2f/version
+2018-09-10 20:14:33.501591 +0000 build-apps: + '[' x = x ']'
+2018-09-10 20:14:33.501655 +0000 build-apps: + sed -i 's|@VERSION@|1.2.2|g' qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:33.512056 +0000 build-apps: + vnum=1
+2018-09-10 20:14:33.512147 +0000 build-apps: + read ver
+2018-09-10 20:14:33.512182 +0000 build-apps: + '[' -e qubes-src/app-u2f/rel ']'
+2018-09-10 20:14:33.514018 +0000 build-apps: ++ cat qubes-src/app-u2f/rel
+2018-09-10 20:14:33.521672 +0000 build-apps: ++ echo 1
+2018-09-10 20:14:33.522974 +0000 build-apps: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:33.531614 +0000 build-apps: + '[' -e qubes-src/app-u2f/changelog ']'
+2018-09-10 20:14:33.531678 +0000 build-apps: + sed -i /@CHANGELOG@/d qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:33.542012 +0000 build-apps: + cat qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:33.548808 +0000 build-apps: + rm -rf qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:33.554154 +0000 build-apps: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-09-10 20:14:33.556478 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:14:33.563260 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.cwcikk.spec
+2018-09-10 20:14:33.731206 +0000 build-apps: + rm -f /tmp/tmp.cwcikk.spec
+2018-09-10 20:14:35.175073 +0000 build-apps: pkgs/fc26/noarch/qubes-u2f-1.2.2-1.fc26.noarch.rpm:
+2018-09-10 20:14:35.184232 +0000 build-apps: Makefile:257: target 'sign.vm.stretch.app-u2f' does not exist
+2018-09-10 20:14:35.184343 +0000 build-apps: if [ -n "app-u2f" -a "0" -ne 0 ]; then BRANCH=master; branch_var="BRANCH_app_u2f"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/app-u2f > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2018-09-10 20:14:35.184385 +0000 build-apps: SIGN_KEY=40073D3B3E54DAE075AEFCD26E7C1EFBB7592C23; \
+2018-09-10 20:14:35.184416 +0000 build-apps: sign_key_var="SIGN_KEY_${DIST%%+*}"; \
+2018-09-10 20:14:35.184451 +0000 build-apps: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2018-09-10 20:14:35.184483 +0000 build-apps: if [ "app-u2f" = linux-template-builder ]; then
+2018-09-10 20:14:35.184521 +0000 build-apps: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=stretch template-name)
+2018-09-10 20:14:35.184548 +0000 build-apps: fi
+2018-09-10 20:14:35.184581 +0000 build-apps: if [ -r qubes-src/app-u2f/Makefile.builder ]; then \
+2018-09-10 20:14:35.184614 +0000 build-apps: .make --no-print-directory -f Makefile.generic \
+2018-09-10 20:14:35.184643 +0000 build-apps: ..DIST=stretch \
+2018-09-10 20:14:35.184668 +0000 build-apps: ..PACKAGE_SET=vm \
+2018-09-10 20:14:35.184694 +0000 build-apps: ..COMPONENT=app-u2f \
+2018-09-10 20:14:35.184719 +0000 build-apps: ..SIGN_KEY=$SIGN_KEY \
+2018-09-10 20:14:35.184744 +0000 build-apps: ..sign || exit 1; \
+2018-09-10 20:14:35.184771 +0000 build-apps: elif [ -d qubes-src/app-u2f/rpm ]; then \
+2018-09-10 20:14:35.184797 +0000 build-apps: .# Old mechanism supported only for RPM
+2018-09-10 20:14:35.184827 +0000 build-apps: FILE_LIST=""; for RPM in qubes-src/app-u2f/rpm/*/*.rpm; do \
+2018-09-10 20:14:35.184858 +0000 build-apps: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2018-09-10 20:14:35.184885 +0000 build-apps: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2018-09-10 20:14:35.184929 +0000 build-apps: ..fi ;\
+2018-09-10 20:14:35.184954 +0000 build-apps: .done ; \
+2018-09-10 20:14:35.184981 +0000 build-apps: .if [ -n "$FILE_LIST" ]; then \
+2018-09-10 20:14:35.185006 +0000 build-apps: ..echo "--> Signing..."; \
+2018-09-10 20:14:35.185034 +0000 build-apps: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2018-09-10 20:14:35.185065 +0000 build-apps: ..if [ -n "$SIGN_KEY" ]; then \
+2018-09-10 20:14:35.185096 +0000 build-apps: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2018-09-10 20:14:35.185126 +0000 build-apps: ..fi; \
+2018-09-10 20:14:35.185156 +0000 build-apps: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2018-09-10 20:14:35.185246 +0000 build-apps: .fi; \
+2018-09-10 20:14:35.185277 +0000 build-apps: fi
+2018-09-10 20:14:35.579298 +0000 build-apps: /home/user/builder-r3.2/qubes-src/builder-debian/Makefile.debian:357: target 'sign' does not exist
+2018-09-10 20:14:35.579363 +0000 build-apps: /home/user/builder-r3.2/qubes-src/builder-debian//scripts/signfile \
+2018-09-10 20:14:35.579404 +0000 build-apps: ./home/user/builder-r3.2/qubes-packages-mirror-repo/stretch/deb/qubes-u2f_1.2.2+deb9u1_amd64.changes
+2018-09-10 20:14:36.661074 +0000 build-apps: /home/user/builder-r3.2/qubes-src/builder-debian//scripts/signfile \
+2018-09-10 20:14:36.661147 +0000 build-apps: ./home/user/builder-r3.2/qubes-packages-mirror-repo/stretch/deb/qubes-u2f_1.2.2+deb9u1.dsc
+2018-09-10 20:14:37.273602 +0000 build-apps: Makefile:797: target 'internal-update-repo-current-testing.vm.buster.app-u2f' does not exist
+2018-09-10 20:14:37.273664 +0000 build-apps: repo_base_var="LINUX_REPO_buster_BASEDIR"; \
+2018-09-10 20:14:37.273699 +0000 build-apps: if [ "app-u2f" = linux-template-builder ]; then \
+2018-09-10 20:14:37.273733 +0000 build-apps: .# templates belongs to dom0 repository, even though PACKAGE_SET=vm
+2018-09-10 20:14:37.273762 +0000 build-apps: repo_base_var="LINUX_REPO_fc23_BASEDIR"; \
+2018-09-10 20:14:37.273787 +0000 build-apps: fi; \
+2018-09-10 20:14:37.273819 +0000 build-apps: if [ -n "${!repo_base_var}" ]; then \
+2018-09-10 20:14:37.273845 +0000 build-apps: .repo_basedir="${!repo_base_var}"; \
+2018-09-10 20:14:37.273867 +0000 build-apps: else \
+2018-09-10 20:14:37.273893 +0000 build-apps: .repo_basedir="qubes-src/linux-yum/r3.2"; \
+2018-09-10 20:14:37.273914 +0000 build-apps: fi; \
+2018-09-10 20:14:37.273941 +0000 build-apps: if [ -r qubes-src/app-u2f/Makefile.builder ]; then \
+2018-09-10 20:14:37.273968 +0000 build-apps: .echo -n "Updating qubes-src/app-u2f... "; \
+2018-09-10 20:14:37.273992 +0000 build-apps: .if [ "0" -eq 1 ]; then \
+2018-09-10 20:14:37.274020 +0000 build-apps: ..vtag=`git -C qubes-src/app-u2f tag --points-at HEAD --list v*`; \
+2018-09-10 20:14:37.274044 +0000 build-apps: ..if [ -z "$vtag" ]; then \
+2018-09-10 20:14:37.274068 +0000 build-apps: ...echo "no version tag"; \
+2018-09-10 20:14:37.274091 +0000 build-apps: ...exit 0; \
+2018-09-10 20:14:37.274160 +0000 build-apps: ..fi; \
+2018-09-10 20:14:37.274186 +0000 build-apps: .fi; \
+2018-09-10 20:14:37.274214 +0000 build-apps: .if [ "app-u2f" = linux-template-builder ]; then
+2018-09-10 20:14:37.274246 +0000 build-apps: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=buster template-name)
+2018-09-10 20:14:37.274269 +0000 build-apps: fi
+2018-09-10 20:14:37.274318 +0000 build-apps: component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=buster PACKAGE_SET=vm COMPONENT=`basename qubes-src/app-u2f` UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/buster get-var GET_VAR=PACKAGE_LIST); \
+2018-09-10 20:14:37.274348 +0000 build-apps: .if [ -z "$component_packages" ]; then \
+2018-09-10 20:14:37.274378 +0000 build-apps: ..echo "no packages."; \
+2018-09-10 20:14:37.274400 +0000 build-apps: ..exit 0; \
+2018-09-10 20:14:37.274421 +0000 build-apps: .fi; \
+2018-09-10 20:14:37.274451 +0000 build-apps: .make -s -f Makefile.generic DIST=buster PACKAGE_SET=vm \
+2018-09-10 20:14:37.274478 +0000 build-apps: ..COMPONENT=`basename qubes-src/app-u2f` \
+2018-09-10 20:14:37.274527 +0000 build-apps: ..SNAPSHOT_REPO=current-testing \
+2018-09-10 20:14:37.274553 +0000 build-apps: ..TARGET_REPO=current-testing \
+2018-09-10 20:14:37.274585 +0000 build-apps: ..UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/buster \
+2018-09-10 20:14:37.274620 +0000 build-apps: ..SNAPSHOT_FILE=/home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-buster-`basename qubes-src/app-u2f` \
+2018-09-10 20:14:37.274654 +0000 build-apps: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-apps/log_2018-09-10_20-09-10 \
+2018-09-10 20:14:37.274678 +0000 build-apps: ..update-repo || exit 1; \
+2018-09-10 20:14:37.274708 +0000 build-apps: elif make -C qubes-src/app-u2f -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2018-09-10 20:14:37.274736 +0000 build-apps: .echo "Updating qubes-src/app-u2f... "; \
+2018-09-10 20:14:37.274769 +0000 build-apps: .DIST=buster UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/buster \
+2018-09-10 20:14:37.274800 +0000 build-apps: .make -s -C qubes-src/app-u2f update-repo-current-testing || exit 1; \
+2018-09-10 20:14:37.274822 +0000 build-apps: else \
+2018-09-10 20:14:37.274848 +0000 build-apps: .echo -n "Updating qubes-src/app-u2f... skipping."; \
+2018-09-10 20:14:37.274870 +0000 build-apps: fi; \
+2018-09-10 20:14:37.274891 +0000 build-apps: echo
+2018-09-10 20:14:37.733719 +0000 build-apps: Updating qubes-src/app-u2f... /home/user/builder-r3.2/qubes-src/builder-debian/Makefile.debian:275: target 'update-repo-prepare' does not exist
+2018-09-10 20:14:37.733787 +0000 build-apps: mkdir -p /home/user/builder-r3.2/qubes-src/linux-deb/r3.2/current-testing/vm/buster/conf
+2018-09-10 20:14:38.367789 +0000 build-apps: if [ ! -e /home/user/builder-r3.2/qubes-src/linux-deb/r3.2/current-testing/vm/buster/conf/distributions ]; then \
+2018-09-10 20:14:38.367862 +0000 build-apps: .touch /home/user/builder-r3.2/qubes-src/linux-deb/r3.2/current-testing/vm/buster/conf/distributions; \
+2018-09-10 20:14:38.367892 +0000 build-apps: fi
+2018-09-10 20:14:38.376076 +0000 build-apps: grep buster /home/user/builder-r3.2/qubes-src/linux-deb/r3.2/current-testing/vm/buster/conf/distributions > /dev/null; \
+2018-09-10 20:14:38.376175 +0000 build-apps: if [ $? -ne 0 ]; then \
+2018-09-10 20:14:38.376217 +0000 build-apps: .echo "$aptdistributions" >> /home/user/builder-r3.2/qubes-src/linux-deb/r3.2/current-testing/vm/buster/conf/distributions; \
+2018-09-10 20:14:38.376242 +0000 build-apps: fi
+2018-09-10 20:14:38.387889 +0000 build-apps: sudo umount chroot-debian/tmp/qubes-apt-repo chroot-debian/tmp/qubes-deb 2>/dev/null || true
+2018-09-10 20:14:38.459380 +0000 build-apps: # Softlink to the first distribution called; it will be used to create and store repo
+2018-09-10 20:14:38.463947 +0000 build-apps: if ! [ -L chroot-debian ]; then \
+2018-09-10 20:14:38.464005 +0000 build-apps:     ln -sf chroot-buster chroot-debian; \
+2018-09-10 20:14:38.464032 +0000 build-apps: fi
+2018-09-10 20:14:38.469181 +0000 build-apps: if ! [ -d chroot-debian/tmp/qubes-deb/deb ]; then \
+2018-09-10 20:14:38.469268 +0000 build-apps: .mkdir -p chroot-debian/tmp/qubes-deb ;\
+2018-09-10 20:14:38.469314 +0000 build-apps: .sudo mount --bind /home/user/builder-r3.2/qubes-packages-mirror-repo/buster chroot-debian/tmp/qubes-deb ;\
+2018-09-10 20:14:38.469343 +0000 build-apps: fi
+2018-09-10 20:14:38.543223 +0000 build-apps: if ! [ -d chroot-debian/tmp/qubes-apt-repo/dists ]; then \
+2018-09-10 20:14:38.543282 +0000 build-apps: .mkdir -p chroot-debian/tmp/qubes-apt-repo ;\
+2018-09-10 20:14:38.543323 +0000 build-apps: .sudo mount --bind /home/user/builder-r3.2/qubes-src/linux-deb/r3.2/current-testing/vm/buster chroot-debian/tmp/qubes-apt-repo ;\
+2018-09-10 20:14:38.543355 +0000 build-apps: fi
+2018-09-10 20:14:39.330553 +0000 build-apps: /home/user/builder-r3.2/qubes-src/builder-debian/Makefile.debian:303: target 'update-repo-do' does not exist
+2018-09-10 20:14:39.330615 +0000 build-apps: if [ "X" != "X" ]; then \
+2018-09-10 20:14:39.330670 +0000 build-apps: .sudo BACKEND_VMM=xen  chroot chroot-debian su user -c "reprepro --ignore=surprisingbinary -b /tmp/qubes-apt-repo -T deb include buster-testing /tmp/qubes-deb/deb/_amd64.changes </dev/null >/dev/null" || exit 1; \
+2018-09-10 20:14:39.330726 +0000 build-apps: else \
+2018-09-10 20:14:39.330778 +0000 build-apps: .sudo BACKEND_VMM=xen  chroot chroot-debian su user -c "reprepro --ignore=surprisingbinary -b /tmp/qubes-apt-repo -T deb include buster-testing /tmp/qubes-deb/deb/qubes-u2f_1.2.2+deb10u1_amd64.changes </dev/null >/dev/null" || exit 1; \
+2018-09-10 20:14:39.330803 +0000 build-apps: fi
+2018-09-10 20:14:40.223069 +0000 build-apps: sudo umount chroot-debian/tmp/qubes-apt-repo
+2018-09-10 20:14:40.289630 +0000 build-apps: sudo umount chroot-debian/tmp/qubes-deb
+2018-09-10 20:14:40.365364 +0000 build-apps: if [ "X" != "X" ]; then \
+2018-09-10 20:14:40.365444 +0000 build-apps: .echo '$Source (== qubes-u2f), Version (== )' > /home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-buster-app-u2f; \
+2018-09-10 20:14:40.365475 +0000 build-apps: else \
+2018-09-10 20:14:40.365520 +0000 build-apps: .echo '$Source (== qubes-u2f), Version (== 1.2.2+deb10u1)' > /home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-buster-app-u2f; \
+2018-09-10 20:14:40.365547 +0000 build-apps: fi
+2018-09-10 20:14:40.842909 +0000 build-apps: /home/user/builder-r3.2/qubes-src/builder-github//Makefile.github:18: target 'notify-github' does not exist
+2018-09-10 20:14:40.842978 +0000 build-apps: [ -z "qubes-u2f_1.2.2+deb10u1" ] || /home/user/builder-r3.2/qubes-src/builder-github//notify-issues \
+2018-09-10 20:14:40.843019 +0000 build-apps: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-apps/log_2018-09-10_20-09-10" \
+2018-09-10 20:14:40.843044 +0000 build-apps: .upload \
+2018-09-10 20:14:40.843072 +0000 build-apps: ."r3.2" \
+2018-09-10 20:14:40.843097 +0000 build-apps: ."qubes-src/app-u2f" \
+2018-09-10 20:14:40.843175 +0000 build-apps: ."qubes-u2f_1.2.2+deb10u1" \
+2018-09-10 20:14:40.843201 +0000 build-apps: ."buster" \
+2018-09-10 20:14:40.843225 +0000 build-apps: ."vm" \
+2018-09-10 20:14:40.843249 +0000 build-apps: ."current-testing" \
+2018-09-10 20:14:40.843280 +0000 build-apps: ."/home/user/github-notify-state/r3.2-app-u2f-vm-buster-current-testing"
+2018-09-10 20:14:51.323272 +0000 build-apps: WARNING: message template /home/user/builder-r3.2/qubes-src/builder-github/message-current-testing-vm doesn't exist, not adding comments
+2018-09-10 20:14:51.330135 +0000 build-apps: 
+2018-09-10 20:14:51.330875 +0000 build-apps: Makefile:772: update target 'internal-update-repo-current-testing.vm.buster' due to: internal-update-repo-current-testing.vm.buster.app-u2f
+2018-09-10 20:14:51.330934 +0000 build-apps: true
+2018-09-10 20:14:51.342302 +0000 build-apps: Makefile:797: target 'internal-update-repo-current-testing.vm.fc24.app-u2f' does not exist
+2018-09-10 20:14:51.342371 +0000 build-apps: repo_base_var="LINUX_REPO_fc24_BASEDIR"; \
+2018-09-10 20:14:51.342409 +0000 build-apps: if [ "app-u2f" = linux-template-builder ]; then \
+2018-09-10 20:14:51.342454 +0000 build-apps: .# templates belongs to dom0 repository, even though PACKAGE_SET=vm
+2018-09-10 20:14:51.342485 +0000 build-apps: repo_base_var="LINUX_REPO_fc23_BASEDIR"; \
+2018-09-10 20:14:51.342522 +0000 build-apps: fi; \
+2018-09-10 20:14:51.342554 +0000 build-apps: if [ -n "${!repo_base_var}" ]; then \
+2018-09-10 20:14:51.342594 +0000 build-apps: .repo_basedir="${!repo_base_var}"; \
+2018-09-10 20:14:51.342630 +0000 build-apps: else \
+2018-09-10 20:14:51.342661 +0000 build-apps: .repo_basedir="qubes-src/linux-yum/r3.2"; \
+2018-09-10 20:14:51.342694 +0000 build-apps: fi; \
+2018-09-10 20:14:51.342733 +0000 build-apps: if [ -r qubes-src/app-u2f/Makefile.builder ]; then \
+2018-09-10 20:14:51.342767 +0000 build-apps: .echo -n "Updating qubes-src/app-u2f... "; \
+2018-09-10 20:14:51.342793 +0000 build-apps: .if [ "0" -eq 1 ]; then \
+2018-09-10 20:14:51.342821 +0000 build-apps: ..vtag=`git -C qubes-src/app-u2f tag --points-at HEAD --list v*`; \
+2018-09-10 20:14:51.342846 +0000 build-apps: ..if [ -z "$vtag" ]; then \
+2018-09-10 20:14:51.342894 +0000 build-apps: ...echo "no version tag"; \
+2018-09-10 20:14:51.342918 +0000 build-apps: ...exit 0; \
+2018-09-10 20:14:51.342943 +0000 build-apps: ..fi; \
+2018-09-10 20:14:51.342966 +0000 build-apps: .fi; \
+2018-09-10 20:14:51.342994 +0000 build-apps: .if [ "app-u2f" = linux-template-builder ]; then
+2018-09-10 20:14:51.343027 +0000 build-apps: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc24 template-name)
+2018-09-10 20:14:51.343051 +0000 build-apps: fi
+2018-09-10 20:14:51.343099 +0000 build-apps: component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc24 PACKAGE_SET=vm COMPONENT=`basename qubes-src/app-u2f` UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc24 get-var GET_VAR=PACKAGE_LIST); \
+2018-09-10 20:14:51.343144 +0000 build-apps: .if [ -z "$component_packages" ]; then \
+2018-09-10 20:14:51.343219 +0000 build-apps: ..echo "no packages."; \
+2018-09-10 20:14:51.343250 +0000 build-apps: ..exit 0; \
+2018-09-10 20:14:51.343275 +0000 build-apps: .fi; \
+2018-09-10 20:14:51.343306 +0000 build-apps: .make -s -f Makefile.generic DIST=fc24 PACKAGE_SET=vm \
+2018-09-10 20:14:51.343341 +0000 build-apps: ..COMPONENT=`basename qubes-src/app-u2f` \
+2018-09-10 20:14:51.343378 +0000 build-apps: ..SNAPSHOT_REPO=current-testing \
+2018-09-10 20:14:51.343412 +0000 build-apps: ..TARGET_REPO=current-testing \
+2018-09-10 20:14:51.343444 +0000 build-apps: ..UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc24 \
+2018-09-10 20:14:51.343479 +0000 build-apps: ..SNAPSHOT_FILE=/home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-fc24-`basename qubes-src/app-u2f` \
+2018-09-10 20:14:51.343515 +0000 build-apps: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-apps/log_2018-09-10_20-10-09 \
+2018-09-10 20:14:51.343541 +0000 build-apps: ..update-repo || exit 1; \
+2018-09-10 20:14:51.343572 +0000 build-apps: elif make -C qubes-src/app-u2f -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2018-09-10 20:14:51.343601 +0000 build-apps: .echo "Updating qubes-src/app-u2f... "; \
+2018-09-10 20:14:51.343632 +0000 build-apps: .DIST=fc24 UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc24 \
+2018-09-10 20:14:51.343663 +0000 build-apps: .make -s -C qubes-src/app-u2f update-repo-current-testing || exit 1; \
+2018-09-10 20:14:51.343686 +0000 build-apps: else \
+2018-09-10 20:14:51.343712 +0000 build-apps: .echo -n "Updating qubes-src/app-u2f... skipping."; \
+2018-09-10 20:14:51.343740 +0000 build-apps: fi; \
+2018-09-10 20:14:51.343771 +0000 build-apps: echo
+2018-09-10 20:14:51.431957 +0000 build-apps: Updating qubes-src/app-u2f... + ERR_OUTPUT=/dev/stderr
+2018-09-10 20:14:51.432019 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:14:51.433814 +0000 build-apps: ++ basename qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in
+2018-09-10 20:14:51.449703 +0000 build-apps: + [[ xqubes-u2f.spec.in == \x\.\i\n ]]
+2018-09-10 20:14:51.449763 +0000 build-apps: + '[' -r qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in ']'
+2018-09-10 20:14:51.449794 +0000 build-apps: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-09-10 20:14:51.449822 +0000 build-apps: + tmp_spec=/tmp/tmp.ZY6GVT.spec
+2018-09-10 20:14:51.449853 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:14:51.457657 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in /tmp/tmp.ZY6GVT.spec
+2018-09-10 20:14:51.465839 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:14:51.465898 +0000 build-apps: + '[' -z qubes-src/app-u2f ']'
+2018-09-10 20:14:51.465938 +0000 build-apps: + cp qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:51.487919 +0000 build-apps: + read ver
+2018-09-10 20:14:51.487980 +0000 build-apps: + cat qubes-src/app-u2f/version
+2018-09-10 20:14:51.488016 +0000 build-apps: + '[' x = x ']'
+2018-09-10 20:14:51.488076 +0000 build-apps: + sed -i 's|@VERSION@|1.2.2|g' qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:51.494930 +0000 build-apps: + vnum=1
+2018-09-10 20:14:51.494989 +0000 build-apps: + read ver
+2018-09-10 20:14:51.495022 +0000 build-apps: + '[' -e qubes-src/app-u2f/rel ']'
+2018-09-10 20:14:51.499939 +0000 build-apps: ++ cat qubes-src/app-u2f/rel
+2018-09-10 20:14:51.506705 +0000 build-apps: ++ echo 1
+2018-09-10 20:14:51.508699 +0000 build-apps: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:51.516559 +0000 build-apps: + '[' -e qubes-src/app-u2f/changelog ']'
+2018-09-10 20:14:51.516625 +0000 build-apps: + sed -i /@CHANGELOG@/d qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:51.527009 +0000 build-apps: + cat qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:51.541640 +0000 build-apps: + rm -rf qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:51.541704 +0000 build-apps: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-09-10 20:14:51.543132 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:14:51.551163 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.ZY6GVT.spec
+2018-09-10 20:14:51.725505 +0000 build-apps: + rm -f /tmp/tmp.ZY6GVT.spec
+2018-09-10 20:14:51.752570 +0000 build-apps: + ERR_OUTPUT=/dev/stderr
+2018-09-10 20:14:51.752626 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:14:51.755241 +0000 build-apps: ++ basename qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in
+2018-09-10 20:14:51.760994 +0000 build-apps: + [[ xqubes-u2f.spec.in == \x\.\i\n ]]
+2018-09-10 20:14:51.761058 +0000 build-apps: + '[' -r qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in ']'
+2018-09-10 20:14:51.762962 +0000 build-apps: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-09-10 20:14:51.769606 +0000 build-apps: + tmp_spec=/tmp/tmp.TPofX0.spec
+2018-09-10 20:14:51.772051 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:14:51.781995 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in /tmp/tmp.TPofX0.spec
+2018-09-10 20:14:51.783527 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:14:51.783586 +0000 build-apps: + '[' -z qubes-src/app-u2f ']'
+2018-09-10 20:14:51.783628 +0000 build-apps: + cp qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:51.794971 +0000 build-apps: + cat qubes-src/app-u2f/version
+2018-09-10 20:14:51.802213 +0000 build-apps: + read ver
+2018-09-10 20:14:51.802281 +0000 build-apps: + '[' x = x ']'
+2018-09-10 20:14:51.802340 +0000 build-apps: + sed -i 's|@VERSION@|1.2.2|g' qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:51.818289 +0000 build-apps: + vnum=1
+2018-09-10 20:14:51.818345 +0000 build-apps: + read ver
+2018-09-10 20:14:51.819180 +0000 build-apps: + '[' -e qubes-src/app-u2f/rel ']'
+2018-09-10 20:14:51.821102 +0000 build-apps: ++ cat qubes-src/app-u2f/rel
+2018-09-10 20:14:51.826660 +0000 build-apps: ++ echo 1
+2018-09-10 20:14:51.829571 +0000 build-apps: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:51.835984 +0000 build-apps: + '[' -e qubes-src/app-u2f/changelog ']'
+2018-09-10 20:14:51.836062 +0000 build-apps: + sed -i /@CHANGELOG@/d qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:51.847742 +0000 build-apps: + cat qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:51.855696 +0000 build-apps: + rm -rf qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:51.865610 +0000 build-apps: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-09-10 20:14:51.867728 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:14:51.880641 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.TPofX0.spec
+2018-09-10 20:14:52.037679 +0000 build-apps: + rm -f /tmp/tmp.TPofX0.spec
+2018-09-10 20:14:52.121874 +0000 build-apps: + ERR_OUTPUT=/dev/stderr
+2018-09-10 20:14:52.121941 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:14:52.124382 +0000 build-apps: ++ basename qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in
+2018-09-10 20:14:52.132196 +0000 build-apps: + [[ xqubes-u2f.spec.in == \x\.\i\n ]]
+2018-09-10 20:14:52.132273 +0000 build-apps: + '[' -r qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in ']'
+2018-09-10 20:14:52.135847 +0000 build-apps: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-09-10 20:14:52.142006 +0000 build-apps: + tmp_spec=/tmp/tmp.yBr3UI.spec
+2018-09-10 20:14:52.145243 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:14:52.150411 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in /tmp/tmp.yBr3UI.spec
+2018-09-10 20:14:52.159227 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:14:52.159289 +0000 build-apps: + '[' -z qubes-src/app-u2f ']'
+2018-09-10 20:14:52.159334 +0000 build-apps: + cp qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:52.169090 +0000 build-apps: + cat qubes-src/app-u2f/version
+2018-09-10 20:14:52.170136 +0000 build-apps: + read ver
+2018-09-10 20:14:52.173522 +0000 build-apps: + '[' x = x ']'
+2018-09-10 20:14:52.173591 +0000 build-apps: + sed -i 's|@VERSION@|1.2.2|g' qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:52.186618 +0000 build-apps: + vnum=1
+2018-09-10 20:14:52.186679 +0000 build-apps: + read ver
+2018-09-10 20:14:52.188042 +0000 build-apps: + '[' -e qubes-src/app-u2f/rel ']'
+2018-09-10 20:14:52.189382 +0000 build-apps: ++ cat qubes-src/app-u2f/rel
+2018-09-10 20:14:52.206245 +0000 build-apps: ++ echo 1
+2018-09-10 20:14:52.206311 +0000 build-apps: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:52.218834 +0000 build-apps: + '[' -e qubes-src/app-u2f/changelog ']'
+2018-09-10 20:14:52.218901 +0000 build-apps: + sed -i /@CHANGELOG@/d qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:52.229177 +0000 build-apps: + cat qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:52.245630 +0000 build-apps: + rm -rf qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:52.246865 +0000 build-apps: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-09-10 20:14:52.249223 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:14:52.254037 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.yBr3UI.spec
+2018-09-10 20:14:52.415056 +0000 build-apps: + rm -f /tmp/tmp.yBr3UI.spec
+2018-09-10 20:14:52.577133 +0000 build-apps: /home/user/builder-r3.2/qubes-src/builder-fedora/Makefile.rpmbuilder:142: target 'update-repo-do' does not exist
+2018-09-10 20:14:52.577272 +0000 build-apps: mkdir -p /home/user/builder-r3.2/qubes-src/linux-yum/r3.2/current-testing/vm/fc24/rpm
+2018-09-10 20:14:52.643129 +0000 build-apps: + ERR_OUTPUT=/dev/stderr
+2018-09-10 20:14:52.643247 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:14:52.646828 +0000 build-apps: ++ basename qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in
+2018-09-10 20:14:52.649836 +0000 build-apps: + [[ xqubes-u2f.spec.in == \x\.\i\n ]]
+2018-09-10 20:14:52.651393 +0000 build-apps: + '[' -r qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in ']'
+2018-09-10 20:14:52.652226 +0000 build-apps: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-09-10 20:14:52.659298 +0000 build-apps: + tmp_spec=/tmp/tmp.PomBdq.spec
+2018-09-10 20:14:52.661372 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:14:52.665186 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in /tmp/tmp.PomBdq.spec
+2018-09-10 20:14:52.674654 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:14:52.674721 +0000 build-apps: + '[' -z qubes-src/app-u2f ']'
+2018-09-10 20:14:52.674764 +0000 build-apps: + cp qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:52.692660 +0000 build-apps: + cat qubes-src/app-u2f/version
+2018-09-10 20:14:52.692717 +0000 build-apps: + read ver
+2018-09-10 20:14:52.692745 +0000 build-apps: + '[' x = x ']'
+2018-09-10 20:14:52.692777 +0000 build-apps: + sed -i 's|@VERSION@|1.2.2|g' qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:52.701902 +0000 build-apps: + vnum=1
+2018-09-10 20:14:52.701957 +0000 build-apps: + read ver
+2018-09-10 20:14:52.704582 +0000 build-apps: + '[' -e qubes-src/app-u2f/rel ']'
+2018-09-10 20:14:52.708673 +0000 build-apps: ++ cat qubes-src/app-u2f/rel
+2018-09-10 20:14:52.717155 +0000 build-apps: ++ echo 1
+2018-09-10 20:14:52.717261 +0000 build-apps: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:52.725733 +0000 build-apps: + '[' -e qubes-src/app-u2f/changelog ']'
+2018-09-10 20:14:52.725799 +0000 build-apps: + sed -i /@CHANGELOG@/d qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:52.733455 +0000 build-apps: + cat qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:52.740019 +0000 build-apps: + rm -rf qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:52.748964 +0000 build-apps: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-09-10 20:14:52.751046 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:14:52.757784 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.PomBdq.spec
+2018-09-10 20:14:53.034098 +0000 build-apps: + rm -f /tmp/tmp.PomBdq.spec
+2018-09-10 20:14:53.077476 +0000 build-apps: if [ -n "pkgs/fc24/noarch/qubes-u2f-1.2.2-1.fc24.noarch.rpm" ]; then \
+2018-09-10 20:14:53.077553 +0000 build-apps: .cd qubes-src/app-u2f && ln -f pkgs/fc24/noarch/qubes-u2f-1.2.2-1.fc24.noarch.rpm  /home/user/builder-r3.2/qubes-src/linux-yum/r3.2/current-testing/vm/fc24/rpm/; \
+2018-09-10 20:14:53.077583 +0000 build-apps: else \
+2018-09-10 20:14:53.077613 +0000 build-apps: .echo "`tput bold`No packages defined by rpm_spec/qubes-u2f.spec, syntax error?`tput sgr0`"; \
+2018-09-10 20:14:53.077639 +0000 build-apps: .exit 1; \
+2018-09-10 20:14:53.077663 +0000 build-apps: fi
+2018-09-10 20:14:53.091656 +0000 build-apps: cd qubes-src/app-u2f && echo pkgs/fc24/noarch/qubes-u2f-1.2.2-1.fc24.noarch.rpm  > /home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-fc24-app-u2f
+2018-09-10 20:14:53.198179 +0000 build-apps: /home/user/builder-r3.2/qubes-src/builder-github//Makefile.github:18: target 'notify-github' does not exist
+2018-09-10 20:14:53.198284 +0000 build-apps: [ -z "qubes-u2f-1.2.2-1.fc24" ] || /home/user/builder-r3.2/qubes-src/builder-github//notify-issues \
+2018-09-10 20:14:53.198326 +0000 build-apps: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-apps/log_2018-09-10_20-10-09" \
+2018-09-10 20:14:53.198358 +0000 build-apps: .upload \
+2018-09-10 20:14:53.198382 +0000 build-apps: ."r3.2" \
+2018-09-10 20:14:53.198407 +0000 build-apps: ."qubes-src/app-u2f" \
+2018-09-10 20:14:53.198433 +0000 build-apps: ."qubes-u2f-1.2.2-1.fc24" \
+2018-09-10 20:14:53.198457 +0000 build-apps: ."fc24" \
+2018-09-10 20:14:53.198484 +0000 build-apps: ."vm" \
+2018-09-10 20:14:53.198522 +0000 build-apps: ."current-testing" \
+2018-09-10 20:14:53.198565 +0000 build-apps: ."/home/user/github-notify-state/r3.2-app-u2f-vm-fc24-current-testing"
+2018-09-10 20:14:53.312601 +0000 build-apps: + ERR_OUTPUT=/dev/stderr
+2018-09-10 20:14:53.314589 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:14:53.320179 +0000 build-apps: ++ basename qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in
+2018-09-10 20:14:53.325282 +0000 build-apps: + [[ xqubes-u2f.spec.in == \x\.\i\n ]]
+2018-09-10 20:14:53.325372 +0000 build-apps: + '[' -r qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in ']'
+2018-09-10 20:14:53.328020 +0000 build-apps: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-09-10 20:14:53.333085 +0000 build-apps: + tmp_spec=/tmp/tmp.SJY2bQ.spec
+2018-09-10 20:14:53.336437 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:14:53.341863 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in /tmp/tmp.SJY2bQ.spec
+2018-09-10 20:14:53.347814 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:14:53.347876 +0000 build-apps: + '[' -z qubes-src/app-u2f ']'
+2018-09-10 20:14:53.347916 +0000 build-apps: + cp qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:53.357907 +0000 build-apps: + read ver
+2018-09-10 20:14:53.360517 +0000 build-apps: + cat qubes-src/app-u2f/version
+2018-09-10 20:14:53.364275 +0000 build-apps: + '[' x = x ']'
+2018-09-10 20:14:53.364341 +0000 build-apps: + sed -i 's|@VERSION@|1.2.2|g' qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:53.375882 +0000 build-apps: + vnum=1
+2018-09-10 20:14:53.375939 +0000 build-apps: + read ver
+2018-09-10 20:14:53.377351 +0000 build-apps: + '[' -e qubes-src/app-u2f/rel ']'
+2018-09-10 20:14:53.380001 +0000 build-apps: ++ cat qubes-src/app-u2f/rel
+2018-09-10 20:14:53.387571 +0000 build-apps: ++ echo 1
+2018-09-10 20:14:53.393255 +0000 build-apps: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:53.398775 +0000 build-apps: + '[' -e qubes-src/app-u2f/changelog ']'
+2018-09-10 20:14:53.398839 +0000 build-apps: + sed -i /@CHANGELOG@/d qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:53.410115 +0000 build-apps: + cat qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:53.420269 +0000 build-apps: + rm -rf qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:53.451389 +0000 build-apps: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-09-10 20:14:53.455061 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:14:53.464762 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.SJY2bQ.spec
+2018-09-10 20:14:53.682877 +0000 build-apps: + rm -f /tmp/tmp.SJY2bQ.spec
+2018-09-10 20:14:59.594466 +0000 build-apps: WARNING: message template /home/user/builder-r3.2/qubes-src/builder-github/message-current-testing-vm doesn't exist, not adding comments
+2018-09-10 20:14:59.600433 +0000 build-apps: 
+2018-09-10 20:14:59.600799 +0000 build-apps: Makefile:772: update target 'internal-update-repo-current-testing.vm.fc24' due to: internal-update-repo-current-testing.vm.fc24.app-u2f
+2018-09-10 20:14:59.600850 +0000 build-apps: true
+2018-09-10 20:14:59.607034 +0000 build-apps: Makefile:797: target 'internal-update-repo-current-testing.vm.fc25.app-u2f' does not exist
+2018-09-10 20:14:59.607093 +0000 build-apps: repo_base_var="LINUX_REPO_fc25_BASEDIR"; \
+2018-09-10 20:14:59.607170 +0000 build-apps: if [ "app-u2f" = linux-template-builder ]; then \
+2018-09-10 20:14:59.607205 +0000 build-apps: .# templates belongs to dom0 repository, even though PACKAGE_SET=vm
+2018-09-10 20:14:59.607237 +0000 build-apps: repo_base_var="LINUX_REPO_fc23_BASEDIR"; \
+2018-09-10 20:14:59.607260 +0000 build-apps: fi; \
+2018-09-10 20:14:59.607289 +0000 build-apps: if [ -n "${!repo_base_var}" ]; then \
+2018-09-10 20:14:59.607315 +0000 build-apps: .repo_basedir="${!repo_base_var}"; \
+2018-09-10 20:14:59.607337 +0000 build-apps: else \
+2018-09-10 20:14:59.607365 +0000 build-apps: .repo_basedir="qubes-src/linux-yum/r3.2"; \
+2018-09-10 20:14:59.607391 +0000 build-apps: fi; \
+2018-09-10 20:14:59.607420 +0000 build-apps: if [ -r qubes-src/app-u2f/Makefile.builder ]; then \
+2018-09-10 20:14:59.607448 +0000 build-apps: .echo -n "Updating qubes-src/app-u2f... "; \
+2018-09-10 20:14:59.607473 +0000 build-apps: .if [ "0" -eq 1 ]; then \
+2018-09-10 20:14:59.607524 +0000 build-apps: ..vtag=`git -C qubes-src/app-u2f tag --points-at HEAD --list v*`; \
+2018-09-10 20:14:59.607550 +0000 build-apps: ..if [ -z "$vtag" ]; then \
+2018-09-10 20:14:59.607576 +0000 build-apps: ...echo "no version tag"; \
+2018-09-10 20:14:59.607599 +0000 build-apps: ...exit 0; \
+2018-09-10 20:14:59.607623 +0000 build-apps: ..fi; \
+2018-09-10 20:14:59.607645 +0000 build-apps: .fi; \
+2018-09-10 20:14:59.607672 +0000 build-apps: .if [ "app-u2f" = linux-template-builder ]; then
+2018-09-10 20:14:59.607707 +0000 build-apps: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc25 template-name)
+2018-09-10 20:14:59.607729 +0000 build-apps: fi
+2018-09-10 20:14:59.607776 +0000 build-apps: component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc25 PACKAGE_SET=vm COMPONENT=`basename qubes-src/app-u2f` UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc25 get-var GET_VAR=PACKAGE_LIST); \
+2018-09-10 20:14:59.607806 +0000 build-apps: .if [ -z "$component_packages" ]; then \
+2018-09-10 20:14:59.607830 +0000 build-apps: ..echo "no packages."; \
+2018-09-10 20:14:59.607853 +0000 build-apps: ..exit 0; \
+2018-09-10 20:14:59.607875 +0000 build-apps: .fi; \
+2018-09-10 20:14:59.607901 +0000 build-apps: .make -s -f Makefile.generic DIST=fc25 PACKAGE_SET=vm \
+2018-09-10 20:14:59.607927 +0000 build-apps: ..COMPONENT=`basename qubes-src/app-u2f` \
+2018-09-10 20:14:59.607952 +0000 build-apps: ..SNAPSHOT_REPO=current-testing \
+2018-09-10 20:14:59.607977 +0000 build-apps: ..TARGET_REPO=current-testing \
+2018-09-10 20:14:59.608007 +0000 build-apps: ..UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc25 \
+2018-09-10 20:14:59.608042 +0000 build-apps: ..SNAPSHOT_FILE=/home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-fc25-`basename qubes-src/app-u2f` \
+2018-09-10 20:14:59.608076 +0000 build-apps: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-apps/log_2018-09-10_20-11-05 \
+2018-09-10 20:14:59.608101 +0000 build-apps: ..update-repo || exit 1; \
+2018-09-10 20:14:59.608153 +0000 build-apps: elif make -C qubes-src/app-u2f -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2018-09-10 20:14:59.608181 +0000 build-apps: .echo "Updating qubes-src/app-u2f... "; \
+2018-09-10 20:14:59.608211 +0000 build-apps: .DIST=fc25 UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc25 \
+2018-09-10 20:14:59.608242 +0000 build-apps: .make -s -C qubes-src/app-u2f update-repo-current-testing || exit 1; \
+2018-09-10 20:14:59.608264 +0000 build-apps: else \
+2018-09-10 20:14:59.608291 +0000 build-apps: .echo -n "Updating qubes-src/app-u2f... skipping."; \
+2018-09-10 20:14:59.608312 +0000 build-apps: fi; \
+2018-09-10 20:14:59.608334 +0000 build-apps: echo
+2018-09-10 20:14:59.652398 +0000 build-apps: Updating qubes-src/app-u2f... + ERR_OUTPUT=/dev/stderr
+2018-09-10 20:14:59.652462 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:14:59.660521 +0000 build-apps: ++ basename qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in
+2018-09-10 20:14:59.666358 +0000 build-apps: + [[ xqubes-u2f.spec.in == \x\.\i\n ]]
+2018-09-10 20:14:59.666418 +0000 build-apps: + '[' -r qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in ']'
+2018-09-10 20:14:59.667570 +0000 build-apps: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-09-10 20:14:59.674750 +0000 build-apps: + tmp_spec=/tmp/tmp.P2nbqj.spec
+2018-09-10 20:14:59.676478 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:14:59.685473 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in /tmp/tmp.P2nbqj.spec
+2018-09-10 20:14:59.694391 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:14:59.694460 +0000 build-apps: + '[' -z qubes-src/app-u2f ']'
+2018-09-10 20:14:59.694508 +0000 build-apps: + cp qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:59.709793 +0000 build-apps: + read ver
+2018-09-10 20:14:59.711583 +0000 build-apps: + cat qubes-src/app-u2f/version
+2018-09-10 20:14:59.715694 +0000 build-apps: + '[' x = x ']'
+2018-09-10 20:14:59.715900 +0000 build-apps: + sed -i 's|@VERSION@|1.2.2|g' qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:59.788164 +0000 build-apps: + vnum=1
+2018-09-10 20:14:59.788271 +0000 build-apps: + read ver
+2018-09-10 20:14:59.795198 +0000 build-apps: + '[' -e qubes-src/app-u2f/rel ']'
+2018-09-10 20:14:59.797715 +0000 build-apps: ++ cat qubes-src/app-u2f/rel
+2018-09-10 20:14:59.808102 +0000 build-apps: ++ echo 1
+2018-09-10 20:14:59.809270 +0000 build-apps: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:59.818545 +0000 build-apps: + '[' -e qubes-src/app-u2f/changelog ']'
+2018-09-10 20:14:59.818622 +0000 build-apps: + sed -i /@CHANGELOG@/d qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:59.832231 +0000 build-apps: + cat qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:59.861156 +0000 build-apps: + rm -rf qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:14:59.867633 +0000 build-apps: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-09-10 20:14:59.869085 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:14:59.876524 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.P2nbqj.spec
+2018-09-10 20:15:00.030711 +0000 build-apps: + rm -f /tmp/tmp.P2nbqj.spec
+2018-09-10 20:15:00.082041 +0000 build-apps: + ERR_OUTPUT=/dev/stderr
+2018-09-10 20:15:00.082131 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:15:00.082182 +0000 build-apps: ++ basename qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in
+2018-09-10 20:15:00.087285 +0000 build-apps: + [[ xqubes-u2f.spec.in == \x\.\i\n ]]
+2018-09-10 20:15:00.087348 +0000 build-apps: + '[' -r qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in ']'
+2018-09-10 20:15:00.091444 +0000 build-apps: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-09-10 20:15:00.099440 +0000 build-apps: + tmp_spec=/tmp/tmp.LsjoRS.spec
+2018-09-10 20:15:00.101095 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:15:00.107180 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in /tmp/tmp.LsjoRS.spec
+2018-09-10 20:15:00.113606 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:15:00.113666 +0000 build-apps: + '[' -z qubes-src/app-u2f ']'
+2018-09-10 20:15:00.113713 +0000 build-apps: + cp qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:00.127024 +0000 build-apps: + read ver
+2018-09-10 20:15:00.127085 +0000 build-apps: + cat qubes-src/app-u2f/version
+2018-09-10 20:15:00.141652 +0000 build-apps: + '[' x = x ']'
+2018-09-10 20:15:00.141713 +0000 build-apps: + sed -i 's|@VERSION@|1.2.2|g' qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:00.141740 +0000 build-apps: + vnum=1
+2018-09-10 20:15:00.141763 +0000 build-apps: + read ver
+2018-09-10 20:15:00.143442 +0000 build-apps: + '[' -e qubes-src/app-u2f/rel ']'
+2018-09-10 20:15:00.147784 +0000 build-apps: ++ cat qubes-src/app-u2f/rel
+2018-09-10 20:15:00.159638 +0000 build-apps: ++ echo 1
+2018-09-10 20:15:00.159704 +0000 build-apps: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:00.170529 +0000 build-apps: + '[' -e qubes-src/app-u2f/changelog ']'
+2018-09-10 20:15:00.170599 +0000 build-apps: + sed -i /@CHANGELOG@/d qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:00.180822 +0000 build-apps: + cat qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:00.189449 +0000 build-apps: + rm -rf qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:00.194944 +0000 build-apps: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-09-10 20:15:00.199915 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:15:00.215634 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.LsjoRS.spec
+2018-09-10 20:15:00.399564 +0000 build-apps: + rm -f /tmp/tmp.LsjoRS.spec
+2018-09-10 20:15:00.475972 +0000 build-apps: + ERR_OUTPUT=/dev/stderr
+2018-09-10 20:15:00.476030 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:15:00.493029 +0000 build-apps: ++ basename qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in
+2018-09-10 20:15:00.493112 +0000 build-apps: + [[ xqubes-u2f.spec.in == \x\.\i\n ]]
+2018-09-10 20:15:00.493153 +0000 build-apps: + '[' -r qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in ']'
+2018-09-10 20:15:00.493226 +0000 build-apps: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-09-10 20:15:00.493263 +0000 build-apps: + tmp_spec=/tmp/tmp.qkUWyk.spec
+2018-09-10 20:15:00.493307 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:15:00.497871 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in /tmp/tmp.qkUWyk.spec
+2018-09-10 20:15:00.523003 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:15:00.523066 +0000 build-apps: + '[' -z qubes-src/app-u2f ']'
+2018-09-10 20:15:00.523113 +0000 build-apps: + cp qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:00.534438 +0000 build-apps: + read ver
+2018-09-10 20:15:00.534506 +0000 build-apps: + cat qubes-src/app-u2f/version
+2018-09-10 20:15:00.534536 +0000 build-apps: + '[' x = x ']'
+2018-09-10 20:15:00.534570 +0000 build-apps: + sed -i 's|@VERSION@|1.2.2|g' qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:00.549935 +0000 build-apps: + vnum=1
+2018-09-10 20:15:00.550008 +0000 build-apps: + read ver
+2018-09-10 20:15:00.557157 +0000 build-apps: + '[' -e qubes-src/app-u2f/rel ']'
+2018-09-10 20:15:00.557248 +0000 build-apps: ++ cat qubes-src/app-u2f/rel
+2018-09-10 20:15:00.578106 +0000 build-apps: ++ echo 1
+2018-09-10 20:15:00.588399 +0000 build-apps: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:00.602291 +0000 build-apps: + '[' -e qubes-src/app-u2f/changelog ']'
+2018-09-10 20:15:00.602359 +0000 build-apps: + sed -i /@CHANGELOG@/d qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:00.610076 +0000 build-apps: + cat qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:00.616717 +0000 build-apps: + rm -rf qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:00.632699 +0000 build-apps: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-09-10 20:15:00.635400 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:15:00.642490 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.qkUWyk.spec
+2018-09-10 20:15:00.825296 +0000 build-apps: + rm -f /tmp/tmp.qkUWyk.spec
+2018-09-10 20:15:00.983995 +0000 build-apps: /home/user/builder-r3.2/qubes-src/builder-fedora/Makefile.rpmbuilder:142: target 'update-repo-do' does not exist
+2018-09-10 20:15:00.984071 +0000 build-apps: mkdir -p /home/user/builder-r3.2/qubes-src/linux-yum/r3.2/current-testing/vm/fc25/rpm
+2018-09-10 20:15:01.056323 +0000 build-apps: + ERR_OUTPUT=/dev/stderr
+2018-09-10 20:15:01.056387 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:15:01.058443 +0000 build-apps: ++ basename qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in
+2018-09-10 20:15:01.065034 +0000 build-apps: + [[ xqubes-u2f.spec.in == \x\.\i\n ]]
+2018-09-10 20:15:01.065099 +0000 build-apps: + '[' -r qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in ']'
+2018-09-10 20:15:01.072339 +0000 build-apps: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-09-10 20:15:01.073586 +0000 build-apps: + tmp_spec=/tmp/tmp.wAPsB6.spec
+2018-09-10 20:15:01.076359 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:15:01.081691 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in /tmp/tmp.wAPsB6.spec
+2018-09-10 20:15:01.091165 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:15:01.091262 +0000 build-apps: + '[' -z qubes-src/app-u2f ']'
+2018-09-10 20:15:01.091304 +0000 build-apps: + cp qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:01.103883 +0000 build-apps: + read ver
+2018-09-10 20:15:01.112881 +0000 build-apps: + cat qubes-src/app-u2f/version
+2018-09-10 20:15:01.112949 +0000 build-apps: + '[' x = x ']'
+2018-09-10 20:15:01.112991 +0000 build-apps: + sed -i 's|@VERSION@|1.2.2|g' qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:01.122383 +0000 build-apps: + vnum=1
+2018-09-10 20:15:01.122440 +0000 build-apps: + read ver
+2018-09-10 20:15:01.123604 +0000 build-apps: + '[' -e qubes-src/app-u2f/rel ']'
+2018-09-10 20:15:01.124974 +0000 build-apps: ++ cat qubes-src/app-u2f/rel
+2018-09-10 20:15:01.136539 +0000 build-apps: ++ echo 1
+2018-09-10 20:15:01.137753 +0000 build-apps: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:01.148237 +0000 build-apps: + '[' -e qubes-src/app-u2f/changelog ']'
+2018-09-10 20:15:01.148303 +0000 build-apps: + sed -i /@CHANGELOG@/d qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:01.157208 +0000 build-apps: + cat qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:01.165856 +0000 build-apps: + rm -rf qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:01.176617 +0000 build-apps: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-09-10 20:15:01.176690 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:15:01.180821 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.wAPsB6.spec
+2018-09-10 20:15:01.341813 +0000 build-apps: + rm -f /tmp/tmp.wAPsB6.spec
+2018-09-10 20:15:01.373041 +0000 build-apps: if [ -n "pkgs/fc25/noarch/qubes-u2f-1.2.2-1.fc25.noarch.rpm" ]; then \
+2018-09-10 20:15:01.373177 +0000 build-apps: .cd qubes-src/app-u2f && ln -f pkgs/fc25/noarch/qubes-u2f-1.2.2-1.fc25.noarch.rpm  /home/user/builder-r3.2/qubes-src/linux-yum/r3.2/current-testing/vm/fc25/rpm/; \
+2018-09-10 20:15:01.373220 +0000 build-apps: else \
+2018-09-10 20:15:01.373266 +0000 build-apps: .echo "`tput bold`No packages defined by rpm_spec/qubes-u2f.spec, syntax error?`tput sgr0`"; \
+2018-09-10 20:15:01.373295 +0000 build-apps: .exit 1; \
+2018-09-10 20:15:01.373320 +0000 build-apps: fi
+2018-09-10 20:15:01.404916 +0000 build-apps: cd qubes-src/app-u2f && echo pkgs/fc25/noarch/qubes-u2f-1.2.2-1.fc25.noarch.rpm  > /home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-fc25-app-u2f
+2018-09-10 20:15:01.504407 +0000 build-apps: /home/user/builder-r3.2/qubes-src/builder-github//Makefile.github:18: target 'notify-github' does not exist
+2018-09-10 20:15:01.504477 +0000 build-apps: [ -z "qubes-u2f-1.2.2-1.fc25" ] || /home/user/builder-r3.2/qubes-src/builder-github//notify-issues \
+2018-09-10 20:15:01.504523 +0000 build-apps: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-apps/log_2018-09-10_20-11-05" \
+2018-09-10 20:15:01.504548 +0000 build-apps: .upload \
+2018-09-10 20:15:01.504572 +0000 build-apps: ."r3.2" \
+2018-09-10 20:15:01.504596 +0000 build-apps: ."qubes-src/app-u2f" \
+2018-09-10 20:15:01.504619 +0000 build-apps: ."qubes-u2f-1.2.2-1.fc25" \
+2018-09-10 20:15:01.504640 +0000 build-apps: ."fc25" \
+2018-09-10 20:15:01.504661 +0000 build-apps: ."vm" \
+2018-09-10 20:15:01.504685 +0000 build-apps: ."current-testing" \
+2018-09-10 20:15:01.504713 +0000 build-apps: ."/home/user/github-notify-state/r3.2-app-u2f-vm-fc25-current-testing"
+2018-09-10 20:15:01.624014 +0000 build-apps: + ERR_OUTPUT=/dev/stderr
+2018-09-10 20:15:01.624073 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:15:01.633061 +0000 build-apps: ++ basename qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in
+2018-09-10 20:15:01.634512 +0000 build-apps: + [[ xqubes-u2f.spec.in == \x\.\i\n ]]
+2018-09-10 20:15:01.638492 +0000 build-apps: + '[' -r qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in ']'
+2018-09-10 20:15:01.643558 +0000 build-apps: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-09-10 20:15:01.669678 +0000 build-apps: + tmp_spec=/tmp/tmp.lVF4II.spec
+2018-09-10 20:15:01.669747 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:15:01.669803 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in /tmp/tmp.lVF4II.spec
+2018-09-10 20:15:01.681695 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:15:01.681752 +0000 build-apps: + '[' -z qubes-src/app-u2f ']'
+2018-09-10 20:15:01.681792 +0000 build-apps: + cp qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:01.702380 +0000 build-apps: + read ver
+2018-09-10 20:15:01.703857 +0000 build-apps: + cat qubes-src/app-u2f/version
+2018-09-10 20:15:01.713969 +0000 build-apps: + '[' x = x ']'
+2018-09-10 20:15:01.714035 +0000 build-apps: + sed -i 's|@VERSION@|1.2.2|g' qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:01.728502 +0000 build-apps: + vnum=1
+2018-09-10 20:15:01.728559 +0000 build-apps: + read ver
+2018-09-10 20:15:01.729986 +0000 build-apps: + '[' -e qubes-src/app-u2f/rel ']'
+2018-09-10 20:15:01.735461 +0000 build-apps: ++ cat qubes-src/app-u2f/rel
+2018-09-10 20:15:01.748386 +0000 build-apps: ++ echo 1
+2018-09-10 20:15:01.749678 +0000 build-apps: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:01.757835 +0000 build-apps: + '[' -e qubes-src/app-u2f/changelog ']'
+2018-09-10 20:15:01.757900 +0000 build-apps: + sed -i /@CHANGELOG@/d qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:01.769784 +0000 build-apps: + cat qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:01.776895 +0000 build-apps: + rm -rf qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:01.781891 +0000 build-apps: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-09-10 20:15:01.784145 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:15:01.789197 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.lVF4II.spec
+2018-09-10 20:15:01.956930 +0000 build-apps: + rm -f /tmp/tmp.lVF4II.spec
+2018-09-10 20:15:07.976774 +0000 build-apps: WARNING: message template /home/user/builder-r3.2/qubes-src/builder-github/message-current-testing-vm doesn't exist, not adding comments
+2018-09-10 20:15:07.982229 +0000 build-apps: 
+2018-09-10 20:15:07.984259 +0000 build-apps: Makefile:772: update target 'internal-update-repo-current-testing.vm.fc25' due to: internal-update-repo-current-testing.vm.fc25.app-u2f
+2018-09-10 20:15:07.984313 +0000 build-apps: true
+2018-09-10 20:15:07.989361 +0000 build-apps: Makefile:797: target 'internal-update-repo-current-testing.vm.fc26.app-u2f' does not exist
+2018-09-10 20:15:07.989421 +0000 build-apps: repo_base_var="LINUX_REPO_fc26_BASEDIR"; \
+2018-09-10 20:15:07.989453 +0000 build-apps: if [ "app-u2f" = linux-template-builder ]; then \
+2018-09-10 20:15:07.989486 +0000 build-apps: .# templates belongs to dom0 repository, even though PACKAGE_SET=vm
+2018-09-10 20:15:07.989513 +0000 build-apps: repo_base_var="LINUX_REPO_fc23_BASEDIR"; \
+2018-09-10 20:15:07.989539 +0000 build-apps: fi; \
+2018-09-10 20:15:07.989565 +0000 build-apps: if [ -n "${!repo_base_var}" ]; then \
+2018-09-10 20:15:07.989591 +0000 build-apps: .repo_basedir="${!repo_base_var}"; \
+2018-09-10 20:15:07.989621 +0000 build-apps: else \
+2018-09-10 20:15:07.989649 +0000 build-apps: .repo_basedir="qubes-src/linux-yum/r3.2"; \
+2018-09-10 20:15:07.989672 +0000 build-apps: fi; \
+2018-09-10 20:15:07.989700 +0000 build-apps: if [ -r qubes-src/app-u2f/Makefile.builder ]; then \
+2018-09-10 20:15:07.989752 +0000 build-apps: .echo -n "Updating qubes-src/app-u2f... "; \
+2018-09-10 20:15:07.989778 +0000 build-apps: .if [ "0" -eq 1 ]; then \
+2018-09-10 20:15:07.989808 +0000 build-apps: ..vtag=`git -C qubes-src/app-u2f tag --points-at HEAD --list v*`; \
+2018-09-10 20:15:07.989835 +0000 build-apps: ..if [ -z "$vtag" ]; then \
+2018-09-10 20:15:07.989860 +0000 build-apps: ...echo "no version tag"; \
+2018-09-10 20:15:07.989884 +0000 build-apps: ...exit 0; \
+2018-09-10 20:15:07.989908 +0000 build-apps: ..fi; \
+2018-09-10 20:15:07.989932 +0000 build-apps: .fi; \
+2018-09-10 20:15:07.989959 +0000 build-apps: .if [ "app-u2f" = linux-template-builder ]; then
+2018-09-10 20:15:07.989993 +0000 build-apps: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc26 template-name)
+2018-09-10 20:15:07.990015 +0000 build-apps: fi
+2018-09-10 20:15:07.990061 +0000 build-apps: component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc26 PACKAGE_SET=vm COMPONENT=`basename qubes-src/app-u2f` UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc26 get-var GET_VAR=PACKAGE_LIST); \
+2018-09-10 20:15:07.990091 +0000 build-apps: .if [ -z "$component_packages" ]; then \
+2018-09-10 20:15:07.990142 +0000 build-apps: ..echo "no packages."; \
+2018-09-10 20:15:07.990169 +0000 build-apps: ..exit 0; \
+2018-09-10 20:15:07.990192 +0000 build-apps: .fi; \
+2018-09-10 20:15:07.990222 +0000 build-apps: .make -s -f Makefile.generic DIST=fc26 PACKAGE_SET=vm \
+2018-09-10 20:15:07.990254 +0000 build-apps: ..COMPONENT=`basename qubes-src/app-u2f` \
+2018-09-10 20:15:07.990277 +0000 build-apps: ..SNAPSHOT_REPO=current-testing \
+2018-09-10 20:15:07.990302 +0000 build-apps: ..TARGET_REPO=current-testing \
+2018-09-10 20:15:07.990332 +0000 build-apps: ..UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc26 \
+2018-09-10 20:15:07.990365 +0000 build-apps: ..SNAPSHOT_FILE=/home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-fc26-`basename qubes-src/app-u2f` \
+2018-09-10 20:15:07.990398 +0000 build-apps: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-apps/log_2018-09-10_20-12-14 \
+2018-09-10 20:15:07.990423 +0000 build-apps: ..update-repo || exit 1; \
+2018-09-10 20:15:07.990454 +0000 build-apps: elif make -C qubes-src/app-u2f -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2018-09-10 20:15:07.990480 +0000 build-apps: .echo "Updating qubes-src/app-u2f... "; \
+2018-09-10 20:15:07.990511 +0000 build-apps: .DIST=fc26 UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/fc26 \
+2018-09-10 20:15:07.990541 +0000 build-apps: .make -s -C qubes-src/app-u2f update-repo-current-testing || exit 1; \
+2018-09-10 20:15:07.990564 +0000 build-apps: else \
+2018-09-10 20:15:07.990593 +0000 build-apps: .echo -n "Updating qubes-src/app-u2f... skipping."; \
+2018-09-10 20:15:07.990616 +0000 build-apps: fi; \
+2018-09-10 20:15:07.990637 +0000 build-apps: echo
+2018-09-10 20:15:08.037505 +0000 build-apps: Updating qubes-src/app-u2f... + ERR_OUTPUT=/dev/stderr
+2018-09-10 20:15:08.037566 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:15:08.039270 +0000 build-apps: ++ basename qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in
+2018-09-10 20:15:08.044457 +0000 build-apps: + [[ xqubes-u2f.spec.in == \x\.\i\n ]]
+2018-09-10 20:15:08.044532 +0000 build-apps: + '[' -r qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in ']'
+2018-09-10 20:15:08.051411 +0000 build-apps: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-09-10 20:15:08.055743 +0000 build-apps: + tmp_spec=/tmp/tmp.CHQN1d.spec
+2018-09-10 20:15:08.055810 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:15:08.059486 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in /tmp/tmp.CHQN1d.spec
+2018-09-10 20:15:08.072278 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:15:08.072333 +0000 build-apps: + '[' -z qubes-src/app-u2f ']'
+2018-09-10 20:15:08.072372 +0000 build-apps: + cp qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:08.085019 +0000 build-apps: + read ver
+2018-09-10 20:15:08.091405 +0000 build-apps: + cat qubes-src/app-u2f/version
+2018-09-10 20:15:08.109554 +0000 build-apps: + '[' x = x ']'
+2018-09-10 20:15:08.109618 +0000 build-apps: + sed -i 's|@VERSION@|1.2.2|g' qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:08.109648 +0000 build-apps: + vnum=1
+2018-09-10 20:15:08.109675 +0000 build-apps: + read ver
+2018-09-10 20:15:08.110841 +0000 build-apps: + '[' -e qubes-src/app-u2f/rel ']'
+2018-09-10 20:15:08.113439 +0000 build-apps: ++ cat qubes-src/app-u2f/rel
+2018-09-10 20:15:08.121079 +0000 build-apps: ++ echo 1
+2018-09-10 20:15:08.125583 +0000 build-apps: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:08.147796 +0000 build-apps: + '[' -e qubes-src/app-u2f/changelog ']'
+2018-09-10 20:15:08.147863 +0000 build-apps: + sed -i /@CHANGELOG@/d qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:08.149095 +0000 build-apps: + cat qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:08.155431 +0000 build-apps: + rm -rf qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:08.161250 +0000 build-apps: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-09-10 20:15:08.163800 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:15:08.172800 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.CHQN1d.spec
+2018-09-10 20:15:08.323738 +0000 build-apps: + rm -f /tmp/tmp.CHQN1d.spec
+2018-09-10 20:15:08.356575 +0000 build-apps: + ERR_OUTPUT=/dev/stderr
+2018-09-10 20:15:08.356642 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:15:08.364312 +0000 build-apps: ++ basename qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in
+2018-09-10 20:15:08.374436 +0000 build-apps: + [[ xqubes-u2f.spec.in == \x\.\i\n ]]
+2018-09-10 20:15:08.374504 +0000 build-apps: + '[' -r qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in ']'
+2018-09-10 20:15:08.376502 +0000 build-apps: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-09-10 20:15:08.381858 +0000 build-apps: + tmp_spec=/tmp/tmp.oZi8ZB.spec
+2018-09-10 20:15:08.383543 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:15:08.388294 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in /tmp/tmp.oZi8ZB.spec
+2018-09-10 20:15:08.395691 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:15:08.395747 +0000 build-apps: + '[' -z qubes-src/app-u2f ']'
+2018-09-10 20:15:08.395785 +0000 build-apps: + cp qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:08.410271 +0000 build-apps: + read ver
+2018-09-10 20:15:08.411526 +0000 build-apps: + cat qubes-src/app-u2f/version
+2018-09-10 20:15:08.415223 +0000 build-apps: + '[' x = x ']'
+2018-09-10 20:15:08.415290 +0000 build-apps: + sed -i 's|@VERSION@|1.2.2|g' qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:08.427904 +0000 build-apps: + vnum=1
+2018-09-10 20:15:08.427962 +0000 build-apps: + read ver
+2018-09-10 20:15:08.429212 +0000 build-apps: + '[' -e qubes-src/app-u2f/rel ']'
+2018-09-10 20:15:08.431436 +0000 build-apps: ++ cat qubes-src/app-u2f/rel
+2018-09-10 20:15:08.438675 +0000 build-apps: ++ echo 1
+2018-09-10 20:15:08.439785 +0000 build-apps: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:08.448680 +0000 build-apps: + '[' -e qubes-src/app-u2f/changelog ']'
+2018-09-10 20:15:08.448744 +0000 build-apps: + sed -i /@CHANGELOG@/d qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:08.458153 +0000 build-apps: + cat qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:08.466795 +0000 build-apps: + rm -rf qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:08.472727 +0000 build-apps: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-09-10 20:15:08.479307 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:15:08.484648 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.oZi8ZB.spec
+2018-09-10 20:15:08.667789 +0000 build-apps: + rm -f /tmp/tmp.oZi8ZB.spec
+2018-09-10 20:15:08.744246 +0000 build-apps: + ERR_OUTPUT=/dev/stderr
+2018-09-10 20:15:08.744306 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:15:08.748931 +0000 build-apps: ++ basename qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in
+2018-09-10 20:15:08.751150 +0000 build-apps: + [[ xqubes-u2f.spec.in == \x\.\i\n ]]
+2018-09-10 20:15:08.751247 +0000 build-apps: + '[' -r qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in ']'
+2018-09-10 20:15:08.755915 +0000 build-apps: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-09-10 20:15:08.760438 +0000 build-apps: + tmp_spec=/tmp/tmp.SMxKa6.spec
+2018-09-10 20:15:08.764468 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:15:08.769357 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in /tmp/tmp.SMxKa6.spec
+2018-09-10 20:15:08.779799 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:15:08.779859 +0000 build-apps: + '[' -z qubes-src/app-u2f ']'
+2018-09-10 20:15:08.779898 +0000 build-apps: + cp qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:08.789969 +0000 build-apps: + cat qubes-src/app-u2f/version
+2018-09-10 20:15:08.794149 +0000 build-apps: + read ver
+2018-09-10 20:15:08.799198 +0000 build-apps: + '[' x = x ']'
+2018-09-10 20:15:08.799268 +0000 build-apps: + sed -i 's|@VERSION@|1.2.2|g' qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:08.810287 +0000 build-apps: + vnum=1
+2018-09-10 20:15:08.810350 +0000 build-apps: + read ver
+2018-09-10 20:15:08.810662 +0000 build-apps: + '[' -e qubes-src/app-u2f/rel ']'
+2018-09-10 20:15:08.813200 +0000 build-apps: ++ cat qubes-src/app-u2f/rel
+2018-09-10 20:15:08.824955 +0000 build-apps: ++ echo 1
+2018-09-10 20:15:08.826852 +0000 build-apps: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:08.835672 +0000 build-apps: + '[' -e qubes-src/app-u2f/changelog ']'
+2018-09-10 20:15:08.835734 +0000 build-apps: + sed -i /@CHANGELOG@/d qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:08.850219 +0000 build-apps: + cat qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:08.858138 +0000 build-apps: + rm -rf qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:08.864279 +0000 build-apps: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-09-10 20:15:08.867360 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:15:08.877946 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.SMxKa6.spec
+2018-09-10 20:15:09.080515 +0000 build-apps: + rm -f /tmp/tmp.SMxKa6.spec
+2018-09-10 20:15:09.267116 +0000 build-apps: /home/user/builder-r3.2/qubes-src/builder-fedora/Makefile.rpmbuilder:142: target 'update-repo-do' does not exist
+2018-09-10 20:15:09.267218 +0000 build-apps: mkdir -p /home/user/builder-r3.2/qubes-src/linux-yum/r3.2/current-testing/vm/fc26/rpm
+2018-09-10 20:15:09.344487 +0000 build-apps: + ERR_OUTPUT=/dev/stderr
+2018-09-10 20:15:09.344546 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:15:09.348291 +0000 build-apps: ++ basename qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in
+2018-09-10 20:15:09.357918 +0000 build-apps: + [[ xqubes-u2f.spec.in == \x\.\i\n ]]
+2018-09-10 20:15:09.357981 +0000 build-apps: + '[' -r qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in ']'
+2018-09-10 20:15:09.358012 +0000 build-apps: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-09-10 20:15:09.362111 +0000 build-apps: + tmp_spec=/tmp/tmp.WMCass.spec
+2018-09-10 20:15:09.364789 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:15:09.369635 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in /tmp/tmp.WMCass.spec
+2018-09-10 20:15:09.378377 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:15:09.378434 +0000 build-apps: + '[' -z qubes-src/app-u2f ']'
+2018-09-10 20:15:09.378471 +0000 build-apps: + cp qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:09.388374 +0000 build-apps: + read ver
+2018-09-10 20:15:09.393500 +0000 build-apps: + cat qubes-src/app-u2f/version
+2018-09-10 20:15:09.393561 +0000 build-apps: + '[' x = x ']'
+2018-09-10 20:15:09.393600 +0000 build-apps: + sed -i 's|@VERSION@|1.2.2|g' qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:09.405599 +0000 build-apps: + vnum=1
+2018-09-10 20:15:09.405661 +0000 build-apps: + read ver
+2018-09-10 20:15:09.405695 +0000 build-apps: + '[' -e qubes-src/app-u2f/rel ']'
+2018-09-10 20:15:09.407217 +0000 build-apps: ++ cat qubes-src/app-u2f/rel
+2018-09-10 20:15:09.416080 +0000 build-apps: ++ echo 1
+2018-09-10 20:15:09.419447 +0000 build-apps: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:09.428170 +0000 build-apps: + '[' -e qubes-src/app-u2f/changelog ']'
+2018-09-10 20:15:09.428291 +0000 build-apps: + sed -i /@CHANGELOG@/d qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:09.440588 +0000 build-apps: + cat qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:09.447388 +0000 build-apps: + rm -rf qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:09.458673 +0000 build-apps: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-09-10 20:15:09.465535 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:15:09.471866 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.WMCass.spec
+2018-09-10 20:15:09.704177 +0000 build-apps: + rm -f /tmp/tmp.WMCass.spec
+2018-09-10 20:15:09.730774 +0000 build-apps: if [ -n "pkgs/fc26/noarch/qubes-u2f-1.2.2-1.fc26.noarch.rpm" ]; then \
+2018-09-10 20:15:09.730852 +0000 build-apps: .cd qubes-src/app-u2f && ln -f pkgs/fc26/noarch/qubes-u2f-1.2.2-1.fc26.noarch.rpm  /home/user/builder-r3.2/qubes-src/linux-yum/r3.2/current-testing/vm/fc26/rpm/; \
+2018-09-10 20:15:09.730882 +0000 build-apps: else \
+2018-09-10 20:15:09.730919 +0000 build-apps: .echo "`tput bold`No packages defined by rpm_spec/qubes-u2f.spec, syntax error?`tput sgr0`"; \
+2018-09-10 20:15:09.730945 +0000 build-apps: .exit 1; \
+2018-09-10 20:15:09.730969 +0000 build-apps: fi
+2018-09-10 20:15:09.747359 +0000 build-apps: cd qubes-src/app-u2f && echo pkgs/fc26/noarch/qubes-u2f-1.2.2-1.fc26.noarch.rpm  > /home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-fc26-app-u2f
+2018-09-10 20:15:09.850372 +0000 build-apps: /home/user/builder-r3.2/qubes-src/builder-github//Makefile.github:18: target 'notify-github' does not exist
+2018-09-10 20:15:09.850441 +0000 build-apps: [ -z "qubes-u2f-1.2.2-1.fc26" ] || /home/user/builder-r3.2/qubes-src/builder-github//notify-issues \
+2018-09-10 20:15:09.850482 +0000 build-apps: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-apps/log_2018-09-10_20-12-14" \
+2018-09-10 20:15:09.850509 +0000 build-apps: .upload \
+2018-09-10 20:15:09.850534 +0000 build-apps: ."r3.2" \
+2018-09-10 20:15:09.850559 +0000 build-apps: ."qubes-src/app-u2f" \
+2018-09-10 20:15:09.850584 +0000 build-apps: ."qubes-u2f-1.2.2-1.fc26" \
+2018-09-10 20:15:09.850607 +0000 build-apps: ."fc26" \
+2018-09-10 20:15:09.850631 +0000 build-apps: ."vm" \
+2018-09-10 20:15:09.850655 +0000 build-apps: ."current-testing" \
+2018-09-10 20:15:09.850685 +0000 build-apps: ."/home/user/github-notify-state/r3.2-app-u2f-vm-fc26-current-testing"
+2018-09-10 20:15:09.979744 +0000 build-apps: + ERR_OUTPUT=/dev/stderr
+2018-09-10 20:15:09.979837 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:15:09.982224 +0000 build-apps: ++ basename qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in
+2018-09-10 20:15:09.989138 +0000 build-apps: + [[ xqubes-u2f.spec.in == \x\.\i\n ]]
+2018-09-10 20:15:09.989218 +0000 build-apps: + '[' -r qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in ']'
+2018-09-10 20:15:09.997401 +0000 build-apps: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-09-10 20:15:09.999997 +0000 build-apps: + tmp_spec=/tmp/tmp.2MzzdE.spec
+2018-09-10 20:15:10.001889 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:15:10.011394 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in /tmp/tmp.2MzzdE.spec
+2018-09-10 20:15:10.021615 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:15:10.021687 +0000 build-apps: + '[' -z qubes-src/app-u2f ']'
+2018-09-10 20:15:10.021738 +0000 build-apps: + cp qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:10.032296 +0000 build-apps: + cat qubes-src/app-u2f/version
+2018-09-10 20:15:10.032348 +0000 build-apps: + read ver
+2018-09-10 20:15:10.036062 +0000 build-apps: + '[' x = x ']'
+2018-09-10 20:15:10.036481 +0000 build-apps: + sed -i 's|@VERSION@|1.2.2|g' qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:10.054649 +0000 build-apps: + vnum=1
+2018-09-10 20:15:10.054711 +0000 build-apps: + read ver
+2018-09-10 20:15:10.056595 +0000 build-apps: + '[' -e qubes-src/app-u2f/rel ']'
+2018-09-10 20:15:10.058072 +0000 build-apps: ++ cat qubes-src/app-u2f/rel
+2018-09-10 20:15:10.066029 +0000 build-apps: ++ echo 1
+2018-09-10 20:15:10.067573 +0000 build-apps: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:10.081759 +0000 build-apps: + '[' -e qubes-src/app-u2f/changelog ']'
+2018-09-10 20:15:10.081819 +0000 build-apps: + sed -i /@CHANGELOG@/d qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:10.089988 +0000 build-apps: + cat qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:10.100984 +0000 build-apps: + rm -rf qubes-src/app-u2f/rpm_spec/qubes-u2f.spec.in.tmp
+2018-09-10 20:15:10.109007 +0000 build-apps: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-09-10 20:15:10.111961 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:15:10.115934 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.2MzzdE.spec
+2018-09-10 20:15:10.302074 +0000 build-apps: + rm -f /tmp/tmp.2MzzdE.spec
+2018-09-10 20:15:16.242259 +0000 build-apps: 
+2018-09-10 20:15:16.242334 +0000 build-apps: Makefile:772: update target 'internal-update-repo-current-testing.vm.fc26' due to: internal-update-repo-current-testing.vm.fc26.app-u2f
+2018-09-10 20:15:16.242368 +0000 build-apps: true
+2018-09-10 20:15:16.275703 +0000 build-apps: Makefile:797: target 'internal-update-repo-current-testing.vm.stretch.app-u2f' does not exist
+2018-09-10 20:15:16.275768 +0000 build-apps: repo_base_var="LINUX_REPO_stretch_BASEDIR"; \
+2018-09-10 20:15:16.275805 +0000 build-apps: if [ "app-u2f" = linux-template-builder ]; then \
+2018-09-10 20:15:16.275841 +0000 build-apps: .# templates belongs to dom0 repository, even though PACKAGE_SET=vm
+2018-09-10 20:15:16.275874 +0000 build-apps: repo_base_var="LINUX_REPO_fc23_BASEDIR"; \
+2018-09-10 20:15:16.275900 +0000 build-apps: fi; \
+2018-09-10 20:15:16.275944 +0000 build-apps: if [ -n "${!repo_base_var}" ]; then \
+2018-09-10 20:15:16.275980 +0000 build-apps: .repo_basedir="${!repo_base_var}"; \
+2018-09-10 20:15:16.276006 +0000 build-apps: else \
+2018-09-10 20:15:16.276043 +0000 build-apps: .repo_basedir="qubes-src/linux-yum/r3.2"; \
+2018-09-10 20:15:16.276081 +0000 build-apps: fi; \
+2018-09-10 20:15:16.276163 +0000 build-apps: if [ -r qubes-src/app-u2f/Makefile.builder ]; then \
+2018-09-10 20:15:16.276220 +0000 build-apps: .echo -n "Updating qubes-src/app-u2f... "; \
+2018-09-10 20:15:16.276249 +0000 build-apps: .if [ "0" -eq 1 ]; then \
+2018-09-10 20:15:16.276283 +0000 build-apps: ..vtag=`git -C qubes-src/app-u2f tag --points-at HEAD --list v*`; \
+2018-09-10 20:15:16.276310 +0000 build-apps: ..if [ -z "$vtag" ]; then \
+2018-09-10 20:15:16.276339 +0000 build-apps: ...echo "no version tag"; \
+2018-09-10 20:15:16.276366 +0000 build-apps: ...exit 0; \
+2018-09-10 20:15:16.276397 +0000 build-apps: ..fi; \
+2018-09-10 20:15:16.276429 +0000 build-apps: .fi; \
+2018-09-10 20:15:16.276459 +0000 build-apps: .if [ "app-u2f" = linux-template-builder ]; then
+2018-09-10 20:15:16.276498 +0000 build-apps: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=stretch template-name)
+2018-09-10 20:15:16.276523 +0000 build-apps: fi
+2018-09-10 20:15:16.276577 +0000 build-apps: component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=stretch PACKAGE_SET=vm COMPONENT=`basename qubes-src/app-u2f` UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/stretch get-var GET_VAR=PACKAGE_LIST); \
+2018-09-10 20:15:16.276621 +0000 build-apps: .if [ -z "$component_packages" ]; then \
+2018-09-10 20:15:16.276653 +0000 build-apps: ..echo "no packages."; \
+2018-09-10 20:15:16.276677 +0000 build-apps: ..exit 0; \
+2018-09-10 20:15:16.276702 +0000 build-apps: .fi; \
+2018-09-10 20:15:16.276734 +0000 build-apps: .make -s -f Makefile.generic DIST=stretch PACKAGE_SET=vm \
+2018-09-10 20:15:16.276773 +0000 build-apps: ..COMPONENT=`basename qubes-src/app-u2f` \
+2018-09-10 20:15:16.276813 +0000 build-apps: ..SNAPSHOT_REPO=current-testing \
+2018-09-10 20:15:16.276841 +0000 build-apps: ..TARGET_REPO=current-testing \
+2018-09-10 20:15:16.276873 +0000 build-apps: ..UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/stretch \
+2018-09-10 20:15:16.276913 +0000 build-apps: ..SNAPSHOT_FILE=/home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-stretch-`basename qubes-src/app-u2f` \
+2018-09-10 20:15:16.276950 +0000 build-apps: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-apps/log_2018-09-10_20-13-27 \
+2018-09-10 20:15:16.276978 +0000 build-apps: ..update-repo || exit 1; \
+2018-09-10 20:15:16.277012 +0000 build-apps: elif make -C qubes-src/app-u2f -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2018-09-10 20:15:16.277043 +0000 build-apps: .echo "Updating qubes-src/app-u2f... "; \
+2018-09-10 20:15:16.277078 +0000 build-apps: .DIST=stretch UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/vm/stretch \
+2018-09-10 20:15:16.277138 +0000 build-apps: .make -s -C qubes-src/app-u2f update-repo-current-testing || exit 1; \
+2018-09-10 20:15:16.277164 +0000 build-apps: else \
+2018-09-10 20:15:16.277194 +0000 build-apps: .echo -n "Updating qubes-src/app-u2f... skipping."; \
+2018-09-10 20:15:16.277220 +0000 build-apps: fi; \
+2018-09-10 20:15:16.277244 +0000 build-apps: echo
+2018-09-10 20:15:16.966827 +0000 build-apps: Updating qubes-src/app-u2f... /home/user/builder-r3.2/qubes-src/builder-debian/Makefile.debian:275: target 'update-repo-prepare' does not exist
+2018-09-10 20:15:16.966898 +0000 build-apps: mkdir -p /home/user/builder-r3.2/qubes-src/linux-deb/r3.2/current-testing/vm/stretch/conf
+2018-09-10 20:15:17.954463 +0000 build-apps: if [ ! -e /home/user/builder-r3.2/qubes-src/linux-deb/r3.2/current-testing/vm/stretch/conf/distributions ]; then \
+2018-09-10 20:15:17.954534 +0000 build-apps: .touch /home/user/builder-r3.2/qubes-src/linux-deb/r3.2/current-testing/vm/stretch/conf/distributions; \
+2018-09-10 20:15:17.954564 +0000 build-apps: fi
+2018-09-10 20:15:17.959085 +0000 build-apps: grep stretch /home/user/builder-r3.2/qubes-src/linux-deb/r3.2/current-testing/vm/stretch/conf/distributions > /dev/null; \
+2018-09-10 20:15:17.959194 +0000 build-apps: if [ $? -ne 0 ]; then \
+2018-09-10 20:15:17.959241 +0000 build-apps: .echo "$aptdistributions" >> /home/user/builder-r3.2/qubes-src/linux-deb/r3.2/current-testing/vm/stretch/conf/distributions; \
+2018-09-10 20:15:17.959286 +0000 build-apps: fi
+2018-09-10 20:15:17.974715 +0000 build-apps: sudo umount chroot-debian/tmp/qubes-apt-repo chroot-debian/tmp/qubes-deb 2>/dev/null || true
+2018-09-10 20:15:18.033941 +0000 build-apps: # Softlink to the first distribution called; it will be used to create and store repo
+2018-09-10 20:15:18.038038 +0000 build-apps: if ! [ -L chroot-debian ]; then \
+2018-09-10 20:15:18.038101 +0000 build-apps:     ln -sf chroot-stretch chroot-debian; \
+2018-09-10 20:15:18.038132 +0000 build-apps: fi
+2018-09-10 20:15:18.046343 +0000 build-apps: if ! [ -d chroot-debian/tmp/qubes-deb/deb ]; then \
+2018-09-10 20:15:18.046404 +0000 build-apps: .mkdir -p chroot-debian/tmp/qubes-deb ;\
+2018-09-10 20:15:18.046444 +0000 build-apps: .sudo mount --bind /home/user/builder-r3.2/qubes-packages-mirror-repo/stretch chroot-debian/tmp/qubes-deb ;\
+2018-09-10 20:15:18.046468 +0000 build-apps: fi
+2018-09-10 20:15:18.131610 +0000 build-apps: if ! [ -d chroot-debian/tmp/qubes-apt-repo/dists ]; then \
+2018-09-10 20:15:18.131672 +0000 build-apps: .mkdir -p chroot-debian/tmp/qubes-apt-repo ;\
+2018-09-10 20:15:18.131715 +0000 build-apps: .sudo mount --bind /home/user/builder-r3.2/qubes-src/linux-deb/r3.2/current-testing/vm/stretch chroot-debian/tmp/qubes-apt-repo ;\
+2018-09-10 20:15:18.131741 +0000 build-apps: fi
+2018-09-10 20:15:19.317248 +0000 build-apps: /home/user/builder-r3.2/qubes-src/builder-debian/Makefile.debian:303: target 'update-repo-do' does not exist
+2018-09-10 20:15:19.317310 +0000 build-apps: if [ "X" != "X" ]; then \
+2018-09-10 20:15:19.317367 +0000 build-apps: .sudo BACKEND_VMM=xen  chroot chroot-debian su user -c "reprepro --ignore=surprisingbinary -b /tmp/qubes-apt-repo -T deb include stretch-testing /tmp/qubes-deb/deb/_amd64.changes </dev/null >/dev/null" || exit 1; \
+2018-09-10 20:15:19.317398 +0000 build-apps: else \
+2018-09-10 20:15:19.317451 +0000 build-apps: .sudo BACKEND_VMM=xen  chroot chroot-debian su user -c "reprepro --ignore=surprisingbinary -b /tmp/qubes-apt-repo -T deb include stretch-testing /tmp/qubes-deb/deb/qubes-u2f_1.2.2+deb9u1_amd64.changes </dev/null >/dev/null" || exit 1; \
+2018-09-10 20:15:19.317477 +0000 build-apps: fi
+2018-09-10 20:15:20.517549 +0000 build-apps: sudo umount chroot-debian/tmp/qubes-apt-repo
+2018-09-10 20:15:20.579651 +0000 build-apps: sudo umount chroot-debian/tmp/qubes-deb
+2018-09-10 20:15:20.650386 +0000 build-apps: if [ "X" != "X" ]; then \
+2018-09-10 20:15:20.650455 +0000 build-apps: .echo '$Source (== qubes-u2f), Version (== )' > /home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-stretch-app-u2f; \
+2018-09-10 20:15:20.650485 +0000 build-apps: else \
+2018-09-10 20:15:20.650525 +0000 build-apps: .echo '$Source (== qubes-u2f), Version (== 1.2.2+deb9u1)' > /home/user/builder-r3.2/repo-latest-snapshot/current-testing-vm-stretch-app-u2f; \
+2018-09-10 20:15:20.650550 +0000 build-apps: fi
+2018-09-10 20:15:21.056826 +0000 build-apps: /home/user/builder-r3.2/qubes-src/builder-github//Makefile.github:18: target 'notify-github' does not exist
+2018-09-10 20:15:21.056898 +0000 build-apps: [ -z "qubes-u2f_1.2.2+deb9u1" ] || /home/user/builder-r3.2/qubes-src/builder-github//notify-issues \
+2018-09-10 20:15:21.056938 +0000 build-apps: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-apps/log_2018-09-10_20-13-27" \
+2018-09-10 20:15:21.056964 +0000 build-apps: .upload \
+2018-09-10 20:15:21.056991 +0000 build-apps: ."r3.2" \
+2018-09-10 20:15:21.057016 +0000 build-apps: ."qubes-src/app-u2f" \
+2018-09-10 20:15:21.057041 +0000 build-apps: ."qubes-u2f_1.2.2+deb9u1" \
+2018-09-10 20:15:21.057064 +0000 build-apps: ."stretch" \
+2018-09-10 20:15:21.057086 +0000 build-apps: ."vm" \
+2018-09-10 20:15:21.057132 +0000 build-apps: ."current-testing" \
+2018-09-10 20:15:21.057164 +0000 build-apps: ."/home/user/github-notify-state/r3.2-app-u2f-vm-stretch-current-testing"
+2018-09-10 20:15:28.029709 +0000 build-apps: 
+2018-09-10 20:15:28.029778 +0000 build-apps: Makefile:772: update target 'internal-update-repo-current-testing.vm.stretch' due to: internal-update-repo-current-testing.vm.stretch.app-u2f
+2018-09-10 20:15:28.029825 +0000 build-apps: true
+2018-09-10 20:15:28.049254 +0000 build-apps: Makefile:797: target 'internal-update-repo-current-testing.dom0.fc23.app-u2f' does not exist
+2018-09-10 20:15:28.049314 +0000 build-apps: repo_base_var="LINUX_REPO_fc23_BASEDIR"; \
+2018-09-10 20:15:28.049347 +0000 build-apps: if [ "app-u2f" = linux-template-builder ]; then \
+2018-09-10 20:15:28.049380 +0000 build-apps: .# templates belongs to dom0 repository, even though PACKAGE_SET=vm
+2018-09-10 20:15:28.049409 +0000 build-apps: repo_base_var="LINUX_REPO_fc23_BASEDIR"; \
+2018-09-10 20:15:28.049434 +0000 build-apps: fi; \
+2018-09-10 20:15:28.049462 +0000 build-apps: if [ -n "${!repo_base_var}" ]; then \
+2018-09-10 20:15:28.049488 +0000 build-apps: .repo_basedir="${!repo_base_var}"; \
+2018-09-10 20:15:28.049511 +0000 build-apps: else \
+2018-09-10 20:15:28.049537 +0000 build-apps: .repo_basedir="qubes-src/linux-yum/r3.2"; \
+2018-09-10 20:15:28.049559 +0000 build-apps: fi; \
+2018-09-10 20:15:28.049585 +0000 build-apps: if [ -r qubes-src/app-u2f/Makefile.builder ]; then \
+2018-09-10 20:15:28.049611 +0000 build-apps: .echo -n "Updating qubes-src/app-u2f... "; \
+2018-09-10 20:15:28.049635 +0000 build-apps: .if [ "0" -eq 1 ]; then \
+2018-09-10 20:15:28.049664 +0000 build-apps: ..vtag=`git -C qubes-src/app-u2f tag --points-at HEAD --list v*`; \
+2018-09-10 20:15:28.049688 +0000 build-apps: ..if [ -z "$vtag" ]; then \
+2018-09-10 20:15:28.049711 +0000 build-apps: ...echo "no version tag"; \
+2018-09-10 20:15:28.049733 +0000 build-apps: ...exit 0; \
+2018-09-10 20:15:28.049754 +0000 build-apps: ..fi; \
+2018-09-10 20:15:28.049775 +0000 build-apps: .fi; \
+2018-09-10 20:15:28.049801 +0000 build-apps: .if [ "app-u2f" = linux-template-builder ]; then
+2018-09-10 20:15:28.049832 +0000 build-apps: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc23 template-name)
+2018-09-10 20:15:28.049854 +0000 build-apps: fi
+2018-09-10 20:15:28.049900 +0000 build-apps: component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc23 PACKAGE_SET=dom0 COMPONENT=`basename qubes-src/app-u2f` UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/dom0/fc23 get-var GET_VAR=PACKAGE_LIST); \
+2018-09-10 20:15:28.049927 +0000 build-apps: .if [ -z "$component_packages" ]; then \
+2018-09-10 20:15:28.049951 +0000 build-apps: ..echo "no packages."; \
+2018-09-10 20:15:28.049972 +0000 build-apps: ..exit 0; \
+2018-09-10 20:15:28.049995 +0000 build-apps: .fi; \
+2018-09-10 20:15:28.050023 +0000 build-apps: .make -s -f Makefile.generic DIST=fc23 PACKAGE_SET=dom0 \
+2018-09-10 20:15:28.050048 +0000 build-apps: ..COMPONENT=`basename qubes-src/app-u2f` \
+2018-09-10 20:15:28.050072 +0000 build-apps: ..SNAPSHOT_REPO=current-testing \
+2018-09-10 20:15:28.050096 +0000 build-apps: ..TARGET_REPO=current-testing \
+2018-09-10 20:15:28.050166 +0000 build-apps: ..UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/dom0/fc23 \
+2018-09-10 20:15:28.050201 +0000 build-apps: ..SNAPSHOT_FILE=/home/user/builder-r3.2/repo-latest-snapshot/current-testing-dom0-fc23-`basename qubes-src/app-u2f` \
+2018-09-10 20:15:28.050234 +0000 build-apps: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-apps/log_2018-09-10_20-08-28 \
+2018-09-10 20:15:28.050258 +0000 build-apps: ..update-repo || exit 1; \
+2018-09-10 20:15:28.050289 +0000 build-apps: elif make -C qubes-src/app-u2f -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2018-09-10 20:15:28.050314 +0000 build-apps: .echo "Updating qubes-src/app-u2f... "; \
+2018-09-10 20:15:28.050345 +0000 build-apps: .DIST=fc23 UPDATE_REPO=/home/user/builder-r3.2/$repo_basedir/current-testing/dom0/fc23 \
+2018-09-10 20:15:28.050374 +0000 build-apps: .make -s -C qubes-src/app-u2f update-repo-current-testing || exit 1; \
+2018-09-10 20:15:28.050395 +0000 build-apps: else \
+2018-09-10 20:15:28.050421 +0000 build-apps: .echo -n "Updating qubes-src/app-u2f... skipping."; \
+2018-09-10 20:15:28.050444 +0000 build-apps: fi; \
+2018-09-10 20:15:28.050464 +0000 build-apps: echo
+2018-09-10 20:15:28.109148 +0000 build-apps: Updating qubes-src/app-u2f... + ERR_OUTPUT=/dev/stderr
+2018-09-10 20:15:28.109229 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:15:28.112375 +0000 build-apps: ++ basename qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in
+2018-09-10 20:15:28.121383 +0000 build-apps: + [[ xqubes-u2f-dom0.spec.in == \x\.\i\n ]]
+2018-09-10 20:15:28.121444 +0000 build-apps: + '[' -r qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in ']'
+2018-09-10 20:15:28.128875 +0000 build-apps: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-09-10 20:15:28.130896 +0000 build-apps: + tmp_spec=/tmp/tmp.fZPMeL.spec
+2018-09-10 20:15:28.139172 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:15:28.148863 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in /tmp/tmp.fZPMeL.spec
+2018-09-10 20:15:28.155423 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:15:28.155481 +0000 build-apps: + '[' -z qubes-src/app-u2f ']'
+2018-09-10 20:15:28.155536 +0000 build-apps: + cp qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:15:28.166034 +0000 build-apps: + read ver
+2018-09-10 20:15:28.167941 +0000 build-apps: + cat qubes-src/app-u2f/version
+2018-09-10 20:15:28.172937 +0000 build-apps: + '[' x = x ']'
+2018-09-10 20:15:28.173007 +0000 build-apps: + sed -i 's|@VERSION@|1.2.2|g' qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:15:28.194444 +0000 build-apps: + vnum=1
+2018-09-10 20:15:28.194500 +0000 build-apps: + read ver
+2018-09-10 20:15:28.196609 +0000 build-apps: + '[' -e qubes-src/app-u2f/rel ']'
+2018-09-10 20:15:28.202746 +0000 build-apps: ++ cat qubes-src/app-u2f/rel
+2018-09-10 20:15:28.209639 +0000 build-apps: ++ echo 1
+2018-09-10 20:15:28.211958 +0000 build-apps: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:15:28.243070 +0000 build-apps: + '[' -e qubes-src/app-u2f/changelog ']'
+2018-09-10 20:15:28.243172 +0000 build-apps: + sed -i /@CHANGELOG@/d qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:15:28.250959 +0000 build-apps: + cat qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:15:28.261882 +0000 build-apps: + rm -rf qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:15:28.271444 +0000 build-apps: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-09-10 20:15:28.273516 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:15:28.278797 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.fZPMeL.spec
+2018-09-10 20:15:28.596456 +0000 build-apps: + rm -f /tmp/tmp.fZPMeL.spec
+2018-09-10 20:15:28.655640 +0000 build-apps: + ERR_OUTPUT=/dev/stderr
+2018-09-10 20:15:28.655695 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:15:28.657989 +0000 build-apps: ++ basename qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in
+2018-09-10 20:15:28.688393 +0000 build-apps: + [[ xqubes-u2f-dom0.spec.in == \x\.\i\n ]]
+2018-09-10 20:15:28.688457 +0000 build-apps: + '[' -r qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in ']'
+2018-09-10 20:15:28.699024 +0000 build-apps: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-09-10 20:15:28.706952 +0000 build-apps: + tmp_spec=/tmp/tmp.z5794F.spec
+2018-09-10 20:15:28.708847 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:15:28.713650 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in /tmp/tmp.z5794F.spec
+2018-09-10 20:15:28.729264 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:15:28.729319 +0000 build-apps: + '[' -z qubes-src/app-u2f ']'
+2018-09-10 20:15:28.729357 +0000 build-apps: + cp qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:15:28.752436 +0000 build-apps: + read ver
+2018-09-10 20:15:28.753773 +0000 build-apps: + cat qubes-src/app-u2f/version
+2018-09-10 20:15:28.759479 +0000 build-apps: + '[' x = x ']'
+2018-09-10 20:15:28.759549 +0000 build-apps: + sed -i 's|@VERSION@|1.2.2|g' qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:15:28.768837 +0000 build-apps: + vnum=1
+2018-09-10 20:15:28.768891 +0000 build-apps: + read ver
+2018-09-10 20:15:28.768921 +0000 build-apps: + '[' -e qubes-src/app-u2f/rel ']'
+2018-09-10 20:15:28.770409 +0000 build-apps: ++ cat qubes-src/app-u2f/rel
+2018-09-10 20:15:28.796941 +0000 build-apps: ++ echo 1
+2018-09-10 20:15:28.797010 +0000 build-apps: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:15:28.819095 +0000 build-apps: + '[' -e qubes-src/app-u2f/changelog ']'
+2018-09-10 20:15:28.819199 +0000 build-apps: + sed -i /@CHANGELOG@/d qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:15:28.832745 +0000 build-apps: + cat qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:15:28.877243 +0000 build-apps: + rm -rf qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:15:28.912235 +0000 build-apps: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-09-10 20:15:28.930163 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:15:28.936644 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.z5794F.spec
+2018-09-10 20:15:29.302333 +0000 build-apps: + rm -f /tmp/tmp.z5794F.spec
+2018-09-10 20:15:29.466192 +0000 build-apps: + ERR_OUTPUT=/dev/stderr
+2018-09-10 20:15:29.466246 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:15:29.472033 +0000 build-apps: ++ basename qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in
+2018-09-10 20:15:29.477868 +0000 build-apps: + [[ xqubes-u2f-dom0.spec.in == \x\.\i\n ]]
+2018-09-10 20:15:29.477934 +0000 build-apps: + '[' -r qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in ']'
+2018-09-10 20:15:29.483864 +0000 build-apps: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-09-10 20:15:29.495223 +0000 build-apps: + tmp_spec=/tmp/tmp.dvPcRA.spec
+2018-09-10 20:15:29.497038 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:15:29.531418 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in /tmp/tmp.dvPcRA.spec
+2018-09-10 20:15:29.557010 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:15:29.557076 +0000 build-apps: + '[' -z qubes-src/app-u2f ']'
+2018-09-10 20:15:29.557533 +0000 build-apps: + cp qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:15:29.592207 +0000 build-apps: + cat qubes-src/app-u2f/version
+2018-09-10 20:15:29.603504 +0000 build-apps: + read ver
+2018-09-10 20:15:29.610031 +0000 build-apps: + '[' x = x ']'
+2018-09-10 20:15:29.610096 +0000 build-apps: + sed -i 's|@VERSION@|1.2.2|g' qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:15:29.629396 +0000 build-apps: + vnum=1
+2018-09-10 20:15:29.629451 +0000 build-apps: + read ver
+2018-09-10 20:15:29.632985 +0000 build-apps: + '[' -e qubes-src/app-u2f/rel ']'
+2018-09-10 20:15:29.640763 +0000 build-apps: ++ cat qubes-src/app-u2f/rel
+2018-09-10 20:15:29.654022 +0000 build-apps: ++ echo 1
+2018-09-10 20:15:29.661372 +0000 build-apps: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:15:29.678720 +0000 build-apps: + '[' -e qubes-src/app-u2f/changelog ']'
+2018-09-10 20:15:29.678796 +0000 build-apps: + sed -i /@CHANGELOG@/d qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:15:29.691929 +0000 build-apps: + cat qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:15:29.695650 +0000 build-apps: + rm -rf qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:15:29.707647 +0000 build-apps: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-09-10 20:15:29.709860 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:15:29.714373 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.dvPcRA.spec
+2018-09-10 20:15:29.877073 +0000 build-apps: + rm -f /tmp/tmp.dvPcRA.spec
+2018-09-10 20:15:30.048214 +0000 build-apps: /home/user/builder-r3.2/qubes-src/builder-fedora/Makefile.rpmbuilder:142: target 'update-repo-do' does not exist
+2018-09-10 20:15:30.048281 +0000 build-apps: mkdir -p /home/user/builder-r3.2/qubes-src/linux-yum/r3.2/current-testing/dom0/fc23/rpm
+2018-09-10 20:15:30.126145 +0000 build-apps: + ERR_OUTPUT=/dev/stderr
+2018-09-10 20:15:30.126237 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:15:30.133546 +0000 build-apps: ++ basename qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in
+2018-09-10 20:15:30.139515 +0000 build-apps: + [[ xqubes-u2f-dom0.spec.in == \x\.\i\n ]]
+2018-09-10 20:15:30.139574 +0000 build-apps: + '[' -r qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in ']'
+2018-09-10 20:15:30.142118 +0000 build-apps: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-09-10 20:15:30.147114 +0000 build-apps: + tmp_spec=/tmp/tmp.MMcEvG.spec
+2018-09-10 20:15:30.147201 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:15:30.153637 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in /tmp/tmp.MMcEvG.spec
+2018-09-10 20:15:30.163249 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:15:30.163306 +0000 build-apps: + '[' -z qubes-src/app-u2f ']'
+2018-09-10 20:15:30.163344 +0000 build-apps: + cp qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:15:30.171301 +0000 build-apps: + read ver
+2018-09-10 20:15:30.173908 +0000 build-apps: + cat qubes-src/app-u2f/version
+2018-09-10 20:15:30.177343 +0000 build-apps: + '[' x = x ']'
+2018-09-10 20:15:30.177413 +0000 build-apps: + sed -i 's|@VERSION@|1.2.2|g' qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:15:30.187444 +0000 build-apps: + vnum=1
+2018-09-10 20:15:30.187497 +0000 build-apps: + read ver
+2018-09-10 20:15:30.187528 +0000 build-apps: + '[' -e qubes-src/app-u2f/rel ']'
+2018-09-10 20:15:30.189207 +0000 build-apps: ++ cat qubes-src/app-u2f/rel
+2018-09-10 20:15:30.198734 +0000 build-apps: ++ echo 1
+2018-09-10 20:15:30.199774 +0000 build-apps: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:15:30.209271 +0000 build-apps: + '[' -e qubes-src/app-u2f/changelog ']'
+2018-09-10 20:15:30.209332 +0000 build-apps: + sed -i /@CHANGELOG@/d qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:15:30.217113 +0000 build-apps: + cat qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:15:30.221681 +0000 build-apps: + rm -rf qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:15:30.235114 +0000 build-apps: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-09-10 20:15:30.235206 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:15:30.235280 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.MMcEvG.spec
+2018-09-10 20:15:30.401912 +0000 build-apps: + rm -f /tmp/tmp.MMcEvG.spec
+2018-09-10 20:15:30.431724 +0000 build-apps: if [ -n "pkgs/fc23/noarch/qubes-u2f-dom0-1.2.2-1.fc23.noarch.rpm" ]; then \
+2018-09-10 20:15:30.431797 +0000 build-apps: .cd qubes-src/app-u2f && ln -f pkgs/fc23/noarch/qubes-u2f-dom0-1.2.2-1.fc23.noarch.rpm  /home/user/builder-r3.2/qubes-src/linux-yum/r3.2/current-testing/dom0/fc23/rpm/; \
+2018-09-10 20:15:30.431826 +0000 build-apps: else \
+2018-09-10 20:15:30.431867 +0000 build-apps: .echo "`tput bold`No packages defined by rpm_spec/qubes-u2f-dom0.spec, syntax error?`tput sgr0`"; \
+2018-09-10 20:15:30.431918 +0000 build-apps: .exit 1; \
+2018-09-10 20:15:30.431947 +0000 build-apps: fi
+2018-09-10 20:15:30.446105 +0000 build-apps: cd qubes-src/app-u2f && echo pkgs/fc23/noarch/qubes-u2f-dom0-1.2.2-1.fc23.noarch.rpm  > /home/user/builder-r3.2/repo-latest-snapshot/current-testing-dom0-fc23-app-u2f
+2018-09-10 20:15:30.572742 +0000 build-apps: /home/user/builder-r3.2/qubes-src/builder-github//Makefile.github:18: target 'notify-github' does not exist
+2018-09-10 20:15:30.572810 +0000 build-apps: [ -z "qubes-u2f-dom0-1.2.2-1.fc23" ] || /home/user/builder-r3.2/qubes-src/builder-github//notify-issues \
+2018-09-10 20:15:30.572848 +0000 build-apps: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-apps/log_2018-09-10_20-08-28" \
+2018-09-10 20:15:30.572885 +0000 build-apps: .upload \
+2018-09-10 20:15:30.572917 +0000 build-apps: ."r3.2" \
+2018-09-10 20:15:30.572949 +0000 build-apps: ."qubes-src/app-u2f" \
+2018-09-10 20:15:30.572986 +0000 build-apps: ."qubes-u2f-dom0-1.2.2-1.fc23" \
+2018-09-10 20:15:30.573024 +0000 build-apps: ."fc23" \
+2018-09-10 20:15:30.573051 +0000 build-apps: ."dom0" \
+2018-09-10 20:15:30.573076 +0000 build-apps: ."current-testing" \
+2018-09-10 20:15:30.573112 +0000 build-apps: ."/home/user/github-notify-state/r3.2-app-u2f-dom0-fc23-current-testing"
+2018-09-10 20:15:30.678330 +0000 build-apps: + ERR_OUTPUT=/dev/stderr
+2018-09-10 20:15:30.678387 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:15:30.686865 +0000 build-apps: ++ basename qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in
+2018-09-10 20:15:30.708575 +0000 build-apps: + [[ xqubes-u2f-dom0.spec.in == \x\.\i\n ]]
+2018-09-10 20:15:30.708649 +0000 build-apps: + '[' -r qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in ']'
+2018-09-10 20:15:30.715163 +0000 build-apps: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2018-09-10 20:15:30.718018 +0000 build-apps: + tmp_spec=/tmp/tmp.88yChc.spec
+2018-09-10 20:15:30.739182 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:15:30.739272 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/generate-spec qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in /tmp/tmp.88yChc.spec
+2018-09-10 20:15:30.739317 +0000 build-apps: + '[' 2 -lt 2 ']'
+2018-09-10 20:15:30.739348 +0000 build-apps: + '[' -z qubes-src/app-u2f ']'
+2018-09-10 20:15:30.739384 +0000 build-apps: + cp qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:15:30.753523 +0000 build-apps: + cat qubes-src/app-u2f/version
+2018-09-10 20:15:30.756728 +0000 build-apps: + read ver
+2018-09-10 20:15:30.763391 +0000 build-apps: + '[' x = x ']'
+2018-09-10 20:15:30.763457 +0000 build-apps: + sed -i 's|@VERSION@|1.2.2|g' qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:15:30.772354 +0000 build-apps: + vnum=1
+2018-09-10 20:15:30.772408 +0000 build-apps: + read ver
+2018-09-10 20:15:30.774217 +0000 build-apps: + '[' -e qubes-src/app-u2f/rel ']'
+2018-09-10 20:15:30.776420 +0000 build-apps: ++ cat qubes-src/app-u2f/rel
+2018-09-10 20:15:30.787045 +0000 build-apps: ++ echo 1
+2018-09-10 20:15:30.787134 +0000 build-apps: + sed -i -e s:@REL@:1:g -e s:@BACKEND_VMM@:xen:g qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:15:30.795006 +0000 build-apps: + '[' -e qubes-src/app-u2f/changelog ']'
+2018-09-10 20:15:30.795074 +0000 build-apps: + sed -i /@CHANGELOG@/d qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:15:30.803962 +0000 build-apps: + cat qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:15:30.814578 +0000 build-apps: + rm -rf qubes-src/app-u2f/rpm_spec/qubes-u2f-dom0.spec.in.tmp
+2018-09-10 20:15:30.818574 +0000 build-apps: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2018-09-10 20:15:30.826837 +0000 build-apps: ++ dirname /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/query-spec
+2018-09-10 20:15:30.831789 +0000 build-apps: + /home/user/builder-r3.2/qubes-src/builder-fedora/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.88yChc.spec
+2018-09-10 20:15:30.987153 +0000 build-apps: + rm -f /tmp/tmp.88yChc.spec
+2018-09-10 20:15:49.967832 +0000 build-apps: 
+2018-09-10 20:15:49.968339 +0000 build-apps: Makefile:851: target 'post-update-repo-current-testing' does not exist
+2018-09-10 20:15:49.968381 +0000 build-apps: for dist in fc23 buster fc24 fc25 fc26 stretch; do \
+2018-09-10 20:15:49.968421 +0000 build-apps: .repo_base_var="LINUX_REPO_${dist}_BASEDIR"; \
+2018-09-10 20:15:49.968449 +0000 build-apps: .if [ -n "${!repo_base_var}" ]; then \
+2018-09-10 20:15:49.968476 +0000 build-apps: ..repo_basedir="${!repo_base_var}"; \
+2018-09-10 20:15:49.968499 +0000 build-apps: .else \
+2018-09-10 20:15:49.968527 +0000 build-apps: ..repo_basedir="qubes-src/linux-yum/r3.2"; \
+2018-09-10 20:15:49.968550 +0000 build-apps: .fi; \
+2018-09-10 20:15:49.968580 +0000 build-apps: .repos_to_update="$repos_to_update $repo_basedir"; \
+2018-09-10 20:15:49.968603 +0000 build-apps: done; \
+2018-09-10 20:15:49.968639 +0000 build-apps: for repo in `echo $repos_to_update|tr ' ' '\n'|sort|uniq`; do \
+2018-09-10 20:15:49.968665 +0000 build-apps: .[ -z "$repo" ] && continue; \
+2018-09-10 20:15:49.968695 +0000 build-apps: .[ -x "$repo/../update_repo-current-testing.sh" ] || continue; \
+2018-09-10 20:15:49.968722 +0000 build-apps: .(cd $repo/.. && ./update_repo-current-testing.sh r3.2); \
+2018-09-10 20:15:49.968744 +0000 build-apps: done
+2018-09-10 20:15:49.998354 +0000 build-apps: --> Processing repo: r3.2/vm/dists/buster-testing...
+2018-09-10 20:15:50.871873 +0000 build-apps: --> Processing repo: r3.2/vm/dists/stretch-testing...
+2018-09-10 20:15:51.786123 +0000 build-apps: Done.
+2018-09-10 20:15:51.806391 +0000 build-apps: ~/builder-r3.2/qubes-src/linux-deb ~/builder-r3.2/qubes-src/linux-deb
+2018-09-10 20:15:52.175991 +0000 build-apps: bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+2018-09-10 20:15:52.403664 +0000 build-apps: sending incremental file list
+2018-09-10 20:15:52.622418 +0000 build-apps: .d..t...... pool/main/q/qubes-u2f/
+2018-09-10 20:15:52.622468 +0000 build-apps: <f+++++++++ pool/main/q/qubes-u2f/qubes-u2f_1.2.2+deb10u1_all.deb
+2018-09-10 20:15:52.623782 +0000 build-apps: .         32,768  14%    0.00kB/s    0:00:00  .        228,108 100%  186.29MB/s    0:00:00 (xfr#1, to-chk=1/20)
+2018-09-10 20:15:52.623835 +0000 build-apps: <f+++++++++ pool/main/q/qubes-u2f/qubes-u2f_1.2.2+deb9u1_all.deb
+2018-09-10 20:15:52.626253 +0000 build-apps: .         32,768  14%   31.25MB/s    0:00:00  .        228,096 100%  217.53MB/s    0:00:00 (xfr#2, to-chk=0/20)
+2018-09-10 20:15:53.519767 +0000 build-apps: Syncing r3.2/vm/buster...
+2018-09-10 20:15:53.952057 +0000 build-apps: bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+2018-09-10 20:15:54.170919 +0000 build-apps: sending incremental file list
+2018-09-10 20:15:54.868100 +0000 build-apps: Syncing r3.2/vm/buster-testing...
+2018-09-10 20:15:55.292409 +0000 build-apps: bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+2018-09-10 20:15:55.515684 +0000 build-apps: sending incremental file list
+2018-09-10 20:15:55.738246 +0000 build-apps: .d..t...... buster-testing/
+2018-09-10 20:15:55.738309 +0000 build-apps: <f..t...... buster-testing/InRelease
+2018-09-10 20:15:55.738826 +0000 build-apps: .          2,505 100%    0.00kB/s    0:00:00  .          2,505 100%    0.00kB/s    0:00:00 (xfr#1, to-chk=10/12)
+2018-09-10 20:15:55.738864 +0000 build-apps: <f..t...... buster-testing/Release
+2018-09-10 20:15:55.739119 +0000 build-apps: .          1,623 100%    1.55MB/s    0:00:00  .          1,623 100%    1.55MB/s    0:00:00 (xfr#2, to-chk=9/12)
+2018-09-10 20:15:55.739155 +0000 build-apps: <f..t...... buster-testing/Release.gpg
+2018-09-10 20:15:55.739232 +0000 build-apps: .            833 100%  813.48kB/s    0:00:00  .            833 100%  813.48kB/s    0:00:00 (xfr#3, to-chk=8/12)
+2018-09-10 20:15:55.739274 +0000 build-apps: .d..t...... buster-testing/main/binary-amd64/
+2018-09-10 20:15:55.739306 +0000 build-apps: <f..t...... buster-testing/main/binary-amd64/Packages
+2018-09-10 20:15:55.739382 +0000 build-apps: .            700  15%  683.59kB/s    0:00:00  .          4,629 100%    4.41MB/s    0:00:00 (xfr#4, to-chk=4/12)
+2018-09-10 20:15:55.739426 +0000 build-apps: <f.st...... buster-testing/main/binary-amd64/Packages.gz
+2018-09-10 20:15:55.739481 +0000 build-apps: .          1,640 100%    1.56MB/s    0:00:00  .          1,640 100%    1.56MB/s    0:00:00 (xfr#5, to-chk=3/12)
+2018-09-10 20:15:56.423058 +0000 build-apps: Syncing r3.2/vm/stretch...
+2018-09-10 20:15:56.848554 +0000 build-apps: bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+2018-09-10 20:15:57.070706 +0000 build-apps: sending incremental file list
+2018-09-10 20:15:57.574226 +0000 build-apps: Syncing r3.2/vm/stretch-testing...
+2018-09-10 20:15:57.951809 +0000 build-apps: bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+2018-09-10 20:15:58.064551 +0000 build-apps: sending incremental file list
+2018-09-10 20:15:58.331703 +0000 build-apps: .d..t...... stretch-testing/
+2018-09-10 20:15:58.331760 +0000 build-apps: <f..t...... stretch-testing/InRelease
+2018-09-10 20:15:58.332725 +0000 build-apps: .          2,507 100%    0.00kB/s    0:00:00  .          2,507 100%    0.00kB/s    0:00:00 (xfr#1, to-chk=10/12)
+2018-09-10 20:15:58.332779 +0000 build-apps: <f..t...... stretch-testing/Release
+2018-09-10 20:15:58.332816 +0000 build-apps: .          1,625 100%    1.55MB/s    0:00:00  .          1,625 100%    1.55MB/s    0:00:00 (xfr#2, to-chk=9/12)
+2018-09-10 20:15:58.332846 +0000 build-apps: <f..t...... stretch-testing/Release.gpg
+2018-09-10 20:15:58.333031 +0000 build-apps: .            833 100%  813.48kB/s    0:00:00  .            833 100%  813.48kB/s    0:00:00 (xfr#3, to-chk=8/12)
+2018-09-10 20:15:58.333069 +0000 build-apps: .d..t...... stretch-testing/main/binary-amd64/
+2018-09-10 20:15:58.333101 +0000 build-apps: <f..t...... stretch-testing/main/binary-amd64/Packages
+2018-09-10 20:15:58.333189 +0000 build-apps: .            700  12%  683.59kB/s    0:00:00  .          5,517 100%    5.26MB/s    0:00:00 (xfr#4, to-chk=4/12)
+2018-09-10 20:15:58.333235 +0000 build-apps: <f.st...... stretch-testing/main/binary-amd64/Packages.gz
+2018-09-10 20:15:58.333583 +0000 build-apps: .          1,915 100%    1.83MB/s    0:00:00  .          1,915 100%    1.83MB/s    0:00:00 (xfr#5, to-chk=3/12)
+2018-09-10 20:15:58.854990 +0000 build-apps: ~/builder-r3.2/qubes-src/linux-deb
+2018-09-10 20:15:58.871444 +0000 build-apps: --> Processing repo: r3.2/current-testing/dom0/fc20...
+2018-09-10 20:15:59.643985 +0000 build-apps: --> Processing repo: r3.2/current-testing/dom0/fc23...
+2018-09-10 20:15:59.680275 +0000 build-apps: ERROR: There are unsigned RPM packages in r3.2/current-testing/dom0/fc23/rpm repo:
+2018-09-10 20:15:59.680335 +0000 build-apps: ---------------------------------------
+2018-09-10 20:15:59.706597 +0000 build-apps: r3.2/current-testing/dom0/fc23/rpm/qubes-u2f-dom0-1.2.0-1.fc23.noarch.rpm: digests SIGNATURES NOT OK
+2018-09-10 20:15:59.706644 +0000 build-apps: r3.2/current-testing/dom0/fc23/rpm/qubes-u2f-dom0-1.2.1-1.fc23.noarch.rpm: digests SIGNATURES NOT OK
+2018-09-10 20:15:59.706667 +0000 build-apps: r3.2/current-testing/dom0/fc23/rpm/qubes-u2f-dom0-1.2.2-1.fc23.noarch.rpm: digests SIGNATURES NOT OK
+2018-09-10 20:15:59.707090 +0000 build-apps: ---------------------------------------
+2018-09-10 20:15:59.707125 +0000 build-apps: Sign them before proceeding.
+2018-09-10 20:15:59.708897 +0000 build-apps: make: *** [Makefile:851: post-update-repo-current-testing] Error 1
+2018-09-10 20:15:59.710406 +0000 > closing log
