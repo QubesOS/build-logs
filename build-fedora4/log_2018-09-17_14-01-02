@@ -1,0 +1,847 @@
+2018-09-17 14:01:02.248163 +0000 > starting log
+2018-09-17 14:01:02.249408 +0000 build-fedora4: > starting build with log
+2018-09-17 14:01:02.249451 +0000 build-fedora4: >> make args: DISTS_VM= DIST_DOM0=fc25 BUILD_LOGS_URL= installer-qubes-os-dom0-fc25=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2018-09-17_13-43-59 GIT_URL_installer_qubes_os=https://github.com/QubesOS/qubes-installer-qubes-os sign-all update-repo-current-testing
+2018-09-17 14:01:02.249469 +0000 build-fedora4: >> MAKEFLAGS=
+2018-09-17 14:01:02.249482 +0000 build-fedora4: >> COMPONENTS=installer-qubes-os
+2018-09-17 14:01:02.249493 +0000 build-fedora4: >> DISTS_VM=
+2018-09-17 14:01:02.249504 +0000 build-fedora4: >> DIST_DOM0=
+2018-09-17 14:01:02.249518 +0000 build-fedora4: >> qubes-builder a7e9f4c58187e22dc9eaf635b00d009681929675
+2018-09-17 14:01:02.249533 +0000 build-fedora4: >> qubes-builder/qubes-src/installer-qubes-os 8ed5c0ae4cd453961887d00b1a6d7e7f740fae34
+2018-09-17 14:01:02.463420 +0000 build-fedora4:  M .gitignore
+2018-09-17 14:01:02.463461 +0000 build-fedora4:  M conf/qubes-kickstart.cfg
+2018-09-17 14:01:02.463477 +0000 build-fedora4: !! pkgs/fc25/anaconda.spec.list
+2018-09-17 14:01:02.463492 +0000 build-fedora4: !! pkgs/fc25/lorax-templates-qubes.spec.list
+2018-09-17 14:01:02.463507 +0000 build-fedora4: !! pkgs/fc25/lorax.spec.list
+2018-09-17 14:01:02.463522 +0000 build-fedora4: !! pkgs/fc25/noarch/lorax-templates-qubes-3.2.3-1.fc25.noarch.rpm
+2018-09-17 14:01:02.463535 +0000 build-fedora4: !! pkgs/fc25/noarch/lorax-templates-qubes-3.2.4-1.fc25.noarch.rpm
+2018-09-17 14:01:02.463549 +0000 build-fedora4: !! pkgs/fc25/noarch/lorax-templates-qubes-4.0.0-1.fc25.noarch.rpm
+2018-09-17 14:01:02.463562 +0000 build-fedora4: !! pkgs/fc25/noarch/lorax-templates-qubes-4.0.1-1.fc25.noarch.rpm
+2018-09-17 14:01:02.463575 +0000 build-fedora4: !! pkgs/fc25/noarch/lorax-templates-qubes-4.0.2-1.fc25.noarch.rpm
+2018-09-17 14:01:02.463588 +0000 build-fedora4: !! pkgs/fc25/noarch/lorax-templates-qubes-4.0.3-1.fc25.noarch.rpm
+2018-09-17 14:01:02.463601 +0000 build-fedora4: !! pkgs/fc25/noarch/pungi-4.1.14-2.fc25.noarch.rpm
+2018-09-17 14:01:02.463615 +0000 build-fedora4: !! pkgs/fc25/noarch/pungi-utils-4.1.14-2.fc25.noarch.rpm
+2018-09-17 14:01:02.463628 +0000 build-fedora4: !! pkgs/fc25/noarch/pykickstart-2.32-3.fc25.noarch.rpm
+2018-09-17 14:01:02.463641 +0000 build-fedora4: !! pkgs/fc25/noarch/pykickstart-2.32-4.fc25.noarch.rpm
+2018-09-17 14:01:02.463654 +0000 build-fedora4: !! pkgs/fc25/noarch/python-kickstart-2.32-3.fc25.noarch.rpm
+2018-09-17 14:01:02.463667 +0000 build-fedora4: !! pkgs/fc25/noarch/python-kickstart-2.32-4.fc25.noarch.rpm
+2018-09-17 14:01:02.463680 +0000 build-fedora4: !! pkgs/fc25/noarch/python3-blivet-2.1.6-4.fc25.noarch.rpm
+2018-09-17 14:01:02.463693 +0000 build-fedora4: !! pkgs/fc25/noarch/python3-blivet-2.1.6-5.fc25.noarch.rpm
+2018-09-17 14:01:02.463706 +0000 build-fedora4: !! pkgs/fc25/noarch/python3-kickstart-2.32-3.fc25.noarch.rpm
+2018-09-17 14:01:02.463737 +0000 build-fedora4: !! pkgs/fc25/noarch/python3-kickstart-2.32-4.fc25.noarch.rpm
+2018-09-17 14:01:02.463753 +0000 build-fedora4: !! pkgs/fc25/noarch/qubes-anaconda-addon-4.0.0-1.fc25.noarch.rpm
+2018-09-17 14:01:02.463766 +0000 build-fedora4: !! pkgs/fc25/noarch/qubes-anaconda-addon-4.0.1-1.fc25.noarch.rpm
+2018-09-17 14:01:02.463779 +0000 build-fedora4: !! pkgs/fc25/noarch/qubes-anaconda-addon-4.0.2-1.fc25.noarch.rpm
+2018-09-17 14:01:02.463793 +0000 build-fedora4: !! pkgs/fc25/noarch/qubes-anaconda-addon-4.0.3-1.fc25.noarch.rpm
+2018-09-17 14:01:02.463806 +0000 build-fedora4: !! pkgs/fc25/noarch/qubes-anaconda-addon-4.0.4-1.fc25.noarch.rpm
+2018-09-17 14:01:02.463819 +0000 build-fedora4: !! pkgs/fc25/noarch/qubes-anaconda-addon-4.0.5-1.fc25.noarch.rpm
+2018-09-17 14:01:02.463832 +0000 build-fedora4: !! pkgs/fc25/noarch/qubes-anaconda-addon-4.0.6-1.fc25.noarch.rpm
+2018-09-17 14:01:02.463845 +0000 build-fedora4: !! pkgs/fc25/noarch/qubes-anaconda-addon-4.0.7-1.fc25.noarch.rpm
+2018-09-17 14:01:02.463859 +0000 build-fedora4: !! pkgs/fc25/noarch/qubes-anaconda-addon-4.0.8-1.fc25.noarch.rpm
+2018-09-17 14:01:02.463887 +0000 build-fedora4: !! pkgs/fc25/noarch/qubes-dom0-dist-upgrade-2.0-2.noarch.rpm
+2018-09-17 14:01:02.463901 +0000 build-fedora4: !! pkgs/fc25/noarch/qubes-release-4.0-0.1.noarch.rpm
+2018-09-17 14:01:02.463914 +0000 build-fedora4: !! pkgs/fc25/noarch/qubes-release-4.0-0.2.noarch.rpm
+2018-09-17 14:01:02.463927 +0000 build-fedora4: !! pkgs/fc25/noarch/qubes-release-4.0-0.3.noarch.rpm
+2018-09-17 14:01:02.463939 +0000 build-fedora4: !! pkgs/fc25/noarch/qubes-release-4.0-0.4.noarch.rpm
+2018-09-17 14:01:02.463952 +0000 build-fedora4: !! pkgs/fc25/noarch/qubes-release-4.0-1.noarch.rpm
+2018-09-17 14:01:02.463964 +0000 build-fedora4: !! pkgs/fc25/noarch/qubes-release-4.0-2.noarch.rpm
+2018-09-17 14:01:02.463977 +0000 build-fedora4: !! pkgs/fc25/noarch/qubes-release-4.0-3.noarch.rpm
+2018-09-17 14:01:02.463989 +0000 build-fedora4: !! pkgs/fc25/noarch/qubes-release-4.0-4.noarch.rpm
+2018-09-17 14:01:02.464001 +0000 build-fedora4: !! pkgs/fc25/noarch/qubes-release-4.0-5.noarch.rpm
+2018-09-17 14:01:02.464014 +0000 build-fedora4: !! pkgs/fc25/noarch/qubes-release-notes-4.0-0.1.noarch.rpm
+2018-09-17 14:01:02.464027 +0000 build-fedora4: !! pkgs/fc25/noarch/qubes-release-notes-4.0-0.2.noarch.rpm
+2018-09-17 14:01:02.464040 +0000 build-fedora4: !! pkgs/fc25/noarch/qubes-release-notes-4.0-0.3.noarch.rpm
+2018-09-17 14:01:02.464052 +0000 build-fedora4: !! pkgs/fc25/noarch/qubes-release-notes-4.0-0.4.noarch.rpm
+2018-09-17 14:01:02.464065 +0000 build-fedora4: !! pkgs/fc25/noarch/qubes-release-notes-4.0-1.noarch.rpm
+2018-09-17 14:01:02.464077 +0000 build-fedora4: !! pkgs/fc25/noarch/qubes-release-notes-4.0-2.noarch.rpm
+2018-09-17 14:01:02.464090 +0000 build-fedora4: !! pkgs/fc25/noarch/qubes-release-notes-4.0-3.noarch.rpm
+2018-09-17 14:01:02.464102 +0000 build-fedora4: !! pkgs/fc25/noarch/qubes-release-notes-4.0-4.noarch.rpm
+2018-09-17 14:01:02.464115 +0000 build-fedora4: !! pkgs/fc25/noarch/qubes-release-notes-4.0-5.noarch.rpm
+2018-09-17 14:01:02.464126 +0000 build-fedora4: !! pkgs/fc25/pungi.spec.list
+2018-09-17 14:01:02.464137 +0000 build-fedora4: !! pkgs/fc25/pykickstart.spec.list
+2018-09-17 14:01:02.464149 +0000 build-fedora4: !! pkgs/fc25/python-blivet.spec.list
+2018-09-17 14:01:02.464162 +0000 build-fedora4: !! pkgs/fc25/qubes-anaconda-addon.spec.list
+2018-09-17 14:01:02.464174 +0000 build-fedora4: !! pkgs/fc25/qubes-dom0-dist-upgrade.spec.list
+2018-09-17 14:01:02.464186 +0000 build-fedora4: !! pkgs/fc25/qubes-release.spec.list
+2018-09-17 14:01:02.464199 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-25.20.9-10.fc25.x86_64.rpm
+2018-09-17 14:01:02.464211 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-25.20.9-11.fc25.x86_64.rpm
+2018-09-17 14:01:02.464224 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-25.20.9-12.fc25.x86_64.rpm
+2018-09-17 14:01:02.464236 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-25.20.9-13.fc25.x86_64.rpm
+2018-09-17 14:01:02.464249 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-25.20.9-5.fc25.x86_64.rpm
+2018-09-17 14:01:02.464261 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-25.20.9-6.fc25.x86_64.rpm
+2018-09-17 14:01:02.464274 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-25.20.9-7.fc25.x86_64.rpm
+2018-09-17 14:01:02.464286 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-25.20.9-8.fc25.x86_64.rpm
+2018-09-17 14:01:02.464299 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-25.20.9-9.fc25.x86_64.rpm
+2018-09-17 14:01:02.464312 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-core-25.20.9-10.fc25.x86_64.rpm
+2018-09-17 14:01:02.464325 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-core-25.20.9-11.fc25.x86_64.rpm
+2018-09-17 14:01:02.464337 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-core-25.20.9-12.fc25.x86_64.rpm
+2018-09-17 14:01:02.464350 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-core-25.20.9-13.fc25.x86_64.rpm
+2018-09-17 14:01:02.464363 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-core-25.20.9-5.fc25.x86_64.rpm
+2018-09-17 14:01:02.464376 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-core-25.20.9-6.fc25.x86_64.rpm
+2018-09-17 14:01:02.464388 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-core-25.20.9-7.fc25.x86_64.rpm
+2018-09-17 14:01:02.464408 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-core-25.20.9-8.fc25.x86_64.rpm
+2018-09-17 14:01:02.464422 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-core-25.20.9-9.fc25.x86_64.rpm
+2018-09-17 14:01:02.464436 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-debuginfo-25.20.9-13.fc25.x86_64.rpm
+2018-09-17 14:01:02.464460 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-dracut-25.20.9-10.fc25.x86_64.rpm
+2018-09-17 14:01:02.464474 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-dracut-25.20.9-11.fc25.x86_64.rpm
+2018-09-17 14:01:02.464487 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-dracut-25.20.9-12.fc25.x86_64.rpm
+2018-09-17 14:01:02.464500 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-dracut-25.20.9-13.fc25.x86_64.rpm
+2018-09-17 14:01:02.464513 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-dracut-25.20.9-5.fc25.x86_64.rpm
+2018-09-17 14:01:02.464526 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-dracut-25.20.9-6.fc25.x86_64.rpm
+2018-09-17 14:01:02.464539 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-dracut-25.20.9-7.fc25.x86_64.rpm
+2018-09-17 14:01:02.464552 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-dracut-25.20.9-8.fc25.x86_64.rpm
+2018-09-17 14:01:02.464565 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-dracut-25.20.9-9.fc25.x86_64.rpm
+2018-09-17 14:01:02.464578 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-gui-25.20.9-10.fc25.x86_64.rpm
+2018-09-17 14:01:02.464591 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-gui-25.20.9-11.fc25.x86_64.rpm
+2018-09-17 14:01:02.464603 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-gui-25.20.9-12.fc25.x86_64.rpm
+2018-09-17 14:01:02.464616 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-gui-25.20.9-13.fc25.x86_64.rpm
+2018-09-17 14:01:02.464629 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-gui-25.20.9-5.fc25.x86_64.rpm
+2018-09-17 14:01:02.464642 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-gui-25.20.9-6.fc25.x86_64.rpm
+2018-09-17 14:01:02.464654 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-gui-25.20.9-7.fc25.x86_64.rpm
+2018-09-17 14:01:02.464667 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-gui-25.20.9-8.fc25.x86_64.rpm
+2018-09-17 14:01:02.464680 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-gui-25.20.9-9.fc25.x86_64.rpm
+2018-09-17 14:01:02.464693 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-tui-25.20.9-10.fc25.x86_64.rpm
+2018-09-17 14:01:02.464706 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-tui-25.20.9-11.fc25.x86_64.rpm
+2018-09-17 14:01:02.464728 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-tui-25.20.9-12.fc25.x86_64.rpm
+2018-09-17 14:01:02.464742 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-tui-25.20.9-13.fc25.x86_64.rpm
+2018-09-17 14:01:02.464755 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-tui-25.20.9-5.fc25.x86_64.rpm
+2018-09-17 14:01:02.464768 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-tui-25.20.9-6.fc25.x86_64.rpm
+2018-09-17 14:01:02.464781 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-tui-25.20.9-7.fc25.x86_64.rpm
+2018-09-17 14:01:02.464794 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-tui-25.20.9-8.fc25.x86_64.rpm
+2018-09-17 14:01:02.464807 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-tui-25.20.9-9.fc25.x86_64.rpm
+2018-09-17 14:01:02.464820 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-widgets-25.20.9-10.fc25.x86_64.rpm
+2018-09-17 14:01:02.464833 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-widgets-25.20.9-11.fc25.x86_64.rpm
+2018-09-17 14:01:02.464846 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-widgets-25.20.9-12.fc25.x86_64.rpm
+2018-09-17 14:01:02.464859 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-widgets-25.20.9-13.fc25.x86_64.rpm
+2018-09-17 14:01:02.464872 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-widgets-25.20.9-5.fc25.x86_64.rpm
+2018-09-17 14:01:02.464887 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-widgets-25.20.9-6.fc25.x86_64.rpm
+2018-09-17 14:01:02.464900 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-widgets-25.20.9-7.fc25.x86_64.rpm
+2018-09-17 14:01:02.464919 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-widgets-25.20.9-8.fc25.x86_64.rpm
+2018-09-17 14:01:02.464933 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-widgets-25.20.9-9.fc25.x86_64.rpm
+2018-09-17 14:01:02.464947 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-widgets-devel-25.20.9-10.fc25.x86_64.rpm
+2018-09-17 14:01:02.464961 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-widgets-devel-25.20.9-11.fc25.x86_64.rpm
+2018-09-17 14:01:02.464975 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-widgets-devel-25.20.9-12.fc25.x86_64.rpm
+2018-09-17 14:01:02.464989 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-widgets-devel-25.20.9-13.fc25.x86_64.rpm
+2018-09-17 14:01:02.465002 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-widgets-devel-25.20.9-5.fc25.x86_64.rpm
+2018-09-17 14:01:02.465016 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-widgets-devel-25.20.9-6.fc25.x86_64.rpm
+2018-09-17 14:01:02.465029 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-widgets-devel-25.20.9-7.fc25.x86_64.rpm
+2018-09-17 14:01:02.465042 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-widgets-devel-25.20.9-8.fc25.x86_64.rpm
+2018-09-17 14:01:02.465056 +0000 build-fedora4: !! pkgs/fc25/x86_64/anaconda-widgets-devel-25.20.9-9.fc25.x86_64.rpm
+2018-09-17 14:01:02.465069 +0000 build-fedora4: !! pkgs/fc25/x86_64/lorax-25.19-1.fc25.x86_64.rpm
+2018-09-17 14:01:02.465082 +0000 build-fedora4: !! pkgs/fc25/x86_64/lorax-lmc-novirt-25.19-1.fc25.x86_64.rpm
+2018-09-17 14:01:02.465095 +0000 build-fedora4: !! pkgs/fc25/x86_64/lorax-lmc-virt-25.19-1.fc25.x86_64.rpm
+2018-09-17 14:01:02.465108 +0000 build-fedora4: !! pkgs/fc25/x86_64/lorax-templates-generic-25.19-1.fc25.x86_64.rpm
+2018-09-17 14:01:02.465125 +0000 build-fedora4: !! yum/dom0-updates/repodata/23ef8d2203f4996c69d32ebf2b629ace3df6ebc325d0d76e1f17edabe6d1c25e-filelists.sqlite.bz2
+2018-09-17 14:01:02.465141 +0000 build-fedora4: !! yum/dom0-updates/repodata/401dc19bda88c82c403423fb835844d64345f7e95f5b9835888189c03834cc93-filelists.xml.gz
+2018-09-17 14:01:02.465158 +0000 build-fedora4: !! yum/dom0-updates/repodata/5bae54de8720bbcf63d6fe4eb44fbf0a666789ac72b8d1414ca2c856e9e520ed-primary.sqlite.bz2
+2018-09-17 14:01:02.465174 +0000 build-fedora4: !! yum/dom0-updates/repodata/6bf9672d0862e8ef8b8ff05a2fd0208a922b1f5978e6589d87944c88259cb670-other.xml.gz
+2018-09-17 14:01:02.465190 +0000 build-fedora4: !! yum/dom0-updates/repodata/dabe2ce5481d23de1f4f52bdcfee0f9af98316c9e0de2ce8123adeefa0dd08b9-primary.xml.gz
+2018-09-17 14:01:02.465206 +0000 build-fedora4: !! yum/dom0-updates/repodata/f4f1203fb8f05d30abd519840ebe1dd35ee3ad9fab071caa8d004f81d3e99bf3-other.sqlite.bz2
+2018-09-17 14:01:02.465218 +0000 build-fedora4: !! yum/dom0-updates/repodata/repomd.xml
+2018-09-17 14:01:02.465234 +0000 build-fedora4: !! yum/installer/repodata/23ef8d2203f4996c69d32ebf2b629ace3df6ebc325d0d76e1f17edabe6d1c25e-filelists.sqlite.bz2
+2018-09-17 14:01:02.465250 +0000 build-fedora4: !! yum/installer/repodata/401dc19bda88c82c403423fb835844d64345f7e95f5b9835888189c03834cc93-filelists.xml.gz
+2018-09-17 14:01:02.465272 +0000 build-fedora4: !! yum/installer/repodata/5bae54de8720bbcf63d6fe4eb44fbf0a666789ac72b8d1414ca2c856e9e520ed-primary.sqlite.bz2
+2018-09-17 14:01:02.465289 +0000 build-fedora4: !! yum/installer/repodata/6bf9672d0862e8ef8b8ff05a2fd0208a922b1f5978e6589d87944c88259cb670-other.xml.gz
+2018-09-17 14:01:02.465305 +0000 build-fedora4: !! yum/installer/repodata/dabe2ce5481d23de1f4f52bdcfee0f9af98316c9e0de2ce8123adeefa0dd08b9-primary.xml.gz
+2018-09-17 14:01:02.465321 +0000 build-fedora4: !! yum/installer/repodata/f4f1203fb8f05d30abd519840ebe1dd35ee3ad9fab071caa8d004f81d3e99bf3-other.sqlite.bz2
+2018-09-17 14:01:02.465333 +0000 build-fedora4: !! yum/installer/repodata/repomd.xml
+2018-09-17 14:01:02.465349 +0000 build-fedora4: !! yum/qubes-dom0/repodata/23ef8d2203f4996c69d32ebf2b629ace3df6ebc325d0d76e1f17edabe6d1c25e-filelists.sqlite.bz2
+2018-09-17 14:01:02.465365 +0000 build-fedora4: !! yum/qubes-dom0/repodata/401dc19bda88c82c403423fb835844d64345f7e95f5b9835888189c03834cc93-filelists.xml.gz
+2018-09-17 14:01:02.465388 +0000 build-fedora4: !! yum/qubes-dom0/repodata/5bae54de8720bbcf63d6fe4eb44fbf0a666789ac72b8d1414ca2c856e9e520ed-primary.sqlite.bz2
+2018-09-17 14:01:02.465404 +0000 build-fedora4: !! yum/qubes-dom0/repodata/6bf9672d0862e8ef8b8ff05a2fd0208a922b1f5978e6589d87944c88259cb670-other.xml.gz
+2018-09-17 14:01:02.465421 +0000 build-fedora4: !! yum/qubes-dom0/repodata/dabe2ce5481d23de1f4f52bdcfee0f9af98316c9e0de2ce8123adeefa0dd08b9-primary.xml.gz
+2018-09-17 14:01:02.465436 +0000 build-fedora4: !! yum/qubes-dom0/repodata/f4f1203fb8f05d30abd519840ebe1dd35ee3ad9fab071caa8d004f81d3e99bf3-other.sqlite.bz2
+2018-09-17 14:01:02.465448 +0000 build-fedora4: !! yum/qubes-dom0/repodata/repomd.xml
+2018-09-17 14:01:02.465461 +0000 build-fedora4: !! yum/qubes-dom0/rpm/anaconda-25.20.9-12.fc25.x86_64.rpm
+2018-09-17 14:01:02.465474 +0000 build-fedora4: !! yum/qubes-dom0/rpm/anaconda-core-25.20.9-12.fc25.x86_64.rpm
+2018-09-17 14:01:02.465487 +0000 build-fedora4: !! yum/qubes-dom0/rpm/anaconda-dracut-25.20.9-12.fc25.x86_64.rpm
+2018-09-17 14:01:02.465501 +0000 build-fedora4: !! yum/qubes-dom0/rpm/anaconda-gui-25.20.9-12.fc25.x86_64.rpm
+2018-09-17 14:01:02.465514 +0000 build-fedora4: !! yum/qubes-dom0/rpm/anaconda-tui-25.20.9-12.fc25.x86_64.rpm
+2018-09-17 14:01:02.465527 +0000 build-fedora4: !! yum/qubes-dom0/rpm/anaconda-widgets-25.20.9-12.fc25.x86_64.rpm
+2018-09-17 14:01:02.465541 +0000 build-fedora4: !! yum/qubes-dom0/rpm/anaconda-widgets-devel-25.20.9-12.fc25.x86_64.rpm
+2018-09-17 14:01:02.465553 +0000 build-fedora4: !! yum/qubes-dom0/rpm/lorax-25.19-1.fc25.x86_64.rpm
+2018-09-17 14:01:02.465567 +0000 build-fedora4: !! yum/qubes-dom0/rpm/lorax-lmc-novirt-25.19-1.fc25.x86_64.rpm
+2018-09-17 14:01:02.465580 +0000 build-fedora4: !! yum/qubes-dom0/rpm/lorax-lmc-virt-25.19-1.fc25.x86_64.rpm
+2018-09-17 14:01:02.465593 +0000 build-fedora4: !! yum/qubes-dom0/rpm/lorax-templates-generic-25.19-1.fc25.x86_64.rpm
+2018-09-17 14:01:02.465607 +0000 build-fedora4: !! yum/qubes-dom0/rpm/lorax-templates-qubes-4.0.2-1.fc25.noarch.rpm
+2018-09-17 14:01:02.465620 +0000 build-fedora4: !! yum/qubes-dom0/rpm/pungi-4.1.14-2.fc25.noarch.rpm
+2018-09-17 14:01:02.465633 +0000 build-fedora4: !! yum/qubes-dom0/rpm/pungi-utils-4.1.14-2.fc25.noarch.rpm
+2018-09-17 14:01:02.465645 +0000 build-fedora4: !! yum/qubes-dom0/rpm/pykickstart-2.32-4.fc25.noarch.rpm
+2018-09-17 14:01:02.465658 +0000 build-fedora4: !! yum/qubes-dom0/rpm/python-kickstart-2.32-4.fc25.noarch.rpm
+2018-09-17 14:01:02.465671 +0000 build-fedora4: !! yum/qubes-dom0/rpm/python3-blivet-2.1.6-5.fc25.noarch.rpm
+2018-09-17 14:01:02.465684 +0000 build-fedora4: !! yum/qubes-dom0/rpm/python3-kickstart-2.32-4.fc25.noarch.rpm
+2018-09-17 14:01:02.465697 +0000 build-fedora4: !! yum/qubes-dom0/rpm/qubes-anaconda-addon-4.0.6-1.fc25.noarch.rpm
+2018-09-17 14:01:02.465711 +0000 build-fedora4: !! yum/qubes-dom0/rpm/qubes-core-dom0-linux-4.0.14-1.fc25.x86_64.rpm
+2018-09-17 14:01:02.465735 +0000 build-fedora4: !! yum/qubes-dom0/rpm/qubes-core-dom0-linux-debuginfo-4.0.14-1.fc25.x86_64.rpm
+2018-09-17 14:01:02.465750 +0000 build-fedora4: !! yum/qubes-dom0/rpm/qubes-core-dom0-linux-kernel-install-4.0.14-1.fc25.x86_64.rpm
+2018-09-17 14:01:02.465765 +0000 build-fedora4: !! yum/qubes-dom0/rpm/qubes-core-dom0-vaio-fixes-1.6.1-1.fc25.x86_64.rpm
+2018-09-17 14:01:02.465778 +0000 build-fedora4: !! yum/qubes-dom0/rpm/qubes-dom0-dist-upgrade-2.0-2.noarch.rpm
+2018-09-17 14:01:02.465791 +0000 build-fedora4: !! yum/qubes-dom0/rpm/qubes-release-4.0-1.noarch.rpm
+2018-09-17 14:01:02.465804 +0000 build-fedora4: !! yum/qubes-dom0/rpm/qubes-release-notes-4.0-1.noarch.rpm
+2018-09-17 14:01:02.465818 +0000 build-fedora4: !! yum/qubes-dom0/rpm/qubes-template-debian-9-4.0.0-201803270258.noarch.rpm
+2018-09-17 14:01:02.465832 +0000 build-fedora4: !! yum/qubes-dom0/rpm/qubes-template-fedora-26-4.0.0-201803270324.noarch.rpm
+2018-09-17 14:01:02.465846 +0000 build-fedora4: !! yum/qubes-dom0/rpm/qubes-template-whonix-gw-4.0.0-201803270426.noarch.rpm
+2018-09-17 14:01:02.465860 +0000 build-fedora4: !! yum/qubes-dom0/rpm/qubes-template-whonix-ws-4.0.0-201803270504.noarch.rpm
+2018-09-17 14:01:02.491216 +0000 build-fedora4: e36f0e259cb312dd6cc8f95d7c1e0b90f46b1aa7c574d296f91487eaf3ed660692b2db5178ae40232cfbab44cbb7737b062839c67ca219bc4d0189baf64c618b  .gitignore
+2018-09-17 14:01:02.492119 +0000 build-fedora4: 447bc4bab4b87e0c1c64671b6ff893af211031b3ff1224a4048f839ad3c76db370165bcbcf00d448a658a7a1674613609cc95c00456c05206e2e28e1257611ff  conf/qubes-kickstart.cfg
+2018-09-17 14:01:02.492478 +0000 build-fedora4: 202c38691bd8ba4c2d540578e3c5ee27c8f07449b2a59fc9c960fb0e9660a57812edfc0d8d32b20f5c82ff9ae8563929615fbe79b35e896c86cd916ee13ee918  pkgs/fc25/anaconda.spec.list
+2018-09-17 14:01:02.492856 +0000 build-fedora4: ec19668f8bbae67288b8bcced51ee74dbc3341d1b061371d6f1efb9f93d7b389a3e06e1bcf914b3a3232ae3ce7de7d93e1fcdc1a562cc08337f79088fad38b30  pkgs/fc25/lorax-templates-qubes.spec.list
+2018-09-17 14:01:02.493411 +0000 build-fedora4: 824e81f86c6eb7b46ae297f2923ed84050d56ff79d072f677d5ef970f5aa247b7a7c520ec3b45c7ea64bfd7af4927956744b132dcdb0b9c22463baf3356d94a6  pkgs/fc25/lorax.spec.list
+2018-09-17 14:01:02.494952 +0000 build-fedora4: bdf91133a3001c2c35f9eed0ba00ca73c76e069f77b0cfd997c6e8cc5e2a2ef0504504a8c7ce469e78a92bcab0a84dabe222f462fe2e93c39161d0b52d2d93b3  pkgs/fc25/noarch/lorax-templates-qubes-3.2.3-1.fc25.noarch.rpm
+2018-09-17 14:01:02.496622 +0000 build-fedora4: 262cf6f7947b8ddb764ee924f170dec8e1c835ef1df0b7e698e33d720e815a2c3722888cb6a7bb4702434dde54720f9ef600e8fa0e525e6c253beb43cfa1d8ea  pkgs/fc25/noarch/lorax-templates-qubes-3.2.4-1.fc25.noarch.rpm
+2018-09-17 14:01:02.498063 +0000 build-fedora4: 459718fd97dc8a2e51653428070c7dc957fde38e54ec6f28080b5422b4f92340a07d88247891e90ebda09b5107945a7e968b59b98544f477c153c8941a432788  pkgs/fc25/noarch/lorax-templates-qubes-4.0.0-1.fc25.noarch.rpm
+2018-09-17 14:01:02.499412 +0000 build-fedora4: 77051be16c711b98b2ec39f38f2d58d49bb4491fabb6c6a1a9c911720fa95eed977c83091dda43f95192bd830e855c6655fff4f99a00556485cec1921580dc74  pkgs/fc25/noarch/lorax-templates-qubes-4.0.1-1.fc25.noarch.rpm
+2018-09-17 14:01:02.500776 +0000 build-fedora4: 0d08eb485c63629771737e9f8d29b31846ade9c8b80d8ce84192566b598c290d12fb4fec769200b06bc53f691579b13d2933758c6d7839db4d636d641788e799  pkgs/fc25/noarch/lorax-templates-qubes-4.0.2-1.fc25.noarch.rpm
+2018-09-17 14:01:02.501286 +0000 build-fedora4: ee542b66aa510b20ab3cfd3f5d7821642d2ba5120b696858217e2c1ed1fc73f9d991cb7638f8c7cb833bdcea3d16b910d3b5082dc012af1ebd9df8e1521d4c55  pkgs/fc25/noarch/lorax-templates-qubes-4.0.3-1.fc25.noarch.rpm
+2018-09-17 14:01:02.503494 +0000 build-fedora4: 87eddb218be4a4bc3b2d3609bb2f5024769c456aff60ff0fbfa6feffe12247d0384d1acafeda1015a22f59ca3c843636343887d5ab1eec46d6c49e423faacc7b  pkgs/fc25/noarch/pungi-4.1.14-2.fc25.noarch.rpm
+2018-09-17 14:01:02.504057 +0000 build-fedora4: 6c30120bb80d38e76ddc4958ed3efbcc3afe88c2bbd7b6940ba76d619ae7b01bbc7cfb5e49dfd152c71a0d2c8c7a663c18a38121da9338eb6429c161b00b6dcb  pkgs/fc25/noarch/pungi-utils-4.1.14-2.fc25.noarch.rpm
+2018-09-17 14:01:02.505874 +0000 build-fedora4: b749c7728de9b0f05dd507b7a9a373a76b737f8d1df992fc3be6b92fc3bedd12c89214a3fed2da8e9ae4878e11909bb53da6c4c88fdfbc3ed9ba975392792641  pkgs/fc25/noarch/pykickstart-2.32-3.fc25.noarch.rpm
+2018-09-17 14:01:02.506664 +0000 build-fedora4: 5824e105bd11e0b37c2c80b73c5c70ef166de59350fa068f4415078e60909d5f75eb973328eab16c62152b2a02a6d3515d0540f2b2267933c71f64b2221a0a68  pkgs/fc25/noarch/pykickstart-2.32-4.fc25.noarch.rpm
+2018-09-17 14:01:02.509762 +0000 build-fedora4: 3b2a3cca7bf1bdbdba041f4b0753e68597ac1b2b5781237bf92e713e5ab010f8867f752f4537f93bdd9f7f6c53397d940d650b1b027dd69d9ab045bae2ae6fae  pkgs/fc25/noarch/python-kickstart-2.32-3.fc25.noarch.rpm
+2018-09-17 14:01:02.511207 +0000 build-fedora4: 92aa762f4c6762257d6210fd0fa3e280ff687a8e44b0187695a130a61f41b6119c7da0d8bed67fb7c600dd758ebe64c74aa9230381a3aa18f73218c9d4297882  pkgs/fc25/noarch/python-kickstart-2.32-4.fc25.noarch.rpm
+2018-09-17 14:01:02.517692 +0000 build-fedora4: f6258509795a32760dc9863de7a3ad907f4bad98616685e50bf49afb1fc1d8d0dca45753799c57dba86231736dc1958130e0665fb2d66077027849dfb9a62f54  pkgs/fc25/noarch/python3-blivet-2.1.6-4.fc25.noarch.rpm
+2018-09-17 14:01:02.521391 +0000 build-fedora4: caa485f1f17ccf60ee5c47073e37a4b8568dd16201aa2cc4c0b073305145008021c1423889ef3af18fbfebc6e5dedaae2cefac4b7588dc6f328d872f802c435a  pkgs/fc25/noarch/python3-blivet-2.1.6-5.fc25.noarch.rpm
+2018-09-17 14:01:02.524908 +0000 build-fedora4: 8c7bca4b35abeaac6d4268e6be45a41e34b0b863c1dec818d4baba18e4ac3957148daad7a8839465efa362ba35a5013a5a19cdef49de53c9aa74b56affa4032c  pkgs/fc25/noarch/python3-kickstart-2.32-3.fc25.noarch.rpm
+2018-09-17 14:01:02.526564 +0000 build-fedora4: c1041f112f0b615dbfbdca6826331e3a4ef41a74f4d976d634249dea63ebe38f40bcc9ab85d67dc10328182d4386a7e1ef062c11ff9bed758c50cc9ba441d755  pkgs/fc25/noarch/python3-kickstart-2.32-4.fc25.noarch.rpm
+2018-09-17 14:01:02.528259 +0000 build-fedora4: 6b9fe6ac310a303bb45320dd7a73c9eb6961bfeb33772981d5d53402d7d67a2d99679ef38ba8eeae09b91d84e3e05d68bc7aacc0266f0ef01c2a980efb1049ca  pkgs/fc25/noarch/qubes-anaconda-addon-4.0.0-1.fc25.noarch.rpm
+2018-09-17 14:01:02.535759 +0000 build-fedora4: effe73453e7438b1875ffbfb129d158e1dca925dcfe324901901f81c956fb8e980973f82e6947f6bd5b71e6c484a9bcd767592b92f4973b4a5cc414e32f198a5  pkgs/fc25/noarch/qubes-anaconda-addon-4.0.1-1.fc25.noarch.rpm
+2018-09-17 14:01:02.537287 +0000 build-fedora4: bfa16aa62f2218d834c4d7e95a706f1b1195b593f3795db73a3137bc339cca5196d9714e3f9efb4dde4983c548cafc2f1102755a5f844a3c21f9ad360e985981  pkgs/fc25/noarch/qubes-anaconda-addon-4.0.2-1.fc25.noarch.rpm
+2018-09-17 14:01:02.538448 +0000 build-fedora4: bd2be3bab9826144c8084ee35c0fcd55e0c9c1785ebd0e2f332e73898dee886f9271e2d6070400e602f9460745221baa36c1be8f25d303042dd679b402918dc6  pkgs/fc25/noarch/qubes-anaconda-addon-4.0.3-1.fc25.noarch.rpm
+2018-09-17 14:01:02.539532 +0000 build-fedora4: da2e46656c6f18fd34842ee83a6bbb3b004f7a528157e52f0a12fa9d2b05ab889f715c53f6a51531fdaca3399e5eb73896763dfc83be3255b6d351376536afb5  pkgs/fc25/noarch/qubes-anaconda-addon-4.0.4-1.fc25.noarch.rpm
+2018-09-17 14:01:02.540918 +0000 build-fedora4: ff5390e862b1c72318275c91a177685432c766b1853523f4ca645e5646242d3e81bbec3bb3d387a1806e875c96346cd7325aed2ca5017c52720b6014ef826834  pkgs/fc25/noarch/qubes-anaconda-addon-4.0.5-1.fc25.noarch.rpm
+2018-09-17 14:01:02.542085 +0000 build-fedora4: 9a175a92bf97b6a4411c40dc453b2408e71ec150c9a8f41b14167136b0ae4e5263eb86c829c1d7d0db5ab854ebe5a369ca7f3586d4970819d7c71abe72d4a42c  pkgs/fc25/noarch/qubes-anaconda-addon-4.0.6-1.fc25.noarch.rpm
+2018-09-17 14:01:02.543178 +0000 build-fedora4: a82b068d8a8e51e0b2c27c8a66312e0eca8944d07a1341a9fb450f75cb7da64037fb8a7400ef64694e115323563283eec965e224e240b971dd5be41980f9e08b  pkgs/fc25/noarch/qubes-anaconda-addon-4.0.7-1.fc25.noarch.rpm
+2018-09-17 14:01:02.543461 +0000 build-fedora4: 195e75e7d66465fe7cdd0b4345ed175e114abd0edcb28fa813a258370c53d7abe53a5a8c6d23689206acfa2a5b76ca6ea1b6e3eb725ba2e5a2fc96b4c1f48b0b  pkgs/fc25/noarch/qubes-anaconda-addon-4.0.8-1.fc25.noarch.rpm
+2018-09-17 14:01:02.543503 +0000 build-fedora4: 96091a932e9d260d2c668a411fdd16a65ed17b03c7d733cee82d845baa2f94ebec5f2895007657609efb12dbdbce142a4464683a8fea57109c3ea2cd89d68708  pkgs/fc25/noarch/qubes-dom0-dist-upgrade-2.0-2.noarch.rpm
+2018-09-17 14:01:02.548505 +0000 build-fedora4: 4823b9d0fb9559d810f0bcc02b422c3fa4c9d222061cc26b88c417b11913f85794c12c7c64b5229f64b3c19e729dc0a2e5d312c658aea0eb9c5142437c67c665  pkgs/fc25/noarch/qubes-release-4.0-0.1.noarch.rpm
+2018-09-17 14:01:02.550078 +0000 build-fedora4: 7e5e2aecfb4626fc515da7c8268c1eb93eb8342b2b01924a6606aedbef39ed0492b8a8abacd9c972771882876526b8fe5059699a1003b02a17025b5c180c63de  pkgs/fc25/noarch/qubes-release-4.0-0.2.noarch.rpm
+2018-09-17 14:01:02.551523 +0000 build-fedora4: 021765a1879a435e4a25635940836db692ff4d22da391265ae25c7a9e888b1efcb8bd1ebdd900bae5114997935777fd3eb993eb6875f1f0f9ca587f70f0b760e  pkgs/fc25/noarch/qubes-release-4.0-0.3.noarch.rpm
+2018-09-17 14:01:02.553013 +0000 build-fedora4: c22fe978bda4b62db438b88d275a210370ad379fdfcd1e1c46a5431918ff0d254243563fd7a77be8e9e4500d9f4263252e5722f451be4466d848ffd8eed6597c  pkgs/fc25/noarch/qubes-release-4.0-0.4.noarch.rpm
+2018-09-17 14:01:02.554538 +0000 build-fedora4: 5d27a4a4801e28d3fe8b5b3976e323f9dd28b407eaa604c851dfe4b16aef0b39a5c2758e750cfa32acc8f930c27873fc7656dd1122fc7056bb302f153647e062  pkgs/fc25/noarch/qubes-release-4.0-1.noarch.rpm
+2018-09-17 14:01:02.555903 +0000 build-fedora4: 420c21dceb0d5ed2b2f97ce30be6f22cd0d95f397c3e8ef3d63e5e3e4f64ceb4fc4da2be8c826971007a37f15398b10a13bc3e3f28064407aba15528343da5da  pkgs/fc25/noarch/qubes-release-4.0-2.noarch.rpm
+2018-09-17 14:01:02.556990 +0000 build-fedora4: c3be924a640bef0332a9da35c9b32586986b6574d32d92df6a202231c21d5dea26947de44be5c3b125ea96efd836bb472b0156d008db731602e7474faa401f96  pkgs/fc25/noarch/qubes-release-4.0-3.noarch.rpm
+2018-09-17 14:01:02.558599 +0000 build-fedora4: 4b12d60cc23f0753f53ad0100aff2ba6529f8983b5179cd7ef86f4b063678bdd63fc7bb5e09b49165e58c44660ef3ba979be866c808744e0d970209013913181  pkgs/fc25/noarch/qubes-release-4.0-4.noarch.rpm
+2018-09-17 14:01:02.558646 +0000 build-fedora4: 5b63fffe14343ad2c2f9b188f227a9463b14b3ef38de132b0686b6cb765de8726d2ceb65ff6ba3d416aea314d4b1f0ea887f40cca50f5a5c084565cedde3ddbb  pkgs/fc25/noarch/qubes-release-4.0-5.noarch.rpm
+2018-09-17 14:01:02.559349 +0000 build-fedora4: b3a43b931c7b24287674bb922c6bb27157bdfd73455593f0cb6f398949533dd113e0efb71f06ec67a1454e60e898e4f21c8fd73d8c8df7ec8ba5a4503a2af005  pkgs/fc25/noarch/qubes-release-notes-4.0-0.1.noarch.rpm
+2018-09-17 14:01:02.559955 +0000 build-fedora4: 5e9252034ac9dc78d785a862ca7e431b79719086284dfcfd0fffa774f6a3e000463e443140af97b8d1c36aa4eb58eab01cd664b27629761b9d7a4d1d598fe69d  pkgs/fc25/noarch/qubes-release-notes-4.0-0.2.noarch.rpm
+2018-09-17 14:01:02.560898 +0000 build-fedora4: e4f3401406141d9ea2e1fb2e09af1696379aa58cd7cb2c77e435050d4d1085db1eef870258581735190ac6548e2a52c8035df8667eedd0b3cc2b78bd9b6d37eb  pkgs/fc25/noarch/qubes-release-notes-4.0-0.3.noarch.rpm
+2018-09-17 14:01:02.561578 +0000 build-fedora4: 8ad58341f301c5f5f71abdfdc274d86a74f4defaad0451c4b0943e0dedc6d587022022cad7eead61d22a4e276bdc767f2fd3a1960b066f564545818ecd7f605b  pkgs/fc25/noarch/qubes-release-notes-4.0-0.4.noarch.rpm
+2018-09-17 14:01:02.562451 +0000 build-fedora4: a8ce98a69bbc6febe85b03a312ebc4f8861bee97a7ff57b8155d704d3f23009570f196891b7b88493d85ac23c4e46542ae9c3dcb6297f02db1a79583fad693cc  pkgs/fc25/noarch/qubes-release-notes-4.0-1.noarch.rpm
+2018-09-17 14:01:02.564640 +0000 build-fedora4: e7863a1a28956335305e42b9f327c4fd851eb1d81d4e87d8060caa24656b3074dbba949e34dec116fe39e3cf01d8ef185d049ae69530e1c6e7ecf8bc23c545d2  pkgs/fc25/noarch/qubes-release-notes-4.0-2.noarch.rpm
+2018-09-17 14:01:02.564690 +0000 build-fedora4: 2ba8a2c76164b66f8ce22e17037488c0ede7ea97d272c8152e229c8051f57de29450e26d9b468bef71ffac1983c0250c2d07ac7e6fa036f259c52efd057e7ffa  pkgs/fc25/noarch/qubes-release-notes-4.0-3.noarch.rpm
+2018-09-17 14:01:02.564728 +0000 build-fedora4: d22bf003aeddc6d9c013277d137ec4d4034109df5174da66d5403fb2ca64f5ad38b00dfdd266d67fc097efe5a102ee2658ce7da41565af3c473fc03c5915e957  pkgs/fc25/noarch/qubes-release-notes-4.0-4.noarch.rpm
+2018-09-17 14:01:02.564752 +0000 build-fedora4: 549939117c9e7363b6551b49bf21a04c2c0195a04a3995dabeff5710461a74f10e87eb36e63bf6887445ffa4642b612cbbaed3f8f23e48cf1047c88b38a20814  pkgs/fc25/noarch/qubes-release-notes-4.0-5.noarch.rpm
+2018-09-17 14:01:02.564773 +0000 build-fedora4: 9e0a49ab2be109ea4247c697218111e04c53358cb9cde947b0b9548fd21a41c199858002749ef91641a00fc239c87500886d72564addeadd969ed20720682713  pkgs/fc25/pungi.spec.list
+2018-09-17 14:01:02.564793 +0000 build-fedora4: 44d29dc0dd2dc0f3b5cb4a0b589e38d2f9485c7dbe325239beaa984680d7eb684f71172fa46483184fbc9d0aac20bc2a316c879e355aa108adc124d36414d93b  pkgs/fc25/pykickstart.spec.list
+2018-09-17 14:01:02.564813 +0000 build-fedora4: fc04e2bee307f91413eef7ddbb001af80570b85a7fa9e9b0a875a4834ffff8bb3171561e717bb8681370fc5f11fe350db9786e270d48e29faa01209950eb9a10  pkgs/fc25/python-blivet.spec.list
+2018-09-17 14:01:02.564833 +0000 build-fedora4: 62a9b1764a8cda1c84ba72400c1810ba41d49891e197607d65c67b7e914adcde5a93276937d6306b9887706116b0b6d307b20e30730683ef8a0a5292a0d2fe91  pkgs/fc25/qubes-anaconda-addon.spec.list
+2018-09-17 14:01:02.564854 +0000 build-fedora4: 681cc0ff2efb49ce8a389717f550e348fe91494d8055dd293b431371fb5ce070f563d8aff527ba6af4cfc0bffc85779db7b2b6bb4a3278e991f381d3e4827c6b  pkgs/fc25/qubes-dom0-dist-upgrade.spec.list
+2018-09-17 14:01:02.564890 +0000 build-fedora4: d8004d66025499a317091f86ff39ed7374cda1eaf3a166b70c6da4364c9e718e4b96d970a79e3db4609301f7a8ef17272dc1b37afe311e67a29b89b0563fe896  pkgs/fc25/qubes-release.spec.list
+2018-09-17 14:01:02.566596 +0000 build-fedora4: cd008f67f117012d91a60a1b3f834e5af6c9e4d3f3c69c04bc4984daf3ee4fe39bb2f7c26457eaa96b8e9e472a40c5471cf016edb16a2407563a1ce23c7cc758  pkgs/fc25/x86_64/anaconda-25.20.9-10.fc25.x86_64.rpm
+2018-09-17 14:01:02.568807 +0000 build-fedora4: d55da6eb1c0943104464ac72bd1a603eb27adf830b71dffb2326d923240ae52f133fb770a93bc8254e2f54e59f39f19b5fd057c5911029df4d10993042b071fb  pkgs/fc25/x86_64/anaconda-25.20.9-11.fc25.x86_64.rpm
+2018-09-17 14:01:02.570659 +0000 build-fedora4: 1e01563340f8f014e1bb032d3fc3dc3587a45408ca7916a307ab420b8fab76f032e015e3f0bbe5fbf5364c4139e996a5d1b1a60c4158d8608926cec58bbd5095  pkgs/fc25/x86_64/anaconda-25.20.9-12.fc25.x86_64.rpm
+2018-09-17 14:01:02.570707 +0000 build-fedora4: 73425ea2cb0e92f7165c3ff78ee44b5d9d33e081e3d92ce85c1697ddad524f618a9fea361ad4df6386331c2b4edaad8c147cb5cdaf61952ad67f6e7b381c3c78  pkgs/fc25/x86_64/anaconda-25.20.9-13.fc25.x86_64.rpm
+2018-09-17 14:01:02.572607 +0000 build-fedora4: 0afbf3189dc9b12b8970db6710e73b1edd65c525408ea7d8f662dc8ccc07ba6fb9eb69872751edf7f41fecd5555c6f033eb4e41ead23e4929bed839a9136a7ba  pkgs/fc25/x86_64/anaconda-25.20.9-5.fc25.x86_64.rpm
+2018-09-17 14:01:02.574247 +0000 build-fedora4: d1be9397a92a5ee28bd8d5d49d6f690659abc37bc381f999508c4be3890d969afae5ab98c1094fe63ebbcf1d3fbe7fdfca1776e1c852cc9cad8220eb37736ea1  pkgs/fc25/x86_64/anaconda-25.20.9-6.fc25.x86_64.rpm
+2018-09-17 14:01:02.576004 +0000 build-fedora4: d147eae5acad44df177adbf96486b36275b34f3d553acc767d32378e30ca1902c4328e711cf315ee1de1a9c5322866f2fd4111b9a96a4af13c7caa7c09a1e451  pkgs/fc25/x86_64/anaconda-25.20.9-7.fc25.x86_64.rpm
+2018-09-17 14:01:02.577680 +0000 build-fedora4: 9ef9a943dee1d29248747f398a87a2dd967178d176e1c2b96b23365dbb5cf2be491754e20d2df2e2ce68aab0596ea7a83af18243c4aa56de262216738d52298f  pkgs/fc25/x86_64/anaconda-25.20.9-8.fc25.x86_64.rpm
+2018-09-17 14:01:02.579693 +0000 build-fedora4: 699802b94efd1484c70f0a6b027797984575b8d18a3734b32b6c078ce44da8e8e95de837dbb1935e9c47058d705b4405130d21364fe44139e2c1bb25a5d5e9c8  pkgs/fc25/x86_64/anaconda-25.20.9-9.fc25.x86_64.rpm
+2018-09-17 14:01:02.584355 +0000 build-fedora4: 5615c01da9f00be5e894ce7e8cb0886f8b94a00e4117ef839d60e86014c2925d530d6bbc8b559d049506ca1d5ffe712e57f82600e23a7f2f4047f9e1b7caacdf  pkgs/fc25/x86_64/anaconda-core-25.20.9-10.fc25.x86_64.rpm
+2018-09-17 14:01:02.589627 +0000 build-fedora4: 2c9159ef4a0031420520e09d4ee109380b9e0c3ef0cb983b4ff18e6820296851d11683eb6d5eb1195fbd975623ba85ebdae26f869ab58543a691a0c8fbf7573c  pkgs/fc25/x86_64/anaconda-core-25.20.9-11.fc25.x86_64.rpm
+2018-09-17 14:01:02.597095 +0000 build-fedora4: 691ac4d6e6d84db558d3d16ab147a88f162fca4fb1c2f629cfdb830781b4990a8fce1bfd5535fcf3ff5f8b6aea25b1ba64cf6daec1998629bfa00e4110e05792  pkgs/fc25/x86_64/anaconda-core-25.20.9-12.fc25.x86_64.rpm
+2018-09-17 14:01:02.597145 +0000 build-fedora4: 4521c8815acf59ec16367bf124524665f22ca77939960f66cadf5413585d748b8c257cbd832361c0c8a7c82b73ae09572dde649b4312cb57f57e2556aeb3695e  pkgs/fc25/x86_64/anaconda-core-25.20.9-13.fc25.x86_64.rpm
+2018-09-17 14:01:02.602443 +0000 build-fedora4: becbf67244bb08ed2986e1efb8cc27293cd6752ffdb98f7223fb22b07504df0cad2ea4047aa9e46d59ba8bcdcb858b982f82e0ed1b684447257fea9700676da6  pkgs/fc25/x86_64/anaconda-core-25.20.9-5.fc25.x86_64.rpm
+2018-09-17 14:01:02.607303 +0000 build-fedora4: 8ee9f26c3c45c541634fea8d9bae86a48f06371195696a827cd4b848b65230fddb73c2835cbc4405251bdc6011fa9edbe66c5d99ee7c5e58f53acdb384dedc10  pkgs/fc25/x86_64/anaconda-core-25.20.9-6.fc25.x86_64.rpm
+2018-09-17 14:01:02.612746 +0000 build-fedora4: 17bc0d1392bb5bd8322a5cf932e8920ee88ec92f6497ea0fc11c90f49c9f859ed71fc3c93c576be4ef84471fad0f7b2ab22e6189716692c0ba0011736f0af58c  pkgs/fc25/x86_64/anaconda-core-25.20.9-7.fc25.x86_64.rpm
+2018-09-17 14:01:02.617986 +0000 build-fedora4: 397cacedb2dab61f17d3a4007bb8f158f217ff774cfd62994b565637f213a5a11acb104a255fa0117ee5c1e4a6ff9f513b2a5ac63c3ca5131b56e8ab0b381969  pkgs/fc25/x86_64/anaconda-core-25.20.9-8.fc25.x86_64.rpm
+2018-09-17 14:01:02.623612 +0000 build-fedora4: 1d2eed25f388a060d3983b7759c4fd4565c91645ba6e5bbf72679d9738a1d3d96b0d1397330e0b85ef046ba1566704bbc9c99af6ce97dae22ee13bdf6d40abb9  pkgs/fc25/x86_64/anaconda-core-25.20.9-9.fc25.x86_64.rpm
+2018-09-17 14:01:02.624109 +0000 build-fedora4: d069e605ede56a810fcf02b0341a6e3d3c7a5a2451023052570374b17c942b2ee1ae7dbf5cf1953b2f240264e4527905201a1db9a6fe0b483342fde9251f83b1  pkgs/fc25/x86_64/anaconda-debuginfo-25.20.9-13.fc25.x86_64.rpm
+2018-09-17 14:01:02.626252 +0000 build-fedora4: 308c863d490299be284902418e725072c570ec3b140e5767d0c2f44c67d41b8a32865dd58969bee6e01d57a2a08d449136ed5ec0ad2d76bb3334172a62aa3b30  pkgs/fc25/x86_64/anaconda-dracut-25.20.9-10.fc25.x86_64.rpm
+2018-09-17 14:01:02.628491 +0000 build-fedora4: 4960382af606d965f56956e986497c58708902a97a87d5ad2d2ba53b6cd767cc29d28dc18803fddbc77e759d3670a2acb6e45650672972f360835a5e96f0bdb1  pkgs/fc25/x86_64/anaconda-dracut-25.20.9-11.fc25.x86_64.rpm
+2018-09-17 14:01:02.630477 +0000 build-fedora4: 77ed3b265f13ba7d130286f80f5eb7716fec0b295bb597938a18ecb7af16ac801cae0df785bbd35e8245a0650a7c3a71ccd75f11b3a3f83f9078d9da4eccf34f  pkgs/fc25/x86_64/anaconda-dracut-25.20.9-12.fc25.x86_64.rpm
+2018-09-17 14:01:02.630715 +0000 build-fedora4: 1fe485b17a0735e5ba955a823fe006e31001752b94916c3c8f7d1e487878a898e91b1cc3656d6fd9bfe72af322fd2087127c991d08037634c82304b2b8f00820  pkgs/fc25/x86_64/anaconda-dracut-25.20.9-13.fc25.x86_64.rpm
+2018-09-17 14:01:02.632165 +0000 build-fedora4: d63bd4b804ee58210154a246ea187ccbacdf51c42f2fc0c725318a0080abab324cc140bf680c96779b5d6145f0ea143cc8d2d9e9561f10ba294babb1d13f3be9  pkgs/fc25/x86_64/anaconda-dracut-25.20.9-5.fc25.x86_64.rpm
+2018-09-17 14:01:02.634370 +0000 build-fedora4: a26d11136ed4ca7c5cea2f8ca91eb80c34753648f717b79587d12134383fe79c90719e1394c7353d71c0140e2ce85d62463d2b2c8d376fc0c42acea3b41096ef  pkgs/fc25/x86_64/anaconda-dracut-25.20.9-6.fc25.x86_64.rpm
+2018-09-17 14:01:02.637043 +0000 build-fedora4: 46787030e5e2d5193cd412b49d9e9f14f0dfdbd7a37530233915d67448e46bb044d6ccab937fa09703f5f7e93b78ee1ea5d503df9de757b525e823fbeb1aac13  pkgs/fc25/x86_64/anaconda-dracut-25.20.9-7.fc25.x86_64.rpm
+2018-09-17 14:01:02.639621 +0000 build-fedora4: 4bd2ead1ed641ac1a2301d5f939bd873ae5a9d3fcf7ae1c3b8813cd761df6c129ea2da35a04dda9fa34e73cdd1e822c9b9875a4b4e69def868d2e0ad2f06f7c0  pkgs/fc25/x86_64/anaconda-dracut-25.20.9-8.fc25.x86_64.rpm
+2018-09-17 14:01:02.641760 +0000 build-fedora4: e9a8b8b5e07b7012e77950615539c71b3235674db03ec3457b3513b0d3185b00eca2e99a61ce4d36b5c07c6d7865160d1a6edb818d5566c51890740acd2f19d7  pkgs/fc25/x86_64/anaconda-dracut-25.20.9-9.fc25.x86_64.rpm
+2018-09-17 14:01:02.644838 +0000 build-fedora4: 9adb1e0e73b7b7a71d7b8f0d103306f7b91e97ac725e1e0b37c0248dd680f111aec64db5fb5eac60d9b55dc37f349ae005f9de44d774608a1fbad4a44f3b35aa  pkgs/fc25/x86_64/anaconda-gui-25.20.9-10.fc25.x86_64.rpm
+2018-09-17 14:01:02.648845 +0000 build-fedora4: bb30355913946a84659e98171d7cdbd833d2099f75a23cfc888ef2d31501ff2df732b3687448a4d2911f00f2f2db684575d87ea5729fd14d2c0dcdb1ed766b73  pkgs/fc25/x86_64/anaconda-gui-25.20.9-11.fc25.x86_64.rpm
+2018-09-17 14:01:02.652507 +0000 build-fedora4: 9c319b2fc0e93012a19f9780f690a853a79e7b89a1f8f3b0fc65940a39f79da89b4bd2e54d8070b77e318221f5486332f22a63f65b9f261e40c45a26db8618a6  pkgs/fc25/x86_64/anaconda-gui-25.20.9-12.fc25.x86_64.rpm
+2018-09-17 14:01:02.653987 +0000 build-fedora4: 3a6b726dc65a2e89bc79865530fb9410eaf81dcd0f2e8a7dab457aab0195b0ff3412a6011cb1c063f5533e5d3b0ba6e1281bedc22cfca7e6d806ceddbccc5c6d  pkgs/fc25/x86_64/anaconda-gui-25.20.9-13.fc25.x86_64.rpm
+2018-09-17 14:01:02.657616 +0000 build-fedora4: 3330d31f4fd632df70221dde434d60e07b2a6715a14756ab73502c1e37455f83f43f2445cbbbf1a4f1e9a5af57660dddc6d4a8c5d43a38d6c0cc67ae5e0fdda0  pkgs/fc25/x86_64/anaconda-gui-25.20.9-5.fc25.x86_64.rpm
+2018-09-17 14:01:02.661039 +0000 build-fedora4: 530b4781ea071e6f7518fb8d69f328f15d419d04ec87eb4f2b2421495213b5a4f9c3853782acb31757dfec83dccdce85da113bd9104dd1f69a91147c2b3d08e8  pkgs/fc25/x86_64/anaconda-gui-25.20.9-6.fc25.x86_64.rpm
+2018-09-17 14:01:02.665285 +0000 build-fedora4: a7751a19dd5ebbaa7618266d88b0d02c40aff4d600cf7c44cc97a514b9ede4eb19e0d0fc1873783f9f7719664d87e09763b20afc43f8142ad94b903d3de1eea6  pkgs/fc25/x86_64/anaconda-gui-25.20.9-7.fc25.x86_64.rpm
+2018-09-17 14:01:02.668388 +0000 build-fedora4: 3ceea9a068959f8bce57bff20f1df3a3406f924a60b608a84210b29f23f5e0d08ce55de0b0639d8f10f470d6a5fb2857aa9a22a3f28382e90ea27cb62a67fee6  pkgs/fc25/x86_64/anaconda-gui-25.20.9-8.fc25.x86_64.rpm
+2018-09-17 14:01:02.672008 +0000 build-fedora4: fd36c2f9bf04189d1d5b38dfdc91f05d2db8bf1366cc6ca0bcd6d9e6d3cdb344345fb738ba4bcef7d12b49a981183b4d0120824456a7eb0757f07a72cc2b2d75  pkgs/fc25/x86_64/anaconda-gui-25.20.9-9.fc25.x86_64.rpm
+2018-09-17 14:01:02.674799 +0000 build-fedora4: 7429cf8e224a1864ce1c0abf9771860ac3c06f967e53b2f245f0f295d6b3c09c78d01af6f5ec31e8df2d96dc1fdec70f4d75ee5cd1b82f8c80d4e83a25a93091  pkgs/fc25/x86_64/anaconda-tui-25.20.9-10.fc25.x86_64.rpm
+2018-09-17 14:01:02.675817 +0000 build-fedora4: e75f4679d9ba1474e817a933812136a25a6556f296f414f7c9cf3b5c92c43e1bea5adc59fe1647c39bdbe75e33a263fc3c6c2dd23dd92d1cdcdc903549d3affe  pkgs/fc25/x86_64/anaconda-tui-25.20.9-11.fc25.x86_64.rpm
+2018-09-17 14:01:02.678188 +0000 build-fedora4: 3f52b364a91cf8c1ad08ade1cc657816089aa035b640e748f7e5ab05bdc8588f086075db6c9c044ed7fe45071b9e8cfac0c08dc044ad9ae58319339ac89fcd2e  pkgs/fc25/x86_64/anaconda-tui-25.20.9-12.fc25.x86_64.rpm
+2018-09-17 14:01:02.679148 +0000 build-fedora4: 9b2c358e0a46f63cf7802ad1744d27fa39275750b385723d6d9cf5e54f6614700adcde5d154643338d6ddda466e41965fddbb52d4e6f4a89016a6d068ac3514a  pkgs/fc25/x86_64/anaconda-tui-25.20.9-13.fc25.x86_64.rpm
+2018-09-17 14:01:02.680167 +0000 build-fedora4: aeb917788975cd6327d7302a80573e3c3d25f3a2385a06a24ccc2e948b1318dc6a98ec15c3e5dd879f1bb120b1144cac731393ec01800b4ba8b38c1fbfec1eca  pkgs/fc25/x86_64/anaconda-tui-25.20.9-5.fc25.x86_64.rpm
+2018-09-17 14:01:02.682898 +0000 build-fedora4: 22a93678ac718f1a44efc5b61d71a92f3bd8fecf3d311a6e6f0b852e419cc36384e6eacb9d370ee1189e862581019e37138a2395e75de054d2d1d4fb7f68c8f8  pkgs/fc25/x86_64/anaconda-tui-25.20.9-6.fc25.x86_64.rpm
+2018-09-17 14:01:02.686271 +0000 build-fedora4: e04fc5bde160beb6c803e5403fe99b23e04f8a2c9ffbc33f72eb38638765c627105300d3b656e267ea71a0c706b9bc5755dbabfe1d1c7252712b568c5d9a5234  pkgs/fc25/x86_64/anaconda-tui-25.20.9-7.fc25.x86_64.rpm
+2018-09-17 14:01:02.688923 +0000 build-fedora4: de4a9e2a968f10ad323287d9cbd5eb39e683d9c1b5dd415837b517b8b4be07b2b586df9d160ef97a805300952dbfb7769c5bfcaa59d55194e5aff7415b374a56  pkgs/fc25/x86_64/anaconda-tui-25.20.9-8.fc25.x86_64.rpm
+2018-09-17 14:01:02.691283 +0000 build-fedora4: 875ad9b390eda8dce4612b3b2c8590a0e525012c42bf8c968d6b48c06f758d401776630b9bf0e8d0f25707ea3e4254b231eab9a7b8b81a1297acb7882010d603  pkgs/fc25/x86_64/anaconda-tui-25.20.9-9.fc25.x86_64.rpm
+2018-09-17 14:01:02.694074 +0000 build-fedora4: b7e605ac6ca3287ba4f3483ad642b999f97e4f1e95c2397f12006457690ebe9e86159b1c14c49b039bfea7fa8c761cce8b99b8bded71c29e951b81f60d5ff4b7  pkgs/fc25/x86_64/anaconda-widgets-25.20.9-10.fc25.x86_64.rpm
+2018-09-17 14:01:02.695112 +0000 build-fedora4: 4b4bb6444eadb529225a84f593b61f47fd72ffcd7e2fa2475a877c1b6d1fccd5c25df403c5c7043760c99ddffdb6c64f4c288c81158135de39680ca628d5a9bd  pkgs/fc25/x86_64/anaconda-widgets-25.20.9-11.fc25.x86_64.rpm
+2018-09-17 14:01:02.697009 +0000 build-fedora4: f62cbc2de1a4709f1afb95f543cda12325e417dd5232b5b548795f7d3a779150a06f558a96254ab01e4834f44bbd95c90aecb94b5c3d2c9f39c2a4a55e418679  pkgs/fc25/x86_64/anaconda-widgets-25.20.9-12.fc25.x86_64.rpm
+2018-09-17 14:01:02.697067 +0000 build-fedora4: 756b0e50a95bdceca0e7f5d6fa9d3d8d240bdbc925252aa807bf34b9b8cf66bb0e84e05d97c9f30644a737d3a5adce69402a796ad70b77162f64dbf08552fa03  pkgs/fc25/x86_64/anaconda-widgets-25.20.9-13.fc25.x86_64.rpm
+2018-09-17 14:01:02.698532 +0000 build-fedora4: 65205b70e03820735693ad6c01a1b8acbdd7174199826424e00cb60394d5b3ceb3a89ca171c49b31feab2b9d0a649694afd736a1fd62d4ed24d11a681aa38164  pkgs/fc25/x86_64/anaconda-widgets-25.20.9-5.fc25.x86_64.rpm
+2018-09-17 14:01:02.700909 +0000 build-fedora4: 8b6615dcdd699b3e9f75eb0928e057ad6c1d313ed064af9226db3ec3364c022bab8dca75d0b30826e203cd743bdb0abafec9a20204a685efd9c102cccc1d90f8  pkgs/fc25/x86_64/anaconda-widgets-25.20.9-6.fc25.x86_64.rpm
+2018-09-17 14:01:02.703249 +0000 build-fedora4: 3c8f0b9bd1beda41ff2bb21722f09af953ef6e1f2213548dd2bb2ad169c36284022539eb25488fb3175f8e3767043f424ddc0b38749d176781b8a28ec52229eb  pkgs/fc25/x86_64/anaconda-widgets-25.20.9-7.fc25.x86_64.rpm
+2018-09-17 14:01:02.705436 +0000 build-fedora4: 57e5b806aae7f3ba28d1a098f4e5cf5f4d9f1367cbf525dabd9ee380e6ff819eeb6933b7636f3bc31c1a945933b693095345294aa5e2ce1108fd1a0e39a3ccfc  pkgs/fc25/x86_64/anaconda-widgets-25.20.9-8.fc25.x86_64.rpm
+2018-09-17 14:01:02.707340 +0000 build-fedora4: 7a7e9b592d51249653d42ee980665bc599e47e05d8d64f872dc636d806545f50d568b49d0b5122005021c33d2a9e5b8c4de5a1d5b62bc34a168f82d8b495a4f4  pkgs/fc25/x86_64/anaconda-widgets-25.20.9-9.fc25.x86_64.rpm
+2018-09-17 14:01:02.709408 +0000 build-fedora4: eddb7e3caaf0b38d8581b0961efe0c16e45bc7ead06c87975d24f03456a49a1f1bc1838142d343d1d0f1ca8360f8dbf10ef0f873e8d92496609b1a80cb76aa6d  pkgs/fc25/x86_64/anaconda-widgets-devel-25.20.9-10.fc25.x86_64.rpm
+2018-09-17 14:01:02.710573 +0000 build-fedora4: 5707d62338836b29ac4a84f041f451a2c8544a1d0952a11e132a6302ab6aa9a47a3a5246e0465688e91d5774a8bcd77db051ce797c2308ed3a8216bc5cfba46a  pkgs/fc25/x86_64/anaconda-widgets-devel-25.20.9-11.fc25.x86_64.rpm
+2018-09-17 14:01:02.712721 +0000 build-fedora4: e8fc26f75a0e3a0660998e42150fde982680978a462c2fc84ba8ad671359573ebf393e47e23d96131e7beb95cc39b2b647e9a30915b1d4de591cf028e7eae435  pkgs/fc25/x86_64/anaconda-widgets-devel-25.20.9-12.fc25.x86_64.rpm
+2018-09-17 14:01:02.713374 +0000 build-fedora4: 7675cd382e27d4b0402675b0c9299f83dc2cdb1d241a949c6d11c2304eb69ed1a55a8182914fbc717c60c3a11d7e5a969c790d1e6c3347eb276923dff7301647  pkgs/fc25/x86_64/anaconda-widgets-devel-25.20.9-13.fc25.x86_64.rpm
+2018-09-17 14:01:02.715764 +0000 build-fedora4: 51a6e9eac33980566f17b0a089221ef41b0d6517aaab3fd2c7e94507790c4714a5bce916d52fcbd39a5f76fe26e1b47fe3facc91038b32e0258534d736232745  pkgs/fc25/x86_64/anaconda-widgets-devel-25.20.9-5.fc25.x86_64.rpm
+2018-09-17 14:01:02.717678 +0000 build-fedora4: ddd34298641d390c58dc45a546c0972369353272b90fb70322dc64a9e5a982f672facbac78b0878e0ef089ed128ca5709a781ee5b28cb098adee40acbe8d623c  pkgs/fc25/x86_64/anaconda-widgets-devel-25.20.9-6.fc25.x86_64.rpm
+2018-09-17 14:01:02.719744 +0000 build-fedora4: 50544239935aa56d9de970a81ba1650ad49372e1aa7e208b53c8039f675796a8175921b218ab1dbf86b671a43030e83b52d7f3adf9ab8fe08a1c7629fef7f7cb  pkgs/fc25/x86_64/anaconda-widgets-devel-25.20.9-7.fc25.x86_64.rpm
+2018-09-17 14:01:02.721777 +0000 build-fedora4: 7ff86d4b1d63c25e534b8173638b8bfa043bfbc055bc608dfd6c0768322fd1c109971b9800c76412e4fac938fd583d8759f15ef87f4ca0c254de53d44b4cc755  pkgs/fc25/x86_64/anaconda-widgets-devel-25.20.9-8.fc25.x86_64.rpm
+2018-09-17 14:01:02.722838 +0000 build-fedora4: 61acf8eebf7cdc5f9ab5b60219fa950bf9e953fb34ef8ab613f5d60820d4a8fa3cc927aa4e3c75590bee915c7e07c270cb1b93d198184a41f9f8d480d1eed013  pkgs/fc25/x86_64/anaconda-widgets-devel-25.20.9-9.fc25.x86_64.rpm
+2018-09-17 14:01:02.723522 +0000 build-fedora4: 2aefca2902119a0dffb338e980ebb28e1adb0360e86e8676100c3cdb6ca1c4c3eb91e12eb298e3e65eca24cffa2a7e5c56b8286666f2dc5a29abb0b305dd90fc  pkgs/fc25/x86_64/lorax-25.19-1.fc25.x86_64.rpm
+2018-09-17 14:01:02.723769 +0000 build-fedora4: 100a379672d536b16d7f51cdd8e3b622431f2fa90e0c12707fdbd19e5004806dc107ba3313fed15988ce52b92d129ad21f7b2c8a264bd5e2e9ccee692e66290b  pkgs/fc25/x86_64/lorax-lmc-novirt-25.19-1.fc25.x86_64.rpm
+2018-09-17 14:01:02.725001 +0000 build-fedora4: 77137e91178fbd262406600a6380ff04fa993562af7d70e18fa9da8f9ba58c5acadb283d014ad2bb61b2090a5802735993e2670484accb317a10381006a7e226  pkgs/fc25/x86_64/lorax-lmc-virt-25.19-1.fc25.x86_64.rpm
+2018-09-17 14:01:02.725044 +0000 build-fedora4: b4f006fe198cf97cf2e9ea895ad700952125b7670760b0e6fe8165c5c36aed9fa0713234e9ac7262dffed300c06945dabb44e108f9d6cd401ccddacab6d098ed  pkgs/fc25/x86_64/lorax-templates-generic-25.19-1.fc25.x86_64.rpm
+2018-09-17 14:01:02.725087 +0000 build-fedora4: 31a91b964761e9fd044a2975e52430fdd98f2c7a4d87eb8ffa586e7dd410129fc2ce1266ea2a5fa3e115f8d6eb88e7c15572ed47fd9d6b9840ca717f8b581354  yum/dom0-updates/repodata/23ef8d2203f4996c69d32ebf2b629ace3df6ebc325d0d76e1f17edabe6d1c25e-filelists.sqlite.bz2
+2018-09-17 14:01:02.725274 +0000 build-fedora4: ac12f94d95ffbf04b905c484fa56a227f1fcab0c7c172c5811532adb543c1590f9ca98eb5ac4568e0dab4716b31eb3561d8fa7f0d1231e098fc83a8287e3f9aa  yum/dom0-updates/repodata/401dc19bda88c82c403423fb835844d64345f7e95f5b9835888189c03834cc93-filelists.xml.gz
+2018-09-17 14:01:02.725307 +0000 build-fedora4: 77fd2b7d7540b2919cc3d7d27996c249fcdc895d613750bf45f476745f2866b8df68a650b28f0530fd301244c043b79720dd6db86d3068d27dd8aa0a960db87c  yum/dom0-updates/repodata/5bae54de8720bbcf63d6fe4eb44fbf0a666789ac72b8d1414ca2c856e9e520ed-primary.sqlite.bz2
+2018-09-17 14:01:02.725409 +0000 build-fedora4: 6706ca83149aac60503295bfe34fddde30675f01d3b0e40be3e32bff4e3adf347d7cb5f7fa22c66388e0554fd0a731cb133c7657a1a3500403be3e9f7341f700  yum/dom0-updates/repodata/6bf9672d0862e8ef8b8ff05a2fd0208a922b1f5978e6589d87944c88259cb670-other.xml.gz
+2018-09-17 14:01:02.726453 +0000 build-fedora4: b542ae69f5bc14b308efae24dd61b3de5de1761125af8c7f3206c162055d42803a39a59bad8c866c21d85692ae7c24d5b4f358bd0aec6fefeec6c718bb909b82  yum/dom0-updates/repodata/dabe2ce5481d23de1f4f52bdcfee0f9af98316c9e0de2ce8123adeefa0dd08b9-primary.xml.gz
+2018-09-17 14:01:02.726647 +0000 build-fedora4: dd174cc18613059b0f51ee11e4cfc2009c7a4c6e9e1dc71062dbbbe8a4e75d515acc77ca6dd3680c3d826f0cf1f4b348765e7f61bcf83c995226c7106c65cb6c  yum/dom0-updates/repodata/f4f1203fb8f05d30abd519840ebe1dd35ee3ad9fab071caa8d004f81d3e99bf3-other.sqlite.bz2
+2018-09-17 14:01:02.726815 +0000 build-fedora4: 6d2d5a0e207e1088d1f9ce99fb4b5db32772efc3e59b1ca5b2e3b4ba1138d3cca83a213a23ed49455dd8ae9f76147c7b35957d28352e0157216c76ee611f6c6d  yum/dom0-updates/repodata/repomd.xml
+2018-09-17 14:01:02.727044 +0000 build-fedora4: 31a91b964761e9fd044a2975e52430fdd98f2c7a4d87eb8ffa586e7dd410129fc2ce1266ea2a5fa3e115f8d6eb88e7c15572ed47fd9d6b9840ca717f8b581354  yum/installer/repodata/23ef8d2203f4996c69d32ebf2b629ace3df6ebc325d0d76e1f17edabe6d1c25e-filelists.sqlite.bz2
+2018-09-17 14:01:02.727092 +0000 build-fedora4: ac12f94d95ffbf04b905c484fa56a227f1fcab0c7c172c5811532adb543c1590f9ca98eb5ac4568e0dab4716b31eb3561d8fa7f0d1231e098fc83a8287e3f9aa  yum/installer/repodata/401dc19bda88c82c403423fb835844d64345f7e95f5b9835888189c03834cc93-filelists.xml.gz
+2018-09-17 14:01:02.728464 +0000 build-fedora4: 77fd2b7d7540b2919cc3d7d27996c249fcdc895d613750bf45f476745f2866b8df68a650b28f0530fd301244c043b79720dd6db86d3068d27dd8aa0a960db87c  yum/installer/repodata/5bae54de8720bbcf63d6fe4eb44fbf0a666789ac72b8d1414ca2c856e9e520ed-primary.sqlite.bz2
+2018-09-17 14:01:02.728513 +0000 build-fedora4: 6706ca83149aac60503295bfe34fddde30675f01d3b0e40be3e32bff4e3adf347d7cb5f7fa22c66388e0554fd0a731cb133c7657a1a3500403be3e9f7341f700  yum/installer/repodata/6bf9672d0862e8ef8b8ff05a2fd0208a922b1f5978e6589d87944c88259cb670-other.xml.gz
+2018-09-17 14:01:02.728541 +0000 build-fedora4: b542ae69f5bc14b308efae24dd61b3de5de1761125af8c7f3206c162055d42803a39a59bad8c866c21d85692ae7c24d5b4f358bd0aec6fefeec6c718bb909b82  yum/installer/repodata/dabe2ce5481d23de1f4f52bdcfee0f9af98316c9e0de2ce8123adeefa0dd08b9-primary.xml.gz
+2018-09-17 14:01:02.728567 +0000 build-fedora4: dd174cc18613059b0f51ee11e4cfc2009c7a4c6e9e1dc71062dbbbe8a4e75d515acc77ca6dd3680c3d826f0cf1f4b348765e7f61bcf83c995226c7106c65cb6c  yum/installer/repodata/f4f1203fb8f05d30abd519840ebe1dd35ee3ad9fab071caa8d004f81d3e99bf3-other.sqlite.bz2
+2018-09-17 14:01:02.728588 +0000 build-fedora4: 0383d3c63373013e576c0b4df8dd1ed499bb0fea974f1ac6136e83e2f1aa2a942cb1f0244f29ea804a224f355045e80622e7c7cef08f9e13a6bcab6a61618b3c  yum/installer/repodata/repomd.xml
+2018-09-17 14:01:02.728835 +0000 build-fedora4: 31a91b964761e9fd044a2975e52430fdd98f2c7a4d87eb8ffa586e7dd410129fc2ce1266ea2a5fa3e115f8d6eb88e7c15572ed47fd9d6b9840ca717f8b581354  yum/qubes-dom0/repodata/23ef8d2203f4996c69d32ebf2b629ace3df6ebc325d0d76e1f17edabe6d1c25e-filelists.sqlite.bz2
+2018-09-17 14:01:02.729058 +0000 build-fedora4: ac12f94d95ffbf04b905c484fa56a227f1fcab0c7c172c5811532adb543c1590f9ca98eb5ac4568e0dab4716b31eb3561d8fa7f0d1231e098fc83a8287e3f9aa  yum/qubes-dom0/repodata/401dc19bda88c82c403423fb835844d64345f7e95f5b9835888189c03834cc93-filelists.xml.gz
+2018-09-17 14:01:02.729157 +0000 build-fedora4: 77fd2b7d7540b2919cc3d7d27996c249fcdc895d613750bf45f476745f2866b8df68a650b28f0530fd301244c043b79720dd6db86d3068d27dd8aa0a960db87c  yum/qubes-dom0/repodata/5bae54de8720bbcf63d6fe4eb44fbf0a666789ac72b8d1414ca2c856e9e520ed-primary.sqlite.bz2
+2018-09-17 14:01:02.729311 +0000 build-fedora4: 6706ca83149aac60503295bfe34fddde30675f01d3b0e40be3e32bff4e3adf347d7cb5f7fa22c66388e0554fd0a731cb133c7657a1a3500403be3e9f7341f700  yum/qubes-dom0/repodata/6bf9672d0862e8ef8b8ff05a2fd0208a922b1f5978e6589d87944c88259cb670-other.xml.gz
+2018-09-17 14:01:02.729592 +0000 build-fedora4: b542ae69f5bc14b308efae24dd61b3de5de1761125af8c7f3206c162055d42803a39a59bad8c866c21d85692ae7c24d5b4f358bd0aec6fefeec6c718bb909b82  yum/qubes-dom0/repodata/dabe2ce5481d23de1f4f52bdcfee0f9af98316c9e0de2ce8123adeefa0dd08b9-primary.xml.gz
+2018-09-17 14:01:02.729737 +0000 build-fedora4: dd174cc18613059b0f51ee11e4cfc2009c7a4c6e9e1dc71062dbbbe8a4e75d515acc77ca6dd3680c3d826f0cf1f4b348765e7f61bcf83c995226c7106c65cb6c  yum/qubes-dom0/repodata/f4f1203fb8f05d30abd519840ebe1dd35ee3ad9fab071caa8d004f81d3e99bf3-other.sqlite.bz2
+2018-09-17 14:01:02.729970 +0000 build-fedora4: 0383d3c63373013e576c0b4df8dd1ed499bb0fea974f1ac6136e83e2f1aa2a942cb1f0244f29ea804a224f355045e80622e7c7cef08f9e13a6bcab6a61618b3c  yum/qubes-dom0/repodata/repomd.xml
+2018-09-17 14:01:02.731739 +0000 build-fedora4: 9d53a1aa4d7d57da514b7b21787d5688b3e5be8024e56d6925d9ab147779c196c4feb4b758eb3c4c71cb575cc9a9922da0bd52073d772fc9a3ae6b9cc81d0d2e  yum/qubes-dom0/rpm/anaconda-25.20.9-12.fc25.x86_64.rpm
+2018-09-17 14:01:02.737023 +0000 build-fedora4: 7a4d227ab0f67a448543f5102a128cce2f70a8aa3ec729dedc92929e30f1564a3e769a7156642eeb1a52f5fa2f3d04631ab67740dac13426c125d8d199ff3bda  yum/qubes-dom0/rpm/anaconda-core-25.20.9-12.fc25.x86_64.rpm
+2018-09-17 14:01:02.739288 +0000 build-fedora4: 70115a7347114acb206b95fd32d6625d5cea1cad1bb30b01a4f80d9cb68cf432a54cb36649ca39ed99975375118283077484cc094fdca869e1f542d60d4b66cb  yum/qubes-dom0/rpm/anaconda-dracut-25.20.9-12.fc25.x86_64.rpm
+2018-09-17 14:01:02.742747 +0000 build-fedora4: 771ec44a5f3840a6cc8a70b43dfcba0856ca9953f5a9632c2f91d60cf3cd50b2649cebafbe74c6ce0682dc571e3c6159887b4b06ad9c556570d2b454c09851ff  yum/qubes-dom0/rpm/anaconda-gui-25.20.9-12.fc25.x86_64.rpm
+2018-09-17 14:01:02.744617 +0000 build-fedora4: 104c650d5c708bfeb555ed898b95e4034d1f03adb55f08ba5e195526517a224982a01eeb37b472378ddd0a4a58d41b9c257daee6d7265fb93a58437ab8af50ce  yum/qubes-dom0/rpm/anaconda-tui-25.20.9-12.fc25.x86_64.rpm
+2018-09-17 14:01:02.747553 +0000 build-fedora4: 36e047ba8995063c8fa50398f4c6ff25346fc8fffddb240de8f44503ff1d6a9730247d4724f1c3393487c1c53df1128cf764fc60ab6815d29d87d8185fee6ba1  yum/qubes-dom0/rpm/anaconda-widgets-25.20.9-12.fc25.x86_64.rpm
+2018-09-17 14:01:02.749764 +0000 build-fedora4: b55c773daf65121876bd66507f060f594633f75574c73d0d71b7378ccaa022e380ab2a89dc1732d07703dc9a689d2f5ba863180be488ca6947aaa1839a6c9303  yum/qubes-dom0/rpm/anaconda-widgets-devel-25.20.9-12.fc25.x86_64.rpm
+2018-09-17 14:01:02.752807 +0000 build-fedora4: 8c79abd0435e594ffd1e9b14d9f93a0377265f90f4165e192e948a372bd03c1e930f9355428a6c45e79e3a9b395787aa1a484ee1c73ddac0c9cfb2aee06f852e  yum/qubes-dom0/rpm/lorax-25.19-1.fc25.x86_64.rpm
+2018-09-17 14:01:02.754445 +0000 build-fedora4: 864275aa5ae806105cb372028c2d21f6ee530a4faba6985c3ccd9afc46e7aa4211768f7852b7666185d2bfcecd94df55b9fedc16010b6467242778b0fca05c19  yum/qubes-dom0/rpm/lorax-lmc-novirt-25.19-1.fc25.x86_64.rpm
+2018-09-17 14:01:02.754795 +0000 build-fedora4: e8a02d076ddc6030eb66130e4ecc1ecdffe94bb0b2b69fe39c41f6c00fe060d87b155afcece8d1748736b525394bbdcd711b9e8f4278d4b4eb055196752d1e68  yum/qubes-dom0/rpm/lorax-lmc-virt-25.19-1.fc25.x86_64.rpm
+2018-09-17 14:01:02.758174 +0000 build-fedora4: b1109d8eb5431920bb0d0374159ab831e89c0ef5864bf77f5369f22f30245a1564027225c6662d165536985c87f7f5a19fcfa5f04b2802332666bb1c4738857c  yum/qubes-dom0/rpm/lorax-templates-generic-25.19-1.fc25.x86_64.rpm
+2018-09-17 14:01:02.759877 +0000 build-fedora4: 38e1c26ed4d85a5a47a28714f9f495118f123099302884bda1a6ba97676eab739861a63e44e5d5f507863a13831379aa84f7f786bbc67bb9e35c2bb162132d69  yum/qubes-dom0/rpm/lorax-templates-qubes-4.0.2-1.fc25.noarch.rpm
+2018-09-17 14:01:02.764213 +0000 build-fedora4: 29f6277cedcc9c3eeeeacb265fc0047508a44749b94fac5eb160e8003141b35223a6bc2b17f971ba49df2335dc1a450359e57eb9760b691c895dbf5f88995af8  yum/qubes-dom0/rpm/pungi-4.1.14-2.fc25.noarch.rpm
+2018-09-17 14:01:02.766684 +0000 build-fedora4: 1844e9cf9fd77a412d17b8dbd5786b3336d300408210440e208417b67c1f00b6da7f23de5938c5cf76a6d0770ae689a795328613ae18a8e4a41c4662384d3e65  yum/qubes-dom0/rpm/pungi-utils-4.1.14-2.fc25.noarch.rpm
+2018-09-17 14:01:02.768784 +0000 build-fedora4: 829ab3619ea7c4ae7d65420a2ec9d70bf6bdf6f7b88bb84806d59bf45a0fad37a345365c676a9fbe8cef67fb2679ba88bfaa35b77e0edabc1e5a15d68238ff1f  yum/qubes-dom0/rpm/pykickstart-2.32-4.fc25.noarch.rpm
+2018-09-17 14:01:02.771996 +0000 build-fedora4: 37f22d2dde8b5127219e0ab3c69a075c33b81d7301dc2878f1574e5bb3d567d69baf7d75511cbe5d46f9ccb3880e6ca99ff6a34031d36885e88f987f79b58fd4  yum/qubes-dom0/rpm/python-kickstart-2.32-4.fc25.noarch.rpm
+2018-09-17 14:01:02.777613 +0000 build-fedora4: 6d736a39b79bf2a063f3417afe55df6ea0cf96c40a6465e73cfb23830c8abef34232fcd4fa1b82de3f7feea59213f4c8da048352f370c1d618a1cb72681b5749  yum/qubes-dom0/rpm/python3-blivet-2.1.6-5.fc25.noarch.rpm
+2018-09-17 14:01:02.779830 +0000 build-fedora4: 485bff9de652b4ae0561670214b5fa289a7c34763318f2f92a21cfe49fa1420f1f972b2b171bf3689f7c7695589477a7cdd82223809cd82c7ff3c35c39d7eae3  yum/qubes-dom0/rpm/python3-kickstart-2.32-4.fc25.noarch.rpm
+2018-09-17 14:01:02.781276 +0000 build-fedora4: 856f4286878376441f467532a2b09b053ff5580a9481dfd8f8f9bfe6a24535a956490bb89cd569e6478529f77ac7378d67c992fbd25b757f58edbc69e9d263fb  yum/qubes-dom0/rpm/qubes-anaconda-addon-4.0.6-1.fc25.noarch.rpm
+2018-09-17 14:01:02.783003 +0000 build-fedora4: 645c04ac372698f75e4152f07ef4878742042cd971f447b52c31ff1d4f920bdf2510f4ed9adf6c6a11a5cd9de659efa4f02a60c7b571c07944a53c2dff651c8f  yum/qubes-dom0/rpm/qubes-core-dom0-linux-4.0.14-1.fc25.x86_64.rpm
+2018-09-17 14:01:02.783450 +0000 build-fedora4: 8780bf63501d1fbaff65416b0ec26c2da3c7184ae9bc61d21e63de63a411e4c58413e501dfd46e688d51275184540b466d0d144186e5520f336d4cd28c55447b  yum/qubes-dom0/rpm/qubes-core-dom0-linux-debuginfo-4.0.14-1.fc25.x86_64.rpm
+2018-09-17 14:01:02.784457 +0000 build-fedora4: 4d876b12c6f0b83525fd880f3f77e71dadf1fe90f3761b596dda7e38a6908c6e138e0654ce9a1044f8f641fe6a3ea3a86be6063845c97beeb94c461204a645e2  yum/qubes-dom0/rpm/qubes-core-dom0-linux-kernel-install-4.0.14-1.fc25.x86_64.rpm
+2018-09-17 14:01:02.785184 +0000 build-fedora4: 708fcc73e973f2e30f6c7febfe1793cb24d715d8efe6cb1f529ac6bff7bb84244a697133c8ab31c81cc17b130ee2fd1179429ede5873c44c568c5caa1a261e84  yum/qubes-dom0/rpm/qubes-core-dom0-vaio-fixes-1.6.1-1.fc25.x86_64.rpm
+2018-09-17 14:01:02.786242 +0000 build-fedora4: 7cc23bb2bb0ba6ec463a9be3a8c040b189295cdf1ebcc7e5423a7f9e0a7ae5a065ed25f88de97120408a98ba79ddadccfe25e080f60318fa5259ae0e7f315b53  yum/qubes-dom0/rpm/qubes-dom0-dist-upgrade-2.0-2.noarch.rpm
+2018-09-17 14:01:02.786289 +0000 build-fedora4: 5d27a4a4801e28d3fe8b5b3976e323f9dd28b407eaa604c851dfe4b16aef0b39a5c2758e750cfa32acc8f930c27873fc7656dd1122fc7056bb302f153647e062  yum/qubes-dom0/rpm/qubes-release-4.0-1.noarch.rpm
+2018-09-17 14:01:02.786315 +0000 build-fedora4: a8ce98a69bbc6febe85b03a312ebc4f8861bee97a7ff57b8155d704d3f23009570f196891b7b88493d85ac23c4e46542ae9c3dcb6297f02db1a79583fad693cc  yum/qubes-dom0/rpm/qubes-release-notes-4.0-1.noarch.rpm
+2018-09-17 14:01:05.983623 +0000 build-fedora4: 4763c8a1d6b0fec395a792592572266420578f09fe8c7ffe16dbb9cb503e983238689e568305a36bcd3cce8daa52a15da463c12c9919d5163662b38a70ea65bd  yum/qubes-dom0/rpm/qubes-template-debian-9-4.0.0-201803270258.noarch.rpm
+2018-09-17 14:01:12.195111 +0000 build-fedora4: 7941b4a9408fe2ddb8fa8f71c2c4e475e47919ce3e887117814e056b5e660e6637f064bc9a028d0483ccf2c3204aacc37e8ee2d5c283d324a950bef9a264b0d5  yum/qubes-dom0/rpm/qubes-template-fedora-26-4.0.0-201803270324.noarch.rpm
+2018-09-17 14:01:14.462167 +0000 build-fedora4: 00f2968390c6e20b910e246e4b3a7be679b4e78dec69ae7fe218bd64464a93f9e41e0572e4088e4a6ec0a24d96565b13e807d6e52883e589d0d507a7b6ce0dfd  yum/qubes-dom0/rpm/qubes-template-whonix-gw-4.0.0-201803270426.noarch.rpm
+2018-09-17 14:01:17.612363 +0000 build-fedora4: 91482f771b0f40d5da2ec6ee9abeac397160599543d8bf687726f13dc43c951e9960439295518fa830a1fbc3074df76dcf34ea20971e9e9e0a7728aa64644934  yum/qubes-dom0/rpm/qubes-template-whonix-ws-4.0.0-201803270504.noarch.rpm
+2018-09-17 14:01:17.764221 +0000 build-fedora4: ================================================================================
+2018-09-17 14:01:17.764264 +0000 build-fedora4:                            B U I L D   I N F O                                  
+2018-09-17 14:01:17.764383 +0000 build-fedora4: Items in red indicate it was automatically generated by configuration file(s)
+2018-09-17 14:01:17.764407 +0000 build-fedora4: Items in white indicate it was automatically removed by configuration file(s)
+2018-09-17 14:01:17.764424 +0000 build-fedora4: ================================================================================
+2018-09-17 14:01:17.764436 +0000 build-fedora4: DISTS_VM:
+2018-09-17 14:01:17.770520 +0000 build-fedora4:     
+2018-09-17 14:01:17.770637 +0000 build-fedora4: DISTS_ALL:
+2018-09-17 14:01:17.779461 +0000 build-fedora4:      fc25,
+2018-09-17 14:01:17.781378 +0000 build-fedora4: DIST_DOM0:
+2018-09-17 14:01:17.781947 +0000 build-fedora4:      fc25,
+2018-09-17 14:01:17.783986 +0000 build-fedora4: BUILDER_PLUGINS:
+2018-09-17 14:01:17.792755 +0000 build-fedora4:      builder-rpm, mgmt-salt, linux-yum, builder-github,
+2018-09-17 14:01:17.792794 +0000 build-fedora4: COMPONENTS:
+2018-09-17 14:01:17.796486 +0000 build-fedora4:      installer-qubes-os,
+2018-09-17 14:01:17.797651 +0000 build-fedora4: GIT_REPOS:
+2018-09-17 14:01:17.803891 +0000 build-fedora4:      qubes-src/installer-qubes-os,
+2018-09-17 14:01:17.803930 +0000 build-fedora4: TEMPLATE:
+2018-09-17 14:01:17.814544 +0000 build-fedora4:     
+2018-09-17 14:01:17.816881 +0000 build-fedora4: TEMPLATE_FLAVOR_DIR:
+2018-09-17 14:01:17.823255 +0000 build-fedora4:     
+2018-09-17 14:01:17.823295 +0000 build-fedora4: TEMPLATE_ALIAS:
+2018-09-17 14:01:17.828814 +0000 build-fedora4:      jessie:jessie+standard, jessie+gnome:jessie+gnome+standard,
+2018-09-17 14:01:17.828858 +0000 build-fedora4:      jessie+minimal:jessie+minimal+no-recommends, stretch:stretch+standard, stretch+gnome:stretch+gnome+standard,
+2018-09-17 14:01:17.828879 +0000 build-fedora4:      stretch+minimal:stretch+minimal+no-recommends, whonix-gateway:jessie+whonix-gateway+minimal+no-recommends,
+2018-09-17 14:01:17.828896 +0000 build-fedora4:      whonix-workstation:jessie+whonix-workstation+minimal+no-recommends,
+2018-09-17 14:01:17.830014 +0000 build-fedora4: TEMPLATE_LABEL:
+2018-09-17 14:01:17.834953 +0000 build-fedora4:      fc20:fedora-20 fc21:fedora-21 fc22:fedora-22 fc23:fedora-23 fc24:fedora-24 fc25:fedora-25 fc26:fedora-26
+2018-09-17 14:01:17.834996 +0000 build-fedora4:      fc27:fedora-27 fc28:fedora-28 fc20+minimal:fedora-20-minimal fc21+minimal:fedora-21-minimal
+2018-09-17 14:01:17.835016 +0000 build-fedora4:      fc23+minimal:fedora-23-minimal fc24+minimal:fedora-24-minimal fc25+minimal:fedora-25-minimal
+2018-09-17 14:01:17.835033 +0000 build-fedora4:      fc26+minimal:fedora-26-minimal fc27+minimal:fedora-27-minimal fc28+minimal:fedora-28-minimal
+2018-09-17 14:01:17.835050 +0000 build-fedora4:      fc25+xfce:fedora-25-xfce fc26+xfce:fedora-26-xfce fc27+xfce:fedora-27-xfce fc28+xfce:fedora-28-xfce
+2018-09-17 14:01:17.835066 +0000 build-fedora4:      wheezy:debian-7 wheezy+standard:debian-7 jessie:debian-8 jessie+standard:debian-8
+2018-09-17 14:01:17.835082 +0000 build-fedora4:      stretch:debian-9 stretch+standard:debian-9 centos7:centos-7 centos7+minimal:centos-7-minimal
+2018-09-17 14:01:17.835111 +0000 build-fedora4:      centos7+xfce:centos-7-xfce jessie+whonix-gateway+minimal+no-recommends:whonix-gw
+2018-09-17 14:01:17.835127 +0000 build-fedora4:      jessie+whonix-workstation+minimal+no-recommends:whonix-ws
+2018-09-17 14:01:17.893421 +0000 build-fedora4: > running make
+2018-09-17 14:01:17.923751 +0000 build-fedora4: Makefile:257: target 'sign.dom0.fc25.installer-qubes-os' does not exist
+2018-09-17 14:01:17.923833 +0000 build-fedora4: if [ -n "installer-qubes-os" -a "0" -ne 0 ]; then BRANCH=release4.0; branch_var="BRANCH_installer_qubes_os"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/installer-qubes-os > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2018-09-17 14:01:17.923856 +0000 build-fedora4: SIGN_KEY=5817A43B283DE5A9181A522E1848792F9E2795E9; \
+2018-09-17 14:01:17.923871 +0000 build-fedora4: sign_key_var="SIGN_KEY_${DIST%%+*}"; \
+2018-09-17 14:01:17.923886 +0000 build-fedora4: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2018-09-17 14:01:17.923899 +0000 build-fedora4: if [ "installer-qubes-os" = linux-template-builder ]; then
+2018-09-17 14:01:17.923916 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc25 template-name)
+2018-09-17 14:01:17.923927 +0000 build-fedora4: fi
+2018-09-17 14:01:17.923941 +0000 build-fedora4: if [ -r qubes-src/installer-qubes-os/Makefile.builder ]; then \
+2018-09-17 14:01:17.923955 +0000 build-fedora4: .make --no-print-directory -f Makefile.generic \
+2018-09-17 14:01:17.923967 +0000 build-fedora4: ..DIST=fc25 \
+2018-09-17 14:01:17.923978 +0000 build-fedora4: ..PACKAGE_SET=dom0 \
+2018-09-17 14:01:17.923990 +0000 build-fedora4: ..COMPONENT=installer-qubes-os \
+2018-09-17 14:01:17.924002 +0000 build-fedora4: ..SIGN_KEY=$SIGN_KEY \
+2018-09-17 14:01:17.924013 +0000 build-fedora4: ..sign || exit 1; \
+2018-09-17 14:01:17.924026 +0000 build-fedora4: elif [ -d qubes-src/installer-qubes-os/rpm ]; then \
+2018-09-17 14:01:17.924038 +0000 build-fedora4: .# Old mechanism supported only for RPM
+2018-09-17 14:01:17.924052 +0000 build-fedora4: FILE_LIST=""; for RPM in qubes-src/installer-qubes-os/rpm/*/*.rpm; do \
+2018-09-17 14:01:17.924069 +0000 build-fedora4: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2018-09-17 14:01:17.924082 +0000 build-fedora4: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2018-09-17 14:01:17.924093 +0000 build-fedora4: ..fi ;\
+2018-09-17 14:01:17.924104 +0000 build-fedora4: .done ; \
+2018-09-17 14:01:17.924116 +0000 build-fedora4: .if [ -n "$FILE_LIST" ]; then \
+2018-09-17 14:01:17.924128 +0000 build-fedora4: ..echo "--> Signing..."; \
+2018-09-17 14:01:17.924140 +0000 build-fedora4: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2018-09-17 14:01:17.924152 +0000 build-fedora4: ..if [ -n "$SIGN_KEY" ]; then \
+2018-09-17 14:01:17.924164 +0000 build-fedora4: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2018-09-17 14:01:17.924175 +0000 build-fedora4: ..fi; \
+2018-09-17 14:01:17.924189 +0000 build-fedora4: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2018-09-17 14:01:17.924199 +0000 build-fedora4: .fi; \
+2018-09-17 14:01:17.924210 +0000 build-fedora4: fi
+2018-09-17 14:01:18.265958 +0000 build-fedora4: /home/user/builder-r4.0-dom0/qubes-src/builder-rpm/Makefile.rpmbuilder:171: target 'sign' does not exist
+2018-09-17 14:01:18.266076 +0000 build-fedora4: cd qubes-src/installer-qubes-os && for pkg in pkgs/fc25/noarch/pykickstart-2.32-4.fc25.noarch.rpm pkgs/fc25/noarch/python-kickstart-2.32-4.fc25.noarch.rpm pkgs/fc25/noarch/python3-kickstart-2.32-4.fc25.noarch.rpm pkgs/fc25/noarch/python3-blivet-2.1.6-5.fc25.noarch.rpm pkgs/fc25/x86_64/lorax-25.19-1.fc25.x86_64.rpm pkgs/fc25/x86_64/lorax-lmc-novirt-25.19-1.fc25.x86_64.rpm pkgs/fc25/x86_64/lorax-lmc-virt-25.19-1.fc25.x86_64.rpm pkgs/fc25/x86_64/lorax-templates-generic-25.19-1.fc25.x86_64.rpm pkgs/fc25/noarch/lorax-templates-qubes-4.0.3-1.fc25.noarch.rpm pkgs/fc25/noarch/pungi-4.1.14-2.fc25.noarch.rpm pkgs/fc25/noarch/pungi-utils-4.1.14-2.fc25.noarch.rpm pkgs/fc25/x86_64/anaconda-25.20.9-13.fc25.x86_64.rpm pkgs/fc25/x86_64/anaconda-core-25.20.9-13.fc25.x86_64.rpm pkgs/fc25/x86_64/anaconda-debuginfo-25.20.9-13.fc25.x86_64.rpm pkgs/fc25/x86_64/anaconda-dracut-25.20.9-13.fc25.x86_64.rpm pkgs/fc25/x86_64/anaconda-gui-25.20.9-13.fc25.x86_64.rpm pkgs/fc25/x86_64/anaconda-tui-25.20.9-13.fc25.x86_64.rpm pkgs/fc25/x86_64/anaconda-widgets-25.20.9-13.fc25.x86_64.rpm pkgs/fc25/x86_64/anaconda-widgets-devel-25.20.9-13.fc25.x86_64.rpm pkgs/fc25/noarch/qubes-anaconda-addon-4.0.8-1.fc25.noarch.rpm pkgs/fc25/noarch/qubes-release-4.0-5.noarch.rpm pkgs/fc25/noarch/qubes-release-notes-4.0-5.noarch.rpm pkgs/fc25/noarch/qubes-dom0-dist-upgrade-2.0-2.noarch.rpm ; do \
+2018-09-17 14:01:18.266130 +0000 build-fedora4: .if ! rpm -K $pkg | grep -qi pgp; then \
+2018-09-17 14:01:18.266153 +0000 build-fedora4: ..setsid -w rpmsign  --digest-algo=sha256 --key-id=5817A43B283DE5A9181A522E1848792F9E2795E9 --addsign $pkg </dev/null || exit 1; \
+2018-09-17 14:01:18.266166 +0000 build-fedora4: .fi; \
+2018-09-17 14:01:18.266178 +0000 build-fedora4: done
+2018-09-17 14:01:19.106356 +0000 build-fedora4: Error while vchan send, exiting
+2018-09-17 14:01:19.420326 +0000 build-fedora4: pkgs/fc25/noarch/pykickstart-2.32-4.fc25.noarch.rpm:
+2018-09-17 14:01:20.151409 +0000 build-fedora4: pkgs/fc25/noarch/python-kickstart-2.32-4.fc25.noarch.rpm:
+2018-09-17 14:01:20.906975 +0000 build-fedora4: pkgs/fc25/noarch/python3-kickstart-2.32-4.fc25.noarch.rpm:
+2018-09-17 14:01:21.665551 +0000 build-fedora4: pkgs/fc25/noarch/python3-blivet-2.1.6-5.fc25.noarch.rpm:
+2018-09-17 14:01:22.492540 +0000 build-fedora4: pkgs/fc25/x86_64/lorax-25.19-1.fc25.x86_64.rpm:
+2018-09-17 14:01:23.268749 +0000 build-fedora4: Error while vchan send, exiting
+2018-09-17 14:01:23.268819 +0000 build-fedora4: pkgs/fc25/x86_64/lorax-lmc-novirt-25.19-1.fc25.x86_64.rpm:
+2018-09-17 14:01:23.977616 +0000 build-fedora4: pkgs/fc25/x86_64/lorax-lmc-virt-25.19-1.fc25.x86_64.rpm:
+2018-09-17 14:01:24.695321 +0000 build-fedora4: pkgs/fc25/x86_64/lorax-templates-generic-25.19-1.fc25.x86_64.rpm:
+2018-09-17 14:01:25.393553 +0000 build-fedora4: pkgs/fc25/noarch/lorax-templates-qubes-4.0.3-1.fc25.noarch.rpm:
+2018-09-17 14:01:26.200424 +0000 build-fedora4: pkgs/fc25/noarch/pungi-4.1.14-2.fc25.noarch.rpm:
+2018-09-17 14:01:26.957302 +0000 build-fedora4: pkgs/fc25/noarch/pungi-utils-4.1.14-2.fc25.noarch.rpm:
+2018-09-17 14:01:27.722728 +0000 build-fedora4: pkgs/fc25/x86_64/anaconda-25.20.9-13.fc25.x86_64.rpm:
+2018-09-17 14:01:28.426145 +0000 build-fedora4: pkgs/fc25/x86_64/anaconda-core-25.20.9-13.fc25.x86_64.rpm:
+2018-09-17 14:01:29.336300 +0000 build-fedora4: pkgs/fc25/x86_64/anaconda-debuginfo-25.20.9-13.fc25.x86_64.rpm:
+2018-09-17 14:01:30.044922 +0000 build-fedora4: pkgs/fc25/x86_64/anaconda-dracut-25.20.9-13.fc25.x86_64.rpm:
+2018-09-17 14:01:30.790285 +0000 build-fedora4: pkgs/fc25/x86_64/anaconda-gui-25.20.9-13.fc25.x86_64.rpm:
+2018-09-17 14:01:31.500362 +0000 build-fedora4: pkgs/fc25/x86_64/anaconda-tui-25.20.9-13.fc25.x86_64.rpm:
+2018-09-17 14:01:32.176892 +0000 build-fedora4: pkgs/fc25/x86_64/anaconda-widgets-25.20.9-13.fc25.x86_64.rpm:
+2018-09-17 14:01:32.777062 +0000 build-fedora4: pkgs/fc25/x86_64/anaconda-widgets-devel-25.20.9-13.fc25.x86_64.rpm:
+2018-09-17 14:01:33.382700 +0000 build-fedora4: pkgs/fc25/noarch/qubes-anaconda-addon-4.0.8-1.fc25.noarch.rpm:
+2018-09-17 14:01:33.988754 +0000 build-fedora4: pkgs/fc25/noarch/qubes-release-4.0-5.noarch.rpm:
+2018-09-17 14:01:34.594178 +0000 build-fedora4: pkgs/fc25/noarch/qubes-release-notes-4.0-5.noarch.rpm:
+2018-09-17 14:01:35.198799 +0000 build-fedora4: pkgs/fc25/noarch/qubes-dom0-dist-upgrade-2.0-2.noarch.rpm:
+2018-09-17 14:01:35.198844 +0000 build-fedora4: Makefile:797: target 'internal-update-repo-current-testing.dom0.fc25.installer-qubes-os' does not exist
+2018-09-17 14:01:35.198862 +0000 build-fedora4: repo_base_var="LINUX_REPO_fc25_BASEDIR"; \
+2018-09-17 14:01:35.198894 +0000 build-fedora4: if [ "installer-qubes-os" = linux-template-builder ]; then \
+2018-09-17 14:01:35.198911 +0000 build-fedora4: .# templates belongs to dom0 repository, even though PACKAGE_SET=vm
+2018-09-17 14:01:35.198924 +0000 build-fedora4: repo_base_var="LINUX_REPO_fc25_BASEDIR"; \
+2018-09-17 14:01:35.198935 +0000 build-fedora4: fi; \
+2018-09-17 14:01:35.198948 +0000 build-fedora4: if [ -n "${!repo_base_var}" ]; then \
+2018-09-17 14:01:35.198961 +0000 build-fedora4: .repo_basedir="${!repo_base_var}"; \
+2018-09-17 14:01:35.198971 +0000 build-fedora4: else \
+2018-09-17 14:01:35.198984 +0000 build-fedora4: .repo_basedir="qubes-src/linux-yum/r4.0"; \
+2018-09-17 14:01:35.198995 +0000 build-fedora4: fi; \
+2018-09-17 14:01:35.199008 +0000 build-fedora4: if [ -r qubes-src/installer-qubes-os/Makefile.builder ]; then \
+2018-09-17 14:01:35.199021 +0000 build-fedora4: .echo -n "Updating qubes-src/installer-qubes-os... "; \
+2018-09-17 14:01:35.199033 +0000 build-fedora4: .if [ "0" -eq 1 ]; then \
+2018-09-17 14:01:35.199047 +0000 build-fedora4: ..vtag=`git -C qubes-src/installer-qubes-os tag --points-at HEAD --list v*`; \
+2018-09-17 14:01:35.199060 +0000 build-fedora4: ..if [ -z "$vtag" ]; then \
+2018-09-17 14:01:35.199071 +0000 build-fedora4: ...echo "no version tag"; \
+2018-09-17 14:01:35.199082 +0000 build-fedora4: ...exit 0; \
+2018-09-17 14:01:35.199092 +0000 build-fedora4: ..fi; \
+2018-09-17 14:01:35.199102 +0000 build-fedora4: .fi; \
+2018-09-17 14:01:35.199115 +0000 build-fedora4: .if [ "installer-qubes-os" = linux-template-builder ]; then
+2018-09-17 14:01:35.199131 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc25 template-name)
+2018-09-17 14:01:35.199142 +0000 build-fedora4: fi
+2018-09-17 14:01:35.199167 +0000 build-fedora4: component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc25 PACKAGE_SET=dom0 COMPONENT=`basename qubes-src/installer-qubes-os` UPDATE_REPO=/home/user/builder-r4.0-dom0/$repo_basedir/current-testing/dom0/fc25 get-var GET_VAR=PACKAGE_LIST); \
+2018-09-17 14:01:35.199181 +0000 build-fedora4: .if [ -z "$component_packages" ]; then \
+2018-09-17 14:01:35.199193 +0000 build-fedora4: ..echo "no packages."; \
+2018-09-17 14:01:35.199204 +0000 build-fedora4: ..exit 0; \
+2018-09-17 14:01:35.199214 +0000 build-fedora4: .fi; \
+2018-09-17 14:01:35.199227 +0000 build-fedora4: .make -s -f Makefile.generic DIST=fc25 PACKAGE_SET=dom0 \
+2018-09-17 14:01:35.199240 +0000 build-fedora4: ..COMPONENT=`basename qubes-src/installer-qubes-os` \
+2018-09-17 14:01:35.199252 +0000 build-fedora4: ..SNAPSHOT_REPO=current-testing \
+2018-09-17 14:01:35.199264 +0000 build-fedora4: ..TARGET_REPO=current-testing \
+2018-09-17 14:01:35.199279 +0000 build-fedora4: ..UPDATE_REPO=/home/user/builder-r4.0-dom0/$repo_basedir/current-testing/dom0/fc25 \
+2018-09-17 14:01:35.199296 +0000 build-fedora4: ..SNAPSHOT_FILE=/home/user/builder-r4.0-dom0/repo-latest-snapshot/current-testing-dom0-fc25-`basename qubes-src/installer-qubes-os` \
+2018-09-17 14:01:35.199313 +0000 build-fedora4: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2018-09-17_13-43-59 \
+2018-09-17 14:01:35.199325 +0000 build-fedora4: ..update-repo || exit 1; \
+2018-09-17 14:01:35.199341 +0000 build-fedora4: elif make -C qubes-src/installer-qubes-os -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2018-09-17 14:01:35.199354 +0000 build-fedora4: .echo "Updating qubes-src/installer-qubes-os... "; \
+2018-09-17 14:01:35.199369 +0000 build-fedora4: .DIST=fc25 UPDATE_REPO=/home/user/builder-r4.0-dom0/$repo_basedir/current-testing/dom0/fc25 \
+2018-09-17 14:01:35.199384 +0000 build-fedora4: .make -s -C qubes-src/installer-qubes-os update-repo-current-testing || exit 1; \
+2018-09-17 14:01:35.199395 +0000 build-fedora4: else \
+2018-09-17 14:01:35.199408 +0000 build-fedora4: .echo -n "Updating qubes-src/installer-qubes-os... skipping."; \
+2018-09-17 14:01:35.199418 +0000 build-fedora4: fi; \
+2018-09-17 14:01:35.199428 +0000 build-fedora4: echo
+2018-09-17 14:01:35.599829 +0000 build-fedora4: Updating qubes-src/installer-qubes-os... /home/user/builder-r4.0-dom0/qubes-src/builder-rpm/Makefile.rpmbuilder:142: target 'update-repo-do' does not exist
+2018-09-17 14:01:35.599875 +0000 build-fedora4: mkdir -p /home/user/builder-r4.0-dom0/qubes-src/linux-yum/r4.0/current-testing/dom0/fc25/rpm
+2018-09-17 14:01:35.737921 +0000 build-fedora4: if [ -n "pkgs/fc25/noarch/pykickstart-2.32-4.fc25.noarch.rpm pkgs/fc25/noarch/python-kickstart-2.32-4.fc25.noarch.rpm pkgs/fc25/noarch/python3-kickstart-2.32-4.fc25.noarch.rpm pkgs/fc25/noarch/python3-blivet-2.1.6-5.fc25.noarch.rpm pkgs/fc25/x86_64/lorax-25.19-1.fc25.x86_64.rpm pkgs/fc25/x86_64/lorax-lmc-novirt-25.19-1.fc25.x86_64.rpm pkgs/fc25/x86_64/lorax-lmc-virt-25.19-1.fc25.x86_64.rpm pkgs/fc25/x86_64/lorax-templates-generic-25.19-1.fc25.x86_64.rpm pkgs/fc25/noarch/lorax-templates-qubes-4.0.3-1.fc25.noarch.rpm pkgs/fc25/noarch/pungi-4.1.14-2.fc25.noarch.rpm pkgs/fc25/noarch/pungi-utils-4.1.14-2.fc25.noarch.rpm pkgs/fc25/x86_64/anaconda-25.20.9-13.fc25.x86_64.rpm pkgs/fc25/x86_64/anaconda-core-25.20.9-13.fc25.x86_64.rpm pkgs/fc25/x86_64/anaconda-debuginfo-25.20.9-13.fc25.x86_64.rpm pkgs/fc25/x86_64/anaconda-dracut-25.20.9-13.fc25.x86_64.rpm pkgs/fc25/x86_64/anaconda-gui-25.20.9-13.fc25.x86_64.rpm pkgs/fc25/x86_64/anaconda-tui-25.20.9-13.fc25.x86_64.rpm pkgs/fc25/x86_64/anaconda-widgets-25.20.9-13.fc25.x86_64.rpm pkgs/fc25/x86_64/anaconda-widgets-devel-25.20.9-13.fc25.x86_64.rpm pkgs/fc25/noarch/qubes-anaconda-addon-4.0.8-1.fc25.noarch.rpm pkgs/fc25/noarch/qubes-release-4.0-5.noarch.rpm pkgs/fc25/noarch/qubes-release-notes-4.0-5.noarch.rpm pkgs/fc25/noarch/qubes-dom0-dist-upgrade-2.0-2.noarch.rpm" ]; then \
+2018-09-17 14:01:35.738051 +0000 build-fedora4: .cd qubes-src/installer-qubes-os && ln -f pkgs/fc25/noarch/pykickstart-2.32-4.fc25.noarch.rpm pkgs/fc25/noarch/python-kickstart-2.32-4.fc25.noarch.rpm pkgs/fc25/noarch/python3-kickstart-2.32-4.fc25.noarch.rpm pkgs/fc25/noarch/python3-blivet-2.1.6-5.fc25.noarch.rpm pkgs/fc25/x86_64/lorax-25.19-1.fc25.x86_64.rpm pkgs/fc25/x86_64/lorax-lmc-novirt-25.19-1.fc25.x86_64.rpm pkgs/fc25/x86_64/lorax-lmc-virt-25.19-1.fc25.x86_64.rpm pkgs/fc25/x86_64/lorax-templates-generic-25.19-1.fc25.x86_64.rpm pkgs/fc25/noarch/lorax-templates-qubes-4.0.3-1.fc25.noarch.rpm pkgs/fc25/noarch/pungi-4.1.14-2.fc25.noarch.rpm pkgs/fc25/noarch/pungi-utils-4.1.14-2.fc25.noarch.rpm pkgs/fc25/x86_64/anaconda-25.20.9-13.fc25.x86_64.rpm pkgs/fc25/x86_64/anaconda-core-25.20.9-13.fc25.x86_64.rpm pkgs/fc25/x86_64/anaconda-debuginfo-25.20.9-13.fc25.x86_64.rpm pkgs/fc25/x86_64/anaconda-dracut-25.20.9-13.fc25.x86_64.rpm pkgs/fc25/x86_64/anaconda-gui-25.20.9-13.fc25.x86_64.rpm pkgs/fc25/x86_64/anaconda-tui-25.20.9-13.fc25.x86_64.rpm pkgs/fc25/x86_64/anaconda-widgets-25.20.9-13.fc25.x86_64.rpm pkgs/fc25/x86_64/anaconda-widgets-devel-25.20.9-13.fc25.x86_64.rpm pkgs/fc25/noarch/qubes-anaconda-addon-4.0.8-1.fc25.noarch.rpm pkgs/fc25/noarch/qubes-release-4.0-5.noarch.rpm pkgs/fc25/noarch/qubes-release-notes-4.0-5.noarch.rpm pkgs/fc25/noarch/qubes-dom0-dist-upgrade-2.0-2.noarch.rpm  /home/user/builder-r4.0-dom0/qubes-src/linux-yum/r4.0/current-testing/dom0/fc25/rpm/; \
+2018-09-17 14:01:35.738073 +0000 build-fedora4: else \
+2018-09-17 14:01:35.738107 +0000 build-fedora4: .echo "`tput bold`No packages defined by pykickstart/pykickstart.spec blivet/python-blivet.spec lorax/lorax.spec lorax-templates-qubes/lorax-templates-qubes.spec pungi/pungi.spec anaconda/anaconda.spec qubes-anaconda-addon/qubes-anaconda-addon.spec qubes-release/qubes-release.spec qubes-release/qubes-dom0-dist-upgrade.spec, syntax error?`tput sgr0`"; \
+2018-09-17 14:01:35.738121 +0000 build-fedora4: .exit 1; \
+2018-09-17 14:01:35.738133 +0000 build-fedora4: fi
+2018-09-17 14:01:35.749712 +0000 build-fedora4: cd qubes-src/installer-qubes-os && echo pkgs/fc25/noarch/pykickstart-2.32-4.fc25.noarch.rpm pkgs/fc25/noarch/python-kickstart-2.32-4.fc25.noarch.rpm pkgs/fc25/noarch/python3-kickstart-2.32-4.fc25.noarch.rpm pkgs/fc25/noarch/python3-blivet-2.1.6-5.fc25.noarch.rpm pkgs/fc25/x86_64/lorax-25.19-1.fc25.x86_64.rpm pkgs/fc25/x86_64/lorax-lmc-novirt-25.19-1.fc25.x86_64.rpm pkgs/fc25/x86_64/lorax-lmc-virt-25.19-1.fc25.x86_64.rpm pkgs/fc25/x86_64/lorax-templates-generic-25.19-1.fc25.x86_64.rpm pkgs/fc25/noarch/lorax-templates-qubes-4.0.3-1.fc25.noarch.rpm pkgs/fc25/noarch/pungi-4.1.14-2.fc25.noarch.rpm pkgs/fc25/noarch/pungi-utils-4.1.14-2.fc25.noarch.rpm pkgs/fc25/x86_64/anaconda-25.20.9-13.fc25.x86_64.rpm pkgs/fc25/x86_64/anaconda-core-25.20.9-13.fc25.x86_64.rpm pkgs/fc25/x86_64/anaconda-debuginfo-25.20.9-13.fc25.x86_64.rpm pkgs/fc25/x86_64/anaconda-dracut-25.20.9-13.fc25.x86_64.rpm pkgs/fc25/x86_64/anaconda-gui-25.20.9-13.fc25.x86_64.rpm pkgs/fc25/x86_64/anaconda-tui-25.20.9-13.fc25.x86_64.rpm pkgs/fc25/x86_64/anaconda-widgets-25.20.9-13.fc25.x86_64.rpm pkgs/fc25/x86_64/anaconda-widgets-devel-25.20.9-13.fc25.x86_64.rpm pkgs/fc25/noarch/qubes-anaconda-addon-4.0.8-1.fc25.noarch.rpm pkgs/fc25/noarch/qubes-release-4.0-5.noarch.rpm pkgs/fc25/noarch/qubes-release-notes-4.0-5.noarch.rpm pkgs/fc25/noarch/qubes-dom0-dist-upgrade-2.0-2.noarch.rpm  > /home/user/builder-r4.0-dom0/repo-latest-snapshot/current-testing-dom0-fc25-installer-qubes-os
+2018-09-17 14:01:36.007023 +0000 build-fedora4: /home/user/builder-r4.0-dom0/qubes-src/builder-github//Makefile.github:18: target 'notify-github' does not exist
+2018-09-17 14:01:36.007079 +0000 build-fedora4: [ -z "pykickstart-2.32-4.fc25" ] || /home/user/builder-r4.0-dom0/qubes-src/builder-github//notify-issues \
+2018-09-17 14:01:36.007108 +0000 build-fedora4: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2018-09-17_13-43-59" \
+2018-09-17 14:01:36.007125 +0000 build-fedora4: .upload \
+2018-09-17 14:01:36.007139 +0000 build-fedora4: ."r4.0" \
+2018-09-17 14:01:36.007153 +0000 build-fedora4: ."qubes-src/installer-qubes-os" \
+2018-09-17 14:01:36.007167 +0000 build-fedora4: ."pykickstart-2.32-4.fc25" \
+2018-09-17 14:01:36.007179 +0000 build-fedora4: ."fc25" \
+2018-09-17 14:01:36.007190 +0000 build-fedora4: ."dom0" \
+2018-09-17 14:01:36.007202 +0000 build-fedora4: ."current-testing" \
+2018-09-17 14:01:36.007218 +0000 build-fedora4: ."/home/user/github-notify-state/r4.0-installer-qubes-os-dom0-fc25-current-testing"
+2018-09-17 14:01:44.066969 +0000 build-fedora4: Adding a comment to issue #4090
+2018-09-17 14:01:44.070865 +0000 build-fedora4: 
+2018-09-17 14:01:44.071209 +0000 build-fedora4: Makefile:851: target 'post-update-repo-current-testing' does not exist
+2018-09-17 14:01:44.071237 +0000 build-fedora4: for dist in fc25 ; do \
+2018-09-17 14:01:44.071255 +0000 build-fedora4: .repo_base_var="LINUX_REPO_${dist}_BASEDIR"; \
+2018-09-17 14:01:44.071269 +0000 build-fedora4: .if [ -n "${!repo_base_var}" ]; then \
+2018-09-17 14:01:44.071282 +0000 build-fedora4: ..repo_basedir="${!repo_base_var}"; \
+2018-09-17 14:01:44.071293 +0000 build-fedora4: .else \
+2018-09-17 14:01:44.071306 +0000 build-fedora4: ..repo_basedir="qubes-src/linux-yum/r4.0"; \
+2018-09-17 14:01:44.071317 +0000 build-fedora4: .fi; \
+2018-09-17 14:01:44.071331 +0000 build-fedora4: .repos_to_update="$repos_to_update $repo_basedir"; \
+2018-09-17 14:01:44.071341 +0000 build-fedora4: done; \
+2018-09-17 14:01:44.071355 +0000 build-fedora4: for repo in `echo $repos_to_update|tr ' ' '\n'|sort|uniq`; do \
+2018-09-17 14:01:44.071367 +0000 build-fedora4: .[ -z "$repo" ] && continue; \
+2018-09-17 14:01:44.071382 +0000 build-fedora4: .[ -x "$repo/../update_repo-current-testing.sh" ] || continue; \
+2018-09-17 14:01:44.071395 +0000 build-fedora4: .(cd $repo/.. && ./update_repo-current-testing.sh r4.0); \
+2018-09-17 14:01:44.071406 +0000 build-fedora4: done
+2018-09-17 14:01:44.097252 +0000 build-fedora4: which: no mkmetalink in (/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/user/.local/bin:/home/user/bin:/home/user/builder-r4.0-dom0/qubes-src/builder-rpm/tools)
+2018-09-17 14:01:44.108745 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/dom0/fc25...
+2018-09-17 14:02:07.620971 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/centos7...
+2018-09-17 14:02:08.047799 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc20...
+2018-09-17 14:02:08.405020 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc21...
+2018-09-17 14:02:08.749710 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc22...
+2018-09-17 14:02:09.101981 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc23...
+2018-09-17 14:02:09.471236 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc24...
+2018-09-17 14:02:09.834222 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc25...
+2018-09-17 14:02:10.217621 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc26...
+2018-09-17 14:02:10.649181 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc27...
+2018-09-17 14:02:11.007801 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc28...
+2018-09-17 14:02:11.410514 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc29...
+2018-09-17 14:02:11.781764 +0000 build-fedora4: Done.
+2018-09-17 14:02:11.790527 +0000 build-fedora4: ~/builder-r4.0-dom0/qubes-src/linux-yum ~/builder-r4.0-dom0/qubes-src/linux-yum
+2018-09-17 14:02:11.793206 +0000 build-fedora4: Syncing r4.0...
+2018-09-17 14:02:12.857092 +0000 build-fedora4: sending incremental file list
+2018-09-17 14:02:13.104817 +0000 build-fedora4: rsync: failed to set times on "/pub/qubes/repo/yum/r4.0/current-testing/dom0/fc25/comps.xml": Operation not permitted (1)
+2018-09-17 14:02:13.104864 +0000 build-fedora4: rsync: failed to set times on "/pub/qubes/repo/yum/r4.0/current-testing/vm/fc24/comps.xml": Operation not permitted (1)
+2018-09-17 14:02:13.104886 +0000 build-fedora4: rsync: failed to set times on "/pub/qubes/repo/yum/r4.0/current-testing/vm/fc25/comps.xml": Operation not permitted (1)
+2018-09-17 14:02:13.104904 +0000 build-fedora4: rsync: failed to set times on "/pub/qubes/repo/yum/r4.0/current-testing/vm/fc26": Operation not permitted (1)
+2018-09-17 14:02:13.104923 +0000 build-fedora4: rsync: failed to set times on "/pub/qubes/repo/yum/r4.0/current-testing/vm/fc26/comps.xml": Operation not permitted (1)
+2018-09-17 14:02:13.104940 +0000 build-fedora4: rsync: failed to set times on "/pub/qubes/repo/yum/r4.0/current-testing/vm/fc26/rpm": Operation not permitted (1)
+2018-09-17 14:02:13.104957 +0000 build-fedora4: rsync: failed to set times on "/pub/qubes/repo/yum/r4.0/current/dom0/fc25/comps.xml": Operation not permitted (1)
+2018-09-17 14:02:13.104969 +0000 build-fedora4: .d..t...... current-testing/
+2018-09-17 14:02:13.104989 +0000 build-fedora4: .d..t...... current-testing/dom0/
+2018-09-17 14:02:13.105002 +0000 build-fedora4: .d..t...... current-testing/dom0/fc25/
+2018-09-17 14:02:13.105018 +0000 build-fedora4: .L..t...... current-testing/dom0/fc25/comps.xml -> ../../../comps-dom0.xml
+2018-09-17 14:02:13.124079 +0000 build-fedora4: .d..t...... current-testing/dom0/fc25/rpm/
+2018-09-17 14:02:13.124121 +0000 build-fedora4: <f..t...... current-testing/dom0/fc25/rpm/.gitignore
+2018-09-17 14:02:13.124582 +0000 build-fedora4: .              6 100%    0.00kB/s    0:00:00  .              6 100%    0.00kB/s    0:00:00 (xfr#1, ir-chk=1393/1402)
+2018-09-17 14:02:13.124624 +0000 build-fedora4: <f..t...... current-testing/dom0/fc25/rpm/anaconda-25.20.9-13.fc25.x86_64.rpm
+2018-09-17 14:02:13.125316 +0000 build-fedora4: .          2,140   2%    2.04MB/s    0:00:00  .         91,086 100%   86.87MB/s    0:00:00 (xfr#2, ir-chk=1392/1402)
+2018-09-17 14:02:13.125348 +0000 build-fedora4: <f.st...... current-testing/dom0/fc25/rpm/anaconda-core-25.20.9-13.fc25.x86_64.rpm
+2018-09-17 14:02:13.134843 +0000 build-fedora4: .          2,360   0%    2.25MB/s    0:00:00  .        854,862 100%   90.58MB/s    0:00:00 (xfr#3, ir-chk=1391/1402)
+2018-09-17 14:02:13.134886 +0000 build-fedora4: <f.st...... current-testing/dom0/fc25/rpm/anaconda-debuginfo-25.20.9-13.fc25.x86_64.rpm
+2018-09-17 14:02:13.141088 +0000 build-fedora4: .          2,140   0%  232.20kB/s    0:00:01  .        255,602 100%   20.31MB/s    0:00:00 (xfr#4, ir-chk=1390/1402)
+2018-09-17 14:02:13.141144 +0000 build-fedora4: <f..t...... current-testing/dom0/fc25/rpm/anaconda-dracut-25.20.9-13.fc25.x86_64.rpm
+2018-09-17 14:02:13.141167 +0000 build-fedora4: .          2,139   1%  174.07kB/s    0:00:00  .        146,622 100%   10.76MB/s    0:00:00 (xfr#5, ir-chk=1389/1402)
+2018-09-17 14:02:13.141184 +0000 build-fedora4: <f.st...... current-testing/dom0/fc25/rpm/anaconda-gui-25.20.9-13.fc25.x86_64.rpm
+2018-09-17 14:02:13.151158 +0000 build-fedora4: .          2,140   0%  160.76kB/s    0:00:02  .        415,910 100%   15.87MB/s    0:00:00 (xfr#6, ir-chk=1388/1402)
+2018-09-17 14:02:13.151199 +0000 build-fedora4: <f.st...... current-testing/dom0/fc25/rpm/anaconda-tui-25.20.9-13.fc25.x86_64.rpm
+2018-09-17 14:02:13.154462 +0000 build-fedora4: .          2,140   1%   83.59kB/s    0:00:02  .        198,438 100%    6.76MB/s    0:00:00 (xfr#7, ir-chk=1387/1402)
+2018-09-17 14:02:13.154499 +0000 build-fedora4: <f..t...... current-testing/dom0/fc25/rpm/anaconda-widgets-25.20.9-13.fc25.x86_64.rpm
+2018-09-17 14:02:13.156602 +0000 build-fedora4: .          2,140   1%   72.06kB/s    0:00:01  .        121,922 100%    3.88MB/s    0:00:00 (xfr#8, ir-chk=1386/1402)
+2018-09-17 14:02:13.156639 +0000 build-fedora4: <f.st...... current-testing/dom0/fc25/rpm/anaconda-widgets-devel-25.20.9-13.fc25.x86_64.rpm
+2018-09-17 14:02:13.156659 +0000 build-fedora4: .          2,139   1%   69.63kB/s    0:00:01  .        128,242 100%    3.95MB/s    0:00:00 (xfr#9, ir-chk=1385/1402)
+2018-09-17 14:02:13.156675 +0000 build-fedora4: <f.st...... current-testing/dom0/fc25/rpm/lorax-25.19-1.fc25.x86_64.rpm
+2018-09-17 14:02:13.168941 +0000 build-fedora4: .          2,140   1%   65.31kB/s    0:00:02  .        196,694 100%    4.36MB/s    0:00:00 (xfr#10, ir-chk=1230/1402)
+2018-09-17 14:02:13.168983 +0000 build-fedora4: <f..t...... current-testing/dom0/fc25/rpm/lorax-lmc-novirt-25.19-1.fc25.x86_64.rpm
+2018-09-17 14:02:13.169004 +0000 build-fedora4: .          2,140   3%   48.60kB/s    0:00:01  .         60,858 100%    1.35MB/s    0:00:00 (xfr#11, ir-chk=1229/1402)
+2018-09-17 14:02:13.169020 +0000 build-fedora4: <f..t...... current-testing/dom0/fc25/rpm/lorax-lmc-virt-25.19-1.fc25.x86_64.rpm
+2018-09-17 14:02:13.169038 +0000 build-fedora4: .          2,140   3%   48.60kB/s    0:00:01  .         60,886 100%    1.32MB/s    0:00:00 (xfr#12, ir-chk=1228/1402)
+2018-09-17 14:02:13.169055 +0000 build-fedora4: <f.st...... current-testing/dom0/fc25/rpm/lorax-templates-generic-25.19-1.fc25.x86_64.rpm
+2018-09-17 14:02:13.171687 +0000 build-fedora4: .          2,140   2%   46.44kB/s    0:00:01  .         92,470 100%    1.92MB/s    0:00:00 (xfr#13, ir-chk=1227/1402)
+2018-09-17 14:02:13.171726 +0000 build-fedora4: <f+++++++++ current-testing/dom0/fc25/rpm/lorax-templates-qubes-4.0.3-1.fc25.noarch.rpm
+2018-09-17 14:02:13.171761 +0000 build-fedora4: .         32,768  86%  695.65kB/s    0:00:00  .         38,074 100%  808.30kB/s    0:00:00 (xfr#14, ir-chk=1225/1402)
+2018-09-17 14:02:13.171778 +0000 build-fedora4: <f.st...... current-testing/dom0/fc25/rpm/pungi-4.1.14-2.fc25.noarch.rpm
+2018-09-17 14:02:13.218332 +0000 build-fedora4: .          2,232   0%   46.38kB/s    0:00:13  .        635,734 100%    6.52MB/s    0:00:00 (xfr#15, ir-chk=1221/1402)
+2018-09-17 14:02:13.218376 +0000 build-fedora4: <f..t...... current-testing/dom0/fc25/rpm/pungi-utils-4.1.14-2.fc25.noarch.rpm
+2018-09-17 14:02:13.223543 +0000 build-fedora4: .          2,140   3%   22.47kB/s    0:00:02  .         63,494 100%  639.24kB/s    0:00:00 (xfr#16, ir-chk=1220/1402)
+2018-09-17 14:02:13.223585 +0000 build-fedora4: <f..t...... current-testing/dom0/fc25/rpm/pykickstart-2.32-4.fc25.noarch.rpm
+2018-09-17 14:02:13.223606 +0000 build-fedora4: .          2,140   3%   21.54kB/s    0:00:02  .         56,022 100%  564.01kB/s    0:00:00 (xfr#17, ir-chk=1219/1402)
+2018-09-17 14:02:13.223622 +0000 build-fedora4: <f.st...... current-testing/dom0/fc25/rpm/python-kickstart-2.32-4.fc25.noarch.rpm
+2018-09-17 14:02:13.283031 +0000 build-fedora4: .          2,140   0%   21.54kB/s    0:00:17  .        370,550 100%    2.24MB/s    0:00:00 (xfr#18, ir-chk=1218/1402)
+2018-09-17 14:02:13.283179 +0000 build-fedora4: <f.st...... current-testing/dom0/fc25/rpm/python3-blivet-2.1.6-5.fc25.noarch.rpm
+2018-09-17 14:02:13.819757 +0000 build-fedora4: .          2,456   0%   15.18kB/s    0:01:07  .      1,033,690 100%    1.42MB/s    0:00:00 (xfr#19, ir-chk=1204/1402)
+2018-09-17 14:02:13.819799 +0000 build-fedora4: <f.st...... current-testing/dom0/fc25/rpm/python3-kickstart-2.32-4.fc25.noarch.rpm
+2018-09-17 14:02:13.982664 +0000 build-fedora4: .          2,140   0%    3.01kB/s    0:02:05  .        378,650 100%  430.97kB/s    0:00:00 (xfr#20, ir-chk=1201/1402)
+2018-09-17 14:02:13.982708 +0000 build-fedora4: <f+++++++++ current-testing/dom0/fc25/rpm/qubes-anaconda-addon-4.0.8-1.fc25.noarch.rpm
+2018-09-17 14:02:13.982760 +0000 build-fedora4: .         32,768  93%   37.30kB/s    0:00:00  .         34,886 100%   39.71kB/s    0:00:00 (xfr#21, ir-chk=1185/1402)
+2018-09-17 14:02:13.983013 +0000 build-fedora4: <f.st...... current-testing/dom0/fc25/rpm/qubes-dom0-dist-upgrade-2.0-2.noarch.rpm
+2018-09-17 14:02:13.983040 +0000 build-fedora4: .          2,140  23%    2.44kB/s    0:00:02  .          9,010 100%   10.26kB/s    0:00:00 (xfr#22, ir-chk=1142/1402)
+2018-09-17 14:02:13.983057 +0000 build-fedora4: <f+++++++++ current-testing/dom0/fc25/rpm/qubes-release-4.0-5.noarch.rpm
+2018-09-17 14:02:14.070708 +0000 build-fedora4: .         32,768  64%   33.86kB/s    0:00:00  .         51,010 100%   52.71kB/s    0:00:00 (xfr#23, ir-chk=1095/1402)
+2018-09-17 14:02:14.070767 +0000 build-fedora4: <f+++++++++ current-testing/dom0/fc25/rpm/qubes-release-notes-4.0-5.noarch.rpm
+2018-09-17 14:02:14.070791 +0000 build-fedora4: .          8,278 100%    8.55kB/s    0:00:00  .          8,278 100%    8.55kB/s    0:00:00 (xfr#24, ir-chk=1092/1402)
+2018-09-17 14:02:14.070805 +0000 build-fedora4: .d..t...... current-testing/vm/
+2018-09-17 14:02:14.070819 +0000 build-fedora4: .d..t...... current-testing/vm/centos7/
+2018-09-17 14:02:14.070834 +0000 build-fedora4: .L..t...... current-testing/vm/centos7/comps.xml -> ../../../comps-vm.xml
+2018-09-17 14:02:14.070848 +0000 build-fedora4: .d..t...... current-testing/vm/centos7/rpm/
+2018-09-17 14:02:14.070861 +0000 build-fedora4: <f..t...... current-testing/vm/centos7/rpm/.gitignore
+2018-09-17 14:02:14.071314 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#25, ir-chk=1024/1402)
+2018-09-17 14:02:14.071341 +0000 build-fedora4: .d..t...... current-testing/vm/fc20/
+2018-09-17 14:02:14.071358 +0000 build-fedora4: .d..t...... current-testing/vm/fc21/
+2018-09-17 14:02:14.071371 +0000 build-fedora4: .d..t...... current-testing/vm/fc22/
+2018-09-17 14:02:14.071383 +0000 build-fedora4: .d..t...... current-testing/vm/fc23/
+2018-09-17 14:02:14.071396 +0000 build-fedora4: .d..t...... current-testing/vm/fc24/
+2018-09-17 14:02:14.071410 +0000 build-fedora4: .L..t...... current-testing/vm/fc24/comps.xml -> ../../../comps-vm.xml
+2018-09-17 14:02:14.071423 +0000 build-fedora4: .d..t...... current-testing/vm/fc24/rpm/
+2018-09-17 14:02:14.071436 +0000 build-fedora4: <f..t...... current-testing/vm/fc24/rpm/.gitignore
+2018-09-17 14:02:14.071848 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#26, ir-chk=1021/1402)
+2018-09-17 14:02:14.071872 +0000 build-fedora4: .d..t...... current-testing/vm/fc25/
+2018-09-17 14:02:14.071889 +0000 build-fedora4: .L..t...... current-testing/vm/fc25/comps.xml -> ../../../comps-vm.xml
+2018-09-17 14:02:14.071902 +0000 build-fedora4: .d..t...... current-testing/vm/fc25/rpm/
+2018-09-17 14:02:14.071915 +0000 build-fedora4: <f..t...... current-testing/vm/fc25/rpm/.gitignore
+2018-09-17 14:02:14.072226 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#27, ir-chk=1018/1402)
+2018-09-17 14:02:14.072249 +0000 build-fedora4: .d..t...... current-testing/vm/fc26/
+2018-09-17 14:02:14.072265 +0000 build-fedora4: .L..t...... current-testing/vm/fc26/comps.xml -> ../../../comps-vm.xml
+2018-09-17 14:02:14.072293 +0000 build-fedora4: .d..t...... current-testing/vm/fc26/rpm/
+2018-09-17 14:02:14.072307 +0000 build-fedora4: <f..t...... current-testing/vm/fc26/rpm/.gitignore
+2018-09-17 14:02:14.072590 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#28, ir-chk=1015/1402)
+2018-09-17 14:02:14.072612 +0000 build-fedora4: .d..t...... current-testing/vm/fc27/
+2018-09-17 14:02:14.072628 +0000 build-fedora4: .L..t...... current-testing/vm/fc27/comps.xml -> ../../../comps-vm.xml
+2018-09-17 14:02:14.072641 +0000 build-fedora4: .d..t...... current-testing/vm/fc27/rpm/
+2018-09-17 14:02:14.072654 +0000 build-fedora4: <f..t...... current-testing/vm/fc27/rpm/.gitignore
+2018-09-17 14:02:14.073112 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#29, ir-chk=1012/1402)
+2018-09-17 14:02:14.073145 +0000 build-fedora4: .d..t...... current-testing/vm/fc28/
+2018-09-17 14:02:14.073169 +0000 build-fedora4: .L..t...... current-testing/vm/fc28/comps.xml -> ../../../comps-vm.xml
+2018-09-17 14:02:14.073187 +0000 build-fedora4: .d..t...... current-testing/vm/fc28/rpm/
+2018-09-17 14:02:14.073203 +0000 build-fedora4: <f..t...... current-testing/vm/fc28/rpm/.gitignore
+2018-09-17 14:02:14.073420 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#30, ir-chk=1009/1402)
+2018-09-17 14:02:14.073442 +0000 build-fedora4: .d..t...... current-testing/vm/fc29/
+2018-09-17 14:02:14.073459 +0000 build-fedora4: .L..t...... current-testing/vm/fc29/comps.xml -> ../../../comps-vm.xml
+2018-09-17 14:02:14.073473 +0000 build-fedora4: .d..t...... current-testing/vm/fc29/rpm/
+2018-09-17 14:02:14.073487 +0000 build-fedora4: <f..t...... current-testing/vm/fc29/rpm/.gitignore
+2018-09-17 14:02:14.073853 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#31, ir-chk=1006/1402)
+2018-09-17 14:02:14.073875 +0000 build-fedora4: .d..t...... current/
+2018-09-17 14:02:14.073888 +0000 build-fedora4: .d..t...... current/dom0/
+2018-09-17 14:02:14.073901 +0000 build-fedora4: .d..t...... current/dom0/fc25/
+2018-09-17 14:02:14.073915 +0000 build-fedora4: .L..t...... current/dom0/fc25/comps.xml -> ../../../comps-dom0.xml
+2018-09-17 14:02:14.089859 +0000 build-fedora4: .d..t...... current/dom0/fc25/rpm/
+2018-09-17 14:02:14.089903 +0000 build-fedora4: <f..t...... current/dom0/fc25/rpm/.gitignore
+2018-09-17 14:02:14.090178 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#32, to-chk=1027/1429)
+2018-09-17 14:02:14.090206 +0000 build-fedora4: rsync: failed to set times on "/pub/qubes/repo/yum/r4.0/current/vm/fc24/comps.xml": Operation not permitted (1)
+2018-09-17 14:02:14.090226 +0000 build-fedora4: rsync: failed to set times on "/pub/qubes/repo/yum/r4.0/current/vm/fc25": Operation not permitted (1)
+2018-09-17 14:02:14.090244 +0000 build-fedora4: rsync: failed to set times on "/pub/qubes/repo/yum/r4.0/current/vm/fc25/comps.xml": Operation not permitted (1)
+2018-09-17 14:02:14.090260 +0000 build-fedora4: rsync: failed to set times on "/pub/qubes/repo/yum/r4.0/current/vm/fc25/rpm": Operation not permitted (1)
+2018-09-17 14:02:14.090277 +0000 build-fedora4: rsync: failed to set times on "/pub/qubes/repo/yum/r4.0/current/vm/fc26": Operation not permitted (1)
+2018-09-17 14:02:14.090293 +0000 build-fedora4: rsync: failed to set times on "/pub/qubes/repo/yum/r4.0/current/vm/fc26/comps.xml": Operation not permitted (1)
+2018-09-17 14:02:14.090310 +0000 build-fedora4: rsync: failed to set times on "/pub/qubes/repo/yum/r4.0/current/vm/fc26/rpm": Operation not permitted (1)
+2018-09-17 14:02:14.090322 +0000 build-fedora4: .d..t...... current/vm/
+2018-09-17 14:02:14.090334 +0000 build-fedora4: .d..t...... current/vm/centos7/
+2018-09-17 14:02:14.090358 +0000 build-fedora4: .L..t...... current/vm/centos7/comps.xml -> ../../../comps-vm.xml
+2018-09-17 14:02:14.090385 +0000 build-fedora4: .d..t...... current/vm/centos7/rpm/
+2018-09-17 14:02:14.090399 +0000 build-fedora4: <f..t...... current/vm/centos7/rpm/.gitignore
+2018-09-17 14:02:14.090672 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#33, to-chk=225/1429)
+2018-09-17 14:02:14.090700 +0000 build-fedora4: .d..t...... current/vm/fc17/
+2018-09-17 14:02:14.090715 +0000 build-fedora4: .d..t...... current/vm/fc20/
+2018-09-17 14:02:14.090728 +0000 build-fedora4: .d..t...... current/vm/fc21/
+2018-09-17 14:02:14.090755 +0000 build-fedora4: .d..t...... current/vm/fc22/
+2018-09-17 14:02:14.090768 +0000 build-fedora4: .d..t...... current/vm/fc23/
+2018-09-17 14:02:14.090781 +0000 build-fedora4: .d..t...... current/vm/fc24/
+2018-09-17 14:02:14.090795 +0000 build-fedora4: .L..t...... current/vm/fc24/comps.xml -> ../../../comps-vm.xml
+2018-09-17 14:02:14.090807 +0000 build-fedora4: .d..t...... current/vm/fc24/rpm/
+2018-09-17 14:02:14.090820 +0000 build-fedora4: <f..t...... current/vm/fc24/rpm/.gitignore
+2018-09-17 14:02:14.091018 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#34, to-chk=222/1429)
+2018-09-17 14:02:14.091040 +0000 build-fedora4: .d..t...... current/vm/fc25/
+2018-09-17 14:02:14.091055 +0000 build-fedora4: .L..t...... current/vm/fc25/comps.xml -> ../../../comps-vm.xml
+2018-09-17 14:02:14.091068 +0000 build-fedora4: .d..t...... current/vm/fc25/rpm/
+2018-09-17 14:02:14.091080 +0000 build-fedora4: <f..t...... current/vm/fc25/rpm/.gitignore
+2018-09-17 14:02:14.091979 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#35, to-chk=219/1429)
+2018-09-17 14:02:14.092013 +0000 build-fedora4: .d..t...... current/vm/fc26/
+2018-09-17 14:02:14.092029 +0000 build-fedora4: .L..t...... current/vm/fc26/comps.xml -> ../../../comps-vm.xml
+2018-09-17 14:02:14.092042 +0000 build-fedora4: .d..t...... current/vm/fc26/rpm/
+2018-09-17 14:02:14.092055 +0000 build-fedora4: <f..t...... current/vm/fc26/rpm/.gitignore
+2018-09-17 14:02:14.092359 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#36, to-chk=216/1429)
+2018-09-17 14:02:14.092382 +0000 build-fedora4: .d..t...... current/vm/fc27/
+2018-09-17 14:02:14.092398 +0000 build-fedora4: .L..t...... current/vm/fc27/comps.xml -> ../../../comps-vm.xml
+2018-09-17 14:02:14.092411 +0000 build-fedora4: .d..t...... current/vm/fc27/rpm/
+2018-09-17 14:02:14.092423 +0000 build-fedora4: <f..t...... current/vm/fc27/rpm/.gitignore
+2018-09-17 14:02:14.092753 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#37, to-chk=213/1429)
+2018-09-17 14:02:14.092775 +0000 build-fedora4: .d..t...... current/vm/fc28/
+2018-09-17 14:02:14.092791 +0000 build-fedora4: .L..t...... current/vm/fc28/comps.xml -> ../../../comps-vm.xml
+2018-09-17 14:02:14.092803 +0000 build-fedora4: .d..t...... current/vm/fc28/rpm/
+2018-09-17 14:02:14.092816 +0000 build-fedora4: <f..t...... current/vm/fc28/rpm/.gitignore
+2018-09-17 14:02:14.093077 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#38, to-chk=210/1429)
+2018-09-17 14:02:14.093098 +0000 build-fedora4: .d..t...... current/vm/fc29/
+2018-09-17 14:02:14.093113 +0000 build-fedora4: .L..t...... current/vm/fc29/comps.xml -> ../../../comps-vm.xml
+2018-09-17 14:02:14.093126 +0000 build-fedora4: .d..t...... current/vm/fc29/rpm/
+2018-09-17 14:02:14.093138 +0000 build-fedora4: <f..t...... current/vm/fc29/rpm/.gitignore
+2018-09-17 14:02:14.093510 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#39, to-chk=207/1429)
+2018-09-17 14:02:14.093533 +0000 build-fedora4: .d..t...... security-testing/
+2018-09-17 14:02:14.093547 +0000 build-fedora4: .d..t...... security-testing/dom0/
+2018-09-17 14:02:14.093560 +0000 build-fedora4: .d..t...... security-testing/dom0/fc21/
+2018-09-17 14:02:14.093592 +0000 build-fedora4: .d..t...... security-testing/dom0/fc21/rpm/
+2018-09-17 14:02:14.093607 +0000 build-fedora4: <f..t...... security-testing/dom0/fc21/rpm/.gitignore
+2018-09-17 14:02:14.093850 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#40, to-chk=201/1429)
+2018-09-17 14:02:14.093873 +0000 build-fedora4: .d..t...... security-testing/dom0/fc25/
+2018-09-17 14:02:14.093887 +0000 build-fedora4: .d..t...... security-testing/dom0/fc25/rpm/
+2018-09-17 14:02:14.093901 +0000 build-fedora4: <f..t...... security-testing/dom0/fc25/rpm/.gitignore
+2018-09-17 14:02:14.094238 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#41, to-chk=199/1429)
+2018-09-17 14:02:15.485234 +0000 build-fedora4: rsync: failed to set times on "/pub/qubes/repo/yum/r4.0/security-testing/vm/fc26": Operation not permitted (1)
+2018-09-17 14:02:15.485280 +0000 build-fedora4: rsync: failed to set times on "/pub/qubes/repo/yum/r4.0/security-testing/vm/fc26/rpm": Operation not permitted (1)
+2018-09-17 14:02:15.485430 +0000 build-fedora4: .d..t...... security-testing/vm/
+2018-09-17 14:02:15.485452 +0000 build-fedora4: .d..t...... security-testing/vm/centos7/
+2018-09-17 14:02:15.485470 +0000 build-fedora4: .L..t...... security-testing/vm/centos7/comps.xml -> ../../../comps-vm.xml
+2018-09-17 14:02:15.485484 +0000 build-fedora4: .d..t...... security-testing/vm/centos7/rpm/
+2018-09-17 14:02:15.485498 +0000 build-fedora4: <f..t...... security-testing/vm/centos7/rpm/.gitignore
+2018-09-17 14:02:15.485917 +0000 build-fedora4: .              6 100%    0.00kB/s    0:00:00  .              6 100%    0.00kB/s    0:00:00 (xfr#42, to-chk=13/1429)
+2018-09-17 14:02:15.485939 +0000 build-fedora4: .d..t...... security-testing/vm/fc20/
+2018-09-17 14:02:15.485953 +0000 build-fedora4: .d..t...... security-testing/vm/fc21/
+2018-09-17 14:02:15.485966 +0000 build-fedora4: .d..t...... security-testing/vm/fc22/
+2018-09-17 14:02:15.485978 +0000 build-fedora4: .d..t...... security-testing/vm/fc23/
+2018-09-17 14:02:15.485990 +0000 build-fedora4: .d..t...... security-testing/vm/fc24/
+2018-09-17 14:02:15.486002 +0000 build-fedora4: .d..t...... security-testing/vm/fc24/rpm/
+2018-09-17 14:02:15.486015 +0000 build-fedora4: <f..t...... security-testing/vm/fc24/rpm/.gitignore
+2018-09-17 14:02:15.486339 +0000 build-fedora4: .              6 100%    5.86kB/s    0:00:00  .              6 100%    5.86kB/s    0:00:00 (xfr#43, to-chk=11/1429)
+2018-09-17 14:02:15.486369 +0000 build-fedora4: .d..t...... security-testing/vm/fc25/
+2018-09-17 14:02:15.486387 +0000 build-fedora4: .d..t...... security-testing/vm/fc25/rpm/
+2018-09-17 14:02:15.486402 +0000 build-fedora4: <f..t...... security-testing/vm/fc25/rpm/.gitignore
+2018-09-17 14:02:15.486720 +0000 build-fedora4: .              6 100%    5.86kB/s    0:00:00  .              6 100%    5.86kB/s    0:00:00 (xfr#44, to-chk=9/1429)
+2018-09-17 14:02:15.486743 +0000 build-fedora4: .d..t...... security-testing/vm/fc26/
+2018-09-17 14:02:15.486757 +0000 build-fedora4: .d..t...... security-testing/vm/fc26/rpm/
+2018-09-17 14:02:15.486771 +0000 build-fedora4: <f..t...... security-testing/vm/fc26/rpm/.gitignore
+2018-09-17 14:02:15.487027 +0000 build-fedora4: .              6 100%    5.86kB/s    0:00:00  .              6 100%    5.86kB/s    0:00:00 (xfr#45, to-chk=7/1429)
+2018-09-17 14:02:15.487049 +0000 build-fedora4: .d..t...... security-testing/vm/fc27/
+2018-09-17 14:02:15.487063 +0000 build-fedora4: .d..t...... security-testing/vm/fc27/rpm/
+2018-09-17 14:02:15.487077 +0000 build-fedora4: <f..t...... security-testing/vm/fc27/rpm/.gitignore
+2018-09-17 14:02:15.487376 +0000 build-fedora4: .              6 100%    5.86kB/s    0:00:00  .              6 100%    5.86kB/s    0:00:00 (xfr#46, to-chk=5/1429)
+2018-09-17 14:02:15.487398 +0000 build-fedora4: .d..t...... security-testing/vm/fc28/
+2018-09-17 14:02:15.487412 +0000 build-fedora4: .d..t...... security-testing/vm/fc28/rpm/
+2018-09-17 14:02:15.487441 +0000 build-fedora4: <f..t...... security-testing/vm/fc28/rpm/.gitignore
+2018-09-17 14:02:15.487749 +0000 build-fedora4: .              6 100%    5.86kB/s    0:00:00  .              6 100%    5.86kB/s    0:00:00 (xfr#47, to-chk=3/1429)
+2018-09-17 14:02:15.487771 +0000 build-fedora4: .d..t...... security-testing/vm/fc29/
+2018-09-17 14:02:15.487788 +0000 build-fedora4: .L..t...... security-testing/vm/fc29/comps.xml -> ../../../comps-vm.xml
+2018-09-17 14:02:15.487801 +0000 build-fedora4: .d..t...... security-testing/vm/fc29/rpm/
+2018-09-17 14:02:15.487814 +0000 build-fedora4: <f..t...... security-testing/vm/fc29/rpm/.gitignore
+2018-09-17 14:02:15.488119 +0000 build-fedora4: .              6 100%    2.93kB/s    0:00:00  .              6 100%    2.93kB/s    0:00:00 (xfr#48, to-chk=0/1429)
+2018-09-17 14:02:15.567778 +0000 build-fedora4: rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1189) [sender=3.1.3]
+2018-09-17 14:02:16.047465 +0000 build-fedora4: --> Processing repo: r4.0/current/dom0/fc20...
+2018-09-17 14:02:16.179602 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:02:17.026447 +0000 build-fedora4: --> Processing repo: r4.0/current/dom0/fc25...
+2018-09-17 14:02:17.134595 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:04:06.916806 +0000 build-fedora4: --> Processing repo: r4.0/current/vm/centos7...
+2018-09-17 14:04:07.023075 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:04:12.300910 +0000 build-fedora4: --> Processing repo: r4.0/current/vm/fc17...
+2018-09-17 14:04:12.397993 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:04:14.090898 +0000 build-fedora4: --> Processing repo: r4.0/current/vm/fc20...
+2018-09-17 14:04:14.188164 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:04:14.943076 +0000 build-fedora4: --> Processing repo: r4.0/current/vm/fc21...
+2018-09-17 14:04:15.040505 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:04:15.793301 +0000 build-fedora4: --> Processing repo: r4.0/current/vm/fc22...
+2018-09-17 14:04:15.888553 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:04:16.638565 +0000 build-fedora4: --> Processing repo: r4.0/current/vm/fc23...
+2018-09-17 14:04:16.734595 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:04:17.516810 +0000 build-fedora4: --> Processing repo: r4.0/current/vm/fc24...
+2018-09-17 14:04:17.620093 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:04:22.885800 +0000 build-fedora4: --> Processing repo: r4.0/current/vm/fc25...
+2018-09-17 14:04:23.226399 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:04:28.413783 +0000 build-fedora4: --> Processing repo: r4.0/current/vm/fc26...
+2018-09-17 14:04:28.518062 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:04:33.858641 +0000 build-fedora4: --> Processing repo: r4.0/current/vm/fc27...
+2018-09-17 14:04:33.961435 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:04:36.136473 +0000 build-fedora4: --> Processing repo: r4.0/current/vm/fc28...
+2018-09-17 14:04:36.238327 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:04:38.551409 +0000 build-fedora4: --> Processing repo: r4.0/current/vm/fc29...
+2018-09-17 14:04:38.646809 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:04:39.404361 +0000 build-fedora4: Done.
+2018-09-17 14:04:39.593044 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/dom0/fc20...
+2018-09-17 14:04:39.688370 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:04:40.457854 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/dom0/fc25...
+2018-09-17 14:04:40.573403 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:07:55.688293 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/centos7...
+2018-09-17 14:07:55.795969 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:08:12.300466 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc20...
+2018-09-17 14:08:12.395287 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:08:13.125841 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc21...
+2018-09-17 14:08:13.220054 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:08:14.005523 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc22...
+2018-09-17 14:08:14.099228 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:08:14.841508 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc23...
+2018-09-17 14:08:14.936369 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:08:15.627449 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc24...
+2018-09-17 14:08:15.734520 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:08:41.939428 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc25...
+2018-09-17 14:08:42.285624 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:09:08.018012 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc26...
+2018-09-17 14:09:08.127081 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:09:28.789297 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc27...
+2018-09-17 14:09:28.894122 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:09:32.822498 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc28...
+2018-09-17 14:09:32.926089 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:09:36.469277 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc29...
+2018-09-17 14:09:36.564724 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:09:37.305789 +0000 build-fedora4: Done.
+2018-09-17 14:09:37.493564 +0000 build-fedora4: --> Processing repo: r4.0/security-testing/dom0/fc20...
+2018-09-17 14:09:37.587618 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:09:38.341431 +0000 build-fedora4: --> Processing repo: r4.0/security-testing/dom0/fc21...
+2018-09-17 14:09:38.439935 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:09:39.177459 +0000 build-fedora4: --> Processing repo: r4.0/security-testing/dom0/fc25...
+2018-09-17 14:09:39.277929 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:10:11.066402 +0000 build-fedora4: --> Processing repo: r4.0/security-testing/vm/centos7...
+2018-09-17 14:10:11.166130 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:10:17.348093 +0000 build-fedora4: --> Processing repo: r4.0/security-testing/vm/fc20...
+2018-09-17 14:10:17.442574 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:10:18.190447 +0000 build-fedora4: --> Processing repo: r4.0/security-testing/vm/fc21...
+2018-09-17 14:10:18.284387 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:10:19.025127 +0000 build-fedora4: --> Processing repo: r4.0/security-testing/vm/fc22...
+2018-09-17 14:10:19.119757 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:10:19.918145 +0000 build-fedora4: --> Processing repo: r4.0/security-testing/vm/fc23...
+2018-09-17 14:10:20.012270 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:10:20.748023 +0000 build-fedora4: --> Processing repo: r4.0/security-testing/vm/fc24...
+2018-09-17 14:10:20.847702 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:10:28.957250 +0000 build-fedora4: --> Processing repo: r4.0/security-testing/vm/fc25...
+2018-09-17 14:10:29.059186 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:10:37.478607 +0000 build-fedora4: --> Processing repo: r4.0/security-testing/vm/fc26...
+2018-09-17 14:10:37.520144 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:10:45.061297 +0000 build-fedora4: --> Processing repo: r4.0/security-testing/vm/fc27...
+2018-09-17 14:10:45.535873 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:10:46.893465 +0000 build-fedora4: --> Processing repo: r4.0/security-testing/vm/fc28...
+2018-09-17 14:10:46.994845 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:10:48.682655 +0000 build-fedora4: --> Processing repo: r4.0/security-testing/vm/fc29...
+2018-09-17 14:10:48.775121 +0000 build-fedora4: Warning: Requested more delta workers than workers. This is insane. Limiting.
+2018-09-17 14:10:49.633225 +0000 build-fedora4: Done.
+2018-09-17 14:10:49.634162 +0000 build-fedora4: ~/builder-r4.0-dom0/qubes-src/linux-yum
+2018-09-17 14:10:49.635745 +0000 build-fedora4: Makefile:757: update target 'update-repo-current-testing' due to: internal-update-repo-current-testing.dom0.fc25.installer-qubes-os post-update-repo-current-testing
+2018-09-17 14:10:49.635777 +0000 build-fedora4: true
+2018-09-17 14:10:49.639038 +0000 build-fedora4: > done
+2018-09-17 14:11:49.694815 +0000 > closing log
