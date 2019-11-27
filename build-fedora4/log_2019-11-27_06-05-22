@@ -1,0 +1,922 @@
+2019-11-27 06:05:22.934381 +0000 > starting log
+2019-11-27 06:05:22.935330 +0000 build-fedora4: > starting build with log
+2019-11-27 06:05:22.935361 +0000 build-fedora4: >> make args: DISTS_VM= DIST_DOM0=fc25 BUILD_LOGS_URL= linux-kernel-latest-dom0-fc25=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2019-11-27_03-52-29 GIT_URL_linux_kernel_latest=https://github.com/QubesOS/qubes-linux-kernel sign-all update-repo-current-testing
+2019-11-27 06:05:22.935373 +0000 build-fedora4: >> MAKEFLAGS=
+2019-11-27 06:05:22.935382 +0000 build-fedora4: >> COMPONENTS=linux-kernel-latest
+2019-11-27 06:05:22.935389 +0000 build-fedora4: >> DISTS_VM=
+2019-11-27 06:05:22.935396 +0000 build-fedora4: >> DIST_DOM0=
+2019-11-27 06:05:22.935405 +0000 build-fedora4: >> qubes-builder 93a49fd32464c292a3d5a6c59231a03b57613025
+2019-11-27 06:05:22.935413 +0000 build-fedora4: ?? rpmdb/Basenames
+2019-11-27 06:05:22.935420 +0000 build-fedora4: ?? rpmdb/Conflictname
+2019-11-27 06:05:22.935428 +0000 build-fedora4: ?? rpmdb/Dirnames
+2019-11-27 06:05:22.935436 +0000 build-fedora4: ?? rpmdb/Enhancename
+2019-11-27 06:05:22.935443 +0000 build-fedora4: ?? rpmdb/Filetriggername
+2019-11-27 06:05:22.935450 +0000 build-fedora4: ?? rpmdb/Group
+2019-11-27 06:05:22.935457 +0000 build-fedora4: ?? rpmdb/Installtid
+2019-11-27 06:05:22.935464 +0000 build-fedora4: ?? rpmdb/Name
+2019-11-27 06:05:22.935471 +0000 build-fedora4: ?? rpmdb/Obsoletename
+2019-11-27 06:05:22.935477 +0000 build-fedora4: ?? rpmdb/Packages
+2019-11-27 06:05:22.935484 +0000 build-fedora4: ?? rpmdb/Providename
+2019-11-27 06:05:22.935491 +0000 build-fedora4: ?? rpmdb/Recommendname
+2019-11-27 06:05:22.935498 +0000 build-fedora4: ?? rpmdb/Requirename
+2019-11-27 06:05:22.935505 +0000 build-fedora4: ?? rpmdb/Sha1header
+2019-11-27 06:05:22.935512 +0000 build-fedora4: ?? rpmdb/Sigmd5
+2019-11-27 06:05:22.935519 +0000 build-fedora4: ?? rpmdb/Suggestname
+2019-11-27 06:05:22.935526 +0000 build-fedora4: ?? rpmdb/Supplementname
+2019-11-27 06:05:22.935533 +0000 build-fedora4: ?? rpmdb/Transfiletriggername
+2019-11-27 06:05:22.935540 +0000 build-fedora4: ?? rpmdb/Triggername
+2019-11-27 06:05:22.935547 +0000 build-fedora4: ?? rpmdb/__db.001
+2019-11-27 06:05:22.935554 +0000 build-fedora4: ?? rpmdb/__db.002
+2019-11-27 06:05:22.935560 +0000 build-fedora4: ?? rpmdb/__db.003
+2019-11-27 06:05:22.935573 +0000 build-fedora4: 0e0dc29702af2c4512d9e8223c1660373fa7a3f1996369d90d430aefd1b7ec279724abcd60c3e59ed7f0d30e8ca2ddef6eee71d11427f3ed404c32f307e24bee  rpmdb/Basenames
+2019-11-27 06:05:22.935585 +0000 build-fedora4: eaa9eea3d46df9d5801c6e804c2fac47102cc9cf7bc623d9f9b6b9963785cf32a5113749f20b5cff508f6d1bddecbe21f39012bab93745d0316cce6204caf6b9  rpmdb/Conflictname
+2019-11-27 06:05:22.935598 +0000 build-fedora4: d5c585d72887699083560a700609746a9baffb0f3578added9d42e058dfe76533b5b2c9e66f2d60d907b1844fdb41c03325f9288eb2b6b473ac731869d35abba  rpmdb/Dirnames
+2019-11-27 06:05:22.935611 +0000 build-fedora4: 8890b7ed9eef9e578d4fc4a02626c3ff9eaf558aaaf9fd4a2781202512038ac96deedc95671793801cb84865cf4b1826bcbc81359d0b18ecb4abecb68ca38af4  rpmdb/Enhancename
+2019-11-27 06:05:22.935623 +0000 build-fedora4: 1949ebc2d95acbf94f8974e84876feff55e61aa127a9ca1fc76a04a0bdc5a75dbc49e391a6a9836fa1bc37753d250ad669d6c53cc7c4a8bf8ae4a76ded7c4381  rpmdb/Filetriggername
+2019-11-27 06:05:22.935636 +0000 build-fedora4: bbb8222d139e1d7134ecb9882c2bec2fc60f0407a1fc51f67830fe67ecf32479feed34830454d370f6f76e5d47260bb07eefaa29988188b88c95e9b116efecc3  rpmdb/Group
+2019-11-27 06:05:22.935648 +0000 build-fedora4: fe0375a49617d7ba19a3cd0874b5b297f8908429340796a6d6ec0a095a02b91bfac415a5bcd0649333f8cf501caa59a52f86185c44b50b4563e06f768a561e37  rpmdb/Installtid
+2019-11-27 06:05:22.935661 +0000 build-fedora4: 9490dbeb98191d45b3b950a3dd3b161091f26b3855544bf27a090e72ae6bf626ccb7e220be66d1b3eaaaef1dccfe585c1ca68e29fda543454bd3d6dffbdac3fd  rpmdb/Name
+2019-11-27 06:05:22.935673 +0000 build-fedora4: 9b319e0a5a9c16262763e28545413467cea9103e59364d7389736262c1c2453f0816036f6ed1589f2833dc607d6acdcd0fede7582443711dfee64ea5bbd10cfb  rpmdb/Obsoletename
+2019-11-27 06:05:22.935686 +0000 build-fedora4: a0a952ef7147f9d64e785f43e6004d36d6f6eea681998235266d5925293a44a719d536ec077d734c707afaaefe71d4dafa5ecd7d4f8fb4ebdcf957921f7cc562  rpmdb/Packages
+2019-11-27 06:05:22.935703 +0000 build-fedora4: 4ec5d460a3bbfe8a93502581d2bc0156f2ad56536bb54845aa25d44dd92f6712a22057250ee97c7787d609279f7f4c83dcf3bb50b63e87184411963ce8611fbf  rpmdb/Providename
+2019-11-27 06:05:22.935717 +0000 build-fedora4: 249e9e056f6ee64823df0652e9d880494d511230c8122c8be0257a4b81e99a5a582bf1205c68c7b8816cfd10648b1813dc2cecb4ad0ec41e6b42c2a476d3de1f  rpmdb/Recommendname
+2019-11-27 06:05:22.935729 +0000 build-fedora4: a9dd2321719f0266d275a377b922b7147278ce81168d920bdc4d506f94198879fc06ba8cd8324f333652e66069eda3b85d5e1c41b8b382f5ca813386d83f395e  rpmdb/Requirename
+2019-11-27 06:05:22.935742 +0000 build-fedora4: 8ca7278d2bc8b3d9d827cdd996302d865832528ff87d71d12b3721cda38b7ef72fa327936e818a5d13748b1841395da4aa3ed4ccd827734dd07c4972f5d05792  rpmdb/Sha1header
+2019-11-27 06:05:22.935754 +0000 build-fedora4: 7bb4c320a15a4c7cd34fd0ac674b95243686b37521ae0e7ad3b174eb9fc63737a0acdded1cea7a8a78b17b80699cb489184423f57f0f24a338f47a51c1ed3ae5  rpmdb/Sigmd5
+2019-11-27 06:05:22.935767 +0000 build-fedora4: 0b2a8db3091c70f84fbe68a95a4d3b31a8005e56991afd957e694518c97e99ae58a0bcbbc79033d7a6998e6f0efd30ce99ae65d4dc10afb291211474c9515655  rpmdb/Suggestname
+2019-11-27 06:05:22.935779 +0000 build-fedora4: e5a38c874b93378f1f6c66bbc27cae49f533634153e64289a2646da0510406893d75524bacbf6c2fa22199f239e8d0ff185fe3771a6401a1fd32996d6cfe2649  rpmdb/Supplementname
+2019-11-27 06:05:22.935792 +0000 build-fedora4: a93ce0dc832e4d85f676e9419c744c29f303b51376268d0dcdc778509f9ddf8b499d0212ccaaa53b0f206f0b6f14fea9aa3e190ee71fd99a3b2472d282340603  rpmdb/Transfiletriggername
+2019-11-27 06:05:22.935805 +0000 build-fedora4: acac296dcd741667a82e243377080149561c65a0f6e55b19c6bc8804521c563db14c18a1605f6fd6efe4a6ceed438fccc683b580a71900514767b65e4e1f836c  rpmdb/Triggername
+2019-11-27 06:05:22.935817 +0000 build-fedora4: 822f186736bec507bf70d891a794a688268ead591053a0bd55f177d747f66ed43e4b9a9dd5f9ef213bd75b00a5c4c434ea7126ad7e6ae0d466776414cadde570  rpmdb/__db.001
+2019-11-27 06:05:22.935830 +0000 build-fedora4: 4d33c7fbce6f30dd8fd0b3c5993771772f9cab98a443d2f94d0ed1c377d513cde9cb0d6978aa3d551fb9d0a83c9192a0c0e103676d803f63fdcae1383b93e7de  rpmdb/__db.002
+2019-11-27 06:05:22.935851 +0000 build-fedora4: dae10ea2fe6e3c367eb53af6da1e0ad3b0bfdc7b5fb9eb8775f8afb8ee42b93ab1bee4fe638e23389639e41e9d94a402d71541aadbe520d30ea576524372ee71  rpmdb/__db.003
+2019-11-27 06:05:22.935862 +0000 build-fedora4: >> qubes-builder/qubes-src/linux-kernel-latest 9fc40622cd6a5799dfa8cf5a73fc0737be1ddbc2
+2019-11-27 06:05:22.935871 +0000 build-fedora4: !! WireGuard-0.0.20190406.tar.asc
+2019-11-27 06:05:22.935879 +0000 build-fedora4: !! WireGuard-0.0.20190406.tar.xz
+2019-11-27 06:05:22.935887 +0000 build-fedora4: !! WireGuard-0.0.20190702.tar.asc
+2019-11-27 06:05:22.935895 +0000 build-fedora4: !! WireGuard-0.0.20190702.tar.xz
+2019-11-27 06:05:22.935902 +0000 build-fedora4: !! WireGuard-0.0.20190913.tar.asc
+2019-11-27 06:05:22.935910 +0000 build-fedora4: !! WireGuard-0.0.20190913.tar.xz
+2019-11-27 06:05:22.935917 +0000 build-fedora4: !! WireGuard-0.0.20191012.tar.asc
+2019-11-27 06:05:22.935925 +0000 build-fedora4: !! WireGuard-0.0.20191012.tar.xz
+2019-11-27 06:05:22.935932 +0000 build-fedora4: !! linux-4.20.16.tar.sign
+2019-11-27 06:05:22.935940 +0000 build-fedora4: !! linux-4.20.16.tar.xz
+2019-11-27 06:05:22.935947 +0000 build-fedora4: !! linux-5.0.11.tar.sign
+2019-11-27 06:05:22.935954 +0000 build-fedora4: !! linux-5.0.11.tar.xz
+2019-11-27 06:05:22.935961 +0000 build-fedora4: !! linux-5.0.2.tar.sign
+2019-11-27 06:05:22.935968 +0000 build-fedora4: !! linux-5.0.2.tar.xz
+2019-11-27 06:05:22.935975 +0000 build-fedora4: !! linux-5.0.5.tar.sign
+2019-11-27 06:05:22.935982 +0000 build-fedora4: !! linux-5.0.5.tar.xz
+2019-11-27 06:05:22.935989 +0000 build-fedora4: !! linux-5.0.7.tar.sign
+2019-11-27 06:05:22.935996 +0000 build-fedora4: !! linux-5.0.7.tar.xz
+2019-11-27 06:05:22.936003 +0000 build-fedora4: !! linux-5.0.9.tar.sign
+2019-11-27 06:05:22.936014 +0000 build-fedora4: !! linux-5.0.9.tar.xz
+2019-11-27 06:05:22.936021 +0000 build-fedora4: !! linux-5.1.1.tar.sign
+2019-11-27 06:05:22.936028 +0000 build-fedora4: !! linux-5.1.1.tar.xz
+2019-11-27 06:05:22.936035 +0000 build-fedora4: !! linux-5.1.13.tar.sign
+2019-11-27 06:05:22.936042 +0000 build-fedora4: !! linux-5.1.13.tar.xz
+2019-11-27 06:05:22.936049 +0000 build-fedora4: !! linux-5.1.15.tar.sign
+2019-11-27 06:05:22.936056 +0000 build-fedora4: !! linux-5.1.15.tar.xz
+2019-11-27 06:05:22.936063 +0000 build-fedora4: !! linux-5.1.16.tar.sign
+2019-11-27 06:05:22.936070 +0000 build-fedora4: !! linux-5.1.16.tar.xz
+2019-11-27 06:05:22.936077 +0000 build-fedora4: !! linux-5.1.17.tar.sign
+2019-11-27 06:05:22.936084 +0000 build-fedora4: !! linux-5.1.17.tar.xz
+2019-11-27 06:05:22.936091 +0000 build-fedora4: !! linux-5.1.2.tar.sign
+2019-11-27 06:05:22.936098 +0000 build-fedora4: !! linux-5.1.2.tar.xz
+2019-11-27 06:05:22.936105 +0000 build-fedora4: !! linux-5.1.6.tar.sign
+2019-11-27 06:05:22.936112 +0000 build-fedora4: !! linux-5.1.6.tar.xz
+2019-11-27 06:05:22.936119 +0000 build-fedora4: !! linux-5.1.7.tar.sign
+2019-11-27 06:05:22.936126 +0000 build-fedora4: !! linux-5.1.7.tar.xz
+2019-11-27 06:05:22.936150 +0000 build-fedora4: !! linux-5.1.9.tar.sign
+2019-11-27 06:05:22.936158 +0000 build-fedora4: !! linux-5.1.9.tar.xz
+2019-11-27 06:05:22.936165 +0000 build-fedora4: !! linux-5.2.11.tar.sign
+2019-11-27 06:05:22.936172 +0000 build-fedora4: !! linux-5.2.11.tar.xz
+2019-11-27 06:05:22.936179 +0000 build-fedora4: !! linux-5.2.13.tar.sign
+2019-11-27 06:05:22.936186 +0000 build-fedora4: !! linux-5.2.13.tar.xz
+2019-11-27 06:05:22.936193 +0000 build-fedora4: !! linux-5.2.14.tar.sign
+2019-11-27 06:05:22.936199 +0000 build-fedora4: !! linux-5.2.14.tar.xz
+2019-11-27 06:05:22.936206 +0000 build-fedora4: !! linux-5.2.16.tar.sign
+2019-11-27 06:05:22.936214 +0000 build-fedora4: !! linux-5.2.16.tar.xz
+2019-11-27 06:05:22.936220 +0000 build-fedora4: !! linux-5.2.3.tar.sign
+2019-11-27 06:05:22.936227 +0000 build-fedora4: !! linux-5.2.3.tar.xz
+2019-11-27 06:05:22.936234 +0000 build-fedora4: !! linux-5.2.7.tar.sign
+2019-11-27 06:05:22.936241 +0000 build-fedora4: !! linux-5.2.7.tar.xz
+2019-11-27 06:05:22.936248 +0000 build-fedora4: !! linux-5.2.9.tar.sign
+2019-11-27 06:05:22.936255 +0000 build-fedora4: !! linux-5.2.9.tar.xz
+2019-11-27 06:05:22.936262 +0000 build-fedora4: !! linux-5.3.11.tar.sign
+2019-11-27 06:05:22.936269 +0000 build-fedora4: !! linux-5.3.11.tar.xz
+2019-11-27 06:05:22.936276 +0000 build-fedora4: !! linux-5.3.12.tar.sign
+2019-11-27 06:05:22.936283 +0000 build-fedora4: !! linux-5.3.12.tar.xz
+2019-11-27 06:05:22.936290 +0000 build-fedora4: !! linux-5.3.2.tar.sign
+2019-11-27 06:05:22.936297 +0000 build-fedora4: !! linux-5.3.2.tar.xz
+2019-11-27 06:05:22.936304 +0000 build-fedora4: !! linux-5.3.6.tar.sign
+2019-11-27 06:05:22.936311 +0000 build-fedora4: !! linux-5.3.6.tar.xz
+2019-11-27 06:05:22.936318 +0000 build-fedora4: !! linux-5.3.7.tar.sign
+2019-11-27 06:05:22.936325 +0000 build-fedora4: !! linux-5.3.7.tar.xz
+2019-11-27 06:05:22.936332 +0000 build-fedora4: !! linux-5.3.8.tar.sign
+2019-11-27 06:05:22.936339 +0000 build-fedora4: !! linux-5.3.8.tar.xz
+2019-11-27 06:05:22.936346 +0000 build-fedora4: !! linux-5.3.9.tar.sign
+2019-11-27 06:05:22.936353 +0000 build-fedora4: !! linux-5.3.9.tar.xz
+2019-11-27 06:05:22.936361 +0000 build-fedora4: !! pkgs/dom0-fc25/kernel.spec.list
+2019-11-27 06:05:22.936370 +0000 build-fedora4: !! pkgs/dom0-fc25/x86_64/kernel-latest-4.17.9-2.pvops.qubes.x86_64.rpm
+2019-11-27 06:05:22.936379 +0000 build-fedora4: !! pkgs/dom0-fc25/x86_64/kernel-latest-5.3.11-1.qubes.x86_64.rpm
+2019-11-27 06:05:22.936388 +0000 build-fedora4: !! pkgs/dom0-fc25/x86_64/kernel-latest-5.3.12-1.qubes.x86_64.rpm
+2019-11-27 06:05:22.936398 +0000 build-fedora4: !! pkgs/dom0-fc25/x86_64/kernel-latest-5.3.7-1.pvops.qubes.x86_64.rpm
+2019-11-27 06:05:22.936406 +0000 build-fedora4: !! pkgs/dom0-fc25/x86_64/kernel-latest-5.3.9-1.qubes.x86_64.rpm
+2019-11-27 06:05:22.936416 +0000 build-fedora4: !! pkgs/dom0-fc25/x86_64/kernel-latest-devel-4.17.9-2.pvops.qubes.x86_64.rpm
+2019-11-27 06:05:22.936429 +0000 build-fedora4: !! pkgs/dom0-fc25/x86_64/kernel-latest-devel-5.3.11-1.qubes.x86_64.rpm
+2019-11-27 06:05:22.936439 +0000 build-fedora4: !! pkgs/dom0-fc25/x86_64/kernel-latest-devel-5.3.12-1.qubes.x86_64.rpm
+2019-11-27 06:05:22.936448 +0000 build-fedora4: !! pkgs/dom0-fc25/x86_64/kernel-latest-devel-5.3.7-1.pvops.qubes.x86_64.rpm
+2019-11-27 06:05:22.936457 +0000 build-fedora4: !! pkgs/dom0-fc25/x86_64/kernel-latest-devel-5.3.9-1.qubes.x86_64.rpm
+2019-11-27 06:05:22.936467 +0000 build-fedora4: !! pkgs/dom0-fc25/x86_64/kernel-latest-qubes-vm-4.17.9-2.pvops.qubes.x86_64.rpm
+2019-11-27 06:05:22.936476 +0000 build-fedora4: !! pkgs/dom0-fc25/x86_64/kernel-latest-qubes-vm-5.3.11-1.qubes.x86_64.rpm
+2019-11-27 06:05:22.936486 +0000 build-fedora4: !! pkgs/dom0-fc25/x86_64/kernel-latest-qubes-vm-5.3.12-1.qubes.x86_64.rpm
+2019-11-27 06:05:22.936495 +0000 build-fedora4: !! pkgs/dom0-fc25/x86_64/kernel-latest-qubes-vm-5.3.7-1.pvops.qubes.x86_64.rpm
+2019-11-27 06:05:22.936505 +0000 build-fedora4: !! pkgs/dom0-fc25/x86_64/kernel-latest-qubes-vm-5.3.9-1.qubes.x86_64.rpm
+2019-11-27 06:05:22.936518 +0000 build-fedora4: 77e13bb2bed7d950aa884808bc3c4aa9404275247e36964ce2f8e4d0934250eaa2d577f4d1023382ddf9188d32e8084c6070f4e0828f959c8cf04ae9b157a1aa  WireGuard-0.0.20190406.tar.asc
+2019-11-27 06:05:22.936531 +0000 build-fedora4: e3035030299f5a6ae3ac0c2e35dc2d54745cda8f31185b21c6590f1ddcc9c7a83bf7b71cc71f6d48ed6dc8f2b31f3c704f8fa85685d4113f4c560f7eba7b7d5e  WireGuard-0.0.20190406.tar.xz
+2019-11-27 06:05:22.936544 +0000 build-fedora4: 5939b217f7885aa660d4b13d9e97f027f6d9cd4e371f9153e06c9b92354b61e4a4414c544e019c3a50064d34849a85f4130333c0817434a7ed4512720f669612  WireGuard-0.0.20190702.tar.asc
+2019-11-27 06:05:22.936557 +0000 build-fedora4: 8b92b51506cd3f8e9939378b86f23678e08e8501432decd0abf6a9d4e3dfe4742b6f1cb75e06407f5816778b3dd90849a5da83252ab882392ec1905dfb997501  WireGuard-0.0.20190702.tar.xz
+2019-11-27 06:05:22.936570 +0000 build-fedora4: b071617f07531c15479502c13fcc24ee3f83fc9a8df15f7fc6d032515ffd55fb17307dd196172dc5cf77372c50ea37eeeb07e04f37aeffd6bd1c19f5a38143ee  WireGuard-0.0.20190913.tar.asc
+2019-11-27 06:05:22.936583 +0000 build-fedora4: 0d6e754df2f919c288ffe46131df29624e9958d39220369558089218c386450733f2baf97eb5d14154aa17a8d6b01bb0c34e3a1c4587830ed0d792d6ef06aa05  WireGuard-0.0.20190913.tar.xz
+2019-11-27 06:05:22.936596 +0000 build-fedora4: 0dca0298fc2ec39bd995ad7b6f3e907982676260396e77a4af626e802d812bdaeb01f38baa976454f043e113674f727d3de86a75fad3519342a99aaa03deb712  WireGuard-0.0.20191012.tar.asc
+2019-11-27 06:05:22.936613 +0000 build-fedora4: b15424036f26298d8511ca0d0d6a485ff0992726d61fabff8bf6dd64d0a65423bf901e5eb14d3080372017390b05d25faff89a72128932c7408f93f59165c321  WireGuard-0.0.20191012.tar.xz
+2019-11-27 06:05:22.936626 +0000 build-fedora4: 037e44d1e696d9af0a46a637be1adbbc830ba97f7a5512016d49095d6fab4ab9a37369bfabd34726f3f4926c095a1dbc55661f73e8b31f534e391f10b35613d1  linux-4.20.16.tar.sign
+2019-11-27 06:05:23.119822 +0000 build-fedora4: 326f05551b139a686573f07c744e1caa4529ad82c5a2e93f35ea4229ce4bb264bd39d1fe7a28665c6e5bf9edc29d3c1eb1357129469d3a96d9213c93137ae73e  linux-4.20.16.tar.xz
+2019-11-27 06:05:23.120203 +0000 build-fedora4: f85ff41fc3f53f10f178a7d1f4d72c233497000d0093decbd19fa8fb57024fbf58d386df7fd08dda6a4023d69645139240b0258ce20998b922d23fc3a97d4964  linux-5.0.11.tar.sign
+2019-11-27 06:05:23.314380 +0000 build-fedora4: d8bb0721f941798bd98205a452e93b970695af7594c6d55635159dbee9a3576076549c488debdbfe184c57286089d6eaa9321206ac21eef211002f21cc124161  linux-5.0.11.tar.xz
+2019-11-27 06:05:23.314613 +0000 build-fedora4: 0916faffd1b7bf1c4da95cc095627bf35c5b305e37d37d671e9902ee81878694ddbaa81991dc769f1ff9eae83761c1a55b48ccb92b2937c230cf37d348700467  linux-5.0.2.tar.sign
+2019-11-27 06:05:23.511087 +0000 build-fedora4: adabeb1b2abff8d5984d339e0554c3560498a8cccdea12bc1fcf22d5b3cac6e37c2b65eb23c7a95edf510d1ad4669e334de0f0d2ba94cd0a35c96c11576f45e6  linux-5.0.2.tar.xz
+2019-11-27 06:05:23.511281 +0000 build-fedora4: 9dc6a7bf17ea4554a6e4aa44b19c1f32d10489c6479de8f2c88eb58032a7bf5851fbd07e05bfcd42744fcae0574debd0ec9d2015e2c2d9783ec6ad53523a412a  linux-5.0.5.tar.sign
+2019-11-27 06:05:23.696207 +0000 build-fedora4: ad0028a6bb7a9b6b227a03f3d97d725f3cbd8e39017f1c6f8b63554f0a63606a7513b9558a158c7e26ae556b27d3c58669b811114259c02cc890f6ab8e255031  linux-5.0.5.tar.xz
+2019-11-27 06:05:23.696414 +0000 build-fedora4: b7f3809d822bd89543227b5fc80cc86b64837125aeb15ec7be7b490651d5679777ac2aa239531f6b54c6c97e10758b88741df115bc40b268a5c057c088447a08  linux-5.0.7.tar.sign
+2019-11-27 06:05:24.235549 +0000 build-fedora4: 6dadda639104c3d28467f301da48144db1fad0391f2adba7995b99827ed010c98e71cce1e23466b4c18f112cb66502162ebb8c7f3d2fe751900134dad492e08d  linux-5.0.7.tar.xz
+2019-11-27 06:05:24.238369 +0000 build-fedora4: 90a947ee8543338ed73c04d7e829331c6e2240db41a69319cab718369197965a2da0eeb2885bd3449df62243867773a300c8af1d2e6c06261ffd887460956980  linux-5.0.9.tar.sign
+2019-11-27 06:05:24.996849 +0000 build-fedora4: 915397cb24c12c87c96caf264bccf08176632090ce8fe77c899659af274f16f58e160fa607b9d863a42951c75581f1ede594dd73f0486194ccd3e39dbda2e28e  linux-5.0.9.tar.xz
+2019-11-27 06:05:24.999531 +0000 build-fedora4: e12a9834745b8dd02c3e78956dc5d45061fbec094919d321f259e66272dde4cfa1d1104f8d0fdf94a468566b077cea766b9941e91ab01e4fde19b83bda9f03d4  linux-5.1.1.tar.sign
+2019-11-27 06:05:25.690894 +0000 build-fedora4: c4e2df5d633ef71839b9b6c76e34c5d984b6cd41c5e6813f10fb2db3cb891a5702dc46585ab8fff8c118563be280b1016f39f618c6907790f85c222b066c1b47  linux-5.1.1.tar.xz
+2019-11-27 06:05:25.691572 +0000 build-fedora4: bc4865faeb4b6ac52ad3b92eb32a4d7679a6018ad8e65c22832d22db82806cfdc15814718ea76becdb41be2ef1ed768535d04288f9f4a1c1448aad6e8bcb1aa0  linux-5.1.13.tar.sign
+2019-11-27 06:05:26.420311 +0000 build-fedora4: 924a8db3fb2005b73a994b7ad51529d9c82d9efd5612f6178fa67c0e67a7f5982790232c2d9df6563cee4cc0f3ca5d7045dba65ff16f806e3143b5a3c7c4ed91  linux-5.1.13.tar.xz
+2019-11-27 06:05:26.421849 +0000 build-fedora4: 7f4a44ac39208014b3adb009ca7256f94e2438c30081c5d6f7863f2f25cd5e4dd78d90a7a4db2c27b89af1eb7b04007f13bce4d93319ab879b7cb9a1260f3e6d  linux-5.1.15.tar.sign
+2019-11-27 06:05:27.045115 +0000 build-fedora4: c22988286f8eed176d54446222d5c9d15a7a1b3024dffdc4e4884a45c0d2d7ec24c9d52219a3f0b8fe69c8a92332cc37314301e3bd4f671f116376fd5ca45d61  linux-5.1.15.tar.xz
+2019-11-27 06:05:27.047417 +0000 build-fedora4: 2d866f108c2425155e66719cc2c832879dcdd700527b94fdfe5f5990c5c1bc58ad1d4b3ece22b104eb9160f35278ec01cb87caa34a53e14ebf0da1b6c131496e  linux-5.1.16.tar.sign
+2019-11-27 06:05:27.782709 +0000 build-fedora4: 4d3292aa215e7a6a3cd65bb57fc19d029d9ba36fd8d91002c515f03dbad0563a46f91e6cb914e06cc8a5809014bfb4659cab03194d8c5e5e66055fd4c9ed821a  linux-5.1.16.tar.xz
+2019-11-27 06:05:27.784213 +0000 build-fedora4: c687c3d2b636cd5213a91210604b138efa1deb735ceca207bca0ddc0ad387af88e80b0a343f0aa8a12537e63b92f4859017e034b728eea51d5c12da8b39c6c9b  linux-5.1.17.tar.sign
+2019-11-27 06:05:28.481162 +0000 build-fedora4: fe8212546ade9e7554f33390a939cab3e66381ac45f12cdb51a2077edcf74f325416ea958a1e36d16331cfe57f2fc6b6d40ce1a85a6eba79f8c10d07d681f7b6  linux-5.1.17.tar.xz
+2019-11-27 06:05:28.483898 +0000 build-fedora4: 30d2ce4dc212ec22f0c5b6dbdcfb7446101562bb9a7738df9c8a8c8e5b9ecc00df11b6fd123624a1732295e81c83abc6cb674dfa12b367baf4a514b477cfab17  linux-5.1.2.tar.sign
+2019-11-27 06:05:29.108094 +0000 build-fedora4: fc644c288013e1cac0d0969dce6a8cf8a912ccc8a6085b81bfc56074d13d112267dab195131eda97681ec44ab55a2d79858a933bd39d679b8750bd0bee735602  linux-5.1.2.tar.xz
+2019-11-27 06:05:29.109324 +0000 build-fedora4: 41c46310874e1cf88fa96e18fd98d99b01ce5825b7e23a9876ac7c3c6fc8aa82d91cefd66d66f63f12cc3d67c43fa2288e8b7e60a11490e94abbf08addaf5de5  linux-5.1.6.tar.sign
+2019-11-27 06:05:29.540756 +0000 build-fedora4: 284abb67cf809381d3b381b1ad29a2213b0d79e2f6a84efc654b1fff7c453a3e95ddcb3e26131ee19feaedaa100c205faeaa4fc1704075fdf0ae1a9d066abd68  linux-5.1.6.tar.xz
+2019-11-27 06:05:29.541352 +0000 build-fedora4: c701a5dab5ff693278ff2859ba4816e29234a6b6fc006182d23d0f8d0e97d4cb2d8a6abd42f8588de813a072472c547b7e8b49db4342a3b91bd66c9d69ff3bb0  linux-5.1.7.tar.sign
+2019-11-27 06:05:29.822324 +0000 build-fedora4: 97d35a89c5d0032b062424737046185dbb8fbffcea35f2fb20809f56210388746d4883cd1ef2b05546b871e50919dcee5f3e67a01a0ccf0b8e59fdcfe1fed849  linux-5.1.7.tar.xz
+2019-11-27 06:05:29.822870 +0000 build-fedora4: 453e718051e30870bf97acc90c58afce0837b8faab154134a7fb2bc9555041815b76b29e8f2b06b7c00b21bd957c1cec584216b17112e5f4d8fe39c849336e3a  linux-5.1.9.tar.sign
+2019-11-27 06:05:30.092041 +0000 build-fedora4: 2ce5f3abe57c80e84956481c86559448e2d66fb776a17095b7f14c477b8f9fb36864fcb739306707c09f8c8d7a1e88962053c354c5fc33ade15004e2b1ca2df8  linux-5.1.9.tar.xz
+2019-11-27 06:05:30.092400 +0000 build-fedora4: 510314e246690a515a9c2dcba7409f41522a57b87b20541fba76ec4cb1ec2bc0e76655b940f774a6a0da4bbb1165a47409066467fc32bc0b52f435c254d7f501  linux-5.2.11.tar.sign
+2019-11-27 06:05:30.394469 +0000 build-fedora4: 6116f7b71711a01e741bf1f9b3e20e9d46b3b2d6c1dfadad79742d42a2142e13dfec0c569b21d0cbcf030369b75bb39c27c05f08f3e9594d391d1df4ddbdbbb6  linux-5.2.11.tar.xz
+2019-11-27 06:05:30.395664 +0000 build-fedora4: 78ed8ffc4d7568226a2534218cc3f7b538b2ee4c2c3ba0b1a1ed6004b8b3e4aba5a308d471bf38236d43613e2659932445cbd37ba2d5568c134dcb2969bd2d30  linux-5.2.13.tar.sign
+2019-11-27 06:05:30.689986 +0000 build-fedora4: 2614fcf9580939c33ada1d6475026d63b021e71f48d1488a31bd9e154f4b2142ae4932d22b7dcbe6ba0ac9cd855ddb74cfa6efc6c3018dd5c9b1063bb3dc5f4d  linux-5.2.13.tar.xz
+2019-11-27 06:05:30.690360 +0000 build-fedora4: 2e55293033dc5231ea6950ef6cf630bcf808b8e7366e99589f03d48d61f6e35bb58aba71cadb53ef728154e9ace422c57e540e623e9e56bbf9b46f42efee7e48  linux-5.2.14.tar.sign
+2019-11-27 06:05:30.967244 +0000 build-fedora4: a27fcabaeef23de4d57a716438ced451e98503b8215dac746ec8452ea5f1d2a61491bca1720ff6c998cce86083d5277e5d184cbb41b1c83c6083e6740847da69  linux-5.2.14.tar.xz
+2019-11-27 06:05:30.967682 +0000 build-fedora4: dcabcde49948f272e62148ae5c2825cf3ac097941b541467708ed43e6826c6d14ac6140634ba438f9ceeb0fc617f7bf362f5528ea92a17380ab535653f5e6849  linux-5.2.16.tar.sign
+2019-11-27 06:05:31.283902 +0000 build-fedora4: ade606efe1d073fea24d8d9cb062a63c4a5e7410fe034fafe53df8c223dd97d9ced0185a3534c22ed37af37420f2fa0cd7b0af759ec8b0b8b7a4b5ef789474d6  linux-5.2.16.tar.xz
+2019-11-27 06:05:31.284345 +0000 build-fedora4: 43d72f73f67a4f1e628617ab810d44ec33cfdab40c92b6182663bb400ee23ff864eaec349af601a87d3ef10e3dcf4499668a88b42f09ee3e8cbc8224f72976b5  linux-5.2.3.tar.sign
+2019-11-27 06:05:31.567429 +0000 build-fedora4: bd356a0f73e340f995b2c3e210224cd4a9a9f9f2900611d956156da1f542b6645940ac457d5746ecc807a8cf2cd77fca0b70ae74d2993eda4b72140fa1c6da78  linux-5.2.3.tar.xz
+2019-11-27 06:05:31.567970 +0000 build-fedora4: 38a0d1b67434f289c95b92a08d99f15df727bfbad3d89395269917076a003b0fbcdf1457b30520356d4ea038681f7c7cc8c0ef73aeca56610c8d0fa635346cc1  linux-5.2.7.tar.sign
+2019-11-27 06:05:31.844389 +0000 build-fedora4: 13c83e1b83b374d01562829f5a67d23fca58f5b39fb856c979706c00033f735bb388f5448b75c7608c578235a14b5c316bad9893e19ea7427cf37218daf3ef65  linux-5.2.7.tar.xz
+2019-11-27 06:05:31.844831 +0000 build-fedora4: 0ce5f1562daf5d99ada8195b9f671c82582a1965962e3c3d8ae88b87e7737ff3d711cebb4c57d6275037a9b310d0cd58bc35e4f50755f96186042642c212d364  linux-5.2.9.tar.sign
+2019-11-27 06:05:32.118874 +0000 build-fedora4: 2e3fad96cce66e1ef0a8f82c221970e6535d2d20b5ed8dcc3f368cd51576ff57bd31f5b5b09f7b19acee4f73c7ef5f1a0aa8ecb5176c431c2d4cb5c770432f4b  linux-5.2.9.tar.xz
+2019-11-27 06:05:32.119269 +0000 build-fedora4: 6ca1c0eba96fbe596f1a7f86101aa2ca08866b64f158f8411e46af88931335b4a377af3006935f99473c1ebad4ae480419ab24a00eef38f6265d3fcde1d25a9e  linux-5.3.11.tar.sign
+2019-11-27 06:05:32.400595 +0000 build-fedora4: 24e167531014b637793aab5ce47e6e747f619e2a0e598c0db348ea9069fc3fd86c81d4ee63ae085d42aba260d702f5b797e550c7e22c3d5df4fe8d9c32f5b3d5  linux-5.3.11.tar.xz
+2019-11-27 06:05:32.401210 +0000 build-fedora4: 5db06f8a67a36e02558a34a697eb640d17ea64213a3d7bd30336357b2ca152a36e4430b93508406d639aa5740ee52244f3ac0e208596bbbef0b640495a6ce7fe  linux-5.3.12.tar.sign
+2019-11-27 06:05:32.675320 +0000 build-fedora4: 84eec92afff148295e6d6a2c47046e5a270c2934ad696f1102793f0566d32e7bd1ea1dc70a4be066cad9ede0a9a712a0a33fbc31f64b7440031c39c0e33acdd0  linux-5.3.12.tar.xz
+2019-11-27 06:05:32.675671 +0000 build-fedora4: 2a79574c1878b34c649dd95f9ba627201e23fb03949bceeafdd8ce9a219ff48a27bf08e488f782afb82aa247a9b12731ab8700a8c74ace59b72fba3af0d6a422  linux-5.3.2.tar.sign
+2019-11-27 06:05:32.961331 +0000 build-fedora4: 73e4c5e788be9a60e01a428bfcbb8e93b47da3f49cbeea4ab22cd9d1bfc56ca58302e6a76059fc8a4d7a13b966f7185de0e340b0d592e656359938e8172f2534  linux-5.3.2.tar.xz
+2019-11-27 06:05:32.961380 +0000 build-fedora4: 6a8ba8cd1a72480ee862f40744767faa06c1ca6d536be65317954fc55fb4458525a18ed667f7c8b6871b6cee49e98441777e58cd8553cde792fa7daa7baa0690  linux-5.3.6.tar.sign
+2019-11-27 06:05:33.244863 +0000 build-fedora4: 2e83065e29f2e7f3a7c8ae68e4a5497804126c9edd7e76278c3565773789f52982e16987be4f14535bc6950a20a9a3ff74523b4d8accc1db1b898a8d2c0755be  linux-5.3.6.tar.xz
+2019-11-27 06:05:33.245162 +0000 build-fedora4: f293e9daf22bb956f1076cbd033dcc683b09a43cee221db118627c638de5c80d71040bd54a6dcf4c53fb472fb3b062682e570d615627ae268ce52eaeac78353c  linux-5.3.7.tar.sign
+2019-11-27 06:05:33.517174 +0000 build-fedora4: ed4a7eb2345106e94f93e0bf1731f1d6588f172d01d3a39a38415ec777202a3f31838ab2f63b560b9349c2623a74c78d989c3907d3e29ac705f3cfb6527ebed0  linux-5.3.7.tar.xz
+2019-11-27 06:05:33.517670 +0000 build-fedora4: 298dac59a9893d924e8ff9ad91bcc5551daf90f2eb3cf083c9502e34ddf36d71e8aa1fdcfb706462a941f814bb49fc0a90656306684c729e55ed040e15ec48a1  linux-5.3.8.tar.sign
+2019-11-27 06:05:33.797719 +0000 build-fedora4: ee6aeea84e8bba29d9521c97132340f8be6948f10e529084ae6bf405275ee88c4d5573efdbb6e98fd14707b892adcd5052f10204563ee5250beeb57c78451c4f  linux-5.3.8.tar.xz
+2019-11-27 06:05:33.798302 +0000 build-fedora4: 1e6a5a17e34e89693b73394d97e6374dbae17c50b0282b6ee260c09420f3ab6cce1234dce04e9e5d66c4c6c2d0ce33b158dd75a5930de97c022dad62261d913d  linux-5.3.9.tar.sign
+2019-11-27 06:05:34.096270 +0000 build-fedora4: c2735b1732838805f885900e5efb6a0fb0b4051be258674c0b2c294c75f427ed562c8792d63efa6bae4663496f1691e8650f1f56fa0a5fbd0909000319a2b088  linux-5.3.9.tar.xz
+2019-11-27 06:05:34.096717 +0000 build-fedora4: b4ac4d88a174b837c44f646da1f469fc3717fb5e0ace0c3a67d530c33d265e6cd6e422a42ca694bc590528d841d62b754d1ab3141264b727926eb62f4edaa869  pkgs/dom0-fc25/kernel.spec.list
+2019-11-27 06:05:34.220880 +0000 build-fedora4: 4306320c5a415e321f449f9710029075b4f1231a828545f621260e6f00526b207aa585b8f6424e59b7cebf2cbbf8c010438791642fa27e3c2e2f903f94f8c747  pkgs/dom0-fc25/x86_64/kernel-latest-4.17.9-2.pvops.qubes.x86_64.rpm
+2019-11-27 06:05:34.373077 +0000 build-fedora4: c920ae35cc395019b580d2329a2eb5074fa32915b1cceec5e6e0094f5e7a35c7454f4cbef2d8e99d96d177f1054597e16185d736eb5e542d317ee1be7f53e211  pkgs/dom0-fc25/x86_64/kernel-latest-5.3.11-1.qubes.x86_64.rpm
+2019-11-27 06:05:34.535758 +0000 build-fedora4: e3d6f1758379d241f13badd9781bf01649be3d61485b465fed77e14526acff386fb7cba3bb77485f8785b8333d4d2f27dc040e274ecaa0564e1d956158799c21  pkgs/dom0-fc25/x86_64/kernel-latest-5.3.12-1.qubes.x86_64.rpm
+2019-11-27 06:05:34.703761 +0000 build-fedora4: 9ffedab0acbde3908d30e19701127f11cc2e7da8db5b876097383ecb1fdfa9225c2e41bb54a81cb1efd3549b4c13d2caa957399425127de7e7250ec37162ce9b  pkgs/dom0-fc25/x86_64/kernel-latest-5.3.7-1.pvops.qubes.x86_64.rpm
+2019-11-27 06:05:34.861908 +0000 build-fedora4: 322bc4766f6520f514a624a28d868f8b16f758d221574f135b921649a03693e2982664127824395cacd0ba8f99d8671098a16f7bda1a5815c13c9483898244ea  pkgs/dom0-fc25/x86_64/kernel-latest-5.3.9-1.qubes.x86_64.rpm
+2019-11-27 06:05:34.900549 +0000 build-fedora4: 344557c86eedbbb80a050e42401419d055455cffc54dfa32f82a5c76fc3ce6ee45a0086692b64d78a5b625e6832fbfbf564755ee74481c8d867d234a9b728252  pkgs/dom0-fc25/x86_64/kernel-latest-devel-4.17.9-2.pvops.qubes.x86_64.rpm
+2019-11-27 06:05:34.940079 +0000 build-fedora4: 2ba5f1784eb945477b121a26dcab7c6f40d32331cf40d3e141a1464f112d318db8101b5e28b49221aba3f1dbf4c4c5a7f95b9070faca65173f6e323b0ad68e2a  pkgs/dom0-fc25/x86_64/kernel-latest-devel-5.3.11-1.qubes.x86_64.rpm
+2019-11-27 06:05:34.980208 +0000 build-fedora4: bf26ded095b33951aa845b34e2091e2752ab1c96b747f715d68192422c968d8a29bd5a4fe01fba32ec82b640b6457ce02d423453e0cec3583b34ef40756b5384  pkgs/dom0-fc25/x86_64/kernel-latest-devel-5.3.12-1.qubes.x86_64.rpm
+2019-11-27 06:05:35.024278 +0000 build-fedora4: 7d34133623c2e94fbdf99aa642d029c96d057ffd8d644a147532a7106d47350bc31d6f3e3562a329676d0696640533595f0c3c098a3d1686f99c3bb195187b4b  pkgs/dom0-fc25/x86_64/kernel-latest-devel-5.3.7-1.pvops.qubes.x86_64.rpm
+2019-11-27 06:05:35.067009 +0000 build-fedora4: 2fdc1d24fb0b9c329559ce4e3d0869d59f6991d3bd49195828cc6e5cfae0d9d7c2dab6ba287e9089e14e26d5d0f3040a3f2af1b4e61c082e04838cd0d3ad5341  pkgs/dom0-fc25/x86_64/kernel-latest-devel-5.3.9-1.qubes.x86_64.rpm
+2019-11-27 06:05:35.250945 +0000 build-fedora4: d71cbc44bd0a01200498d1976d899fce9e36e228842997fca9ba7fe5822f2eeabc06483f97fa20dd18066400335deeddcbd054c723373b54bf1b94e36ad3141d  pkgs/dom0-fc25/x86_64/kernel-latest-qubes-vm-4.17.9-2.pvops.qubes.x86_64.rpm
+2019-11-27 06:05:35.492696 +0000 build-fedora4: 090b780cc3d07c6657a764e75978f22065437be112f587c51ddb5219394cd78ed35a2e9102fd632307b8552c5798240dafa753bb39ef198f0c976fb8c8a0eebe  pkgs/dom0-fc25/x86_64/kernel-latest-qubes-vm-5.3.11-1.qubes.x86_64.rpm
+2019-11-27 06:05:35.717325 +0000 build-fedora4: bf5b6a8e1bedffba17f8534f0ea6acfe9e80c0b3aa761f797a7dabcb2b4db7a5452b91095fe1ded37ecfdd0bc833c49dfb5f6acc737148ad030cf4ac89b55d80  pkgs/dom0-fc25/x86_64/kernel-latest-qubes-vm-5.3.12-1.qubes.x86_64.rpm
+2019-11-27 06:05:35.950884 +0000 build-fedora4: 1a0afcd2da9883bc169efa45dfd8fa397d9c272b3444554059a2f71df164cf9b7e7ab8e756066db0b80397326176a56be6c9e93b3195bef2a9f390fc775633d9  pkgs/dom0-fc25/x86_64/kernel-latest-qubes-vm-5.3.7-1.pvops.qubes.x86_64.rpm
+2019-11-27 06:05:36.180269 +0000 build-fedora4: 7b63d8190c88f2de04fcb14663910321a302dfc78bf4f0994b3bf1923153ea5076226cd621648e8a5d6439daa696bee5a3d6a2f5a3a06c9136d6e1372421745d  pkgs/dom0-fc25/x86_64/kernel-latest-qubes-vm-5.3.9-1.qubes.x86_64.rpm
+2019-11-27 06:05:36.237689 +0000 build-fedora4: ================================================================================
+2019-11-27 06:05:36.237730 +0000 build-fedora4:                            B U I L D   I N F O                                  
+2019-11-27 06:05:36.237744 +0000 build-fedora4: Items in red indicate it was automatically generated by configuration file(s)
+2019-11-27 06:05:36.237756 +0000 build-fedora4: Items in white indicate it was automatically removed by configuration file(s)
+2019-11-27 06:05:36.237766 +0000 build-fedora4: ================================================================================
+2019-11-27 06:05:36.237774 +0000 build-fedora4: DISTS_VM:
+2019-11-27 06:05:36.240430 +0000 build-fedora4:     
+2019-11-27 06:05:36.241438 +0000 build-fedora4: DISTS_ALL:
+2019-11-27 06:05:36.243299 +0000 build-fedora4:      dom0-fc25,
+2019-11-27 06:05:36.244452 +0000 build-fedora4: DIST_DOM0:
+2019-11-27 06:05:36.245087 +0000 build-fedora4:      fc25,
+2019-11-27 06:05:36.245297 +0000 build-fedora4: BUILDER_PLUGINS:
+2019-11-27 06:05:36.247396 +0000 build-fedora4:      builder-rpm, builder-debian, mgmt-salt, linux-yum, release-configs, builder-github,
+2019-11-27 06:05:36.248577 +0000 build-fedora4: COMPONENTS:
+2019-11-27 06:05:36.249872 +0000 build-fedora4:      linux-kernel-latest,
+2019-11-27 06:05:36.250866 +0000 build-fedora4: GIT_REPOS:
+2019-11-27 06:05:36.256050 +0000 build-fedora4:      qubes-src/linux-kernel-latest,
+2019-11-27 06:05:36.256646 +0000 build-fedora4: TEMPLATE:
+2019-11-27 06:05:36.259112 +0000 build-fedora4:     
+2019-11-27 06:05:36.259929 +0000 build-fedora4: TEMPLATE_FLAVOR_DIR:
+2019-11-27 06:05:36.262944 +0000 build-fedora4:     
+2019-11-27 06:05:36.263248 +0000 build-fedora4: TEMPLATE_ALIAS:
+2019-11-27 06:05:36.265235 +0000 build-fedora4:      jessie:jessie+standard, jessie+gnome:jessie+gnome+standard,
+2019-11-27 06:05:36.265273 +0000 build-fedora4:      jessie+minimal:jessie+minimal+no-recommends, stretch:stretch+standard, stretch+gnome:stretch+gnome+standard,
+2019-11-27 06:05:36.265288 +0000 build-fedora4:      stretch+minimal:stretch+minimal+no-recommends, buster:buster+standard, buster+gnome:buster+gnome+standard,
+2019-11-27 06:05:36.265300 +0000 build-fedora4:      buster+minimal:buster+minimal+no-recommends, bullseye:bullseye+standard,
+2019-11-27 06:05:36.265325 +0000 build-fedora4:      bullseye+gnome:bullseye+gnome+standard, bullseye+minimal:bullseye+minimal+no-recommends,
+2019-11-27 06:05:36.265336 +0000 build-fedora4:      whonix-gateway:jessie+whonix-gateway+minimal+no-recommends,
+2019-11-27 06:05:36.265346 +0000 build-fedora4:      whonix-workstation:jessie+whonix-workstation+minimal+no-recommends,
+2019-11-27 06:05:36.265356 +0000 build-fedora4:      whonix-gateway-14:stretch+whonix-gateway+minimal+no-recommends,
+2019-11-27 06:05:36.265366 +0000 build-fedora4:      whonix-workstation-14:stretch+whonix-workstation+minimal+no-recommends,
+2019-11-27 06:05:36.265376 +0000 build-fedora4:      whonix-gateway-15:buster+whonix-gateway+minimal+no-recommends,
+2019-11-27 06:05:36.265385 +0000 build-fedora4:      whonix-workstation-15:buster+whonix-workstation+minimal+no-recommends,
+2019-11-27 06:05:36.265395 +0000 build-fedora4:      whonix-gateway:jessie+whonix-gateway+minimal+no-recommends,
+2019-11-27 06:05:36.265404 +0000 build-fedora4:      whonix-workstation:jessie+whonix-workstation+minimal+no-recommends,
+2019-11-27 06:05:36.267253 +0000 build-fedora4: TEMPLATE_LABEL:
+2019-11-27 06:05:36.267905 +0000 build-fedora4:      fc25:fedora-25 fc29:fedora-29 fc30:fedora-30 fc31:fedora-31 fc29+minimal:fedora-29-minimal
+2019-11-27 06:05:36.267930 +0000 build-fedora4:      fc30+minimal:fedora-30-minimal fc31+minimal:fedora-31-minimal fc29+xfce:fedora-29-xfce
+2019-11-27 06:05:36.267943 +0000 build-fedora4:      fc30+xfce:fedora-30-xfce fc31+xfce:fedora-31-xfce wheezy:debian-7
+2019-11-27 06:05:36.267956 +0000 build-fedora4:      wheezy+standard:debian-7 jessie:debian-8 jessie+standard:debian-8 stretch:debian-9
+2019-11-27 06:05:36.267967 +0000 build-fedora4:      stretch+standard:debian-9 buster:debian-10 buster+standard:debian-10 bullseye:debian-11
+2019-11-27 06:05:36.267978 +0000 build-fedora4:      bullseye+standard:bullseye-11 jessie+whonix-gateway+minimal+no-recommends:whonix-gw
+2019-11-27 06:05:36.267988 +0000 build-fedora4:      jessie+whonix-workstation+minimal+no-recommends:whonix-ws
+2019-11-27 06:05:36.267998 +0000 build-fedora4:      stretch+whonix-gateway+minimal+no-recommends:whonix-gw-14
+2019-11-27 06:05:36.268007 +0000 build-fedora4:      stretch+whonix-workstation+minimal+no-recommends:whonix-ws-14
+2019-11-27 06:05:36.268016 +0000 build-fedora4:      buster+whonix-gateway+minimal+no-recommends:whonix-gw-15
+2019-11-27 06:05:36.268026 +0000 build-fedora4:      buster+whonix-workstation+minimal+no-recommends:whonix-ws-15 centos7:centos-7
+2019-11-27 06:05:36.268036 +0000 build-fedora4:      centos7+minimal:centos-7-minimal centos7+xfce:centos-7-xfce
+2019-11-27 06:05:36.268045 +0000 build-fedora4:      jessie+whonix-gateway+minimal+no-recommends:whonix-gw
+2019-11-27 06:05:36.268054 +0000 build-fedora4:      jessie+whonix-workstation+minimal+no-recommends:whonix-ws
+2019-11-27 06:05:36.288379 +0000 build-fedora4: > running make
+2019-11-27 06:05:36.305265 +0000 build-fedora4: Makefile:266: target 'sign.dom0.fc25.linux-kernel-latest' does not exist
+2019-11-27 06:05:36.305322 +0000 build-fedora4: if [ -n "linux-kernel-latest" -a "0" -ne 0 ]; then BRANCH=release4.0; branch_var="BRANCH_linux_kernel_latest"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/linux-kernel-latest > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2019-11-27 06:05:36.305338 +0000 build-fedora4: SIGN_KEY=5817A43B283DE5A9181A522E1848792F9E2795E9; \
+2019-11-27 06:05:36.305348 +0000 build-fedora4: sign_key_var="SIGN_KEY_${DIST%%+*}"; \
+2019-11-27 06:05:36.305359 +0000 build-fedora4: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2019-11-27 06:05:36.305368 +0000 build-fedora4: if [ "linux-kernel-latest" = linux-template-builder ]; then
+2019-11-27 06:05:36.305380 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc25 template-name)
+2019-11-27 06:05:36.305397 +0000 build-fedora4: fi
+2019-11-27 06:05:36.305408 +0000 build-fedora4: if [ -r qubes-src/linux-kernel-latest/Makefile.builder ]; then \
+2019-11-27 06:05:36.305418 +0000 build-fedora4: .make --no-print-directory -f Makefile.generic \
+2019-11-27 06:05:36.305425 +0000 build-fedora4: ..DIST=fc25 \
+2019-11-27 06:05:36.305436 +0000 build-fedora4: ..PACKAGE_SET=dom0 \
+2019-11-27 06:05:36.305445 +0000 build-fedora4: ..COMPONENT=linux-kernel-latest \
+2019-11-27 06:05:36.305452 +0000 build-fedora4: ..SIGN_KEY=$SIGN_KEY \
+2019-11-27 06:05:36.305460 +0000 build-fedora4: ..sign || exit 1; \
+2019-11-27 06:05:36.305468 +0000 build-fedora4: elif [ -d qubes-src/linux-kernel-latest/rpm ]; then \
+2019-11-27 06:05:36.305476 +0000 build-fedora4: .# Old mechanism supported only for RPM
+2019-11-27 06:05:36.305486 +0000 build-fedora4: FILE_LIST=""; for RPM in qubes-src/linux-kernel-latest/rpm/*/*.rpm; do \
+2019-11-27 06:05:36.305496 +0000 build-fedora4: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2019-11-27 06:05:36.305504 +0000 build-fedora4: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2019-11-27 06:05:36.305511 +0000 build-fedora4: ..fi ;\
+2019-11-27 06:05:36.305519 +0000 build-fedora4: .done ; \
+2019-11-27 06:05:36.305527 +0000 build-fedora4: .if [ -n "$FILE_LIST" ]; then \
+2019-11-27 06:05:36.305534 +0000 build-fedora4: ..echo "--> Signing..."; \
+2019-11-27 06:05:36.305543 +0000 build-fedora4: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2019-11-27 06:05:36.305551 +0000 build-fedora4: ..if [ -n "$SIGN_KEY" ]; then \
+2019-11-27 06:05:36.305559 +0000 build-fedora4: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2019-11-27 06:05:36.305566 +0000 build-fedora4: ..fi; \
+2019-11-27 06:05:36.305575 +0000 build-fedora4: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2019-11-27 06:05:36.305582 +0000 build-fedora4: .fi; \
+2019-11-27 06:05:36.305589 +0000 build-fedora4: fi
+2019-11-27 06:05:36.320884 +0000 build-fedora4: /home/user/builder-r4.0-dom0/qubes-src/builder-rpm/Makefile.rpmbuilder:177: target 'sign-prep' does not exist
+2019-11-27 06:05:36.320921 +0000 build-fedora4: if [ -n "qubes-gpg-client-wrapper" ]; then \
+2019-11-27 06:05:36.320936 +0000 build-fedora4: .mkdir -p /home/user/builder-r4.0-dom0/keyrings/rpmdb; \
+2019-11-27 06:05:36.320951 +0000 build-fedora4: .qubes-gpg-client-wrapper --armor --export "5817A43B283DE5A9181A522E1848792F9E2795E9" > "/tmp/key_5817A43B283DE5A9181A522E1848792F9E2795E9"; \
+2019-11-27 06:05:36.320965 +0000 build-fedora4: .rpmkeys --dbpath=/home/user/builder-r4.0-dom0/keyrings/rpmdb --import "/tmp/key_5817A43B283DE5A9181A522E1848792F9E2795E9"; \
+2019-11-27 06:05:36.320974 +0000 build-fedora4: fi
+2019-11-27 06:05:36.479667 +0000 build-fedora4: /home/user/builder-r4.0-dom0/qubes-src/builder-rpm/Makefile.rpmbuilder:191: update target 'sign' due to: sign-prep
+2019-11-27 06:05:36.479722 +0000 build-fedora4: cd qubes-src/linux-kernel-latest && for pkg in pkgs/dom0-fc25/x86_64/kernel-latest-5.3.12-1.qubes.x86_64.rpm pkgs/dom0-fc25/x86_64/kernel-latest-devel-5.3.12-1.qubes.x86_64.rpm pkgs/dom0-fc25/x86_64/kernel-latest-qubes-vm-5.3.12-1.qubes.x86_64.rpm ; do \
+2019-11-27 06:05:36.479739 +0000 build-fedora4: .if [ "${pkg##*.}" = "buildinfo" ]; then \
+2019-11-27 06:05:36.479757 +0000 build-fedora4: ../home/user/builder-r4.0-dom0/qubes-src/builder-rpm/scripts/update-rpmbuildinfo "$pkg" | qubes-gpg-client-wrapper --clearsign --local-user 5817A43B283DE5A9181A522E1848792F9E2795E9 > "$pkg".tmp && \
+2019-11-27 06:05:36.479768 +0000 build-fedora4: ..mv -f "$pkg".tmp "$pkg"; \
+2019-11-27 06:05:36.479777 +0000 build-fedora4: .elif ! rpm -K $pkg | grep -qi pgp; then \
+2019-11-27 06:05:36.479789 +0000 build-fedora4: ..setsid -w rpmsign  --digest-algo=sha256 --key-id=5817A43B283DE5A9181A522E1848792F9E2795E9 --addsign $pkg </dev/null || exit 1; \
+2019-11-27 06:05:36.479797 +0000 build-fedora4: .fi; \
+2019-11-27 06:05:36.479805 +0000 build-fedora4: done
+2019-11-27 06:05:37.366430 +0000 build-fedora4: Error while vchan send, exiting
+2019-11-27 06:05:37.366490 +0000 build-fedora4: pkgs/dom0-fc25/x86_64/kernel-latest-5.3.12-1.qubes.x86_64.rpm:
+2019-11-27 06:05:37.736286 +0000 build-fedora4: pkgs/dom0-fc25/x86_64/kernel-latest-devel-5.3.12-1.qubes.x86_64.rpm:
+2019-11-27 06:05:38.619570 +0000 build-fedora4: pkgs/dom0-fc25/x86_64/kernel-latest-qubes-vm-5.3.12-1.qubes.x86_64.rpm:
+2019-11-27 06:05:38.619941 +0000 build-fedora4: Makefile:812: target 'internal-update-repo-current-testing.dom0.fc25.linux-kernel-latest' does not exist
+2019-11-27 06:05:38.619964 +0000 build-fedora4: repo_base_var="LINUX_REPO_fc25_BASEDIR"; \
+2019-11-27 06:05:38.619978 +0000 build-fedora4: if [ "linux-kernel-latest" = linux-template-builder ]; then \
+2019-11-27 06:05:38.619989 +0000 build-fedora4: .# templates belongs to dom0 repository, even though PACKAGE_SET=vm
+2019-11-27 06:05:38.619998 +0000 build-fedora4: repo_base_var="LINUX_REPO_fc25_BASEDIR"; \
+2019-11-27 06:05:38.620006 +0000 build-fedora4: fi; \
+2019-11-27 06:05:38.620016 +0000 build-fedora4: if [ -n "${!repo_base_var}" ]; then \
+2019-11-27 06:05:38.620024 +0000 build-fedora4: .repo_basedir="${!repo_base_var}"; \
+2019-11-27 06:05:38.620032 +0000 build-fedora4: else \
+2019-11-27 06:05:38.620040 +0000 build-fedora4: .repo_basedir="qubes-src/linux-yum/r4.0"; \
+2019-11-27 06:05:38.620047 +0000 build-fedora4: fi; \
+2019-11-27 06:05:38.620057 +0000 build-fedora4: if [ -r qubes-src/linux-kernel-latest/Makefile.builder ]; then \
+2019-11-27 06:05:38.620066 +0000 build-fedora4: .echo -n "Updating qubes-src/linux-kernel-latest... "; \
+2019-11-27 06:05:38.620074 +0000 build-fedora4: .if [ "0" -eq 1 ]; then \
+2019-11-27 06:05:38.620085 +0000 build-fedora4: ..vtag=`git -C qubes-src/linux-kernel-latest tag --points-at HEAD --list v*`; \
+2019-11-27 06:05:38.620093 +0000 build-fedora4: ..if [ -z "$vtag" ]; then \
+2019-11-27 06:05:38.620101 +0000 build-fedora4: ...echo "no version tag"; \
+2019-11-27 06:05:38.620108 +0000 build-fedora4: ...exit 0; \
+2019-11-27 06:05:38.620115 +0000 build-fedora4: ..fi; \
+2019-11-27 06:05:38.620121 +0000 build-fedora4: .fi; \
+2019-11-27 06:05:38.620168 +0000 build-fedora4: .if [ "linux-kernel-latest" = linux-template-builder ]; then
+2019-11-27 06:05:38.620182 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc25 template-name)
+2019-11-27 06:05:38.620189 +0000 build-fedora4: fi
+2019-11-27 06:05:38.620207 +0000 build-fedora4: component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc25 PACKAGE_SET=dom0 COMPONENT=`basename qubes-src/linux-kernel-latest` UPDATE_REPO=/home/user/builder-r4.0-dom0/$repo_basedir/current-testing/dom0/fc25 get-var GET_VAR=PACKAGE_LIST); \
+2019-11-27 06:05:38.620217 +0000 build-fedora4: .if [ -z "$component_packages" ]; then \
+2019-11-27 06:05:38.620225 +0000 build-fedora4: ..echo "no packages."; \
+2019-11-27 06:05:38.620232 +0000 build-fedora4: ..exit 0; \
+2019-11-27 06:05:38.620239 +0000 build-fedora4: .fi; \
+2019-11-27 06:05:38.620248 +0000 build-fedora4: .make -s -f Makefile.generic DIST=fc25 PACKAGE_SET=dom0 \
+2019-11-27 06:05:38.620257 +0000 build-fedora4: ..COMPONENT=`basename qubes-src/linux-kernel-latest` \
+2019-11-27 06:05:38.620268 +0000 build-fedora4: ..SNAPSHOT_REPO=current-testing \
+2019-11-27 06:05:38.620277 +0000 build-fedora4: ..TARGET_REPO=current-testing \
+2019-11-27 06:05:38.620287 +0000 build-fedora4: ..UPDATE_REPO=/home/user/builder-r4.0-dom0/$repo_basedir/current-testing/dom0/fc25 \
+2019-11-27 06:05:38.620300 +0000 build-fedora4: ..SNAPSHOT_FILE=/home/user/builder-r4.0-dom0/repo-latest-snapshot/current-testing-dom0-fc25-`basename qubes-src/linux-kernel-latest` \
+2019-11-27 06:05:38.620312 +0000 build-fedora4: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2019-11-27_03-52-29 \
+2019-11-27 06:05:38.620321 +0000 build-fedora4: ..update-repo || exit 1; \
+2019-11-27 06:05:38.620331 +0000 build-fedora4: elif make -C qubes-src/linux-kernel-latest -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2019-11-27 06:05:38.620354 +0000 build-fedora4: .echo "Updating qubes-src/linux-kernel-latest... "; \
+2019-11-27 06:05:38.620365 +0000 build-fedora4: .DIST=fc25 UPDATE_REPO=/home/user/builder-r4.0-dom0/$repo_basedir/current-testing/dom0/fc25 \
+2019-11-27 06:05:38.620376 +0000 build-fedora4: .make -s -C qubes-src/linux-kernel-latest update-repo-current-testing || exit 1; \
+2019-11-27 06:05:38.620383 +0000 build-fedora4: else \
+2019-11-27 06:05:38.620392 +0000 build-fedora4: .echo -n "Updating qubes-src/linux-kernel-latest... skipping."; \
+2019-11-27 06:05:38.620399 +0000 build-fedora4: fi; \
+2019-11-27 06:05:38.620405 +0000 build-fedora4: echo
+2019-11-27 06:05:38.650535 +0000 build-fedora4: Updating qubes-src/linux-kernel-latest... /home/user/builder-r4.0-dom0/qubes-src/builder-rpm/Makefile.rpmbuilder:152: target 'update-repo-do' does not exist
+2019-11-27 06:05:38.650577 +0000 build-fedora4: mkdir -p /home/user/builder-r4.0-dom0/qubes-src/linux-yum/r4.0/current-testing/dom0/fc25/rpm
+2019-11-27 06:05:38.658639 +0000 build-fedora4: if [ -n "pkgs/dom0-fc25/x86_64/kernel-latest-5.3.12-1.qubes.x86_64.rpm pkgs/dom0-fc25/x86_64/kernel-latest-devel-5.3.12-1.qubes.x86_64.rpm pkgs/dom0-fc25/x86_64/kernel-latest-qubes-vm-5.3.12-1.qubes.x86_64.rpm" ]; then \
+2019-11-27 06:05:38.658691 +0000 build-fedora4: .cd qubes-src/linux-kernel-latest && ln -f pkgs/dom0-fc25/x86_64/kernel-latest-5.3.12-1.qubes.x86_64.rpm pkgs/dom0-fc25/x86_64/kernel-latest-devel-5.3.12-1.qubes.x86_64.rpm pkgs/dom0-fc25/x86_64/kernel-latest-qubes-vm-5.3.12-1.qubes.x86_64.rpm  /home/user/builder-r4.0-dom0/qubes-src/linux-yum/r4.0/current-testing/dom0/fc25/rpm/; \
+2019-11-27 06:05:38.658704 +0000 build-fedora4: else \
+2019-11-27 06:05:38.658717 +0000 build-fedora4: .echo "`tput bold`No packages defined by kernel.spec, syntax error?`tput sgr0`"; \
+2019-11-27 06:05:38.658726 +0000 build-fedora4: .exit 1; \
+2019-11-27 06:05:38.658734 +0000 build-fedora4: fi
+2019-11-27 06:05:38.675808 +0000 build-fedora4: cd qubes-src/linux-kernel-latest && echo pkgs/dom0-fc25/x86_64/kernel-latest-5.3.12-1.qubes.x86_64.rpm pkgs/dom0-fc25/x86_64/kernel-latest-devel-5.3.12-1.qubes.x86_64.rpm pkgs/dom0-fc25/x86_64/kernel-latest-qubes-vm-5.3.12-1.qubes.x86_64.rpm  > /home/user/builder-r4.0-dom0/repo-latest-snapshot/current-testing-dom0-fc25-linux-kernel-latest
+2019-11-27 06:05:38.687170 +0000 build-fedora4: /home/user/builder-r4.0-dom0/qubes-src/builder-github//Makefile.github:18: target 'notify-github' does not exist
+2019-11-27 06:05:38.687246 +0000 build-fedora4: [ -z "kernel-latest-5.3.12-1.qubes" ] || /home/user/builder-r4.0-dom0/qubes-src/builder-github//notify-issues \
+2019-11-27 06:05:38.687264 +0000 build-fedora4: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2019-11-27_03-52-29" \
+2019-11-27 06:05:38.687275 +0000 build-fedora4: .upload \
+2019-11-27 06:05:38.687284 +0000 build-fedora4: ."r4.0" \
+2019-11-27 06:05:38.687294 +0000 build-fedora4: ."qubes-src/linux-kernel-latest" \
+2019-11-27 06:05:38.687304 +0000 build-fedora4: ."kernel-latest-5.3.12-1.qubes" \
+2019-11-27 06:05:38.687312 +0000 build-fedora4: ."fc25" \
+2019-11-27 06:05:38.687320 +0000 build-fedora4: ."dom0" \
+2019-11-27 06:05:38.687328 +0000 build-fedora4: ."current-testing" \
+2019-11-27 06:05:38.687341 +0000 build-fedora4: ."/home/user/github-notify-state/r4.0-linux-kernel-latest-dom0-fc25-current-testing"
+2019-11-27 06:05:48.119221 +0000 build-fedora4: 
+2019-11-27 06:05:48.119270 +0000 build-fedora4: Makefile:866: target 'post-update-repo-current-testing' does not exist
+2019-11-27 06:05:48.119282 +0000 build-fedora4: for dist in fc25 ; do \
+2019-11-27 06:05:48.119293 +0000 build-fedora4: .repo_base_var="LINUX_REPO_${dist}_BASEDIR"; \
+2019-11-27 06:05:48.119302 +0000 build-fedora4: .if [ -n "${!repo_base_var}" ]; then \
+2019-11-27 06:05:48.119311 +0000 build-fedora4: ..repo_basedir="${!repo_base_var}"; \
+2019-11-27 06:05:48.119319 +0000 build-fedora4: .else \
+2019-11-27 06:05:48.119328 +0000 build-fedora4: ..repo_basedir="qubes-src/linux-yum/r4.0"; \
+2019-11-27 06:05:48.119335 +0000 build-fedora4: .fi; \
+2019-11-27 06:05:48.119357 +0000 build-fedora4: .repos_to_update="$repos_to_update $repo_basedir"; \
+2019-11-27 06:05:48.119365 +0000 build-fedora4: done; \
+2019-11-27 06:05:48.119372 +0000 build-fedora4: pkgset_dist= ; \
+2019-11-27 06:05:48.119379 +0000 build-fedora4: for dist in fc25; do \
+2019-11-27 06:05:48.119388 +0000 build-fedora4: .pkgset_dist="$pkgset_dist dom0/$dist"; \
+2019-11-27 06:05:48.119394 +0000 build-fedora4: done; \
+2019-11-27 06:05:48.119401 +0000 build-fedora4: for dist in ; do \
+2019-11-27 06:05:48.119409 +0000 build-fedora4: .pkgset_dist="$pkgset_dist vm/$dist"; \
+2019-11-27 06:05:48.119416 +0000 build-fedora4: done; \
+2019-11-27 06:05:48.119425 +0000 build-fedora4: for repo in `echo $repos_to_update|tr ' ' '\n'|sort|uniq`; do \
+2019-11-27 06:05:48.119436 +0000 build-fedora4: .[ -z "$repo" ] && continue; \
+2019-11-27 06:05:48.119446 +0000 build-fedora4: .[ -x "$repo/../update_repo-current-testing.sh" ] || continue; \
+2019-11-27 06:05:48.119456 +0000 build-fedora4: .(cd $repo/.. && ./update_repo-current-testing.sh r4.0 $pkgset_dist); \
+2019-11-27 06:05:48.119463 +0000 build-fedora4: done
+2019-11-27 06:05:48.130731 +0000 build-fedora4: which: no mkmetalink in (/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/home/user/.local/bin:/home/user/bin:/home/user/builder-r4.0-dom0/qubes-src/builder-rpm/tools)
+2019-11-27 06:05:48.135263 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/dom0/fc25...
+2019-11-27 06:06:00.871349 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/centos7...
+2019-11-27 06:06:01.019697 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/centos8...
+2019-11-27 06:06:01.139260 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc20...
+2019-11-27 06:06:01.252370 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc21...
+2019-11-27 06:06:01.387859 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc22...
+2019-11-27 06:06:01.421036 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc23...
+2019-11-27 06:06:01.452322 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc24...
+2019-11-27 06:06:01.485186 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc25...
+2019-11-27 06:06:01.518771 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc26...
+2019-11-27 06:06:01.555771 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc27...
+2019-11-27 06:06:01.588778 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc28...
+2019-11-27 06:06:01.620943 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc29...
+2019-11-27 06:06:01.652464 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc30...
+2019-11-27 06:06:01.686328 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc31...
+2019-11-27 06:06:01.720204 +0000 build-fedora4: Done.
+2019-11-27 06:06:01.723473 +0000 build-fedora4: ~/builder-r4.0-dom0/qubes-src/linux-yum ~/builder-r4.0-dom0/qubes-src/linux-yum
+2019-11-27 06:06:01.724675 +0000 build-fedora4: Syncing r4.0...
+2019-11-27 06:06:03.530880 +0000 build-fedora4: sending incremental file list
+2019-11-27 06:06:04.287187 +0000 build-fedora4: .d..t...... current-testing/dom0/fc25/
+2019-11-27 06:06:04.293450 +0000 build-fedora4: .d..t...... current-testing/dom0/fc25/rpm/
+2019-11-27 06:06:04.293496 +0000 build-fedora4: <f+++++++++ current-testing/dom0/fc25/rpm/kernel-latest-5.3.12-1.qubes.x86_64.rpm
+2019-11-27 06:07:16.367210 +0000 build-fedora4: .         32,768   0%    0.00kB/s    0:00:00  .      2,392,064   4%    2.13MB/s    0:00:24  .      3,178,496   5%    1.44MB/s    0:00:36  .      3,964,928   7%    1.20MB/s    0:00:42  .      4,751,360   8%    1.08MB/s    0:00:46  .      5,537,792   9%  744.37kB/s    0:01:08  .      6,324,224  11%  744.37kB/s    0:01:07  .      7,110,656  12%  744.55kB/s    0:01:06  .      7,897,088  13%  745.45kB/s    0:01:05  .      8,683,520  15%  744.37kB/s    0:01:04  .      9,469,952  16%  744.55kB/s    0:01:03  .     10,256,384  18%  745.27kB/s    0:01:02  .     11,042,816  19%  744.73kB/s    0:01:01  .     11,829,248  20%  744.91kB/s    0:01:00  .     12,615,680  22%  744.55kB/s    0:00:58  .     13,402,112  23%  744.37kB/s    0:00:57  .     14,188,544  25%  744.37kB/s    0:00:56  .     14,974,976  26%  744.37kB/s    0:00:55  .     15,761,408  27%  743.83kB/s    0:00:54  .     16,547,840  29%  743.11kB/s    0:00:53  .     17,334,272  30%  743.65kB/s    0:00:52  .     18,120,704  32%  743.47kB/s    0:00:51  .     18,907,136  33%  744.73kB/s    0:00:50  .     19,693,568  34%  745.45kB/s    0:00:49  .     20,480,000  36%  744.01kB/s    0:00:48  .     21,266,432  37%  744.91kB/s    0:00:47  .     22,052,864  39%  744.37kB/s    0:00:46  .     22,839,296  40%  743.83kB/s    0:00:45  .     23,625,728  41%  744.55kB/s    0:00:44  .     24,412,160  43%  744.19kB/s    0:00:43  .     25,198,592  44%  743.65kB/s    0:00:42  .     25,985,024  45%  743.11kB/s    0:00:41  .     26,771,456  47%  744.01kB/s    0:00:40  .     27,557,888  48%  744.01kB/s    0:00:38  .     28,344,320  50%  744.73kB/s    0:00:37  .     29,130,752  51%  745.09kB/s    0:00:36  .     29,917,184  52%  744.91kB/s    0:00:35  .     30,703,616  54%  744.55kB/s    0:00:34  .     31,490,048  55%  744.73kB/s    0:00:33  .     32,276,480  57%  745.09kB/s    0:00:32  .     33,062,912  58%  744.91kB/s    0:00:31  .     33,849,344  59%  745.09kB/s    0:00:30  .     34,635,776  61%  744.91kB/s    0:00:29  .     35,422,208  62%  745.27kB/s    0:00:28  .     36,208,640  64%  745.09kB/s    0:00:27  .     36,995,072  65%  744.37kB/s    0:00:26  .     37,781,504  66%  744.19kB/s    0:00:25  .     38,567,936  68%  743.47kB/s    0:00:24  .     39,354,368  69%  743.11kB/s    0:00:23  .     40,140,800  70%  743.83kB/s    0:00:22  .     40,927,232  72%  743.83kB/s    0:00:20  .     41,713,664  73%  745.09kB/s    0:00:19  .     42,500,096  75%  745.27kB/s    0:00:18  .     43,286,528  76%  745.45kB/s    0:00:17  .     44,072,960  77%  745.27kB/s    0:00:16  .     44,859,392  79%  744.73kB/s    0:00:15  .     45,645,824  80%  744.37kB/s    0:00:14  .     46,432,256  82%  744.55kB/s    0:00:13  .     47,218,688  83%  745.09kB/s    0:00:12  .     48,005,120  84%  745.27kB/s    0:00:11  .     48,791,552  86%  744.91kB/s    0:00:10  .     49,577,984  87%  744.55kB/s    0:00:09  .     50,364,416  89%  744.55kB/s    0:00:08  .     51,150,848  90%  744.37kB/s    0:00:07  .     51,937,280  91%  744.55kB/s    0:00:06  .     52,723,712  93%  743.65kB/s    0:00:05  .     53,510,144  94%  743.83kB/s    0:00:04  .     54,296,576  96%  743.83kB/s    0:00:03  .     55,083,008  97%  744.37kB/s    0:00:01  .     55,869,440  98%  745.27kB/s    0:00:00  .     56,537,358 100%  765.62kB/s    0:01:12 (xfr#1, to-chk=958/1052)
+2019-11-27 06:07:16.367292 +0000 build-fedora4: <f+++++++++ current-testing/dom0/fc25/rpm/kernel-latest-devel-5.3.12-1.qubes.x86_64.rpm
+2019-11-27 06:07:35.105970 +0000 build-fedora4: .         32,768   0%   37.21kB/s    0:06:23  .        131,072   0%  124.27kB/s    0:01:54  .        917,504   6%  434.11kB/s    0:00:30  .      1,703,936  11%  537.99kB/s    0:00:23  .      2,490,368  17%  589.43kB/s    0:00:20  .      3,276,800  22%  744.01kB/s    0:00:14  .      4,063,232  28%  744.37kB/s    0:00:13  .      4,849,664  33%  738.28kB/s    0:00:12  .      5,767,168  40%  744.01kB/s    0:00:11  .      6,553,600  45%  745.05kB/s    0:00:10  .      7,340,032  51%  745.23kB/s    0:00:09  .      8,126,464  56%  750.47kB/s    0:00:08  .      8,912,896  62%  744.91kB/s    0:00:07  .      9,699,328  67%  744.73kB/s    0:00:06  .     10,485,760  73%  744.19kB/s    0:00:05  .     11,272,192  78%  744.19kB/s    0:00:04  .     12,058,624  84%  745.09kB/s    0:00:03  .     12,845,056  89%  744.73kB/s    0:00:01  .     13,631,488  95%  744.55kB/s    0:00:00  .     14,313,082 100%  713.25kB/s    0:00:19 (xfr#2, to-chk=955/1052)
+2019-11-27 06:07:35.106024 +0000 build-fedora4: <f+++++++++ current-testing/dom0/fc25/rpm/kernel-latest-qubes-vm-5.3.12-1.qubes.x86_64.rpm
+2019-11-27 06:08:48.614778 +0000 build-fedora4: .         32,768   0%   37.34kB/s    0:39:15  .         98,304   0%   93.02kB/s    0:15:44  .        884,736   1%  419.01kB/s    0:03:27  .      1,671,168   1%  527.13kB/s    0:02:43  .      2,457,600   2%  581.25kB/s    0:02:27  .      3,244,032   3%  744.19kB/s    0:01:53  .      4,030,464   4%  744.19kB/s    0:01:52  .      4,816,896   5%  744.37kB/s    0:01:51  .      5,603,328   6%  744.91kB/s    0:01:50  .      6,389,760   7%  744.01kB/s    0:01:49  .      7,176,192   8%  744.01kB/s    0:01:48  .      7,962,624   9%  744.37kB/s    0:01:47  .      8,749,056   9%  744.01kB/s    0:01:46  .      9,535,488  10%  744.73kB/s    0:01:45  .     10,321,920  11%  744.55kB/s    0:01:44  .     11,108,352  12%  744.55kB/s    0:01:43  .     11,894,784  13%  744.73kB/s    0:01:42  .     12,681,216  14%  744.55kB/s    0:01:41  .     13,467,648  15%  743.65kB/s    0:01:40  .     14,254,080  16%  743.83kB/s    0:01:39  .     15,040,512  17%  744.01kB/s    0:01:38  .     15,826,944  17%  744.19kB/s    0:01:36  .     16,613,376  18%  745.45kB/s    0:01:35  .     17,399,808  19%  744.73kB/s    0:01:34  .     18,186,240  20%  745.09kB/s    0:01:33  .     18,972,672  21%  745.27kB/s    0:01:32  .     19,759,104  22%  744.37kB/s    0:01:31  .     20,545,536  23%  745.09kB/s    0:01:30  .     21,331,968  24%  744.91kB/s    0:01:29  .     22,118,400  25%  744.37kB/s    0:01:28  .     22,904,832  26%  744.73kB/s    0:01:27  .     23,691,264  26%  744.55kB/s    0:01:26  .     24,870,912  28%  841.49kB/s    0:01:15  .     26,443,776  30%    1.00MB/s    0:00:59  .     28,016,640  31%    1.19MB/s    0:00:49  .     29,589,504  33%    1.37MB/s    0:00:41  .     31,162,368  35%    1.45MB/s    0:00:38  .     32,735,232  37%    1.45MB/s    0:00:37  .     34,275,328  38%    1.45MB/s    0:00:36  .     35,848,192  40%    1.45MB/s    0:00:35  .     37,421,056  42%    1.45MB/s    0:00:34  .     38,993,920  44%    1.45MB/s    0:00:33  .     40,566,784  46%    1.45MB/s    0:00:31  .     42,139,648  47%    1.45MB/s    0:00:30  .     43,712,512  49%    1.45MB/s    0:00:29  .     45,285,376  51%    1.45MB/s    0:00:28  .     46,858,240  53%    1.45MB/s    0:00:27  .     48,431,104  55%    1.45MB/s    0:00:26  .     50,003,968  56%    1.45MB/s    0:00:25  .     51,576,832  58%    1.45MB/s    0:00:24  .     53,149,696  60%    1.45MB/s    0:00:23  .     54,722,560  62%    1.45MB/s    0:00:22  .     56,262,656  63%    1.45MB/s    0:00:21  .     57,835,520  65%    1.45MB/s    0:00:20  .     59,375,616  67%    1.46MB/s    0:00:19  .     60,948,480  69%    1.45MB/s    0:00:18  .     62,521,344  71%    1.46MB/s    0:00:17  .     64,094,208  72%    1.46MB/s    0:00:16  .     65,667,072  74%    1.45MB/s    0:00:14  .     67,239,936  76%    1.46MB/s    0:00:13  .     68,812,800  78%    1.45MB/s    0:00:12  .     70,385,664  79%    1.43MB/s    0:00:11  .     72,089,600  81%    1.45MB/s    0:00:10  .     73,662,464  83%    1.45MB/s    0:00:09  .     75,235,328  85%    1.45MB/s    0:00:08  .     76,808,192  87%    1.47MB/s    0:00:07  .     78,381,056  89%    1.45MB/s    0:00:06  .     79,953,920  90%    1.45MB/s    0:00:05  .     81,494,016  92%    1.45MB/s    0:00:04  .     83,066,880  94%    1.46MB/s    0:00:03  .     84,639,744  96%    1.45MB/s    0:00:02  .     86,212,608  97%    1.46MB/s    0:00:01  .     87,785,472  99%    1.45MB/s    0:00:00  .     87,993,198 100%    1.13MB/s    0:01:14 (xfr#3, to-chk=952/1052)
+2019-11-27 06:08:48.614856 +0000 build-fedora4: .d..t...... current-testing/vm/centos7/
+2019-11-27 06:08:48.614872 +0000 build-fedora4: .d..t...... current-testing/vm/centos8/
+2019-11-27 06:08:48.614882 +0000 build-fedora4: .d..t...... current-testing/vm/fc20/
+2019-11-27 06:08:48.614892 +0000 build-fedora4: .d..t...... current-testing/vm/fc21/
+2019-11-27 06:08:48.614901 +0000 build-fedora4: .d..t...... current-testing/vm/fc22/
+2019-11-27 06:08:48.614910 +0000 build-fedora4: .d..t...... current-testing/vm/fc23/
+2019-11-27 06:08:48.614919 +0000 build-fedora4: .d..t...... current-testing/vm/fc24/
+2019-11-27 06:08:48.614928 +0000 build-fedora4: .d..t...... current-testing/vm/fc25/
+2019-11-27 06:08:48.614940 +0000 build-fedora4: .d..t...... current-testing/vm/fc26/
+2019-11-27 06:08:48.614950 +0000 build-fedora4: .d..t...... current-testing/vm/fc27/
+2019-11-27 06:08:48.614959 +0000 build-fedora4: .d..t...... current-testing/vm/fc28/
+2019-11-27 06:08:48.614967 +0000 build-fedora4: .d..t...... current-testing/vm/fc29/
+2019-11-27 06:08:48.614976 +0000 build-fedora4: .d..t...... current-testing/vm/fc30/
+2019-11-27 06:08:48.614985 +0000 build-fedora4: .d..t...... current-testing/vm/fc31/
+2019-11-27 06:08:48.614993 +0000 build-fedora4: .d..t...... current/dom0/fc25/
+2019-11-27 06:08:48.615009 +0000 build-fedora4: hf+++++++++ current-testing/dom0/fc25/rpm/kernel-414-4.14.151-1.pvops.qubes.x86_64.rpm => current/dom0/fc25/rpm/kernel-414-4.14.151-1.pvops.qubes.x86_64.rpm
+2019-11-27 06:08:48.615026 +0000 build-fedora4: hf+++++++++ current-testing/dom0/fc25/rpm/kernel-414-devel-4.14.151-1.pvops.qubes.x86_64.rpm => current/dom0/fc25/rpm/kernel-414-devel-4.14.151-1.pvops.qubes.x86_64.rpm
+2019-11-27 06:08:48.615045 +0000 build-fedora4: hf+++++++++ current-testing/dom0/fc25/rpm/kernel-414-qubes-vm-4.14.151-1.pvops.qubes.x86_64.rpm => current/dom0/fc25/rpm/kernel-414-qubes-vm-4.14.151-1.pvops.qubes.x86_64.rpm
+2019-11-27 06:08:48.615056 +0000 build-fedora4: .d..t...... current/vm/centos7/
+2019-11-27 06:08:48.615065 +0000 build-fedora4: .d..t...... current/vm/centos8/
+2019-11-27 06:08:48.615074 +0000 build-fedora4: .d..t...... current/vm/fc17/
+2019-11-27 06:08:48.615083 +0000 build-fedora4: .d..t...... current/vm/fc20/
+2019-11-27 06:08:48.615091 +0000 build-fedora4: .d..t...... current/vm/fc21/
+2019-11-27 06:08:48.615099 +0000 build-fedora4: .d..t...... current/vm/fc22/
+2019-11-27 06:08:48.615108 +0000 build-fedora4: .d..t...... current/vm/fc23/
+2019-11-27 06:08:48.615116 +0000 build-fedora4: .d..t...... current/vm/fc24/
+2019-11-27 06:08:48.615125 +0000 build-fedora4: .d..t...... current/vm/fc25/
+2019-11-27 06:08:48.615185 +0000 build-fedora4: .d..t...... current/vm/fc26/
+2019-11-27 06:08:48.615197 +0000 build-fedora4: .d..t...... current/vm/fc27/
+2019-11-27 06:08:48.615205 +0000 build-fedora4: .d..t...... current/vm/fc28/
+2019-11-27 06:08:48.615214 +0000 build-fedora4: .d..t...... current/vm/fc29/
+2019-11-27 06:08:48.615222 +0000 build-fedora4: .d..t...... current/vm/fc30/
+2019-11-27 06:08:48.615230 +0000 build-fedora4: .d..t...... current/vm/fc31/
+2019-11-27 06:08:48.615239 +0000 build-fedora4: .d..t...... security-testing/dom0/fc21/
+2019-11-27 06:08:48.615248 +0000 build-fedora4: .d..t...... security-testing/dom0/fc25/
+2019-11-27 06:08:48.615257 +0000 build-fedora4: .d..t...... security-testing/vm/centos7/
+2019-11-27 06:08:48.615266 +0000 build-fedora4: .d..t...... security-testing/vm/centos8/
+2019-11-27 06:08:48.615275 +0000 build-fedora4: .d..t...... security-testing/vm/fc20/
+2019-11-27 06:08:48.615284 +0000 build-fedora4: .d..t...... security-testing/vm/fc21/
+2019-11-27 06:08:48.615293 +0000 build-fedora4: .d..t...... security-testing/vm/fc22/
+2019-11-27 06:08:48.615302 +0000 build-fedora4: .d..t...... security-testing/vm/fc23/
+2019-11-27 06:08:48.615310 +0000 build-fedora4: .d..t...... security-testing/vm/fc24/
+2019-11-27 06:08:48.615319 +0000 build-fedora4: .d..t...... security-testing/vm/fc25/
+2019-11-27 06:08:48.615328 +0000 build-fedora4: .d..t...... security-testing/vm/fc26/
+2019-11-27 06:08:48.615336 +0000 build-fedora4: .d..t...... security-testing/vm/fc27/
+2019-11-27 06:08:48.615345 +0000 build-fedora4: .d..t...... security-testing/vm/fc28/
+2019-11-27 06:08:48.615353 +0000 build-fedora4: .d..t...... security-testing/vm/fc29/
+2019-11-27 06:08:48.615362 +0000 build-fedora4: .d..t...... security-testing/vm/fc30/
+2019-11-27 06:08:48.615371 +0000 build-fedora4: .d..t...... security-testing/vm/fc31/
+2019-11-27 06:08:50.439810 +0000 build-fedora4: --> Processing repo: r4.0/current/dom0/fc20...
+2019-11-27 06:08:50.556021 +0000 build-fedora4: 06:08:50: posix_spawn avoided (fd close requested) 
+2019-11-27 06:08:50.561248 +0000 build-fedora4: 06:08:50: posix_spawn avoided (fd close requested) 
+2019-11-27 06:08:50.566279 +0000 build-fedora4: 06:08:50: posix_spawn avoided (fd close requested) 
+2019-11-27 06:08:50.574679 +0000 build-fedora4: 06:08:50: posix_spawn avoided (fd close requested) 
+2019-11-27 06:08:50.582312 +0000 build-fedora4: 06:08:50: posix_spawn avoided (fd close requested) 
+2019-11-27 06:08:50.590111 +0000 build-fedora4: 06:08:50: posix_spawn avoided (fd close requested) 
+2019-11-27 06:08:50.597848 +0000 build-fedora4: 06:08:50: posix_spawn avoided (fd close requested) 
+2019-11-27 06:08:50.606006 +0000 build-fedora4: 06:08:50: posix_spawn avoided (fd close requested) 
+2019-11-27 06:08:50.613660 +0000 build-fedora4: 06:08:50: posix_spawn avoided (fd close requested) 
+2019-11-27 06:08:50.621186 +0000 build-fedora4: 06:08:50: posix_spawn avoided (fd close requested) 
+2019-11-27 06:08:50.629283 +0000 build-fedora4: 06:08:50: posix_spawn avoided (fd close requested) 
+2019-11-27 06:08:51.616569 +0000 build-fedora4: --> Processing repo: r4.0/current/dom0/fc25...
+2019-11-27 06:11:15.830833 +0000 build-fedora4: 06:11:16: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:15.871180 +0000 build-fedora4: 06:11:16: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:15.909983 +0000 build-fedora4: 06:11:16: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:16.261000 +0000 build-fedora4: 06:11:16: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:16.331483 +0000 build-fedora4: 06:11:16: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:16.426931 +0000 build-fedora4: 06:11:16: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:16.470256 +0000 build-fedora4: 06:11:16: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:18.124271 +0000 build-fedora4: --> Processing repo: r4.0/current/vm/centos7...
+2019-11-27 06:11:21.673851 +0000 build-fedora4: 06:11:22: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:21.680262 +0000 build-fedora4: 06:11:22: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:21.688488 +0000 build-fedora4: 06:11:22: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:21.703477 +0000 build-fedora4: 06:11:22: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:21.713976 +0000 build-fedora4: 06:11:22: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:22.696318 +0000 build-fedora4: --> Processing repo: r4.0/current/vm/centos8...
+2019-11-27 06:11:22.806901 +0000 build-fedora4: 06:11:23: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:22.813288 +0000 build-fedora4: 06:11:23: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:22.818276 +0000 build-fedora4: 06:11:23: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:22.827213 +0000 build-fedora4: 06:11:23: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:22.835018 +0000 build-fedora4: 06:11:23: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:23.772887 +0000 build-fedora4: --> Processing repo: r4.0/current/vm/fc17...
+2019-11-27 06:11:23.884350 +0000 build-fedora4: 06:11:24: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:23.890081 +0000 build-fedora4: 06:11:24: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:23.895318 +0000 build-fedora4: 06:11:24: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:23.903768 +0000 build-fedora4: 06:11:24: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:23.911529 +0000 build-fedora4: 06:11:24: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:23.919845 +0000 build-fedora4: 06:11:24: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:23.927928 +0000 build-fedora4: 06:11:24: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:23.936271 +0000 build-fedora4: 06:11:24: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:24.895006 +0000 build-fedora4: --> Processing repo: r4.0/current/vm/fc20...
+2019-11-27 06:11:25.005813 +0000 build-fedora4: 06:11:25: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:25.010847 +0000 build-fedora4: 06:11:25: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:25.016185 +0000 build-fedora4: 06:11:25: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:25.024571 +0000 build-fedora4: 06:11:25: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:25.033029 +0000 build-fedora4: 06:11:25: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:26.014403 +0000 build-fedora4: --> Processing repo: r4.0/current/vm/fc21...
+2019-11-27 06:11:26.130501 +0000 build-fedora4: 06:11:26: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:26.135465 +0000 build-fedora4: 06:11:26: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:26.140354 +0000 build-fedora4: 06:11:26: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:26.148577 +0000 build-fedora4: 06:11:26: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:26.156708 +0000 build-fedora4: 06:11:26: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:26.164623 +0000 build-fedora4: 06:11:26: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:26.172024 +0000 build-fedora4: 06:11:26: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:26.179920 +0000 build-fedora4: 06:11:26: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:26.187975 +0000 build-fedora4: 06:11:26: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:27.182568 +0000 build-fedora4: --> Processing repo: r4.0/current/vm/fc22...
+2019-11-27 06:11:27.295742 +0000 build-fedora4: 06:11:27: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:27.300595 +0000 build-fedora4: 06:11:27: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:27.305736 +0000 build-fedora4: 06:11:27: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:27.314214 +0000 build-fedora4: 06:11:27: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:27.322816 +0000 build-fedora4: 06:11:27: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:27.330205 +0000 build-fedora4: 06:11:27: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:27.338238 +0000 build-fedora4: 06:11:27: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:27.346250 +0000 build-fedora4: 06:11:27: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:28.306505 +0000 build-fedora4: --> Processing repo: r4.0/current/vm/fc23...
+2019-11-27 06:11:28.421605 +0000 build-fedora4: 06:11:28: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:28.427392 +0000 build-fedora4: 06:11:28: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:28.432876 +0000 build-fedora4: 06:11:28: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:28.441288 +0000 build-fedora4: 06:11:28: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:28.450377 +0000 build-fedora4: 06:11:28: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:28.457844 +0000 build-fedora4: 06:11:28: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:28.465335 +0000 build-fedora4: 06:11:28: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:28.474246 +0000 build-fedora4: 06:11:28: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:29.413496 +0000 build-fedora4: --> Processing repo: r4.0/current/vm/fc24...
+2019-11-27 06:11:32.132945 +0000 build-fedora4: 06:11:32: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:32.140492 +0000 build-fedora4: 06:11:32: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:32.145359 +0000 build-fedora4: 06:11:32: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:32.159889 +0000 build-fedora4: 06:11:32: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:32.177074 +0000 build-fedora4: 06:11:32: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:32.187275 +0000 build-fedora4: 06:11:32: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:32.201691 +0000 build-fedora4: 06:11:32: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:33.181717 +0000 build-fedora4: --> Processing repo: r4.0/current/vm/fc25...
+2019-11-27 06:11:35.950426 +0000 build-fedora4: 06:11:36: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:35.956252 +0000 build-fedora4: 06:11:36: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:35.962204 +0000 build-fedora4: 06:11:36: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:35.976349 +0000 build-fedora4: 06:11:36: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:35.985283 +0000 build-fedora4: 06:11:36: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:36.972195 +0000 build-fedora4: --> Processing repo: r4.0/current/vm/fc26...
+2019-11-27 06:11:39.527814 +0000 build-fedora4: 06:11:39: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:39.534679 +0000 build-fedora4: 06:11:39: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:39.539357 +0000 build-fedora4: 06:11:39: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:39.553557 +0000 build-fedora4: 06:11:39: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:39.563340 +0000 build-fedora4: 06:11:39: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:40.540040 +0000 build-fedora4: --> Processing repo: r4.0/current/vm/fc27...
+2019-11-27 06:11:43.021029 +0000 build-fedora4: 06:11:43: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:43.027953 +0000 build-fedora4: 06:11:43: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:43.032439 +0000 build-fedora4: 06:11:43: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:43.048822 +0000 build-fedora4: 06:11:43: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:43.058303 +0000 build-fedora4: 06:11:43: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:44.013962 +0000 build-fedora4: --> Processing repo: r4.0/current/vm/fc28...
+2019-11-27 06:11:46.513093 +0000 build-fedora4: 06:11:46: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:46.519328 +0000 build-fedora4: 06:11:46: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:46.524138 +0000 build-fedora4: 06:11:46: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:46.539951 +0000 build-fedora4: 06:11:46: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:46.549066 +0000 build-fedora4: 06:11:46: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:47.526259 +0000 build-fedora4: --> Processing repo: r4.0/current/vm/fc29...
+2019-11-27 06:11:49.645908 +0000 build-fedora4: 06:11:49: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:49.652696 +0000 build-fedora4: 06:11:49: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:49.657306 +0000 build-fedora4: 06:11:50: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:49.672065 +0000 build-fedora4: 06:11:50: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:49.680767 +0000 build-fedora4: 06:11:50: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:49.689506 +0000 build-fedora4: 06:11:50: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:49.698023 +0000 build-fedora4: 06:11:50: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:49.706781 +0000 build-fedora4: 06:11:50: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:49.714800 +0000 build-fedora4: 06:11:50: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:50.706571 +0000 build-fedora4: --> Processing repo: r4.0/current/vm/fc30...
+2019-11-27 06:11:52.052549 +0000 build-fedora4: 06:11:52: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:52.058973 +0000 build-fedora4: 06:11:52: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:52.067302 +0000 build-fedora4: 06:11:52: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:52.074197 +0000 build-fedora4: 06:11:52: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:52.081972 +0000 build-fedora4: 06:11:52: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:53.068308 +0000 build-fedora4: --> Processing repo: r4.0/current/vm/fc31...
+2019-11-27 06:11:53.604524 +0000 build-fedora4: 06:11:53: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:53.609792 +0000 build-fedora4: 06:11:53: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:53.615739 +0000 build-fedora4: 06:11:53: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:53.624937 +0000 build-fedora4: 06:11:53: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:53.632886 +0000 build-fedora4: 06:11:53: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:54.607574 +0000 build-fedora4: Done.
+2019-11-27 06:11:54.697847 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/dom0/fc20...
+2019-11-27 06:11:54.808842 +0000 build-fedora4: 06:11:55: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:54.813691 +0000 build-fedora4: 06:11:55: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:54.818821 +0000 build-fedora4: 06:11:55: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:54.827021 +0000 build-fedora4: 06:11:55: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:54.834696 +0000 build-fedora4: 06:11:55: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:54.843301 +0000 build-fedora4: 06:11:55: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:54.859804 +0000 build-fedora4: 06:11:55: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:54.869249 +0000 build-fedora4: 06:11:55: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:54.876878 +0000 build-fedora4: 06:11:55: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:54.884333 +0000 build-fedora4: 06:11:55: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:54.893272 +0000 build-fedora4: 06:11:55: posix_spawn avoided (fd close requested) 
+2019-11-27 06:11:55.835937 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/dom0/fc25...
+2019-11-27 06:12:37.073800 +0000 build-fedora4: 06:12:37: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:37.092751 +0000 build-fedora4: 06:12:37: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:37.111561 +0000 build-fedora4: 06:12:37: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:37.195480 +0000 build-fedora4: 06:12:37: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:37.268934 +0000 build-fedora4: 06:12:37: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:37.368287 +0000 build-fedora4: 06:12:37: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:37.389020 +0000 build-fedora4: 06:12:37: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:38.535842 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/centos7...
+2019-11-27 06:12:49.243089 +0000 build-fedora4: 06:12:49: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:49.251797 +0000 build-fedora4: 06:12:49: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:49.257845 +0000 build-fedora4: 06:12:49: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:49.288322 +0000 build-fedora4: 06:12:49: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:49.319114 +0000 build-fedora4: 06:12:49: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:49.601879 +0000 build-fedora4: 06:12:49: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:49.619204 +0000 build-fedora4: 06:12:49: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:49.630818 +0000 build-fedora4: 06:12:49: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:50.657886 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/centos8...
+2019-11-27 06:12:50.772772 +0000 build-fedora4: 06:12:51: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:50.778269 +0000 build-fedora4: 06:12:51: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:50.784110 +0000 build-fedora4: 06:12:51: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:50.792626 +0000 build-fedora4: 06:12:51: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:50.800885 +0000 build-fedora4: 06:12:51: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:51.782979 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc20...
+2019-11-27 06:12:51.897463 +0000 build-fedora4: 06:12:52: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:51.902868 +0000 build-fedora4: 06:12:52: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:51.908586 +0000 build-fedora4: 06:12:52: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:51.916816 +0000 build-fedora4: 06:12:52: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:51.925381 +0000 build-fedora4: 06:12:52: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:51.933584 +0000 build-fedora4: 06:12:52: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:51.942944 +0000 build-fedora4: 06:12:52: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:51.949530 +0000 build-fedora4: 06:12:52: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:51.957979 +0000 build-fedora4: 06:12:52: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:51.965541 +0000 build-fedora4: 06:12:52: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:51.973564 +0000 build-fedora4: 06:12:52: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:52.953819 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc21...
+2019-11-27 06:12:53.067256 +0000 build-fedora4: 06:12:53: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:53.072726 +0000 build-fedora4: 06:12:53: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:53.077613 +0000 build-fedora4: 06:12:53: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:53.085950 +0000 build-fedora4: 06:12:53: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:53.094547 +0000 build-fedora4: 06:12:53: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:53.102819 +0000 build-fedora4: 06:12:53: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:53.110757 +0000 build-fedora4: 06:12:53: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:53.119763 +0000 build-fedora4: 06:12:53: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:53.127874 +0000 build-fedora4: 06:12:53: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:53.135766 +0000 build-fedora4: 06:12:53: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:53.144372 +0000 build-fedora4: 06:12:53: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:54.087685 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc22...
+2019-11-27 06:12:54.198338 +0000 build-fedora4: 06:12:54: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:54.203264 +0000 build-fedora4: 06:12:54: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:54.208411 +0000 build-fedora4: 06:12:54: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:54.216373 +0000 build-fedora4: 06:12:54: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:54.224105 +0000 build-fedora4: 06:12:54: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:54.232230 +0000 build-fedora4: 06:12:54: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:54.240242 +0000 build-fedora4: 06:12:54: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:54.248289 +0000 build-fedora4: 06:12:54: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:54.262631 +0000 build-fedora4: 06:12:54: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:54.264317 +0000 build-fedora4: 06:12:54: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:54.272300 +0000 build-fedora4: 06:12:54: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:55.247330 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc23...
+2019-11-27 06:12:55.358069 +0000 build-fedora4: 06:12:55: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:55.362689 +0000 build-fedora4: 06:12:55: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:55.367544 +0000 build-fedora4: 06:12:55: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:55.375786 +0000 build-fedora4: 06:12:55: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:55.383925 +0000 build-fedora4: 06:12:55: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:55.391790 +0000 build-fedora4: 06:12:55: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:55.399855 +0000 build-fedora4: 06:12:55: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:55.409283 +0000 build-fedora4: 06:12:55: posix_spawn avoided (fd close requested) 
+2019-11-27 06:12:56.360426 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc24...
+2019-11-27 06:13:11.773875 +0000 build-fedora4: 06:13:12: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:11.781936 +0000 build-fedora4: 06:13:12: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:11.787708 +0000 build-fedora4: 06:13:12: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:11.830378 +0000 build-fedora4: 06:13:12: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:11.880752 +0000 build-fedora4: 06:13:12: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:12.057726 +0000 build-fedora4: 06:13:12: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:12.071320 +0000 build-fedora4: 06:13:12: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:12.082185 +0000 build-fedora4: 06:13:12: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:13.073109 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc25...
+2019-11-27 06:13:28.533860 +0000 build-fedora4: 06:13:28: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:28.542449 +0000 build-fedora4: 06:13:28: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:28.548898 +0000 build-fedora4: 06:13:28: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:28.589741 +0000 build-fedora4: 06:13:28: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:28.640423 +0000 build-fedora4: 06:13:28: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:28.804723 +0000 build-fedora4: 06:13:29: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:28.818829 +0000 build-fedora4: 06:13:29: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:28.830106 +0000 build-fedora4: 06:13:29: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:29.861089 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc26...
+2019-11-27 06:13:41.705424 +0000 build-fedora4: 06:13:42: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:41.713127 +0000 build-fedora4: 06:13:42: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:41.720013 +0000 build-fedora4: 06:13:42: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:41.755903 +0000 build-fedora4: 06:13:42: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:41.799072 +0000 build-fedora4: 06:13:42: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:42.100349 +0000 build-fedora4: 06:13:42: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:42.113999 +0000 build-fedora4: 06:13:42: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:42.124528 +0000 build-fedora4: 06:13:42: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:43.121104 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc27...
+2019-11-27 06:13:46.806997 +0000 build-fedora4: 06:13:47: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:46.812603 +0000 build-fedora4: 06:13:47: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:46.818172 +0000 build-fedora4: 06:13:47: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:46.837760 +0000 build-fedora4: 06:13:47: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:46.846843 +0000 build-fedora4: 06:13:47: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:46.857695 +0000 build-fedora4: 06:13:47: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:46.867319 +0000 build-fedora4: 06:13:47: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:47.847105 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc28...
+2019-11-27 06:13:51.345555 +0000 build-fedora4: 06:13:51: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:51.352520 +0000 build-fedora4: 06:13:51: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:51.356865 +0000 build-fedora4: 06:13:51: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:51.375824 +0000 build-fedora4: 06:13:51: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:51.384390 +0000 build-fedora4: 06:13:51: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:51.393192 +0000 build-fedora4: 06:13:51: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:51.401913 +0000 build-fedora4: 06:13:51: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:51.411215 +0000 build-fedora4: 06:13:51: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:52.398478 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc29...
+2019-11-27 06:13:55.449045 +0000 build-fedora4: 06:13:55: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:55.455636 +0000 build-fedora4: 06:13:55: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:55.460703 +0000 build-fedora4: 06:13:55: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:55.478214 +0000 build-fedora4: 06:13:55: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:55.487313 +0000 build-fedora4: 06:13:55: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:55.496572 +0000 build-fedora4: 06:13:55: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:55.505348 +0000 build-fedora4: 06:13:55: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:55.514074 +0000 build-fedora4: 06:13:55: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:55.523471 +0000 build-fedora4: 06:13:55: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:56.506544 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc30...
+2019-11-27 06:13:58.365979 +0000 build-fedora4: 06:13:58: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:58.371765 +0000 build-fedora4: 06:13:58: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:58.380689 +0000 build-fedora4: 06:13:58: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:58.389318 +0000 build-fedora4: 06:13:58: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:58.397918 +0000 build-fedora4: 06:13:58: posix_spawn avoided (fd close requested) 
+2019-11-27 06:13:59.393792 +0000 build-fedora4: --> Processing repo: r4.0/current-testing/vm/fc31...
+2019-11-27 06:14:00.243559 +0000 build-fedora4: 06:14:00: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:00.248964 +0000 build-fedora4: 06:14:00: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:00.255087 +0000 build-fedora4: 06:14:00: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:00.265381 +0000 build-fedora4: 06:14:00: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:00.273769 +0000 build-fedora4: 06:14:00: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:01.251320 +0000 build-fedora4: Done.
+2019-11-27 06:14:01.386706 +0000 build-fedora4: --> Processing repo: r4.0/security-testing/dom0/fc20...
+2019-11-27 06:14:01.496350 +0000 build-fedora4: 06:14:01: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:01.501497 +0000 build-fedora4: 06:14:01: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:01.506624 +0000 build-fedora4: 06:14:01: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:01.513900 +0000 build-fedora4: 06:14:01: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:01.522169 +0000 build-fedora4: 06:14:01: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:01.531268 +0000 build-fedora4: 06:14:01: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:01.539583 +0000 build-fedora4: 06:14:01: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:01.547184 +0000 build-fedora4: 06:14:01: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:01.555014 +0000 build-fedora4: 06:14:01: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:01.561879 +0000 build-fedora4: 06:14:01: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:01.570286 +0000 build-fedora4: 06:14:01: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:02.525889 +0000 build-fedora4: --> Processing repo: r4.0/security-testing/dom0/fc21...
+2019-11-27 06:14:02.638359 +0000 build-fedora4: 06:14:02: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:02.643551 +0000 build-fedora4: 06:14:02: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:02.648428 +0000 build-fedora4: 06:14:03: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:02.655998 +0000 build-fedora4: 06:14:03: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:02.663340 +0000 build-fedora4: 06:14:03: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:02.671729 +0000 build-fedora4: 06:14:03: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:02.679376 +0000 build-fedora4: 06:14:03: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:02.686861 +0000 build-fedora4: 06:14:03: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:02.695420 +0000 build-fedora4: 06:14:03: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:02.702224 +0000 build-fedora4: 06:14:03: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:02.711058 +0000 build-fedora4: 06:14:03: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:03.649522 +0000 build-fedora4: --> Processing repo: r4.0/security-testing/dom0/fc25...
+2019-11-27 06:14:24.772503 +0000 build-fedora4: 06:14:25: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:24.791441 +0000 build-fedora4: 06:14:25: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:24.810514 +0000 build-fedora4: 06:14:25: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:24.873428 +0000 build-fedora4: 06:14:25: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:24.894775 +0000 build-fedora4: 06:14:25: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:25.940162 +0000 build-fedora4: --> Processing repo: r4.0/security-testing/vm/centos7...
+2019-11-27 06:14:29.573048 +0000 build-fedora4: 06:14:29: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:29.579475 +0000 build-fedora4: 06:14:29: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:29.584296 +0000 build-fedora4: 06:14:29: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:29.600511 +0000 build-fedora4: 06:14:29: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:29.609827 +0000 build-fedora4: 06:14:29: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:30.581882 +0000 build-fedora4: --> Processing repo: r4.0/security-testing/vm/centos8...
+2019-11-27 06:14:30.691353 +0000 build-fedora4: 06:14:31: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:30.696037 +0000 build-fedora4: 06:14:31: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:30.701697 +0000 build-fedora4: 06:14:31: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:30.708753 +0000 build-fedora4: 06:14:31: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:30.719285 +0000 build-fedora4: 06:14:31: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:31.683803 +0000 build-fedora4: --> Processing repo: r4.0/security-testing/vm/fc20...
+2019-11-27 06:14:31.795241 +0000 build-fedora4: 06:14:32: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:31.800273 +0000 build-fedora4: 06:14:32: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:31.805658 +0000 build-fedora4: 06:14:32: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:31.813100 +0000 build-fedora4: 06:14:32: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:31.820703 +0000 build-fedora4: 06:14:32: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:31.828404 +0000 build-fedora4: 06:14:32: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:31.836788 +0000 build-fedora4: 06:14:32: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:31.844452 +0000 build-fedora4: 06:14:32: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:31.852833 +0000 build-fedora4: 06:14:32: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:31.860813 +0000 build-fedora4: 06:14:32: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:31.867539 +0000 build-fedora4: 06:14:32: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:31.876105 +0000 build-fedora4: 06:14:32: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:32.818492 +0000 build-fedora4: --> Processing repo: r4.0/security-testing/vm/fc21...
+2019-11-27 06:14:32.926796 +0000 build-fedora4: 06:14:33: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:32.931799 +0000 build-fedora4: 06:14:33: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:32.937298 +0000 build-fedora4: 06:14:33: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:32.944345 +0000 build-fedora4: 06:14:33: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:32.951776 +0000 build-fedora4: 06:14:33: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:32.960257 +0000 build-fedora4: 06:14:33: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:32.967728 +0000 build-fedora4: 06:14:33: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:32.975287 +0000 build-fedora4: 06:14:33: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:32.982981 +0000 build-fedora4: 06:14:33: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:32.990335 +0000 build-fedora4: 06:14:33: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:32.998311 +0000 build-fedora4: 06:14:33: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:33.933078 +0000 build-fedora4: --> Processing repo: r4.0/security-testing/vm/fc22...
+2019-11-27 06:14:34.042318 +0000 build-fedora4: 06:14:34: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:34.047983 +0000 build-fedora4: 06:14:34: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:34.053265 +0000 build-fedora4: 06:14:34: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:34.060865 +0000 build-fedora4: 06:14:34: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:34.068479 +0000 build-fedora4: 06:14:34: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:34.078273 +0000 build-fedora4: 06:14:34: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:34.087257 +0000 build-fedora4: 06:14:34: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:34.095198 +0000 build-fedora4: 06:14:34: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:34.103294 +0000 build-fedora4: 06:14:34: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:34.110273 +0000 build-fedora4: 06:14:34: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:34.118544 +0000 build-fedora4: 06:14:34: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:35.081657 +0000 build-fedora4: --> Processing repo: r4.0/security-testing/vm/fc23...
+2019-11-27 06:14:35.191888 +0000 build-fedora4: 06:14:35: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:35.196857 +0000 build-fedora4: 06:14:35: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:35.201847 +0000 build-fedora4: 06:14:35: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:35.209445 +0000 build-fedora4: 06:14:35: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:35.217202 +0000 build-fedora4: 06:14:35: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:35.225969 +0000 build-fedora4: 06:14:35: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:35.233600 +0000 build-fedora4: 06:14:35: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:35.241618 +0000 build-fedora4: 06:14:35: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:35.249489 +0000 build-fedora4: 06:14:35: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:35.256707 +0000 build-fedora4: 06:14:35: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:35.264812 +0000 build-fedora4: 06:14:35: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:36.206921 +0000 build-fedora4: --> Processing repo: r4.0/security-testing/vm/fc24...
+2019-11-27 06:14:40.888706 +0000 build-fedora4: 06:14:41: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:40.894313 +0000 build-fedora4: 06:14:41: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:40.899604 +0000 build-fedora4: 06:14:41: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:40.917635 +0000 build-fedora4: 06:14:41: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:41.171301 +0000 build-fedora4: 06:14:41: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:41.179285 +0000 build-fedora4: 06:14:41: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:42.137091 +0000 build-fedora4: --> Processing repo: r4.0/security-testing/vm/fc25...
+2019-11-27 06:14:46.810288 +0000 build-fedora4: 06:14:47: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:46.816975 +0000 build-fedora4: 06:14:47: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:46.822298 +0000 build-fedora4: 06:14:47: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:46.841349 +0000 build-fedora4: 06:14:47: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:47.086695 +0000 build-fedora4: 06:14:47: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:47.101936 +0000 build-fedora4: 06:14:47: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:47.111192 +0000 build-fedora4: 06:14:47: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:48.100354 +0000 build-fedora4: --> Processing repo: r4.0/security-testing/vm/fc26...
+2019-11-27 06:14:52.307715 +0000 build-fedora4: 06:14:52: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:52.313561 +0000 build-fedora4: 06:14:52: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:52.319758 +0000 build-fedora4: 06:14:52: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:52.337540 +0000 build-fedora4: 06:14:52: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:52.359941 +0000 build-fedora4: 06:14:52: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:52.370589 +0000 build-fedora4: 06:14:52: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:52.379275 +0000 build-fedora4: 06:14:52: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:53.356915 +0000 build-fedora4: --> Processing repo: r4.0/security-testing/vm/fc27...
+2019-11-27 06:14:54.176832 +0000 build-fedora4: 06:14:54: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:54.182597 +0000 build-fedora4: 06:14:54: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:54.188827 +0000 build-fedora4: 06:14:54: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:54.200227 +0000 build-fedora4: 06:14:54: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:54.208520 +0000 build-fedora4: 06:14:54: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:55.183267 +0000 build-fedora4: --> Processing repo: r4.0/security-testing/vm/fc28...
+2019-11-27 06:14:55.960371 +0000 build-fedora4: 06:14:56: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:55.966046 +0000 build-fedora4: 06:14:56: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:55.971257 +0000 build-fedora4: 06:14:56: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:55.981485 +0000 build-fedora4: 06:14:56: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:55.989999 +0000 build-fedora4: 06:14:56: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:56.951056 +0000 build-fedora4: --> Processing repo: r4.0/security-testing/vm/fc29...
+2019-11-27 06:14:57.674857 +0000 build-fedora4: 06:14:58: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:57.680720 +0000 build-fedora4: 06:14:58: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:57.686121 +0000 build-fedora4: 06:14:58: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:57.696893 +0000 build-fedora4: 06:14:58: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:57.705274 +0000 build-fedora4: 06:14:58: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:57.713987 +0000 build-fedora4: 06:14:58: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:57.723266 +0000 build-fedora4: 06:14:58: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:57.731906 +0000 build-fedora4: 06:14:58: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:57.740420 +0000 build-fedora4: 06:14:58: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:57.748548 +0000 build-fedora4: 06:14:58: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:57.757200 +0000 build-fedora4: 06:14:58: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:57.765248 +0000 build-fedora4: 06:14:58: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:58.713054 +0000 build-fedora4: --> Processing repo: r4.0/security-testing/vm/fc30...
+2019-11-27 06:14:59.241037 +0000 build-fedora4: 06:14:59: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:59.255406 +0000 build-fedora4: 06:14:59: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:59.255449 +0000 build-fedora4: 06:14:59: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:59.261993 +0000 build-fedora4: 06:14:59: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:59.270523 +0000 build-fedora4: 06:14:59: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:59.279127 +0000 build-fedora4: 06:14:59: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:59.287724 +0000 build-fedora4: 06:14:59: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:59.296261 +0000 build-fedora4: 06:14:59: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:59.304573 +0000 build-fedora4: 06:14:59: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:59.312469 +0000 build-fedora4: 06:14:59: posix_spawn avoided (fd close requested) 
+2019-11-27 06:14:59.321116 +0000 build-fedora4: 06:14:59: posix_spawn avoided (fd close requested) 
+2019-11-27 06:15:00.261052 +0000 build-fedora4: --> Processing repo: r4.0/security-testing/vm/fc31...
+2019-11-27 06:15:00.652820 +0000 build-fedora4: 06:15:01: posix_spawn avoided (fd close requested) 
+2019-11-27 06:15:00.658477 +0000 build-fedora4: 06:15:01: posix_spawn avoided (fd close requested) 
+2019-11-27 06:15:00.663950 +0000 build-fedora4: 06:15:01: posix_spawn avoided (fd close requested) 
+2019-11-27 06:15:00.672765 +0000 build-fedora4: 06:15:01: posix_spawn avoided (fd close requested) 
+2019-11-27 06:15:00.681316 +0000 build-fedora4: 06:15:01: posix_spawn avoided (fd close requested) 
+2019-11-27 06:15:01.638665 +0000 build-fedora4: Done.
+2019-11-27 06:15:01.639838 +0000 build-fedora4: ~/builder-r4.0-dom0/qubes-src/linux-yum
+2019-11-27 06:15:01.640472 +0000 build-fedora4: Makefile:772: update target 'update-repo-current-testing' due to: internal-update-repo-current-testing.dom0.fc25.linux-kernel-latest post-update-repo-current-testing
+2019-11-27 06:15:01.640503 +0000 build-fedora4: true
+2019-11-27 06:15:01.641889 +0000 build-fedora4: > done
+2019-11-27 06:15:01.641923 +0000 > closing log
