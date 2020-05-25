@@ -1,0 +1,905 @@
+2020-05-25 01:49:48.362948 +0000 > starting log
+2020-05-25 01:49:48.363299 +0000 build-fedora4: > starting build with log
+2020-05-25 01:49:48.363334 +0000 build-fedora4: >> make args: DISTS_VM= DIST_DOM0=fc32 BUILD_LOGS_URL= vmm-xen-stubdom-linux-dom0-fc32=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2020-05-25_01-30-32 GIT_URL_vmm_xen_stubdom_linux=https://github.com/QubesOS/qubes-vmm-xen-stubdom-linux sign-all update-repo-current-testing
+2020-05-25 01:49:48.363348 +0000 build-fedora4: >> MAKEFLAGS=
+2020-05-25 01:49:48.363359 +0000 build-fedora4: >> COMPONENTS=vmm-xen-stubdom-linux
+2020-05-25 01:49:48.363367 +0000 build-fedora4: >> DISTS_VM=
+2020-05-25 01:49:48.363375 +0000 build-fedora4: >> DIST_DOM0=
+2020-05-25 01:49:48.363386 +0000 build-fedora4: >> qubes-builder 6e84e01f0e6c18e747b9cdf968c0711ccff90b9b
+2020-05-25 01:49:48.363527 +0000 build-fedora4: >> qubes-builder/qubes-src/vmm-xen-stubdom-linux 07e32fe6f5ad5680315a843027e1aa4979fbf739
+2020-05-25 01:49:48.396997 +0000 build-fedora4: !! dl/busybox-1.29.3.tar.bz2
+2020-05-25 01:49:48.397045 +0000 build-fedora4: !! dl/busybox-1.29.3.tar.bz2.sig
+2020-05-25 01:49:48.397057 +0000 build-fedora4: !! dl/busybox-1.31.1.tar.bz2
+2020-05-25 01:49:48.397067 +0000 build-fedora4: !! dl/busybox-1.31.1.tar.bz2.sig
+2020-05-25 01:49:48.397080 +0000 build-fedora4: !! dl/linux-4.14.68.tar.sign
+2020-05-25 01:49:48.397089 +0000 build-fedora4: !! dl/linux-4.14.68.tar.xz
+2020-05-25 01:49:48.397098 +0000 build-fedora4: !! dl/linux-5.4.30.tar.sign
+2020-05-25 01:49:48.397106 +0000 build-fedora4: !! dl/linux-5.4.30.tar.xz
+2020-05-25 01:49:48.397115 +0000 build-fedora4: !! dl/qemu-3.0.0.tar.xz
+2020-05-25 01:49:48.397123 +0000 build-fedora4: !! dl/qemu-3.0.0.tar.xz.sig
+2020-05-25 01:49:48.397131 +0000 build-fedora4: !! dl/qemu-4.2.0.tar.xz
+2020-05-25 01:49:48.397140 +0000 build-fedora4: !! dl/qemu-4.2.0.tar.xz.sig
+2020-05-25 01:49:48.397179 +0000 build-fedora4: !! pkgs/dom0-fc29/xen-hvm-stubdom-linux-1.0.11-1.fc29.src.rpm
+2020-05-25 01:49:48.397191 +0000 build-fedora4: !! pkgs/dom0-fc29/xen-hvm-stubdom-linux-1.0.11-1.fc29.x86_64.buildinfo
+2020-05-25 01:49:48.397201 +0000 build-fedora4: !! pkgs/dom0-fc29/xen-hvm-stubdom-linux-1.0.11-1.fc29.x86_64.rpm
+2020-05-25 01:49:48.397211 +0000 build-fedora4: !! pkgs/dom0-fc29/xen-hvm-stubdom-linux.spec.list
+2020-05-25 01:49:48.397222 +0000 build-fedora4: !! pkgs/dom0-fc31/xen-hvm-stubdom-linux-1.0.12-1.fc31.x86_64.buildinfo
+2020-05-25 01:49:48.397233 +0000 build-fedora4: !! pkgs/dom0-fc31/xen-hvm-stubdom-linux-1.0.13-1.fc31.src.rpm
+2020-05-25 01:49:48.397244 +0000 build-fedora4: !! pkgs/dom0-fc31/xen-hvm-stubdom-linux-1.0.13-1.fc31.x86_64.buildinfo
+2020-05-25 01:49:48.397255 +0000 build-fedora4: !! pkgs/dom0-fc31/xen-hvm-stubdom-linux-1.0.13-1.fc31.x86_64.rpm
+2020-05-25 01:49:48.397266 +0000 build-fedora4: !! pkgs/dom0-fc31/xen-hvm-stubdom-linux.spec.list
+2020-05-25 01:49:48.397277 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-hvm-stubdom-linux-1.0.14-1.fc32.src.rpm
+2020-05-25 01:49:48.397288 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-hvm-stubdom-linux-1.0.14-1.fc32.x86_64.buildinfo
+2020-05-25 01:49:48.397299 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-hvm-stubdom-linux-1.0.14-1.fc32.x86_64.rpm
+2020-05-25 01:49:48.397309 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-hvm-stubdom-linux.spec.list
+2020-05-25 01:49:48.408137 +0000 build-fedora4: bf90e24b4564071e0ac2785e2ee4ec4ea0e229a1ff330bb38befe7a27c5a529e7b0657354ce731473814325a27a0c181ab922e0a0a89d5023ba08a6d80472297  dl/busybox-1.29.3.tar.bz2
+2020-05-25 01:49:48.408205 +0000 build-fedora4: 34309ac42ee9bb670fcacd3730f37e2b5f34112b60a096e3c4137ea92be05a72c9963b65cb7eaed0b85c5b123000ebed48a9ee23e24bee73e225a909e7b8b98c  dl/busybox-1.29.3.tar.bz2.sig
+2020-05-25 01:49:48.417985 +0000 build-fedora4: 0d1197c25d963d7f95ef21e08c06c0d6124ac7b59c99989e891f744ffee4878a3b1fe44a247241a9da39fa5de0ba87f1b6d862401b591f277e66e89c02764bbf  dl/busybox-1.31.1.tar.bz2
+2020-05-25 01:49:48.418042 +0000 build-fedora4: 893d611f707a8a16d2c0d0c6ff46df84af98431e99e0f662f104321aad38090fd211a798ad99fc634bb0ed8a835f5f0e08030ee1bca01f225615e0bb977bb341  dl/busybox-1.31.1.tar.bz2.sig
+2020-05-25 01:49:48.418081 +0000 build-fedora4: 586bd7b741ad438db3c7fd974d7678526d0b874f1a4d0ce68f93743c89e77585c688384ede44626ce9e87e012ea1306360c946047edc6e972fb56116ab42e966  dl/linux-4.14.68.tar.sign
+2020-05-25 01:49:49.222312 +0000 build-fedora4: b5094bb8ce12f658e8d90f76d71a6f1a54333efd783dfccb69a341c9e587269b71198c90f472752fa4a42d5bcc06775011dc3903204b6c9e00eb53e78021a6bf  dl/linux-4.14.68.tar.xz
+2020-05-25 01:49:49.227280 +0000 build-fedora4: 2e63a71205bbcdcae5b2b0a26c92c14f6e8cc25c503081d0e87edfe7ff59a419cdeb438255f595ff872cbac52b839cf51a8ceb64c7a4448542a759c1435c9812  dl/linux-5.4.30.tar.sign
+2020-05-25 01:49:51.010933 +0000 build-fedora4: 2bc1109d7949c9516235c9466c40924e00d00812169dca9af177fcd1d8992b06a78dd2e9fce7c6c37b2dfd77c40b10e5e1af1c09f13a2e21731ab9ca5733727e  dl/linux-5.4.30.tar.xz
+2020-05-25 01:49:51.647994 +0000 build-fedora4: a764302f50b9aca4134bbbc1f361b98e71240cdc7b25600dfe733bf4cf17bd86000bd28357697b08f3b656899dceb9e459350b8d55557817444ed5d7fa380a5a  dl/qemu-3.0.0.tar.xz
+2020-05-25 01:49:51.651046 +0000 build-fedora4: 93cd0e18c579be6e4653f643f646df3539587006a8d89d4dc8023dd9e360ffdb5d887dd1f0922ffa4b1c393036c0296f1f387a788c0a2ff49cd911f9f7a0d103  dl/qemu-3.0.0.tar.xz.sig
+2020-05-25 01:49:52.280237 +0000 build-fedora4: 2a79973c2b07c53e8c57a808ea8add7b6b2cbca96488ed5d4b669ead8c9318907dec2b6109f180fc8ca8f04c0f73a56e82b3a527b5626b799d7e849f2474ec56  dl/qemu-4.2.0.tar.xz
+2020-05-25 01:49:52.282608 +0000 build-fedora4: cd24a4cb0c9e2c973f89939a1b99245b80802fa63b9bc4219c8bc3d5f6300aaa0ff86b2e62c1338db9c6794c16ab9b319f153ba57573492b3fd8b790080bd396  dl/qemu-4.2.0.tar.xz.sig
+2020-05-25 01:49:54.249550 +0000 build-fedora4: 3d755c4da8e021bdd019701ba83e27f9d0b480512cc0f1985a8d3f7ebb4e8e6ddb73ae295da33cf9b73589c6276f3a34f400a4d580d31c346a9dae99d4a6a0a7  pkgs/dom0-fc29/xen-hvm-stubdom-linux-1.0.11-1.fc29.src.rpm
+2020-05-25 01:49:54.265031 +0000 build-fedora4: 4b8a6c9318a2e464cfaeb0c0878d35fb866ec875f7a8af13d20eba3913eff09f4cc518b91400c5e9138c5ab292363fd364feb4c216aa9ff68ded38f3a698e976  pkgs/dom0-fc29/xen-hvm-stubdom-linux-1.0.11-1.fc29.x86_64.buildinfo
+2020-05-25 01:49:54.360089 +0000 build-fedora4: 1c8cad1782f43c1e3f53c57cbc6d7d53f55f02d0ebb5660ea3785101f75f94836a46a378d61a5856415e4c6eb8ce8942b10a8996a404ecd5c2a9faaebd00dc32  pkgs/dom0-fc29/xen-hvm-stubdom-linux-1.0.11-1.fc29.x86_64.rpm
+2020-05-25 01:49:54.367100 +0000 build-fedora4: 488358b6047b3f55af5fb54a964579662a992f59fea418f602745eb043ce185c15d96138f8e5b47fc4fc400ac63265f19276ca5d0c4c064d6e5d212088f823ef  pkgs/dom0-fc29/xen-hvm-stubdom-linux.spec.list
+2020-05-25 01:49:54.367559 +0000 build-fedora4: 2863e8651c8e5a07522db749aad426fa862a15978adf4d4bfeac40c1a5cdaf830740bd245588f9b8e09ee39b7769a97a61d08617c1af9a6be69bcc256f6cf973  pkgs/dom0-fc31/xen-hvm-stubdom-linux-1.0.12-1.fc31.x86_64.buildinfo
+2020-05-25 01:49:56.059407 +0000 build-fedora4: 229203f0827638fbd2ec0de67b883e85ade2f27714d309f08c01ebd685b02ff501d69237c3c0dd9e622abaaa841f29b4afbda09ae7c8ff4e4e00729ceecd141f  pkgs/dom0-fc31/xen-hvm-stubdom-linux-1.0.13-1.fc31.src.rpm
+2020-05-25 01:49:56.061634 +0000 build-fedora4: cae0d30243627bdf7c484eb0ea84769c85c138dd584444c72dfa3168c193429e332a8faaeabd9ec009b436cb82ce47cf7beb1b95b13d98f7b8541eee6dcfc656  pkgs/dom0-fc31/xen-hvm-stubdom-linux-1.0.13-1.fc31.x86_64.buildinfo
+2020-05-25 01:49:56.114600 +0000 build-fedora4: 2192eb3cbb7a15b820b81367c57d7632d3eb48f168b6d2ed044b84aad71edb7bd49de5c8a2d71fcec0ea67e987dd7a0cfe91c35753151b38f846a224d3118a10  pkgs/dom0-fc31/xen-hvm-stubdom-linux-1.0.13-1.fc31.x86_64.rpm
+2020-05-25 01:49:56.114662 +0000 build-fedora4: ae76394cb8b5517be94dd68a05867dbda140fb026f0c0004ca61fe82cb7345219f3da0e23e961389ac49bc6781bcf6b10515814430c6730f04e0a7891aaa0d47  pkgs/dom0-fc31/xen-hvm-stubdom-linux.spec.list
+2020-05-25 01:49:57.019388 +0000 build-fedora4: 7ab21cf38e0f9082b09a67c0fe9ff8d6fe892a1b143c7036779e4a77fdca82f8e428598fd1888b3be445f24153676313425a46223895e389a3aa95a1b1f3902b  pkgs/dom0-fc32/xen-hvm-stubdom-linux-1.0.14-1.fc32.src.rpm
+2020-05-25 01:49:57.019479 +0000 build-fedora4: 3fd886087092e774e980f4a9fea0aab78f81d85290a594fd89c83f85d5b907ecbe28af1d94ff9c8941d1427ee016494f65b38ce4e40f0e42a96944834847ad88  pkgs/dom0-fc32/xen-hvm-stubdom-linux-1.0.14-1.fc32.x86_64.buildinfo
+2020-05-25 01:49:57.108496 +0000 build-fedora4: c57bb5c5e708c07d9b4c8e8ad3be43a71e3e20fa4ea96437ae2147db8a96a5db0112fa85cb86ad981d827b2087243bff0321a7d38b6ad49d2b8f59a4198832f3  pkgs/dom0-fc32/xen-hvm-stubdom-linux-1.0.14-1.fc32.x86_64.rpm
+2020-05-25 01:49:57.108562 +0000 build-fedora4: c79ce2208c03dcb9a18b3df7f8b970b25fafa256b3ce7e3532c39de849e30877eb30b0f6cde092073d093e4f0c8db8a03d0a48fb6c1b925bbb64d6628b5fc651  pkgs/dom0-fc32/xen-hvm-stubdom-linux.spec.list
+2020-05-25 01:49:57.598117 +0000 build-fedora4: >> qubes-builder/qubes-src/vmm-xen-stubdom-linux/qemu/gui-agent e6b33139a9842d2a07904538c2ee08358272e50b
+2020-05-25 01:49:57.969232 +0000 build-fedora4: ================================================================================
+2020-05-25 01:49:57.969295 +0000 build-fedora4:                            B U I L D   I N F O                                  
+2020-05-25 01:49:57.969312 +0000 build-fedora4: Items in red indicate it was automatically generated by configuration file(s)
+2020-05-25 01:49:57.969326 +0000 build-fedora4: Items in white indicate it was automatically removed by configuration file(s)
+2020-05-25 01:49:57.969339 +0000 build-fedora4: ================================================================================
+2020-05-25 01:49:57.969348 +0000 build-fedora4: DISTS_VM:
+2020-05-25 01:49:57.972674 +0000 build-fedora4:     
+2020-05-25 01:49:57.972749 +0000 build-fedora4: DISTS_ALL:
+2020-05-25 01:49:57.977074 +0000 build-fedora4:      dom0-fc32,
+2020-05-25 01:49:57.978232 +0000 build-fedora4: DIST_DOM0:
+2020-05-25 01:49:57.984340 +0000 build-fedora4:      fc32,
+2020-05-25 01:49:57.984382 +0000 build-fedora4: BUILDER_PLUGINS:
+2020-05-25 01:49:57.985550 +0000 build-fedora4:      builder-rpm, builder-debian, mgmt-salt, linux-yum, release-configs, builder-github,
+2020-05-25 01:49:57.986738 +0000 build-fedora4: COMPONENTS:
+2020-05-25 01:49:57.996988 +0000 build-fedora4:      vmm-xen-stubdom-linux,
+2020-05-25 01:49:58.016414 +0000 build-fedora4: GIT_REPOS:
+2020-05-25 01:49:58.016464 +0000 build-fedora4:      qubes-src/vmm-xen-stubdom-linux,
+2020-05-25 01:49:58.016476 +0000 build-fedora4: TEMPLATE:
+2020-05-25 01:49:58.027690 +0000 build-fedora4:     
+2020-05-25 01:49:58.027737 +0000 build-fedora4: TEMPLATE_FLAVOR_DIR:
+2020-05-25 01:49:58.032309 +0000 build-fedora4:     
+2020-05-25 01:49:58.032352 +0000 build-fedora4: TEMPLATE_ALIAS:
+2020-05-25 01:49:58.039374 +0000 build-fedora4:      stretch:stretch+standard, stretch+gnome:stretch+gnome+standard,
+2020-05-25 01:49:58.039424 +0000 build-fedora4:      stretch+minimal:stretch+minimal+no-recommends, buster:buster+standard, buster+gnome:buster+gnome+standard,
+2020-05-25 01:49:58.039440 +0000 build-fedora4:      buster+minimal:buster+minimal+no-recommends, bullseye:bullseye+standard,
+2020-05-25 01:49:58.039454 +0000 build-fedora4:      bullseye+gnome:bullseye+gnome+standard, bullseye+minimal:bullseye+minimal+no-recommends,
+2020-05-25 01:49:58.039466 +0000 build-fedora4:      whonix-gateway-14:stretch+whonix-gateway+minimal+no-recommends,
+2020-05-25 01:49:58.039478 +0000 build-fedora4:      whonix-workstation-14:stretch+whonix-workstation+minimal+no-recommends,
+2020-05-25 01:49:58.039490 +0000 build-fedora4:      whonix-gateway-15:buster+whonix-gateway+minimal+no-recommends,
+2020-05-25 01:49:58.039502 +0000 build-fedora4:      whonix-workstation-15:buster+whonix-workstation+minimal+no-recommends,
+2020-05-25 01:49:58.053089 +0000 build-fedora4: TEMPLATE_LABEL:
+2020-05-25 01:49:58.078662 +0000 build-fedora4:      fc29:fedora-29 fc30:fedora-30 fc31:fedora-31 fc32:fedora-32 fc29+minimal:fedora-29-minimal
+2020-05-25 01:49:58.078733 +0000 build-fedora4:      fc30+minimal:fedora-30-minimal fc31+minimal:fedora-31-minimal fc32+minimal:fedora-32-minimal
+2020-05-25 01:49:58.078753 +0000 build-fedora4:      fc29+xfce:fedora-29-xfce fc30+xfce:fedora-30-xfce fc31+xfce:fedora-31-xfce fc32+xfce:fedora-32-xfce
+2020-05-25 01:49:58.078769 +0000 build-fedora4:      stretch:debian-9 stretch+standard:debian-9 buster:debian-10 buster+standard:debian-10 bullseye:debian-11
+2020-05-25 01:49:58.078784 +0000 build-fedora4:      bullseye+standard:bullseye-11 stretch+whonix-gateway+minimal+no-recommends:whonix-gw-14
+2020-05-25 01:49:58.078796 +0000 build-fedora4:      stretch+whonix-workstation+minimal+no-recommends:whonix-ws-14
+2020-05-25 01:49:58.078808 +0000 build-fedora4:      buster+whonix-gateway+minimal+no-recommends:whonix-gw-15
+2020-05-25 01:49:58.078820 +0000 build-fedora4:      buster+whonix-workstation+minimal+no-recommends:whonix-ws-15 centos7:centos-7
+2020-05-25 01:49:58.078833 +0000 build-fedora4:      centos7+minimal:centos-7-minimal centos7+xfce:centos-7-xfce centos8:centos-8
+2020-05-25 01:49:58.078845 +0000 build-fedora4:      centos8+minimal:centos-7-minimal centos8+xfce:centos-8-xfce
+2020-05-25 01:49:58.128438 +0000 build-fedora4: > running make
+2020-05-25 01:49:58.149271 +0000 build-fedora4: Makefile:267: target 'sign.dom0.fc32.vmm-xen-stubdom-linux' does not exist
+2020-05-25 01:49:58.149350 +0000 build-fedora4: if [ -n "vmm-xen-stubdom-linux" -a "0" -ne 0 ]; then BRANCH=master; branch_var="BRANCH_vmm_xen_stubdom_linux"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/vmm-xen-stubdom-linux > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2020-05-25 01:49:58.149367 +0000 build-fedora4: SIGN_KEY=5817A43B283DE5A9181A522E1848792F9E2795E9; \
+2020-05-25 01:49:58.149379 +0000 build-fedora4: sign_key_var="SIGN_KEY_${DIST%%+*}"; \
+2020-05-25 01:49:58.149390 +0000 build-fedora4: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2020-05-25 01:49:58.149402 +0000 build-fedora4: if [ "vmm-xen-stubdom-linux" = linux-template-builder ]; then
+2020-05-25 01:49:58.149416 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc32 template-name)
+2020-05-25 01:49:58.149424 +0000 build-fedora4: fi
+2020-05-25 01:49:58.149436 +0000 build-fedora4: if [ -r qubes-src/vmm-xen-stubdom-linux/Makefile.builder ]; then \
+2020-05-25 01:49:58.149447 +0000 build-fedora4: .make --no-print-directory -f Makefile.generic \
+2020-05-25 01:49:58.149455 +0000 build-fedora4: ..DIST=fc32 \
+2020-05-25 01:49:58.149464 +0000 build-fedora4: ..PACKAGE_SET=dom0 \
+2020-05-25 01:49:58.149473 +0000 build-fedora4: ..COMPONENT=vmm-xen-stubdom-linux \
+2020-05-25 01:49:58.149482 +0000 build-fedora4: ..SIGN_KEY=$SIGN_KEY \
+2020-05-25 01:49:58.149491 +0000 build-fedora4: ..sign || exit 1; \
+2020-05-25 01:49:58.149501 +0000 build-fedora4: elif [ -d qubes-src/vmm-xen-stubdom-linux/rpm ]; then \
+2020-05-25 01:49:58.149511 +0000 build-fedora4: .# Old mechanism supported only for RPM
+2020-05-25 01:49:58.149523 +0000 build-fedora4: FILE_LIST=""; for RPM in qubes-src/vmm-xen-stubdom-linux/rpm/*/*.rpm; do \
+2020-05-25 01:49:58.149539 +0000 build-fedora4: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2020-05-25 01:49:58.149549 +0000 build-fedora4: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2020-05-25 01:49:58.149556 +0000 build-fedora4: ..fi ;\
+2020-05-25 01:49:58.149564 +0000 build-fedora4: .done ; \
+2020-05-25 01:49:58.149573 +0000 build-fedora4: .if [ -n "$FILE_LIST" ]; then \
+2020-05-25 01:49:58.149582 +0000 build-fedora4: ..echo "--> Signing..."; \
+2020-05-25 01:49:58.149592 +0000 build-fedora4: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2020-05-25 01:49:58.149601 +0000 build-fedora4: ..if [ -n "$SIGN_KEY" ]; then \
+2020-05-25 01:49:58.149628 +0000 build-fedora4: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2020-05-25 01:49:58.149637 +0000 build-fedora4: ..fi; \
+2020-05-25 01:49:58.149649 +0000 build-fedora4: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2020-05-25 01:49:58.149657 +0000 build-fedora4: .fi; \
+2020-05-25 01:49:58.149667 +0000 build-fedora4: fi
+2020-05-25 01:49:58.345913 +0000 build-fedora4: + ERR_OUTPUT=/dev/stderr
+2020-05-25 01:49:58.345970 +0000 build-fedora4: + '[' 2 -lt 2 ']'
+2020-05-25 01:49:58.345988 +0000 build-fedora4: ++ basename qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in
+2020-05-25 01:49:58.346001 +0000 build-fedora4: + [[ xxen-hvm-stubdom-linux.spec.in == \x\.\i\n ]]
+2020-05-25 01:49:58.346015 +0000 build-fedora4: + '[' -r qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in ']'
+2020-05-25 01:49:58.346025 +0000 build-fedora4: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2020-05-25 01:49:58.368543 +0000 build-fedora4: + tmp_spec=/tmp/tmp.RTKrVU.spec
+2020-05-25 01:49:58.368596 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/query-spec
+2020-05-25 01:49:58.388680 +0000 build-fedora4: + /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/generate-spec qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in /tmp/tmp.RTKrVU.spec
+2020-05-25 01:49:58.401089 +0000 build-fedora4: + '[' 2 -lt 2 ']'
+2020-05-25 01:49:58.401139 +0000 build-fedora4: + '[' -z qubes-src/vmm-xen-stubdom-linux ']'
+2020-05-25 01:49:58.401204 +0000 build-fedora4: + cp qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:49:58.401215 +0000 build-fedora4: + read -r ver
+2020-05-25 01:49:58.401223 +0000 build-fedora4: + '[' x = x ']'
+2020-05-25 01:49:58.401237 +0000 build-fedora4: + sed -i 's|@VERSION@|1.0.14|g' qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:49:58.403616 +0000 build-fedora4: + vnum=1
+2020-05-25 01:49:58.403658 +0000 build-fedora4: + read -r ver
+2020-05-25 01:49:58.403672 +0000 build-fedora4: + '[' -e qubes-src/vmm-xen-stubdom-linux/rel ']'
+2020-05-25 01:49:58.403689 +0000 build-fedora4: + grep -q @REL@ qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:49:58.447254 +0000 build-fedora4: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:49:58.472513 +0000 build-fedora4: + grep -q @CHANGELOG@ qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:49:58.475878 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/generate-spec
+2020-05-25 01:49:58.503264 +0000 build-fedora4: + /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/vmm-xen-stubdom-linux qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:00.085795 +0000 build-fedora4: + cat qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:00.090318 +0000 build-fedora4: + rm -rf qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:00.155670 +0000 build-fedora4: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2020-05-25 01:50:00.155726 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/query-spec
+2020-05-25 01:50:00.156587 +0000 build-fedora4: + /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.RTKrVU.spec
+2020-05-25 01:50:00.375304 +0000 build-fedora4: + rm -f /tmp/tmp.RTKrVU.spec
+2020-05-25 01:50:00.388030 +0000 build-fedora4: /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/Makefile.rpmbuilder:182: target 'sign-prep' does not exist
+2020-05-25 01:50:00.388079 +0000 build-fedora4: if [ -n "qubes-gpg-client-wrapper" ]; then \
+2020-05-25 01:50:00.388095 +0000 build-fedora4: .mkdir -p /home/user/builder-r4.1-dom0/keyrings/rpmdb; \
+2020-05-25 01:50:00.388129 +0000 build-fedora4: .qubes-gpg-client-wrapper --armor --export "5817A43B283DE5A9181A522E1848792F9E2795E9" > "/tmp/key_5817A43B283DE5A9181A522E1848792F9E2795E9"; \
+2020-05-25 01:50:00.388176 +0000 build-fedora4: .rpmkeys --dbpath=/home/user/builder-r4.1-dom0/keyrings/rpmdb --import "/tmp/key_5817A43B283DE5A9181A522E1848792F9E2795E9"; \
+2020-05-25 01:50:00.388187 +0000 build-fedora4: fi
+2020-05-25 01:50:00.449653 +0000 build-fedora4: + ERR_OUTPUT=/dev/stderr
+2020-05-25 01:50:00.449708 +0000 build-fedora4: + '[' 2 -lt 2 ']'
+2020-05-25 01:50:00.449725 +0000 build-fedora4: ++ basename qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in
+2020-05-25 01:50:00.452895 +0000 build-fedora4: + [[ xxen-hvm-stubdom-linux.spec.in == \x\.\i\n ]]
+2020-05-25 01:50:00.452944 +0000 build-fedora4: + '[' -r qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in ']'
+2020-05-25 01:50:00.452958 +0000 build-fedora4: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2020-05-25 01:50:00.465304 +0000 build-fedora4: + tmp_spec=/tmp/tmp.USubWB.spec
+2020-05-25 01:50:00.476359 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/query-spec
+2020-05-25 01:50:00.482028 +0000 build-fedora4: + /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/generate-spec qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in /tmp/tmp.USubWB.spec
+2020-05-25 01:50:00.491081 +0000 build-fedora4: + '[' 2 -lt 2 ']'
+2020-05-25 01:50:00.491127 +0000 build-fedora4: + '[' -z qubes-src/vmm-xen-stubdom-linux ']'
+2020-05-25 01:50:00.491186 +0000 build-fedora4: + cp qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:00.500692 +0000 build-fedora4: + read -r ver
+2020-05-25 01:50:00.500736 +0000 build-fedora4: + '[' x = x ']'
+2020-05-25 01:50:00.500755 +0000 build-fedora4: + sed -i 's|@VERSION@|1.0.14|g' qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:00.524133 +0000 build-fedora4: + vnum=1
+2020-05-25 01:50:00.524209 +0000 build-fedora4: + read -r ver
+2020-05-25 01:50:00.524224 +0000 build-fedora4: + '[' -e qubes-src/vmm-xen-stubdom-linux/rel ']'
+2020-05-25 01:50:00.524238 +0000 build-fedora4: + grep -q @REL@ qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:00.530347 +0000 build-fedora4: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:00.541254 +0000 build-fedora4: + grep -q @CHANGELOG@ qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:00.563590 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/generate-spec
+2020-05-25 01:50:00.566949 +0000 build-fedora4: + /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/vmm-xen-stubdom-linux qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:01.635063 +0000 build-fedora4: + cat qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:01.636184 +0000 build-fedora4: + rm -rf qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:01.646170 +0000 build-fedora4: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2020-05-25 01:50:01.646220 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/query-spec
+2020-05-25 01:50:01.657608 +0000 build-fedora4: + /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.USubWB.spec
+2020-05-25 01:50:01.743032 +0000 build-fedora4: + rm -f /tmp/tmp.USubWB.spec
+2020-05-25 01:50:02.224906 +0000 build-fedora4: /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/Makefile.rpmbuilder:196: update target 'sign' due to: sign-prep
+2020-05-25 01:50:02.224974 +0000 build-fedora4: cd qubes-src/vmm-xen-stubdom-linux && for pkg in pkgs/dom0-fc32/xen-hvm-stubdom-linux-1.0.14-1.fc32.src.rpm pkgs/dom0-fc32/xen-hvm-stubdom-linux-1.0.14-1.fc32.x86_64.rpm pkgs/dom0-fc32/xen-hvm-stubdom-linux-1.0.14-1.fc32.x86_64.buildinfo ; do \
+2020-05-25 01:50:02.225009 +0000 build-fedora4: .if [ "${pkg##*.}" = "buildinfo" ]; then \
+2020-05-25 01:50:02.225032 +0000 build-fedora4: ../home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/update-rpmbuildinfo "$pkg" | qubes-gpg-client-wrapper --clearsign --local-user 5817A43B283DE5A9181A522E1848792F9E2795E9 > "$pkg".tmp && \
+2020-05-25 01:50:02.225043 +0000 build-fedora4: ..mv -f "$pkg".tmp "$pkg"; \
+2020-05-25 01:50:02.225054 +0000 build-fedora4: .elif ! rpm -K $pkg | grep -qi pgp; then \
+2020-05-25 01:50:02.225070 +0000 build-fedora4: ..setsid -w rpmsign  --digest-algo=sha256 --key-id=5817A43B283DE5A9181A522E1848792F9E2795E9 --addsign $pkg </dev/null || exit 1; \
+2020-05-25 01:50:02.225079 +0000 build-fedora4: .fi; \
+2020-05-25 01:50:02.225087 +0000 build-fedora4: done
+2020-05-25 01:50:02.283786 +0000 build-fedora4: + ERR_OUTPUT=/dev/stderr
+2020-05-25 01:50:02.283842 +0000 build-fedora4: + '[' 2 -lt 2 ']'
+2020-05-25 01:50:02.286707 +0000 build-fedora4: ++ basename qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in
+2020-05-25 01:50:02.294091 +0000 build-fedora4: + [[ xxen-hvm-stubdom-linux.spec.in == \x\.\i\n ]]
+2020-05-25 01:50:02.294169 +0000 build-fedora4: + '[' -r qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in ']'
+2020-05-25 01:50:02.295004 +0000 build-fedora4: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2020-05-25 01:50:02.306100 +0000 build-fedora4: + tmp_spec=/tmp/tmp.82CbF2.spec
+2020-05-25 01:50:02.309314 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/query-spec
+2020-05-25 01:50:02.314764 +0000 build-fedora4: + /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/generate-spec qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in /tmp/tmp.82CbF2.spec
+2020-05-25 01:50:02.325510 +0000 build-fedora4: + '[' 2 -lt 2 ']'
+2020-05-25 01:50:02.325556 +0000 build-fedora4: + '[' -z qubes-src/vmm-xen-stubdom-linux ']'
+2020-05-25 01:50:02.325577 +0000 build-fedora4: + cp qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:02.330623 +0000 build-fedora4: + read -r ver
+2020-05-25 01:50:02.330666 +0000 build-fedora4: + '[' x = x ']'
+2020-05-25 01:50:02.330685 +0000 build-fedora4: + sed -i 's|@VERSION@|1.0.14|g' qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:02.352812 +0000 build-fedora4: + vnum=1
+2020-05-25 01:50:02.352850 +0000 build-fedora4: + read -r ver
+2020-05-25 01:50:02.352864 +0000 build-fedora4: + '[' -e qubes-src/vmm-xen-stubdom-linux/rel ']'
+2020-05-25 01:50:02.352879 +0000 build-fedora4: + grep -q @REL@ qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:02.359196 +0000 build-fedora4: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:02.364119 +0000 build-fedora4: + grep -q @CHANGELOG@ qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:02.381766 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/generate-spec
+2020-05-25 01:50:02.389727 +0000 build-fedora4: + /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/vmm-xen-stubdom-linux qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:03.616709 +0000 build-fedora4: + cat qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:03.622341 +0000 build-fedora4: + rm -rf qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:03.622386 +0000 build-fedora4: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2020-05-25 01:50:03.622418 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/query-spec
+2020-05-25 01:50:03.625070 +0000 build-fedora4: + /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.82CbF2.spec
+2020-05-25 01:50:03.827489 +0000 build-fedora4: + rm -f /tmp/tmp.82CbF2.spec
+2020-05-25 01:50:14.455890 +0000 build-fedora4: pkgs/dom0-fc32/xen-hvm-stubdom-linux-1.0.14-1.fc32.src.rpm:
+2020-05-25 01:50:15.755682 +0000 build-fedora4: pkgs/dom0-fc32/xen-hvm-stubdom-linux-1.0.14-1.fc32.x86_64.rpm:
+2020-05-25 01:50:17.485570 +0000 build-fedora4: Makefile:818: target 'internal-update-repo-current-testing.dom0.fc32.vmm-xen-stubdom-linux' does not exist
+2020-05-25 01:50:17.485626 +0000 build-fedora4: repo_base_var="LINUX_REPO_fc32_BASEDIR"; \
+2020-05-25 01:50:17.485641 +0000 build-fedora4: if [ "vmm-xen-stubdom-linux" = linux-template-builder ]; then \
+2020-05-25 01:50:17.485655 +0000 build-fedora4: .# templates belongs to dom0 repository, even though PACKAGE_SET=vm
+2020-05-25 01:50:17.485666 +0000 build-fedora4: repo_base_var="LINUX_REPO_fc32_BASEDIR"; \
+2020-05-25 01:50:17.485674 +0000 build-fedora4: fi; \
+2020-05-25 01:50:17.485684 +0000 build-fedora4: if [ -n "${!repo_base_var}" ]; then \
+2020-05-25 01:50:17.485694 +0000 build-fedora4: .repo_basedir="${!repo_base_var}"; \
+2020-05-25 01:50:17.485701 +0000 build-fedora4: else \
+2020-05-25 01:50:17.485711 +0000 build-fedora4: .repo_basedir="qubes-src/linux-yum/r4.1"; \
+2020-05-25 01:50:17.485719 +0000 build-fedora4: fi; \
+2020-05-25 01:50:17.485730 +0000 build-fedora4: if [ -r qubes-src/vmm-xen-stubdom-linux/Makefile.builder ]; then \
+2020-05-25 01:50:17.485741 +0000 build-fedora4: .echo -n "Updating qubes-src/vmm-xen-stubdom-linux... "; \
+2020-05-25 01:50:17.485750 +0000 build-fedora4: .if [ "0" -eq 1 ]; then \
+2020-05-25 01:50:17.485764 +0000 build-fedora4: ..vtag=`git -C qubes-src/vmm-xen-stubdom-linux tag --points-at HEAD --list v*`; \
+2020-05-25 01:50:17.485773 +0000 build-fedora4: ..if [ -z "$vtag" ]; then \
+2020-05-25 01:50:17.485782 +0000 build-fedora4: ...echo "no version tag"; \
+2020-05-25 01:50:17.485790 +0000 build-fedora4: ...exit 0; \
+2020-05-25 01:50:17.485798 +0000 build-fedora4: ..fi; \
+2020-05-25 01:50:17.485805 +0000 build-fedora4: .fi; \
+2020-05-25 01:50:17.485817 +0000 build-fedora4: .if [ "vmm-xen-stubdom-linux" = linux-template-builder ]; then
+2020-05-25 01:50:17.485830 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc32 template-name)
+2020-05-25 01:50:17.485838 +0000 build-fedora4: fi
+2020-05-25 01:50:17.485863 +0000 build-fedora4: component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc32 PACKAGE_SET=dom0 COMPONENT=`basename qubes-src/vmm-xen-stubdom-linux` UPDATE_REPO=/home/user/builder-r4.1-dom0/$repo_basedir/current-testing/dom0/fc32 get-var GET_VAR=PACKAGE_LIST); \
+2020-05-25 01:50:17.485874 +0000 build-fedora4: .if [ -z "$component_packages" ]; then \
+2020-05-25 01:50:17.485883 +0000 build-fedora4: ..echo "no packages."; \
+2020-05-25 01:50:17.485891 +0000 build-fedora4: ..exit 0; \
+2020-05-25 01:50:17.485899 +0000 build-fedora4: .fi; \
+2020-05-25 01:50:17.485910 +0000 build-fedora4: .make -s -f Makefile.generic DIST=fc32 PACKAGE_SET=dom0 \
+2020-05-25 01:50:17.485920 +0000 build-fedora4: ..COMPONENT=`basename qubes-src/vmm-xen-stubdom-linux` \
+2020-05-25 01:50:17.485930 +0000 build-fedora4: ..SNAPSHOT_REPO=current-testing \
+2020-05-25 01:50:17.485939 +0000 build-fedora4: ..TARGET_REPO=current-testing \
+2020-05-25 01:50:17.485952 +0000 build-fedora4: ..UPDATE_REPO=/home/user/builder-r4.1-dom0/$repo_basedir/current-testing/dom0/fc32 \
+2020-05-25 01:50:17.485968 +0000 build-fedora4: ..SNAPSHOT_FILE=/home/user/builder-r4.1-dom0/repo-latest-snapshot/current-testing-dom0-fc32-`basename qubes-src/vmm-xen-stubdom-linux` \
+2020-05-25 01:50:17.485982 +0000 build-fedora4: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2020-05-25_01-30-32 \
+2020-05-25 01:50:17.486009 +0000 build-fedora4: ..update-repo || exit 1; \
+2020-05-25 01:50:17.486025 +0000 build-fedora4: elif make -C qubes-src/vmm-xen-stubdom-linux -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2020-05-25 01:50:17.486036 +0000 build-fedora4: .echo "Updating qubes-src/vmm-xen-stubdom-linux... "; \
+2020-05-25 01:50:17.486049 +0000 build-fedora4: .DIST=fc32 UPDATE_REPO=/home/user/builder-r4.1-dom0/$repo_basedir/current-testing/dom0/fc32 \
+2020-05-25 01:50:17.486062 +0000 build-fedora4: .make -s -C qubes-src/vmm-xen-stubdom-linux update-repo-current-testing || exit 1; \
+2020-05-25 01:50:17.486070 +0000 build-fedora4: else \
+2020-05-25 01:50:17.486082 +0000 build-fedora4: .echo -n "Updating qubes-src/vmm-xen-stubdom-linux... skipping."; \
+2020-05-25 01:50:17.486089 +0000 build-fedora4: fi; \
+2020-05-25 01:50:17.486096 +0000 build-fedora4: echo
+2020-05-25 01:50:17.585598 +0000 build-fedora4: Updating qubes-src/vmm-xen-stubdom-linux... + ERR_OUTPUT=/dev/stderr
+2020-05-25 01:50:17.585651 +0000 build-fedora4: + '[' 2 -lt 2 ']'
+2020-05-25 01:50:17.585668 +0000 build-fedora4: ++ basename qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in
+2020-05-25 01:50:17.585680 +0000 build-fedora4: + [[ xxen-hvm-stubdom-linux.spec.in == \x\.\i\n ]]
+2020-05-25 01:50:17.585693 +0000 build-fedora4: + '[' -r qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in ']'
+2020-05-25 01:50:17.585703 +0000 build-fedora4: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2020-05-25 01:50:17.585712 +0000 build-fedora4: + tmp_spec=/tmp/tmp.1hE6dA.spec
+2020-05-25 01:50:17.585725 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/query-spec
+2020-05-25 01:50:17.585742 +0000 build-fedora4: + /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/generate-spec qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in /tmp/tmp.1hE6dA.spec
+2020-05-25 01:50:17.587275 +0000 build-fedora4: + '[' 2 -lt 2 ']'
+2020-05-25 01:50:17.587316 +0000 build-fedora4: + '[' -z qubes-src/vmm-xen-stubdom-linux ']'
+2020-05-25 01:50:17.587336 +0000 build-fedora4: + cp qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:17.589608 +0000 build-fedora4: + read -r ver
+2020-05-25 01:50:17.589648 +0000 build-fedora4: + '[' x = x ']'
+2020-05-25 01:50:17.589665 +0000 build-fedora4: + sed -i 's|@VERSION@|1.0.14|g' qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:17.590895 +0000 build-fedora4: + vnum=1
+2020-05-25 01:50:17.590934 +0000 build-fedora4: + read -r ver
+2020-05-25 01:50:17.590948 +0000 build-fedora4: + '[' -e qubes-src/vmm-xen-stubdom-linux/rel ']'
+2020-05-25 01:50:17.590962 +0000 build-fedora4: + grep -q @REL@ qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:17.592301 +0000 build-fedora4: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:17.605534 +0000 build-fedora4: + grep -q @CHANGELOG@ qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:17.605583 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/generate-spec
+2020-05-25 01:50:17.608782 +0000 build-fedora4: + /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/vmm-xen-stubdom-linux qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:19.242258 +0000 build-fedora4: + cat qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:19.242321 +0000 build-fedora4: + rm -rf qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:19.274536 +0000 build-fedora4: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2020-05-25 01:50:19.291531 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/query-spec
+2020-05-25 01:50:19.301341 +0000 build-fedora4: + /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.1hE6dA.spec
+2020-05-25 01:50:19.477693 +0000 build-fedora4: + rm -f /tmp/tmp.1hE6dA.spec
+2020-05-25 01:50:19.525308 +0000 build-fedora4: + ERR_OUTPUT=/dev/stderr
+2020-05-25 01:50:19.525360 +0000 build-fedora4: + '[' 2 -lt 2 ']'
+2020-05-25 01:50:19.525377 +0000 build-fedora4: ++ basename qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in
+2020-05-25 01:50:19.525392 +0000 build-fedora4: + [[ xxen-hvm-stubdom-linux.spec.in == \x\.\i\n ]]
+2020-05-25 01:50:19.525405 +0000 build-fedora4: + '[' -r qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in ']'
+2020-05-25 01:50:19.525415 +0000 build-fedora4: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2020-05-25 01:50:19.525424 +0000 build-fedora4: + tmp_spec=/tmp/tmp.EgFuGv.spec
+2020-05-25 01:50:19.525437 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/query-spec
+2020-05-25 01:50:19.525455 +0000 build-fedora4: + /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/generate-spec qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in /tmp/tmp.EgFuGv.spec
+2020-05-25 01:50:19.525464 +0000 build-fedora4: + '[' 2 -lt 2 ']'
+2020-05-25 01:50:19.525474 +0000 build-fedora4: + '[' -z qubes-src/vmm-xen-stubdom-linux ']'
+2020-05-25 01:50:19.525491 +0000 build-fedora4: + cp qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:19.576291 +0000 build-fedora4: + read -r ver
+2020-05-25 01:50:19.576343 +0000 build-fedora4: + '[' x = x ']'
+2020-05-25 01:50:19.576362 +0000 build-fedora4: + sed -i 's|@VERSION@|1.0.14|g' qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:19.582773 +0000 build-fedora4: + vnum=1
+2020-05-25 01:50:19.582818 +0000 build-fedora4: + read -r ver
+2020-05-25 01:50:19.582833 +0000 build-fedora4: + '[' -e qubes-src/vmm-xen-stubdom-linux/rel ']'
+2020-05-25 01:50:19.582848 +0000 build-fedora4: + grep -q @REL@ qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:19.582863 +0000 build-fedora4: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:19.588766 +0000 build-fedora4: + grep -q @CHANGELOG@ qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:19.588813 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/generate-spec
+2020-05-25 01:50:19.596236 +0000 build-fedora4: + /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/vmm-xen-stubdom-linux qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:20.947574 +0000 build-fedora4: + cat qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:20.963905 +0000 build-fedora4: + rm -rf qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:21.008916 +0000 build-fedora4: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2020-05-25 01:50:21.010230 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/query-spec
+2020-05-25 01:50:21.011398 +0000 build-fedora4: + /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.EgFuGv.spec
+2020-05-25 01:50:21.214064 +0000 build-fedora4: + rm -f /tmp/tmp.EgFuGv.spec
+2020-05-25 01:50:21.369572 +0000 build-fedora4: + ERR_OUTPUT=/dev/stderr
+2020-05-25 01:50:21.369629 +0000 build-fedora4: + '[' 2 -lt 2 ']'
+2020-05-25 01:50:21.370935 +0000 build-fedora4: ++ basename qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in
+2020-05-25 01:50:21.377552 +0000 build-fedora4: + [[ xxen-hvm-stubdom-linux.spec.in == \x\.\i\n ]]
+2020-05-25 01:50:21.377600 +0000 build-fedora4: + '[' -r qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in ']'
+2020-05-25 01:50:21.378753 +0000 build-fedora4: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2020-05-25 01:50:21.379937 +0000 build-fedora4: + tmp_spec=/tmp/tmp.g4yg1c.spec
+2020-05-25 01:50:21.381137 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/query-spec
+2020-05-25 01:50:21.381213 +0000 build-fedora4: + /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/generate-spec qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in /tmp/tmp.g4yg1c.spec
+2020-05-25 01:50:21.396098 +0000 build-fedora4: + '[' 2 -lt 2 ']'
+2020-05-25 01:50:21.396171 +0000 build-fedora4: + '[' -z qubes-src/vmm-xen-stubdom-linux ']'
+2020-05-25 01:50:21.396195 +0000 build-fedora4: + cp qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:21.411140 +0000 build-fedora4: + read -r ver
+2020-05-25 01:50:21.411215 +0000 build-fedora4: + '[' x = x ']'
+2020-05-25 01:50:21.411234 +0000 build-fedora4: + sed -i 's|@VERSION@|1.0.14|g' qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:21.422849 +0000 build-fedora4: + vnum=1
+2020-05-25 01:50:21.422896 +0000 build-fedora4: + read -r ver
+2020-05-25 01:50:21.422910 +0000 build-fedora4: + '[' -e qubes-src/vmm-xen-stubdom-linux/rel ']'
+2020-05-25 01:50:21.422925 +0000 build-fedora4: + grep -q @REL@ qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:21.425254 +0000 build-fedora4: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:21.456507 +0000 build-fedora4: + grep -q @CHANGELOG@ qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:21.456561 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/generate-spec
+2020-05-25 01:50:21.456583 +0000 build-fedora4: + /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/vmm-xen-stubdom-linux qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:22.940518 +0000 build-fedora4: + cat qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:22.940580 +0000 build-fedora4: + rm -rf qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:22.941936 +0000 build-fedora4: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2020-05-25 01:50:22.947812 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/query-spec
+2020-05-25 01:50:22.980499 +0000 build-fedora4: + /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.g4yg1c.spec
+2020-05-25 01:50:23.112359 +0000 build-fedora4: + rm -f /tmp/tmp.g4yg1c.spec
+2020-05-25 01:50:23.263941 +0000 build-fedora4: /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/Makefile.rpmbuilder:157: target 'update-repo-do' does not exist
+2020-05-25 01:50:23.263994 +0000 build-fedora4: mkdir -p /home/user/builder-r4.1-dom0/qubes-src/linux-yum/r4.1/current-testing/dom0/fc32/rpm
+2020-05-25 01:50:23.283529 +0000 build-fedora4: + ERR_OUTPUT=/dev/stderr
+2020-05-25 01:50:23.283564 +0000 build-fedora4: + '[' 2 -lt 2 ']'
+2020-05-25 01:50:23.283581 +0000 build-fedora4: ++ basename qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in
+2020-05-25 01:50:23.283593 +0000 build-fedora4: + [[ xxen-hvm-stubdom-linux.spec.in == \x\.\i\n ]]
+2020-05-25 01:50:23.329352 +0000 build-fedora4: + '[' -r qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in ']'
+2020-05-25 01:50:23.329403 +0000 build-fedora4: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2020-05-25 01:50:23.329432 +0000 build-fedora4: + tmp_spec=/tmp/tmp.YECnwE.spec
+2020-05-25 01:50:23.329447 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/query-spec
+2020-05-25 01:50:23.329466 +0000 build-fedora4: + /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/generate-spec qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in /tmp/tmp.YECnwE.spec
+2020-05-25 01:50:23.329475 +0000 build-fedora4: + '[' 2 -lt 2 ']'
+2020-05-25 01:50:23.329485 +0000 build-fedora4: + '[' -z qubes-src/vmm-xen-stubdom-linux ']'
+2020-05-25 01:50:23.329502 +0000 build-fedora4: + cp qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:23.329510 +0000 build-fedora4: + read -r ver
+2020-05-25 01:50:23.329519 +0000 build-fedora4: + '[' x = x ']'
+2020-05-25 01:50:23.329532 +0000 build-fedora4: + sed -i 's|@VERSION@|1.0.14|g' qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:23.373007 +0000 build-fedora4: + vnum=1
+2020-05-25 01:50:23.373058 +0000 build-fedora4: + read -r ver
+2020-05-25 01:50:23.373073 +0000 build-fedora4: + '[' -e qubes-src/vmm-xen-stubdom-linux/rel ']'
+2020-05-25 01:50:23.373089 +0000 build-fedora4: + grep -q @REL@ qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:23.409122 +0000 build-fedora4: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:23.409201 +0000 build-fedora4: + grep -q @CHANGELOG@ qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:23.409218 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/generate-spec
+2020-05-25 01:50:23.409239 +0000 build-fedora4: + /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/vmm-xen-stubdom-linux qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:24.441059 +0000 build-fedora4: + cat qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:24.448934 +0000 build-fedora4: + rm -rf qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:24.451743 +0000 build-fedora4: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2020-05-25 01:50:24.455209 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/query-spec
+2020-05-25 01:50:24.455298 +0000 build-fedora4: + /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.YECnwE.spec
+2020-05-25 01:50:24.685687 +0000 build-fedora4: + rm -f /tmp/tmp.YECnwE.spec
+2020-05-25 01:50:24.734710 +0000 build-fedora4: if [ -n "pkgs/dom0-fc32/xen-hvm-stubdom-linux-1.0.14-1.fc32.src.rpm pkgs/dom0-fc32/xen-hvm-stubdom-linux-1.0.14-1.fc32.x86_64.rpm pkgs/dom0-fc32/xen-hvm-stubdom-linux-1.0.14-1.fc32.x86_64.buildinfo" ]; then \
+2020-05-25 01:50:24.734783 +0000 build-fedora4: .cd qubes-src/vmm-xen-stubdom-linux && ln -f pkgs/dom0-fc32/xen-hvm-stubdom-linux-1.0.14-1.fc32.src.rpm pkgs/dom0-fc32/xen-hvm-stubdom-linux-1.0.14-1.fc32.x86_64.rpm pkgs/dom0-fc32/xen-hvm-stubdom-linux-1.0.14-1.fc32.x86_64.buildinfo  /home/user/builder-r4.1-dom0/qubes-src/linux-yum/r4.1/current-testing/dom0/fc32/rpm/; \
+2020-05-25 01:50:24.734797 +0000 build-fedora4: else \
+2020-05-25 01:50:24.734813 +0000 build-fedora4: .echo "`tput bold`No packages defined by rpm_spec/xen-hvm-stubdom-linux.spec, syntax error?`tput sgr0`"; \
+2020-05-25 01:50:24.734822 +0000 build-fedora4: .exit 1; \
+2020-05-25 01:50:24.734830 +0000 build-fedora4: fi
+2020-05-25 01:50:24.775741 +0000 build-fedora4: cd qubes-src/vmm-xen-stubdom-linux && echo pkgs/dom0-fc32/xen-hvm-stubdom-linux-1.0.14-1.fc32.src.rpm pkgs/dom0-fc32/xen-hvm-stubdom-linux-1.0.14-1.fc32.x86_64.rpm pkgs/dom0-fc32/xen-hvm-stubdom-linux-1.0.14-1.fc32.x86_64.buildinfo  > /home/user/builder-r4.1-dom0/repo-latest-snapshot/current-testing-dom0-fc32-vmm-xen-stubdom-linux
+2020-05-25 01:50:24.860820 +0000 build-fedora4: /home/user/builder-r4.1-dom0/qubes-src/builder-github//Makefile.github:18: target 'notify-github' does not exist
+2020-05-25 01:50:24.860880 +0000 build-fedora4: [ -z "xen-hvm-stubdom-linux-1.0.14-1.fc32" ] || /home/user/builder-r4.1-dom0/qubes-src/builder-github//notify-issues \
+2020-05-25 01:50:24.860898 +0000 build-fedora4: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2020-05-25_01-30-32" \
+2020-05-25 01:50:24.860908 +0000 build-fedora4: .upload \
+2020-05-25 01:50:24.860917 +0000 build-fedora4: ."r4.1" \
+2020-05-25 01:50:24.860927 +0000 build-fedora4: ."qubes-src/vmm-xen-stubdom-linux" \
+2020-05-25 01:50:24.860937 +0000 build-fedora4: ."xen-hvm-stubdom-linux-1.0.14-1.fc32" \
+2020-05-25 01:50:24.860945 +0000 build-fedora4: ."fc32" \
+2020-05-25 01:50:24.860952 +0000 build-fedora4: ."dom0" \
+2020-05-25 01:50:24.860961 +0000 build-fedora4: ."current-testing" \
+2020-05-25 01:50:24.860974 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-vmm-xen-stubdom-linux-dom0-fc32-current-testing" \
+2020-05-25 01:50:24.860988 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-vmm-xen-stubdom-linux-dom0-fc32-current"
+2020-05-25 01:50:24.917099 +0000 build-fedora4: + ERR_OUTPUT=/dev/stderr
+2020-05-25 01:50:24.917182 +0000 build-fedora4: + '[' 2 -lt 2 ']'
+2020-05-25 01:50:24.917201 +0000 build-fedora4: ++ basename qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in
+2020-05-25 01:50:24.922633 +0000 build-fedora4: + [[ xxen-hvm-stubdom-linux.spec.in == \x\.\i\n ]]
+2020-05-25 01:50:24.922681 +0000 build-fedora4: + '[' -r qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in ']'
+2020-05-25 01:50:24.924246 +0000 build-fedora4: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2020-05-25 01:50:24.927006 +0000 build-fedora4: + tmp_spec=/tmp/tmp.2ruYoo.spec
+2020-05-25 01:50:24.927053 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/query-spec
+2020-05-25 01:50:24.929452 +0000 build-fedora4: + /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/generate-spec qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in /tmp/tmp.2ruYoo.spec
+2020-05-25 01:50:24.936601 +0000 build-fedora4: + '[' 2 -lt 2 ']'
+2020-05-25 01:50:24.936647 +0000 build-fedora4: + '[' -z qubes-src/vmm-xen-stubdom-linux ']'
+2020-05-25 01:50:24.936667 +0000 build-fedora4: + cp qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:24.939868 +0000 build-fedora4: + read -r ver
+2020-05-25 01:50:24.939911 +0000 build-fedora4: + '[' x = x ']'
+2020-05-25 01:50:24.939928 +0000 build-fedora4: + sed -i 's|@VERSION@|1.0.14|g' qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:24.944485 +0000 build-fedora4: + vnum=1
+2020-05-25 01:50:24.944527 +0000 build-fedora4: + read -r ver
+2020-05-25 01:50:24.944541 +0000 build-fedora4: + '[' -e qubes-src/vmm-xen-stubdom-linux/rel ']'
+2020-05-25 01:50:24.944556 +0000 build-fedora4: + grep -q @REL@ qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:24.945741 +0000 build-fedora4: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:24.947223 +0000 build-fedora4: + grep -q @CHANGELOG@ qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:24.997211 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/generate-spec
+2020-05-25 01:50:24.999508 +0000 build-fedora4: + /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/vmm-xen-stubdom-linux qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:26.088231 +0000 build-fedora4: + cat qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:26.092237 +0000 build-fedora4: + rm -rf qubes-src/vmm-xen-stubdom-linux/rpm_spec/xen-hvm-stubdom-linux.spec.in.tmp
+2020-05-25 01:50:26.102721 +0000 build-fedora4: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2020-05-25 01:50:26.108029 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/query-spec
+2020-05-25 01:50:26.111406 +0000 build-fedora4: + /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.2ruYoo.spec
+2020-05-25 01:50:26.328911 +0000 build-fedora4: + rm -f /tmp/tmp.2ruYoo.spec
+2020-05-25 01:50:31.482479 +0000 build-fedora4: WARNING: /home/user/github-notify-state/r4.1-vmm-xen-stubdom-linux-dom0-fc32-current-testing does not exist, initializing with the current state
+2020-05-25 01:50:31.514757 +0000 build-fedora4: 
+2020-05-25 01:50:31.514814 +0000 build-fedora4: Makefile:872: target 'post-update-repo-current-testing' does not exist
+2020-05-25 01:50:31.514830 +0000 build-fedora4: for dist in fc32 ; do \
+2020-05-25 01:50:31.514842 +0000 build-fedora4: .repo_base_var="LINUX_REPO_${dist}_BASEDIR"; \
+2020-05-25 01:50:31.514852 +0000 build-fedora4: .if [ -n "${!repo_base_var}" ]; then \
+2020-05-25 01:50:31.514862 +0000 build-fedora4: ..repo_basedir="${!repo_base_var}"; \
+2020-05-25 01:50:31.514869 +0000 build-fedora4: .else \
+2020-05-25 01:50:31.514880 +0000 build-fedora4: ..repo_basedir="qubes-src/linux-yum/r4.1"; \
+2020-05-25 01:50:31.514887 +0000 build-fedora4: .fi; \
+2020-05-25 01:50:31.514898 +0000 build-fedora4: .repos_to_update="$repos_to_update $repo_basedir"; \
+2020-05-25 01:50:31.514905 +0000 build-fedora4: done; \
+2020-05-25 01:50:31.514914 +0000 build-fedora4: pkgset_dist= ; \
+2020-05-25 01:50:31.514922 +0000 build-fedora4: for dist in fc32; do \
+2020-05-25 01:50:31.514932 +0000 build-fedora4: .pkgset_dist="$pkgset_dist dom0/$dist"; \
+2020-05-25 01:50:31.514939 +0000 build-fedora4: done; \
+2020-05-25 01:50:31.514947 +0000 build-fedora4: for dist in ; do \
+2020-05-25 01:50:31.514956 +0000 build-fedora4: .pkgset_dist="$pkgset_dist vm/$dist"; \
+2020-05-25 01:50:31.514964 +0000 build-fedora4: done; \
+2020-05-25 01:50:31.514975 +0000 build-fedora4: for repo in `echo $repos_to_update|tr ' ' '\n'|sort|uniq`; do \
+2020-05-25 01:50:31.514984 +0000 build-fedora4: .[ -z "$repo" ] && continue; \
+2020-05-25 01:50:31.514995 +0000 build-fedora4: .[ -x "$repo/../update_repo-current-testing.sh" ] || continue; \
+2020-05-25 01:50:31.515006 +0000 build-fedora4: .(cd $repo/.. && ./update_repo-current-testing.sh r4.1 $pkgset_dist); \
+2020-05-25 01:50:31.515014 +0000 build-fedora4: done
+2020-05-25 01:50:31.598949 +0000 build-fedora4: which: no mkmetalink in (/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/home/user/.local/bin:/home/user/bin:/home/user/builder-r4.1-dom0/qubes-src/builder-rpm/tools)
+2020-05-25 01:50:31.604536 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/dom0/fc25...
+2020-05-25 01:50:31.714490 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/dom0/fc29...
+2020-05-25 01:51:01.810314 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/dom0/fc31...
+2020-05-25 01:51:50.413399 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/dom0/fc32...
+2020-05-25 01:52:10.519975 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/centos7...
+2020-05-25 01:52:10.942127 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/centos8...
+2020-05-25 01:52:11.469916 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc26...
+2020-05-25 01:52:11.669193 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc27...
+2020-05-25 01:52:11.782923 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc28...
+2020-05-25 01:52:11.920759 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc29...
+2020-05-25 01:52:12.188905 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc30...
+2020-05-25 01:52:12.490649 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc31...
+2020-05-25 01:52:12.750076 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc32...
+2020-05-25 01:52:13.059302 +0000 build-fedora4: Done.
+2020-05-25 01:52:13.067272 +0000 build-fedora4: ~/builder-r4.1-dom0/qubes-src/linux-yum ~/builder-r4.1-dom0/qubes-src/linux-yum
+2020-05-25 01:52:13.069301 +0000 build-fedora4: Syncing r4.1...
+2020-05-25 01:52:14.754595 +0000 build-fedora4: sending incremental file list
+2020-05-25 01:52:14.899616 +0000 build-fedora4: rsync: failed to set times on "/pub/qubes/repo/yum/r4.1/current-testing/dom0/fc31": Operation not permitted (1)
+2020-05-25 01:52:14.899672 +0000 build-fedora4: .d..t...... current-testing/
+2020-05-25 01:52:14.899689 +0000 build-fedora4: .d..t...... current-testing/dom0/
+2020-05-25 01:52:14.899700 +0000 build-fedora4: .d..t...... current-testing/dom0/fc25/
+2020-05-25 01:52:14.899713 +0000 build-fedora4: .L..t...... current-testing/dom0/fc25/comps.xml -> ../../../comps-dom0.xml
+2020-05-25 01:52:14.899723 +0000 build-fedora4: .d..t...... current-testing/dom0/fc25/rpm/
+2020-05-25 01:52:14.899734 +0000 build-fedora4: <f..t...... current-testing/dom0/fc25/rpm/.gitignore
+2020-05-25 01:52:14.904766 +0000 build-fedora4: .              6 100%    0.00kB/s    0:00:00  .              6 100%    0.00kB/s    0:00:00 (xfr#1, ir-chk=1150/1162)
+2020-05-25 01:52:14.904810 +0000 build-fedora4: .d..t...... current-testing/dom0/fc29/
+2020-05-25 01:52:15.119212 +0000 build-fedora4: .d..t...... current-testing/dom0/fc31/
+2020-05-25 01:52:15.119272 +0000 build-fedora4: .L..t...... current-testing/dom0/fc31/comps.xml -> ../../../comps-dom0.xml
+2020-05-25 01:52:15.190672 +0000 build-fedora4: .d..t...... current-testing/dom0/fc31/rpm/
+2020-05-25 01:52:15.190731 +0000 build-fedora4: <f..t...... current-testing/dom0/fc31/rpm/.gitignore
+2020-05-25 01:52:15.193793 +0000 build-fedora4: .              6 100%    0.02kB/s    0:00:00  .              6 100%    0.02kB/s    0:00:00 (xfr#2, ir-chk=1625/2218)
+2020-05-25 01:52:15.226697 +0000 build-fedora4: .d..t...... current-testing/dom0/fc32/
+2020-05-25 01:52:15.226751 +0000 build-fedora4: .L..t...... current-testing/dom0/fc32/comps-dom0.xml -> comps-dom0.xml
+2020-05-25 01:52:15.329962 +0000 build-fedora4: .d..t...... current-testing/dom0/fc32/rpm/
+2020-05-25 01:52:15.330019 +0000 build-fedora4: <f..t...... current-testing/dom0/fc32/rpm/.gitignore
+2020-05-25 01:52:15.330035 +0000 build-fedora4: .              0 100%    0.00kB/s    0:00:00 (xfr#3, to-chk=1115/2280)
+2020-05-25 01:52:15.330050 +0000 build-fedora4: <f+++++++++ current-testing/dom0/fc32/rpm/xen-hvm-stubdom-linux-1.0.14-1.fc32.src.rpm
+2020-05-25 01:54:03.143065 +0000 build-fedora4: .         32,768   0%   74.77kB/s    0:38:50  .      3,047,424   1%    2.88MB/s    0:00:58  .      4,718,592   2%    2.18MB/s    0:01:15  .      6,422,528   3%    1.95MB/s    0:01:24  .      8,126,464   4%    1.85MB/s    0:01:27  .      9,699,328   5%    1.52MB/s    0:01:45  .     11,403,264   6%    1.53MB/s    0:01:43  .     13,107,200   7%    1.54MB/s    0:01:42  .     14,811,136   8%    1.53MB/s    0:01:41  .     16,515,072   9%    1.53MB/s    0:01:40  .     18,219,008  10%    1.52MB/s    0:01:40  .     19,922,944  11%    1.52MB/s    0:01:39  .     21,626,880  12%    1.52MB/s    0:01:38  .     23,330,816  13%    1.53MB/s    0:01:36  .     25,034,752  14%    1.54MB/s    0:01:34  .     26,738,688  15%    1.55MB/s    0:01:33  .     28,442,624  16%    1.55MB/s    0:01:31  .     30,146,560  17%    1.55MB/s    0:01:30  .     31,850,496  18%    1.55MB/s    0:01:29  .     33,521,664  19%    1.56MB/s    0:01:27  .     35,127,296  20%    1.56MB/s    0:01:27  .     36,831,232  21%    1.56MB/s    0:01:26  .     38,535,168  22%    1.55MB/s    0:01:25  .     40,239,104  23%    1.54MB/s    0:01:24  .     41,943,040  24%    1.55MB/s    0:01:23  .     43,646,976  25%    1.55MB/s    0:01:22  .     45,350,912  26%    1.54MB/s    0:01:21  .     47,054,848  27%    1.54MB/s    0:01:20  .     48,758,784  27%    1.54MB/s    0:01:19  .     50,462,720  28%    1.54MB/s    0:01:18  .     52,166,656  29%    1.55MB/s    0:01:16  .     53,477,376  30%    1.44MB/s    0:01:21  .     54,394,880  31%    1.27MB/s    0:01:31  .     55,967,744  32%    1.26MB/s    0:01:31  .     57,540,608  33%    1.24MB/s    0:01:31  .     59,113,472  33%    1.32MB/s    0:01:24  .     60,817,408  34%    1.50MB/s    0:01:13  .     62,521,344  35%    1.50MB/s    0:01:12  .     64,094,208  36%    1.50MB/s    0:01:11  .     65,798,144  37%    1.53MB/s    0:01:09  .     67,502,080  38%    1.53MB/s    0:01:08  .     69,173,248  39%    1.53MB/s    0:01:07  .     70,877,184  40%    1.54MB/s    0:01:05  .     72,450,048  41%    1.53MB/s    0:01:05  .     74,022,912  42%    1.51MB/s    0:01:04  .     75,726,848  43%    1.53MB/s    0:01:02  .     77,430,784  44%    1.53MB/s    0:01:01  .     79,134,720  45%    1.54MB/s    0:01:00  .     80,838,656  46%    1.57MB/s    0:00:58  .     82,542,592  47%    1.55MB/s    0:00:57  .     84,246,528  48%    1.55MB/s    0:00:56  .     85,950,464  49%    1.57MB/s    0:00:55  .     87,523,328  50%    1.54MB/s    0:00:55  .     89,227,264  51%    1.55MB/s    0:00:53  .     90,931,200  52%    1.56MB/s    0:00:52  .     92,635,136  53%    1.56MB/s    0:00:51  .     94,208,000  54%    1.56MB/s    0:00:50  .     96,043,008  55%    1.56MB/s    0:00:48  .     97,746,944  56%    1.51MB/s    0:00:49  .     99,581,952  57%    1.55MB/s    0:00:46  .    101,285,888  58%    1.57MB/s    0:00:45  .    102,989,824  59%    1.55MB/s    0:00:44  .    104,693,760  60%    1.60MB/s    0:00:42  .    106,397,696  61%    1.55MB/s    0:00:42  .    108,101,632  62%    1.55MB/s    0:00:41  .    109,805,568  63%    1.55MB/s    0:00:40  .    111,509,504  63%    1.55MB/s    0:00:39  .    113,213,440  64%    1.55MB/s    0:00:38  .    114,917,376  65%    1.55MB/s    0:00:37  .    116,621,312  66%    1.56MB/s    0:00:36  .    118,325,248  67%    1.56MB/s    0:00:35  .    120,029,184  68%    1.55MB/s    0:00:34  .    121,208,832  69%    1.42MB/s    0:00:36  .    122,781,696  70%    1.40MB/s    0:00:36  .    124,485,632  71%    1.40MB/s    0:00:34  .    126,189,568  72%    1.40MB/s    0:00:33  .    127,860,736  73%    1.52MB/s    0:00:29  .    129,564,672  74%    1.53MB/s    0:00:28  .    131,366,912  75%    1.55MB/s    0:00:27  .    133,070,848  76%    1.55MB/s    0:00:25  .    134,774,784  77%    1.55MB/s    0:00:24  .    136,478,720  78%    1.57MB/s    0:00:23  .    138,117,120  79%    1.55MB/s    0:00:22  .    139,755,520  80%    1.55MB/s    0:00:21  .    141,459,456  81%    1.55MB/s    0:00:20  .    143,032,320  82%    1.53MB/s    0:00:19  .    144,736,256  83%    1.54MB/s    0:00:18  .    146,440,192  84%    1.53MB/s    0:00:17  .    148,144,128  85%    1.52MB/s    0:00:16  .    149,716,992  85%    1.50MB/s    0:00:15  .    151,420,928  86%    1.50MB/s    0:00:14  .    152,993,792  87%    1.49MB/s    0:00:13  .    154,697,728  88%    1.50MB/s    0:00:12  .    156,401,664  89%    1.53MB/s    0:00:11  .    158,105,600  90%    1.51MB/s    0:00:10  .    159,744,000  91%    1.54MB/s    0:00:09  .    161,382,400  92%    1.52MB/s    0:00:08  .    163,086,336  93%    1.53MB/s    0:00:07  .    164,790,272  94%    1.54MB/s    0:00:06  .    166,494,208  95%    1.53MB/s    0:00:04  .    168,198,144  96%    1.52MB/s    0:00:03  .    169,902,080  97%    1.54MB/s    0:00:02  .    171,606,016  98%    1.54MB/s    0:00:01  .    173,309,952  99%    1.52MB/s    0:00:00  .    174,245,907 100%    1.54MB/s    0:01:48 (xfr#4, to-chk=758/2280)
+2020-05-25 01:54:03.143180 +0000 build-fedora4: <f+++++++++ current-testing/dom0/fc32/rpm/xen-hvm-stubdom-linux-1.0.14-1.fc32.x86_64.buildinfo
+2020-05-25 01:54:03.144268 +0000 build-fedora4: .          7,270 100%   14.20kB/s    0:00:00  .          7,270 100%   14.20kB/s    0:00:00 (xfr#5, to-chk=757/2280)
+2020-05-25 01:54:03.144317 +0000 build-fedora4: <f+++++++++ current-testing/dom0/fc32/rpm/xen-hvm-stubdom-linux-1.0.14-1.fc32.x86_64.rpm
+2020-05-25 01:54:08.867717 +0000 build-fedora4: .         32,768   0%   64.00kB/s    0:02:25  .        884,736   9%  809.75kB/s    0:00:10  .      2,588,672  27%    1.17MB/s    0:00:05  .      4,292,608  45%    1.29MB/s    0:00:03  .      5,996,544  64%    1.36MB/s    0:00:02  .      7,700,480  82%    1.55MB/s    0:00:01  .      9,338,496 100%    1.43MB/s    0:00:06 (xfr#6, to-chk=756/2280)
+2020-05-25 01:54:08.867773 +0000 build-fedora4: .d..t...... current-testing/vm/
+2020-05-25 01:54:08.867788 +0000 build-fedora4: .d..t...... current-testing/vm/centos7/
+2020-05-25 01:54:08.867802 +0000 build-fedora4: .L..t...... current-testing/vm/centos7/comps.xml -> ../../../comps-vm.xml
+2020-05-25 01:54:08.867813 +0000 build-fedora4: .d..t...... current-testing/vm/centos7/rpm/
+2020-05-25 01:54:08.867824 +0000 build-fedora4: <f..t...... current-testing/vm/centos7/rpm/.gitignore
+2020-05-25 01:54:08.868600 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#7, to-chk=727/2280)
+2020-05-25 01:54:08.868631 +0000 build-fedora4: .d..t...... current-testing/vm/centos8/
+2020-05-25 01:54:08.868644 +0000 build-fedora4: .L..t...... current-testing/vm/centos8/comps-vm.xml -> comps-vm.xml
+2020-05-25 01:54:08.868654 +0000 build-fedora4: .d..t...... current-testing/vm/centos8/rpm/
+2020-05-25 01:54:08.868665 +0000 build-fedora4: <f..t...... current-testing/vm/centos8/rpm/.gitignore
+2020-05-25 01:54:08.868676 +0000 build-fedora4: .              0 100%    0.00kB/s    0:00:00 (xfr#8, to-chk=724/2280)
+2020-05-25 01:54:08.868685 +0000 build-fedora4: .d..t...... current-testing/vm/fc26/
+2020-05-25 01:54:08.868698 +0000 build-fedora4: .d..t...... current-testing/vm/fc27/
+2020-05-25 01:54:08.868707 +0000 build-fedora4: .d..t...... current-testing/vm/fc28/
+2020-05-25 01:54:08.868716 +0000 build-fedora4: .d..t...... current-testing/vm/fc29/
+2020-05-25 01:54:08.868727 +0000 build-fedora4: .L..t...... current-testing/vm/fc29/comps.xml -> ../../../comps-vm.xml
+2020-05-25 01:54:08.868737 +0000 build-fedora4: .d..t...... current-testing/vm/fc29/rpm/
+2020-05-25 01:54:08.868747 +0000 build-fedora4: <f..t...... current-testing/vm/fc29/rpm/.gitignore
+2020-05-25 01:54:08.869154 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#9, to-chk=721/2280)
+2020-05-25 01:54:08.869177 +0000 build-fedora4: .d..t...... current-testing/vm/fc30/
+2020-05-25 01:54:08.869190 +0000 build-fedora4: .L..t...... current-testing/vm/fc30/comps.xml -> ../../../comps-vm.xml
+2020-05-25 01:54:08.869220 +0000 build-fedora4: .d..t...... current-testing/vm/fc30/rpm/
+2020-05-25 01:54:08.869233 +0000 build-fedora4: <f..t...... current-testing/vm/fc30/rpm/.gitignore
+2020-05-25 01:54:08.869627 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#10, to-chk=718/2280)
+2020-05-25 01:54:08.869649 +0000 build-fedora4: .d..t...... current-testing/vm/fc31/
+2020-05-25 01:54:08.869661 +0000 build-fedora4: .L..t...... current-testing/vm/fc31/comps-vm.xml -> comps-vm.xml
+2020-05-25 01:54:08.869670 +0000 build-fedora4: .d..t...... current-testing/vm/fc31/rpm/
+2020-05-25 01:54:08.869681 +0000 build-fedora4: <f..t...... current-testing/vm/fc31/rpm/.gitignore
+2020-05-25 01:54:08.869695 +0000 build-fedora4: .              0 100%    0.00kB/s    0:00:00 (xfr#11, to-chk=715/2280)
+2020-05-25 01:54:08.869704 +0000 build-fedora4: .d..t...... current-testing/vm/fc32/
+2020-05-25 01:54:08.869715 +0000 build-fedora4: .L..t...... current-testing/vm/fc32/comps-vm.xml -> comps-vm.xml
+2020-05-25 01:54:08.869724 +0000 build-fedora4: .d..t...... current-testing/vm/fc32/rpm/
+2020-05-25 01:54:08.869749 +0000 build-fedora4: <f..t...... current-testing/vm/fc32/rpm/.gitignore
+2020-05-25 01:54:08.869762 +0000 build-fedora4: .              0 100%    0.00kB/s    0:00:00 (xfr#12, to-chk=712/2280)
+2020-05-25 01:54:08.869770 +0000 build-fedora4: .d..t...... current/
+2020-05-25 01:54:08.869779 +0000 build-fedora4: .d..t...... current/dom0/
+2020-05-25 01:54:08.869787 +0000 build-fedora4: .d..t...... current/dom0/fc25/
+2020-05-25 01:54:08.869798 +0000 build-fedora4: .L..t...... current/dom0/fc25/comps.xml -> ../../../comps-dom0.xml
+2020-05-25 01:54:08.869807 +0000 build-fedora4: .d..t...... current/dom0/fc25/rpm/
+2020-05-25 01:54:08.869817 +0000 build-fedora4: <f..t...... current/dom0/fc25/rpm/.gitignore
+2020-05-25 01:54:08.870412 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#13, to-chk=703/2280)
+2020-05-25 01:54:08.870438 +0000 build-fedora4: .d..t...... current/dom0/fc29/
+2020-05-25 01:54:08.870452 +0000 build-fedora4: rsync: failed to set times on "/pub/qubes/repo/yum/r4.1/current/dom0/fc31": Operation not permitted (1)
+2020-05-25 01:54:08.870462 +0000 build-fedora4: .d..t...... current/dom0/fc31/
+2020-05-25 01:54:08.870473 +0000 build-fedora4: .L..t...... current/dom0/fc31/comps.xml -> ../../../comps-dom0.xml
+2020-05-25 01:54:08.870482 +0000 build-fedora4: .d..t...... current/dom0/fc31/rpm/
+2020-05-25 01:54:08.870491 +0000 build-fedora4: <f..t...... current/dom0/fc31/rpm/.gitignore
+2020-05-25 01:54:08.870933 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#14, to-chk=445/2280)
+2020-05-25 01:54:08.870961 +0000 build-fedora4: rsync: failed to set times on "/pub/qubes/repo/yum/r4.1/security-testing/dom0/fc31": Operation not permitted (1)
+2020-05-25 01:54:08.870971 +0000 build-fedora4: .d..t...... current/dom0/fc32/
+2020-05-25 01:54:08.870983 +0000 build-fedora4: .L..t...... current/dom0/fc32/comps-dom0.xml -> comps-dom0.xml
+2020-05-25 01:54:08.870992 +0000 build-fedora4: .d..t...... current/dom0/fc32/rpm/
+2020-05-25 01:54:08.871002 +0000 build-fedora4: <f..t...... current/dom0/fc32/rpm/.gitignore
+2020-05-25 01:54:08.871013 +0000 build-fedora4: .              0 100%    0.00kB/s    0:00:00 (xfr#15, to-chk=59/2280)
+2020-05-25 01:54:08.871025 +0000 build-fedora4: .d..t...... current/vm/
+2020-05-25 01:54:08.871035 +0000 build-fedora4: .d..t...... current/vm/centos7/
+2020-05-25 01:54:08.871046 +0000 build-fedora4: .L..t...... current/vm/centos7/comps.xml -> ../../../comps-vm.xml
+2020-05-25 01:54:08.871055 +0000 build-fedora4: .d..t...... current/vm/centos7/rpm/
+2020-05-25 01:54:08.871065 +0000 build-fedora4: <f..t...... current/vm/centos7/rpm/.gitignore
+2020-05-25 01:54:08.871430 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#16, to-chk=50/2280)
+2020-05-25 01:54:08.871452 +0000 build-fedora4: .d..t...... current/vm/centos8/
+2020-05-25 01:54:08.871464 +0000 build-fedora4: .L..t...... current/vm/centos8/comps-vm.xml -> comps-vm.xml
+2020-05-25 01:54:08.871473 +0000 build-fedora4: .d..t...... current/vm/centos8/rpm/
+2020-05-25 01:54:08.871483 +0000 build-fedora4: <f..t...... current/vm/centos8/rpm/.gitignore
+2020-05-25 01:54:08.871495 +0000 build-fedora4: .              0 100%    0.00kB/s    0:00:00 (xfr#17, to-chk=47/2280)
+2020-05-25 01:54:08.871517 +0000 build-fedora4: .d..t...... current/vm/fc29/
+2020-05-25 01:54:08.871527 +0000 build-fedora4: .L..t...... current/vm/fc29/comps.xml -> ../../../comps-vm.xml
+2020-05-25 01:54:08.871536 +0000 build-fedora4: .d..t...... current/vm/fc29/rpm/
+2020-05-25 01:54:08.871545 +0000 build-fedora4: <f..t...... current/vm/fc29/rpm/.gitignore
+2020-05-25 01:54:08.871895 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#18, to-chk=44/2280)
+2020-05-25 01:54:08.871920 +0000 build-fedora4: .d..t...... current/vm/fc30/
+2020-05-25 01:54:08.871932 +0000 build-fedora4: .L..t...... current/vm/fc30/comps.xml -> ../../../comps-vm.xml
+2020-05-25 01:54:08.871953 +0000 build-fedora4: .d..t...... current/vm/fc30/rpm/
+2020-05-25 01:54:08.871964 +0000 build-fedora4: <f..t...... current/vm/fc30/rpm/.gitignore
+2020-05-25 01:54:08.872512 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#19, to-chk=41/2280)
+2020-05-25 01:54:08.872536 +0000 build-fedora4: .d..t...... current/vm/fc31/
+2020-05-25 01:54:08.872548 +0000 build-fedora4: .L..t...... current/vm/fc31/comps-vm.xml -> comps-vm.xml
+2020-05-25 01:54:08.872557 +0000 build-fedora4: .d..t...... current/vm/fc31/rpm/
+2020-05-25 01:54:08.872566 +0000 build-fedora4: <f..t...... current/vm/fc31/rpm/.gitignore
+2020-05-25 01:54:08.872578 +0000 build-fedora4: .              0 100%    0.00kB/s    0:00:00 (xfr#20, to-chk=38/2280)
+2020-05-25 01:54:08.872586 +0000 build-fedora4: .d..t...... current/vm/fc32/
+2020-05-25 01:54:08.872597 +0000 build-fedora4: .L..t...... current/vm/fc32/comps-vm.xml -> comps-vm.xml
+2020-05-25 01:54:08.872605 +0000 build-fedora4: .d..t...... current/vm/fc32/rpm/
+2020-05-25 01:54:08.872615 +0000 build-fedora4: <f..t...... current/vm/fc32/rpm/.gitignore
+2020-05-25 01:54:08.872626 +0000 build-fedora4: .              0 100%    0.00kB/s    0:00:00 (xfr#21, to-chk=35/2280)
+2020-05-25 01:54:08.872635 +0000 build-fedora4: .d..t...... security-testing/
+2020-05-25 01:54:08.872644 +0000 build-fedora4: .d..t...... security-testing/dom0/
+2020-05-25 01:54:08.872653 +0000 build-fedora4: .d..t...... security-testing/dom0/fc25/
+2020-05-25 01:54:08.872662 +0000 build-fedora4: .d..t...... security-testing/dom0/fc25/rpm/
+2020-05-25 01:54:08.872672 +0000 build-fedora4: <f..t...... security-testing/dom0/fc25/rpm/.gitignore
+2020-05-25 01:54:08.873059 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#22, to-chk=28/2280)
+2020-05-25 01:54:08.873084 +0000 build-fedora4: .d..t...... security-testing/dom0/fc31/
+2020-05-25 01:54:08.873095 +0000 build-fedora4: .d..t...... security-testing/dom0/fc31/rpm/
+2020-05-25 01:54:08.873106 +0000 build-fedora4: <f..t...... security-testing/dom0/fc31/rpm/.gitignore
+2020-05-25 01:54:08.873522 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#23, to-chk=26/2280)
+2020-05-25 01:54:08.873549 +0000 build-fedora4: .d..t...... security-testing/dom0/fc32/
+2020-05-25 01:54:08.873562 +0000 build-fedora4: .L..t...... security-testing/dom0/fc32/comps-dom0.xml -> comps-dom0.xml
+2020-05-25 01:54:08.873571 +0000 build-fedora4: .d..t...... security-testing/dom0/fc32/rpm/
+2020-05-25 01:54:08.873582 +0000 build-fedora4: <f..t...... security-testing/dom0/fc32/rpm/.gitignore
+2020-05-25 01:54:08.873593 +0000 build-fedora4: .              0 100%    0.00kB/s    0:00:00 (xfr#24, to-chk=23/2280)
+2020-05-25 01:54:08.873602 +0000 build-fedora4: .d..t...... security-testing/vm/
+2020-05-25 01:54:08.873611 +0000 build-fedora4: .d..t...... security-testing/vm/centos7/
+2020-05-25 01:54:08.873622 +0000 build-fedora4: .L..t...... security-testing/vm/centos7/comps.xml -> ../../../comps-vm.xml
+2020-05-25 01:54:08.873632 +0000 build-fedora4: .d..t...... security-testing/vm/centos7/rpm/
+2020-05-25 01:54:08.873642 +0000 build-fedora4: <f..t...... security-testing/vm/centos7/rpm/.gitignore
+2020-05-25 01:54:08.874436 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#25, to-chk=14/2280)
+2020-05-25 01:54:08.874469 +0000 build-fedora4: .d..t...... security-testing/vm/centos8/
+2020-05-25 01:54:08.874482 +0000 build-fedora4: .L..t...... security-testing/vm/centos8/comps-vm.xml -> comps-vm.xml
+2020-05-25 01:54:08.874492 +0000 build-fedora4: .d..t...... security-testing/vm/centos8/rpm/
+2020-05-25 01:54:08.874502 +0000 build-fedora4: <f..t...... security-testing/vm/centos8/rpm/.gitignore
+2020-05-25 01:54:08.874513 +0000 build-fedora4: .              0 100%    0.00kB/s    0:00:00 (xfr#26, to-chk=11/2280)
+2020-05-25 01:54:08.874535 +0000 build-fedora4: .d..t...... security-testing/vm/fc29/
+2020-05-25 01:54:08.874546 +0000 build-fedora4: .d..t...... security-testing/vm/fc29/rpm/
+2020-05-25 01:54:08.874556 +0000 build-fedora4: <f..t...... security-testing/vm/fc29/rpm/.gitignore
+2020-05-25 01:54:08.875141 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#27, to-chk=9/2280)
+2020-05-25 01:54:08.875166 +0000 build-fedora4: .d..t...... security-testing/vm/fc30/
+2020-05-25 01:54:08.875201 +0000 build-fedora4: .L..t...... security-testing/vm/fc30/comps.xml -> ../../../comps-vm.xml
+2020-05-25 01:54:08.875213 +0000 build-fedora4: .d..t...... security-testing/vm/fc30/rpm/
+2020-05-25 01:54:08.875223 +0000 build-fedora4: <f..t...... security-testing/vm/fc30/rpm/.gitignore
+2020-05-25 01:54:08.875965 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#28, to-chk=6/2280)
+2020-05-25 01:54:08.875989 +0000 build-fedora4: .d..t...... security-testing/vm/fc31/
+2020-05-25 01:54:08.876002 +0000 build-fedora4: .L..t...... security-testing/vm/fc31/comps-vm.xml -> comps-vm.xml
+2020-05-25 01:54:08.876012 +0000 build-fedora4: .d..t...... security-testing/vm/fc31/rpm/
+2020-05-25 01:54:08.876022 +0000 build-fedora4: <f..t...... security-testing/vm/fc31/rpm/.gitignore
+2020-05-25 01:54:08.876034 +0000 build-fedora4: .              0 100%    0.00kB/s    0:00:00 (xfr#29, to-chk=3/2280)
+2020-05-25 01:54:08.876043 +0000 build-fedora4: .d..t...... security-testing/vm/fc32/
+2020-05-25 01:54:08.876054 +0000 build-fedora4: .L..t...... security-testing/vm/fc32/comps-vm.xml -> comps-vm.xml
+2020-05-25 01:54:08.876064 +0000 build-fedora4: .d..t...... security-testing/vm/fc32/rpm/
+2020-05-25 01:54:08.876074 +0000 build-fedora4: <f..t...... security-testing/vm/fc32/rpm/.gitignore
+2020-05-25 01:54:08.876085 +0000 build-fedora4: .              0 100%    0.00kB/s    0:00:00 (xfr#30, to-chk=0/2280)
+2020-05-25 01:54:10.321511 +0000 build-fedora4: rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1189) [sender=3.1.3]
+2020-05-25 01:54:10.664847 +0000 build-fedora4: --> Processing repo: r4.1/current/dom0/fc25...
+2020-05-25 01:54:11.054018 +0000 build-fedora4: 01:54:12: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:11.060009 +0000 build-fedora4: 01:54:12: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:11.065478 +0000 build-fedora4: 01:54:12: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:11.074928 +0000 build-fedora4: 01:54:12: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:11.083546 +0000 build-fedora4: 01:54:12: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:12.214197 +0000 build-fedora4: --> Processing repo: r4.1/current/dom0/fc29...
+2020-05-25 01:54:19.750327 +0000 build-fedora4: 01:54:20: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:19.768071 +0000 build-fedora4: 01:54:20: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:19.778816 +0000 build-fedora4: 01:54:20: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:19.815608 +0000 build-fedora4: 01:54:20: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:19.829219 +0000 build-fedora4: 01:54:20: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:20.818114 +0000 build-fedora4: --> Processing repo: r4.1/current/dom0/fc31...
+2020-05-25 01:54:26.960971 +0000 build-fedora4: 01:54:28: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:26.971402 +0000 build-fedora4: 01:54:28: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:26.986078 +0000 build-fedora4: 01:54:28: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:27.029773 +0000 build-fedora4: 01:54:28: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:27.047082 +0000 build-fedora4: 01:54:28: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:28.080683 +0000 build-fedora4: --> Processing repo: r4.1/current/dom0/fc32...
+2020-05-25 01:54:28.191623 +0000 build-fedora4: 01:54:29: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:28.197209 +0000 build-fedora4: 01:54:29: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:28.200383 +0000 build-fedora4: 01:54:29: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:28.208756 +0000 build-fedora4: 01:54:29: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:28.216355 +0000 build-fedora4: 01:54:29: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:29.169700 +0000 build-fedora4: --> Processing repo: r4.1/current/vm/centos7...
+2020-05-25 01:54:29.614658 +0000 build-fedora4: 01:54:30: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:29.620588 +0000 build-fedora4: 01:54:30: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:29.626849 +0000 build-fedora4: 01:54:30: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:29.636432 +0000 build-fedora4: 01:54:30: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:29.643978 +0000 build-fedora4: 01:54:30: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:30.601807 +0000 build-fedora4: --> Processing repo: r4.1/current/vm/centos8...
+2020-05-25 01:54:30.904311 +0000 build-fedora4: 01:54:31: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:30.904367 +0000 build-fedora4: 01:54:31: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:30.904381 +0000 build-fedora4: 01:54:31: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:30.915853 +0000 build-fedora4: 01:54:31: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:30.935331 +0000 build-fedora4: 01:54:31: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:32.045276 +0000 build-fedora4: --> Processing repo: r4.1/current/vm/fc25...
+2020-05-25 01:54:32.178484 +0000 build-fedora4: 01:54:33: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:32.178540 +0000 build-fedora4: 01:54:33: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:32.178553 +0000 build-fedora4: 01:54:33: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:32.178564 +0000 build-fedora4: 01:54:33: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:32.196077 +0000 build-fedora4: 01:54:33: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:33.158808 +0000 build-fedora4: --> Processing repo: r4.1/current/vm/fc26...
+2020-05-25 01:54:33.274960 +0000 build-fedora4: 01:54:34: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:33.277351 +0000 build-fedora4: 01:54:34: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:33.297933 +0000 build-fedora4: 01:54:34: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:33.297979 +0000 build-fedora4: 01:54:34: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:33.297993 +0000 build-fedora4: 01:54:34: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:34.266751 +0000 build-fedora4: --> Processing repo: r4.1/current/vm/fc27...
+2020-05-25 01:54:34.390940 +0000 build-fedora4: 01:54:35: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:34.396854 +0000 build-fedora4: 01:54:35: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:34.403690 +0000 build-fedora4: 01:54:35: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:34.414959 +0000 build-fedora4: 01:54:35: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:34.419329 +0000 build-fedora4: 01:54:35: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:35.357974 +0000 build-fedora4: --> Processing repo: r4.1/current/vm/fc28...
+2020-05-25 01:54:35.484328 +0000 build-fedora4: 01:54:36: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:35.492080 +0000 build-fedora4: 01:54:36: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:35.497254 +0000 build-fedora4: 01:54:36: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:35.545843 +0000 build-fedora4: 01:54:36: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:35.579039 +0000 build-fedora4: 01:54:36: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:36.753106 +0000 build-fedora4: --> Processing repo: r4.1/current/vm/fc29...
+2020-05-25 01:54:37.326630 +0000 build-fedora4: 01:54:38: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:37.333200 +0000 build-fedora4: 01:54:38: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:37.338513 +0000 build-fedora4: 01:54:38: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:37.349092 +0000 build-fedora4: 01:54:38: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:37.355578 +0000 build-fedora4: 01:54:38: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:38.349990 +0000 build-fedora4: --> Processing repo: r4.1/current/vm/fc30...
+2020-05-25 01:54:38.996933 +0000 build-fedora4: 01:54:40: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:39.003789 +0000 build-fedora4: 01:54:40: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:39.008020 +0000 build-fedora4: 01:54:40: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:39.018365 +0000 build-fedora4: 01:54:40: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:39.030246 +0000 build-fedora4: 01:54:40: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:40.027555 +0000 build-fedora4: --> Processing repo: r4.1/current/vm/fc31...
+2020-05-25 01:54:40.601488 +0000 build-fedora4: 01:54:41: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:40.611203 +0000 build-fedora4: 01:54:41: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:40.614896 +0000 build-fedora4: 01:54:41: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:40.625621 +0000 build-fedora4: 01:54:41: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:40.632659 +0000 build-fedora4: 01:54:41: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:41.592816 +0000 build-fedora4: --> Processing repo: r4.1/current/vm/fc32...
+2020-05-25 01:54:41.904990 +0000 build-fedora4: 01:54:42: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:41.915867 +0000 build-fedora4: 01:54:42: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:41.917106 +0000 build-fedora4: 01:54:42: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:41.926696 +0000 build-fedora4: 01:54:42: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:41.937942 +0000 build-fedora4: 01:54:42: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:43.008542 +0000 build-fedora4: Done.
+2020-05-25 01:54:43.144261 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/dom0/fc25...
+2020-05-25 01:54:43.599248 +0000 build-fedora4: 01:54:44: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:43.605406 +0000 build-fedora4: 01:54:44: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:43.611680 +0000 build-fedora4: 01:54:44: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:43.621753 +0000 build-fedora4: 01:54:44: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:43.630504 +0000 build-fedora4: 01:54:44: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:44.643134 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/dom0/fc29...
+2020-05-25 01:55:05.907232 +0000 build-fedora4: 01:55:06: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:05.921822 +0000 build-fedora4: 01:55:06: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:05.928180 +0000 build-fedora4: 01:55:06: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:06.012462 +0000 build-fedora4: 01:55:07: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:06.031397 +0000 build-fedora4: 01:55:07: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:07.138912 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/dom0/fc31...
+2020-05-25 01:55:45.492392 +0000 build-fedora4: 01:55:46: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:45.518335 +0000 build-fedora4: 01:55:46: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:45.543867 +0000 build-fedora4: 01:55:46: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:45.683203 +0000 build-fedora4: 01:55:46: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:45.711888 +0000 build-fedora4: 01:55:46: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:46.885520 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/dom0/fc32...
+2020-05-25 01:55:51.081997 +0000 build-fedora4: 01:55:52: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:51.104334 +0000 build-fedora4: 01:55:52: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:51.118278 +0000 build-fedora4: 01:55:52: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:51.147606 +0000 build-fedora4: 01:55:52: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:51.165434 +0000 build-fedora4: 01:55:52: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:52.159849 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/centos7...
+2020-05-25 01:55:54.112966 +0000 build-fedora4: 01:55:55: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:54.119670 +0000 build-fedora4: 01:55:55: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:54.124661 +0000 build-fedora4: 01:55:55: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:54.137942 +0000 build-fedora4: 01:55:55: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:54.147614 +0000 build-fedora4: 01:55:55: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:55.096626 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/centos8...
+2020-05-25 01:55:55.891134 +0000 build-fedora4: 01:55:56: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:55.895157 +0000 build-fedora4: 01:55:56: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:55.899527 +0000 build-fedora4: 01:55:56: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:55.913788 +0000 build-fedora4: 01:55:56: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:55.920039 +0000 build-fedora4: 01:55:56: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:56.897340 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc25...
+2020-05-25 01:55:56.995028 +0000 build-fedora4: 01:55:58: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:57.001149 +0000 build-fedora4: 01:55:58: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:57.007703 +0000 build-fedora4: 01:55:58: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:57.013491 +0000 build-fedora4: 01:55:58: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:57.020667 +0000 build-fedora4: 01:55:58: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:57.979616 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc26...
+2020-05-25 01:55:58.090330 +0000 build-fedora4: 01:55:59: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:58.095462 +0000 build-fedora4: 01:55:59: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:58.107108 +0000 build-fedora4: 01:55:59: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:58.107928 +0000 build-fedora4: 01:55:59: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:58.117606 +0000 build-fedora4: 01:55:59: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:59.140732 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc27...
+2020-05-25 01:55:59.186832 +0000 build-fedora4: 01:56:00: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:59.192119 +0000 build-fedora4: 01:56:00: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:59.197345 +0000 build-fedora4: 01:56:00: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:59.228655 +0000 build-fedora4: 01:56:00: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:59.228707 +0000 build-fedora4: 01:56:00: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:00.195428 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc28...
+2020-05-25 01:56:00.273932 +0000 build-fedora4: 01:56:01: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:00.277635 +0000 build-fedora4: 01:56:01: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:00.283471 +0000 build-fedora4: 01:56:01: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:00.290293 +0000 build-fedora4: 01:56:01: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:00.301239 +0000 build-fedora4: 01:56:01: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:01.243338 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc29...
+2020-05-25 01:56:03.848920 +0000 build-fedora4: 01:56:04: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:03.853544 +0000 build-fedora4: 01:56:04: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:03.858849 +0000 build-fedora4: 01:56:04: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:03.872817 +0000 build-fedora4: 01:56:04: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:03.883313 +0000 build-fedora4: 01:56:04: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:04.867406 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc30...
+2020-05-25 01:56:07.396878 +0000 build-fedora4: 01:56:08: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:07.412436 +0000 build-fedora4: 01:56:08: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:07.413856 +0000 build-fedora4: 01:56:08: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:07.419347 +0000 build-fedora4: 01:56:08: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:07.427559 +0000 build-fedora4: 01:56:08: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:08.407978 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc31...
+2020-05-25 01:56:10.237332 +0000 build-fedora4: 01:56:11: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:10.241503 +0000 build-fedora4: 01:56:11: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:10.246680 +0000 build-fedora4: 01:56:11: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:10.261500 +0000 build-fedora4: 01:56:11: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:10.271301 +0000 build-fedora4: 01:56:11: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:11.242936 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc32...
+2020-05-25 01:56:12.146070 +0000 build-fedora4: 01:56:13: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:12.150841 +0000 build-fedora4: 01:56:13: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:12.158152 +0000 build-fedora4: 01:56:13: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:12.168564 +0000 build-fedora4: 01:56:13: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:12.179102 +0000 build-fedora4: 01:56:13: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:13.128755 +0000 build-fedora4: Done.
+2020-05-25 01:56:13.278309 +0000 build-fedora4: --> Processing repo: r4.1/security-testing/dom0/fc21...
+2020-05-25 01:56:13.405938 +0000 build-fedora4: 01:56:14: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:13.411674 +0000 build-fedora4: 01:56:14: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:13.417855 +0000 build-fedora4: 01:56:14: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:13.425858 +0000 build-fedora4: 01:56:14: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:13.432674 +0000 build-fedora4: 01:56:14: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:14.367969 +0000 build-fedora4: --> Processing repo: r4.1/security-testing/dom0/fc25...
+2020-05-25 01:56:14.479603 +0000 build-fedora4: 01:56:15: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:14.484925 +0000 build-fedora4: 01:56:15: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:14.491205 +0000 build-fedora4: 01:56:15: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:14.498574 +0000 build-fedora4: 01:56:15: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:14.506084 +0000 build-fedora4: 01:56:15: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:15.478468 +0000 build-fedora4: --> Processing repo: r4.1/security-testing/dom0/fc29...
+2020-05-25 01:56:15.590893 +0000 build-fedora4: 01:56:16: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:15.596304 +0000 build-fedora4: 01:56:16: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:15.601267 +0000 build-fedora4: 01:56:16: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:15.609023 +0000 build-fedora4: 01:56:16: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:15.617015 +0000 build-fedora4: 01:56:16: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:16.583805 +0000 build-fedora4: --> Processing repo: r4.1/security-testing/dom0/fc31...
+2020-05-25 01:56:16.694540 +0000 build-fedora4: 01:56:17: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:16.699959 +0000 build-fedora4: 01:56:17: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:16.705336 +0000 build-fedora4: 01:56:17: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:16.713243 +0000 build-fedora4: 01:56:17: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:16.720600 +0000 build-fedora4: 01:56:17: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:17.671210 +0000 build-fedora4: --> Processing repo: r4.1/security-testing/dom0/fc32...
+2020-05-25 01:56:17.782656 +0000 build-fedora4: 01:56:18: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:17.788033 +0000 build-fedora4: 01:56:18: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:17.793185 +0000 build-fedora4: 01:56:18: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:17.800702 +0000 build-fedora4: 01:56:18: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:17.808170 +0000 build-fedora4: 01:56:18: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:18.765818 +0000 build-fedora4: --> Processing repo: r4.1/security-testing/vm/centos7...
+2020-05-25 01:56:18.875737 +0000 build-fedora4: 01:56:19: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:18.881399 +0000 build-fedora4: 01:56:19: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:18.886997 +0000 build-fedora4: 01:56:19: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:18.895619 +0000 build-fedora4: 01:56:19: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:18.903155 +0000 build-fedora4: 01:56:19: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:19.867502 +0000 build-fedora4: --> Processing repo: r4.1/security-testing/vm/centos8...
+2020-05-25 01:56:19.976286 +0000 build-fedora4: 01:56:21: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:19.981501 +0000 build-fedora4: 01:56:21: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:19.986665 +0000 build-fedora4: 01:56:21: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:19.994731 +0000 build-fedora4: 01:56:21: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:20.002188 +0000 build-fedora4: 01:56:21: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:20.943784 +0000 build-fedora4: --> Processing repo: r4.1/security-testing/vm/fc26...
+2020-05-25 01:56:21.053362 +0000 build-fedora4: 01:56:22: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:21.058748 +0000 build-fedora4: 01:56:22: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:21.063556 +0000 build-fedora4: 01:56:22: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:21.071343 +0000 build-fedora4: 01:56:22: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:21.078622 +0000 build-fedora4: 01:56:22: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:22.047554 +0000 build-fedora4: --> Processing repo: r4.1/security-testing/vm/fc27...
+2020-05-25 01:56:22.157531 +0000 build-fedora4: 01:56:23: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:22.163419 +0000 build-fedora4: 01:56:23: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:22.168272 +0000 build-fedora4: 01:56:23: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:22.176011 +0000 build-fedora4: 01:56:23: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:22.185173 +0000 build-fedora4: 01:56:23: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:23.126579 +0000 build-fedora4: --> Processing repo: r4.1/security-testing/vm/fc28...
+2020-05-25 01:56:23.239205 +0000 build-fedora4: 01:56:24: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:23.244540 +0000 build-fedora4: 01:56:24: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:23.249853 +0000 build-fedora4: 01:56:24: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:23.257489 +0000 build-fedora4: 01:56:24: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:23.268279 +0000 build-fedora4: 01:56:24: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:24.244764 +0000 build-fedora4: --> Processing repo: r4.1/security-testing/vm/fc29...
+2020-05-25 01:56:24.357645 +0000 build-fedora4: 01:56:25: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:24.363254 +0000 build-fedora4: 01:56:25: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:24.369924 +0000 build-fedora4: 01:56:25: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:24.376659 +0000 build-fedora4: 01:56:25: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:24.384088 +0000 build-fedora4: 01:56:25: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:25.346348 +0000 build-fedora4: --> Processing repo: r4.1/security-testing/vm/fc30...
+2020-05-25 01:56:25.460131 +0000 build-fedora4: 01:56:26: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:25.465620 +0000 build-fedora4: 01:56:26: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:25.470963 +0000 build-fedora4: 01:56:26: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:25.479010 +0000 build-fedora4: 01:56:26: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:25.486033 +0000 build-fedora4: 01:56:26: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:26.475481 +0000 build-fedora4: --> Processing repo: r4.1/security-testing/vm/fc31...
+2020-05-25 01:56:26.589348 +0000 build-fedora4: 01:56:27: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:26.594823 +0000 build-fedora4: 01:56:27: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:26.599728 +0000 build-fedora4: 01:56:27: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:26.607607 +0000 build-fedora4: 01:56:27: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:26.615263 +0000 build-fedora4: 01:56:27: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:27.618833 +0000 build-fedora4: --> Processing repo: r4.1/security-testing/vm/fc32...
+2020-05-25 01:56:27.733080 +0000 build-fedora4: 01:56:28: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:27.737826 +0000 build-fedora4: 01:56:28: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:27.742990 +0000 build-fedora4: 01:56:28: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:27.750560 +0000 build-fedora4: 01:56:28: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:27.758321 +0000 build-fedora4: 01:56:28: posix_spawn avoided (fd close requested) 
+2020-05-25 01:56:28.702083 +0000 build-fedora4: Done.
+2020-05-25 01:56:28.703776 +0000 build-fedora4: ~/builder-r4.1-dom0/qubes-src/linux-yum
+2020-05-25 01:56:28.706086 +0000 build-fedora4: Makefile:778: update target 'update-repo-current-testing' due to: internal-update-repo-current-testing.dom0.fc32.vmm-xen-stubdom-linux post-update-repo-current-testing
+2020-05-25 01:56:28.706135 +0000 build-fedora4: true
+2020-05-25 01:56:28.706175 +0000 build-fedora4: > done
+2020-05-25 01:56:28.706188 +0000 > closing log
