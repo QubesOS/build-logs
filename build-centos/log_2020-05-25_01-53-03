@@ -1,0 +1,993 @@
+2020-05-25 01:53:03.040107 +0000 > starting log
+2020-05-25 01:53:03.040565 +0000 build-centos: > starting build with log
+2020-05-25 01:53:03.040614 +0000 build-centos: >> make args: DISTS_VM= centos8 DIST_DOM0= BUILD_LOGS_URL= core-agent-linux-vm-centos7=https://github.com/QubesOS/build-logs/tree/master/build-centos/log_2020-05-25_01-44-06 core-agent-linux-vm-centos8=https://github.com/QubesOS/build-logs/tree/master/build-centos/log_2020-05-25_01-50-35 GIT_URL_core_agent_linux=https://github.com/QubesOS/qubes-core-agent-linux sign-all update-repo-current-testing
+2020-05-25 01:53:03.040627 +0000 build-centos: >> MAKEFLAGS=
+2020-05-25 01:53:03.040637 +0000 build-centos: >> COMPONENTS=core-agent-linux
+2020-05-25 01:53:03.040646 +0000 build-centos: >> DISTS_VM=
+2020-05-25 01:53:03.040654 +0000 build-centos: >> DIST_DOM0=
+2020-05-25 01:53:03.040665 +0000 build-centos: >> qubes-builder 6e84e01f0e6c18e747b9cdf968c0711ccff90b9b
+2020-05-25 01:53:03.040678 +0000 build-centos: >> qubes-builder/qubes-src/core-agent-linux 810fc59cac2d64bb3140583d44b55eda20cc94fc
+2020-05-25 01:53:03.040688 +0000 build-centos: !! pkgs/vm-centos7/core-agent.spec.list
+2020-05-25 01:53:03.040700 +0000 build-centos: !! pkgs/vm-centos7/python2-dnf-plugins-qubes-hooks-4.1.11-1.centos7.x86_64.rpm
+2020-05-25 01:53:03.040713 +0000 build-centos: !! pkgs/vm-centos7/python36-dnf-plugins-qubes-hooks-4.1.11-1.centos7.x86_64.rpm
+2020-05-25 01:53:03.040725 +0000 build-centos: !! pkgs/vm-centos7/qubes-core-agent-4.1.0-1.centos7.x86_64.buildinfo
+2020-05-25 01:53:03.040736 +0000 build-centos: !! pkgs/vm-centos7/qubes-core-agent-4.1.1-1.centos7.x86_64.buildinfo
+2020-05-25 01:53:03.040748 +0000 build-centos: !! pkgs/vm-centos7/qubes-core-agent-4.1.10-1.centos7.x86_64.buildinfo
+2020-05-25 01:53:03.040759 +0000 build-centos: !! pkgs/vm-centos7/qubes-core-agent-4.1.11-1.centos7.src.rpm
+2020-05-25 01:53:03.040770 +0000 build-centos: !! pkgs/vm-centos7/qubes-core-agent-4.1.11-1.centos7.x86_64.buildinfo
+2020-05-25 01:53:03.040782 +0000 build-centos: !! pkgs/vm-centos7/qubes-core-agent-4.1.11-1.centos7.x86_64.rpm
+2020-05-25 01:53:03.040793 +0000 build-centos: !! pkgs/vm-centos7/qubes-core-agent-4.1.2-1.centos7.x86_64.buildinfo
+2020-05-25 01:53:03.040805 +0000 build-centos: !! pkgs/vm-centos7/qubes-core-agent-4.1.3-1.centos7.x86_64.buildinfo
+2020-05-25 01:53:03.040816 +0000 build-centos: !! pkgs/vm-centos7/qubes-core-agent-4.1.5-1.centos7.x86_64.buildinfo
+2020-05-25 01:53:03.040828 +0000 build-centos: !! pkgs/vm-centos7/qubes-core-agent-4.1.6-1.centos7.x86_64.buildinfo
+2020-05-25 01:53:03.040839 +0000 build-centos: !! pkgs/vm-centos7/qubes-core-agent-4.1.7-1.centos7.x86_64.buildinfo
+2020-05-25 01:53:03.040851 +0000 build-centos: !! pkgs/vm-centos7/qubes-core-agent-4.1.8-1.centos7.x86_64.buildinfo
+2020-05-25 01:53:03.040862 +0000 build-centos: !! pkgs/vm-centos7/qubes-core-agent-debuginfo-4.1.11-1.centos7.x86_64.rpm
+2020-05-25 01:53:03.040875 +0000 build-centos: !! pkgs/vm-centos7/qubes-core-agent-dom0-updates-4.1.11-1.centos7.x86_64.rpm
+2020-05-25 01:53:03.040886 +0000 build-centos: !! pkgs/vm-centos7/qubes-core-agent-nautilus-4.1.11-1.centos7.x86_64.rpm
+2020-05-25 01:53:03.040899 +0000 build-centos: !! pkgs/vm-centos7/qubes-core-agent-network-manager-4.1.11-1.centos7.x86_64.rpm
+2020-05-25 01:53:03.040911 +0000 build-centos: !! pkgs/vm-centos7/qubes-core-agent-networking-4.1.11-1.centos7.x86_64.rpm
+2020-05-25 01:53:03.040923 +0000 build-centos: !! pkgs/vm-centos7/qubes-core-agent-passwordless-root-4.1.11-1.centos7.x86_64.rpm
+2020-05-25 01:53:03.040935 +0000 build-centos: !! pkgs/vm-centos7/qubes-core-agent-systemd-4.1.11-1.centos7.x86_64.rpm
+2020-05-25 01:53:03.040947 +0000 build-centos: !! pkgs/vm-centos7/qubes-core-agent-sysvinit-4.1.11-1.centos7.x86_64.rpm
+2020-05-25 01:53:03.040959 +0000 build-centos: !! pkgs/vm-centos7/qubes-core-agent-thunar-4.1.11-1.centos7.x86_64.rpm
+2020-05-25 01:53:03.040968 +0000 build-centos: !! pkgs/vm-centos8/core-agent.spec.list
+2020-05-25 01:53:03.040980 +0000 build-centos: !! pkgs/vm-centos8/python2-dnf-plugins-qubes-hooks-4.1.10-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.041002 +0000 build-centos: !! pkgs/vm-centos8/python2-dnf-plugins-qubes-hooks-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.041016 +0000 build-centos: !! pkgs/vm-centos8/python3-dnf-plugins-qubes-hooks-4.1.10-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.041028 +0000 build-centos: !! pkgs/vm-centos8/python3-dnf-plugins-qubes-hooks-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.041039 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-4.1.10-1.centos8.src.rpm
+2020-05-25 01:53:03.041051 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-4.1.10-1.centos8.x86_64.buildinfo
+2020-05-25 01:53:03.041062 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-4.1.10-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.041073 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-4.1.12-1.centos8.src.rpm
+2020-05-25 01:53:03.041085 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-4.1.12-1.centos8.x86_64.buildinfo
+2020-05-25 01:53:03.041096 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.041108 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-debuginfo-4.1.10-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.041120 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-debuginfo-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.041132 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-debugsource-4.1.10-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.041168 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-debugsource-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.041182 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-dom0-updates-4.1.10-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.041194 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-dom0-updates-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.041206 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-nautilus-4.1.10-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.041218 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-nautilus-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.041230 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-network-manager-4.1.10-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.041243 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-network-manager-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.041254 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-networking-4.1.10-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.041266 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-networking-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.041279 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-passwordless-root-4.1.10-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.041299 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-passwordless-root-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.041311 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-systemd-4.1.10-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.041323 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-systemd-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.041335 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-sysvinit-4.1.10-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.041347 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-sysvinit-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.041358 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-thunar-4.1.10-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.041370 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-thunar-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.041388 +0000 build-centos: 2af04b074f21fc418805030f928239fc2884465054f7295da823d7d1f23cfb2f6a220d12d835faafc7b1a01e2dd7c697b1393b64c0b01a8a51755da7e1be5705  pkgs/vm-centos7/core-agent.spec.list
+2020-05-25 01:53:03.041415 +0000 build-centos: 2ecd6e3f889a7b725b64c4daf9c052786aa89395afcef78138078dc4b386101fa27a174eab29ebe374a8b1f6f7e44631635efb3973fd40fd556ebe2e12f7f6f6  pkgs/vm-centos7/python2-dnf-plugins-qubes-hooks-4.1.11-1.centos7.x86_64.rpm
+2020-05-25 01:53:03.041437 +0000 build-centos: 828fed4996c10ba48565ff487b6ccf559bda8ddc92b54df11054160ec3c5077e1e407185da663af3f87014bb4efec38d82d0d71ee9ba1de8c11fb0474c53d5bb  pkgs/vm-centos7/python36-dnf-plugins-qubes-hooks-4.1.11-1.centos7.x86_64.rpm
+2020-05-25 01:53:03.041623 +0000 build-centos: ae4df98edd68eba947bb52d2cc86185658b35bdf9c0fb5c1b6a32fb587b19704bae7303b1e218162166965516e81ac103f0f3b2df34727d7ab06ddd7d6a30dae  pkgs/vm-centos7/qubes-core-agent-4.1.0-1.centos7.x86_64.buildinfo
+2020-05-25 01:53:03.041660 +0000 build-centos: 529303a262e17dad10f48bcb7dff49607f331dd3cbe1c02200346b3d86e33d9f56a5e7430a47205895a218d057ab285c6f6b277da60479d9c27a3053eb7fa57d  pkgs/vm-centos7/qubes-core-agent-4.1.1-1.centos7.x86_64.buildinfo
+2020-05-25 01:53:03.041681 +0000 build-centos: dbd8724d548d5db01fa470a10c50f1c42622572973c5686f0924a87fef41254ed0735d0e656e9d38d777a86339b7a0a0ae2385db8dfad834eb3e3acaf09143b6  pkgs/vm-centos7/qubes-core-agent-4.1.10-1.centos7.x86_64.buildinfo
+2020-05-25 01:53:03.041701 +0000 build-centos: 22c474cc16b4fe168305ef9989cd30c2d1d3b190de77f8ef454f03662ce79c21e5569ce0dd2952c53f7cf767e99086b15fb89339a22a34a743611698bfddc188  pkgs/vm-centos7/qubes-core-agent-4.1.11-1.centos7.src.rpm
+2020-05-25 01:53:03.041722 +0000 build-centos: e3a154612daed94ba9e13b79bc916907bb01052a351ce8c0aba115a93d8b72e9a9f1ead38167cb32f7b868d93eee3a9484420808493e50a583047e81e5ef03bb  pkgs/vm-centos7/qubes-core-agent-4.1.11-1.centos7.x86_64.buildinfo
+2020-05-25 01:53:03.041741 +0000 build-centos: 5fbba2f9a3fb6922356d2cb97f94ba05f854425af00b40fa64b2a09693fd3b22cf2e1d5cd0cef2f76f4b5f094303ce9e30ca3106f66b6eb94a4b9cc41bd507d2  pkgs/vm-centos7/qubes-core-agent-4.1.11-1.centos7.x86_64.rpm
+2020-05-25 01:53:03.041761 +0000 build-centos: 5d737774e99e2110b0090bf77424293ff1fb785c5dc1c1e65ea62d38b6958f4e6d5f800d2c80a4da37f87e533aff9aa3ed41a193650af9761c65b73b7531b190  pkgs/vm-centos7/qubes-core-agent-4.1.2-1.centos7.x86_64.buildinfo
+2020-05-25 01:53:03.041781 +0000 build-centos: 4866b19eda171b0e9304992ba9953e2ac25ad3b938ca5c90a6feabd27a2995497e3ec25d2b0574092830c8fe09f411cb67b3ea2c55e0d47be404a9cac923ee78  pkgs/vm-centos7/qubes-core-agent-4.1.3-1.centos7.x86_64.buildinfo
+2020-05-25 01:53:03.041801 +0000 build-centos: ab9d859751d77ce1d3f68f50a6fefa8e3f1d9326308ccb73e75677ebd98833918a5bbdf7cf11b4ed9e90dd10dd4b018a02c256a21c6d456288bccd898da46839  pkgs/vm-centos7/qubes-core-agent-4.1.5-1.centos7.x86_64.buildinfo
+2020-05-25 01:53:03.041821 +0000 build-centos: 5269aceb8f7d7ed443473cec239c2acd435ca61a38043c0a321032bb0decca120f826e3700941645b30c7f27c70fff470165b26c4e0038f9ea7cee092d8fe112  pkgs/vm-centos7/qubes-core-agent-4.1.6-1.centos7.x86_64.buildinfo
+2020-05-25 01:53:03.041841 +0000 build-centos: 5fd9e70586a15257f9e53843d9539221b33f98b8d15559839903970bd0b562a89aaa7a9e1237a393659dc8fdb0c01bbf79d94967dbd964f045899dca43bd0db6  pkgs/vm-centos7/qubes-core-agent-4.1.7-1.centos7.x86_64.buildinfo
+2020-05-25 01:53:03.041861 +0000 build-centos: 91e52fd95eb5a2c2af601bb95eb552946216f6baf45932a0810263fc681498a428e5e69ca6a88b840d05467ad55dfcff67361ef81d36342cd085600e5363b810  pkgs/vm-centos7/qubes-core-agent-4.1.8-1.centos7.x86_64.buildinfo
+2020-05-25 01:53:03.041881 +0000 build-centos: ebee6d53c5dc87eb77bd42f438d02b5c507c2040bc87e0644d57d15004bbbe7cab644b145518971644c49359de8932debdca63662a726f497b3f6983718805df  pkgs/vm-centos7/qubes-core-agent-debuginfo-4.1.11-1.centos7.x86_64.rpm
+2020-05-25 01:53:03.041901 +0000 build-centos: 6da14819672fe6eaccc0be3451e083b674f05a99e0b6313ae52528a49358c1b0a22f139ead0faebb5bf9ce1d475584a213662ef424e1d3d389623286b91fde2b  pkgs/vm-centos7/qubes-core-agent-dom0-updates-4.1.11-1.centos7.x86_64.rpm
+2020-05-25 01:53:03.041921 +0000 build-centos: f58ee5fe3a6c4b800296b90b093d9f370e8f851daa36951ada5f19b10744f43ac368f476217d43454fc704980e7addee7ee7702e093359d548f19e4313553df7  pkgs/vm-centos7/qubes-core-agent-nautilus-4.1.11-1.centos7.x86_64.rpm
+2020-05-25 01:53:03.041954 +0000 build-centos: bf818e89e1d3e58f0f97e859a9bc91be7ee0e2f5c9dcdddf1eb26a0b2acb441982536c8f7b4e793bfdcdd76b2679d9774e8fa95203e205996d47952370ccb151  pkgs/vm-centos7/qubes-core-agent-network-manager-4.1.11-1.centos7.x86_64.rpm
+2020-05-25 01:53:03.041982 +0000 build-centos: 15ed28ae4a1e0ba25005928c6d33037abd613b3013e0487b1880cfb3aed68f1d94f49e0b3e36b81217d423a72208b778936e8cb94b3fc026040ed5f3ab802746  pkgs/vm-centos7/qubes-core-agent-networking-4.1.11-1.centos7.x86_64.rpm
+2020-05-25 01:53:03.042004 +0000 build-centos: ecaeccc7ce258adae709420a15209723ed27ca743d8b277bfbf55e5df2902e37b9bb0da4ff519b3b7ba5bae05d99397ec388369593237bbb3cf66ef074185464  pkgs/vm-centos7/qubes-core-agent-passwordless-root-4.1.11-1.centos7.x86_64.rpm
+2020-05-25 01:53:03.042024 +0000 build-centos: 3dd85d55049089b51aee707358ee0e079b580fd3b1b667a6e82e18820787feadaa17fd0bae590beffe3d8a77c41f0720366e7a1226a8b276edc8acaa965e78db  pkgs/vm-centos7/qubes-core-agent-systemd-4.1.11-1.centos7.x86_64.rpm
+2020-05-25 01:53:03.042044 +0000 build-centos: 2030500b09ad7426e7eba1ef6e52186d038ee5eee11677e9ba0ceea8d5ed991b1aebfdab16b86be9a04a4a0e14884be22c3b4975adb6ed50007a89144152fc25  pkgs/vm-centos7/qubes-core-agent-sysvinit-4.1.11-1.centos7.x86_64.rpm
+2020-05-25 01:53:03.042064 +0000 build-centos: df97eb3aba7f092850dabcd7ecbf0cb927c047a649e3139528267a44afa1726d9d276f85924bf022efc195b863fc5b7493c3663ba2e68ecebc6c70801d9586f7  pkgs/vm-centos7/qubes-core-agent-thunar-4.1.11-1.centos7.x86_64.rpm
+2020-05-25 01:53:03.042082 +0000 build-centos: 5f99dd45547783bcb6892308a4cdcc3bf291af57e92d35b9dcd7c0d6e6a755c9a1e4e2820070ee13f5b9e6602ecbfd91d9f58dc115e16caf9c4e750e0b67f529  pkgs/vm-centos8/core-agent.spec.list
+2020-05-25 01:53:03.042103 +0000 build-centos: 01105eb36bce39781e9f30dfbd0c4b69fc9c4dade5bf8d2705fad7df72e0f1454557481f5e0fd928126a33474bb0ac73312f6dccc4ded8f640b201fe6d56e7bb  pkgs/vm-centos8/python2-dnf-plugins-qubes-hooks-4.1.10-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.042123 +0000 build-centos: 76a95d786a1d53cafc71c0166ab137caea82e1e97b71712c2f1dbefe9cadc54fb1fc2589ccc640ad0c3829cbf0825569de479b96a93148b86045313cbf7a42f2  pkgs/vm-centos8/python2-dnf-plugins-qubes-hooks-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.042161 +0000 build-centos: c42bdfb397c4dcd9e47637fbb38b5e19aac0b16076873ab25eab9158b02a3a56f4fcff47ba02e39932ce3074a021e6f19426c3e8d20ca0b14d1f5fe791b79343  pkgs/vm-centos8/python3-dnf-plugins-qubes-hooks-4.1.10-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.042184 +0000 build-centos: d15e5ddaae2041b5b7d994ac912e666998daec8a06c5ebed54c1155fb17dfce12f181c735f4e5949242fa3cadf605c0f409b0a86e87d706a46052299ffabc2da  pkgs/vm-centos8/python3-dnf-plugins-qubes-hooks-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.042204 +0000 build-centos: 2d57ed21da3551fdf88c17e3fee44b2e80054f12b7377f33e322ddf5e570ac5522815d5eedd88750611bd349368ba7a911541348b71af0206f8ae9ae8b4773d9  pkgs/vm-centos8/qubes-core-agent-4.1.10-1.centos8.src.rpm
+2020-05-25 01:53:03.042224 +0000 build-centos: 073ac8d51e46040b1e2e35ce89fabb6e0ebc955536c8d2e8a9d36aacce68a1f7f58169440e8cc089798a0f65736f38aaa15e9e0aba8c71efa9b38c2c2db9c2db  pkgs/vm-centos8/qubes-core-agent-4.1.10-1.centos8.x86_64.buildinfo
+2020-05-25 01:53:03.042244 +0000 build-centos: 1b0c0c17931895f6c2d19041c4586c86f34563b74a4c2e811604d0978109fc630aeeb58abf916ccf79282e0e4434b904f45ef14a6bfc280ef991270233c03033  pkgs/vm-centos8/qubes-core-agent-4.1.10-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.042263 +0000 build-centos: aff525fa63bc3d844bca8fd6582439693915827127921b89a2023ab32a0ff96d093d01459a85770da1eceffe566cdda9d4b71136fba778f3a0e83bf05affd26c  pkgs/vm-centos8/qubes-core-agent-4.1.12-1.centos8.src.rpm
+2020-05-25 01:53:03.042283 +0000 build-centos: e90ed2a24f22e785f055e0452c6c7501789326d4febd0c37b3678575fc55756c244ffc9cf86f1068b374482a14fba68bb0f9002a4e1619a4515b5ca3c96f2c95  pkgs/vm-centos8/qubes-core-agent-4.1.12-1.centos8.x86_64.buildinfo
+2020-05-25 01:53:03.042303 +0000 build-centos: 3be5ea1ff67bda9e9aef4c061c81765cf6e8280c0b9ef3de90e1f1a30e8b10f4d7809d2ccd52e2fe428bed76dc4810abc66e20e76e129ee37a3b800977293dd6  pkgs/vm-centos8/qubes-core-agent-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.042328 +0000 build-centos: 2ff65ec557f461069631da6f03e287e64f5989988069521defb17279cc05f4ef5a30ae15425dd78fe06c071751ffcedd92dbdb427e01285befcd473944686b95  pkgs/vm-centos8/qubes-core-agent-debuginfo-4.1.10-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.042349 +0000 build-centos: de2731fbedcd6123f2720604c7d8ccd2804780987fa925c82108cf826fe33b5eb06b69488100825d1c09efba0d6649fb7f095d683eee2d0c2df3475b3584a6b5  pkgs/vm-centos8/qubes-core-agent-debuginfo-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.042370 +0000 build-centos: 6b2f8caadecedcd45ef0f316ef142df27f25fd36e659d972002949802a35671e34395d83ee463957f844413d32591d21b9997a1419f2b0038d56fb83a60f1643  pkgs/vm-centos8/qubes-core-agent-debugsource-4.1.10-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.042390 +0000 build-centos: ac13d414120a0f443458a391a1fd01476331243d434f489dd39b585f67217262d1b0e66849fb2cbf38da104e2f206ebb67ad1144403b4c56e6c48a4ef990d1a7  pkgs/vm-centos8/qubes-core-agent-debugsource-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.042420 +0000 build-centos: 1c2725f401229b0153a16653cd50c502511063ea7ed03ebd72397568b90223a1e11a04de7f0e614e9d3c912be5272f48f0303cb252e1f56650dbb6ce1c801a4f  pkgs/vm-centos8/qubes-core-agent-dom0-updates-4.1.10-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.042443 +0000 build-centos: e821be264847b531c8ad9ec0a5329f7c3e834404258588a3ea9ed210a0d7559d4ce49c40ef1034a70afd6be3c958c7f44546f6951d867d3017131e1f4793d647  pkgs/vm-centos8/qubes-core-agent-dom0-updates-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.042476 +0000 build-centos: d706cc0c3760e07fd4ef9efbb75ac39a8ac014614a9a79a09ad3bf29f1b33081121f70002799b69206c27e4824be2e163c97ce35c79d01e8bc934cdf0c924613  pkgs/vm-centos8/qubes-core-agent-nautilus-4.1.10-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.042497 +0000 build-centos: 9f8a54ec495a12cb55e71e96996fd80ea978748ce2bd786a17484fec817a1e0cfe28d2d645d507561f212d1107beb0cfa13f07db1cf87cf514936275cbdfed06  pkgs/vm-centos8/qubes-core-agent-nautilus-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.042518 +0000 build-centos: 4d667dcadea4379d56878e185a345913a29282b5c25e3c2b693987f96127e3e6414272dfb3a10bb1dc2b4cdf7677b7e6cadafd1cca19e4ac3182888b586ce9f5  pkgs/vm-centos8/qubes-core-agent-network-manager-4.1.10-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.042544 +0000 build-centos: cc71835560f730e5c3f005fec89a70a7d8ff719de20a6fc630a44f50649b041251e6d390855c5b3eac0e8e6c9b9fcb41d56d307264d8e8f02e9dcceabfc970a2  pkgs/vm-centos8/qubes-core-agent-network-manager-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.042565 +0000 build-centos: b327c2cbbbb870aab2eb6f815103c337a656c7363e7b837b8ac1f09bbe6be719845a2cf033de0a11523d103fcc3bdec1092d9f0f7336c60c3b780d587d6a3b57  pkgs/vm-centos8/qubes-core-agent-networking-4.1.10-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.042586 +0000 build-centos: 35c83714d02c7a89c157279c527eb15be01a5e5d760c0c33be9a0a20cbd93e50effc70d95d149b439a2ef22931317ac2c3ec67b89fa8112ee58d59604abb8d6f  pkgs/vm-centos8/qubes-core-agent-networking-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.042665 +0000 build-centos: 0fe47ababc0e3a3880e03de38dd278f5fd4d733c07b2d37a4aa6e77e1d2941d893586aaad0d7614a03537743bdce18164cb6a7b813629a507da1e3e79c292ccd  pkgs/vm-centos8/qubes-core-agent-passwordless-root-4.1.10-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.042702 +0000 build-centos: 2e58c77c6c03fd95f8c59be6d0bc524ad2af354f4a3282eaf43a54182d3c25b54831e167dbf8b1b9a3030a609903c7023dd83f1f6cc5872924272e220d339905  pkgs/vm-centos8/qubes-core-agent-passwordless-root-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.042724 +0000 build-centos: b0e891a5bba89c84352d01dd710cb3e4b0838af32f60b483b1e4b23927353d47e6a43eda40157c9b367a53a7c052526cb35e991d2be77aec7532138870223f86  pkgs/vm-centos8/qubes-core-agent-systemd-4.1.10-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.042745 +0000 build-centos: 5a7bec839740330fe75ecfbfc9ffc6ecef9582a282974684543938a89a9756f07460e7018ea90ffc3fda8ad80d555e9743cd7d24aaa8752cf97732fb011472d8  pkgs/vm-centos8/qubes-core-agent-systemd-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.042774 +0000 build-centos: 1bbd229a0a8a673aa4e1ec778d4dfedd73c45c15910fba381ba6d7bc72b7f435845ee6299fc26fa55e2f9343e288c362376f4e004bf466d3e07f8ec76b5ac0cf  pkgs/vm-centos8/qubes-core-agent-sysvinit-4.1.10-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.042796 +0000 build-centos: 02fd794407c0c2f90f64618e658c1a46669d753a07e917ffeb6f015df865f3b217aa899419a31c3f29ef7f0336bcfc537423c5b52a9310a85cbb61b150da3611  pkgs/vm-centos8/qubes-core-agent-sysvinit-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.042817 +0000 build-centos: ebc2c312b245c06d0fa5d09d805cef7c025a89f2ca1c57b5a14ae326b4e257d1c6e5bd1a6317b578491f4a9199dc2ce92542c67d966e3023da62f747c1964d90  pkgs/vm-centos8/qubes-core-agent-thunar-4.1.10-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.042838 +0000 build-centos: f2b273929eaf8fc441f2b9fe9d5711331c78de4fb435490a5593070b7895a13e95f691386ceacbb6f0d9c4f660cb03ce77683cead649f1b8f0aed6e034309d23  pkgs/vm-centos8/qubes-core-agent-thunar-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:03.343931 +0000 build-centos: ================================================================================
+2020-05-25 01:53:03.343991 +0000 build-centos:                            B U I L D   I N F O                                  
+2020-05-25 01:53:03.344008 +0000 build-centos: Items in red indicate it was automatically generated by configuration file(s)
+2020-05-25 01:53:03.344022 +0000 build-centos: Items in white indicate it was automatically removed by configuration file(s)
+2020-05-25 01:53:03.344035 +0000 build-centos: ================================================================================
+2020-05-25 01:53:03.344044 +0000 build-centos: DISTS_VM:
+2020-05-25 01:53:03.355697 +0000 build-centos:      centos7, centos8,
+2020-05-25 01:53:03.382999 +0000 build-centos: DISTS_ALL:
+2020-05-25 01:53:03.390610 +0000 build-centos:      vm-centos7, vm-centos8,
+2020-05-25 01:53:03.390655 +0000 build-centos: DIST_DOM0:
+2020-05-25 01:53:03.404401 +0000 build-centos:     
+2020-05-25 01:53:03.404448 +0000 build-centos: BUILDER_PLUGINS:
+2020-05-25 01:53:03.412977 +0000 build-centos:      builder-rpm, builder-debian, mgmt-salt, linux-yum, release-configs, builder-github,
+2020-05-25 01:53:03.413022 +0000 build-centos: COMPONENTS:
+2020-05-25 01:53:03.420861 +0000 build-centos:      core-agent-linux,
+2020-05-25 01:53:03.420905 +0000 build-centos: GIT_REPOS:
+2020-05-25 01:53:03.435990 +0000 build-centos:      qubes-src/core-agent-linux,
+2020-05-25 01:53:03.439674 +0000 build-centos: TEMPLATE:
+2020-05-25 01:53:03.466505 +0000 build-centos:     
+2020-05-25 01:53:03.466555 +0000 build-centos: TEMPLATE_FLAVOR_DIR:
+2020-05-25 01:53:03.483624 +0000 build-centos:     
+2020-05-25 01:53:03.483671 +0000 build-centos: TEMPLATE_ALIAS:
+2020-05-25 01:53:03.499460 +0000 build-centos:      stretch:stretch+standard, stretch+gnome:stretch+gnome+standard,
+2020-05-25 01:53:03.499513 +0000 build-centos:      stretch+minimal:stretch+minimal+no-recommends, buster:buster+standard, buster+gnome:buster+gnome+standard,
+2020-05-25 01:53:03.499533 +0000 build-centos:      buster+minimal:buster+minimal+no-recommends, bullseye:bullseye+standard,
+2020-05-25 01:53:03.499548 +0000 build-centos:      bullseye+gnome:bullseye+gnome+standard, bullseye+minimal:bullseye+minimal+no-recommends,
+2020-05-25 01:53:03.499560 +0000 build-centos:      whonix-gateway-14:stretch+whonix-gateway+minimal+no-recommends,
+2020-05-25 01:53:03.499572 +0000 build-centos:      whonix-workstation-14:stretch+whonix-workstation+minimal+no-recommends,
+2020-05-25 01:53:03.499584 +0000 build-centos:      whonix-gateway-15:buster+whonix-gateway+minimal+no-recommends,
+2020-05-25 01:53:03.499595 +0000 build-centos:      whonix-workstation-15:buster+whonix-workstation+minimal+no-recommends,
+2020-05-25 01:53:03.499603 +0000 build-centos: TEMPLATE_LABEL:
+2020-05-25 01:53:03.513625 +0000 build-centos:      centos7:centos-7, centos8:centos-8, fc29:fedora-29 fc30:fedora-30 fc31:fedora-31
+2020-05-25 01:53:03.513692 +0000 build-centos:      fc32:fedora-32 fc29+minimal:fedora-29-minimal fc30+minimal:fedora-30-minimal
+2020-05-25 01:53:03.513710 +0000 build-centos:      fc31+minimal:fedora-31-minimal fc32+minimal:fedora-32-minimal fc29+xfce:fedora-29-xfce
+2020-05-25 01:53:03.513726 +0000 build-centos:      fc30+xfce:fedora-30-xfce fc31+xfce:fedora-31-xfce fc32+xfce:fedora-32-xfce stretch:debian-9
+2020-05-25 01:53:03.513740 +0000 build-centos:      stretch+standard:debian-9 buster:debian-10 buster+standard:debian-10 bullseye:debian-11
+2020-05-25 01:53:03.513754 +0000 build-centos:      bullseye+standard:bullseye-11 stretch+whonix-gateway+minimal+no-recommends:whonix-gw-14
+2020-05-25 01:53:03.513766 +0000 build-centos:      stretch+whonix-workstation+minimal+no-recommends:whonix-ws-14
+2020-05-25 01:53:03.513777 +0000 build-centos:      buster+whonix-gateway+minimal+no-recommends:whonix-gw-15
+2020-05-25 01:53:03.513791 +0000 build-centos:      buster+whonix-workstation+minimal+no-recommends:whonix-ws-15 centos7+minimal:centos-7-minimal
+2020-05-25 01:53:03.513804 +0000 build-centos:      centos7+xfce:centos-7-xfce centos8+minimal:centos-7-minimal centos8+xfce:centos-8-xfce
+2020-05-25 01:53:03.640083 +0000 build-centos: > running make
+2020-05-25 01:53:03.753424 +0000 build-centos: Makefile:267: target 'sign.vm.centos8.core-agent-linux' does not exist
+2020-05-25 01:53:03.753514 +0000 build-centos: if [ -n "core-agent-linux" -a "0" -ne 0 ]; then BRANCH=master; branch_var="BRANCH_core_agent_linux"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/core-agent-linux > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2020-05-25 01:53:03.753534 +0000 build-centos: SIGN_KEY=EE88DA5FB2B7082919C8826D19205A11FDE3D0AA; \
+2020-05-25 01:53:03.753546 +0000 build-centos: sign_key_var="SIGN_KEY_${DIST%%+*}"; \
+2020-05-25 01:53:03.753557 +0000 build-centos: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2020-05-25 01:53:03.753568 +0000 build-centos: if [ "core-agent-linux" = linux-template-builder ]; then
+2020-05-25 01:53:03.753582 +0000 build-centos: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=centos8 template-name)
+2020-05-25 01:53:03.753591 +0000 build-centos: fi
+2020-05-25 01:53:03.753602 +0000 build-centos: if [ -r qubes-src/core-agent-linux/Makefile.builder ]; then \
+2020-05-25 01:53:03.753613 +0000 build-centos: .make --no-print-directory -f Makefile.generic \
+2020-05-25 01:53:03.753621 +0000 build-centos: ..DIST=centos8 \
+2020-05-25 01:53:03.753630 +0000 build-centos: ..PACKAGE_SET=vm \
+2020-05-25 01:53:03.753639 +0000 build-centos: ..COMPONENT=core-agent-linux \
+2020-05-25 01:53:03.753647 +0000 build-centos: ..SIGN_KEY=$SIGN_KEY \
+2020-05-25 01:53:03.753656 +0000 build-centos: ..sign || exit 1; \
+2020-05-25 01:53:03.753666 +0000 build-centos: elif [ -d qubes-src/core-agent-linux/rpm ]; then \
+2020-05-25 01:53:03.753676 +0000 build-centos: .# Old mechanism supported only for RPM
+2020-05-25 01:53:03.753690 +0000 build-centos: FILE_LIST=""; for RPM in qubes-src/core-agent-linux/rpm/*/*.rpm; do \
+2020-05-25 01:53:03.753703 +0000 build-centos: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2020-05-25 01:53:03.753712 +0000 build-centos: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2020-05-25 01:53:03.753719 +0000 build-centos: ..fi ;\
+2020-05-25 01:53:03.753727 +0000 build-centos: .done ; \
+2020-05-25 01:53:03.753736 +0000 build-centos: .if [ -n "$FILE_LIST" ]; then \
+2020-05-25 01:53:03.753745 +0000 build-centos: ..echo "--> Signing..."; \
+2020-05-25 01:53:03.753755 +0000 build-centos: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2020-05-25 01:53:03.753764 +0000 build-centos: ..if [ -n "$SIGN_KEY" ]; then \
+2020-05-25 01:53:03.753792 +0000 build-centos: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2020-05-25 01:53:03.753801 +0000 build-centos: ..fi; \
+2020-05-25 01:53:03.753812 +0000 build-centos: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2020-05-25 01:53:03.753820 +0000 build-centos: .fi; \
+2020-05-25 01:53:03.753827 +0000 build-centos: fi
+2020-05-25 01:53:03.774177 +0000 build-centos: + ERR_OUTPUT=/dev/stderr
+2020-05-25 01:53:03.775381 +0000 build-centos: + '[' 2 -lt 2 ']'
+2020-05-25 01:53:03.816846 +0000 build-centos: ++ basename qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in
+2020-05-25 01:53:03.816898 +0000 build-centos: + [[ xcore-agent.spec.in == \x\.\i\n ]]
+2020-05-25 01:53:03.816914 +0000 build-centos: + '[' -r qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in ']'
+2020-05-25 01:53:03.816925 +0000 build-centos: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2020-05-25 01:53:03.816934 +0000 build-centos: + tmp_spec=/tmp/tmp.0DPpRy.spec
+2020-05-25 01:53:03.816947 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2020-05-25 01:53:03.816965 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in /tmp/tmp.0DPpRy.spec
+2020-05-25 01:53:03.816974 +0000 build-centos: + '[' 2 -lt 2 ']'
+2020-05-25 01:53:03.816984 +0000 build-centos: + '[' -z qubes-src/core-agent-linux ']'
+2020-05-25 01:53:03.817000 +0000 build-centos: + cp qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:03.817009 +0000 build-centos: + read -r ver
+2020-05-25 01:53:03.817018 +0000 build-centos: + '[' x = x ']'
+2020-05-25 01:53:03.817032 +0000 build-centos: + sed -i 's|@VERSION@|4.1.12|g' qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:03.817040 +0000 build-centos: + vnum=1
+2020-05-25 01:53:03.817048 +0000 build-centos: + read -r ver
+2020-05-25 01:53:03.817058 +0000 build-centos: + '[' -e qubes-src/core-agent-linux/rel ']'
+2020-05-25 01:53:03.817071 +0000 build-centos: + grep -q @REL@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:03.817084 +0000 build-centos: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:03.860677 +0000 build-centos: + grep -q @CHANGELOG@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:03.860732 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2020-05-25 01:53:03.860755 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/core-agent-linux qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:05.154739 +0000 build-centos: + cat qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:05.154798 +0000 build-centos: + rm -rf qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:05.155497 +0000 build-centos: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2020-05-25 01:53:05.155543 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2020-05-25 01:53:05.159389 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.0DPpRy.spec
+2020-05-25 01:53:05.422460 +0000 build-centos: + rm -f /tmp/tmp.0DPpRy.spec
+2020-05-25 01:53:05.497048 +0000 build-centos: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:182: target 'sign-prep' does not exist
+2020-05-25 01:53:05.497104 +0000 build-centos: if [ -n "qubes-gpg-client-wrapper" ]; then \
+2020-05-25 01:53:05.497119 +0000 build-centos: .mkdir -p /home/user/builder-r4.1/keyrings/rpmdb; \
+2020-05-25 01:53:05.497137 +0000 build-centos: .qubes-gpg-client-wrapper --armor --export "EE88DA5FB2B7082919C8826D19205A11FDE3D0AA" > "/tmp/key_EE88DA5FB2B7082919C8826D19205A11FDE3D0AA"; \
+2020-05-25 01:53:05.497193 +0000 build-centos: .rpmkeys --dbpath=/home/user/builder-r4.1/keyrings/rpmdb --import "/tmp/key_EE88DA5FB2B7082919C8826D19205A11FDE3D0AA"; \
+2020-05-25 01:53:05.497220 +0000 build-centos: fi
+2020-05-25 01:53:05.497230 +0000 build-centos: + ERR_OUTPUT=/dev/stderr
+2020-05-25 01:53:05.497239 +0000 build-centos: + '[' 2 -lt 2 ']'
+2020-05-25 01:53:05.497250 +0000 build-centos: ++ basename qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in
+2020-05-25 01:53:05.497260 +0000 build-centos: + [[ xcore-agent.spec.in == \x\.\i\n ]]
+2020-05-25 01:53:05.497272 +0000 build-centos: + '[' -r qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in ']'
+2020-05-25 01:53:05.497281 +0000 build-centos: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2020-05-25 01:53:05.497290 +0000 build-centos: + tmp_spec=/tmp/tmp.9PMuUJ.spec
+2020-05-25 01:53:05.497302 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2020-05-25 01:53:05.497319 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in /tmp/tmp.9PMuUJ.spec
+2020-05-25 01:53:05.497328 +0000 build-centos: + '[' 2 -lt 2 ']'
+2020-05-25 01:53:05.497337 +0000 build-centos: + '[' -z qubes-src/core-agent-linux ']'
+2020-05-25 01:53:05.497352 +0000 build-centos: + cp qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:05.497360 +0000 build-centos: + read -r ver
+2020-05-25 01:53:05.497369 +0000 build-centos: + '[' x = x ']'
+2020-05-25 01:53:05.497382 +0000 build-centos: + sed -i 's|@VERSION@|4.1.12|g' qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:05.497389 +0000 build-centos: + vnum=1
+2020-05-25 01:53:05.497397 +0000 build-centos: + read -r ver
+2020-05-25 01:53:05.497407 +0000 build-centos: + '[' -e qubes-src/core-agent-linux/rel ']'
+2020-05-25 01:53:05.497419 +0000 build-centos: + grep -q @REL@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:05.497432 +0000 build-centos: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:05.500766 +0000 build-centos: + grep -q @CHANGELOG@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:05.510258 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2020-05-25 01:53:05.547411 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/core-agent-linux qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:07.008670 +0000 build-centos: + cat qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:07.008728 +0000 build-centos: + rm -rf qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:07.017159 +0000 build-centos: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2020-05-25 01:53:07.022277 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2020-05-25 01:53:07.030831 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.9PMuUJ.spec
+2020-05-25 01:53:07.244056 +0000 build-centos: + rm -f /tmp/tmp.9PMuUJ.spec
+2020-05-25 01:53:07.640905 +0000 build-centos: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:196: update target 'sign' due to: sign-prep
+2020-05-25 01:53:07.641045 +0000 build-centos: cd qubes-src/core-agent-linux && for pkg in pkgs/vm-centos8/python2-dnf-plugins-qubes-hooks-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/python3-dnf-plugins-qubes-hooks-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-4.1.12-1.centos8.src.rpm pkgs/vm-centos8/qubes-core-agent-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-debuginfo-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-debugsource-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-dom0-updates-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-nautilus-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-network-manager-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-networking-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-passwordless-root-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-systemd-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-sysvinit-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-thunar-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-4.1.12-1.centos8.x86_64.buildinfo ; do \
+2020-05-25 01:53:07.641079 +0000 build-centos: .if [ "${pkg##*.}" = "buildinfo" ]; then \
+2020-05-25 01:53:07.641103 +0000 build-centos: ../home/user/builder-r4.1/qubes-src/builder-rpm/scripts/update-rpmbuildinfo "$pkg" | qubes-gpg-client-wrapper --clearsign --local-user EE88DA5FB2B7082919C8826D19205A11FDE3D0AA > "$pkg".tmp && \
+2020-05-25 01:53:07.641114 +0000 build-centos: ..mv -f "$pkg".tmp "$pkg"; \
+2020-05-25 01:53:07.641125 +0000 build-centos: .elif ! rpm -K $pkg | grep -qi pgp; then \
+2020-05-25 01:53:07.641170 +0000 build-centos: ..setsid -w rpmsign  --digest-algo=sha256 --key-id=EE88DA5FB2B7082919C8826D19205A11FDE3D0AA --addsign $pkg </dev/null || exit 1; \
+2020-05-25 01:53:07.641191 +0000 build-centos: .fi; \
+2020-05-25 01:53:07.641199 +0000 build-centos: done
+2020-05-25 01:53:07.709555 +0000 build-centos: + ERR_OUTPUT=/dev/stderr
+2020-05-25 01:53:07.709610 +0000 build-centos: + '[' 2 -lt 2 ']'
+2020-05-25 01:53:07.716745 +0000 build-centos: ++ basename qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in
+2020-05-25 01:53:07.720247 +0000 build-centos: + [[ xcore-agent.spec.in == \x\.\i\n ]]
+2020-05-25 01:53:07.720295 +0000 build-centos: + '[' -r qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in ']'
+2020-05-25 01:53:07.720308 +0000 build-centos: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2020-05-25 01:53:07.726205 +0000 build-centos: + tmp_spec=/tmp/tmp.V5WYks.spec
+2020-05-25 01:53:07.744206 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2020-05-25 01:53:07.744282 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in /tmp/tmp.V5WYks.spec
+2020-05-25 01:53:07.744295 +0000 build-centos: + '[' 2 -lt 2 ']'
+2020-05-25 01:53:07.744306 +0000 build-centos: + '[' -z qubes-src/core-agent-linux ']'
+2020-05-25 01:53:07.744321 +0000 build-centos: + cp qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:07.768953 +0000 build-centos: + read -r ver
+2020-05-25 01:53:07.768998 +0000 build-centos: + '[' x = x ']'
+2020-05-25 01:53:07.769016 +0000 build-centos: + sed -i 's|@VERSION@|4.1.12|g' qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:07.794435 +0000 build-centos: + vnum=1
+2020-05-25 01:53:07.794484 +0000 build-centos: + read -r ver
+2020-05-25 01:53:07.794498 +0000 build-centos: + '[' -e qubes-src/core-agent-linux/rel ']'
+2020-05-25 01:53:07.794542 +0000 build-centos: + grep -q @REL@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:07.806243 +0000 build-centos: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:07.823045 +0000 build-centos: + grep -q @CHANGELOG@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:07.830932 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2020-05-25 01:53:07.831003 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/core-agent-linux qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:08.784168 +0000 build-centos: + cat qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:08.785732 +0000 build-centos: + rm -rf qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:08.788429 +0000 build-centos: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2020-05-25 01:53:08.788478 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2020-05-25 01:53:08.795198 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.V5WYks.spec
+2020-05-25 01:53:08.949749 +0000 build-centos: + rm -f /tmp/tmp.V5WYks.spec
+2020-05-25 01:53:09.565657 +0000 build-centos: pkgs/vm-centos8/python2-dnf-plugins-qubes-hooks-4.1.12-1.centos8.x86_64.rpm:
+2020-05-25 01:53:10.118986 +0000 build-centos: pkgs/vm-centos8/python3-dnf-plugins-qubes-hooks-4.1.12-1.centos8.x86_64.rpm:
+2020-05-25 01:53:10.634217 +0000 build-centos: pkgs/vm-centos8/qubes-core-agent-4.1.12-1.centos8.src.rpm:
+2020-05-25 01:53:10.634274 +0000 build-centos: Error while vchan send, exiting
+2020-05-25 01:53:11.134876 +0000 build-centos: pkgs/vm-centos8/qubes-core-agent-4.1.12-1.centos8.x86_64.rpm:
+2020-05-25 01:53:11.684826 +0000 build-centos: pkgs/vm-centos8/qubes-core-agent-debuginfo-4.1.12-1.centos8.x86_64.rpm:
+2020-05-25 01:53:12.112602 +0000 build-centos: pkgs/vm-centos8/qubes-core-agent-debugsource-4.1.12-1.centos8.x86_64.rpm:
+2020-05-25 01:53:12.629261 +0000 build-centos: pkgs/vm-centos8/qubes-core-agent-dom0-updates-4.1.12-1.centos8.x86_64.rpm:
+2020-05-25 01:53:13.111505 +0000 build-centos: pkgs/vm-centos8/qubes-core-agent-nautilus-4.1.12-1.centos8.x86_64.rpm:
+2020-05-25 01:53:13.568879 +0000 build-centos: pkgs/vm-centos8/qubes-core-agent-network-manager-4.1.12-1.centos8.x86_64.rpm:
+2020-05-25 01:53:13.979708 +0000 build-centos: pkgs/vm-centos8/qubes-core-agent-networking-4.1.12-1.centos8.x86_64.rpm:
+2020-05-25 01:53:14.458642 +0000 build-centos: pkgs/vm-centos8/qubes-core-agent-passwordless-root-4.1.12-1.centos8.x86_64.rpm:
+2020-05-25 01:53:14.914500 +0000 build-centos: pkgs/vm-centos8/qubes-core-agent-systemd-4.1.12-1.centos8.x86_64.rpm:
+2020-05-25 01:53:14.914555 +0000 build-centos: Error while vchan send, exiting
+2020-05-25 01:53:15.379416 +0000 build-centos: pkgs/vm-centos8/qubes-core-agent-sysvinit-4.1.12-1.centos8.x86_64.rpm:
+2020-05-25 01:53:15.769561 +0000 build-centos: pkgs/vm-centos8/qubes-core-agent-thunar-4.1.12-1.centos8.x86_64.rpm:
+2020-05-25 01:53:15.989824 +0000 build-centos: Makefile:818: target 'internal-update-repo-current-testing.vm.centos8.core-agent-linux' does not exist
+2020-05-25 01:53:15.989880 +0000 build-centos: repo_base_var="LINUX_REPO_centos8_BASEDIR"; \
+2020-05-25 01:53:15.989895 +0000 build-centos: if [ "core-agent-linux" = linux-template-builder ]; then \
+2020-05-25 01:53:15.989909 +0000 build-centos: .# templates belongs to dom0 repository, even though PACKAGE_SET=vm
+2020-05-25 01:53:15.989919 +0000 build-centos: repo_base_var="LINUX_REPO__BASEDIR"; \
+2020-05-25 01:53:15.989927 +0000 build-centos: fi; \
+2020-05-25 01:53:15.989937 +0000 build-centos: if [ -n "${!repo_base_var}" ]; then \
+2020-05-25 01:53:15.989947 +0000 build-centos: .repo_basedir="${!repo_base_var}"; \
+2020-05-25 01:53:15.989954 +0000 build-centos: else \
+2020-05-25 01:53:15.989964 +0000 build-centos: .repo_basedir="qubes-src/linux-yum/r4.1"; \
+2020-05-25 01:53:15.989972 +0000 build-centos: fi; \
+2020-05-25 01:53:15.989983 +0000 build-centos: if [ -r qubes-src/core-agent-linux/Makefile.builder ]; then \
+2020-05-25 01:53:15.989994 +0000 build-centos: .echo -n "Updating qubes-src/core-agent-linux... "; \
+2020-05-25 01:53:15.990003 +0000 build-centos: .if [ "0" -eq 1 ]; then \
+2020-05-25 01:53:15.990015 +0000 build-centos: ..vtag=`git -C qubes-src/core-agent-linux tag --points-at HEAD --list v*`; \
+2020-05-25 01:53:15.990041 +0000 build-centos: ..if [ -z "$vtag" ]; then \
+2020-05-25 01:53:15.990051 +0000 build-centos: ...echo "no version tag"; \
+2020-05-25 01:53:15.990059 +0000 build-centos: ...exit 0; \
+2020-05-25 01:53:15.990067 +0000 build-centos: ..fi; \
+2020-05-25 01:53:15.990075 +0000 build-centos: .fi; \
+2020-05-25 01:53:15.990086 +0000 build-centos: .if [ "core-agent-linux" = linux-template-builder ]; then
+2020-05-25 01:53:15.990100 +0000 build-centos: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=centos8 template-name)
+2020-05-25 01:53:15.990107 +0000 build-centos: fi
+2020-05-25 01:53:15.990132 +0000 build-centos: component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=centos8 PACKAGE_SET=vm COMPONENT=`basename qubes-src/core-agent-linux` UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/centos8 get-var GET_VAR=PACKAGE_LIST); \
+2020-05-25 01:53:15.990176 +0000 build-centos: .if [ -z "$component_packages" ]; then \
+2020-05-25 01:53:15.990188 +0000 build-centos: ..echo "no packages."; \
+2020-05-25 01:53:15.990196 +0000 build-centos: ..exit 0; \
+2020-05-25 01:53:15.990204 +0000 build-centos: .fi; \
+2020-05-25 01:53:15.990214 +0000 build-centos: .make -s -f Makefile.generic DIST=centos8 PACKAGE_SET=vm \
+2020-05-25 01:53:15.990225 +0000 build-centos: ..COMPONENT=`basename qubes-src/core-agent-linux` \
+2020-05-25 01:53:15.990234 +0000 build-centos: ..SNAPSHOT_REPO=current-testing \
+2020-05-25 01:53:15.990243 +0000 build-centos: ..TARGET_REPO=current-testing \
+2020-05-25 01:53:15.990255 +0000 build-centos: ..UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/centos8 \
+2020-05-25 01:53:15.990271 +0000 build-centos: ..SNAPSHOT_FILE=/home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-centos8-`basename qubes-src/core-agent-linux` \
+2020-05-25 01:53:15.990298 +0000 build-centos: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-centos/log_2020-05-25_01-50-35 \
+2020-05-25 01:53:15.990307 +0000 build-centos: ..update-repo || exit 1; \
+2020-05-25 01:53:15.990321 +0000 build-centos: elif make -C qubes-src/core-agent-linux -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2020-05-25 01:53:15.990332 +0000 build-centos: .echo "Updating qubes-src/core-agent-linux... "; \
+2020-05-25 01:53:15.990345 +0000 build-centos: .DIST=centos8 UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/centos8 \
+2020-05-25 01:53:15.990358 +0000 build-centos: .make -s -C qubes-src/core-agent-linux update-repo-current-testing || exit 1; \
+2020-05-25 01:53:15.990365 +0000 build-centos: else \
+2020-05-25 01:53:15.990377 +0000 build-centos: .echo -n "Updating qubes-src/core-agent-linux... skipping."; \
+2020-05-25 01:53:15.990384 +0000 build-centos: fi; \
+2020-05-25 01:53:15.990392 +0000 build-centos: echo
+2020-05-25 01:53:16.006703 +0000 build-centos: Updating qubes-src/core-agent-linux... + ERR_OUTPUT=/dev/stderr
+2020-05-25 01:53:16.006748 +0000 build-centos: + '[' 2 -lt 2 ']'
+2020-05-25 01:53:16.007021 +0000 build-centos: ++ basename qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in
+2020-05-25 01:53:16.008293 +0000 build-centos: + [[ xcore-agent.spec.in == \x\.\i\n ]]
+2020-05-25 01:53:16.008348 +0000 build-centos: + '[' -r qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in ']'
+2020-05-25 01:53:16.008360 +0000 build-centos: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2020-05-25 01:53:16.010084 +0000 build-centos: + tmp_spec=/tmp/tmp.mBCCTI.spec
+2020-05-25 01:53:16.010127 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2020-05-25 01:53:16.011448 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in /tmp/tmp.mBCCTI.spec
+2020-05-25 01:53:16.012382 +0000 build-centos: + '[' 2 -lt 2 ']'
+2020-05-25 01:53:16.012421 +0000 build-centos: + '[' -z qubes-src/core-agent-linux ']'
+2020-05-25 01:53:16.012457 +0000 build-centos: + cp qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:16.015224 +0000 build-centos: + read -r ver
+2020-05-25 01:53:16.015289 +0000 build-centos: + '[' x = x ']'
+2020-05-25 01:53:16.015306 +0000 build-centos: + sed -i 's|@VERSION@|4.1.12|g' qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:16.017865 +0000 build-centos: + vnum=1
+2020-05-25 01:53:16.017905 +0000 build-centos: + read -r ver
+2020-05-25 01:53:16.017918 +0000 build-centos: + '[' -e qubes-src/core-agent-linux/rel ']'
+2020-05-25 01:53:16.017932 +0000 build-centos: + grep -q @REL@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:16.019370 +0000 build-centos: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:16.023134 +0000 build-centos: + grep -q @CHANGELOG@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:16.024468 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2020-05-25 01:53:16.024765 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/core-agent-linux qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:16.440218 +0000 build-centos: + cat qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:16.440290 +0000 build-centos: + rm -rf qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:16.441623 +0000 build-centos: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2020-05-25 01:53:16.441669 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2020-05-25 01:53:16.441749 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.mBCCTI.spec
+2020-05-25 01:53:16.523584 +0000 build-centos: + rm -f /tmp/tmp.mBCCTI.spec
+2020-05-25 01:53:16.547201 +0000 build-centos: + ERR_OUTPUT=/dev/stderr
+2020-05-25 01:53:16.547254 +0000 build-centos: + '[' 2 -lt 2 ']'
+2020-05-25 01:53:16.548667 +0000 build-centos: ++ basename qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in
+2020-05-25 01:53:16.549593 +0000 build-centos: + [[ xcore-agent.spec.in == \x\.\i\n ]]
+2020-05-25 01:53:16.549634 +0000 build-centos: + '[' -r qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in ']'
+2020-05-25 01:53:16.552607 +0000 build-centos: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2020-05-25 01:53:16.555826 +0000 build-centos: + tmp_spec=/tmp/tmp.wEhBwa.spec
+2020-05-25 01:53:16.555873 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2020-05-25 01:53:16.555893 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in /tmp/tmp.wEhBwa.spec
+2020-05-25 01:53:16.560080 +0000 build-centos: + '[' 2 -lt 2 ']'
+2020-05-25 01:53:16.560125 +0000 build-centos: + '[' -z qubes-src/core-agent-linux ']'
+2020-05-25 01:53:16.560169 +0000 build-centos: + cp qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:16.562916 +0000 build-centos: + read -r ver
+2020-05-25 01:53:16.562995 +0000 build-centos: + '[' x = x ']'
+2020-05-25 01:53:16.563013 +0000 build-centos: + sed -i 's|@VERSION@|4.1.12|g' qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:16.567607 +0000 build-centos: + vnum=1
+2020-05-25 01:53:16.567648 +0000 build-centos: + read -r ver
+2020-05-25 01:53:16.567724 +0000 build-centos: + '[' -e qubes-src/core-agent-linux/rel ']'
+2020-05-25 01:53:16.567788 +0000 build-centos: + grep -q @REL@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:16.571024 +0000 build-centos: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:16.575674 +0000 build-centos: + grep -q @CHANGELOG@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:16.579846 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2020-05-25 01:53:16.579941 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/core-agent-linux qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:16.934580 +0000 build-centos: + cat qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:16.935858 +0000 build-centos: + rm -rf qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:16.937249 +0000 build-centos: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2020-05-25 01:53:16.937515 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2020-05-25 01:53:16.937721 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.wEhBwa.spec
+2020-05-25 01:53:17.005852 +0000 build-centos: + rm -f /tmp/tmp.wEhBwa.spec
+2020-05-25 01:53:17.029075 +0000 build-centos: + ERR_OUTPUT=/dev/stderr
+2020-05-25 01:53:17.029122 +0000 build-centos: + '[' 2 -lt 2 ']'
+2020-05-25 01:53:17.029138 +0000 build-centos: ++ basename qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in
+2020-05-25 01:53:17.029931 +0000 build-centos: + [[ xcore-agent.spec.in == \x\.\i\n ]]
+2020-05-25 01:53:17.029960 +0000 build-centos: + '[' -r qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in ']'
+2020-05-25 01:53:17.030093 +0000 build-centos: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2020-05-25 01:53:17.031260 +0000 build-centos: + tmp_spec=/tmp/tmp.603wWP.spec
+2020-05-25 01:53:17.031707 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2020-05-25 01:53:17.032907 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in /tmp/tmp.603wWP.spec
+2020-05-25 01:53:17.034247 +0000 build-centos: + '[' 2 -lt 2 ']'
+2020-05-25 01:53:17.034301 +0000 build-centos: + '[' -z qubes-src/core-agent-linux ']'
+2020-05-25 01:53:17.034319 +0000 build-centos: + cp qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:17.035657 +0000 build-centos: + read -r ver
+2020-05-25 01:53:17.035702 +0000 build-centos: + '[' x = x ']'
+2020-05-25 01:53:17.035719 +0000 build-centos: + sed -i 's|@VERSION@|4.1.12|g' qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:17.041141 +0000 build-centos: + vnum=1
+2020-05-25 01:53:17.041208 +0000 build-centos: + read -r ver
+2020-05-25 01:53:17.041221 +0000 build-centos: + '[' -e qubes-src/core-agent-linux/rel ']'
+2020-05-25 01:53:17.041234 +0000 build-centos: + grep -q @REL@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:17.041248 +0000 build-centos: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:17.045259 +0000 build-centos: + grep -q @CHANGELOG@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:17.047558 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2020-05-25 01:53:17.048745 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/core-agent-linux qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:17.466902 +0000 build-centos: + cat qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:17.467374 +0000 build-centos: + rm -rf qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:17.469795 +0000 build-centos: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2020-05-25 01:53:17.469841 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2020-05-25 01:53:17.470517 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.603wWP.spec
+2020-05-25 01:53:17.552302 +0000 build-centos: + rm -f /tmp/tmp.603wWP.spec
+2020-05-25 01:53:17.633782 +0000 build-centos: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:157: target 'update-repo-do' does not exist
+2020-05-25 01:53:17.633844 +0000 build-centos: mkdir -p /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/centos8/rpm
+2020-05-25 01:53:17.660996 +0000 build-centos: + ERR_OUTPUT=/dev/stderr
+2020-05-25 01:53:17.661045 +0000 build-centos: + '[' 2 -lt 2 ']'
+2020-05-25 01:53:17.661133 +0000 build-centos: ++ basename qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in
+2020-05-25 01:53:17.663482 +0000 build-centos: + [[ xcore-agent.spec.in == \x\.\i\n ]]
+2020-05-25 01:53:17.663530 +0000 build-centos: + '[' -r qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in ']'
+2020-05-25 01:53:17.663550 +0000 build-centos: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2020-05-25 01:53:17.666510 +0000 build-centos: + tmp_spec=/tmp/tmp.goUcUd.spec
+2020-05-25 01:53:17.666558 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2020-05-25 01:53:17.669119 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in /tmp/tmp.goUcUd.spec
+2020-05-25 01:53:17.670292 +0000 build-centos: + '[' 2 -lt 2 ']'
+2020-05-25 01:53:17.670335 +0000 build-centos: + '[' -z qubes-src/core-agent-linux ']'
+2020-05-25 01:53:17.670354 +0000 build-centos: + cp qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:17.674617 +0000 build-centos: + read -r ver
+2020-05-25 01:53:17.674662 +0000 build-centos: + '[' x = x ']'
+2020-05-25 01:53:17.674680 +0000 build-centos: + sed -i 's|@VERSION@|4.1.12|g' qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:17.683437 +0000 build-centos: + vnum=1
+2020-05-25 01:53:17.683484 +0000 build-centos: + read -r ver
+2020-05-25 01:53:17.683498 +0000 build-centos: + '[' -e qubes-src/core-agent-linux/rel ']'
+2020-05-25 01:53:17.683511 +0000 build-centos: + grep -q @REL@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:17.687904 +0000 build-centos: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:17.696882 +0000 build-centos: + grep -q @CHANGELOG@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:17.703194 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2020-05-25 01:53:17.705171 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/core-agent-linux qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:18.020720 +0000 build-centos: + cat qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:18.022209 +0000 build-centos: + rm -rf qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:18.022959 +0000 build-centos: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2020-05-25 01:53:18.023125 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2020-05-25 01:53:18.025133 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.goUcUd.spec
+2020-05-25 01:53:18.082658 +0000 build-centos: + rm -f /tmp/tmp.goUcUd.spec
+2020-05-25 01:53:18.092330 +0000 build-centos: if [ -n "pkgs/vm-centos8/python2-dnf-plugins-qubes-hooks-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/python3-dnf-plugins-qubes-hooks-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-4.1.12-1.centos8.src.rpm pkgs/vm-centos8/qubes-core-agent-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-debuginfo-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-debugsource-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-dom0-updates-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-nautilus-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-network-manager-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-networking-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-passwordless-root-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-systemd-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-sysvinit-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-thunar-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-4.1.12-1.centos8.x86_64.buildinfo" ]; then \
+2020-05-25 01:53:18.092485 +0000 build-centos: .cd qubes-src/core-agent-linux && ln -f pkgs/vm-centos8/python2-dnf-plugins-qubes-hooks-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/python3-dnf-plugins-qubes-hooks-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-4.1.12-1.centos8.src.rpm pkgs/vm-centos8/qubes-core-agent-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-debuginfo-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-debugsource-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-dom0-updates-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-nautilus-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-network-manager-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-networking-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-passwordless-root-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-systemd-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-sysvinit-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-thunar-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-4.1.12-1.centos8.x86_64.buildinfo  /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/centos8/rpm/; \
+2020-05-25 01:53:18.092501 +0000 build-centos: else \
+2020-05-25 01:53:18.092517 +0000 build-centos: .echo "`tput bold`No packages defined by rpm_spec/core-agent.spec, syntax error?`tput sgr0`"; \
+2020-05-25 01:53:18.092527 +0000 build-centos: .exit 1; \
+2020-05-25 01:53:18.092535 +0000 build-centos: fi
+2020-05-25 01:53:18.094873 +0000 build-centos: cd qubes-src/core-agent-linux && echo pkgs/vm-centos8/python2-dnf-plugins-qubes-hooks-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/python3-dnf-plugins-qubes-hooks-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-4.1.12-1.centos8.src.rpm pkgs/vm-centos8/qubes-core-agent-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-debuginfo-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-debugsource-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-dom0-updates-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-nautilus-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-network-manager-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-networking-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-passwordless-root-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-systemd-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-sysvinit-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-thunar-4.1.12-1.centos8.x86_64.rpm pkgs/vm-centos8/qubes-core-agent-4.1.12-1.centos8.x86_64.buildinfo  > /home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-centos8-core-agent-linux
+2020-05-25 01:53:18.108345 +0000 build-centos: /home/user/builder-r4.1/qubes-src/builder-github//Makefile.github:18: target 'notify-github' does not exist
+2020-05-25 01:53:18.108399 +0000 build-centos: [ -z "python2-dnf-plugins-qubes-hooks-4.1.12-1.centos8" ] || /home/user/builder-r4.1/qubes-src/builder-github//notify-issues \
+2020-05-25 01:53:18.108432 +0000 build-centos: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-centos/log_2020-05-25_01-50-35" \
+2020-05-25 01:53:18.108443 +0000 build-centos: .upload \
+2020-05-25 01:53:18.108451 +0000 build-centos: ."r4.1" \
+2020-05-25 01:53:18.108464 +0000 build-centos: ."qubes-src/core-agent-linux" \
+2020-05-25 01:53:18.108475 +0000 build-centos: ."python2-dnf-plugins-qubes-hooks-4.1.12-1.centos8" \
+2020-05-25 01:53:18.108483 +0000 build-centos: ."centos8" \
+2020-05-25 01:53:18.108491 +0000 build-centos: ."vm" \
+2020-05-25 01:53:18.108499 +0000 build-centos: ."current-testing" \
+2020-05-25 01:53:18.108511 +0000 build-centos: ."/home/user/github-notify-state/r4.1-core-agent-linux-vm-centos8-current-testing" \
+2020-05-25 01:53:18.108523 +0000 build-centos: ."/home/user/github-notify-state/r4.1-core-agent-linux-vm-centos8-current"
+2020-05-25 01:53:18.130089 +0000 build-centos: + ERR_OUTPUT=/dev/stderr
+2020-05-25 01:53:18.130140 +0000 build-centos: + '[' 2 -lt 2 ']'
+2020-05-25 01:53:18.132063 +0000 build-centos: ++ basename qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in
+2020-05-25 01:53:18.132107 +0000 build-centos: + [[ xcore-agent.spec.in == \x\.\i\n ]]
+2020-05-25 01:53:18.132122 +0000 build-centos: + '[' -r qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in ']'
+2020-05-25 01:53:18.133633 +0000 build-centos: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2020-05-25 01:53:18.133676 +0000 build-centos: + tmp_spec=/tmp/tmp.X46BoH.spec
+2020-05-25 01:53:18.134964 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2020-05-25 01:53:18.135014 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in /tmp/tmp.X46BoH.spec
+2020-05-25 01:53:18.136297 +0000 build-centos: + '[' 2 -lt 2 ']'
+2020-05-25 01:53:18.136337 +0000 build-centos: + '[' -z qubes-src/core-agent-linux ']'
+2020-05-25 01:53:18.136355 +0000 build-centos: + cp qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:18.137920 +0000 build-centos: + read -r ver
+2020-05-25 01:53:18.137960 +0000 build-centos: + '[' x = x ']'
+2020-05-25 01:53:18.137977 +0000 build-centos: + sed -i 's|@VERSION@|4.1.12|g' qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:18.141668 +0000 build-centos: + vnum=1
+2020-05-25 01:53:18.141714 +0000 build-centos: + read -r ver
+2020-05-25 01:53:18.141727 +0000 build-centos: + '[' -e qubes-src/core-agent-linux/rel ']'
+2020-05-25 01:53:18.141741 +0000 build-centos: + grep -q @REL@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:18.143349 +0000 build-centos: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:18.147236 +0000 build-centos: + grep -q @CHANGELOG@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:18.149540 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2020-05-25 01:53:18.150862 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/core-agent-linux qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:18.604077 +0000 build-centos: + cat qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:18.604134 +0000 build-centos: + rm -rf qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2020-05-25 01:53:18.604421 +0000 build-centos: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2020-05-25 01:53:18.604447 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2020-05-25 01:53:18.606783 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.X46BoH.spec
+2020-05-25 01:53:18.666464 +0000 build-centos: + rm -f /tmp/tmp.X46BoH.spec
+2020-05-25 01:53:23.286112 +0000 build-centos: WARNING: message template /home/user/builder-r4.1/qubes-src/builder-github/templates/message-current-testing-vm doesn't exist, not adding comments
+2020-05-25 01:53:23.286212 +0000 build-centos: Adding a comment to issue #5805
+2020-05-25 01:53:23.301070 +0000 build-centos: 
+2020-05-25 01:53:23.301129 +0000 build-centos: Makefile:793: update target 'internal-update-repo-current-testing.vm.centos8' due to: internal-update-repo-current-testing.vm.centos8.core-agent-linux
+2020-05-25 01:53:23.301167 +0000 build-centos: true
+2020-05-25 01:53:23.301183 +0000 build-centos: Makefile:872: target 'post-update-repo-current-testing' does not exist
+2020-05-25 01:53:23.301192 +0000 build-centos: for dist in  centos8; do \
+2020-05-25 01:53:23.301203 +0000 build-centos: .repo_base_var="LINUX_REPO_${dist}_BASEDIR"; \
+2020-05-25 01:53:23.301213 +0000 build-centos: .if [ -n "${!repo_base_var}" ]; then \
+2020-05-25 01:53:23.301222 +0000 build-centos: ..repo_basedir="${!repo_base_var}"; \
+2020-05-25 01:53:23.301230 +0000 build-centos: .else \
+2020-05-25 01:53:23.301240 +0000 build-centos: ..repo_basedir="qubes-src/linux-yum/r4.1"; \
+2020-05-25 01:53:23.301247 +0000 build-centos: .fi; \
+2020-05-25 01:53:23.301258 +0000 build-centos: .repos_to_update="$repos_to_update $repo_basedir"; \
+2020-05-25 01:53:23.301265 +0000 build-centos: done; \
+2020-05-25 01:53:23.301273 +0000 build-centos: pkgset_dist= ; \
+2020-05-25 01:53:23.301281 +0000 build-centos: for dist in ; do \
+2020-05-25 01:53:23.301290 +0000 build-centos: .pkgset_dist="$pkgset_dist dom0/$dist"; \
+2020-05-25 01:53:23.301298 +0000 build-centos: done; \
+2020-05-25 01:53:23.301306 +0000 build-centos: for dist in centos8; do \
+2020-05-25 01:53:23.301316 +0000 build-centos: .pkgset_dist="$pkgset_dist vm/$dist"; \
+2020-05-25 01:53:23.301323 +0000 build-centos: done; \
+2020-05-25 01:53:23.301334 +0000 build-centos: for repo in `echo $repos_to_update|tr ' ' '\n'|sort|uniq`; do \
+2020-05-25 01:53:23.301347 +0000 build-centos: .[ -z "$repo" ] && continue; \
+2020-05-25 01:53:23.301358 +0000 build-centos: .[ -x "$repo/../update_repo-current-testing.sh" ] || continue; \
+2020-05-25 01:53:23.301370 +0000 build-centos: .(cd $repo/.. && ./update_repo-current-testing.sh r4.1 $pkgset_dist); \
+2020-05-25 01:53:23.301377 +0000 build-centos: done
+2020-05-25 01:53:23.319482 +0000 build-centos: which: no mkmetalink in (/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/home/user/.local/bin:/home/user/bin:/home/user/builder-r4.1/qubes-src/builder-rpm/tools)
+2020-05-25 01:53:23.342201 +0000 build-centos: --> Processing repo: r4.1/current-testing/dom0/fc25...
+2020-05-25 01:53:23.452412 +0000 build-centos: --> Processing repo: r4.1/current-testing/dom0/fc29...
+2020-05-25 01:53:23.502563 +0000 build-centos: --> Processing repo: r4.1/current-testing/dom0/fc31...
+2020-05-25 01:53:23.561391 +0000 build-centos: --> Processing repo: r4.1/current-testing/dom0/fc32...
+2020-05-25 01:53:23.634522 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/centos7...
+2020-05-25 01:53:25.641432 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/centos8...
+2020-05-25 01:53:28.013663 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc26...
+2020-05-25 01:53:28.112380 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc27...
+2020-05-25 01:53:28.179382 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc28...
+2020-05-25 01:53:28.234009 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc29...
+2020-05-25 01:53:28.278575 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc30...
+2020-05-25 01:53:28.327453 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc31...
+2020-05-25 01:53:28.369791 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc32...
+2020-05-25 01:53:28.417924 +0000 build-centos: Done.
+2020-05-25 01:53:28.421388 +0000 build-centos: ~/builder-r4.1/qubes-src/linux-yum ~/builder-r4.1/qubes-src/linux-yum
+2020-05-25 01:53:28.422399 +0000 build-centos: Syncing r4.1...
+2020-05-25 01:53:29.207368 +0000 build-centos: sending incremental file list
+2020-05-25 01:53:29.387749 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r4.1/current-testing/dom0/fc31": Operation not permitted (1)
+2020-05-25 01:53:29.401172 +0000 build-centos: .d..t...... current-testing/
+2020-05-25 01:53:29.401225 +0000 build-centos: .d..t...... current-testing/dom0/
+2020-05-25 01:53:29.401239 +0000 build-centos: .d..t...... current-testing/dom0/fc25/
+2020-05-25 01:53:29.401251 +0000 build-centos: .L..t...... current-testing/dom0/fc25/comps.xml -> ../../../comps-dom0.xml
+2020-05-25 01:53:29.401261 +0000 build-centos: .d..t...... current-testing/dom0/fc25/rpm/
+2020-05-25 01:53:29.401271 +0000 build-centos: <f..t...... current-testing/dom0/fc25/rpm/.gitignore
+2020-05-25 01:53:29.401286 +0000 build-centos: .              6 100%    0.00kB/s    0:00:00  .              6 100%    0.00kB/s    0:00:00 (xfr#1, ir-chk=1263/1275)
+2020-05-25 01:53:29.401296 +0000 build-centos: .d..t...... current-testing/dom0/fc29/
+2020-05-25 01:53:29.401304 +0000 build-centos: .d..t...... current-testing/dom0/fc31/
+2020-05-25 01:53:29.401315 +0000 build-centos: .L..t...... current-testing/dom0/fc31/comps.xml -> ../../../comps-dom0.xml
+2020-05-25 01:53:29.401324 +0000 build-centos: .d..t...... current-testing/dom0/fc31/rpm/
+2020-05-25 01:53:29.401334 +0000 build-centos: <f..t...... current-testing/dom0/fc31/rpm/.gitignore
+2020-05-25 01:53:29.401348 +0000 build-centos: .              6 100%    5.86kB/s    0:00:00  .              6 100%    5.86kB/s    0:00:00 (xfr#2, ir-chk=1260/1275)
+2020-05-25 01:53:29.401357 +0000 build-centos: .d..t...... current-testing/dom0/fc32/
+2020-05-25 01:53:29.401368 +0000 build-centos: .L..t...... current-testing/dom0/fc32/comps-dom0.xml -> comps-dom0.xml
+2020-05-25 01:53:29.401377 +0000 build-centos: .d..t...... current-testing/dom0/fc32/rpm/
+2020-05-25 01:53:29.401386 +0000 build-centos: <f..t...... current-testing/dom0/fc32/rpm/.gitignore
+2020-05-25 01:53:29.401397 +0000 build-centos: .              0 100%    0.00kB/s    0:00:00 (xfr#3, ir-chk=1257/1275)
+2020-05-25 01:53:29.401406 +0000 build-centos: .d..t...... current-testing/vm/
+2020-05-25 01:53:29.401415 +0000 build-centos: .d..t...... current-testing/vm/centos7/
+2020-05-25 01:53:29.401426 +0000 build-centos: .L..t...... current-testing/vm/centos7/comps.xml -> ../../../comps-vm.xml
+2020-05-25 01:53:29.401435 +0000 build-centos: .d..t...... current-testing/vm/centos7/rpm/
+2020-05-25 01:53:29.401445 +0000 build-centos: <f..t...... current-testing/vm/centos7/rpm/.gitignore
+2020-05-25 01:53:29.401462 +0000 build-centos: .              6 100%    5.86kB/s    0:00:00  .              6 100%    5.86kB/s    0:00:00 (xfr#4, to-chk=1595/1625)
+2020-05-25 01:53:29.401472 +0000 build-centos: .d..t...... current-testing/vm/centos8/
+2020-05-25 01:53:29.401481 +0000 build-centos: .d..t...... current-testing/vm/centos8/rpm/
+2020-05-25 01:53:29.401490 +0000 build-centos: <f..t...... current-testing/vm/centos8/rpm/.gitignore
+2020-05-25 01:53:29.401501 +0000 build-centos: .              0 100%    0.00kB/s    0:00:00 (xfr#5, to-chk=666/1625)
+2020-05-25 01:53:29.401518 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/python2-dnf-plugins-qubes-hooks-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:29.401533 +0000 build-centos: .         15,112 100%   14.41MB/s    0:00:00  .         15,112 100%   14.41MB/s    0:00:00 (xfr#6, to-chk=643/1625)
+2020-05-25 01:53:29.401546 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/python3-dnf-plugins-qubes-hooks-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:29.401560 +0000 build-centos: .         15,324 100%   14.61MB/s    0:00:00  .         15,324 100%   14.61MB/s    0:00:00 (xfr#7, to-chk=639/1625)
+2020-05-25 01:53:29.401591 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/qubes-core-agent-4.1.12-1.centos8.src.rpm
+2020-05-25 01:53:29.401607 +0000 build-centos: .         32,768  18%   15.62MB/s    0:00:00  .        179,425 100%   85.56MB/s    0:00:00 (xfr#8, to-chk=601/1625)
+2020-05-25 01:53:29.401620 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/qubes-core-agent-4.1.12-1.centos8.x86_64.buildinfo
+2020-05-25 01:53:29.401634 +0000 build-centos: .          9,119 100%    2.90MB/s    0:00:00  .          9,119 100%    2.90MB/s    0:00:00 (xfr#9, to-chk=600/1625)
+2020-05-25 01:53:29.401646 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/qubes-core-agent-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:29.401660 +0000 build-centos: .         32,768  25%   10.42MB/s    0:00:00  .        129,136 100%   41.05MB/s    0:00:00 (xfr#10, to-chk=599/1625)
+2020-05-25 01:53:29.401672 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/qubes-core-agent-debuginfo-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:29.401686 +0000 build-centos: .         32,768  62%   10.42MB/s    0:00:00  .         52,232 100%   16.60MB/s    0:00:00 (xfr#11, to-chk=597/1625)
+2020-05-25 01:53:29.401699 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/qubes-core-agent-debugsource-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:29.401713 +0000 build-centos: .         27,212 100%    6.49MB/s    0:00:00  .         27,212 100%    6.49MB/s    0:00:00 (xfr#12, to-chk=595/1625)
+2020-05-25 01:53:29.401726 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/qubes-core-agent-dom0-updates-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:29.401740 +0000 build-centos: .         14,940 100%    3.56MB/s    0:00:00  .         14,940 100%    3.56MB/s    0:00:00 (xfr#13, to-chk=593/1625)
+2020-05-25 01:53:29.401753 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/qubes-core-agent-nautilus-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:29.401767 +0000 build-centos: .         15,360 100%    3.66MB/s    0:00:00  .         15,360 100%    3.66MB/s    0:00:00 (xfr#14, to-chk=591/1625)
+2020-05-25 01:53:29.401780 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/qubes-core-agent-network-manager-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:29.401794 +0000 build-centos: .         15,556 100%    2.97MB/s    0:00:00  .         15,556 100%    2.97MB/s    0:00:00 (xfr#15, to-chk=589/1625)
+2020-05-25 01:53:29.401806 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/qubes-core-agent-networking-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:29.401821 +0000 build-centos: .         24,556 100%    4.68MB/s    0:00:00  .         24,556 100%    4.68MB/s    0:00:00 (xfr#16, to-chk=587/1625)
+2020-05-25 01:53:29.401834 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/qubes-core-agent-passwordless-root-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:29.401855 +0000 build-centos: .         15,472 100%    2.95MB/s    0:00:00  .         15,472 100%    2.95MB/s    0:00:00 (xfr#17, to-chk=585/1625)
+2020-05-25 01:53:29.401868 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/qubes-core-agent-systemd-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:29.401883 +0000 build-centos: .         28,388 100%    4.51MB/s    0:00:00  .         28,388 100%    4.51MB/s    0:00:00 (xfr#18, to-chk=583/1625)
+2020-05-25 01:53:29.401895 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/qubes-core-agent-sysvinit-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:29.401909 +0000 build-centos: .         18,092 100%    2.88MB/s    0:00:00  .         18,092 100%    2.88MB/s    0:00:00 (xfr#19, to-chk=581/1625)
+2020-05-25 01:53:29.401922 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/qubes-core-agent-thunar-4.1.12-1.centos8.x86_64.rpm
+2020-05-25 01:53:29.401936 +0000 build-centos: .         14,616 100%    2.32MB/s    0:00:00  .         14,616 100%    2.32MB/s    0:00:00 (xfr#20, to-chk=579/1625)
+2020-05-25 01:53:29.467696 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r4.1/current/dom0/fc31": Operation not permitted (1)
+2020-05-25 01:53:29.467747 +0000 build-centos: .d..t...... current-testing/vm/fc26/
+2020-05-25 01:53:29.467759 +0000 build-centos: .d..t...... current-testing/vm/fc27/
+2020-05-25 01:53:29.467769 +0000 build-centos: .d..t...... current-testing/vm/fc28/
+2020-05-25 01:53:29.467779 +0000 build-centos: .d..t...... current-testing/vm/fc29/
+2020-05-25 01:53:29.467790 +0000 build-centos: .L..t...... current-testing/vm/fc29/comps.xml -> ../../../comps-vm.xml
+2020-05-25 01:53:29.467800 +0000 build-centos: .d..t...... current-testing/vm/fc29/rpm/
+2020-05-25 01:53:29.467810 +0000 build-centos: <f..t...... current-testing/vm/fc29/rpm/.gitignore
+2020-05-25 01:53:29.467825 +0000 build-centos: .              6 100%    0.08kB/s    0:00:00  .              6 100%    0.08kB/s    0:00:00 (xfr#21, to-chk=347/1625)
+2020-05-25 01:53:29.467835 +0000 build-centos: .d..t...... current-testing/vm/fc30/
+2020-05-25 01:53:29.467847 +0000 build-centos: .L..t...... current-testing/vm/fc30/comps.xml -> ../../../comps-vm.xml
+2020-05-25 01:53:29.467856 +0000 build-centos: .d..t...... current-testing/vm/fc30/rpm/
+2020-05-25 01:53:29.467871 +0000 build-centos: <f..t...... current-testing/vm/fc30/rpm/.gitignore
+2020-05-25 01:53:29.467886 +0000 build-centos: .              6 100%    0.08kB/s    0:00:00  .              6 100%    0.08kB/s    0:00:00 (xfr#22, to-chk=344/1625)
+2020-05-25 01:53:29.467895 +0000 build-centos: .d..t...... current-testing/vm/fc31/
+2020-05-25 01:53:29.467905 +0000 build-centos: <f..t...... current-testing/vm/fc31/rpm/.gitignore
+2020-05-25 01:53:29.467917 +0000 build-centos: .              0 100%    0.00kB/s    0:00:00 (xfr#23, to-chk=341/1625)
+2020-05-25 01:53:29.467926 +0000 build-centos: .d..t...... current-testing/vm/fc32/
+2020-05-25 01:53:29.467936 +0000 build-centos: .L..t...... current-testing/vm/fc32/comps-vm.xml -> comps-vm.xml
+2020-05-25 01:53:29.467946 +0000 build-centos: .d..t...... current-testing/vm/fc32/rpm/
+2020-05-25 01:53:29.467956 +0000 build-centos: <f..t...... current-testing/vm/fc32/rpm/.gitignore
+2020-05-25 01:53:29.467967 +0000 build-centos: .              0 100%    0.00kB/s    0:00:00 (xfr#24, to-chk=338/1625)
+2020-05-25 01:53:29.467975 +0000 build-centos: .d..t...... current/
+2020-05-25 01:53:29.467984 +0000 build-centos: .d..t...... current/dom0/
+2020-05-25 01:53:29.467992 +0000 build-centos: .d..t...... current/dom0/fc25/
+2020-05-25 01:53:29.468003 +0000 build-centos: .L..t...... current/dom0/fc25/comps.xml -> ../../../comps-dom0.xml
+2020-05-25 01:53:29.468012 +0000 build-centos: .d..t...... current/dom0/fc25/rpm/
+2020-05-25 01:53:29.468022 +0000 build-centos: <f..t...... current/dom0/fc25/rpm/.gitignore
+2020-05-25 01:53:29.468036 +0000 build-centos: .              6 100%    0.08kB/s    0:00:00  .              6 100%    0.08kB/s    0:00:00 (xfr#25, to-chk=329/1625)
+2020-05-25 01:53:29.468045 +0000 build-centos: .d..t...... current/dom0/fc29/
+2020-05-25 01:53:29.468054 +0000 build-centos: .d..t...... current/dom0/fc31/
+2020-05-25 01:53:29.468065 +0000 build-centos: .L..t...... current/dom0/fc31/comps.xml -> ../../../comps-dom0.xml
+2020-05-25 01:53:29.468074 +0000 build-centos: .d..t...... current/dom0/fc31/rpm/
+2020-05-25 01:53:29.468084 +0000 build-centos: <f..t...... current/dom0/fc31/rpm/.gitignore
+2020-05-25 01:53:29.468098 +0000 build-centos: .              6 100%    0.08kB/s    0:00:00  .              6 100%    0.08kB/s    0:00:00 (xfr#26, to-chk=326/1625)
+2020-05-25 01:53:29.468107 +0000 build-centos: .d..t...... current/dom0/fc32/
+2020-05-25 01:53:29.468117 +0000 build-centos: .L..t...... current/dom0/fc32/comps-dom0.xml -> comps-dom0.xml
+2020-05-25 01:53:29.468126 +0000 build-centos: .d..t...... current/dom0/fc32/rpm/
+2020-05-25 01:53:29.468136 +0000 build-centos: <f..t...... current/dom0/fc32/rpm/.gitignore
+2020-05-25 01:53:29.468199 +0000 build-centos: .              0 100%    0.00kB/s    0:00:00 (xfr#27, to-chk=323/1625)
+2020-05-25 01:53:29.468211 +0000 build-centos: .d..t...... current/vm/
+2020-05-25 01:53:29.468220 +0000 build-centos: .d..t...... current/vm/centos7/
+2020-05-25 01:53:29.468231 +0000 build-centos: .L..t...... current/vm/centos7/comps.xml -> ../../../comps-vm.xml
+2020-05-25 01:53:29.468241 +0000 build-centos: .d..t...... current/vm/centos7/rpm/
+2020-05-25 01:53:29.468251 +0000 build-centos: <f..t...... current/vm/centos7/rpm/.gitignore
+2020-05-25 01:53:29.468265 +0000 build-centos: .              6 100%    0.08kB/s    0:00:00  .              6 100%    0.08kB/s    0:00:00 (xfr#28, to-chk=314/1625)
+2020-05-25 01:53:29.468274 +0000 build-centos: .d..t...... current/vm/centos8/
+2020-05-25 01:53:29.546009 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r4.1/security-testing/dom0/fc31": Operation not permitted (1)
+2020-05-25 01:53:29.546059 +0000 build-centos: .d..t...... current/vm/centos8/rpm/
+2020-05-25 01:53:29.546252 +0000 build-centos: <f..t...... current/vm/centos8/rpm/.gitignore
+2020-05-25 01:53:29.546278 +0000 build-centos: .              0 100%    0.00kB/s    0:00:00 (xfr#29, to-chk=106/1625)
+2020-05-25 01:53:29.546288 +0000 build-centos: .d..t...... current/vm/fc29/
+2020-05-25 01:53:29.546300 +0000 build-centos: .L..t...... current/vm/fc29/comps.xml -> ../../../comps-vm.xml
+2020-05-25 01:53:29.546309 +0000 build-centos: .d..t...... current/vm/fc29/rpm/
+2020-05-25 01:53:29.546318 +0000 build-centos: <f..t...... current/vm/fc29/rpm/.gitignore
+2020-05-25 01:53:29.546332 +0000 build-centos: .              6 100%    0.04kB/s    0:00:00  .              6 100%    0.04kB/s    0:00:00 (xfr#30, to-chk=44/1625)
+2020-05-25 01:53:29.546346 +0000 build-centos: .d..t...... current/vm/fc30/
+2020-05-25 01:53:29.546357 +0000 build-centos: .L..t...... current/vm/fc30/comps.xml -> ../../../comps-vm.xml
+2020-05-25 01:53:29.546365 +0000 build-centos: .d..t...... current/vm/fc30/rpm/
+2020-05-25 01:53:29.546374 +0000 build-centos: <f..t...... current/vm/fc30/rpm/.gitignore
+2020-05-25 01:53:29.546388 +0000 build-centos: .              6 100%    0.04kB/s    0:00:00  .              6 100%    0.04kB/s    0:00:00 (xfr#31, to-chk=41/1625)
+2020-05-25 01:53:29.546396 +0000 build-centos: .d..t...... current/vm/fc31/
+2020-05-25 01:53:29.546405 +0000 build-centos: <f..t...... current/vm/fc31/rpm/.gitignore
+2020-05-25 01:53:29.546416 +0000 build-centos: .              0 100%    0.00kB/s    0:00:00 (xfr#32, to-chk=38/1625)
+2020-05-25 01:53:29.546425 +0000 build-centos: .d..t...... current/vm/fc32/
+2020-05-25 01:53:29.546435 +0000 build-centos: .L..t...... current/vm/fc32/comps-vm.xml -> comps-vm.xml
+2020-05-25 01:53:29.546443 +0000 build-centos: .d..t...... current/vm/fc32/rpm/
+2020-05-25 01:53:29.546452 +0000 build-centos: <f..t...... current/vm/fc32/rpm/.gitignore
+2020-05-25 01:53:29.546463 +0000 build-centos: .              0 100%    0.00kB/s    0:00:00 (xfr#33, to-chk=35/1625)
+2020-05-25 01:53:29.546472 +0000 build-centos: .d..t...... security-testing/
+2020-05-25 01:53:29.546480 +0000 build-centos: .d..t...... security-testing/dom0/
+2020-05-25 01:53:29.546489 +0000 build-centos: .d..t...... security-testing/dom0/fc25/
+2020-05-25 01:53:29.546499 +0000 build-centos: .d..t...... security-testing/dom0/fc25/rpm/
+2020-05-25 01:53:29.546657 +0000 build-centos: <f..t...... security-testing/dom0/fc25/rpm/.gitignore
+2020-05-25 01:53:29.546683 +0000 build-centos: .              6 100%    0.04kB/s    0:00:00  .              6 100%    0.04kB/s    0:00:00 (xfr#34, to-chk=28/1625)
+2020-05-25 01:53:29.546698 +0000 build-centos: .d..t...... security-testing/dom0/fc31/
+2020-05-25 01:53:29.546708 +0000 build-centos: .d..t...... security-testing/dom0/fc31/rpm/
+2020-05-25 01:53:29.546718 +0000 build-centos: <f..t...... security-testing/dom0/fc31/rpm/.gitignore
+2020-05-25 01:53:29.546732 +0000 build-centos: .              6 100%    0.04kB/s    0:00:00  .              6 100%    0.04kB/s    0:00:00 (xfr#35, to-chk=26/1625)
+2020-05-25 01:53:29.546755 +0000 build-centos: .d..t...... security-testing/dom0/fc32/
+2020-05-25 01:53:29.546767 +0000 build-centos: .L..t...... security-testing/dom0/fc32/comps-dom0.xml -> comps-dom0.xml
+2020-05-25 01:53:29.546777 +0000 build-centos: .d..t...... security-testing/dom0/fc32/rpm/
+2020-05-25 01:53:29.546787 +0000 build-centos: <f..t...... security-testing/dom0/fc32/rpm/.gitignore
+2020-05-25 01:53:29.546798 +0000 build-centos: .              0 100%    0.00kB/s    0:00:00 (xfr#36, to-chk=23/1625)
+2020-05-25 01:53:29.546807 +0000 build-centos: .d..t...... security-testing/vm/
+2020-05-25 01:53:29.546816 +0000 build-centos: .d..t...... security-testing/vm/centos7/
+2020-05-25 01:53:29.546830 +0000 build-centos: .L..t...... security-testing/vm/centos7/comps.xml -> ../../../comps-vm.xml
+2020-05-25 01:53:29.546840 +0000 build-centos: .d..t...... security-testing/vm/centos7/rpm/
+2020-05-25 01:53:29.546883 +0000 build-centos: <f..t...... security-testing/vm/centos7/rpm/.gitignore
+2020-05-25 01:53:29.546904 +0000 build-centos: .              6 100%    0.04kB/s    0:00:00  .              6 100%    0.04kB/s    0:00:00 (xfr#37, to-chk=14/1625)
+2020-05-25 01:53:29.546915 +0000 build-centos: <f..t...... security-testing/vm/centos8/rpm/.gitignore
+2020-05-25 01:53:29.546926 +0000 build-centos: .              0 100%    0.00kB/s    0:00:00 (xfr#38, to-chk=11/1625)
+2020-05-25 01:53:29.546935 +0000 build-centos: .d..t...... security-testing/vm/fc29/
+2020-05-25 01:53:29.546947 +0000 build-centos: .d..t...... security-testing/vm/fc29/rpm/
+2020-05-25 01:53:29.546957 +0000 build-centos: <f..t...... security-testing/vm/fc29/rpm/.gitignore
+2020-05-25 01:53:29.546971 +0000 build-centos: .              6 100%    0.04kB/s    0:00:00  .              6 100%    0.04kB/s    0:00:00 (xfr#39, to-chk=9/1625)
+2020-05-25 01:53:29.546980 +0000 build-centos: .d..t...... security-testing/vm/fc30/
+2020-05-25 01:53:29.546991 +0000 build-centos: .L..t...... security-testing/vm/fc30/comps.xml -> ../../../comps-vm.xml
+2020-05-25 01:53:29.547000 +0000 build-centos: .d..t...... security-testing/vm/fc30/rpm/
+2020-05-25 01:53:29.547015 +0000 build-centos: <f..t...... security-testing/vm/fc30/rpm/.gitignore
+2020-05-25 01:53:29.547029 +0000 build-centos: .              6 100%    0.04kB/s    0:00:00  .              6 100%    0.04kB/s    0:00:00 (xfr#40, to-chk=6/1625)
+2020-05-25 01:53:29.547039 +0000 build-centos: <f..t...... security-testing/vm/fc31/rpm/.gitignore
+2020-05-25 01:53:29.547050 +0000 build-centos: .              0 100%    0.00kB/s    0:00:00 (xfr#41, to-chk=3/1625)
+2020-05-25 01:53:29.547059 +0000 build-centos: .d..t...... security-testing/vm/fc32/
+2020-05-25 01:53:29.547070 +0000 build-centos: .L..t...... security-testing/vm/fc32/comps-vm.xml -> comps-vm.xml
+2020-05-25 01:53:29.547079 +0000 build-centos: .d..t...... security-testing/vm/fc32/rpm/
+2020-05-25 01:53:29.547089 +0000 build-centos: <f..t...... security-testing/vm/fc32/rpm/.gitignore
+2020-05-25 01:53:29.547100 +0000 build-centos: .              0 100%    0.00kB/s    0:00:00 (xfr#42, to-chk=0/1625)
+2020-05-25 01:53:30.445405 +0000 build-centos: rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1189) [sender=3.1.3]
+2020-05-25 01:53:31.078682 +0000 build-centos: --> Processing repo: r4.1/current/dom0/fc25...
+2020-05-25 01:53:31.459282 +0000 build-centos: 01:53:32: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:31.464883 +0000 build-centos: 01:53:32: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:31.470398 +0000 build-centos: 01:53:32: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:31.479676 +0000 build-centos: 01:53:32: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:31.487776 +0000 build-centos: 01:53:32: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:32.504789 +0000 build-centos: --> Processing repo: r4.1/current/dom0/fc29...
+2020-05-25 01:53:39.435947 +0000 build-centos: 01:53:40: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:39.450815 +0000 build-centos: 01:53:40: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:39.463817 +0000 build-centos: 01:53:40: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:39.509934 +0000 build-centos: 01:53:40: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:39.520546 +0000 build-centos: 01:53:40: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:40.589319 +0000 build-centos: --> Processing repo: r4.1/current/dom0/fc31...
+2020-05-25 01:53:46.680109 +0000 build-centos: 01:53:47: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:46.696979 +0000 build-centos: 01:53:47: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:46.707088 +0000 build-centos: 01:53:47: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:46.742963 +0000 build-centos: 01:53:47: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:46.760857 +0000 build-centos: 01:53:47: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:47.812941 +0000 build-centos: --> Processing repo: r4.1/current/dom0/fc32...
+2020-05-25 01:53:47.925397 +0000 build-centos: 01:53:48: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:47.930499 +0000 build-centos: 01:53:48: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:47.945058 +0000 build-centos: 01:53:48: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:47.945106 +0000 build-centos: 01:53:48: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:47.948469 +0000 build-centos: 01:53:48: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:48.910750 +0000 build-centos: --> Processing repo: r4.1/current/vm/centos7...
+2020-05-25 01:53:49.329488 +0000 build-centos: 01:53:50: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:49.335466 +0000 build-centos: 01:53:50: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:49.342102 +0000 build-centos: 01:53:50: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:49.350898 +0000 build-centos: 01:53:50: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:49.359404 +0000 build-centos: 01:53:50: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:50.327602 +0000 build-centos: --> Processing repo: r4.1/current/vm/centos8...
+2020-05-25 01:53:50.595336 +0000 build-centos: 01:53:51: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:50.601268 +0000 build-centos: 01:53:51: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:50.606538 +0000 build-centos: 01:53:51: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:50.615200 +0000 build-centos: 01:53:51: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:50.623313 +0000 build-centos: 01:53:51: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:51.616889 +0000 build-centos: --> Processing repo: r4.1/current/vm/fc25...
+2020-05-25 01:53:51.729014 +0000 build-centos: 01:53:52: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:51.734785 +0000 build-centos: 01:53:52: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:51.740101 +0000 build-centos: 01:53:52: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:51.747568 +0000 build-centos: 01:53:52: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:51.755559 +0000 build-centos: 01:53:52: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:52.721846 +0000 build-centos: --> Processing repo: r4.1/current/vm/fc26...
+2020-05-25 01:53:52.876495 +0000 build-centos: 01:53:53: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:52.883270 +0000 build-centos: 01:53:53: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:52.887494 +0000 build-centos: 01:53:53: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:52.894753 +0000 build-centos: 01:53:53: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:52.903230 +0000 build-centos: 01:53:53: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:53.866794 +0000 build-centos: --> Processing repo: r4.1/current/vm/fc27...
+2020-05-25 01:53:53.976510 +0000 build-centos: 01:53:55: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:53.981523 +0000 build-centos: 01:53:55: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:53.987724 +0000 build-centos: 01:53:55: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:53.996253 +0000 build-centos: 01:53:55: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:54.002864 +0000 build-centos: 01:53:55: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:54.962598 +0000 build-centos: --> Processing repo: r4.1/current/vm/fc28...
+2020-05-25 01:53:55.071685 +0000 build-centos: 01:53:56: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:55.076878 +0000 build-centos: 01:53:56: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:55.081737 +0000 build-centos: 01:53:56: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:55.090161 +0000 build-centos: 01:53:56: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:55.097678 +0000 build-centos: 01:53:56: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:56.100682 +0000 build-centos: --> Processing repo: r4.1/current/vm/fc29...
+2020-05-25 01:53:56.674738 +0000 build-centos: 01:53:57: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:56.680225 +0000 build-centos: 01:53:57: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:56.686252 +0000 build-centos: 01:53:57: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:56.695369 +0000 build-centos: 01:53:57: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:56.703059 +0000 build-centos: 01:53:57: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:57.645233 +0000 build-centos: --> Processing repo: r4.1/current/vm/fc30...
+2020-05-25 01:53:58.282920 +0000 build-centos: 01:53:59: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:58.288659 +0000 build-centos: 01:53:59: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:58.294640 +0000 build-centos: 01:53:59: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:58.304494 +0000 build-centos: 01:53:59: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:58.314276 +0000 build-centos: 01:53:59: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:59.284206 +0000 build-centos: --> Processing repo: r4.1/current/vm/fc31...
+2020-05-25 01:53:59.834452 +0000 build-centos: 01:54:00: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:59.840237 +0000 build-centos: 01:54:00: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:59.846527 +0000 build-centos: 01:54:00: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:59.856254 +0000 build-centos: 01:54:00: posix_spawn avoided (fd close requested) 
+2020-05-25 01:53:59.865183 +0000 build-centos: 01:54:00: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:00.828263 +0000 build-centos: --> Processing repo: r4.1/current/vm/fc32...
+2020-05-25 01:54:01.127817 +0000 build-centos: 01:54:02: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:01.133805 +0000 build-centos: 01:54:02: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:01.138660 +0000 build-centos: 01:54:02: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:01.146631 +0000 build-centos: 01:54:02: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:01.156032 +0000 build-centos: 01:54:02: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:02.158833 +0000 build-centos: Done.
+2020-05-25 01:54:02.256810 +0000 build-centos: --> Processing repo: r4.1/current-testing/dom0/fc25...
+2020-05-25 01:54:02.643986 +0000 build-centos: 01:54:03: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:02.649953 +0000 build-centos: 01:54:03: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:02.654864 +0000 build-centos: 01:54:03: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:02.663969 +0000 build-centos: 01:54:03: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:02.672406 +0000 build-centos: 01:54:03: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:03.644841 +0000 build-centos: --> Processing repo: r4.1/current-testing/dom0/fc29...
+2020-05-25 01:54:24.677830 +0000 build-centos: 01:54:25: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:24.694328 +0000 build-centos: 01:54:25: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:24.710081 +0000 build-centos: 01:54:25: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:24.793744 +0000 build-centos: 01:54:25: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:24.813686 +0000 build-centos: 01:54:25: posix_spawn avoided (fd close requested) 
+2020-05-25 01:54:25.912340 +0000 build-centos: --> Processing repo: r4.1/current-testing/dom0/fc31...
+2020-05-25 01:55:03.531749 +0000 build-centos: 01:55:04: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:03.560677 +0000 build-centos: 01:55:04: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:03.589940 +0000 build-centos: 01:55:04: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:03.725268 +0000 build-centos: 01:55:04: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:03.757204 +0000 build-centos: 01:55:04: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:04.920711 +0000 build-centos: --> Processing repo: r4.1/current-testing/dom0/fc32...
+2020-05-25 01:55:11.983022 +0000 build-centos: 01:55:13: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:11.994873 +0000 build-centos: 01:55:13: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:12.009335 +0000 build-centos: 01:55:13: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:12.039202 +0000 build-centos: 01:55:13: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:12.058865 +0000 build-centos: 01:55:13: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:13.134890 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/centos7...
+2020-05-25 01:55:15.341323 +0000 build-centos: 01:55:16: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:15.347830 +0000 build-centos: 01:55:16: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:15.354179 +0000 build-centos: 01:55:16: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:15.367888 +0000 build-centos: 01:55:16: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:15.400446 +0000 build-centos: 01:55:16: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:16.420842 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/centos8...
+2020-05-25 01:55:17.705430 +0000 build-centos: 01:55:18: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:17.712557 +0000 build-centos: 01:55:18: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:17.716630 +0000 build-centos: 01:55:18: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:17.727698 +0000 build-centos: 01:55:18: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:17.735843 +0000 build-centos: 01:55:18: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:18.697963 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc25...
+2020-05-25 01:55:18.815743 +0000 build-centos: 01:55:19: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:18.820602 +0000 build-centos: 01:55:19: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:18.827143 +0000 build-centos: 01:55:19: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:18.835564 +0000 build-centos: 01:55:19: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:18.843808 +0000 build-centos: 01:55:19: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:19.839448 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc26...
+2020-05-25 01:55:20.018843 +0000 build-centos: 01:55:21: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:20.024459 +0000 build-centos: 01:55:21: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:20.029393 +0000 build-centos: 01:55:21: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:20.042854 +0000 build-centos: 01:55:21: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:20.047993 +0000 build-centos: 01:55:21: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:21.011840 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc27...
+2020-05-25 01:55:21.130110 +0000 build-centos: 01:55:22: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:21.135584 +0000 build-centos: 01:55:22: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:21.147000 +0000 build-centos: 01:55:22: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:21.158553 +0000 build-centos: 01:55:22: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:21.165018 +0000 build-centos: 01:55:22: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:22.137705 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc28...
+2020-05-25 01:55:22.250976 +0000 build-centos: 01:55:23: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:22.256565 +0000 build-centos: 01:55:23: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:22.265600 +0000 build-centos: 01:55:23: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:22.274122 +0000 build-centos: 01:55:23: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:22.282286 +0000 build-centos: 01:55:23: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:23.253660 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc29...
+2020-05-25 01:55:26.441862 +0000 build-centos: 01:55:27: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:26.449560 +0000 build-centos: 01:55:27: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:26.455169 +0000 build-centos: 01:55:27: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:26.471281 +0000 build-centos: 01:55:27: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:26.480923 +0000 build-centos: 01:55:27: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:27.513088 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc30...
+2020-05-25 01:55:30.043834 +0000 build-centos: 01:55:31: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:30.050241 +0000 build-centos: 01:55:31: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:30.055359 +0000 build-centos: 01:55:31: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:30.069884 +0000 build-centos: 01:55:31: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:30.078816 +0000 build-centos: 01:55:31: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:31.060460 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc31...
+2020-05-25 01:55:33.054840 +0000 build-centos: 01:55:34: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:33.062567 +0000 build-centos: 01:55:34: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:33.069049 +0000 build-centos: 01:55:34: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:33.087087 +0000 build-centos: 01:55:34: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:33.096078 +0000 build-centos: 01:55:34: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:34.100831 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc32...
+2020-05-25 01:55:35.092403 +0000 build-centos: 01:55:36: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:35.099445 +0000 build-centos: 01:55:36: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:35.104464 +0000 build-centos: 01:55:36: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:35.116623 +0000 build-centos: 01:55:36: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:35.125001 +0000 build-centos: 01:55:36: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:36.109326 +0000 build-centos: Done.
+2020-05-25 01:55:36.258901 +0000 build-centos: --> Processing repo: r4.1/security-testing/dom0/fc21...
+2020-05-25 01:55:36.384830 +0000 build-centos: 01:55:37: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:36.390717 +0000 build-centos: 01:55:37: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:36.396443 +0000 build-centos: 01:55:37: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:36.404507 +0000 build-centos: 01:55:37: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:36.412396 +0000 build-centos: 01:55:37: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:37.380317 +0000 build-centos: --> Processing repo: r4.1/security-testing/dom0/fc25...
+2020-05-25 01:55:37.494450 +0000 build-centos: 01:55:38: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:37.499668 +0000 build-centos: 01:55:38: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:37.505102 +0000 build-centos: 01:55:38: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:37.513121 +0000 build-centos: 01:55:38: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:37.520932 +0000 build-centos: 01:55:38: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:38.481961 +0000 build-centos: --> Processing repo: r4.1/security-testing/dom0/fc29...
+2020-05-25 01:55:38.605953 +0000 build-centos: 01:55:39: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:38.608280 +0000 build-centos: 01:55:39: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:38.614068 +0000 build-centos: 01:55:39: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:38.622543 +0000 build-centos: 01:55:39: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:38.630423 +0000 build-centos: 01:55:39: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:39.675486 +0000 build-centos: --> Processing repo: r4.1/security-testing/dom0/fc31...
+2020-05-25 01:55:39.789649 +0000 build-centos: 01:55:40: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:39.795168 +0000 build-centos: 01:55:40: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:39.805960 +0000 build-centos: 01:55:40: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:39.809941 +0000 build-centos: 01:55:40: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:39.817891 +0000 build-centos: 01:55:40: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:40.866273 +0000 build-centos: --> Processing repo: r4.1/security-testing/dom0/fc32...
+2020-05-25 01:55:40.984783 +0000 build-centos: 01:55:42: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:40.992666 +0000 build-centos: 01:55:42: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:40.996498 +0000 build-centos: 01:55:42: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:41.003731 +0000 build-centos: 01:55:42: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:41.011504 +0000 build-centos: 01:55:42: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:41.970360 +0000 build-centos: --> Processing repo: r4.1/security-testing/vm/centos7...
+2020-05-25 01:55:42.081343 +0000 build-centos: 01:55:43: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:42.086960 +0000 build-centos: 01:55:43: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:42.092327 +0000 build-centos: 01:55:43: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:42.102138 +0000 build-centos: 01:55:43: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:42.109500 +0000 build-centos: 01:55:43: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:43.049434 +0000 build-centos: --> Processing repo: r4.1/security-testing/vm/centos8...
+2020-05-25 01:55:43.160752 +0000 build-centos: 01:55:44: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:43.165998 +0000 build-centos: 01:55:44: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:43.171258 +0000 build-centos: 01:55:44: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:43.179124 +0000 build-centos: 01:55:44: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:43.186631 +0000 build-centos: 01:55:44: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:44.181608 +0000 build-centos: --> Processing repo: r4.1/security-testing/vm/fc26...
+2020-05-25 01:55:44.294304 +0000 build-centos: 01:55:45: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:44.299490 +0000 build-centos: 01:55:45: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:44.304990 +0000 build-centos: 01:55:45: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:44.313587 +0000 build-centos: 01:55:45: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:44.323919 +0000 build-centos: 01:55:45: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:45.310572 +0000 build-centos: --> Processing repo: r4.1/security-testing/vm/fc27...
+2020-05-25 01:55:45.420018 +0000 build-centos: 01:55:46: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:45.425177 +0000 build-centos: 01:55:46: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:45.430735 +0000 build-centos: 01:55:46: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:45.438669 +0000 build-centos: 01:55:46: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:45.445896 +0000 build-centos: 01:55:46: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:46.421497 +0000 build-centos: --> Processing repo: r4.1/security-testing/vm/fc28...
+2020-05-25 01:55:46.534930 +0000 build-centos: 01:55:47: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:46.540413 +0000 build-centos: 01:55:47: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:46.545333 +0000 build-centos: 01:55:47: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:46.553282 +0000 build-centos: 01:55:47: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:46.560455 +0000 build-centos: 01:55:47: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:47.504125 +0000 build-centos: --> Processing repo: r4.1/security-testing/vm/fc29...
+2020-05-25 01:55:47.616487 +0000 build-centos: 01:55:48: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:47.621436 +0000 build-centos: 01:55:48: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:47.626650 +0000 build-centos: 01:55:48: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:47.633978 +0000 build-centos: 01:55:48: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:47.641663 +0000 build-centos: 01:55:48: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:48.623876 +0000 build-centos: --> Processing repo: r4.1/security-testing/vm/fc30...
+2020-05-25 01:55:48.737884 +0000 build-centos: 01:55:49: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:48.743031 +0000 build-centos: 01:55:49: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:48.748335 +0000 build-centos: 01:55:49: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:48.756522 +0000 build-centos: 01:55:49: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:48.764351 +0000 build-centos: 01:55:49: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:49.802610 +0000 build-centos: --> Processing repo: r4.1/security-testing/vm/fc31...
+2020-05-25 01:55:49.912636 +0000 build-centos: 01:55:50: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:49.917737 +0000 build-centos: 01:55:50: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:49.922498 +0000 build-centos: 01:55:50: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:49.930582 +0000 build-centos: 01:55:50: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:49.938469 +0000 build-centos: 01:55:50: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:50.931013 +0000 build-centos: --> Processing repo: r4.1/security-testing/vm/fc32...
+2020-05-25 01:55:51.042625 +0000 build-centos: 01:55:52: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:51.047910 +0000 build-centos: 01:55:52: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:51.053742 +0000 build-centos: 01:55:52: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:51.061057 +0000 build-centos: 01:55:52: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:51.069199 +0000 build-centos: 01:55:52: posix_spawn avoided (fd close requested) 
+2020-05-25 01:55:52.038950 +0000 build-centos: Done.
+2020-05-25 01:55:52.041454 +0000 build-centos: ~/builder-r4.1/qubes-src/linux-yum
+2020-05-25 01:55:52.041500 +0000 build-centos: Makefile:778: update target 'update-repo-current-testing' due to: internal-update-repo-current-testing.vm.centos8 post-update-repo-current-testing
+2020-05-25 01:55:52.041511 +0000 build-centos: true
+2020-05-25 01:55:52.041518 +0000 build-centos: > done
+2020-05-25 01:55:52.041529 +0000 > closing log
