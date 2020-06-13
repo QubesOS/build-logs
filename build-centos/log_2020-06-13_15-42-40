@@ -1,0 +1,802 @@
+2020-06-13 15:42:40.603319 +0000 > starting log
+2020-06-13 15:42:40.603656 +0000 build-centos: > starting build with log
+2020-06-13 15:42:40.603687 +0000 build-centos: >> make args: DISTS_VM= centos8 DIST_DOM0= BUILD_LOGS_URL= vmm-xen-vm-centos8=https://github.com/QubesOS/build-logs/tree/master/build-centos/log_2020-06-13_15-26-35 GIT_URL_vmm_xen=https://github.com/QubesOS/qubes-vmm-xen sign-all update-repo-current-testing
+2020-06-13 15:42:40.603697 +0000 build-centos: >> MAKEFLAGS=
+2020-06-13 15:42:40.603706 +0000 build-centos: >> COMPONENTS=vmm-xen
+2020-06-13 15:42:40.603714 +0000 build-centos: >> DISTS_VM=
+2020-06-13 15:42:40.603722 +0000 build-centos: >> DIST_DOM0=
+2020-06-13 15:42:40.603732 +0000 build-centos: >> qubes-builder 36d49eb3532238967b94742ee576d4c567b5e8a7
+2020-06-13 15:42:40.603744 +0000 build-centos: >> qubes-builder/qubes-src/vmm-xen 9783e07f8ac9d660703a744763890960c214ab3c
+2020-06-13 15:42:40.603752 +0000 build-centos: !! gc.tar.gz
+2020-06-13 15:42:40.603760 +0000 build-centos: !! gmp-4.3.2.tar.bz2
+2020-06-13 15:42:40.603768 +0000 build-centos: !! gmp-4.3.2.tar.bz2.sig
+2020-06-13 15:42:40.603776 +0000 build-centos: !! grub-0.97.tar.gz
+2020-06-13 15:42:40.603784 +0000 build-centos: !! grub-0.97.tar.gz.sig
+2020-06-13 15:42:40.603792 +0000 build-centos: !! lwip-1.3.0.tar.gz
+2020-06-13 15:42:40.603800 +0000 build-centos: !! lwip-1.3.0.tar.gz.sig
+2020-06-13 15:42:40.603809 +0000 build-centos: !! newlib-1.16.0.tar.gz
+2020-06-13 15:42:40.603817 +0000 build-centos: !! ocaml-3.11.0.tar.gz
+2020-06-13 15:42:40.603825 +0000 build-centos: !! pciutils-2.2.9.tar.bz2
+2020-06-13 15:42:40.603835 +0000 build-centos: !! pkgs/vm-centos8/python3-xen-4.13.0-2.centos8.x86_64.rpm
+2020-06-13 15:42:40.603846 +0000 build-centos: !! pkgs/vm-centos8/python3-xen-4.13.0-3.centos8.x86_64.rpm
+2020-06-13 15:42:40.603856 +0000 build-centos: !! pkgs/vm-centos8/python3-xen-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:42:40.603867 +0000 build-centos: !! pkgs/vm-centos8/python3-xen-debuginfo-4.13.0-2.centos8.x86_64.rpm
+2020-06-13 15:42:40.603878 +0000 build-centos: !! pkgs/vm-centos8/python3-xen-debuginfo-4.13.0-3.centos8.x86_64.rpm
+2020-06-13 15:42:40.603889 +0000 build-centos: !! pkgs/vm-centos8/python3-xen-debuginfo-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:42:40.603920 +0000 build-centos: !! pkgs/vm-centos8/xen-4.13.0-2.centos8.src.rpm
+2020-06-13 15:42:40.603933 +0000 build-centos: !! pkgs/vm-centos8/xen-4.13.0-2.centos8.x86_64.buildinfo
+2020-06-13 15:42:40.603943 +0000 build-centos: !! pkgs/vm-centos8/xen-4.13.0-2.centos8.x86_64.rpm
+2020-06-13 15:42:40.603953 +0000 build-centos: !! pkgs/vm-centos8/xen-4.13.0-3.centos8.src.rpm
+2020-06-13 15:42:40.603963 +0000 build-centos: !! pkgs/vm-centos8/xen-4.13.0-3.centos8.x86_64.buildinfo
+2020-06-13 15:42:40.603973 +0000 build-centos: !! pkgs/vm-centos8/xen-4.13.0-3.centos8.x86_64.rpm
+2020-06-13 15:42:40.603982 +0000 build-centos: !! pkgs/vm-centos8/xen-4.13.1-4.centos8.src.rpm
+2020-06-13 15:42:40.603992 +0000 build-centos: !! pkgs/vm-centos8/xen-4.13.1-4.centos8.x86_64.buildinfo
+2020-06-13 15:42:40.604002 +0000 build-centos: !! pkgs/vm-centos8/xen-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:42:40.604012 +0000 build-centos: !! pkgs/vm-centos8/xen-debuginfo-4.13.0-2.centos8.x86_64.rpm
+2020-06-13 15:42:40.604023 +0000 build-centos: !! pkgs/vm-centos8/xen-debuginfo-4.13.0-3.centos8.x86_64.rpm
+2020-06-13 15:42:40.604033 +0000 build-centos: !! pkgs/vm-centos8/xen-debuginfo-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:42:40.604044 +0000 build-centos: !! pkgs/vm-centos8/xen-debugsource-4.13.0-2.centos8.x86_64.rpm
+2020-06-13 15:42:40.604054 +0000 build-centos: !! pkgs/vm-centos8/xen-debugsource-4.13.0-3.centos8.x86_64.rpm
+2020-06-13 15:42:40.604064 +0000 build-centos: !! pkgs/vm-centos8/xen-debugsource-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:42:40.604075 +0000 build-centos: !! pkgs/vm-centos8/xen-devel-4.13.0-2.centos8.x86_64.rpm
+2020-06-13 15:42:40.604085 +0000 build-centos: !! pkgs/vm-centos8/xen-devel-4.13.0-3.centos8.x86_64.rpm
+2020-06-13 15:42:40.604095 +0000 build-centos: !! pkgs/vm-centos8/xen-devel-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:42:40.604112 +0000 build-centos: !! pkgs/vm-centos8/xen-hypervisor-4.13.0-2.centos8.x86_64.rpm
+2020-06-13 15:42:40.604124 +0000 build-centos: !! pkgs/vm-centos8/xen-hypervisor-4.13.0-3.centos8.x86_64.rpm
+2020-06-13 15:42:40.604134 +0000 build-centos: !! pkgs/vm-centos8/xen-hypervisor-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:42:40.604144 +0000 build-centos: !! pkgs/vm-centos8/xen-libs-4.13.0-2.centos8.x86_64.rpm
+2020-06-13 15:42:40.604154 +0000 build-centos: !! pkgs/vm-centos8/xen-libs-4.13.0-3.centos8.x86_64.rpm
+2020-06-13 15:42:40.604164 +0000 build-centos: !! pkgs/vm-centos8/xen-libs-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:42:40.604175 +0000 build-centos: !! pkgs/vm-centos8/xen-libs-debuginfo-4.13.0-2.centos8.x86_64.rpm
+2020-06-13 15:42:40.604186 +0000 build-centos: !! pkgs/vm-centos8/xen-libs-debuginfo-4.13.0-3.centos8.x86_64.rpm
+2020-06-13 15:42:40.604197 +0000 build-centos: !! pkgs/vm-centos8/xen-libs-debuginfo-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:42:40.604207 +0000 build-centos: !! pkgs/vm-centos8/xen-licenses-4.13.0-2.centos8.x86_64.rpm
+2020-06-13 15:42:40.604217 +0000 build-centos: !! pkgs/vm-centos8/xen-licenses-4.13.0-3.centos8.x86_64.rpm
+2020-06-13 15:42:40.604228 +0000 build-centos: !! pkgs/vm-centos8/xen-licenses-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:42:40.604238 +0000 build-centos: !! pkgs/vm-centos8/xen-qemu-tools-4.13.0-2.centos8.x86_64.rpm
+2020-06-13 15:42:40.604249 +0000 build-centos: !! pkgs/vm-centos8/xen-qemu-tools-4.13.0-3.centos8.x86_64.rpm
+2020-06-13 15:42:40.604259 +0000 build-centos: !! pkgs/vm-centos8/xen-qemu-tools-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:42:40.604269 +0000 build-centos: !! pkgs/vm-centos8/xen-qubes-vm-4.13.0-2.centos8.x86_64.rpm
+2020-06-13 15:42:40.604280 +0000 build-centos: !! pkgs/vm-centos8/xen-qubes-vm-4.13.0-3.centos8.x86_64.rpm
+2020-06-13 15:42:40.604290 +0000 build-centos: !! pkgs/vm-centos8/xen-qubes-vm-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:42:40.604301 +0000 build-centos: !! pkgs/vm-centos8/xen-qubes-vm-debuginfo-4.13.0-2.centos8.x86_64.rpm
+2020-06-13 15:42:40.604312 +0000 build-centos: !! pkgs/vm-centos8/xen-qubes-vm-debuginfo-4.13.0-3.centos8.x86_64.rpm
+2020-06-13 15:42:40.604323 +0000 build-centos: !! pkgs/vm-centos8/xen-qubes-vm-debuginfo-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:42:40.604333 +0000 build-centos: !! pkgs/vm-centos8/xen-runtime-4.13.0-2.centos8.x86_64.rpm
+2020-06-13 15:42:40.604343 +0000 build-centos: !! pkgs/vm-centos8/xen-runtime-4.13.0-3.centos8.x86_64.rpm
+2020-06-13 15:42:40.604354 +0000 build-centos: !! pkgs/vm-centos8/xen-runtime-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:42:40.604365 +0000 build-centos: !! pkgs/vm-centos8/xen-runtime-debuginfo-4.13.0-2.centos8.x86_64.rpm
+2020-06-13 15:42:40.604376 +0000 build-centos: !! pkgs/vm-centos8/xen-runtime-debuginfo-4.13.0-3.centos8.x86_64.rpm
+2020-06-13 15:42:40.604387 +0000 build-centos: !! pkgs/vm-centos8/xen-runtime-debuginfo-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:42:40.604396 +0000 build-centos: !! pkgs/vm-centos8/xen.spec.list
+2020-06-13 15:42:40.604404 +0000 build-centos: !! polarssl-1.1.4-gpl.tgz
+2020-06-13 15:42:40.604413 +0000 build-centos: !! tboot-20090330.tar.gz
+2020-06-13 15:42:40.604421 +0000 build-centos: !! tpm_emulator-0.7.4.tar.gz
+2020-06-13 15:42:40.604429 +0000 build-centos: !! xen-4.12.0-rc3.tar.gz
+2020-06-13 15:42:40.604438 +0000 build-centos: !! xen-4.12.0-rc3.tar.gz.sig
+2020-06-13 15:42:40.604446 +0000 build-centos: !! xen-4.12.0-rc6.tar.gz
+2020-06-13 15:42:40.604454 +0000 build-centos: !! xen-4.12.0-rc6.tar.gz.sig
+2020-06-13 15:42:40.604462 +0000 build-centos: !! xen-4.12.0.tar.gz
+2020-06-13 15:42:40.604470 +0000 build-centos: !! xen-4.12.0.tar.gz.sig
+2020-06-13 15:42:40.604478 +0000 build-centos: !! xen-4.12.1.tar.gz
+2020-06-13 15:42:40.604494 +0000 build-centos: !! xen-4.12.1.tar.gz.sig
+2020-06-13 15:42:40.604503 +0000 build-centos: !! xen-4.13.0.tar.gz
+2020-06-13 15:42:40.604511 +0000 build-centos: !! xen-4.13.0.tar.gz.sig
+2020-06-13 15:42:40.604519 +0000 build-centos: !! xen-4.13.1.tar.gz
+2020-06-13 15:42:40.604533 +0000 build-centos: !! xen-4.13.1.tar.gz.sig
+2020-06-13 15:42:40.604542 +0000 build-centos: !! zlib-1.2.3.tar.gz
+2020-06-13 15:42:40.604571 +0000 build-centos: 69a9554d2d213392512d4ce41ec8c4993557e65c2b3dc4f568ac18695421cc08b7677c25f9a0ce03e94fb5e68a298fcac7ed09fb90007a2c998ff6ef78d3c651  gc.tar.gz
+2020-06-13 15:42:40.604587 +0000 build-centos: 2e0b0fd23e6f10742a5517981e5171c6e88b0a93c83da701b296f5c0861d72c19782daab589a7eac3f9032152a0fc7eff7f5362db8fccc4859564a9aa82329cf  gmp-4.3.2.tar.bz2
+2020-06-13 15:42:40.604604 +0000 build-centos: 954408a918d425c89e3b5fce52aa77b94af9e0929e11216dc65b47af0eb258f38ec6ca6e8680675f827a2408439c83d4fab161d8a5684d4617bef98bdd2e3992  gmp-4.3.2.tar.bz2.sig
+2020-06-13 15:42:40.604619 +0000 build-centos: c2bc9ffc8583aeae71cee9ddcc4418969768d4e3764d47307da54f93981c0109fb07d84b061b3a3628bd00ba4d14a54742bc04848110eb3ae8ca25dbfbaabadb  grub-0.97.tar.gz
+2020-06-13 15:42:40.604635 +0000 build-centos: 1c9365859a3f9220633d12ca6849e7f67c25acd0306111c602d371b634f734e4daf428ea372237679b07b30a4d115fcfea666adfc7bf79e4d786f4754a1f04c1  grub-0.97.tar.gz.sig
+2020-06-13 15:42:40.604650 +0000 build-centos: 1465b58279af1647f909450e394fe002ca165f0ff4a0254bfa9fe0e64316f50facdde2729d79a4e632565b4500cf4d6c74192ac0dd3bc9fe09129bbd67ba089d  lwip-1.3.0.tar.gz
+2020-06-13 15:42:40.604666 +0000 build-centos: 57a5e2200b822a7215446fab87ef62533b8790cd43fb5f119f5d7dd30c91b7be4eb7e4a00d951a5bddecf26b9f12f34ef55b8fc2dc37b46f006ff368f8618044  lwip-1.3.0.tar.gz.sig
+2020-06-13 15:42:40.604682 +0000 build-centos: 40eb96bbc6736a16b6399e0cdb73e853d0d90b685c967e77899183446664d64570277a633fdafdefc351b46ce210a99115769a1d9f47ac749d7e82837d4d1ac3  newlib-1.16.0.tar.gz
+2020-06-13 15:42:40.604697 +0000 build-centos: 61cacf14d1d90a11bd0599e7ad323350f3a3f30afb4ef5eaadc2108e5d6007dafbb83e955435ee49eeb0130955215923fa72d4e56196bec2396c166a54641955  ocaml-3.11.0.tar.gz
+2020-06-13 15:42:40.604713 +0000 build-centos: 2b3d98d027e46d8c08037366dde6f0781ca03c610ef2b380984639e4ef39899ed8d8b8e4cd9c9dc54df101279b95879bd66bfd4d04ad07fef41e847ea7ae32b5  pciutils-2.2.9.tar.bz2
+2020-06-13 15:42:40.604731 +0000 build-centos: 224886929c24a942a1ef97cb5d0ae0c979a796adf96f947e5bbfbc70cebd611e8dba68cdca4d4d1c0608c1b599cada9100cbdf452e3f413c741794ad5e6dd44c  pkgs/vm-centos8/python3-xen-4.13.0-2.centos8.x86_64.rpm
+2020-06-13 15:42:40.604749 +0000 build-centos: 208ae1f36488b6435d0e7345c66cd5050327fab1df2aedf94b994849835d0c9ec4be4e78ca3aab5f91e0d8a3e45dab332778f2eb61ed46be25506f5b492fde11  pkgs/vm-centos8/python3-xen-4.13.0-3.centos8.x86_64.rpm
+2020-06-13 15:42:40.604767 +0000 build-centos: 2f3b14ac6311f60ebc0c27bbb96a9a9a046c6badeb7b659fc22ff17b04864e934d5cd2088e5a355956fba69930b3f689c3f0759fbd2c1ea5115ad8f2a527e0f0  pkgs/vm-centos8/python3-xen-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:42:40.604786 +0000 build-centos: 9f4d4de3f3e13423f868d685feeb625c3e44e786bdd96f0686f5213832e1766b3e2c918b61000e9d360fe0dd4754ed6c4eeeefda97b350c60925abdbfab15078  pkgs/vm-centos8/python3-xen-debuginfo-4.13.0-2.centos8.x86_64.rpm
+2020-06-13 15:42:40.604804 +0000 build-centos: e7f3588b775c78464fc0c9de886a35071db249925b5dc94ee28ae3a69ca421c97d060389d0dd4f6affaecc9c895aa34ecb5c2d74aa75f2fe28d4ba135f8e8fe5  pkgs/vm-centos8/python3-xen-debuginfo-4.13.0-3.centos8.x86_64.rpm
+2020-06-13 15:42:40.604823 +0000 build-centos: 687a8b39f90b44494490404ad4707d6ec55b09a283a2cb5af2dfc0d4c07ec26331c66244c974382b78e2383dac35c6b644376e81e2651f556f5be8b2a1dda120  pkgs/vm-centos8/python3-xen-debuginfo-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:42:40.664425 +0000 build-centos: 96ea820e31f04bf71e6604c2e124c40c41f6f0f10ed403473c37a5f29804e7bc027fe2d734a05558c31991a43f3c8b43ccf777d89fd50da20bf073d9e5232793  pkgs/vm-centos8/xen-4.13.0-2.centos8.src.rpm
+2020-06-13 15:42:40.664723 +0000 build-centos: 5cfb50ad3eaf1530bea910f05e175769893833a72c65a6c2951edea4f3af037fc02127b8ce859f2a127aee47615a099edf073d20096f282416556574210eb614  pkgs/vm-centos8/xen-4.13.0-2.centos8.x86_64.buildinfo
+2020-06-13 15:42:40.665125 +0000 build-centos: b59c7a2de8b74529054757a4b0f5d285caf37d479c74b865cc337b9e6475f63960b15c1cc5cad837af17f895d8b7393cdf621e5f49cde080919df0b0945ce888  pkgs/vm-centos8/xen-4.13.0-2.centos8.x86_64.rpm
+2020-06-13 15:42:40.731569 +0000 build-centos: 5c491393b8d834025966f75fcd27b234ffa2169465582f116f0bc6e300dfc77d0d81233c6ec659cc51844a9d9e48fc627df4ebc55fb322cfb002867062991e12  pkgs/vm-centos8/xen-4.13.0-3.centos8.src.rpm
+2020-06-13 15:42:40.731809 +0000 build-centos: 47b9fa476bc076391ff41e7f8449368fc1b8b3b76e4641a9eacbc80a9cb7132dabbf5e14c873759ad3f6c16ce265af1c19fc6ac171625e9ee0c44b4670e44734  pkgs/vm-centos8/xen-4.13.0-3.centos8.x86_64.buildinfo
+2020-06-13 15:42:40.731841 +0000 build-centos: cb182fe9829987bd788505d0f437ecf00ca7c6a55611e34788f62dc115e60343ae32a7bc38aec330de467f83fee52b1a8996e6b1d402216f2f885d665a3af7f0  pkgs/vm-centos8/xen-4.13.0-3.centos8.x86_64.rpm
+2020-06-13 15:42:40.797737 +0000 build-centos: f596f5218eed3e8c67365dd10491ea649c4456de3973c3274ffad33bbedb728ad0440e54aeaad6583b60545480818cd59f43f99c848e2259511d5ed6c1f31e63  pkgs/vm-centos8/xen-4.13.1-4.centos8.src.rpm
+2020-06-13 15:42:40.797807 +0000 build-centos: d24bee89bd391338d3e022a6fd3fcdab2943708f71bcd5760aedfa586c53c6888d6f199d78fe2a4c4aae383cc2ffc4ed7dc9ce1e40b860543ee00c5b449a6b45  pkgs/vm-centos8/xen-4.13.1-4.centos8.x86_64.buildinfo
+2020-06-13 15:42:40.797831 +0000 build-centos: 18d6060fb0278d0c6e6c2cf3a2e15814b633cc9445ca0a3d783de88a85fa1aff9b57f8287cab8a197335040b10a747e7434e3c42af00232e1f2e67557d4eb0f4  pkgs/vm-centos8/xen-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:42:40.799147 +0000 build-centos: 2db6cba1c98e20c261a68fe46ed8c97488931cbe37802b5774e2b18f933b8d2812ea0f4a50fc68c71b7f22e990d5d27be38b6ef1c96ad684e1a7f08cd4dde4c7  pkgs/vm-centos8/xen-debuginfo-4.13.0-2.centos8.x86_64.rpm
+2020-06-13 15:42:40.799372 +0000 build-centos: 3f7d54e0b7b998e50d03e78f6208ae3fa8b91d399e0e478de2aa038c9771af953e3268029cdae290a58ff7182ed6a76233553a9995e1ad0008ec504aa8164e9d  pkgs/vm-centos8/xen-debuginfo-4.13.0-3.centos8.x86_64.rpm
+2020-06-13 15:42:40.799548 +0000 build-centos: 7f45488123666fe26f45dff574408657f34e31a2f3addd876f442203cbe99deb1a7aac047c305b5ba7932aab90a8f51c4d04751b03fbd2e9f91c2d97628d2be1  pkgs/vm-centos8/xen-debuginfo-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:42:40.804667 +0000 build-centos: 3b692f6e8753971a3c1c3e11c09d843ddd906ef8c3b717169c64d68d187d63955c66467e3eb6aad93e9cc6411c1ca0017c0cee75df876fa9ed4a1a80d20712e5  pkgs/vm-centos8/xen-debugsource-4.13.0-2.centos8.x86_64.rpm
+2020-06-13 15:42:40.807874 +0000 build-centos: 55482678ea5cc2cf8678183b5e2d81cd45b574382ec3ac10a6e8d6170e2bbdf7f96e6d8afc3a934a85d6dfc0f36531f9cd660b8206e34a74513ac685110807e0  pkgs/vm-centos8/xen-debugsource-4.13.0-3.centos8.x86_64.rpm
+2020-06-13 15:42:40.810884 +0000 build-centos: 5272a65ba32ee96cfa52ad68d5a46c8ca60b6219eb75e5863bf05c1296cce500ae51b0cb5d12d3eba0ec08ec05e33e05fafa8e91bc206f588d92c4d6ed4edd51  pkgs/vm-centos8/xen-debugsource-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:42:40.812423 +0000 build-centos: c5b37a7be08f7ad235bd6f705ac3fd8505da3870dd55a0bd6afb3c29376a8ef6eead0a90df650390b730b76a445672a6f46f9f05c9a4c7a03ab0f04d36519d55  pkgs/vm-centos8/xen-devel-4.13.0-2.centos8.x86_64.rpm
+2020-06-13 15:42:40.812921 +0000 build-centos: fd2f86bea0b038de91bbd06ce3743bd3f971790d7500c9c589c5357e405869f1e9564b147c7b26ae55dfe01d129d8e700890334dc0e68d91b88c4b74fa9aa554  pkgs/vm-centos8/xen-devel-4.13.0-3.centos8.x86_64.rpm
+2020-06-13 15:42:40.813359 +0000 build-centos: 613932b7c35e36da66f4e2f26b41e28325283280a11ecf81602daa7085390539347ea7ebf4281252f97e69189257ba7a3409622a5a6f18f4dd9f0cc86ddc9b23  pkgs/vm-centos8/xen-devel-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:42:40.813653 +0000 build-centos: 85f8c83eb81ba3cf9cd678a31f603157b9aeebc4c43df49f24356c9b0c2431171589616e9ad9f56ff6ee9b50367d82d2e8182000760c4b1fad95b354c91d592f  pkgs/vm-centos8/xen-hypervisor-4.13.0-2.centos8.x86_64.rpm
+2020-06-13 15:42:40.813797 +0000 build-centos: eb3119d0060a46edc09cc2b402389a639fcbbc73bfb23ae9e4d45e669c08bc6bce8eb83160eb539050445b1f2cb5c49d7450e4cfd9a89f4799773e0d7fb59066  pkgs/vm-centos8/xen-hypervisor-4.13.0-3.centos8.x86_64.rpm
+2020-06-13 15:42:40.813838 +0000 build-centos: 02f3279734188752eb2b22261aa2dbe37d921fc83cc861586daf9c8ffdab6d1215dd976b23f4bb75ae6829bf40c8bbd9d4db9899b52bf4f5f312f50058e9c0ee  pkgs/vm-centos8/xen-hypervisor-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:42:40.814735 +0000 build-centos: 8b88da7e64a6bd2fc6cf50bdfe80cad1eb24c76027528c8df91e4c302f1677fd51206f48f516d01be03d89e99b992649d3ef616609c6ff39cf06b339f67ffe07  pkgs/vm-centos8/xen-libs-4.13.0-2.centos8.x86_64.rpm
+2020-06-13 15:42:40.815821 +0000 build-centos: de1e5350968ae06d7f43dce74fa63e0367daa2f73d8e73c91ad59fe7c4a61134b0d28d7f2d4c90ac13304d3559deaeb9446d4ce81fbd09e4023102ab72e29bc0  pkgs/vm-centos8/xen-libs-4.13.0-3.centos8.x86_64.rpm
+2020-06-13 15:42:40.816829 +0000 build-centos: 967a43f440c3d3764238c31e10071222edb13499f3b2e205c8447a9a81b4439b58332265937914b9c690161305f4762a89f83e67f946abd920c30d5a86310d4f  pkgs/vm-centos8/xen-libs-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:42:40.819425 +0000 build-centos: 808d092c686e9e1f226d3ea78dc3e48a69d9467b60ba40f2d52d7a685c736d28b45861424c9e5acd9cbe53e6ec8f51ffef0eb336b10b9d1edc1a9b8bb6b005fd  pkgs/vm-centos8/xen-libs-debuginfo-4.13.0-2.centos8.x86_64.rpm
+2020-06-13 15:42:40.823842 +0000 build-centos: c28fca6f6bc60c37447a72cd541b5456c1e8053988bd305112cc615b0901867426a3e3efe0c2bb23f88d62b068b3fadb7ccf881cd59f944f557396e9df85f009  pkgs/vm-centos8/xen-libs-debuginfo-4.13.0-3.centos8.x86_64.rpm
+2020-06-13 15:42:40.824784 +0000 build-centos: 6f2e4842a6f54e04abdd8a304ccb1d93fd3306a1802b69fa828dd3afc2a60d664b1722191ffea9c33000a5f27a4c319436b8f3c92ac225c4dc58cbf795b1a3fd  pkgs/vm-centos8/xen-libs-debuginfo-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:42:40.824958 +0000 build-centos: 6bf9cbe9d3fe6bac9b77248b296cc52b7cddda4bbc2754f0e93ec271086ca48a38671380c9b5390170186bb67c0378480a5e21bfcab14c73091cad07c0857c0a  pkgs/vm-centos8/xen-licenses-4.13.0-2.centos8.x86_64.rpm
+2020-06-13 15:42:40.824987 +0000 build-centos: 1551916beb290bcf566100ee0f66e9b450539c31cc850af0167316aaf7f4a42df3fc1abb5bb8fcb7e946bcdd97d98fe6329d535ff652b0943205efb967d15607  pkgs/vm-centos8/xen-licenses-4.13.0-3.centos8.x86_64.rpm
+2020-06-13 15:42:40.825166 +0000 build-centos: 22f3bcf559ad9d5a52e64dd3c86eef9036bf0ea7f6b454eae74c3931bb427063a3f27559b9ed6d25ba6e64ef469cfc24abc57ee4d946f5cda91c3f264f77a5a8  pkgs/vm-centos8/xen-licenses-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:42:40.825194 +0000 build-centos: 49c5d795323260a2026dc2289df6195038699e7874ed273e0053be6cd2b547bfad50ef7ff4bd570d577b32ee1d85028a04264ea3060f2200ba05e9bba2b2a966  pkgs/vm-centos8/xen-qemu-tools-4.13.0-2.centos8.x86_64.rpm
+2020-06-13 15:42:40.825213 +0000 build-centos: 4e7c7c892d9fc9ae43633c879aba0d6d5d60405d905c07460cceb85e1526b7ba0dd7a89af2a32eb0812cf33de43496e3d521843feb01a529b4b45b23e667f51a  pkgs/vm-centos8/xen-qemu-tools-4.13.0-3.centos8.x86_64.rpm
+2020-06-13 15:42:40.825231 +0000 build-centos: 57a1321c0361de6a4ddfa1d496abed9b85cfcc99e98e4a6c8c863a7c38b8c6d996c0300ffea615c69e118e94119b17f1ec84b654f88f5286fbbeb5dc5e4a1e44  pkgs/vm-centos8/xen-qemu-tools-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:42:40.825448 +0000 build-centos: 4aec3756c76b8fed21c643d036edee02ea4ea05a9044707cf3bcf35aec1f325e2b7098c8ce61e39513df7fa562276a67bcbadd9fecb07bc2eca5b3c5bbe621c3  pkgs/vm-centos8/xen-qubes-vm-4.13.0-2.centos8.x86_64.rpm
+2020-06-13 15:42:40.825715 +0000 build-centos: fc0db2d663982f058d083c31e2e9308f52feca2aee5f8602b5f06b4fb7492f500ed94e11995b2f1851b1994f0cc6b85dbaa235c78b848ef2034c0f9f9e28a410  pkgs/vm-centos8/xen-qubes-vm-4.13.0-3.centos8.x86_64.rpm
+2020-06-13 15:42:40.825993 +0000 build-centos: f87729296b45dcf4c716b66d3e1179aaed0d4f5b3af8c907aaf114e4778f1134cf330242b252e3eae43026fa9c3416b044401435ae1480893bfc8e8f45b5a0e7  pkgs/vm-centos8/xen-qubes-vm-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:42:40.826490 +0000 build-centos: 4dc438661548a8c584a651652a7dbefe37f01dc3261d6e31af4b239de86877cc9b0473a27fb4ccd33baf0788b3d7f911be06b8881ff53a6018eda60b6665a30d  pkgs/vm-centos8/xen-qubes-vm-debuginfo-4.13.0-2.centos8.x86_64.rpm
+2020-06-13 15:42:40.826979 +0000 build-centos: 76bbe6c51acd164cddfd64461971fdb29be662199b559d30202be2ee31b5238545db152d00d3cbda929b71ded749c1f916ed2eea50279588756f8da0f2d1caef  pkgs/vm-centos8/xen-qubes-vm-debuginfo-4.13.0-3.centos8.x86_64.rpm
+2020-06-13 15:42:40.827477 +0000 build-centos: c1e8a40e887a731fb9b10e5e1fa83768461c738501f46010849f737cf8309b6a67cd7639cbee5d00e43b8208011e2b614df19a537dce40be2a99722da8600335  pkgs/vm-centos8/xen-qubes-vm-debuginfo-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:42:40.869133 +0000 build-centos: 40d2ac024f87ba62cd7e1a6cfde477f8f0ed2471154caf0f2bbaa557931e4d86163d92294d06c8f0e93d8c81f001cc6dc1789b8994ee274def510e4714d9713a  pkgs/vm-centos8/xen-runtime-4.13.0-2.centos8.x86_64.rpm
+2020-06-13 15:42:40.911970 +0000 build-centos: 5b03e2545916cb6ab9e149dc2ba270376e7bfc93d2f96ba1c10d1ed96418687c451423643ae3cbb659cd042e5872608667ec1115bbf42f17876a28870f82ac2a  pkgs/vm-centos8/xen-runtime-4.13.0-3.centos8.x86_64.rpm
+2020-06-13 15:42:41.006532 +0000 build-centos: da5da71a2effef4314adae3f6a518389d8547ef0dedfe6f8a936fe2333495aefb88a9867e27b2bd7af110ee1613618dd41887f8b77201400b00e8c24d314f49f  pkgs/vm-centos8/xen-runtime-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:42:41.023064 +0000 build-centos: a2157bfea0f0359ca0beae1d444acd1159e5bfd6c85914d6940c559fbc7635561bcfdd689335d9ed659f1991546d6fb8c808586631219ddea53f919b6209113a  pkgs/vm-centos8/xen-runtime-debuginfo-4.13.0-2.centos8.x86_64.rpm
+2020-06-13 15:42:41.023127 +0000 build-centos: ccf9636c16d470661ae5af68ff60b86bd2d51b07220ed267b73a8f01ac36f0e50db8633a2a96343c1e7df24534af309ed2f632c97deef995e71bcee955d9f6f4  pkgs/vm-centos8/xen-runtime-debuginfo-4.13.0-3.centos8.x86_64.rpm
+2020-06-13 15:42:41.034368 +0000 build-centos: 7658aa6aa095aa80ef5f45e18cb734d382111399d6b7b1fb7b5a67a9acf5d3ddbaff0f865ce4254ce596b8ae07327528ce1669409693b7ba12510eb45bb8315f  pkgs/vm-centos8/xen-runtime-debuginfo-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:42:41.034425 +0000 build-centos: b8fa7fc116d9c8db5d083c3d20b9fb387fa30ff5993b0869adff4fb9cbf31cd75a1c393623e2a24da5da479e29498e1f61a72e8a367cba2a06f3c4c1e392f104  pkgs/vm-centos8/xen.spec.list
+2020-06-13 15:42:41.035756 +0000 build-centos: 88da614e4d3f4409c4fd3bb3e44c7587ba051e3fed4e33d526069a67e8180212e1ea22da984656f50e290049f60ddca65383e5983c0f8884f648d71f698303ad  polarssl-1.1.4-gpl.tgz
+2020-06-13 15:42:41.038042 +0000 build-centos: faa3af2ef1241fd908da6fb7f826dee0dad39de697fe14a35b2582a0b0baae29b41e824a0737b57809177b1fe09fdd73fd41a54e59ae98c2be77bd7dfccf93e6  tboot-20090330.tar.gz
+2020-06-13 15:42:41.038101 +0000 build-centos: 4928b5b82f57645be9408362706ff2c4d9baa635b21b0d41b1c82930e8c60a759b1ea4fa74d7e6c7cae1b7692d006aa5cb72df0c3b88bf049779aa2b566f9d35  tpm_emulator-0.7.4.tar.gz
+2020-06-13 15:42:41.109808 +0000 build-centos: 6e94ba07b6c7b032b342820055b9ab7c76c5582a7ea3136af7a2f8fac251ed3dbe9a88f36c1652eb8006d3d04f44f90abff0f5d6159bf1cd6b784d04149f5239  xen-4.12.0-rc3.tar.gz
+2020-06-13 15:42:41.109870 +0000 build-centos: d19a937d90976d1c925a693072c30c42ce7b06f5b8d810492c6468e4762dbac235a0d6a1a59e5ccbfcd04faf737e5cd7838bc9bd34bb07fc7003be2d46a5d2a0  xen-4.12.0-rc3.tar.gz.sig
+2020-06-13 15:42:41.319549 +0000 build-centos: 28577614dfeb40724e7ec581cc7764cd62f35d93457465b7880855dd6dc8fc72bba83078fe9b187e8c851397f6f1eb6e33e01e9f65bcc13aacacae9a928b1afe  xen-4.12.0-rc6.tar.gz
+2020-06-13 15:42:41.319613 +0000 build-centos: a481643e11e49e3163710472ef5795abdb18b831b693e766a805593bbebe874bc2ea2d192857dfc6f8c5d38643fde1aa5ccfc7539a3f7fb5965e052c4cd3b84e  xen-4.12.0-rc6.tar.gz.sig
+2020-06-13 15:42:41.410778 +0000 build-centos: 0ce366dcac607c9b592c5e9c0f40652eef743913b246bed4b0c380b8d59ac23a6adcd05befec37fc799a61476f47df76d4911cbf1da6ceb51441c546bf2464de  xen-4.12.0.tar.gz
+2020-06-13 15:42:41.410841 +0000 build-centos: c51718cd5270029e24fe53bf3ac1245994b381d9d960e1e8bdead50ecd2ee8442314b829cd13ca9c827c692de396a12b6443257c6a937e01259c6141fc368f83  xen-4.12.0.tar.gz.sig
+2020-06-13 15:42:41.600827 +0000 build-centos: be15d3af6b109771aaf59b3621e4e1560b7d9a963d9b7f6a1f6f4a1c907fd97434b060c15f75849b44fbda33f26eb51b030d14d068c6ad5103ad240fe7a98f40  xen-4.12.1.tar.gz
+2020-06-13 15:42:41.600889 +0000 build-centos: 7ac5a613df249245f8ac4bca0b3f0573016668c7924f11cd05a5e06f0b63efc4acacf86f89dfe8dd1dd4880b9046d845ef9ce065c62feb53890e659e5e0bc7c4  xen-4.12.1.tar.gz.sig
+2020-06-13 15:42:41.784216 +0000 build-centos: 5b2ded9a2fe3f7ddf40eed1fa9858baead06233a01eb6099cc45b3c78b6c3823acfe7b731910733e87125dfa49d08c53f74c215fb1b320a92b44b87a0a105225  xen-4.13.0.tar.gz
+2020-06-13 15:42:41.784281 +0000 build-centos: da43075e8e0a1c8e88fc1135c019f4dfcbdc7762c83088143281cad535181bdcdc157d0a5b04676495ef3a1d790493272f36f52d0fd1a760d163fc5f9b7dd7ed  xen-4.13.0.tar.gz.sig
+2020-06-13 15:42:41.930215 +0000 build-centos: b56d20704155d98d803496cba83eb928e0f986a750831cd5600fc88d0ae772fe1456571654375054043d2da8daca255cc98385ebf08b1b1a75ecf7f4b7a0ee90  xen-4.13.1.tar.gz
+2020-06-13 15:42:41.930277 +0000 build-centos: 91dcb2c8bac76bfeac00bd93b8a261e109fa945217988161901ccfe361f9f5991df713964a37e16d0cecf8f8225753386188e13b14adb0fc5c8d93cb6ddf8772  xen-4.13.1.tar.gz.sig
+2020-06-13 15:42:41.932750 +0000 build-centos: 021b958fcd0d346c4ba761bcf0cc40f3522de6186cf5a0a6ea34a70504ce9622b1c2626fce40675bc8282cf5f5ade18473656abc38050f72f5d6480507a2106e  zlib-1.2.3.tar.gz
+2020-06-13 15:42:42.164847 +0000 build-centos: ================================================================================
+2020-06-13 15:42:42.164934 +0000 build-centos:                            B U I L D   I N F O                                  
+2020-06-13 15:42:42.164953 +0000 build-centos: Items in red indicate it was automatically generated by configuration file(s)
+2020-06-13 15:42:42.164966 +0000 build-centos: Items in white indicate it was automatically removed by configuration file(s)
+2020-06-13 15:42:42.164978 +0000 build-centos: ================================================================================
+2020-06-13 15:42:42.164986 +0000 build-centos: DISTS_VM:
+2020-06-13 15:42:42.164994 +0000 build-centos:      centos8,
+2020-06-13 15:42:42.165001 +0000 build-centos: DISTS_ALL:
+2020-06-13 15:42:42.168421 +0000 build-centos:      vm-centos8,
+2020-06-13 15:42:42.168464 +0000 build-centos: DIST_DOM0:
+2020-06-13 15:42:42.178789 +0000 build-centos:     
+2020-06-13 15:42:42.178831 +0000 build-centos: BUILDER_PLUGINS:
+2020-06-13 15:42:42.190040 +0000 build-centos:      builder-rpm, builder-debian, mgmt-salt, linux-yum, release-configs, builder-github,
+2020-06-13 15:42:42.190082 +0000 build-centos: COMPONENTS:
+2020-06-13 15:42:42.198279 +0000 build-centos:      vmm-xen,
+2020-06-13 15:42:42.198323 +0000 build-centos: GIT_REPOS:
+2020-06-13 15:42:42.204584 +0000 build-centos:      qubes-src/vmm-xen,
+2020-06-13 15:42:42.204625 +0000 build-centos: TEMPLATE:
+2020-06-13 15:42:42.207105 +0000 build-centos:     
+2020-06-13 15:42:42.208283 +0000 build-centos: TEMPLATE_FLAVOR_DIR:
+2020-06-13 15:42:42.209485 +0000 build-centos:     
+2020-06-13 15:42:42.210196 +0000 build-centos: TEMPLATE_ALIAS:
+2020-06-13 15:42:42.223934 +0000 build-centos:      stretch:stretch+standard, stretch+gnome:stretch+gnome+standard,
+2020-06-13 15:42:42.224006 +0000 build-centos:      stretch+minimal:stretch+minimal+no-recommends, buster:buster+standard, buster+gnome:buster+gnome+standard,
+2020-06-13 15:42:42.224022 +0000 build-centos:      buster+minimal:buster+minimal+no-recommends, bullseye:bullseye+standard,
+2020-06-13 15:42:42.224036 +0000 build-centos:      bullseye+gnome:bullseye+gnome+standard, bullseye+minimal:bullseye+minimal+no-recommends,
+2020-06-13 15:42:42.224047 +0000 build-centos:      whonix-gateway-14:stretch+whonix-gateway+minimal+no-recommends,
+2020-06-13 15:42:42.224059 +0000 build-centos:      whonix-workstation-14:stretch+whonix-workstation+minimal+no-recommends,
+2020-06-13 15:42:42.224069 +0000 build-centos:      whonix-gateway-15:buster+whonix-gateway+minimal+no-recommends,
+2020-06-13 15:42:42.224100 +0000 build-centos:      whonix-workstation-15:buster+whonix-workstation+minimal+no-recommends,
+2020-06-13 15:42:42.224109 +0000 build-centos: TEMPLATE_LABEL:
+2020-06-13 15:42:42.227683 +0000 build-centos:      centos8:centos-8, fc29:fedora-29 fc30:fedora-30 fc31:fedora-31 fc32:fedora-32 fc29+minimal:fedora-29-minimal
+2020-06-13 15:42:42.227728 +0000 build-centos:      fc30+minimal:fedora-30-minimal fc31+minimal:fedora-31-minimal fc32+minimal:fedora-32-minimal
+2020-06-13 15:42:42.227745 +0000 build-centos:      fc29+xfce:fedora-29-xfce fc30+xfce:fedora-30-xfce fc31+xfce:fedora-31-xfce fc32+xfce:fedora-32-xfce
+2020-06-13 15:42:42.227759 +0000 build-centos:      stretch:debian-9 stretch+standard:debian-9 buster:debian-10 buster+standard:debian-10 bullseye:debian-11
+2020-06-13 15:42:42.227772 +0000 build-centos:      bullseye+standard:debian-11 stretch+whonix-gateway+minimal+no-recommends:whonix-gw-14
+2020-06-13 15:42:42.227783 +0000 build-centos:      stretch+whonix-workstation+minimal+no-recommends:whonix-ws-14
+2020-06-13 15:42:42.227794 +0000 build-centos:      buster+whonix-gateway+minimal+no-recommends:whonix-gw-15
+2020-06-13 15:42:42.227806 +0000 build-centos:      buster+whonix-workstation+minimal+no-recommends:whonix-ws-15 centos7:centos-7
+2020-06-13 15:42:42.227818 +0000 build-centos:      centos7+minimal:centos-7-minimal centos7+xfce:centos-7-xfce centos8+minimal:centos-7-minimal
+2020-06-13 15:42:42.227827 +0000 build-centos:      centos8+xfce:centos-8-xfce
+2020-06-13 15:42:42.264333 +0000 build-centos: > running make
+2020-06-13 15:42:42.316314 +0000 build-centos: Makefile:267: target 'sign.vm.centos8.vmm-xen' does not exist
+2020-06-13 15:42:42.316390 +0000 build-centos: if [ -n "vmm-xen" -a "0" -ne 0 ]; then BRANCH=master; branch_var="BRANCH_vmm_xen"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/vmm-xen > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2020-06-13 15:42:42.316407 +0000 build-centos: SIGN_KEY=EE88DA5FB2B7082919C8826D19205A11FDE3D0AA; \
+2020-06-13 15:42:42.316417 +0000 build-centos: sign_key_var="SIGN_KEY_${DIST%%+*}"; \
+2020-06-13 15:42:42.316429 +0000 build-centos: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2020-06-13 15:42:42.316439 +0000 build-centos: if [ "vmm-xen" = linux-template-builder ]; then
+2020-06-13 15:42:42.316456 +0000 build-centos: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=centos8 template-name)
+2020-06-13 15:42:42.316464 +0000 build-centos: fi
+2020-06-13 15:42:42.316474 +0000 build-centos: if [ -r qubes-src/vmm-xen/Makefile.builder ]; then \
+2020-06-13 15:42:42.316484 +0000 build-centos: .make --no-print-directory -f Makefile.generic \
+2020-06-13 15:42:42.316492 +0000 build-centos: ..DIST=centos8 \
+2020-06-13 15:42:42.316500 +0000 build-centos: ..PACKAGE_SET=vm \
+2020-06-13 15:42:42.316508 +0000 build-centos: ..COMPONENT=vmm-xen \
+2020-06-13 15:42:42.316516 +0000 build-centos: ..SIGN_KEY=$SIGN_KEY \
+2020-06-13 15:42:42.316524 +0000 build-centos: ..sign || exit 1; \
+2020-06-13 15:42:42.316533 +0000 build-centos: elif [ -d qubes-src/vmm-xen/rpm ]; then \
+2020-06-13 15:42:42.316542 +0000 build-centos: .# Old mechanism supported only for RPM
+2020-06-13 15:42:42.316552 +0000 build-centos: FILE_LIST=""; for RPM in qubes-src/vmm-xen/rpm/*/*.rpm; do \
+2020-06-13 15:42:42.316564 +0000 build-centos: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2020-06-13 15:42:42.316572 +0000 build-centos: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2020-06-13 15:42:42.316580 +0000 build-centos: ..fi ;\
+2020-06-13 15:42:42.316587 +0000 build-centos: .done ; \
+2020-06-13 15:42:42.316596 +0000 build-centos: .if [ -n "$FILE_LIST" ]; then \
+2020-06-13 15:42:42.316604 +0000 build-centos: ..echo "--> Signing..."; \
+2020-06-13 15:42:42.316628 +0000 build-centos: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2020-06-13 15:42:42.316639 +0000 build-centos: ..if [ -n "$SIGN_KEY" ]; then \
+2020-06-13 15:42:42.316648 +0000 build-centos: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2020-06-13 15:42:42.316655 +0000 build-centos: ..fi; \
+2020-06-13 15:42:42.316666 +0000 build-centos: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2020-06-13 15:42:42.316674 +0000 build-centos: .fi; \
+2020-06-13 15:42:42.316680 +0000 build-centos: fi
+2020-06-13 15:42:42.388019 +0000 build-centos: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:182: target 'sign-prep' does not exist
+2020-06-13 15:42:42.388069 +0000 build-centos: if [ -n "qubes-gpg-client-wrapper" ]; then \
+2020-06-13 15:42:42.388084 +0000 build-centos: .mkdir -p /home/user/builder-r4.1/keyrings/rpmdb; \
+2020-06-13 15:42:42.388101 +0000 build-centos: .qubes-gpg-client-wrapper --armor --export "EE88DA5FB2B7082919C8826D19205A11FDE3D0AA" > "/tmp/key_EE88DA5FB2B7082919C8826D19205A11FDE3D0AA"; \
+2020-06-13 15:42:42.388117 +0000 build-centos: .rpmkeys --dbpath=/home/user/builder-r4.1/keyrings/rpmdb --import "/tmp/key_EE88DA5FB2B7082919C8826D19205A11FDE3D0AA"; \
+2020-06-13 15:42:42.388125 +0000 build-centos: fi
+2020-06-13 15:42:42.708865 +0000 build-centos: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:196: update target 'sign' due to: sign-prep
+2020-06-13 15:42:42.709026 +0000 build-centos: cd qubes-src/vmm-xen && for pkg in pkgs/vm-centos8/python3-xen-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/python3-xen-debuginfo-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-4.13.1-4.centos8.src.rpm pkgs/vm-centos8/xen-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-debuginfo-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-debugsource-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-devel-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-hypervisor-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-libs-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-libs-debuginfo-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-licenses-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-qemu-tools-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-qubes-vm-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-qubes-vm-debuginfo-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-runtime-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-runtime-debuginfo-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-4.13.1-4.centos8.x86_64.buildinfo ; do \
+2020-06-13 15:42:42.709044 +0000 build-centos: .if [ "${pkg##*.}" = "buildinfo" ]; then \
+2020-06-13 15:42:42.709066 +0000 build-centos: ../home/user/builder-r4.1/qubes-src/builder-rpm/scripts/update-rpmbuildinfo "$pkg" | qubes-gpg-client-wrapper --clearsign --local-user EE88DA5FB2B7082919C8826D19205A11FDE3D0AA > "$pkg".tmp && \
+2020-06-13 15:42:42.709076 +0000 build-centos: ..mv -f "$pkg".tmp "$pkg"; \
+2020-06-13 15:42:42.709086 +0000 build-centos: .elif ! rpm -K $pkg | grep -qi pgp; then \
+2020-06-13 15:42:42.709102 +0000 build-centos: ..setsid -w rpmsign  --digest-algo=sha256 --key-id=EE88DA5FB2B7082919C8826D19205A11FDE3D0AA --addsign $pkg </dev/null || exit 1; \
+2020-06-13 15:42:42.709110 +0000 build-centos: .fi; \
+2020-06-13 15:42:42.709118 +0000 build-centos: done
+2020-06-13 15:42:43.220875 +0000 build-centos: pkgs/vm-centos8/python3-xen-4.13.1-4.centos8.x86_64.rpm:
+2020-06-13 15:42:43.668210 +0000 build-centos: pkgs/vm-centos8/python3-xen-debuginfo-4.13.1-4.centos8.x86_64.rpm:
+2020-06-13 15:42:46.599021 +0000 build-centos: pkgs/vm-centos8/xen-4.13.1-4.centos8.src.rpm:
+2020-06-13 15:42:47.252427 +0000 build-centos: pkgs/vm-centos8/xen-4.13.1-4.centos8.x86_64.rpm:
+2020-06-13 15:42:47.728980 +0000 build-centos: pkgs/vm-centos8/xen-debuginfo-4.13.1-4.centos8.x86_64.rpm:
+2020-06-13 15:42:47.729037 +0000 build-centos: Error while vchan send, exiting
+2020-06-13 15:42:48.249601 +0000 build-centos: pkgs/vm-centos8/xen-debugsource-4.13.1-4.centos8.x86_64.rpm:
+2020-06-13 15:42:48.643216 +0000 build-centos: pkgs/vm-centos8/xen-devel-4.13.1-4.centos8.x86_64.rpm:
+2020-06-13 15:42:48.645992 +0000 build-centos: Error while vchan send, exiting
+2020-06-13 15:42:48.880983 +0000 build-centos: Error while vchan send, exiting
+2020-06-13 15:42:49.041373 +0000 build-centos: pkgs/vm-centos8/xen-hypervisor-4.13.1-4.centos8.x86_64.rpm:
+2020-06-13 15:42:49.433392 +0000 build-centos: pkgs/vm-centos8/xen-libs-4.13.1-4.centos8.x86_64.rpm:
+2020-06-13 15:42:49.800969 +0000 build-centos: pkgs/vm-centos8/xen-libs-debuginfo-4.13.1-4.centos8.x86_64.rpm:
+2020-06-13 15:42:50.115039 +0000 build-centos: pkgs/vm-centos8/xen-licenses-4.13.1-4.centos8.x86_64.rpm:
+2020-06-13 15:42:50.429309 +0000 build-centos: pkgs/vm-centos8/xen-qemu-tools-4.13.1-4.centos8.x86_64.rpm:
+2020-06-13 15:42:50.758518 +0000 build-centos: pkgs/vm-centos8/xen-qubes-vm-4.13.1-4.centos8.x86_64.rpm:
+2020-06-13 15:42:51.084559 +0000 build-centos: pkgs/vm-centos8/xen-qubes-vm-debuginfo-4.13.1-4.centos8.x86_64.rpm:
+2020-06-13 15:42:51.753746 +0000 build-centos: pkgs/vm-centos8/xen-runtime-4.13.1-4.centos8.x86_64.rpm:
+2020-06-13 15:42:52.113423 +0000 build-centos: pkgs/vm-centos8/xen-runtime-debuginfo-4.13.1-4.centos8.x86_64.rpm:
+2020-06-13 15:42:52.442874 +0000 build-centos: Error while vchan send, exiting
+2020-06-13 15:42:52.444489 +0000 build-centos: Makefile:818: target 'internal-update-repo-current-testing.vm.centos8.vmm-xen' does not exist
+2020-06-13 15:42:52.444532 +0000 build-centos: repo_base_var="LINUX_REPO_centos8_BASEDIR"; \
+2020-06-13 15:42:52.444545 +0000 build-centos: if [ "vmm-xen" = linux-template-builder ]; then \
+2020-06-13 15:42:52.444557 +0000 build-centos: .# templates belongs to dom0 repository, even though PACKAGE_SET=vm
+2020-06-13 15:42:52.444567 +0000 build-centos: repo_base_var="LINUX_REPO__BASEDIR"; \
+2020-06-13 15:42:52.444575 +0000 build-centos: fi; \
+2020-06-13 15:42:52.444584 +0000 build-centos: if [ -n "${!repo_base_var}" ]; then \
+2020-06-13 15:42:52.444593 +0000 build-centos: .repo_basedir="${!repo_base_var}"; \
+2020-06-13 15:42:52.444600 +0000 build-centos: else \
+2020-06-13 15:42:52.444610 +0000 build-centos: .repo_basedir="qubes-src/linux-yum/r4.1"; \
+2020-06-13 15:42:52.444617 +0000 build-centos: fi; \
+2020-06-13 15:42:52.444627 +0000 build-centos: if [ -r qubes-src/vmm-xen/Makefile.builder ]; then \
+2020-06-13 15:42:52.444636 +0000 build-centos: .echo -n "Updating qubes-src/vmm-xen... "; \
+2020-06-13 15:42:52.444644 +0000 build-centos: .if [ "0" -eq 1 ]; then \
+2020-06-13 15:42:52.444655 +0000 build-centos: ..vtag=`git -C qubes-src/vmm-xen tag --points-at HEAD --list v*`; \
+2020-06-13 15:42:52.444664 +0000 build-centos: ..if [ -z "$vtag" ]; then \
+2020-06-13 15:42:52.444672 +0000 build-centos: ...echo "no version tag"; \
+2020-06-13 15:42:52.444680 +0000 build-centos: ...exit 0; \
+2020-06-13 15:42:52.444687 +0000 build-centos: ..fi; \
+2020-06-13 15:42:52.444694 +0000 build-centos: .fi; \
+2020-06-13 15:42:52.444704 +0000 build-centos: .if [ "vmm-xen" = linux-template-builder ]; then
+2020-06-13 15:42:52.444717 +0000 build-centos: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=centos8 template-name)
+2020-06-13 15:42:52.444725 +0000 build-centos: fi
+2020-06-13 15:42:52.444747 +0000 build-centos: component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=centos8 PACKAGE_SET=vm COMPONENT=`basename qubes-src/vmm-xen` UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/centos8 get-var GET_VAR=PACKAGE_LIST); \
+2020-06-13 15:42:52.444757 +0000 build-centos: .if [ -z "$component_packages" ]; then \
+2020-06-13 15:42:52.444766 +0000 build-centos: ..echo "no packages."; \
+2020-06-13 15:42:52.444773 +0000 build-centos: ..exit 0; \
+2020-06-13 15:42:52.444780 +0000 build-centos: .fi; \
+2020-06-13 15:42:52.444791 +0000 build-centos: .make -s -f Makefile.generic DIST=centos8 PACKAGE_SET=vm \
+2020-06-13 15:42:52.444800 +0000 build-centos: ..COMPONENT=`basename qubes-src/vmm-xen` \
+2020-06-13 15:42:52.444809 +0000 build-centos: ..SNAPSHOT_REPO=current-testing \
+2020-06-13 15:42:52.444817 +0000 build-centos: ..TARGET_REPO=current-testing \
+2020-06-13 15:42:52.444845 +0000 build-centos: ..UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/centos8 \
+2020-06-13 15:42:52.444860 +0000 build-centos: ..SNAPSHOT_FILE=/home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-centos8-`basename qubes-src/vmm-xen` \
+2020-06-13 15:42:52.444874 +0000 build-centos: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-centos/log_2020-06-13_15-26-35 \
+2020-06-13 15:42:52.444882 +0000 build-centos: ..update-repo || exit 1; \
+2020-06-13 15:42:52.444895 +0000 build-centos: elif make -C qubes-src/vmm-xen -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2020-06-13 15:42:52.444923 +0000 build-centos: .echo "Updating qubes-src/vmm-xen... "; \
+2020-06-13 15:42:52.444936 +0000 build-centos: .DIST=centos8 UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/centos8 \
+2020-06-13 15:42:52.444947 +0000 build-centos: .make -s -C qubes-src/vmm-xen update-repo-current-testing || exit 1; \
+2020-06-13 15:42:52.444954 +0000 build-centos: else \
+2020-06-13 15:42:52.444964 +0000 build-centos: .echo -n "Updating qubes-src/vmm-xen... skipping."; \
+2020-06-13 15:42:52.444971 +0000 build-centos: fi; \
+2020-06-13 15:42:52.444978 +0000 build-centos: echo
+2020-06-13 15:42:52.501891 +0000 build-centos: Updating qubes-src/vmm-xen... /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:157: target 'update-repo-do' does not exist
+2020-06-13 15:42:52.501974 +0000 build-centos: mkdir -p /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/centos8/rpm
+2020-06-13 15:42:52.515967 +0000 build-centos: if [ -n "pkgs/vm-centos8/python3-xen-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/python3-xen-debuginfo-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-4.13.1-4.centos8.src.rpm pkgs/vm-centos8/xen-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-debuginfo-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-debugsource-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-devel-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-hypervisor-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-libs-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-libs-debuginfo-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-licenses-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-qemu-tools-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-qubes-vm-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-qubes-vm-debuginfo-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-runtime-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-runtime-debuginfo-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-4.13.1-4.centos8.x86_64.buildinfo" ]; then \
+2020-06-13 15:42:52.516089 +0000 build-centos: .cd qubes-src/vmm-xen && ln -f pkgs/vm-centos8/python3-xen-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/python3-xen-debuginfo-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-4.13.1-4.centos8.src.rpm pkgs/vm-centos8/xen-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-debuginfo-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-debugsource-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-devel-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-hypervisor-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-libs-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-libs-debuginfo-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-licenses-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-qemu-tools-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-qubes-vm-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-qubes-vm-debuginfo-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-runtime-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-runtime-debuginfo-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-4.13.1-4.centos8.x86_64.buildinfo  /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/centos8/rpm/; \
+2020-06-13 15:42:52.516102 +0000 build-centos: else \
+2020-06-13 15:42:52.516116 +0000 build-centos: .echo "`tput bold`No packages defined by xen.spec, syntax error?`tput sgr0`"; \
+2020-06-13 15:42:52.516125 +0000 build-centos: .exit 1; \
+2020-06-13 15:42:52.516132 +0000 build-centos: fi
+2020-06-13 15:42:52.520081 +0000 build-centos: cd qubes-src/vmm-xen && echo pkgs/vm-centos8/python3-xen-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/python3-xen-debuginfo-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-4.13.1-4.centos8.src.rpm pkgs/vm-centos8/xen-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-debuginfo-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-debugsource-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-devel-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-hypervisor-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-libs-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-libs-debuginfo-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-licenses-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-qemu-tools-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-qubes-vm-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-qubes-vm-debuginfo-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-runtime-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-runtime-debuginfo-4.13.1-4.centos8.x86_64.rpm pkgs/vm-centos8/xen-4.13.1-4.centos8.x86_64.buildinfo  > /home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-centos8-vmm-xen
+2020-06-13 15:42:52.532811 +0000 build-centos: /home/user/builder-r4.1/qubes-src/builder-github//Makefile.github:18: target 'notify-github' does not exist
+2020-06-13 15:42:52.532858 +0000 build-centos: [ -z "python3-xen-4.13.1-4.centos8" ] || /home/user/builder-r4.1/qubes-src/builder-github//notify-issues \
+2020-06-13 15:42:52.532877 +0000 build-centos: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-centos/log_2020-06-13_15-26-35" \
+2020-06-13 15:42:52.532886 +0000 build-centos: .upload \
+2020-06-13 15:42:52.532894 +0000 build-centos: ."r4.1" \
+2020-06-13 15:42:52.532932 +0000 build-centos: ."qubes-src/vmm-xen" \
+2020-06-13 15:42:52.532941 +0000 build-centos: ."python3-xen-4.13.1-4.centos8" \
+2020-06-13 15:42:52.532949 +0000 build-centos: ."centos8" \
+2020-06-13 15:42:52.532957 +0000 build-centos: ."vm" \
+2020-06-13 15:42:52.532965 +0000 build-centos: ."current-testing" \
+2020-06-13 15:42:52.532976 +0000 build-centos: ."/home/user/github-notify-state/r4.1-vmm-xen-vm-centos8-current-testing" \
+2020-06-13 15:42:52.532987 +0000 build-centos: ."/home/user/github-notify-state/r4.1-vmm-xen-vm-centos8-current"
+2020-06-13 15:42:56.490243 +0000 build-centos: WARNING: message template /home/user/builder-r4.1/qubes-src/builder-github/templates/message-current-testing-vm doesn't exist, not adding comments
+2020-06-13 15:42:56.503594 +0000 build-centos: 
+2020-06-13 15:42:56.503796 +0000 build-centos: Makefile:793: update target 'internal-update-repo-current-testing.vm.centos8' due to: internal-update-repo-current-testing.vm.centos8.vmm-xen
+2020-06-13 15:42:56.503818 +0000 build-centos: true
+2020-06-13 15:42:56.505055 +0000 build-centos: Makefile:872: target 'post-update-repo-current-testing' does not exist
+2020-06-13 15:42:56.505094 +0000 build-centos: for dist in  centos8; do \
+2020-06-13 15:42:56.505106 +0000 build-centos: .repo_base_var="LINUX_REPO_${dist}_BASEDIR"; \
+2020-06-13 15:42:56.505116 +0000 build-centos: .if [ -n "${!repo_base_var}" ]; then \
+2020-06-13 15:42:56.505124 +0000 build-centos: ..repo_basedir="${!repo_base_var}"; \
+2020-06-13 15:42:56.505131 +0000 build-centos: .else \
+2020-06-13 15:42:56.505140 +0000 build-centos: ..repo_basedir="qubes-src/linux-yum/r4.1"; \
+2020-06-13 15:42:56.505146 +0000 build-centos: .fi; \
+2020-06-13 15:42:56.505155 +0000 build-centos: .repos_to_update="$repos_to_update $repo_basedir"; \
+2020-06-13 15:42:56.505162 +0000 build-centos: done; \
+2020-06-13 15:42:56.505169 +0000 build-centos: pkgset_dist= ; \
+2020-06-13 15:42:56.505176 +0000 build-centos: for dist in ; do \
+2020-06-13 15:42:56.505184 +0000 build-centos: .pkgset_dist="$pkgset_dist dom0/$dist"; \
+2020-06-13 15:42:56.505190 +0000 build-centos: done; \
+2020-06-13 15:42:56.505198 +0000 build-centos: for dist in centos8; do \
+2020-06-13 15:42:56.505209 +0000 build-centos: .pkgset_dist="$pkgset_dist vm/$dist"; \
+2020-06-13 15:42:56.505216 +0000 build-centos: done; \
+2020-06-13 15:42:56.505240 +0000 build-centos: for repo in `echo $repos_to_update|tr ' ' '\n'|sort|uniq`; do \
+2020-06-13 15:42:56.505250 +0000 build-centos: .[ -z "$repo" ] && continue; \
+2020-06-13 15:42:56.505259 +0000 build-centos: .[ -x "$repo/../update_repo-current-testing.sh" ] || continue; \
+2020-06-13 15:42:56.505269 +0000 build-centos: .(cd $repo/.. && ./update_repo-current-testing.sh r4.1 $pkgset_dist); \
+2020-06-13 15:42:56.505276 +0000 build-centos: done
+2020-06-13 15:42:56.516013 +0000 build-centos: which: no mkmetalink in (/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/home/user/.local/bin:/home/user/bin:/home/user/builder-r4.1/qubes-src/builder-rpm/tools)
+2020-06-13 15:42:56.518280 +0000 build-centos: --> Processing repo: r4.1/current-testing/dom0/fc25...
+2020-06-13 15:42:56.557942 +0000 build-centos: --> Processing repo: r4.1/current-testing/dom0/fc29...
+2020-06-13 15:42:56.590178 +0000 build-centos: --> Processing repo: r4.1/current-testing/dom0/fc31...
+2020-06-13 15:42:56.629512 +0000 build-centos: --> Processing repo: r4.1/current-testing/dom0/fc32...
+2020-06-13 15:42:56.666450 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/centos7...
+2020-06-13 15:42:58.308448 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/centos8...
+2020-06-13 15:43:00.707194 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc26...
+2020-06-13 15:43:00.743950 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc27...
+2020-06-13 15:43:00.780610 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc28...
+2020-06-13 15:43:00.817059 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc29...
+2020-06-13 15:43:00.849120 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc30...
+2020-06-13 15:43:00.886944 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc31...
+2020-06-13 15:43:00.922659 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc32...
+2020-06-13 15:43:00.975499 +0000 build-centos: Done.
+2020-06-13 15:43:00.981224 +0000 build-centos: ~/builder-r4.1/qubes-src/linux-yum ~/builder-r4.1/qubes-src/linux-yum
+2020-06-13 15:43:00.985932 +0000 build-centos: Syncing r4.1...
+2020-06-13 15:43:02.097553 +0000 build-centos: sending incremental file list
+2020-06-13 15:43:02.219004 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r4.1/current-testing/dom0/fc31": Operation not permitted (1)
+2020-06-13 15:43:02.224233 +0000 build-centos: .d..t...... current-testing/
+2020-06-13 15:43:02.224274 +0000 build-centos: .d..t...... current-testing/dom0/
+2020-06-13 15:43:02.224290 +0000 build-centos: .d..t...... current-testing/dom0/fc25/
+2020-06-13 15:43:02.224303 +0000 build-centos: .L..t...... current-testing/dom0/fc25/comps.xml -> ../../../comps-dom0.xml
+2020-06-13 15:43:02.224313 +0000 build-centos: .d..t...... current-testing/dom0/fc25/rpm/
+2020-06-13 15:43:02.224323 +0000 build-centos: <f..t...... current-testing/dom0/fc25/rpm/.gitignore
+2020-06-13 15:43:02.226837 +0000 build-centos: .              6 100%    0.00kB/s    0:00:00  .              6 100%    0.00kB/s    0:00:00 (xfr#1, ir-chk=1309/1321)
+2020-06-13 15:43:02.226881 +0000 build-centos: .d..t...... current-testing/dom0/fc29/
+2020-06-13 15:43:02.226919 +0000 build-centos: .d..t...... current-testing/dom0/fc31/
+2020-06-13 15:43:02.226936 +0000 build-centos: .L..t...... current-testing/dom0/fc31/comps.xml -> ../../../comps-dom0.xml
+2020-06-13 15:43:02.226946 +0000 build-centos: .d..t...... current-testing/dom0/fc31/rpm/
+2020-06-13 15:43:02.226957 +0000 build-centos: <f..t...... current-testing/dom0/fc31/rpm/.gitignore
+2020-06-13 15:43:02.233179 +0000 build-centos: .              6 100%    1.95kB/s    0:00:00  .              6 100%    1.95kB/s    0:00:00 (xfr#2, ir-chk=1306/1321)
+2020-06-13 15:43:02.233221 +0000 build-centos: .d..t...... current-testing/dom0/fc32/
+2020-06-13 15:43:02.233236 +0000 build-centos: .L..t...... current-testing/dom0/fc32/comps.xml -> ../../../comps-dom0.xml
+2020-06-13 15:43:02.233263 +0000 build-centos: .d..t...... current-testing/dom0/fc32/rpm/
+2020-06-13 15:43:02.233275 +0000 build-centos: <f..t...... current-testing/dom0/fc32/rpm/.gitignore
+2020-06-13 15:43:02.233287 +0000 build-centos: .              0 100%    0.00kB/s    0:00:00 (xfr#3, ir-chk=1303/1321)
+2020-06-13 15:43:02.233296 +0000 build-centos: .d..t...... current-testing/vm/
+2020-06-13 15:43:02.233305 +0000 build-centos: .d..t...... current-testing/vm/centos7/
+2020-06-13 15:43:02.233316 +0000 build-centos: .L..t...... current-testing/vm/centos7/comps.xml -> ../../../comps-vm.xml
+2020-06-13 15:43:02.233477 +0000 build-centos: .d..t...... current-testing/vm/centos7/rpm/
+2020-06-13 15:43:02.233499 +0000 build-centos: <f..t...... current-testing/vm/centos7/rpm/.gitignore
+2020-06-13 15:43:02.234925 +0000 build-centos: .              6 100%    0.84kB/s    0:00:00  .              6 100%    0.84kB/s    0:00:00 (xfr#4, to-chk=1689/1719)
+2020-06-13 15:43:02.234986 +0000 build-centos: .d..t...... current-testing/vm/centos8/
+2020-06-13 15:43:02.235001 +0000 build-centos: .L..t...... current-testing/vm/centos8/comps.xml -> ../../../comps-vm.xml
+2020-06-13 15:43:02.235011 +0000 build-centos: .d..t...... current-testing/vm/centos8/rpm/
+2020-06-13 15:43:02.235024 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/python3-xen-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:43:02.235038 +0000 build-centos: .         32,768  52%    4.46MB/s    0:00:00  .         62,284 100%    8.49MB/s    0:00:00 (xfr#5, to-chk=709/1719)
+2020-06-13 15:43:02.235050 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/python3-xen-debuginfo-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:43:02.235346 +0000 build-centos: .         32,768  49%    3.91MB/s    0:00:00  .         65,792 100%    7.84MB/s    0:00:00 (xfr#6, to-chk=706/1719)
+2020-06-13 15:43:02.235370 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/xen-4.13.1-4.centos8.src.rpm
+2020-06-13 15:43:24.866042 +0000 build-centos: .         32,768   0%    3.91MB/s    0:00:09  .      3,571,712   9%    3.39MB/s    0:00:10  .      5,275,648  13%    2.45MB/s    0:00:13  .      6,979,584  17%    2.15MB/s    0:00:14  .      8,683,520  22%    2.00MB/s    0:00:14  .     10,387,456  26%    1.55MB/s    0:00:17  .     12,091,392  31%    1.55MB/s    0:00:16  .     13,795,328  35%    1.55MB/s    0:00:15  .     15,499,264  39%    1.55MB/s    0:00:14  .     17,203,200  44%    1.56MB/s    0:00:13  .     18,907,136  48%    1.56MB/s    0:00:12  .     20,611,072  52%    1.56MB/s    0:00:11  .     22,315,008  57%    1.56MB/s    0:00:10  .     24,018,944  61%    1.54MB/s    0:00:09  .     25,722,880  66%    1.55MB/s    0:00:08  .     27,426,816  70%    1.55MB/s    0:00:07  .     29,130,752  74%    1.56MB/s    0:00:06  .     30,834,688  79%    1.57MB/s    0:00:05  .     32,538,624  83%    1.55MB/s    0:00:04  .     34,242,560  87%    1.55MB/s    0:00:02  .     35,946,496  92%    1.55MB/s    0:00:01  .     37,650,432  96%    1.55MB/s    0:00:00  .     38,937,019 100%    1.64MB/s    0:00:22 (xfr#7, to-chk=449/1719)
+2020-06-13 15:43:24.866101 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/xen-4.13.1-4.centos8.x86_64.buildinfo
+2020-06-13 15:43:24.866119 +0000 build-centos: .         12,472 100%   16.82kB/s    0:00:00  .         12,472 100%   16.82kB/s    0:00:00 (xfr#8, to-chk=448/1719)
+2020-06-13 15:43:24.866133 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/xen-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:43:24.944616 +0000 build-centos: .         25,016 100%   30.42kB/s    0:00:00  .         25,016 100%   30.42kB/s    0:00:00 (xfr#9, to-chk=447/1719)
+2020-06-13 15:43:24.944674 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/xen-debuginfo-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:43:24.944884 +0000 build-centos: .         32,768  36%   39.85kB/s    0:00:01  .         89,972 100%  109.42kB/s    0:00:00 (xfr#10, to-chk=444/1719)
+2020-06-13 15:43:24.944918 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/xen-debugsource-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:43:26.157099 +0000 build-centos: .         32,768   1%   36.16kB/s    0:00:54  .        294,912  14%  274.81kB/s    0:00:06  .      1,993,256 100%  966.02kB/s    0:00:02 (xfr#11, to-chk=441/1719)
+2020-06-13 15:43:26.157152 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/xen-devel-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:43:26.392223 +0000 build-centos: .         32,768  11%   30.74kB/s    0:00:08  .         65,536  22%   61.48kB/s    0:00:03  .        295,956 100%  240.65kB/s    0:00:01 (xfr#12, to-chk=438/1719)
+2020-06-13 15:43:26.392272 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/xen-hypervisor-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:43:26.392289 +0000 build-centos: .         12,072 100%   73.68kB/s    0:00:00  .         12,072 100%   73.68kB/s    0:00:00 (xfr#13, to-chk=435/1719)
+2020-06-13 15:43:26.392301 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/xen-libs-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:43:26.799080 +0000 build-centos: .         32,768   5%  200.00kB/s    0:00:02  .        622,848 100%    1.05MB/s    0:00:00 (xfr#14, to-chk=432/1719)
+2020-06-13 15:43:26.799137 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/xen-libs-debuginfo-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:43:27.762954 +0000 build-centos: .         32,768   1%   56.44kB/s    0:00:28  .        622,592  37%  601.38kB/s    0:00:01  .      1,668,576 100%    1.04MB/s    0:00:01 (xfr#15, to-chk=429/1719)
+2020-06-13 15:43:27.763015 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/xen-licenses-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:43:27.843775 +0000 build-centos: .         32,768  83%   53.24kB/s    0:00:00  .         39,144 100%   63.60kB/s    0:00:00 (xfr#16, to-chk=426/1719)
+2020-06-13 15:43:27.843847 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/xen-qemu-tools-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:43:27.843940 +0000 build-centos: .         12,736 100%   20.69kB/s    0:00:00  .         12,736 100%   20.69kB/s    0:00:00 (xfr#17, to-chk=423/1719)
+2020-06-13 15:43:27.843960 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/xen-qubes-vm-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:43:27.924510 +0000 build-centos: .         32,768  19%   53.24kB/s    0:00:02  .        165,928 100%  237.94kB/s    0:00:00 (xfr#18, to-chk=420/1719)
+2020-06-13 15:43:27.924569 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/xen-qubes-vm-debuginfo-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:43:28.084661 +0000 build-centos: .         32,768  11%   46.92kB/s    0:00:05  .        294,908 100%  342.04kB/s    0:00:00 (xfr#19, to-chk=417/1719)
+2020-06-13 15:43:28.084723 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/xen-runtime-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:43:43.695059 +0000 build-centos: .         32,768   0%   34.74kB/s    0:12:08  .        163,840   0%  160.00kB/s    0:02:37  .      1,867,776   7%  875.66kB/s    0:00:26  .      3,571,712  14%    1.10MB/s    0:00:19  .      5,275,648  20%    1.22MB/s    0:00:16  .      6,979,584  27%    1.54MB/s    0:00:11  .      8,683,520  34%    1.57MB/s    0:00:10  .     10,387,456  41%    1.56MB/s    0:00:09  .     12,091,392  47%    1.55MB/s    0:00:08  .     13,795,328  54%    1.57MB/s    0:00:07  .     15,499,264  61%    1.55MB/s    0:00:06  .     17,203,200  67%    1.55MB/s    0:00:05  .     18,907,136  74%    1.55MB/s    0:00:04  .     20,611,072  81%    1.55MB/s    0:00:02  .     22,315,008  88%    1.55MB/s    0:00:01  .     24,018,944  94%    1.55MB/s    0:00:00  .     25,334,208 100%    1.47MB/s    0:00:16 (xfr#20, to-chk=414/1719)
+2020-06-13 15:43:43.695113 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/xen-runtime-debuginfo-4.13.1-4.centos8.x86_64.rpm
+2020-06-13 15:43:45.465699 +0000 build-centos: .         32,768   1%   39.75kB/s    0:01:11  .        360,448  12%  336.20kB/s    0:00:07  .      2,064,384  71%  945.15kB/s    0:00:00  .      2,874,568 100%    1.06MB/s    0:00:02 (xfr#21, to-chk=411/1719)
+2020-06-13 15:43:45.465805 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r4.1/current/dom0/fc31": Operation not permitted (1)
+2020-06-13 15:43:45.465825 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r4.1/security-testing/dom0/fc31": Operation not permitted (1)
+2020-06-13 15:43:45.465882 +0000 build-centos: .d..t...... current-testing/vm/fc26/
+2020-06-13 15:43:45.465934 +0000 build-centos: .d..t...... current-testing/vm/fc27/
+2020-06-13 15:43:45.465947 +0000 build-centos: .d..t...... current-testing/vm/fc28/
+2020-06-13 15:43:45.465956 +0000 build-centos: .d..t...... current-testing/vm/fc29/
+2020-06-13 15:43:45.465968 +0000 build-centos: .L..t...... current-testing/vm/fc29/comps.xml -> ../../../comps-vm.xml
+2020-06-13 15:43:45.465977 +0000 build-centos: .d..t...... current-testing/vm/fc29/rpm/
+2020-06-13 15:43:45.465988 +0000 build-centos: <f..t...... current-testing/vm/fc29/rpm/.gitignore
+2020-06-13 15:43:45.480503 +0000 build-centos: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#22, to-chk=395/1719)
+2020-06-13 15:43:45.480547 +0000 build-centos: .d..t...... current-testing/vm/fc30/
+2020-06-13 15:43:45.480562 +0000 build-centos: .L..t...... current-testing/vm/fc30/comps.xml -> ../../../comps-vm.xml
+2020-06-13 15:43:45.480573 +0000 build-centos: .d..t...... current-testing/vm/fc30/rpm/
+2020-06-13 15:43:45.480622 +0000 build-centos: <f..t...... current-testing/vm/fc30/rpm/.gitignore
+2020-06-13 15:43:45.481033 +0000 build-centos: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#23, to-chk=392/1719)
+2020-06-13 15:43:45.481060 +0000 build-centos: .d..t...... current-testing/vm/fc31/
+2020-06-13 15:43:45.481116 +0000 build-centos: .L..t...... current-testing/vm/fc31/comps.xml -> ../../../comps-vm.xml
+2020-06-13 15:43:45.481132 +0000 build-centos: .d..t...... current-testing/vm/fc32/
+2020-06-13 15:43:45.481144 +0000 build-centos: .L..t...... current-testing/vm/fc32/comps.xml -> ../../../comps-vm.xml
+2020-06-13 15:43:45.481154 +0000 build-centos: .d..t...... current-testing/vm/fc32/rpm/
+2020-06-13 15:43:45.481236 +0000 build-centos: <f..t...... current-testing/vm/fc32/rpm/.gitignore
+2020-06-13 15:43:45.481259 +0000 build-centos: .              0 100%    0.00kB/s    0:00:00 (xfr#24, to-chk=386/1719)
+2020-06-13 15:43:45.481269 +0000 build-centos: .d..t...... current/
+2020-06-13 15:43:45.481278 +0000 build-centos: .d..t...... current/dom0/
+2020-06-13 15:43:45.481340 +0000 build-centos: .d..t...... current/dom0/fc25/
+2020-06-13 15:43:45.481363 +0000 build-centos: .L..t...... current/dom0/fc25/comps.xml -> ../../../comps-dom0.xml
+2020-06-13 15:43:45.481373 +0000 build-centos: .d..t...... current/dom0/fc25/rpm/
+2020-06-13 15:43:45.481413 +0000 build-centos: <f..t...... current/dom0/fc25/rpm/.gitignore
+2020-06-13 15:43:45.481827 +0000 build-centos: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#25, to-chk=377/1719)
+2020-06-13 15:43:45.481849 +0000 build-centos: .d..t...... current/dom0/fc29/
+2020-06-13 15:43:45.481859 +0000 build-centos: .d..t...... current/dom0/fc31/
+2020-06-13 15:43:45.481920 +0000 build-centos: .L..t...... current/dom0/fc31/comps.xml -> ../../../comps-dom0.xml
+2020-06-13 15:43:45.481938 +0000 build-centos: .d..t...... current/dom0/fc31/rpm/
+2020-06-13 15:43:45.481951 +0000 build-centos: <f..t...... current/dom0/fc31/rpm/.gitignore
+2020-06-13 15:43:45.482289 +0000 build-centos: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#26, to-chk=374/1719)
+2020-06-13 15:43:45.482370 +0000 build-centos: .d..t...... current/dom0/fc32/
+2020-06-13 15:43:45.482386 +0000 build-centos: .L..t...... current/dom0/fc32/comps.xml -> ../../../comps-dom0.xml
+2020-06-13 15:43:45.482412 +0000 build-centos: .d..t...... current/dom0/fc32/rpm/
+2020-06-13 15:43:45.482458 +0000 build-centos: <f..t...... current/dom0/fc32/rpm/.gitignore
+2020-06-13 15:43:45.482473 +0000 build-centos: .              0 100%    0.00kB/s    0:00:00 (xfr#27, to-chk=371/1719)
+2020-06-13 15:43:45.482481 +0000 build-centos: .d..t...... current/vm/
+2020-06-13 15:43:45.482546 +0000 build-centos: .d..t...... current/vm/centos7/
+2020-06-13 15:43:45.482561 +0000 build-centos: .L..t...... current/vm/centos7/comps.xml -> ../../../comps-vm.xml
+2020-06-13 15:43:45.482570 +0000 build-centos: .d..t...... current/vm/centos7/rpm/
+2020-06-13 15:43:45.482607 +0000 build-centos: <f..t...... current/vm/centos7/rpm/.gitignore
+2020-06-13 15:43:45.482986 +0000 build-centos: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#28, to-chk=362/1719)
+2020-06-13 15:43:45.483007 +0000 build-centos: .d..t...... current/vm/centos8/
+2020-06-13 15:43:45.483120 +0000 build-centos: .L..t...... current/vm/centos8/comps.xml -> ../../../comps-vm.xml
+2020-06-13 15:43:45.483137 +0000 build-centos: .d..t...... current/vm/centos8/rpm/
+2020-06-13 15:43:45.483146 +0000 build-centos: .d..t...... current/vm/fc29/
+2020-06-13 15:43:45.483160 +0000 build-centos: .L..t...... current/vm/fc29/comps.xml -> ../../../comps-vm.xml
+2020-06-13 15:43:45.483169 +0000 build-centos: .d..t...... current/vm/fc29/rpm/
+2020-06-13 15:43:45.483207 +0000 build-centos: <f..t...... current/vm/fc29/rpm/.gitignore
+2020-06-13 15:43:45.483564 +0000 build-centos: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#29, to-chk=44/1719)
+2020-06-13 15:43:45.483631 +0000 build-centos: .d..t...... current/vm/fc30/
+2020-06-13 15:43:45.483656 +0000 build-centos: .L..t...... current/vm/fc30/comps.xml -> ../../../comps-vm.xml
+2020-06-13 15:43:45.483666 +0000 build-centos: .d..t...... current/vm/fc30/rpm/
+2020-06-13 15:43:45.483705 +0000 build-centos: <f..t...... current/vm/fc30/rpm/.gitignore
+2020-06-13 15:43:45.484043 +0000 build-centos: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#30, to-chk=41/1719)
+2020-06-13 15:43:45.484147 +0000 build-centos: .d..t...... current/vm/fc31/
+2020-06-13 15:43:45.484164 +0000 build-centos: .L..t...... current/vm/fc31/comps.xml -> ../../../comps-vm.xml
+2020-06-13 15:43:45.484173 +0000 build-centos: .d..t...... current/vm/fc32/
+2020-06-13 15:43:45.484184 +0000 build-centos: .L..t...... current/vm/fc32/comps.xml -> ../../../comps-vm.xml
+2020-06-13 15:43:45.484241 +0000 build-centos: .d..t...... current/vm/fc32/rpm/
+2020-06-13 15:43:45.484255 +0000 build-centos: <f..t...... current/vm/fc32/rpm/.gitignore
+2020-06-13 15:43:45.484283 +0000 build-centos: .              0 100%    0.00kB/s    0:00:00 (xfr#31, to-chk=35/1719)
+2020-06-13 15:43:45.484327 +0000 build-centos: .d..t...... security-testing/
+2020-06-13 15:43:45.484342 +0000 build-centos: .d..t...... security-testing/dom0/
+2020-06-13 15:43:45.484385 +0000 build-centos: .d..t...... security-testing/dom0/fc25/
+2020-06-13 15:43:45.484401 +0000 build-centos: .d..t...... security-testing/dom0/fc25/rpm/
+2020-06-13 15:43:45.484439 +0000 build-centos: <f..t...... security-testing/dom0/fc25/rpm/.gitignore
+2020-06-13 15:43:45.484807 +0000 build-centos: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#32, to-chk=28/1719)
+2020-06-13 15:43:45.484887 +0000 build-centos: .d..t...... security-testing/dom0/fc31/
+2020-06-13 15:43:45.484927 +0000 build-centos: .d..t...... security-testing/dom0/fc31/rpm/
+2020-06-13 15:43:45.484940 +0000 build-centos: <f..t...... security-testing/dom0/fc31/rpm/.gitignore
+2020-06-13 15:43:45.485468 +0000 build-centos: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#33, to-chk=26/1719)
+2020-06-13 15:43:45.485490 +0000 build-centos: .d..t...... security-testing/dom0/fc32/
+2020-06-13 15:43:45.485586 +0000 build-centos: .L..t...... security-testing/dom0/fc32/comps.xml -> ../../../comps-dom0.xml
+2020-06-13 15:43:45.485602 +0000 build-centos: .d..t...... security-testing/dom0/fc32/rpm/
+2020-06-13 15:43:45.485614 +0000 build-centos: <f..t...... security-testing/dom0/fc32/rpm/.gitignore
+2020-06-13 15:43:45.485626 +0000 build-centos: .              0 100%    0.00kB/s    0:00:00 (xfr#34, to-chk=23/1719)
+2020-06-13 15:43:45.485697 +0000 build-centos: .d..t...... security-testing/vm/
+2020-06-13 15:43:45.485712 +0000 build-centos: .d..t...... security-testing/vm/centos7/
+2020-06-13 15:43:45.485724 +0000 build-centos: .L..t...... security-testing/vm/centos7/comps.xml -> ../../../comps-vm.xml
+2020-06-13 15:43:45.485734 +0000 build-centos: .d..t...... security-testing/vm/centos7/rpm/
+2020-06-13 15:43:45.485772 +0000 build-centos: <f..t...... security-testing/vm/centos7/rpm/.gitignore
+2020-06-13 15:43:45.486070 +0000 build-centos: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#35, to-chk=14/1719)
+2020-06-13 15:43:45.486190 +0000 build-centos: .d..t...... security-testing/vm/centos8/
+2020-06-13 15:43:45.486213 +0000 build-centos: .L..t...... security-testing/vm/centos8/comps.xml -> ../../../comps-vm.xml
+2020-06-13 15:43:45.486224 +0000 build-centos: .d..t...... security-testing/vm/fc29/
+2020-06-13 15:43:45.486233 +0000 build-centos: .d..t...... security-testing/vm/fc29/rpm/
+2020-06-13 15:43:45.486272 +0000 build-centos: <f..t...... security-testing/vm/fc29/rpm/.gitignore
+2020-06-13 15:43:45.486589 +0000 build-centos: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#36, to-chk=9/1719)
+2020-06-13 15:43:45.486667 +0000 build-centos: .d..t...... security-testing/vm/fc30/
+2020-06-13 15:43:45.486685 +0000 build-centos: .L..t...... security-testing/vm/fc30/comps.xml -> ../../../comps-vm.xml
+2020-06-13 15:43:45.486696 +0000 build-centos: .d..t...... security-testing/vm/fc30/rpm/
+2020-06-13 15:43:45.486736 +0000 build-centos: <f..t...... security-testing/vm/fc30/rpm/.gitignore
+2020-06-13 15:43:45.487049 +0000 build-centos: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#37, to-chk=6/1719)
+2020-06-13 15:43:45.487125 +0000 build-centos: .d..t...... security-testing/vm/fc31/
+2020-06-13 15:43:45.487143 +0000 build-centos: .L..t...... security-testing/vm/fc31/comps.xml -> ../../../comps-vm.xml
+2020-06-13 15:43:45.487153 +0000 build-centos: .d..t...... security-testing/vm/fc32/
+2020-06-13 15:43:45.487222 +0000 build-centos: .L..t...... security-testing/vm/fc32/comps.xml -> ../../../comps-vm.xml
+2020-06-13 15:43:45.487238 +0000 build-centos: .d..t...... security-testing/vm/fc32/rpm/
+2020-06-13 15:43:45.487254 +0000 build-centos: <f..t...... security-testing/vm/fc32/rpm/.gitignore
+2020-06-13 15:43:45.487296 +0000 build-centos: .              0 100%    0.00kB/s    0:00:00 (xfr#38, to-chk=0/1719)
+2020-06-13 15:43:46.814527 +0000 build-centos: rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1189) [sender=3.1.3]
+2020-06-13 15:43:47.205996 +0000 build-centos: --> Processing repo: r4.1/current/dom0/fc25...
+2020-06-13 15:43:47.598881 +0000 build-centos: 15:43:47: posix_spawn avoided (fd close requested) 
+2020-06-13 15:43:47.603783 +0000 build-centos: 15:43:47: posix_spawn avoided (fd close requested) 
+2020-06-13 15:43:47.609036 +0000 build-centos: 15:43:47: posix_spawn avoided (fd close requested) 
+2020-06-13 15:43:47.619755 +0000 build-centos: 15:43:47: posix_spawn avoided (fd close requested) 
+2020-06-13 15:43:47.626374 +0000 build-centos: 15:43:47: posix_spawn avoided (fd close requested) 
+2020-06-13 15:43:48.592727 +0000 build-centos: --> Processing repo: r4.1/current/dom0/fc29...
+2020-06-13 15:43:48.680033 +0000 build-centos: Temporary repodata directory r4.1/current/dom0/fc29/.repodata/ already exists! (Another createrepo process is running?)
+2020-06-13 15:43:49.724720 +0000 build-centos: --> Processing repo: r4.1/current/dom0/fc31...
+2020-06-13 15:43:55.930098 +0000 build-centos: 15:43:56: posix_spawn avoided (fd close requested) 
+2020-06-13 15:43:55.945722 +0000 build-centos: 15:43:56: posix_spawn avoided (fd close requested) 
+2020-06-13 15:43:55.959587 +0000 build-centos: 15:43:56: posix_spawn avoided (fd close requested) 
+2020-06-13 15:43:56.003030 +0000 build-centos: 15:43:56: posix_spawn avoided (fd close requested) 
+2020-06-13 15:43:56.020082 +0000 build-centos: 15:43:56: posix_spawn avoided (fd close requested) 
+2020-06-13 15:43:57.032026 +0000 build-centos: --> Processing repo: r4.1/current/dom0/fc32...
+2020-06-13 15:43:57.538627 +0000 build-centos: 15:43:57: posix_spawn avoided (fd close requested) 
+2020-06-13 15:43:57.544121 +0000 build-centos: 15:43:57: posix_spawn avoided (fd close requested) 
+2020-06-13 15:43:57.549881 +0000 build-centos: 15:43:57: posix_spawn avoided (fd close requested) 
+2020-06-13 15:43:57.559508 +0000 build-centos: 15:43:57: posix_spawn avoided (fd close requested) 
+2020-06-13 15:43:57.567309 +0000 build-centos: 15:43:57: posix_spawn avoided (fd close requested) 
+2020-06-13 15:43:58.518628 +0000 build-centos: --> Processing repo: r4.1/current/vm/centos7...
+2020-06-13 15:43:58.939953 +0000 build-centos: 15:43:59: posix_spawn avoided (fd close requested) 
+2020-06-13 15:43:58.946586 +0000 build-centos: 15:43:59: posix_spawn avoided (fd close requested) 
+2020-06-13 15:43:58.952256 +0000 build-centos: 15:43:59: posix_spawn avoided (fd close requested) 
+2020-06-13 15:43:58.962265 +0000 build-centos: 15:43:59: posix_spawn avoided (fd close requested) 
+2020-06-13 15:43:58.970209 +0000 build-centos: 15:43:59: posix_spawn avoided (fd close requested) 
+2020-06-13 15:43:59.994769 +0000 build-centos: --> Processing repo: r4.1/current/vm/centos8...
+2020-06-13 15:44:00.415783 +0000 build-centos: 15:44:00: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:00.421394 +0000 build-centos: 15:44:00: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:00.427280 +0000 build-centos: 15:44:00: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:00.436850 +0000 build-centos: 15:44:00: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:00.444367 +0000 build-centos: 15:44:00: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:01.390341 +0000 build-centos: --> Processing repo: r4.1/current/vm/fc25...
+2020-06-13 15:44:01.505890 +0000 build-centos: 15:44:01: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:01.510062 +0000 build-centos: 15:44:01: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:01.515844 +0000 build-centos: 15:44:01: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:01.523328 +0000 build-centos: 15:44:01: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:01.530460 +0000 build-centos: 15:44:01: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:02.488047 +0000 build-centos: --> Processing repo: r4.1/current/vm/fc26...
+2020-06-13 15:44:02.596737 +0000 build-centos: 15:44:02: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:02.601629 +0000 build-centos: 15:44:02: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:02.607270 +0000 build-centos: 15:44:02: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:02.614808 +0000 build-centos: 15:44:02: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:02.622295 +0000 build-centos: 15:44:02: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:03.570070 +0000 build-centos: --> Processing repo: r4.1/current/vm/fc27...
+2020-06-13 15:44:03.682644 +0000 build-centos: 15:44:04: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:03.688676 +0000 build-centos: 15:44:04: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:03.692946 +0000 build-centos: 15:44:04: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:03.700533 +0000 build-centos: 15:44:04: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:03.707938 +0000 build-centos: 15:44:04: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:04.682028 +0000 build-centos: --> Processing repo: r4.1/current/vm/fc28...
+2020-06-13 15:44:04.793666 +0000 build-centos: 15:44:05: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:04.799490 +0000 build-centos: 15:44:05: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:04.804634 +0000 build-centos: 15:44:05: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:04.812330 +0000 build-centos: 15:44:05: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:04.821446 +0000 build-centos: 15:44:05: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:05.794009 +0000 build-centos: --> Processing repo: r4.1/current/vm/fc29...
+2020-06-13 15:44:06.463373 +0000 build-centos: 15:44:06: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:06.477957 +0000 build-centos: 15:44:06: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:06.478009 +0000 build-centos: 15:44:06: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:06.485989 +0000 build-centos: 15:44:06: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:06.495500 +0000 build-centos: 15:44:06: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:07.459430 +0000 build-centos: --> Processing repo: r4.1/current/vm/fc30...
+2020-06-13 15:44:08.242734 +0000 build-centos: 15:44:08: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:08.248197 +0000 build-centos: 15:44:08: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:08.254196 +0000 build-centos: 15:44:08: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:08.264475 +0000 build-centos: 15:44:08: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:08.272590 +0000 build-centos: 15:44:08: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:09.237782 +0000 build-centos: --> Processing repo: r4.1/current/vm/fc31...
+2020-06-13 15:44:09.899029 +0000 build-centos: 15:44:10: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:09.905728 +0000 build-centos: 15:44:10: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:09.910728 +0000 build-centos: 15:44:10: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:09.920803 +0000 build-centos: 15:44:10: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:09.928638 +0000 build-centos: 15:44:10: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:10.901275 +0000 build-centos: --> Processing repo: r4.1/current/vm/fc32...
+2020-06-13 15:44:11.295406 +0000 build-centos: 15:44:11: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:11.301889 +0000 build-centos: 15:44:11: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:11.307877 +0000 build-centos: 15:44:11: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:11.317274 +0000 build-centos: 15:44:11: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:11.325025 +0000 build-centos: 15:44:11: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:12.298310 +0000 build-centos: Done.
+2020-06-13 15:44:12.428315 +0000 build-centos: --> Processing repo: r4.1/current-testing/dom0/fc25...
+2020-06-13 15:44:12.833654 +0000 build-centos: 15:44:13: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:12.839592 +0000 build-centos: 15:44:13: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:12.844834 +0000 build-centos: 15:44:13: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:12.853955 +0000 build-centos: 15:44:13: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:12.862025 +0000 build-centos: 15:44:13: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:13.822064 +0000 build-centos: --> Processing repo: r4.1/current-testing/dom0/fc29...
+2020-06-13 15:44:34.648197 +0000 build-centos: 15:44:34: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:34.664057 +0000 build-centos: 15:44:35: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:34.680635 +0000 build-centos: 15:44:35: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:34.766308 +0000 build-centos: 15:44:35: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:34.785401 +0000 build-centos: 15:44:35: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:36.179347 +0000 build-centos: --> Processing repo: r4.1/current-testing/dom0/fc31...
+2020-06-13 15:44:36.289385 +0000 build-centos: Temporary repodata directory r4.1/current-testing/dom0/fc31/.repodata/ already exists! (Another createrepo process is running?)
+2020-06-13 15:44:37.216272 +0000 build-centos: --> Processing repo: r4.1/current-testing/dom0/fc32...
+2020-06-13 15:44:46.869007 +0000 build-centos: 15:44:47: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:46.883791 +0000 build-centos: 15:44:47: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:46.896601 +0000 build-centos: 15:44:47: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:46.942054 +0000 build-centos: 15:44:47: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:46.957498 +0000 build-centos: 15:44:47: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:47.995374 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/centos7...
+2020-06-13 15:44:50.042083 +0000 build-centos: 15:44:50: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:50.058982 +0000 build-centos: 15:44:50: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:50.063650 +0000 build-centos: 15:44:50: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:50.078945 +0000 build-centos: 15:44:50: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:50.087269 +0000 build-centos: 15:44:50: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:51.041997 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/centos8...
+2020-06-13 15:44:52.457803 +0000 build-centos: 15:44:52: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:52.463598 +0000 build-centos: 15:44:52: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:52.468317 +0000 build-centos: 15:44:52: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:52.480142 +0000 build-centos: 15:44:52: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:52.488082 +0000 build-centos: 15:44:52: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:53.447627 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc25...
+2020-06-13 15:44:53.557044 +0000 build-centos: 15:44:53: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:53.562161 +0000 build-centos: 15:44:53: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:53.567895 +0000 build-centos: 15:44:53: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:53.575066 +0000 build-centos: 15:44:53: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:53.582814 +0000 build-centos: 15:44:53: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:54.536990 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc26...
+2020-06-13 15:44:54.645951 +0000 build-centos: 15:44:54: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:54.650718 +0000 build-centos: 15:44:55: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:54.655652 +0000 build-centos: 15:44:55: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:54.663560 +0000 build-centos: 15:44:55: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:54.670988 +0000 build-centos: 15:44:55: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:55.609657 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc27...
+2020-06-13 15:44:55.718650 +0000 build-centos: 15:44:56: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:55.723535 +0000 build-centos: 15:44:56: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:55.728542 +0000 build-centos: 15:44:56: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:55.736149 +0000 build-centos: 15:44:56: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:55.743604 +0000 build-centos: 15:44:56: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:56.725496 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc28...
+2020-06-13 15:44:56.834279 +0000 build-centos: 15:44:57: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:56.840703 +0000 build-centos: 15:44:57: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:56.845952 +0000 build-centos: 15:44:57: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:56.853641 +0000 build-centos: 15:44:57: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:56.861449 +0000 build-centos: 15:44:57: posix_spawn avoided (fd close requested) 
+2020-06-13 15:44:57.805649 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc29...
+2020-06-13 15:45:00.630099 +0000 build-centos: 15:45:00: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:00.634892 +0000 build-centos: 15:45:00: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:00.640405 +0000 build-centos: 15:45:00: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:00.655035 +0000 build-centos: 15:45:01: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:00.663767 +0000 build-centos: 15:45:01: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:01.645034 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc30...
+2020-06-13 15:45:04.303061 +0000 build-centos: 15:45:04: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:04.309277 +0000 build-centos: 15:45:04: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:04.314650 +0000 build-centos: 15:45:04: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:04.328831 +0000 build-centos: 15:45:04: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:04.336947 +0000 build-centos: 15:45:04: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:05.293378 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc31...
+2020-06-13 15:45:07.427744 +0000 build-centos: 15:45:07: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:07.434504 +0000 build-centos: 15:45:07: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:07.439653 +0000 build-centos: 15:45:07: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:07.456231 +0000 build-centos: 15:45:07: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:07.465176 +0000 build-centos: 15:45:07: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:08.530708 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc32...
+2020-06-13 15:45:09.610481 +0000 build-centos: 15:45:09: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:09.616261 +0000 build-centos: 15:45:09: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:09.622296 +0000 build-centos: 15:45:09: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:09.633712 +0000 build-centos: 15:45:09: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:09.641490 +0000 build-centos: 15:45:09: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:10.602236 +0000 build-centos: Done.
+2020-06-13 15:45:10.747333 +0000 build-centos: --> Processing repo: r4.1/security-testing/dom0/fc21...
+2020-06-13 15:45:10.857859 +0000 build-centos: 15:45:11: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:10.863136 +0000 build-centos: 15:45:11: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:10.868672 +0000 build-centos: 15:45:11: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:10.876818 +0000 build-centos: 15:45:11: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:10.884278 +0000 build-centos: 15:45:11: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:11.829335 +0000 build-centos: --> Processing repo: r4.1/security-testing/dom0/fc25...
+2020-06-13 15:45:12.133564 +0000 build-centos: 15:45:12: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:12.138818 +0000 build-centos: 15:45:12: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:12.143912 +0000 build-centos: 15:45:12: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:12.151858 +0000 build-centos: 15:45:12: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:12.159166 +0000 build-centos: 15:45:12: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:13.129046 +0000 build-centos: --> Processing repo: r4.1/security-testing/dom0/fc29...
+2020-06-13 15:45:13.243328 +0000 build-centos: 15:45:13: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:13.248431 +0000 build-centos: 15:45:13: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:13.253849 +0000 build-centos: 15:45:13: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:13.261296 +0000 build-centos: 15:45:13: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:13.268694 +0000 build-centos: 15:45:13: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:14.294272 +0000 build-centos: --> Processing repo: r4.1/security-testing/dom0/fc31...
+2020-06-13 15:45:14.422755 +0000 build-centos: 15:45:14: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:14.427124 +0000 build-centos: 15:45:14: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:14.433115 +0000 build-centos: 15:45:14: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:14.441980 +0000 build-centos: 15:45:14: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:14.450510 +0000 build-centos: 15:45:14: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:15.457862 +0000 build-centos: --> Processing repo: r4.1/security-testing/dom0/fc32...
+2020-06-13 15:45:15.618412 +0000 build-centos: 15:45:15: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:15.623548 +0000 build-centos: 15:45:15: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:15.628819 +0000 build-centos: 15:45:15: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:15.636607 +0000 build-centos: 15:45:15: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:15.645605 +0000 build-centos: 15:45:15: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:16.657829 +0000 build-centos: --> Processing repo: r4.1/security-testing/vm/centos7...
+2020-06-13 15:45:16.770203 +0000 build-centos: 15:45:17: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:16.776037 +0000 build-centos: 15:45:17: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:16.780486 +0000 build-centos: 15:45:17: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:16.787350 +0000 build-centos: 15:45:17: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:16.794761 +0000 build-centos: 15:45:17: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:17.777206 +0000 build-centos: --> Processing repo: r4.1/security-testing/vm/centos8...
+2020-06-13 15:45:17.890698 +0000 build-centos: 15:45:18: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:17.897082 +0000 build-centos: 15:45:18: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:17.902868 +0000 build-centos: 15:45:18: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:17.910309 +0000 build-centos: 15:45:18: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:17.917590 +0000 build-centos: 15:45:18: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:18.925281 +0000 build-centos: --> Processing repo: r4.1/security-testing/vm/fc26...
+2020-06-13 15:45:19.042135 +0000 build-centos: 15:45:19: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:19.047538 +0000 build-centos: 15:45:19: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:19.053068 +0000 build-centos: 15:45:19: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:19.061012 +0000 build-centos: 15:45:19: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:19.069520 +0000 build-centos: 15:45:19: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:20.090323 +0000 build-centos: --> Processing repo: r4.1/security-testing/vm/fc27...
+2020-06-13 15:45:20.270394 +0000 build-centos: 15:45:20: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:20.277620 +0000 build-centos: 15:45:20: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:20.286001 +0000 build-centos: 15:45:20: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:20.294728 +0000 build-centos: 15:45:20: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:20.301784 +0000 build-centos: 15:45:20: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:21.271215 +0000 build-centos: --> Processing repo: r4.1/security-testing/vm/fc28...
+2020-06-13 15:45:21.384195 +0000 build-centos: 15:45:21: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:21.389680 +0000 build-centos: 15:45:21: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:21.404893 +0000 build-centos: 15:45:21: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:21.413382 +0000 build-centos: 15:45:21: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:21.424299 +0000 build-centos: 15:45:21: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:22.534029 +0000 build-centos: --> Processing repo: r4.1/security-testing/vm/fc29...
+2020-06-13 15:45:22.698141 +0000 build-centos: 15:45:23: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:22.703267 +0000 build-centos: 15:45:23: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:22.709297 +0000 build-centos: 15:45:23: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:22.717753 +0000 build-centos: 15:45:23: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:22.726115 +0000 build-centos: 15:45:23: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:23.713269 +0000 build-centos: --> Processing repo: r4.1/security-testing/vm/fc30...
+2020-06-13 15:45:23.829670 +0000 build-centos: 15:45:24: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:23.836082 +0000 build-centos: 15:45:24: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:23.841034 +0000 build-centos: 15:45:24: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:23.849398 +0000 build-centos: 15:45:24: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:23.857716 +0000 build-centos: 15:45:24: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:24.878055 +0000 build-centos: --> Processing repo: r4.1/security-testing/vm/fc31...
+2020-06-13 15:45:25.001043 +0000 build-centos: 15:45:25: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:25.007036 +0000 build-centos: 15:45:25: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:25.012547 +0000 build-centos: 15:45:25: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:25.022558 +0000 build-centos: 15:45:25: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:25.031320 +0000 build-centos: 15:45:25: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:26.063817 +0000 build-centos: --> Processing repo: r4.1/security-testing/vm/fc32...
+2020-06-13 15:45:26.186478 +0000 build-centos: 15:45:26: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:26.191453 +0000 build-centos: 15:45:26: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:26.196425 +0000 build-centos: 15:45:26: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:26.204195 +0000 build-centos: 15:45:26: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:26.212023 +0000 build-centos: 15:45:26: posix_spawn avoided (fd close requested) 
+2020-06-13 15:45:27.211751 +0000 build-centos: Done.
+2020-06-13 15:45:27.213774 +0000 build-centos: ~/builder-r4.1/qubes-src/linux-yum
+2020-06-13 15:45:27.214455 +0000 build-centos: Makefile:778: update target 'update-repo-current-testing' due to: internal-update-repo-current-testing.vm.centos8 post-update-repo-current-testing
+2020-06-13 15:45:27.214491 +0000 build-centos: true
+2020-06-13 15:45:27.216101 +0000 build-centos: > done
+2020-06-13 15:45:27.216140 +0000 > closing log
