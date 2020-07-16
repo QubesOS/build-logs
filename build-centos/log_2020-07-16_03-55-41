@@ -1,0 +1,937 @@
+2020-07-16 03:55:41.639271 +0000 > starting log
+2020-07-16 03:55:41.639778 +0000 build-centos: > starting build with log
+2020-07-16 03:55:41.639809 +0000 build-centos: >> make args: DISTS_VM= centos8 DIST_DOM0= BUILD_LOGS_URL= desktop-linux-xfce4-vm-centos8=https://github.com/QubesOS/build-logs/tree/master/build-centos/log_2020-07-16_03-54-18 GIT_URL_desktop_linux_xfce4=https://github.com/QubesOS/qubes-desktop-linux-xfce4 sign-all update-repo-current-testing
+2020-07-16 03:55:41.639821 +0000 build-centos: >> MAKEFLAGS=
+2020-07-16 03:55:41.639831 +0000 build-centos: >> COMPONENTS=desktop-linux-xfce4
+2020-07-16 03:55:41.639838 +0000 build-centos: >> DISTS_VM=
+2020-07-16 03:55:41.639845 +0000 build-centos: >> DIST_DOM0=
+2020-07-16 03:55:41.639854 +0000 build-centos: >> qubes-builder 138cc6fbca8c49d94b1e35a7f8898e85e0721113
+2020-07-16 03:55:41.639865 +0000 build-centos: >> qubes-builder/qubes-src/desktop-linux-xfce4 960c9fd8e25c2226867c64af6d8fe0eac3351472
+2020-07-16 03:55:41.639874 +0000 build-centos: !! garcon/garcon-0.5.0.tar.bz2
+2020-07-16 03:55:41.639884 +0000 build-centos: !! pkgs/vm-centos7/xfce4-settings-qubes-4.0.3-2.centos7.x86_64.buildinfo
+2020-07-16 03:55:41.639893 +0000 build-centos: !! pkgs/vm-centos7/xfce4-settings-qubes.spec.list
+2020-07-16 03:55:41.639902 +0000 build-centos: !! pkgs/vm-centos8/xfce4-settings-qubes-4.0.3-2.centos8.src.rpm
+2020-07-16 03:55:41.639912 +0000 build-centos: !! pkgs/vm-centos8/xfce4-settings-qubes-4.0.3-2.centos8.x86_64.buildinfo
+2020-07-16 03:55:41.639922 +0000 build-centos: !! pkgs/vm-centos8/xfce4-settings-qubes-4.0.3-2.centos8.x86_64.rpm
+2020-07-16 03:55:41.639931 +0000 build-centos: !! pkgs/vm-centos8/xfce4-settings-qubes-4.0.4-1.centos8.src.rpm
+2020-07-16 03:55:41.639941 +0000 build-centos: !! pkgs/vm-centos8/xfce4-settings-qubes-4.0.4-1.centos8.x86_64.buildinfo
+2020-07-16 03:55:41.639951 +0000 build-centos: !! pkgs/vm-centos8/xfce4-settings-qubes-4.0.4-1.centos8.x86_64.rpm
+2020-07-16 03:55:41.639960 +0000 build-centos: !! pkgs/vm-centos8/xfce4-settings-qubes.spec.list
+2020-07-16 03:55:41.639967 +0000 build-centos: !! xfwm4/xfwm4-4.12.4.tar.bz2
+2020-07-16 03:55:41.639983 +0000 build-centos: 9e360e71ae12dbfb5e948fd86c2ec3d6993e6ec68379adb588492386a4fe492480c365bd33f811c5cc7c8bf80044eff8bd942690b4dd4e0a9d4fc0c58dd29cf5  garcon/garcon-0.5.0.tar.bz2
+2020-07-16 03:55:41.640001 +0000 build-centos: 63b894af88922f97439ac52dbac89622e06ef9922ec07f807c6fea61830dc78624494651485ba39112c4278d18f2f275cf3ed69e94001be69ca91beaa65047d8  pkgs/vm-centos7/xfce4-settings-qubes-4.0.3-2.centos7.x86_64.buildinfo
+2020-07-16 03:55:41.640017 +0000 build-centos: 6f8757f4a33b7ff4847ebf247a84e3176204110c46f2ae257430414db9ee056a7a0998ba104f3bde0047561acbd6d00715d9550a9d7416f6bc8cbc9581cc8272  pkgs/vm-centos7/xfce4-settings-qubes.spec.list
+2020-07-16 03:55:41.640037 +0000 build-centos: 89eb6593856a1f8e26b4d11ee4d419e7e1904a76f93ab025e84a644bc19a41b6a24680c1b77261da983b0fde762a57d515f43cbf5af4326209c9f4747829a1a0  pkgs/vm-centos8/xfce4-settings-qubes-4.0.3-2.centos8.src.rpm
+2020-07-16 03:55:41.640055 +0000 build-centos: ad5821b3e43388f5807bda9d0e57b2344a93fdd68e62f49ce8e65163ff94626955f0e19c1f81121be1104595a8d0ac718c62c2dca81cdda426d28aa9c1c1515c  pkgs/vm-centos8/xfce4-settings-qubes-4.0.3-2.centos8.x86_64.buildinfo
+2020-07-16 03:55:41.640072 +0000 build-centos: 132d42d5c90fe5a8a989d069fe36c22898629ffc17777905d81cf8e573671ed921a3a3b167791ac78bced7f8016abb1161d7ad5829d5030cb5a308a4c055d187  pkgs/vm-centos8/xfce4-settings-qubes-4.0.3-2.centos8.x86_64.rpm
+2020-07-16 03:55:41.640089 +0000 build-centos: 581a7451d66518e68ca3df5dd2cf84d5566d7a316cfa421f4939443a2ba251f30124ba1c4724fa9cbacf89f863acce8a8e8219ebe61568c4c6de1d663528fee7  pkgs/vm-centos8/xfce4-settings-qubes-4.0.4-1.centos8.src.rpm
+2020-07-16 03:55:41.640106 +0000 build-centos: f594633e9aa7968872a6c612873d84ce3b863e47e632070bf8e5b6157fa6b1441a6956a03c73cc295862c7d60cf4f99e2c8906e0f532ae4f57b35c8a87237258  pkgs/vm-centos8/xfce4-settings-qubes-4.0.4-1.centos8.x86_64.buildinfo
+2020-07-16 03:55:41.640123 +0000 build-centos: 88c7fec4e72efaa634927a884a3b700ce0215afbb8aff250737f42d3e45f5279f8fbd5b6001d0d7facfffb3cdbea8656f4ef07d37940e7bc10e014e612b0e787  pkgs/vm-centos8/xfce4-settings-qubes-4.0.4-1.centos8.x86_64.rpm
+2020-07-16 03:55:41.640147 +0000 build-centos: 0409d68f33cc513019fef20bf35f8902cdf5d741da2aa40da16a42f5f6cb5d73067d05f5d86f0a01ecd3995bc76c2768c595531d28b8800716385cb9ae2c415e  pkgs/vm-centos8/xfce4-settings-qubes.spec.list
+2020-07-16 03:55:41.640163 +0000 build-centos: a33530b08f094456c45ad7c627ba34d3772eaeacdc9f422a3a54a16194d494cb1d6798122398d917fb8bc970db7e1184d9dc8edefc365dacc86de22be397b43d  xfwm4/xfwm4-4.12.4.tar.bz2
+2020-07-16 03:55:41.738236 +0000 build-centos: ================================================================================
+2020-07-16 03:55:41.738287 +0000 build-centos:                            B U I L D   I N F O                                  
+2020-07-16 03:55:41.738301 +0000 build-centos: Items in red indicate it was automatically generated by configuration file(s)
+2020-07-16 03:55:41.738313 +0000 build-centos: Items in white indicate it was automatically removed by configuration file(s)
+2020-07-16 03:55:41.738324 +0000 build-centos: ================================================================================
+2020-07-16 03:55:41.738331 +0000 build-centos: DISTS_VM:
+2020-07-16 03:55:41.744174 +0000 build-centos:      centos8,
+2020-07-16 03:55:41.744214 +0000 build-centos: DISTS_ALL:
+2020-07-16 03:55:41.750434 +0000 build-centos:      vm-centos8,
+2020-07-16 03:55:41.750474 +0000 build-centos: DIST_DOM0:
+2020-07-16 03:55:41.754109 +0000 build-centos:     
+2020-07-16 03:55:41.754148 +0000 build-centos: BUILDER_PLUGINS:
+2020-07-16 03:55:41.806171 +0000 build-centos:      builder-rpm, builder-debian, mgmt-salt, linux-yum, release-configs, builder-github,
+2020-07-16 03:55:41.806216 +0000 build-centos: COMPONENTS:
+2020-07-16 03:55:41.817206 +0000 build-centos:      desktop-linux-xfce4,
+2020-07-16 03:55:41.817247 +0000 build-centos: GIT_REPOS:
+2020-07-16 03:55:41.822496 +0000 build-centos:      qubes-src/desktop-linux-xfce4,
+2020-07-16 03:55:41.822535 +0000 build-centos: TEMPLATE:
+2020-07-16 03:55:41.826956 +0000 build-centos:     
+2020-07-16 03:55:41.826989 +0000 build-centos: TEMPLATE_FLAVOR_DIR:
+2020-07-16 03:55:41.831591 +0000 build-centos:     
+2020-07-16 03:55:41.831630 +0000 build-centos: TEMPLATE_ALIAS:
+2020-07-16 03:55:41.851392 +0000 build-centos:      stretch:stretch+standard, stretch+gnome:stretch+gnome+standard,
+2020-07-16 03:55:41.851439 +0000 build-centos:      stretch+minimal:stretch+minimal+no-recommends, buster:buster+standard, buster+gnome:buster+gnome+standard,
+2020-07-16 03:55:41.851453 +0000 build-centos:      buster+minimal:buster+minimal+no-recommends, bullseye:bullseye+standard,
+2020-07-16 03:55:41.851467 +0000 build-centos:      bullseye+gnome:bullseye+gnome+standard, bullseye+minimal:bullseye+minimal+no-recommends,
+2020-07-16 03:55:41.851477 +0000 build-centos:      whonix-gateway-14:stretch+whonix-gateway+minimal+no-recommends,
+2020-07-16 03:55:41.851488 +0000 build-centos:      whonix-workstation-14:stretch+whonix-workstation+minimal+no-recommends,
+2020-07-16 03:55:41.851498 +0000 build-centos:      whonix-gateway-15:buster+whonix-gateway+minimal+no-recommends,
+2020-07-16 03:55:41.851508 +0000 build-centos:      whonix-workstation-15:buster+whonix-workstation+minimal+no-recommends,
+2020-07-16 03:55:41.851516 +0000 build-centos: TEMPLATE_LABEL:
+2020-07-16 03:55:41.855273 +0000 build-centos:      centos8:centos-8, fc30:fedora-30 fc31:fedora-31 fc32:fedora-32 fc30+minimal:fedora-30-minimal
+2020-07-16 03:55:41.855317 +0000 build-centos:      fc31+minimal:fedora-31-minimal fc32+minimal:fedora-32-minimal fc30+xfce:fedora-30-xfce
+2020-07-16 03:55:41.855332 +0000 build-centos:      fc31+xfce:fedora-31-xfce fc32+xfce:fedora-32-xfce stretch:debian-9 stretch+standard:debian-9
+2020-07-16 03:55:41.855343 +0000 build-centos:      stretch+xfce:debian-9-xfce buster:debian-10 buster+standard:debian-10
+2020-07-16 03:55:41.855354 +0000 build-centos:      buster+xfce:debian-10-xfce bullseye:debian-11 bullseye+standard:debian-11
+2020-07-16 03:55:41.855380 +0000 build-centos:      bullseye+xfce:debian-11-xfce stretch+whonix-gateway+minimal+no-recommends:whonix-gw-14
+2020-07-16 03:55:41.855391 +0000 build-centos:      stretch+whonix-workstation+minimal+no-recommends:whonix-ws-14
+2020-07-16 03:55:41.855401 +0000 build-centos:      buster+whonix-gateway+minimal+no-recommends:whonix-gw-15
+2020-07-16 03:55:41.855412 +0000 build-centos:      buster+whonix-workstation+minimal+no-recommends:whonix-ws-15 centos7:centos-7
+2020-07-16 03:55:41.855423 +0000 build-centos:      centos7+minimal:centos-7-minimal centos7+xfce:centos-7-xfce centos8+minimal:centos-7-minimal
+2020-07-16 03:55:41.855431 +0000 build-centos:      centos8+xfce:centos-8-xfce
+2020-07-16 03:55:41.874064 +0000 build-centos: > running make
+2020-07-16 03:55:41.886330 +0000 build-centos: Makefile:267: target 'sign.vm.centos8.desktop-linux-xfce4' does not exist
+2020-07-16 03:55:41.886404 +0000 build-centos: if [ -n "desktop-linux-xfce4" -a "0" -ne 0 ]; then BRANCH=master; branch_var="BRANCH_desktop_linux_xfce4"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/desktop-linux-xfce4 > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2020-07-16 03:55:41.886420 +0000 build-centos: SIGN_KEY=EE88DA5FB2B7082919C8826D19205A11FDE3D0AA; \
+2020-07-16 03:55:41.886430 +0000 build-centos: sign_key_var="SIGN_KEY_${DIST%%+*}"; \
+2020-07-16 03:55:41.886441 +0000 build-centos: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2020-07-16 03:55:41.886451 +0000 build-centos: if [ "desktop-linux-xfce4" = linux-template-builder ]; then
+2020-07-16 03:55:41.886464 +0000 build-centos: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=centos8 template-name)
+2020-07-16 03:55:41.886471 +0000 build-centos: fi
+2020-07-16 03:55:41.886482 +0000 build-centos: if [ -r qubes-src/desktop-linux-xfce4/Makefile.builder ]; then \
+2020-07-16 03:55:41.886492 +0000 build-centos: .make --no-print-directory -f Makefile.generic \
+2020-07-16 03:55:41.886499 +0000 build-centos: ..DIST=centos8 \
+2020-07-16 03:55:41.886507 +0000 build-centos: ..PACKAGE_SET=vm \
+2020-07-16 03:55:41.886515 +0000 build-centos: ..COMPONENT=desktop-linux-xfce4 \
+2020-07-16 03:55:41.886523 +0000 build-centos: ..SIGN_KEY=$SIGN_KEY \
+2020-07-16 03:55:41.886531 +0000 build-centos: ..sign || exit 1; \
+2020-07-16 03:55:41.886540 +0000 build-centos: elif [ -d qubes-src/desktop-linux-xfce4/rpm ]; then \
+2020-07-16 03:55:41.886549 +0000 build-centos: .# Old mechanism supported only for RPM
+2020-07-16 03:55:41.886559 +0000 build-centos: FILE_LIST=""; for RPM in qubes-src/desktop-linux-xfce4/rpm/*/*.rpm; do \
+2020-07-16 03:55:41.886570 +0000 build-centos: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2020-07-16 03:55:41.886578 +0000 build-centos: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2020-07-16 03:55:41.886585 +0000 build-centos: ..fi ;\
+2020-07-16 03:55:41.886592 +0000 build-centos: .done ; \
+2020-07-16 03:55:41.886600 +0000 build-centos: .if [ -n "$FILE_LIST" ]; then \
+2020-07-16 03:55:41.886608 +0000 build-centos: ..echo "--> Signing..."; \
+2020-07-16 03:55:41.886617 +0000 build-centos: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2020-07-16 03:55:41.886625 +0000 build-centos: ..if [ -n "$SIGN_KEY" ]; then \
+2020-07-16 03:55:41.886633 +0000 build-centos: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2020-07-16 03:55:41.886640 +0000 build-centos: ..fi; \
+2020-07-16 03:55:41.886650 +0000 build-centos: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2020-07-16 03:55:41.886657 +0000 build-centos: .fi; \
+2020-07-16 03:55:41.886664 +0000 build-centos: fi
+2020-07-16 03:55:41.920469 +0000 build-centos: + ERR_OUTPUT=/dev/stderr
+2020-07-16 03:55:41.920515 +0000 build-centos: + '[' 2 -lt 2 ']'
+2020-07-16 03:55:41.920543 +0000 build-centos: ++ basename qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in
+2020-07-16 03:55:41.923335 +0000 build-centos: + [[ xxfce4-settings-qubes.spec.in == \x\.\i\n ]]
+2020-07-16 03:55:41.923378 +0000 build-centos: + '[' -r qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in ']'
+2020-07-16 03:55:41.923389 +0000 build-centos: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2020-07-16 03:55:41.932059 +0000 build-centos: + tmp_spec=/tmp/tmp.0DOAOb.spec
+2020-07-16 03:55:41.932104 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2020-07-16 03:55:41.940941 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in /tmp/tmp.0DOAOb.spec
+2020-07-16 03:55:41.948234 +0000 build-centos: + '[' 2 -lt 2 ']'
+2020-07-16 03:55:41.948276 +0000 build-centos: + '[' -z qubes-src/desktop-linux-xfce4 ']'
+2020-07-16 03:55:41.948293 +0000 build-centos: + cp qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:41.948301 +0000 build-centos: + read -r ver
+2020-07-16 03:55:41.948309 +0000 build-centos: + '[' x = x ']'
+2020-07-16 03:55:41.948321 +0000 build-centos: + sed -i 's|@VERSION@|4.0.4|g' qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:41.959905 +0000 build-centos: + vnum=1
+2020-07-16 03:55:41.959943 +0000 build-centos: + read -r ver
+2020-07-16 03:55:41.959955 +0000 build-centos: + '[' -e qubes-src/desktop-linux-xfce4/rel ']'
+2020-07-16 03:55:41.959963 +0000 build-centos: + read -r rel
+2020-07-16 03:55:41.959970 +0000 build-centos: + '[' x = x ']'
+2020-07-16 03:55:41.959981 +0000 build-centos: + sed -i 's|@REL@|1|g' qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:41.970641 +0000 build-centos: + rnum=1
+2020-07-16 03:55:41.970681 +0000 build-centos: + read -r rel
+2020-07-16 03:55:41.970695 +0000 build-centos: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:41.977285 +0000 build-centos: + grep -q @CHANGELOG@ qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:41.980251 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2020-07-16 03:55:41.980296 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/desktop-linux-xfce4 qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:42.657643 +0000 build-centos: + cat qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:42.657749 +0000 build-centos: + rm -rf qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:42.657765 +0000 build-centos: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2020-07-16 03:55:42.657776 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2020-07-16 03:55:42.657790 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.0DOAOb.spec
+2020-07-16 03:55:42.800839 +0000 build-centos: + rm -f /tmp/tmp.0DOAOb.spec
+2020-07-16 03:55:42.820283 +0000 build-centos: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:182: target 'sign-prep' does not exist
+2020-07-16 03:55:42.820328 +0000 build-centos: if [ -n "qubes-gpg-client-wrapper" ]; then \
+2020-07-16 03:55:42.820341 +0000 build-centos: .mkdir -p /home/user/builder-r4.1/keyrings/rpmdb; \
+2020-07-16 03:55:42.820357 +0000 build-centos: .qubes-gpg-client-wrapper --armor --export "EE88DA5FB2B7082919C8826D19205A11FDE3D0AA" > "/tmp/key_EE88DA5FB2B7082919C8826D19205A11FDE3D0AA"; \
+2020-07-16 03:55:42.820371 +0000 build-centos: .rpmkeys --dbpath=/home/user/builder-r4.1/keyrings/rpmdb --import "/tmp/key_EE88DA5FB2B7082919C8826D19205A11FDE3D0AA"; \
+2020-07-16 03:55:42.820379 +0000 build-centos: fi
+2020-07-16 03:55:42.831284 +0000 build-centos: + ERR_OUTPUT=/dev/stderr
+2020-07-16 03:55:42.831324 +0000 build-centos: + '[' 2 -lt 2 ']'
+2020-07-16 03:55:42.831337 +0000 build-centos: ++ basename qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in
+2020-07-16 03:55:42.833089 +0000 build-centos: + [[ xxfce4-settings-qubes.spec.in == \x\.\i\n ]]
+2020-07-16 03:55:42.833127 +0000 build-centos: + '[' -r qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in ']'
+2020-07-16 03:55:42.833138 +0000 build-centos: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2020-07-16 03:55:42.833270 +0000 build-centos: + tmp_spec=/tmp/tmp.QIwgtI.spec
+2020-07-16 03:55:42.835377 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2020-07-16 03:55:42.838651 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in /tmp/tmp.QIwgtI.spec
+2020-07-16 03:55:42.841300 +0000 build-centos: + '[' 2 -lt 2 ']'
+2020-07-16 03:55:42.841335 +0000 build-centos: + '[' -z qubes-src/desktop-linux-xfce4 ']'
+2020-07-16 03:55:42.841350 +0000 build-centos: + cp qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:42.844352 +0000 build-centos: + read -r ver
+2020-07-16 03:55:42.844389 +0000 build-centos: + '[' x = x ']'
+2020-07-16 03:55:42.844404 +0000 build-centos: + sed -i 's|@VERSION@|4.0.4|g' qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:42.846205 +0000 build-centos: + vnum=1
+2020-07-16 03:55:42.846241 +0000 build-centos: + read -r ver
+2020-07-16 03:55:42.846253 +0000 build-centos: + '[' -e qubes-src/desktop-linux-xfce4/rel ']'
+2020-07-16 03:55:42.846261 +0000 build-centos: + read -r rel
+2020-07-16 03:55:42.846268 +0000 build-centos: + '[' x = x ']'
+2020-07-16 03:55:42.846279 +0000 build-centos: + sed -i 's|@REL@|1|g' qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:42.847901 +0000 build-centos: + rnum=1
+2020-07-16 03:55:42.847940 +0000 build-centos: + read -r rel
+2020-07-16 03:55:42.847955 +0000 build-centos: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:42.849245 +0000 build-centos: + grep -q @CHANGELOG@ qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:42.860009 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2020-07-16 03:55:42.869415 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/desktop-linux-xfce4 qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:43.593510 +0000 build-centos: + cat qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:43.593561 +0000 build-centos: + rm -rf qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:43.593573 +0000 build-centos: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2020-07-16 03:55:43.593584 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2020-07-16 03:55:43.593598 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.QIwgtI.spec
+2020-07-16 03:55:43.779337 +0000 build-centos: + rm -f /tmp/tmp.QIwgtI.spec
+2020-07-16 03:55:44.064622 +0000 build-centos: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:196: update target 'sign' due to: sign-prep
+2020-07-16 03:55:44.064683 +0000 build-centos: cd qubes-src/desktop-linux-xfce4 && for pkg in pkgs/vm-centos8/xfce4-settings-qubes-4.0.4-1.centos8.src.rpm pkgs/vm-centos8/xfce4-settings-qubes-4.0.4-1.centos8.x86_64.rpm pkgs/vm-centos8/xfce4-settings-qubes-4.0.4-1.centos8.x86_64.buildinfo ; do \
+2020-07-16 03:55:44.064697 +0000 build-centos: .if [ "${pkg##*.}" = "buildinfo" ]; then \
+2020-07-16 03:55:44.064716 +0000 build-centos: ../home/user/builder-r4.1/qubes-src/builder-rpm/scripts/update-rpmbuildinfo "$pkg" | qubes-gpg-client-wrapper --clearsign --local-user EE88DA5FB2B7082919C8826D19205A11FDE3D0AA > "$pkg".tmp && \
+2020-07-16 03:55:44.064755 +0000 build-centos: ..mv -f "$pkg".tmp "$pkg"; \
+2020-07-16 03:55:44.064768 +0000 build-centos: .elif ! rpm -K $pkg | grep -qi pgp; then \
+2020-07-16 03:55:44.064782 +0000 build-centos: ..setsid -w rpmsign  --digest-algo=sha256 --key-id=EE88DA5FB2B7082919C8826D19205A11FDE3D0AA --addsign $pkg </dev/null || exit 1; \
+2020-07-16 03:55:44.064790 +0000 build-centos: .fi; \
+2020-07-16 03:55:44.064796 +0000 build-centos: done
+2020-07-16 03:55:44.097055 +0000 build-centos: + ERR_OUTPUT=/dev/stderr
+2020-07-16 03:55:44.097103 +0000 build-centos: + '[' 2 -lt 2 ']'
+2020-07-16 03:55:44.097117 +0000 build-centos: ++ basename qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in
+2020-07-16 03:55:44.099940 +0000 build-centos: + [[ xxfce4-settings-qubes.spec.in == \x\.\i\n ]]
+2020-07-16 03:55:44.099983 +0000 build-centos: + '[' -r qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in ']'
+2020-07-16 03:55:44.099995 +0000 build-centos: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2020-07-16 03:55:44.100174 +0000 build-centos: + tmp_spec=/tmp/tmp.fKKhgh.spec
+2020-07-16 03:55:44.101112 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2020-07-16 03:55:44.103362 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in /tmp/tmp.fKKhgh.spec
+2020-07-16 03:55:44.104575 +0000 build-centos: + '[' 2 -lt 2 ']'
+2020-07-16 03:55:44.104612 +0000 build-centos: + '[' -z qubes-src/desktop-linux-xfce4 ']'
+2020-07-16 03:55:44.104629 +0000 build-centos: + cp qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:44.105905 +0000 build-centos: + read -r ver
+2020-07-16 03:55:44.106027 +0000 build-centos: + '[' x = x ']'
+2020-07-16 03:55:44.106051 +0000 build-centos: + sed -i 's|@VERSION@|4.0.4|g' qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:44.108912 +0000 build-centos: + vnum=1
+2020-07-16 03:55:44.108949 +0000 build-centos: + read -r ver
+2020-07-16 03:55:44.108960 +0000 build-centos: + '[' -e qubes-src/desktop-linux-xfce4/rel ']'
+2020-07-16 03:55:44.108989 +0000 build-centos: + read -r rel
+2020-07-16 03:55:44.108997 +0000 build-centos: + '[' x = x ']'
+2020-07-16 03:55:44.109009 +0000 build-centos: + sed -i 's|@REL@|1|g' qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:44.118495 +0000 build-centos: + rnum=1
+2020-07-16 03:55:44.118527 +0000 build-centos: + read -r rel
+2020-07-16 03:55:44.118541 +0000 build-centos: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:44.124625 +0000 build-centos: + grep -q @CHANGELOG@ qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:44.127799 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2020-07-16 03:55:44.135260 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/desktop-linux-xfce4 qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:44.989317 +0000 build-centos: + cat qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:44.992521 +0000 build-centos: + rm -rf qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:44.997596 +0000 build-centos: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2020-07-16 03:55:44.997645 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2020-07-16 03:55:44.997693 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.fKKhgh.spec
+2020-07-16 03:55:45.079999 +0000 build-centos: + rm -f /tmp/tmp.fKKhgh.spec
+2020-07-16 03:55:45.726308 +0000 build-centos: pkgs/vm-centos8/xfce4-settings-qubes-4.0.4-1.centos8.src.rpm:
+2020-07-16 03:55:46.123098 +0000 build-centos: pkgs/vm-centos8/xfce4-settings-qubes-4.0.4-1.centos8.x86_64.rpm:
+2020-07-16 03:55:46.353883 +0000 build-centos: Makefile:818: target 'internal-update-repo-current-testing.vm.centos8.desktop-linux-xfce4' does not exist
+2020-07-16 03:55:46.353934 +0000 build-centos: repo_base_var="LINUX_REPO_centos8_BASEDIR"; \
+2020-07-16 03:55:46.353952 +0000 build-centos: if [ "desktop-linux-xfce4" = linux-template-builder ]; then \
+2020-07-16 03:55:46.353964 +0000 build-centos: .# templates belongs to dom0 repository, even though PACKAGE_SET=vm
+2020-07-16 03:55:46.353973 +0000 build-centos: repo_base_var="LINUX_REPO__BASEDIR"; \
+2020-07-16 03:55:46.353980 +0000 build-centos: fi; \
+2020-07-16 03:55:46.353989 +0000 build-centos: if [ -n "${!repo_base_var}" ]; then \
+2020-07-16 03:55:46.353997 +0000 build-centos: .repo_basedir="${!repo_base_var}"; \
+2020-07-16 03:55:46.354004 +0000 build-centos: else \
+2020-07-16 03:55:46.354012 +0000 build-centos: .repo_basedir="qubes-src/linux-yum/r4.1"; \
+2020-07-16 03:55:46.354019 +0000 build-centos: fi; \
+2020-07-16 03:55:46.354029 +0000 build-centos: if [ -r qubes-src/desktop-linux-xfce4/Makefile.builder ]; then \
+2020-07-16 03:55:46.354038 +0000 build-centos: .echo -n "Updating qubes-src/desktop-linux-xfce4... "; \
+2020-07-16 03:55:46.354046 +0000 build-centos: .if [ "0" -eq 1 ]; then \
+2020-07-16 03:55:46.354057 +0000 build-centos: ..vtag=`git -C qubes-src/desktop-linux-xfce4 tag --points-at HEAD --list v*`; \
+2020-07-16 03:55:46.354065 +0000 build-centos: ..if [ -z "$vtag" ]; then \
+2020-07-16 03:55:46.354073 +0000 build-centos: ...echo "no version tag"; \
+2020-07-16 03:55:46.354080 +0000 build-centos: ...exit 0; \
+2020-07-16 03:55:46.354087 +0000 build-centos: ..fi; \
+2020-07-16 03:55:46.354094 +0000 build-centos: .fi; \
+2020-07-16 03:55:46.354104 +0000 build-centos: .if [ "desktop-linux-xfce4" = linux-template-builder ]; then
+2020-07-16 03:55:46.354116 +0000 build-centos: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=centos8 template-name)
+2020-07-16 03:55:46.354123 +0000 build-centos: fi
+2020-07-16 03:55:46.354144 +0000 build-centos: component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=centos8 PACKAGE_SET=vm COMPONENT=`basename qubes-src/desktop-linux-xfce4` UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/centos8 get-var GET_VAR=PACKAGE_LIST); \
+2020-07-16 03:55:46.354154 +0000 build-centos: .if [ -z "$component_packages" ]; then \
+2020-07-16 03:55:46.354162 +0000 build-centos: ..echo "no packages."; \
+2020-07-16 03:55:46.354169 +0000 build-centos: ..exit 0; \
+2020-07-16 03:55:46.354175 +0000 build-centos: .fi; \
+2020-07-16 03:55:46.354185 +0000 build-centos: .make -s -f Makefile.generic DIST=centos8 PACKAGE_SET=vm \
+2020-07-16 03:55:46.354194 +0000 build-centos: ..COMPONENT=`basename qubes-src/desktop-linux-xfce4` \
+2020-07-16 03:55:46.354202 +0000 build-centos: ..SNAPSHOT_REPO=current-testing \
+2020-07-16 03:55:46.354210 +0000 build-centos: ..TARGET_REPO=current-testing \
+2020-07-16 03:55:46.354221 +0000 build-centos: ..UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/centos8 \
+2020-07-16 03:55:46.354235 +0000 build-centos: ..SNAPSHOT_FILE=/home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-centos8-`basename qubes-src/desktop-linux-xfce4` \
+2020-07-16 03:55:46.354251 +0000 build-centos: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-centos/log_2020-07-16_03-54-18 \
+2020-07-16 03:55:46.354259 +0000 build-centos: ..update-repo || exit 1; \
+2020-07-16 03:55:46.354271 +0000 build-centos: elif make -C qubes-src/desktop-linux-xfce4 -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2020-07-16 03:55:46.354280 +0000 build-centos: .echo "Updating qubes-src/desktop-linux-xfce4... "; \
+2020-07-16 03:55:46.354292 +0000 build-centos: .DIST=centos8 UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/centos8 \
+2020-07-16 03:55:46.354319 +0000 build-centos: .make -s -C qubes-src/desktop-linux-xfce4 update-repo-current-testing || exit 1; \
+2020-07-16 03:55:46.354327 +0000 build-centos: else \
+2020-07-16 03:55:46.354337 +0000 build-centos: .echo -n "Updating qubes-src/desktop-linux-xfce4... skipping."; \
+2020-07-16 03:55:46.354344 +0000 build-centos: fi; \
+2020-07-16 03:55:46.354350 +0000 build-centos: echo
+2020-07-16 03:55:46.413250 +0000 build-centos: Updating qubes-src/desktop-linux-xfce4... + ERR_OUTPUT=/dev/stderr
+2020-07-16 03:55:46.413296 +0000 build-centos: + '[' 2 -lt 2 ']'
+2020-07-16 03:55:46.414993 +0000 build-centos: ++ basename qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in
+2020-07-16 03:55:46.416588 +0000 build-centos: + [[ xxfce4-settings-qubes.spec.in == \x\.\i\n ]]
+2020-07-16 03:55:46.416628 +0000 build-centos: + '[' -r qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in ']'
+2020-07-16 03:55:46.416797 +0000 build-centos: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2020-07-16 03:55:46.420092 +0000 build-centos: + tmp_spec=/tmp/tmp.X0eL6f.spec
+2020-07-16 03:55:46.420134 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2020-07-16 03:55:46.424663 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in /tmp/tmp.X0eL6f.spec
+2020-07-16 03:55:46.424700 +0000 build-centos: + '[' 2 -lt 2 ']'
+2020-07-16 03:55:46.424712 +0000 build-centos: + '[' -z qubes-src/desktop-linux-xfce4 ']'
+2020-07-16 03:55:46.424726 +0000 build-centos: + cp qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:46.428755 +0000 build-centos: + read -r ver
+2020-07-16 03:55:46.428811 +0000 build-centos: + '[' x = x ']'
+2020-07-16 03:55:46.428826 +0000 build-centos: + sed -i 's|@VERSION@|4.0.4|g' qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:46.428835 +0000 build-centos: + vnum=1
+2020-07-16 03:55:46.428842 +0000 build-centos: + read -r ver
+2020-07-16 03:55:46.428851 +0000 build-centos: + '[' -e qubes-src/desktop-linux-xfce4/rel ']'
+2020-07-16 03:55:46.428858 +0000 build-centos: + read -r rel
+2020-07-16 03:55:46.428865 +0000 build-centos: + '[' x = x ']'
+2020-07-16 03:55:46.428876 +0000 build-centos: + sed -i 's|@REL@|1|g' qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:46.434951 +0000 build-centos: + rnum=1
+2020-07-16 03:55:46.434989 +0000 build-centos: + read -r rel
+2020-07-16 03:55:46.435004 +0000 build-centos: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:46.435017 +0000 build-centos: + grep -q @CHANGELOG@ qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:46.435028 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2020-07-16 03:55:46.435043 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/desktop-linux-xfce4 qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:47.008935 +0000 build-centos: + cat qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:47.009000 +0000 build-centos: + rm -rf qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:47.012217 +0000 build-centos: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2020-07-16 03:55:47.012259 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2020-07-16 03:55:47.014018 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.X0eL6f.spec
+2020-07-16 03:55:47.125041 +0000 build-centos: + rm -f /tmp/tmp.X0eL6f.spec
+2020-07-16 03:55:47.143352 +0000 build-centos: + ERR_OUTPUT=/dev/stderr
+2020-07-16 03:55:47.143394 +0000 build-centos: + '[' 2 -lt 2 ']'
+2020-07-16 03:55:47.143422 +0000 build-centos: ++ basename qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in
+2020-07-16 03:55:47.145795 +0000 build-centos: + [[ xxfce4-settings-qubes.spec.in == \x\.\i\n ]]
+2020-07-16 03:55:47.145867 +0000 build-centos: + '[' -r qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in ']'
+2020-07-16 03:55:47.145879 +0000 build-centos: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2020-07-16 03:55:47.172172 +0000 build-centos: + tmp_spec=/tmp/tmp.VcGgxk.spec
+2020-07-16 03:55:47.172218 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2020-07-16 03:55:47.172348 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in /tmp/tmp.VcGgxk.spec
+2020-07-16 03:55:47.173657 +0000 build-centos: + '[' 2 -lt 2 ']'
+2020-07-16 03:55:47.173692 +0000 build-centos: + '[' -z qubes-src/desktop-linux-xfce4 ']'
+2020-07-16 03:55:47.173708 +0000 build-centos: + cp qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:47.181663 +0000 build-centos: + read -r ver
+2020-07-16 03:55:47.181702 +0000 build-centos: + '[' x = x ']'
+2020-07-16 03:55:47.181718 +0000 build-centos: + sed -i 's|@VERSION@|4.0.4|g' qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:47.183466 +0000 build-centos: + vnum=1
+2020-07-16 03:55:47.183503 +0000 build-centos: + read -r ver
+2020-07-16 03:55:47.183515 +0000 build-centos: + '[' -e qubes-src/desktop-linux-xfce4/rel ']'
+2020-07-16 03:55:47.183523 +0000 build-centos: + read -r rel
+2020-07-16 03:55:47.183530 +0000 build-centos: + '[' x = x ']'
+2020-07-16 03:55:47.183542 +0000 build-centos: + sed -i 's|@REL@|1|g' qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:47.185284 +0000 build-centos: + rnum=1
+2020-07-16 03:55:47.185321 +0000 build-centos: + read -r rel
+2020-07-16 03:55:47.185335 +0000 build-centos: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:47.186986 +0000 build-centos: + grep -q @CHANGELOG@ qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:47.205515 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2020-07-16 03:55:47.209464 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/desktop-linux-xfce4 qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:47.737517 +0000 build-centos: + cat qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:47.738722 +0000 build-centos: + rm -rf qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:47.740080 +0000 build-centos: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2020-07-16 03:55:47.740119 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2020-07-16 03:55:47.740240 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.VcGgxk.spec
+2020-07-16 03:55:47.819673 +0000 build-centos: + rm -f /tmp/tmp.VcGgxk.spec
+2020-07-16 03:55:47.861129 +0000 build-centos: + ERR_OUTPUT=/dev/stderr
+2020-07-16 03:55:47.861174 +0000 build-centos: + '[' 2 -lt 2 ']'
+2020-07-16 03:55:47.864962 +0000 build-centos: ++ basename qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in
+2020-07-16 03:55:47.867341 +0000 build-centos: + [[ xxfce4-settings-qubes.spec.in == \x\.\i\n ]]
+2020-07-16 03:55:47.867383 +0000 build-centos: + '[' -r qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in ']'
+2020-07-16 03:55:47.868609 +0000 build-centos: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2020-07-16 03:55:47.868647 +0000 build-centos: + tmp_spec=/tmp/tmp.gPHl7n.spec
+2020-07-16 03:55:47.870365 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2020-07-16 03:55:47.870424 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in /tmp/tmp.gPHl7n.spec
+2020-07-16 03:55:47.873979 +0000 build-centos: + '[' 2 -lt 2 ']'
+2020-07-16 03:55:47.874020 +0000 build-centos: + '[' -z qubes-src/desktop-linux-xfce4 ']'
+2020-07-16 03:55:47.874036 +0000 build-centos: + cp qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:47.874045 +0000 build-centos: + read -r ver
+2020-07-16 03:55:47.874053 +0000 build-centos: + '[' x = x ']'
+2020-07-16 03:55:47.874065 +0000 build-centos: + sed -i 's|@VERSION@|4.0.4|g' qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:47.876337 +0000 build-centos: + vnum=1
+2020-07-16 03:55:47.876374 +0000 build-centos: + read -r ver
+2020-07-16 03:55:47.876385 +0000 build-centos: + '[' -e qubes-src/desktop-linux-xfce4/rel ']'
+2020-07-16 03:55:47.876392 +0000 build-centos: + read -r rel
+2020-07-16 03:55:47.876400 +0000 build-centos: + '[' x = x ']'
+2020-07-16 03:55:47.876411 +0000 build-centos: + sed -i 's|@REL@|1|g' qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:47.885652 +0000 build-centos: + rnum=1
+2020-07-16 03:55:47.885691 +0000 build-centos: + read -r rel
+2020-07-16 03:55:47.885706 +0000 build-centos: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:47.888280 +0000 build-centos: + grep -q @CHANGELOG@ qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:47.890533 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2020-07-16 03:55:47.893576 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/desktop-linux-xfce4 qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:48.442476 +0000 build-centos: + cat qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:48.454494 +0000 build-centos: + rm -rf qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:48.454535 +0000 build-centos: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2020-07-16 03:55:48.458962 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2020-07-16 03:55:48.459009 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.gPHl7n.spec
+2020-07-16 03:55:48.628288 +0000 build-centos: + rm -f /tmp/tmp.gPHl7n.spec
+2020-07-16 03:55:48.714837 +0000 build-centos: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:157: target 'update-repo-do' does not exist
+2020-07-16 03:55:48.714896 +0000 build-centos: mkdir -p /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/centos8/rpm
+2020-07-16 03:55:48.773028 +0000 build-centos: + ERR_OUTPUT=/dev/stderr
+2020-07-16 03:55:48.773072 +0000 build-centos: + '[' 2 -lt 2 ']'
+2020-07-16 03:55:48.773086 +0000 build-centos: ++ basename qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in
+2020-07-16 03:55:48.773096 +0000 build-centos: + [[ xxfce4-settings-qubes.spec.in == \x\.\i\n ]]
+2020-07-16 03:55:48.773107 +0000 build-centos: + '[' -r qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in ']'
+2020-07-16 03:55:48.773115 +0000 build-centos: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2020-07-16 03:55:48.773123 +0000 build-centos: + tmp_spec=/tmp/tmp.zpqMx3.spec
+2020-07-16 03:55:48.773133 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2020-07-16 03:55:48.773148 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in /tmp/tmp.zpqMx3.spec
+2020-07-16 03:55:48.773156 +0000 build-centos: + '[' 2 -lt 2 ']'
+2020-07-16 03:55:48.773180 +0000 build-centos: + '[' -z qubes-src/desktop-linux-xfce4 ']'
+2020-07-16 03:55:48.773195 +0000 build-centos: + cp qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:48.773202 +0000 build-centos: + read -r ver
+2020-07-16 03:55:48.773210 +0000 build-centos: + '[' x = x ']'
+2020-07-16 03:55:48.773221 +0000 build-centos: + sed -i 's|@VERSION@|4.0.4|g' qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:48.773228 +0000 build-centos: + vnum=1
+2020-07-16 03:55:48.773235 +0000 build-centos: + read -r ver
+2020-07-16 03:55:48.773244 +0000 build-centos: + '[' -e qubes-src/desktop-linux-xfce4/rel ']'
+2020-07-16 03:55:48.773251 +0000 build-centos: + read -r rel
+2020-07-16 03:55:48.773258 +0000 build-centos: + '[' x = x ']'
+2020-07-16 03:55:48.773290 +0000 build-centos: + sed -i 's|@REL@|1|g' qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:48.777442 +0000 build-centos: + rnum=1
+2020-07-16 03:55:48.777479 +0000 build-centos: + read -r rel
+2020-07-16 03:55:48.777494 +0000 build-centos: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:48.779864 +0000 build-centos: + grep -q @CHANGELOG@ qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:48.782476 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2020-07-16 03:55:48.783639 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/desktop-linux-xfce4 qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:49.389298 +0000 build-centos: + cat qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:49.391761 +0000 build-centos: + rm -rf qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:49.395012 +0000 build-centos: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2020-07-16 03:55:49.395054 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2020-07-16 03:55:49.397760 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.zpqMx3.spec
+2020-07-16 03:55:49.576463 +0000 build-centos: + rm -f /tmp/tmp.zpqMx3.spec
+2020-07-16 03:55:49.636496 +0000 build-centos: if [ -n "pkgs/vm-centos8/xfce4-settings-qubes-4.0.4-1.centos8.src.rpm pkgs/vm-centos8/xfce4-settings-qubes-4.0.4-1.centos8.x86_64.rpm pkgs/vm-centos8/xfce4-settings-qubes-4.0.4-1.centos8.x86_64.buildinfo" ]; then \
+2020-07-16 03:55:49.636564 +0000 build-centos: .cd qubes-src/desktop-linux-xfce4 && ln -f pkgs/vm-centos8/xfce4-settings-qubes-4.0.4-1.centos8.src.rpm pkgs/vm-centos8/xfce4-settings-qubes-4.0.4-1.centos8.x86_64.rpm pkgs/vm-centos8/xfce4-settings-qubes-4.0.4-1.centos8.x86_64.buildinfo  /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/centos8/rpm/; \
+2020-07-16 03:55:49.636576 +0000 build-centos: else \
+2020-07-16 03:55:49.636589 +0000 build-centos: .echo "`tput bold`No packages defined by xfce4-settings-qubes.spec, syntax error?`tput sgr0`"; \
+2020-07-16 03:55:49.636598 +0000 build-centos: .exit 1; \
+2020-07-16 03:55:49.636605 +0000 build-centos: fi
+2020-07-16 03:55:49.638312 +0000 build-centos: cd qubes-src/desktop-linux-xfce4 && echo pkgs/vm-centos8/xfce4-settings-qubes-4.0.4-1.centos8.src.rpm pkgs/vm-centos8/xfce4-settings-qubes-4.0.4-1.centos8.x86_64.rpm pkgs/vm-centos8/xfce4-settings-qubes-4.0.4-1.centos8.x86_64.buildinfo  > /home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-centos8-desktop-linux-xfce4
+2020-07-16 03:55:49.653052 +0000 build-centos: /home/user/builder-r4.1/qubes-src/builder-github//Makefile.github:18: target 'notify-github' does not exist
+2020-07-16 03:55:49.653099 +0000 build-centos: [ -z "xfce4-settings-qubes-4.0.4-1.centos8" ] || /home/user/builder-r4.1/qubes-src/builder-github//notify-issues \
+2020-07-16 03:55:49.653129 +0000 build-centos: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-centos/log_2020-07-16_03-54-18" \
+2020-07-16 03:55:49.653139 +0000 build-centos: .upload \
+2020-07-16 03:55:49.653147 +0000 build-centos: ."r4.1" \
+2020-07-16 03:55:49.653155 +0000 build-centos: ."qubes-src/desktop-linux-xfce4" \
+2020-07-16 03:55:49.653164 +0000 build-centos: ."xfce4-settings-qubes-4.0.4-1.centos8" \
+2020-07-16 03:55:49.653171 +0000 build-centos: ."centos8" \
+2020-07-16 03:55:49.653178 +0000 build-centos: ."vm" \
+2020-07-16 03:55:49.653186 +0000 build-centos: ."current-testing" \
+2020-07-16 03:55:49.653197 +0000 build-centos: ."/home/user/github-notify-state/r4.1-desktop-linux-xfce4-vm-centos8-current-testing" \
+2020-07-16 03:55:49.653208 +0000 build-centos: ."/home/user/github-notify-state/r4.1-desktop-linux-xfce4-vm-centos8-current"
+2020-07-16 03:55:49.674872 +0000 build-centos: + ERR_OUTPUT=/dev/stderr
+2020-07-16 03:55:49.674912 +0000 build-centos: + '[' 2 -lt 2 ']'
+2020-07-16 03:55:49.674926 +0000 build-centos: ++ basename qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in
+2020-07-16 03:55:49.674937 +0000 build-centos: + [[ xxfce4-settings-qubes.spec.in == \x\.\i\n ]]
+2020-07-16 03:55:49.674948 +0000 build-centos: + '[' -r qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in ']'
+2020-07-16 03:55:49.674956 +0000 build-centos: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2020-07-16 03:55:49.674964 +0000 build-centos: + tmp_spec=/tmp/tmp.by71r8.spec
+2020-07-16 03:55:49.674975 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2020-07-16 03:55:49.674990 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in /tmp/tmp.by71r8.spec
+2020-07-16 03:55:49.674998 +0000 build-centos: + '[' 2 -lt 2 ']'
+2020-07-16 03:55:49.675006 +0000 build-centos: + '[' -z qubes-src/desktop-linux-xfce4 ']'
+2020-07-16 03:55:49.675020 +0000 build-centos: + cp qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:49.676326 +0000 build-centos: + read -r ver
+2020-07-16 03:55:49.676360 +0000 build-centos: + '[' x = x ']'
+2020-07-16 03:55:49.676375 +0000 build-centos: + sed -i 's|@VERSION@|4.0.4|g' qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:49.678723 +0000 build-centos: + vnum=1
+2020-07-16 03:55:49.678762 +0000 build-centos: + read -r ver
+2020-07-16 03:55:49.678774 +0000 build-centos: + '[' -e qubes-src/desktop-linux-xfce4/rel ']'
+2020-07-16 03:55:49.678782 +0000 build-centos: + read -r rel
+2020-07-16 03:55:49.678790 +0000 build-centos: + '[' x = x ']'
+2020-07-16 03:55:49.678832 +0000 build-centos: + sed -i 's|@REL@|1|g' qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:49.680018 +0000 build-centos: + rnum=1
+2020-07-16 03:55:49.680053 +0000 build-centos: + read -r rel
+2020-07-16 03:55:49.680067 +0000 build-centos: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:49.682239 +0000 build-centos: + grep -q @CHANGELOG@ qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:49.684457 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2020-07-16 03:55:49.685639 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/desktop-linux-xfce4 qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:50.298646 +0000 build-centos: + cat qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:50.298699 +0000 build-centos: + rm -rf qubes-src/desktop-linux-xfce4/xfce4-settings-qubes.spec.in.tmp
+2020-07-16 03:55:50.306862 +0000 build-centos: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2020-07-16 03:55:50.306933 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2020-07-16 03:55:50.306951 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.by71r8.spec
+2020-07-16 03:55:50.473835 +0000 build-centos: + rm -f /tmp/tmp.by71r8.spec
+2020-07-16 03:55:55.062344 +0000 build-centos: WARNING: message template /home/user/builder-r4.1/qubes-src/builder-github/templates/message-current-testing-vm doesn't exist, not adding comments
+2020-07-16 03:55:55.075452 +0000 build-centos: 
+2020-07-16 03:55:55.076589 +0000 build-centos: Makefile:793: update target 'internal-update-repo-current-testing.vm.centos8' due to: internal-update-repo-current-testing.vm.centos8.desktop-linux-xfce4
+2020-07-16 03:55:55.076624 +0000 build-centos: true
+2020-07-16 03:55:55.079944 +0000 build-centos: Makefile:872: target 'post-update-repo-current-testing' does not exist
+2020-07-16 03:55:55.079982 +0000 build-centos: for dist in  centos8; do \
+2020-07-16 03:55:55.079994 +0000 build-centos: .repo_base_var="LINUX_REPO_${dist}_BASEDIR"; \
+2020-07-16 03:55:55.080003 +0000 build-centos: .if [ -n "${!repo_base_var}" ]; then \
+2020-07-16 03:55:55.080012 +0000 build-centos: ..repo_basedir="${!repo_base_var}"; \
+2020-07-16 03:55:55.080019 +0000 build-centos: .else \
+2020-07-16 03:55:55.080028 +0000 build-centos: ..repo_basedir="qubes-src/linux-yum/r4.1"; \
+2020-07-16 03:55:55.080034 +0000 build-centos: .fi; \
+2020-07-16 03:55:55.080044 +0000 build-centos: .repos_to_update="$repos_to_update $repo_basedir"; \
+2020-07-16 03:55:55.080050 +0000 build-centos: done; \
+2020-07-16 03:55:55.080057 +0000 build-centos: pkgset_dist= ; \
+2020-07-16 03:55:55.080065 +0000 build-centos: for dist in ; do \
+2020-07-16 03:55:55.080073 +0000 build-centos: .pkgset_dist="$pkgset_dist dom0/$dist"; \
+2020-07-16 03:55:55.080080 +0000 build-centos: done; \
+2020-07-16 03:55:55.080087 +0000 build-centos: for dist in centos8; do \
+2020-07-16 03:55:55.080095 +0000 build-centos: .pkgset_dist="$pkgset_dist vm/$dist"; \
+2020-07-16 03:55:55.080102 +0000 build-centos: done; \
+2020-07-16 03:55:55.080112 +0000 build-centos: for repo in `echo $repos_to_update|tr ' ' '\n'|sort|uniq`; do \
+2020-07-16 03:55:55.080119 +0000 build-centos: .[ -z "$repo" ] && continue; \
+2020-07-16 03:55:55.080129 +0000 build-centos: .[ -x "$repo/../update_repo-current-testing.sh" ] || continue; \
+2020-07-16 03:55:55.080139 +0000 build-centos: .(cd $repo/.. && ./update_repo-current-testing.sh r4.1 $pkgset_dist); \
+2020-07-16 03:55:55.080146 +0000 build-centos: done
+2020-07-16 03:55:55.092917 +0000 build-centos: which: no mkmetalink in (/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/home/user/.local/bin:/home/user/bin:/home/user/builder-r4.1/qubes-src/builder-rpm/tools)
+2020-07-16 03:55:55.106914 +0000 build-centos: --> Processing repo: r4.1/current-testing/dom0/fc25...
+2020-07-16 03:55:55.229729 +0000 build-centos: --> Processing repo: r4.1/current-testing/dom0/fc29...
+2020-07-16 03:55:55.342201 +0000 build-centos: --> Processing repo: r4.1/current-testing/dom0/fc31...
+2020-07-16 03:55:55.424780 +0000 build-centos: --> Processing repo: r4.1/current-testing/dom0/fc32...
+2020-07-16 03:55:55.544138 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/centos7...
+2020-07-16 03:55:58.605354 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/centos8...
+2020-07-16 03:56:03.781679 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc26...
+2020-07-16 03:56:03.892713 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc27...
+2020-07-16 03:56:03.977382 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc28...
+2020-07-16 03:56:04.022546 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc29...
+2020-07-16 03:56:04.059309 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc30...
+2020-07-16 03:56:04.096875 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc31...
+2020-07-16 03:56:04.155007 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc32...
+2020-07-16 03:56:04.230410 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc33...
+2020-07-16 03:56:04.295698 +0000 build-centos: Done.
+2020-07-16 03:56:04.299662 +0000 build-centos: ~/builder-r4.1/qubes-src/linux-yum ~/builder-r4.1/qubes-src/linux-yum
+2020-07-16 03:56:04.301130 +0000 build-centos: Syncing r4.1...
+2020-07-16 03:56:05.212103 +0000 build-centos: sending incremental file list
+2020-07-16 03:56:05.310658 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r4.1/current-testing/dom0/fc31": Operation not permitted (1)
+2020-07-16 03:56:05.315461 +0000 build-centos: .d..t...... current-testing/
+2020-07-16 03:56:05.315502 +0000 build-centos: .d..t...... current-testing/dom0/
+2020-07-16 03:56:05.315514 +0000 build-centos: .d..t...... current-testing/dom0/fc25/
+2020-07-16 03:56:05.315525 +0000 build-centos: .L..t...... current-testing/dom0/fc25/comps.xml -> ../../../comps-dom0.xml
+2020-07-16 03:56:05.315534 +0000 build-centos: .d..t...... current-testing/dom0/fc25/rpm/
+2020-07-16 03:56:05.315544 +0000 build-centos: <f..t...... current-testing/dom0/fc25/rpm/.gitignore
+2020-07-16 03:56:05.315558 +0000 build-centos: .              6 100%    0.00kB/s    0:00:00  .              6 100%    0.00kB/s    0:00:00 (xfr#1, ir-chk=1419/1431)
+2020-07-16 03:56:05.315568 +0000 build-centos: .d..t...... current-testing/dom0/fc29/
+2020-07-16 03:56:05.315576 +0000 build-centos: .d..t...... current-testing/dom0/fc31/
+2020-07-16 03:56:05.315587 +0000 build-centos: .L..t...... current-testing/dom0/fc31/comps.xml -> ../../../comps-dom0.xml
+2020-07-16 03:56:05.315595 +0000 build-centos: .d..t...... current-testing/dom0/fc31/rpm/
+2020-07-16 03:56:05.315605 +0000 build-centos: <f..t...... current-testing/dom0/fc31/rpm/.gitignore
+2020-07-16 03:56:05.315618 +0000 build-centos: .              6 100%    5.86kB/s    0:00:00  .              6 100%    5.86kB/s    0:00:00 (xfr#2, ir-chk=1416/1431)
+2020-07-16 03:56:05.315627 +0000 build-centos: .d..t...... current-testing/dom0/fc32/
+2020-07-16 03:56:05.315637 +0000 build-centos: .L..t...... current-testing/dom0/fc32/comps.xml -> ../../../comps-dom0.xml
+2020-07-16 03:56:05.315646 +0000 build-centos: .d..t...... current-testing/dom0/fc32/rpm/
+2020-07-16 03:56:05.315655 +0000 build-centos: <f..t...... current-testing/dom0/fc32/rpm/.gitignore
+2020-07-16 03:56:05.315666 +0000 build-centos: .              0 100%    0.00kB/s    0:00:00 (xfr#3, ir-chk=1413/1431)
+2020-07-16 03:56:05.315674 +0000 build-centos: .d..t...... current-testing/vm/
+2020-07-16 03:56:05.315683 +0000 build-centos: .d..t...... current-testing/vm/centos7/
+2020-07-16 03:56:05.315697 +0000 build-centos: .L..t...... current-testing/vm/centos7/comps.xml -> ../../../comps-vm.xml
+2020-07-16 03:56:05.315707 +0000 build-centos: .d..t...... current-testing/vm/centos7/rpm/
+2020-07-16 03:56:05.315717 +0000 build-centos: <f..t...... current-testing/vm/centos7/rpm/.gitignore
+2020-07-16 03:56:05.315730 +0000 build-centos: .              6 100%    5.86kB/s    0:00:00  .              6 100%    5.86kB/s    0:00:00 (xfr#4, ir-chk=1927/1958)
+2020-07-16 03:56:05.315739 +0000 build-centos: .d..t...... current-testing/vm/centos8/
+2020-07-16 03:56:05.315777 +0000 build-centos: .L..t...... current-testing/vm/centos8/comps.xml -> ../../../comps-vm.xml
+2020-07-16 03:56:05.315786 +0000 build-centos: .d..t...... current-testing/vm/centos8/rpm/
+2020-07-16 03:56:05.315796 +0000 build-centos: <f..t...... current-testing/vm/centos8/rpm/.gitignore
+2020-07-16 03:56:05.315807 +0000 build-centos: .              0 100%    0.00kB/s    0:00:00 (xfr#5, to-chk=1026/1986)
+2020-07-16 03:56:05.315818 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/xfce4-settings-qubes-4.0.4-1.centos8.src.rpm
+2020-07-16 03:56:05.315832 +0000 build-centos: .         21,157 100%   10.09MB/s    0:00:00  .         21,157 100%   10.09MB/s    0:00:00 (xfr#6, to-chk=567/1986)
+2020-07-16 03:56:05.315865 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/xfce4-settings-qubes-4.0.4-1.centos8.x86_64.buildinfo
+2020-07-16 03:56:05.315880 +0000 build-centos: .          4,575 100%    2.18MB/s    0:00:00  .          4,575 100%    2.18MB/s    0:00:00 (xfr#7, to-chk=566/1986)
+2020-07-16 03:56:05.315892 +0000 build-centos: <f+++++++++ current-testing/vm/centos8/rpm/xfce4-settings-qubes-4.0.4-1.centos8.x86_64.rpm
+2020-07-16 03:56:05.315905 +0000 build-centos: .         19,768 100%    9.43MB/s    0:00:00  .         19,768 100%    9.43MB/s    0:00:00 (xfr#8, to-chk=565/1986)
+2020-07-16 03:56:05.370871 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r4.1/current/dom0/fc31": Operation not permitted (1)
+2020-07-16 03:56:05.370925 +0000 build-centos: rsync: failed to set times on "/pub/qubes/repo/yum/r4.1/security-testing/dom0/fc31": Operation not permitted (1)
+2020-07-16 03:56:05.370939 +0000 build-centos: .d..t...... current-testing/vm/fc26/
+2020-07-16 03:56:05.370948 +0000 build-centos: .d..t...... current-testing/vm/fc27/
+2020-07-16 03:56:05.370957 +0000 build-centos: .d..t...... current-testing/vm/fc28/
+2020-07-16 03:56:05.370968 +0000 build-centos: .d..t...... current-testing/vm/fc29/
+2020-07-16 03:56:05.370978 +0000 build-centos: .L..t...... current-testing/vm/fc29/comps.xml -> ../../../comps-vm.xml
+2020-07-16 03:56:05.370987 +0000 build-centos: .d..t...... current-testing/vm/fc29/rpm/
+2020-07-16 03:56:05.371034 +0000 build-centos: <f..t...... current-testing/vm/fc29/rpm/.gitignore
+2020-07-16 03:56:05.371050 +0000 build-centos: .              6 100%    0.10kB/s    0:00:00  .              6 100%    0.10kB/s    0:00:00 (xfr#9, to-chk=552/1986)
+2020-07-16 03:56:05.371059 +0000 build-centos: .d..t...... current-testing/vm/fc30/
+2020-07-16 03:56:05.371069 +0000 build-centos: .L..t...... current-testing/vm/fc30/comps.xml -> ../../../comps-vm.xml
+2020-07-16 03:56:05.371078 +0000 build-centos: .d..t...... current-testing/vm/fc30/rpm/
+2020-07-16 03:56:05.371087 +0000 build-centos: <f..t...... current-testing/vm/fc30/rpm/.gitignore
+2020-07-16 03:56:05.371100 +0000 build-centos: .              6 100%    0.10kB/s    0:00:00  .              6 100%    0.10kB/s    0:00:00 (xfr#10, to-chk=549/1986)
+2020-07-16 03:56:05.371108 +0000 build-centos: .d..t...... current-testing/vm/fc31/
+2020-07-16 03:56:05.371118 +0000 build-centos: .L..t...... current-testing/vm/fc31/comps.xml -> ../../../comps-vm.xml
+2020-07-16 03:56:05.371127 +0000 build-centos: .d..t...... current-testing/vm/fc31/rpm/
+2020-07-16 03:56:05.371136 +0000 build-centos: <f..t...... current-testing/vm/fc31/rpm/.gitignore
+2020-07-16 03:56:05.371146 +0000 build-centos: .              0 100%    0.00kB/s    0:00:00 (xfr#11, to-chk=546/1986)
+2020-07-16 03:56:05.371157 +0000 build-centos: .d..t...... current-testing/vm/fc32/
+2020-07-16 03:56:05.371167 +0000 build-centos: .L..t...... current-testing/vm/fc32/comps.xml -> ../../../comps-vm.xml
+2020-07-16 03:56:05.371178 +0000 build-centos: .d..t...... current-testing/vm/fc32/rpm/
+2020-07-16 03:56:05.371187 +0000 build-centos: <f..t...... current-testing/vm/fc32/rpm/.gitignore
+2020-07-16 03:56:05.371197 +0000 build-centos: .              0 100%    0.00kB/s    0:00:00 (xfr#12, to-chk=543/1986)
+2020-07-16 03:56:05.371206 +0000 build-centos: .d..t...... current-testing/vm/fc33/
+2020-07-16 03:56:05.371216 +0000 build-centos: .L..t...... current-testing/vm/fc33/comps.xml -> ../../../comps-vm.xml
+2020-07-16 03:56:05.371224 +0000 build-centos: .d..t...... current-testing/vm/fc33/rpm/
+2020-07-16 03:56:05.371233 +0000 build-centos: <f..t...... current-testing/vm/fc33/rpm/.gitignore
+2020-07-16 03:56:05.371243 +0000 build-centos: .              0 100%    0.00kB/s    0:00:00 (xfr#13, to-chk=540/1986)
+2020-07-16 03:56:05.371251 +0000 build-centos: .d..t...... current/
+2020-07-16 03:56:05.371259 +0000 build-centos: .d..t...... current/dom0/
+2020-07-16 03:56:05.371267 +0000 build-centos: .d..t...... current/dom0/fc25/
+2020-07-16 03:56:05.371292 +0000 build-centos: .L..t...... current/dom0/fc25/comps.xml -> ../../../comps-dom0.xml
+2020-07-16 03:56:05.371302 +0000 build-centos: .d..t...... current/dom0/fc25/rpm/
+2020-07-16 03:56:05.371310 +0000 build-centos: <f..t...... current/dom0/fc25/rpm/.gitignore
+2020-07-16 03:56:05.371323 +0000 build-centos: .              6 100%    0.10kB/s    0:00:00  .              6 100%    0.10kB/s    0:00:00 (xfr#14, to-chk=531/1986)
+2020-07-16 03:56:05.371332 +0000 build-centos: .d..t...... current/dom0/fc29/
+2020-07-16 03:56:05.371339 +0000 build-centos: .d..t...... current/dom0/fc31/
+2020-07-16 03:56:05.371350 +0000 build-centos: .L..t...... current/dom0/fc31/comps.xml -> ../../../comps-dom0.xml
+2020-07-16 03:56:05.371358 +0000 build-centos: .d..t...... current/dom0/fc31/rpm/
+2020-07-16 03:56:05.371366 +0000 build-centos: <f..t...... current/dom0/fc31/rpm/.gitignore
+2020-07-16 03:56:05.371379 +0000 build-centos: .              6 100%    0.10kB/s    0:00:00  .              6 100%    0.10kB/s    0:00:00 (xfr#15, to-chk=528/1986)
+2020-07-16 03:56:05.371388 +0000 build-centos: .d..t...... current/dom0/fc32/
+2020-07-16 03:56:05.371398 +0000 build-centos: .L..t...... current/dom0/fc32/comps.xml -> ../../../comps-dom0.xml
+2020-07-16 03:56:05.371406 +0000 build-centos: .d..t...... current/dom0/fc32/rpm/
+2020-07-16 03:56:05.371414 +0000 build-centos: <f..t...... current/dom0/fc32/rpm/.gitignore
+2020-07-16 03:56:05.371425 +0000 build-centos: .              0 100%    0.00kB/s    0:00:00 (xfr#16, to-chk=525/1986)
+2020-07-16 03:56:05.371433 +0000 build-centos: .d..t...... current/vm/
+2020-07-16 03:56:05.371441 +0000 build-centos: .d..t...... current/vm/centos7/
+2020-07-16 03:56:05.371451 +0000 build-centos: .L..t...... current/vm/centos7/comps.xml -> ../../../comps-vm.xml
+2020-07-16 03:56:05.371459 +0000 build-centos: .d..t...... current/vm/centos7/rpm/
+2020-07-16 03:56:05.371468 +0000 build-centos: <f..t...... current/vm/centos7/rpm/.gitignore
+2020-07-16 03:56:05.371481 +0000 build-centos: .              6 100%    0.10kB/s    0:00:00  .              6 100%    0.10kB/s    0:00:00 (xfr#17, to-chk=515/1986)
+2020-07-16 03:56:05.371490 +0000 build-centos: .d..t...... current/vm/centos8/
+2020-07-16 03:56:05.371500 +0000 build-centos: .L..t...... current/vm/centos8/comps.xml -> ../../../comps-vm.xml
+2020-07-16 03:56:05.371508 +0000 build-centos: .d..t...... current/vm/centos8/rpm/
+2020-07-16 03:56:05.371517 +0000 build-centos: <f..t...... current/vm/centos8/rpm/.gitignore
+2020-07-16 03:56:05.371527 +0000 build-centos: .              0 100%    0.00kB/s    0:00:00 (xfr#18, to-chk=307/1986)
+2020-07-16 03:56:05.371535 +0000 build-centos: .d..t...... current/vm/fc29/
+2020-07-16 03:56:05.371545 +0000 build-centos: .L..t...... current/vm/fc29/comps.xml -> ../../../comps-vm.xml
+2020-07-16 03:56:05.371553 +0000 build-centos: .d..t...... current/vm/fc29/rpm/
+2020-07-16 03:56:05.371562 +0000 build-centos: <f..t...... current/vm/fc29/rpm/.gitignore
+2020-07-16 03:56:05.371574 +0000 build-centos: .              6 100%    0.10kB/s    0:00:00  .              6 100%    0.10kB/s    0:00:00 (xfr#19, to-chk=51/1986)
+2020-07-16 03:56:05.371583 +0000 build-centos: .d..t...... current/vm/fc30/
+2020-07-16 03:56:05.371592 +0000 build-centos: .L..t...... current/vm/fc30/comps.xml -> ../../../comps-vm.xml
+2020-07-16 03:56:05.371601 +0000 build-centos: .d..t...... current/vm/fc30/rpm/
+2020-07-16 03:56:05.371609 +0000 build-centos: <f..t...... current/vm/fc30/rpm/.gitignore
+2020-07-16 03:56:05.371622 +0000 build-centos: .              6 100%    0.10kB/s    0:00:00  .              6 100%    0.10kB/s    0:00:00 (xfr#20, to-chk=48/1986)
+2020-07-16 03:56:05.371630 +0000 build-centos: .d..t...... current/vm/fc31/
+2020-07-16 03:56:05.371640 +0000 build-centos: .L..t...... current/vm/fc31/comps.xml -> ../../../comps-vm.xml
+2020-07-16 03:56:05.371648 +0000 build-centos: .d..t...... current/vm/fc31/rpm/
+2020-07-16 03:56:05.371657 +0000 build-centos: <f..t...... current/vm/fc31/rpm/.gitignore
+2020-07-16 03:56:05.371672 +0000 build-centos: .              0 100%    0.00kB/s    0:00:00 (xfr#21, to-chk=45/1986)
+2020-07-16 03:56:05.371693 +0000 build-centos: .d..t...... current/vm/fc32/
+2020-07-16 03:56:05.371704 +0000 build-centos: .L..t...... current/vm/fc32/comps.xml -> ../../../comps-vm.xml
+2020-07-16 03:56:05.371712 +0000 build-centos: .d..t...... current/vm/fc32/rpm/
+2020-07-16 03:56:05.371721 +0000 build-centos: <f..t...... current/vm/fc32/rpm/.gitignore
+2020-07-16 03:56:05.371731 +0000 build-centos: .              0 100%    0.00kB/s    0:00:00 (xfr#22, to-chk=42/1986)
+2020-07-16 03:56:05.371755 +0000 build-centos: .d..t...... current/vm/fc33/
+2020-07-16 03:56:05.371767 +0000 build-centos: .L..t...... current/vm/fc33/comps.xml -> ../../../comps-vm.xml
+2020-07-16 03:56:05.371775 +0000 build-centos: .d..t...... current/vm/fc33/rpm/
+2020-07-16 03:56:05.371784 +0000 build-centos: <f..t...... current/vm/fc33/rpm/.gitignore
+2020-07-16 03:56:05.371795 +0000 build-centos: .              0 100%    0.00kB/s    0:00:00 (xfr#23, to-chk=39/1986)
+2020-07-16 03:56:05.371803 +0000 build-centos: .d..t...... security-testing/
+2020-07-16 03:56:05.371811 +0000 build-centos: .d..t...... security-testing/dom0/
+2020-07-16 03:56:05.371820 +0000 build-centos: .d..t...... security-testing/dom0/fc25/
+2020-07-16 03:56:05.371828 +0000 build-centos: .d..t...... security-testing/dom0/fc25/rpm/
+2020-07-16 03:56:05.371838 +0000 build-centos: <f..t...... security-testing/dom0/fc25/rpm/.gitignore
+2020-07-16 03:56:05.371851 +0000 build-centos: .              6 100%    0.10kB/s    0:00:00  .              6 100%    0.10kB/s    0:00:00 (xfr#24, to-chk=32/1986)
+2020-07-16 03:56:05.371860 +0000 build-centos: .d..t...... security-testing/dom0/fc31/
+2020-07-16 03:56:05.371868 +0000 build-centos: .d..t...... security-testing/dom0/fc31/rpm/
+2020-07-16 03:56:05.371878 +0000 build-centos: <f..t...... security-testing/dom0/fc31/rpm/.gitignore
+2020-07-16 03:56:05.371891 +0000 build-centos: .              6 100%    0.10kB/s    0:00:00  .              6 100%    0.10kB/s    0:00:00 (xfr#25, to-chk=30/1986)
+2020-07-16 03:56:05.371900 +0000 build-centos: .d..t...... security-testing/dom0/fc32/
+2020-07-16 03:56:05.371910 +0000 build-centos: .L..t...... security-testing/dom0/fc32/comps.xml -> ../../../comps-dom0.xml
+2020-07-16 03:56:05.371919 +0000 build-centos: .d..t...... security-testing/dom0/fc32/rpm/
+2020-07-16 03:56:05.371928 +0000 build-centos: <f..t...... security-testing/dom0/fc32/rpm/.gitignore
+2020-07-16 03:56:05.371939 +0000 build-centos: .              0 100%    0.00kB/s    0:00:00 (xfr#26, to-chk=27/1986)
+2020-07-16 03:56:05.371947 +0000 build-centos: .d..t...... security-testing/vm/
+2020-07-16 03:56:05.371955 +0000 build-centos: .d..t...... security-testing/vm/centos7/
+2020-07-16 03:56:05.371966 +0000 build-centos: .L..t...... security-testing/vm/centos7/comps.xml -> ../../../comps-vm.xml
+2020-07-16 03:56:05.371975 +0000 build-centos: .d..t...... security-testing/vm/centos7/rpm/
+2020-07-16 03:56:05.371984 +0000 build-centos: <f..t...... security-testing/vm/centos7/rpm/.gitignore
+2020-07-16 03:56:05.371998 +0000 build-centos: .              6 100%    0.10kB/s    0:00:00  .              6 100%    0.10kB/s    0:00:00 (xfr#27, to-chk=17/1986)
+2020-07-16 03:56:05.372006 +0000 build-centos: .d..t...... security-testing/vm/centos8/
+2020-07-16 03:56:05.372017 +0000 build-centos: .L..t...... security-testing/vm/centos8/comps.xml -> ../../../comps-vm.xml
+2020-07-16 03:56:05.372026 +0000 build-centos: .d..t...... security-testing/vm/centos8/rpm/
+2020-07-16 03:56:05.372035 +0000 build-centos: <f..t...... security-testing/vm/centos8/rpm/.gitignore
+2020-07-16 03:56:05.372046 +0000 build-centos: .              0 100%    0.00kB/s    0:00:00 (xfr#28, to-chk=14/1986)
+2020-07-16 03:56:05.372054 +0000 build-centos: .d..t...... security-testing/vm/fc29/
+2020-07-16 03:56:05.372063 +0000 build-centos: .d..t...... security-testing/vm/fc29/rpm/
+2020-07-16 03:56:05.372072 +0000 build-centos: <f..t...... security-testing/vm/fc29/rpm/.gitignore
+2020-07-16 03:56:05.372090 +0000 build-centos: .              6 100%    0.10kB/s    0:00:00  .              6 100%    0.10kB/s    0:00:00 (xfr#29, to-chk=12/1986)
+2020-07-16 03:56:05.372100 +0000 build-centos: .d..t...... security-testing/vm/fc30/
+2020-07-16 03:56:05.372111 +0000 build-centos: .L..t...... security-testing/vm/fc30/comps.xml -> ../../../comps-vm.xml
+2020-07-16 03:56:05.372120 +0000 build-centos: .d..t...... security-testing/vm/fc30/rpm/
+2020-07-16 03:56:05.372129 +0000 build-centos: <f..t...... security-testing/vm/fc30/rpm/.gitignore
+2020-07-16 03:56:05.372142 +0000 build-centos: .              6 100%    0.10kB/s    0:00:00  .              6 100%    0.10kB/s    0:00:00 (xfr#30, to-chk=9/1986)
+2020-07-16 03:56:05.372151 +0000 build-centos: .d..t...... security-testing/vm/fc31/
+2020-07-16 03:56:05.372161 +0000 build-centos: .L..t...... security-testing/vm/fc31/comps.xml -> ../../../comps-vm.xml
+2020-07-16 03:56:05.372170 +0000 build-centos: .d..t...... security-testing/vm/fc31/rpm/
+2020-07-16 03:56:05.372179 +0000 build-centos: <f..t...... security-testing/vm/fc31/rpm/.gitignore
+2020-07-16 03:56:05.372189 +0000 build-centos: .              0 100%    0.00kB/s    0:00:00 (xfr#31, to-chk=6/1986)
+2020-07-16 03:56:05.372198 +0000 build-centos: .d..t...... security-testing/vm/fc32/
+2020-07-16 03:56:05.372208 +0000 build-centos: .L..t...... security-testing/vm/fc32/comps.xml -> ../../../comps-vm.xml
+2020-07-16 03:56:05.372217 +0000 build-centos: .d..t...... security-testing/vm/fc32/rpm/
+2020-07-16 03:56:05.372226 +0000 build-centos: <f..t...... security-testing/vm/fc32/rpm/.gitignore
+2020-07-16 03:56:05.372237 +0000 build-centos: .              0 100%    0.00kB/s    0:00:00 (xfr#32, to-chk=3/1986)
+2020-07-16 03:56:05.372245 +0000 build-centos: .d..t...... security-testing/vm/fc33/
+2020-07-16 03:56:05.372256 +0000 build-centos: .L..t...... security-testing/vm/fc33/comps.xml -> ../../../comps-vm.xml
+2020-07-16 03:56:05.372264 +0000 build-centos: .d..t...... security-testing/vm/fc33/rpm/
+2020-07-16 03:56:05.372274 +0000 build-centos: <f..t...... security-testing/vm/fc33/rpm/.gitignore
+2020-07-16 03:56:05.372284 +0000 build-centos: .              0 100%    0.00kB/s    0:00:00 (xfr#33, to-chk=0/1986)
+2020-07-16 03:56:05.511320 +0000 build-centos: rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1189) [sender=3.1.3]
+2020-07-16 03:56:05.844640 +0000 build-centos: --> Processing repo: r4.1/current/dom0/fc25...
+2020-07-16 03:56:06.327619 +0000 build-centos: 03:56:07: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:06.332977 +0000 build-centos: 03:56:07: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:06.338448 +0000 build-centos: 03:56:07: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:06.348631 +0000 build-centos: 03:56:07: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:06.360486 +0000 build-centos: 03:56:07: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:07.520868 +0000 build-centos: --> Processing repo: r4.1/current/dom0/fc29...
+2020-07-16 03:56:07.604199 +0000 build-centos: Temporary repodata directory r4.1/current/dom0/fc29/.repodata/ already exists! (Another createrepo process is running?)
+2020-07-16 03:56:08.540263 +0000 build-centos: --> Processing repo: r4.1/current/dom0/fc31...
+2020-07-16 03:56:14.486464 +0000 build-centos: 03:56:15: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:14.488821 +0000 build-centos: 03:56:15: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:14.504155 +0000 build-centos: 03:56:15: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:14.535859 +0000 build-centos: 03:56:15: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:14.547146 +0000 build-centos: 03:56:15: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:15.544617 +0000 build-centos: --> Processing repo: r4.1/current/dom0/fc32...
+2020-07-16 03:56:16.801972 +0000 build-centos: 03:56:18: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:16.807851 +0000 build-centos: 03:56:18: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:16.813680 +0000 build-centos: 03:56:18: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:16.825870 +0000 build-centos: 03:56:18: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:16.834516 +0000 build-centos: 03:56:18: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:17.784865 +0000 build-centos: --> Processing repo: r4.1/current/vm/centos7...
+2020-07-16 03:56:18.190898 +0000 build-centos: 03:56:19: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:18.197014 +0000 build-centos: 03:56:19: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:18.203034 +0000 build-centos: 03:56:19: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:18.210994 +0000 build-centos: 03:56:19: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:18.219006 +0000 build-centos: 03:56:19: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:19.161866 +0000 build-centos: --> Processing repo: r4.1/current/vm/centos8...
+2020-07-16 03:56:19.852842 +0000 build-centos: 03:56:21: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:19.858705 +0000 build-centos: 03:56:21: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:19.864682 +0000 build-centos: 03:56:21: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:19.874455 +0000 build-centos: 03:56:21: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:19.883605 +0000 build-centos: 03:56:21: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:20.830776 +0000 build-centos: --> Processing repo: r4.1/current/vm/fc25...
+2020-07-16 03:56:20.938695 +0000 build-centos: 03:56:22: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:20.949338 +0000 build-centos: 03:56:22: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:20.949380 +0000 build-centos: 03:56:22: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:20.956626 +0000 build-centos: 03:56:22: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:20.963948 +0000 build-centos: 03:56:22: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:21.901719 +0000 build-centos: --> Processing repo: r4.1/current/vm/fc26...
+2020-07-16 03:56:22.010468 +0000 build-centos: 03:56:23: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:22.015095 +0000 build-centos: 03:56:23: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:22.021251 +0000 build-centos: 03:56:23: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:22.028074 +0000 build-centos: 03:56:23: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:22.035506 +0000 build-centos: 03:56:23: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:22.974032 +0000 build-centos: --> Processing repo: r4.1/current/vm/fc27...
+2020-07-16 03:56:23.081333 +0000 build-centos: 03:56:24: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:23.087749 +0000 build-centos: 03:56:24: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:23.093341 +0000 build-centos: 03:56:24: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:23.100970 +0000 build-centos: 03:56:24: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:23.108331 +0000 build-centos: 03:56:24: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:24.040445 +0000 build-centos: --> Processing repo: r4.1/current/vm/fc28...
+2020-07-16 03:56:24.156410 +0000 build-centos: 03:56:25: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:24.162777 +0000 build-centos: 03:56:25: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:24.170425 +0000 build-centos: 03:56:25: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:24.174436 +0000 build-centos: 03:56:25: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:24.176335 +0000 build-centos: 03:56:25: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:25.112824 +0000 build-centos: --> Processing repo: r4.1/current/vm/fc29...
+2020-07-16 03:56:25.873184 +0000 build-centos: 03:56:27: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:25.879087 +0000 build-centos: 03:56:27: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:25.884342 +0000 build-centos: 03:56:27: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:25.894648 +0000 build-centos: 03:56:27: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:25.902468 +0000 build-centos: 03:56:27: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:26.851269 +0000 build-centos: --> Processing repo: r4.1/current/vm/fc30...
+2020-07-16 03:56:27.746920 +0000 build-centos: 03:56:28: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:27.746973 +0000 build-centos: 03:56:28: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:27.746986 +0000 build-centos: 03:56:29: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:27.746997 +0000 build-centos: 03:56:29: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:27.747007 +0000 build-centos: 03:56:29: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:28.663065 +0000 build-centos: --> Processing repo: r4.1/current/vm/fc31...
+2020-07-16 03:56:29.430392 +0000 build-centos: 03:56:30: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:29.434159 +0000 build-centos: 03:56:30: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:29.441917 +0000 build-centos: 03:56:30: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:29.451069 +0000 build-centos: 03:56:30: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:29.462484 +0000 build-centos: 03:56:30: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:30.407915 +0000 build-centos: --> Processing repo: r4.1/current/vm/fc32...
+2020-07-16 03:56:30.947146 +0000 build-centos: 03:56:32: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:30.951859 +0000 build-centos: 03:56:32: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:30.957383 +0000 build-centos: 03:56:32: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:30.966925 +0000 build-centos: 03:56:32: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:30.978814 +0000 build-centos: 03:56:32: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:31.914671 +0000 build-centos: --> Processing repo: r4.1/current/vm/fc33...
+2020-07-16 03:56:32.023084 +0000 build-centos: 03:56:33: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:32.031281 +0000 build-centos: 03:56:33: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:32.033448 +0000 build-centos: 03:56:33: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:32.041242 +0000 build-centos: 03:56:33: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:32.049615 +0000 build-centos: 03:56:33: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:32.986699 +0000 build-centos: Done.
+2020-07-16 03:56:33.124859 +0000 build-centos: --> Processing repo: r4.1/current-testing/dom0/fc25...
+2020-07-16 03:56:33.548479 +0000 build-centos: 03:56:34: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:33.548533 +0000 build-centos: 03:56:34: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:33.548546 +0000 build-centos: 03:56:34: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:33.559143 +0000 build-centos: 03:56:34: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:33.562714 +0000 build-centos: 03:56:34: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:34.506089 +0000 build-centos: --> Processing repo: r4.1/current-testing/dom0/fc29...
+2020-07-16 03:56:54.736622 +0000 build-centos: 03:56:56: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:54.757165 +0000 build-centos: 03:56:56: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:54.778079 +0000 build-centos: 03:56:56: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:54.865076 +0000 build-centos: 03:56:56: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:54.886820 +0000 build-centos: 03:56:56: posix_spawn avoided (fd close requested) 
+2020-07-16 03:56:55.978188 +0000 build-centos: --> Processing repo: r4.1/current-testing/dom0/fc31...
+2020-07-16 03:56:56.092473 +0000 build-centos: Temporary repodata directory r4.1/current-testing/dom0/fc31/.repodata/ already exists! (Another createrepo process is running?)
+2020-07-16 03:56:57.017428 +0000 build-centos: --> Processing repo: r4.1/current-testing/dom0/fc32...
+2020-07-16 03:57:14.612146 +0000 build-centos: 03:57:15: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:14.626034 +0000 build-centos: 03:57:15: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:14.639162 +0000 build-centos: 03:57:15: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:14.705784 +0000 build-centos: 03:57:16: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:14.722076 +0000 build-centos: 03:57:16: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:15.784237 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/centos7...
+2020-07-16 03:57:17.652613 +0000 build-centos: 03:57:18: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:17.659301 +0000 build-centos: 03:57:18: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:17.665634 +0000 build-centos: 03:57:18: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:17.677913 +0000 build-centos: 03:57:18: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:17.687450 +0000 build-centos: 03:57:18: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:18.648918 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/centos8...
+2020-07-16 03:57:19.786716 +0000 build-centos: 03:57:21: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:19.791841 +0000 build-centos: 03:57:21: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:19.796701 +0000 build-centos: 03:57:21: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:19.807430 +0000 build-centos: 03:57:21: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:19.815563 +0000 build-centos: 03:57:21: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:20.758345 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc25...
+2020-07-16 03:57:20.867456 +0000 build-centos: 03:57:22: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:20.873644 +0000 build-centos: 03:57:22: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:20.877182 +0000 build-centos: 03:57:22: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:20.884372 +0000 build-centos: 03:57:22: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:20.891553 +0000 build-centos: 03:57:22: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:21.827295 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc26...
+2020-07-16 03:57:21.939875 +0000 build-centos: 03:57:23: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:21.945056 +0000 build-centos: 03:57:23: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:21.949436 +0000 build-centos: 03:57:23: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:21.956983 +0000 build-centos: 03:57:23: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:21.964781 +0000 build-centos: 03:57:23: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:22.903087 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc27...
+2020-07-16 03:57:23.014253 +0000 build-centos: 03:57:24: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:23.019161 +0000 build-centos: 03:57:24: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:23.024478 +0000 build-centos: 03:57:24: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:23.031331 +0000 build-centos: 03:57:24: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:23.038705 +0000 build-centos: 03:57:24: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:23.974369 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc28...
+2020-07-16 03:57:24.085555 +0000 build-centos: 03:57:25: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:24.090850 +0000 build-centos: 03:57:25: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:24.100781 +0000 build-centos: 03:57:25: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:24.108748 +0000 build-centos: 03:57:25: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:24.117118 +0000 build-centos: 03:57:25: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:25.053571 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc29...
+2020-07-16 03:57:27.863040 +0000 build-centos: 03:57:29: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:27.869744 +0000 build-centos: 03:57:29: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:27.875941 +0000 build-centos: 03:57:29: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:27.892287 +0000 build-centos: 03:57:29: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:27.901255 +0000 build-centos: 03:57:29: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:28.861297 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc30...
+2020-07-16 03:57:31.555025 +0000 build-centos: 03:57:32: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:31.561933 +0000 build-centos: 03:57:32: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:31.567415 +0000 build-centos: 03:57:32: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:31.581681 +0000 build-centos: 03:57:32: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:31.590947 +0000 build-centos: 03:57:32: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:32.563054 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc31...
+2020-07-16 03:57:34.759303 +0000 build-centos: 03:57:36: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:34.763700 +0000 build-centos: 03:57:36: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:34.770184 +0000 build-centos: 03:57:36: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:34.783797 +0000 build-centos: 03:57:36: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:34.792832 +0000 build-centos: 03:57:36: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:35.742695 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc32...
+2020-07-16 03:57:36.952408 +0000 build-centos: 03:57:38: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:36.959552 +0000 build-centos: 03:57:38: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:36.964078 +0000 build-centos: 03:57:38: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:36.975450 +0000 build-centos: 03:57:38: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:36.983954 +0000 build-centos: 03:57:38: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:37.925069 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/fc33...
+2020-07-16 03:57:38.033336 +0000 build-centos: 03:57:39: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:38.038178 +0000 build-centos: 03:57:39: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:38.044113 +0000 build-centos: 03:57:39: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:38.050936 +0000 build-centos: 03:57:39: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:38.058568 +0000 build-centos: 03:57:39: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:39.004681 +0000 build-centos: Done.
+2020-07-16 03:57:39.141148 +0000 build-centos: --> Processing repo: r4.1/security-testing/dom0/fc21...
+2020-07-16 03:57:39.251296 +0000 build-centos: 03:57:40: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:39.256480 +0000 build-centos: 03:57:40: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:39.260527 +0000 build-centos: 03:57:40: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:39.268156 +0000 build-centos: 03:57:40: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:39.275923 +0000 build-centos: 03:57:40: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:40.214073 +0000 build-centos: --> Processing repo: r4.1/security-testing/dom0/fc25...
+2020-07-16 03:57:40.324194 +0000 build-centos: 03:57:41: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:40.329961 +0000 build-centos: 03:57:41: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:40.333111 +0000 build-centos: 03:57:41: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:40.341878 +0000 build-centos: 03:57:41: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:40.349324 +0000 build-centos: 03:57:41: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:41.286229 +0000 build-centos: --> Processing repo: r4.1/security-testing/dom0/fc29...
+2020-07-16 03:57:41.393537 +0000 build-centos: 03:57:42: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:41.398672 +0000 build-centos: 03:57:42: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:41.403969 +0000 build-centos: 03:57:42: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:41.411732 +0000 build-centos: 03:57:42: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:41.418622 +0000 build-centos: 03:57:42: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:42.355987 +0000 build-centos: --> Processing repo: r4.1/security-testing/dom0/fc31...
+2020-07-16 03:57:42.462835 +0000 build-centos: 03:57:43: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:42.467897 +0000 build-centos: 03:57:43: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:42.473486 +0000 build-centos: 03:57:43: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:42.481657 +0000 build-centos: 03:57:43: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:42.489320 +0000 build-centos: 03:57:43: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:43.426604 +0000 build-centos: --> Processing repo: r4.1/security-testing/dom0/fc32...
+2020-07-16 03:57:43.573917 +0000 build-centos: 03:57:44: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:43.581050 +0000 build-centos: 03:57:44: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:43.583792 +0000 build-centos: 03:57:44: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:43.593145 +0000 build-centos: 03:57:44: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:43.599789 +0000 build-centos: 03:57:44: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:44.538455 +0000 build-centos: --> Processing repo: r4.1/security-testing/vm/centos7...
+2020-07-16 03:57:44.655806 +0000 build-centos: 03:57:45: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:44.662943 +0000 build-centos: 03:57:45: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:44.666538 +0000 build-centos: 03:57:45: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:44.676891 +0000 build-centos: 03:57:45: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:44.681164 +0000 build-centos: 03:57:45: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:45.621373 +0000 build-centos: --> Processing repo: r4.1/security-testing/vm/centos8...
+2020-07-16 03:57:45.730421 +0000 build-centos: 03:57:47: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:45.735798 +0000 build-centos: 03:57:47: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:45.740484 +0000 build-centos: 03:57:47: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:45.748465 +0000 build-centos: 03:57:47: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:45.756328 +0000 build-centos: 03:57:47: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:46.701077 +0000 build-centos: --> Processing repo: r4.1/security-testing/vm/fc26...
+2020-07-16 03:57:46.809674 +0000 build-centos: 03:57:48: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:46.816080 +0000 build-centos: 03:57:48: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:46.820020 +0000 build-centos: 03:57:48: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:46.826897 +0000 build-centos: 03:57:48: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:46.834307 +0000 build-centos: 03:57:48: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:47.767875 +0000 build-centos: --> Processing repo: r4.1/security-testing/vm/fc27...
+2020-07-16 03:57:47.878042 +0000 build-centos: 03:57:49: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:47.884613 +0000 build-centos: 03:57:49: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:47.888962 +0000 build-centos: 03:57:49: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:47.896964 +0000 build-centos: 03:57:49: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:47.904434 +0000 build-centos: 03:57:49: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:48.847813 +0000 build-centos: --> Processing repo: r4.1/security-testing/vm/fc28...
+2020-07-16 03:57:48.958254 +0000 build-centos: 03:57:50: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:48.963421 +0000 build-centos: 03:57:50: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:48.968677 +0000 build-centos: 03:57:50: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:48.977557 +0000 build-centos: 03:57:50: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:48.983801 +0000 build-centos: 03:57:50: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:49.920697 +0000 build-centos: --> Processing repo: r4.1/security-testing/vm/fc29...
+2020-07-16 03:57:50.035295 +0000 build-centos: 03:57:51: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:50.039718 +0000 build-centos: 03:57:51: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:50.045605 +0000 build-centos: 03:57:51: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:50.053773 +0000 build-centos: 03:57:51: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:50.059773 +0000 build-centos: 03:57:51: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:50.999586 +0000 build-centos: --> Processing repo: r4.1/security-testing/vm/fc30...
+2020-07-16 03:57:51.127439 +0000 build-centos: 03:57:52: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:51.133269 +0000 build-centos: 03:57:52: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:51.137788 +0000 build-centos: 03:57:52: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:51.145386 +0000 build-centos: 03:57:52: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:51.153007 +0000 build-centos: 03:57:52: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:52.090860 +0000 build-centos: --> Processing repo: r4.1/security-testing/vm/fc31...
+2020-07-16 03:57:52.203494 +0000 build-centos: 03:57:53: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:52.207724 +0000 build-centos: 03:57:53: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:52.212731 +0000 build-centos: 03:57:53: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:52.220668 +0000 build-centos: 03:57:53: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:52.228128 +0000 build-centos: 03:57:53: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:53.165547 +0000 build-centos: --> Processing repo: r4.1/security-testing/vm/fc32...
+2020-07-16 03:57:53.437968 +0000 build-centos: 03:57:54: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:53.443682 +0000 build-centos: 03:57:54: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:53.448993 +0000 build-centos: 03:57:54: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:53.455724 +0000 build-centos: 03:57:54: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:53.463008 +0000 build-centos: 03:57:54: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:54.410196 +0000 build-centos: --> Processing repo: r4.1/security-testing/vm/fc33...
+2020-07-16 03:57:54.520098 +0000 build-centos: 03:57:55: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:54.525295 +0000 build-centos: 03:57:55: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:54.530811 +0000 build-centos: 03:57:55: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:54.538528 +0000 build-centos: 03:57:55: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:54.546584 +0000 build-centos: 03:57:55: posix_spawn avoided (fd close requested) 
+2020-07-16 03:57:55.481382 +0000 build-centos: Done.
+2020-07-16 03:57:55.483224 +0000 build-centos: ~/builder-r4.1/qubes-src/linux-yum
+2020-07-16 03:57:55.483869 +0000 build-centos: Makefile:778: update target 'update-repo-current-testing' due to: internal-update-repo-current-testing.vm.centos8 post-update-repo-current-testing
+2020-07-16 03:57:55.483906 +0000 build-centos: true
+2020-07-16 03:57:55.485444 +0000 build-centos: > done
+2020-07-16 03:57:55.485485 +0000 > closing log
