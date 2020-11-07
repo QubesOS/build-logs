@@ -1,0 +1,962 @@
+2020-11-07 20:58:26.095072 +0000 > starting log
+2020-11-07 20:58:26.095529 +0000 build-fedora4: > starting build with log
+2020-11-07 20:58:26.095581 +0000 build-fedora4: >> make args: DISTS_VM= fc31 fc32 fc33 DIST_DOM0= BUILD_LOGS_URL= python-u2flib-host-vm-fc31=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2020-11-07_20-52-22 python-u2flib-host-vm-fc32=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2020-11-07_20-54-48 python-u2flib-host-vm-fc33=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2020-11-07_20-56-50 GIT_URL_python_u2flib_host=https://github.com/QubesOS/qubes-python-u2flib-host sign-all update-repo-current-testing
+2020-11-07 20:58:26.095592 +0000 build-fedora4: >> MAKEFLAGS=
+2020-11-07 20:58:26.095601 +0000 build-fedora4: >> COMPONENTS=python-u2flib-host
+2020-11-07 20:58:26.095609 +0000 build-fedora4: >> DISTS_VM=
+2020-11-07 20:58:26.095616 +0000 build-fedora4: >> DIST_DOM0=
+2020-11-07 20:58:26.095626 +0000 build-fedora4: >> qubes-builder ac1d81e4f99bcb638f68c61e23781c6c192e1621
+2020-11-07 20:58:26.095638 +0000 build-fedora4: >> qubes-builder/qubes-src/python-u2flib-host ec85945c494f0936a12813b0278b8dd18664f4aa
+2020-11-07 20:58:26.095649 +0000 build-fedora4: !! pkgs/vm-fc29/python-u2flib-host-3.0.3-3.fc29.x86_64.buildinfo
+2020-11-07 20:58:26.095660 +0000 build-fedora4: !! pkgs/vm-fc29/python-u2flib-host-3.0.3-4.fc29.x86_64.buildinfo
+2020-11-07 20:58:26.095670 +0000 build-fedora4: !! pkgs/vm-fc29/python-u2flib-host-3.0.3-5.fc29.x86_64.buildinfo
+2020-11-07 20:58:26.095680 +0000 build-fedora4: !! pkgs/vm-fc29/python-u2flib-host-3.0.3-6.fc29.src.rpm
+2020-11-07 20:58:26.095690 +0000 build-fedora4: !! pkgs/vm-fc29/python-u2flib-host-3.0.3-6.fc29.x86_64.buildinfo
+2020-11-07 20:58:26.095700 +0000 build-fedora4: !! pkgs/vm-fc29/python3-u2flib-host-3.0.3-6.fc29.noarch.rpm
+2020-11-07 20:58:26.095709 +0000 build-fedora4: !! pkgs/vm-fc29/python3-u2flib-host.spec.list
+2020-11-07 20:58:26.095719 +0000 build-fedora4: !! pkgs/vm-fc30/python-u2flib-host-3.0.3-2.fc30.x86_64.buildinfo
+2020-11-07 20:58:26.095729 +0000 build-fedora4: !! pkgs/vm-fc30/python-u2flib-host-3.0.3-3.fc30.x86_64.buildinfo
+2020-11-07 20:58:26.095740 +0000 build-fedora4: !! pkgs/vm-fc30/python-u2flib-host-3.0.3-4.fc30.x86_64.buildinfo
+2020-11-07 20:58:26.095750 +0000 build-fedora4: !! pkgs/vm-fc30/python-u2flib-host-3.0.3-5.fc30.x86_64.buildinfo
+2020-11-07 20:58:26.095759 +0000 build-fedora4: !! pkgs/vm-fc30/python-u2flib-host-3.0.3-6.fc30.src.rpm
+2020-11-07 20:58:26.095769 +0000 build-fedora4: !! pkgs/vm-fc30/python-u2flib-host-3.0.3-6.fc30.x86_64.buildinfo
+2020-11-07 20:58:26.095779 +0000 build-fedora4: !! pkgs/vm-fc30/python3-u2flib-host-3.0.3-6.fc30.noarch.rpm
+2020-11-07 20:58:26.095788 +0000 build-fedora4: !! pkgs/vm-fc30/python3-u2flib-host.spec.list
+2020-11-07 20:58:26.095798 +0000 build-fedora4: !! pkgs/vm-fc31/python-u2flib-host-3.0.3-3.fc31.x86_64.buildinfo
+2020-11-07 20:58:26.095808 +0000 build-fedora4: !! pkgs/vm-fc31/python-u2flib-host-3.0.3-4.fc31.x86_64.buildinfo
+2020-11-07 20:58:26.095818 +0000 build-fedora4: !! pkgs/vm-fc31/python-u2flib-host-3.0.3-5.fc31.x86_64.buildinfo
+2020-11-07 20:58:26.095828 +0000 build-fedora4: !! pkgs/vm-fc31/python-u2flib-host-3.0.3-6.fc31.src.rpm
+2020-11-07 20:58:26.095838 +0000 build-fedora4: !! pkgs/vm-fc31/python-u2flib-host-3.0.3-6.fc31.x86_64.buildinfo
+2020-11-07 20:58:26.095848 +0000 build-fedora4: !! pkgs/vm-fc31/python-u2flib-host-3.0.3-7.fc31.src.rpm
+2020-11-07 20:58:26.095858 +0000 build-fedora4: !! pkgs/vm-fc31/python-u2flib-host-3.0.3-7.fc31.x86_64.buildinfo
+2020-11-07 20:58:26.095868 +0000 build-fedora4: !! pkgs/vm-fc31/python3-u2flib-host-3.0.3-6.fc31.noarch.rpm
+2020-11-07 20:58:26.095878 +0000 build-fedora4: !! pkgs/vm-fc31/python3-u2flib-host-3.0.3-7.fc31.noarch.rpm
+2020-11-07 20:58:26.095887 +0000 build-fedora4: !! pkgs/vm-fc31/python3-u2flib-host.spec.list
+2020-11-07 20:58:26.095897 +0000 build-fedora4: !! pkgs/vm-fc32/python-u2flib-host-3.0.3-3.fc32.x86_64.buildinfo
+2020-11-07 20:58:26.095907 +0000 build-fedora4: !! pkgs/vm-fc32/python-u2flib-host-3.0.3-4.fc32.x86_64.buildinfo
+2020-11-07 20:58:26.095924 +0000 build-fedora4: !! pkgs/vm-fc32/python-u2flib-host-3.0.3-5.fc32.x86_64.buildinfo
+2020-11-07 20:58:26.095934 +0000 build-fedora4: !! pkgs/vm-fc32/python-u2flib-host-3.0.3-6.fc32.src.rpm
+2020-11-07 20:58:26.095944 +0000 build-fedora4: !! pkgs/vm-fc32/python-u2flib-host-3.0.3-6.fc32.x86_64.buildinfo
+2020-11-07 20:58:26.095954 +0000 build-fedora4: !! pkgs/vm-fc32/python-u2flib-host-3.0.3-7.fc32.src.rpm
+2020-11-07 20:58:26.095964 +0000 build-fedora4: !! pkgs/vm-fc32/python-u2flib-host-3.0.3-7.fc32.x86_64.buildinfo
+2020-11-07 20:58:26.095974 +0000 build-fedora4: !! pkgs/vm-fc32/python3-u2flib-host-3.0.3-6.fc32.noarch.rpm
+2020-11-07 20:58:26.095984 +0000 build-fedora4: !! pkgs/vm-fc32/python3-u2flib-host-3.0.3-7.fc32.noarch.rpm
+2020-11-07 20:58:26.095993 +0000 build-fedora4: !! pkgs/vm-fc32/python3-u2flib-host.spec.list
+2020-11-07 20:58:26.096002 +0000 build-fedora4: !! pkgs/vm-fc33/python-u2flib-host-3.0.3-6.fc33.src.rpm
+2020-11-07 20:58:26.096013 +0000 build-fedora4: !! pkgs/vm-fc33/python-u2flib-host-3.0.3-6.fc33.x86_64.buildinfo
+2020-11-07 20:58:26.096022 +0000 build-fedora4: !! pkgs/vm-fc33/python-u2flib-host-3.0.3-7.fc33.src.rpm
+2020-11-07 20:58:26.096032 +0000 build-fedora4: !! pkgs/vm-fc33/python-u2flib-host-3.0.3-7.fc33.x86_64.buildinfo
+2020-11-07 20:58:26.096042 +0000 build-fedora4: !! pkgs/vm-fc33/python3-u2flib-host-3.0.3-6.fc33.noarch.rpm
+2020-11-07 20:58:26.096052 +0000 build-fedora4: !! pkgs/vm-fc33/python3-u2flib-host-3.0.3-7.fc33.noarch.rpm
+2020-11-07 20:58:26.096061 +0000 build-fedora4: !! pkgs/vm-fc33/python3-u2flib-host.spec.list
+2020-11-07 20:58:26.096069 +0000 build-fedora4: !! python-u2flib-host-3.0.3.tar.gz
+2020-11-07 20:58:26.096087 +0000 build-fedora4: 22dc1b433be9697535aa950b24a9975de7389243c1b48c565df50161e9422514c4a26d9b12c7fb6272a1e89f38555ebca866036e1e1acd4a37fe21e20d4824af  pkgs/vm-fc29/python-u2flib-host-3.0.3-3.fc29.x86_64.buildinfo
+2020-11-07 20:58:26.096106 +0000 build-fedora4: 6f9ee77224c827c252f3a5a9d309a7266cefbb54f70ce15336ae3398f96a35a5494e3a9dd8d1ef8b4b731867ceb21d800da5ba5e128a241c05556d6ccf5bbf5f  pkgs/vm-fc29/python-u2flib-host-3.0.3-4.fc29.x86_64.buildinfo
+2020-11-07 20:58:26.096124 +0000 build-fedora4: f29fabe712285c03315eef6f7c7a7831f71dbd362870df9e282f68631f1ea7e76088eb9228dbb8af6331c49a349866a6e4f8fbb094da680758e126375e042b1f  pkgs/vm-fc29/python-u2flib-host-3.0.3-5.fc29.x86_64.buildinfo
+2020-11-07 20:58:26.096141 +0000 build-fedora4: bec4865eb01dcb60611827602855d2afc91720589a56ac29f60b435ddd64a2abd75b55555a32b20030ebcd7506b3d4243172207bfe72a2feea2f8d30fc64ca6a  pkgs/vm-fc29/python-u2flib-host-3.0.3-6.fc29.src.rpm
+2020-11-07 20:58:26.096165 +0000 build-fedora4: 307759cc79901cb615634b20c1be67d4e05ac603b3028f80a92ee0060f73e0f9eef758f01e7f89b9a796e3636a11ccf65148151ba4a49fcf130d362495c51e18  pkgs/vm-fc29/python-u2flib-host-3.0.3-6.fc29.x86_64.buildinfo
+2020-11-07 20:58:26.096184 +0000 build-fedora4: 7528a03996c7332ad475230c2145d9d93087ea939ecb8df1cf79460875cfbf343e2d2874534736886cd881046e5d7c3d726e195a0358df6ae432d47160af3bba  pkgs/vm-fc29/python3-u2flib-host-3.0.3-6.fc29.noarch.rpm
+2020-11-07 20:58:26.096202 +0000 build-fedora4: a61aed6b729ddbde0f37f1d4f04f5c18b51f724258b2f66f1ca20ec263f5cb12ead4f840db0005a64a5bcdec480bd0879724a58b5ec326f14239802f1ff163c4  pkgs/vm-fc29/python3-u2flib-host.spec.list
+2020-11-07 20:58:26.096221 +0000 build-fedora4: f3c07ab58088ea28cdb9063dd419d64a16498939608fb8d803e7f25b7d1b7fdfc8f184071b465e67525fb008ed1d783118182851a93915361b26a2af9c345e6b  pkgs/vm-fc30/python-u2flib-host-3.0.3-2.fc30.x86_64.buildinfo
+2020-11-07 20:58:26.096239 +0000 build-fedora4: de32f8fa36dda828c2c5149e068d4575a59f89523449db0da4e1288d9a18fdd7a3d42eb2effc0de749a1db619f150212c8ef4747fcefd02d8a1b3d99e9ad25cb  pkgs/vm-fc30/python-u2flib-host-3.0.3-3.fc30.x86_64.buildinfo
+2020-11-07 20:58:26.096257 +0000 build-fedora4: 25fcfa204004580ea2bd0af9c93d8ceffdfd300b5d5f25d96ab1f836d5a98d1c356fdf2ded7833b9df2b14470d3ca17563fd0ea3155fd12568b93ae9e7800b34  pkgs/vm-fc30/python-u2flib-host-3.0.3-4.fc30.x86_64.buildinfo
+2020-11-07 20:58:26.096281 +0000 build-fedora4: 979bc5d964cfea867a929b0291a30087651d7bd2993ae1149bb7d24b2d4cb45353f979fa5b866caa35cc13f8a9ca2ade75f86e8bb04f2751f2d4b3d6f605e4fe  pkgs/vm-fc30/python-u2flib-host-3.0.3-5.fc30.x86_64.buildinfo
+2020-11-07 20:58:26.096300 +0000 build-fedora4: 196c434c2ee2048bc82503fcd3e55a99bc9316809632d52296a3814a3e6d95bbb5e815a0e4b87479c66ad9bf34013cb5d5431d1b06547c16487aed9ad66472a5  pkgs/vm-fc30/python-u2flib-host-3.0.3-6.fc30.src.rpm
+2020-11-07 20:58:26.096318 +0000 build-fedora4: 547956c431cfb1f6995102a11b34136b725db24480ce03e6bde464d3577347d8629703de3824c77f7d5390819dc298718a0b0bc6a7f18614a14357a5e9bceb62  pkgs/vm-fc30/python-u2flib-host-3.0.3-6.fc30.x86_64.buildinfo
+2020-11-07 20:58:26.096336 +0000 build-fedora4: 72a5abc44187d7800e0ebd572fb8b7aed0f0d11f4d314f8586a587786a559c4e27c0ba81ff722a6ea1d10486ec061b01c932d9553a008f5af5ae6758defb38d6  pkgs/vm-fc30/python3-u2flib-host-3.0.3-6.fc30.noarch.rpm
+2020-11-07 20:58:26.096354 +0000 build-fedora4: 58e49001623538d882cf9f5a97caa39f71ee19f00b0307aea3e2b788002fa51f3427f51da923e6af79fcf66c530c436ca76e3b1b594d8624677fe812d8d506d9  pkgs/vm-fc30/python3-u2flib-host.spec.list
+2020-11-07 20:58:26.096397 +0000 build-fedora4: bea22de7b6099a1ae6a4568a976e9107db8b4f39018247251e4fc7cee0f6daf0dd9bdb967cf0ee248aa0607ff34fbe699ada75d878f537543a7ba793ab8db443  pkgs/vm-fc31/python-u2flib-host-3.0.3-3.fc31.x86_64.buildinfo
+2020-11-07 20:58:26.096417 +0000 build-fedora4: 58b44ca39136f0153fec7fb73214cb648fa54ce50c3778d3e13500695db8a37621524f99af575aa0b71dc1b9afb0fbb29c82caae797078b63c521eb18fa0112a  pkgs/vm-fc31/python-u2flib-host-3.0.3-4.fc31.x86_64.buildinfo
+2020-11-07 20:58:26.096435 +0000 build-fedora4: 4ec93af471ffb87e7ad3e6934e7b4b2e3d9cdf7aefa4da1ff5b653827a003367361d5f2e3290f2de1455fc75e144062addadee46ded3f023848e387972badca3  pkgs/vm-fc31/python-u2flib-host-3.0.3-5.fc31.x86_64.buildinfo
+2020-11-07 20:58:26.096454 +0000 build-fedora4: 5b3e4d72b2618bb562dfaeab9df8c07d85ea308ec806b8a376ad7bbdcfdd2a472bd131ecd1a72ce1b169d9a37da1909adf08dcdea69088deff5fe97c07e0ab08  pkgs/vm-fc31/python-u2flib-host-3.0.3-6.fc31.src.rpm
+2020-11-07 20:58:26.096473 +0000 build-fedora4: 395325c3da1702403127afcf4afa1aa58e265fe292a80c143156a2b6331bb0d30cf695026a4ef88d9a56e88ec636c101e84544ee6e7245761888dd151c9d4303  pkgs/vm-fc31/python-u2flib-host-3.0.3-6.fc31.x86_64.buildinfo
+2020-11-07 20:58:26.096490 +0000 build-fedora4: bdc8edf9c78a7155da7a04d0505330c39c599a546d754e8e200fec215d0a69fbc8e89ed45a59f35ae0f54899c86d51d47477a44e3401f281a30715b5522b5c13  pkgs/vm-fc31/python-u2flib-host-3.0.3-7.fc31.src.rpm
+2020-11-07 20:58:26.096509 +0000 build-fedora4: 15e77014b89eaa0df80023f67c58baab3438e4c44fb05402d7559ba2027ca694411d84ff39d6b398e07f4d568e74491956ddb19360000231999f0f663c86f805  pkgs/vm-fc31/python-u2flib-host-3.0.3-7.fc31.x86_64.buildinfo
+2020-11-07 20:58:26.096527 +0000 build-fedora4: 2331fcb88058cdbcaadf66857c88e545e0c6d359c6c8e2e6952459e642b616f025cc1e62a1f0cb545e837ee56ea600c9e574790c46b19e58bad3150e02fe5bdd  pkgs/vm-fc31/python3-u2flib-host-3.0.3-6.fc31.noarch.rpm
+2020-11-07 20:58:26.096545 +0000 build-fedora4: 432dfd1dfd8f8ff4caf2494a5a3ae456728bfdb32e1fd7ba6f4244789a4ea6ef2b9ba90ae03932948f87ccfe7ce2245a738b050f00ae370b34cd8403d3f83b90  pkgs/vm-fc31/python3-u2flib-host-3.0.3-7.fc31.noarch.rpm
+2020-11-07 20:58:26.096562 +0000 build-fedora4: 80461b3e443b3efe8d9ea33c1dfdc4aa1f998f323a74182caf3349784595740c47e0c48ac787409ef1b4ecd7c3fcc52e33a95cd7afff264b188705936b9e91c5  pkgs/vm-fc31/python3-u2flib-host.spec.list
+2020-11-07 20:58:26.096589 +0000 build-fedora4: b4d3d9f35f0446a989e6547f2dc00436af9c0531ddb499d9bd81a408f8d3bb167496e7718945b9bcdc2afdab7fc69d61ff485fae9aa0712710b6690a49e61ddf  pkgs/vm-fc32/python-u2flib-host-3.0.3-3.fc32.x86_64.buildinfo
+2020-11-07 20:58:26.096609 +0000 build-fedora4: 29aad16c21914bc5e500268a1ba125cfaa41b7b66b614a56442eb765d0021129f7ebab88434b0c274702a2a2a5a6e56f7f435782e9869b327b9e1f88ba688589  pkgs/vm-fc32/python-u2flib-host-3.0.3-4.fc32.x86_64.buildinfo
+2020-11-07 20:58:26.096632 +0000 build-fedora4: dd83a43a23cf940ccbc207a05a8c4619a5a99031f611fabbdaf16a7dc33099cd1e7f43ffae1c27b4916235142c3b7b36d946048c919b7a258f550c0f15f0c4f3  pkgs/vm-fc32/python-u2flib-host-3.0.3-5.fc32.x86_64.buildinfo
+2020-11-07 20:58:26.096651 +0000 build-fedora4: 5550c9e2d542fb02d81bb86f25ae2179c2085ac7734294a14ed822b94212a5c8b41764c47332d8a146d05c815721e92aa1230fb1789d826f5e73efc1f81bce13  pkgs/vm-fc32/python-u2flib-host-3.0.3-6.fc32.src.rpm
+2020-11-07 20:58:26.096669 +0000 build-fedora4: 89c586c38a50474784e394f74dd74f60fe16e8454d69b93aa0747da76db84c6cb1605fb9c6c362655aef26cf9cbc0006f4196992d820a2c1ffa924e959b85313  pkgs/vm-fc32/python-u2flib-host-3.0.3-6.fc32.x86_64.buildinfo
+2020-11-07 20:58:26.096687 +0000 build-fedora4: 3d22a317f7206be51c9ba41b284013c768b253c2a1e4f8263ad5b151a3edeffb224dd4afa3e4228621499f3b6535351454c7f5334ddcb5625e8da04cbe821113  pkgs/vm-fc32/python-u2flib-host-3.0.3-7.fc32.src.rpm
+2020-11-07 20:58:26.096705 +0000 build-fedora4: 8eac9a8dcd8a9330cf8554f8d93dca668aa406e7195af2bc4c20ebb4503abe0c1df462e853f23fc48d5a18badb98b078a8565e18d1ae6b368a4c72b245b1d1cf  pkgs/vm-fc32/python-u2flib-host-3.0.3-7.fc32.x86_64.buildinfo
+2020-11-07 20:58:26.096723 +0000 build-fedora4: 124808450e24ef1fa1c152e50733ad76c45d0e4105d42dca996a0647b5889420ad7856d672334ab0da36d72aa7b44a1e4274ee63400f237c8b7be40b41cea14c  pkgs/vm-fc32/python3-u2flib-host-3.0.3-6.fc32.noarch.rpm
+2020-11-07 20:58:26.096742 +0000 build-fedora4: f9bd5d520b33d6b1e4349cd8b6f7031bda4edb6d90ace1e547d601a0fc88ff54243020039a457aadb328f825f00af512edc364aa137797ebfe526e6a90c25a96  pkgs/vm-fc32/python3-u2flib-host-3.0.3-7.fc32.noarch.rpm
+2020-11-07 20:58:26.096759 +0000 build-fedora4: 7ce27961da73810d260541ff444f6b650d7ece8284c5749d2a45f2b91707d02aef5651e04f836be654626f725e06f5f1bf81d129583730f56b8df8624aec6ac1  pkgs/vm-fc32/python3-u2flib-host.spec.list
+2020-11-07 20:58:26.096777 +0000 build-fedora4: 7709e93fe4965cbadaf2b071a6ab54e97384621d71230c509b02c7d1d848efd0951ebfaebd94e923f2e3f4f95bada1874fb460978ed4d11c86a18c7e7d27d733  pkgs/vm-fc33/python-u2flib-host-3.0.3-6.fc33.src.rpm
+2020-11-07 20:58:26.096795 +0000 build-fedora4: 1db3c44cb9595102b06881d8fb61e474376e5593a58778482b4212cbb8a6b374d52cc01ec3e69a4cc57b91d2440ef92f3695f9f957c36db40cfdccd3f1f78eab  pkgs/vm-fc33/python-u2flib-host-3.0.3-6.fc33.x86_64.buildinfo
+2020-11-07 20:58:26.096812 +0000 build-fedora4: ceefd39397c56c2c2ef5329e47d301fc19fcb5ddbfcc10be0ea3132a9578587bceb00f12834b40c7e0e6834595b733c59a40b59601f5fcc70230582a9635ec13  pkgs/vm-fc33/python-u2flib-host-3.0.3-7.fc33.src.rpm
+2020-11-07 20:58:26.096831 +0000 build-fedora4: fe7da5767dd135c3b800d8f58b9a72b681e3ae6dcdf691ef3f627c827fcf84b39504bbfcef7a0d7f8e35523b4496d42ac4d90a146e98413a04f268d91258cb35  pkgs/vm-fc33/python-u2flib-host-3.0.3-7.fc33.x86_64.buildinfo
+2020-11-07 20:58:26.096849 +0000 build-fedora4: 3ce6d478856d9093f6e4e45900607dd3ce8da95598ca3017a73f89061b7971929e6f51b119cc62172a7a3537cd26dfacb667d8af7336e1da20567e3ba7eb5717  pkgs/vm-fc33/python3-u2flib-host-3.0.3-6.fc33.noarch.rpm
+2020-11-07 20:58:26.096868 +0000 build-fedora4: 6a1c57595597d272e8718162205a06a2a181db0a8d5a177c3ab0a8ec144565b220da60d90d884e5f68b30e6b22f057ad5eca77af9af4e79fafe47cf4aa92a36a  pkgs/vm-fc33/python3-u2flib-host-3.0.3-7.fc33.noarch.rpm
+2020-11-07 20:58:26.096885 +0000 build-fedora4: 921deb79f462134aa22a1eb2fca81d99eae2040575ad7e9a21ebb4df5322ea58f376f3ef6d062680331c0e4cd5bcce6ddc863aa2fde93e9e2b4a447546c55896  pkgs/vm-fc33/python3-u2flib-host.spec.list
+2020-11-07 20:58:26.096902 +0000 build-fedora4: 04f0a9427912d3d7595aa37de8556b3789c46b5c056745e864a4609492d8f2b790fc7157c66124d0d010b45c726c2f6ed316fb7a8f1224da6206acd17e7e1897  python-u2flib-host-3.0.3.tar.gz
+2020-11-07 20:58:26.096913 +0000 build-fedora4: ================================================================================
+2020-11-07 20:58:26.096925 +0000 build-fedora4:                            B U I L D   I N F O                                  
+2020-11-07 20:58:26.096941 +0000 build-fedora4: Items in red indicate it was automatically generated by configuration file(s)
+2020-11-07 20:58:26.096953 +0000 build-fedora4: Items in white indicate it was automatically removed by configuration file(s)
+2020-11-07 20:58:26.096965 +0000 build-fedora4: ================================================================================
+2020-11-07 20:58:26.096972 +0000 build-fedora4: DISTS_VM:
+2020-11-07 20:58:26.096980 +0000 build-fedora4:      fc31, fc32, fc33,
+2020-11-07 20:58:26.096987 +0000 build-fedora4: DISTS_ALL:
+2020-11-07 20:58:26.096996 +0000 build-fedora4:      vm-fc31, vm-fc32, vm-fc33,
+2020-11-07 20:58:26.097003 +0000 build-fedora4: DIST_DOM0:
+2020-11-07 20:58:26.097009 +0000 build-fedora4:     
+2020-11-07 20:58:26.097017 +0000 build-fedora4: BUILDER_PLUGINS:
+2020-11-07 20:58:26.097029 +0000 build-fedora4:      builder-rpm, builder-debian, mgmt-salt, linux-yum, release-configs, builder-github,
+2020-11-07 20:58:26.097037 +0000 build-fedora4: COMPONENTS:
+2020-11-07 20:58:26.097044 +0000 build-fedora4:      python-u2flib-host,
+2020-11-07 20:58:26.097051 +0000 build-fedora4: GIT_REPOS:
+2020-11-07 20:58:26.097060 +0000 build-fedora4:      qubes-src/python-u2flib-host,
+2020-11-07 20:58:26.097067 +0000 build-fedora4: TEMPLATE:
+2020-11-07 20:58:26.097073 +0000 build-fedora4:     
+2020-11-07 20:58:26.097081 +0000 build-fedora4: TEMPLATE_FLAVOR_DIR:
+2020-11-07 20:58:26.097088 +0000 build-fedora4:     
+2020-11-07 20:58:26.097095 +0000 build-fedora4: TEMPLATE_ALIAS:
+2020-11-07 20:58:26.097106 +0000 build-fedora4:      stretch:stretch+standard, stretch+gnome:stretch+gnome+standard,
+2020-11-07 20:58:26.097120 +0000 build-fedora4:      stretch+minimal:stretch+minimal+no-recommends, buster:buster+standard, buster+gnome:buster+gnome+standard,
+2020-11-07 20:58:26.097137 +0000 build-fedora4:      buster+minimal:buster+minimal+no-recommends, bullseye:bullseye+standard,
+2020-11-07 20:58:26.097150 +0000 build-fedora4:      bullseye+gnome:bullseye+gnome+standard, bullseye+minimal:bullseye+minimal+no-recommends,
+2020-11-07 20:58:26.097161 +0000 build-fedora4:      whonix-gateway-14:stretch+whonix-gateway+minimal+no-recommends,
+2020-11-07 20:58:26.097173 +0000 build-fedora4:      whonix-workstation-14:stretch+whonix-workstation+minimal+no-recommends,
+2020-11-07 20:58:26.097184 +0000 build-fedora4:      whonix-gateway-15:buster+whonix-gateway+minimal+no-recommends,
+2020-11-07 20:58:26.097195 +0000 build-fedora4:      whonix-workstation-15:buster+whonix-workstation+minimal+no-recommends,
+2020-11-07 20:58:26.097202 +0000 build-fedora4: TEMPLATE_LABEL:
+2020-11-07 20:58:26.097215 +0000 build-fedora4:      fc31:fedora-31, fc32:fedora-32, fc33:fedora-33, fc30:fedora-30 fc30+minimal:fedora-30-minimal
+2020-11-07 20:58:26.097227 +0000 build-fedora4:      fc31+minimal:fedora-31-minimal fc32+minimal:fedora-32-minimal fc33+minimal:fedora-33-minimal
+2020-11-07 20:58:26.097240 +0000 build-fedora4:      fc30+xfce:fedora-30-xfce fc31+xfce:fedora-31-xfce fc32+xfce:fedora-32-xfce fc33+xfce:fedora-33-xfce
+2020-11-07 20:58:26.097253 +0000 build-fedora4:      stretch:debian-9 stretch+standard:debian-9 stretch+xfce:debian-9-xfce buster:debian-10
+2020-11-07 20:58:26.097266 +0000 build-fedora4:      buster+standard:debian-10 buster+xfce:debian-10-xfce bullseye:debian-11 bullseye+standard:debian-11
+2020-11-07 20:58:26.097278 +0000 build-fedora4:      bullseye+xfce:debian-11-xfce stretch+whonix-gateway+minimal+no-recommends:whonix-gw-14
+2020-11-07 20:58:26.097288 +0000 build-fedora4:      stretch+whonix-workstation+minimal+no-recommends:whonix-ws-14
+2020-11-07 20:58:26.097299 +0000 build-fedora4:      buster+whonix-gateway+minimal+no-recommends:whonix-gw-15
+2020-11-07 20:58:26.097310 +0000 build-fedora4:      buster+whonix-workstation+minimal+no-recommends:whonix-ws-15 centos7:centos-7
+2020-11-07 20:58:26.097322 +0000 build-fedora4:      centos7+minimal:centos-7-minimal centos7+xfce:centos-7-xfce centos8:centos-8
+2020-11-07 20:58:26.097336 +0000 build-fedora4:      centos8+minimal:centos-7-minimal centos8+xfce:centos-8-xfce
+2020-11-07 20:58:26.097344 +0000 build-fedora4: > running make
+2020-11-07 20:58:26.103434 +0000 build-fedora4: Makefile:280: target 'sign.vm.fc31.python-u2flib-host' does not exist
+2020-11-07 20:58:26.103513 +0000 build-fedora4: if [ -n "python-u2flib-host" -a "0" -ne 0 ]; then BRANCH=master; branch_var="BRANCH_python_u2flib_host"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/python-u2flib-host > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2020-11-07 20:58:26.103533 +0000 build-fedora4: SIGN_KEY=5817A43B283DE5A9181A522E1848792F9E2795E9; \
+2020-11-07 20:58:26.103543 +0000 build-fedora4: sign_key_var="SIGN_KEY_${DIST%%+*}"; \
+2020-11-07 20:58:26.103554 +0000 build-fedora4: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2020-11-07 20:58:26.103565 +0000 build-fedora4: if [ "python-u2flib-host" = linux-template-builder ]; then
+2020-11-07 20:58:26.103579 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc31 template-name)
+2020-11-07 20:58:26.103587 +0000 build-fedora4: fi
+2020-11-07 20:58:26.103598 +0000 build-fedora4: if [ -r qubes-src/python-u2flib-host/Makefile.builder ]; then \
+2020-11-07 20:58:26.103608 +0000 build-fedora4: .make --no-print-directory -f Makefile.generic \
+2020-11-07 20:58:26.103616 +0000 build-fedora4: ..DIST=fc31 \
+2020-11-07 20:58:26.103624 +0000 build-fedora4: ..PACKAGE_SET=vm \
+2020-11-07 20:58:26.103633 +0000 build-fedora4: ..COMPONENT=python-u2flib-host \
+2020-11-07 20:58:26.103641 +0000 build-fedora4: ..SIGN_KEY=$SIGN_KEY \
+2020-11-07 20:58:26.103649 +0000 build-fedora4: ..sign || exit 1; \
+2020-11-07 20:58:26.103659 +0000 build-fedora4: elif [ -d qubes-src/python-u2flib-host/rpm ]; then \
+2020-11-07 20:58:26.103668 +0000 build-fedora4: .# Old mechanism supported only for RPM
+2020-11-07 20:58:26.103679 +0000 build-fedora4: FILE_LIST=""; for RPM in qubes-src/python-u2flib-host/rpm/*/*.rpm; do \
+2020-11-07 20:58:26.103690 +0000 build-fedora4: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2020-11-07 20:58:26.103699 +0000 build-fedora4: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2020-11-07 20:58:26.103706 +0000 build-fedora4: ..fi ;\
+2020-11-07 20:58:26.103714 +0000 build-fedora4: .done ; \
+2020-11-07 20:58:26.103722 +0000 build-fedora4: .if [ -n "$FILE_LIST" ]; then \
+2020-11-07 20:58:26.103730 +0000 build-fedora4: ..echo "--> Signing..."; \
+2020-11-07 20:58:26.103739 +0000 build-fedora4: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2020-11-07 20:58:26.103749 +0000 build-fedora4: ..if [ -n "$SIGN_KEY" ]; then \
+2020-11-07 20:58:26.103758 +0000 build-fedora4: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2020-11-07 20:58:26.103765 +0000 build-fedora4: ..fi; \
+2020-11-07 20:58:26.103776 +0000 build-fedora4: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2020-11-07 20:58:26.103783 +0000 build-fedora4: .fi; \
+2020-11-07 20:58:26.103790 +0000 build-fedora4: fi
+2020-11-07 20:58:26.120777 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:182: target 'sign-prep' does not exist
+2020-11-07 20:58:26.120826 +0000 build-fedora4: if [ -n "qubes-gpg-client-wrapper" ]; then \
+2020-11-07 20:58:26.120840 +0000 build-fedora4: .mkdir -p /home/user/builder-r4.1/keyrings/rpmdb; \
+2020-11-07 20:58:26.120850 +0000 build-fedora4: .tmpname=$(mktemp); \
+2020-11-07 20:58:26.120864 +0000 build-fedora4: .qubes-gpg-client-wrapper --armor --export "5817A43B283DE5A9181A522E1848792F9E2795E9" > "$tmpname"; \
+2020-11-07 20:58:26.120876 +0000 build-fedora4: .rpmkeys --dbpath=/home/user/builder-r4.1/keyrings/rpmdb --import "$tmpname"; \
+2020-11-07 20:58:26.120900 +0000 build-fedora4: .rm -f "$tmpname"; \
+2020-11-07 20:58:26.120909 +0000 build-fedora4: fi
+2020-11-07 20:58:26.266386 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:198: update target 'sign' due to: sign-prep
+2020-11-07 20:58:26.266442 +0000 build-fedora4: cd qubes-src/python-u2flib-host && for pkg in pkgs/vm-fc31/python-u2flib-host-3.0.3-7.fc31.src.rpm pkgs/vm-fc31/python3-u2flib-host-3.0.3-7.fc31.noarch.rpm pkgs/vm-fc31/python-u2flib-host-3.0.3-7.fc31.x86_64.buildinfo ; do \
+2020-11-07 20:58:26.266455 +0000 build-fedora4: .if [ "${pkg##*.}" = "buildinfo" ]; then \
+2020-11-07 20:58:26.266472 +0000 build-fedora4: ../home/user/builder-r4.1/qubes-src/builder-rpm/scripts/update-rpmbuildinfo "$pkg" | qubes-gpg-client-wrapper --clearsign --local-user 5817A43B283DE5A9181A522E1848792F9E2795E9 > "$pkg".tmp && \
+2020-11-07 20:58:26.266480 +0000 build-fedora4: ..mv -f "$pkg".tmp "$pkg"; \
+2020-11-07 20:58:26.266488 +0000 build-fedora4: .elif ! rpm -K $pkg | grep -qi pgp; then \
+2020-11-07 20:58:26.266501 +0000 build-fedora4: ..setsid -w rpmsign  --digest-algo=sha256 --key-id=5817A43B283DE5A9181A522E1848792F9E2795E9 --addsign $pkg </dev/null || exit 1; \
+2020-11-07 20:58:26.266507 +0000 build-fedora4: .fi; \
+2020-11-07 20:58:26.266514 +0000 build-fedora4: done
+2020-11-07 20:58:26.647982 +0000 build-fedora4: pkgs/vm-fc31/python-u2flib-host-3.0.3-7.fc31.src.rpm:
+2020-11-07 20:58:27.326230 +0000 build-fedora4: pkgs/vm-fc31/python3-u2flib-host-3.0.3-7.fc31.noarch.rpm:
+2020-11-07 20:58:27.629432 +0000 build-fedora4: Makefile:280: target 'sign.vm.fc32.python-u2flib-host' does not exist
+2020-11-07 20:58:27.629537 +0000 build-fedora4: if [ -n "python-u2flib-host" -a "0" -ne 0 ]; then BRANCH=master; branch_var="BRANCH_python_u2flib_host"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/python-u2flib-host > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2020-11-07 20:58:27.629554 +0000 build-fedora4: SIGN_KEY=5817A43B283DE5A9181A522E1848792F9E2795E9; \
+2020-11-07 20:58:27.629564 +0000 build-fedora4: sign_key_var="SIGN_KEY_${DIST%%+*}"; \
+2020-11-07 20:58:27.629575 +0000 build-fedora4: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2020-11-07 20:58:27.629585 +0000 build-fedora4: if [ "python-u2flib-host" = linux-template-builder ]; then
+2020-11-07 20:58:27.629598 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc32 template-name)
+2020-11-07 20:58:27.629606 +0000 build-fedora4: fi
+2020-11-07 20:58:27.629617 +0000 build-fedora4: if [ -r qubes-src/python-u2flib-host/Makefile.builder ]; then \
+2020-11-07 20:58:27.629627 +0000 build-fedora4: .make --no-print-directory -f Makefile.generic \
+2020-11-07 20:58:27.629634 +0000 build-fedora4: ..DIST=fc32 \
+2020-11-07 20:58:27.629642 +0000 build-fedora4: ..PACKAGE_SET=vm \
+2020-11-07 20:58:27.629651 +0000 build-fedora4: ..COMPONENT=python-u2flib-host \
+2020-11-07 20:58:27.629659 +0000 build-fedora4: ..SIGN_KEY=$SIGN_KEY \
+2020-11-07 20:58:27.629666 +0000 build-fedora4: ..sign || exit 1; \
+2020-11-07 20:58:27.629676 +0000 build-fedora4: elif [ -d qubes-src/python-u2flib-host/rpm ]; then \
+2020-11-07 20:58:27.629685 +0000 build-fedora4: .# Old mechanism supported only for RPM
+2020-11-07 20:58:27.629696 +0000 build-fedora4: FILE_LIST=""; for RPM in qubes-src/python-u2flib-host/rpm/*/*.rpm; do \
+2020-11-07 20:58:27.629707 +0000 build-fedora4: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2020-11-07 20:58:27.629715 +0000 build-fedora4: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2020-11-07 20:58:27.629722 +0000 build-fedora4: ..fi ;\
+2020-11-07 20:58:27.629729 +0000 build-fedora4: .done ; \
+2020-11-07 20:58:27.629737 +0000 build-fedora4: .if [ -n "$FILE_LIST" ]; then \
+2020-11-07 20:58:27.629762 +0000 build-fedora4: ..echo "--> Signing..."; \
+2020-11-07 20:58:27.629772 +0000 build-fedora4: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2020-11-07 20:58:27.629780 +0000 build-fedora4: ..if [ -n "$SIGN_KEY" ]; then \
+2020-11-07 20:58:27.629789 +0000 build-fedora4: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2020-11-07 20:58:27.629796 +0000 build-fedora4: ..fi; \
+2020-11-07 20:58:27.629807 +0000 build-fedora4: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2020-11-07 20:58:27.629814 +0000 build-fedora4: .fi; \
+2020-11-07 20:58:27.629820 +0000 build-fedora4: fi
+2020-11-07 20:58:27.659443 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:182: target 'sign-prep' does not exist
+2020-11-07 20:58:27.659489 +0000 build-fedora4: if [ -n "qubes-gpg-client-wrapper" ]; then \
+2020-11-07 20:58:27.659503 +0000 build-fedora4: .mkdir -p /home/user/builder-r4.1/keyrings/rpmdb; \
+2020-11-07 20:58:27.659513 +0000 build-fedora4: .tmpname=$(mktemp); \
+2020-11-07 20:58:27.659531 +0000 build-fedora4: .qubes-gpg-client-wrapper --armor --export "5817A43B283DE5A9181A522E1848792F9E2795E9" > "$tmpname"; \
+2020-11-07 20:58:27.659544 +0000 build-fedora4: .rpmkeys --dbpath=/home/user/builder-r4.1/keyrings/rpmdb --import "$tmpname"; \
+2020-11-07 20:58:27.659553 +0000 build-fedora4: .rm -f "$tmpname"; \
+2020-11-07 20:58:27.659560 +0000 build-fedora4: fi
+2020-11-07 20:58:27.922632 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:198: update target 'sign' due to: sign-prep
+2020-11-07 20:58:27.922696 +0000 build-fedora4: cd qubes-src/python-u2flib-host && for pkg in pkgs/vm-fc32/python-u2flib-host-3.0.3-7.fc32.src.rpm pkgs/vm-fc32/python3-u2flib-host-3.0.3-7.fc32.noarch.rpm pkgs/vm-fc32/python-u2flib-host-3.0.3-7.fc32.x86_64.buildinfo ; do \
+2020-11-07 20:58:27.922712 +0000 build-fedora4: .if [ "${pkg##*.}" = "buildinfo" ]; then \
+2020-11-07 20:58:27.922732 +0000 build-fedora4: ../home/user/builder-r4.1/qubes-src/builder-rpm/scripts/update-rpmbuildinfo "$pkg" | qubes-gpg-client-wrapper --clearsign --local-user 5817A43B283DE5A9181A522E1848792F9E2795E9 > "$pkg".tmp && \
+2020-11-07 20:58:27.922742 +0000 build-fedora4: ..mv -f "$pkg".tmp "$pkg"; \
+2020-11-07 20:58:27.922752 +0000 build-fedora4: .elif ! rpm -K $pkg | grep -qi pgp; then \
+2020-11-07 20:58:27.922767 +0000 build-fedora4: ..setsid -w rpmsign  --digest-algo=sha256 --key-id=5817A43B283DE5A9181A522E1848792F9E2795E9 --addsign $pkg </dev/null || exit 1; \
+2020-11-07 20:58:27.922775 +0000 build-fedora4: .fi; \
+2020-11-07 20:58:27.922783 +0000 build-fedora4: done
+2020-11-07 20:58:28.499819 +0000 build-fedora4: pkgs/vm-fc32/python-u2flib-host-3.0.3-7.fc32.src.rpm:
+2020-11-07 20:58:29.026842 +0000 build-fedora4: pkgs/vm-fc32/python3-u2flib-host-3.0.3-7.fc32.noarch.rpm:
+2020-11-07 20:58:29.305834 +0000 build-fedora4: Makefile:280: target 'sign.vm.fc33.python-u2flib-host' does not exist
+2020-11-07 20:58:29.305915 +0000 build-fedora4: if [ -n "python-u2flib-host" -a "0" -ne 0 ]; then BRANCH=master; branch_var="BRANCH_python_u2flib_host"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/python-u2flib-host > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2020-11-07 20:58:29.305930 +0000 build-fedora4: SIGN_KEY=5817A43B283DE5A9181A522E1848792F9E2795E9; \
+2020-11-07 20:58:29.305941 +0000 build-fedora4: sign_key_var="SIGN_KEY_${DIST%%+*}"; \
+2020-11-07 20:58:29.305951 +0000 build-fedora4: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2020-11-07 20:58:29.305962 +0000 build-fedora4: if [ "python-u2flib-host" = linux-template-builder ]; then
+2020-11-07 20:58:29.305975 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc33 template-name)
+2020-11-07 20:58:29.306000 +0000 build-fedora4: fi
+2020-11-07 20:58:29.306013 +0000 build-fedora4: if [ -r qubes-src/python-u2flib-host/Makefile.builder ]; then \
+2020-11-07 20:58:29.306023 +0000 build-fedora4: .make --no-print-directory -f Makefile.generic \
+2020-11-07 20:58:29.306031 +0000 build-fedora4: ..DIST=fc33 \
+2020-11-07 20:58:29.306039 +0000 build-fedora4: ..PACKAGE_SET=vm \
+2020-11-07 20:58:29.306048 +0000 build-fedora4: ..COMPONENT=python-u2flib-host \
+2020-11-07 20:58:29.306056 +0000 build-fedora4: ..SIGN_KEY=$SIGN_KEY \
+2020-11-07 20:58:29.306064 +0000 build-fedora4: ..sign || exit 1; \
+2020-11-07 20:58:29.306073 +0000 build-fedora4: elif [ -d qubes-src/python-u2flib-host/rpm ]; then \
+2020-11-07 20:58:29.306082 +0000 build-fedora4: .# Old mechanism supported only for RPM
+2020-11-07 20:58:29.306093 +0000 build-fedora4: FILE_LIST=""; for RPM in qubes-src/python-u2flib-host/rpm/*/*.rpm; do \
+2020-11-07 20:58:29.306104 +0000 build-fedora4: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2020-11-07 20:58:29.306113 +0000 build-fedora4: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2020-11-07 20:58:29.306120 +0000 build-fedora4: ..fi ;\
+2020-11-07 20:58:29.306127 +0000 build-fedora4: .done ; \
+2020-11-07 20:58:29.306136 +0000 build-fedora4: .if [ -n "$FILE_LIST" ]; then \
+2020-11-07 20:58:29.306144 +0000 build-fedora4: ..echo "--> Signing..."; \
+2020-11-07 20:58:29.306153 +0000 build-fedora4: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2020-11-07 20:58:29.306162 +0000 build-fedora4: ..if [ -n "$SIGN_KEY" ]; then \
+2020-11-07 20:58:29.306171 +0000 build-fedora4: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2020-11-07 20:58:29.306177 +0000 build-fedora4: ..fi; \
+2020-11-07 20:58:29.306188 +0000 build-fedora4: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2020-11-07 20:58:29.306195 +0000 build-fedora4: .fi; \
+2020-11-07 20:58:29.306202 +0000 build-fedora4: fi
+2020-11-07 20:58:29.338710 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:182: target 'sign-prep' does not exist
+2020-11-07 20:58:29.340216 +0000 build-fedora4: if [ -n "qubes-gpg-client-wrapper" ]; then \
+2020-11-07 20:58:29.340261 +0000 build-fedora4: .mkdir -p /home/user/builder-r4.1/keyrings/rpmdb; \
+2020-11-07 20:58:29.340273 +0000 build-fedora4: .tmpname=$(mktemp); \
+2020-11-07 20:58:29.340289 +0000 build-fedora4: .qubes-gpg-client-wrapper --armor --export "5817A43B283DE5A9181A522E1848792F9E2795E9" > "$tmpname"; \
+2020-11-07 20:58:29.340303 +0000 build-fedora4: .rpmkeys --dbpath=/home/user/builder-r4.1/keyrings/rpmdb --import "$tmpname"; \
+2020-11-07 20:58:29.340312 +0000 build-fedora4: .rm -f "$tmpname"; \
+2020-11-07 20:58:29.340319 +0000 build-fedora4: fi
+2020-11-07 20:58:29.609466 +0000 build-fedora4: Error while vchan send, exiting
+2020-11-07 20:58:29.647783 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:198: update target 'sign' due to: sign-prep
+2020-11-07 20:58:29.647845 +0000 build-fedora4: cd qubes-src/python-u2flib-host && for pkg in pkgs/vm-fc33/python-u2flib-host-3.0.3-7.fc33.src.rpm pkgs/vm-fc33/python3-u2flib-host-3.0.3-7.fc33.noarch.rpm pkgs/vm-fc33/python-u2flib-host-3.0.3-7.fc33.x86_64.buildinfo ; do \
+2020-11-07 20:58:29.647861 +0000 build-fedora4: .if [ "${pkg##*.}" = "buildinfo" ]; then \
+2020-11-07 20:58:29.647882 +0000 build-fedora4: ../home/user/builder-r4.1/qubes-src/builder-rpm/scripts/update-rpmbuildinfo "$pkg" | qubes-gpg-client-wrapper --clearsign --local-user 5817A43B283DE5A9181A522E1848792F9E2795E9 > "$pkg".tmp && \
+2020-11-07 20:58:29.647892 +0000 build-fedora4: ..mv -f "$pkg".tmp "$pkg"; \
+2020-11-07 20:58:29.647903 +0000 build-fedora4: .elif ! rpm -K $pkg | grep -qi pgp; then \
+2020-11-07 20:58:29.647918 +0000 build-fedora4: ..setsid -w rpmsign  --digest-algo=sha256 --key-id=5817A43B283DE5A9181A522E1848792F9E2795E9 --addsign $pkg </dev/null || exit 1; \
+2020-11-07 20:58:29.647926 +0000 build-fedora4: .fi; \
+2020-11-07 20:58:29.647951 +0000 build-fedora4: done
+2020-11-07 20:58:30.250515 +0000 build-fedora4: pkgs/vm-fc33/python-u2flib-host-3.0.3-7.fc33.src.rpm:
+2020-11-07 20:58:30.774653 +0000 build-fedora4: pkgs/vm-fc33/python3-u2flib-host-3.0.3-7.fc33.noarch.rpm:
+2020-11-07 20:58:31.100613 +0000 build-fedora4: Makefile:831: target 'internal-update-repo-current-testing.vm.fc31.python-u2flib-host' does not exist
+2020-11-07 20:58:31.100666 +0000 build-fedora4: repo_base_var="LINUX_REPO_fc31_BASEDIR"; \
+2020-11-07 20:58:31.100681 +0000 build-fedora4: if [ "python-u2flib-host" = linux-template-builder ]; then \
+2020-11-07 20:58:31.100694 +0000 build-fedora4: .# templates belongs to dom0 repository, even though PACKAGE_SET=vm
+2020-11-07 20:58:31.100704 +0000 build-fedora4: repo_base_var="LINUX_REPO__BASEDIR"; \
+2020-11-07 20:58:31.100712 +0000 build-fedora4: fi; \
+2020-11-07 20:58:31.100722 +0000 build-fedora4: if [ -n "${!repo_base_var}" ]; then \
+2020-11-07 20:58:31.100731 +0000 build-fedora4: .repo_basedir="${!repo_base_var}"; \
+2020-11-07 20:58:31.100738 +0000 build-fedora4: else \
+2020-11-07 20:58:31.100747 +0000 build-fedora4: .repo_basedir="qubes-src/linux-yum/r4.1"; \
+2020-11-07 20:58:31.100754 +0000 build-fedora4: fi; \
+2020-11-07 20:58:31.100765 +0000 build-fedora4: if [ -r qubes-src/python-u2flib-host/Makefile.builder ]; then \
+2020-11-07 20:58:31.100775 +0000 build-fedora4: .echo -n "Updating qubes-src/python-u2flib-host... "; \
+2020-11-07 20:58:31.100784 +0000 build-fedora4: .if [ "0" -eq 1 ]; then \
+2020-11-07 20:58:31.100796 +0000 build-fedora4: ..vtag=`git -C qubes-src/python-u2flib-host tag --points-at HEAD --list v*`; \
+2020-11-07 20:58:31.100806 +0000 build-fedora4: ..if [ -z "$vtag" ]; then \
+2020-11-07 20:58:31.100814 +0000 build-fedora4: ...echo "no version tag"; \
+2020-11-07 20:58:31.100822 +0000 build-fedora4: ...exit 0; \
+2020-11-07 20:58:31.100829 +0000 build-fedora4: ..fi; \
+2020-11-07 20:58:31.100836 +0000 build-fedora4: .fi; \
+2020-11-07 20:58:31.100846 +0000 build-fedora4: .if [ "python-u2flib-host" = linux-template-builder ]; then
+2020-11-07 20:58:31.100860 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc31 template-name)
+2020-11-07 20:58:31.100867 +0000 build-fedora4: fi
+2020-11-07 20:58:31.100891 +0000 build-fedora4: component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc31 PACKAGE_SET=vm COMPONENT=`basename qubes-src/python-u2flib-host` UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc31 get-var GET_VAR=PACKAGE_LIST); \
+2020-11-07 20:58:31.100901 +0000 build-fedora4: .if [ -z "$component_packages" ]; then \
+2020-11-07 20:58:31.100910 +0000 build-fedora4: ..echo "no packages."; \
+2020-11-07 20:58:31.100917 +0000 build-fedora4: ..exit 0; \
+2020-11-07 20:58:31.100924 +0000 build-fedora4: .fi; \
+2020-11-07 20:58:31.100934 +0000 build-fedora4: .make -s -f Makefile.generic DIST=fc31 PACKAGE_SET=vm \
+2020-11-07 20:58:31.100944 +0000 build-fedora4: ..COMPONENT=`basename qubes-src/python-u2flib-host` \
+2020-11-07 20:58:31.100953 +0000 build-fedora4: ..SNAPSHOT_REPO=current-testing \
+2020-11-07 20:58:31.100962 +0000 build-fedora4: ..TARGET_REPO=current-testing \
+2020-11-07 20:58:31.100973 +0000 build-fedora4: ..UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc31 \
+2020-11-07 20:58:31.100988 +0000 build-fedora4: ..SNAPSHOT_FILE=/home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-fc31-`basename qubes-src/python-u2flib-host` \
+2020-11-07 20:58:31.101003 +0000 build-fedora4: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2020-11-07_20-52-22 \
+2020-11-07 20:58:31.101011 +0000 build-fedora4: ..update-repo || exit 1; \
+2020-11-07 20:58:31.101025 +0000 build-fedora4: elif make -C qubes-src/python-u2flib-host -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2020-11-07 20:58:31.101035 +0000 build-fedora4: .echo "Updating qubes-src/python-u2flib-host... "; \
+2020-11-07 20:58:31.101047 +0000 build-fedora4: .DIST=fc31 UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc31 \
+2020-11-07 20:58:31.101079 +0000 build-fedora4: .make -s -C qubes-src/python-u2flib-host update-repo-current-testing || exit 1; \
+2020-11-07 20:58:31.101087 +0000 build-fedora4: else \
+2020-11-07 20:58:31.101098 +0000 build-fedora4: .echo -n "Updating qubes-src/python-u2flib-host... skipping."; \
+2020-11-07 20:58:31.101105 +0000 build-fedora4: fi; \
+2020-11-07 20:58:31.101111 +0000 build-fedora4: echo
+2020-11-07 20:58:31.239289 +0000 build-fedora4: Updating qubes-src/python-u2flib-host... /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:157: target 'update-repo-do' does not exist
+2020-11-07 20:58:31.239347 +0000 build-fedora4: mkdir -p /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/fc31/rpm
+2020-11-07 20:58:31.296769 +0000 build-fedora4: if [ -n "pkgs/vm-fc31/python-u2flib-host-3.0.3-7.fc31.src.rpm pkgs/vm-fc31/python3-u2flib-host-3.0.3-7.fc31.noarch.rpm pkgs/vm-fc31/python-u2flib-host-3.0.3-7.fc31.x86_64.buildinfo" ]; then \
+2020-11-07 20:58:31.296836 +0000 build-fedora4: .cd qubes-src/python-u2flib-host && ln -f pkgs/vm-fc31/python-u2flib-host-3.0.3-7.fc31.src.rpm pkgs/vm-fc31/python3-u2flib-host-3.0.3-7.fc31.noarch.rpm pkgs/vm-fc31/python-u2flib-host-3.0.3-7.fc31.x86_64.buildinfo  /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/fc31/rpm/; \
+2020-11-07 20:58:31.296850 +0000 build-fedora4: else \
+2020-11-07 20:58:31.296865 +0000 build-fedora4: .echo "`tput bold`No packages defined by python3-u2flib-host.spec, syntax error?`tput sgr0`"; \
+2020-11-07 20:58:31.296873 +0000 build-fedora4: .exit 1; \
+2020-11-07 20:58:31.296881 +0000 build-fedora4: fi
+2020-11-07 20:58:31.321637 +0000 build-fedora4: cd qubes-src/python-u2flib-host && echo pkgs/vm-fc31/python-u2flib-host-3.0.3-7.fc31.src.rpm pkgs/vm-fc31/python3-u2flib-host-3.0.3-7.fc31.noarch.rpm pkgs/vm-fc31/python-u2flib-host-3.0.3-7.fc31.x86_64.buildinfo  > /home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-fc31-python-u2flib-host
+2020-11-07 20:58:31.424501 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-github//Makefile.github:18: target 'notify-github' does not exist
+2020-11-07 20:58:31.424552 +0000 build-fedora4: [ -z "python-u2flib-host-3.0.3-7.fc31" ] || /home/user/builder-r4.1/qubes-src/builder-github//notify-issues \
+2020-11-07 20:58:31.424571 +0000 build-fedora4: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2020-11-07_20-52-22" \
+2020-11-07 20:58:31.424581 +0000 build-fedora4: .upload \
+2020-11-07 20:58:31.424589 +0000 build-fedora4: ."r4.1" \
+2020-11-07 20:58:31.424599 +0000 build-fedora4: ."qubes-src/python-u2flib-host" \
+2020-11-07 20:58:31.424609 +0000 build-fedora4: ."python-u2flib-host-3.0.3-7.fc31" \
+2020-11-07 20:58:31.424616 +0000 build-fedora4: ."fc31" \
+2020-11-07 20:58:31.424624 +0000 build-fedora4: ."vm" \
+2020-11-07 20:58:31.424632 +0000 build-fedora4: ."current-testing" \
+2020-11-07 20:58:31.424645 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-python-u2flib-host-vm-fc31-current-testing" \
+2020-11-07 20:58:31.424657 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-python-u2flib-host-vm-fc31-current"
+2020-11-07 20:58:35.683451 +0000 build-fedora4: WARNING: message template /home/user/builder-r4.1/qubes-src/builder-github/templates/message-current-testing-vm doesn't exist, not adding comments
+2020-11-07 20:58:35.769130 +0000 build-fedora4: 
+2020-11-07 20:58:35.769189 +0000 build-fedora4: Makefile:806: update target 'internal-update-repo-current-testing.vm.fc31' due to: internal-update-repo-current-testing.vm.fc31.python-u2flib-host
+2020-11-07 20:58:35.769201 +0000 build-fedora4: true
+2020-11-07 20:58:35.778933 +0000 build-fedora4: Makefile:831: target 'internal-update-repo-current-testing.vm.fc32.python-u2flib-host' does not exist
+2020-11-07 20:58:35.778974 +0000 build-fedora4: repo_base_var="LINUX_REPO_fc32_BASEDIR"; \
+2020-11-07 20:58:35.778988 +0000 build-fedora4: if [ "python-u2flib-host" = linux-template-builder ]; then \
+2020-11-07 20:58:35.779018 +0000 build-fedora4: .# templates belongs to dom0 repository, even though PACKAGE_SET=vm
+2020-11-07 20:58:35.779029 +0000 build-fedora4: repo_base_var="LINUX_REPO__BASEDIR"; \
+2020-11-07 20:58:35.779036 +0000 build-fedora4: fi; \
+2020-11-07 20:58:35.779045 +0000 build-fedora4: if [ -n "${!repo_base_var}" ]; then \
+2020-11-07 20:58:35.779058 +0000 build-fedora4: .repo_basedir="${!repo_base_var}"; \
+2020-11-07 20:58:35.779065 +0000 build-fedora4: else \
+2020-11-07 20:58:35.779075 +0000 build-fedora4: .repo_basedir="qubes-src/linux-yum/r4.1"; \
+2020-11-07 20:58:35.779081 +0000 build-fedora4: fi; \
+2020-11-07 20:58:35.779092 +0000 build-fedora4: if [ -r qubes-src/python-u2flib-host/Makefile.builder ]; then \
+2020-11-07 20:58:35.779102 +0000 build-fedora4: .echo -n "Updating qubes-src/python-u2flib-host... "; \
+2020-11-07 20:58:35.779110 +0000 build-fedora4: .if [ "0" -eq 1 ]; then \
+2020-11-07 20:58:35.779122 +0000 build-fedora4: ..vtag=`git -C qubes-src/python-u2flib-host tag --points-at HEAD --list v*`; \
+2020-11-07 20:58:35.779131 +0000 build-fedora4: ..if [ -z "$vtag" ]; then \
+2020-11-07 20:58:35.779139 +0000 build-fedora4: ...echo "no version tag"; \
+2020-11-07 20:58:35.779146 +0000 build-fedora4: ...exit 0; \
+2020-11-07 20:58:35.779153 +0000 build-fedora4: ..fi; \
+2020-11-07 20:58:35.779160 +0000 build-fedora4: .fi; \
+2020-11-07 20:58:35.779170 +0000 build-fedora4: .if [ "python-u2flib-host" = linux-template-builder ]; then
+2020-11-07 20:58:35.779183 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc32 template-name)
+2020-11-07 20:58:35.779190 +0000 build-fedora4: fi
+2020-11-07 20:58:35.779212 +0000 build-fedora4: component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc32 PACKAGE_SET=vm COMPONENT=`basename qubes-src/python-u2flib-host` UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc32 get-var GET_VAR=PACKAGE_LIST); \
+2020-11-07 20:58:35.779223 +0000 build-fedora4: .if [ -z "$component_packages" ]; then \
+2020-11-07 20:58:35.779231 +0000 build-fedora4: ..echo "no packages."; \
+2020-11-07 20:58:35.779238 +0000 build-fedora4: ..exit 0; \
+2020-11-07 20:58:35.779245 +0000 build-fedora4: .fi; \
+2020-11-07 20:58:35.779255 +0000 build-fedora4: .make -s -f Makefile.generic DIST=fc32 PACKAGE_SET=vm \
+2020-11-07 20:58:35.779265 +0000 build-fedora4: ..COMPONENT=`basename qubes-src/python-u2flib-host` \
+2020-11-07 20:58:35.779273 +0000 build-fedora4: ..SNAPSHOT_REPO=current-testing \
+2020-11-07 20:58:35.779281 +0000 build-fedora4: ..TARGET_REPO=current-testing \
+2020-11-07 20:58:35.779293 +0000 build-fedora4: ..UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc32 \
+2020-11-07 20:58:35.779308 +0000 build-fedora4: ..SNAPSHOT_FILE=/home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-fc32-`basename qubes-src/python-u2flib-host` \
+2020-11-07 20:58:35.779321 +0000 build-fedora4: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2020-11-07_20-54-48 \
+2020-11-07 20:58:35.779337 +0000 build-fedora4: ..update-repo || exit 1; \
+2020-11-07 20:58:35.779350 +0000 build-fedora4: elif make -C qubes-src/python-u2flib-host -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2020-11-07 20:58:35.779360 +0000 build-fedora4: .echo "Updating qubes-src/python-u2flib-host... "; \
+2020-11-07 20:58:35.779372 +0000 build-fedora4: .DIST=fc32 UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc32 \
+2020-11-07 20:58:35.779409 +0000 build-fedora4: .make -s -C qubes-src/python-u2flib-host update-repo-current-testing || exit 1; \
+2020-11-07 20:58:35.779419 +0000 build-fedora4: else \
+2020-11-07 20:58:35.779430 +0000 build-fedora4: .echo -n "Updating qubes-src/python-u2flib-host... skipping."; \
+2020-11-07 20:58:35.779437 +0000 build-fedora4: fi; \
+2020-11-07 20:58:35.779443 +0000 build-fedora4: echo
+2020-11-07 20:58:36.159418 +0000 build-fedora4: Updating qubes-src/python-u2flib-host... /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:157: target 'update-repo-do' does not exist
+2020-11-07 20:58:36.159493 +0000 build-fedora4: mkdir -p /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/fc32/rpm
+2020-11-07 20:58:36.184229 +0000 build-fedora4: if [ -n "pkgs/vm-fc32/python-u2flib-host-3.0.3-7.fc32.src.rpm pkgs/vm-fc32/python3-u2flib-host-3.0.3-7.fc32.noarch.rpm pkgs/vm-fc32/python-u2flib-host-3.0.3-7.fc32.x86_64.buildinfo" ]; then \
+2020-11-07 20:58:36.184294 +0000 build-fedora4: .cd qubes-src/python-u2flib-host && ln -f pkgs/vm-fc32/python-u2flib-host-3.0.3-7.fc32.src.rpm pkgs/vm-fc32/python3-u2flib-host-3.0.3-7.fc32.noarch.rpm pkgs/vm-fc32/python-u2flib-host-3.0.3-7.fc32.x86_64.buildinfo  /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/fc32/rpm/; \
+2020-11-07 20:58:36.184307 +0000 build-fedora4: else \
+2020-11-07 20:58:36.184321 +0000 build-fedora4: .echo "`tput bold`No packages defined by python3-u2flib-host.spec, syntax error?`tput sgr0`"; \
+2020-11-07 20:58:36.184330 +0000 build-fedora4: .exit 1; \
+2020-11-07 20:58:36.184337 +0000 build-fedora4: fi
+2020-11-07 20:58:36.228546 +0000 build-fedora4: cd qubes-src/python-u2flib-host && echo pkgs/vm-fc32/python-u2flib-host-3.0.3-7.fc32.src.rpm pkgs/vm-fc32/python3-u2flib-host-3.0.3-7.fc32.noarch.rpm pkgs/vm-fc32/python-u2flib-host-3.0.3-7.fc32.x86_64.buildinfo  > /home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-fc32-python-u2flib-host
+2020-11-07 20:58:36.355790 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-github//Makefile.github:18: target 'notify-github' does not exist
+2020-11-07 20:58:36.355845 +0000 build-fedora4: [ -z "python-u2flib-host-3.0.3-7.fc32" ] || /home/user/builder-r4.1/qubes-src/builder-github//notify-issues \
+2020-11-07 20:58:36.355863 +0000 build-fedora4: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2020-11-07_20-54-48" \
+2020-11-07 20:58:36.355872 +0000 build-fedora4: .upload \
+2020-11-07 20:58:36.355881 +0000 build-fedora4: ."r4.1" \
+2020-11-07 20:58:36.355890 +0000 build-fedora4: ."qubes-src/python-u2flib-host" \
+2020-11-07 20:58:36.355900 +0000 build-fedora4: ."python-u2flib-host-3.0.3-7.fc32" \
+2020-11-07 20:58:36.355907 +0000 build-fedora4: ."fc32" \
+2020-11-07 20:58:36.355915 +0000 build-fedora4: ."vm" \
+2020-11-07 20:58:36.355923 +0000 build-fedora4: ."current-testing" \
+2020-11-07 20:58:36.355936 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-python-u2flib-host-vm-fc32-current-testing" \
+2020-11-07 20:58:36.355948 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-python-u2flib-host-vm-fc32-current"
+2020-11-07 20:58:40.750128 +0000 build-fedora4: WARNING: message template /home/user/builder-r4.1/qubes-src/builder-github/templates/message-current-testing-vm doesn't exist, not adding comments
+2020-11-07 20:58:40.830484 +0000 build-fedora4: 
+2020-11-07 20:58:40.830545 +0000 build-fedora4: Makefile:806: update target 'internal-update-repo-current-testing.vm.fc32' due to: internal-update-repo-current-testing.vm.fc32.python-u2flib-host
+2020-11-07 20:58:40.830557 +0000 build-fedora4: true
+2020-11-07 20:58:40.836634 +0000 build-fedora4: Makefile:831: target 'internal-update-repo-current-testing.vm.fc33.python-u2flib-host' does not exist
+2020-11-07 20:58:40.836673 +0000 build-fedora4: repo_base_var="LINUX_REPO_fc33_BASEDIR"; \
+2020-11-07 20:58:40.836686 +0000 build-fedora4: if [ "python-u2flib-host" = linux-template-builder ]; then \
+2020-11-07 20:58:40.836699 +0000 build-fedora4: .# templates belongs to dom0 repository, even though PACKAGE_SET=vm
+2020-11-07 20:58:40.836709 +0000 build-fedora4: repo_base_var="LINUX_REPO__BASEDIR"; \
+2020-11-07 20:58:40.836716 +0000 build-fedora4: fi; \
+2020-11-07 20:58:40.836726 +0000 build-fedora4: if [ -n "${!repo_base_var}" ]; then \
+2020-11-07 20:58:40.836735 +0000 build-fedora4: .repo_basedir="${!repo_base_var}"; \
+2020-11-07 20:58:40.836741 +0000 build-fedora4: else \
+2020-11-07 20:58:40.836751 +0000 build-fedora4: .repo_basedir="qubes-src/linux-yum/r4.1"; \
+2020-11-07 20:58:40.836774 +0000 build-fedora4: fi; \
+2020-11-07 20:58:40.836786 +0000 build-fedora4: if [ -r qubes-src/python-u2flib-host/Makefile.builder ]; then \
+2020-11-07 20:58:40.836796 +0000 build-fedora4: .echo -n "Updating qubes-src/python-u2flib-host... "; \
+2020-11-07 20:58:40.836804 +0000 build-fedora4: .if [ "0" -eq 1 ]; then \
+2020-11-07 20:58:40.836816 +0000 build-fedora4: ..vtag=`git -C qubes-src/python-u2flib-host tag --points-at HEAD --list v*`; \
+2020-11-07 20:58:40.836825 +0000 build-fedora4: ..if [ -z "$vtag" ]; then \
+2020-11-07 20:58:40.836838 +0000 build-fedora4: ...echo "no version tag"; \
+2020-11-07 20:58:40.836846 +0000 build-fedora4: ...exit 0; \
+2020-11-07 20:58:40.836853 +0000 build-fedora4: ..fi; \
+2020-11-07 20:58:40.836860 +0000 build-fedora4: .fi; \
+2020-11-07 20:58:40.836870 +0000 build-fedora4: .if [ "python-u2flib-host" = linux-template-builder ]; then
+2020-11-07 20:58:40.836883 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc33 template-name)
+2020-11-07 20:58:40.836890 +0000 build-fedora4: fi
+2020-11-07 20:58:40.836912 +0000 build-fedora4: component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc33 PACKAGE_SET=vm COMPONENT=`basename qubes-src/python-u2flib-host` UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc33 get-var GET_VAR=PACKAGE_LIST); \
+2020-11-07 20:58:40.836923 +0000 build-fedora4: .if [ -z "$component_packages" ]; then \
+2020-11-07 20:58:40.836931 +0000 build-fedora4: ..echo "no packages."; \
+2020-11-07 20:58:40.836938 +0000 build-fedora4: ..exit 0; \
+2020-11-07 20:58:40.836944 +0000 build-fedora4: .fi; \
+2020-11-07 20:58:40.836954 +0000 build-fedora4: .make -s -f Makefile.generic DIST=fc33 PACKAGE_SET=vm \
+2020-11-07 20:58:40.836964 +0000 build-fedora4: ..COMPONENT=`basename qubes-src/python-u2flib-host` \
+2020-11-07 20:58:40.836972 +0000 build-fedora4: ..SNAPSHOT_REPO=current-testing \
+2020-11-07 20:58:40.836981 +0000 build-fedora4: ..TARGET_REPO=current-testing \
+2020-11-07 20:58:40.836993 +0000 build-fedora4: ..UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc33 \
+2020-11-07 20:58:40.837007 +0000 build-fedora4: ..SNAPSHOT_FILE=/home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-fc33-`basename qubes-src/python-u2flib-host` \
+2020-11-07 20:58:40.837020 +0000 build-fedora4: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2020-11-07_20-56-50 \
+2020-11-07 20:58:40.837029 +0000 build-fedora4: ..update-repo || exit 1; \
+2020-11-07 20:58:40.837041 +0000 build-fedora4: elif make -C qubes-src/python-u2flib-host -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2020-11-07 20:58:40.837051 +0000 build-fedora4: .echo "Updating qubes-src/python-u2flib-host... "; \
+2020-11-07 20:58:40.837063 +0000 build-fedora4: .DIST=fc33 UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc33 \
+2020-11-07 20:58:40.837075 +0000 build-fedora4: .make -s -C qubes-src/python-u2flib-host update-repo-current-testing || exit 1; \
+2020-11-07 20:58:40.837082 +0000 build-fedora4: else \
+2020-11-07 20:58:40.837092 +0000 build-fedora4: .echo -n "Updating qubes-src/python-u2flib-host... skipping."; \
+2020-11-07 20:58:40.837099 +0000 build-fedora4: fi; \
+2020-11-07 20:58:40.837106 +0000 build-fedora4: echo
+2020-11-07 20:58:41.200325 +0000 build-fedora4: Updating qubes-src/python-u2flib-host... /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:157: target 'update-repo-do' does not exist
+2020-11-07 20:58:41.200415 +0000 build-fedora4: mkdir -p /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/fc33/rpm
+2020-11-07 20:58:41.345832 +0000 build-fedora4: if [ -n "pkgs/vm-fc33/python-u2flib-host-3.0.3-7.fc33.src.rpm pkgs/vm-fc33/python3-u2flib-host-3.0.3-7.fc33.noarch.rpm pkgs/vm-fc33/python-u2flib-host-3.0.3-7.fc33.x86_64.buildinfo" ]; then \
+2020-11-07 20:58:41.345901 +0000 build-fedora4: .cd qubes-src/python-u2flib-host && ln -f pkgs/vm-fc33/python-u2flib-host-3.0.3-7.fc33.src.rpm pkgs/vm-fc33/python3-u2flib-host-3.0.3-7.fc33.noarch.rpm pkgs/vm-fc33/python-u2flib-host-3.0.3-7.fc33.x86_64.buildinfo  /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/fc33/rpm/; \
+2020-11-07 20:58:41.345933 +0000 build-fedora4: else \
+2020-11-07 20:58:41.345950 +0000 build-fedora4: .echo "`tput bold`No packages defined by python3-u2flib-host.spec, syntax error?`tput sgr0`"; \
+2020-11-07 20:58:41.345959 +0000 build-fedora4: .exit 1; \
+2020-11-07 20:58:41.345967 +0000 build-fedora4: fi
+2020-11-07 20:58:41.409110 +0000 build-fedora4: cd qubes-src/python-u2flib-host && echo pkgs/vm-fc33/python-u2flib-host-3.0.3-7.fc33.src.rpm pkgs/vm-fc33/python3-u2flib-host-3.0.3-7.fc33.noarch.rpm pkgs/vm-fc33/python-u2flib-host-3.0.3-7.fc33.x86_64.buildinfo  > /home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-fc33-python-u2flib-host
+2020-11-07 20:58:41.499198 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-github//Makefile.github:18: target 'notify-github' does not exist
+2020-11-07 20:58:41.499250 +0000 build-fedora4: [ -z "python-u2flib-host-3.0.3-7.fc33" ] || /home/user/builder-r4.1/qubes-src/builder-github//notify-issues \
+2020-11-07 20:58:41.499268 +0000 build-fedora4: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2020-11-07_20-56-50" \
+2020-11-07 20:58:41.499278 +0000 build-fedora4: .upload \
+2020-11-07 20:58:41.499288 +0000 build-fedora4: ."r4.1" \
+2020-11-07 20:58:41.499297 +0000 build-fedora4: ."qubes-src/python-u2flib-host" \
+2020-11-07 20:58:41.499307 +0000 build-fedora4: ."python-u2flib-host-3.0.3-7.fc33" \
+2020-11-07 20:58:41.499314 +0000 build-fedora4: ."fc33" \
+2020-11-07 20:58:41.499322 +0000 build-fedora4: ."vm" \
+2020-11-07 20:58:41.499334 +0000 build-fedora4: ."current-testing" \
+2020-11-07 20:58:41.499348 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-python-u2flib-host-vm-fc33-current-testing" \
+2020-11-07 20:58:41.499361 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-python-u2flib-host-vm-fc33-current"
+2020-11-07 20:58:45.931588 +0000 build-fedora4: WARNING: message template /home/user/builder-r4.1/qubes-src/builder-github/templates/message-current-testing-vm doesn't exist, not adding comments
+2020-11-07 20:58:45.945850 +0000 build-fedora4: 
+2020-11-07 20:58:45.946060 +0000 build-fedora4: Makefile:806: update target 'internal-update-repo-current-testing.vm.fc33' due to: internal-update-repo-current-testing.vm.fc33.python-u2flib-host
+2020-11-07 20:58:45.946082 +0000 build-fedora4: true
+2020-11-07 20:58:45.947561 +0000 build-fedora4: Makefile:885: target 'post-update-repo-current-testing' does not exist
+2020-11-07 20:58:45.947589 +0000 build-fedora4: for dist in  fc31 fc32 fc33; do \
+2020-11-07 20:58:45.947601 +0000 build-fedora4: .repo_base_var="LINUX_REPO_${dist}_BASEDIR"; \
+2020-11-07 20:58:45.947610 +0000 build-fedora4: .if [ -n "${!repo_base_var}" ]; then \
+2020-11-07 20:58:45.947619 +0000 build-fedora4: ..repo_basedir="${!repo_base_var}"; \
+2020-11-07 20:58:45.947626 +0000 build-fedora4: .else \
+2020-11-07 20:58:45.947636 +0000 build-fedora4: ..repo_basedir="qubes-src/linux-yum/r4.1"; \
+2020-11-07 20:58:45.947643 +0000 build-fedora4: .fi; \
+2020-11-07 20:58:45.947653 +0000 build-fedora4: .repos_to_update="$repos_to_update $repo_basedir"; \
+2020-11-07 20:58:45.947660 +0000 build-fedora4: done; \
+2020-11-07 20:58:45.947668 +0000 build-fedora4: pkgset_dist= ; \
+2020-11-07 20:58:45.947676 +0000 build-fedora4: for dist in ; do \
+2020-11-07 20:58:45.947685 +0000 build-fedora4: .pkgset_dist="$pkgset_dist dom0/$dist"; \
+2020-11-07 20:58:45.947692 +0000 build-fedora4: done; \
+2020-11-07 20:58:45.947700 +0000 build-fedora4: for dist in fc31 fc32 fc33; do \
+2020-11-07 20:58:45.947709 +0000 build-fedora4: .pkgset_dist="$pkgset_dist vm/$dist"; \
+2020-11-07 20:58:45.947716 +0000 build-fedora4: done; \
+2020-11-07 20:58:45.947727 +0000 build-fedora4: for repo in `echo $repos_to_update|tr ' ' '\n'|sort|uniq`; do \
+2020-11-07 20:58:45.947750 +0000 build-fedora4: .[ -z "$repo" ] && continue; \
+2020-11-07 20:58:45.947762 +0000 build-fedora4: .[ -x "$repo/../update_repo-current-testing.sh" ] || continue; \
+2020-11-07 20:58:45.947773 +0000 build-fedora4: .(cd $repo/.. && ./update_repo-current-testing.sh r4.1 $pkgset_dist); \
+2020-11-07 20:58:45.947780 +0000 build-fedora4: done
+2020-11-07 20:58:45.987959 +0000 build-fedora4: which: no mkmetalink in (/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/home/user/.local/bin:/home/user/bin:/home/user/builder-r4.1/qubes-src/builder-rpm/tools)
+2020-11-07 20:58:46.001851 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/dom0/fc25...
+2020-11-07 20:58:46.131901 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/dom0/fc29...
+2020-11-07 20:58:46.204946 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/dom0/fc31...
+2020-11-07 20:58:46.262597 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/dom0/fc32...
+2020-11-07 20:58:46.335948 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/centos7...
+2020-11-07 20:58:46.408561 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/centos8...
+2020-11-07 20:58:46.464732 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc26...
+2020-11-07 20:58:46.518859 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc27...
+2020-11-07 20:58:46.578158 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc28...
+2020-11-07 20:58:46.636034 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc29...
+2020-11-07 20:58:49.252056 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc30...
+2020-11-07 20:58:52.712848 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc31...
+2020-11-07 20:58:56.134657 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc32...
+2020-11-07 20:58:58.870541 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc33...
+2020-11-07 20:59:02.824612 +0000 build-fedora4: Done.
+2020-11-07 20:59:02.856497 +0000 build-fedora4: ~/builder-r4.1/qubes-src/linux-yum ~/builder-r4.1/qubes-src/linux-yum
+2020-11-07 20:59:02.861552 +0000 build-fedora4: Syncing r4.1...
+2020-11-07 20:59:07.049194 +0000 build-fedora4: sending incremental file list
+2020-11-07 20:59:07.889827 +0000 build-fedora4: .d..t...... current-testing/
+2020-11-07 20:59:07.889884 +0000 build-fedora4: .d..t...... current-testing/dom0/
+2020-11-07 20:59:07.889898 +0000 build-fedora4: .d..t...... current-testing/dom0/fc25/
+2020-11-07 20:59:07.889911 +0000 build-fedora4: .L..t...... current-testing/dom0/fc25/comps.xml -> ../../../comps-dom0.xml
+2020-11-07 20:59:07.889922 +0000 build-fedora4: .d..t...... current-testing/dom0/fc25/rpm/
+2020-11-07 20:59:07.889932 +0000 build-fedora4: <f..t...... current-testing/dom0/fc25/rpm/.gitignore
+2020-11-07 20:59:07.891539 +0000 build-fedora4: .              6 100%    0.00kB/s    0:00:00  .              6 100%    0.00kB/s    0:00:00 (xfr#1, ir-chk=1399/1411)
+2020-11-07 20:59:07.891582 +0000 build-fedora4: .d..t...... current-testing/dom0/fc29/
+2020-11-07 20:59:07.891596 +0000 build-fedora4: .d..t...... current-testing/dom0/fc31/
+2020-11-07 20:59:07.891606 +0000 build-fedora4: .d..t...... current-testing/dom0/fc32/
+2020-11-07 20:59:07.891618 +0000 build-fedora4: .L..t...... current-testing/dom0/fc32/comps.xml -> ../../../comps-dom0.xml
+2020-11-07 20:59:07.891628 +0000 build-fedora4: .d..t...... current-testing/dom0/fc32/rpm/
+2020-11-07 20:59:07.891638 +0000 build-fedora4: <f..t...... current-testing/dom0/fc32/rpm/.gitignore
+2020-11-07 20:59:07.891852 +0000 build-fedora4: .              6 100%    5.86kB/s    0:00:00  .              6 100%    5.86kB/s    0:00:00 (xfr#2, ir-chk=1396/1411)
+2020-11-07 20:59:07.891873 +0000 build-fedora4: .d..t...... current-testing/vm/
+2020-11-07 20:59:07.891884 +0000 build-fedora4: .d..t...... current-testing/vm/centos7/
+2020-11-07 20:59:07.891896 +0000 build-fedora4: .L..t...... current-testing/vm/centos7/comps.xml -> ../../../comps-vm.xml
+2020-11-07 20:59:07.891922 +0000 build-fedora4: .d..t...... current-testing/vm/centos7/rpm/
+2020-11-07 20:59:07.891933 +0000 build-fedora4: <f..t...... current-testing/vm/centos7/rpm/.gitignore
+2020-11-07 20:59:07.892261 +0000 build-fedora4: .              6 100%    5.86kB/s    0:00:00  .              6 100%    5.86kB/s    0:00:00 (xfr#3, ir-chk=1383/1411)
+2020-11-07 20:59:07.892282 +0000 build-fedora4: .d..t...... current-testing/vm/centos8/
+2020-11-07 20:59:07.892295 +0000 build-fedora4: .L..t...... current-testing/vm/centos8/comps.xml -> ../../../comps-vm.xml
+2020-11-07 20:59:07.892305 +0000 build-fedora4: .d..t...... current-testing/vm/centos8/rpm/
+2020-11-07 20:59:07.892315 +0000 build-fedora4: <f..t...... current-testing/vm/centos8/rpm/.gitignore
+2020-11-07 20:59:07.895004 +0000 build-fedora4: .              6 100%    5.86kB/s    0:00:00  .              6 100%    5.86kB/s    0:00:00 (xfr#4, ir-chk=1380/1411)
+2020-11-07 20:59:07.895044 +0000 build-fedora4: .d..t...... current-testing/vm/fc26/
+2020-11-07 20:59:07.895056 +0000 build-fedora4: .d..t...... current-testing/vm/fc27/
+2020-11-07 20:59:07.895066 +0000 build-fedora4: .d..t...... current-testing/vm/fc28/
+2020-11-07 20:59:07.895076 +0000 build-fedora4: .d..t...... current-testing/vm/fc29/
+2020-11-07 20:59:07.895086 +0000 build-fedora4: .d..t...... current-testing/vm/fc30/
+2020-11-07 20:59:07.895098 +0000 build-fedora4: .L..t...... current-testing/vm/fc30/comps.xml -> ../../../comps-vm.xml
+2020-11-07 20:59:07.895108 +0000 build-fedora4: .d..t...... current-testing/vm/fc30/rpm/
+2020-11-07 20:59:07.895118 +0000 build-fedora4: <f..t...... current-testing/vm/fc30/rpm/.gitignore
+2020-11-07 20:59:07.920793 +0000 build-fedora4: .              6 100%    0.20kB/s    0:00:00  .              6 100%    0.20kB/s    0:00:00 (xfr#5, ir-chk=1529/2023)
+2020-11-07 20:59:07.920838 +0000 build-fedora4: .d..t...... current-testing/vm/fc31/
+2020-11-07 20:59:07.920854 +0000 build-fedora4: .L..t...... current-testing/vm/fc31/comps.xml -> ../../../comps-vm.xml
+2020-11-07 20:59:08.040115 +0000 build-fedora4: .d..t...... current-testing/vm/fc31/rpm/
+2020-11-07 20:59:08.040168 +0000 build-fedora4: <f..t...... current-testing/vm/fc31/rpm/.gitignore
+2020-11-07 20:59:08.049486 +0000 build-fedora4: .              6 100%    0.04kB/s    0:00:00  .              6 100%    0.04kB/s    0:00:00 (xfr#6, ir-chk=1695/2653)
+2020-11-07 20:59:08.049537 +0000 build-fedora4: <f+++++++++ current-testing/vm/fc31/rpm/python-u2flib-host-3.0.3-7.fc31.src.rpm
+2020-11-07 20:59:08.049555 +0000 build-fedora4: .         32,768  78%  202.53kB/s    0:00:00  .         41,940 100%  259.22kB/s    0:00:00 (xfr#7, ir-chk=1627/2653)
+2020-11-07 20:59:08.049569 +0000 build-fedora4: <f+++++++++ current-testing/vm/fc31/rpm/python-u2flib-host-3.0.3-7.fc31.x86_64.buildinfo
+2020-11-07 20:59:08.049584 +0000 build-fedora4: .          4,693 100%   29.01kB/s    0:00:00  .          4,693 100%   29.01kB/s    0:00:00 (xfr#8, ir-chk=1626/2653)
+2020-11-07 20:59:08.049597 +0000 build-fedora4: <f+++++++++ current-testing/vm/fc31/rpm/python3-u2flib-host-3.0.3-7.fc31.noarch.rpm
+2020-11-07 20:59:08.049611 +0000 build-fedora4: .         32,768  65%  202.53kB/s    0:00:00  .         49,895 100%  308.39kB/s    0:00:00 (xfr#9, ir-chk=1607/2653)
+2020-11-07 20:59:08.487577 +0000 build-fedora4: .d..t...... current-testing/vm/fc32/
+2020-11-07 20:59:08.487631 +0000 build-fedora4: .L..t...... current-testing/vm/fc32/comps.xml -> ../../../comps-vm.xml
+2020-11-07 20:59:08.621345 +0000 build-fedora4: .d..t...... current-testing/vm/fc32/rpm/
+2020-11-07 20:59:08.621400 +0000 build-fedora4: <f..t...... current-testing/vm/fc32/rpm/.gitignore
+2020-11-07 20:59:08.621464 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#10, ir-chk=1528/2942)
+2020-11-07 20:59:08.621479 +0000 build-fedora4: <f+++++++++ current-testing/vm/fc32/rpm/python-u2flib-host-3.0.3-7.fc32.src.rpm
+2020-11-07 20:59:08.621495 +0000 build-fedora4: .         32,768  78%   44.69kB/s    0:00:00  .         41,940 100%   57.20kB/s    0:00:00 (xfr#11, ir-chk=1460/2942)
+2020-11-07 20:59:08.621527 +0000 build-fedora4: <f+++++++++ current-testing/vm/fc32/rpm/python-u2flib-host-3.0.3-7.fc32.x86_64.buildinfo
+2020-11-07 20:59:08.621543 +0000 build-fedora4: .          4,705 100%    6.42kB/s    0:00:00  .          4,705 100%    6.42kB/s    0:00:00 (xfr#12, ir-chk=1459/2942)
+2020-11-07 20:59:08.621556 +0000 build-fedora4: <f+++++++++ current-testing/vm/fc32/rpm/python3-u2flib-host-3.0.3-7.fc32.noarch.rpm
+2020-11-07 20:59:08.621571 +0000 build-fedora4: .         32,768  65%   44.69kB/s    0:00:00  .         50,080 100%   68.30kB/s    0:00:00 (xfr#13, ir-chk=1442/2942)
+2020-11-07 20:59:08.621580 +0000 build-fedora4: .d..t...... current-testing/vm/fc33/
+2020-11-07 20:59:08.621592 +0000 build-fedora4: .L..t...... current-testing/vm/fc33/comps.xml -> ../../../comps-vm.xml
+2020-11-07 20:59:08.669980 +0000 build-fedora4: .d..t...... current-testing/vm/fc33/rpm/
+2020-11-07 20:59:08.670032 +0000 build-fedora4: <f..t...... current-testing/vm/fc33/rpm/.gitignore
+2020-11-07 20:59:08.679881 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#14, ir-chk=1427/3206)
+2020-11-07 20:59:08.679927 +0000 build-fedora4: <f+++++++++ current-testing/vm/fc33/rpm/python-u2flib-host-3.0.3-7.fc33.src.rpm
+2020-11-07 20:59:08.679947 +0000 build-fedora4: .         32,768  77%   40.56kB/s    0:00:00  .         42,234 100%   52.27kB/s    0:00:00 (xfr#15, ir-chk=1382/3206)
+2020-11-07 20:59:08.679960 +0000 build-fedora4: <f+++++++++ current-testing/vm/fc33/rpm/python-u2flib-host-3.0.3-7.fc33.x86_64.buildinfo
+2020-11-07 20:59:08.679976 +0000 build-fedora4: .          4,855 100%    6.01kB/s    0:00:00  .          4,855 100%    6.01kB/s    0:00:00 (xfr#16, ir-chk=1381/3206)
+2020-11-07 20:59:08.679989 +0000 build-fedora4: <f+++++++++ current-testing/vm/fc33/rpm/python3-u2flib-host-3.0.3-7.fc33.noarch.rpm
+2020-11-07 20:59:08.680004 +0000 build-fedora4: .         32,768  64%   40.51kB/s    0:00:00  .         50,533 100%   62.47kB/s    0:00:00 (xfr#17, ir-chk=1367/3206)
+2020-11-07 20:59:08.680012 +0000 build-fedora4: .d..t...... current/
+2020-11-07 20:59:08.680022 +0000 build-fedora4: .d..t...... current/dom0/
+2020-11-07 20:59:08.680031 +0000 build-fedora4: .d..t...... current/dom0/fc25/
+2020-11-07 20:59:08.680042 +0000 build-fedora4: .L..t...... current/dom0/fc25/comps.xml -> ../../../comps-dom0.xml
+2020-11-07 20:59:08.680051 +0000 build-fedora4: .d..t...... current/dom0/fc25/rpm/
+2020-11-07 20:59:08.680061 +0000 build-fedora4: <f..t...... current/dom0/fc25/rpm/.gitignore
+2020-11-07 20:59:08.685320 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#18, ir-chk=1174/3206)
+2020-11-07 20:59:08.685404 +0000 build-fedora4: .d..t...... current/dom0/fc29/
+2020-11-07 20:59:08.685420 +0000 build-fedora4: .d..t...... current/dom0/fc31/
+2020-11-07 20:59:08.685430 +0000 build-fedora4: .d..t...... current/dom0/fc32/
+2020-11-07 20:59:08.685441 +0000 build-fedora4: .L..t...... current/dom0/fc32/comps.xml -> ../../../comps-dom0.xml
+2020-11-07 20:59:08.685451 +0000 build-fedora4: .d..t...... current/dom0/fc32/rpm/
+2020-11-07 20:59:08.685461 +0000 build-fedora4: <f..t...... current/dom0/fc32/rpm/.gitignore
+2020-11-07 20:59:08.688085 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#19, ir-chk=1171/3206)
+2020-11-07 20:59:08.688124 +0000 build-fedora4: .d..t...... current/vm/
+2020-11-07 20:59:08.688136 +0000 build-fedora4: .d..t...... current/vm/centos7/
+2020-11-07 20:59:08.688149 +0000 build-fedora4: .L..t...... current/vm/centos7/comps.xml -> ../../../comps-vm.xml
+2020-11-07 20:59:08.688159 +0000 build-fedora4: .d..t...... current/vm/centos7/rpm/
+2020-11-07 20:59:08.688169 +0000 build-fedora4: <f..t...... current/vm/centos7/rpm/.gitignore
+2020-11-07 20:59:08.688362 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#20, ir-chk=1161/3206)
+2020-11-07 20:59:08.688398 +0000 build-fedora4: .d..t...... current/vm/centos8/
+2020-11-07 20:59:08.688430 +0000 build-fedora4: .L..t...... current/vm/centos8/comps.xml -> ../../../comps-vm.xml
+2020-11-07 20:59:08.688441 +0000 build-fedora4: .d..t...... current/vm/centos8/rpm/
+2020-11-07 20:59:08.688451 +0000 build-fedora4: <f..t...... current/vm/centos8/rpm/.gitignore
+2020-11-07 20:59:08.692809 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#21, ir-chk=1158/3206)
+2020-11-07 20:59:08.692852 +0000 build-fedora4: .d..t...... current/vm/fc29/
+2020-11-07 20:59:08.763467 +0000 build-fedora4: .d..t...... current/vm/fc30/
+2020-11-07 20:59:08.763518 +0000 build-fedora4: .L..t...... current/vm/fc30/comps.xml -> ../../../comps-vm.xml
+2020-11-07 20:59:08.763536 +0000 build-fedora4: .d..t...... current/vm/fc30/rpm/
+2020-11-07 20:59:08.763548 +0000 build-fedora4: <f..t...... current/vm/fc30/rpm/.gitignore
+2020-11-07 20:59:08.767273 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00 (xfr#22, to-chk=893/3244)
+2020-11-07 20:59:08.970536 +0000 build-fedora4: .d..t...... current/vm/fc31/
+2020-11-07 20:59:08.970591 +0000 build-fedora4: .L..t...... current/vm/fc31/comps.xml -> ../../../comps-vm.xml
+2020-11-07 20:59:09.022768 +0000 build-fedora4: .d..t...... current/vm/fc31/rpm/
+2020-11-07 20:59:09.022817 +0000 build-fedora4: <f..t...... current/vm/fc31/rpm/.gitignore
+2020-11-07 20:59:09.029142 +0000 build-fedora4: .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:00  .              6 100%    0.01kB/s    0:00:01 (xfr#23, to-chk=588/3244)
+2020-11-07 20:59:09.109041 +0000 build-fedora4: .d..t...... current/vm/fc32/
+2020-11-07 20:59:09.109094 +0000 build-fedora4: .L..t...... current/vm/fc32/comps.xml -> ../../../comps-vm.xml
+2020-11-07 20:59:09.132643 +0000 build-fedora4: .d..t...... current/vm/fc32/rpm/
+2020-11-07 20:59:09.132687 +0000 build-fedora4: <f..t...... current/vm/fc32/rpm/.gitignore
+2020-11-07 20:59:09.133524 +0000 build-fedora4: .              6 100%    0.05kB/s    0:00:00  .              6 100%    0.05kB/s    0:00:00 (xfr#24, to-chk=299/3244)
+2020-11-07 20:59:09.378500 +0000 build-fedora4: .d..t...... current/vm/fc33/
+2020-11-07 20:59:09.378554 +0000 build-fedora4: .L..t...... current/vm/fc33/comps.xml -> ../../../comps-vm.xml
+2020-11-07 20:59:09.378568 +0000 build-fedora4: .d..t...... current/vm/fc33/rpm/
+2020-11-07 20:59:09.378579 +0000 build-fedora4: <f..t...... current/vm/fc33/rpm/.gitignore
+2020-11-07 20:59:09.403772 +0000 build-fedora4: .              6 100%    0.02kB/s    0:00:00  .              6 100%    0.02kB/s    0:00:00 (xfr#25, to-chk=35/3244)
+2020-11-07 20:59:09.403815 +0000 build-fedora4: .d..t...... security-testing/
+2020-11-07 20:59:09.403835 +0000 build-fedora4: .d..t...... security-testing/dom0/
+2020-11-07 20:59:09.403847 +0000 build-fedora4: .d..t...... security-testing/dom0/fc25/
+2020-11-07 20:59:09.403858 +0000 build-fedora4: .d..t...... security-testing/dom0/fc25/rpm/
+2020-11-07 20:59:09.403869 +0000 build-fedora4: <f..t...... security-testing/dom0/fc25/rpm/.gitignore
+2020-11-07 20:59:09.404861 +0000 build-fedora4: .              6 100%    0.02kB/s    0:00:00  .              6 100%    0.02kB/s    0:00:00 (xfr#26, to-chk=28/3244)
+2020-11-07 20:59:09.404899 +0000 build-fedora4: .d..t...... security-testing/dom0/fc31/
+2020-11-07 20:59:09.404913 +0000 build-fedora4: .d..t...... security-testing/dom0/fc32/
+2020-11-07 20:59:09.404927 +0000 build-fedora4: .L..t...... security-testing/dom0/fc32/comps.xml -> ../../../comps-dom0.xml
+2020-11-07 20:59:09.404937 +0000 build-fedora4: .d..t...... security-testing/dom0/fc32/rpm/
+2020-11-07 20:59:09.404948 +0000 build-fedora4: <f..t...... security-testing/dom0/fc32/rpm/.gitignore
+2020-11-07 20:59:09.405750 +0000 build-fedora4: .              6 100%    0.02kB/s    0:00:00  .              6 100%    0.02kB/s    0:00:00 (xfr#27, to-chk=25/3244)
+2020-11-07 20:59:09.405792 +0000 build-fedora4: .d..t...... security-testing/vm/
+2020-11-07 20:59:09.405805 +0000 build-fedora4: .d..t...... security-testing/vm/centos7/
+2020-11-07 20:59:09.405817 +0000 build-fedora4: .L..t...... security-testing/vm/centos7/comps.xml -> ../../../comps-vm.xml
+2020-11-07 20:59:09.405827 +0000 build-fedora4: .d..t...... security-testing/vm/centos7/rpm/
+2020-11-07 20:59:09.405838 +0000 build-fedora4: <f..t...... security-testing/vm/centos7/rpm/.gitignore
+2020-11-07 20:59:09.408116 +0000 build-fedora4: .              6 100%    0.02kB/s    0:00:00  .              6 100%    0.02kB/s    0:00:00 (xfr#28, to-chk=15/3244)
+2020-11-07 20:59:09.408150 +0000 build-fedora4: .d..t...... security-testing/vm/centos8/
+2020-11-07 20:59:09.408165 +0000 build-fedora4: .L..t...... security-testing/vm/centos8/comps.xml -> ../../../comps-vm.xml
+2020-11-07 20:59:09.408176 +0000 build-fedora4: .d..t...... security-testing/vm/centos8/rpm/
+2020-11-07 20:59:09.408187 +0000 build-fedora4: <f..t...... security-testing/vm/centos8/rpm/.gitignore
+2020-11-07 20:59:09.408881 +0000 build-fedora4: .              6 100%    0.02kB/s    0:00:00  .              6 100%    0.02kB/s    0:00:00 (xfr#29, to-chk=12/3244)
+2020-11-07 20:59:09.408909 +0000 build-fedora4: .d..t...... security-testing/vm/fc29/
+2020-11-07 20:59:09.408923 +0000 build-fedora4: .d..t...... security-testing/vm/fc30/
+2020-11-07 20:59:09.408938 +0000 build-fedora4: .L..t...... security-testing/vm/fc30/comps.xml -> ../../../comps-vm.xml
+2020-11-07 20:59:09.408949 +0000 build-fedora4: .d..t...... security-testing/vm/fc30/rpm/
+2020-11-07 20:59:09.408960 +0000 build-fedora4: <f..t...... security-testing/vm/fc30/rpm/.gitignore
+2020-11-07 20:59:09.410633 +0000 build-fedora4: .              6 100%    0.02kB/s    0:00:00  .              6 100%    0.02kB/s    0:00:00 (xfr#30, to-chk=9/3244)
+2020-11-07 20:59:09.410669 +0000 build-fedora4: .d..t...... security-testing/vm/fc31/
+2020-11-07 20:59:09.410684 +0000 build-fedora4: .L..t...... security-testing/vm/fc31/comps.xml -> ../../../comps-vm.xml
+2020-11-07 20:59:09.410695 +0000 build-fedora4: .d..t...... security-testing/vm/fc31/rpm/
+2020-11-07 20:59:09.410705 +0000 build-fedora4: <f..t...... security-testing/vm/fc31/rpm/.gitignore
+2020-11-07 20:59:09.411588 +0000 build-fedora4: .              6 100%    0.02kB/s    0:00:00  .              6 100%    0.02kB/s    0:00:00 (xfr#31, to-chk=6/3244)
+2020-11-07 20:59:09.411620 +0000 build-fedora4: .d..t...... security-testing/vm/fc32/
+2020-11-07 20:59:09.411634 +0000 build-fedora4: .L..t...... security-testing/vm/fc32/comps.xml -> ../../../comps-vm.xml
+2020-11-07 20:59:09.411644 +0000 build-fedora4: .d..t...... security-testing/vm/fc32/rpm/
+2020-11-07 20:59:09.411654 +0000 build-fedora4: <f..t...... security-testing/vm/fc32/rpm/.gitignore
+2020-11-07 20:59:09.412863 +0000 build-fedora4: .              6 100%    0.02kB/s    0:00:00  .              6 100%    0.02kB/s    0:00:00 (xfr#32, to-chk=3/3244)
+2020-11-07 20:59:09.412891 +0000 build-fedora4: .d..t...... security-testing/vm/fc33/
+2020-11-07 20:59:09.412905 +0000 build-fedora4: .L..t...... security-testing/vm/fc33/comps.xml -> ../../../comps-vm.xml
+2020-11-07 20:59:09.412915 +0000 build-fedora4: .d..t...... security-testing/vm/fc33/rpm/
+2020-11-07 20:59:09.412926 +0000 build-fedora4: <f..t...... security-testing/vm/fc33/rpm/.gitignore
+2020-11-07 20:59:09.413440 +0000 build-fedora4: .              6 100%    0.02kB/s    0:00:00  .              6 100%    0.02kB/s    0:00:00 (xfr#33, to-chk=0/3244)
+2020-11-07 20:59:20.680264 +0000 build-fedora4: --> Processing repo: r4.1/current/dom0/fc25...
+2020-11-07 20:59:21.301634 +0000 build-fedora4: 20:59:21: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:21.327613 +0000 build-fedora4: 20:59:21: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:21.327657 +0000 build-fedora4: 20:59:21: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:21.327692 +0000 build-fedora4: 20:59:21: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:21.327705 +0000 build-fedora4: 20:59:21: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:22.227573 +0000 build-fedora4: --> Processing repo: r4.1/current/dom0/fc29...
+2020-11-07 20:59:22.344198 +0000 build-fedora4: 20:59:22: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:22.344244 +0000 build-fedora4: 20:59:22: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:22.429242 +0000 build-fedora4: 20:59:22: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:22.429293 +0000 build-fedora4: 20:59:22: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:22.429307 +0000 build-fedora4: 20:59:22: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:23.407044 +0000 build-fedora4: --> Processing repo: r4.1/current/dom0/fc31...
+2020-11-07 20:59:23.455475 +0000 build-fedora4: 20:59:23: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:23.529715 +0000 build-fedora4: 20:59:23: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:23.529757 +0000 build-fedora4: 20:59:23: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:23.619449 +0000 build-fedora4: 20:59:23: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:23.619530 +0000 build-fedora4: 20:59:23: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:24.698729 +0000 build-fedora4: --> Processing repo: r4.1/current/dom0/fc32...
+2020-11-07 20:59:33.048903 +0000 build-fedora4: 20:59:33: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:33.151847 +0000 build-fedora4: 20:59:33: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:33.151892 +0000 build-fedora4: 20:59:33: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:33.245724 +0000 build-fedora4: 20:59:33: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:33.245770 +0000 build-fedora4: 20:59:33: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:34.377588 +0000 build-fedora4: --> Processing repo: r4.1/current/vm/centos7...
+2020-11-07 20:59:34.683271 +0000 build-fedora4: 20:59:35: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:34.788395 +0000 build-fedora4: 20:59:35: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:34.788439 +0000 build-fedora4: 20:59:35: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:34.921453 +0000 build-fedora4: 20:59:35: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:34.921500 +0000 build-fedora4: 20:59:35: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:35.717962 +0000 build-fedora4: --> Processing repo: r4.1/current/vm/centos8...
+2020-11-07 20:59:37.418014 +0000 build-fedora4: 20:59:37: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:37.531561 +0000 build-fedora4: 20:59:37: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:37.531605 +0000 build-fedora4: 20:59:37: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:37.598350 +0000 build-fedora4: 20:59:37: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:37.598429 +0000 build-fedora4: 20:59:37: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:38.453771 +0000 build-fedora4: --> Processing repo: r4.1/current/vm/fc25...
+2020-11-07 20:59:38.608865 +0000 build-fedora4: 20:59:38: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:38.763933 +0000 build-fedora4: 20:59:38: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:38.763985 +0000 build-fedora4: 20:59:38: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:38.763999 +0000 build-fedora4: 20:59:39: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:38.764008 +0000 build-fedora4: 20:59:39: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:39.613556 +0000 build-fedora4: --> Processing repo: r4.1/current/vm/fc26...
+2020-11-07 20:59:39.770404 +0000 build-fedora4: 20:59:40: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:39.927505 +0000 build-fedora4: 20:59:40: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:39.927567 +0000 build-fedora4: 20:59:40: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:39.927579 +0000 build-fedora4: 20:59:40: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:39.927589 +0000 build-fedora4: 20:59:40: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:40.674017 +0000 build-fedora4: --> Processing repo: r4.1/current/vm/fc27...
+2020-11-07 20:59:40.828759 +0000 build-fedora4: 20:59:41: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:40.828807 +0000 build-fedora4: 20:59:41: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:40.828819 +0000 build-fedora4: 20:59:41: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:40.985354 +0000 build-fedora4: 20:59:41: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:40.985426 +0000 build-fedora4: 20:59:41: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:41.887113 +0000 build-fedora4: --> Processing repo: r4.1/current/vm/fc28...
+2020-11-07 20:59:42.046887 +0000 build-fedora4: 20:59:42: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:42.050778 +0000 build-fedora4: 20:59:42: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:42.050814 +0000 build-fedora4: 20:59:42: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:42.050825 +0000 build-fedora4: 20:59:42: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:42.050834 +0000 build-fedora4: 20:59:42: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:42.940204 +0000 build-fedora4: --> Processing repo: r4.1/current/vm/fc29...
+2020-11-07 20:59:44.559886 +0000 build-fedora4: 20:59:44: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:44.559930 +0000 build-fedora4: 20:59:44: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:44.682474 +0000 build-fedora4: 20:59:44: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:44.682518 +0000 build-fedora4: 20:59:44: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:44.714301 +0000 build-fedora4: 20:59:44: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:45.573118 +0000 build-fedora4: --> Processing repo: r4.1/current/vm/fc30...
+2020-11-07 20:59:45.726539 +0000 build-fedora4: Temporary repodata directory r4.1/current/vm/fc30/.repodata/ already exists! (Another createrepo process is running?)
+2020-11-07 20:59:46.594340 +0000 build-fedora4: --> Processing repo: r4.1/current/vm/fc31...
+2020-11-07 20:59:48.245972 +0000 build-fedora4: 20:59:48: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:48.346799 +0000 build-fedora4: 20:59:48: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:48.346844 +0000 build-fedora4: 20:59:48: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:48.402416 +0000 build-fedora4: 20:59:48: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:48.402461 +0000 build-fedora4: 20:59:48: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:49.256307 +0000 build-fedora4: --> Processing repo: r4.1/current/vm/fc32...
+2020-11-07 20:59:50.533913 +0000 build-fedora4: 20:59:50: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:50.629785 +0000 build-fedora4: 20:59:50: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:50.629832 +0000 build-fedora4: 20:59:50: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:50.691446 +0000 build-fedora4: 20:59:50: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:50.691496 +0000 build-fedora4: 20:59:50: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:51.676703 +0000 build-fedora4: --> Processing repo: r4.1/current/vm/fc33...
+2020-11-07 20:59:51.852176 +0000 build-fedora4: 20:59:52: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:52.009172 +0000 build-fedora4: 20:59:52: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:52.009214 +0000 build-fedora4: 20:59:52: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:52.162599 +0000 build-fedora4: 20:59:52: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:52.417410 +0000 build-fedora4: 20:59:52: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:53.854619 +0000 build-fedora4: Done.
+2020-11-07 20:59:57.374997 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/dom0/fc25...
+2020-11-07 20:59:57.875553 +0000 build-fedora4: 20:59:58: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:58.015669 +0000 build-fedora4: 20:59:58: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:58.015713 +0000 build-fedora4: 20:59:58: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:58.028832 +0000 build-fedora4: 20:59:58: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:58.028879 +0000 build-fedora4: 20:59:58: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:59.260451 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/dom0/fc29...
+2020-11-07 20:59:59.419843 +0000 build-fedora4: 20:59:59: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:59.419887 +0000 build-fedora4: 20:59:59: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:59.419898 +0000 build-fedora4: 20:59:59: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:59.419907 +0000 build-fedora4: 20:59:59: posix_spawn avoided (fd close requested) 
+2020-11-07 20:59:59.419916 +0000 build-fedora4: 20:59:59: posix_spawn avoided (fd close requested) 
+2020-11-07 21:00:00.462034 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/dom0/fc31...
+2020-11-07 21:00:00.629550 +0000 build-fedora4: 21:00:00: posix_spawn avoided (fd close requested) 
+2020-11-07 21:00:00.629597 +0000 build-fedora4: 21:00:01: posix_spawn avoided (fd close requested) 
+2020-11-07 21:00:00.786115 +0000 build-fedora4: 21:00:01: posix_spawn avoided (fd close requested) 
+2020-11-07 21:00:00.786162 +0000 build-fedora4: 21:00:01: posix_spawn avoided (fd close requested) 
+2020-11-07 21:00:00.786173 +0000 build-fedora4: 21:00:01: posix_spawn avoided (fd close requested) 
+2020-11-07 21:00:02.664583 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/dom0/fc32...
+2020-11-07 21:00:48.259725 +0000 build-fedora4: 21:00:48: posix_spawn avoided (fd close requested) 
+2020-11-07 21:00:48.416845 +0000 build-fedora4: 21:00:48: posix_spawn avoided (fd close requested) 
+2020-11-07 21:00:48.416888 +0000 build-fedora4: 21:00:48: posix_spawn avoided (fd close requested) 
+2020-11-07 21:00:48.573838 +0000 build-fedora4: 21:00:48: posix_spawn avoided (fd close requested) 
+2020-11-07 21:00:48.733877 +0000 build-fedora4: 21:00:48: posix_spawn avoided (fd close requested) 
+2020-11-07 21:00:49.875467 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/centos7...
+2020-11-07 21:00:53.044156 +0000 build-fedora4: 21:00:53: posix_spawn avoided (fd close requested) 
+2020-11-07 21:00:53.044212 +0000 build-fedora4: 21:00:53: posix_spawn avoided (fd close requested) 
+2020-11-07 21:00:53.142419 +0000 build-fedora4: 21:00:53: posix_spawn avoided (fd close requested) 
+2020-11-07 21:00:53.142462 +0000 build-fedora4: 21:00:53: posix_spawn avoided (fd close requested) 
+2020-11-07 21:00:53.208248 +0000 build-fedora4: 21:00:53: posix_spawn avoided (fd close requested) 
+2020-11-07 21:00:54.484479 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/centos8...
+2020-11-07 21:00:58.725665 +0000 build-fedora4: 21:00:59: posix_spawn avoided (fd close requested) 
+2020-11-07 21:00:58.832025 +0000 build-fedora4: 21:00:59: posix_spawn avoided (fd close requested) 
+2020-11-07 21:00:58.832099 +0000 build-fedora4: 21:00:59: posix_spawn avoided (fd close requested) 
+2020-11-07 21:00:58.884450 +0000 build-fedora4: 21:00:59: posix_spawn avoided (fd close requested) 
+2020-11-07 21:00:58.884495 +0000 build-fedora4: 21:00:59: posix_spawn avoided (fd close requested) 
+2020-11-07 21:00:59.896930 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc25...
+2020-11-07 21:01:00.077675 +0000 build-fedora4: 21:01:00: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:00.077724 +0000 build-fedora4: 21:01:00: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:00.093813 +0000 build-fedora4: 21:01:00: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:00.093863 +0000 build-fedora4: 21:01:00: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:00.249415 +0000 build-fedora4: 21:01:00: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:01.040590 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc26...
+2020-11-07 21:01:01.192083 +0000 build-fedora4: 21:01:01: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:01.199859 +0000 build-fedora4: 21:01:01: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:01.199908 +0000 build-fedora4: 21:01:01: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:01.368819 +0000 build-fedora4: 21:01:01: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:01.368863 +0000 build-fedora4: 21:01:01: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:02.214923 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc27...
+2020-11-07 21:01:02.319018 +0000 build-fedora4: 21:01:02: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:02.370880 +0000 build-fedora4: 21:01:02: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:02.370925 +0000 build-fedora4: 21:01:02: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:02.370936 +0000 build-fedora4: 21:01:02: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:02.370945 +0000 build-fedora4: 21:01:02: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:03.245882 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc28...
+2020-11-07 21:01:03.367869 +0000 build-fedora4: 21:01:03: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:03.400814 +0000 build-fedora4: 21:01:03: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:03.400865 +0000 build-fedora4: 21:01:03: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:03.556300 +0000 build-fedora4: 21:01:03: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:03.556344 +0000 build-fedora4: 21:01:03: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:04.385353 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc29...
+2020-11-07 21:01:08.678087 +0000 build-fedora4: 21:01:09: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:08.776209 +0000 build-fedora4: 21:01:09: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:08.776252 +0000 build-fedora4: 21:01:09: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:08.833978 +0000 build-fedora4: 21:01:09: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:08.834026 +0000 build-fedora4: 21:01:09: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:09.782343 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc30...
+2020-11-07 21:01:14.107183 +0000 build-fedora4: 21:01:14: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:14.263391 +0000 build-fedora4: 21:01:14: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:14.263435 +0000 build-fedora4: 21:01:14: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:14.263447 +0000 build-fedora4: 21:01:14: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:14.263457 +0000 build-fedora4: 21:01:14: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:15.151876 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc31...
+2020-11-07 21:01:19.225572 +0000 build-fedora4: 21:01:19: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:19.301523 +0000 build-fedora4: 21:01:19: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:19.301567 +0000 build-fedora4: 21:01:19: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:19.382934 +0000 build-fedora4: 21:01:19: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:19.382992 +0000 build-fedora4: 21:01:19: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:20.282899 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc32...
+2020-11-07 21:01:22.889315 +0000 build-fedora4: 21:01:23: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:22.992888 +0000 build-fedora4: 21:01:23: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:22.992937 +0000 build-fedora4: 21:01:23: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:23.043788 +0000 build-fedora4: 21:01:23: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:23.043833 +0000 build-fedora4: 21:01:23: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:23.969167 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc33...
+2020-11-07 21:01:24.756070 +0000 build-fedora4: 21:01:25: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:24.891627 +0000 build-fedora4: 21:01:25: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:24.891671 +0000 build-fedora4: 21:01:25: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:24.993232 +0000 build-fedora4: 21:01:25: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:24.993281 +0000 build-fedora4: 21:01:25: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:25.818208 +0000 build-fedora4: Done.
+2020-11-07 21:01:29.361042 +0000 build-fedora4: --> Processing repo: r4.1/security-testing/dom0/fc21...
+2020-11-07 21:01:29.361084 +0000 build-fedora4: 21:01:29: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:29.558075 +0000 build-fedora4: 21:01:29: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:29.558124 +0000 build-fedora4: 21:01:29: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:29.558135 +0000 build-fedora4: 21:01:29: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:29.558145 +0000 build-fedora4: 21:01:29: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:30.319786 +0000 build-fedora4: --> Processing repo: r4.1/security-testing/dom0/fc25...
+2020-11-07 21:01:30.473214 +0000 build-fedora4: 21:01:30: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:30.475057 +0000 build-fedora4: 21:01:30: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:30.475088 +0000 build-fedora4: 21:01:30: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:30.635223 +0000 build-fedora4: 21:01:30: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:30.635271 +0000 build-fedora4: 21:01:30: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:31.571249 +0000 build-fedora4: --> Processing repo: r4.1/security-testing/dom0/fc31...
+2020-11-07 21:01:31.642319 +0000 build-fedora4: 21:01:31: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:31.726660 +0000 build-fedora4: 21:01:31: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:31.726705 +0000 build-fedora4: 21:01:31: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:31.726716 +0000 build-fedora4: 21:01:31: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:31.726726 +0000 build-fedora4: 21:01:31: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:32.581114 +0000 build-fedora4: --> Processing repo: r4.1/security-testing/dom0/fc32...
+2020-11-07 21:01:32.883821 +0000 build-fedora4: 21:01:33: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:32.987383 +0000 build-fedora4: 21:01:33: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:32.987428 +0000 build-fedora4: 21:01:33: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:33.044424 +0000 build-fedora4: 21:01:33: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:33.044468 +0000 build-fedora4: 21:01:33: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:33.889541 +0000 build-fedora4: --> Processing repo: r4.1/security-testing/vm/centos7...
+2020-11-07 21:01:34.023827 +0000 build-fedora4: 21:01:34: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:34.044731 +0000 build-fedora4: 21:01:34: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:34.044774 +0000 build-fedora4: 21:01:34: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:34.199842 +0000 build-fedora4: 21:01:34: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:34.199903 +0000 build-fedora4: 21:01:34: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:34.958903 +0000 build-fedora4: --> Processing repo: r4.1/security-testing/vm/centos8...
+2020-11-07 21:01:35.205420 +0000 build-fedora4: 21:01:35: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:35.205465 +0000 build-fedora4: 21:01:35: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:35.307448 +0000 build-fedora4: 21:01:35: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:35.307493 +0000 build-fedora4: 21:01:35: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:35.366064 +0000 build-fedora4: 21:01:35: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:36.250768 +0000 build-fedora4: --> Processing repo: r4.1/security-testing/vm/fc26...
+2020-11-07 21:01:36.391110 +0000 build-fedora4: 21:01:36: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:36.404024 +0000 build-fedora4: 21:01:36: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:36.404069 +0000 build-fedora4: 21:01:36: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:36.559961 +0000 build-fedora4: 21:01:36: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:36.560010 +0000 build-fedora4: 21:01:36: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:37.432093 +0000 build-fedora4: --> Processing repo: r4.1/security-testing/vm/fc27...
+2020-11-07 21:01:37.590167 +0000 build-fedora4: 21:01:37: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:37.747271 +0000 build-fedora4: 21:01:37: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:37.747313 +0000 build-fedora4: 21:01:37: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:37.747323 +0000 build-fedora4: 21:01:37: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:37.747332 +0000 build-fedora4: 21:01:38: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:38.578131 +0000 build-fedora4: --> Processing repo: r4.1/security-testing/vm/fc28...
+2020-11-07 21:01:38.700081 +0000 build-fedora4: 21:01:39: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:38.734488 +0000 build-fedora4: 21:01:39: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:38.734533 +0000 build-fedora4: 21:01:39: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:38.894051 +0000 build-fedora4: 21:01:39: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:38.894096 +0000 build-fedora4: 21:01:39: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:39.702195 +0000 build-fedora4: --> Processing repo: r4.1/security-testing/vm/fc29...
+2020-11-07 21:01:39.850045 +0000 build-fedora4: 21:01:40: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:39.850094 +0000 build-fedora4: 21:01:40: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:39.855771 +0000 build-fedora4: 21:01:40: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:40.011251 +0000 build-fedora4: 21:01:40: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:40.011296 +0000 build-fedora4: 21:01:40: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:40.970498 +0000 build-fedora4: --> Processing repo: r4.1/security-testing/vm/fc30...
+2020-11-07 21:01:41.075448 +0000 build-fedora4: 21:01:41: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:41.075493 +0000 build-fedora4: 21:01:41: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:41.126422 +0000 build-fedora4: 21:01:41: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:41.126470 +0000 build-fedora4: 21:01:41: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:41.126481 +0000 build-fedora4: 21:01:41: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:42.005910 +0000 build-fedora4: --> Processing repo: r4.1/security-testing/vm/fc31...
+2020-11-07 21:01:42.161514 +0000 build-fedora4: 21:01:42: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:42.259787 +0000 build-fedora4: 21:01:42: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:42.259849 +0000 build-fedora4: 21:01:42: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:42.317159 +0000 build-fedora4: 21:01:42: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:42.317204 +0000 build-fedora4: 21:01:42: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:43.207030 +0000 build-fedora4: --> Processing repo: r4.1/security-testing/vm/fc32...
+2020-11-07 21:01:43.356964 +0000 build-fedora4: 21:01:43: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:43.361967 +0000 build-fedora4: 21:01:43: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:43.362001 +0000 build-fedora4: 21:01:43: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:43.515850 +0000 build-fedora4: 21:01:43: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:43.515896 +0000 build-fedora4: 21:01:43: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:44.303026 +0000 build-fedora4: --> Processing repo: r4.1/security-testing/vm/fc33...
+2020-11-07 21:01:44.438811 +0000 build-fedora4: 21:01:44: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:44.438859 +0000 build-fedora4: 21:01:44: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:44.459246 +0000 build-fedora4: 21:01:44: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:44.613787 +0000 build-fedora4: 21:01:44: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:44.613834 +0000 build-fedora4: 21:01:44: posix_spawn avoided (fd close requested) 
+2020-11-07 21:01:45.477772 +0000 build-fedora4: Done.
+2020-11-07 21:01:45.478757 +0000 build-fedora4: ~/builder-r4.1/qubes-src/linux-yum
+2020-11-07 21:01:45.479547 +0000 build-fedora4: Makefile:791: update target 'update-repo-current-testing' due to: internal-update-repo-current-testing.vm.fc31 internal-update-repo-current-testing.vm.fc32 internal-update-repo-current-testing.vm.fc33 post-update-repo-current-testing
+2020-11-07 21:01:45.479577 +0000 build-fedora4: true
+2020-11-07 21:01:45.481242 +0000 build-fedora4: > done
+2020-11-07 21:01:45.481276 +0000 > closing log
