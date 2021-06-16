@@ -1,0 +1,788 @@
+2021-06-16 20:55:14.314394 +0000 > starting log
+2021-06-16 20:55:14.314991 +0000 build-centos: > starting build with log
+2021-06-16 20:55:14.315022 +0000 build-centos: >> make args: DISTS_VM= centos-stream8 DIST_DOM0= BUILD_LOGS_URL= core-agent-linux-vm-centos-stream8=https://github.com/QubesOS/build-logs/tree/master/build-centos/log_2021-06-16_20-52-43 GIT_URL_core_agent_linux=https://github.com/QubesOS/qubes-core-agent-linux sign-all update-repo-current-testing
+2021-06-16 20:55:14.315031 +0000 build-centos: >> MAKEFLAGS=
+2021-06-16 20:55:14.315039 +0000 build-centos: >> COMPONENTS=core-agent-linux
+2021-06-16 20:55:14.315045 +0000 build-centos: >> DISTS_VM=
+2021-06-16 20:55:14.315051 +0000 build-centos: >> DIST_DOM0=
+2021-06-16 20:55:14.315059 +0000 build-centos: >> qubes-builder 1716c6e56661512b9615a165f715909364d06236
+2021-06-16 20:55:14.315070 +0000 build-centos: >> qubes-builder/qubes-src/core-agent-linux 10f826c540dbedf7391eab2a0d44066efe65d195
+2021-06-16 20:55:14.315078 +0000 build-centos: !! pkgs/vm-centos-stream8/core-agent.spec.list
+2021-06-16 20:55:14.315087 +0000 build-centos: !! pkgs/vm-centos-stream8/python2-dnf-plugins-qubes-hooks-4.1.25-1.el8.x86_64.rpm
+2021-06-16 20:55:14.315097 +0000 build-centos: !! pkgs/vm-centos-stream8/python2-dnf-plugins-qubes-hooks-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:14.315107 +0000 build-centos: !! pkgs/vm-centos-stream8/python3-dnf-plugins-qubes-hooks-4.1.25-1.el8.x86_64.rpm
+2021-06-16 20:55:14.315117 +0000 build-centos: !! pkgs/vm-centos-stream8/python3-dnf-plugins-qubes-hooks-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:14.315125 +0000 build-centos: !! pkgs/vm-centos-stream8/qubes-core-agent-4.1.25-1.el8.src.rpm
+2021-06-16 20:55:14.315134 +0000 build-centos: !! pkgs/vm-centos-stream8/qubes-core-agent-4.1.25-1.el8.x86_64.buildinfo
+2021-06-16 20:55:14.315144 +0000 build-centos: !! pkgs/vm-centos-stream8/qubes-core-agent-4.1.25-1.el8.x86_64.rpm
+2021-06-16 20:55:14.315152 +0000 build-centos: !! pkgs/vm-centos-stream8/qubes-core-agent-4.1.26-1.el8.src.rpm
+2021-06-16 20:55:14.315162 +0000 build-centos: !! pkgs/vm-centos-stream8/qubes-core-agent-4.1.26-1.el8.x86_64.buildinfo
+2021-06-16 20:55:14.315171 +0000 build-centos: !! pkgs/vm-centos-stream8/qubes-core-agent-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:14.315180 +0000 build-centos: !! pkgs/vm-centos-stream8/qubes-core-agent-debuginfo-4.1.25-1.el8.x86_64.rpm
+2021-06-16 20:55:14.315189 +0000 build-centos: !! pkgs/vm-centos-stream8/qubes-core-agent-debuginfo-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:14.315199 +0000 build-centos: !! pkgs/vm-centos-stream8/qubes-core-agent-debugsource-4.1.25-1.el8.x86_64.rpm
+2021-06-16 20:55:14.315209 +0000 build-centos: !! pkgs/vm-centos-stream8/qubes-core-agent-debugsource-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:14.315218 +0000 build-centos: !! pkgs/vm-centos-stream8/qubes-core-agent-dom0-updates-4.1.25-1.el8.x86_64.rpm
+2021-06-16 20:55:14.315228 +0000 build-centos: !! pkgs/vm-centos-stream8/qubes-core-agent-dom0-updates-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:14.315237 +0000 build-centos: !! pkgs/vm-centos-stream8/qubes-core-agent-nautilus-4.1.25-1.el8.x86_64.rpm
+2021-06-16 20:55:14.315247 +0000 build-centos: !! pkgs/vm-centos-stream8/qubes-core-agent-nautilus-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:14.315257 +0000 build-centos: !! pkgs/vm-centos-stream8/qubes-core-agent-network-manager-4.1.25-1.el8.x86_64.rpm
+2021-06-16 20:55:14.315266 +0000 build-centos: !! pkgs/vm-centos-stream8/qubes-core-agent-network-manager-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:14.315276 +0000 build-centos: !! pkgs/vm-centos-stream8/qubes-core-agent-networking-4.1.25-1.el8.x86_64.rpm
+2021-06-16 20:55:14.315285 +0000 build-centos: !! pkgs/vm-centos-stream8/qubes-core-agent-networking-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:14.315295 +0000 build-centos: !! pkgs/vm-centos-stream8/qubes-core-agent-passwordless-root-4.1.25-1.el8.x86_64.rpm
+2021-06-16 20:55:14.315305 +0000 build-centos: !! pkgs/vm-centos-stream8/qubes-core-agent-passwordless-root-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:14.315334 +0000 build-centos: !! pkgs/vm-centos-stream8/qubes-core-agent-systemd-4.1.25-1.el8.x86_64.rpm
+2021-06-16 20:55:14.315352 +0000 build-centos: !! pkgs/vm-centos-stream8/qubes-core-agent-systemd-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:14.315362 +0000 build-centos: !! pkgs/vm-centos-stream8/qubes-core-agent-thunar-4.1.25-1.el8.x86_64.rpm
+2021-06-16 20:55:14.315372 +0000 build-centos: !! pkgs/vm-centos-stream8/qubes-core-agent-thunar-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:14.315379 +0000 build-centos: !! pkgs/vm-centos7/core-agent.spec.list
+2021-06-16 20:55:14.315388 +0000 build-centos: !! pkgs/vm-centos7/qubes-core-agent-4.1.0-1.centos7.x86_64.buildinfo
+2021-06-16 20:55:14.315397 +0000 build-centos: !! pkgs/vm-centos7/qubes-core-agent-4.1.1-1.centos7.x86_64.buildinfo
+2021-06-16 20:55:14.315406 +0000 build-centos: !! pkgs/vm-centos7/qubes-core-agent-4.1.10-1.centos7.x86_64.buildinfo
+2021-06-16 20:55:14.315415 +0000 build-centos: !! pkgs/vm-centos7/qubes-core-agent-4.1.11-1.centos7.x86_64.buildinfo
+2021-06-16 20:55:14.315425 +0000 build-centos: !! pkgs/vm-centos7/qubes-core-agent-4.1.2-1.centos7.x86_64.buildinfo
+2021-06-16 20:55:14.315434 +0000 build-centos: !! pkgs/vm-centos7/qubes-core-agent-4.1.3-1.centos7.x86_64.buildinfo
+2021-06-16 20:55:14.315443 +0000 build-centos: !! pkgs/vm-centos7/qubes-core-agent-4.1.5-1.centos7.x86_64.buildinfo
+2021-06-16 20:55:14.315452 +0000 build-centos: !! pkgs/vm-centos7/qubes-core-agent-4.1.6-1.centos7.x86_64.buildinfo
+2021-06-16 20:55:14.315461 +0000 build-centos: !! pkgs/vm-centos7/qubes-core-agent-4.1.7-1.centos7.x86_64.buildinfo
+2021-06-16 20:55:14.315470 +0000 build-centos: !! pkgs/vm-centos7/qubes-core-agent-4.1.8-1.centos7.x86_64.buildinfo
+2021-06-16 20:55:14.315477 +0000 build-centos: !! pkgs/vm-centos8/core-agent.spec.list
+2021-06-16 20:55:14.315487 +0000 build-centos: !! pkgs/vm-centos8/python2-dnf-plugins-qubes-hooks-4.1.12-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.315497 +0000 build-centos: !! pkgs/vm-centos8/python2-dnf-plugins-qubes-hooks-4.1.16-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.315506 +0000 build-centos: !! pkgs/vm-centos8/python2-dnf-plugins-qubes-hooks-4.1.17-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.315516 +0000 build-centos: !! pkgs/vm-centos8/python2-dnf-plugins-qubes-hooks-4.1.18-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.315526 +0000 build-centos: !! pkgs/vm-centos8/python2-dnf-plugins-qubes-hooks-4.1.24-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.315535 +0000 build-centos: !! pkgs/vm-centos8/python2-dnf-plugins-qubes-hooks-4.1.25-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.315545 +0000 build-centos: !! pkgs/vm-centos8/python3-dnf-plugins-qubes-hooks-4.1.12-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.315559 +0000 build-centos: !! pkgs/vm-centos8/python3-dnf-plugins-qubes-hooks-4.1.18-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.315569 +0000 build-centos: !! pkgs/vm-centos8/python3-dnf-plugins-qubes-hooks-4.1.24-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.315579 +0000 build-centos: !! pkgs/vm-centos8/python3-dnf-plugins-qubes-hooks-4.1.25-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.315589 +0000 build-centos: !! pkgs/vm-centos8/python38-dnf-plugins-qubes-hooks-4.1.16-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.315599 +0000 build-centos: !! pkgs/vm-centos8/python38-dnf-plugins-qubes-hooks-4.1.17-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.315608 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-4.1.10-1.centos8.x86_64.buildinfo
+2021-06-16 20:55:14.315617 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-4.1.12-1.centos8.src.rpm
+2021-06-16 20:55:14.315626 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-4.1.12-1.centos8.x86_64.buildinfo
+2021-06-16 20:55:14.315635 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-4.1.12-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.315644 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-4.1.13-1.centos8.x86_64.buildinfo
+2021-06-16 20:55:14.315653 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-4.1.14-1.centos8.x86_64.buildinfo
+2021-06-16 20:55:14.315662 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-4.1.15-1.centos8.x86_64.buildinfo
+2021-06-16 20:55:14.315676 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-4.1.16-1.centos8.src.rpm
+2021-06-16 20:55:14.315686 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-4.1.16-1.centos8.x86_64.buildinfo
+2021-06-16 20:55:14.315695 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-4.1.16-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.315704 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-4.1.17-1.centos8.src.rpm
+2021-06-16 20:55:14.315713 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-4.1.17-1.centos8.x86_64.buildinfo
+2021-06-16 20:55:14.315722 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-4.1.17-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.315730 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-4.1.18-1.centos8.src.rpm
+2021-06-16 20:55:14.315739 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-4.1.18-1.centos8.x86_64.buildinfo
+2021-06-16 20:55:14.315748 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-4.1.18-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.315757 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-4.1.19-1.centos8.x86_64.buildinfo
+2021-06-16 20:55:14.315766 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-4.1.20-1.centos8.x86_64.buildinfo
+2021-06-16 20:55:14.315775 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-4.1.21-1.centos8.x86_64.buildinfo
+2021-06-16 20:55:14.315784 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-4.1.22-1.centos8.x86_64.buildinfo
+2021-06-16 20:55:14.315793 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-4.1.23-1.centos8.x86_64.buildinfo
+2021-06-16 20:55:14.315802 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-4.1.24-1.centos8.src.rpm
+2021-06-16 20:55:14.315811 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-4.1.24-1.centos8.x86_64.buildinfo
+2021-06-16 20:55:14.315820 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-4.1.24-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.315828 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-4.1.25-1.centos8.src.rpm
+2021-06-16 20:55:14.315838 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-4.1.25-1.centos8.x86_64.buildinfo
+2021-06-16 20:55:14.315846 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-4.1.25-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.315856 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-debuginfo-4.1.12-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.315865 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-debuginfo-4.1.16-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.315875 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-debuginfo-4.1.17-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.315885 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-debuginfo-4.1.18-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.315894 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-debuginfo-4.1.24-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.315903 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-debuginfo-4.1.25-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.315912 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-debugsource-4.1.12-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.315922 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-debugsource-4.1.16-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.315931 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-debugsource-4.1.17-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.315941 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-debugsource-4.1.18-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.315951 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-debugsource-4.1.24-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.315960 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-debugsource-4.1.25-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.315970 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-dom0-updates-4.1.12-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.315980 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-dom0-updates-4.1.16-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.315989 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-dom0-updates-4.1.17-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316003 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-dom0-updates-4.1.18-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316013 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-dom0-updates-4.1.24-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316022 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-dom0-updates-4.1.25-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316032 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-nautilus-4.1.12-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316041 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-nautilus-4.1.16-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316051 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-nautilus-4.1.17-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316060 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-nautilus-4.1.18-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316069 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-nautilus-4.1.24-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316079 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-nautilus-4.1.25-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316089 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-network-manager-4.1.12-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316102 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-network-manager-4.1.16-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316113 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-network-manager-4.1.17-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316123 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-network-manager-4.1.18-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316133 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-network-manager-4.1.24-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316142 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-network-manager-4.1.25-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316152 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-networking-4.1.12-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316161 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-networking-4.1.16-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316171 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-networking-4.1.17-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316180 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-networking-4.1.18-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316189 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-networking-4.1.24-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316199 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-networking-4.1.25-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316209 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-passwordless-root-4.1.12-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316219 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-passwordless-root-4.1.16-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316229 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-passwordless-root-4.1.17-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316239 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-passwordless-root-4.1.18-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316248 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-passwordless-root-4.1.24-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316258 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-passwordless-root-4.1.25-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316267 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-systemd-4.1.12-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316276 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-systemd-4.1.16-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316286 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-systemd-4.1.17-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316295 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-systemd-4.1.18-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316305 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-systemd-4.1.24-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316328 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-systemd-4.1.25-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316344 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-sysvinit-4.1.12-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316354 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-sysvinit-4.1.15-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316363 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-thunar-4.1.12-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316373 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-thunar-4.1.16-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316382 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-thunar-4.1.17-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316391 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-thunar-4.1.18-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316401 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-thunar-4.1.24-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316410 +0000 build-centos: !! pkgs/vm-centos8/qubes-core-agent-thunar-4.1.25-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.316425 +0000 build-centos: f32d86a987c2707b81dc9afce7b6ab4b7a2c9729456567188130cbc5a4e0c69a31ab9de50bb2e834a893353a301fc0391f3c0588bb04c47c14159ab9a7cd5b76  pkgs/vm-centos-stream8/core-agent.spec.list
+2021-06-16 20:55:14.316444 +0000 build-centos: e0842529170e4f56c9b9756a7df3f083627d986553bff4cce494a5ca705be9fb0d88fb1e7e01b959ea4b3c13a72f1ec4b7316192634ac0b22ea07fc20f47c772  pkgs/vm-centos-stream8/python2-dnf-plugins-qubes-hooks-4.1.25-1.el8.x86_64.rpm
+2021-06-16 20:55:14.316462 +0000 build-centos: 6b8a691a417d40464e386ec245b53458cdd35db1ab192a3c6b132e143c262a4b48e27ad79ba66568ee4fa235327de77386f542bfe9fdc86e76c33cb99ec90b8b  pkgs/vm-centos-stream8/python2-dnf-plugins-qubes-hooks-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:14.316480 +0000 build-centos: f3b6bdaeaff51030b03a1c50daf56f406a2d34c3cf1fedca6a3d8b1ace1d777f4ebb56137923014a85e244440db36e1a25c5749fa52abd2baaf78637e80e2b3c  pkgs/vm-centos-stream8/python3-dnf-plugins-qubes-hooks-4.1.25-1.el8.x86_64.rpm
+2021-06-16 20:55:14.316497 +0000 build-centos: 72adacfab9dfa5a1da807c4c573cf09d7c1b2ccfa9b6c2ba17c3b5d847d51c2f123ec489118697a11f1c3497566c2459789ed46aea9aa29655f90a2ba12770f1  pkgs/vm-centos-stream8/python3-dnf-plugins-qubes-hooks-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:14.316514 +0000 build-centos: ba75b1a39f2a88346c426f9b36a1972216aec91c924c2b37e743c65efac3594b4b9494be1b36cbe9e889422298cba825eeef52d752608486d508cd6e1b91c4d5  pkgs/vm-centos-stream8/qubes-core-agent-4.1.25-1.el8.src.rpm
+2021-06-16 20:55:14.316531 +0000 build-centos: f3787f731cb6d97916d5a941a6922388c5dfdfbd436c5c925ed681bedaf4be3dc806ad45c27c0f80f0e0b13637ec6debc004073e88faec719855ad9542367740  pkgs/vm-centos-stream8/qubes-core-agent-4.1.25-1.el8.x86_64.buildinfo
+2021-06-16 20:55:14.316549 +0000 build-centos: a71a5a5381e9c03342794e744224bfdb1237fe8e713699d955e34de063edddd7b830de859b4758da082ca6889aa0fd56b542ebb2e411e24d819b560360654025  pkgs/vm-centos-stream8/qubes-core-agent-4.1.25-1.el8.x86_64.rpm
+2021-06-16 20:55:14.316565 +0000 build-centos: 489a569eed47b3cdadc1eb92ec78954ec8139912bf07a69498b1d8463f374108b5824143d59cd929a27e38b660d261bfcb425ba531133a0c93a8d43cee118aae  pkgs/vm-centos-stream8/qubes-core-agent-4.1.26-1.el8.src.rpm
+2021-06-16 20:55:14.316586 +0000 build-centos: 6dd640e11ced4a4930c705adbc33b3ed76595aff824c8fe7202358d93d716f73f6cd60b15bea3de778ecb76f7b682337f5dbd65f564bf51acf3688996b3fd1d2  pkgs/vm-centos-stream8/qubes-core-agent-4.1.26-1.el8.x86_64.buildinfo
+2021-06-16 20:55:14.316603 +0000 build-centos: 6369f10bb70a2e4e7e05468e83916d4987dbbb494f8ef316cbd8e91f6c38782e092c78160674edfbb9ea3a104686cdcb3876e70472eaaf7c581ac92c7bc31a7a  pkgs/vm-centos-stream8/qubes-core-agent-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:14.316621 +0000 build-centos: 6d4ee9149a1e153fa47eb4f3b1e6d02b7085ee88c755afb996c7fd8a2d3e9acfbeb8dce4baaea5fb2ec8c1c155a2459f4db22b02ea2450a01f8ffad6871a0c42  pkgs/vm-centos-stream8/qubes-core-agent-debuginfo-4.1.25-1.el8.x86_64.rpm
+2021-06-16 20:55:14.316639 +0000 build-centos: d5d52409b6c0070d1396b3f3a013067c3337aee09a5724ee701497f9abc21d08272cffae81bd9eba1fe696499d680fda597b33dce3c4a7db1fdf33c47097662c  pkgs/vm-centos-stream8/qubes-core-agent-debuginfo-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:14.316660 +0000 build-centos: d90dc1b59a7acc27c5395db4f82cdc46c41d351ee2c996beb470e747e52c4b1cea71f0c6d7c51a590785f7bdfa9194e97f06a953d4e5f88d7b0b9e2e25c06413  pkgs/vm-centos-stream8/qubes-core-agent-debugsource-4.1.25-1.el8.x86_64.rpm
+2021-06-16 20:55:14.316679 +0000 build-centos: b07882ee0ebc6d090a1875df7b655e5cb55ab133b54cfc3972c9d611d8571e98fd00195d55ed6a3fe43ab7db8d3e41888dbe4e3a6f28d7deb4a61215c7460b70  pkgs/vm-centos-stream8/qubes-core-agent-debugsource-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:14.316697 +0000 build-centos: 8bce71613758bb67b1e43916100d270283317e0ad0396e664850035e4519853a9039de20eb7b951c227c48dd3947d661ffd3330f3ef7b58852f1a9b16ef85555  pkgs/vm-centos-stream8/qubes-core-agent-dom0-updates-4.1.25-1.el8.x86_64.rpm
+2021-06-16 20:55:14.316715 +0000 build-centos: 988ddd721d45506128d09b741c0b50dac5cd760983b8666a2b28ada9d688ada1df7d8ca2eba754c93c37654b0b47df54f101e0a6871966bed3be48e176495115  pkgs/vm-centos-stream8/qubes-core-agent-dom0-updates-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:14.316733 +0000 build-centos: 97a62827d720d43faa81a374ef6801537ca24e54a5a6c7fb8031dd1c98b77f227605ade41683e70da388038dde55314ba082df5c8b86e22fa610edb909590ecd  pkgs/vm-centos-stream8/qubes-core-agent-nautilus-4.1.25-1.el8.x86_64.rpm
+2021-06-16 20:55:14.316750 +0000 build-centos: 3fcb93fd66de3b080d271a0e304298165b2f51a04b201c9223aa0d74c667e2ff49042316aa98c3c56467f8ee28360d32a994ccd572de33d8bccf34cdb0313677  pkgs/vm-centos-stream8/qubes-core-agent-nautilus-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:14.319344 +0000 build-centos: 00e8e15cffb6a13c8ec2dff29e68f89df024a731b326c15a2dc7e74bfdb2a9131eef28e227fdd053298128a7ad7503d5ca600c4f0ad7a3f6cb58f2cad8fc4057  pkgs/vm-centos-stream8/qubes-core-agent-network-manager-4.1.25-1.el8.x86_64.rpm
+2021-06-16 20:55:14.319367 +0000 build-centos: b80fb5cf2e836b00648744b7ebdf978fcf45787a57875b828162736bef48f3808278bac92e4fbd383a96e161b33f9ad720232c0a98a0356347fc0ae01349d9ce  pkgs/vm-centos-stream8/qubes-core-agent-network-manager-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:14.319396 +0000 build-centos: db0e0412f5e5b153a13ed45e90e8dbe3c8932be30647bf42b0b87a2282239f18d960f6d4f3940c351fa626c7196a1da9bd91d3b7b6653029292a5c5d42ddb9e5  pkgs/vm-centos-stream8/qubes-core-agent-networking-4.1.25-1.el8.x86_64.rpm
+2021-06-16 20:55:14.319415 +0000 build-centos: 7551b70dbf92c34a4f8f3f4dcf6f360f86428fde9ff8b07439cc3632cb6c8ec288dd64a042fa116c63b4ab6327d086d28a1342e73ff1e691fb378106f2bcace2  pkgs/vm-centos-stream8/qubes-core-agent-networking-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:14.319433 +0000 build-centos: 230ffa9fe075d7818e7f538387291e42601919ff5688d8a90bc3d054b21ad58306533a61524b4b3370890153f517d8a041fc1efac1805cbc0f5e075721082a92  pkgs/vm-centos-stream8/qubes-core-agent-passwordless-root-4.1.25-1.el8.x86_64.rpm
+2021-06-16 20:55:14.319451 +0000 build-centos: b49e7f80df0580f40c37b80d93c03fc1c2d25d7bbff227ca7d11258cec134f081966dfe3a2a5a447262ebfbe176a12c6e011928fba9f607442af650ec057ec8d  pkgs/vm-centos-stream8/qubes-core-agent-passwordless-root-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:14.319468 +0000 build-centos: bdd2d6dc206cda1f6b1fd2b859d71cd1da6d1e650adaefd47025be9e0f33e348ac0aebcd5e369152f6d0e4d593a5c12197e78318915042301687ac061981d5c2  pkgs/vm-centos-stream8/qubes-core-agent-systemd-4.1.25-1.el8.x86_64.rpm
+2021-06-16 20:55:14.319485 +0000 build-centos: 8577cb82407a8c2c290ab4ba86289993148539d3d687988462a82d81a922ceae266404785b2314e52c1f49ef66517b0743976876724be8e9615b714083cad473  pkgs/vm-centos-stream8/qubes-core-agent-systemd-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:14.319504 +0000 build-centos: 87c257eae155eb56174e2ed187aa039d856dd82d41c525daf1fd1a267d3aaf7511fa0329d9ecf73ba1cc8cb4ea9c51ed73ac41420b8fdf64b53c9dd1369a4855  pkgs/vm-centos-stream8/qubes-core-agent-thunar-4.1.25-1.el8.x86_64.rpm
+2021-06-16 20:55:14.319521 +0000 build-centos: 73852f451d853b99667ecd7eb24c6f3c661d4aaa49f57e869209c0981eaf35b53008a44d7d698c78b0ff8d75a13186430373f08ec075feb233d45989b2e974c5  pkgs/vm-centos-stream8/qubes-core-agent-thunar-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:14.319559 +0000 build-centos: 2af04b074f21fc418805030f928239fc2884465054f7295da823d7d1f23cfb2f6a220d12d835faafc7b1a01e2dd7c697b1393b64c0b01a8a51755da7e1be5705  pkgs/vm-centos7/core-agent.spec.list
+2021-06-16 20:55:14.319577 +0000 build-centos: ae4df98edd68eba947bb52d2cc86185658b35bdf9c0fb5c1b6a32fb587b19704bae7303b1e218162166965516e81ac103f0f3b2df34727d7ab06ddd7d6a30dae  pkgs/vm-centos7/qubes-core-agent-4.1.0-1.centos7.x86_64.buildinfo
+2021-06-16 20:55:14.319594 +0000 build-centos: 529303a262e17dad10f48bcb7dff49607f331dd3cbe1c02200346b3d86e33d9f56a5e7430a47205895a218d057ab285c6f6b277da60479d9c27a3053eb7fa57d  pkgs/vm-centos7/qubes-core-agent-4.1.1-1.centos7.x86_64.buildinfo
+2021-06-16 20:55:14.319611 +0000 build-centos: dbd8724d548d5db01fa470a10c50f1c42622572973c5686f0924a87fef41254ed0735d0e656e9d38d777a86339b7a0a0ae2385db8dfad834eb3e3acaf09143b6  pkgs/vm-centos7/qubes-core-agent-4.1.10-1.centos7.x86_64.buildinfo
+2021-06-16 20:55:14.319628 +0000 build-centos: e3a154612daed94ba9e13b79bc916907bb01052a351ce8c0aba115a93d8b72e9a9f1ead38167cb32f7b868d93eee3a9484420808493e50a583047e81e5ef03bb  pkgs/vm-centos7/qubes-core-agent-4.1.11-1.centos7.x86_64.buildinfo
+2021-06-16 20:55:14.319644 +0000 build-centos: 5d737774e99e2110b0090bf77424293ff1fb785c5dc1c1e65ea62d38b6958f4e6d5f800d2c80a4da37f87e533aff9aa3ed41a193650af9761c65b73b7531b190  pkgs/vm-centos7/qubes-core-agent-4.1.2-1.centos7.x86_64.buildinfo
+2021-06-16 20:55:14.319661 +0000 build-centos: 4866b19eda171b0e9304992ba9953e2ac25ad3b938ca5c90a6feabd27a2995497e3ec25d2b0574092830c8fe09f411cb67b3ea2c55e0d47be404a9cac923ee78  pkgs/vm-centos7/qubes-core-agent-4.1.3-1.centos7.x86_64.buildinfo
+2021-06-16 20:55:14.319678 +0000 build-centos: ab9d859751d77ce1d3f68f50a6fefa8e3f1d9326308ccb73e75677ebd98833918a5bbdf7cf11b4ed9e90dd10dd4b018a02c256a21c6d456288bccd898da46839  pkgs/vm-centos7/qubes-core-agent-4.1.5-1.centos7.x86_64.buildinfo
+2021-06-16 20:55:14.319694 +0000 build-centos: 5269aceb8f7d7ed443473cec239c2acd435ca61a38043c0a321032bb0decca120f826e3700941645b30c7f27c70fff470165b26c4e0038f9ea7cee092d8fe112  pkgs/vm-centos7/qubes-core-agent-4.1.6-1.centos7.x86_64.buildinfo
+2021-06-16 20:55:14.319710 +0000 build-centos: 5fd9e70586a15257f9e53843d9539221b33f98b8d15559839903970bd0b562a89aaa7a9e1237a393659dc8fdb0c01bbf79d94967dbd964f045899dca43bd0db6  pkgs/vm-centos7/qubes-core-agent-4.1.7-1.centos7.x86_64.buildinfo
+2021-06-16 20:55:14.319727 +0000 build-centos: 91e52fd95eb5a2c2af601bb95eb552946216f6baf45932a0810263fc681498a428e5e69ca6a88b840d05467ad55dfcff67361ef81d36342cd085600e5363b810  pkgs/vm-centos7/qubes-core-agent-4.1.8-1.centos7.x86_64.buildinfo
+2021-06-16 20:55:14.319742 +0000 build-centos: 68a9d9a3cfde808d17d19b03992270ce3b1d8b1f4a64f9ca4dd610316c24ad8c0b123f917eccf679413595a036465b7268975ab0c9c46f1e98ed711da86e3b5f  pkgs/vm-centos8/core-agent.spec.list
+2021-06-16 20:55:14.319759 +0000 build-centos: ff20d050f2918bcd6e1a0c5197b857fe60735900388457546d1bf6528f1e1d6955faa1c0d9122f3ca969069f1e1ebd4faf01df80b32046cf449f02a634dda70e  pkgs/vm-centos8/python2-dnf-plugins-qubes-hooks-4.1.12-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.319776 +0000 build-centos: 8daa8cfc1a24899c883df3043c0522122532fe77a621b4a3a9e8bb05a8160235ee4e2a4cccc650876e0060c2a077d472a823eb892c7a2cab757f7b337e0836d6  pkgs/vm-centos8/python2-dnf-plugins-qubes-hooks-4.1.16-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.319792 +0000 build-centos: baae477b6d9c5ea7314befe90fdbd2a0bb4fe632027489a33901c8438e0e2313616dd4c2dc1d54ff37dbd31984b596dffbedff2fb3d3a948cb0579f2f0bad1d0  pkgs/vm-centos8/python2-dnf-plugins-qubes-hooks-4.1.17-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.319809 +0000 build-centos: 69d66626d555bcd07987b68976b88956463d8cd97eff2edd844d9b1241b639137f9987139d19bc78cab3fd36179f4ee1a0c5fcbf132af293223b2b4068a3b531  pkgs/vm-centos8/python2-dnf-plugins-qubes-hooks-4.1.18-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.319830 +0000 build-centos: 94ad51f043a1d4fa7df80eb2dd0e617ac6a08ed6acd4ffe3ca73df67e8363268f9bb39c343b629929474027274baf71831a140e411920cd6518e9860b9f025fc  pkgs/vm-centos8/python2-dnf-plugins-qubes-hooks-4.1.24-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.319847 +0000 build-centos: 2464426747d7fe5f5255b96d8362b357e9af0d1e8d7745389de8244a6e42fa2204e984ba8d7348f2d0bbd2b1a93d3cbb98af63fe3e3a9a16eedab935ce135c05  pkgs/vm-centos8/python2-dnf-plugins-qubes-hooks-4.1.25-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.319864 +0000 build-centos: dd87f1a21f2c6563ed28fa12d5a3df1550a4a3cfa8e053f4a97ac454c01f6c2554b1a6906d5470c2872d573f8e6ca95dedfe5737cd7fb490ebb44418acadc172  pkgs/vm-centos8/python3-dnf-plugins-qubes-hooks-4.1.12-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.319881 +0000 build-centos: e11dc39b8e2c2b4ac70a3898e629ed48c0f52bc1131a0dd2080d16e26b6a7e888123f6ff489cfdb56650d20d56e049badf477b3d182e1476133c4af6d7a8f0d6  pkgs/vm-centos8/python3-dnf-plugins-qubes-hooks-4.1.18-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.319902 +0000 build-centos: 46e51527bb79975647281ac595096bd0521c7ea73d9aa9ca930a50aada8857695d024afacad8d4742c7510fc6ebac97a4660c1624b3d4ce42d009363c5ad9fa6  pkgs/vm-centos8/python3-dnf-plugins-qubes-hooks-4.1.24-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.319919 +0000 build-centos: 7a094d90902a7f098f356eb27b2a34b9a67dace60481dd25f184dfc92f5ea7c2239a8a6390de604ed334445b446d4deffa0077074f34c1dfa10d43de96f531e6  pkgs/vm-centos8/python3-dnf-plugins-qubes-hooks-4.1.25-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.319936 +0000 build-centos: 8c70b3e1e36f519a67efa7ecea4ff25c1d9e42470e86f1e4a51e5dcea456be82a47509018d4f00db7d9dfa4cd3668dbb4a0fa35fdca6f361a45484baf6482a39  pkgs/vm-centos8/python38-dnf-plugins-qubes-hooks-4.1.16-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.319954 +0000 build-centos: e66e5260d1ed9cd46070c712708cfb3aa6615c83a89dce3c500baa3ee9b788c4a8d4c23f2e0431980caff04ae7f06b36a65d838fd3fd7ee43766a74f05287c04  pkgs/vm-centos8/python38-dnf-plugins-qubes-hooks-4.1.17-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.319971 +0000 build-centos: 073ac8d51e46040b1e2e35ce89fabb6e0ebc955536c8d2e8a9d36aacce68a1f7f58169440e8cc089798a0f65736f38aaa15e9e0aba8c71efa9b38c2c2db9c2db  pkgs/vm-centos8/qubes-core-agent-4.1.10-1.centos8.x86_64.buildinfo
+2021-06-16 20:55:14.319987 +0000 build-centos: 893807913c3bba4c5b7627b25d217f3794b6835efb0c9cc7096d14bc555faa21a432d6331bf86712d8aef5e665b62dab7b6558ba12dbe0315eb98080eaea0df1  pkgs/vm-centos8/qubes-core-agent-4.1.12-1.centos8.src.rpm
+2021-06-16 20:55:14.320004 +0000 build-centos: 6f8b0252aa1fd0280ffce1c360516f9ee1a83b9a0c6f38b61ebde5653b4082e09e0e3a4e6153feb0b41cb898640f54f7731615ee9116d0d4ddb533e7866e6340  pkgs/vm-centos8/qubes-core-agent-4.1.12-1.centos8.x86_64.buildinfo
+2021-06-16 20:55:14.320020 +0000 build-centos: 50f148e8f59998980a45cc7217c6856f4df41c9a5f5ac8d28eb59dad010e5508811adb9489d0c7992a1fab16070999503d0b850a3507454e2cea48134d6b8151  pkgs/vm-centos8/qubes-core-agent-4.1.12-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320037 +0000 build-centos: 329225a7e197b84ba16059b948159839df56b11220e7dde047b9635c09e49f2e2ada00165d63c910ed4764fd12a64e47cd86a88622663d98bc836407b1f37711  pkgs/vm-centos8/qubes-core-agent-4.1.13-1.centos8.x86_64.buildinfo
+2021-06-16 20:55:14.320053 +0000 build-centos: 5bf83c024773c75b10988123a443d156a6f9227ad0713ee2307f803a0e344af106010ce33d2ea46ae9f751ca50667d76d02eef2f226f80db33ca04daeb144aa5  pkgs/vm-centos8/qubes-core-agent-4.1.14-1.centos8.x86_64.buildinfo
+2021-06-16 20:55:14.320070 +0000 build-centos: a113536866b2fd7e354edd16dff7dd3bf156931824440fa34c079ac2deaf10a38585666c0925fd725e6c2e97e147216ae15c3f0a859d169195e8b21eb3e00480  pkgs/vm-centos8/qubes-core-agent-4.1.15-1.centos8.x86_64.buildinfo
+2021-06-16 20:55:14.320086 +0000 build-centos: 836bf4a9a392bc6ca88d9dcf1a79924898d72544b880af41945ce2423cc6aee841abfe972ef835a4fadd21a377025c9dfcde99e14c3ceeb14240e35dd61d747e  pkgs/vm-centos8/qubes-core-agent-4.1.16-1.centos8.src.rpm
+2021-06-16 20:55:14.320106 +0000 build-centos: 61a1795d1c68f83a0e1e4cbfd78d1758c650d0a372e53d15edd110017b795060aeac0544ec925201b962bd1b71ddfb0d4a0c228c7e3eeb01906acd0f9e53dbf2  pkgs/vm-centos8/qubes-core-agent-4.1.16-1.centos8.x86_64.buildinfo
+2021-06-16 20:55:14.320123 +0000 build-centos: bf0a885d6a52224304ed62d0688362348c5c9b8d2e6203553f3480ee7e18e497d992e55092e3dfd2ab150cdd4dde62a647549480c05ca3e23aa4d317cd784dca  pkgs/vm-centos8/qubes-core-agent-4.1.16-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320139 +0000 build-centos: 977919abcef06c901f1f53e318690ec05a4f27240293450e5d2d3010d5e4db9974cc4832b22cb7ad9f22b44471a30e18df861ad9962dd1a77c1bc8e69ee57481  pkgs/vm-centos8/qubes-core-agent-4.1.17-1.centos8.src.rpm
+2021-06-16 20:55:14.320156 +0000 build-centos: d9fb82279f5f0151f9dbe16b49d86ec38208a6f5ca4597e7265c183fa00ac375481a54c56269e7e9abad1476d32ff930e637ba3257c939a8577b158409939092  pkgs/vm-centos8/qubes-core-agent-4.1.17-1.centos8.x86_64.buildinfo
+2021-06-16 20:55:14.320172 +0000 build-centos: 4304b84c033c5c5cf52050fbe5f3a2d86ece46113ed5340854d189e4db16edaa309c096754f94ae2b712ff5ac5a3418d6a2cbdbed1554df606e4933a9af7aabb  pkgs/vm-centos8/qubes-core-agent-4.1.17-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320188 +0000 build-centos: 24372b0ab67d01deb18bde5ecb181d0babfb9960d782f93ad539510b66f6156d81a1e4371da5d4ed0ce67df412fae3553a9f36f133688f6ea4d3f87cefe45389  pkgs/vm-centos8/qubes-core-agent-4.1.18-1.centos8.src.rpm
+2021-06-16 20:55:14.320204 +0000 build-centos: 57bd5f490cc29e954ba3094eb31372d3303c303700e4d038ae1ec3c1f94b6a8bbe5c1ed07d39090ec30855aaac594fefa86340033f3aac835e4882799d7305e0  pkgs/vm-centos8/qubes-core-agent-4.1.18-1.centos8.x86_64.buildinfo
+2021-06-16 20:55:14.320221 +0000 build-centos: 4be7a5ed65234b4139c898808a2899cd1eef27abd48989f07384f3cc71491e1e47a0f9ec716fb711d38f5e40cd4e4564ce700129c7a20ae37cbca125fd58a05a  pkgs/vm-centos8/qubes-core-agent-4.1.18-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320237 +0000 build-centos: 4f6f10ec3bc98bfbd21deee106bac711de11bb84ee1f280e0a8bfbb599d4f30d82568551443405c6511f097f607797aa9d91b3de7c08f9d0619e02ca50ec235a  pkgs/vm-centos8/qubes-core-agent-4.1.19-1.centos8.x86_64.buildinfo
+2021-06-16 20:55:14.320258 +0000 build-centos: b4dcfa6c01392c7841e21c4fcf266902d7384deaabe555af7fa506620fa1036e5195e4b0c9ebd2faef6db69b44f0fe2710a1366272762471afc0c9c361f8f80a  pkgs/vm-centos8/qubes-core-agent-4.1.20-1.centos8.x86_64.buildinfo
+2021-06-16 20:55:14.320275 +0000 build-centos: 70686f67ea4aaa033c59460e8d3f5bb9a9e741a740686d313ec0cbdaf96cb2d964b06c657d01089bf5a3844fce0ac3ccdcfe2ecc7db4303773f1f7c3283b1d2b  pkgs/vm-centos8/qubes-core-agent-4.1.21-1.centos8.x86_64.buildinfo
+2021-06-16 20:55:14.320291 +0000 build-centos: 743a945be1e652c6646cb5db0b0c92faa2da3ea7434317964bd7aebbf7011699e1a0f7956d56b662d5964ed31fffdda6085c4fddc4ac8dd4ead9c7ba1886aa27  pkgs/vm-centos8/qubes-core-agent-4.1.22-1.centos8.x86_64.buildinfo
+2021-06-16 20:55:14.320308 +0000 build-centos: 4b27d9211828d388e596adef8408c5b2c9e814c539c47a401637179b3d8436074be6871189ee6f203fa1901ea258bf3f6a73c210b71b1bf68c882b73148eabb4  pkgs/vm-centos8/qubes-core-agent-4.1.23-1.centos8.x86_64.buildinfo
+2021-06-16 20:55:14.320336 +0000 build-centos: cff26c7e4b5662d32eabe3444d83c6a1a1258647c4f21e3dc4ee34e198857fceee499d72c185535e9dd01e70b95be2c9631693a795b3abf644f31034f25cd80f  pkgs/vm-centos8/qubes-core-agent-4.1.24-1.centos8.src.rpm
+2021-06-16 20:55:14.320355 +0000 build-centos: 8f27a7ea819e28e053cdcd2e34f6f77118806b3507cd53b633a9758d1432d0d18a051aba3006eb8d104cdd018d9d03663ac2c0f3aaf4134922619e281febd020  pkgs/vm-centos8/qubes-core-agent-4.1.24-1.centos8.x86_64.buildinfo
+2021-06-16 20:55:14.320371 +0000 build-centos: 6e9a408bf5e9ccf1bfd972eac67c2826e4c7829f06db7a4b4a717057a66cd1c372193fad2b4c629307f0f8273caa34076dee51beae93d6f717b833e06997dc02  pkgs/vm-centos8/qubes-core-agent-4.1.24-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320388 +0000 build-centos: 884e95b46278ac8b48cda82d574e724190fa2a6804c6c772a8fe2cedcacdcb8dcea11e8635f57f5bfc29170dac6c5c80ed92ee566a031a935bde9bce1a9c77d8  pkgs/vm-centos8/qubes-core-agent-4.1.25-1.centos8.src.rpm
+2021-06-16 20:55:14.320409 +0000 build-centos: 99a93f6ee2f5dfc0bb827b398bc07512c80d13d678bb425cf7c2626692560dd4b3c4a79b5c9ce8cda89ad59ee162f69aefdfdf98dedee34c5e954d8e3737121d  pkgs/vm-centos8/qubes-core-agent-4.1.25-1.centos8.x86_64.buildinfo
+2021-06-16 20:55:14.320425 +0000 build-centos: bae73c5eaf85ea9feb4bdaf96c55ccaef9760841d54f278e4b1ed1b3fffd96865b635949ac516f15dd5c584dc8ac94f81f87999efc763b58dcdb0ae3563df8ce  pkgs/vm-centos8/qubes-core-agent-4.1.25-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320442 +0000 build-centos: 7773c34b3508683fe8641de41a075723479a990aa65edefca40974fe1bde31fad1413028599161f08171c670ad099e217372b39904cf4d623783379ea38cc231  pkgs/vm-centos8/qubes-core-agent-debuginfo-4.1.12-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320459 +0000 build-centos: 4a81671a6df7473d84f307c2f507fb287a2d2ea35c1bbe54ed0634158e1a43cfecf741f0a17ce90dd70239d41d1381fa0f30d7a985269a2436a22896001d59cd  pkgs/vm-centos8/qubes-core-agent-debuginfo-4.1.16-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320476 +0000 build-centos: 9e577fd960ac651cbf17af74145aa5a755b504cbc60ef941ec2633f5624a4e68ed6234fa12fbbddbabbfceb3cae2829f6de724fb3253dac18f03e0592b91db4f  pkgs/vm-centos8/qubes-core-agent-debuginfo-4.1.17-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320493 +0000 build-centos: 6914069c0028ba22c886038ebf50086c2de63ab1a74c11e374cb1963e22b4df7c4786e801c171a437d3d4387a651afb930de3c9455561cde0b1ad929d31dc8e0  pkgs/vm-centos8/qubes-core-agent-debuginfo-4.1.18-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320510 +0000 build-centos: 6816a66ca99ba9cc57323e15bd09897df2d2ecddd0d145e52dbbfcd09984e20766b5247cae0269a53635bf481f9bed16022ecaec0f7cc245a48a0395ebfcb777  pkgs/vm-centos8/qubes-core-agent-debuginfo-4.1.24-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320527 +0000 build-centos: 915c5defaf57e8a03b6f49f0cdc2f31acfd9049b36da830cfc41290a1dd7559239eded1b13feadbbc94154ba00de34f297339908be18d13318004b40ee9bc019  pkgs/vm-centos8/qubes-core-agent-debuginfo-4.1.25-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320543 +0000 build-centos: 151d940b2ac202f2c779585eb8af631cab85925b94369db0e3a479bb1c98d571a2a619aa0076051743468e6e7374b42538523c5ae2ede6d4b2ef617fcf87a474  pkgs/vm-centos8/qubes-core-agent-debugsource-4.1.12-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320560 +0000 build-centos: eb7d719a25c279fb736ca97f0014e28b2f27e0a98b391af91c31d4ea5852756ca8f0df2545f796a8c2288dd1f3e1b69def6d0b2e31d3491ea1a8b26eb14f1a35  pkgs/vm-centos8/qubes-core-agent-debugsource-4.1.16-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320577 +0000 build-centos: e6f50c0dae4f6405bb809e24ac95ffa4d3649e3a1de32156b7842815d8592d3b17825f13dd33d9d3701e973152f96894ca8027f9f24d8c8bafca6ffa31df0410  pkgs/vm-centos8/qubes-core-agent-debugsource-4.1.17-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320594 +0000 build-centos: 3b2f84e0996d09ff6556be03f30a3aa9990b14b082441cc3dee8d8accb7b7089169fb6db8b71f59e43880d016cb66548736b76340926ba4b7e06780566e40905  pkgs/vm-centos8/qubes-core-agent-debugsource-4.1.18-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320611 +0000 build-centos: 9d06d3826d420260e4c8918e5ea1cb90df304de31b0a7eb7c8df4ec0f800d9fa5f7048ee5f1140b6f472090eeb2c0b3853e7e35745bacd81aeb29817e743b718  pkgs/vm-centos8/qubes-core-agent-debugsource-4.1.24-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320632 +0000 build-centos: bc66b2c08e4f70b10ed37816b7ac28bc9f4e3cb05ae3c11837d8c2f84adc6109b211f0f94366375684bf0c4d4fa359c34f3b9554f55c1f20cde6de106c95b907  pkgs/vm-centos8/qubes-core-agent-debugsource-4.1.25-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320649 +0000 build-centos: 16c76c76b24c5826e5fa95d63f33c0a24a953d5a7dd20f89b9df94a8c606c94e573fa51feac6415f7e34c880b5b3407ad62dcaeaea6d6ccc6b7927e728c53bb8  pkgs/vm-centos8/qubes-core-agent-dom0-updates-4.1.12-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320666 +0000 build-centos: 918f3ed216d19a9db3f044eae69ec0bb4d1cc8b093b711c9bcba2b159b80538d20e7334b0922ac78205caea272a8cb28d68fbd06dcdfc46d1e4ac57d20bb4770  pkgs/vm-centos8/qubes-core-agent-dom0-updates-4.1.16-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320687 +0000 build-centos: 2d03ede4438fc683036abb682616b0e7c834f4a1b607d4d8e4741426dd3576d8ef8024ba5ea6dbe80670f8f9311e387c275a83cb996f04204e1a2511a87f6df9  pkgs/vm-centos8/qubes-core-agent-dom0-updates-4.1.17-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320704 +0000 build-centos: 700934725be0896f3e861750ab12c4b828733ac4cfe7b045f8008a29413ee8d4e35d09efc53bc6289811e8a513fbeb7fb134b843722d87a484be7d07185cded0  pkgs/vm-centos8/qubes-core-agent-dom0-updates-4.1.18-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320721 +0000 build-centos: 3972ed69bf71df64615026160a3289e166e015ed9ebb4195c6ec38ba9032b198ce51f1e2454e694b394b7ef907af8a95c9a10e12703e083838ebe437ba0b4c5d  pkgs/vm-centos8/qubes-core-agent-dom0-updates-4.1.24-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320738 +0000 build-centos: 548dd1cd20e838eadf761fb87319de219822ae6e656335f09c385f2d4bee7d74b56acfa32f9af3bb7049eee596762ce47ad2fabd4a77915d51a8f6e4945e4541  pkgs/vm-centos8/qubes-core-agent-dom0-updates-4.1.25-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320755 +0000 build-centos: dd853d2eae01ae4b1a5c34e15c2bfc2c79344ec90c00f38fbf9f7bdcbce8967188e4a4e89194ce4f7074ee0c0134fbab6a31e1d2097b15eec02f383f76adc0bf  pkgs/vm-centos8/qubes-core-agent-nautilus-4.1.12-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320772 +0000 build-centos: f486137c56008c26c3d45fdd5a980a130651fb81b27beb92452eeccc33d7f54d2a8370679cedeb192f26512390be3d71a78920c4b4404c56634c06d3d6829cf1  pkgs/vm-centos8/qubes-core-agent-nautilus-4.1.16-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320788 +0000 build-centos: 30de2d67915712bae6b437bb89acf97326026da06b209a1d426661c1bb83af1394e0d16da5ffc3e068caaf7cb46bd7d4a5c0a0cff9578bc544ad4bb2bc883201  pkgs/vm-centos8/qubes-core-agent-nautilus-4.1.17-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320805 +0000 build-centos: 5d733ce16cea87f161f88f6fe600d5fc082d7a5a796bd63ddeab625b423035f7c687cc92c987e299e49e4ec2e0c85379d5e7af9c5ed640e5b6902fb102c45454  pkgs/vm-centos8/qubes-core-agent-nautilus-4.1.18-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320821 +0000 build-centos: e21f3221df6e939449026abc953f3198a003275450b7d3a256a9f9ff5be1bc3801f7c9c1233e24c1528057402c2f64049d4b6dc51029e79a0f797a7617453f07  pkgs/vm-centos8/qubes-core-agent-nautilus-4.1.24-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320838 +0000 build-centos: e7e3ebdf3d4a2df1933a648b3a902412208342181d76b2136fb25432b5e8250cddb199d6e4175f1bf8b3520a80a98e5d0f334128e5a2219f57d60f286f8f9c36  pkgs/vm-centos8/qubes-core-agent-nautilus-4.1.25-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320855 +0000 build-centos: 3bbbde826f58f9d6671765ea2776978b1a712ebf1ab96487df7ca72d45887a771a5a106019648b360cb5547135df445be0e8935e433e3e70a5dff10b77cd0ca0  pkgs/vm-centos8/qubes-core-agent-network-manager-4.1.12-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320872 +0000 build-centos: c6c6a48ace4988fb05a3217171ca53ce51e7a2a929a143fd3f1f62794fa44210ecb5ee34dbf3ec0103b7053edadabf5ee0ce7dad78ab1b8dbaf68daa4e652c22  pkgs/vm-centos8/qubes-core-agent-network-manager-4.1.16-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320890 +0000 build-centos: 1f30e25a012bdf318b9d47e35dfa8b9587c1e449056778e6bdc8d60adfb3dbfb5a4304ac0558a10deafcbbf8d6c33601be35bdbbc19a733d012433af99f4d001  pkgs/vm-centos8/qubes-core-agent-network-manager-4.1.17-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320906 +0000 build-centos: c356593edd2acd64234427b432ae02cad9ecea9cb281475529be296d572d36bea29dc06f71c97cd085fbf668a4ba39dd28dc756fb9dbca2b04951c5d2bc015bc  pkgs/vm-centos8/qubes-core-agent-network-manager-4.1.18-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320923 +0000 build-centos: 21efc770bb372c075d0f573f003d0607beb8ca71da1432715586463b1dbd20445b59950c5a7bdab4e0811fc31a07b9dfbb2f5dedf209f76238b28715aac8ae02  pkgs/vm-centos8/qubes-core-agent-network-manager-4.1.24-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320940 +0000 build-centos: 34d1c19d474e8a47fe664cddd896419642cc70d435cd8068251f4daea25b121cf66359e6f574c581918fc38f6335b661c4f43d47a04c600e452be5a14211e5f4  pkgs/vm-centos8/qubes-core-agent-network-manager-4.1.25-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320963 +0000 build-centos: e494fc6ffbf6b89cd14a73c84a61762536cc1541601eedf5d33541ce4f82b94864a76c825e31fc4fbec0f605c6e473ba802543558360063f013cf14de287cf42  pkgs/vm-centos8/qubes-core-agent-networking-4.1.12-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.320984 +0000 build-centos: 6d782dee92851c2e4b0b4d7e4eb560807ad150a00522a23aca9878a5904592a01b7176a550042ab7e8eaf4a8a7c18980d246db6c0cd9e142f2e497dce0a64589  pkgs/vm-centos8/qubes-core-agent-networking-4.1.16-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.321001 +0000 build-centos: e921485caffc0fc902cfae67e0bd93ae1f13ab2f6a40765a46762239b82bd19a3c704fe686a8d227c8fcbf6737ee0dd8c892fb7309ce5d51a6d9f47e8a7ee494  pkgs/vm-centos8/qubes-core-agent-networking-4.1.17-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.321018 +0000 build-centos: 14229d07698d9a10bea5d710482d90174e4a7c7a415c286419fc9ca88a3f9080bfd8e8ccbae4341286d2fd0ad9e1e43dd773bdf29bb80b1e2847e411b21c445b  pkgs/vm-centos8/qubes-core-agent-networking-4.1.18-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.321035 +0000 build-centos: 3b62f53b7ed75a6a1cced89a2d7e972c8e8a301914e4ecaaeb49e4fb57a47124e7cbbd58644d697a5bc17efbcebdb04ed47954f4a10ae4991635cf18c541fc43  pkgs/vm-centos8/qubes-core-agent-networking-4.1.24-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.321051 +0000 build-centos: 5abcda1ea77be6e527272a72dcfa7da1541ce49170dd826127ed1a978b948e5a68a3f870c25726015dfd8de91e2e7c73d14601ad96eebc7effb85d353b9d9411  pkgs/vm-centos8/qubes-core-agent-networking-4.1.25-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.321069 +0000 build-centos: 8ff703488270653bba072f50fd35799bb00fa8a7c76e44b0a4d2fcb0dcac0c5c6ecf022a5c8c3710d280c1eeae732fbd503e8b1e3fd1e605f16231f53d82e32e  pkgs/vm-centos8/qubes-core-agent-passwordless-root-4.1.12-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.321086 +0000 build-centos: fb6c55cc4dcdfa9f41cce2893a7ecdd83850c2bcd6a989cba6d26705f719641488b729fb298e1342ef97089f3de18ea1f2699778e985fd671389153c23dbb65c  pkgs/vm-centos8/qubes-core-agent-passwordless-root-4.1.16-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.321103 +0000 build-centos: 0117d92ea65f32c6c995eca09f926edb07d81562c0f74238722755c65a8864c35c6d21804d856f33604b01d9bc0e448baf8b3fd7a83e51f7e43ae8749bb80377  pkgs/vm-centos8/qubes-core-agent-passwordless-root-4.1.17-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.321120 +0000 build-centos: 51332f746344037553db1bc4f5cecbf512b4f40b1d3769fd3cd5dd6357fab25b183b35f5ac849f5bbd97460c4dce867f9b400c3d823a3551e650f67010e46c02  pkgs/vm-centos8/qubes-core-agent-passwordless-root-4.1.18-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.321138 +0000 build-centos: ba7784f392090433de7ff327f77191cee232f5875fa5995419acf378ff85d79656562a18fb2065d2932571139e299a7fe8d0e5c680b35b5dfd3ca58d7cf26723  pkgs/vm-centos8/qubes-core-agent-passwordless-root-4.1.24-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.321155 +0000 build-centos: 3eee06e7651512f5909aa989f55cacdba93426c7b630aba2bbd01c7e31992ace9e29f0dc9996f3eec366fa7ce271bd611bf0783ab9dba4845e7a32c8201afa34  pkgs/vm-centos8/qubes-core-agent-passwordless-root-4.1.25-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.321172 +0000 build-centos: 5aa4cda4fba1381a38ac49c4ee68197924111db28599180cde8e224a98cdb39e439366bb9e97fb98cfa9bf3706a725dfa28b881d274a29a71f3f5de85e5fbf57  pkgs/vm-centos8/qubes-core-agent-systemd-4.1.12-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.321188 +0000 build-centos: 26adaad3e0a7d5d9455d9c76fd97345c81efbda4583f1fa1026d6fe70a5df835223b8f01f7ea286bae68f459d864c700c7220b25acfad95051bfca950048f678  pkgs/vm-centos8/qubes-core-agent-systemd-4.1.16-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.321204 +0000 build-centos: 9bbb769ccecc05292e6bf656425a1c40c4f41726585c59afa93fde219ed9868066b99b96396bb11c2e5e43f0723651c24d7d9324c05ac5bc65864dcd8d0ac4c2  pkgs/vm-centos8/qubes-core-agent-systemd-4.1.17-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.321221 +0000 build-centos: c18af6304b7b9179980f1fb2834bc02a010c66ae137a1fd877678fb131fd892ff9ae2d4e290ea5a7d41c408317be7c1b8aef9098377f577a5b2b9dc8191262a2  pkgs/vm-centos8/qubes-core-agent-systemd-4.1.18-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.321241 +0000 build-centos: 52a7f7055bf96542f0de7d5f2008f621f95f3030d1bc34bf109403a6c7775bf6f4845ffec504c304a1fd170bb75632bfdb8b6b85dcf66d2a30b8efe12b5ba6ca  pkgs/vm-centos8/qubes-core-agent-systemd-4.1.24-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.321258 +0000 build-centos: 9a9641ab42896664d30b84bd24258a599aa109af3fe4437a5c72662c9f9623a04f21a0d7cfc593088b20ba0f0a59e4022a83ea52c748aae8e6b777c774f30f57  pkgs/vm-centos8/qubes-core-agent-systemd-4.1.25-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.321276 +0000 build-centos: 4df9801cafd20f0510353023bf082cdc8a2dd634c222e604daef450213d0a37788af2adfdd2f5f5073492102a7e7d827e175cc344786548d7ebadba54127a289  pkgs/vm-centos8/qubes-core-agent-sysvinit-4.1.12-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.321293 +0000 build-centos: e17d309b1ec1da734a6e9ae5dddfc6c29479f30e1c2444d9b6ca05f2164354a84cc286059d9f0c74bb160db1bd342d2e1fb28378ec4323b59a8360faf3b27b76  pkgs/vm-centos8/qubes-core-agent-sysvinit-4.1.15-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.321309 +0000 build-centos: 42f12c0f7373ba729ec3520b6cb1eac8d43df9c20a0ce57cb9b4f72dbbafa9a3e1f23b2e4ee80bf2b0b1013e095dba31272f969a73cd650f5f0ad02dc2dc8a43  pkgs/vm-centos8/qubes-core-agent-thunar-4.1.12-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.321345 +0000 build-centos: 346d52e7be9921c49d1d7d6e86614dc32faa26f99d77801c02bf8953e73b303efe36d20bc76d791e7143a5cd5d98db1b3cc383299bcaf5b91b20b8eb5d4bfe06  pkgs/vm-centos8/qubes-core-agent-thunar-4.1.16-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.321364 +0000 build-centos: b96585f5b292d777f3a940dc1ecf30e014b6614bbf4983e967adc7c4777e850d208e8764f2a22c6ed2b4e03616975b3a66c3b1bfd8ae3b479c75ffb95ef27743  pkgs/vm-centos8/qubes-core-agent-thunar-4.1.17-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.321381 +0000 build-centos: 3f276e366b0af29e44800c1956758a981245e561dda851e200eadc5a4774727d0d57d29fc1939f08bcd9f0e5d7dcf9a0434b1dfbc60b4c67fe51c822a108d3ff  pkgs/vm-centos8/qubes-core-agent-thunar-4.1.18-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.321397 +0000 build-centos: 63a5cf0b2e12125d1ac7abb78d56b6d23471b59e1e43c9cc5ac0aa1e78ee28c14b1649f3a534410f9c8f61821edf775bce1067e2a3731cb94fe7a889b8bd9275  pkgs/vm-centos8/qubes-core-agent-thunar-4.1.24-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.321415 +0000 build-centos: 3d24b9bce87de4380d19a05a056ea39f6299307b720e8d65931addbb81fc36a6758cf2e710689bd40dd30ca9e788340691b9ec93ba97c3cc130d3ed2d8a5e2c8  pkgs/vm-centos8/qubes-core-agent-thunar-4.1.25-1.centos8.x86_64.rpm
+2021-06-16 20:55:14.321425 +0000 build-centos: ================================================================================
+2021-06-16 20:55:14.321435 +0000 build-centos:                            B U I L D   I N F O                                  
+2021-06-16 20:55:14.321446 +0000 build-centos: Items in red indicate it was automatically generated by configuration file(s)
+2021-06-16 20:55:14.321456 +0000 build-centos: Items in white indicate it was automatically removed by configuration file(s)
+2021-06-16 20:55:14.321482 +0000 build-centos: ================================================================================
+2021-06-16 20:55:14.321489 +0000 build-centos: DISTS_VM:
+2021-06-16 20:55:14.321496 +0000 build-centos:      centos-stream8,
+2021-06-16 20:55:14.321502 +0000 build-centos: DISTS_ALL:
+2021-06-16 20:55:14.321509 +0000 build-centos:      vm-centos-stream8,
+2021-06-16 20:55:14.321528 +0000 build-centos: DIST_DOM0:
+2021-06-16 20:55:14.321535 +0000 build-centos:     
+2021-06-16 20:55:14.321541 +0000 build-centos: BUILDER_PLUGINS:
+2021-06-16 20:55:14.321552 +0000 build-centos:      builder-rpm, builder-debian, mgmt-salt, linux-yum, release-configs, builder-github,
+2021-06-16 20:55:14.321558 +0000 build-centos: COMPONENTS:
+2021-06-16 20:55:14.321564 +0000 build-centos:      core-agent-linux,
+2021-06-16 20:55:14.321570 +0000 build-centos: GIT_REPOS:
+2021-06-16 20:55:14.321577 +0000 build-centos:      qubes-src/core-agent-linux,
+2021-06-16 20:55:14.321588 +0000 build-centos: TEMPLATE:
+2021-06-16 20:55:14.321594 +0000 build-centos:     
+2021-06-16 20:55:14.321600 +0000 build-centos: TEMPLATE_FLAVOR_DIR:
+2021-06-16 20:55:14.321606 +0000 build-centos:     
+2021-06-16 20:55:14.321612 +0000 build-centos: TEMPLATE_ALIAS:
+2021-06-16 20:55:14.321621 +0000 build-centos:      stretch:stretch+standard, stretch+gnome:stretch+gnome+standard,
+2021-06-16 20:55:14.321631 +0000 build-centos:      stretch+minimal:stretch+minimal+no-recommends, buster:buster+standard,
+2021-06-16 20:55:14.321641 +0000 build-centos:      buster+gnome:buster+gnome+standard, buster+minimal:buster+minimal+no-recommends,
+2021-06-16 20:55:14.321651 +0000 build-centos:      bullseye:bullseye+standard, bullseye+gnome:bullseye+gnome+standard,
+2021-06-16 20:55:14.321661 +0000 build-centos:      bullseye+minimal:bullseye+minimal+no-recommends, bionic:bionic+standard,
+2021-06-16 20:55:14.321671 +0000 build-centos:      focal:focal+standard, whonix-gateway-14:stretch+whonix-gateway+minimal+no-recommends,
+2021-06-16 20:55:14.321681 +0000 build-centos:      whonix-workstation-14:stretch+whonix-workstation+minimal+no-recommends,
+2021-06-16 20:55:14.321690 +0000 build-centos:      whonix-gateway-15:buster+whonix-gateway+minimal+no-recommends,
+2021-06-16 20:55:14.321699 +0000 build-centos:      whonix-workstation-15:buster+whonix-workstation+minimal+no-recommends,
+2021-06-16 20:55:14.321705 +0000 build-centos: TEMPLATE_LABEL:
+2021-06-16 20:55:14.321716 +0000 build-centos:      centos-stream8:centos-stream-8, fc32:fedora-32 fc33:fedora-33 fc34:fedora-34 fc35:fedora-35
+2021-06-16 20:55:14.321727 +0000 build-centos:      fc32+minimal:fedora-32-minimal fc33+minimal:fedora-33-minimal fc34+minimal:fedora-34-minimal
+2021-06-16 20:55:14.321739 +0000 build-centos:      fc35+minimal:fedora-35-minimal fc32+xfce:fedora-32-xfce fc33+xfce:fedora-33-xfce fc34+xfce:fedora-34-xfce
+2021-06-16 20:55:14.321750 +0000 build-centos:      fc35+xfce:fedora-35-xfce stretch:debian-9 stretch+standard:debian-9 stretch+xfce:debian-9-xfce
+2021-06-16 20:55:14.321761 +0000 build-centos:      buster:debian-10 buster+standard:debian-10 buster+xfce:debian-10-xfce bullseye:debian-11
+2021-06-16 20:55:14.321771 +0000 build-centos:      bullseye+standard:debian-11 bullseye+xfce:debian-11-xfce bionic+standard:bionic
+2021-06-16 20:55:14.321781 +0000 build-centos:      focal+standard:focal stretch+whonix-gateway+minimal+no-recommends:whonix-gw-14
+2021-06-16 20:55:14.321790 +0000 build-centos:      stretch+whonix-workstation+minimal+no-recommends:whonix-ws-14
+2021-06-16 20:55:14.321798 +0000 build-centos:      buster+whonix-gateway+minimal+no-recommends:whonix-gw-15
+2021-06-16 20:55:14.321809 +0000 build-centos:      buster+whonix-workstation+minimal+no-recommends:whonix-ws-15 centos7:centos-7
+2021-06-16 20:55:14.321820 +0000 build-centos:      centos7+minimal:centos-7-minimal centos7+xfce:centos-7-xfce centos-stream8+minimal:centos-stream-8-minimal
+2021-06-16 20:55:14.321828 +0000 build-centos:      centos-stream8+xfce:centos-stream-8-xfce
+2021-06-16 20:55:14.321834 +0000 build-centos: > running make
+2021-06-16 20:55:14.356429 +0000 build-centos: Makefile:293: target 'sign.vm.centos-stream8.core-agent-linux' does not exist
+2021-06-16 20:55:14.356498 +0000 build-centos: if [ -n "core-agent-linux" -a "0" -ne 0 ]; then BRANCH=master; branch_var="BRANCH_core_agent_linux"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/core-agent-linux > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2021-06-16 20:55:14.356512 +0000 build-centos: SIGN_KEY=EE88DA5FB2B7082919C8826D19205A11FDE3D0AA; \
+2021-06-16 20:55:14.356520 +0000 build-centos: sign_key_var="SIGN_KEY_${DIST%%+*}"; \
+2021-06-16 20:55:14.356530 +0000 build-centos: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2021-06-16 20:55:14.356554 +0000 build-centos: if [ "core-agent-linux" = linux-template-builder ]; then
+2021-06-16 20:55:14.356567 +0000 build-centos: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=centos-stream8 template-name)
+2021-06-16 20:55:14.356573 +0000 build-centos: fi
+2021-06-16 20:55:14.356582 +0000 build-centos: if [ -r qubes-src/core-agent-linux/Makefile.builder ]; then \
+2021-06-16 20:55:14.356591 +0000 build-centos: .make --no-print-directory -f Makefile.generic \
+2021-06-16 20:55:14.356597 +0000 build-centos: ..DIST=centos-stream8 \
+2021-06-16 20:55:14.356604 +0000 build-centos: ..PACKAGE_SET=vm \
+2021-06-16 20:55:14.356611 +0000 build-centos: ..COMPONENT=core-agent-linux \
+2021-06-16 20:55:14.356617 +0000 build-centos: ..SIGN_KEY=$SIGN_KEY \
+2021-06-16 20:55:14.356623 +0000 build-centos: ..sign || exit 1; \
+2021-06-16 20:55:14.356631 +0000 build-centos: elif [ -d qubes-src/core-agent-linux/rpm ]; then \
+2021-06-16 20:55:14.356639 +0000 build-centos: .# Old mechanism supported only for RPM
+2021-06-16 20:55:14.356648 +0000 build-centos: FILE_LIST=""; for RPM in qubes-src/core-agent-linux/rpm/*/*.rpm; do \
+2021-06-16 20:55:14.356657 +0000 build-centos: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2021-06-16 20:55:14.356664 +0000 build-centos: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2021-06-16 20:55:14.356669 +0000 build-centos: ..fi ;\
+2021-06-16 20:55:14.356675 +0000 build-centos: .done ; \
+2021-06-16 20:55:14.356682 +0000 build-centos: .if [ -n "$FILE_LIST" ]; then \
+2021-06-16 20:55:14.356688 +0000 build-centos: ..echo "--> Signing..."; \
+2021-06-16 20:55:14.356696 +0000 build-centos: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2021-06-16 20:55:14.356703 +0000 build-centos: ..if [ -n "$SIGN_KEY" ]; then \
+2021-06-16 20:55:14.356710 +0000 build-centos: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2021-06-16 20:55:14.356716 +0000 build-centos: ..fi; \
+2021-06-16 20:55:14.356725 +0000 build-centos: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2021-06-16 20:55:14.356730 +0000 build-centos: .fi; \
+2021-06-16 20:55:14.356736 +0000 build-centos: fi
+2021-06-16 20:55:14.356744 +0000 build-centos: /bin/bash: line 3: SIGN_KEY_centos-stream8: invalid variable name
+2021-06-16 20:55:14.428864 +0000 build-centos: + ERR_OUTPUT=/dev/stderr
+2021-06-16 20:55:14.428908 +0000 build-centos: + '[' 2 -lt 2 ']'
+2021-06-16 20:55:14.428920 +0000 build-centos: ++ basename qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in
+2021-06-16 20:55:14.428929 +0000 build-centos: + [[ xcore-agent.spec.in == \x\.\i\n ]]
+2021-06-16 20:55:14.428941 +0000 build-centos: + '[' -r qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in ']'
+2021-06-16 20:55:14.428949 +0000 build-centos: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2021-06-16 20:55:14.428956 +0000 build-centos: + tmp_spec=/tmp/tmp.tAXr0e.spec
+2021-06-16 20:55:14.428965 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2021-06-16 20:55:14.428979 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in /tmp/tmp.tAXr0e.spec
+2021-06-16 20:55:14.428986 +0000 build-centos: + '[' 2 -lt 2 ']'
+2021-06-16 20:55:14.428993 +0000 build-centos: + '[' -z qubes-src/core-agent-linux ']'
+2021-06-16 20:55:14.429005 +0000 build-centos: + cp qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:14.429012 +0000 build-centos: + read -r ver
+2021-06-16 20:55:14.429018 +0000 build-centos: + '[' x = x ']'
+2021-06-16 20:55:14.429028 +0000 build-centos: + sed -i 's|@VERSION@|4.1.26|g' qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:14.434479 +0000 build-centos: + vnum=1
+2021-06-16 20:55:14.434520 +0000 build-centos: + read -r ver
+2021-06-16 20:55:14.434530 +0000 build-centos: + '[' -e qubes-src/core-agent-linux/rel ']'
+2021-06-16 20:55:14.434563 +0000 build-centos: + grep -q @REL@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:14.434575 +0000 build-centos: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:14.493226 +0000 build-centos: + grep -q @CHANGELOG@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:14.493275 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2021-06-16 20:55:14.493292 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/core-agent-linux qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:15.757433 +0000 build-centos: + cat qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:15.758658 +0000 build-centos: + rm -rf qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:15.759868 +0000 build-centos: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2021-06-16 20:55:15.760630 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2021-06-16 20:55:15.762016 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.tAXr0e.spec
+2021-06-16 20:55:16.092700 +0000 build-centos: + rm -f /tmp/tmp.tAXr0e.spec
+2021-06-16 20:55:16.113871 +0000 build-centos: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:198: target 'sign-prep' does not exist
+2021-06-16 20:55:16.113914 +0000 build-centos: if [ -n "qubes-gpg-client-wrapper" ]; then \
+2021-06-16 20:55:16.113926 +0000 build-centos: .mkdir -p /home/user/builder-r4.1/keyrings/rpmdb; \
+2021-06-16 20:55:16.113933 +0000 build-centos: .tmpname=$(mktemp); \
+2021-06-16 20:55:16.113945 +0000 build-centos: .qubes-gpg-client-wrapper --armor --export "EE88DA5FB2B7082919C8826D19205A11FDE3D0AA" > "$tmpname"; \
+2021-06-16 20:55:16.113955 +0000 build-centos: .rpmkeys --dbpath=/home/user/builder-r4.1/keyrings/rpmdb --import "$tmpname"; \
+2021-06-16 20:55:16.113962 +0000 build-centos: .rm -f "$tmpname"; \
+2021-06-16 20:55:16.113968 +0000 build-centos: fi
+2021-06-16 20:55:16.269349 +0000 build-centos: + ERR_OUTPUT=/dev/stderr
+2021-06-16 20:55:16.269399 +0000 build-centos: + '[' 2 -lt 2 ']'
+2021-06-16 20:55:16.269411 +0000 build-centos: ++ basename qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in
+2021-06-16 20:55:16.273634 +0000 build-centos: + [[ xcore-agent.spec.in == \x\.\i\n ]]
+2021-06-16 20:55:16.273678 +0000 build-centos: + '[' -r qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in ']'
+2021-06-16 20:55:16.273689 +0000 build-centos: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2021-06-16 20:55:16.275387 +0000 build-centos: + tmp_spec=/tmp/tmp.vemjhu.spec
+2021-06-16 20:55:16.275447 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2021-06-16 20:55:16.277048 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in /tmp/tmp.vemjhu.spec
+2021-06-16 20:55:16.278929 +0000 build-centos: + '[' 2 -lt 2 ']'
+2021-06-16 20:55:16.278966 +0000 build-centos: + '[' -z qubes-src/core-agent-linux ']'
+2021-06-16 20:55:16.278981 +0000 build-centos: + cp qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:16.318575 +0000 build-centos: + read -r ver
+2021-06-16 20:55:16.318619 +0000 build-centos: + '[' x = x ']'
+2021-06-16 20:55:16.318633 +0000 build-centos: + sed -i 's|@VERSION@|4.1.26|g' qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:16.318640 +0000 build-centos: + vnum=1
+2021-06-16 20:55:16.318647 +0000 build-centos: + read -r ver
+2021-06-16 20:55:16.318654 +0000 build-centos: + '[' -e qubes-src/core-agent-linux/rel ']'
+2021-06-16 20:55:16.318664 +0000 build-centos: + grep -q @REL@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:16.318690 +0000 build-centos: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:16.318701 +0000 build-centos: + grep -q @CHANGELOG@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:16.318710 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2021-06-16 20:55:16.318725 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/core-agent-linux qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:17.224858 +0000 build-centos: + cat qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:17.224905 +0000 build-centos: + rm -rf qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:17.226046 +0000 build-centos: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2021-06-16 20:55:17.227200 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2021-06-16 20:55:17.228377 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.vemjhu.spec
+2021-06-16 20:55:17.363413 +0000 build-centos: + rm -f /tmp/tmp.vemjhu.spec
+2021-06-16 20:55:17.674925 +0000 build-centos: warning: Found bdb Packages database while attempting sqlite backend: using bdb backend.
+2021-06-16 20:55:17.724482 +0000 build-centos: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:214: update target 'sign' due to: sign-prep
+2021-06-16 20:55:17.724593 +0000 build-centos: cd qubes-src/core-agent-linux && for pkg in pkgs/vm-centos-stream8/python2-dnf-plugins-qubes-hooks-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/python3-dnf-plugins-qubes-hooks-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-4.1.26-1.el8.src.rpm pkgs/vm-centos-stream8/qubes-core-agent-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-debuginfo-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-debugsource-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-dom0-updates-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-nautilus-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-network-manager-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-networking-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-passwordless-root-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-systemd-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-thunar-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-4.1.26-1.el8.x86_64.buildinfo ; do \
+2021-06-16 20:55:17.724606 +0000 build-centos: .if [ "${pkg##*.}" = "buildinfo" ]; then \
+2021-06-16 20:55:17.724623 +0000 build-centos: ../home/user/builder-r4.1/qubes-src/builder-rpm/scripts/update-rpmbuildinfo "$pkg" | qubes-gpg-client-wrapper --clearsign --local-user EE88DA5FB2B7082919C8826D19205A11FDE3D0AA > "$pkg".tmp && \
+2021-06-16 20:55:17.724632 +0000 build-centos: ..mv -f "$pkg".tmp "$pkg"; \
+2021-06-16 20:55:17.724642 +0000 build-centos: .elif [ "$(rpmkeys --checksig -- "$pkg")" != "$pkg: digests signatures OK" ]; then \
+2021-06-16 20:55:17.724655 +0000 build-centos: ..setsid -w rpmsign --digest-algo=sha256 --key-id=EE88DA5FB2B7082919C8826D19205A11FDE3D0AA --addsign  -- "$pkg" </dev/null || exit 1; \
+2021-06-16 20:55:17.724661 +0000 build-centos: .fi; \
+2021-06-16 20:55:17.724666 +0000 build-centos: done
+2021-06-16 20:55:17.735946 +0000 build-centos: + ERR_OUTPUT=/dev/stderr
+2021-06-16 20:55:17.735983 +0000 build-centos: + '[' 2 -lt 2 ']'
+2021-06-16 20:55:17.735995 +0000 build-centos: ++ basename qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in
+2021-06-16 20:55:17.737152 +0000 build-centos: + [[ xcore-agent.spec.in == \x\.\i\n ]]
+2021-06-16 20:55:17.737189 +0000 build-centos: + '[' -r qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in ']'
+2021-06-16 20:55:17.737213 +0000 build-centos: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2021-06-16 20:55:17.738367 +0000 build-centos: + tmp_spec=/tmp/tmp.OSL8aC.spec
+2021-06-16 20:55:17.738430 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2021-06-16 20:55:17.739585 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in /tmp/tmp.OSL8aC.spec
+2021-06-16 20:55:17.740748 +0000 build-centos: + '[' 2 -lt 2 ']'
+2021-06-16 20:55:17.740782 +0000 build-centos: + '[' -z qubes-src/core-agent-linux ']'
+2021-06-16 20:55:17.740796 +0000 build-centos: + cp qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:17.743649 +0000 build-centos: + read -r ver
+2021-06-16 20:55:17.743684 +0000 build-centos: + '[' x = x ']'
+2021-06-16 20:55:17.743697 +0000 build-centos: + sed -i 's|@VERSION@|4.1.26|g' qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:17.744843 +0000 build-centos: + vnum=1
+2021-06-16 20:55:17.744876 +0000 build-centos: + read -r ver
+2021-06-16 20:55:17.744885 +0000 build-centos: + '[' -e qubes-src/core-agent-linux/rel ']'
+2021-06-16 20:55:17.744895 +0000 build-centos: + grep -q @REL@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:17.746038 +0000 build-centos: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:17.747964 +0000 build-centos: + grep -q @CHANGELOG@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:17.750335 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2021-06-16 20:55:17.751558 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/core-agent-linux qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:18.673662 +0000 build-centos: + cat qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:18.676823 +0000 build-centos: + rm -rf qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:18.679014 +0000 build-centos: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2021-06-16 20:55:18.684729 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2021-06-16 20:55:18.684772 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.OSL8aC.spec
+2021-06-16 20:55:18.851022 +0000 build-centos: + rm -f /tmp/tmp.OSL8aC.spec
+2021-06-16 20:55:18.919055 +0000 build-centos: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-06-16 20:55:19.308190 +0000 build-centos: pkgs/vm-centos-stream8/python2-dnf-plugins-qubes-hooks-4.1.26-1.el8.x86_64.rpm:
+2021-06-16 20:55:19.335714 +0000 build-centos: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-06-16 20:55:19.604419 +0000 build-centos: pkgs/vm-centos-stream8/python3-dnf-plugins-qubes-hooks-4.1.26-1.el8.x86_64.rpm:
+2021-06-16 20:55:19.658382 +0000 build-centos: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-06-16 20:55:19.934109 +0000 build-centos: pkgs/vm-centos-stream8/qubes-core-agent-4.1.26-1.el8.src.rpm:
+2021-06-16 20:55:19.971753 +0000 build-centos: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-06-16 20:55:20.247894 +0000 build-centos: pkgs/vm-centos-stream8/qubes-core-agent-4.1.26-1.el8.x86_64.rpm:
+2021-06-16 20:55:20.292659 +0000 build-centos: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-06-16 20:55:20.505262 +0000 build-centos: pkgs/vm-centos-stream8/qubes-core-agent-debuginfo-4.1.26-1.el8.x86_64.rpm:
+2021-06-16 20:55:20.517498 +0000 build-centos: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-06-16 20:55:20.759044 +0000 build-centos: pkgs/vm-centos-stream8/qubes-core-agent-debugsource-4.1.26-1.el8.x86_64.rpm:
+2021-06-16 20:55:20.776345 +0000 build-centos: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-06-16 20:55:20.992934 +0000 build-centos: pkgs/vm-centos-stream8/qubes-core-agent-dom0-updates-4.1.26-1.el8.x86_64.rpm:
+2021-06-16 20:55:21.006939 +0000 build-centos: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-06-16 20:55:21.272432 +0000 build-centos: pkgs/vm-centos-stream8/qubes-core-agent-nautilus-4.1.26-1.el8.x86_64.rpm:
+2021-06-16 20:55:21.285679 +0000 build-centos: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-06-16 20:55:21.608851 +0000 build-centos: pkgs/vm-centos-stream8/qubes-core-agent-network-manager-4.1.26-1.el8.x86_64.rpm:
+2021-06-16 20:55:21.626794 +0000 build-centos: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-06-16 20:55:21.979122 +0000 build-centos: pkgs/vm-centos-stream8/qubes-core-agent-networking-4.1.26-1.el8.x86_64.rpm:
+2021-06-16 20:55:22.002143 +0000 build-centos: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-06-16 20:55:22.405214 +0000 build-centos: pkgs/vm-centos-stream8/qubes-core-agent-passwordless-root-4.1.26-1.el8.x86_64.rpm:
+2021-06-16 20:55:22.449685 +0000 build-centos: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-06-16 20:55:22.714641 +0000 build-centos: pkgs/vm-centos-stream8/qubes-core-agent-systemd-4.1.26-1.el8.x86_64.rpm:
+2021-06-16 20:55:22.743540 +0000 build-centos: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-06-16 20:55:23.112403 +0000 build-centos: pkgs/vm-centos-stream8/qubes-core-agent-thunar-4.1.26-1.el8.x86_64.rpm:
+2021-06-16 20:55:23.113776 +0000 build-centos: Error while vchan send, exiting
+2021-06-16 20:55:23.485003 +0000 build-centos: Makefile:857: target 'internal-update-repo-current-testing.vm.centos-stream8.core-agent-linux' does not exist
+2021-06-16 20:55:23.485052 +0000 build-centos: repo_base_var="LINUX_REPO_${DIST//-/_}_BASEDIR"; \
+2021-06-16 20:55:23.485064 +0000 build-centos: if [ "core-agent-linux" = linux-template-builder ]; then \
+2021-06-16 20:55:23.485075 +0000 build-centos: .# templates belongs to dom0 repository, even though PACKAGE_SET=vm
+2021-06-16 20:55:23.485084 +0000 build-centos: repo_base_var="LINUX_REPO__BASEDIR"; \
+2021-06-16 20:55:23.485090 +0000 build-centos: fi; \
+2021-06-16 20:55:23.485098 +0000 build-centos: if [ -n "${!repo_base_var}" ]; then \
+2021-06-16 20:55:23.485106 +0000 build-centos: .repo_basedir="${!repo_base_var}"; \
+2021-06-16 20:55:23.485111 +0000 build-centos: else \
+2021-06-16 20:55:23.485119 +0000 build-centos: .repo_basedir="qubes-src/linux-yum/r4.1"; \
+2021-06-16 20:55:23.485125 +0000 build-centos: fi; \
+2021-06-16 20:55:23.485133 +0000 build-centos: if [ -r qubes-src/core-agent-linux/Makefile.builder ]; then \
+2021-06-16 20:55:23.485142 +0000 build-centos: .echo -n "Updating qubes-src/core-agent-linux... "; \
+2021-06-16 20:55:23.485149 +0000 build-centos: .if [ "0" -eq 1 ]; then \
+2021-06-16 20:55:23.485159 +0000 build-centos: ..vtag=`git -C qubes-src/core-agent-linux tag --points-at HEAD --list v*`; \
+2021-06-16 20:55:23.485166 +0000 build-centos: ..if [ -z "$vtag" ]; then \
+2021-06-16 20:55:23.485173 +0000 build-centos: ...echo "no version tag"; \
+2021-06-16 20:55:23.485179 +0000 build-centos: ...exit 0; \
+2021-06-16 20:55:23.485185 +0000 build-centos: ..fi; \
+2021-06-16 20:55:23.485191 +0000 build-centos: .fi; \
+2021-06-16 20:55:23.485199 +0000 build-centos: .if [ "core-agent-linux" = linux-template-builder ]; then
+2021-06-16 20:55:23.485211 +0000 build-centos: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=centos-stream8 template-name)
+2021-06-16 20:55:23.485217 +0000 build-centos: fi
+2021-06-16 20:55:23.485239 +0000 build-centos: component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=centos-stream8 PACKAGE_SET=vm COMPONENT=`basename qubes-src/core-agent-linux` UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/centos-stream8 get-var GET_VAR=PACKAGE_LIST); \
+2021-06-16 20:55:23.485272 +0000 build-centos: .if [ -z "$component_packages" ]; then \
+2021-06-16 20:55:23.485280 +0000 build-centos: ..echo "no packages."; \
+2021-06-16 20:55:23.485287 +0000 build-centos: ..exit 0; \
+2021-06-16 20:55:23.485292 +0000 build-centos: .fi; \
+2021-06-16 20:55:23.485301 +0000 build-centos: .make -s -f Makefile.generic DIST=centos-stream8 PACKAGE_SET=vm \
+2021-06-16 20:55:23.485310 +0000 build-centos: ..COMPONENT=`basename qubes-src/core-agent-linux` \
+2021-06-16 20:55:23.485352 +0000 build-centos: ..SNAPSHOT_REPO=current-testing \
+2021-06-16 20:55:23.485361 +0000 build-centos: ..TARGET_REPO=current-testing \
+2021-06-16 20:55:23.485374 +0000 build-centos: ..UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/centos-stream8 \
+2021-06-16 20:55:23.485388 +0000 build-centos: ..SNAPSHOT_FILE=/home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-centos-stream8-`basename qubes-src/core-agent-linux` \
+2021-06-16 20:55:23.485401 +0000 build-centos: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-centos/log_2021-06-16_20-52-43 \
+2021-06-16 20:55:23.485408 +0000 build-centos: ..update-repo || exit 1; \
+2021-06-16 20:55:23.485419 +0000 build-centos: elif make -C qubes-src/core-agent-linux -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2021-06-16 20:55:23.485428 +0000 build-centos: .echo "Updating qubes-src/core-agent-linux... "; \
+2021-06-16 20:55:23.485439 +0000 build-centos: .DIST=centos-stream8 UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/centos-stream8 \
+2021-06-16 20:55:23.485449 +0000 build-centos: .make -s -C qubes-src/core-agent-linux update-repo-current-testing || exit 1; \
+2021-06-16 20:55:23.485455 +0000 build-centos: else \
+2021-06-16 20:55:23.485464 +0000 build-centos: .echo -n "Updating qubes-src/core-agent-linux... skipping."; \
+2021-06-16 20:55:23.485469 +0000 build-centos: fi; \
+2021-06-16 20:55:23.485474 +0000 build-centos: echo
+2021-06-16 20:55:23.522689 +0000 build-centos: Updating qubes-src/core-agent-linux... + ERR_OUTPUT=/dev/stderr
+2021-06-16 20:55:23.522734 +0000 build-centos: + '[' 2 -lt 2 ']'
+2021-06-16 20:55:23.522747 +0000 build-centos: ++ basename qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in
+2021-06-16 20:55:23.545743 +0000 build-centos: + [[ xcore-agent.spec.in == \x\.\i\n ]]
+2021-06-16 20:55:23.545789 +0000 build-centos: + '[' -r qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in ']'
+2021-06-16 20:55:23.550513 +0000 build-centos: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2021-06-16 20:55:23.554051 +0000 build-centos: + tmp_spec=/tmp/tmp.zTZ1W0.spec
+2021-06-16 20:55:23.554092 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2021-06-16 20:55:23.558590 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in /tmp/tmp.zTZ1W0.spec
+2021-06-16 20:55:23.558627 +0000 build-centos: + '[' 2 -lt 2 ']'
+2021-06-16 20:55:23.558638 +0000 build-centos: + '[' -z qubes-src/core-agent-linux ']'
+2021-06-16 20:55:23.558651 +0000 build-centos: + cp qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:23.572271 +0000 build-centos: + read -r ver
+2021-06-16 20:55:23.572330 +0000 build-centos: + '[' x = x ']'
+2021-06-16 20:55:23.572347 +0000 build-centos: + sed -i 's|@VERSION@|4.1.26|g' qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:23.582266 +0000 build-centos: + vnum=1
+2021-06-16 20:55:23.582305 +0000 build-centos: + read -r ver
+2021-06-16 20:55:23.582333 +0000 build-centos: + '[' -e qubes-src/core-agent-linux/rel ']'
+2021-06-16 20:55:23.582346 +0000 build-centos: + grep -q @REL@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:23.595742 +0000 build-centos: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:23.603291 +0000 build-centos: + grep -q @CHANGELOG@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:23.608007 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2021-06-16 20:55:23.609328 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/core-agent-linux qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:24.467801 +0000 build-centos: + cat qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:24.470871 +0000 build-centos: + rm -rf qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:24.480237 +0000 build-centos: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2021-06-16 20:55:24.480279 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2021-06-16 20:55:24.502723 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.zTZ1W0.spec
+2021-06-16 20:55:24.720777 +0000 build-centos: + rm -f /tmp/tmp.zTZ1W0.spec
+2021-06-16 20:55:24.756267 +0000 build-centos: + ERR_OUTPUT=/dev/stderr
+2021-06-16 20:55:24.756309 +0000 build-centos: + '[' 2 -lt 2 ']'
+2021-06-16 20:55:24.756351 +0000 build-centos: ++ basename qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in
+2021-06-16 20:55:24.758359 +0000 build-centos: + [[ xcore-agent.spec.in == \x\.\i\n ]]
+2021-06-16 20:55:24.758414 +0000 build-centos: + '[' -r qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in ']'
+2021-06-16 20:55:24.761385 +0000 build-centos: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2021-06-16 20:55:24.773844 +0000 build-centos: + tmp_spec=/tmp/tmp.Hx4fNd.spec
+2021-06-16 20:55:24.774029 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2021-06-16 20:55:24.775223 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in /tmp/tmp.Hx4fNd.spec
+2021-06-16 20:55:24.776296 +0000 build-centos: + '[' 2 -lt 2 ']'
+2021-06-16 20:55:24.776347 +0000 build-centos: + '[' -z qubes-src/core-agent-linux ']'
+2021-06-16 20:55:24.776362 +0000 build-centos: + cp qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:24.778250 +0000 build-centos: + read -r ver
+2021-06-16 20:55:24.778285 +0000 build-centos: + '[' x = x ']'
+2021-06-16 20:55:24.778298 +0000 build-centos: + sed -i 's|@VERSION@|4.1.26|g' qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:24.780572 +0000 build-centos: + vnum=1
+2021-06-16 20:55:24.780608 +0000 build-centos: + read -r ver
+2021-06-16 20:55:24.780618 +0000 build-centos: + '[' -e qubes-src/core-agent-linux/rel ']'
+2021-06-16 20:55:24.780628 +0000 build-centos: + grep -q @REL@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:24.782055 +0000 build-centos: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:24.784239 +0000 build-centos: + grep -q @CHANGELOG@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:24.785007 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2021-06-16 20:55:24.786586 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/core-agent-linux qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:25.274185 +0000 build-centos: + cat qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:25.274232 +0000 build-centos: + rm -rf qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:25.274386 +0000 build-centos: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2021-06-16 20:55:25.274423 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2021-06-16 20:55:25.275664 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.Hx4fNd.spec
+2021-06-16 20:55:25.421592 +0000 build-centos: + rm -f /tmp/tmp.Hx4fNd.spec
+2021-06-16 20:55:25.447745 +0000 build-centos: + ERR_OUTPUT=/dev/stderr
+2021-06-16 20:55:25.447785 +0000 build-centos: + '[' 2 -lt 2 ']'
+2021-06-16 20:55:25.447797 +0000 build-centos: ++ basename qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in
+2021-06-16 20:55:25.451154 +0000 build-centos: + [[ xcore-agent.spec.in == \x\.\i\n ]]
+2021-06-16 20:55:25.451190 +0000 build-centos: + '[' -r qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in ']'
+2021-06-16 20:55:25.451199 +0000 build-centos: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2021-06-16 20:55:25.452385 +0000 build-centos: + tmp_spec=/tmp/tmp.awuhky.spec
+2021-06-16 20:55:25.452540 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2021-06-16 20:55:25.453755 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in /tmp/tmp.awuhky.spec
+2021-06-16 20:55:25.455026 +0000 build-centos: + '[' 2 -lt 2 ']'
+2021-06-16 20:55:25.455053 +0000 build-centos: + '[' -z qubes-src/core-agent-linux ']'
+2021-06-16 20:55:25.455066 +0000 build-centos: + cp qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:25.456242 +0000 build-centos: + read -r ver
+2021-06-16 20:55:25.456268 +0000 build-centos: + '[' x = x ']'
+2021-06-16 20:55:25.456279 +0000 build-centos: + sed -i 's|@VERSION@|4.1.26|g' qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:25.458810 +0000 build-centos: + vnum=1
+2021-06-16 20:55:25.458846 +0000 build-centos: + read -r ver
+2021-06-16 20:55:25.458856 +0000 build-centos: + '[' -e qubes-src/core-agent-linux/rel ']'
+2021-06-16 20:55:25.458867 +0000 build-centos: + grep -q @REL@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:25.460119 +0000 build-centos: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:25.461442 +0000 build-centos: + grep -q @CHANGELOG@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:25.466240 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2021-06-16 20:55:25.466283 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/core-agent-linux qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:25.877402 +0000 build-centos: + cat qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:25.877476 +0000 build-centos: + rm -rf qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:25.911226 +0000 build-centos: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2021-06-16 20:55:25.911269 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2021-06-16 20:55:25.911284 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.awuhky.spec
+2021-06-16 20:55:26.012095 +0000 build-centos: + rm -f /tmp/tmp.awuhky.spec
+2021-06-16 20:55:26.068747 +0000 build-centos: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:173: target 'update-repo-do' does not exist
+2021-06-16 20:55:26.068794 +0000 build-centos: mkdir -p /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/centos-stream8/rpm
+2021-06-16 20:55:26.079289 +0000 build-centos: + ERR_OUTPUT=/dev/stderr
+2021-06-16 20:55:26.079341 +0000 build-centos: + '[' 2 -lt 2 ']'
+2021-06-16 20:55:26.080186 +0000 build-centos: ++ basename qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in
+2021-06-16 20:55:26.081718 +0000 build-centos: + [[ xcore-agent.spec.in == \x\.\i\n ]]
+2021-06-16 20:55:26.081756 +0000 build-centos: + '[' -r qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in ']'
+2021-06-16 20:55:26.081766 +0000 build-centos: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2021-06-16 20:55:26.081886 +0000 build-centos: + tmp_spec=/tmp/tmp.YITRdT.spec
+2021-06-16 20:55:26.082037 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2021-06-16 20:55:26.083221 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in /tmp/tmp.YITRdT.spec
+2021-06-16 20:55:26.085052 +0000 build-centos: + '[' 2 -lt 2 ']'
+2021-06-16 20:55:26.085088 +0000 build-centos: + '[' -z qubes-src/core-agent-linux ']'
+2021-06-16 20:55:26.085103 +0000 build-centos: + cp qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:26.086321 +0000 build-centos: + read -r ver
+2021-06-16 20:55:26.086370 +0000 build-centos: + '[' x = x ']'
+2021-06-16 20:55:26.086384 +0000 build-centos: + sed -i 's|@VERSION@|4.1.26|g' qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:26.087812 +0000 build-centos: + vnum=1
+2021-06-16 20:55:26.087846 +0000 build-centos: + read -r ver
+2021-06-16 20:55:26.087856 +0000 build-centos: + '[' -e qubes-src/core-agent-linux/rel ']'
+2021-06-16 20:55:26.087866 +0000 build-centos: + grep -q @REL@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:26.089063 +0000 build-centos: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:26.090697 +0000 build-centos: + grep -q @CHANGELOG@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:26.091977 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2021-06-16 20:55:26.093891 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/core-agent-linux qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:26.550581 +0000 build-centos: + cat qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:26.550630 +0000 build-centos: + rm -rf qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:26.550641 +0000 build-centos: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2021-06-16 20:55:26.551361 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2021-06-16 20:55:26.551597 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.YITRdT.spec
+2021-06-16 20:55:26.622913 +0000 build-centos: + rm -f /tmp/tmp.YITRdT.spec
+2021-06-16 20:55:26.627028 +0000 build-centos: if [ -n "pkgs/vm-centos-stream8/python2-dnf-plugins-qubes-hooks-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/python3-dnf-plugins-qubes-hooks-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-4.1.26-1.el8.src.rpm pkgs/vm-centos-stream8/qubes-core-agent-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-debuginfo-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-debugsource-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-dom0-updates-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-nautilus-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-network-manager-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-networking-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-passwordless-root-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-systemd-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-thunar-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-4.1.26-1.el8.x86_64.buildinfo" ]; then \
+2021-06-16 20:55:26.627135 +0000 build-centos: .cd qubes-src/core-agent-linux && ln -f pkgs/vm-centos-stream8/python2-dnf-plugins-qubes-hooks-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/python3-dnf-plugins-qubes-hooks-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-4.1.26-1.el8.src.rpm pkgs/vm-centos-stream8/qubes-core-agent-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-debuginfo-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-debugsource-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-dom0-updates-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-nautilus-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-network-manager-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-networking-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-passwordless-root-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-systemd-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-thunar-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-4.1.26-1.el8.x86_64.buildinfo  /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/centos-stream8/rpm/; \
+2021-06-16 20:55:26.627159 +0000 build-centos: else \
+2021-06-16 20:55:26.627173 +0000 build-centos: .echo "`tput bold`No packages defined by rpm_spec/core-agent.spec, syntax error?`tput sgr0`"; \
+2021-06-16 20:55:26.627179 +0000 build-centos: .exit 1; \
+2021-06-16 20:55:26.627185 +0000 build-centos: fi
+2021-06-16 20:55:26.665473 +0000 build-centos: cd qubes-src/core-agent-linux && echo pkgs/vm-centos-stream8/python2-dnf-plugins-qubes-hooks-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/python3-dnf-plugins-qubes-hooks-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-4.1.26-1.el8.src.rpm pkgs/vm-centos-stream8/qubes-core-agent-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-debuginfo-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-debugsource-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-dom0-updates-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-nautilus-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-network-manager-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-networking-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-passwordless-root-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-systemd-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-thunar-4.1.26-1.el8.x86_64.rpm pkgs/vm-centos-stream8/qubes-core-agent-4.1.26-1.el8.x86_64.buildinfo  > /home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-centos-stream8-core-agent-linux
+2021-06-16 20:55:26.696431 +0000 build-centos: /home/user/builder-r4.1/qubes-src/builder-github//Makefile.github:18: target 'notify-github' does not exist
+2021-06-16 20:55:26.696476 +0000 build-centos: [ -z "python2-dnf-plugins-qubes-hooks-4.1.26-1.el8" ] || /home/user/builder-r4.1/qubes-src/builder-github//notify-issues \
+2021-06-16 20:55:26.696491 +0000 build-centos: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-centos/log_2021-06-16_20-52-43" \
+2021-06-16 20:55:26.696498 +0000 build-centos: .upload \
+2021-06-16 20:55:26.696505 +0000 build-centos: ."r4.1" \
+2021-06-16 20:55:26.696512 +0000 build-centos: ."qubes-src/core-agent-linux" \
+2021-06-16 20:55:26.696520 +0000 build-centos: ."python2-dnf-plugins-qubes-hooks-4.1.26-1.el8" \
+2021-06-16 20:55:26.696526 +0000 build-centos: ."centos-stream8" \
+2021-06-16 20:55:26.696532 +0000 build-centos: ."vm" \
+2021-06-16 20:55:26.696538 +0000 build-centos: ."current-testing" \
+2021-06-16 20:55:26.696548 +0000 build-centos: ."/home/user/github-notify-state/r4.1-core-agent-linux-vm-centos-stream8-current-testing" \
+2021-06-16 20:55:26.696558 +0000 build-centos: ."/home/user/github-notify-state/r4.1-core-agent-linux-vm-centos-stream8-current"
+2021-06-16 20:55:26.740911 +0000 build-centos: + ERR_OUTPUT=/dev/stderr
+2021-06-16 20:55:26.740952 +0000 build-centos: + '[' 2 -lt 2 ']'
+2021-06-16 20:55:26.740963 +0000 build-centos: ++ basename qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in
+2021-06-16 20:55:26.740988 +0000 build-centos: + [[ xcore-agent.spec.in == \x\.\i\n ]]
+2021-06-16 20:55:26.740999 +0000 build-centos: + '[' -r qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in ']'
+2021-06-16 20:55:26.743233 +0000 build-centos: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2021-06-16 20:55:26.743270 +0000 build-centos: + tmp_spec=/tmp/tmp.xmltyn.spec
+2021-06-16 20:55:26.746382 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2021-06-16 20:55:26.746450 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in /tmp/tmp.xmltyn.spec
+2021-06-16 20:55:26.746460 +0000 build-centos: + '[' 2 -lt 2 ']'
+2021-06-16 20:55:26.746468 +0000 build-centos: + '[' -z qubes-src/core-agent-linux ']'
+2021-06-16 20:55:26.746483 +0000 build-centos: + cp qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:26.749139 +0000 build-centos: + read -r ver
+2021-06-16 20:55:26.749174 +0000 build-centos: + '[' x = x ']'
+2021-06-16 20:55:26.749188 +0000 build-centos: + sed -i 's|@VERSION@|4.1.26|g' qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:26.751871 +0000 build-centos: + vnum=1
+2021-06-16 20:55:26.751906 +0000 build-centos: + read -r ver
+2021-06-16 20:55:26.751916 +0000 build-centos: + '[' -e qubes-src/core-agent-linux/rel ']'
+2021-06-16 20:55:26.751926 +0000 build-centos: + grep -q @REL@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:26.751937 +0000 build-centos: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:26.756611 +0000 build-centos: + grep -q @CHANGELOG@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:26.757587 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2021-06-16 20:55:26.758862 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/core-agent-linux qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:27.183588 +0000 build-centos: + cat qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:27.183636 +0000 build-centos: + rm -rf qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2021-06-16 20:55:27.183647 +0000 build-centos: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2021-06-16 20:55:27.183861 +0000 build-centos: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2021-06-16 20:55:27.189471 +0000 build-centos: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.xmltyn.spec
+2021-06-16 20:55:27.292156 +0000 build-centos: + rm -f /tmp/tmp.xmltyn.spec
+2021-06-16 20:55:37.559362 +0000 build-centos: Adding a comment to issue #4469
+2021-06-16 20:55:37.566312 +0000 build-centos: 
+2021-06-16 20:55:37.566379 +0000 build-centos: Makefile:828: update target 'internal-update-repo-current-testing.vm.centos-stream8' due to: internal-update-repo-current-testing.vm.centos-stream8.core-agent-linux
+2021-06-16 20:55:37.566389 +0000 build-centos: true
+2021-06-16 20:55:37.567179 +0000 build-centos: Makefile:917: target 'post-update-repo-current-testing' does not exist
+2021-06-16 20:55:37.567211 +0000 build-centos: for dist in  centos-stream8; do \
+2021-06-16 20:55:37.567223 +0000 build-centos: .repo_base_var="LINUX_REPO_${dist//-/_}_BASEDIR"; \
+2021-06-16 20:55:37.567231 +0000 build-centos: .if [ -n "${!repo_base_var}" ]; then \
+2021-06-16 20:55:37.567239 +0000 build-centos: ..repo_basedir="${!repo_base_var}"; \
+2021-06-16 20:55:37.567245 +0000 build-centos: .else \
+2021-06-16 20:55:37.567253 +0000 build-centos: ..repo_basedir="qubes-src/linux-yum/r4.1"; \
+2021-06-16 20:55:37.567258 +0000 build-centos: .fi; \
+2021-06-16 20:55:37.567266 +0000 build-centos: .repos_to_update="$repos_to_update $repo_basedir"; \
+2021-06-16 20:55:37.567288 +0000 build-centos: done; \
+2021-06-16 20:55:37.567295 +0000 build-centos: pkgset_dist= ; \
+2021-06-16 20:55:37.567301 +0000 build-centos: for dist in ; do \
+2021-06-16 20:55:37.567309 +0000 build-centos: .pkgset_dist="$pkgset_dist dom0/$dist"; \
+2021-06-16 20:55:37.567332 +0000 build-centos: done; \
+2021-06-16 20:55:37.567340 +0000 build-centos: for dist in centos-stream8; do \
+2021-06-16 20:55:37.567348 +0000 build-centos: .pkgset_dist="$pkgset_dist vm/$dist"; \
+2021-06-16 20:55:37.567353 +0000 build-centos: done; \
+2021-06-16 20:55:37.567362 +0000 build-centos: for repo in `echo $repos_to_update|tr ' ' '\n'|sort|uniq`; do \
+2021-06-16 20:55:37.567369 +0000 build-centos: .[ -z "$repo" ] && continue; \
+2021-06-16 20:55:37.567377 +0000 build-centos: .[ -x "$repo/../update_repo-current-testing.sh" ] || continue; \
+2021-06-16 20:55:37.567387 +0000 build-centos: .(cd $repo/.. && ./update_repo-current-testing.sh r4.1 $pkgset_dist); \
+2021-06-16 20:55:37.567392 +0000 build-centos: done
+2021-06-16 20:55:37.577067 +0000 build-centos: ~/builder-r4.1/qubes-src/linux-yum ~/builder-r4.1/qubes-src/linux-yum
+2021-06-16 20:55:37.582849 +0000 build-centos: --> Processing repo: r4.1/current-testing/vm/centos-stream8...
+2021-06-16 20:55:37.633815 +0000 build-centos: warning: Found bdb Packages database while attempting sqlite backend: using bdb backend.
+2021-06-16 20:55:42.029953 +0000 build-centos: Done.
+2021-06-16 20:55:42.032824 +0000 build-centos: ~/builder-r4.1/qubes-src/linux-yum ~/builder-r4.1/qubes-src/linux-yum
+2021-06-16 20:55:42.034311 +0000 build-centos: Syncing r4.1...
+2021-06-16 20:55:42.989933 +0000 build-centos: sending incremental file list
+2021-06-16 20:55:43.049384 +0000 build-centos: .d..t...... centos-stream8/
+2021-06-16 20:55:43.049446 +0000 build-centos: .d..t...... centos-stream8/repodata/
+2021-06-16 20:55:43.049464 +0000 build-centos: <f..t...... centos-stream8/repodata/0a4d9ec5911f793f87955cf8bbc866b0c930c8f9aa2384ec29cc1f360a31da93-comps.xml.gz
+2021-06-16 20:55:43.049834 +0000 build-centos: .            700   8%    0.00kB/s    0:00:00  .          8,416 100%    7.36MB/s    0:00:00 (xfr#1, to-chk=248/254)
+2021-06-16 20:55:43.049858 +0000 build-centos: <f+++++++++ centos-stream8/repodata/188810e439ead3af6c9771942ca66b0ab2e8048c9039532196f9b212b2cb0755-primary.sqlite.bz2
+2021-06-16 20:55:43.049871 +0000 build-centos: .         32,768  33%   31.25MB/s    0:00:00  .         96,670 100%   92.19MB/s    0:00:00 (xfr#2, to-chk=247/254)
+2021-06-16 20:55:43.049883 +0000 build-centos: <f..t...... centos-stream8/repodata/397e43a81ad38941589caaed70c4fabc438fb360cee27a55821a1db270bacaa3-comps.xml
+2021-06-16 20:55:43.050827 +0000 build-centos: .            700   2%  683.59kB/s    0:00:00  .         25,819 100%   24.62MB/s    0:00:00 (xfr#3, to-chk=246/254)
+2021-06-16 20:55:43.050860 +0000 build-centos: <f+++++++++ centos-stream8/repodata/3e88183da38b74278f287bec4fd816b9fe31d333b9d280086d85057b5d48d6e7-other.xml.gz
+2021-06-16 20:55:43.050874 +0000 build-centos: .         24,366 100%   23.24MB/s    0:00:00  .         24,366 100%   23.24MB/s    0:00:00 (xfr#4, to-chk=245/254)
+2021-06-16 20:55:43.050886 +0000 build-centos: <f+++++++++ centos-stream8/repodata/8425e815a7d4f5a6b200be2d287394136e11aba4c957e47407066143f79c7ae7-primary.xml.gz
+2021-06-16 20:55:43.050898 +0000 build-centos: .         32,768  73%   31.25MB/s    0:00:00  .         44,872 100%   42.79MB/s    0:00:00 (xfr#5, to-chk=244/254)
+2021-06-16 20:55:43.050909 +0000 build-centos: <f+++++++++ centos-stream8/repodata/86b6445aed19df2f57596418b23ee63d6e13cf1ac97b0d1df7fe49fa6187415b-other.sqlite.bz2
+2021-06-16 20:55:43.050921 +0000 build-centos: .         32,768  71%   31.25MB/s    0:00:00  .         46,132 100%   43.99MB/s    0:00:00 (xfr#6, to-chk=243/254)
+2021-06-16 20:55:43.050933 +0000 build-centos: <f+++++++++ centos-stream8/repodata/889dabc949347e2fd2ce4c8d77163bfd47a8f1169cd135720bec3d8f18b4532e-filelists.sqlite.bz2
+2021-06-16 20:55:43.050945 +0000 build-centos: .         32,768  28%   31.25MB/s    0:00:00  .        115,591 100%  110.24MB/s    0:00:00 (xfr#7, to-chk=242/254)
+2021-06-16 20:55:43.050974 +0000 build-centos: <f+++++++++ centos-stream8/repodata/ca0f654170e4c0d221de0642528b00ee1c475772da790cbea4ef9fcdbebf98e9-filelists.xml.gz
+2021-06-16 20:55:43.051304 +0000 build-centos: .         32,768  37%   31.25MB/s    0:00:00  .         87,961 100%   83.89MB/s    0:00:00 (xfr#8, to-chk=241/254)
+2021-06-16 20:55:43.051326 +0000 build-centos: <f..t...... centos-stream8/repodata/repomd.xml
+2021-06-16 20:55:43.051339 +0000 build-centos: .          3,851 100%    3.67MB/s    0:00:00  .          3,851 100%    3.67MB/s    0:00:00 (xfr#9, to-chk=240/254)
+2021-06-16 20:55:43.051362 +0000 build-centos: <f..t...... centos-stream8/repodata/repomd.xml.asc
+2021-06-16 20:55:43.051375 +0000 build-centos: .            833 100%  813.48kB/s    0:00:00  .            833 100%  813.48kB/s    0:00:00 (xfr#10, to-chk=239/254)
+2021-06-16 20:55:43.051382 +0000 build-centos: .d..t...... centos-stream8/rpm/
+2021-06-16 20:55:43.051392 +0000 build-centos: <f+++++++++ centos-stream8/rpm/python2-dnf-plugins-qubes-hooks-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:43.051404 +0000 build-centos: .         15,196 100%   14.49MB/s    0:00:00  .         15,196 100%   14.49MB/s    0:00:00 (xfr#11, to-chk=217/254)
+2021-06-16 20:55:43.051414 +0000 build-centos: <f+++++++++ centos-stream8/rpm/python3-dnf-plugins-qubes-hooks-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:43.051772 +0000 build-centos: .         15,408 100%   14.69MB/s    0:00:00  .         15,408 100%   14.69MB/s    0:00:00 (xfr#12, to-chk=215/254)
+2021-06-16 20:55:43.051797 +0000 build-centos: <f+++++++++ centos-stream8/rpm/qubes-core-agent-4.1.26-1.el8.src.rpm
+2021-06-16 20:55:43.052626 +0000 build-centos: .         32,768  17%   15.62MB/s    0:00:00  .        189,425 100%   90.32MB/s    0:00:00 (xfr#13, to-chk=186/254)
+2021-06-16 20:55:43.052656 +0000 build-centos: <f+++++++++ centos-stream8/rpm/qubes-core-agent-4.1.26-1.el8.x86_64.buildinfo
+2021-06-16 20:55:43.052669 +0000 build-centos: .          4,740 100%    1.51MB/s    0:00:00  .          4,740 100%    1.51MB/s    0:00:00 (xfr#14, to-chk=185/254)
+2021-06-16 20:55:43.052679 +0000 build-centos: <f+++++++++ centos-stream8/rpm/qubes-core-agent-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:43.053514 +0000 build-centos: .         32,768  24%   10.42MB/s    0:00:00  .        133,952 100%   42.58MB/s    0:00:00 (xfr#15, to-chk=184/254)
+2021-06-16 20:55:43.053547 +0000 build-centos: <f+++++++++ centos-stream8/rpm/qubes-core-agent-debuginfo-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:43.055433 +0000 build-centos: .         32,768  62%    7.81MB/s    0:00:00  .         52,140 100%   12.43MB/s    0:00:00 (xfr#16, to-chk=182/254)
+2021-06-16 20:55:43.055472 +0000 build-centos: <f+++++++++ centos-stream8/rpm/qubes-core-agent-debugsource-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:43.055487 +0000 build-centos: .         27,500 100%    6.56MB/s    0:00:00  .         27,500 100%    6.56MB/s    0:00:00 (xfr#17, to-chk=180/254)
+2021-06-16 20:55:43.055501 +0000 build-centos: <f+++++++++ centos-stream8/rpm/qubes-core-agent-dom0-updates-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:43.055513 +0000 build-centos: .         15,056 100%    3.59MB/s    0:00:00  .         15,056 100%    3.59MB/s    0:00:00 (xfr#18, to-chk=178/254)
+2021-06-16 20:55:43.055523 +0000 build-centos: <f+++++++++ centos-stream8/rpm/qubes-core-agent-nautilus-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:43.055535 +0000 build-centos: .         14,128 100%    3.37MB/s    0:00:00  .         14,128 100%    3.37MB/s    0:00:00 (xfr#19, to-chk=176/254)
+2021-06-16 20:55:43.055545 +0000 build-centos: <f+++++++++ centos-stream8/rpm/qubes-core-agent-network-manager-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:43.057249 +0000 build-centos: .         15,680 100%    2.99MB/s    0:00:00  .         15,680 100%    2.99MB/s    0:00:00 (xfr#20, to-chk=174/254)
+2021-06-16 20:55:43.057286 +0000 build-centos: <f+++++++++ centos-stream8/rpm/qubes-core-agent-networking-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:43.057329 +0000 build-centos: .         27,044 100%    5.16MB/s    0:00:00  .         27,044 100%    5.16MB/s    0:00:00 (xfr#21, to-chk=172/254)
+2021-06-16 20:55:43.057343 +0000 build-centos: <f+++++++++ centos-stream8/rpm/qubes-core-agent-passwordless-root-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:43.057355 +0000 build-centos: .         15,652 100%    2.99MB/s    0:00:00  .         15,652 100%    2.99MB/s    0:00:00 (xfr#22, to-chk=170/254)
+2021-06-16 20:55:43.057366 +0000 build-centos: <f+++++++++ centos-stream8/rpm/qubes-core-agent-systemd-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:43.057381 +0000 build-centos: .         29,272 100%    4.65MB/s    0:00:00  .         29,272 100%    4.65MB/s    0:00:00 (xfr#23, to-chk=168/254)
+2021-06-16 20:55:43.057391 +0000 build-centos: <f+++++++++ centos-stream8/rpm/qubes-core-agent-thunar-4.1.26-1.el8.x86_64.rpm
+2021-06-16 20:55:43.057403 +0000 build-centos: .         14,728 100%    2.34MB/s    0:00:00  .         14,728 100%    2.34MB/s    0:00:00 (xfr#24, to-chk=166/254)
+2021-06-16 20:55:43.886678 +0000 build-centos: Makefile:813: update target 'update-repo-current-testing' due to: internal-update-repo-current-testing.vm.centos-stream8 post-update-repo-current-testing
+2021-06-16 20:55:43.886722 +0000 build-centos: true
+2021-06-16 20:55:43.887088 +0000 build-centos: > done
+2021-06-16 20:55:43.887115 +0000 > closing log
