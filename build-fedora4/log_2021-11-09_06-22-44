@@ -1,0 +1,998 @@
+2021-11-09 06:22:44.188308 +0000 > starting log
+2021-11-09 06:22:44.188648 +0000 build-fedora4: > starting build with log
+2021-11-09 06:22:44.188701 +0000 build-fedora4: >> make args: DISTS_VM= fc32 fc33 fc34 fc35 DIST_DOM0= BUILD_LOGS_URL= desktop-linux-i3-vm-fc32=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2021-11-09_06-08-12 desktop-linux-i3-vm-fc33=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2021-11-09_06-11-43 desktop-linux-i3-vm-fc34=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2021-11-09_06-15-23 desktop-linux-i3-vm-fc35=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2021-11-09_06-19-01 GIT_URL_desktop_linux_i3=https://github.com/QubesOS/qubes-desktop-linux-i3 sign-all update-repo-current-testing
+2021-11-09 06:22:44.188710 +0000 build-fedora4: >> MAKEFLAGS=
+2021-11-09 06:22:44.188717 +0000 build-fedora4: >> COMPONENTS=desktop-linux-i3
+2021-11-09 06:22:44.188723 +0000 build-fedora4: >> DISTS_VM=
+2021-11-09 06:22:44.188729 +0000 build-fedora4: >> DIST_DOM0=
+2021-11-09 06:22:44.188738 +0000 build-fedora4: >> qubes-builder 61b94b1f0930c8b4324f606541784afc252e7d6e
+2021-11-09 06:22:44.188748 +0000 build-fedora4: >> qubes-builder/qubes-src/desktop-linux-i3 eb3d9d690ac36cc1d0bb3fbcd35aeafb62d38916
+2021-11-09 06:22:44.188754 +0000 build-fedora4: !! i3-4.17.1.tar.bz2
+2021-11-09 06:22:44.188760 +0000 build-fedora4: !! i3-4.18.2.tar.bz2
+2021-11-09 06:22:44.188766 +0000 build-fedora4: !! i3-4.18.tar.bz2
+2021-11-09 06:22:44.188772 +0000 build-fedora4: !! i3/i3-4.16.tar.bz2
+2021-11-09 06:22:44.188780 +0000 build-fedora4: !! pkgs/vm-fc29/i3-4.18-1.fc29.x86_64.buildinfo
+2021-11-09 06:22:44.188788 +0000 build-fedora4: !! pkgs/vm-fc29/i3-4.18.2-1.fc29.x86_64.buildinfo
+2021-11-09 06:22:44.188795 +0000 build-fedora4: !! pkgs/vm-fc29/i3-4.18.2-2.fc29.x86_64.buildinfo
+2021-11-09 06:22:44.188803 +0000 build-fedora4: !! pkgs/vm-fc29/i3-4.18.2-3.fc29.x86_64.buildinfo
+2021-11-09 06:22:44.188810 +0000 build-fedora4: !! pkgs/vm-fc29/i3-4.18.2-4.fc29.src.rpm
+2021-11-09 06:22:44.188818 +0000 build-fedora4: !! pkgs/vm-fc29/i3-4.18.2-4.fc29.x86_64.buildinfo
+2021-11-09 06:22:44.188825 +0000 build-fedora4: !! pkgs/vm-fc29/i3-4.18.2-4.fc29.x86_64.rpm
+2021-11-09 06:22:44.188833 +0000 build-fedora4: !! pkgs/vm-fc29/i3-debuginfo-4.18.2-4.fc29.x86_64.rpm
+2021-11-09 06:22:44.188841 +0000 build-fedora4: !! pkgs/vm-fc29/i3-debugsource-4.18.2-4.fc29.x86_64.rpm
+2021-11-09 06:22:44.188849 +0000 build-fedora4: !! pkgs/vm-fc29/i3-devel-4.18.2-4.fc29.x86_64.rpm
+2021-11-09 06:22:44.188857 +0000 build-fedora4: !! pkgs/vm-fc29/i3-devel-doc-4.18.2-4.fc29.noarch.rpm
+2021-11-09 06:22:44.188864 +0000 build-fedora4: !! pkgs/vm-fc29/i3-doc-4.18.2-4.fc29.noarch.rpm
+2021-11-09 06:22:44.188871 +0000 build-fedora4: !! pkgs/vm-fc29/i3.spec.list
+2021-11-09 06:22:44.188901 +0000 build-fedora4: !! pkgs/vm-fc30/i3-4.18-1.fc30.x86_64.buildinfo
+2021-11-09 06:22:44.188909 +0000 build-fedora4: !! pkgs/vm-fc30/i3-4.18.2-1.fc30.x86_64.buildinfo
+2021-11-09 06:22:44.188916 +0000 build-fedora4: !! pkgs/vm-fc30/i3-4.18.2-2.fc30.x86_64.buildinfo
+2021-11-09 06:22:44.188924 +0000 build-fedora4: !! pkgs/vm-fc30/i3-4.18.2-3.fc30.x86_64.buildinfo
+2021-11-09 06:22:44.188931 +0000 build-fedora4: !! pkgs/vm-fc30/i3-4.18.2-4.fc30.src.rpm
+2021-11-09 06:22:44.188939 +0000 build-fedora4: !! pkgs/vm-fc30/i3-4.18.2-4.fc30.x86_64.buildinfo
+2021-11-09 06:22:44.188946 +0000 build-fedora4: !! pkgs/vm-fc30/i3-4.18.2-4.fc30.x86_64.rpm
+2021-11-09 06:22:44.188954 +0000 build-fedora4: !! pkgs/vm-fc30/i3-debuginfo-4.18.2-4.fc30.x86_64.rpm
+2021-11-09 06:22:44.188962 +0000 build-fedora4: !! pkgs/vm-fc30/i3-debugsource-4.18.2-4.fc30.x86_64.rpm
+2021-11-09 06:22:44.188970 +0000 build-fedora4: !! pkgs/vm-fc30/i3-devel-4.18.2-4.fc30.x86_64.rpm
+2021-11-09 06:22:44.188977 +0000 build-fedora4: !! pkgs/vm-fc30/i3-devel-doc-4.18.2-4.fc30.noarch.rpm
+2021-11-09 06:22:44.188985 +0000 build-fedora4: !! pkgs/vm-fc30/i3-doc-4.18.2-4.fc30.noarch.rpm
+2021-11-09 06:22:44.188992 +0000 build-fedora4: !! pkgs/vm-fc30/i3.spec.list
+2021-11-09 06:22:44.188999 +0000 build-fedora4: !! pkgs/vm-fc31/i3-4.18-1.fc31.x86_64.buildinfo
+2021-11-09 06:22:44.189013 +0000 build-fedora4: !! pkgs/vm-fc31/i3-4.18.2-1.fc31.x86_64.buildinfo
+2021-11-09 06:22:44.189022 +0000 build-fedora4: !! pkgs/vm-fc31/i3-4.18.2-2.fc31.x86_64.buildinfo
+2021-11-09 06:22:44.189029 +0000 build-fedora4: !! pkgs/vm-fc31/i3-4.18.2-3.fc31.x86_64.buildinfo
+2021-11-09 06:22:44.189037 +0000 build-fedora4: !! pkgs/vm-fc31/i3-4.18.2-4.fc31.src.rpm
+2021-11-09 06:22:44.189044 +0000 build-fedora4: !! pkgs/vm-fc31/i3-4.18.2-4.fc31.x86_64.buildinfo
+2021-11-09 06:22:44.189052 +0000 build-fedora4: !! pkgs/vm-fc31/i3-4.18.2-4.fc31.x86_64.rpm
+2021-11-09 06:22:44.189060 +0000 build-fedora4: !! pkgs/vm-fc31/i3-debuginfo-4.18.2-4.fc31.x86_64.rpm
+2021-11-09 06:22:44.189068 +0000 build-fedora4: !! pkgs/vm-fc31/i3-debugsource-4.18.2-4.fc31.x86_64.rpm
+2021-11-09 06:22:44.189075 +0000 build-fedora4: !! pkgs/vm-fc31/i3-devel-4.18.2-4.fc31.x86_64.rpm
+2021-11-09 06:22:44.189083 +0000 build-fedora4: !! pkgs/vm-fc31/i3-devel-doc-4.18.2-4.fc31.noarch.rpm
+2021-11-09 06:22:44.189090 +0000 build-fedora4: !! pkgs/vm-fc31/i3-doc-4.18.2-4.fc31.noarch.rpm
+2021-11-09 06:22:44.189097 +0000 build-fedora4: !! pkgs/vm-fc31/i3.spec.list
+2021-11-09 06:22:44.189105 +0000 build-fedora4: !! pkgs/vm-fc32/i3-4.18-1.fc32.x86_64.buildinfo
+2021-11-09 06:22:44.189112 +0000 build-fedora4: !! pkgs/vm-fc32/i3-4.18.2-1.fc32.x86_64.buildinfo
+2021-11-09 06:22:44.189120 +0000 build-fedora4: !! pkgs/vm-fc32/i3-4.18.2-2.fc32.x86_64.buildinfo
+2021-11-09 06:22:44.189128 +0000 build-fedora4: !! pkgs/vm-fc32/i3-4.18.2-3.fc32.x86_64.buildinfo
+2021-11-09 06:22:44.189135 +0000 build-fedora4: !! pkgs/vm-fc32/i3-4.18.2-4.fc32.src.rpm
+2021-11-09 06:22:44.189143 +0000 build-fedora4: !! pkgs/vm-fc32/i3-4.18.2-4.fc32.x86_64.buildinfo
+2021-11-09 06:22:44.189150 +0000 build-fedora4: !! pkgs/vm-fc32/i3-4.18.2-4.fc32.x86_64.rpm
+2021-11-09 06:22:44.189157 +0000 build-fedora4: !! pkgs/vm-fc32/i3-4.18.2-5.fc32.src.rpm
+2021-11-09 06:22:44.189165 +0000 build-fedora4: !! pkgs/vm-fc32/i3-4.18.2-5.fc32.x86_64.buildinfo
+2021-11-09 06:22:44.189172 +0000 build-fedora4: !! pkgs/vm-fc32/i3-4.18.2-5.fc32.x86_64.rpm
+2021-11-09 06:22:44.189180 +0000 build-fedora4: !! pkgs/vm-fc32/i3-debuginfo-4.18.2-4.fc32.x86_64.rpm
+2021-11-09 06:22:44.189188 +0000 build-fedora4: !! pkgs/vm-fc32/i3-debuginfo-4.18.2-5.fc32.x86_64.rpm
+2021-11-09 06:22:44.189196 +0000 build-fedora4: !! pkgs/vm-fc32/i3-debugsource-4.18.2-4.fc32.x86_64.rpm
+2021-11-09 06:22:44.189204 +0000 build-fedora4: !! pkgs/vm-fc32/i3-debugsource-4.18.2-5.fc32.x86_64.rpm
+2021-11-09 06:22:44.189212 +0000 build-fedora4: !! pkgs/vm-fc32/i3-devel-4.18.2-4.fc32.x86_64.rpm
+2021-11-09 06:22:44.189219 +0000 build-fedora4: !! pkgs/vm-fc32/i3-devel-4.18.2-5.fc32.x86_64.rpm
+2021-11-09 06:22:44.189227 +0000 build-fedora4: !! pkgs/vm-fc32/i3-devel-doc-4.18.2-4.fc32.noarch.rpm
+2021-11-09 06:22:44.189235 +0000 build-fedora4: !! pkgs/vm-fc32/i3-devel-doc-4.18.2-5.fc32.noarch.rpm
+2021-11-09 06:22:44.189242 +0000 build-fedora4: !! pkgs/vm-fc32/i3-doc-4.18.2-4.fc32.noarch.rpm
+2021-11-09 06:22:44.189250 +0000 build-fedora4: !! pkgs/vm-fc32/i3-doc-4.18.2-5.fc32.noarch.rpm
+2021-11-09 06:22:44.189256 +0000 build-fedora4: !! pkgs/vm-fc32/i3.spec.list
+2021-11-09 06:22:44.189264 +0000 build-fedora4: !! pkgs/vm-fc33/i3-4.18.2-4.fc33.src.rpm
+2021-11-09 06:22:44.189271 +0000 build-fedora4: !! pkgs/vm-fc33/i3-4.18.2-4.fc33.x86_64.buildinfo
+2021-11-09 06:22:44.189279 +0000 build-fedora4: !! pkgs/vm-fc33/i3-4.18.2-4.fc33.x86_64.rpm
+2021-11-09 06:22:44.189286 +0000 build-fedora4: !! pkgs/vm-fc33/i3-4.18.2-5.fc33.src.rpm
+2021-11-09 06:22:44.189293 +0000 build-fedora4: !! pkgs/vm-fc33/i3-4.18.2-5.fc33.x86_64.buildinfo
+2021-11-09 06:22:44.189310 +0000 build-fedora4: !! pkgs/vm-fc33/i3-4.18.2-5.fc33.x86_64.rpm
+2021-11-09 06:22:44.189319 +0000 build-fedora4: !! pkgs/vm-fc33/i3-debuginfo-4.18.2-4.fc33.x86_64.rpm
+2021-11-09 06:22:44.189327 +0000 build-fedora4: !! pkgs/vm-fc33/i3-debuginfo-4.18.2-5.fc33.x86_64.rpm
+2021-11-09 06:22:44.189335 +0000 build-fedora4: !! pkgs/vm-fc33/i3-debugsource-4.18.2-4.fc33.x86_64.rpm
+2021-11-09 06:22:44.189348 +0000 build-fedora4: !! pkgs/vm-fc33/i3-debugsource-4.18.2-5.fc33.x86_64.rpm
+2021-11-09 06:22:44.189356 +0000 build-fedora4: !! pkgs/vm-fc33/i3-devel-4.18.2-4.fc33.x86_64.rpm
+2021-11-09 06:22:44.189364 +0000 build-fedora4: !! pkgs/vm-fc33/i3-devel-4.18.2-5.fc33.x86_64.rpm
+2021-11-09 06:22:44.189372 +0000 build-fedora4: !! pkgs/vm-fc33/i3-devel-doc-4.18.2-4.fc33.noarch.rpm
+2021-11-09 06:22:44.189380 +0000 build-fedora4: !! pkgs/vm-fc33/i3-devel-doc-4.18.2-5.fc33.noarch.rpm
+2021-11-09 06:22:44.189388 +0000 build-fedora4: !! pkgs/vm-fc33/i3-doc-4.18.2-4.fc33.noarch.rpm
+2021-11-09 06:22:44.189395 +0000 build-fedora4: !! pkgs/vm-fc33/i3-doc-4.18.2-5.fc33.noarch.rpm
+2021-11-09 06:22:44.189402 +0000 build-fedora4: !! pkgs/vm-fc33/i3.spec.list
+2021-11-09 06:22:44.189409 +0000 build-fedora4: !! pkgs/vm-fc34/i3-4.18.2-4.fc34.src.rpm
+2021-11-09 06:22:44.189417 +0000 build-fedora4: !! pkgs/vm-fc34/i3-4.18.2-4.fc34.x86_64.buildinfo
+2021-11-09 06:22:44.189425 +0000 build-fedora4: !! pkgs/vm-fc34/i3-4.18.2-4.fc34.x86_64.rpm
+2021-11-09 06:22:44.189432 +0000 build-fedora4: !! pkgs/vm-fc34/i3-4.18.2-5.fc34.src.rpm
+2021-11-09 06:22:44.189440 +0000 build-fedora4: !! pkgs/vm-fc34/i3-4.18.2-5.fc34.x86_64.buildinfo
+2021-11-09 06:22:44.189447 +0000 build-fedora4: !! pkgs/vm-fc34/i3-4.18.2-5.fc34.x86_64.rpm
+2021-11-09 06:22:44.189455 +0000 build-fedora4: !! pkgs/vm-fc34/i3-debuginfo-4.18.2-4.fc34.x86_64.rpm
+2021-11-09 06:22:44.189463 +0000 build-fedora4: !! pkgs/vm-fc34/i3-debuginfo-4.18.2-5.fc34.x86_64.rpm
+2021-11-09 06:22:44.189472 +0000 build-fedora4: !! pkgs/vm-fc34/i3-debugsource-4.18.2-4.fc34.x86_64.rpm
+2021-11-09 06:22:44.189480 +0000 build-fedora4: !! pkgs/vm-fc34/i3-debugsource-4.18.2-5.fc34.x86_64.rpm
+2021-11-09 06:22:44.189487 +0000 build-fedora4: !! pkgs/vm-fc34/i3-devel-4.18.2-4.fc34.x86_64.rpm
+2021-11-09 06:22:44.189495 +0000 build-fedora4: !! pkgs/vm-fc34/i3-devel-4.18.2-5.fc34.x86_64.rpm
+2021-11-09 06:22:44.189503 +0000 build-fedora4: !! pkgs/vm-fc34/i3-devel-doc-4.18.2-4.fc34.noarch.rpm
+2021-11-09 06:22:44.189511 +0000 build-fedora4: !! pkgs/vm-fc34/i3-devel-doc-4.18.2-5.fc34.noarch.rpm
+2021-11-09 06:22:44.189519 +0000 build-fedora4: !! pkgs/vm-fc34/i3-doc-4.18.2-4.fc34.noarch.rpm
+2021-11-09 06:22:44.189526 +0000 build-fedora4: !! pkgs/vm-fc34/i3-doc-4.18.2-5.fc34.noarch.rpm
+2021-11-09 06:22:44.189533 +0000 build-fedora4: !! pkgs/vm-fc34/i3.spec.list
+2021-11-09 06:22:44.189540 +0000 build-fedora4: !! pkgs/vm-fc35/i3-4.18.2-5.fc35.src.rpm
+2021-11-09 06:22:44.189548 +0000 build-fedora4: !! pkgs/vm-fc35/i3-4.18.2-5.fc35.x86_64.buildinfo
+2021-11-09 06:22:44.189556 +0000 build-fedora4: !! pkgs/vm-fc35/i3-4.18.2-5.fc35.x86_64.rpm
+2021-11-09 06:22:44.189564 +0000 build-fedora4: !! pkgs/vm-fc35/i3-debuginfo-4.18.2-5.fc35.x86_64.rpm
+2021-11-09 06:22:44.189572 +0000 build-fedora4: !! pkgs/vm-fc35/i3-debugsource-4.18.2-5.fc35.x86_64.rpm
+2021-11-09 06:22:44.189580 +0000 build-fedora4: !! pkgs/vm-fc35/i3-devel-4.18.2-5.fc35.x86_64.rpm
+2021-11-09 06:22:44.189588 +0000 build-fedora4: !! pkgs/vm-fc35/i3-devel-doc-4.18.2-5.fc35.noarch.rpm
+2021-11-09 06:22:44.189595 +0000 build-fedora4: !! pkgs/vm-fc35/i3-doc-4.18.2-5.fc35.noarch.rpm
+2021-11-09 06:22:44.189602 +0000 build-fedora4: !! pkgs/vm-fc35/i3.spec.list
+2021-11-09 06:22:44.189616 +0000 build-fedora4: af397dc1768ea6530e4b2ce8ef21b20ecff8ab9eebf380df224456173eea4c3bacf28b55c8efcdc70f76f0d66543c163564a94cfd66028221ace481fa3c2913f  i3-4.17.1.tar.bz2
+2021-11-09 06:22:44.189630 +0000 build-fedora4: 997c7cdf32f95ba25cfcd483a09f7e37e5219e4501baefa5c1865ddffd206bc9725211e4082663fab4174dc947b663ff454d343a7e30340ac3ea451f999417fc  i3-4.18.2.tar.bz2
+2021-11-09 06:22:44.189643 +0000 build-fedora4: 0bbfda7f4b20a92a50ffb6abbfc3f6bfe6bb4c987ad4b5b1791192eb23b8c3389cc9949a699901797370c14de1ff8e12447a3b8ce330ab7d300fafdb60a432ec  i3-4.18.tar.bz2
+2021-11-09 06:22:44.189656 +0000 build-fedora4: 99abd15349ee8e61c084b3664ef3a189c92ea07812ac59eb6a5441df7cebea8211be52204e39bddcc33d8c714447fddbbe2c5c8a25b756a96e2dc6732526cbf8  i3/i3-4.16.tar.bz2
+2021-11-09 06:22:44.189674 +0000 build-fedora4: 66a4c6b5d92d5a30ab4a9b051e093a87b1e80be057e7e0f6223745ebc1adc49749d2342fa9aef56a2f44352eceafefceb4f748bb9e461798711f1f5f516faed1  pkgs/vm-fc29/i3-4.18-1.fc29.x86_64.buildinfo
+2021-11-09 06:22:44.189690 +0000 build-fedora4: 8b9bd53e7f128f8940efe3fce29f0634d6dcced667d73bf56d35b0f9e85ae45c5c3313d6bfa237c7643996c2857ad0f1ac3dde2db188ff17b2e7463894a16f00  pkgs/vm-fc29/i3-4.18.2-1.fc29.x86_64.buildinfo
+2021-11-09 06:22:44.189705 +0000 build-fedora4: 1bd2c6d47bc187dd30778d37d1820ea77c32c1121b93ef321b826b3d1af9a3dad161496c3296cd45c1d06edaec24663e8e130e6509cea6c083915a2ea5b3025a  pkgs/vm-fc29/i3-4.18.2-2.fc29.x86_64.buildinfo
+2021-11-09 06:22:44.189720 +0000 build-fedora4: 77cfda6be34b812e1d61588d87a64e25d3043618bd0d87db108160b331d55f8ee0a27e95dfe3aa62b3b2575f8a22d08c06beb941e07c8447072d0af459fc5fec  pkgs/vm-fc29/i3-4.18.2-3.fc29.x86_64.buildinfo
+2021-11-09 06:22:44.189734 +0000 build-fedora4: e68557b5d904e88dd5b8e9518f31a54be9e6c2bc7b3bee00415e30e5754f16871f09c673ef39153077864f2682fbc538b8bc4f9b44b46f29c304ed223d035405  pkgs/vm-fc29/i3-4.18.2-4.fc29.src.rpm
+2021-11-09 06:22:44.189749 +0000 build-fedora4: 90f6ba7310e649d965a8e596fc94b6d69751a9ef8f0a99a46f6aa5b445733cab1448f54a4aef001e83a25e39cad64b837fc44ca2fe39348804522ce4fac0036f  pkgs/vm-fc29/i3-4.18.2-4.fc29.x86_64.buildinfo
+2021-11-09 06:22:44.189764 +0000 build-fedora4: 81dc388064edefd6a1f178b25c1e379b487f0b0dacdaf0d6c3036df73d473006aba7341eaeb07b7c95072a573c5f31c4562bb9bb5fdf9581125f14210b79c021  pkgs/vm-fc29/i3-4.18.2-4.fc29.x86_64.rpm
+2021-11-09 06:22:44.189779 +0000 build-fedora4: 828acc3c5409af78623963c50326db45a0146960f2827d0b8a57554d858206dd157cc0a50b8975ae4c8ad12ab7ffc6afb26c4d9c3273f50c3ac0c03bdc73fd6f  pkgs/vm-fc29/i3-debuginfo-4.18.2-4.fc29.x86_64.rpm
+2021-11-09 06:22:44.189794 +0000 build-fedora4: 20ea1a70e1c6c1ca6f88be1563c669444808f426761cf0638282e0f1559531050f56e650a8c2b34c170a8326693d9dfdb32e29ae27a41aa4cf36ab57af4fdf6b  pkgs/vm-fc29/i3-debugsource-4.18.2-4.fc29.x86_64.rpm
+2021-11-09 06:22:44.189811 +0000 build-fedora4: 3076d2feff92e2bd40ece8d396402e166c470933cbf53e1eaf9ed48e638dc500d9766707eefae8287bef9814fef64b8182928a7e93b294d960e55dd47ecc7feb  pkgs/vm-fc29/i3-devel-4.18.2-4.fc29.x86_64.rpm
+2021-11-09 06:22:44.424664 +0000 build-fedora4: 9c854ffa41997932fbec23f76d80cbfdd369ece9f1aa397e848dd5eb91fbab241455a3f88bf86a9c5f1ccb0803b21c02deeffe37f61d45b87c695c68545f8b6c  pkgs/vm-fc29/i3-devel-doc-4.18.2-4.fc29.noarch.rpm
+2021-11-09 06:22:44.425970 +0000 build-fedora4: d94e870772692b66b580d85bdc00ddc5b0654d8f010f852d712f8c7858636d0bea58f36828d3a69c1a0c5a7efc094037ce9e7746135a278de707e130db7b4062  pkgs/vm-fc29/i3-doc-4.18.2-4.fc29.noarch.rpm
+2021-11-09 06:22:44.426199 +0000 build-fedora4: 812f4c4d76d001bbd1f9b2a8627d8d5e56feb14610315c69fa07ccd294557ef2748a782e0bc55d0f4e18a74354fd563d78dc766928a116d2a685c951aa0c9db7  pkgs/vm-fc29/i3.spec.list
+2021-11-09 06:22:44.426492 +0000 build-fedora4: d2dba44d3014950073a597f4c2b534e3f2365b164b1aea6337aeaf5ae4f3342e1f63d85fc89972b484c2556c6a27891c665601f7336f87279c31b0f78d594d4d  pkgs/vm-fc30/i3-4.18-1.fc30.x86_64.buildinfo
+2021-11-09 06:22:44.426771 +0000 build-fedora4: aa0290e2038bc7c60098d7c02b7b6ea5ed758d258985adaad6676094383a88d027fefa3a561f455b461cbb12a4bcc757cc21bd2a71eddd3fb17f1ab3108eba8a  pkgs/vm-fc30/i3-4.18.2-1.fc30.x86_64.buildinfo
+2021-11-09 06:22:44.427031 +0000 build-fedora4: 7c0694480a2782af50da5f2684ae02d601795193240d448c4285f87d100000bf4942d139c43068b50ef14908b5ba95951d12d3eb81d8e1e0cdeae825c16b202c  pkgs/vm-fc30/i3-4.18.2-2.fc30.x86_64.buildinfo
+2021-11-09 06:22:44.427318 +0000 build-fedora4: 30bf935c13a2db288764a337131a2fe0ac36e3690f4697803c883d00812222ae6bb2bf6335f7ce20406f322356c6f6feab9a7bcc78c97a8b8470e1f6d6a78757  pkgs/vm-fc30/i3-4.18.2-3.fc30.x86_64.buildinfo
+2021-11-09 06:22:44.430639 +0000 build-fedora4: 622cdd4cc54b866b260ee40c33b6f98e07317555ef66afb6867a103c14f764273dcee1d2e79291ccbf544972924a5fc2efeaec8c16884e4b80b51da8f3ffcadc  pkgs/vm-fc30/i3-4.18.2-4.fc30.src.rpm
+2021-11-09 06:22:44.430997 +0000 build-fedora4: 277d4883282a7ccba3b42ad3a852341a30d915c9d1694b96eba4d32c28e3b5e3e2c76875062df8d2b8975e27062298ad4bcd6443cad805d5a7a4208a73aae840  pkgs/vm-fc30/i3-4.18.2-4.fc30.x86_64.buildinfo
+2021-11-09 06:22:44.432369 +0000 build-fedora4: ac91ffdeeb49fc6a1a9c83cdc591dc21bf98448decdb0198126b8ca9a69e73a07b19defefa4a71eacee543dc757a090ffafdf4f47d73a2864fd5ee37557e1a18  pkgs/vm-fc30/i3-4.18.2-4.fc30.x86_64.rpm
+2021-11-09 06:22:44.434323 +0000 build-fedora4: 902065c71c37b80a9d169a1ba09c66f82bd8717fcbb86930567e061a4e002d1ca20dc18414d726e6e40a8dfa4e880ee51a1aa8ed1271baf349180d991a26dd89  pkgs/vm-fc30/i3-debuginfo-4.18.2-4.fc30.x86_64.rpm
+2021-11-09 06:22:44.435657 +0000 build-fedora4: dd800824c02232925e230188dded2bece235ea2f1feda82ecbd29d9e73b1ec5cd797f20093516764b38e8df71126ff5d0b4aca5c4cda337ce021bbdb348265ec  pkgs/vm-fc30/i3-debugsource-4.18.2-4.fc30.x86_64.rpm
+2021-11-09 06:22:44.435922 +0000 build-fedora4: 71948d6a76a8124902008f96738253134b8df5193f1bfcf4c780d430b2f46a6c95ff2486288ff45a186427dfcd5faf17b555346be3d5c4b1571244dde13abc06  pkgs/vm-fc30/i3-devel-4.18.2-4.fc30.x86_64.rpm
+2021-11-09 06:22:45.561883 +0000 build-fedora4: 11d3d6c75937b24ce139cc8b4847e8ba07a9799d6e418f258cf1595bf92e7aaacd5625ce195fc52f69f718093520fa4137f415c9331e6126dedc0bca969bb64b  pkgs/vm-fc30/i3-devel-doc-4.18.2-4.fc30.noarch.rpm
+2021-11-09 06:22:45.566387 +0000 build-fedora4: 15466cdbe36dbad04ef4a1599c525d955a6ddc719371f4777ba570de455426f6cc02589904f572a251f9bc18b13616407792cf1ef15c02de9d05a953fbb97b49  pkgs/vm-fc30/i3-doc-4.18.2-4.fc30.noarch.rpm
+2021-11-09 06:22:45.568004 +0000 build-fedora4: 3919f971d4a0c8c9ca2147f59c541d10441e561143256affbe6639b94e160a6d65443bc806b7ed8e6d4a980adebcfe7c3e57dc1fec2f943c7f54292754b549b3  pkgs/vm-fc30/i3.spec.list
+2021-11-09 06:22:45.574904 +0000 build-fedora4: 74dbe6aa4bb006ff226014ff5b9a4f8f5291b0978b0c263ac28ccc655b4b7ea030f8e34b40d11aec5c5b5df710d7a9f61f4becd6b5ff08e4139e34d4e614069c  pkgs/vm-fc31/i3-4.18-1.fc31.x86_64.buildinfo
+2021-11-09 06:22:45.576125 +0000 build-fedora4: 46af821baa8fa847a6545a0c31d1ad10427fd787fe337b4ccff88157d4bfba2e65a30f20752211c7ea0a987820a01013c06c98055fc1decbee3cf4852c7e0ad4  pkgs/vm-fc31/i3-4.18.2-1.fc31.x86_64.buildinfo
+2021-11-09 06:22:45.577444 +0000 build-fedora4: 792b428133b84c8ff64821cef0150240456a174b4c8a4645a174ee03da351f18ee82cdd8c2e94ef7f3bfe032a2c443015b6c574bd6291d7eedf2249d5f9aa1ac  pkgs/vm-fc31/i3-4.18.2-2.fc31.x86_64.buildinfo
+2021-11-09 06:22:45.580395 +0000 build-fedora4: d51d3335eb4c3e146606fe9906a203898b631380a825029a22837ab2b23401e497120328954ccbe6022c4d00b91332e6d2153a82fa56d8a8f232b5e05d415a46  pkgs/vm-fc31/i3-4.18.2-3.fc31.x86_64.buildinfo
+2021-11-09 06:22:45.589921 +0000 build-fedora4: f68bea26ad7c63fcebf583464fb50c298e4cfc9193fb93d7d03411a5320c210dc6c98ce7e442abc2deabf9d136595120a1d38cd53548f6bd030cc44fc1e720e3  pkgs/vm-fc31/i3-4.18.2-4.fc31.src.rpm
+2021-11-09 06:22:45.591361 +0000 build-fedora4: c4cbe719ac028fedcaf28e66632e38a10705c96d2c931e73c4b9dee29e2bb147d2a2aae2f447fc15cb9eb02435b38225be21569fd034a56806339ed9d71524e4  pkgs/vm-fc31/i3-4.18.2-4.fc31.x86_64.buildinfo
+2021-11-09 06:22:45.620922 +0000 build-fedora4: 75eb7d7f64630cf71fc9b84162d9d83b4def6973ec082764644dbbdc2fa7ed392c171d4f2bcc6e3636e3bfc2d8237bf6f6a773060ce058814c6da634ceb49460  pkgs/vm-fc31/i3-4.18.2-4.fc31.x86_64.rpm
+2021-11-09 06:22:45.631067 +0000 build-fedora4: 0817b747e36399f5ed4e99be5707ce8b63b51c4b01dd41f007ed031117c248401b64677a05dafde985c9362ca5cc1e3937b29ad495ac508a98d1229d68743179  pkgs/vm-fc31/i3-debuginfo-4.18.2-4.fc31.x86_64.rpm
+2021-11-09 06:22:45.636186 +0000 build-fedora4: b197c069eddd6757fdac531da22242981a869fde8599837dcf13e45b4ee546a049386417abd1435c56bea7c0f50892e54787891883e43003119042207f18091b  pkgs/vm-fc31/i3-debugsource-4.18.2-4.fc31.x86_64.rpm
+2021-11-09 06:22:45.637692 +0000 build-fedora4: 9a5832b7cafab5abb1c12e14207be2b893fa70bbca7090b3ced615ad266bc3d703a5dc64275d5f742de6561af49f72495fa8c6a6bde750b1a3c0a2c2f3180a11  pkgs/vm-fc31/i3-devel-4.18.2-4.fc31.x86_64.rpm
+2021-11-09 06:22:47.552633 +0000 build-fedora4: 50caefa201af150d18245f85233facfa24d57908ce6c7ceea73bd3dc70322d2a8718a5ff1bf443eea41a181d0fae22aac2f1c2aa117c05f165e423d4f7001003  pkgs/vm-fc31/i3-devel-doc-4.18.2-4.fc31.noarch.rpm
+2021-11-09 06:22:47.557049 +0000 build-fedora4: d479033dc0e28949a2b74a577eb67165641cae6aa349429e12cfa4b907bae54a4e0ff5c500c1e78195bfea023a360b03160f38ec241cb14c0cef2d3738100564  pkgs/vm-fc31/i3-doc-4.18.2-4.fc31.noarch.rpm
+2021-11-09 06:22:47.558664 +0000 build-fedora4: 74944fb7fc6916685f4785cc869beee3d201aa97b3cceb58f046bb71d6a0b35c8b7390feefa9baf2753292f3df96f67cc4b4609e5fe72e6304e7c388a0fbc212  pkgs/vm-fc31/i3.spec.list
+2021-11-09 06:22:47.559883 +0000 build-fedora4: 0bb9e8fc3c7cff779c141bdaa84623f628a3bfd7d7d62ab39d53c8766a9e4cb9675ebf9b7453108d549b4d38b4c52e88e3bce2776450dcb2e90cbf85154a7d9b  pkgs/vm-fc32/i3-4.18-1.fc32.x86_64.buildinfo
+2021-11-09 06:22:47.562146 +0000 build-fedora4: f0f60c13cbf473de4c29d6c44f330d596d8d9c0aba9d286c269869b0f9ee79b9eeac23d9ffa82975013c9ede0d8a63be5a4dd24945a85599dcbcbe738324d8c4  pkgs/vm-fc32/i3-4.18.2-1.fc32.x86_64.buildinfo
+2021-11-09 06:22:47.563559 +0000 build-fedora4: 9578eb8abcc179c3b55579c18344592df0a5d6bf95749325b4851a3867059dc8fe5e3b7f10765f7bf8ef1780ea0703aab78298818a0b2b42b2f221e39b467fe5  pkgs/vm-fc32/i3-4.18.2-2.fc32.x86_64.buildinfo
+2021-11-09 06:22:47.564216 +0000 build-fedora4: c5c3d8f262853965a8aa17824c182647458e28b041f948c0dd6b4685e3985316ea65918b2427ee34f6d1089e407a20252135a8fcbf56b3bd0bc2f36d1b47b5ac  pkgs/vm-fc32/i3-4.18.2-3.fc32.x86_64.buildinfo
+2021-11-09 06:22:47.573604 +0000 build-fedora4: a5bc661d2baeafaf118cc099c4730a5a5497da79746d4e27d5e05d9af16db7a9b3d77ab6668e2bbf059ec43d65481a29212d8a8b6d5da47a666ab1cf8061a7b4  pkgs/vm-fc32/i3-4.18.2-4.fc32.src.rpm
+2021-11-09 06:22:47.574757 +0000 build-fedora4: 958ba936dd78332d137a9b5c954b0997d08cf53101b33dd29a0a4fd69174fa9fd168eaa850ea26046ea52bb5128a6c4f797db8fce4b2635835baa04eda5219bb  pkgs/vm-fc32/i3-4.18.2-4.fc32.x86_64.buildinfo
+2021-11-09 06:22:47.577608 +0000 build-fedora4: 4f642f9eefaf3466aa5ff8324ee2e44778711656eb2309944a874ba36842413f2f8ebe27e9c2e9e71d23807d1180434097a9e7ad419d9b70cbfb5c0ec168ded0  pkgs/vm-fc32/i3-4.18.2-4.fc32.x86_64.rpm
+2021-11-09 06:22:47.587086 +0000 build-fedora4: f1b58426495d06a90ce5c6e486b236a7c5531d4dab20e3cd0beffa2ac06769caf71cac6aeebb7b6d5295ba12e2c47a6b3615c58e257b639a1af99afc4dbebf7a  pkgs/vm-fc32/i3-4.18.2-5.fc32.src.rpm
+2021-11-09 06:22:47.589952 +0000 build-fedora4: 0a1bc4269d6adc9cabc7653517bb866d20ab9f5016b2d1cf62e3112f7002e4113f01e3051679a5031311c05e0c169199d74ce87a0a7bf1f65e6bd629b4b551bb  pkgs/vm-fc32/i3-4.18.2-5.fc32.x86_64.buildinfo
+2021-11-09 06:22:47.592369 +0000 build-fedora4: 50466954dc8029b1b327a335041dc516f79a8fb5392fb0ebd1795860042774e0dea6a2c31a8018b0c9294e4521d5aeb5f5fef5646c4a4dd1c26285806da2c17f  pkgs/vm-fc32/i3-4.18.2-5.fc32.x86_64.rpm
+2021-11-09 06:22:47.603143 +0000 build-fedora4: 98292df3deddfe08734d42d34e4a846565170ebcb0348ecf9d29cd60914f23c408dc80c189971ece4815cad990c59c523f44dd246b9df4cdccd9824edfdddb88  pkgs/vm-fc32/i3-debuginfo-4.18.2-4.fc32.x86_64.rpm
+2021-11-09 06:22:47.608729 +0000 build-fedora4: 8b655e6defd9b0baac0b6ae9d9d6772b9303db727da284b45a56c0092b9602a18b2435d48cd490f63c2a35885b6903c4e27a1fb21994c80ccaae95ff89eaf34b  pkgs/vm-fc32/i3-debuginfo-4.18.2-5.fc32.x86_64.rpm
+2021-11-09 06:22:47.613174 +0000 build-fedora4: 5f5e2982530f8fbede2381c1be58d5e35ac6f992750039aba6e04d16e2fab058714b06a4790ecda88fd51e9c0cbd18a0bf9f7b2524452c75a6148517dc6642b5  pkgs/vm-fc32/i3-debugsource-4.18.2-4.fc32.x86_64.rpm
+2021-11-09 06:22:47.615049 +0000 build-fedora4: ef954a860363a40df467341a57eb648e74092bcdee8522c367daad983a9f03f2e8a26e54d36a0d20ecb0ceeb0866966e87378ae735d34d81942ff99e141b5680  pkgs/vm-fc32/i3-debugsource-4.18.2-5.fc32.x86_64.rpm
+2021-11-09 06:22:47.615537 +0000 build-fedora4: 645e5e793b8fe775e7e4b48637defd9b43a5db3c00bbd39e0c4dac5d561925f174fc9744ca264e975f3704953c6046a19c7539ad959863b8bc519213754c9a8f  pkgs/vm-fc32/i3-devel-4.18.2-4.fc32.x86_64.rpm
+2021-11-09 06:22:47.617172 +0000 build-fedora4: fe71a9f11db7cd9d7fc582847ae65a1a5ec2de8d34e6e7405ad8781246acdbf5dd86c6709369add7c0e100ea11ad4c8d1c983edd3d316f61ca340c4aa813972e  pkgs/vm-fc32/i3-devel-4.18.2-5.fc32.x86_64.rpm
+2021-11-09 06:22:48.834782 +0000 build-fedora4: 79bbde1634ec3fd1843ad8a5f556ccbff0d6558c7a62a1be59f6f5703ec762b36e9eefb95aca1ed5ba3629ae743f8c50280a708d0dee7879f77f8261473cd6ae  pkgs/vm-fc32/i3-devel-doc-4.18.2-4.fc32.noarch.rpm
+2021-11-09 06:22:49.741177 +0000 build-fedora4: 57863646bdd6a6ea4dc3cfa7cd4f976cf1dfbfc1cf962351a665ea2a6ddc505f0bbf9b4674278440f06a4cd5f471c574ed95fd3ebe40f8a084305e23b7bc8557  pkgs/vm-fc32/i3-devel-doc-4.18.2-5.fc32.noarch.rpm
+2021-11-09 06:22:49.749258 +0000 build-fedora4: a855ec18184224e80c3cc061e664d364fb4292667fb22ec754a46dbb644c0d9c61ad7247eabb8082b1951954272aac5dd90799dea32f4b6e5200c5b485a8215f  pkgs/vm-fc32/i3-doc-4.18.2-4.fc32.noarch.rpm
+2021-11-09 06:22:49.752371 +0000 build-fedora4: c05ea3803c869f8098c00d8aa548a9377289fa854ae5ba4ff909371f8bf0b075ac65ab959512bbf5a131c99a5e596313eca5aa9a8bc49fca24ab0defcf1b2bc5  pkgs/vm-fc32/i3-doc-4.18.2-5.fc32.noarch.rpm
+2021-11-09 06:22:49.753528 +0000 build-fedora4: 0069a1c499acfd772bd2b8db1dc5183b2189c7aaed2396c2045ee29ebfe44d3e82001a2c1ddb7613dccd9818a109ff976a547a6b0b680b59d7628ea5e8b2b60c  pkgs/vm-fc32/i3.spec.list
+2021-11-09 06:22:49.761349 +0000 build-fedora4: 537b1a57cb8add7d92b1bb084ab711e9f363a43128e255efd4438808ce38be50d216ea54325e933c4146aa9f4eec1a3f6a1b5d2f90326f9ad7538d853f123310  pkgs/vm-fc33/i3-4.18.2-4.fc33.src.rpm
+2021-11-09 06:22:49.762515 +0000 build-fedora4: 6712b246e7532cfd752d6d13ab1475b635e44de1a3826114848802046445a736b9772aef2b769b41322ec971b587e1f927271e7c9f1be99820ec7bcb56648636  pkgs/vm-fc33/i3-4.18.2-4.fc33.x86_64.buildinfo
+2021-11-09 06:22:49.764707 +0000 build-fedora4: f268ccb23bdad75a61c2792373021e588e5f22a84412d5b7804cce04a83d1930882d5319bff3a3cc49fef124585810e52250d10fa07f56c7acfea66796a6470b  pkgs/vm-fc33/i3-4.18.2-4.fc33.x86_64.rpm
+2021-11-09 06:22:49.776752 +0000 build-fedora4: 75e2386b6533f1aabc88706cc97c6b6f968491c97b562d0603e32a05dd601317e2d9ce0e49b63a0b8b4263053254a7b457a601ec68b3cea3e953ea2eac59b213  pkgs/vm-fc33/i3-4.18.2-5.fc33.src.rpm
+2021-11-09 06:22:49.777572 +0000 build-fedora4: 13c0201e022b7d663e8601e67edb452cb1805e3aedfdcf6f14f7228fb94680da9bccb011e09a848a47678e52bbb283d0fb0a9fdb8e9338d25d16d7a1dfbc0ec7  pkgs/vm-fc33/i3-4.18.2-5.fc33.x86_64.buildinfo
+2021-11-09 06:22:49.783843 +0000 build-fedora4: 5ad95c668cd4fb2acecfddec0cadc13ee511998e170a2af1fa1cbed82767f3261d51f7597129ed049a7ac53e0257bdb1d94a424bc55a84f3b0a03de896316c62  pkgs/vm-fc33/i3-4.18.2-5.fc33.x86_64.rpm
+2021-11-09 06:22:49.787966 +0000 build-fedora4: 64a4adf29973299b41da777a1def004c2513eac42a9b4eee160c4a993a7bb7f039956d38dbc159552dba0b12ee320c3df973ae8d5b9ea4d70f8455d7e27223fd  pkgs/vm-fc33/i3-debuginfo-4.18.2-4.fc33.x86_64.rpm
+2021-11-09 06:22:49.792464 +0000 build-fedora4: 1f114fc2c00a7710037b875fa87a28be96533342670bf326402dde73b88f46d01952c29fa8e3b9352108cbc95ec25ee531d551fbdfa3848de81af017594f85b2  pkgs/vm-fc33/i3-debuginfo-4.18.2-5.fc33.x86_64.rpm
+2021-11-09 06:22:49.797699 +0000 build-fedora4: 832990be601ff84e443a11adc6c1cca02f6c7683250ae7c6f6ea5aaeb486cbf3f22af637e1764f5159db42e4cc4c05ba8a033ea3f72a330abbd3cee29ecfb87e  pkgs/vm-fc33/i3-debugsource-4.18.2-4.fc33.x86_64.rpm
+2021-11-09 06:22:49.798616 +0000 build-fedora4: aea13b87939747696f336262b774f75f9c53f9e6ab827543afc531a010559c772ae35eef23b97d69c6aeb570226884dbb8c16e456d6672653bd7ed8163d7bb42  pkgs/vm-fc33/i3-debugsource-4.18.2-5.fc33.x86_64.rpm
+2021-11-09 06:22:49.805120 +0000 build-fedora4: f931ec237ec373fc50e00ceafb2e7308de77f2febae402e0db91fc9f1ab3354a989585c8d26e70ed1d1cfb3ed5f0b509332162b692e20bc81f4716b387eb4bed  pkgs/vm-fc33/i3-devel-4.18.2-4.fc33.x86_64.rpm
+2021-11-09 06:22:49.806393 +0000 build-fedora4: 19fca9b484492bd095a5c2abd7b304e2763d64e7f94fef874366ec062d24a982bd600a13a8650320ba657e1eaa0a63a34d2e2951611e5e29412765701a416585  pkgs/vm-fc33/i3-devel-4.18.2-5.fc33.x86_64.rpm
+2021-11-09 06:22:50.214479 +0000 build-fedora4: cf14ee59c9523d13fea997c44f838b0d8a3886caf2a2c3b32e5fa7790a0410216fd58c595827060a6c34e191adc265d74da716963e8e6ebbca46bbd2a67d903c  pkgs/vm-fc33/i3-devel-doc-4.18.2-4.fc33.noarch.rpm
+2021-11-09 06:22:50.614869 +0000 build-fedora4: 31d891078c72be3cba9d9510302fc266da2cf1ccb5209c1e487f4b9c1ba095ff203c0beeadce90ba9fbb95f4a743cc128909def03adefafcc8321293767a1c6b  pkgs/vm-fc33/i3-devel-doc-4.18.2-5.fc33.noarch.rpm
+2021-11-09 06:22:50.616623 +0000 build-fedora4: d47498165efaff74e3c61ccb8a3c9666ef998a52913151c2f7e6c536678ed7dd11dbc165743e202b5c694bc2feebbbcf02d526c3777e5e1cde3b9bcb5c1f8ed2  pkgs/vm-fc33/i3-doc-4.18.2-4.fc33.noarch.rpm
+2021-11-09 06:22:50.618196 +0000 build-fedora4: 02738545a9558ffe1603ed9cc0279c99fbf0967b65a0ab996ac3d47eb0250ca2d5f608910760f2b812d840dfa73e32d60959521bfa82d70781ba44d9d61e88a9  pkgs/vm-fc33/i3-doc-4.18.2-5.fc33.noarch.rpm
+2021-11-09 06:22:50.618679 +0000 build-fedora4: 1e2c17c77d95efb336291f96ce0a73f252c21106dd82c6b4ef27fb1955d838524014af3d809025e92346251770f23eac5afca2c4ae12dac0df1bc304737d68be  pkgs/vm-fc33/i3.spec.list
+2021-11-09 06:22:50.623432 +0000 build-fedora4: 827915ecaf30ea32c77c3d2d6fa34210dcc6f099b4eb96bc623f05887b8d6e76fd2e1ab3d18c92465eba77566090ddacf625f00e3c3f58cf00a6fedb00b0ff2d  pkgs/vm-fc34/i3-4.18.2-4.fc34.src.rpm
+2021-11-09 06:22:50.623820 +0000 build-fedora4: 12384a8e78badbdb8fd487b3a15bb80c3df4241eaf2e6df749c588448af5e98af1c141407f90f4e0e5c57f9f65eb2175bb6f11e0a09a376e1e097b200dca45b6  pkgs/vm-fc34/i3-4.18.2-4.fc34.x86_64.buildinfo
+2021-11-09 06:22:50.625210 +0000 build-fedora4: e37f98cc2e2f9470f3324718163a8d5e09cb9d77785e3feb5dbaf6e264fc4ab3044a570bce1f5fc7bfaf9bca73776d4ec2fd9096f8e8e522293b59ec12937696  pkgs/vm-fc34/i3-4.18.2-4.fc34.x86_64.rpm
+2021-11-09 06:22:50.628528 +0000 build-fedora4: 2692d806e76df32c3f1cd3c6ca63f1ee3c2aad14c009e1463613c6be2aab0a443050020551069de9640b14d17cb24ec888e6501e987546cd7f1d0a323778ce40  pkgs/vm-fc34/i3-4.18.2-5.fc34.src.rpm
+2021-11-09 06:22:50.628828 +0000 build-fedora4: 1ea4b966f5ad44ad94d34cffc2e1d0bcd5f79b6c48548ab658e749a1d34505f05682128c61f983e44d30408d9a72349e6690340df8710b6b055b13381bdbe229  pkgs/vm-fc34/i3-4.18.2-5.fc34.x86_64.buildinfo
+2021-11-09 06:22:50.630606 +0000 build-fedora4: 6668423485e1a55b261d2b389a9fa0958a4ec62d66d2172c7629919790b8bf769b35b4bcc9dfbb3a3ea0477be6536159ae65d0c5fac40118f31883cd14951a51  pkgs/vm-fc34/i3-4.18.2-5.fc34.x86_64.rpm
+2021-11-09 06:22:50.633552 +0000 build-fedora4: be07531718024a2d5e50fc6e111102dd2aaa8c8fca1f406c842b4844d0542f90a0e065002c0527e5ddf0f2e527fb793e65262d9186bd0b088e9ebd354bee6f81  pkgs/vm-fc34/i3-debuginfo-4.18.2-4.fc34.x86_64.rpm
+2021-11-09 06:22:50.635938 +0000 build-fedora4: 2e6ce364cb50046d35737da3798ce3505b2abb7c75284089654f810994d62d2e810b6e5bae3a86369485a9160ee7bac294d2bbaa7f8c05d48bfe7236bcc273e2  pkgs/vm-fc34/i3-debuginfo-4.18.2-5.fc34.x86_64.rpm
+2021-11-09 06:22:50.637292 +0000 build-fedora4: a389dea7fa6577c8944e7658efe201439352cc95989a20f740723cf8447f3241aeeff164abc8a7e344ae0b308a7b9ec8943edb0d7eaa34af36f3da49421957c1  pkgs/vm-fc34/i3-debugsource-4.18.2-4.fc34.x86_64.rpm
+2021-11-09 06:22:50.637728 +0000 build-fedora4: b9ecebf0ecb981652dc104b283f3640fed4035eac3a49ca8d367687520c0da838c115e2a1468bbbd55cb28a51cf5046c08cbfd67e4fff1cf11a413da208d3ca2  pkgs/vm-fc34/i3-debugsource-4.18.2-5.fc34.x86_64.rpm
+2021-11-09 06:22:50.638141 +0000 build-fedora4: d56b5c2cb91d6e9ef59d4deeb41a03dd32347eab4fbba4540deac0a42aacea5537260a52e6ec8283c3b6ff9e5a95dd0964666d5a16b6f0dbb332456570f46aed  pkgs/vm-fc34/i3-devel-4.18.2-4.fc34.x86_64.rpm
+2021-11-09 06:22:50.638539 +0000 build-fedora4: 0e72e4a792dfd77779c8bad805c581a354250dca08be12c6cc437e5851a883b673bb32b83f6e2681fc4703b5bab9817469c170f99ae0bf0418c64e02c50f816c  pkgs/vm-fc34/i3-devel-4.18.2-5.fc34.x86_64.rpm
+2021-11-09 06:22:51.074692 +0000 build-fedora4: 898c704812df7e1d9ab725a2d859e1b3a3e455bde2c666e3cd864c4c4257bf2b7bb203689593bc0d2822e24d27cec6598bc25a8c915dbe37cdc2c73a4367989b  pkgs/vm-fc34/i3-devel-doc-4.18.2-4.fc34.noarch.rpm
+2021-11-09 06:22:51.483863 +0000 build-fedora4: 618af4b0edc2fba78bc64da299535a38a29e5391bb947c52c1c3504069f6c725613a1b0c15e8765ecaecdd81e25a43f5e08b9b29d648465cf690e1f5fc3182c4  pkgs/vm-fc34/i3-devel-doc-4.18.2-5.fc34.noarch.rpm
+2021-11-09 06:22:51.485698 +0000 build-fedora4: ed792714d2a8ee47905dd2aa2386a768030bea1bbb73946868da5263a3ac3b1abc42fa3646e0ef72d37e193a08da11881044e01ec2cf4741125b59e071999c5c  pkgs/vm-fc34/i3-doc-4.18.2-4.fc34.noarch.rpm
+2021-11-09 06:22:51.487333 +0000 build-fedora4: 18ccdef52b3abe08db31c052df6c13efc673841165fc746b9cda51e1d6c736af87f66ad2b45fcf7c37187d11c69e61aafbfe98b8eb12f0d9def6107119f26213  pkgs/vm-fc34/i3-doc-4.18.2-5.fc34.noarch.rpm
+2021-11-09 06:22:51.489421 +0000 build-fedora4: 7b0ed3d735acafaeaf2ad575bab9c5a8d51f7733db10ee650b4db3499aa6984180e806e0fad3f9a407081ea744bcf34898548d997affd727fb4f54ac3960e754  pkgs/vm-fc34/i3.spec.list
+2021-11-09 06:22:51.490567 +0000 build-fedora4: 5dae8f52a44786118bbc62d2a710e0bfbc10c7b246e82773a4517ee495e72c213fc1333b2524496fef030fdbadd3111f2c581667f1e2197a5defd7d58e7203b0  pkgs/vm-fc35/i3-4.18.2-5.fc35.src.rpm
+2021-11-09 06:22:51.490602 +0000 build-fedora4: 0c82dfa515edd7ad1cb3a790f3b6bf756b135b4a25778f4690832b75f8f6d5d15c1064f79f227d3c356af9fdeb755249b4901543f7385913d4ef366b17ba6ca1  pkgs/vm-fc35/i3-4.18.2-5.fc35.x86_64.buildinfo
+2021-11-09 06:22:51.490620 +0000 build-fedora4: f68ef11d5d749998d022f906c6f261c831bf0948eb8169037fec86f838a19bf5c4478afea03c157177f8029927a939609a07cacbad8c726667e385723b2c5819  pkgs/vm-fc35/i3-4.18.2-5.fc35.x86_64.rpm
+2021-11-09 06:22:51.491840 +0000 build-fedora4: 49ae8eb0ad91b8e7b769dd80ec568cc540a4555920e69c1839384ba24796370a6541f5cf489415cd8d3ec06dc4a98d3ed7eba2e37203496002e96e620b705c48  pkgs/vm-fc35/i3-debuginfo-4.18.2-5.fc35.x86_64.rpm
+2021-11-09 06:22:51.491971 +0000 build-fedora4: 0ef6ada68d48a1335ddacafd2996437b3dbe0c5ac1369811bace716743d70058ccb13fac67836bb762b7171624222c2aa3f129ee9eb86b477a85a1682be63e10  pkgs/vm-fc35/i3-debugsource-4.18.2-5.fc35.x86_64.rpm
+2021-11-09 06:22:51.491996 +0000 build-fedora4: 7050d183a54a24d1cb88fecd232ecb60537ff42e66927427f5bd4b54c06e5b488122d650d5cb3691960e1d5c4d0098faff3db6e157d70028d1144c34b9589ec1  pkgs/vm-fc35/i3-devel-4.18.2-5.fc35.x86_64.rpm
+2021-11-09 06:22:51.731121 +0000 build-fedora4: fb26eb1bd9316201b6db23f1ea8a39c90e6f21e4cfa9fe86b64bb6995e32f32d4fec2eaf4c2eea57742917ea3eabc0da15f1d175893981fb9c034a8693bbb749  pkgs/vm-fc35/i3-devel-doc-4.18.2-5.fc35.noarch.rpm
+2021-11-09 06:22:51.731182 +0000 build-fedora4: bb4c60e11a41cb2d0fac8bcf3310f9882d0dd3a9df69c96a9c1ccbc56104870520003f6df4a93d7f4b4c7bc874ba3a8079af0b79593a816fa0d83a66324baf7a  pkgs/vm-fc35/i3-doc-4.18.2-5.fc35.noarch.rpm
+2021-11-09 06:22:51.731200 +0000 build-fedora4: 7cad0d35ff86ee8266d206aeaa6284e756d62e502aaa4b03040094a7fd9df5724f2e873b836520c048ab2f3da5f3a695564b37709bb2ffda0b93e310fbf13411  pkgs/vm-fc35/i3.spec.list
+2021-11-09 06:22:51.777783 +0000 build-fedora4: ================================================================================
+2021-11-09 06:22:51.777824 +0000 build-fedora4:                            B U I L D   I N F O                                  
+2021-11-09 06:22:51.777929 +0000 build-fedora4: Items in red indicate it was automatically generated by configuration file(s)
+2021-11-09 06:22:51.777949 +0000 build-fedora4: Items in white indicate it was automatically removed by configuration file(s)
+2021-11-09 06:22:51.777959 +0000 build-fedora4: ================================================================================
+2021-11-09 06:22:51.778037 +0000 build-fedora4: DISTS_VM:
+2021-11-09 06:22:51.779603 +0000 build-fedora4:      fc32, fc33, fc34, fc35,
+2021-11-09 06:22:51.781306 +0000 build-fedora4: DISTS_ALL:
+2021-11-09 06:22:51.782502 +0000 build-fedora4:      vm-fc32, vm-fc33, vm-fc34, vm-fc35,
+2021-11-09 06:22:51.783241 +0000 build-fedora4: DIST_DOM0:
+2021-11-09 06:22:51.785561 +0000 build-fedora4:     
+2021-11-09 06:22:51.785615 +0000 build-fedora4: BUILDER_PLUGINS:
+2021-11-09 06:22:51.789411 +0000 build-fedora4:      builder-rpm, builder-debian, mgmt-salt, linux-yum, release-configs, builder-github,
+2021-11-09 06:22:51.789610 +0000 build-fedora4: COMPONENTS:
+2021-11-09 06:22:51.791322 +0000 build-fedora4:      desktop-linux-i3,
+2021-11-09 06:22:51.792211 +0000 build-fedora4: GIT_REPOS:
+2021-11-09 06:22:51.793793 +0000 build-fedora4:      qubes-src/desktop-linux-i3,
+2021-11-09 06:22:51.794987 +0000 build-fedora4: TEMPLATE:
+2021-11-09 06:22:51.797467 +0000 build-fedora4:     
+2021-11-09 06:22:51.798881 +0000 build-fedora4: TEMPLATE_FLAVOR_DIR:
+2021-11-09 06:22:51.802630 +0000 build-fedora4:     
+2021-11-09 06:22:51.804423 +0000 build-fedora4: TEMPLATE_ALIAS:
+2021-11-09 06:22:51.805954 +0000 build-fedora4:      stretch:stretch+standard, stretch+gnome:stretch+gnome+standard,
+2021-11-09 06:22:51.805991 +0000 build-fedora4:      stretch+minimal:stretch+minimal+no-recommends, buster:buster+standard, buster+gnome:buster+gnome+standard,
+2021-11-09 06:22:51.806004 +0000 build-fedora4:      buster+minimal:buster+minimal+no-recommends, bullseye:bullseye+standard,
+2021-11-09 06:22:51.806015 +0000 build-fedora4:      bullseye+gnome:bullseye+gnome+standard, bullseye+minimal:bullseye+minimal+no-recommends,
+2021-11-09 06:22:51.806027 +0000 build-fedora4:      bionic:bionic+standard, focal:focal+standard, whonix-gateway-15:buster+whonix-gateway+minimal+no-recommends,
+2021-11-09 06:22:51.806037 +0000 build-fedora4:      whonix-workstation-15:buster+whonix-workstation+minimal+no-recommends,
+2021-11-09 06:22:51.806047 +0000 build-fedora4:      whonix-gateway-16:bullseye+whonix-gateway+minimal+no-recommends,
+2021-11-09 06:22:51.806056 +0000 build-fedora4:      whonix-workstation-16:bullseye+whonix-workstation+minimal+no-recommends,
+2021-11-09 06:22:51.806890 +0000 build-fedora4: TEMPLATE_LABEL:
+2021-11-09 06:22:51.809403 +0000 build-fedora4:      fc32:fedora-32, fc33:fedora-33, fc34:fedora-34, fc35:fedora-35, fc32+minimal:fedora-32-minimal
+2021-11-09 06:22:51.809442 +0000 build-fedora4:      fc33+minimal:fedora-33-minimal fc34+minimal:fedora-34-minimal fc35+minimal:fedora-35-minimal
+2021-11-09 06:22:51.809454 +0000 build-fedora4:      fc32+xfce:fedora-32-xfce fc33+xfce:fedora-33-xfce fc34+xfce:fedora-34-xfce
+2021-11-09 06:22:51.809466 +0000 build-fedora4:      fc35+xfce:fedora-35-xfce stretch:debian-9 stretch+standard:debian-9 stretch+xfce:debian-9-xfce
+2021-11-09 06:22:51.809477 +0000 build-fedora4:      buster:debian-10 buster+standard:debian-10 buster+xfce:debian-10-xfce bullseye:debian-11
+2021-11-09 06:22:51.809487 +0000 build-fedora4:      bullseye+standard:debian-11 bullseye+xfce:debian-11-xfce bionic+standard:bionic
+2021-11-09 06:22:51.809497 +0000 build-fedora4:      focal+standard:focal buster+whonix-gateway+minimal+no-recommends:whonix-gw-15
+2021-11-09 06:22:51.809506 +0000 build-fedora4:      buster+whonix-workstation+minimal+no-recommends:whonix-ws-15
+2021-11-09 06:22:51.809515 +0000 build-fedora4:      bullseye+whonix-gateway+minimal+no-recommends:whonix-gw-16
+2021-11-09 06:22:51.809525 +0000 build-fedora4:      bullseye+whonix-workstation+minimal+no-recommends:whonix-ws-16 centos7:centos-7
+2021-11-09 06:22:51.809535 +0000 build-fedora4:      centos7+minimal:centos-7-minimal centos7+xfce:centos-7-xfce centos-stream8:centos-stream-8
+2021-11-09 06:22:51.809545 +0000 build-fedora4:      centos-stream8+minimal:centos-stream-8-minimal centos-stream8+xfce:centos-stream-8-xfce
+2021-11-09 06:22:51.824832 +0000 build-fedora4: > running make
+2021-11-09 06:22:51.832175 +0000 build-fedora4: Makefile:299: target 'sign.vm.fc32.desktop-linux-i3' does not exist
+2021-11-09 06:22:51.832240 +0000 build-fedora4: if [ -n "desktop-linux-i3" -a "0" -ne 0 ]; then BRANCH=master; branch_var="BRANCH_desktop_linux_i3"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/desktop-linux-i3 > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2021-11-09 06:22:51.832267 +0000 build-fedora4: SIGN_KEY=5817A43B283DE5A9181A522E1848792F9E2795E9; \
+2021-11-09 06:22:51.832276 +0000 build-fedora4: sign_key_var="SIGN_KEY_${DIST%%+*}"; \
+2021-11-09 06:22:51.832285 +0000 build-fedora4: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2021-11-09 06:22:51.832293 +0000 build-fedora4: if [ "desktop-linux-i3" = linux-template-builder ]; then
+2021-11-09 06:22:51.832305 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc32 template-name)
+2021-11-09 06:22:51.832311 +0000 build-fedora4: fi
+2021-11-09 06:22:51.832320 +0000 build-fedora4: if [ -r qubes-src/desktop-linux-i3/Makefile.builder ]; then \
+2021-11-09 06:22:51.832328 +0000 build-fedora4: .make --no-print-directory -f Makefile.generic \
+2021-11-09 06:22:51.832334 +0000 build-fedora4: ..DIST=fc32 \
+2021-11-09 06:22:51.832341 +0000 build-fedora4: ..PACKAGE_SET=vm \
+2021-11-09 06:22:51.832348 +0000 build-fedora4: ..COMPONENT=desktop-linux-i3 \
+2021-11-09 06:22:51.832354 +0000 build-fedora4: ..SIGN_KEY=$SIGN_KEY \
+2021-11-09 06:22:51.832361 +0000 build-fedora4: ..sign || exit 1; \
+2021-11-09 06:22:51.832369 +0000 build-fedora4: elif [ -d qubes-src/desktop-linux-i3/rpm ]; then \
+2021-11-09 06:22:51.832376 +0000 build-fedora4: .# Old mechanism supported only for RPM
+2021-11-09 06:22:51.832386 +0000 build-fedora4: FILE_LIST=""; for RPM in qubes-src/desktop-linux-i3/rpm/*/*.rpm; do \
+2021-11-09 06:22:51.832395 +0000 build-fedora4: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2021-11-09 06:22:51.832402 +0000 build-fedora4: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2021-11-09 06:22:51.832408 +0000 build-fedora4: ..fi ;\
+2021-11-09 06:22:51.832414 +0000 build-fedora4: .done ; \
+2021-11-09 06:22:51.832421 +0000 build-fedora4: .if [ -n "$FILE_LIST" ]; then \
+2021-11-09 06:22:51.832428 +0000 build-fedora4: ..echo "--> Signing..."; \
+2021-11-09 06:22:51.832435 +0000 build-fedora4: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2021-11-09 06:22:51.832442 +0000 build-fedora4: ..if [ -n "$SIGN_KEY" ]; then \
+2021-11-09 06:22:51.832449 +0000 build-fedora4: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2021-11-09 06:22:51.832455 +0000 build-fedora4: ..fi; \
+2021-11-09 06:22:51.832464 +0000 build-fedora4: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2021-11-09 06:22:51.832469 +0000 build-fedora4: .fi; \
+2021-11-09 06:22:51.832475 +0000 build-fedora4: fi
+2021-11-09 06:22:51.850099 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:201: target 'sign-prep' does not exist
+2021-11-09 06:22:51.850137 +0000 build-fedora4: if [ -n "qubes-gpg-client-wrapper" ]; then \
+2021-11-09 06:22:51.850148 +0000 build-fedora4: .mkdir -p /home/user/builder-r4.1/keyrings/rpmdb; \
+2021-11-09 06:22:51.850159 +0000 build-fedora4: .tmpname=$(mktemp); \
+2021-11-09 06:22:51.850171 +0000 build-fedora4: .qubes-gpg-client-wrapper --armor --export "5817A43B283DE5A9181A522E1848792F9E2795E9" > "$tmpname"; \
+2021-11-09 06:22:51.850182 +0000 build-fedora4: .rpmkeys --dbpath=/home/user/builder-r4.1/keyrings/rpmdb --import "$tmpname"; \
+2021-11-09 06:22:51.850189 +0000 build-fedora4: .rm -f "$tmpname"; \
+2021-11-09 06:22:51.850194 +0000 build-fedora4: fi
+2021-11-09 06:22:52.036377 +0000 build-fedora4: warning: Found bdb Packages database while attempting sqlite backend: using bdb backend.
+2021-11-09 06:22:52.063435 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:217: update target 'sign' due to: sign-prep
+2021-11-09 06:22:52.063506 +0000 build-fedora4: cd qubes-src/desktop-linux-i3 && for pkg in pkgs/vm-fc32/i3-4.18.2-5.fc32.src.rpm pkgs/vm-fc32/i3-4.18.2-5.fc32.x86_64.rpm pkgs/vm-fc32/i3-debuginfo-4.18.2-5.fc32.x86_64.rpm pkgs/vm-fc32/i3-debugsource-4.18.2-5.fc32.x86_64.rpm pkgs/vm-fc32/i3-devel-4.18.2-5.fc32.x86_64.rpm pkgs/vm-fc32/i3-devel-doc-4.18.2-5.fc32.noarch.rpm pkgs/vm-fc32/i3-doc-4.18.2-5.fc32.noarch.rpm pkgs/vm-fc32/i3-4.18.2-5.fc32.x86_64.buildinfo ; do \
+2021-11-09 06:22:52.063535 +0000 build-fedora4: .if [ "${pkg##*.}" = "buildinfo" ]; then \
+2021-11-09 06:22:52.063555 +0000 build-fedora4: ../home/user/builder-r4.1/qubes-src/builder-rpm/scripts/update-rpmbuildinfo "$pkg" | /usr/bin/qubes-gpg-client-wrapper --clearsign --local-user 5817A43B283DE5A9181A522E1848792F9E2795E9 > "$pkg".tmp && \
+2021-11-09 06:22:52.063564 +0000 build-fedora4: ..mv -f "$pkg".tmp "$pkg"; \
+2021-11-09 06:22:52.063575 +0000 build-fedora4: .elif [ "$(rpmkeys --checksig -- "$pkg")" != "$pkg: digests signatures OK" ]; then \
+2021-11-09 06:22:52.063588 +0000 build-fedora4: ..setsid -w rpmsign --digest-algo=sha256 --key-id=5817A43B283DE5A9181A522E1848792F9E2795E9 --addsign  -- "$pkg" </dev/null || exit 1; \
+2021-11-09 06:22:52.063594 +0000 build-fedora4: .fi; \
+2021-11-09 06:22:52.063600 +0000 build-fedora4: done
+2021-11-09 06:22:52.118510 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-09 06:22:52.271790 +0000 build-fedora4: pkgs/vm-fc32/i3-4.18.2-5.fc32.src.rpm:
+2021-11-09 06:22:52.291548 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-09 06:22:52.447979 +0000 build-fedora4: pkgs/vm-fc32/i3-4.18.2-5.fc32.x86_64.rpm:
+2021-11-09 06:22:52.468368 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-09 06:22:52.620371 +0000 build-fedora4: pkgs/vm-fc32/i3-debuginfo-4.18.2-5.fc32.x86_64.rpm:
+2021-11-09 06:22:52.637089 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-09 06:22:52.790162 +0000 build-fedora4: pkgs/vm-fc32/i3-debugsource-4.18.2-5.fc32.x86_64.rpm:
+2021-11-09 06:22:52.809416 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-09 06:22:52.962142 +0000 build-fedora4: pkgs/vm-fc32/i3-devel-4.18.2-5.fc32.x86_64.rpm:
+2021-11-09 06:22:54.081002 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-09 06:22:54.238612 +0000 build-fedora4: pkgs/vm-fc32/i3-devel-doc-4.18.2-5.fc32.noarch.rpm:
+2021-11-09 06:22:54.258692 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-09 06:22:54.413757 +0000 build-fedora4: pkgs/vm-fc32/i3-doc-4.18.2-5.fc32.noarch.rpm:
+2021-11-09 06:22:54.912097 +0000 build-fedora4: Makefile:299: target 'sign.vm.fc33.desktop-linux-i3' does not exist
+2021-11-09 06:22:54.912175 +0000 build-fedora4: if [ -n "desktop-linux-i3" -a "0" -ne 0 ]; then BRANCH=master; branch_var="BRANCH_desktop_linux_i3"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/desktop-linux-i3 > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2021-11-09 06:22:54.912190 +0000 build-fedora4: SIGN_KEY=5817A43B283DE5A9181A522E1848792F9E2795E9; \
+2021-11-09 06:22:54.912199 +0000 build-fedora4: sign_key_var="SIGN_KEY_${DIST%%+*}"; \
+2021-11-09 06:22:54.912208 +0000 build-fedora4: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2021-11-09 06:22:54.912217 +0000 build-fedora4: if [ "desktop-linux-i3" = linux-template-builder ]; then
+2021-11-09 06:22:54.912227 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc33 template-name)
+2021-11-09 06:22:54.912234 +0000 build-fedora4: fi
+2021-11-09 06:22:54.912243 +0000 build-fedora4: if [ -r qubes-src/desktop-linux-i3/Makefile.builder ]; then \
+2021-11-09 06:22:54.912270 +0000 build-fedora4: .make --no-print-directory -f Makefile.generic \
+2021-11-09 06:22:54.912277 +0000 build-fedora4: ..DIST=fc33 \
+2021-11-09 06:22:54.912284 +0000 build-fedora4: ..PACKAGE_SET=vm \
+2021-11-09 06:22:54.912291 +0000 build-fedora4: ..COMPONENT=desktop-linux-i3 \
+2021-11-09 06:22:54.912297 +0000 build-fedora4: ..SIGN_KEY=$SIGN_KEY \
+2021-11-09 06:22:54.912304 +0000 build-fedora4: ..sign || exit 1; \
+2021-11-09 06:22:54.912312 +0000 build-fedora4: elif [ -d qubes-src/desktop-linux-i3/rpm ]; then \
+2021-11-09 06:22:54.912319 +0000 build-fedora4: .# Old mechanism supported only for RPM
+2021-11-09 06:22:54.912328 +0000 build-fedora4: FILE_LIST=""; for RPM in qubes-src/desktop-linux-i3/rpm/*/*.rpm; do \
+2021-11-09 06:22:54.912338 +0000 build-fedora4: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2021-11-09 06:22:54.912345 +0000 build-fedora4: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2021-11-09 06:22:54.912351 +0000 build-fedora4: ..fi ;\
+2021-11-09 06:22:54.912356 +0000 build-fedora4: .done ; \
+2021-11-09 06:22:54.912363 +0000 build-fedora4: .if [ -n "$FILE_LIST" ]; then \
+2021-11-09 06:22:54.912370 +0000 build-fedora4: ..echo "--> Signing..."; \
+2021-11-09 06:22:54.912377 +0000 build-fedora4: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2021-11-09 06:22:54.912384 +0000 build-fedora4: ..if [ -n "$SIGN_KEY" ]; then \
+2021-11-09 06:22:54.912392 +0000 build-fedora4: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2021-11-09 06:22:54.912398 +0000 build-fedora4: ..fi; \
+2021-11-09 06:22:54.912407 +0000 build-fedora4: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2021-11-09 06:22:54.912412 +0000 build-fedora4: .fi; \
+2021-11-09 06:22:54.912418 +0000 build-fedora4: fi
+2021-11-09 06:22:54.934504 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:201: target 'sign-prep' does not exist
+2021-11-09 06:22:54.934543 +0000 build-fedora4: if [ -n "qubes-gpg-client-wrapper" ]; then \
+2021-11-09 06:22:54.934555 +0000 build-fedora4: .mkdir -p /home/user/builder-r4.1/keyrings/rpmdb; \
+2021-11-09 06:22:54.934562 +0000 build-fedora4: .tmpname=$(mktemp); \
+2021-11-09 06:22:54.934574 +0000 build-fedora4: .qubes-gpg-client-wrapper --armor --export "5817A43B283DE5A9181A522E1848792F9E2795E9" > "$tmpname"; \
+2021-11-09 06:22:54.934584 +0000 build-fedora4: .rpmkeys --dbpath=/home/user/builder-r4.1/keyrings/rpmdb --import "$tmpname"; \
+2021-11-09 06:22:54.934591 +0000 build-fedora4: .rm -f "$tmpname"; \
+2021-11-09 06:22:54.934597 +0000 build-fedora4: fi
+2021-11-09 06:22:55.102829 +0000 build-fedora4: warning: Found bdb Packages database while attempting sqlite backend: using bdb backend.
+2021-11-09 06:22:55.123180 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:217: update target 'sign' due to: sign-prep
+2021-11-09 06:22:55.123245 +0000 build-fedora4: cd qubes-src/desktop-linux-i3 && for pkg in pkgs/vm-fc33/i3-4.18.2-5.fc33.src.rpm pkgs/vm-fc33/i3-4.18.2-5.fc33.x86_64.rpm pkgs/vm-fc33/i3-debuginfo-4.18.2-5.fc33.x86_64.rpm pkgs/vm-fc33/i3-debugsource-4.18.2-5.fc33.x86_64.rpm pkgs/vm-fc33/i3-devel-4.18.2-5.fc33.x86_64.rpm pkgs/vm-fc33/i3-devel-doc-4.18.2-5.fc33.noarch.rpm pkgs/vm-fc33/i3-doc-4.18.2-5.fc33.noarch.rpm pkgs/vm-fc33/i3-4.18.2-5.fc33.x86_64.buildinfo ; do \
+2021-11-09 06:22:55.123259 +0000 build-fedora4: .if [ "${pkg##*.}" = "buildinfo" ]; then \
+2021-11-09 06:22:55.123278 +0000 build-fedora4: ../home/user/builder-r4.1/qubes-src/builder-rpm/scripts/update-rpmbuildinfo "$pkg" | /usr/bin/qubes-gpg-client-wrapper --clearsign --local-user 5817A43B283DE5A9181A522E1848792F9E2795E9 > "$pkg".tmp && \
+2021-11-09 06:22:55.123287 +0000 build-fedora4: ..mv -f "$pkg".tmp "$pkg"; \
+2021-11-09 06:22:55.123297 +0000 build-fedora4: .elif [ "$(rpmkeys --checksig -- "$pkg")" != "$pkg: digests signatures OK" ]; then \
+2021-11-09 06:22:55.123311 +0000 build-fedora4: ..setsid -w rpmsign --digest-algo=sha256 --key-id=5817A43B283DE5A9181A522E1848792F9E2795E9 --addsign  -- "$pkg" </dev/null || exit 1; \
+2021-11-09 06:22:55.123334 +0000 build-fedora4: .fi; \
+2021-11-09 06:22:55.123341 +0000 build-fedora4: done
+2021-11-09 06:22:55.181788 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-09 06:22:55.335506 +0000 build-fedora4: pkgs/vm-fc33/i3-4.18.2-5.fc33.src.rpm:
+2021-11-09 06:22:55.359531 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-09 06:22:55.514968 +0000 build-fedora4: pkgs/vm-fc33/i3-4.18.2-5.fc33.x86_64.rpm:
+2021-11-09 06:22:55.537122 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-09 06:22:55.691085 +0000 build-fedora4: pkgs/vm-fc33/i3-debuginfo-4.18.2-5.fc33.x86_64.rpm:
+2021-11-09 06:22:55.706829 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-09 06:22:55.853445 +0000 build-fedora4: pkgs/vm-fc33/i3-debugsource-4.18.2-5.fc33.x86_64.rpm:
+2021-11-09 06:22:55.869300 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-09 06:22:56.008416 +0000 build-fedora4: pkgs/vm-fc33/i3-devel-4.18.2-5.fc33.x86_64.rpm:
+2021-11-09 06:22:57.704473 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-09 06:22:57.851484 +0000 build-fedora4: pkgs/vm-fc33/i3-devel-doc-4.18.2-5.fc33.noarch.rpm:
+2021-11-09 06:22:57.868142 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-09 06:22:58.010164 +0000 build-fedora4: pkgs/vm-fc33/i3-doc-4.18.2-5.fc33.noarch.rpm:
+2021-11-09 06:22:58.419858 +0000 build-fedora4: Makefile:299: target 'sign.vm.fc34.desktop-linux-i3' does not exist
+2021-11-09 06:22:58.419948 +0000 build-fedora4: if [ -n "desktop-linux-i3" -a "0" -ne 0 ]; then BRANCH=master; branch_var="BRANCH_desktop_linux_i3"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/desktop-linux-i3 > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2021-11-09 06:22:58.419962 +0000 build-fedora4: SIGN_KEY=5817A43B283DE5A9181A522E1848792F9E2795E9; \
+2021-11-09 06:22:58.419970 +0000 build-fedora4: sign_key_var="SIGN_KEY_${DIST%%+*}"; \
+2021-11-09 06:22:58.419979 +0000 build-fedora4: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2021-11-09 06:22:58.419987 +0000 build-fedora4: if [ "desktop-linux-i3" = linux-template-builder ]; then
+2021-11-09 06:22:58.419998 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc34 template-name)
+2021-11-09 06:22:58.420005 +0000 build-fedora4: fi
+2021-11-09 06:22:58.420014 +0000 build-fedora4: if [ -r qubes-src/desktop-linux-i3/Makefile.builder ]; then \
+2021-11-09 06:22:58.420022 +0000 build-fedora4: .make --no-print-directory -f Makefile.generic \
+2021-11-09 06:22:58.420029 +0000 build-fedora4: ..DIST=fc34 \
+2021-11-09 06:22:58.420035 +0000 build-fedora4: ..PACKAGE_SET=vm \
+2021-11-09 06:22:58.420042 +0000 build-fedora4: ..COMPONENT=desktop-linux-i3 \
+2021-11-09 06:22:58.420049 +0000 build-fedora4: ..SIGN_KEY=$SIGN_KEY \
+2021-11-09 06:22:58.420055 +0000 build-fedora4: ..sign || exit 1; \
+2021-11-09 06:22:58.420063 +0000 build-fedora4: elif [ -d qubes-src/desktop-linux-i3/rpm ]; then \
+2021-11-09 06:22:58.420070 +0000 build-fedora4: .# Old mechanism supported only for RPM
+2021-11-09 06:22:58.420080 +0000 build-fedora4: FILE_LIST=""; for RPM in qubes-src/desktop-linux-i3/rpm/*/*.rpm; do \
+2021-11-09 06:22:58.420089 +0000 build-fedora4: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2021-11-09 06:22:58.420096 +0000 build-fedora4: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2021-11-09 06:22:58.420102 +0000 build-fedora4: ..fi ;\
+2021-11-09 06:22:58.420123 +0000 build-fedora4: .done ; \
+2021-11-09 06:22:58.420132 +0000 build-fedora4: .if [ -n "$FILE_LIST" ]; then \
+2021-11-09 06:22:58.420138 +0000 build-fedora4: ..echo "--> Signing..."; \
+2021-11-09 06:22:58.420145 +0000 build-fedora4: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2021-11-09 06:22:58.420153 +0000 build-fedora4: ..if [ -n "$SIGN_KEY" ]; then \
+2021-11-09 06:22:58.420163 +0000 build-fedora4: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2021-11-09 06:22:58.420168 +0000 build-fedora4: ..fi; \
+2021-11-09 06:22:58.420178 +0000 build-fedora4: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2021-11-09 06:22:58.420183 +0000 build-fedora4: .fi; \
+2021-11-09 06:22:58.420188 +0000 build-fedora4: fi
+2021-11-09 06:22:58.433460 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:201: target 'sign-prep' does not exist
+2021-11-09 06:22:58.433518 +0000 build-fedora4: if [ -n "qubes-gpg-client-wrapper" ]; then \
+2021-11-09 06:22:58.433530 +0000 build-fedora4: .mkdir -p /home/user/builder-r4.1/keyrings/rpmdb; \
+2021-11-09 06:22:58.433538 +0000 build-fedora4: .tmpname=$(mktemp); \
+2021-11-09 06:22:58.433549 +0000 build-fedora4: .qubes-gpg-client-wrapper --armor --export "5817A43B283DE5A9181A522E1848792F9E2795E9" > "$tmpname"; \
+2021-11-09 06:22:58.433559 +0000 build-fedora4: .rpmkeys --dbpath=/home/user/builder-r4.1/keyrings/rpmdb --import "$tmpname"; \
+2021-11-09 06:22:58.433566 +0000 build-fedora4: .rm -f "$tmpname"; \
+2021-11-09 06:22:58.433572 +0000 build-fedora4: fi
+2021-11-09 06:22:58.573171 +0000 build-fedora4: warning: Found bdb Packages database while attempting sqlite backend: using bdb backend.
+2021-11-09 06:22:58.587399 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:217: update target 'sign' due to: sign-prep
+2021-11-09 06:22:58.587468 +0000 build-fedora4: cd qubes-src/desktop-linux-i3 && for pkg in pkgs/vm-fc34/i3-4.18.2-5.fc34.src.rpm pkgs/vm-fc34/i3-4.18.2-5.fc34.x86_64.rpm pkgs/vm-fc34/i3-debuginfo-4.18.2-5.fc34.x86_64.rpm pkgs/vm-fc34/i3-debugsource-4.18.2-5.fc34.x86_64.rpm pkgs/vm-fc34/i3-devel-4.18.2-5.fc34.x86_64.rpm pkgs/vm-fc34/i3-devel-doc-4.18.2-5.fc34.noarch.rpm pkgs/vm-fc34/i3-doc-4.18.2-5.fc34.noarch.rpm pkgs/vm-fc34/i3-4.18.2-5.fc34.x86_64.buildinfo ; do \
+2021-11-09 06:22:58.587482 +0000 build-fedora4: .if [ "${pkg##*.}" = "buildinfo" ]; then \
+2021-11-09 06:22:58.587501 +0000 build-fedora4: ../home/user/builder-r4.1/qubes-src/builder-rpm/scripts/update-rpmbuildinfo "$pkg" | /usr/bin/qubes-gpg-client-wrapper --clearsign --local-user 5817A43B283DE5A9181A522E1848792F9E2795E9 > "$pkg".tmp && \
+2021-11-09 06:22:58.587509 +0000 build-fedora4: ..mv -f "$pkg".tmp "$pkg"; \
+2021-11-09 06:22:58.587521 +0000 build-fedora4: .elif [ "$(rpmkeys --checksig -- "$pkg")" != "$pkg: digests signatures OK" ]; then \
+2021-11-09 06:22:58.587534 +0000 build-fedora4: ..setsid -w rpmsign --digest-algo=sha256 --key-id=5817A43B283DE5A9181A522E1848792F9E2795E9 --addsign  -- "$pkg" </dev/null || exit 1; \
+2021-11-09 06:22:58.587540 +0000 build-fedora4: .fi; \
+2021-11-09 06:22:58.587545 +0000 build-fedora4: done
+2021-11-09 06:22:58.633437 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-09 06:22:58.779299 +0000 build-fedora4: pkgs/vm-fc34/i3-4.18.2-5.fc34.src.rpm:
+2021-11-09 06:22:58.785604 +0000 build-fedora4: Error while vchan send, exiting
+2021-11-09 06:22:58.798720 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-09 06:22:58.943300 +0000 build-fedora4: pkgs/vm-fc34/i3-4.18.2-5.fc34.x86_64.rpm:
+2021-11-09 06:22:58.967476 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-09 06:22:59.107566 +0000 build-fedora4: pkgs/vm-fc34/i3-debuginfo-4.18.2-5.fc34.x86_64.rpm:
+2021-11-09 06:22:59.121994 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-09 06:22:59.265135 +0000 build-fedora4: pkgs/vm-fc34/i3-debugsource-4.18.2-5.fc34.x86_64.rpm:
+2021-11-09 06:22:59.279635 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-09 06:22:59.423567 +0000 build-fedora4: pkgs/vm-fc34/i3-devel-4.18.2-5.fc34.x86_64.rpm:
+2021-11-09 06:23:01.141276 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-09 06:23:01.285781 +0000 build-fedora4: pkgs/vm-fc34/i3-devel-doc-4.18.2-5.fc34.noarch.rpm:
+2021-11-09 06:23:01.290842 +0000 build-fedora4: Error while vchan send, exiting
+2021-11-09 06:23:01.304891 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-09 06:23:01.447839 +0000 build-fedora4: pkgs/vm-fc34/i3-doc-4.18.2-5.fc34.noarch.rpm:
+2021-11-09 06:23:01.872142 +0000 build-fedora4: Error while vchan send, exiting
+2021-11-09 06:23:01.872431 +0000 build-fedora4: Makefile:299: target 'sign.vm.fc35.desktop-linux-i3' does not exist
+2021-11-09 06:23:01.872482 +0000 build-fedora4: if [ -n "desktop-linux-i3" -a "0" -ne 0 ]; then BRANCH=master; branch_var="BRANCH_desktop_linux_i3"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/desktop-linux-i3 > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2021-11-09 06:23:01.872495 +0000 build-fedora4: SIGN_KEY=5817A43B283DE5A9181A522E1848792F9E2795E9; \
+2021-11-09 06:23:01.872504 +0000 build-fedora4: sign_key_var="SIGN_KEY_${DIST%%+*}"; \
+2021-11-09 06:23:01.872513 +0000 build-fedora4: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2021-11-09 06:23:01.872521 +0000 build-fedora4: if [ "desktop-linux-i3" = linux-template-builder ]; then
+2021-11-09 06:23:01.872532 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc35 template-name)
+2021-11-09 06:23:01.872538 +0000 build-fedora4: fi
+2021-11-09 06:23:01.872548 +0000 build-fedora4: if [ -r qubes-src/desktop-linux-i3/Makefile.builder ]; then \
+2021-11-09 06:23:01.872556 +0000 build-fedora4: .make --no-print-directory -f Makefile.generic \
+2021-11-09 06:23:01.872566 +0000 build-fedora4: ..DIST=fc35 \
+2021-11-09 06:23:01.872573 +0000 build-fedora4: ..PACKAGE_SET=vm \
+2021-11-09 06:23:01.872581 +0000 build-fedora4: ..COMPONENT=desktop-linux-i3 \
+2021-11-09 06:23:01.872587 +0000 build-fedora4: ..SIGN_KEY=$SIGN_KEY \
+2021-11-09 06:23:01.872593 +0000 build-fedora4: ..sign || exit 1; \
+2021-11-09 06:23:01.872601 +0000 build-fedora4: elif [ -d qubes-src/desktop-linux-i3/rpm ]; then \
+2021-11-09 06:23:01.872609 +0000 build-fedora4: .# Old mechanism supported only for RPM
+2021-11-09 06:23:01.872618 +0000 build-fedora4: FILE_LIST=""; for RPM in qubes-src/desktop-linux-i3/rpm/*/*.rpm; do \
+2021-11-09 06:23:01.872627 +0000 build-fedora4: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2021-11-09 06:23:01.872635 +0000 build-fedora4: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2021-11-09 06:23:01.872640 +0000 build-fedora4: ..fi ;\
+2021-11-09 06:23:01.872646 +0000 build-fedora4: .done ; \
+2021-11-09 06:23:01.872653 +0000 build-fedora4: .if [ -n "$FILE_LIST" ]; then \
+2021-11-09 06:23:01.872660 +0000 build-fedora4: ..echo "--> Signing..."; \
+2021-11-09 06:23:01.872667 +0000 build-fedora4: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2021-11-09 06:23:01.872674 +0000 build-fedora4: ..if [ -n "$SIGN_KEY" ]; then \
+2021-11-09 06:23:01.872682 +0000 build-fedora4: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2021-11-09 06:23:01.872687 +0000 build-fedora4: ..fi; \
+2021-11-09 06:23:01.872697 +0000 build-fedora4: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2021-11-09 06:23:01.872702 +0000 build-fedora4: .fi; \
+2021-11-09 06:23:01.872708 +0000 build-fedora4: fi
+2021-11-09 06:23:01.885777 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:201: target 'sign-prep' does not exist
+2021-11-09 06:23:01.885871 +0000 build-fedora4: if [ -n "qubes-gpg-client-wrapper" ]; then \
+2021-11-09 06:23:01.885907 +0000 build-fedora4: .mkdir -p /home/user/builder-r4.1/keyrings/rpmdb; \
+2021-11-09 06:23:01.885915 +0000 build-fedora4: .tmpname=$(mktemp); \
+2021-11-09 06:23:01.885926 +0000 build-fedora4: .qubes-gpg-client-wrapper --armor --export "5817A43B283DE5A9181A522E1848792F9E2795E9" > "$tmpname"; \
+2021-11-09 06:23:01.885937 +0000 build-fedora4: .rpmkeys --dbpath=/home/user/builder-r4.1/keyrings/rpmdb --import "$tmpname"; \
+2021-11-09 06:23:01.885944 +0000 build-fedora4: .rm -f "$tmpname"; \
+2021-11-09 06:23:01.885949 +0000 build-fedora4: fi
+2021-11-09 06:23:02.033421 +0000 build-fedora4: warning: Found bdb Packages database while attempting sqlite backend: using bdb backend.
+2021-11-09 06:23:02.047529 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:217: update target 'sign' due to: sign-prep
+2021-11-09 06:23:02.047605 +0000 build-fedora4: cd qubes-src/desktop-linux-i3 && for pkg in pkgs/vm-fc35/i3-4.18.2-5.fc35.src.rpm pkgs/vm-fc35/i3-4.18.2-5.fc35.x86_64.rpm pkgs/vm-fc35/i3-debuginfo-4.18.2-5.fc35.x86_64.rpm pkgs/vm-fc35/i3-debugsource-4.18.2-5.fc35.x86_64.rpm pkgs/vm-fc35/i3-devel-4.18.2-5.fc35.x86_64.rpm pkgs/vm-fc35/i3-devel-doc-4.18.2-5.fc35.noarch.rpm pkgs/vm-fc35/i3-doc-4.18.2-5.fc35.noarch.rpm pkgs/vm-fc35/i3-4.18.2-5.fc35.x86_64.buildinfo ; do \
+2021-11-09 06:23:02.047618 +0000 build-fedora4: .if [ "${pkg##*.}" = "buildinfo" ]; then \
+2021-11-09 06:23:02.047638 +0000 build-fedora4: ../home/user/builder-r4.1/qubes-src/builder-rpm/scripts/update-rpmbuildinfo "$pkg" | /usr/bin/qubes-gpg-client-wrapper --clearsign --local-user 5817A43B283DE5A9181A522E1848792F9E2795E9 > "$pkg".tmp && \
+2021-11-09 06:23:02.047647 +0000 build-fedora4: ..mv -f "$pkg".tmp "$pkg"; \
+2021-11-09 06:23:02.047658 +0000 build-fedora4: .elif [ "$(rpmkeys --checksig -- "$pkg")" != "$pkg: digests signatures OK" ]; then \
+2021-11-09 06:23:02.047672 +0000 build-fedora4: ..setsid -w rpmsign --digest-algo=sha256 --key-id=5817A43B283DE5A9181A522E1848792F9E2795E9 --addsign  -- "$pkg" </dev/null || exit 1; \
+2021-11-09 06:23:02.047678 +0000 build-fedora4: .fi; \
+2021-11-09 06:23:02.047684 +0000 build-fedora4: done
+2021-11-09 06:23:02.096818 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-09 06:23:02.238600 +0000 build-fedora4: pkgs/vm-fc35/i3-4.18.2-5.fc35.src.rpm:
+2021-11-09 06:23:02.238646 +0000 build-fedora4: Error while vchan send, exiting
+2021-11-09 06:23:02.256393 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-09 06:23:02.397589 +0000 build-fedora4: pkgs/vm-fc35/i3-4.18.2-5.fc35.x86_64.rpm:
+2021-11-09 06:23:02.420721 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-09 06:23:02.563134 +0000 build-fedora4: pkgs/vm-fc35/i3-debuginfo-4.18.2-5.fc35.x86_64.rpm:
+2021-11-09 06:23:02.576461 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-09 06:23:02.715613 +0000 build-fedora4: pkgs/vm-fc35/i3-debugsource-4.18.2-5.fc35.x86_64.rpm:
+2021-11-09 06:23:02.730592 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-09 06:23:02.871603 +0000 build-fedora4: pkgs/vm-fc35/i3-devel-4.18.2-5.fc35.x86_64.rpm:
+2021-11-09 06:23:04.590514 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-09 06:23:04.739135 +0000 build-fedora4: pkgs/vm-fc35/i3-devel-doc-4.18.2-5.fc35.noarch.rpm:
+2021-11-09 06:23:04.758475 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-09 06:23:04.901627 +0000 build-fedora4: pkgs/vm-fc35/i3-doc-4.18.2-5.fc35.noarch.rpm:
+2021-11-09 06:23:05.318789 +0000 build-fedora4: Error while vchan send, exiting
+2021-11-09 06:23:05.319337 +0000 build-fedora4: Makefile:863: target 'internal-update-repo-current-testing.vm.fc32.desktop-linux-i3' does not exist
+2021-11-09 06:23:05.319389 +0000 build-fedora4: repo_base_var="LINUX_REPO_${DIST//-/_}_BASEDIR"; \
+2021-11-09 06:23:05.319400 +0000 build-fedora4: if [ "desktop-linux-i3" = linux-template-builder ]; then \
+2021-11-09 06:23:05.319410 +0000 build-fedora4: .# templates belongs to dom0 repository, even though PACKAGE_SET=vm
+2021-11-09 06:23:05.319419 +0000 build-fedora4: repo_base_var="LINUX_REPO__BASEDIR"; \
+2021-11-09 06:23:05.319425 +0000 build-fedora4: fi; \
+2021-11-09 06:23:05.319433 +0000 build-fedora4: if [ -n "${!repo_base_var}" ]; then \
+2021-11-09 06:23:05.319440 +0000 build-fedora4: .repo_basedir="${!repo_base_var}"; \
+2021-11-09 06:23:05.319450 +0000 build-fedora4: else \
+2021-11-09 06:23:05.319458 +0000 build-fedora4: .repo_basedir="qubes-src/linux-yum/r4.1"; \
+2021-11-09 06:23:05.319463 +0000 build-fedora4: fi; \
+2021-11-09 06:23:05.319472 +0000 build-fedora4: if [ -r qubes-src/desktop-linux-i3/Makefile.builder ]; then \
+2021-11-09 06:23:05.319480 +0000 build-fedora4: .echo -n "Updating qubes-src/desktop-linux-i3... "; \
+2021-11-09 06:23:05.319487 +0000 build-fedora4: .if [ "0" -eq 1 ]; then \
+2021-11-09 06:23:05.319497 +0000 build-fedora4: ..vtag=`git -C qubes-src/desktop-linux-i3 tag --points-at HEAD --list v*`; \
+2021-11-09 06:23:05.319504 +0000 build-fedora4: ..if [ -z "$vtag" ]; then \
+2021-11-09 06:23:05.319511 +0000 build-fedora4: ...echo "no version tag"; \
+2021-11-09 06:23:05.319517 +0000 build-fedora4: ...exit 0; \
+2021-11-09 06:23:05.319522 +0000 build-fedora4: ..fi; \
+2021-11-09 06:23:05.319527 +0000 build-fedora4: .fi; \
+2021-11-09 06:23:05.319536 +0000 build-fedora4: .if [ "desktop-linux-i3" = linux-template-builder ]; then
+2021-11-09 06:23:05.319546 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc32 template-name)
+2021-11-09 06:23:05.319552 +0000 build-fedora4: fi
+2021-11-09 06:23:05.319571 +0000 build-fedora4: component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc32 PACKAGE_SET=vm COMPONENT=`basename qubes-src/desktop-linux-i3` UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc32 get-var GET_VAR=PACKAGE_LIST); \
+2021-11-09 06:23:05.319580 +0000 build-fedora4: .if [ -z "$component_packages" ]; then \
+2021-11-09 06:23:05.319587 +0000 build-fedora4: ..echo "no packages."; \
+2021-11-09 06:23:05.319593 +0000 build-fedora4: ..exit 0; \
+2021-11-09 06:23:05.319598 +0000 build-fedora4: .fi; \
+2021-11-09 06:23:05.319606 +0000 build-fedora4: .make -s -f Makefile.generic DIST=fc32 PACKAGE_SET=vm \
+2021-11-09 06:23:05.319614 +0000 build-fedora4: ..COMPONENT=`basename qubes-src/desktop-linux-i3` \
+2021-11-09 06:23:05.319621 +0000 build-fedora4: ..SNAPSHOT_REPO=current-testing \
+2021-11-09 06:23:05.319628 +0000 build-fedora4: ..TARGET_REPO=current-testing \
+2021-11-09 06:23:05.319638 +0000 build-fedora4: ..UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc32 \
+2021-11-09 06:23:05.319650 +0000 build-fedora4: ..SNAPSHOT_FILE=/home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-fc32-`basename qubes-src/desktop-linux-i3` \
+2021-11-09 06:23:05.319661 +0000 build-fedora4: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2021-11-09_06-08-12 \
+2021-11-09 06:23:05.319668 +0000 build-fedora4: ..update-repo || exit 1; \
+2021-11-09 06:23:05.319678 +0000 build-fedora4: elif make -C qubes-src/desktop-linux-i3 -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2021-11-09 06:23:05.319687 +0000 build-fedora4: .echo "Updating qubes-src/desktop-linux-i3... "; \
+2021-11-09 06:23:05.319696 +0000 build-fedora4: .DIST=fc32 UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc32 \
+2021-11-09 06:23:05.319706 +0000 build-fedora4: .make -s -C qubes-src/desktop-linux-i3 update-repo-current-testing || exit 1; \
+2021-11-09 06:23:05.319712 +0000 build-fedora4: else \
+2021-11-09 06:23:05.319720 +0000 build-fedora4: .echo -n "Updating qubes-src/desktop-linux-i3... skipping."; \
+2021-11-09 06:23:05.319730 +0000 build-fedora4: fi; \
+2021-11-09 06:23:05.319736 +0000 build-fedora4: echo
+2021-11-09 06:23:05.377384 +0000 build-fedora4: Updating qubes-src/desktop-linux-i3... /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:176: target 'update-repo-do' does not exist
+2021-11-09 06:23:05.377441 +0000 build-fedora4: mkdir -p /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/fc32/rpm
+2021-11-09 06:23:05.397097 +0000 build-fedora4: if [ -n "pkgs/vm-fc32/i3-4.18.2-5.fc32.src.rpm pkgs/vm-fc32/i3-4.18.2-5.fc32.x86_64.rpm pkgs/vm-fc32/i3-debuginfo-4.18.2-5.fc32.x86_64.rpm pkgs/vm-fc32/i3-debugsource-4.18.2-5.fc32.x86_64.rpm pkgs/vm-fc32/i3-devel-4.18.2-5.fc32.x86_64.rpm pkgs/vm-fc32/i3-devel-doc-4.18.2-5.fc32.noarch.rpm pkgs/vm-fc32/i3-doc-4.18.2-5.fc32.noarch.rpm pkgs/vm-fc32/i3-4.18.2-5.fc32.x86_64.buildinfo" ]; then \
+2021-11-09 06:23:05.397180 +0000 build-fedora4: .cd qubes-src/desktop-linux-i3 && ln -f pkgs/vm-fc32/i3-4.18.2-5.fc32.src.rpm pkgs/vm-fc32/i3-4.18.2-5.fc32.x86_64.rpm pkgs/vm-fc32/i3-debuginfo-4.18.2-5.fc32.x86_64.rpm pkgs/vm-fc32/i3-debugsource-4.18.2-5.fc32.x86_64.rpm pkgs/vm-fc32/i3-devel-4.18.2-5.fc32.x86_64.rpm pkgs/vm-fc32/i3-devel-doc-4.18.2-5.fc32.noarch.rpm pkgs/vm-fc32/i3-doc-4.18.2-5.fc32.noarch.rpm pkgs/vm-fc32/i3-4.18.2-5.fc32.x86_64.buildinfo  /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/fc32/rpm/; \
+2021-11-09 06:23:05.397192 +0000 build-fedora4: else \
+2021-11-09 06:23:05.397204 +0000 build-fedora4: .echo "`tput bold`No packages defined by i3.spec, syntax error?`tput sgr0`"; \
+2021-11-09 06:23:05.397211 +0000 build-fedora4: .exit 1; \
+2021-11-09 06:23:05.397217 +0000 build-fedora4: fi
+2021-11-09 06:23:05.399237 +0000 build-fedora4: cd qubes-src/desktop-linux-i3 && echo pkgs/vm-fc32/i3-4.18.2-5.fc32.src.rpm pkgs/vm-fc32/i3-4.18.2-5.fc32.x86_64.rpm pkgs/vm-fc32/i3-debuginfo-4.18.2-5.fc32.x86_64.rpm pkgs/vm-fc32/i3-debugsource-4.18.2-5.fc32.x86_64.rpm pkgs/vm-fc32/i3-devel-4.18.2-5.fc32.x86_64.rpm pkgs/vm-fc32/i3-devel-doc-4.18.2-5.fc32.noarch.rpm pkgs/vm-fc32/i3-doc-4.18.2-5.fc32.noarch.rpm pkgs/vm-fc32/i3-4.18.2-5.fc32.x86_64.buildinfo  > /home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-fc32-desktop-linux-i3
+2021-11-09 06:23:05.410908 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-github//Makefile.github:18: target 'notify-github' does not exist
+2021-11-09 06:23:05.410956 +0000 build-fedora4: [ -z "i3-4.18.2-5.fc32" ] || /home/user/builder-r4.1/qubes-src/builder-github//notify-issues \
+2021-11-09 06:23:05.410971 +0000 build-fedora4: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2021-11-09_06-08-12" \
+2021-11-09 06:23:05.410978 +0000 build-fedora4: .upload \
+2021-11-09 06:23:05.410985 +0000 build-fedora4: ."r4.1" \
+2021-11-09 06:23:05.410992 +0000 build-fedora4: ."qubes-src/desktop-linux-i3" \
+2021-11-09 06:23:05.410999 +0000 build-fedora4: ."i3-4.18.2-5.fc32" \
+2021-11-09 06:23:05.411005 +0000 build-fedora4: ."fc32" \
+2021-11-09 06:23:05.411011 +0000 build-fedora4: ."vm" \
+2021-11-09 06:23:05.411017 +0000 build-fedora4: ."current-testing" \
+2021-11-09 06:23:05.411027 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-desktop-linux-i3-vm-fc32-current-testing" \
+2021-11-09 06:23:05.411036 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-desktop-linux-i3-vm-fc32-current"
+2021-11-09 06:23:07.857600 +0000 build-fedora4: 
+2021-11-09 06:23:07.857654 +0000 build-fedora4: Makefile:834: update target 'internal-update-repo-current-testing.vm.fc32' due to: internal-update-repo-current-testing.vm.fc32.desktop-linux-i3
+2021-11-09 06:23:07.857664 +0000 build-fedora4: true
+2021-11-09 06:23:07.859190 +0000 build-fedora4: Makefile:863: target 'internal-update-repo-current-testing.vm.fc33.desktop-linux-i3' does not exist
+2021-11-09 06:23:07.859222 +0000 build-fedora4: repo_base_var="LINUX_REPO_${DIST//-/_}_BASEDIR"; \
+2021-11-09 06:23:07.859232 +0000 build-fedora4: if [ "desktop-linux-i3" = linux-template-builder ]; then \
+2021-11-09 06:23:07.859258 +0000 build-fedora4: .# templates belongs to dom0 repository, even though PACKAGE_SET=vm
+2021-11-09 06:23:07.859266 +0000 build-fedora4: repo_base_var="LINUX_REPO__BASEDIR"; \
+2021-11-09 06:23:07.859272 +0000 build-fedora4: fi; \
+2021-11-09 06:23:07.859280 +0000 build-fedora4: if [ -n "${!repo_base_var}" ]; then \
+2021-11-09 06:23:07.859287 +0000 build-fedora4: .repo_basedir="${!repo_base_var}"; \
+2021-11-09 06:23:07.859293 +0000 build-fedora4: else \
+2021-11-09 06:23:07.859300 +0000 build-fedora4: .repo_basedir="qubes-src/linux-yum/r4.1"; \
+2021-11-09 06:23:07.859306 +0000 build-fedora4: fi; \
+2021-11-09 06:23:07.859314 +0000 build-fedora4: if [ -r qubes-src/desktop-linux-i3/Makefile.builder ]; then \
+2021-11-09 06:23:07.859322 +0000 build-fedora4: .echo -n "Updating qubes-src/desktop-linux-i3... "; \
+2021-11-09 06:23:07.859329 +0000 build-fedora4: .if [ "0" -eq 1 ]; then \
+2021-11-09 06:23:07.859338 +0000 build-fedora4: ..vtag=`git -C qubes-src/desktop-linux-i3 tag --points-at HEAD --list v*`; \
+2021-11-09 06:23:07.859345 +0000 build-fedora4: ..if [ -z "$vtag" ]; then \
+2021-11-09 06:23:07.859352 +0000 build-fedora4: ...echo "no version tag"; \
+2021-11-09 06:23:07.859358 +0000 build-fedora4: ...exit 0; \
+2021-11-09 06:23:07.859363 +0000 build-fedora4: ..fi; \
+2021-11-09 06:23:07.859369 +0000 build-fedora4: .fi; \
+2021-11-09 06:23:07.859378 +0000 build-fedora4: .if [ "desktop-linux-i3" = linux-template-builder ]; then
+2021-11-09 06:23:07.859389 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc33 template-name)
+2021-11-09 06:23:07.859394 +0000 build-fedora4: fi
+2021-11-09 06:23:07.859414 +0000 build-fedora4: component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc33 PACKAGE_SET=vm COMPONENT=`basename qubes-src/desktop-linux-i3` UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc33 get-var GET_VAR=PACKAGE_LIST); \
+2021-11-09 06:23:07.859423 +0000 build-fedora4: .if [ -z "$component_packages" ]; then \
+2021-11-09 06:23:07.859429 +0000 build-fedora4: ..echo "no packages."; \
+2021-11-09 06:23:07.859435 +0000 build-fedora4: ..exit 0; \
+2021-11-09 06:23:07.859440 +0000 build-fedora4: .fi; \
+2021-11-09 06:23:07.859449 +0000 build-fedora4: .make -s -f Makefile.generic DIST=fc33 PACKAGE_SET=vm \
+2021-11-09 06:23:07.859456 +0000 build-fedora4: ..COMPONENT=`basename qubes-src/desktop-linux-i3` \
+2021-11-09 06:23:07.859463 +0000 build-fedora4: ..SNAPSHOT_REPO=current-testing \
+2021-11-09 06:23:07.859470 +0000 build-fedora4: ..TARGET_REPO=current-testing \
+2021-11-09 06:23:07.859480 +0000 build-fedora4: ..UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc33 \
+2021-11-09 06:23:07.859492 +0000 build-fedora4: ..SNAPSHOT_FILE=/home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-fc33-`basename qubes-src/desktop-linux-i3` \
+2021-11-09 06:23:07.859503 +0000 build-fedora4: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2021-11-09_06-11-43 \
+2021-11-09 06:23:07.859510 +0000 build-fedora4: ..update-repo || exit 1; \
+2021-11-09 06:23:07.859521 +0000 build-fedora4: elif make -C qubes-src/desktop-linux-i3 -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2021-11-09 06:23:07.859528 +0000 build-fedora4: .echo "Updating qubes-src/desktop-linux-i3... "; \
+2021-11-09 06:23:07.859538 +0000 build-fedora4: .DIST=fc33 UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc33 \
+2021-11-09 06:23:07.859549 +0000 build-fedora4: .make -s -C qubes-src/desktop-linux-i3 update-repo-current-testing || exit 1; \
+2021-11-09 06:23:07.859554 +0000 build-fedora4: else \
+2021-11-09 06:23:07.859563 +0000 build-fedora4: .echo -n "Updating qubes-src/desktop-linux-i3... skipping."; \
+2021-11-09 06:23:07.859568 +0000 build-fedora4: fi; \
+2021-11-09 06:23:07.859573 +0000 build-fedora4: echo
+2021-11-09 06:23:07.934386 +0000 build-fedora4: Updating qubes-src/desktop-linux-i3... /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:176: target 'update-repo-do' does not exist
+2021-11-09 06:23:07.934459 +0000 build-fedora4: mkdir -p /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/fc33/rpm
+2021-11-09 06:23:07.952385 +0000 build-fedora4: if [ -n "pkgs/vm-fc33/i3-4.18.2-5.fc33.src.rpm pkgs/vm-fc33/i3-4.18.2-5.fc33.x86_64.rpm pkgs/vm-fc33/i3-debuginfo-4.18.2-5.fc33.x86_64.rpm pkgs/vm-fc33/i3-debugsource-4.18.2-5.fc33.x86_64.rpm pkgs/vm-fc33/i3-devel-4.18.2-5.fc33.x86_64.rpm pkgs/vm-fc33/i3-devel-doc-4.18.2-5.fc33.noarch.rpm pkgs/vm-fc33/i3-doc-4.18.2-5.fc33.noarch.rpm pkgs/vm-fc33/i3-4.18.2-5.fc33.x86_64.buildinfo" ]; then \
+2021-11-09 06:23:07.952468 +0000 build-fedora4: .cd qubes-src/desktop-linux-i3 && ln -f pkgs/vm-fc33/i3-4.18.2-5.fc33.src.rpm pkgs/vm-fc33/i3-4.18.2-5.fc33.x86_64.rpm pkgs/vm-fc33/i3-debuginfo-4.18.2-5.fc33.x86_64.rpm pkgs/vm-fc33/i3-debugsource-4.18.2-5.fc33.x86_64.rpm pkgs/vm-fc33/i3-devel-4.18.2-5.fc33.x86_64.rpm pkgs/vm-fc33/i3-devel-doc-4.18.2-5.fc33.noarch.rpm pkgs/vm-fc33/i3-doc-4.18.2-5.fc33.noarch.rpm pkgs/vm-fc33/i3-4.18.2-5.fc33.x86_64.buildinfo  /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/fc33/rpm/; \
+2021-11-09 06:23:07.952480 +0000 build-fedora4: else \
+2021-11-09 06:23:07.952492 +0000 build-fedora4: .echo "`tput bold`No packages defined by i3.spec, syntax error?`tput sgr0`"; \
+2021-11-09 06:23:07.952499 +0000 build-fedora4: .exit 1; \
+2021-11-09 06:23:07.952504 +0000 build-fedora4: fi
+2021-11-09 06:23:07.954660 +0000 build-fedora4: cd qubes-src/desktop-linux-i3 && echo pkgs/vm-fc33/i3-4.18.2-5.fc33.src.rpm pkgs/vm-fc33/i3-4.18.2-5.fc33.x86_64.rpm pkgs/vm-fc33/i3-debuginfo-4.18.2-5.fc33.x86_64.rpm pkgs/vm-fc33/i3-debugsource-4.18.2-5.fc33.x86_64.rpm pkgs/vm-fc33/i3-devel-4.18.2-5.fc33.x86_64.rpm pkgs/vm-fc33/i3-devel-doc-4.18.2-5.fc33.noarch.rpm pkgs/vm-fc33/i3-doc-4.18.2-5.fc33.noarch.rpm pkgs/vm-fc33/i3-4.18.2-5.fc33.x86_64.buildinfo  > /home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-fc33-desktop-linux-i3
+2021-11-09 06:23:07.969403 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-github//Makefile.github:18: target 'notify-github' does not exist
+2021-11-09 06:23:07.969456 +0000 build-fedora4: [ -z "i3-4.18.2-5.fc33" ] || /home/user/builder-r4.1/qubes-src/builder-github//notify-issues \
+2021-11-09 06:23:07.969471 +0000 build-fedora4: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2021-11-09_06-11-43" \
+2021-11-09 06:23:07.969478 +0000 build-fedora4: .upload \
+2021-11-09 06:23:07.969485 +0000 build-fedora4: ."r4.1" \
+2021-11-09 06:23:07.969492 +0000 build-fedora4: ."qubes-src/desktop-linux-i3" \
+2021-11-09 06:23:07.969499 +0000 build-fedora4: ."i3-4.18.2-5.fc33" \
+2021-11-09 06:23:07.969505 +0000 build-fedora4: ."fc33" \
+2021-11-09 06:23:07.969511 +0000 build-fedora4: ."vm" \
+2021-11-09 06:23:07.969517 +0000 build-fedora4: ."current-testing" \
+2021-11-09 06:23:07.969527 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-desktop-linux-i3-vm-fc33-current-testing" \
+2021-11-09 06:23:07.969536 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-desktop-linux-i3-vm-fc33-current"
+2021-11-09 06:23:10.479831 +0000 build-fedora4: WARNING: message template /home/user/builder-r4.1/qubes-src/builder-github/templates/message-current-testing-vm doesn't exist, not adding comments
+2021-11-09 06:23:10.494831 +0000 build-fedora4: 
+2021-11-09 06:23:10.494907 +0000 build-fedora4: Makefile:834: update target 'internal-update-repo-current-testing.vm.fc33' due to: internal-update-repo-current-testing.vm.fc33.desktop-linux-i3
+2021-11-09 06:23:10.494920 +0000 build-fedora4: true
+2021-11-09 06:23:10.496422 +0000 build-fedora4: Makefile:863: target 'internal-update-repo-current-testing.vm.fc34.desktop-linux-i3' does not exist
+2021-11-09 06:23:10.496457 +0000 build-fedora4: repo_base_var="LINUX_REPO_${DIST//-/_}_BASEDIR"; \
+2021-11-09 06:23:10.496469 +0000 build-fedora4: if [ "desktop-linux-i3" = linux-template-builder ]; then \
+2021-11-09 06:23:10.496494 +0000 build-fedora4: .# templates belongs to dom0 repository, even though PACKAGE_SET=vm
+2021-11-09 06:23:10.496504 +0000 build-fedora4: repo_base_var="LINUX_REPO__BASEDIR"; \
+2021-11-09 06:23:10.496510 +0000 build-fedora4: fi; \
+2021-11-09 06:23:10.496518 +0000 build-fedora4: if [ -n "${!repo_base_var}" ]; then \
+2021-11-09 06:23:10.496525 +0000 build-fedora4: .repo_basedir="${!repo_base_var}"; \
+2021-11-09 06:23:10.496531 +0000 build-fedora4: else \
+2021-11-09 06:23:10.496539 +0000 build-fedora4: .repo_basedir="qubes-src/linux-yum/r4.1"; \
+2021-11-09 06:23:10.496544 +0000 build-fedora4: fi; \
+2021-11-09 06:23:10.496553 +0000 build-fedora4: if [ -r qubes-src/desktop-linux-i3/Makefile.builder ]; then \
+2021-11-09 06:23:10.496561 +0000 build-fedora4: .echo -n "Updating qubes-src/desktop-linux-i3... "; \
+2021-11-09 06:23:10.496568 +0000 build-fedora4: .if [ "0" -eq 1 ]; then \
+2021-11-09 06:23:10.496578 +0000 build-fedora4: ..vtag=`git -C qubes-src/desktop-linux-i3 tag --points-at HEAD --list v*`; \
+2021-11-09 06:23:10.496585 +0000 build-fedora4: ..if [ -z "$vtag" ]; then \
+2021-11-09 06:23:10.496591 +0000 build-fedora4: ...echo "no version tag"; \
+2021-11-09 06:23:10.496597 +0000 build-fedora4: ...exit 0; \
+2021-11-09 06:23:10.496603 +0000 build-fedora4: ..fi; \
+2021-11-09 06:23:10.496608 +0000 build-fedora4: .fi; \
+2021-11-09 06:23:10.496616 +0000 build-fedora4: .if [ "desktop-linux-i3" = linux-template-builder ]; then
+2021-11-09 06:23:10.496627 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc34 template-name)
+2021-11-09 06:23:10.496632 +0000 build-fedora4: fi
+2021-11-09 06:23:10.496653 +0000 build-fedora4: component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc34 PACKAGE_SET=vm COMPONENT=`basename qubes-src/desktop-linux-i3` UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc34 get-var GET_VAR=PACKAGE_LIST); \
+2021-11-09 06:23:10.496661 +0000 build-fedora4: .if [ -z "$component_packages" ]; then \
+2021-11-09 06:23:10.496668 +0000 build-fedora4: ..echo "no packages."; \
+2021-11-09 06:23:10.496674 +0000 build-fedora4: ..exit 0; \
+2021-11-09 06:23:10.496679 +0000 build-fedora4: .fi; \
+2021-11-09 06:23:10.496688 +0000 build-fedora4: .make -s -f Makefile.generic DIST=fc34 PACKAGE_SET=vm \
+2021-11-09 06:23:10.496696 +0000 build-fedora4: ..COMPONENT=`basename qubes-src/desktop-linux-i3` \
+2021-11-09 06:23:10.496703 +0000 build-fedora4: ..SNAPSHOT_REPO=current-testing \
+2021-11-09 06:23:10.496710 +0000 build-fedora4: ..TARGET_REPO=current-testing \
+2021-11-09 06:23:10.496720 +0000 build-fedora4: ..UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc34 \
+2021-11-09 06:23:10.496732 +0000 build-fedora4: ..SNAPSHOT_FILE=/home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-fc34-`basename qubes-src/desktop-linux-i3` \
+2021-11-09 06:23:10.496743 +0000 build-fedora4: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2021-11-09_06-15-23 \
+2021-11-09 06:23:10.496750 +0000 build-fedora4: ..update-repo || exit 1; \
+2021-11-09 06:23:10.496760 +0000 build-fedora4: elif make -C qubes-src/desktop-linux-i3 -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2021-11-09 06:23:10.496768 +0000 build-fedora4: .echo "Updating qubes-src/desktop-linux-i3... "; \
+2021-11-09 06:23:10.496778 +0000 build-fedora4: .DIST=fc34 UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc34 \
+2021-11-09 06:23:10.496788 +0000 build-fedora4: .make -s -C qubes-src/desktop-linux-i3 update-repo-current-testing || exit 1; \
+2021-11-09 06:23:10.496794 +0000 build-fedora4: else \
+2021-11-09 06:23:10.496802 +0000 build-fedora4: .echo -n "Updating qubes-src/desktop-linux-i3... skipping."; \
+2021-11-09 06:23:10.496808 +0000 build-fedora4: fi; \
+2021-11-09 06:23:10.496813 +0000 build-fedora4: echo
+2021-11-09 06:23:10.553346 +0000 build-fedora4: Updating qubes-src/desktop-linux-i3... /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:176: target 'update-repo-do' does not exist
+2021-11-09 06:23:10.553416 +0000 build-fedora4: mkdir -p /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/fc34/rpm
+2021-11-09 06:23:10.571154 +0000 build-fedora4: if [ -n "pkgs/vm-fc34/i3-4.18.2-5.fc34.src.rpm pkgs/vm-fc34/i3-4.18.2-5.fc34.x86_64.rpm pkgs/vm-fc34/i3-debuginfo-4.18.2-5.fc34.x86_64.rpm pkgs/vm-fc34/i3-debugsource-4.18.2-5.fc34.x86_64.rpm pkgs/vm-fc34/i3-devel-4.18.2-5.fc34.x86_64.rpm pkgs/vm-fc34/i3-devel-doc-4.18.2-5.fc34.noarch.rpm pkgs/vm-fc34/i3-doc-4.18.2-5.fc34.noarch.rpm pkgs/vm-fc34/i3-4.18.2-5.fc34.x86_64.buildinfo" ]; then \
+2021-11-09 06:23:10.571231 +0000 build-fedora4: .cd qubes-src/desktop-linux-i3 && ln -f pkgs/vm-fc34/i3-4.18.2-5.fc34.src.rpm pkgs/vm-fc34/i3-4.18.2-5.fc34.x86_64.rpm pkgs/vm-fc34/i3-debuginfo-4.18.2-5.fc34.x86_64.rpm pkgs/vm-fc34/i3-debugsource-4.18.2-5.fc34.x86_64.rpm pkgs/vm-fc34/i3-devel-4.18.2-5.fc34.x86_64.rpm pkgs/vm-fc34/i3-devel-doc-4.18.2-5.fc34.noarch.rpm pkgs/vm-fc34/i3-doc-4.18.2-5.fc34.noarch.rpm pkgs/vm-fc34/i3-4.18.2-5.fc34.x86_64.buildinfo  /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/fc34/rpm/; \
+2021-11-09 06:23:10.571241 +0000 build-fedora4: else \
+2021-11-09 06:23:10.571254 +0000 build-fedora4: .echo "`tput bold`No packages defined by i3.spec, syntax error?`tput sgr0`"; \
+2021-11-09 06:23:10.571261 +0000 build-fedora4: .exit 1; \
+2021-11-09 06:23:10.571266 +0000 build-fedora4: fi
+2021-11-09 06:23:10.573293 +0000 build-fedora4: cd qubes-src/desktop-linux-i3 && echo pkgs/vm-fc34/i3-4.18.2-5.fc34.src.rpm pkgs/vm-fc34/i3-4.18.2-5.fc34.x86_64.rpm pkgs/vm-fc34/i3-debuginfo-4.18.2-5.fc34.x86_64.rpm pkgs/vm-fc34/i3-debugsource-4.18.2-5.fc34.x86_64.rpm pkgs/vm-fc34/i3-devel-4.18.2-5.fc34.x86_64.rpm pkgs/vm-fc34/i3-devel-doc-4.18.2-5.fc34.noarch.rpm pkgs/vm-fc34/i3-doc-4.18.2-5.fc34.noarch.rpm pkgs/vm-fc34/i3-4.18.2-5.fc34.x86_64.buildinfo  > /home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-fc34-desktop-linux-i3
+2021-11-09 06:23:10.586296 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-github//Makefile.github:18: target 'notify-github' does not exist
+2021-11-09 06:23:10.586354 +0000 build-fedora4: [ -z "i3-4.18.2-5.fc34" ] || /home/user/builder-r4.1/qubes-src/builder-github//notify-issues \
+2021-11-09 06:23:10.586372 +0000 build-fedora4: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2021-11-09_06-15-23" \
+2021-11-09 06:23:10.586380 +0000 build-fedora4: .upload \
+2021-11-09 06:23:10.586387 +0000 build-fedora4: ."r4.1" \
+2021-11-09 06:23:10.586396 +0000 build-fedora4: ."qubes-src/desktop-linux-i3" \
+2021-11-09 06:23:10.586404 +0000 build-fedora4: ."i3-4.18.2-5.fc34" \
+2021-11-09 06:23:10.586411 +0000 build-fedora4: ."fc34" \
+2021-11-09 06:23:10.586418 +0000 build-fedora4: ."vm" \
+2021-11-09 06:23:10.586425 +0000 build-fedora4: ."current-testing" \
+2021-11-09 06:23:10.586436 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-desktop-linux-i3-vm-fc34-current-testing" \
+2021-11-09 06:23:10.586448 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-desktop-linux-i3-vm-fc34-current"
+2021-11-09 06:23:12.969447 +0000 build-fedora4: WARNING: message template /home/user/builder-r4.1/qubes-src/builder-github/templates/message-current-testing-vm doesn't exist, not adding comments
+2021-11-09 06:23:12.983261 +0000 build-fedora4: 
+2021-11-09 06:23:12.983803 +0000 build-fedora4: Makefile:834: update target 'internal-update-repo-current-testing.vm.fc34' due to: internal-update-repo-current-testing.vm.fc34.desktop-linux-i3
+2021-11-09 06:23:12.983836 +0000 build-fedora4: true
+2021-11-09 06:23:12.985224 +0000 build-fedora4: Makefile:863: target 'internal-update-repo-current-testing.vm.fc35.desktop-linux-i3' does not exist
+2021-11-09 06:23:12.985263 +0000 build-fedora4: repo_base_var="LINUX_REPO_${DIST//-/_}_BASEDIR"; \
+2021-11-09 06:23:12.985274 +0000 build-fedora4: if [ "desktop-linux-i3" = linux-template-builder ]; then \
+2021-11-09 06:23:12.985306 +0000 build-fedora4: .# templates belongs to dom0 repository, even though PACKAGE_SET=vm
+2021-11-09 06:23:12.985315 +0000 build-fedora4: repo_base_var="LINUX_REPO__BASEDIR"; \
+2021-11-09 06:23:12.985322 +0000 build-fedora4: fi; \
+2021-11-09 06:23:12.985329 +0000 build-fedora4: if [ -n "${!repo_base_var}" ]; then \
+2021-11-09 06:23:12.985337 +0000 build-fedora4: .repo_basedir="${!repo_base_var}"; \
+2021-11-09 06:23:12.985342 +0000 build-fedora4: else \
+2021-11-09 06:23:12.985350 +0000 build-fedora4: .repo_basedir="qubes-src/linux-yum/r4.1"; \
+2021-11-09 06:23:12.985355 +0000 build-fedora4: fi; \
+2021-11-09 06:23:12.985363 +0000 build-fedora4: if [ -r qubes-src/desktop-linux-i3/Makefile.builder ]; then \
+2021-11-09 06:23:12.985371 +0000 build-fedora4: .echo -n "Updating qubes-src/desktop-linux-i3... "; \
+2021-11-09 06:23:12.985378 +0000 build-fedora4: .if [ "0" -eq 1 ]; then \
+2021-11-09 06:23:12.985388 +0000 build-fedora4: ..vtag=`git -C qubes-src/desktop-linux-i3 tag --points-at HEAD --list v*`; \
+2021-11-09 06:23:12.985395 +0000 build-fedora4: ..if [ -z "$vtag" ]; then \
+2021-11-09 06:23:12.985402 +0000 build-fedora4: ...echo "no version tag"; \
+2021-11-09 06:23:12.985408 +0000 build-fedora4: ...exit 0; \
+2021-11-09 06:23:12.985414 +0000 build-fedora4: ..fi; \
+2021-11-09 06:23:12.985419 +0000 build-fedora4: .fi; \
+2021-11-09 06:23:12.985427 +0000 build-fedora4: .if [ "desktop-linux-i3" = linux-template-builder ]; then
+2021-11-09 06:23:12.985438 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc35 template-name)
+2021-11-09 06:23:12.985444 +0000 build-fedora4: fi
+2021-11-09 06:23:12.985463 +0000 build-fedora4: component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc35 PACKAGE_SET=vm COMPONENT=`basename qubes-src/desktop-linux-i3` UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc35 get-var GET_VAR=PACKAGE_LIST); \
+2021-11-09 06:23:12.985472 +0000 build-fedora4: .if [ -z "$component_packages" ]; then \
+2021-11-09 06:23:12.985479 +0000 build-fedora4: ..echo "no packages."; \
+2021-11-09 06:23:12.985485 +0000 build-fedora4: ..exit 0; \
+2021-11-09 06:23:12.985490 +0000 build-fedora4: .fi; \
+2021-11-09 06:23:12.985499 +0000 build-fedora4: .make -s -f Makefile.generic DIST=fc35 PACKAGE_SET=vm \
+2021-11-09 06:23:12.985506 +0000 build-fedora4: ..COMPONENT=`basename qubes-src/desktop-linux-i3` \
+2021-11-09 06:23:12.985514 +0000 build-fedora4: ..SNAPSHOT_REPO=current-testing \
+2021-11-09 06:23:12.985521 +0000 build-fedora4: ..TARGET_REPO=current-testing \
+2021-11-09 06:23:12.985530 +0000 build-fedora4: ..UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc35 \
+2021-11-09 06:23:12.985543 +0000 build-fedora4: ..SNAPSHOT_FILE=/home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-fc35-`basename qubes-src/desktop-linux-i3` \
+2021-11-09 06:23:12.985554 +0000 build-fedora4: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2021-11-09_06-19-01 \
+2021-11-09 06:23:12.985561 +0000 build-fedora4: ..update-repo || exit 1; \
+2021-11-09 06:23:12.985572 +0000 build-fedora4: elif make -C qubes-src/desktop-linux-i3 -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2021-11-09 06:23:12.985579 +0000 build-fedora4: .echo "Updating qubes-src/desktop-linux-i3... "; \
+2021-11-09 06:23:12.985589 +0000 build-fedora4: .DIST=fc35 UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc35 \
+2021-11-09 06:23:12.985600 +0000 build-fedora4: .make -s -C qubes-src/desktop-linux-i3 update-repo-current-testing || exit 1; \
+2021-11-09 06:23:12.985605 +0000 build-fedora4: else \
+2021-11-09 06:23:12.985614 +0000 build-fedora4: .echo -n "Updating qubes-src/desktop-linux-i3... skipping."; \
+2021-11-09 06:23:12.985619 +0000 build-fedora4: fi; \
+2021-11-09 06:23:12.985624 +0000 build-fedora4: echo
+2021-11-09 06:23:13.042222 +0000 build-fedora4: Updating qubes-src/desktop-linux-i3... /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:176: target 'update-repo-do' does not exist
+2021-11-09 06:23:13.042295 +0000 build-fedora4: mkdir -p /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/fc35/rpm
+2021-11-09 06:23:13.060074 +0000 build-fedora4: if [ -n "pkgs/vm-fc35/i3-4.18.2-5.fc35.src.rpm pkgs/vm-fc35/i3-4.18.2-5.fc35.x86_64.rpm pkgs/vm-fc35/i3-debuginfo-4.18.2-5.fc35.x86_64.rpm pkgs/vm-fc35/i3-debugsource-4.18.2-5.fc35.x86_64.rpm pkgs/vm-fc35/i3-devel-4.18.2-5.fc35.x86_64.rpm pkgs/vm-fc35/i3-devel-doc-4.18.2-5.fc35.noarch.rpm pkgs/vm-fc35/i3-doc-4.18.2-5.fc35.noarch.rpm pkgs/vm-fc35/i3-4.18.2-5.fc35.x86_64.buildinfo" ]; then \
+2021-11-09 06:23:13.060154 +0000 build-fedora4: .cd qubes-src/desktop-linux-i3 && ln -f pkgs/vm-fc35/i3-4.18.2-5.fc35.src.rpm pkgs/vm-fc35/i3-4.18.2-5.fc35.x86_64.rpm pkgs/vm-fc35/i3-debuginfo-4.18.2-5.fc35.x86_64.rpm pkgs/vm-fc35/i3-debugsource-4.18.2-5.fc35.x86_64.rpm pkgs/vm-fc35/i3-devel-4.18.2-5.fc35.x86_64.rpm pkgs/vm-fc35/i3-devel-doc-4.18.2-5.fc35.noarch.rpm pkgs/vm-fc35/i3-doc-4.18.2-5.fc35.noarch.rpm pkgs/vm-fc35/i3-4.18.2-5.fc35.x86_64.buildinfo  /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/fc35/rpm/; \
+2021-11-09 06:23:13.060167 +0000 build-fedora4: else \
+2021-11-09 06:23:13.060179 +0000 build-fedora4: .echo "`tput bold`No packages defined by i3.spec, syntax error?`tput sgr0`"; \
+2021-11-09 06:23:13.060187 +0000 build-fedora4: .exit 1; \
+2021-11-09 06:23:13.060192 +0000 build-fedora4: fi
+2021-11-09 06:23:13.062239 +0000 build-fedora4: cd qubes-src/desktop-linux-i3 && echo pkgs/vm-fc35/i3-4.18.2-5.fc35.src.rpm pkgs/vm-fc35/i3-4.18.2-5.fc35.x86_64.rpm pkgs/vm-fc35/i3-debuginfo-4.18.2-5.fc35.x86_64.rpm pkgs/vm-fc35/i3-debugsource-4.18.2-5.fc35.x86_64.rpm pkgs/vm-fc35/i3-devel-4.18.2-5.fc35.x86_64.rpm pkgs/vm-fc35/i3-devel-doc-4.18.2-5.fc35.noarch.rpm pkgs/vm-fc35/i3-doc-4.18.2-5.fc35.noarch.rpm pkgs/vm-fc35/i3-4.18.2-5.fc35.x86_64.buildinfo  > /home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-fc35-desktop-linux-i3
+2021-11-09 06:23:13.074046 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-github//Makefile.github:18: target 'notify-github' does not exist
+2021-11-09 06:23:13.074103 +0000 build-fedora4: [ -z "i3-4.18.2-5.fc35" ] || /home/user/builder-r4.1/qubes-src/builder-github//notify-issues \
+2021-11-09 06:23:13.074120 +0000 build-fedora4: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2021-11-09_06-19-01" \
+2021-11-09 06:23:13.074128 +0000 build-fedora4: .upload \
+2021-11-09 06:23:13.074136 +0000 build-fedora4: ."r4.1" \
+2021-11-09 06:23:13.074144 +0000 build-fedora4: ."qubes-src/desktop-linux-i3" \
+2021-11-09 06:23:13.074152 +0000 build-fedora4: ."i3-4.18.2-5.fc35" \
+2021-11-09 06:23:13.074162 +0000 build-fedora4: ."fc35" \
+2021-11-09 06:23:13.074169 +0000 build-fedora4: ."vm" \
+2021-11-09 06:23:13.074176 +0000 build-fedora4: ."current-testing" \
+2021-11-09 06:23:13.074187 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-desktop-linux-i3-vm-fc35-current-testing" \
+2021-11-09 06:23:13.074199 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-desktop-linux-i3-vm-fc35-current"
+2021-11-09 06:23:15.482485 +0000 build-fedora4: WARNING: /home/user/github-notify-state/r4.1-desktop-linux-i3-vm-fc35-current-testing does not exist, initializing with the current state
+2021-11-09 06:23:15.497092 +0000 build-fedora4: 
+2021-11-09 06:23:15.497327 +0000 build-fedora4: Makefile:834: update target 'internal-update-repo-current-testing.vm.fc35' due to: internal-update-repo-current-testing.vm.fc35.desktop-linux-i3
+2021-11-09 06:23:15.497348 +0000 build-fedora4: true
+2021-11-09 06:23:15.498708 +0000 build-fedora4: Makefile:923: target 'post-update-repo-current-testing' does not exist
+2021-11-09 06:23:15.498741 +0000 build-fedora4: for dist in  fc32 fc33 fc34 fc35; do \
+2021-11-09 06:23:15.498752 +0000 build-fedora4: .repo_base_var="LINUX_REPO_${dist//-/_}_BASEDIR"; \
+2021-11-09 06:23:15.498760 +0000 build-fedora4: .if [ -n "${!repo_base_var}" ]; then \
+2021-11-09 06:23:15.498785 +0000 build-fedora4: ..repo_basedir="${!repo_base_var}"; \
+2021-11-09 06:23:15.498792 +0000 build-fedora4: .else \
+2021-11-09 06:23:15.498800 +0000 build-fedora4: ..repo_basedir="qubes-src/linux-yum/r4.1"; \
+2021-11-09 06:23:15.498805 +0000 build-fedora4: .fi; \
+2021-11-09 06:23:15.498813 +0000 build-fedora4: .repos_to_update="$repos_to_update $repo_basedir"; \
+2021-11-09 06:23:15.498819 +0000 build-fedora4: done; \
+2021-11-09 06:23:15.498825 +0000 build-fedora4: pkgset_dist= ; \
+2021-11-09 06:23:15.498831 +0000 build-fedora4: for dist in ; do \
+2021-11-09 06:23:15.498838 +0000 build-fedora4: .pkgset_dist="$pkgset_dist dom0/$dist"; \
+2021-11-09 06:23:15.498844 +0000 build-fedora4: done; \
+2021-11-09 06:23:15.498851 +0000 build-fedora4: for dist in fc32 fc33 fc34 fc35; do \
+2021-11-09 06:23:15.498858 +0000 build-fedora4: .pkgset_dist="$pkgset_dist vm/$dist"; \
+2021-11-09 06:23:15.498864 +0000 build-fedora4: done; \
+2021-11-09 06:23:15.498889 +0000 build-fedora4: for repo in `echo $repos_to_update|tr ' ' '\n'|sort|uniq`; do \
+2021-11-09 06:23:15.498898 +0000 build-fedora4: .[ -z "$repo" ] && continue; \
+2021-11-09 06:23:15.498907 +0000 build-fedora4: .[ -x "$repo/../update_repo-current-testing.sh" ] || continue; \
+2021-11-09 06:23:15.498916 +0000 build-fedora4: .(cd $repo/.. && ./update_repo-current-testing.sh r4.1 $pkgset_dist); \
+2021-11-09 06:23:15.498921 +0000 build-fedora4: done
+2021-11-09 06:23:15.505805 +0000 build-fedora4: ~/builder-r4.1/qubes-src/linux-yum ~/builder-r4.1/qubes-src/linux-yum
+2021-11-09 06:23:15.509369 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc32...
+2021-11-09 06:23:15.531203 +0000 build-fedora4: warning: Found bdb Packages database while attempting sqlite backend: using bdb backend.
+2021-11-09 06:23:18.151532 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc33...
+2021-11-09 06:23:18.172992 +0000 build-fedora4: warning: Found bdb Packages database while attempting sqlite backend: using bdb backend.
+2021-11-09 06:23:21.269533 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc34...
+2021-11-09 06:23:21.269576 +0000 build-fedora4: Error while vchan send, exiting
+2021-11-09 06:23:21.292739 +0000 build-fedora4: warning: Found bdb Packages database while attempting sqlite backend: using bdb backend.
+2021-11-09 06:23:24.080274 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc35...
+2021-11-09 06:23:24.099930 +0000 build-fedora4: warning: Found bdb Packages database while attempting sqlite backend: using bdb backend.
+2021-11-09 06:23:25.951765 +0000 build-fedora4: Done.
+2021-11-09 06:23:25.955449 +0000 build-fedora4: ~/builder-r4.1/qubes-src/linux-yum ~/builder-r4.1/qubes-src/linux-yum
+2021-11-09 06:23:25.956823 +0000 build-fedora4: Syncing r4.1...
+2021-11-09 06:23:26.722586 +0000 build-fedora4: sending incremental file list
+2021-11-09 06:23:26.776395 +0000 build-fedora4: .d..t...... fc32/
+2021-11-09 06:23:26.776443 +0000 build-fedora4: .d..t...... fc32/repodata/
+2021-11-09 06:23:26.776458 +0000 build-fedora4: <f..t...... fc32/repodata/0a4d9ec5911f793f87955cf8bbc866b0c930c8f9aa2384ec29cc1f360a31da93-comps.xml.gz
+2021-11-09 06:23:26.776649 +0000 build-fedora4: .            700   8%    0.00kB/s    0:00:00  .          8,416 100%    7.36MB/s    0:00:00 (xfr#1, to-chk=562/568)
+2021-11-09 06:23:26.776756 +0000 build-fedora4: <f+++++++++ fc32/repodata/0af41df721cd371c00e3f0a617404c4c3af3b8c22a3a03fe53153541b9a847e4-filelists.xml.gz
+2021-11-09 06:23:26.777629 +0000 build-fedora4: .         32,768  24%   31.25MB/s    0:00:00  .        134,129 100%  127.92MB/s    0:00:00 (xfr#2, to-chk=561/568)
+2021-11-09 06:23:26.777657 +0000 build-fedora4: <f+++++++++ fc32/repodata/113e2808d3efa771dc6329273c7f998e934023a2669e61e355fba08524af0fe6-primary.sqlite.bz2
+2021-11-09 06:23:26.777673 +0000 build-fedora4: .         32,768  32%   31.25MB/s    0:00:00  .        100,470 100%   95.82MB/s    0:00:00 (xfr#3, to-chk=560/568)
+2021-11-09 06:23:26.777685 +0000 build-fedora4: <f..t...... fc32/repodata/397e43a81ad38941589caaed70c4fabc438fb360cee27a55821a1db270bacaa3-comps.xml
+2021-11-09 06:23:26.777800 +0000 build-fedora4: .            700   2%  683.59kB/s    0:00:00  .         25,819 100%   24.62MB/s    0:00:00 (xfr#4, to-chk=559/568)
+2021-11-09 06:23:26.777824 +0000 build-fedora4: <f+++++++++ fc32/repodata/3c40091a55fffb6f87cf22112f4b74277194d02da2d0605a7beedb3eaafd45e1-filelists.sqlite.bz2
+2021-11-09 06:23:26.778928 +0000 build-fedora4: .         32,768  22%   31.25MB/s    0:00:00  .        143,371 100%   68.36MB/s    0:00:00 (xfr#5, to-chk=558/568)
+2021-11-09 06:23:26.778984 +0000 build-fedora4: <f+++++++++ fc32/repodata/3cfa556ff1dae1ad88dd18eb82a4f25f32c01378b734e1471ed389f14c7a1525-other.xml.gz
+2021-11-09 06:23:26.779250 +0000 build-fedora4: .         31,390 100%   14.97MB/s    0:00:00  .         31,390 100%   14.97MB/s    0:00:00 (xfr#6, to-chk=557/568)
+2021-11-09 06:23:26.779275 +0000 build-fedora4: <f+++++++++ fc32/repodata/9101f112ba5cd6f7a4147241688f06981dc92a672c96a23ab6bb185bdca3d888-primary.xml.gz
+2021-11-09 06:23:26.779501 +0000 build-fedora4: .         32,768  67%   15.62MB/s    0:00:00  .         48,901 100%   23.32MB/s    0:00:00 (xfr#7, to-chk=556/568)
+2021-11-09 06:23:26.779525 +0000 build-fedora4: <f+++++++++ fc32/repodata/cae148dba542e9a424473ed3f8b8fa975633e062d9d6911d08bf6a199221c476-other.sqlite.bz2
+2021-11-09 06:23:26.779745 +0000 build-fedora4: .         32,768  55%   15.62MB/s    0:00:00  .         59,141 100%   18.80MB/s    0:00:00 (xfr#8, to-chk=555/568)
+2021-11-09 06:23:26.779765 +0000 build-fedora4: <f.st...... fc32/repodata/repomd.xml
+2021-11-09 06:23:26.779863 +0000 build-fedora4: .          3,854 100%    1.23MB/s    0:00:00  .          3,854 100%    1.23MB/s    0:00:00 (xfr#9, to-chk=554/568)
+2021-11-09 06:23:26.779882 +0000 build-fedora4: <f..t...... fc32/repodata/repomd.xml.asc
+2021-11-09 06:23:26.779992 +0000 build-fedora4: .            833 100%  271.16kB/s    0:00:00  .            833 100%  271.16kB/s    0:00:00 (xfr#10, to-chk=553/568)
+2021-11-09 06:23:26.780010 +0000 build-fedora4: .d..t...... fc32/rpm/
+2021-11-09 06:23:26.780021 +0000 build-fedora4: <f+++++++++ fc32/rpm/i3-4.18.2-5.fc32.src.rpm
+2021-11-09 06:23:26.801303 +0000 build-fedora4: .         32,768   2%   10.42MB/s    0:00:00  .      1,247,150 100%   51.71MB/s    0:00:00 (xfr#11, to-chk=518/568)
+2021-11-09 06:23:26.801345 +0000 build-fedora4: <f+++++++++ fc32/rpm/i3-4.18.2-5.fc32.x86_64.buildinfo
+2021-11-09 06:23:26.801359 +0000 build-fedora4: .          2,741 100%  116.38kB/s    0:00:00  .          2,741 100%  116.38kB/s    0:00:00 (xfr#12, to-chk=517/568)
+2021-11-09 06:23:26.801367 +0000 build-fedora4: <f+++++++++ fc32/rpm/i3-4.18.2-5.fc32.x86_64.rpm
+2021-11-09 06:23:26.816331 +0000 build-fedora4: .         32,768   9%    1.25MB/s    0:00:00  .        357,163 100%    9.21MB/s    0:00:00 (xfr#13, to-chk=516/568)
+2021-11-09 06:23:26.816376 +0000 build-fedora4: <f+++++++++ fc32/rpm/i3-debuginfo-4.18.2-5.fc32.x86_64.rpm
+2021-11-09 06:23:26.976221 +0000 build-fedora4: .         32,768   5%  820.51kB/s    0:00:00  .        647,207 100%    3.10MB/s    0:00:00 (xfr#14, to-chk=514/568)
+2021-11-09 06:23:26.976269 +0000 build-fedora4: <f+++++++++ fc32/rpm/i3-debugsource-4.18.2-5.fc32.x86_64.rpm
+2021-11-09 06:23:26.976286 +0000 build-fedora4: .         20,402 100%  100.12kB/s    0:00:00  .         20,402 100%  100.12kB/s    0:00:00 (xfr#15, to-chk=512/568)
+2021-11-09 06:23:26.976416 +0000 build-fedora4: <f+++++++++ fc32/rpm/i3-devel-4.18.2-5.fc32.x86_64.rpm
+2021-11-09 06:23:26.976440 +0000 build-fedora4: .         11,565 100%   56.75kB/s    0:00:00  .         11,565 100%   56.75kB/s    0:00:00 (xfr#16, to-chk=510/568)
+2021-11-09 06:23:26.976451 +0000 build-fedora4: <f+++++++++ fc32/rpm/i3-devel-doc-4.18.2-5.fc32.noarch.rpm
+2021-11-09 06:24:11.631606 +0000 build-fedora4: .         32,768   0%  160.80kB/s    0:15:59  .      2,752,512   1%    2.57MB/s    0:00:57  .      6,291,456   4%    2.92MB/s    0:00:49  .      9,863,168   6%    3.05MB/s    0:00:46  .     13,402,112   8%    3.11MB/s    0:00:44  .     16,941,056  10%    3.30MB/s    0:00:40  .     20,480,000  13%    3.30MB/s    0:00:39  .     23,953,408  15%    3.30MB/s    0:00:38  .     27,492,352  17%    3.30MB/s    0:00:37  .     31,031,296  20%    3.30MB/s    0:00:36  .     34,537,472  22%    3.29MB/s    0:00:35  .     38,076,416  24%    3.29MB/s    0:00:34  .     41,615,360  26%    3.29MB/s    0:00:33  .     45,154,304  29%    3.29MB/s    0:00:32  .     48,693,248  31%    3.30MB/s    0:00:31  .     52,264,960  33%    3.30MB/s    0:00:30  .     55,803,904  36%    3.30MB/s    0:00:29  .     59,342,848  38%    3.30MB/s    0:00:28  .     62,816,256  40%    3.30MB/s    0:00:27  .     66,355,200  43%    3.30MB/s    0:00:26  .     69,894,144  45%    3.30MB/s    0:00:24  .     73,433,088  47%    3.30MB/s    0:00:23  .     76,939,264  49%    3.29MB/s    0:00:22  .     80,478,208  52%    3.29MB/s    0:00:21  .     83,984,384  54%    3.30MB/s    0:00:20  .     87,457,792  56%    3.29MB/s    0:00:19  .     90,996,736  58%    3.29MB/s    0:00:18  .     94,535,680  61%    3.29MB/s    0:00:17  .     98,074,624  63%    3.29MB/s    0:00:16  .    101,613,568  65%    3.29MB/s    0:00:15  .    105,152,512  68%    3.29MB/s    0:00:14  .    108,691,456  70%    3.29MB/s    0:00:13  .    112,230,400  72%    3.29MB/s    0:00:12  .    115,769,344  75%    3.29MB/s    0:00:11  .    119,308,288  77%    3.30MB/s    0:00:10  .    122,847,232  79%    3.26MB/s    0:00:09  .    126,550,016  82%    3.30MB/s    0:00:08  .    130,088,960  84%    3.30MB/s    0:00:07  .    133,660,672  86%    3.29MB/s    0:00:06  .    137,199,616  88%    3.33MB/s    0:00:05  .    140,738,560  91%    3.30MB/s    0:00:04  .    144,277,504  93%    3.30MB/s    0:00:02  .    147,783,680  95%    3.30MB/s    0:00:01  .    151,322,624  98%    3.30MB/s    0:00:00  .    154,260,157 100%    3.28MB/s    0:00:44 (xfr#17, to-chk=508/568)
+2021-11-09 06:24:11.631692 +0000 build-fedora4: <f+++++++++ fc32/rpm/i3-doc-4.18.2-5.fc32.noarch.rpm
+2021-11-09 06:24:11.744912 +0000 build-fedora4: .         32,768   9%   38.42kB/s    0:00:08  .        345,045 100%  356.19kB/s    0:00:00 (xfr#18, to-chk=506/568)
+2021-11-09 06:24:12.533012 +0000 build-fedora4: sending incremental file list
+2021-11-09 06:24:12.586978 +0000 build-fedora4: .d..t...... fc33/
+2021-11-09 06:24:12.587028 +0000 build-fedora4: .d..t...... fc33/repodata/
+2021-11-09 06:24:12.587044 +0000 build-fedora4: <f+++++++++ fc33/repodata/00e77a9b3c4aa2ab4fdba0745c0387505a891e9e2cf32430074a55425d988d88-filelists.xml.gz
+2021-11-09 06:24:12.587700 +0000 build-fedora4: .         32,768  30%    0.00kB/s    0:00:00  .        106,393 100%   70.21MB/s    0:00:00 (xfr#1, to-chk=450/456)
+2021-11-09 06:24:12.587729 +0000 build-fedora4: <f..t...... fc33/repodata/0a4d9ec5911f793f87955cf8bbc866b0c930c8f9aa2384ec29cc1f360a31da93-comps.xml.gz
+2021-11-09 06:24:12.587744 +0000 build-fedora4: .            700   8%  683.59kB/s    0:00:00  .          8,416 100%    8.03MB/s    0:00:00 (xfr#2, to-chk=449/456)
+2021-11-09 06:24:12.587757 +0000 build-fedora4: <f+++++++++ fc33/repodata/10967bbe8a14a7f66e86a9ea888af5a553d3c3eb0cac934839990cb08ed504fa-primary.xml.gz
+2021-11-09 06:24:12.587771 +0000 build-fedora4: .         32,768  70%   31.25MB/s    0:00:00  .         46,265 100%   44.12MB/s    0:00:00 (xfr#3, to-chk=448/456)
+2021-11-09 06:24:12.587784 +0000 build-fedora4: <f..t...... fc33/repodata/397e43a81ad38941589caaed70c4fabc438fb360cee27a55821a1db270bacaa3-comps.xml
+2021-11-09 06:24:12.589437 +0000 build-fedora4: .            700   2%  683.59kB/s    0:00:00  .         25,819 100%   24.62MB/s    0:00:00 (xfr#4, to-chk=447/456)
+2021-11-09 06:24:12.589483 +0000 build-fedora4: <f+++++++++ fc33/repodata/490bc6eb0cd0794b82ffb8d95fe99911c708592c3b1201f4cb1da22e42341454-primary.sqlite.bz2
+2021-11-09 06:24:12.589499 +0000 build-fedora4: .         32,768  33%   31.25MB/s    0:00:00  .         97,035 100%   92.54MB/s    0:00:00 (xfr#5, to-chk=446/456)
+2021-11-09 06:24:12.589527 +0000 build-fedora4: <f+++++++++ fc33/repodata/68d9ae9015a9f50eedb45a6008480585603f38ca4498b46cd7ab802d7f54dfc9-other.xml.gz
+2021-11-09 06:24:12.589542 +0000 build-fedora4: .         29,359 100%   28.00MB/s    0:00:00  .         29,359 100%   28.00MB/s    0:00:00 (xfr#6, to-chk=445/456)
+2021-11-09 06:24:12.589555 +0000 build-fedora4: <f+++++++++ fc33/repodata/92358ef16f873931c1eb5216077db1a0150dd0f6226f712354f78261e3df26c6-other.sqlite.bz2
+2021-11-09 06:24:12.589568 +0000 build-fedora4: .         32,768  58%   31.25MB/s    0:00:00  .         56,157 100%   53.56MB/s    0:00:00 (xfr#7, to-chk=444/456)
+2021-11-09 06:24:12.589581 +0000 build-fedora4: <f+++++++++ fc33/repodata/98555affca529b4733e0d778eba766c1a738211df3149de12bb718ec1d48b4b4-filelists.sqlite.bz2
+2021-11-09 06:24:12.589594 +0000 build-fedora4: .         32,768  27%   31.25MB/s    0:00:00  .        118,399 100%  112.91MB/s    0:00:00 (xfr#8, to-chk=443/456)
+2021-11-09 06:24:12.589603 +0000 build-fedora4: <f.st...... fc33/repodata/repomd.xml
+2021-11-09 06:24:12.589617 +0000 build-fedora4: .          3,853 100%    3.67MB/s    0:00:00  .          3,853 100%    3.67MB/s    0:00:00 (xfr#9, to-chk=442/456)
+2021-11-09 06:24:12.589626 +0000 build-fedora4: <f..t...... fc33/repodata/repomd.xml.asc
+2021-11-09 06:24:12.589639 +0000 build-fedora4: .            833 100%  813.48kB/s    0:00:00  .            833 100%  813.48kB/s    0:00:00 (xfr#10, to-chk=441/456)
+2021-11-09 06:24:12.589647 +0000 build-fedora4: .d..t...... fc33/rpm/
+2021-11-09 06:24:12.589656 +0000 build-fedora4: <f+++++++++ fc33/rpm/i3-4.18.2-5.fc33.src.rpm
+2021-11-09 06:24:12.595749 +0000 build-fedora4: .         32,768   2%   15.62MB/s    0:00:00  .      1,247,479 100%  148.71MB/s    0:00:00 (xfr#11, to-chk=412/456)
+2021-11-09 06:24:12.595791 +0000 build-fedora4: <f+++++++++ fc33/rpm/i3-4.18.2-5.fc33.x86_64.buildinfo
+2021-11-09 06:24:12.595804 +0000 build-fedora4: .         18,181 100%    2.17MB/s    0:00:00  .         18,181 100%    2.17MB/s    0:00:00 (xfr#12, to-chk=411/456)
+2021-11-09 06:24:12.595813 +0000 build-fedora4: <f+++++++++ fc33/rpm/i3-4.18.2-5.fc33.x86_64.rpm
+2021-11-09 06:24:12.599704 +0000 build-fedora4: .         32,768   9%    3.91MB/s    0:00:00  .        356,029 100%   28.29MB/s    0:00:00 (xfr#13, to-chk=410/456)
+2021-11-09 06:24:12.599745 +0000 build-fedora4: <f+++++++++ fc33/rpm/i3-debuginfo-4.18.2-5.fc33.x86_64.rpm
+2021-11-09 06:24:12.757587 +0000 build-fedora4: .         32,768   4%    2.40MB/s    0:00:00  .        718,783 100%    4.03MB/s    0:00:00 (xfr#14, to-chk=408/456)
+2021-11-09 06:24:12.757639 +0000 build-fedora4: <f+++++++++ fc33/rpm/i3-debugsource-4.18.2-5.fc33.x86_64.rpm
+2021-11-09 06:24:12.795847 +0000 build-fedora4: .         20,511 100%   96.30kB/s    0:00:00  .         20,511 100%   96.30kB/s    0:00:00 (xfr#15, to-chk=406/456)
+2021-11-09 06:24:12.795927 +0000 build-fedora4: <f+++++++++ fc33/rpm/i3-devel-4.18.2-5.fc33.x86_64.rpm
+2021-11-09 06:24:12.796209 +0000 build-fedora4: .         11,674 100%   54.81kB/s    0:00:00  .         11,674 100%   54.81kB/s    0:00:00 (xfr#16, to-chk=404/456)
+2021-11-09 06:24:12.796240 +0000 build-fedora4: <f+++++++++ fc33/rpm/i3-devel-doc-4.18.2-5.fc33.noarch.rpm
+2021-11-09 06:24:57.412281 +0000 build-fedora4: .         32,768   0%  153.11kB/s    0:16:46  .      2,719,744   1%    2.59MB/s    0:00:57  .      6,258,688   4%    2.95MB/s    0:00:48  .      9,797,632   6%    3.06MB/s    0:00:46  .     13,303,808   8%    3.12MB/s    0:00:44  .     16,875,520  10%    3.29MB/s    0:00:40  .     20,414,464  13%    3.29MB/s    0:00:39  .     23,953,408  15%    3.29MB/s    0:00:38  .     27,426,816  17%    3.30MB/s    0:00:37  .     30,965,760  20%    3.30MB/s    0:00:36  .     34,504,704  22%    3.30MB/s    0:00:35  .     38,043,648  24%    3.30MB/s    0:00:34  .     41,582,592  26%    3.30MB/s    0:00:33  .     45,056,000  29%    3.30MB/s    0:00:32  .     48,594,944  31%    3.30MB/s    0:00:31  .     52,133,888  33%    3.26MB/s    0:00:30  .     55,836,672  36%    3.30MB/s    0:00:29  .     59,375,616  38%    3.30MB/s    0:00:28  .     62,914,560  40%    3.30MB/s    0:00:27  .     66,453,504  43%    3.34MB/s    0:00:25  .     70,025,216  45%    3.30MB/s    0:00:24  .     73,564,160  47%    3.30MB/s    0:00:23  .     77,103,104  50%    3.30MB/s    0:00:22  .     80,642,048  52%    3.29MB/s    0:00:21  .     84,180,992  54%    3.30MB/s    0:00:20  .     87,719,936  56%    3.29MB/s    0:00:19  .     91,258,880  59%    3.29MB/s    0:00:18  .     94,765,056  61%    3.29MB/s    0:00:17  .     98,304,000  63%    3.30MB/s    0:00:16  .    101,842,944  66%    3.30MB/s    0:00:15  .    105,381,888  68%    3.30MB/s    0:00:14  .    108,920,832  70%    3.30MB/s    0:00:13  .    112,459,776  72%    3.30MB/s    0:00:12  .    115,998,720  75%    3.30MB/s    0:00:11  .    119,537,664  77%    3.30MB/s    0:00:10  .    123,076,608  79%    3.30MB/s    0:00:09  .    126,615,552  82%    3.30MB/s    0:00:08  .    130,154,496  84%    3.30MB/s    0:00:07  .    133,627,904  86%    3.30MB/s    0:00:06  .    137,166,848  88%    3.30MB/s    0:00:05  .    140,705,792  91%    3.30MB/s    0:00:03  .    144,244,736  93%    3.29MB/s    0:00:02  .    147,718,144  95%    3.29MB/s    0:00:01  .    151,257,088  98%    3.29MB/s    0:00:00  .    154,169,386 100%    3.28MB/s    0:00:44 (xfr#17, to-chk=402/456)
+2021-11-09 06:24:57.412352 +0000 build-fedora4: <f+++++++++ fc33/rpm/i3-doc-4.18.2-5.fc33.noarch.rpm
+2021-11-09 06:24:57.487568 +0000 build-fedora4: .         32,768   9%   38.28kB/s    0:00:08  .        342,888 100%  366.76kB/s    0:00:00 (xfr#18, to-chk=400/456)
+2021-11-09 06:24:58.312317 +0000 build-fedora4: sending incremental file list
+2021-11-09 06:24:58.360490 +0000 build-fedora4: .d..t...... fc34/
+2021-11-09 06:24:58.360545 +0000 build-fedora4: .d..t...... fc34/repodata/
+2021-11-09 06:24:58.360561 +0000 build-fedora4: <f..t...... fc34/repodata/0a4d9ec5911f793f87955cf8bbc866b0c930c8f9aa2384ec29cc1f360a31da93-comps.xml.gz
+2021-11-09 06:24:58.360750 +0000 build-fedora4: .            700   8%    0.00kB/s    0:00:00  .          8,416 100%    7.36MB/s    0:00:00 (xfr#1, to-chk=370/376)
+2021-11-09 06:24:58.360886 +0000 build-fedora4: <f+++++++++ fc34/repodata/0cc00cd279913845a2ff8a4c2548a90eccce24d8d8e580b59b4a2174f38a7aa5-primary.sqlite.bz2
+2021-11-09 06:24:58.361273 +0000 build-fedora4: .         32,768  33%   31.25MB/s    0:00:00  .         96,595 100%   92.12MB/s    0:00:00 (xfr#2, to-chk=369/376)
+2021-11-09 06:24:58.361297 +0000 build-fedora4: <f..t...... fc34/repodata/397e43a81ad38941589caaed70c4fabc438fb360cee27a55821a1db270bacaa3-comps.xml
+2021-11-09 06:24:58.361548 +0000 build-fedora4: .            700   2%  683.59kB/s    0:00:00  .         25,819 100%   24.62MB/s    0:00:00 (xfr#3, to-chk=368/376)
+2021-11-09 06:24:58.361572 +0000 build-fedora4: <f+++++++++ fc34/repodata/98f2a4549cb2c22893172eb379922666708f20e56a7cb238b88df43709511c7b-other.xml.gz
+2021-11-09 06:24:58.362055 +0000 build-fedora4: .         28,909 100%   27.57MB/s    0:00:00  .         28,909 100%   27.57MB/s    0:00:00 (xfr#4, to-chk=367/376)
+2021-11-09 06:24:58.362081 +0000 build-fedora4: <f+++++++++ fc34/repodata/b77c65218b21aaa0c3a236e618c2b8b09c5618cd6bfe52af2050d14971997fa2-filelists.sqlite.bz2
+2021-11-09 06:24:58.362096 +0000 build-fedora4: .         32,768  27%   31.25MB/s    0:00:00  .        118,058 100%  112.59MB/s    0:00:00 (xfr#5, to-chk=366/376)
+2021-11-09 06:24:58.362299 +0000 build-fedora4: <f+++++++++ fc34/repodata/c16e7f9a0152f667a4c6412d6ce886db4398bc7fa8760e8633d5d78d1249fabb-filelists.xml.gz
+2021-11-09 06:24:58.362541 +0000 build-fedora4: .         32,768  30%   31.25MB/s    0:00:00  .        105,705 100%  100.81MB/s    0:00:00 (xfr#6, to-chk=365/376)
+2021-11-09 06:24:58.362565 +0000 build-fedora4: <f+++++++++ fc34/repodata/e2537b0243ae73f405f3baa88fd38d865f823aba5b0746847b2af715881b2c02-primary.xml.gz
+2021-11-09 06:24:58.362785 +0000 build-fedora4: .         32,768  71%   15.62MB/s    0:00:00  .         46,032 100%   21.95MB/s    0:00:00 (xfr#7, to-chk=364/376)
+2021-11-09 06:24:58.362809 +0000 build-fedora4: <f+++++++++ fc34/repodata/f072e12130b1790ae61ec1c3a90e6b668b160507156dba5c7b55257f0f1c6587-other.sqlite.bz2
+2021-11-09 06:24:58.363076 +0000 build-fedora4: .         32,768  59%   15.62MB/s    0:00:00  .         55,476 100%   26.45MB/s    0:00:00 (xfr#8, to-chk=363/376)
+2021-11-09 06:24:58.363096 +0000 build-fedora4: <f.st...... fc34/repodata/repomd.xml
+2021-11-09 06:24:58.363220 +0000 build-fedora4: .          3,853 100%    1.84MB/s    0:00:00  .          3,853 100%    1.84MB/s    0:00:00 (xfr#9, to-chk=362/376)
+2021-11-09 06:24:58.363238 +0000 build-fedora4: <f..t...... fc34/repodata/repomd.xml.asc
+2021-11-09 06:24:58.363354 +0000 build-fedora4: .            833 100%  406.74kB/s    0:00:00  .            833 100%  406.74kB/s    0:00:00 (xfr#10, to-chk=361/376)
+2021-11-09 06:24:58.363372 +0000 build-fedora4: .d..t...... fc34/rpm/
+2021-11-09 06:24:58.363382 +0000 build-fedora4: <f+++++++++ fc34/rpm/i3-4.18.2-5.fc34.src.rpm
+2021-11-09 06:24:58.370547 +0000 build-fedora4: .         32,768   2%   15.62MB/s    0:00:00  .      1,247,479 100%  132.19MB/s    0:00:00 (xfr#11, to-chk=333/376)
+2021-11-09 06:24:58.370594 +0000 build-fedora4: <f+++++++++ fc34/rpm/i3-4.18.2-5.fc34.x86_64.buildinfo
+2021-11-09 06:24:58.370610 +0000 build-fedora4: .         18,131 100%    1.92MB/s    0:00:00  .         18,131 100%    1.92MB/s    0:00:00 (xfr#12, to-chk=332/376)
+2021-11-09 06:24:58.370860 +0000 build-fedora4: <f+++++++++ fc34/rpm/i3-4.18.2-5.fc34.x86_64.rpm
+2021-11-09 06:24:58.372721 +0000 build-fedora4: .         32,768   9%    3.12MB/s    0:00:00  .        357,459 100%   30.99MB/s    0:00:00 (xfr#13, to-chk=331/376)
+2021-11-09 06:24:58.372770 +0000 build-fedora4: <f+++++++++ fc34/rpm/i3-debuginfo-4.18.2-5.fc34.x86_64.rpm
+2021-11-09 06:24:58.562477 +0000 build-fedora4: .         32,768   4%    2.84MB/s    0:00:00  .        739,101 100%    3.49MB/s    0:00:00 (xfr#14, to-chk=329/376)
+2021-11-09 06:24:58.562524 +0000 build-fedora4: <f+++++++++ fc34/rpm/i3-debugsource-4.18.2-5.fc34.x86_64.rpm
+2021-11-09 06:24:58.576573 +0000 build-fedora4: .         20,515 100%   99.18kB/s    0:00:00  .         20,515 100%   99.18kB/s    0:00:00 (xfr#15, to-chk=327/376)
+2021-11-09 06:24:58.576622 +0000 build-fedora4: <f+++++++++ fc34/rpm/i3-devel-4.18.2-5.fc34.x86_64.rpm
+2021-11-09 06:24:58.576639 +0000 build-fedora4: .         11,674 100%   56.44kB/s    0:00:00  .         11,674 100%   56.44kB/s    0:00:00 (xfr#16, to-chk=325/376)
+2021-11-09 06:24:58.576648 +0000 build-fedora4: <f+++++++++ fc34/rpm/i3-devel-doc-4.18.2-5.fc34.noarch.rpm
+2021-11-09 06:25:43.357077 +0000 build-fedora4: .         32,768   0%  158.42kB/s    0:16:17  .      2,686,976   1%    2.54MB/s    0:00:58  .      6,225,920   4%    2.93MB/s    0:00:49  .      9,764,864   6%    3.05MB/s    0:00:46  .     13,303,808   8%    3.11MB/s    0:00:44  .     16,777,216  10%    3.30MB/s    0:00:40  .     20,316,160  13%    3.30MB/s    0:00:39  .     23,855,104  15%    3.30MB/s    0:00:38  .     27,394,048  17%    3.30MB/s    0:00:37  .     30,932,992  19%    3.30MB/s    0:00:36  .     34,471,936  22%    3.30MB/s    0:00:35  .     38,010,880  24%    3.30MB/s    0:00:34  .     41,582,592  26%    3.30MB/s    0:00:33  .     45,121,536  29%    3.30MB/s    0:00:32  .     48,660,480  31%    3.30MB/s    0:00:31  .     52,199,424  33%    3.30MB/s    0:00:30  .     55,672,832  35%    3.30MB/s    0:00:29  .     59,179,008  38%    3.29MB/s    0:00:28  .     62,717,952  40%    3.29MB/s    0:00:27  .     66,256,896  42%    3.29MB/s    0:00:26  .     69,795,840  45%    3.29MB/s    0:00:25  .     73,334,784  47%    3.30MB/s    0:00:24  .     76,873,728  49%    3.30MB/s    0:00:23  .     80,412,672  51%    3.30MB/s    0:00:22  .     83,886,080  54%    3.30MB/s    0:00:21  .     87,425,024  56%    3.30MB/s    0:00:19  .     90,963,968  58%    3.30MB/s    0:00:18  .     94,437,376  60%    3.30MB/s    0:00:17  .     97,976,320  63%    3.30MB/s    0:00:16  .    101,515,264  65%    3.30MB/s    0:00:15  .    105,054,208  67%    3.30MB/s    0:00:14  .    108,625,920  70%    3.30MB/s    0:00:13  .    112,164,864  72%    3.30MB/s    0:00:12  .    115,703,808  74%    3.30MB/s    0:00:11  .    119,242,752  77%    3.30MB/s    0:00:10  .    122,781,696  79%    3.30MB/s    0:00:09  .    126,320,640  81%    3.30MB/s    0:00:08  .    129,859,584  83%    3.30MB/s    0:00:07  .    133,332,992  86%    3.30MB/s    0:00:06  .    136,871,936  88%    3.30MB/s    0:00:05  .    140,410,880  90%    3.29MB/s    0:00:04  .    143,982,592  92%    3.29MB/s    0:00:03  .    147,521,536  95%    3.30MB/s    0:00:02  .    151,060,480  97%    3.30MB/s    0:00:01  .    154,599,424  99%    3.30MB/s    0:00:00  .    154,854,548 100%    3.28MB/s    0:00:44 (xfr#17, to-chk=323/376)
+2021-11-09 06:25:43.357138 +0000 build-fedora4: <f+++++++++ fc34/rpm/i3-doc-4.18.2-5.fc34.noarch.rpm
+2021-11-09 06:25:43.470858 +0000 build-fedora4: .         32,768   9%  426.67kB/s    0:00:00  .        342,888 100%    2.14MB/s    0:00:00 (xfr#18, to-chk=321/376)
+2021-11-09 06:25:44.278764 +0000 build-fedora4: sending incremental file list
+2021-11-09 06:25:44.333211 +0000 build-fedora4: .d..t...... fc35/
+2021-11-09 06:25:44.333261 +0000 build-fedora4: .d..t...... fc35/repodata/
+2021-11-09 06:25:44.333276 +0000 build-fedora4: <f..t...... fc35/repodata/0a4d9ec5911f793f87955cf8bbc866b0c930c8f9aa2384ec29cc1f360a31da93-comps.xml.gz
+2021-11-09 06:25:44.333479 +0000 build-fedora4: .            700   8%    0.00kB/s    0:00:00  .          8,416 100%    7.36MB/s    0:00:00 (xfr#1, to-chk=258/264)
+2021-11-09 06:25:44.333503 +0000 build-fedora4: <f..t...... fc35/repodata/397e43a81ad38941589caaed70c4fabc438fb360cee27a55821a1db270bacaa3-comps.xml
+2021-11-09 06:25:44.333653 +0000 build-fedora4: .            700   2%  683.59kB/s    0:00:00  .         25,819 100%   24.62MB/s    0:00:00 (xfr#2, to-chk=257/264)
+2021-11-09 06:25:44.333676 +0000 build-fedora4: <f+++++++++ fc35/repodata/5dd4a0f05f9ba290c78e9d4b7641d228318fa1fcae06c9fc6ae9f37e8db14faa-primary.sqlite.bz2
+2021-11-09 06:25:44.334598 +0000 build-fedora4: .         32,768  39%   31.25MB/s    0:00:00  .         83,212 100%   79.36MB/s    0:00:00 (xfr#3, to-chk=256/264)
+2021-11-09 06:25:44.334626 +0000 build-fedora4: <f+++++++++ fc35/repodata/63a9fe18568b0918213b3532cf8756ff775841c7463c1dda3ce7506e8c6fe6a7-filelists.xml.gz
+2021-11-09 06:25:44.334640 +0000 build-fedora4: .         32,768  47%   31.25MB/s    0:00:00  .         69,528 100%   66.31MB/s    0:00:00 (xfr#4, to-chk=255/264)
+2021-11-09 06:25:44.334653 +0000 build-fedora4: <f+++++++++ fc35/repodata/6ba9778cc11bf1ab8668de37aaa80a788bdc14d85bcc404d65f4eb8fa76f1f89-other.sqlite.bz2
+2021-11-09 06:25:44.334667 +0000 build-fedora4: .         32,768  68%   31.25MB/s    0:00:00  .         47,664 100%   45.46MB/s    0:00:00 (xfr#5, to-chk=254/264)
+2021-11-09 06:25:44.334695 +0000 build-fedora4: <f+++++++++ fc35/repodata/9c3d67bca4174b4de9a07dc1adf3f6dd8488594dc7375412a09b22e662b0acd2-filelists.sqlite.bz2
+2021-11-09 06:25:44.334709 +0000 build-fedora4: .         32,768  35%   31.25MB/s    0:00:00  .         91,336 100%   87.10MB/s    0:00:00 (xfr#6, to-chk=253/264)
+2021-11-09 06:25:44.334723 +0000 build-fedora4: <f+++++++++ fc35/repodata/f213b15da0caf62dbaf561196b4d8fe9009bbdf486a03281f959b63350e264e4-other.xml.gz
+2021-11-09 06:25:44.334736 +0000 build-fedora4: .         24,730 100%   23.58MB/s    0:00:00  .         24,730 100%   23.58MB/s    0:00:00 (xfr#7, to-chk=252/264)
+2021-11-09 06:25:44.334749 +0000 build-fedora4: <f+++++++++ fc35/repodata/fc2ea5cab32df65eea8ce1434700868c285e8af2784920f2c0bb6b59d83205ed-primary.xml.gz
+2021-11-09 06:25:44.335146 +0000 build-fedora4: .         32,768  83%   31.25MB/s    0:00:00  .         39,126 100%   37.31MB/s    0:00:00 (xfr#8, to-chk=251/264)
+2021-11-09 06:25:44.335172 +0000 build-fedora4: <f..t...... fc35/repodata/repomd.xml
+2021-11-09 06:25:44.335187 +0000 build-fedora4: .          3,850 100%    3.67MB/s    0:00:00  .          3,850 100%    3.67MB/s    0:00:00 (xfr#9, to-chk=250/264)
+2021-11-09 06:25:44.335195 +0000 build-fedora4: <f..t...... fc35/repodata/repomd.xml.asc
+2021-11-09 06:25:44.335209 +0000 build-fedora4: .            833 100%  813.48kB/s    0:00:00  .            833 100%  813.48kB/s    0:00:00 (xfr#10, to-chk=249/264)
+2021-11-09 06:25:44.335216 +0000 build-fedora4: .d..t...... fc35/rpm/
+2021-11-09 06:25:44.335226 +0000 build-fedora4: <f+++++++++ fc35/rpm/i3-4.18.2-5.fc35.src.rpm
+2021-11-09 06:25:44.342603 +0000 build-fedora4: .         32,768   2%   31.25MB/s    0:00:00  .      1,247,479 100%  148.71MB/s    0:00:00 (xfr#11, to-chk=241/264)
+2021-11-09 06:25:44.342654 +0000 build-fedora4: <f+++++++++ fc35/rpm/i3-4.18.2-5.fc35.x86_64.buildinfo
+2021-11-09 06:25:44.342672 +0000 build-fedora4: .         18,339 100%    2.19MB/s    0:00:00  .         18,339 100%    2.19MB/s    0:00:00 (xfr#12, to-chk=240/264)
+2021-11-09 06:25:44.342682 +0000 build-fedora4: <f+++++++++ fc35/rpm/i3-4.18.2-5.fc35.x86_64.rpm
+2021-11-09 06:25:44.343008 +0000 build-fedora4: .         32,768   9%    3.91MB/s    0:00:00  .        356,259 100%   37.75MB/s    0:00:00 (xfr#13, to-chk=239/264)
+2021-11-09 06:25:44.343034 +0000 build-fedora4: <f+++++++++ fc35/rpm/i3-debuginfo-4.18.2-5.fc35.x86_64.rpm
+2021-11-09 06:25:44.522159 +0000 build-fedora4: .         32,768   4%    3.47MB/s    0:00:00  .        737,186 100%    3.72MB/s    0:00:00 (xfr#14, to-chk=238/264)
+2021-11-09 06:25:44.522224 +0000 build-fedora4: <f+++++++++ fc35/rpm/i3-debugsource-4.18.2-5.fc35.x86_64.rpm
+2021-11-09 06:25:44.523678 +0000 build-fedora4: .         20,515 100%  105.44kB/s    0:00:00  .         20,515 100%  105.44kB/s    0:00:00 (xfr#15, to-chk=237/264)
+2021-11-09 06:25:44.523724 +0000 build-fedora4: <f+++++++++ fc35/rpm/i3-devel-4.18.2-5.fc35.x86_64.rpm
+2021-11-09 06:25:44.523740 +0000 build-fedora4: .         11,686 100%   60.06kB/s    0:00:00  .         11,686 100%   60.06kB/s    0:00:00 (xfr#16, to-chk=236/264)
+2021-11-09 06:25:44.523751 +0000 build-fedora4: <f+++++++++ fc35/rpm/i3-devel-doc-4.18.2-5.fc35.noarch.rpm
+2021-11-09 06:26:29.332411 +0000 build-fedora4: .         32,768   0%  168.42kB/s    0:15:19  .      2,850,816   1%    2.67MB/s    0:00:55  .      6,389,760   4%    2.99MB/s    0:00:48  .      9,928,704   6%    3.09MB/s    0:00:45  .     13,467,648   8%    3.14MB/s    0:00:43  .     17,006,592  10%    3.29MB/s    0:00:40  .     20,545,536  13%    3.29MB/s    0:00:39  .     24,084,480  15%    3.29MB/s    0:00:38  .     27,492,352  17%    3.26MB/s    0:00:38  .     31,195,136  20%    3.30MB/s    0:00:36  .     34,734,080  22%    3.30MB/s    0:00:35  .     38,273,024  24%    3.30MB/s    0:00:34  .     41,746,432  26%    3.33MB/s    0:00:33  .     45,285,376  29%    3.30MB/s    0:00:32  .     48,758,784  31%    3.30MB/s    0:00:31  .     52,297,728  33%    3.30MB/s    0:00:30  .     55,836,672  36%    3.30MB/s    0:00:29  .     59,375,616  38%    3.30MB/s    0:00:28  .     62,914,560  40%    3.30MB/s    0:00:27  .     66,486,272  42%    3.30MB/s    0:00:26  .     70,025,216  45%    3.29MB/s    0:00:25  .     73,564,160  47%    3.29MB/s    0:00:24  .     77,070,336  49%    3.30MB/s    0:00:23  .     80,609,280  52%    3.30MB/s    0:00:21  .     84,148,224  54%    3.30MB/s    0:00:20  .     87,687,168  56%    3.30MB/s    0:00:19  .     90,963,968  58%    3.25MB/s    0:00:19  .     94,699,520  61%    3.30MB/s    0:00:17  .     98,238,464  63%    3.30MB/s    0:00:16  .    101,777,408  65%    3.30MB/s    0:00:15  .    105,316,352  68%    3.34MB/s    0:00:14  .    108,855,296  70%    3.30MB/s    0:00:13  .    112,394,240  72%    3.30MB/s    0:00:12  .    115,933,184  74%    3.30MB/s    0:00:11  .    119,406,592  77%    3.30MB/s    0:00:10  .    122,945,536  79%    3.30MB/s    0:00:09  .    126,484,480  81%    3.30MB/s    0:00:08  .    129,892,352  83%    3.25MB/s    0:00:07  .    133,627,904  86%    3.30MB/s    0:00:06  .    137,166,848  88%    3.30MB/s    0:00:05  .    140,705,792  90%    3.30MB/s    0:00:04  .    144,277,504  93%    3.34MB/s    0:00:03  .    147,816,448  95%    3.30MB/s    0:00:02  .    151,322,624  97%    3.29MB/s    0:00:01  .    154,861,568  99%    3.29MB/s    0:00:00  .    154,865,744 100%    3.28MB/s    0:00:44 (xfr#17, to-chk=235/264)
+2021-11-09 06:26:29.332468 +0000 build-fedora4: <f+++++++++ fc35/rpm/i3-doc-4.18.2-5.fc35.noarch.rpm
+2021-11-09 06:26:29.406649 +0000 build-fedora4: .         32,768   9%   31.25MB/s    0:00:00  .        342,920 100%    4.42MB/s    0:00:00 (xfr#18, to-chk=234/264)
+2021-11-09 06:26:30.991307 +0000 build-fedora4: Makefile:819: update target 'update-repo-current-testing' due to: internal-update-repo-current-testing.vm.fc32 internal-update-repo-current-testing.vm.fc33 internal-update-repo-current-testing.vm.fc34 internal-update-repo-current-testing.vm.fc35 post-update-repo-current-testing
+2021-11-09 06:26:30.991350 +0000 build-fedora4: true
+2021-11-09 06:26:30.993169 +0000 build-fedora4: > done
+2021-11-09 06:26:30.993208 +0000 > closing log
