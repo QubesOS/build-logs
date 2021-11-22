@@ -1,0 +1,906 @@
+2021-11-22 22:18:14.225028 +0000 > starting log
+2021-11-22 22:18:14.225397 +0000 build-fedora4: > starting build with log
+2021-11-22 22:18:14.225450 +0000 build-fedora4: >> make args: DISTS_VM= fc32 fc33 fc34 fc35 DIST_DOM0= BUILD_LOGS_URL= desktop-linux-awesome-vm-fc32=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2021-11-22_21-58-18 desktop-linux-awesome-vm-fc33=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2021-11-22_22-02-36 desktop-linux-awesome-vm-fc34=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2021-11-22_22-09-14 desktop-linux-awesome-vm-fc35=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2021-11-22_22-13-30 GIT_URL_desktop_linux_awesome=https://github.com/QubesOS/qubes-desktop-linux-awesome sign-all update-repo-current-testing
+2021-11-22 22:18:14.225458 +0000 build-fedora4: >> MAKEFLAGS=
+2021-11-22 22:18:14.225466 +0000 build-fedora4: >> COMPONENTS=desktop-linux-awesome
+2021-11-22 22:18:14.225472 +0000 build-fedora4: >> DISTS_VM=
+2021-11-22 22:18:14.225478 +0000 build-fedora4: >> DIST_DOM0=
+2021-11-22 22:18:14.225486 +0000 build-fedora4: >> qubes-builder 55a924b82c57606792986de1934b9bc1b7f5f6a8
+2021-11-22 22:18:14.225496 +0000 build-fedora4: >> qubes-builder/qubes-src/desktop-linux-awesome 55e315842e806cd89eed55473f46f20021514419
+2021-11-22 22:18:14.225502 +0000 build-fedora4: !! awesome-3.5.9.tar.xz
+2021-11-22 22:18:14.225509 +0000 build-fedora4: !! awesome-4.3.tar.xz
+2021-11-22 22:18:14.225516 +0000 build-fedora4: !! pkgs/vm-fc29/awesome-3.5.9-6.fc29.src.rpm
+2021-11-22 22:18:14.225524 +0000 build-fedora4: !! pkgs/vm-fc29/awesome-3.5.9-6.fc29.x86_64.buildinfo
+2021-11-22 22:18:14.225532 +0000 build-fedora4: !! pkgs/vm-fc29/awesome-3.5.9-6.fc29.x86_64.rpm
+2021-11-22 22:18:14.225540 +0000 build-fedora4: !! pkgs/vm-fc29/awesome-debuginfo-3.5.9-6.fc29.x86_64.rpm
+2021-11-22 22:18:14.225548 +0000 build-fedora4: !! pkgs/vm-fc29/awesome-debugsource-3.5.9-6.fc29.x86_64.rpm
+2021-11-22 22:18:14.225556 +0000 build-fedora4: !! pkgs/vm-fc29/awesome-doc-3.5.9-6.fc29.noarch.rpm
+2021-11-22 22:18:14.225562 +0000 build-fedora4: !! pkgs/vm-fc29/awesome.spec.list
+2021-11-22 22:18:14.225570 +0000 build-fedora4: !! pkgs/vm-fc30/awesome-3.5.9-6.fc30.src.rpm
+2021-11-22 22:18:14.225577 +0000 build-fedora4: !! pkgs/vm-fc30/awesome-3.5.9-6.fc30.x86_64.buildinfo
+2021-11-22 22:18:14.225585 +0000 build-fedora4: !! pkgs/vm-fc30/awesome-3.5.9-6.fc30.x86_64.rpm
+2021-11-22 22:18:14.225593 +0000 build-fedora4: !! pkgs/vm-fc30/awesome-debuginfo-3.5.9-6.fc30.x86_64.rpm
+2021-11-22 22:18:14.225601 +0000 build-fedora4: !! pkgs/vm-fc30/awesome-debugsource-3.5.9-6.fc30.x86_64.rpm
+2021-11-22 22:18:14.225609 +0000 build-fedora4: !! pkgs/vm-fc30/awesome-doc-3.5.9-6.fc30.noarch.rpm
+2021-11-22 22:18:14.225615 +0000 build-fedora4: !! pkgs/vm-fc30/awesome.spec.list
+2021-11-22 22:18:14.225623 +0000 build-fedora4: !! pkgs/vm-fc31/awesome-3.5.9-6.fc31.x86_64.buildinfo
+2021-11-22 22:18:14.225630 +0000 build-fedora4: !! pkgs/vm-fc31/awesome-4.3-10.fc31.src.rpm
+2021-11-22 22:18:14.225638 +0000 build-fedora4: !! pkgs/vm-fc31/awesome-4.3-10.fc31.x86_64.buildinfo
+2021-11-22 22:18:14.225646 +0000 build-fedora4: !! pkgs/vm-fc31/awesome-4.3-10.fc31.x86_64.rpm
+2021-11-22 22:18:14.225654 +0000 build-fedora4: !! pkgs/vm-fc31/awesome-debuginfo-4.3-10.fc31.x86_64.rpm
+2021-11-22 22:18:14.225662 +0000 build-fedora4: !! pkgs/vm-fc31/awesome-debugsource-4.3-10.fc31.x86_64.rpm
+2021-11-22 22:18:14.225669 +0000 build-fedora4: !! pkgs/vm-fc31/awesome-doc-4.3-10.fc31.noarch.rpm
+2021-11-22 22:18:14.225676 +0000 build-fedora4: !! pkgs/vm-fc31/awesome.spec.list
+2021-11-22 22:18:14.225684 +0000 build-fedora4: !! pkgs/vm-fc32/awesome-3.5.9-6.fc32.x86_64.buildinfo
+2021-11-22 22:18:14.225691 +0000 build-fedora4: !! pkgs/vm-fc32/awesome-4.3-10.fc32.x86_64.buildinfo
+2021-11-22 22:18:14.225698 +0000 build-fedora4: !! pkgs/vm-fc32/awesome-4.3-11.fc32.src.rpm
+2021-11-22 22:18:14.225706 +0000 build-fedora4: !! pkgs/vm-fc32/awesome-4.3-11.fc32.x86_64.buildinfo
+2021-11-22 22:18:14.225714 +0000 build-fedora4: !! pkgs/vm-fc32/awesome-4.3-11.fc32.x86_64.rpm
+2021-11-22 22:18:14.225726 +0000 build-fedora4: !! pkgs/vm-fc32/awesome-4.3-12.fc32.src.rpm
+2021-11-22 22:18:14.225734 +0000 build-fedora4: !! pkgs/vm-fc32/awesome-4.3-12.fc32.x86_64.buildinfo
+2021-11-22 22:18:14.225742 +0000 build-fedora4: !! pkgs/vm-fc32/awesome-4.3-12.fc32.x86_64.rpm
+2021-11-22 22:18:14.225750 +0000 build-fedora4: !! pkgs/vm-fc32/awesome-debuginfo-4.3-11.fc32.x86_64.rpm
+2021-11-22 22:18:14.225758 +0000 build-fedora4: !! pkgs/vm-fc32/awesome-debuginfo-4.3-12.fc32.x86_64.rpm
+2021-11-22 22:18:14.225766 +0000 build-fedora4: !! pkgs/vm-fc32/awesome-debugsource-4.3-11.fc32.x86_64.rpm
+2021-11-22 22:18:14.225774 +0000 build-fedora4: !! pkgs/vm-fc32/awesome-debugsource-4.3-12.fc32.x86_64.rpm
+2021-11-22 22:18:14.225782 +0000 build-fedora4: !! pkgs/vm-fc32/awesome-doc-4.3-11.fc32.noarch.rpm
+2021-11-22 22:18:14.225789 +0000 build-fedora4: !! pkgs/vm-fc32/awesome-doc-4.3-12.fc32.noarch.rpm
+2021-11-22 22:18:14.225796 +0000 build-fedora4: !! pkgs/vm-fc32/awesome.spec.list
+2021-11-22 22:18:14.225804 +0000 build-fedora4: !! pkgs/vm-fc33/awesome-4.3-10.fc33.x86_64.buildinfo
+2021-11-22 22:18:14.225811 +0000 build-fedora4: !! pkgs/vm-fc33/awesome-4.3-11.fc33.src.rpm
+2021-11-22 22:18:14.225819 +0000 build-fedora4: !! pkgs/vm-fc33/awesome-4.3-11.fc33.x86_64.buildinfo
+2021-11-22 22:18:14.225826 +0000 build-fedora4: !! pkgs/vm-fc33/awesome-4.3-11.fc33.x86_64.rpm
+2021-11-22 22:18:14.225834 +0000 build-fedora4: !! pkgs/vm-fc33/awesome-4.3-12.fc33.src.rpm
+2021-11-22 22:18:14.225841 +0000 build-fedora4: !! pkgs/vm-fc33/awesome-4.3-12.fc33.x86_64.buildinfo
+2021-11-22 22:18:14.225849 +0000 build-fedora4: !! pkgs/vm-fc33/awesome-4.3-12.fc33.x86_64.rpm
+2021-11-22 22:18:14.225857 +0000 build-fedora4: !! pkgs/vm-fc33/awesome-debuginfo-4.3-11.fc33.x86_64.rpm
+2021-11-22 22:18:14.225865 +0000 build-fedora4: !! pkgs/vm-fc33/awesome-debuginfo-4.3-12.fc33.x86_64.rpm
+2021-11-22 22:18:14.225873 +0000 build-fedora4: !! pkgs/vm-fc33/awesome-debugsource-4.3-11.fc33.x86_64.rpm
+2021-11-22 22:18:14.225881 +0000 build-fedora4: !! pkgs/vm-fc33/awesome-debugsource-4.3-12.fc33.x86_64.rpm
+2021-11-22 22:18:14.225888 +0000 build-fedora4: !! pkgs/vm-fc33/awesome-doc-4.3-11.fc33.noarch.rpm
+2021-11-22 22:18:14.225896 +0000 build-fedora4: !! pkgs/vm-fc33/awesome-doc-4.3-12.fc33.noarch.rpm
+2021-11-22 22:18:14.225903 +0000 build-fedora4: !! pkgs/vm-fc33/awesome.spec.list
+2021-11-22 22:18:14.225910 +0000 build-fedora4: !! pkgs/vm-fc34/awesome-4.3-10.fc34.x86_64.buildinfo
+2021-11-22 22:18:14.225918 +0000 build-fedora4: !! pkgs/vm-fc34/awesome-4.3-11.fc34.src.rpm
+2021-11-22 22:18:14.225925 +0000 build-fedora4: !! pkgs/vm-fc34/awesome-4.3-11.fc34.x86_64.buildinfo
+2021-11-22 22:18:14.225933 +0000 build-fedora4: !! pkgs/vm-fc34/awesome-4.3-11.fc34.x86_64.rpm
+2021-11-22 22:18:14.225940 +0000 build-fedora4: !! pkgs/vm-fc34/awesome-4.3-12.fc34.src.rpm
+2021-11-22 22:18:14.225948 +0000 build-fedora4: !! pkgs/vm-fc34/awesome-4.3-12.fc34.x86_64.buildinfo
+2021-11-22 22:18:14.225956 +0000 build-fedora4: !! pkgs/vm-fc34/awesome-4.3-12.fc34.x86_64.rpm
+2021-11-22 22:18:14.225964 +0000 build-fedora4: !! pkgs/vm-fc34/awesome-debuginfo-4.3-11.fc34.x86_64.rpm
+2021-11-22 22:18:14.225972 +0000 build-fedora4: !! pkgs/vm-fc34/awesome-debuginfo-4.3-12.fc34.x86_64.rpm
+2021-11-22 22:18:14.225980 +0000 build-fedora4: !! pkgs/vm-fc34/awesome-debugsource-4.3-11.fc34.x86_64.rpm
+2021-11-22 22:18:14.225999 +0000 build-fedora4: !! pkgs/vm-fc34/awesome-debugsource-4.3-12.fc34.x86_64.rpm
+2021-11-22 22:18:14.226007 +0000 build-fedora4: !! pkgs/vm-fc34/awesome-doc-4.3-11.fc34.noarch.rpm
+2021-11-22 22:18:14.226015 +0000 build-fedora4: !! pkgs/vm-fc34/awesome-doc-4.3-12.fc34.noarch.rpm
+2021-11-22 22:18:14.226021 +0000 build-fedora4: !! pkgs/vm-fc34/awesome.spec.list
+2021-11-22 22:18:14.226029 +0000 build-fedora4: !! pkgs/vm-fc35/awesome-4.3-11.fc35.src.rpm
+2021-11-22 22:18:14.226036 +0000 build-fedora4: !! pkgs/vm-fc35/awesome-4.3-11.fc35.x86_64.buildinfo
+2021-11-22 22:18:14.226044 +0000 build-fedora4: !! pkgs/vm-fc35/awesome-4.3-11.fc35.x86_64.rpm
+2021-11-22 22:18:14.226056 +0000 build-fedora4: !! pkgs/vm-fc35/awesome-4.3-12.fc35.src.rpm
+2021-11-22 22:18:14.226065 +0000 build-fedora4: !! pkgs/vm-fc35/awesome-4.3-12.fc35.x86_64.buildinfo
+2021-11-22 22:18:14.226073 +0000 build-fedora4: !! pkgs/vm-fc35/awesome-4.3-12.fc35.x86_64.rpm
+2021-11-22 22:18:14.226081 +0000 build-fedora4: !! pkgs/vm-fc35/awesome-debuginfo-4.3-11.fc35.x86_64.rpm
+2021-11-22 22:18:14.226089 +0000 build-fedora4: !! pkgs/vm-fc35/awesome-debuginfo-4.3-12.fc35.x86_64.rpm
+2021-11-22 22:18:14.226097 +0000 build-fedora4: !! pkgs/vm-fc35/awesome-debugsource-4.3-11.fc35.x86_64.rpm
+2021-11-22 22:18:14.226105 +0000 build-fedora4: !! pkgs/vm-fc35/awesome-debugsource-4.3-12.fc35.x86_64.rpm
+2021-11-22 22:18:14.226113 +0000 build-fedora4: !! pkgs/vm-fc35/awesome-doc-4.3-11.fc35.noarch.rpm
+2021-11-22 22:18:14.226120 +0000 build-fedora4: !! pkgs/vm-fc35/awesome-doc-4.3-12.fc35.noarch.rpm
+2021-11-22 22:18:14.226127 +0000 build-fedora4: !! pkgs/vm-fc35/awesome.spec.list
+2021-11-22 22:18:14.226140 +0000 build-fedora4: 6a4c679b293e8cd85d1f7e13f6dea704cbb267e42b9260496a54b657a66d6148aae51521d802d61baaeb23df0d4a8ad0b28d9dc922ea5da2a347b4251cce5e25  awesome-3.5.9.tar.xz
+2021-11-22 22:18:14.226154 +0000 build-fedora4: c5ef1e8dc593e7783b895d22143154aea8f211beeda24672a7ee4ed5112b4f4284043f848a151f3d3c4f569e91308670367a4353f705b20511b36495b22fa3f5  awesome-4.3.tar.xz
+2021-11-22 22:18:14.226186 +0000 build-fedora4: ee947d8432e818ce98cd4c6ac79f98a4fbc5e7dcacbce00b98b7098b44ff804b83362234393b1242335c4f28dcd6303ebb67194181d547e0341e7c7cb3d19103  pkgs/vm-fc29/awesome-3.5.9-6.fc29.src.rpm
+2021-11-22 22:18:14.226203 +0000 build-fedora4: 16a027fe60ba3f269f676e9b3a6674cd96eb16d4bf7d9692810652a0425ea5c8d79dcd5221a07e1d76df942cbfd59fd8aacc2531cf65cbcb80c513d569bcf145  pkgs/vm-fc29/awesome-3.5.9-6.fc29.x86_64.buildinfo
+2021-11-22 22:18:14.226218 +0000 build-fedora4: b65d8098c6203170bc5a0fece52e31cd8d0323ecdc4a91bbb27adfe8d77aed63480b56f13500ac8bf0b31252a01b05da9eb06dd8fc9d14147bf2a1657118e2a3  pkgs/vm-fc29/awesome-3.5.9-6.fc29.x86_64.rpm
+2021-11-22 22:18:14.226233 +0000 build-fedora4: 591f7660f258cc1a902db75b2a9e41e0ca95281ad978418f09be180e98a0fe573024c5b5779d30752301e70c7b50226218c27c19519dcf42e86df1709e52f791  pkgs/vm-fc29/awesome-debuginfo-3.5.9-6.fc29.x86_64.rpm
+2021-11-22 22:18:14.226249 +0000 build-fedora4: ecb9c177decf64b95818cc286c68faf7022d55b50d3e1e85f27bf86428ebb1d1803915114cb4fbc50a98f95b553492080a8db03b57e4cdd5756946f8d7e11ecf  pkgs/vm-fc29/awesome-debugsource-3.5.9-6.fc29.x86_64.rpm
+2021-11-22 22:18:14.226264 +0000 build-fedora4: dea6de623b59bb0e60bd25c8420176f919665963e864eac533aabc9a250b54225ad6debe3761421cf73768a885ef87e15c97ea7b0d6c55c5b6e037b0d9865435  pkgs/vm-fc29/awesome-doc-3.5.9-6.fc29.noarch.rpm
+2021-11-22 22:18:14.226278 +0000 build-fedora4: 8819640dde5e651cde2819ef3ccfc08f9117500c3518a0f6241707d280a5df5e29fbd3d0f8b97fca6e0943fb9efe3a2746af4df82fb137206eb30da66ea63e2e  pkgs/vm-fc29/awesome.spec.list
+2021-11-22 22:18:14.226293 +0000 build-fedora4: 6e7cfb8739f6305a5ac226dfa05af6986332a97568e1481b482a2600c27304a7a05aee2f16fb18327fd2effce0a67e2c0ddde7f6e3f88b30a956d97112c3f833  pkgs/vm-fc30/awesome-3.5.9-6.fc30.src.rpm
+2021-11-22 22:18:14.226308 +0000 build-fedora4: 741ecf57c998daa8cc9b5902d6311df6f5697b4c17588c93bb3f0c20f5d89d07414268c26f6edd7e11a0549c8b6203aabe6b3cc7f869195c68f9eb8eab196a57  pkgs/vm-fc30/awesome-3.5.9-6.fc30.x86_64.buildinfo
+2021-11-22 22:18:14.226324 +0000 build-fedora4: 1ffa564db61b004a8dc3b5d9fee8565a56a158a2a1294dcf6ff03ae4317980da2a42ff3dd05b64fe581dc07585bb6ee7bead9da64f761f47b2e777014d69dafb  pkgs/vm-fc30/awesome-3.5.9-6.fc30.x86_64.rpm
+2021-11-22 22:18:14.226339 +0000 build-fedora4: da9dacba379f4ca707a19fa85497621932bd042264996ce6a27d00c62ca9b3e0bfebdff00f99d1653f3065acd8c090360aef6a08af6a474bf65b0c7c2ef7c9a8  pkgs/vm-fc30/awesome-debuginfo-3.5.9-6.fc30.x86_64.rpm
+2021-11-22 22:18:14.226354 +0000 build-fedora4: be7501d583151d19c8f44b58f11074cd8cd49fbc761782d39179890f9eca32d7620f9d7e8f8e1edf677a645fc398972490d4c9da5f6478f7f15dbd6fe9042986  pkgs/vm-fc30/awesome-debugsource-3.5.9-6.fc30.x86_64.rpm
+2021-11-22 22:18:14.226374 +0000 build-fedora4: 314dbe278147336f1cbdeb81155e01b0e03ce1468c1690d2761947f57e72affe0eefb0c469140c0f985497d65b6b0908b0c9ac6a60f6b58a3305685cf8cec852  pkgs/vm-fc30/awesome-doc-3.5.9-6.fc30.noarch.rpm
+2021-11-22 22:18:14.226389 +0000 build-fedora4: 2d4d188d5fee168620a591c26ada141da715b6a6131dd75e10a16ddf24abbc5c20951aeb0324dc07b3a6f43f6f31fa49d3ae38fd3910efe8b2b4abbc36a21f02  pkgs/vm-fc30/awesome.spec.list
+2021-11-22 22:18:14.226404 +0000 build-fedora4: f7455dc08892e25fa16fbb44ce49fe726a8d95d6d340e8df697bbff075e06660db66942f63066df1d478fc9de55222019a01e6c6c850c1d858cdf5a9dbf12dcf  pkgs/vm-fc31/awesome-3.5.9-6.fc31.x86_64.buildinfo
+2021-11-22 22:18:14.226418 +0000 build-fedora4: 761790a6dc430d36709950681817c223848dc441c386c01159f99e647198df943a0467933f595ca5204329b8be8e8110fecab9b524af101bd2f5ee4090560378  pkgs/vm-fc31/awesome-4.3-10.fc31.src.rpm
+2021-11-22 22:18:14.226443 +0000 build-fedora4: f3daab6d81f3be1ee25ee91531d72bab09101ca1b7ae6905caaee0aad4b6743485b6cb069ed5220e39659af1293e44c32aafcec8f5d97aebd0b70cfa1843f9bb  pkgs/vm-fc31/awesome-4.3-10.fc31.x86_64.buildinfo
+2021-11-22 22:18:14.226459 +0000 build-fedora4: 17dce5865213a5a8d510e1df576217f11fe142140afaf5cd6e903898ccf852d3f353736dd6de8a8289932b44203928d7802dfe370660e0647a4542f0e6832f38  pkgs/vm-fc31/awesome-4.3-10.fc31.x86_64.rpm
+2021-11-22 22:18:14.226474 +0000 build-fedora4: c4ee25409b4a67f49b7d866cb37c704ea4307da624562c7b6059424b00f41bdf63a06ddc423242d24f2ba8f2126c471313469e2504a47ab281899e7c89fc7e10  pkgs/vm-fc31/awesome-debuginfo-4.3-10.fc31.x86_64.rpm
+2021-11-22 22:18:14.226490 +0000 build-fedora4: d911da26fa76a83dc404fbfdee599f1e031637d9c42f6b4f4d9b698c6d57ad3c9d1ec6b914971c73c4b9edefb966bd1c7fc860cb23cc46781e2034d94b720487  pkgs/vm-fc31/awesome-debugsource-4.3-10.fc31.x86_64.rpm
+2021-11-22 22:18:14.226561 +0000 build-fedora4: 105a3a604dc4dd064dd1b9cee3bb291a8eb466a6752ce5412fa9d5f6142ebb806797abdef83acd2fb6baaf6f2d5c45d966cfe9833011ca2f1b132715a7f565d3  pkgs/vm-fc31/awesome-doc-4.3-10.fc31.noarch.rpm
+2021-11-22 22:18:14.226586 +0000 build-fedora4: 0e6123f903d0581ab77340cccdcfd00ea3f282208dff5adbc8c9fdef2f54296ca8fd069799382df6c47bb4d4934afa4a7e2e4d6f9f96aa3f334e1d7e454d884d  pkgs/vm-fc31/awesome.spec.list
+2021-11-22 22:18:14.226601 +0000 build-fedora4: efbacd725cc050354d543e8179bfa9990dcf54881aa1bfb48648bcb713f1601ee98d1d75a1246ecb7d2170035827515dc38d8bcae02207c283e9f631a677bcdf  pkgs/vm-fc32/awesome-3.5.9-6.fc32.x86_64.buildinfo
+2021-11-22 22:18:14.226617 +0000 build-fedora4: 830709dbefd352c0e1292c4c112645a9fb02ec4b64186a626315aa69e3b33a6b7e7e6be85126cabf78c72eb7601761e90ce2c230a837e30cd8a851244b5cc50c  pkgs/vm-fc32/awesome-4.3-10.fc32.x86_64.buildinfo
+2021-11-22 22:18:14.226631 +0000 build-fedora4: 254a28542237f5f8cfe63b4df8a650a4846b189de5f9d427810195acc2152e85299d9dd1e9aa4dd148b8f106b16bdb562242ed2274ca2e4a4173b9cc9871d3de  pkgs/vm-fc32/awesome-4.3-11.fc32.src.rpm
+2021-11-22 22:18:14.226646 +0000 build-fedora4: fc79c8c09d0c357dd4709d50463a368c5c594bcb113ed00cf3ca604fd2ffc5e2e0a2a2cfc8459fe958a19d3c17214812bb4a1b007d089d534675a88323265893  pkgs/vm-fc32/awesome-4.3-11.fc32.x86_64.buildinfo
+2021-11-22 22:18:14.226661 +0000 build-fedora4: 6e514da4553d1275a760d202742d410d9c77b12eed3b091a7d62fab0bdd79e6bc14dbdc89fc53a5b83a98505dfd7b0a72d59689bcb031865e8ed4303e9c75aa5  pkgs/vm-fc32/awesome-4.3-11.fc32.x86_64.rpm
+2021-11-22 22:18:14.226675 +0000 build-fedora4: 82e6db57f0e28484b0a1e9d9dc4fddb6cc8b9d07e091747ce40261c67a92f83fad1a781249820a4670645226f4e147fe2d508657c5f792b2a45689374c136488  pkgs/vm-fc32/awesome-4.3-12.fc32.src.rpm
+2021-11-22 22:18:14.226690 +0000 build-fedora4: a902f126300bccf6d643c33bb4cc77341433cb6ddd111a400237d197fedb6c1968bf6d892a638ba6229dc274ff04f4eee1b06d0fef03207f5805471c64bc7cdb  pkgs/vm-fc32/awesome-4.3-12.fc32.x86_64.buildinfo
+2021-11-22 22:18:14.226705 +0000 build-fedora4: a1fe6e1b0f59562d235c020d1224ca72850dd1273f8a58f3f33853f4df702e12cdeedb1ef2a5096b6238c1a68fe4633095fdca520f34cd5860136ed4df512815  pkgs/vm-fc32/awesome-4.3-12.fc32.x86_64.rpm
+2021-11-22 22:18:14.226725 +0000 build-fedora4: 1aaaa768684149c1fb4e9b447fb09366282ebe43edd386fc5868fb8f976dedcd79a3d14add526d1d079359ee63a56d6a57cb120aa75487a9ecc72f6e7ad24ba8  pkgs/vm-fc32/awesome-debuginfo-4.3-11.fc32.x86_64.rpm
+2021-11-22 22:18:14.226741 +0000 build-fedora4: 60952a69ebad5bc30cb004e613ec16199043410ae61afed67ef174592d9bd2a005495dd44e1339104442a734472866075568ff5895724bf8fdf994e57d45e690  pkgs/vm-fc32/awesome-debuginfo-4.3-12.fc32.x86_64.rpm
+2021-11-22 22:18:14.226757 +0000 build-fedora4: e34817d796174e6e218d26278f87c2ababd5dc8ade48b03c73f33585b08a602f262fc8f1c4acbc1d93f31176071f45bf1abc8e80ea6545d2bb36bf8b2639fe20  pkgs/vm-fc32/awesome-debugsource-4.3-11.fc32.x86_64.rpm
+2021-11-22 22:18:14.226772 +0000 build-fedora4: bc538eddd9353f1d397780a10c1a441cfff6487c84fadad5dccdb2c0590a281c019da2879de9404a7d75e3de7b1efa92dc11473c6893c6b4aa636eb871c327cb  pkgs/vm-fc32/awesome-debugsource-4.3-12.fc32.x86_64.rpm
+2021-11-22 22:18:14.226787 +0000 build-fedora4: db6bfc9ac84d5f3f7af22a3dcf964e0cece1d520a355b48b3e62c2353c5083b5ba591b7826c813f3d7b5c814c968015874a231695354fcefba59075f0f3d1bf6  pkgs/vm-fc32/awesome-doc-4.3-11.fc32.noarch.rpm
+2021-11-22 22:18:14.226802 +0000 build-fedora4: cc8b324f2134903383a53e16a01b7891035102cffdd0096bba0bc3ca36ad49bfe8bbd02d44149f4732535eb3833d9820da122ae1d4ee528c1af2eef2749c5ec6  pkgs/vm-fc32/awesome-doc-4.3-12.fc32.noarch.rpm
+2021-11-22 22:18:14.226815 +0000 build-fedora4: 92f021f2f9cea38baf2d579b041906d11688adcfa6bb8ad6814a30f2c6d62dae3072f2cc2cbe275ad6386407d718a7bff7c46ecaed694e88913f5f383199eb7d  pkgs/vm-fc32/awesome.spec.list
+2021-11-22 22:18:14.226830 +0000 build-fedora4: f8bc29d96aa21521fdf9aafc2add6586118bd4128c1538789cdcc39aeed0dc0a38a3a0ad4bdfb6d3c72eb85333d144ba31347af1221e9bc8f40bc97db449f2c4  pkgs/vm-fc33/awesome-4.3-10.fc33.x86_64.buildinfo
+2021-11-22 22:18:14.226845 +0000 build-fedora4: 4c9cd31e9a43cc22ed3559bdb8ddd1e9fe44b2cd10e4a4a0009186ffe1a982899ee50b78c68a7c70cc470ef519c0f7f465ff14e3d0cd0bbd0d74b7c71b0c48bd  pkgs/vm-fc33/awesome-4.3-11.fc33.src.rpm
+2021-11-22 22:18:14.226864 +0000 build-fedora4: b1c3ab44bc0dd165c2defbbb72c48b7a57f1081b140dd94e055c79dd9e6006ac7df60fa3818e020c573e10cd77b152e05e90faed2a4b3fcc9d080e6b8600308c  pkgs/vm-fc33/awesome-4.3-11.fc33.x86_64.buildinfo
+2021-11-22 22:18:14.226879 +0000 build-fedora4: db4db38cea8301a069f28df92c766d1674d7a0c309f372f6191e11791f8bdd7ef8cf6fffc5afee7146159f5e3e0c98c44a68644f4f4b3f0245197efff4ccf307  pkgs/vm-fc33/awesome-4.3-11.fc33.x86_64.rpm
+2021-11-22 22:18:14.226894 +0000 build-fedora4: 8ec578f4227b67d1dc210eb42defd4ef2cc4204c5692a6b999c697971ed490502f93bfbb6a3cd9611ed78c907732e4ca22f303e25ec69dde16f9a5b0c9a2bbaf  pkgs/vm-fc33/awesome-4.3-12.fc33.src.rpm
+2021-11-22 22:18:14.226909 +0000 build-fedora4: 974f12c677293747e360191fbb8503bf439b722989af970079a4b8df1d8fd882140da8d295285f4c9a2088726f2e6dab8ad6a29f28842f4f0fded5fee9ff6ec3  pkgs/vm-fc33/awesome-4.3-12.fc33.x86_64.buildinfo
+2021-11-22 22:18:14.226924 +0000 build-fedora4: bf11c60de573247ac6f615e21657db34f08af6cd0681e7b5cef86718391f99a88779a7ec82b8637337ca824cc97fb012d66a5920c70b9ed7226e0b01663b30b8  pkgs/vm-fc33/awesome-4.3-12.fc33.x86_64.rpm
+2021-11-22 22:18:14.226939 +0000 build-fedora4: 47d6826d5cd47abfb696a226189438d7f7542725e5c351c7d5c26cdcf467983642be65322ea708a5fb9fbced82a80184a1b49514fd64f2ebac9214957f624e12  pkgs/vm-fc33/awesome-debuginfo-4.3-11.fc33.x86_64.rpm
+2021-11-22 22:18:14.228577 +0000 build-fedora4: cb03346ef48560a8cdbbfb30a3c5b14e29024f9f6322ebee7001da3db31399ff56ce935a63b1b2b7921c813209a42b036e898c43b7db85da086248d7225a7d40  pkgs/vm-fc33/awesome-debuginfo-4.3-12.fc33.x86_64.rpm
+2021-11-22 22:18:14.229499 +0000 build-fedora4: 1aa69c8fb5023b71b28bbb6ea9c87fe62d347ad58a6272706f36609665bc8077aad23e5924c27fdad16e5805a7777ee697f9c1341f0dd54265be65019ae4298f  pkgs/vm-fc33/awesome-debugsource-4.3-11.fc33.x86_64.rpm
+2021-11-22 22:18:14.230516 +0000 build-fedora4: ec1dff10428358540b44e78acbd425f03db2d99089fcfa92dd58f156f302264b664b3af4a1244b53bf32f14f8914a50b20fd67d07158f8252c22e93b46bd28c4  pkgs/vm-fc33/awesome-debugsource-4.3-12.fc33.x86_64.rpm
+2021-11-22 22:18:14.232005 +0000 build-fedora4: 543b0d3eead57e77ce44443a7955e80bf39db698e67da4f73247a40bb96b474b72f146119cbd72ccb8590ae813352f2981aaf45300a28578b87d9359e5ea4202  pkgs/vm-fc33/awesome-doc-4.3-11.fc33.noarch.rpm
+2021-11-22 22:18:14.233579 +0000 build-fedora4: f88ec9a9647686fa8deb35bf51df090737cd671247baf158a0a1161f8afcf00f0c498df51bf4bb7893efc0eef42db4641424b2a64564ff4035b28e8962a04802  pkgs/vm-fc33/awesome-doc-4.3-12.fc33.noarch.rpm
+2021-11-22 22:18:14.233879 +0000 build-fedora4: af7c160811d9468c7dbd0cc4deeff6df27f72221497054441ed5dad52d6a8c28e14a43212c2db491e65433b841b529cc873ef6c996c18f0a154ae509a7e1a48f  pkgs/vm-fc33/awesome.spec.list
+2021-11-22 22:18:14.234200 +0000 build-fedora4: 315f5fea6a67c3c0b82e1fb701b83d2ea59ae7ab8759b1f11b948d5fd393a172d10333395b017f4c97ab9cb8a487cb4a774a65ca007aa17af8b5cd2f6dc5b9db  pkgs/vm-fc34/awesome-4.3-10.fc34.x86_64.buildinfo
+2021-11-22 22:18:14.237555 +0000 build-fedora4: 076dd393b6e430ffc079ae86adf1e9e06f0b22110a0b3a5caeba8acd29a8dc8f73598ea5a45a9534b0fb85045f1c71adaceb357ea687ebb9291599757f8d4b24  pkgs/vm-fc34/awesome-4.3-11.fc34.src.rpm
+2021-11-22 22:18:14.237912 +0000 build-fedora4: 3ebf78b0e44c5a66108632fd9cba29576bf3d4ca36627dad3278b69ae310be3fe0fa4c5acc72f6e1fe5b8df6557507d69fea42b99a07d86c75224c97559d454c  pkgs/vm-fc34/awesome-4.3-11.fc34.x86_64.buildinfo
+2021-11-22 22:18:14.240416 +0000 build-fedora4: f5dbf82d1c56287a39cd3f0984c1ebd76c2dee78c7d46a197a7317df4a1ef3dd7d995573aab194cce8db1d0cab7b25e5396166a73ff07c7fd4c0a1ff854eac68  pkgs/vm-fc34/awesome-4.3-11.fc34.x86_64.rpm
+2021-11-22 22:18:14.243177 +0000 build-fedora4: 90ec6c32d088b1cb2869cafc049a725b1d3c76c496bf5d8d9b7e7f342da3e3345ab50033e927d5e0d719ccfa428cffa0da252d104def5f80c11195d1f6fb94d1  pkgs/vm-fc34/awesome-4.3-12.fc34.src.rpm
+2021-11-22 22:18:14.243449 +0000 build-fedora4: cc2e4f4770d1ee3292bc9588cc44851380aa5c3653153545e4d25e691a380da56316333ebe1da25584615d5a58c003c7b6d2a2e90e8694f047faad88a97f6297  pkgs/vm-fc34/awesome-4.3-12.fc34.x86_64.buildinfo
+2021-11-22 22:18:14.245917 +0000 build-fedora4: 17d3e1d4408c7a7555a9c1208c3802402d8220a83808abb49352327f68e93d3ff2a611240f13d20aa331760293eb2bcda4d0be2c2efdbe05a0f7ae74b3ae41bc  pkgs/vm-fc34/awesome-4.3-12.fc34.x86_64.rpm
+2021-11-22 22:18:14.247631 +0000 build-fedora4: 008a5e1d79f38f237b549deb6dc4ad5d830e5c6bdcfeb9be4afb016f3715782feb86b288af706772551e33d8179403c2850c00a6b473c5d2247b60bd92aa4674  pkgs/vm-fc34/awesome-debuginfo-4.3-11.fc34.x86_64.rpm
+2021-11-22 22:18:14.249464 +0000 build-fedora4: d7a152495b241d9411d5f1205ce8e085bb93348e0335ce1dac38db10ac0bb5f72da37bda5883ebfe4697fcc15eecb0971247289fde9f4f53049eae87314ea3b2  pkgs/vm-fc34/awesome-debuginfo-4.3-12.fc34.x86_64.rpm
+2021-11-22 22:18:14.250359 +0000 build-fedora4: 16a5ea6e3bfdda14ff2d86fdf67d443204fec1379536fb5ed11bdf69ffd4629e182fc792e99859cec72831f492ed05e686a044bfd741ca8f33bf913c48f4254d  pkgs/vm-fc34/awesome-debugsource-4.3-11.fc34.x86_64.rpm
+2021-11-22 22:18:14.251165 +0000 build-fedora4: a8e2866f7a825d324ed669a2557ac112eceee2f8f312424d3ac05d7bef5f240e9d4eb50535f89aa989453879f0c7cdaeca9273cd7dff3e26aed597d98523e1dd  pkgs/vm-fc34/awesome-debugsource-4.3-12.fc34.x86_64.rpm
+2021-11-22 22:18:14.252657 +0000 build-fedora4: 30bfd07b843d5907a843dbb5f96c9b71317aaaf88d8117c45d4edb04a7ae2efc60ad6046b5d8c8f64e89c41d32f355705bef3e4674a5a2c86cf7a9304df1e9ed  pkgs/vm-fc34/awesome-doc-4.3-11.fc34.noarch.rpm
+2021-11-22 22:18:14.254146 +0000 build-fedora4: e8e0d295474adb7332327a789b54be6588fad3a50336e3c403be0d3c41b963e58a3327fd98aa9e2baa2facef7ef9496ca1160ff84395e588ecb302f62419c0c1  pkgs/vm-fc34/awesome-doc-4.3-12.fc34.noarch.rpm
+2021-11-22 22:18:14.254363 +0000 build-fedora4: cc2477fc56d92c69446a76f44fcae18f3548c110db271077b5de9feac4063eb11ad6ccdac66671168baf45721afe7f13c5785050fe0931e8141f62f10a410c4d  pkgs/vm-fc34/awesome.spec.list
+2021-11-22 22:18:14.257708 +0000 build-fedora4: 39dfbd4bf2a8fbe9476a4978008084fb4f99e0ff5e271fa5ccf37a69cc438eabc1b5c431a5bf9e4dd90d23e0b2238371fdca09a1ff14ffea610905a5284c99ac  pkgs/vm-fc35/awesome-4.3-11.fc35.src.rpm
+2021-11-22 22:18:14.258069 +0000 build-fedora4: 25aef472fed283846dee76d867ff058a0545fe5980ee38c231ffc666f3311118c556d7ff8b2a283edebc1d8c6958620df9430ec01e02c66257e59f7585711b09  pkgs/vm-fc35/awesome-4.3-11.fc35.x86_64.buildinfo
+2021-11-22 22:18:14.260651 +0000 build-fedora4: 5b5731db67e7de9032ac6b5809e03d53f8d9b8968dd1554b37035274eaa473b7531274c9b3472255220db0d709ce965ed83ce613772cd7f9526471e8730ecc3e  pkgs/vm-fc35/awesome-4.3-11.fc35.x86_64.rpm
+2021-11-22 22:18:14.262267 +0000 build-fedora4: 5fdb162f1a61825b1357b1033745d10e61a873bfa82a70d8953c4ce8038391ab514b5b94d248dac1c7164094c4febfadefea472152751e7cf698ddf5c93706aa  pkgs/vm-fc35/awesome-4.3-12.fc35.src.rpm
+2021-11-22 22:18:14.262550 +0000 build-fedora4: 96b144daaca794e6e151e5fca748cb805ad547199760c4baace2e3db59a3a16430ef329230b39c4ce735b0fe8c6a5c2b20cf48e7b5a44acdd3a33a2fc33856ae  pkgs/vm-fc35/awesome-4.3-12.fc35.x86_64.buildinfo
+2021-11-22 22:18:14.263951 +0000 build-fedora4: 7ac0d912e841694ec0a025f73aac38f9e030fc08cd4f6cc0eb7f45a8db543b9089487d518266c798bd0dbba1e7a3bddd6c1826a6f0488ec5943d6dd62f100874  pkgs/vm-fc35/awesome-4.3-12.fc35.x86_64.rpm
+2021-11-22 22:18:14.265815 +0000 build-fedora4: 2bdaff1cb02436a06b1de4cb73842672ae1d39046d897886dc66f02500748f7df42fc854d8acffc3ecf43f05d136ebe7633ed218e8589a461fdcf3829f3441f2  pkgs/vm-fc35/awesome-debuginfo-4.3-11.fc35.x86_64.rpm
+2021-11-22 22:18:14.266741 +0000 build-fedora4: d33f41b6f536120e4d280aac1eea11441f180441e2016ee45b610fe6f2ea33853afebbfdd8f685aa7b73cd6a4bbda3908ff9ac85c11a0c3693eb836dba973791  pkgs/vm-fc35/awesome-debuginfo-4.3-12.fc35.x86_64.rpm
+2021-11-22 22:18:14.267650 +0000 build-fedora4: d903e99ffc6241f6f459e47bb442d896862e6a7a0a4203de76ffed52c2aa900435522ef0e78d6b525bc7b82247a76ec90afe6b6fe10050d23769eef1ad72aa57  pkgs/vm-fc35/awesome-debugsource-4.3-11.fc35.x86_64.rpm
+2021-11-22 22:18:14.267906 +0000 build-fedora4: 7a29430e1482cde3f8489c2f20375971c427009f55e5a92ee10cc296dac84706fddbb965cd3dc24bccba2d2d9beb766767e6bf684aa6c5d56d43e91a0368830a  pkgs/vm-fc35/awesome-debugsource-4.3-12.fc35.x86_64.rpm
+2021-11-22 22:18:14.269386 +0000 build-fedora4: f6b303482e3c47a0c717b20c73d18c262cb96cfb485e0b70d9d86bee7c1b319f8682d7d144e669cdbf75574e6819d7e880800a5eb92ccdcc92e241519abe44e4  pkgs/vm-fc35/awesome-doc-4.3-11.fc35.noarch.rpm
+2021-11-22 22:18:14.270069 +0000 build-fedora4: d8d322a347f345908215f7447208cddc3fca8d34cef8fef1d73b9fa428b360302e928bdf1275de30ce3c96e34c77b47bc7a46d824c312837f8cff6dae057d329  pkgs/vm-fc35/awesome-doc-4.3-12.fc35.noarch.rpm
+2021-11-22 22:18:14.270123 +0000 build-fedora4: 8bb359abf153fee3f4c33b36b6ce7afacb756928012b4d43165e623a4496a5e24368ece57f341ef810236c0a1558433f2505b2dfb04e46dddebb918d908a398f  pkgs/vm-fc35/awesome.spec.list
+2021-11-22 22:18:14.311884 +0000 build-fedora4: ================================================================================
+2021-11-22 22:18:14.312001 +0000 build-fedora4:                            B U I L D   I N F O                                  
+2021-11-22 22:18:14.312020 +0000 build-fedora4: Items in red indicate it was automatically generated by configuration file(s)
+2021-11-22 22:18:14.312065 +0000 build-fedora4: Items in white indicate it was automatically removed by configuration file(s)
+2021-11-22 22:18:14.312084 +0000 build-fedora4: ================================================================================
+2021-11-22 22:18:14.312149 +0000 build-fedora4: DISTS_VM:
+2021-11-22 22:18:14.313989 +0000 build-fedora4:      fc32, fc33, fc34, fc35,
+2021-11-22 22:18:14.315279 +0000 build-fedora4: DISTS_ALL:
+2021-11-22 22:18:14.315593 +0000 build-fedora4:      vm-fc32, vm-fc33, vm-fc34, vm-fc35,
+2021-11-22 22:18:14.316085 +0000 build-fedora4: DIST_DOM0:
+2021-11-22 22:18:14.317454 +0000 build-fedora4:     
+2021-11-22 22:18:14.318834 +0000 build-fedora4: BUILDER_PLUGINS:
+2021-11-22 22:18:14.319077 +0000 build-fedora4:      builder-rpm, builder-debian, mgmt-salt, linux-yum, release-configs, builder-github,
+2021-11-22 22:18:14.320318 +0000 build-fedora4: COMPONENTS:
+2021-11-22 22:18:14.320969 +0000 build-fedora4:      desktop-linux-awesome,
+2021-11-22 22:18:14.321898 +0000 build-fedora4: GIT_REPOS:
+2021-11-22 22:18:14.322775 +0000 build-fedora4:      qubes-src/desktop-linux-awesome,
+2021-11-22 22:18:14.323975 +0000 build-fedora4: TEMPLATE:
+2021-11-22 22:18:14.324197 +0000 build-fedora4:     
+2021-11-22 22:18:14.325464 +0000 build-fedora4: TEMPLATE_FLAVOR_DIR:
+2021-11-22 22:18:14.326892 +0000 build-fedora4:     
+2021-11-22 22:18:14.328245 +0000 build-fedora4: TEMPLATE_ALIAS:
+2021-11-22 22:18:14.328501 +0000 build-fedora4:      stretch:stretch+standard, stretch+gnome:stretch+gnome+standard,
+2021-11-22 22:18:14.328526 +0000 build-fedora4:      stretch+minimal:stretch+minimal+no-recommends, buster:buster+standard, buster+gnome:buster+gnome+standard,
+2021-11-22 22:18:14.328538 +0000 build-fedora4:      buster+minimal:buster+minimal+no-recommends, bullseye:bullseye+standard,
+2021-11-22 22:18:14.328549 +0000 build-fedora4:      bullseye+gnome:bullseye+gnome+standard, bullseye+minimal:bullseye+minimal+no-recommends,
+2021-11-22 22:18:14.328563 +0000 build-fedora4:      bionic:bionic+standard, focal:focal+standard, whonix-gateway-15:buster+whonix-gateway+minimal+no-recommends,
+2021-11-22 22:18:14.328574 +0000 build-fedora4:      whonix-workstation-15:buster+whonix-workstation+minimal+no-recommends,
+2021-11-22 22:18:14.328583 +0000 build-fedora4:      whonix-gateway-16:bullseye+whonix-gateway+minimal+no-recommends,
+2021-11-22 22:18:14.328592 +0000 build-fedora4:      whonix-workstation-16:bullseye+whonix-workstation+minimal+no-recommends,
+2021-11-22 22:18:14.329910 +0000 build-fedora4: TEMPLATE_LABEL:
+2021-11-22 22:18:14.330154 +0000 build-fedora4:      fc32:fedora-32, fc33:fedora-33, fc34:fedora-34, fc35:fedora-35, fc32+minimal:fedora-32-minimal
+2021-11-22 22:18:14.330179 +0000 build-fedora4:      fc33+minimal:fedora-33-minimal fc34+minimal:fedora-34-minimal fc35+minimal:fedora-35-minimal
+2021-11-22 22:18:14.330190 +0000 build-fedora4:      fc32+xfce:fedora-32-xfce fc33+xfce:fedora-33-xfce fc34+xfce:fedora-34-xfce
+2021-11-22 22:18:14.330201 +0000 build-fedora4:      fc35+xfce:fedora-35-xfce stretch:debian-9 stretch+standard:debian-9 stretch+xfce:debian-9-xfce
+2021-11-22 22:18:14.330229 +0000 build-fedora4:      buster:debian-10 buster+standard:debian-10 buster+xfce:debian-10-xfce bullseye:debian-11
+2021-11-22 22:18:14.330239 +0000 build-fedora4:      bullseye+standard:debian-11 bullseye+xfce:debian-11-xfce bionic+standard:bionic
+2021-11-22 22:18:14.330249 +0000 build-fedora4:      focal+standard:focal buster+whonix-gateway+minimal+no-recommends:whonix-gw-15
+2021-11-22 22:18:14.330258 +0000 build-fedora4:      buster+whonix-workstation+minimal+no-recommends:whonix-ws-15
+2021-11-22 22:18:14.330267 +0000 build-fedora4:      bullseye+whonix-gateway+minimal+no-recommends:whonix-gw-16
+2021-11-22 22:18:14.330277 +0000 build-fedora4:      bullseye+whonix-workstation+minimal+no-recommends:whonix-ws-16 centos7:centos-7
+2021-11-22 22:18:14.330287 +0000 build-fedora4:      centos7+minimal:centos-7-minimal centos7+xfce:centos-7-xfce centos-stream8:centos-stream-8
+2021-11-22 22:18:14.330298 +0000 build-fedora4:      centos-stream8+minimal:centos-stream-8-minimal centos-stream8+xfce:centos-stream-8-xfce
+2021-11-22 22:18:14.341653 +0000 build-fedora4: > running make
+2021-11-22 22:18:14.350775 +0000 build-fedora4: Makefile:299: target 'sign.vm.fc32.desktop-linux-awesome' does not exist
+2021-11-22 22:18:14.350839 +0000 build-fedora4: if [ -n "desktop-linux-awesome" -a "0" -ne 0 ]; then BRANCH=master; branch_var="BRANCH_desktop_linux_awesome"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/desktop-linux-awesome > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2021-11-22 22:18:14.350865 +0000 build-fedora4: SIGN_KEY=5817A43B283DE5A9181A522E1848792F9E2795E9; \
+2021-11-22 22:18:14.350875 +0000 build-fedora4: sign_key_var="SIGN_KEY_${DIST%%+*}"; \
+2021-11-22 22:18:14.350886 +0000 build-fedora4: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2021-11-22 22:18:14.350895 +0000 build-fedora4: if [ "desktop-linux-awesome" = linux-template-builder ]; then
+2021-11-22 22:18:14.350906 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc32 template-name)
+2021-11-22 22:18:14.350912 +0000 build-fedora4: fi
+2021-11-22 22:18:14.350922 +0000 build-fedora4: if [ -r qubes-src/desktop-linux-awesome/Makefile.builder ]; then \
+2021-11-22 22:18:14.350930 +0000 build-fedora4: .make --no-print-directory -f Makefile.generic \
+2021-11-22 22:18:14.350936 +0000 build-fedora4: ..DIST=fc32 \
+2021-11-22 22:18:14.350943 +0000 build-fedora4: ..PACKAGE_SET=vm \
+2021-11-22 22:18:14.350950 +0000 build-fedora4: ..COMPONENT=desktop-linux-awesome \
+2021-11-22 22:18:14.350956 +0000 build-fedora4: ..SIGN_KEY=$SIGN_KEY \
+2021-11-22 22:18:14.350963 +0000 build-fedora4: ..sign || exit 1; \
+2021-11-22 22:18:14.350971 +0000 build-fedora4: elif [ -d qubes-src/desktop-linux-awesome/rpm ]; then \
+2021-11-22 22:18:14.350978 +0000 build-fedora4: .# Old mechanism supported only for RPM
+2021-11-22 22:18:14.350987 +0000 build-fedora4: FILE_LIST=""; for RPM in qubes-src/desktop-linux-awesome/rpm/*/*.rpm; do \
+2021-11-22 22:18:14.350997 +0000 build-fedora4: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2021-11-22 22:18:14.351004 +0000 build-fedora4: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2021-11-22 22:18:14.351009 +0000 build-fedora4: ..fi ;\
+2021-11-22 22:18:14.351015 +0000 build-fedora4: .done ; \
+2021-11-22 22:18:14.351022 +0000 build-fedora4: .if [ -n "$FILE_LIST" ]; then \
+2021-11-22 22:18:14.351029 +0000 build-fedora4: ..echo "--> Signing..."; \
+2021-11-22 22:18:14.351036 +0000 build-fedora4: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2021-11-22 22:18:14.351043 +0000 build-fedora4: ..if [ -n "$SIGN_KEY" ]; then \
+2021-11-22 22:18:14.351051 +0000 build-fedora4: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2021-11-22 22:18:14.351056 +0000 build-fedora4: ..fi; \
+2021-11-22 22:18:14.351065 +0000 build-fedora4: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2021-11-22 22:18:14.351070 +0000 build-fedora4: .fi; \
+2021-11-22 22:18:14.351076 +0000 build-fedora4: fi
+2021-11-22 22:18:14.368294 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:201: target 'sign-prep' does not exist
+2021-11-22 22:18:14.368335 +0000 build-fedora4: if [ -n "qubes-gpg-client-wrapper" ]; then \
+2021-11-22 22:18:14.368348 +0000 build-fedora4: .mkdir -p /home/user/builder-r4.1/keyrings/rpmdb; \
+2021-11-22 22:18:14.368357 +0000 build-fedora4: .tmpname=$(mktemp); \
+2021-11-22 22:18:14.368370 +0000 build-fedora4: .qubes-gpg-client-wrapper --armor --export "5817A43B283DE5A9181A522E1848792F9E2795E9" > "$tmpname"; \
+2021-11-22 22:18:14.368382 +0000 build-fedora4: .rpmkeys --dbpath=/home/user/builder-r4.1/keyrings/rpmdb --import "$tmpname"; \
+2021-11-22 22:18:14.368390 +0000 build-fedora4: .rm -f "$tmpname"; \
+2021-11-22 22:18:14.368400 +0000 build-fedora4: fi
+2021-11-22 22:18:14.520274 +0000 build-fedora4: warning: Found bdb Packages database while attempting sqlite backend: using bdb backend.
+2021-11-22 22:18:14.540456 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:217: update target 'sign' due to: sign-prep
+2021-11-22 22:18:14.540532 +0000 build-fedora4: cd qubes-src/desktop-linux-awesome && for pkg in pkgs/vm-fc32/awesome-4.3-12.fc32.src.rpm pkgs/vm-fc32/awesome-4.3-12.fc32.x86_64.rpm pkgs/vm-fc32/awesome-debuginfo-4.3-12.fc32.x86_64.rpm pkgs/vm-fc32/awesome-debugsource-4.3-12.fc32.x86_64.rpm pkgs/vm-fc32/awesome-doc-4.3-12.fc32.noarch.rpm pkgs/vm-fc32/awesome-4.3-12.fc32.x86_64.buildinfo ; do \
+2021-11-22 22:18:14.540552 +0000 build-fedora4: .if [ "${pkg##*.}" = "buildinfo" ]; then \
+2021-11-22 22:18:14.540571 +0000 build-fedora4: ../home/user/builder-r4.1/qubes-src/builder-rpm/scripts/update-rpmbuildinfo "$pkg" | /usr/bin/qubes-gpg-client-wrapper --clearsign --local-user 5817A43B283DE5A9181A522E1848792F9E2795E9 > "$pkg".tmp && \
+2021-11-22 22:18:14.540579 +0000 build-fedora4: ..mv -f "$pkg".tmp "$pkg"; \
+2021-11-22 22:18:14.540590 +0000 build-fedora4: .elif [ "$(rpmkeys --checksig -- "$pkg")" != "$pkg: digests signatures OK" ]; then \
+2021-11-22 22:18:14.540603 +0000 build-fedora4: ..setsid -w rpmsign --digest-algo=sha256 --key-id=5817A43B283DE5A9181A522E1848792F9E2795E9 --addsign  -- "$pkg" </dev/null || exit 1; \
+2021-11-22 22:18:14.540609 +0000 build-fedora4: .fi; \
+2021-11-22 22:18:14.540615 +0000 build-fedora4: done
+2021-11-22 22:18:14.583223 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-22 22:18:14.754827 +0000 build-fedora4: pkgs/vm-fc32/awesome-4.3-12.fc32.src.rpm:
+2021-11-22 22:18:14.786658 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-22 22:18:15.110149 +0000 build-fedora4: pkgs/vm-fc32/awesome-4.3-12.fc32.x86_64.rpm:
+2021-11-22 22:18:15.132882 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-22 22:18:15.340040 +0000 build-fedora4: pkgs/vm-fc32/awesome-debuginfo-4.3-12.fc32.x86_64.rpm:
+2021-11-22 22:18:15.355013 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-22 22:18:15.562699 +0000 build-fedora4: pkgs/vm-fc32/awesome-debugsource-4.3-12.fc32.x86_64.rpm:
+2021-11-22 22:18:15.596358 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-22 22:18:15.813552 +0000 build-fedora4: pkgs/vm-fc32/awesome-doc-4.3-12.fc32.noarch.rpm:
+2021-11-22 22:18:16.092031 +0000 build-fedora4: Makefile:299: target 'sign.vm.fc33.desktop-linux-awesome' does not exist
+2021-11-22 22:18:16.092108 +0000 build-fedora4: if [ -n "desktop-linux-awesome" -a "0" -ne 0 ]; then BRANCH=master; branch_var="BRANCH_desktop_linux_awesome"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/desktop-linux-awesome > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2021-11-22 22:18:16.092121 +0000 build-fedora4: SIGN_KEY=5817A43B283DE5A9181A522E1848792F9E2795E9; \
+2021-11-22 22:18:16.092129 +0000 build-fedora4: sign_key_var="SIGN_KEY_${DIST%%+*}"; \
+2021-11-22 22:18:16.092139 +0000 build-fedora4: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2021-11-22 22:18:16.092147 +0000 build-fedora4: if [ "desktop-linux-awesome" = linux-template-builder ]; then
+2021-11-22 22:18:16.092158 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc33 template-name)
+2021-11-22 22:18:16.092191 +0000 build-fedora4: fi
+2021-11-22 22:18:16.092202 +0000 build-fedora4: if [ -r qubes-src/desktop-linux-awesome/Makefile.builder ]; then \
+2021-11-22 22:18:16.092211 +0000 build-fedora4: .make --no-print-directory -f Makefile.generic \
+2021-11-22 22:18:16.092217 +0000 build-fedora4: ..DIST=fc33 \
+2021-11-22 22:18:16.092224 +0000 build-fedora4: ..PACKAGE_SET=vm \
+2021-11-22 22:18:16.092231 +0000 build-fedora4: ..COMPONENT=desktop-linux-awesome \
+2021-11-22 22:18:16.092256 +0000 build-fedora4: ..SIGN_KEY=$SIGN_KEY \
+2021-11-22 22:18:16.092264 +0000 build-fedora4: ..sign || exit 1; \
+2021-11-22 22:18:16.092273 +0000 build-fedora4: elif [ -d qubes-src/desktop-linux-awesome/rpm ]; then \
+2021-11-22 22:18:16.092280 +0000 build-fedora4: .# Old mechanism supported only for RPM
+2021-11-22 22:18:16.092290 +0000 build-fedora4: FILE_LIST=""; for RPM in qubes-src/desktop-linux-awesome/rpm/*/*.rpm; do \
+2021-11-22 22:18:16.092299 +0000 build-fedora4: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2021-11-22 22:18:16.092306 +0000 build-fedora4: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2021-11-22 22:18:16.092311 +0000 build-fedora4: ..fi ;\
+2021-11-22 22:18:16.092317 +0000 build-fedora4: .done ; \
+2021-11-22 22:18:16.092324 +0000 build-fedora4: .if [ -n "$FILE_LIST" ]; then \
+2021-11-22 22:18:16.092334 +0000 build-fedora4: ..echo "--> Signing..."; \
+2021-11-22 22:18:16.092342 +0000 build-fedora4: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2021-11-22 22:18:16.092349 +0000 build-fedora4: ..if [ -n "$SIGN_KEY" ]; then \
+2021-11-22 22:18:16.092356 +0000 build-fedora4: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2021-11-22 22:18:16.092362 +0000 build-fedora4: ..fi; \
+2021-11-22 22:18:16.092371 +0000 build-fedora4: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2021-11-22 22:18:16.092376 +0000 build-fedora4: .fi; \
+2021-11-22 22:18:16.092381 +0000 build-fedora4: fi
+2021-11-22 22:18:16.141018 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:201: target 'sign-prep' does not exist
+2021-11-22 22:18:16.141062 +0000 build-fedora4: if [ -n "qubes-gpg-client-wrapper" ]; then \
+2021-11-22 22:18:16.141074 +0000 build-fedora4: .mkdir -p /home/user/builder-r4.1/keyrings/rpmdb; \
+2021-11-22 22:18:16.141081 +0000 build-fedora4: .tmpname=$(mktemp); \
+2021-11-22 22:18:16.141093 +0000 build-fedora4: .qubes-gpg-client-wrapper --armor --export "5817A43B283DE5A9181A522E1848792F9E2795E9" > "$tmpname"; \
+2021-11-22 22:18:16.141103 +0000 build-fedora4: .rpmkeys --dbpath=/home/user/builder-r4.1/keyrings/rpmdb --import "$tmpname"; \
+2021-11-22 22:18:16.141112 +0000 build-fedora4: .rm -f "$tmpname"; \
+2021-11-22 22:18:16.141119 +0000 build-fedora4: fi
+2021-11-22 22:18:16.377986 +0000 build-fedora4: warning: Found bdb Packages database while attempting sqlite backend: using bdb backend.
+2021-11-22 22:18:16.415231 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:217: update target 'sign' due to: sign-prep
+2021-11-22 22:18:16.415295 +0000 build-fedora4: cd qubes-src/desktop-linux-awesome && for pkg in pkgs/vm-fc33/awesome-4.3-12.fc33.src.rpm pkgs/vm-fc33/awesome-4.3-12.fc33.x86_64.rpm pkgs/vm-fc33/awesome-debuginfo-4.3-12.fc33.x86_64.rpm pkgs/vm-fc33/awesome-debugsource-4.3-12.fc33.x86_64.rpm pkgs/vm-fc33/awesome-doc-4.3-12.fc33.noarch.rpm pkgs/vm-fc33/awesome-4.3-12.fc33.x86_64.buildinfo ; do \
+2021-11-22 22:18:16.415309 +0000 build-fedora4: .if [ "${pkg##*.}" = "buildinfo" ]; then \
+2021-11-22 22:18:16.415328 +0000 build-fedora4: ../home/user/builder-r4.1/qubes-src/builder-rpm/scripts/update-rpmbuildinfo "$pkg" | /usr/bin/qubes-gpg-client-wrapper --clearsign --local-user 5817A43B283DE5A9181A522E1848792F9E2795E9 > "$pkg".tmp && \
+2021-11-22 22:18:16.415336 +0000 build-fedora4: ..mv -f "$pkg".tmp "$pkg"; \
+2021-11-22 22:18:16.415347 +0000 build-fedora4: .elif [ "$(rpmkeys --checksig -- "$pkg")" != "$pkg: digests signatures OK" ]; then \
+2021-11-22 22:18:16.415360 +0000 build-fedora4: ..setsid -w rpmsign --digest-algo=sha256 --key-id=5817A43B283DE5A9181A522E1848792F9E2795E9 --addsign  -- "$pkg" </dev/null || exit 1; \
+2021-11-22 22:18:16.415368 +0000 build-fedora4: .fi; \
+2021-11-22 22:18:16.415374 +0000 build-fedora4: done
+2021-11-22 22:18:16.549937 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-22 22:18:16.721444 +0000 build-fedora4: pkgs/vm-fc33/awesome-4.3-12.fc33.src.rpm:
+2021-11-22 22:18:16.788836 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-22 22:18:17.027534 +0000 build-fedora4: pkgs/vm-fc33/awesome-4.3-12.fc33.x86_64.rpm:
+2021-11-22 22:18:17.067962 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-22 22:18:17.265397 +0000 build-fedora4: pkgs/vm-fc33/awesome-debuginfo-4.3-12.fc33.x86_64.rpm:
+2021-11-22 22:18:17.287273 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-22 22:18:17.478392 +0000 build-fedora4: pkgs/vm-fc33/awesome-debugsource-4.3-12.fc33.x86_64.rpm:
+2021-11-22 22:18:17.520973 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-22 22:18:17.743597 +0000 build-fedora4: pkgs/vm-fc33/awesome-doc-4.3-12.fc33.noarch.rpm:
+2021-11-22 22:18:18.000804 +0000 build-fedora4: Makefile:299: target 'sign.vm.fc34.desktop-linux-awesome' does not exist
+2021-11-22 22:18:18.000882 +0000 build-fedora4: if [ -n "desktop-linux-awesome" -a "0" -ne 0 ]; then BRANCH=master; branch_var="BRANCH_desktop_linux_awesome"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/desktop-linux-awesome > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2021-11-22 22:18:18.000894 +0000 build-fedora4: SIGN_KEY=5817A43B283DE5A9181A522E1848792F9E2795E9; \
+2021-11-22 22:18:18.000902 +0000 build-fedora4: sign_key_var="SIGN_KEY_${DIST%%+*}"; \
+2021-11-22 22:18:18.000911 +0000 build-fedora4: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2021-11-22 22:18:18.000920 +0000 build-fedora4: if [ "desktop-linux-awesome" = linux-template-builder ]; then
+2021-11-22 22:18:18.000930 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc34 template-name)
+2021-11-22 22:18:18.000937 +0000 build-fedora4: fi
+2021-11-22 22:18:18.000946 +0000 build-fedora4: if [ -r qubes-src/desktop-linux-awesome/Makefile.builder ]; then \
+2021-11-22 22:18:18.000955 +0000 build-fedora4: .make --no-print-directory -f Makefile.generic \
+2021-11-22 22:18:18.000961 +0000 build-fedora4: ..DIST=fc34 \
+2021-11-22 22:18:18.000967 +0000 build-fedora4: ..PACKAGE_SET=vm \
+2021-11-22 22:18:18.000975 +0000 build-fedora4: ..COMPONENT=desktop-linux-awesome \
+2021-11-22 22:18:18.000981 +0000 build-fedora4: ..SIGN_KEY=$SIGN_KEY \
+2021-11-22 22:18:18.000988 +0000 build-fedora4: ..sign || exit 1; \
+2021-11-22 22:18:18.000996 +0000 build-fedora4: elif [ -d qubes-src/desktop-linux-awesome/rpm ]; then \
+2021-11-22 22:18:18.001003 +0000 build-fedora4: .# Old mechanism supported only for RPM
+2021-11-22 22:18:18.001012 +0000 build-fedora4: FILE_LIST=""; for RPM in qubes-src/desktop-linux-awesome/rpm/*/*.rpm; do \
+2021-11-22 22:18:18.001022 +0000 build-fedora4: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2021-11-22 22:18:18.001029 +0000 build-fedora4: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2021-11-22 22:18:18.001034 +0000 build-fedora4: ..fi ;\
+2021-11-22 22:18:18.001040 +0000 build-fedora4: .done ; \
+2021-11-22 22:18:18.001047 +0000 build-fedora4: .if [ -n "$FILE_LIST" ]; then \
+2021-11-22 22:18:18.001054 +0000 build-fedora4: ..echo "--> Signing..."; \
+2021-11-22 22:18:18.001061 +0000 build-fedora4: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2021-11-22 22:18:18.001068 +0000 build-fedora4: ..if [ -n "$SIGN_KEY" ]; then \
+2021-11-22 22:18:18.001075 +0000 build-fedora4: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2021-11-22 22:18:18.001081 +0000 build-fedora4: ..fi; \
+2021-11-22 22:18:18.001090 +0000 build-fedora4: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2021-11-22 22:18:18.001095 +0000 build-fedora4: .fi; \
+2021-11-22 22:18:18.001100 +0000 build-fedora4: fi
+2021-11-22 22:18:18.029535 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:201: target 'sign-prep' does not exist
+2021-11-22 22:18:18.029583 +0000 build-fedora4: if [ -n "qubes-gpg-client-wrapper" ]; then \
+2021-11-22 22:18:18.029595 +0000 build-fedora4: .mkdir -p /home/user/builder-r4.1/keyrings/rpmdb; \
+2021-11-22 22:18:18.029603 +0000 build-fedora4: .tmpname=$(mktemp); \
+2021-11-22 22:18:18.029617 +0000 build-fedora4: .qubes-gpg-client-wrapper --armor --export "5817A43B283DE5A9181A522E1848792F9E2795E9" > "$tmpname"; \
+2021-11-22 22:18:18.029627 +0000 build-fedora4: .rpmkeys --dbpath=/home/user/builder-r4.1/keyrings/rpmdb --import "$tmpname"; \
+2021-11-22 22:18:18.029635 +0000 build-fedora4: .rm -f "$tmpname"; \
+2021-11-22 22:18:18.029640 +0000 build-fedora4: fi
+2021-11-22 22:18:18.283153 +0000 build-fedora4: warning: Found bdb Packages database while attempting sqlite backend: using bdb backend.
+2021-11-22 22:18:18.316832 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:217: update target 'sign' due to: sign-prep
+2021-11-22 22:18:18.316900 +0000 build-fedora4: cd qubes-src/desktop-linux-awesome && for pkg in pkgs/vm-fc34/awesome-4.3-12.fc34.src.rpm pkgs/vm-fc34/awesome-4.3-12.fc34.x86_64.rpm pkgs/vm-fc34/awesome-debuginfo-4.3-12.fc34.x86_64.rpm pkgs/vm-fc34/awesome-debugsource-4.3-12.fc34.x86_64.rpm pkgs/vm-fc34/awesome-doc-4.3-12.fc34.noarch.rpm pkgs/vm-fc34/awesome-4.3-12.fc34.x86_64.buildinfo ; do \
+2021-11-22 22:18:18.316914 +0000 build-fedora4: .if [ "${pkg##*.}" = "buildinfo" ]; then \
+2021-11-22 22:18:18.316932 +0000 build-fedora4: ../home/user/builder-r4.1/qubes-src/builder-rpm/scripts/update-rpmbuildinfo "$pkg" | /usr/bin/qubes-gpg-client-wrapper --clearsign --local-user 5817A43B283DE5A9181A522E1848792F9E2795E9 > "$pkg".tmp && \
+2021-11-22 22:18:18.316941 +0000 build-fedora4: ..mv -f "$pkg".tmp "$pkg"; \
+2021-11-22 22:18:18.316951 +0000 build-fedora4: .elif [ "$(rpmkeys --checksig -- "$pkg")" != "$pkg: digests signatures OK" ]; then \
+2021-11-22 22:18:18.316964 +0000 build-fedora4: ..setsid -w rpmsign --digest-algo=sha256 --key-id=5817A43B283DE5A9181A522E1848792F9E2795E9 --addsign  -- "$pkg" </dev/null || exit 1; \
+2021-11-22 22:18:18.316971 +0000 build-fedora4: .fi; \
+2021-11-22 22:18:18.316976 +0000 build-fedora4: done
+2021-11-22 22:18:18.428897 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-22 22:18:18.625319 +0000 build-fedora4: pkgs/vm-fc34/awesome-4.3-12.fc34.src.rpm:
+2021-11-22 22:18:18.716511 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-22 22:18:18.928486 +0000 build-fedora4: pkgs/vm-fc34/awesome-4.3-12.fc34.x86_64.rpm:
+2021-11-22 22:18:18.959425 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-22 22:18:19.156045 +0000 build-fedora4: pkgs/vm-fc34/awesome-debuginfo-4.3-12.fc34.x86_64.rpm:
+2021-11-22 22:18:19.241203 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-22 22:18:19.439275 +0000 build-fedora4: pkgs/vm-fc34/awesome-debugsource-4.3-12.fc34.x86_64.rpm:
+2021-11-22 22:18:19.508776 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-22 22:18:19.717726 +0000 build-fedora4: pkgs/vm-fc34/awesome-doc-4.3-12.fc34.noarch.rpm:
+2021-11-22 22:18:19.997187 +0000 build-fedora4: Makefile:299: target 'sign.vm.fc35.desktop-linux-awesome' does not exist
+2021-11-22 22:18:19.997265 +0000 build-fedora4: if [ -n "desktop-linux-awesome" -a "0" -ne 0 ]; then BRANCH=master; branch_var="BRANCH_desktop_linux_awesome"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/desktop-linux-awesome > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2021-11-22 22:18:19.997295 +0000 build-fedora4: SIGN_KEY=5817A43B283DE5A9181A522E1848792F9E2795E9; \
+2021-11-22 22:18:19.997304 +0000 build-fedora4: sign_key_var="SIGN_KEY_${DIST%%+*}"; \
+2021-11-22 22:18:19.997314 +0000 build-fedora4: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2021-11-22 22:18:19.997322 +0000 build-fedora4: if [ "desktop-linux-awesome" = linux-template-builder ]; then
+2021-11-22 22:18:19.997333 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc35 template-name)
+2021-11-22 22:18:19.997339 +0000 build-fedora4: fi
+2021-11-22 22:18:19.997349 +0000 build-fedora4: if [ -r qubes-src/desktop-linux-awesome/Makefile.builder ]; then \
+2021-11-22 22:18:19.997357 +0000 build-fedora4: .make --no-print-directory -f Makefile.generic \
+2021-11-22 22:18:19.997364 +0000 build-fedora4: ..DIST=fc35 \
+2021-11-22 22:18:19.997370 +0000 build-fedora4: ..PACKAGE_SET=vm \
+2021-11-22 22:18:19.997378 +0000 build-fedora4: ..COMPONENT=desktop-linux-awesome \
+2021-11-22 22:18:19.997384 +0000 build-fedora4: ..SIGN_KEY=$SIGN_KEY \
+2021-11-22 22:18:19.997391 +0000 build-fedora4: ..sign || exit 1; \
+2021-11-22 22:18:19.997399 +0000 build-fedora4: elif [ -d qubes-src/desktop-linux-awesome/rpm ]; then \
+2021-11-22 22:18:19.997406 +0000 build-fedora4: .# Old mechanism supported only for RPM
+2021-11-22 22:18:19.997415 +0000 build-fedora4: FILE_LIST=""; for RPM in qubes-src/desktop-linux-awesome/rpm/*/*.rpm; do \
+2021-11-22 22:18:19.997425 +0000 build-fedora4: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2021-11-22 22:18:19.997432 +0000 build-fedora4: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2021-11-22 22:18:19.997437 +0000 build-fedora4: ..fi ;\
+2021-11-22 22:18:19.997449 +0000 build-fedora4: .done ; \
+2021-11-22 22:18:19.997472 +0000 build-fedora4: .if [ -n "$FILE_LIST" ]; then \
+2021-11-22 22:18:19.997479 +0000 build-fedora4: ..echo "--> Signing..."; \
+2021-11-22 22:18:19.997487 +0000 build-fedora4: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2021-11-22 22:18:19.997494 +0000 build-fedora4: ..if [ -n "$SIGN_KEY" ]; then \
+2021-11-22 22:18:19.997504 +0000 build-fedora4: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2021-11-22 22:18:19.997510 +0000 build-fedora4: ..fi; \
+2021-11-22 22:18:19.997520 +0000 build-fedora4: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2021-11-22 22:18:19.997525 +0000 build-fedora4: .fi; \
+2021-11-22 22:18:19.997530 +0000 build-fedora4: fi
+2021-11-22 22:18:20.017917 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:201: target 'sign-prep' does not exist
+2021-11-22 22:18:20.017959 +0000 build-fedora4: if [ -n "qubes-gpg-client-wrapper" ]; then \
+2021-11-22 22:18:20.017971 +0000 build-fedora4: .mkdir -p /home/user/builder-r4.1/keyrings/rpmdb; \
+2021-11-22 22:18:20.017979 +0000 build-fedora4: .tmpname=$(mktemp); \
+2021-11-22 22:18:20.017990 +0000 build-fedora4: .qubes-gpg-client-wrapper --armor --export "5817A43B283DE5A9181A522E1848792F9E2795E9" > "$tmpname"; \
+2021-11-22 22:18:20.018000 +0000 build-fedora4: .rpmkeys --dbpath=/home/user/builder-r4.1/keyrings/rpmdb --import "$tmpname"; \
+2021-11-22 22:18:20.018007 +0000 build-fedora4: .rm -f "$tmpname"; \
+2021-11-22 22:18:20.018013 +0000 build-fedora4: fi
+2021-11-22 22:18:20.261478 +0000 build-fedora4: warning: Found bdb Packages database while attempting sqlite backend: using bdb backend.
+2021-11-22 22:18:20.314088 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:217: update target 'sign' due to: sign-prep
+2021-11-22 22:18:20.314173 +0000 build-fedora4: cd qubes-src/desktop-linux-awesome && for pkg in pkgs/vm-fc35/awesome-4.3-12.fc35.src.rpm pkgs/vm-fc35/awesome-4.3-12.fc35.x86_64.rpm pkgs/vm-fc35/awesome-debuginfo-4.3-12.fc35.x86_64.rpm pkgs/vm-fc35/awesome-debugsource-4.3-12.fc35.x86_64.rpm pkgs/vm-fc35/awesome-doc-4.3-12.fc35.noarch.rpm pkgs/vm-fc35/awesome-4.3-12.fc35.x86_64.buildinfo ; do \
+2021-11-22 22:18:20.314210 +0000 build-fedora4: .if [ "${pkg##*.}" = "buildinfo" ]; then \
+2021-11-22 22:18:20.314230 +0000 build-fedora4: ../home/user/builder-r4.1/qubes-src/builder-rpm/scripts/update-rpmbuildinfo "$pkg" | /usr/bin/qubes-gpg-client-wrapper --clearsign --local-user 5817A43B283DE5A9181A522E1848792F9E2795E9 > "$pkg".tmp && \
+2021-11-22 22:18:20.314238 +0000 build-fedora4: ..mv -f "$pkg".tmp "$pkg"; \
+2021-11-22 22:18:20.314249 +0000 build-fedora4: .elif [ "$(rpmkeys --checksig -- "$pkg")" != "$pkg: digests signatures OK" ]; then \
+2021-11-22 22:18:20.314263 +0000 build-fedora4: ..setsid -w rpmsign --digest-algo=sha256 --key-id=5817A43B283DE5A9181A522E1848792F9E2795E9 --addsign  -- "$pkg" </dev/null || exit 1; \
+2021-11-22 22:18:20.314269 +0000 build-fedora4: .fi; \
+2021-11-22 22:18:20.314274 +0000 build-fedora4: done
+2021-11-22 22:18:20.464538 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-22 22:18:20.666848 +0000 build-fedora4: pkgs/vm-fc35/awesome-4.3-12.fc35.src.rpm:
+2021-11-22 22:18:20.725784 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-22 22:18:20.983401 +0000 build-fedora4: pkgs/vm-fc35/awesome-4.3-12.fc35.x86_64.rpm:
+2021-11-22 22:18:21.005196 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-22 22:18:21.231177 +0000 build-fedora4: pkgs/vm-fc35/awesome-debuginfo-4.3-12.fc35.x86_64.rpm:
+2021-11-22 22:18:21.267574 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-22 22:18:21.507854 +0000 build-fedora4: pkgs/vm-fc35/awesome-debugsource-4.3-12.fc35.x86_64.rpm:
+2021-11-22 22:18:21.548908 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2021-11-22 22:18:21.763783 +0000 build-fedora4: pkgs/vm-fc35/awesome-doc-4.3-12.fc35.noarch.rpm:
+2021-11-22 22:18:22.027076 +0000 build-fedora4: Makefile:863: target 'internal-update-repo-current-testing.vm.fc32.desktop-linux-awesome' does not exist
+2021-11-22 22:18:22.027136 +0000 build-fedora4: repo_base_var="LINUX_REPO_${DIST//-/_}_BASEDIR"; \
+2021-11-22 22:18:22.027149 +0000 build-fedora4: if [ "desktop-linux-awesome" = linux-template-builder ]; then \
+2021-11-22 22:18:22.027159 +0000 build-fedora4: .# templates belongs to dom0 repository, even though PACKAGE_SET=vm
+2021-11-22 22:18:22.027195 +0000 build-fedora4: repo_base_var="LINUX_REPO__BASEDIR"; \
+2021-11-22 22:18:22.027202 +0000 build-fedora4: fi; \
+2021-11-22 22:18:22.027209 +0000 build-fedora4: if [ -n "${!repo_base_var}" ]; then \
+2021-11-22 22:18:22.027217 +0000 build-fedora4: .repo_basedir="${!repo_base_var}"; \
+2021-11-22 22:18:22.027223 +0000 build-fedora4: else \
+2021-11-22 22:18:22.027231 +0000 build-fedora4: .repo_basedir="qubes-src/linux-yum/r4.1"; \
+2021-11-22 22:18:22.027236 +0000 build-fedora4: fi; \
+2021-11-22 22:18:22.027245 +0000 build-fedora4: if [ -r qubes-src/desktop-linux-awesome/Makefile.builder ]; then \
+2021-11-22 22:18:22.027254 +0000 build-fedora4: .echo -n "Updating qubes-src/desktop-linux-awesome... "; \
+2021-11-22 22:18:22.027261 +0000 build-fedora4: .if [ "0" -eq 1 ]; then \
+2021-11-22 22:18:22.027271 +0000 build-fedora4: ..vtag=`git -C qubes-src/desktop-linux-awesome tag --points-at HEAD --list v*`; \
+2021-11-22 22:18:22.027278 +0000 build-fedora4: ..if [ -z "$vtag" ]; then \
+2021-11-22 22:18:22.027285 +0000 build-fedora4: ...echo "no version tag"; \
+2021-11-22 22:18:22.027291 +0000 build-fedora4: ...exit 0; \
+2021-11-22 22:18:22.027314 +0000 build-fedora4: ..fi; \
+2021-11-22 22:18:22.027321 +0000 build-fedora4: .fi; \
+2021-11-22 22:18:22.027330 +0000 build-fedora4: .if [ "desktop-linux-awesome" = linux-template-builder ]; then
+2021-11-22 22:18:22.027341 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc32 template-name)
+2021-11-22 22:18:22.027346 +0000 build-fedora4: fi
+2021-11-22 22:18:22.027366 +0000 build-fedora4: component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc32 PACKAGE_SET=vm COMPONENT=`basename qubes-src/desktop-linux-awesome` UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc32 get-var GET_VAR=PACKAGE_LIST); \
+2021-11-22 22:18:22.027375 +0000 build-fedora4: .if [ -z "$component_packages" ]; then \
+2021-11-22 22:18:22.027382 +0000 build-fedora4: ..echo "no packages."; \
+2021-11-22 22:18:22.027388 +0000 build-fedora4: ..exit 0; \
+2021-11-22 22:18:22.027393 +0000 build-fedora4: .fi; \
+2021-11-22 22:18:22.027401 +0000 build-fedora4: .make -s -f Makefile.generic DIST=fc32 PACKAGE_SET=vm \
+2021-11-22 22:18:22.027410 +0000 build-fedora4: ..COMPONENT=`basename qubes-src/desktop-linux-awesome` \
+2021-11-22 22:18:22.027417 +0000 build-fedora4: ..SNAPSHOT_REPO=current-testing \
+2021-11-22 22:18:22.027424 +0000 build-fedora4: ..TARGET_REPO=current-testing \
+2021-11-22 22:18:22.027433 +0000 build-fedora4: ..UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc32 \
+2021-11-22 22:18:22.027447 +0000 build-fedora4: ..SNAPSHOT_FILE=/home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-fc32-`basename qubes-src/desktop-linux-awesome` \
+2021-11-22 22:18:22.027458 +0000 build-fedora4: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2021-11-22_21-58-18 \
+2021-11-22 22:18:22.027468 +0000 build-fedora4: ..update-repo || exit 1; \
+2021-11-22 22:18:22.027479 +0000 build-fedora4: elif make -C qubes-src/desktop-linux-awesome -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2021-11-22 22:18:22.027488 +0000 build-fedora4: .echo "Updating qubes-src/desktop-linux-awesome... "; \
+2021-11-22 22:18:22.027498 +0000 build-fedora4: .DIST=fc32 UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc32 \
+2021-11-22 22:18:22.027507 +0000 build-fedora4: .make -s -C qubes-src/desktop-linux-awesome update-repo-current-testing || exit 1; \
+2021-11-22 22:18:22.027513 +0000 build-fedora4: else \
+2021-11-22 22:18:22.027522 +0000 build-fedora4: .echo -n "Updating qubes-src/desktop-linux-awesome... skipping."; \
+2021-11-22 22:18:22.027527 +0000 build-fedora4: fi; \
+2021-11-22 22:18:22.027532 +0000 build-fedora4: echo
+2021-11-22 22:18:22.178627 +0000 build-fedora4: Updating qubes-src/desktop-linux-awesome... /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:176: target 'update-repo-do' does not exist
+2021-11-22 22:18:22.178691 +0000 build-fedora4: mkdir -p /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/fc32/rpm
+2021-11-22 22:18:22.225758 +0000 build-fedora4: if [ -n "pkgs/vm-fc32/awesome-4.3-12.fc32.src.rpm pkgs/vm-fc32/awesome-4.3-12.fc32.x86_64.rpm pkgs/vm-fc32/awesome-debuginfo-4.3-12.fc32.x86_64.rpm pkgs/vm-fc32/awesome-debugsource-4.3-12.fc32.x86_64.rpm pkgs/vm-fc32/awesome-doc-4.3-12.fc32.noarch.rpm pkgs/vm-fc32/awesome-4.3-12.fc32.x86_64.buildinfo" ]; then \
+2021-11-22 22:18:22.225825 +0000 build-fedora4: .cd qubes-src/desktop-linux-awesome && ln -f pkgs/vm-fc32/awesome-4.3-12.fc32.src.rpm pkgs/vm-fc32/awesome-4.3-12.fc32.x86_64.rpm pkgs/vm-fc32/awesome-debuginfo-4.3-12.fc32.x86_64.rpm pkgs/vm-fc32/awesome-debugsource-4.3-12.fc32.x86_64.rpm pkgs/vm-fc32/awesome-doc-4.3-12.fc32.noarch.rpm pkgs/vm-fc32/awesome-4.3-12.fc32.x86_64.buildinfo  /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/fc32/rpm/; \
+2021-11-22 22:18:22.225835 +0000 build-fedora4: else \
+2021-11-22 22:18:22.225847 +0000 build-fedora4: .echo "`tput bold`No packages defined by awesome.spec, syntax error?`tput sgr0`"; \
+2021-11-22 22:18:22.225871 +0000 build-fedora4: .exit 1; \
+2021-11-22 22:18:22.225878 +0000 build-fedora4: fi
+2021-11-22 22:18:22.248693 +0000 build-fedora4: cd qubes-src/desktop-linux-awesome && echo pkgs/vm-fc32/awesome-4.3-12.fc32.src.rpm pkgs/vm-fc32/awesome-4.3-12.fc32.x86_64.rpm pkgs/vm-fc32/awesome-debuginfo-4.3-12.fc32.x86_64.rpm pkgs/vm-fc32/awesome-debugsource-4.3-12.fc32.x86_64.rpm pkgs/vm-fc32/awesome-doc-4.3-12.fc32.noarch.rpm pkgs/vm-fc32/awesome-4.3-12.fc32.x86_64.buildinfo  > /home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-fc32-desktop-linux-awesome
+2021-11-22 22:18:22.281967 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-github//Makefile.github:18: target 'notify-github' does not exist
+2021-11-22 22:18:22.282011 +0000 build-fedora4: [ -z "awesome-4.3-12.fc32" ] || /home/user/builder-r4.1/qubes-src/builder-github//notify-issues \
+2021-11-22 22:18:22.282027 +0000 build-fedora4: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2021-11-22_21-58-18" \
+2021-11-22 22:18:22.282033 +0000 build-fedora4: .upload \
+2021-11-22 22:18:22.282040 +0000 build-fedora4: ."r4.1" \
+2021-11-22 22:18:22.282047 +0000 build-fedora4: ."qubes-src/desktop-linux-awesome" \
+2021-11-22 22:18:22.282055 +0000 build-fedora4: ."awesome-4.3-12.fc32" \
+2021-11-22 22:18:22.282061 +0000 build-fedora4: ."fc32" \
+2021-11-22 22:18:22.282066 +0000 build-fedora4: ."vm" \
+2021-11-22 22:18:22.282072 +0000 build-fedora4: ."current-testing" \
+2021-11-22 22:18:22.282082 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-desktop-linux-awesome-vm-fc32-current-testing" \
+2021-11-22 22:18:22.282092 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-desktop-linux-awesome-vm-fc32-current"
+2021-11-22 22:18:24.684556 +0000 build-fedora4: 
+2021-11-22 22:18:24.684616 +0000 build-fedora4: Makefile:834: update target 'internal-update-repo-current-testing.vm.fc32' due to: internal-update-repo-current-testing.vm.fc32.desktop-linux-awesome
+2021-11-22 22:18:24.684626 +0000 build-fedora4: true
+2021-11-22 22:18:24.684638 +0000 build-fedora4: Makefile:863: target 'internal-update-repo-current-testing.vm.fc33.desktop-linux-awesome' does not exist
+2021-11-22 22:18:24.684647 +0000 build-fedora4: repo_base_var="LINUX_REPO_${DIST//-/_}_BASEDIR"; \
+2021-11-22 22:18:24.684656 +0000 build-fedora4: if [ "desktop-linux-awesome" = linux-template-builder ]; then \
+2021-11-22 22:18:24.684665 +0000 build-fedora4: .# templates belongs to dom0 repository, even though PACKAGE_SET=vm
+2021-11-22 22:18:24.684672 +0000 build-fedora4: repo_base_var="LINUX_REPO__BASEDIR"; \
+2021-11-22 22:18:24.684678 +0000 build-fedora4: fi; \
+2021-11-22 22:18:24.684685 +0000 build-fedora4: if [ -n "${!repo_base_var}" ]; then \
+2021-11-22 22:18:24.684692 +0000 build-fedora4: .repo_basedir="${!repo_base_var}"; \
+2021-11-22 22:18:24.684697 +0000 build-fedora4: else \
+2021-11-22 22:18:24.684705 +0000 build-fedora4: .repo_basedir="qubes-src/linux-yum/r4.1"; \
+2021-11-22 22:18:24.684710 +0000 build-fedora4: fi; \
+2021-11-22 22:18:24.684719 +0000 build-fedora4: if [ -r qubes-src/desktop-linux-awesome/Makefile.builder ]; then \
+2021-11-22 22:18:24.684727 +0000 build-fedora4: .echo -n "Updating qubes-src/desktop-linux-awesome... "; \
+2021-11-22 22:18:24.684734 +0000 build-fedora4: .if [ "0" -eq 1 ]; then \
+2021-11-22 22:18:24.684744 +0000 build-fedora4: ..vtag=`git -C qubes-src/desktop-linux-awesome tag --points-at HEAD --list v*`; \
+2021-11-22 22:18:24.684751 +0000 build-fedora4: ..if [ -z "$vtag" ]; then \
+2021-11-22 22:18:24.684757 +0000 build-fedora4: ...echo "no version tag"; \
+2021-11-22 22:18:24.684763 +0000 build-fedora4: ...exit 0; \
+2021-11-22 22:18:24.684769 +0000 build-fedora4: ..fi; \
+2021-11-22 22:18:24.684774 +0000 build-fedora4: .fi; \
+2021-11-22 22:18:24.684782 +0000 build-fedora4: .if [ "desktop-linux-awesome" = linux-template-builder ]; then
+2021-11-22 22:18:24.684793 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc33 template-name)
+2021-11-22 22:18:24.684816 +0000 build-fedora4: fi
+2021-11-22 22:18:24.684837 +0000 build-fedora4: component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc33 PACKAGE_SET=vm COMPONENT=`basename qubes-src/desktop-linux-awesome` UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc33 get-var GET_VAR=PACKAGE_LIST); \
+2021-11-22 22:18:24.684846 +0000 build-fedora4: .if [ -z "$component_packages" ]; then \
+2021-11-22 22:18:24.684853 +0000 build-fedora4: ..echo "no packages."; \
+2021-11-22 22:18:24.684859 +0000 build-fedora4: ..exit 0; \
+2021-11-22 22:18:24.684864 +0000 build-fedora4: .fi; \
+2021-11-22 22:18:24.684872 +0000 build-fedora4: .make -s -f Makefile.generic DIST=fc33 PACKAGE_SET=vm \
+2021-11-22 22:18:24.684880 +0000 build-fedora4: ..COMPONENT=`basename qubes-src/desktop-linux-awesome` \
+2021-11-22 22:18:24.684887 +0000 build-fedora4: ..SNAPSHOT_REPO=current-testing \
+2021-11-22 22:18:24.684894 +0000 build-fedora4: ..TARGET_REPO=current-testing \
+2021-11-22 22:18:24.684903 +0000 build-fedora4: ..UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc33 \
+2021-11-22 22:18:24.684916 +0000 build-fedora4: ..SNAPSHOT_FILE=/home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-fc33-`basename qubes-src/desktop-linux-awesome` \
+2021-11-22 22:18:24.684927 +0000 build-fedora4: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2021-11-22_22-02-36 \
+2021-11-22 22:18:24.684934 +0000 build-fedora4: ..update-repo || exit 1; \
+2021-11-22 22:18:24.684945 +0000 build-fedora4: elif make -C qubes-src/desktop-linux-awesome -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2021-11-22 22:18:24.684953 +0000 build-fedora4: .echo "Updating qubes-src/desktop-linux-awesome... "; \
+2021-11-22 22:18:24.684963 +0000 build-fedora4: .DIST=fc33 UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc33 \
+2021-11-22 22:18:24.684972 +0000 build-fedora4: .make -s -C qubes-src/desktop-linux-awesome update-repo-current-testing || exit 1; \
+2021-11-22 22:18:24.684978 +0000 build-fedora4: else \
+2021-11-22 22:18:24.684987 +0000 build-fedora4: .echo -n "Updating qubes-src/desktop-linux-awesome... skipping."; \
+2021-11-22 22:18:24.684992 +0000 build-fedora4: fi; \
+2021-11-22 22:18:24.684997 +0000 build-fedora4: echo
+2021-11-22 22:18:24.770244 +0000 build-fedora4: Updating qubes-src/desktop-linux-awesome... /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:176: target 'update-repo-do' does not exist
+2021-11-22 22:18:24.770292 +0000 build-fedora4: mkdir -p /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/fc33/rpm
+2021-11-22 22:18:24.797642 +0000 build-fedora4: if [ -n "pkgs/vm-fc33/awesome-4.3-12.fc33.src.rpm pkgs/vm-fc33/awesome-4.3-12.fc33.x86_64.rpm pkgs/vm-fc33/awesome-debuginfo-4.3-12.fc33.x86_64.rpm pkgs/vm-fc33/awesome-debugsource-4.3-12.fc33.x86_64.rpm pkgs/vm-fc33/awesome-doc-4.3-12.fc33.noarch.rpm pkgs/vm-fc33/awesome-4.3-12.fc33.x86_64.buildinfo" ]; then \
+2021-11-22 22:18:24.797705 +0000 build-fedora4: .cd qubes-src/desktop-linux-awesome && ln -f pkgs/vm-fc33/awesome-4.3-12.fc33.src.rpm pkgs/vm-fc33/awesome-4.3-12.fc33.x86_64.rpm pkgs/vm-fc33/awesome-debuginfo-4.3-12.fc33.x86_64.rpm pkgs/vm-fc33/awesome-debugsource-4.3-12.fc33.x86_64.rpm pkgs/vm-fc33/awesome-doc-4.3-12.fc33.noarch.rpm pkgs/vm-fc33/awesome-4.3-12.fc33.x86_64.buildinfo  /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/fc33/rpm/; \
+2021-11-22 22:18:24.797715 +0000 build-fedora4: else \
+2021-11-22 22:18:24.797727 +0000 build-fedora4: .echo "`tput bold`No packages defined by awesome.spec, syntax error?`tput sgr0`"; \
+2021-11-22 22:18:24.797733 +0000 build-fedora4: .exit 1; \
+2021-11-22 22:18:24.797739 +0000 build-fedora4: fi
+2021-11-22 22:18:24.807010 +0000 build-fedora4: cd qubes-src/desktop-linux-awesome && echo pkgs/vm-fc33/awesome-4.3-12.fc33.src.rpm pkgs/vm-fc33/awesome-4.3-12.fc33.x86_64.rpm pkgs/vm-fc33/awesome-debuginfo-4.3-12.fc33.x86_64.rpm pkgs/vm-fc33/awesome-debugsource-4.3-12.fc33.x86_64.rpm pkgs/vm-fc33/awesome-doc-4.3-12.fc33.noarch.rpm pkgs/vm-fc33/awesome-4.3-12.fc33.x86_64.buildinfo  > /home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-fc33-desktop-linux-awesome
+2021-11-22 22:18:24.826973 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-github//Makefile.github:18: target 'notify-github' does not exist
+2021-11-22 22:18:24.827013 +0000 build-fedora4: [ -z "awesome-4.3-12.fc33" ] || /home/user/builder-r4.1/qubes-src/builder-github//notify-issues \
+2021-11-22 22:18:24.827028 +0000 build-fedora4: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2021-11-22_22-02-36" \
+2021-11-22 22:18:24.827035 +0000 build-fedora4: .upload \
+2021-11-22 22:18:24.827042 +0000 build-fedora4: ."r4.1" \
+2021-11-22 22:18:24.827049 +0000 build-fedora4: ."qubes-src/desktop-linux-awesome" \
+2021-11-22 22:18:24.827056 +0000 build-fedora4: ."awesome-4.3-12.fc33" \
+2021-11-22 22:18:24.827062 +0000 build-fedora4: ."fc33" \
+2021-11-22 22:18:24.827067 +0000 build-fedora4: ."vm" \
+2021-11-22 22:18:24.827074 +0000 build-fedora4: ."current-testing" \
+2021-11-22 22:18:24.827084 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-desktop-linux-awesome-vm-fc33-current-testing" \
+2021-11-22 22:18:24.827093 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-desktop-linux-awesome-vm-fc33-current"
+2021-11-22 22:18:27.807740 +0000 build-fedora4: WARNING: message template /home/user/builder-r4.1/qubes-src/builder-github/templates/message-current-testing-vm doesn't exist, not adding comments
+2021-11-22 22:18:27.821628 +0000 build-fedora4: 
+2021-11-22 22:18:27.821681 +0000 build-fedora4: Makefile:834: update target 'internal-update-repo-current-testing.vm.fc33' due to: internal-update-repo-current-testing.vm.fc33.desktop-linux-awesome
+2021-11-22 22:18:27.821691 +0000 build-fedora4: true
+2021-11-22 22:18:27.823147 +0000 build-fedora4: Makefile:863: target 'internal-update-repo-current-testing.vm.fc34.desktop-linux-awesome' does not exist
+2021-11-22 22:18:27.823208 +0000 build-fedora4: repo_base_var="LINUX_REPO_${DIST//-/_}_BASEDIR"; \
+2021-11-22 22:18:27.823219 +0000 build-fedora4: if [ "desktop-linux-awesome" = linux-template-builder ]; then \
+2021-11-22 22:18:27.823229 +0000 build-fedora4: .# templates belongs to dom0 repository, even though PACKAGE_SET=vm
+2021-11-22 22:18:27.823237 +0000 build-fedora4: repo_base_var="LINUX_REPO__BASEDIR"; \
+2021-11-22 22:18:27.823243 +0000 build-fedora4: fi; \
+2021-11-22 22:18:27.823251 +0000 build-fedora4: if [ -n "${!repo_base_var}" ]; then \
+2021-11-22 22:18:27.823258 +0000 build-fedora4: .repo_basedir="${!repo_base_var}"; \
+2021-11-22 22:18:27.823264 +0000 build-fedora4: else \
+2021-11-22 22:18:27.823272 +0000 build-fedora4: .repo_basedir="qubes-src/linux-yum/r4.1"; \
+2021-11-22 22:18:27.823277 +0000 build-fedora4: fi; \
+2021-11-22 22:18:27.823286 +0000 build-fedora4: if [ -r qubes-src/desktop-linux-awesome/Makefile.builder ]; then \
+2021-11-22 22:18:27.823294 +0000 build-fedora4: .echo -n "Updating qubes-src/desktop-linux-awesome... "; \
+2021-11-22 22:18:27.823301 +0000 build-fedora4: .if [ "0" -eq 1 ]; then \
+2021-11-22 22:18:27.823311 +0000 build-fedora4: ..vtag=`git -C qubes-src/desktop-linux-awesome tag --points-at HEAD --list v*`; \
+2021-11-22 22:18:27.823318 +0000 build-fedora4: ..if [ -z "$vtag" ]; then \
+2021-11-22 22:18:27.823325 +0000 build-fedora4: ...echo "no version tag"; \
+2021-11-22 22:18:27.823331 +0000 build-fedora4: ...exit 0; \
+2021-11-22 22:18:27.823337 +0000 build-fedora4: ..fi; \
+2021-11-22 22:18:27.823342 +0000 build-fedora4: .fi; \
+2021-11-22 22:18:27.823351 +0000 build-fedora4: .if [ "desktop-linux-awesome" = linux-template-builder ]; then
+2021-11-22 22:18:27.823361 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc34 template-name)
+2021-11-22 22:18:27.823383 +0000 build-fedora4: fi
+2021-11-22 22:18:27.823404 +0000 build-fedora4: component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc34 PACKAGE_SET=vm COMPONENT=`basename qubes-src/desktop-linux-awesome` UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc34 get-var GET_VAR=PACKAGE_LIST); \
+2021-11-22 22:18:27.823412 +0000 build-fedora4: .if [ -z "$component_packages" ]; then \
+2021-11-22 22:18:27.823419 +0000 build-fedora4: ..echo "no packages."; \
+2021-11-22 22:18:27.823425 +0000 build-fedora4: ..exit 0; \
+2021-11-22 22:18:27.823431 +0000 build-fedora4: .fi; \
+2021-11-22 22:18:27.823439 +0000 build-fedora4: .make -s -f Makefile.generic DIST=fc34 PACKAGE_SET=vm \
+2021-11-22 22:18:27.823450 +0000 build-fedora4: ..COMPONENT=`basename qubes-src/desktop-linux-awesome` \
+2021-11-22 22:18:27.823457 +0000 build-fedora4: ..SNAPSHOT_REPO=current-testing \
+2021-11-22 22:18:27.823464 +0000 build-fedora4: ..TARGET_REPO=current-testing \
+2021-11-22 22:18:27.823473 +0000 build-fedora4: ..UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc34 \
+2021-11-22 22:18:27.823486 +0000 build-fedora4: ..SNAPSHOT_FILE=/home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-fc34-`basename qubes-src/desktop-linux-awesome` \
+2021-11-22 22:18:27.823498 +0000 build-fedora4: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2021-11-22_22-09-14 \
+2021-11-22 22:18:27.823505 +0000 build-fedora4: ..update-repo || exit 1; \
+2021-11-22 22:18:27.823516 +0000 build-fedora4: elif make -C qubes-src/desktop-linux-awesome -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2021-11-22 22:18:27.823524 +0000 build-fedora4: .echo "Updating qubes-src/desktop-linux-awesome... "; \
+2021-11-22 22:18:27.823534 +0000 build-fedora4: .DIST=fc34 UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc34 \
+2021-11-22 22:18:27.823544 +0000 build-fedora4: .make -s -C qubes-src/desktop-linux-awesome update-repo-current-testing || exit 1; \
+2021-11-22 22:18:27.823550 +0000 build-fedora4: else \
+2021-11-22 22:18:27.823559 +0000 build-fedora4: .echo -n "Updating qubes-src/desktop-linux-awesome... skipping."; \
+2021-11-22 22:18:27.823564 +0000 build-fedora4: fi; \
+2021-11-22 22:18:27.823569 +0000 build-fedora4: echo
+2021-11-22 22:18:27.884965 +0000 build-fedora4: Updating qubes-src/desktop-linux-awesome... /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:176: target 'update-repo-do' does not exist
+2021-11-22 22:18:27.885016 +0000 build-fedora4: mkdir -p /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/fc34/rpm
+2021-11-22 22:18:27.905607 +0000 build-fedora4: if [ -n "pkgs/vm-fc34/awesome-4.3-12.fc34.src.rpm pkgs/vm-fc34/awesome-4.3-12.fc34.x86_64.rpm pkgs/vm-fc34/awesome-debuginfo-4.3-12.fc34.x86_64.rpm pkgs/vm-fc34/awesome-debugsource-4.3-12.fc34.x86_64.rpm pkgs/vm-fc34/awesome-doc-4.3-12.fc34.noarch.rpm pkgs/vm-fc34/awesome-4.3-12.fc34.x86_64.buildinfo" ]; then \
+2021-11-22 22:18:27.905677 +0000 build-fedora4: .cd qubes-src/desktop-linux-awesome && ln -f pkgs/vm-fc34/awesome-4.3-12.fc34.src.rpm pkgs/vm-fc34/awesome-4.3-12.fc34.x86_64.rpm pkgs/vm-fc34/awesome-debuginfo-4.3-12.fc34.x86_64.rpm pkgs/vm-fc34/awesome-debugsource-4.3-12.fc34.x86_64.rpm pkgs/vm-fc34/awesome-doc-4.3-12.fc34.noarch.rpm pkgs/vm-fc34/awesome-4.3-12.fc34.x86_64.buildinfo  /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/fc34/rpm/; \
+2021-11-22 22:18:27.905687 +0000 build-fedora4: else \
+2021-11-22 22:18:27.905699 +0000 build-fedora4: .echo "`tput bold`No packages defined by awesome.spec, syntax error?`tput sgr0`"; \
+2021-11-22 22:18:27.905706 +0000 build-fedora4: .exit 1; \
+2021-11-22 22:18:27.905711 +0000 build-fedora4: fi
+2021-11-22 22:18:27.909146 +0000 build-fedora4: cd qubes-src/desktop-linux-awesome && echo pkgs/vm-fc34/awesome-4.3-12.fc34.src.rpm pkgs/vm-fc34/awesome-4.3-12.fc34.x86_64.rpm pkgs/vm-fc34/awesome-debuginfo-4.3-12.fc34.x86_64.rpm pkgs/vm-fc34/awesome-debugsource-4.3-12.fc34.x86_64.rpm pkgs/vm-fc34/awesome-doc-4.3-12.fc34.noarch.rpm pkgs/vm-fc34/awesome-4.3-12.fc34.x86_64.buildinfo  > /home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-fc34-desktop-linux-awesome
+2021-11-22 22:18:27.921967 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-github//Makefile.github:18: target 'notify-github' does not exist
+2021-11-22 22:18:27.922015 +0000 build-fedora4: [ -z "awesome-4.3-12.fc34" ] || /home/user/builder-r4.1/qubes-src/builder-github//notify-issues \
+2021-11-22 22:18:27.922030 +0000 build-fedora4: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2021-11-22_22-09-14" \
+2021-11-22 22:18:27.922037 +0000 build-fedora4: .upload \
+2021-11-22 22:18:27.922044 +0000 build-fedora4: ."r4.1" \
+2021-11-22 22:18:27.922051 +0000 build-fedora4: ."qubes-src/desktop-linux-awesome" \
+2021-11-22 22:18:27.922059 +0000 build-fedora4: ."awesome-4.3-12.fc34" \
+2021-11-22 22:18:27.922065 +0000 build-fedora4: ."fc34" \
+2021-11-22 22:18:27.922070 +0000 build-fedora4: ."vm" \
+2021-11-22 22:18:27.922077 +0000 build-fedora4: ."current-testing" \
+2021-11-22 22:18:27.922087 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-desktop-linux-awesome-vm-fc34-current-testing" \
+2021-11-22 22:18:27.922097 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-desktop-linux-awesome-vm-fc34-current"
+2021-11-22 22:18:30.463355 +0000 build-fedora4: WARNING: message template /home/user/builder-r4.1/qubes-src/builder-github/templates/message-current-testing-vm doesn't exist, not adding comments
+2021-11-22 22:18:30.479083 +0000 build-fedora4: 
+2021-11-22 22:18:30.479137 +0000 build-fedora4: Makefile:834: update target 'internal-update-repo-current-testing.vm.fc34' due to: internal-update-repo-current-testing.vm.fc34.desktop-linux-awesome
+2021-11-22 22:18:30.479147 +0000 build-fedora4: true
+2021-11-22 22:18:30.480604 +0000 build-fedora4: Makefile:863: target 'internal-update-repo-current-testing.vm.fc35.desktop-linux-awesome' does not exist
+2021-11-22 22:18:30.480645 +0000 build-fedora4: repo_base_var="LINUX_REPO_${DIST//-/_}_BASEDIR"; \
+2021-11-22 22:18:30.480655 +0000 build-fedora4: if [ "desktop-linux-awesome" = linux-template-builder ]; then \
+2021-11-22 22:18:30.480665 +0000 build-fedora4: .# templates belongs to dom0 repository, even though PACKAGE_SET=vm
+2021-11-22 22:18:30.480673 +0000 build-fedora4: repo_base_var="LINUX_REPO__BASEDIR"; \
+2021-11-22 22:18:30.480679 +0000 build-fedora4: fi; \
+2021-11-22 22:18:30.480686 +0000 build-fedora4: if [ -n "${!repo_base_var}" ]; then \
+2021-11-22 22:18:30.480693 +0000 build-fedora4: .repo_basedir="${!repo_base_var}"; \
+2021-11-22 22:18:30.480699 +0000 build-fedora4: else \
+2021-11-22 22:18:30.480706 +0000 build-fedora4: .repo_basedir="qubes-src/linux-yum/r4.1"; \
+2021-11-22 22:18:30.480712 +0000 build-fedora4: fi; \
+2021-11-22 22:18:30.480720 +0000 build-fedora4: if [ -r qubes-src/desktop-linux-awesome/Makefile.builder ]; then \
+2021-11-22 22:18:30.480729 +0000 build-fedora4: .echo -n "Updating qubes-src/desktop-linux-awesome... "; \
+2021-11-22 22:18:30.480735 +0000 build-fedora4: .if [ "0" -eq 1 ]; then \
+2021-11-22 22:18:30.480745 +0000 build-fedora4: ..vtag=`git -C qubes-src/desktop-linux-awesome tag --points-at HEAD --list v*`; \
+2021-11-22 22:18:30.480753 +0000 build-fedora4: ..if [ -z "$vtag" ]; then \
+2021-11-22 22:18:30.480759 +0000 build-fedora4: ...echo "no version tag"; \
+2021-11-22 22:18:30.480765 +0000 build-fedora4: ...exit 0; \
+2021-11-22 22:18:30.480771 +0000 build-fedora4: ..fi; \
+2021-11-22 22:18:30.480776 +0000 build-fedora4: .fi; \
+2021-11-22 22:18:30.480785 +0000 build-fedora4: .if [ "desktop-linux-awesome" = linux-template-builder ]; then
+2021-11-22 22:18:30.480795 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc35 template-name)
+2021-11-22 22:18:30.480818 +0000 build-fedora4: fi
+2021-11-22 22:18:30.480839 +0000 build-fedora4: component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc35 PACKAGE_SET=vm COMPONENT=`basename qubes-src/desktop-linux-awesome` UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc35 get-var GET_VAR=PACKAGE_LIST); \
+2021-11-22 22:18:30.480848 +0000 build-fedora4: .if [ -z "$component_packages" ]; then \
+2021-11-22 22:18:30.480855 +0000 build-fedora4: ..echo "no packages."; \
+2021-11-22 22:18:30.480861 +0000 build-fedora4: ..exit 0; \
+2021-11-22 22:18:30.480866 +0000 build-fedora4: .fi; \
+2021-11-22 22:18:30.480874 +0000 build-fedora4: .make -s -f Makefile.generic DIST=fc35 PACKAGE_SET=vm \
+2021-11-22 22:18:30.480883 +0000 build-fedora4: ..COMPONENT=`basename qubes-src/desktop-linux-awesome` \
+2021-11-22 22:18:30.480890 +0000 build-fedora4: ..SNAPSHOT_REPO=current-testing \
+2021-11-22 22:18:30.480897 +0000 build-fedora4: ..TARGET_REPO=current-testing \
+2021-11-22 22:18:30.480906 +0000 build-fedora4: ..UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc35 \
+2021-11-22 22:18:30.480919 +0000 build-fedora4: ..SNAPSHOT_FILE=/home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-fc35-`basename qubes-src/desktop-linux-awesome` \
+2021-11-22 22:18:30.480930 +0000 build-fedora4: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2021-11-22_22-13-30 \
+2021-11-22 22:18:30.480937 +0000 build-fedora4: ..update-repo || exit 1; \
+2021-11-22 22:18:30.480948 +0000 build-fedora4: elif make -C qubes-src/desktop-linux-awesome -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2021-11-22 22:18:30.480956 +0000 build-fedora4: .echo "Updating qubes-src/desktop-linux-awesome... "; \
+2021-11-22 22:18:30.480966 +0000 build-fedora4: .DIST=fc35 UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc35 \
+2021-11-22 22:18:30.480976 +0000 build-fedora4: .make -s -C qubes-src/desktop-linux-awesome update-repo-current-testing || exit 1; \
+2021-11-22 22:18:30.480981 +0000 build-fedora4: else \
+2021-11-22 22:18:30.480990 +0000 build-fedora4: .echo -n "Updating qubes-src/desktop-linux-awesome... skipping."; \
+2021-11-22 22:18:30.480996 +0000 build-fedora4: fi; \
+2021-11-22 22:18:30.481001 +0000 build-fedora4: echo
+2021-11-22 22:18:30.540977 +0000 build-fedora4: Updating qubes-src/desktop-linux-awesome... /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:176: target 'update-repo-do' does not exist
+2021-11-22 22:18:30.541023 +0000 build-fedora4: mkdir -p /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/fc35/rpm
+2021-11-22 22:18:30.559622 +0000 build-fedora4: if [ -n "pkgs/vm-fc35/awesome-4.3-12.fc35.src.rpm pkgs/vm-fc35/awesome-4.3-12.fc35.x86_64.rpm pkgs/vm-fc35/awesome-debuginfo-4.3-12.fc35.x86_64.rpm pkgs/vm-fc35/awesome-debugsource-4.3-12.fc35.x86_64.rpm pkgs/vm-fc35/awesome-doc-4.3-12.fc35.noarch.rpm pkgs/vm-fc35/awesome-4.3-12.fc35.x86_64.buildinfo" ]; then \
+2021-11-22 22:18:30.559694 +0000 build-fedora4: .cd qubes-src/desktop-linux-awesome && ln -f pkgs/vm-fc35/awesome-4.3-12.fc35.src.rpm pkgs/vm-fc35/awesome-4.3-12.fc35.x86_64.rpm pkgs/vm-fc35/awesome-debuginfo-4.3-12.fc35.x86_64.rpm pkgs/vm-fc35/awesome-debugsource-4.3-12.fc35.x86_64.rpm pkgs/vm-fc35/awesome-doc-4.3-12.fc35.noarch.rpm pkgs/vm-fc35/awesome-4.3-12.fc35.x86_64.buildinfo  /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/fc35/rpm/; \
+2021-11-22 22:18:30.559706 +0000 build-fedora4: else \
+2021-11-22 22:18:30.559718 +0000 build-fedora4: .echo "`tput bold`No packages defined by awesome.spec, syntax error?`tput sgr0`"; \
+2021-11-22 22:18:30.559725 +0000 build-fedora4: .exit 1; \
+2021-11-22 22:18:30.559731 +0000 build-fedora4: fi
+2021-11-22 22:18:30.561815 +0000 build-fedora4: cd qubes-src/desktop-linux-awesome && echo pkgs/vm-fc35/awesome-4.3-12.fc35.src.rpm pkgs/vm-fc35/awesome-4.3-12.fc35.x86_64.rpm pkgs/vm-fc35/awesome-debuginfo-4.3-12.fc35.x86_64.rpm pkgs/vm-fc35/awesome-debugsource-4.3-12.fc35.x86_64.rpm pkgs/vm-fc35/awesome-doc-4.3-12.fc35.noarch.rpm pkgs/vm-fc35/awesome-4.3-12.fc35.x86_64.buildinfo  > /home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-fc35-desktop-linux-awesome
+2021-11-22 22:18:30.573881 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-github//Makefile.github:18: target 'notify-github' does not exist
+2021-11-22 22:18:30.573928 +0000 build-fedora4: [ -z "awesome-4.3-12.fc35" ] || /home/user/builder-r4.1/qubes-src/builder-github//notify-issues \
+2021-11-22 22:18:30.573942 +0000 build-fedora4: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2021-11-22_22-13-30" \
+2021-11-22 22:18:30.573949 +0000 build-fedora4: .upload \
+2021-11-22 22:18:30.573956 +0000 build-fedora4: ."r4.1" \
+2021-11-22 22:18:30.573964 +0000 build-fedora4: ."qubes-src/desktop-linux-awesome" \
+2021-11-22 22:18:30.573971 +0000 build-fedora4: ."awesome-4.3-12.fc35" \
+2021-11-22 22:18:30.573977 +0000 build-fedora4: ."fc35" \
+2021-11-22 22:18:30.573982 +0000 build-fedora4: ."vm" \
+2021-11-22 22:18:30.573989 +0000 build-fedora4: ."current-testing" \
+2021-11-22 22:18:30.573999 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-desktop-linux-awesome-vm-fc35-current-testing" \
+2021-11-22 22:18:30.574008 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-desktop-linux-awesome-vm-fc35-current"
+2021-11-22 22:18:32.822910 +0000 build-fedora4: WARNING: message template /home/user/builder-r4.1/qubes-src/builder-github/templates/message-current-testing-vm doesn't exist, not adding comments
+2021-11-22 22:18:32.837692 +0000 build-fedora4: 
+2021-11-22 22:18:32.837749 +0000 build-fedora4: Makefile:834: update target 'internal-update-repo-current-testing.vm.fc35' due to: internal-update-repo-current-testing.vm.fc35.desktop-linux-awesome
+2021-11-22 22:18:32.837759 +0000 build-fedora4: true
+2021-11-22 22:18:32.839261 +0000 build-fedora4: Makefile:923: target 'post-update-repo-current-testing' does not exist
+2021-11-22 22:18:32.839303 +0000 build-fedora4: for dist in  fc32 fc33 fc34 fc35; do \
+2021-11-22 22:18:32.839315 +0000 build-fedora4: .repo_base_var="LINUX_REPO_${dist//-/_}_BASEDIR"; \
+2021-11-22 22:18:32.839323 +0000 build-fedora4: .if [ -n "${!repo_base_var}" ]; then \
+2021-11-22 22:18:32.839330 +0000 build-fedora4: ..repo_basedir="${!repo_base_var}"; \
+2021-11-22 22:18:32.839336 +0000 build-fedora4: .else \
+2021-11-22 22:18:32.839345 +0000 build-fedora4: ..repo_basedir="qubes-src/linux-yum/r4.1"; \
+2021-11-22 22:18:32.839350 +0000 build-fedora4: .fi; \
+2021-11-22 22:18:32.839359 +0000 build-fedora4: .repos_to_update="$repos_to_update $repo_basedir"; \
+2021-11-22 22:18:32.839364 +0000 build-fedora4: done; \
+2021-11-22 22:18:32.839370 +0000 build-fedora4: pkgset_dist= ; \
+2021-11-22 22:18:32.839377 +0000 build-fedora4: for dist in ; do \
+2021-11-22 22:18:32.839384 +0000 build-fedora4: .pkgset_dist="$pkgset_dist dom0/$dist"; \
+2021-11-22 22:18:32.839390 +0000 build-fedora4: done; \
+2021-11-22 22:18:32.839397 +0000 build-fedora4: for dist in fc32 fc33 fc34 fc35; do \
+2021-11-22 22:18:32.839404 +0000 build-fedora4: .pkgset_dist="$pkgset_dist vm/$dist"; \
+2021-11-22 22:18:32.839409 +0000 build-fedora4: done; \
+2021-11-22 22:18:32.839418 +0000 build-fedora4: for repo in `echo $repos_to_update|tr ' ' '\n'|sort|uniq`; do \
+2021-11-22 22:18:32.839425 +0000 build-fedora4: .[ -z "$repo" ] && continue; \
+2021-11-22 22:18:32.839433 +0000 build-fedora4: .[ -x "$repo/../update_repo-current-testing.sh" ] || continue; \
+2021-11-22 22:18:32.839443 +0000 build-fedora4: .(cd $repo/.. && ./update_repo-current-testing.sh r4.1 $pkgset_dist); \
+2021-11-22 22:18:32.839451 +0000 build-fedora4: done
+2021-11-22 22:18:32.848281 +0000 build-fedora4: ~/builder-r4.1/qubes-src/linux-yum ~/builder-r4.1/qubes-src/linux-yum
+2021-11-22 22:18:32.851660 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc32...
+2021-11-22 22:18:32.893325 +0000 build-fedora4: warning: Found bdb Packages database while attempting sqlite backend: using bdb backend.
+2021-11-22 22:18:34.315119 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc33...
+2021-11-22 22:18:34.343398 +0000 build-fedora4: warning: Found bdb Packages database while attempting sqlite backend: using bdb backend.
+2021-11-22 22:18:35.897903 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc34...
+2021-11-22 22:18:35.929375 +0000 build-fedora4: warning: Found bdb Packages database while attempting sqlite backend: using bdb backend.
+2021-11-22 22:18:37.502833 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc35...
+2021-11-22 22:18:37.529220 +0000 build-fedora4: warning: Found bdb Packages database while attempting sqlite backend: using bdb backend.
+2021-11-22 22:18:39.043505 +0000 build-fedora4: Done.
+2021-11-22 22:18:39.049098 +0000 build-fedora4: ~/builder-r4.1/qubes-src/linux-yum ~/builder-r4.1/qubes-src/linux-yum
+2021-11-22 22:18:39.050592 +0000 build-fedora4: Syncing r4.1...
+2021-11-22 22:18:40.762617 +0000 build-fedora4: sending incremental file list
+2021-11-22 22:18:41.134329 +0000 build-fedora4: .d..t...... fc32/
+2021-11-22 22:18:41.134381 +0000 build-fedora4: .d..t...... fc32/repodata/
+2021-11-22 22:18:41.134395 +0000 build-fedora4: <f..t...... fc32/repodata/0a4d9ec5911f793f87955cf8bbc866b0c930c8f9aa2384ec29cc1f360a31da93-comps.xml.gz
+2021-11-22 22:18:41.134640 +0000 build-fedora4: .            700   8%    0.00kB/s    0:00:00  .          8,416 100%    7.36MB/s    0:00:00 (xfr#1, to-chk=521/527)
+2021-11-22 22:18:41.134690 +0000 build-fedora4: <f+++++++++ fc32/repodata/389583739c025adec165febe74b93bf7bdc86b358fed8582fb3580a2722bc6db-other.xml.gz
+2021-11-22 22:18:41.134761 +0000 build-fedora4: .         26,687 100%   25.45MB/s    0:00:00  .         26,687 100%   25.45MB/s    0:00:00 (xfr#2, to-chk=520/527)
+2021-11-22 22:18:41.134810 +0000 build-fedora4: <f..t...... fc32/repodata/397e43a81ad38941589caaed70c4fabc438fb360cee27a55821a1db270bacaa3-comps.xml
+2021-11-22 22:18:41.135140 +0000 build-fedora4: .            700   2%  683.59kB/s    0:00:00  .         25,819 100%   24.62MB/s    0:00:00 (xfr#3, to-chk=519/527)
+2021-11-22 22:18:41.135188 +0000 build-fedora4: <f+++++++++ fc32/repodata/3a71fdf4fbad508422927d69e7800a9cf2efcb6c397c4918a6f461cf9dfbe520-other.sqlite.bz2
+2021-11-22 22:18:41.135251 +0000 build-fedora4: .         32,768  65%   31.25MB/s    0:00:00  .         49,958 100%   47.64MB/s    0:00:00 (xfr#4, to-chk=518/527)
+2021-11-22 22:18:41.135264 +0000 build-fedora4: <f+++++++++ fc32/repodata/87e3e6b10d81612f906b44e71be3ab84a001788666591c4f18fdbd9f4820eb25-primary.xml.gz
+2021-11-22 22:18:41.135446 +0000 build-fedora4: .         32,768  76%   31.25MB/s    0:00:00  .         42,818 100%   40.83MB/s    0:00:00 (xfr#5, to-chk=517/527)
+2021-11-22 22:18:41.135467 +0000 build-fedora4: <f+++++++++ fc32/repodata/8e83a7e41137a6dfa68d0bdb35481c3d8a281b0614eaa38d6b4fe7ef2e4fa929-filelists.sqlite.bz2
+2021-11-22 22:18:41.135808 +0000 build-fedora4: .         32,768  27%   31.25MB/s    0:00:00  .        117,350 100%  111.91MB/s    0:00:00 (xfr#6, to-chk=516/527)
+2021-11-22 22:18:41.135834 +0000 build-fedora4: <f+++++++++ fc32/repodata/9ed18cf082c7d23a41d9ad9027a08cb83a840f38ff32643749efb856bdf13daa-filelists.xml.gz
+2021-11-22 22:18:41.136463 +0000 build-fedora4: .         32,768  32%   31.25MB/s    0:00:00  .        102,164 100%   97.43MB/s    0:00:00 (xfr#7, to-chk=515/527)
+2021-11-22 22:18:41.136494 +0000 build-fedora4: <f+++++++++ fc32/repodata/f3c24b03d6f30898f3f571af85f75c50332e0010ef8a70bca3328823def52f32-primary.sqlite.bz2
+2021-11-22 22:18:41.136782 +0000 build-fedora4: .         32,768  39%   15.62MB/s    0:00:00  .         82,942 100%   39.55MB/s    0:00:00 (xfr#8, to-chk=514/527)
+2021-11-22 22:18:41.136858 +0000 build-fedora4: <f.st...... fc32/repodata/repomd.xml
+2021-11-22 22:18:41.136905 +0000 build-fedora4: .          3,853 100%    1.84MB/s    0:00:00  .          3,853 100%    1.84MB/s    0:00:00 (xfr#9, to-chk=513/527)
+2021-11-22 22:18:41.137003 +0000 build-fedora4: <f..t...... fc32/repodata/repomd.xml.asc
+2021-11-22 22:18:41.137049 +0000 build-fedora4: .            833 100%  406.74kB/s    0:00:00  .            833 100%  406.74kB/s    0:00:00 (xfr#10, to-chk=512/527)
+2021-11-22 22:18:41.137057 +0000 build-fedora4: .d..t...... fc32/rpm/
+2021-11-22 22:18:41.137066 +0000 build-fedora4: <f+++++++++ fc32/rpm/awesome-4.3-12.fc32.src.rpm
+2021-11-22 22:18:41.143039 +0000 build-fedora4: .         32,768   3%   15.62MB/s    0:00:00  .      1,059,448 100%  144.34MB/s    0:00:00 (xfr#11, to-chk=505/527)
+2021-11-22 22:18:41.143101 +0000 build-fedora4: <f+++++++++ fc32/rpm/awesome-4.3-12.fc32.x86_64.buildinfo
+2021-11-22 22:18:41.143117 +0000 build-fedora4: .          2,334 100%  284.91kB/s    0:00:00  .          2,334 100%  284.91kB/s    0:00:00 (xfr#12, to-chk=504/527)
+2021-11-22 22:18:41.143127 +0000 build-fedora4: <f+++++++++ fc32/rpm/awesome-4.3-12.fc32.x86_64.rpm
+2021-11-22 22:18:41.618280 +0000 build-fedora4: .         32,768   3%    3.91MB/s    0:00:00  .        949,127 100%    1.87MB/s    0:00:00 (xfr#13, to-chk=503/527)
+2021-11-22 22:18:41.618332 +0000 build-fedora4: <f+++++++++ fc32/rpm/awesome-debuginfo-4.3-12.fc32.x86_64.rpm
+2021-11-22 22:18:41.994836 +0000 build-fedora4: .         32,768   5%   56.14kB/s    0:00:09  .        551,149 100%  625.12kB/s    0:00:00 (xfr#14, to-chk=501/527)
+2021-11-22 22:18:41.994889 +0000 build-fedora4: <f+++++++++ fc32/rpm/awesome-debugsource-4.3-12.fc32.x86_64.rpm
+2021-11-22 22:18:42.071114 +0000 build-fedora4: .         32,768  24%   37.17kB/s    0:00:02  .        134,650 100%  140.34kB/s    0:00:00 (xfr#15, to-chk=499/527)
+2021-11-22 22:18:42.071231 +0000 build-fedora4: <f+++++++++ fc32/rpm/awesome-doc-4.3-12.fc32.noarch.rpm
+2021-11-22 22:18:42.323905 +0000 build-fedora4: .         32,768   7%   34.15kB/s    0:00:11  .         98,304  23%   93.48kB/s    0:00:03  .        420,834 100%  345.64kB/s    0:00:01 (xfr#16, to-chk=497/527)
+2021-11-22 22:18:45.313803 +0000 build-fedora4: sending incremental file list
+2021-11-22 22:18:45.699160 +0000 build-fedora4: .d..t...... fc33/
+2021-11-22 22:18:45.699314 +0000 build-fedora4: .d..t...... fc33/repodata/
+2021-11-22 22:18:45.699405 +0000 build-fedora4: <f..t...... fc33/repodata/0a4d9ec5911f793f87955cf8bbc866b0c930c8f9aa2384ec29cc1f360a31da93-comps.xml.gz
+2021-11-22 22:18:45.699433 +0000 build-fedora4: .            700   8%    0.00kB/s    0:00:00  .          8,416 100%    7.36MB/s    0:00:00 (xfr#1, to-chk=409/415)
+2021-11-22 22:18:45.699478 +0000 build-fedora4: <f..t...... fc33/repodata/397e43a81ad38941589caaed70c4fabc438fb360cee27a55821a1db270bacaa3-comps.xml
+2021-11-22 22:18:45.699790 +0000 build-fedora4: .            700   2%  683.59kB/s    0:00:00  .         25,819 100%   24.62MB/s    0:00:00 (xfr#2, to-chk=408/415)
+2021-11-22 22:18:45.699814 +0000 build-fedora4: <f+++++++++ fc33/repodata/88a4ed04b12ddc0d0bcaca49186842dbd63a8b08907ebad4d5f90fc62e1e21bd-primary.sqlite.bz2
+2021-11-22 22:18:45.700283 +0000 build-fedora4: .         32,768  41%   31.25MB/s    0:00:00  .         79,566 100%   75.88MB/s    0:00:00 (xfr#3, to-chk=407/415)
+2021-11-22 22:18:45.700368 +0000 build-fedora4: <f+++++++++ fc33/repodata/b1eaad35c04f08be60b663b44c8042f32325c21ae1ca0be7ccd8f9bc4e023fff-filelists.sqlite.bz2
+2021-11-22 22:18:45.700391 +0000 build-fedora4: .         32,768  35%   31.25MB/s    0:00:00  .         92,520 100%   88.23MB/s    0:00:00 (xfr#4, to-chk=406/415)
+2021-11-22 22:18:45.700405 +0000 build-fedora4: <f+++++++++ fc33/repodata/b6bd5174ed5ff14e3372b6ab89daba3c78a227a4b7de082bf9ea31c4c1cc951c-filelists.xml.gz
+2021-11-22 22:18:45.700887 +0000 build-fedora4: .         32,768  44%   31.25MB/s    0:00:00  .         74,305 100%   70.86MB/s    0:00:00 (xfr#5, to-chk=405/415)
+2021-11-22 22:18:45.700921 +0000 build-fedora4: <f+++++++++ fc33/repodata/c2f26e440698167b77553c23ba21ee9b42a95582abaf8617974b1980482d10a3-other.sqlite.bz2
+2021-11-22 22:18:45.701126 +0000 build-fedora4: .         32,768  69%   31.25MB/s    0:00:00  .         46,831 100%   44.66MB/s    0:00:00 (xfr#6, to-chk=404/415)
+2021-11-22 22:18:45.701151 +0000 build-fedora4: <f+++++++++ fc33/repodata/eacc0e0ecaa121fa504edf9d831c222f0849ea24a8d223ee36690d03b0763110-primary.xml.gz
+2021-11-22 22:18:45.701345 +0000 build-fedora4: .         32,768  81%   31.25MB/s    0:00:00  .         40,141 100%   19.14MB/s    0:00:00 (xfr#7, to-chk=403/415)
+2021-11-22 22:18:45.701424 +0000 build-fedora4: <f+++++++++ fc33/repodata/ebcea0a55ebb921a470e4cec98afc80dcd4e54ad409a9d7853b35108ab53c637-other.xml.gz
+2021-11-22 22:18:45.701478 +0000 build-fedora4: .         24,582 100%   11.72MB/s    0:00:00  .         24,582 100%   11.72MB/s    0:00:00 (xfr#8, to-chk=402/415)
+2021-11-22 22:18:45.701495 +0000 build-fedora4: <f.st...... fc33/repodata/repomd.xml
+2021-11-22 22:18:45.701875 +0000 build-fedora4: .          3,850 100%    1.84MB/s    0:00:00  .          3,850 100%    1.84MB/s    0:00:00 (xfr#9, to-chk=401/415)
+2021-11-22 22:18:45.701900 +0000 build-fedora4: <f..t...... fc33/repodata/repomd.xml.asc
+2021-11-22 22:18:45.701921 +0000 build-fedora4: .            833 100%  406.74kB/s    0:00:00  .            833 100%  406.74kB/s    0:00:00 (xfr#10, to-chk=400/415)
+2021-11-22 22:18:45.701930 +0000 build-fedora4: .d..t...... fc33/rpm/
+2021-11-22 22:18:45.701940 +0000 build-fedora4: <f+++++++++ fc33/rpm/awesome-4.3-12.fc33.src.rpm
+2021-11-22 22:18:45.707444 +0000 build-fedora4: .         32,768   3%   15.62MB/s    0:00:00  .      1,059,921 100%  144.40MB/s    0:00:00 (xfr#11, to-chk=394/415)
+2021-11-22 22:18:45.707500 +0000 build-fedora4: <f+++++++++ fc33/rpm/awesome-4.3-12.fc33.x86_64.buildinfo
+2021-11-22 22:18:45.707517 +0000 build-fedora4: .         16,389 100%    2.23MB/s    0:00:00  .         16,389 100%    2.23MB/s    0:00:00 (xfr#12, to-chk=393/415)
+2021-11-22 22:18:45.707527 +0000 build-fedora4: <f+++++++++ fc33/rpm/awesome-4.3-12.fc33.x86_64.rpm
+2021-11-22 22:18:46.167864 +0000 build-fedora4: .         32,768   3%    4.46MB/s    0:00:00  .        941,981 100%    1.92MB/s    0:00:00 (xfr#13, to-chk=392/415)
+2021-11-22 22:18:46.167924 +0000 build-fedora4: <f+++++++++ fc33/rpm/awesome-debuginfo-4.3-12.fc33.x86_64.rpm
+2021-11-22 22:18:46.472523 +0000 build-fedora4: .         32,768   6%   68.09kB/s    0:00:07  .        531,103 100%  670.10kB/s    0:00:00 (xfr#14, to-chk=390/415)
+2021-11-22 22:18:46.472570 +0000 build-fedora4: <f+++++++++ fc33/rpm/awesome-debugsource-4.3-12.fc33.x86_64.rpm
+2021-11-22 22:18:46.551960 +0000 build-fedora4: .         32,768  24%   41.29kB/s    0:00:02  .        135,202 100%  154.79kB/s    0:00:00 (xfr#15, to-chk=388/415)
+2021-11-22 22:18:46.552014 +0000 build-fedora4: <f+++++++++ fc33/rpm/awesome-doc-4.3-12.fc33.noarch.rpm
+2021-11-22 22:18:46.775095 +0000 build-fedora4: .         32,768   7%   37.51kB/s    0:00:10  .        294,912  70%  267.91kB/s    0:00:00  .        419,825 100%  381.38kB/s    0:00:01 (xfr#16, to-chk=386/415)
+2021-11-22 22:18:49.846513 +0000 build-fedora4: sending incremental file list
+2021-11-22 22:18:50.228807 +0000 build-fedora4: .d..t...... fc34/
+2021-11-22 22:18:50.228901 +0000 build-fedora4: .d..t...... fc34/repodata/
+2021-11-22 22:18:50.228926 +0000 build-fedora4: <f..t...... fc34/repodata/0a4d9ec5911f793f87955cf8bbc866b0c930c8f9aa2384ec29cc1f360a31da93-comps.xml.gz
+2021-11-22 22:18:50.229209 +0000 build-fedora4: .            700   8%    0.00kB/s    0:00:00  .          8,416 100%    7.36MB/s    0:00:00 (xfr#1, to-chk=329/335)
+2021-11-22 22:18:50.229274 +0000 build-fedora4: <f+++++++++ fc34/repodata/0c0ab284c75bfb35bd01bc38f18bf89b5d67739dff2056ac53fa91ac7748d022-other.sqlite.bz2
+2021-11-22 22:18:50.229716 +0000 build-fedora4: .         32,768  71%   31.25MB/s    0:00:00  .         46,149 100%   44.01MB/s    0:00:00 (xfr#2, to-chk=328/335)
+2021-11-22 22:18:50.229741 +0000 build-fedora4: <f+++++++++ fc34/repodata/18717adafb8736d5a3cbc6ab610d91ed51c956e21b8a7f252cb3c37aee7b809e-filelists.xml.gz
+2021-11-22 22:18:50.229984 +0000 build-fedora4: .         32,768  44%   31.25MB/s    0:00:00  .         73,921 100%   70.50MB/s    0:00:00 (xfr#3, to-chk=327/335)
+2021-11-22 22:18:50.230045 +0000 build-fedora4: <f+++++++++ fc34/repodata/207d175a7d6bd1b53624e24d576eb381386e42865b9a878494213d8e7345e695-primary.sqlite.bz2
+2021-11-22 22:18:50.230341 +0000 build-fedora4: .         32,768  41%   31.25MB/s    0:00:00  .         79,293 100%   75.62MB/s    0:00:00 (xfr#4, to-chk=326/335)
+2021-11-22 22:18:50.230399 +0000 build-fedora4: <f+++++++++ fc34/repodata/26c09c05d42f78ff96160b3f21a97db35f2eca36512df887499396da0ae9e2a0-primary.xml.gz
+2021-11-22 22:18:50.230424 +0000 build-fedora4: .         32,768  82%   31.25MB/s    0:00:00  .         39,897 100%   38.05MB/s    0:00:00 (xfr#5, to-chk=325/335)
+2021-11-22 22:18:50.230486 +0000 build-fedora4: <f..t...... fc34/repodata/397e43a81ad38941589caaed70c4fabc438fb360cee27a55821a1db270bacaa3-comps.xml
+2021-11-22 22:18:50.230858 +0000 build-fedora4: .            700   2%  683.59kB/s    0:00:00  .         25,819 100%   24.62MB/s    0:00:00 (xfr#6, to-chk=324/335)
+2021-11-22 22:18:50.230919 +0000 build-fedora4: <f+++++++++ fc34/repodata/cd6c3fa17d7ec38b55a187b10d2d6118c0d4279c3d27477da25dc166c177fe8f-filelists.sqlite.bz2
+2021-11-22 22:18:50.231167 +0000 build-fedora4: .         32,768  35%   31.25MB/s    0:00:00  .         92,607 100%   44.16MB/s    0:00:00 (xfr#7, to-chk=323/335)
+2021-11-22 22:18:50.231192 +0000 build-fedora4: <f+++++++++ fc34/repodata/e06d949546b12a20f4fac4873dbb9e5e9c321fce542f9bc27dfbc6872179ba01-other.xml.gz
+2021-11-22 22:18:50.231284 +0000 build-fedora4: .         24,087 100%   11.49MB/s    0:00:00  .         24,087 100%   11.49MB/s    0:00:00 (xfr#8, to-chk=322/335)
+2021-11-22 22:18:50.231623 +0000 build-fedora4: <f.st...... fc34/repodata/repomd.xml
+2021-11-22 22:18:50.231684 +0000 build-fedora4: .          3,850 100%    1.84MB/s    0:00:00  .          3,850 100%    1.84MB/s    0:00:00 (xfr#9, to-chk=321/335)
+2021-11-22 22:18:50.231727 +0000 build-fedora4: <f..t...... fc34/repodata/repomd.xml.asc
+2021-11-22 22:18:50.231747 +0000 build-fedora4: .            833 100%  406.74kB/s    0:00:00  .            833 100%  406.74kB/s    0:00:00 (xfr#10, to-chk=320/335)
+2021-11-22 22:18:50.231761 +0000 build-fedora4: .d..t...... fc34/rpm/
+2021-11-22 22:18:50.231771 +0000 build-fedora4: <f+++++++++ fc34/rpm/awesome-4.3-12.fc34.src.rpm
+2021-11-22 22:18:50.237056 +0000 build-fedora4: .         32,768   3%   15.62MB/s    0:00:00  .      1,059,921 100%  144.40MB/s    0:00:00 (xfr#11, to-chk=314/335)
+2021-11-22 22:18:50.237186 +0000 build-fedora4: <f+++++++++ fc34/rpm/awesome-4.3-12.fc34.x86_64.buildinfo
+2021-11-22 22:18:50.237247 +0000 build-fedora4: .         16,611 100%    1.98MB/s    0:00:00  .         16,611 100%    1.98MB/s    0:00:00 (xfr#12, to-chk=313/335)
+2021-11-22 22:18:50.237258 +0000 build-fedora4: <f+++++++++ fc34/rpm/awesome-4.3-12.fc34.x86_64.rpm
+2021-11-22 22:18:50.722553 +0000 build-fedora4: .         32,768   3%    3.91MB/s    0:00:00  .        942,537 100%    1.82MB/s    0:00:00 (xfr#13, to-chk=312/335)
+2021-11-22 22:18:50.722612 +0000 build-fedora4: <f+++++++++ fc34/rpm/awesome-debuginfo-4.3-12.fc34.x86_64.rpm
+2021-11-22 22:18:51.034309 +0000 build-fedora4: .         32,768   5%   64.78kB/s    0:00:08  .        559,983 100%  678.48kB/s    0:00:00 (xfr#14, to-chk=310/335)
+2021-11-22 22:18:51.034358 +0000 build-fedora4: <f+++++++++ fc34/rpm/awesome-debugsource-4.3-12.fc34.x86_64.rpm
+2021-11-22 22:18:51.103552 +0000 build-fedora4: .         32,768  24%   36.57kB/s    0:00:02  .        135,203 100%  150.90kB/s    0:00:00 (xfr#15, to-chk=308/335)
+2021-11-22 22:18:51.103606 +0000 build-fedora4: <f+++++++++ fc34/rpm/awesome-doc-4.3-12.fc34.noarch.rpm
+2021-11-22 22:18:51.401335 +0000 build-fedora4: .         32,768   7%   33.86kB/s    0:00:11  .        163,840  38%  157.02kB/s    0:00:01  .        427,058 100%  355.84kB/s    0:00:01 (xfr#16, to-chk=306/335)
+2021-11-22 22:18:54.381656 +0000 build-fedora4: sending incremental file list
+2021-11-22 22:18:54.752031 +0000 build-fedora4: .d..t...... fc35/
+2021-11-22 22:18:54.752085 +0000 build-fedora4: .d..t...... fc35/repodata/
+2021-11-22 22:18:54.752252 +0000 build-fedora4: <f..t...... fc35/repodata/0a4d9ec5911f793f87955cf8bbc866b0c930c8f9aa2384ec29cc1f360a31da93-comps.xml.gz
+2021-11-22 22:18:54.752278 +0000 build-fedora4: .            700   8%    0.00kB/s    0:00:00  .          8,416 100%    7.36MB/s    0:00:00 (xfr#1, to-chk=246/252)
+2021-11-22 22:18:54.752297 +0000 build-fedora4: <f+++++++++ fc35/repodata/36b374462a68c63b7d7dcb41bb9e04e8980a1a15459b9be95fd18f0d879c7a7f-primary.xml.gz
+2021-11-22 22:18:54.752434 +0000 build-fedora4: .         32,768  88%   31.25MB/s    0:00:00  .         37,171 100%   35.45MB/s    0:00:00 (xfr#2, to-chk=245/252)
+2021-11-22 22:18:54.752456 +0000 build-fedora4: <f..t...... fc35/repodata/397e43a81ad38941589caaed70c4fabc438fb360cee27a55821a1db270bacaa3-comps.xml
+2021-11-22 22:18:54.752593 +0000 build-fedora4: .            700   2%  683.59kB/s    0:00:00  .         25,819 100%   24.62MB/s    0:00:00 (xfr#3, to-chk=244/252)
+2021-11-22 22:18:54.752616 +0000 build-fedora4: <f+++++++++ fc35/repodata/6dea6321384594c3b97818836752ef1b45cdb88a511610f569983903d7158203-other.xml.gz
+2021-11-22 22:18:54.752822 +0000 build-fedora4: .         22,592 100%   21.55MB/s    0:00:00  .         22,592 100%   21.55MB/s    0:00:00 (xfr#4, to-chk=243/252)
+2021-11-22 22:18:54.752847 +0000 build-fedora4: <f+++++++++ fc35/repodata/78f7694544aa857198a8b5558a3dd0ebd93b29627aac898c190dafc391302d2b-filelists.xml.gz
+2021-11-22 22:18:54.753540 +0000 build-fedora4: .         32,768  48%   31.25MB/s    0:00:00  .         68,181 100%   65.02MB/s    0:00:00 (xfr#5, to-chk=242/252)
+2021-11-22 22:18:54.753570 +0000 build-fedora4: <f+++++++++ fc35/repodata/8afeb02f75f9343e8b7c7df148146a3f1fe4f70abbb9325ec6a5b68376333c54-primary.sqlite.bz2
+2021-11-22 22:18:54.753584 +0000 build-fedora4: .         32,768  44%   31.25MB/s    0:00:00  .         73,768 100%   70.35MB/s    0:00:00 (xfr#6, to-chk=241/252)
+2021-11-22 22:18:54.753597 +0000 build-fedora4: <f+++++++++ fc35/repodata/ae1f61b7a1c9a0fc09456c97afdf56d7b145d7ce8e9d4748d224a92879595ded-other.sqlite.bz2
+2021-11-22 22:18:54.753611 +0000 build-fedora4: .         32,768  75%   31.25MB/s    0:00:00  .         43,456 100%   41.44MB/s    0:00:00 (xfr#7, to-chk=240/252)
+2021-11-22 22:18:54.753624 +0000 build-fedora4: <f+++++++++ fc35/repodata/ecf305ba8d874f9633519fec428c4e6e47299ef411f0038838be5421327321d9-filelists.sqlite.bz2
+2021-11-22 22:18:54.754025 +0000 build-fedora4: .         32,768  38%   31.25MB/s    0:00:00  .         85,947 100%   81.97MB/s    0:00:00 (xfr#8, to-chk=239/252)
+2021-11-22 22:18:54.754055 +0000 build-fedora4: <f..t...... fc35/repodata/repomd.xml
+2021-11-22 22:18:54.754071 +0000 build-fedora4: .          3,850 100%    3.67MB/s    0:00:00  .          3,850 100%    3.67MB/s    0:00:00 (xfr#9, to-chk=238/252)
+2021-11-22 22:18:54.754079 +0000 build-fedora4: <f..t...... fc35/repodata/repomd.xml.asc
+2021-11-22 22:18:54.754093 +0000 build-fedora4: .            833 100%  813.48kB/s    0:00:00  .            833 100%  813.48kB/s    0:00:00 (xfr#10, to-chk=237/252)
+2021-11-22 22:18:54.754100 +0000 build-fedora4: .d..t...... fc35/rpm/
+2021-11-22 22:18:54.754110 +0000 build-fedora4: <f+++++++++ fc35/rpm/awesome-4.3-12.fc35.src.rpm
+2021-11-22 22:18:54.759634 +0000 build-fedora4: .         32,768   3%   15.62MB/s    0:00:00  .      1,059,917 100%  168.47MB/s    0:00:00 (xfr#11, to-chk=232/252)
+2021-11-22 22:18:54.759692 +0000 build-fedora4: <f+++++++++ fc35/rpm/awesome-4.3-12.fc35.x86_64.buildinfo
+2021-11-22 22:18:54.759710 +0000 build-fedora4: .         16,832 100%    2.68MB/s    0:00:00  .         16,832 100%    2.68MB/s    0:00:00 (xfr#12, to-chk=231/252)
+2021-11-22 22:18:54.759721 +0000 build-fedora4: <f+++++++++ fc35/rpm/awesome-4.3-12.fc35.x86_64.rpm
+2021-11-22 22:18:55.255262 +0000 build-fedora4: .         32,768   3%    4.46MB/s    0:00:00  .        942,316 100%    1.79MB/s    0:00:00 (xfr#13, to-chk=230/252)
+2021-11-22 22:18:55.255326 +0000 build-fedora4: <f+++++++++ fc35/rpm/awesome-debuginfo-4.3-12.fc35.x86_64.rpm
+2021-11-22 22:18:55.533524 +0000 build-fedora4: .         32,768   5%   63.49kB/s    0:00:08  .        561,923 100%  701.73kB/s    0:00:00 (xfr#14, to-chk=228/252)
+2021-11-22 22:18:55.533583 +0000 build-fedora4: <f+++++++++ fc35/rpm/awesome-debugsource-4.3-12.fc35.x86_64.rpm
+2021-11-22 22:18:55.623426 +0000 build-fedora4: .         32,768  24%   40.92kB/s    0:00:02  .        135,198 100%  151.41kB/s    0:00:00 (xfr#15, to-chk=226/252)
+2021-11-22 22:18:55.623472 +0000 build-fedora4: <f+++++++++ fc35/rpm/awesome-doc-4.3-12.fc35.noarch.rpm
+2021-11-22 22:18:55.909707 +0000 build-fedora4: .         32,768   7%   34.37kB/s    0:00:11  .        163,840  38%  159.05kB/s    0:00:01  .        427,218 100%  360.59kB/s    0:00:01 (xfr#16, to-chk=224/252)
+2021-11-22 22:19:01.078413 +0000 build-fedora4: Makefile:819: update target 'update-repo-current-testing' due to: internal-update-repo-current-testing.vm.fc32 internal-update-repo-current-testing.vm.fc33 internal-update-repo-current-testing.vm.fc34 internal-update-repo-current-testing.vm.fc35 post-update-repo-current-testing
+2021-11-22 22:19:01.078463 +0000 build-fedora4: true
+2021-11-22 22:19:01.080074 +0000 build-fedora4: > done
+2021-11-22 22:19:01.080116 +0000 > closing log
