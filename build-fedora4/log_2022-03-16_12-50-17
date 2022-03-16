@@ -1,0 +1,977 @@
+2022-03-16 12:50:17.070451 +0000 > starting log
+2022-03-16 12:50:17.070819 +0000 build-fedora4: > starting build with log
+2022-03-16 12:50:17.070846 +0000 build-fedora4: >> make args: DISTS_VM= fc36 DIST_DOM0= BUILD_LOGS_URL= core-agent-linux-vm-fc36=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2022-03-16_12-49-04 GIT_URL_core_agent_linux=https://github.com/QubesOS/qubes-core-agent-linux sign-all update-repo-current-testing
+2022-03-16 12:50:17.070854 +0000 build-fedora4: >> MAKEFLAGS=
+2022-03-16 12:50:17.070862 +0000 build-fedora4: >> COMPONENTS=core-agent-linux
+2022-03-16 12:50:17.070868 +0000 build-fedora4: >> DISTS_VM=
+2022-03-16 12:50:17.070874 +0000 build-fedora4: >> DIST_DOM0=
+2022-03-16 12:50:17.070882 +0000 build-fedora4: >> qubes-builder 1fb9d931e2644a4e8819f486db9c08140bd8e1c7
+2022-03-16 12:50:17.072069 +0000 build-fedora4: >> qubes-builder/qubes-src/core-agent-linux 3e0ad351022131af9f6a3cbf840ff180f0bf8280
+2022-03-16 12:50:17.072105 +0000 build-fedora4: !! pkgs/vm-fc29/core-agent.spec.list
+2022-03-16 12:50:17.072117 +0000 build-fedora4: !! pkgs/vm-fc29/python2-dnf-plugins-qubes-hooks-4.1.17-1.fc29.x86_64.rpm
+2022-03-16 12:50:17.072128 +0000 build-fedora4: !! pkgs/vm-fc29/python3-dnf-plugins-qubes-hooks-4.1.17-1.fc29.x86_64.rpm
+2022-03-16 12:50:17.072137 +0000 build-fedora4: !! pkgs/vm-fc29/qubes-core-agent-4.0.43-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.072145 +0000 build-fedora4: !! pkgs/vm-fc29/qubes-core-agent-4.1.0-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.072157 +0000 build-fedora4: !! pkgs/vm-fc29/qubes-core-agent-4.1.1-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.072166 +0000 build-fedora4: !! pkgs/vm-fc29/qubes-core-agent-4.1.10-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.072175 +0000 build-fedora4: !! pkgs/vm-fc29/qubes-core-agent-4.1.11-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.072183 +0000 build-fedora4: !! pkgs/vm-fc29/qubes-core-agent-4.1.12-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.072191 +0000 build-fedora4: !! pkgs/vm-fc29/qubes-core-agent-4.1.13-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.072200 +0000 build-fedora4: !! pkgs/vm-fc29/qubes-core-agent-4.1.14-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.072208 +0000 build-fedora4: !! pkgs/vm-fc29/qubes-core-agent-4.1.15-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.072216 +0000 build-fedora4: !! pkgs/vm-fc29/qubes-core-agent-4.1.16-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.072224 +0000 build-fedora4: !! pkgs/vm-fc29/qubes-core-agent-4.1.17-1.fc29.src.rpm
+2022-03-16 12:50:17.072233 +0000 build-fedora4: !! pkgs/vm-fc29/qubes-core-agent-4.1.17-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.072241 +0000 build-fedora4: !! pkgs/vm-fc29/qubes-core-agent-4.1.17-1.fc29.x86_64.rpm
+2022-03-16 12:50:17.072249 +0000 build-fedora4: !! pkgs/vm-fc29/qubes-core-agent-4.1.2-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.072257 +0000 build-fedora4: !! pkgs/vm-fc29/qubes-core-agent-4.1.3-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.072266 +0000 build-fedora4: !! pkgs/vm-fc29/qubes-core-agent-4.1.4-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.072274 +0000 build-fedora4: !! pkgs/vm-fc29/qubes-core-agent-4.1.5-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.072282 +0000 build-fedora4: !! pkgs/vm-fc29/qubes-core-agent-4.1.6-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.072291 +0000 build-fedora4: !! pkgs/vm-fc29/qubes-core-agent-4.1.7-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.072299 +0000 build-fedora4: !! pkgs/vm-fc29/qubes-core-agent-4.1.8-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.072308 +0000 build-fedora4: !! pkgs/vm-fc29/qubes-core-agent-debuginfo-4.1.17-1.fc29.x86_64.rpm
+2022-03-16 12:50:17.072316 +0000 build-fedora4: !! pkgs/vm-fc29/qubes-core-agent-debugsource-4.1.17-1.fc29.x86_64.rpm
+2022-03-16 12:50:17.072325 +0000 build-fedora4: !! pkgs/vm-fc29/qubes-core-agent-dom0-updates-4.1.17-1.fc29.x86_64.rpm
+2022-03-16 12:50:17.072334 +0000 build-fedora4: !! pkgs/vm-fc29/qubes-core-agent-nautilus-4.1.17-1.fc29.x86_64.rpm
+2022-03-16 12:50:17.072343 +0000 build-fedora4: !! pkgs/vm-fc29/qubes-core-agent-network-manager-4.1.17-1.fc29.x86_64.rpm
+2022-03-16 12:50:17.072351 +0000 build-fedora4: !! pkgs/vm-fc29/qubes-core-agent-networking-4.1.17-1.fc29.x86_64.rpm
+2022-03-16 12:50:17.072372 +0000 build-fedora4: !! pkgs/vm-fc29/qubes-core-agent-passwordless-root-4.1.17-1.fc29.x86_64.rpm
+2022-03-16 12:50:17.072382 +0000 build-fedora4: !! pkgs/vm-fc29/qubes-core-agent-qrexec-4.0.43-1.fc29.x86_64.rpm
+2022-03-16 12:50:17.072391 +0000 build-fedora4: !! pkgs/vm-fc29/qubes-core-agent-qrexec-debuginfo-4.0.43-1.fc29.x86_64.rpm
+2022-03-16 12:50:17.072400 +0000 build-fedora4: !! pkgs/vm-fc29/qubes-core-agent-systemd-4.1.17-1.fc29.x86_64.rpm
+2022-03-16 12:50:17.072408 +0000 build-fedora4: !! pkgs/vm-fc29/qubes-core-agent-sysvinit-4.1.15-1.fc29.x86_64.rpm
+2022-03-16 12:50:17.072417 +0000 build-fedora4: !! pkgs/vm-fc29/qubes-core-agent-thunar-4.1.17-1.fc29.x86_64.rpm
+2022-03-16 12:50:17.072424 +0000 build-fedora4: !! pkgs/vm-fc30/core-agent.spec.list
+2022-03-16 12:50:17.072433 +0000 build-fedora4: !! pkgs/vm-fc30/python2-dnf-plugins-qubes-hooks-4.1.17-1.fc30.x86_64.rpm
+2022-03-16 12:50:17.072442 +0000 build-fedora4: !! pkgs/vm-fc30/python3-dnf-plugins-qubes-hooks-4.1.17-1.fc30.x86_64.rpm
+2022-03-16 12:50:17.072450 +0000 build-fedora4: !! pkgs/vm-fc30/qubes-core-agent-4.0.43-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.072458 +0000 build-fedora4: !! pkgs/vm-fc30/qubes-core-agent-4.1.0-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.072467 +0000 build-fedora4: !! pkgs/vm-fc30/qubes-core-agent-4.1.1-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.072475 +0000 build-fedora4: !! pkgs/vm-fc30/qubes-core-agent-4.1.10-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.072483 +0000 build-fedora4: !! pkgs/vm-fc30/qubes-core-agent-4.1.11-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.072492 +0000 build-fedora4: !! pkgs/vm-fc30/qubes-core-agent-4.1.12-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.072500 +0000 build-fedora4: !! pkgs/vm-fc30/qubes-core-agent-4.1.13-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.072509 +0000 build-fedora4: !! pkgs/vm-fc30/qubes-core-agent-4.1.14-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.072517 +0000 build-fedora4: !! pkgs/vm-fc30/qubes-core-agent-4.1.15-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.072525 +0000 build-fedora4: !! pkgs/vm-fc30/qubes-core-agent-4.1.16-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.072533 +0000 build-fedora4: !! pkgs/vm-fc30/qubes-core-agent-4.1.17-1.fc30.src.rpm
+2022-03-16 12:50:17.072541 +0000 build-fedora4: !! pkgs/vm-fc30/qubes-core-agent-4.1.17-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.072549 +0000 build-fedora4: !! pkgs/vm-fc30/qubes-core-agent-4.1.17-1.fc30.x86_64.rpm
+2022-03-16 12:50:17.072558 +0000 build-fedora4: !! pkgs/vm-fc30/qubes-core-agent-4.1.2-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.072566 +0000 build-fedora4: !! pkgs/vm-fc30/qubes-core-agent-4.1.3-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.072575 +0000 build-fedora4: !! pkgs/vm-fc30/qubes-core-agent-4.1.4-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.072583 +0000 build-fedora4: !! pkgs/vm-fc30/qubes-core-agent-4.1.5-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.072591 +0000 build-fedora4: !! pkgs/vm-fc30/qubes-core-agent-4.1.6-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.072600 +0000 build-fedora4: !! pkgs/vm-fc30/qubes-core-agent-4.1.7-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.072608 +0000 build-fedora4: !! pkgs/vm-fc30/qubes-core-agent-4.1.8-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.072622 +0000 build-fedora4: !! pkgs/vm-fc30/qubes-core-agent-debuginfo-4.1.17-1.fc30.x86_64.rpm
+2022-03-16 12:50:17.072631 +0000 build-fedora4: !! pkgs/vm-fc30/qubes-core-agent-debugsource-4.1.17-1.fc30.x86_64.rpm
+2022-03-16 12:50:17.072640 +0000 build-fedora4: !! pkgs/vm-fc30/qubes-core-agent-dom0-updates-4.1.17-1.fc30.x86_64.rpm
+2022-03-16 12:50:17.072649 +0000 build-fedora4: !! pkgs/vm-fc30/qubes-core-agent-nautilus-4.1.17-1.fc30.x86_64.rpm
+2022-03-16 12:50:17.072663 +0000 build-fedora4: !! pkgs/vm-fc30/qubes-core-agent-network-manager-4.1.17-1.fc30.x86_64.rpm
+2022-03-16 12:50:17.072673 +0000 build-fedora4: !! pkgs/vm-fc30/qubes-core-agent-networking-4.1.17-1.fc30.x86_64.rpm
+2022-03-16 12:50:17.072682 +0000 build-fedora4: !! pkgs/vm-fc30/qubes-core-agent-passwordless-root-4.1.17-1.fc30.x86_64.rpm
+2022-03-16 12:50:17.072710 +0000 build-fedora4: !! pkgs/vm-fc30/qubes-core-agent-qrexec-4.0.43-1.fc30.x86_64.rpm
+2022-03-16 12:50:17.072721 +0000 build-fedora4: !! pkgs/vm-fc30/qubes-core-agent-qrexec-debuginfo-4.0.43-1.fc30.x86_64.rpm
+2022-03-16 12:50:17.072729 +0000 build-fedora4: !! pkgs/vm-fc30/qubes-core-agent-systemd-4.1.17-1.fc30.x86_64.rpm
+2022-03-16 12:50:17.072738 +0000 build-fedora4: !! pkgs/vm-fc30/qubes-core-agent-sysvinit-4.1.15-1.fc30.x86_64.rpm
+2022-03-16 12:50:17.072746 +0000 build-fedora4: !! pkgs/vm-fc30/qubes-core-agent-thunar-4.1.17-1.fc30.x86_64.rpm
+2022-03-16 12:50:17.072753 +0000 build-fedora4: !! pkgs/vm-fc31/core-agent.spec.list
+2022-03-16 12:50:17.072762 +0000 build-fedora4: !! pkgs/vm-fc31/python2-dnf-plugins-qubes-hooks-4.1.27-1.fc31.x86_64.rpm
+2022-03-16 12:50:17.072771 +0000 build-fedora4: !! pkgs/vm-fc31/python3-dnf-plugins-qubes-hooks-4.1.27-1.fc31.x86_64.rpm
+2022-03-16 12:50:17.072779 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-4.1.10-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.072787 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-4.1.11-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.072796 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-4.1.12-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.072804 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-4.1.13-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.072813 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-4.1.14-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.072821 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-4.1.15-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.072829 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-4.1.16-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.072838 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-4.1.17-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.072846 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-4.1.18-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.072854 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-4.1.19-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.072863 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-4.1.20-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.072871 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-4.1.21-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.072879 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-4.1.22-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.072888 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-4.1.23-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.072896 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-4.1.24-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.072904 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-4.1.25-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.072913 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-4.1.26-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.072921 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-4.1.27-1.fc31.src.rpm
+2022-03-16 12:50:17.072929 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-4.1.27-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.072937 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-4.1.27-1.fc31.x86_64.rpm
+2022-03-16 12:50:17.072945 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-4.1.4-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.072954 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-4.1.5-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.072962 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-4.1.6-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.072971 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-4.1.7-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.072979 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-4.1.8-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.072987 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-debuginfo-4.1.27-1.fc31.x86_64.rpm
+2022-03-16 12:50:17.072996 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-debugsource-4.1.27-1.fc31.x86_64.rpm
+2022-03-16 12:50:17.073005 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-dom0-updates-4.1.27-1.fc31.x86_64.rpm
+2022-03-16 12:50:17.073017 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-nautilus-4.1.27-1.fc31.x86_64.rpm
+2022-03-16 12:50:17.074175 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-network-manager-4.1.27-1.fc31.x86_64.rpm
+2022-03-16 12:50:17.074192 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-networking-4.1.27-1.fc31.x86_64.rpm
+2022-03-16 12:50:17.074203 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-passwordless-root-4.1.27-1.fc31.x86_64.rpm
+2022-03-16 12:50:17.074212 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-systemd-4.1.27-1.fc31.x86_64.rpm
+2022-03-16 12:50:17.074220 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-sysvinit-4.1.15-1.fc31.x86_64.rpm
+2022-03-16 12:50:17.074229 +0000 build-fedora4: !! pkgs/vm-fc31/qubes-core-agent-thunar-4.1.27-1.fc31.x86_64.rpm
+2022-03-16 12:50:17.074236 +0000 build-fedora4: !! pkgs/vm-fc32/core-agent.spec.list
+2022-03-16 12:50:17.074245 +0000 build-fedora4: !! pkgs/vm-fc32/python2-dnf-plugins-qubes-hooks-4.1.33-1.fc32.x86_64.rpm
+2022-03-16 12:50:17.074254 +0000 build-fedora4: !! pkgs/vm-fc32/python3-dnf-plugins-qubes-hooks-4.1.33-1.fc32.x86_64.rpm
+2022-03-16 12:50:17.074262 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-4.1.10-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.074271 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-4.1.11-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.074279 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-4.1.12-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.074288 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-4.1.13-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.074296 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-4.1.14-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.074305 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-4.1.15-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.074313 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-4.1.16-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.074321 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-4.1.17-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.074330 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-4.1.18-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.074338 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-4.1.19-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.074346 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-4.1.20-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.074355 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-4.1.21-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.074363 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-4.1.22-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.074371 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-4.1.23-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.074392 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-4.1.24-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.074402 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-4.1.25-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.074410 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-4.1.26-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.074419 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-4.1.27-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.074427 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-4.1.28-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.074436 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-4.1.29-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.074444 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-4.1.31-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.074453 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-4.1.32-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.074461 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-4.1.33-1.fc32.src.rpm
+2022-03-16 12:50:17.074469 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-4.1.33-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.074477 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-4.1.33-1.fc32.x86_64.rpm
+2022-03-16 12:50:17.074486 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-debuginfo-4.1.33-1.fc32.x86_64.rpm
+2022-03-16 12:50:17.074505 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-debugsource-4.1.33-1.fc32.x86_64.rpm
+2022-03-16 12:50:17.074515 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-dom0-updates-4.1.33-1.fc32.x86_64.rpm
+2022-03-16 12:50:17.074524 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-nautilus-4.1.33-1.fc32.x86_64.rpm
+2022-03-16 12:50:17.074533 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-network-manager-4.1.33-1.fc32.x86_64.rpm
+2022-03-16 12:50:17.074541 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-networking-4.1.33-1.fc32.x86_64.rpm
+2022-03-16 12:50:17.074550 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-passwordless-root-4.1.33-1.fc32.x86_64.rpm
+2022-03-16 12:50:17.074559 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-systemd-4.1.33-1.fc32.x86_64.rpm
+2022-03-16 12:50:17.074567 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-sysvinit-4.1.15-1.fc32.x86_64.rpm
+2022-03-16 12:50:17.074576 +0000 build-fedora4: !! pkgs/vm-fc32/qubes-core-agent-thunar-4.1.33-1.fc32.x86_64.rpm
+2022-03-16 12:50:17.074583 +0000 build-fedora4: !! pkgs/vm-fc33/core-agent.spec.list
+2022-03-16 12:50:17.074592 +0000 build-fedora4: !! pkgs/vm-fc33/python2-dnf-plugins-qubes-hooks-4.1.33-1.fc33.x86_64.rpm
+2022-03-16 12:50:17.074601 +0000 build-fedora4: !! pkgs/vm-fc33/python3-dnf-plugins-qubes-hooks-4.1.33-1.fc33.x86_64.rpm
+2022-03-16 12:50:17.074609 +0000 build-fedora4: !! pkgs/vm-fc33/qubes-core-agent-4.1.17-1.fc33.x86_64.buildinfo
+2022-03-16 12:50:17.074617 +0000 build-fedora4: !! pkgs/vm-fc33/qubes-core-agent-4.1.18-1.fc33.x86_64.buildinfo
+2022-03-16 12:50:17.074625 +0000 build-fedora4: !! pkgs/vm-fc33/qubes-core-agent-4.1.19-1.fc33.x86_64.buildinfo
+2022-03-16 12:50:17.074634 +0000 build-fedora4: !! pkgs/vm-fc33/qubes-core-agent-4.1.20-1.fc33.x86_64.buildinfo
+2022-03-16 12:50:17.074642 +0000 build-fedora4: !! pkgs/vm-fc33/qubes-core-agent-4.1.21-1.fc33.x86_64.buildinfo
+2022-03-16 12:50:17.074650 +0000 build-fedora4: !! pkgs/vm-fc33/qubes-core-agent-4.1.22-1.fc33.x86_64.buildinfo
+2022-03-16 12:50:17.074659 +0000 build-fedora4: !! pkgs/vm-fc33/qubes-core-agent-4.1.23-1.fc33.x86_64.buildinfo
+2022-03-16 12:50:17.074667 +0000 build-fedora4: !! pkgs/vm-fc33/qubes-core-agent-4.1.24-1.fc33.x86_64.buildinfo
+2022-03-16 12:50:17.074675 +0000 build-fedora4: !! pkgs/vm-fc33/qubes-core-agent-4.1.25-1.fc33.x86_64.buildinfo
+2022-03-16 12:50:17.074695 +0000 build-fedora4: !! pkgs/vm-fc33/qubes-core-agent-4.1.26-1.fc33.x86_64.buildinfo
+2022-03-16 12:50:17.074704 +0000 build-fedora4: !! pkgs/vm-fc33/qubes-core-agent-4.1.27-1.fc33.x86_64.buildinfo
+2022-03-16 12:50:17.074713 +0000 build-fedora4: !! pkgs/vm-fc33/qubes-core-agent-4.1.28-1.fc33.x86_64.buildinfo
+2022-03-16 12:50:17.074721 +0000 build-fedora4: !! pkgs/vm-fc33/qubes-core-agent-4.1.29-1.fc33.x86_64.buildinfo
+2022-03-16 12:50:17.074730 +0000 build-fedora4: !! pkgs/vm-fc33/qubes-core-agent-4.1.31-1.fc33.x86_64.buildinfo
+2022-03-16 12:50:17.074738 +0000 build-fedora4: !! pkgs/vm-fc33/qubes-core-agent-4.1.32-1.fc33.x86_64.buildinfo
+2022-03-16 12:50:17.074746 +0000 build-fedora4: !! pkgs/vm-fc33/qubes-core-agent-4.1.33-1.fc33.src.rpm
+2022-03-16 12:50:17.074754 +0000 build-fedora4: !! pkgs/vm-fc33/qubes-core-agent-4.1.33-1.fc33.x86_64.buildinfo
+2022-03-16 12:50:17.074762 +0000 build-fedora4: !! pkgs/vm-fc33/qubes-core-agent-4.1.33-1.fc33.x86_64.rpm
+2022-03-16 12:50:17.074771 +0000 build-fedora4: !! pkgs/vm-fc33/qubes-core-agent-debuginfo-4.1.33-1.fc33.x86_64.rpm
+2022-03-16 12:50:17.074779 +0000 build-fedora4: !! pkgs/vm-fc33/qubes-core-agent-debugsource-4.1.33-1.fc33.x86_64.rpm
+2022-03-16 12:50:17.074788 +0000 build-fedora4: !! pkgs/vm-fc33/qubes-core-agent-dom0-updates-4.1.33-1.fc33.x86_64.rpm
+2022-03-16 12:50:17.074797 +0000 build-fedora4: !! pkgs/vm-fc33/qubes-core-agent-nautilus-4.1.33-1.fc33.x86_64.rpm
+2022-03-16 12:50:17.074806 +0000 build-fedora4: !! pkgs/vm-fc33/qubes-core-agent-network-manager-4.1.33-1.fc33.x86_64.rpm
+2022-03-16 12:50:17.074814 +0000 build-fedora4: !! pkgs/vm-fc33/qubes-core-agent-networking-4.1.33-1.fc33.x86_64.rpm
+2022-03-16 12:50:17.074827 +0000 build-fedora4: !! pkgs/vm-fc33/qubes-core-agent-passwordless-root-4.1.33-1.fc33.x86_64.rpm
+2022-03-16 12:50:17.074836 +0000 build-fedora4: !! pkgs/vm-fc33/qubes-core-agent-systemd-4.1.33-1.fc33.x86_64.rpm
+2022-03-16 12:50:17.074845 +0000 build-fedora4: !! pkgs/vm-fc33/qubes-core-agent-thunar-4.1.33-1.fc33.x86_64.rpm
+2022-03-16 12:50:17.074852 +0000 build-fedora4: !! pkgs/vm-fc34/core-agent.spec.list
+2022-03-16 12:50:17.074861 +0000 build-fedora4: !! pkgs/vm-fc34/python2-dnf-plugins-qubes-hooks-4.1.33-1.fc34.x86_64.rpm
+2022-03-16 12:50:17.074870 +0000 build-fedora4: !! pkgs/vm-fc34/python3-dnf-plugins-qubes-hooks-4.1.33-1.fc34.x86_64.rpm
+2022-03-16 12:50:17.074878 +0000 build-fedora4: !! pkgs/vm-fc34/qubes-core-agent-4.1.25-1.fc34.x86_64.buildinfo
+2022-03-16 12:50:17.074887 +0000 build-fedora4: !! pkgs/vm-fc34/qubes-core-agent-4.1.26-1.fc34.x86_64.buildinfo
+2022-03-16 12:50:17.074895 +0000 build-fedora4: !! pkgs/vm-fc34/qubes-core-agent-4.1.27-1.fc34.x86_64.buildinfo
+2022-03-16 12:50:17.074904 +0000 build-fedora4: !! pkgs/vm-fc34/qubes-core-agent-4.1.28-1.fc34.x86_64.buildinfo
+2022-03-16 12:50:17.074912 +0000 build-fedora4: !! pkgs/vm-fc34/qubes-core-agent-4.1.29-1.fc34.x86_64.buildinfo
+2022-03-16 12:50:17.074920 +0000 build-fedora4: !! pkgs/vm-fc34/qubes-core-agent-4.1.31-1.fc34.x86_64.buildinfo
+2022-03-16 12:50:17.074928 +0000 build-fedora4: !! pkgs/vm-fc34/qubes-core-agent-4.1.32-1.fc34.x86_64.buildinfo
+2022-03-16 12:50:17.074936 +0000 build-fedora4: !! pkgs/vm-fc34/qubes-core-agent-4.1.33-1.fc34.src.rpm
+2022-03-16 12:50:17.074945 +0000 build-fedora4: !! pkgs/vm-fc34/qubes-core-agent-4.1.33-1.fc34.x86_64.buildinfo
+2022-03-16 12:50:17.074957 +0000 build-fedora4: !! pkgs/vm-fc34/qubes-core-agent-4.1.33-1.fc34.x86_64.rpm
+2022-03-16 12:50:17.074966 +0000 build-fedora4: !! pkgs/vm-fc34/qubes-core-agent-debuginfo-4.1.33-1.fc34.x86_64.rpm
+2022-03-16 12:50:17.074975 +0000 build-fedora4: !! pkgs/vm-fc34/qubes-core-agent-debugsource-4.1.33-1.fc34.x86_64.rpm
+2022-03-16 12:50:17.074984 +0000 build-fedora4: !! pkgs/vm-fc34/qubes-core-agent-dom0-updates-4.1.33-1.fc34.x86_64.rpm
+2022-03-16 12:50:17.074993 +0000 build-fedora4: !! pkgs/vm-fc34/qubes-core-agent-nautilus-4.1.33-1.fc34.x86_64.rpm
+2022-03-16 12:50:17.075002 +0000 build-fedora4: !! pkgs/vm-fc34/qubes-core-agent-network-manager-4.1.33-1.fc34.x86_64.rpm
+2022-03-16 12:50:17.075013 +0000 build-fedora4: !! pkgs/vm-fc34/qubes-core-agent-networking-4.1.33-1.fc34.x86_64.rpm
+2022-03-16 12:50:17.075023 +0000 build-fedora4: !! pkgs/vm-fc34/qubes-core-agent-passwordless-root-4.1.33-1.fc34.x86_64.rpm
+2022-03-16 12:50:17.075031 +0000 build-fedora4: !! pkgs/vm-fc34/qubes-core-agent-systemd-4.1.33-1.fc34.x86_64.rpm
+2022-03-16 12:50:17.075040 +0000 build-fedora4: !! pkgs/vm-fc34/qubes-core-agent-thunar-4.1.33-1.fc34.x86_64.rpm
+2022-03-16 12:50:17.075047 +0000 build-fedora4: !! pkgs/vm-fc35/core-agent.spec.list
+2022-03-16 12:50:17.075056 +0000 build-fedora4: !! pkgs/vm-fc35/python2-dnf-plugins-qubes-hooks-4.1.33-1.fc35.x86_64.rpm
+2022-03-16 12:50:17.075065 +0000 build-fedora4: !! pkgs/vm-fc35/python3-dnf-plugins-qubes-hooks-4.1.33-1.fc35.x86_64.rpm
+2022-03-16 12:50:17.075073 +0000 build-fedora4: !! pkgs/vm-fc35/qubes-core-agent-4.1.27-1.fc35.x86_64.buildinfo
+2022-03-16 12:50:17.075082 +0000 build-fedora4: !! pkgs/vm-fc35/qubes-core-agent-4.1.28-1.fc35.x86_64.buildinfo
+2022-03-16 12:50:17.075090 +0000 build-fedora4: !! pkgs/vm-fc35/qubes-core-agent-4.1.29-1.fc35.x86_64.buildinfo
+2022-03-16 12:50:17.075099 +0000 build-fedora4: !! pkgs/vm-fc35/qubes-core-agent-4.1.31-1.fc35.x86_64.buildinfo
+2022-03-16 12:50:17.075107 +0000 build-fedora4: !! pkgs/vm-fc35/qubes-core-agent-4.1.32-1.fc35.x86_64.buildinfo
+2022-03-16 12:50:17.075115 +0000 build-fedora4: !! pkgs/vm-fc35/qubes-core-agent-4.1.33-1.fc35.src.rpm
+2022-03-16 12:50:17.075123 +0000 build-fedora4: !! pkgs/vm-fc35/qubes-core-agent-4.1.33-1.fc35.x86_64.buildinfo
+2022-03-16 12:50:17.075131 +0000 build-fedora4: !! pkgs/vm-fc35/qubes-core-agent-4.1.33-1.fc35.x86_64.rpm
+2022-03-16 12:50:17.075143 +0000 build-fedora4: !! pkgs/vm-fc35/qubes-core-agent-debuginfo-4.1.33-1.fc35.x86_64.rpm
+2022-03-16 12:50:17.075153 +0000 build-fedora4: !! pkgs/vm-fc35/qubes-core-agent-debugsource-4.1.33-1.fc35.x86_64.rpm
+2022-03-16 12:50:17.075162 +0000 build-fedora4: !! pkgs/vm-fc35/qubes-core-agent-dom0-updates-4.1.33-1.fc35.x86_64.rpm
+2022-03-16 12:50:17.075170 +0000 build-fedora4: !! pkgs/vm-fc35/qubes-core-agent-nautilus-4.1.33-1.fc35.x86_64.rpm
+2022-03-16 12:50:17.075179 +0000 build-fedora4: !! pkgs/vm-fc35/qubes-core-agent-network-manager-4.1.33-1.fc35.x86_64.rpm
+2022-03-16 12:50:17.075188 +0000 build-fedora4: !! pkgs/vm-fc35/qubes-core-agent-networking-4.1.33-1.fc35.x86_64.rpm
+2022-03-16 12:50:17.075197 +0000 build-fedora4: !! pkgs/vm-fc35/qubes-core-agent-passwordless-root-4.1.33-1.fc35.x86_64.rpm
+2022-03-16 12:50:17.075206 +0000 build-fedora4: !! pkgs/vm-fc35/qubes-core-agent-systemd-4.1.33-1.fc35.x86_64.rpm
+2022-03-16 12:50:17.075215 +0000 build-fedora4: !! pkgs/vm-fc35/qubes-core-agent-thunar-4.1.33-1.fc35.x86_64.rpm
+2022-03-16 12:50:17.075221 +0000 build-fedora4: !! pkgs/vm-fc36/core-agent.spec.list
+2022-03-16 12:50:17.075231 +0000 build-fedora4: !! pkgs/vm-fc36/python2-dnf-plugins-qubes-hooks-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:17.075239 +0000 build-fedora4: !! pkgs/vm-fc36/python3-dnf-plugins-qubes-hooks-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:17.075247 +0000 build-fedora4: !! pkgs/vm-fc36/qubes-core-agent-4.1.33-1.fc36.src.rpm
+2022-03-16 12:50:17.075256 +0000 build-fedora4: !! pkgs/vm-fc36/qubes-core-agent-4.1.33-1.fc36.x86_64.buildinfo
+2022-03-16 12:50:17.075264 +0000 build-fedora4: !! pkgs/vm-fc36/qubes-core-agent-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:17.075272 +0000 build-fedora4: !! pkgs/vm-fc36/qubes-core-agent-debuginfo-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:17.075281 +0000 build-fedora4: !! pkgs/vm-fc36/qubes-core-agent-debugsource-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:17.075290 +0000 build-fedora4: !! pkgs/vm-fc36/qubes-core-agent-dom0-updates-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:17.075299 +0000 build-fedora4: !! pkgs/vm-fc36/qubes-core-agent-nautilus-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:17.075308 +0000 build-fedora4: !! pkgs/vm-fc36/qubes-core-agent-network-manager-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:17.075317 +0000 build-fedora4: !! pkgs/vm-fc36/qubes-core-agent-networking-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:17.075327 +0000 build-fedora4: !! pkgs/vm-fc36/qubes-core-agent-passwordless-root-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:17.075335 +0000 build-fedora4: !! pkgs/vm-fc36/qubes-core-agent-systemd-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:17.075344 +0000 build-fedora4: !! pkgs/vm-fc36/qubes-core-agent-thunar-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:17.082421 +0000 build-fedora4: 2a1a4a7bea3de52d9d505f43cad83b424a159b3db54021b0167946624318982e5454d887408941db5a78f7b6123727571fde2d5cec650b3a3ae777da9a263349  pkgs/vm-fc29/core-agent.spec.list
+2022-03-16 12:50:17.082465 +0000 build-fedora4: 3298d6952a50b7a590b571190aee34214940e0d1604478ce851e87fb36fe274879c163a4763924c2df26a78670d7d435abcec4e9b74f1d26b6aa0c68ab761849  pkgs/vm-fc29/python2-dnf-plugins-qubes-hooks-4.1.17-1.fc29.x86_64.rpm
+2022-03-16 12:50:17.082485 +0000 build-fedora4: 7ad27a21ed02dd9ba73cc41d5282f8610c186dc3d06b9879b447e08d5835ef64fd19b03fdfdeff34c80dd06462caf600db32b6f7ea24d40689173cb87a461cc2  pkgs/vm-fc29/python3-dnf-plugins-qubes-hooks-4.1.17-1.fc29.x86_64.rpm
+2022-03-16 12:50:17.082502 +0000 build-fedora4: 03a1a7336f15533cb722badff2d9a0a18fb419e07e858470bd1b126f12a71b95a3f1d011a14253bfe3e75aca1591190808e6067097c9eb01e9b35ed393c2f4ea  pkgs/vm-fc29/qubes-core-agent-4.0.43-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.082519 +0000 build-fedora4: e97c1073101d9badd4ee947ee37a71ee061b40c068b4893fb6ab6eaa7d18f25703571434930f26ae06c94158703e6c52bfb7656deb849a77a5663a697c47039b  pkgs/vm-fc29/qubes-core-agent-4.1.0-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.082535 +0000 build-fedora4: 7b581bde0d446a5ee493fe1ce8241002cae37e73dee01c9270dce0faba8a3803f0e6e338dd29e5c29111bcc0f29c5213f00bd6d117bb58d8adadf931f375e686  pkgs/vm-fc29/qubes-core-agent-4.1.1-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.082564 +0000 build-fedora4: 51aaa12b3ef3139ca19e8f272fde6ded00461b1f7c8e7a8050540a0565a073fc1b666075ff2c40bb4b2c5f87f1a756de7b4de1f0778c23921887915714e416cf  pkgs/vm-fc29/qubes-core-agent-4.1.10-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.082580 +0000 build-fedora4: bc478e6da72cd248cb849c70c005d6f3ac296106599667789eb3ae40e68a0c43853f494902bc88e7c2589ee8e01f1fe3d52038045e49254ec1e375dd8b74fd29  pkgs/vm-fc29/qubes-core-agent-4.1.11-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.084075 +0000 build-fedora4: 35f8774e6a741fb97213b74ad889d92e22d4389d0ef9ac8b678936ff17721870b0e524804a4786d2f0c7ea7a49b6c14488faf2649be381916c6908b25a06ad22  pkgs/vm-fc29/qubes-core-agent-4.1.12-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.084116 +0000 build-fedora4: b2d0823898920017ab5c5839c5ba2d3e48058cc88ec17c4697708952a9dd48568a234b8d464496f9469ca86772393db85d9acdb8a9fa9b6e928096fd7ecefe4c  pkgs/vm-fc29/qubes-core-agent-4.1.13-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.084133 +0000 build-fedora4: f84d2c73e363ad936ce65dcf31d3d5b2e14e46c733b25e5a372d5246d04483c21808c4723f54bcdbcef1f2c348ddfc1fad4e47c413ec7bc381df9cdb7376fa52  pkgs/vm-fc29/qubes-core-agent-4.1.14-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.084149 +0000 build-fedora4: 11a34cc3638c4139268e0d690221a450c6b392265261e6fb4c68689d1bccbfc417c51b0f4333ebf8f39df9257fa689669cf24f80ee5c443b1f3ef7024599a92f  pkgs/vm-fc29/qubes-core-agent-4.1.15-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.084165 +0000 build-fedora4: 96d49434b6fb73c3c0ddd2377db015c74cc98af7ca083cbec5cab54c4fa07f5016abbdd4d4f298363aefe336ae79e508891ee6fda3f354cb7734ea0aad4d2337  pkgs/vm-fc29/qubes-core-agent-4.1.16-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.084180 +0000 build-fedora4: 33f1f80ded2a9d2d409480bd1a378d6338014c89e59603c8e2f5b542ebfc76d18f7c792d830d91f2d9e85692e75d2dd2dddc7858e5ba5eee74841a847f11f274  pkgs/vm-fc29/qubes-core-agent-4.1.17-1.fc29.src.rpm
+2022-03-16 12:50:17.084197 +0000 build-fedora4: ab8e721b47ad75a33085c1e5a5dcb7bb7d74444ea23ed0d805a6fc1bd937fe67aee47071d908f2b4583317f9e96427c9cb9275e954b29793c59da153e00e3f57  pkgs/vm-fc29/qubes-core-agent-4.1.17-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.085391 +0000 build-fedora4: 90ef7a00f7126435d970beef7f7447da8fd1faedd57f509bb05e9d5a50ed1ef3c50915b9ef0b147ef73bec83dec6fc9f0bcd7dc667f1d100c9b82002b4500de6  pkgs/vm-fc29/qubes-core-agent-4.1.17-1.fc29.x86_64.rpm
+2022-03-16 12:50:17.085427 +0000 build-fedora4: 4e08b693390914d0f3c71d0015bffee9dcaabba28dacc10a06212ebd08171d67074fb39432ebc4ac093a129b239b1802712d96b54b5ad881778c92e73239158b  pkgs/vm-fc29/qubes-core-agent-4.1.2-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.085444 +0000 build-fedora4: 18d8ae2cd569937a03548b512eb02a1aecab26a072d0595b98bec08fa656cc905686b3067d7ac28c2c4b7044e71cab5e1d725013250ecad632e1983e3914d61c  pkgs/vm-fc29/qubes-core-agent-4.1.3-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.085460 +0000 build-fedora4: 95c99bd41f786f3cb9f67c68d8fbedf1dbf85c25e6b55a368c956864624b32fb98a1b121008d62904a39c8377417602b94464d026dad1d2158b7379854a1d7be  pkgs/vm-fc29/qubes-core-agent-4.1.4-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.085475 +0000 build-fedora4: 6bb74e6a4b17aff4aa9af7f805d9c859daaecfb78937c0edfd64b49b7153fb02f6d68b77de1d2e8d3ec201a164efa13be741cccbc96c0fc7b98866550c8c7754  pkgs/vm-fc29/qubes-core-agent-4.1.5-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.085491 +0000 build-fedora4: 863268e4c9ecfd38c9cc45923ae09059e0345c7c19f4f662d60d5b8d2cd942d5703df34db35c849300e341877631e5c74e52a35b4be13c69671e1ba5fa46f24b  pkgs/vm-fc29/qubes-core-agent-4.1.6-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.085507 +0000 build-fedora4: 9a7d040024fe58a208687cc7d582c458735fb0f312554708e6ffebf094400e3827bf75e44f589635364da807803e5094c8ff346ddf5fd0947b336bea7daf6870  pkgs/vm-fc29/qubes-core-agent-4.1.7-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.085522 +0000 build-fedora4: 96648c9cca36dda355ceba9d73c8216aaa4b0b5bb1ae09c77618e7ca3e6c5e5f9a931593caaf74453b5bfafe1a0c4d11dde66f49731ad26ceac680c62ad5c3f6  pkgs/vm-fc29/qubes-core-agent-4.1.8-1.fc29.x86_64.buildinfo
+2022-03-16 12:50:17.085552 +0000 build-fedora4: ac0602ff8d2d5d63c790e5b39dc9070aad32d172eb73497c7607bc322a5c278995eb8e111ad6518af100fc21a69c48271e35d097bedec49a7728a7109a0d23b9  pkgs/vm-fc29/qubes-core-agent-debuginfo-4.1.17-1.fc29.x86_64.rpm
+2022-03-16 12:50:17.085569 +0000 build-fedora4: 70282e913f49093099ff348ba26aa92976c099e3c906cf85277dff6f1733233a90cb9ae794feff4f2239137afd5d227b132ce7015d9d4775f8f75524d87a031a  pkgs/vm-fc29/qubes-core-agent-debugsource-4.1.17-1.fc29.x86_64.rpm
+2022-03-16 12:50:17.085586 +0000 build-fedora4: 1c1751b1abc49de75dda41de09233a686f6060033291e78f3271dbe6fc201c64341e353aff078600b7cf1384f11504c930f9d6ed154d82a419d5a3c9ef588b5c  pkgs/vm-fc29/qubes-core-agent-dom0-updates-4.1.17-1.fc29.x86_64.rpm
+2022-03-16 12:50:17.085602 +0000 build-fedora4: bbe8d6a3f9c6d7bd6b2f9f2f21ee25402504759d8c8f5b0cfa7c295d5af032c300ef58b4e683033d511f29dc34785ecdfc634781fa40349edaaa96745dc0a960  pkgs/vm-fc29/qubes-core-agent-nautilus-4.1.17-1.fc29.x86_64.rpm
+2022-03-16 12:50:17.085618 +0000 build-fedora4: 4451fa6fd232fabb5073611af8fe2eb9d31dc9858b93d1365bf5147b02e829159edd15d00089432811208998a0aa0338352e987ed23826493da6f06f8b72701a  pkgs/vm-fc29/qubes-core-agent-network-manager-4.1.17-1.fc29.x86_64.rpm
+2022-03-16 12:50:17.086063 +0000 build-fedora4: 028ee070703f0a03b5fe2bc9e56789c046915fc855ac089a6bd9eb38105063d91a48424aa4fca245ac3dbd0d4636cfe9abafb01266020c3c3c12a6b42aebba41  pkgs/vm-fc29/qubes-core-agent-networking-4.1.17-1.fc29.x86_64.rpm
+2022-03-16 12:50:17.086091 +0000 build-fedora4: c3184243bdcef89ba8b3596808d83b9dde1eeea788601ebe339720ccbd385b30fc3e0fad1e315657c0d6e041660acee9fbcbde6a540311dbe75d3043edee6758  pkgs/vm-fc29/qubes-core-agent-passwordless-root-4.1.17-1.fc29.x86_64.rpm
+2022-03-16 12:50:17.086109 +0000 build-fedora4: 5eb0b42c69b555c82f93948b93af96c447cc90ec90ce19851cbe470a00dd9290d843ffe36ee1b9bd120e933ff2daa688b80059017e5b480cb04e17fed1273dce  pkgs/vm-fc29/qubes-core-agent-qrexec-4.0.43-1.fc29.x86_64.rpm
+2022-03-16 12:50:17.086126 +0000 build-fedora4: 63462a9aa19857a3202f938625a68eec4e968df5f54aafbfb17737bddcddf93b5bebfa3547a3eda83de0ffec881f98cd8469700c26419ff98ab96287a40ab48e  pkgs/vm-fc29/qubes-core-agent-qrexec-debuginfo-4.0.43-1.fc29.x86_64.rpm
+2022-03-16 12:50:17.086142 +0000 build-fedora4: 0d18a6a29c47b354b0f326f76c07f5059ff379c7bb5dfa47a82fed1798e98632011e07a457bc69fecae7daf9fdb6dd1285504a3e80c3d863ef538bcc8bbdf380  pkgs/vm-fc29/qubes-core-agent-systemd-4.1.17-1.fc29.x86_64.rpm
+2022-03-16 12:50:17.086158 +0000 build-fedora4: 0eac05d5e9bbc14ad59f05a95657b4ccb8031b21f0985001de896350a2a5c4a83cac9e4c17b02606dcdc01400798a12031a46096ef87ce807c95131787a58c8d  pkgs/vm-fc29/qubes-core-agent-sysvinit-4.1.15-1.fc29.x86_64.rpm
+2022-03-16 12:50:17.086173 +0000 build-fedora4: e823fc39edf9a002f1c5a237fcc71400777723b129d76cbed0a950a115e06dd075b74e13902a79f42207438ad29ec964e11e28edfd3abc5c270eff5f0c3dfb82  pkgs/vm-fc29/qubes-core-agent-thunar-4.1.17-1.fc29.x86_64.rpm
+2022-03-16 12:50:17.086187 +0000 build-fedora4: de6feb18116a0bbb17080d6df4923c408e97d3b057043d6d6f0dd91376fb305807ebf4c229517eef3c071263422ae6455da3a51628f682bcf5bc817fe84545f3  pkgs/vm-fc30/core-agent.spec.list
+2022-03-16 12:50:17.086204 +0000 build-fedora4: 006c38919616227f583cfe401b17cecafb8ee56063c658c4ff09419e3891fb60433e96e2f6a33e58b8434e93a81710076bc9c0046528f14227e73f06a2017945  pkgs/vm-fc30/python2-dnf-plugins-qubes-hooks-4.1.17-1.fc30.x86_64.rpm
+2022-03-16 12:50:17.086221 +0000 build-fedora4: c5f8e804f51b46f703db67b9045648b2794bbd83f1ff98ac17759d8f0ebb3f82ab71145bd0721273cbbd96e34963e71605a4becd5baba2ad0605294c6b3e3dee  pkgs/vm-fc30/python3-dnf-plugins-qubes-hooks-4.1.17-1.fc30.x86_64.rpm
+2022-03-16 12:50:17.087437 +0000 build-fedora4: b45939d77acab825255789f13c013a80a015854fec4803a66f897cd2eb84e12d338f202305fb6480e67fd3712a81cf502de764eabef8c5d3b4759181c780a1aa  pkgs/vm-fc30/qubes-core-agent-4.0.43-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.087487 +0000 build-fedora4: ae862e59bb0c74134f936c17c28fc7cfc5282a9c110cf71ec4174080b3f52ee1662d2243154c162c94597101e6b0da91b3f173ac4f5a21d43bff529d2a49231c  pkgs/vm-fc30/qubes-core-agent-4.1.0-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.087505 +0000 build-fedora4: 82a6910146ac3f3285adbbd2ac6fa4c832824031db00bac22b3814c60c7fc7e446922ba1e3fcfe0304452aaf6760ea17f1996a8977f3a1da16a135db532a11a2  pkgs/vm-fc30/qubes-core-agent-4.1.1-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.088686 +0000 build-fedora4: 1a380178c6d1f7c585e76c0af6aa8782053ccc3ee03165cd5d00a9ba95318d4e4fd994da26074ae73bbabf28da72d8316daea68ec568ad5dc45f8b8f833ccea8  pkgs/vm-fc30/qubes-core-agent-4.1.10-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.088723 +0000 build-fedora4: 0c615ab371e840bf3fbfa07fc7c11fa63e197796c28bceb362bfbfdcbf1ac3f124d0153ef9dd32acad933884a33a33348d7052afdd77a485b4f1cfb901502025  pkgs/vm-fc30/qubes-core-agent-4.1.11-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.088741 +0000 build-fedora4: 9070194efe58c37740cc70c848b645a48f49fc7d8762a1328bb0005af055bfb7eef9d8059a9f049221f5d02b929f66d891f02dac7e42befb913ae5f2496ff8a4  pkgs/vm-fc30/qubes-core-agent-4.1.12-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.088776 +0000 build-fedora4: eadf8fba3af1391d51d47d9b05d5281039ac37edbdd8e3e47be2e6765eef9f4d3c4246ae59e0124d8a0647e3ff93b40cc2670742709f184164ff3adf8d602aba  pkgs/vm-fc30/qubes-core-agent-4.1.13-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.088793 +0000 build-fedora4: 47218dac29f3b5abfaf2b5ca96ac038d885af1963e6ba1789de5e375d42f9942ef1bbb6e90f734528e36d193ed2227061d90c9e109c5cd9c6f7cd287bafd2638  pkgs/vm-fc30/qubes-core-agent-4.1.14-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.088809 +0000 build-fedora4: 91b1a962ea5d23f0f0ac0f23d7f87f4175ecf776f7fc7b796ea40b8fa2853324db4b7f9a1e72a6231d174ce229fad97e7a36034dba4003eea15324fae201179a  pkgs/vm-fc30/qubes-core-agent-4.1.15-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.088825 +0000 build-fedora4: 80a3e6dfe2aafd4042b96f75bdad48f22f31dd3b02362f6c318ae74ff12ff907fff18ff293afab27887dc288a8fa531ebfa6db623bb92d705986aae3d1f1755c  pkgs/vm-fc30/qubes-core-agent-4.1.16-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.088840 +0000 build-fedora4: 84a57f0583520a43ffd7f01b2342aeb0be68d48485b73e21364e3c672ff622fbb71987622aa372a0c7b2b03e802e7e859dcc7d7b8ab6f8290e341863d0a7ee6c  pkgs/vm-fc30/qubes-core-agent-4.1.17-1.fc30.src.rpm
+2022-03-16 12:50:17.091354 +0000 build-fedora4: 7e5cbcf6af7c54e4cd197145be6558bd603fa79b41ab894f6883299d30faa39e490622695a390dcb2769f578a69e6d69df73066dd83ba36c6e00e2446211b4db  pkgs/vm-fc30/qubes-core-agent-4.1.17-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.091396 +0000 build-fedora4: bd946c261d89a4ef357c901857cb75a137d4605de7555069a3fe93feadb3930f98ce76656b6a80a66b7bf66426cdab3a0254980564c08c5c28e63bc439f5fd7b  pkgs/vm-fc30/qubes-core-agent-4.1.17-1.fc30.x86_64.rpm
+2022-03-16 12:50:17.091414 +0000 build-fedora4: 9495d820153f70fa15464f4ba800068df248500dc242c987a1c3298e7c861b20b3f31482302f240d1a32c1f24a283f3873b4a63356bd650a2275a4d11fa21ee7  pkgs/vm-fc30/qubes-core-agent-4.1.2-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.091430 +0000 build-fedora4: e59476885c7f2cf20b4ec7e9ce9138bbca53426457d4286fa3155d2ea3756f775e4c6a165c3fe979f8fb3ab69531ddb170b16d83ceec91016738e8d8bce59c04  pkgs/vm-fc30/qubes-core-agent-4.1.3-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.091446 +0000 build-fedora4: 620fbd0c9a350c82887e0d61490fa4fbccb2bc510626d59c73ca46abd2574d4fb13be2b4418108b15aedc7243ddeb99e07c3d142eb007ed317f26aaabc8d148f  pkgs/vm-fc30/qubes-core-agent-4.1.4-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.091461 +0000 build-fedora4: 7806a5a142dae1d96c830f0a34faa38b30bee7657c500a2d29edb94910f7902de3615d8d8d4306d33d2a83c5ce6dd20e0d508e56c89c13656027ddef60c1a42e  pkgs/vm-fc30/qubes-core-agent-4.1.5-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.091477 +0000 build-fedora4: 78c21d08f9d8e15abb64812b82b5f7f514c7ccc076415040fe400eb370bb7b04916936c85de7510a27dcb68c7d724417a803f93742143b2359e4ef4215548b3a  pkgs/vm-fc30/qubes-core-agent-4.1.6-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.093849 +0000 build-fedora4: 9bca16ff00a6465e31e40cfc4f080da7b78070c88dc25c188107b8c0355439081a1572a1db2e8c4cd59ed4ae05cf37264fc69f8b3928ea902d5ea9cabc8bf593  pkgs/vm-fc30/qubes-core-agent-4.1.7-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.093892 +0000 build-fedora4: b9cb541a53a320212ca70f6721a6bc9366cb714f1efb9548ab97c7f904876e27dd1e24655c406c6036b1fc9f1d0c84e0a2b63a17cd1cf1b81f2be2f5bfb39216  pkgs/vm-fc30/qubes-core-agent-4.1.8-1.fc30.x86_64.buildinfo
+2022-03-16 12:50:17.093910 +0000 build-fedora4: 016ff70558cafe1d7fa56beca45ceab5c8816258575170990100d1fb6981ec642d578236cf55a1f191c043780f1bd9b96d03cf1463792d820d069fe9ab0db633  pkgs/vm-fc30/qubes-core-agent-debuginfo-4.1.17-1.fc30.x86_64.rpm
+2022-03-16 12:50:17.093928 +0000 build-fedora4: aeb9a7f2f0c84c37bc44898442042e19cae26ca8ce61ba24d4e3603dad21579601d227727cb0d6c820eac7590b1b43816ad83cad54508326da370b4cecff1dff  pkgs/vm-fc30/qubes-core-agent-debugsource-4.1.17-1.fc30.x86_64.rpm
+2022-03-16 12:50:17.093944 +0000 build-fedora4: 8feea1d2e5d52e5a35ce5a0fdfca320a54f3e3c7178da624c2e271b0ed2b666f06d550b3e3322d96332cef99f87d198c8295454b592a31a29bf9417b41dab47b  pkgs/vm-fc30/qubes-core-agent-dom0-updates-4.1.17-1.fc30.x86_64.rpm
+2022-03-16 12:50:17.093960 +0000 build-fedora4: 0b09ebe60d5aa496ec3cfeffba476f6243fa79268de91dfde1099a33f77de091314ee4a70ad6ad64ca9070665def65ed81cdcd4460e432e5986bc2d35963b089  pkgs/vm-fc30/qubes-core-agent-nautilus-4.1.17-1.fc30.x86_64.rpm
+2022-03-16 12:50:17.093976 +0000 build-fedora4: 48de8c95ca594edf6e8710056b1dec05654296c998cce3a7e7a7f230737548dcb4458d9186983f1ad0433a56fb5547ced2edac4fc9063acfa6dc83d1946b27b7  pkgs/vm-fc30/qubes-core-agent-network-manager-4.1.17-1.fc30.x86_64.rpm
+2022-03-16 12:50:17.093992 +0000 build-fedora4: eba6b3b423d22957d344ae6fc7d5a8675405c7a59f0b52d791e5a463dc543aeaef46c36531d187ddbadb2d9da9c574817cc394d8793c7cd282687d909b519153  pkgs/vm-fc30/qubes-core-agent-networking-4.1.17-1.fc30.x86_64.rpm
+2022-03-16 12:50:17.094011 +0000 build-fedora4: 02d977d78fe61455c9ce1e8e0b290008bc0924e3ba8e8d2752113921b1da17e1051e83c53a48f9ac14216003aee5215059587937497b373d4032cd6af8d0c8ca  pkgs/vm-fc30/qubes-core-agent-passwordless-root-4.1.17-1.fc30.x86_64.rpm
+2022-03-16 12:50:17.094028 +0000 build-fedora4: d69e48b38dfac19929c90b8fdabf95b396731a3b0508ff7c0cf7ae3d673b0ac3ae30f72dab3c61187210a4484544fa506f32bf3421b17d1a86ba95e5ea3c61bf  pkgs/vm-fc30/qubes-core-agent-qrexec-4.0.43-1.fc30.x86_64.rpm
+2022-03-16 12:50:17.094045 +0000 build-fedora4: 86f6917f61ebab225c7c1c515e6be627685461a1c3cec6e2cdfea13e7e1466053ad0cc39e433daf8231b09064fdb5b644aa9deb8cb1d8375264c7144c79e5724  pkgs/vm-fc30/qubes-core-agent-qrexec-debuginfo-4.0.43-1.fc30.x86_64.rpm
+2022-03-16 12:50:17.094061 +0000 build-fedora4: 6d14e39db43c8678a17ad58652ab55052a9966015c809e6d97f6fb4017cf93d91b0e7d15f40bf56255ca058937862e5f6f2740b815db242135f3ea601ba8a324  pkgs/vm-fc30/qubes-core-agent-systemd-4.1.17-1.fc30.x86_64.rpm
+2022-03-16 12:50:17.094077 +0000 build-fedora4: 99c0bbb164aec401a73a6ee50b156b44eb291cb4be438c68ed8d03cf0419e4a5ba38aa84c0af61dc90fc24c5b33c11fee0e4e4bd6e0e9c2b7159c1eaf24adca6  pkgs/vm-fc30/qubes-core-agent-sysvinit-4.1.15-1.fc30.x86_64.rpm
+2022-03-16 12:50:17.094092 +0000 build-fedora4: b2acecfad49d91b4cf72c5dbdbc62c6301a8549dac51f45fcb3bde81e6975226c04edf3b7fd52023729a6660f754e0a9c5a853b897892120ecc4256720760f04  pkgs/vm-fc30/qubes-core-agent-thunar-4.1.17-1.fc30.x86_64.rpm
+2022-03-16 12:50:17.094107 +0000 build-fedora4: 5a26b755ba5505c0af919f32763586bf1881d86417835b2f3409139596408015cc0822a02f5cdc4ad7c4fd7bdc89b907ea3830dc6ee26d556b5339f1f4065d51  pkgs/vm-fc31/core-agent.spec.list
+2022-03-16 12:50:17.094123 +0000 build-fedora4: b10c70955022a439ee14824a3475785c2e58cfd9e6c7c4feb8a8ca8674540d072c46d4e9f663a82002acd6f375a5df20754fd07bfcf9236fde36e6936959f0c0  pkgs/vm-fc31/python2-dnf-plugins-qubes-hooks-4.1.27-1.fc31.x86_64.rpm
+2022-03-16 12:50:17.094153 +0000 build-fedora4: f7194a80fd350be4e7870b9a677931f06ec38cb6749072c1f2f8062726e62af60c0a219712d9e96c8ffaf70958796a22efbaeba0b7e711cd44734901bb058345  pkgs/vm-fc31/python3-dnf-plugins-qubes-hooks-4.1.27-1.fc31.x86_64.rpm
+2022-03-16 12:50:17.094170 +0000 build-fedora4: 28364079975ff2a74a0f71c180151f81ef42ebb1afa935da4586fb7208f2366cf29ab10efed5497498cc2f2bece2b29666aff2b21c771409b67284f0e1505ae3  pkgs/vm-fc31/qubes-core-agent-4.1.10-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.094186 +0000 build-fedora4: ecaf6cd188da33294765f1d849fd149bb316844e028df40fbf14d6f86a8211e79c21fd0c7dfcb940c814beaf736e660042780fbe944f47da048e9c535c3996eb  pkgs/vm-fc31/qubes-core-agent-4.1.11-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.095440 +0000 build-fedora4: 1fad8f942e421c833646f611432b69f5c18f12f90d72a74ca50b8b9053f3a05b3597265774fad470dac0acc836ff4739ed83789e130900126b983b64935dc8b9  pkgs/vm-fc31/qubes-core-agent-4.1.12-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.095480 +0000 build-fedora4: 78b1e13e2e5dec6682777e8950470ccd74c00bbbfa08b678e04e74fb03a7cf7943aa99073ca85696436385672498f9e277b31dc9333b3d91dd294edd810287d0  pkgs/vm-fc31/qubes-core-agent-4.1.13-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.095497 +0000 build-fedora4: ef72c8ad04e678bcd2c720aa9bba91687b668ebd4f643a6892cf75110037c706befc0cdb876e332935a2505f99d3235a420b8f7e5a0823bd45c56c5f20b04c3e  pkgs/vm-fc31/qubes-core-agent-4.1.14-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.095514 +0000 build-fedora4: 898e18ceec8d2eda49899230bcdd8ac0fa449d4cf54e4e43a942302b538816b22ff100503337ed3889f2b1e6f96e02e72659a811b511f123cd240d3d9ffad492  pkgs/vm-fc31/qubes-core-agent-4.1.15-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.095530 +0000 build-fedora4: 23371bb956e0ebc2b995be8ede97adb15966b8ac582cbcdbdbf7223b7e0fd2726c527f282beb228605ed9d69e9805af21471b5056f34268ebb6839a2ca022bf1  pkgs/vm-fc31/qubes-core-agent-4.1.16-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.095546 +0000 build-fedora4: 40d4a63f732e435a9db8540c21d14f2f6b8660b3bdb867e0f27fdbfca853d83a25cadcd1fc0fa4a698c55bfa43fffd71f880aee9e365eec0e9610156e16a1b71  pkgs/vm-fc31/qubes-core-agent-4.1.17-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.095561 +0000 build-fedora4: 3fa4e55c6f8615e5ff49a4115b1eadf8ee9523a20c83f620e13f8efa7eeac676fcbf9cf6b12c9c0ae1ebb9f6041df500b70606b07d28eccb5caf9ddc6aa33b90  pkgs/vm-fc31/qubes-core-agent-4.1.18-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.095577 +0000 build-fedora4: 41c037f79316d3691932f32ba4d63addb78e437f19a134ceb62aa37b0e3df3518f8e865194ea44f96db20778ae0de6882c27e83da512e0b9ce423b6be0020f56  pkgs/vm-fc31/qubes-core-agent-4.1.19-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.095592 +0000 build-fedora4: 7416f5e459af1778488632e8582a7064c00cf75df090f249e0bd60441b759d04989f0be431a9633f73e10ed12558f9d1637bfd071cc0a703f34a10e82b8832bb  pkgs/vm-fc31/qubes-core-agent-4.1.20-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.095608 +0000 build-fedora4: c5128bbba8c7dce4d5c6973830db0fa2179b8b0bbffb7901fb106d90573c91c401b6de9b035fb0ae90bff127d3317e397d848431b03f47c1117a30d2ed67d1c3  pkgs/vm-fc31/qubes-core-agent-4.1.21-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.095624 +0000 build-fedora4: bee74e1ec5586219ea286cbf94cdcfbf65e3dea6b0cf4f7286d5d0952e02d8adf57d08d9dbc1f56c5f3184d5c43506c6ac03d618ccf5e87d6086a7f1511ae3ac  pkgs/vm-fc31/qubes-core-agent-4.1.22-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.095640 +0000 build-fedora4: 965a8e52dda328d9723f12266729b7079c4013dbd78fdd2d480d04cedc3de9f246e915680b4380e5e46ec851a3fd5e04a82257c53bc5a5220cd6e62b91ee9cc3  pkgs/vm-fc31/qubes-core-agent-4.1.23-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.095655 +0000 build-fedora4: 99c86a6299db8afba0e3bc1c327fc001053ac0725e19d38e7c4573b0f91d6b952d5653d2096a881dfb3cbcf6c9a92d378d558f642bbbbea63b2f622f5664c4c9  pkgs/vm-fc31/qubes-core-agent-4.1.24-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.095671 +0000 build-fedora4: dc0c70f99f6803b2f6633baafb6738d50427f5398961ea0a16a1437f940b36ff6b8c7c6e4f91cd762cd554fe7db42a66525eaadbe303ba96bc1c41e915cbfda7  pkgs/vm-fc31/qubes-core-agent-4.1.25-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.095714 +0000 build-fedora4: e87c5f467c102258aab41d96cabc1d1894533a61e7039dc37042ab29f5717ef25b0637e7e707818483bb34c8bc096ae77eed9ea6a424d31be4a2af8b71e0e550  pkgs/vm-fc31/qubes-core-agent-4.1.26-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.095732 +0000 build-fedora4: 6b9b52ca630b600048eab956e3f0f3f1ccf25659029f97434290039f0867ca6afc91de39ec207a82a18f732a6b1817ebf10cf8ea425982af6cd1cd0bd3e8527d  pkgs/vm-fc31/qubes-core-agent-4.1.27-1.fc31.src.rpm
+2022-03-16 12:50:17.095749 +0000 build-fedora4: 2b9809d0553b2381e857854b385af5332cddbc6024739ec4e120682f7dca7534a634b7932f5a02ee968605582d110d6e4f8a6ca5a116f676438715d8d50b818b  pkgs/vm-fc31/qubes-core-agent-4.1.27-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.095764 +0000 build-fedora4: 08676885059f95c63e1d54df58ad2b7ee0c4d1ef91281a6d2183cf596af10be0f9b42c40af959b149142542dd00d60f93f8c9be266c2c2d986eb8f8e4efadf36  pkgs/vm-fc31/qubes-core-agent-4.1.27-1.fc31.x86_64.rpm
+2022-03-16 12:50:17.095780 +0000 build-fedora4: a7d977aacec7ec6b50b6cd61560c09fd4d7b1c37be831a94ff98aae7cddacb52a1583dc001f4f5f8b70eded5cb4e7156cbf7abf0136b83afb59a9bed31ab2203  pkgs/vm-fc31/qubes-core-agent-4.1.4-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.095795 +0000 build-fedora4: d647a25870fcf1ed2396b996e21e4346aadd716949f2063ab6ee88bb813be9fde0f388d8e12cdfbdc2d1e04e58c6f92433346add606597a54a267bdae47c54b5  pkgs/vm-fc31/qubes-core-agent-4.1.5-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.095811 +0000 build-fedora4: fd9520a6f976f86a00959823da8403df4ca9d84671c5d61805eb1ae0759b6517cd400cbe7b26bd313300a27b179205a4e1bd479b45996d3f8c247cfd69a96f07  pkgs/vm-fc31/qubes-core-agent-4.1.6-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.095836 +0000 build-fedora4: 4fba2c513aaeab3c0d295d5cfba10e710cc65f035b65eceb18d7e4a7bf963ce4990a816ec557a3fd1ad8979e775ffd5f1aedad64f026c94557bec5a88c8de62d  pkgs/vm-fc31/qubes-core-agent-4.1.7-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.095852 +0000 build-fedora4: 4a8ee6ce3383d5cbcc13a9e21ad428e3d6635bb73cb61948581aa7e804e3830c38d139167840c1a1407b17deb912b227b281ba0e356437577fea3fb97edaa32e  pkgs/vm-fc31/qubes-core-agent-4.1.8-1.fc31.x86_64.buildinfo
+2022-03-16 12:50:17.095869 +0000 build-fedora4: c13896d455196fafec52ad8a7da649465baeb9f1863aca4a700facc88356aa4b2c3a950513ebe1d92be07e8ce6a14403aa777182f093f031617370a1f723662b  pkgs/vm-fc31/qubes-core-agent-debuginfo-4.1.27-1.fc31.x86_64.rpm
+2022-03-16 12:50:17.095885 +0000 build-fedora4: 9db5f25aa62e44a95ceca0c37bd295b34a05b51efc1ad5404f3f7bed0dc481360ecb52b38ab6be4d98f8b9e2da65120c38c905c88dda6fd43a5bd22aeb4480a3  pkgs/vm-fc31/qubes-core-agent-debugsource-4.1.27-1.fc31.x86_64.rpm
+2022-03-16 12:50:17.095901 +0000 build-fedora4: c4e999d38632fa1efcff3d87f921f3d6ed9669da29d60599351076b5de078e0a21ddf0b185becf2df2e6779b668d71aa35c30a7b3428eb391aba875207110a0a  pkgs/vm-fc31/qubes-core-agent-dom0-updates-4.1.27-1.fc31.x86_64.rpm
+2022-03-16 12:50:17.095917 +0000 build-fedora4: e13340c654dd494e31036f637e06b910e79480fc6f775046949fd7811c93f2fbcdfc5d90893ea5bf659a92f8573550dbd428d81862bd7a01ee7db50a0d23e7e9  pkgs/vm-fc31/qubes-core-agent-nautilus-4.1.27-1.fc31.x86_64.rpm
+2022-03-16 12:50:17.095934 +0000 build-fedora4: 71054b004808474d5567b88f9fd6d0b668c1d2a686250aae5948844e9a4f482d3df9a348015a76693a22d850f48f83e3766e57199d47296c31c9229072455e78  pkgs/vm-fc31/qubes-core-agent-network-manager-4.1.27-1.fc31.x86_64.rpm
+2022-03-16 12:50:17.095950 +0000 build-fedora4: 5074fe0e23f98bf6162b3e0631cd259420f637230e5a75df768c2d597f447cc88457cb48991e8b7874be3c3ea4c63a380b8cf0d5eb28a756535ff863633eafe7  pkgs/vm-fc31/qubes-core-agent-networking-4.1.27-1.fc31.x86_64.rpm
+2022-03-16 12:50:17.095966 +0000 build-fedora4: b525005bf5b1a017ce8ffa54c4a9e680a503febcc5aa21532c1acbab511fca7da00d7659a5b872b343c3d822a499d82617a5ca5b36ca3a771b9d5283707646e7  pkgs/vm-fc31/qubes-core-agent-passwordless-root-4.1.27-1.fc31.x86_64.rpm
+2022-03-16 12:50:17.095982 +0000 build-fedora4: 0693c2af6e593af88d6116e91ec43cbc952ed6c520cb17edf1efd5edbffd631231288032d46c35ab74e4b18a64e6fc8efb60d3bfaa1dcada6e13ea9304a205eb  pkgs/vm-fc31/qubes-core-agent-systemd-4.1.27-1.fc31.x86_64.rpm
+2022-03-16 12:50:17.096001 +0000 build-fedora4: ecb58cce76b8297d570f6d9abef5e2588c0a474e0e5aa2651279b1214c2e0747f6f1b188f6210c1ecc55611d19a0a2d62d341fccf9bd3fea3fcddc6b91ae4e74  pkgs/vm-fc31/qubes-core-agent-sysvinit-4.1.15-1.fc31.x86_64.rpm
+2022-03-16 12:50:17.096020 +0000 build-fedora4: 106ae1bbd90ef55d17ded23e005800792defa493dbd21a203eee037b3ac4f164be51169438016892d46ae749a1c0e252282bff738fe5e9fd66d1abc4baf6d065  pkgs/vm-fc31/qubes-core-agent-thunar-4.1.27-1.fc31.x86_64.rpm
+2022-03-16 12:50:17.096035 +0000 build-fedora4: 9c106b47c5a44f5a6d20499a1f8d8eb0b7a8c3b3ddeb17d86bce5224ab1b83d493c24a89baa8b649ea4ead918e43ba9a26029f00501f61aeb0e2d57deaf9f6e2  pkgs/vm-fc32/core-agent.spec.list
+2022-03-16 12:50:17.096052 +0000 build-fedora4: f3e924ba53ca2c5bb839d6deae18b325e98be27e083d14aeca7ca5aef15faa26dc2e4738337dcb2ff69581da9c14343d9939fd4b993adac8c611c4d99e0d4f97  pkgs/vm-fc32/python2-dnf-plugins-qubes-hooks-4.1.33-1.fc32.x86_64.rpm
+2022-03-16 12:50:17.096068 +0000 build-fedora4: 6ab1557335c48f00891fa7f9695e6ad78f15be57d584cfcd7dc5244c1b29b9612cf4d618ae78265efd5ec193eb05af364c0e1a58dd909c10e55c71f031946207  pkgs/vm-fc32/python3-dnf-plugins-qubes-hooks-4.1.33-1.fc32.x86_64.rpm
+2022-03-16 12:50:17.096084 +0000 build-fedora4: 8ad1a80f45871ddc533642ebc041bb1ddf96e7ea1e4b7896094a9bfd292b08196392459e2b518b83984118b35eb46fd7e75da585b7b8db5321f809a9d3e9c446  pkgs/vm-fc32/qubes-core-agent-4.1.10-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.096100 +0000 build-fedora4: 6044867540a4d59431172f891613baa423f51fe62366f11ad73945f480712588a0e03061514d8b6ab0c5c48c8ee3921d7a96dff792a35895dc995fa61930e82c  pkgs/vm-fc32/qubes-core-agent-4.1.11-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.096115 +0000 build-fedora4: 930a207879f6aa4d9f2837fad7562b9dc48d417eea5127bc19d7ee4ac4201ec170c0959d7be3014f460d90ac4ce14fb88e15eb804cbf93cb0eefcbdc7fca0ddc  pkgs/vm-fc32/qubes-core-agent-4.1.12-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.096131 +0000 build-fedora4: efe293aa7be32746fd7e0f3a79f0cdc8abc3b265fe1db39c633eca0b71edb1d12423ee89ac0cb1a14793782411632e2cd8053d287311295a31bc1cd3d00a41b5  pkgs/vm-fc32/qubes-core-agent-4.1.13-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.101980 +0000 build-fedora4: 3879136f54a8e0604228b6d05816af6a92e372e9500f9431d5ab5c504722eb6a7dba02a6d7e8317152d8288f433291f1db6b60e63939aec9c53e8a110a45008b  pkgs/vm-fc32/qubes-core-agent-4.1.14-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.102027 +0000 build-fedora4: de4c36f896b300b501e01f341ea328eb0ff8e0fc3ccd2f5e811d59642add4dfdb2609bdbe8c53776b97df5d7dad407319a29c7208f76e7381bd34b8d71c5bfd9  pkgs/vm-fc32/qubes-core-agent-4.1.15-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.102045 +0000 build-fedora4: baf0eecaa8335a4a2fc1e9d7f877f00356194ec3be0df7777e62cfb8f70faa009ef144923dabcd03b86c1dc005c8df058dd0e3834bb9e14a4f5653ed2cf39908  pkgs/vm-fc32/qubes-core-agent-4.1.16-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.102061 +0000 build-fedora4: 393fc53c6327a5f5d93f5ac5dcec8131ae59c8fd665cd1e9488d4025034d5203bc8b95947aed9afa6bccea3030a805eff1a5bd4b2d23b551ceabffef6d200912  pkgs/vm-fc32/qubes-core-agent-4.1.17-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.102077 +0000 build-fedora4: 2e825cfa8d0ed8935efc0973d9a0dcf3a8b38bcc81490f1fc5a340e070a1f1951d7dfae874cb3cfb1f27945ed5c0d9b1259a66a6149177e86aad6577c9341395  pkgs/vm-fc32/qubes-core-agent-4.1.18-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.102092 +0000 build-fedora4: f20d0fff6fdd87c08847f58c47a095f43cbe40f3736e022db171bad217a2ec4f0cfda07b54c0d71e8704f3095963b30c3ee7f678958795a8fd21072a01f155a2  pkgs/vm-fc32/qubes-core-agent-4.1.19-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.102108 +0000 build-fedora4: 25297219d633cca63de09ee3c4f9c332b2063c960f3a9aaa32cf31e8a327282c5e5933557f730344647fb52fe4e18a262646ac54dae4a55eeeb83b313359a54a  pkgs/vm-fc32/qubes-core-agent-4.1.20-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.102124 +0000 build-fedora4: d541988809b2152e9dfadc45bf6e5801a342325bc0b1279de566259d9f83f4b4cbf419195e5ee0c288f489208fd6b5ecbcb0aeb1c4c3051047e5cc9f3746ea3a  pkgs/vm-fc32/qubes-core-agent-4.1.21-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.102152 +0000 build-fedora4: afd3ea41c5899d1090f052e11816eeb317354fa6453b39952f00441e724bec024cce4d03417d06c733c24e778c1fdbb2eecf1b07de348ccc03adb1611346632b  pkgs/vm-fc32/qubes-core-agent-4.1.22-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.102172 +0000 build-fedora4: 16e0b6147681912983c65136e9fb414cc371536b154ff49c9fb7008689db3926efa5d15bd00c9e360ec64cd823968eb4c5ded7253500de29d7a88f8ee59bf064  pkgs/vm-fc32/qubes-core-agent-4.1.23-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.102188 +0000 build-fedora4: ac6bd99b5ffe098b6d88e6dac498b6403dc9f055d5181876174fe46066d4e04d9cbd4944c38be97fade57ad0c8f6f8535cc1a76ead491fce6f0787e3274c26a6  pkgs/vm-fc32/qubes-core-agent-4.1.24-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.102203 +0000 build-fedora4: 246777a646e852637703e38b675313afda6a8375962eae1afe877a2b85b712c4d6d61961b05618a20f5ccf16c8b5178340fe256f1cef0e82750971dcb684a532  pkgs/vm-fc32/qubes-core-agent-4.1.25-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.102219 +0000 build-fedora4: 12e1e99d29128ccd24db7e1891306b3f10a22c5f04cb586bd438d3f9b2018ea60bd4b2afbd617156dfec32764840e571f5d5b76006ec9afba04db0f61d725947  pkgs/vm-fc32/qubes-core-agent-4.1.26-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.102234 +0000 build-fedora4: 4e9c016a3d485392bd79241848e860607eeaed337e30a5e7ca4b9b9dc2941d1f739825dcd57315dd7273960afa7173c996e685d91d9ff4dfe698582f4ee42ae2  pkgs/vm-fc32/qubes-core-agent-4.1.27-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.102250 +0000 build-fedora4: 09a588abbda6e902cceb0cc42ab08dd429d27d0e67cac4223638de2f0de0f0871397cc0699e7366445406548c6e1e48fcfa10cf8ef424e520b76b9c67730d0fb  pkgs/vm-fc32/qubes-core-agent-4.1.28-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.102266 +0000 build-fedora4: 97d32bdab4f056b1aa73bdaece5b5ebb95a1fbf904a4467084f58750445ea66ea77d85be2bdd380169a7654143d3e3c3f5d1d40c5cbe11303f9b1a74b42121f3  pkgs/vm-fc32/qubes-core-agent-4.1.29-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.102282 +0000 build-fedora4: 6b62c9624ccb58e69da933c451a12826d828f537410f7a345de5b49d045084034ffbae94206460138e7201489553556bcfcf493c423acf40902f6c840beffa3a  pkgs/vm-fc32/qubes-core-agent-4.1.31-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.102297 +0000 build-fedora4: 97835389e3330ec8d0f598f6e78af319416da85dbac2ff5210cd4967768d39631e7b3034069e7dfbe7f450df245547a054e2a03fb6209f2bbe9784f549722696  pkgs/vm-fc32/qubes-core-agent-4.1.32-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.102312 +0000 build-fedora4: cb2640adfee6a87c257c2a8e68909d8e075dc3081aa495f5c30fbad681aea91618c6b815d9ad3241d5cc59674c307ac913c9c27267930fdb0527f7d5c7447901  pkgs/vm-fc32/qubes-core-agent-4.1.33-1.fc32.src.rpm
+2022-03-16 12:50:17.102329 +0000 build-fedora4: 041b5586a77ac91a61617dc652e448948811f17ac12506959bf97377e6f43dc37b6eb6bc7d8a31b89f21690d85200aa325bd1985140f1e17d02402950a45715d  pkgs/vm-fc32/qubes-core-agent-4.1.33-1.fc32.x86_64.buildinfo
+2022-03-16 12:50:17.102352 +0000 build-fedora4: 07a72495328fa4102d24217d3e6625e44a18beb9bcb595f42be80a9ae3f3af576cd6f143271dc8701d9c30e1184983a9cc0c2b6177f97aee5f7710cab3af54ec  pkgs/vm-fc32/qubes-core-agent-4.1.33-1.fc32.x86_64.rpm
+2022-03-16 12:50:17.102370 +0000 build-fedora4: a1034bc4a55c5cf438686c3ecf99cce1c53283de8631046e14db7a7c61d03bb9b74bc65ffeacf3ef9f2739d9fe6b5b7142857b12c2e0b1dfbf592e8d45abd4ec  pkgs/vm-fc32/qubes-core-agent-debuginfo-4.1.33-1.fc32.x86_64.rpm
+2022-03-16 12:50:17.102387 +0000 build-fedora4: f6fa3510183b2bbd8d30b8159bb3720a1e4d6ed9003f45cc3750e4ce1c073b426eb58ffa82dce1b326ad12b92e07a416aa80a026cc9ee88eb22d77bc324652b0  pkgs/vm-fc32/qubes-core-agent-debugsource-4.1.33-1.fc32.x86_64.rpm
+2022-03-16 12:50:17.102404 +0000 build-fedora4: d002b2bb44db4f2860190838d096a1232cfa599ffa06625e7d94c67326ada7a345feb5f0b460cbcd02a70c7c7de93c915c257aeecc2fa6fea7b6ac5a83059d30  pkgs/vm-fc32/qubes-core-agent-dom0-updates-4.1.33-1.fc32.x86_64.rpm
+2022-03-16 12:50:17.102419 +0000 build-fedora4: 9b6c6b2beb9727b3c8f1ee88233f66b06eee8e82b7f96c49617d59bab0a557fa6d648eb0e041df4ea1c16ef59f81c68761cc08556bfad6174cd870abead1630c  pkgs/vm-fc32/qubes-core-agent-nautilus-4.1.33-1.fc32.x86_64.rpm
+2022-03-16 12:50:17.102441 +0000 build-fedora4: 315ca99b414b05667e61419c07a25f4922c3599b9044ff0ab696d466a4dd0bdccb8cdb912ee66029f03bd6c4182f25df5e1433f04eeef87037c117a74b00061d  pkgs/vm-fc32/qubes-core-agent-network-manager-4.1.33-1.fc32.x86_64.rpm
+2022-03-16 12:50:17.102458 +0000 build-fedora4: 938368becf862db49572233b8adb1db1b4330e465d9967274233b42d1e5b131d332394c31152b296b8bbe51cc916328b2b60183ee4e6de8d9cf20acf61bed9ed  pkgs/vm-fc32/qubes-core-agent-networking-4.1.33-1.fc32.x86_64.rpm
+2022-03-16 12:50:17.102475 +0000 build-fedora4: 66cfaa1b94f69fcaec2204eda7dd57b039763a0bd14ee7d8a03d646ab1acf2f6016dcb00ae55f4b4f9bed402647e8dd4d278575991d0d98e0ef1a6db81756cac  pkgs/vm-fc32/qubes-core-agent-passwordless-root-4.1.33-1.fc32.x86_64.rpm
+2022-03-16 12:50:17.102491 +0000 build-fedora4: 431a6cf748a580f307645a28a842c813fc508c87d2e4a8e1397a7370db92e81122663614d923395b40e17fe7f7b3ea0d8a95ce046037f11aa80f8f19a309a579  pkgs/vm-fc32/qubes-core-agent-systemd-4.1.33-1.fc32.x86_64.rpm
+2022-03-16 12:50:17.102506 +0000 build-fedora4: f24abcfc933c8c76052181b0564b3ca8e29c29bc0a153dc2bdce22381eefcae3376beedb84a6f7db6f25297945772066c7065c8f6915b12c0c449b318a1e8c90  pkgs/vm-fc32/qubes-core-agent-sysvinit-4.1.15-1.fc32.x86_64.rpm
+2022-03-16 12:50:17.102522 +0000 build-fedora4: e61b31bbc0f04e6ec814ebaa6c5a7fe886f1f33011d1b0a032ec5003d15dfa2e4221cfd8e82d7279e0f42b17fb9d843d26831ab3c6620bf9028b33096b1269b5  pkgs/vm-fc32/qubes-core-agent-thunar-4.1.33-1.fc32.x86_64.rpm
+2022-03-16 12:50:17.102536 +0000 build-fedora4: 9c5a36a06d1b7b7205e8b653d69fb62e614e15a780abbfe7eb275c4944f4e209a1ad3412153bd006156e12329d4386c0124b8a042ec4eed7f48bcce875f333c8  pkgs/vm-fc33/core-agent.spec.list
+2022-03-16 12:50:17.102553 +0000 build-fedora4: 055ac2ad5e5f4b5fd245882111f12efd8437924f005d8f348e602c002146bb9911bf57f72f07727eed4ab7a98039bed92705189dc6e35eb74a0fa57bc680aa97  pkgs/vm-fc33/python2-dnf-plugins-qubes-hooks-4.1.33-1.fc33.x86_64.rpm
+2022-03-16 12:50:17.102570 +0000 build-fedora4: f3d729563f6d2f8355ebb32d8cee69b3332a743c26ccddb5325edcc4516097916bdd267305674f8b81f418959195dcdeeb0e7a5b5a9784e8f9ee90770429aca3  pkgs/vm-fc33/python3-dnf-plugins-qubes-hooks-4.1.33-1.fc33.x86_64.rpm
+2022-03-16 12:50:17.102585 +0000 build-fedora4: 3391d9f979b0c536787a682bf1baf30bb4d283bcc1cc2f4a6eb588ddc625688a6d37e7622f8e7213c5d96de027018a460ab5a4d9fc3e0c7ddc614052e1542602  pkgs/vm-fc33/qubes-core-agent-4.1.17-1.fc33.x86_64.buildinfo
+2022-03-16 12:50:17.102601 +0000 build-fedora4: 83bb6ec29e12793e5d34ccfa035966d8c62a23d5489d1bba2093089a090660de60ab28fdf3b6e50bbb5f883fb8698cde89fca84c4e8350f31f9930d89c57e6b8  pkgs/vm-fc33/qubes-core-agent-4.1.18-1.fc33.x86_64.buildinfo
+2022-03-16 12:50:17.102617 +0000 build-fedora4: 5cc22a9eccd729d811438d1671dc2d3f405b263d5fa8281abec6fb78d91929c21a8e49fdacd488623bbbab2a676392d39f8424f58d3d3aa2773a6148a5a3a50a  pkgs/vm-fc33/qubes-core-agent-4.1.19-1.fc33.x86_64.buildinfo
+2022-03-16 12:50:17.102633 +0000 build-fedora4: 297feedf66cc89ed84cb4fbdeda02c9090bf801722ca19c5578bac3714f1b5feaefa7acdbdb36e4b7f14e6e83a9dd6e751a0f102c6d6fbd33c8e90c3b9ae2d6b  pkgs/vm-fc33/qubes-core-agent-4.1.20-1.fc33.x86_64.buildinfo
+2022-03-16 12:50:17.102648 +0000 build-fedora4: 5cf2dbe39f7eff8dd29107cde370db91ae2a9bb5b6226d819b1234cd60de2f91f53ab61c2ff5c94d51ec0ac551ba121b30bce8fb57c2df8d83f94d368d5fa563  pkgs/vm-fc33/qubes-core-agent-4.1.21-1.fc33.x86_64.buildinfo
+2022-03-16 12:50:17.102664 +0000 build-fedora4: 299f4181cb41f035d35e2c0980a53a541e127dd6d7d818ecc82ceb406e23c30726d16202138416e2c053b0d8797105ec7fa73c0ce72d00481b6743e6a1e1a011  pkgs/vm-fc33/qubes-core-agent-4.1.22-1.fc33.x86_64.buildinfo
+2022-03-16 12:50:17.102680 +0000 build-fedora4: 9baffcb4c53453209e8877700e09934719f88c59f6d5747698c87bbfd1b1544d640ff0bf28f78323b72e2ca4e090aeb2f826d0d95d0adced8dd97fd1a4a8138d  pkgs/vm-fc33/qubes-core-agent-4.1.23-1.fc33.x86_64.buildinfo
+2022-03-16 12:50:17.102723 +0000 build-fedora4: b3e9bd1f978cf54051a0965f9f06731ea713137945a52827d4bd420fc8b3a7a1e4ed6bd1694fc1a6a790e3c19cd56c681e9963ccad37510f269fa74b90c785d2  pkgs/vm-fc33/qubes-core-agent-4.1.24-1.fc33.x86_64.buildinfo
+2022-03-16 12:50:17.102745 +0000 build-fedora4: 5ab39f9b40727507421a836621b2f7070fd8f3e5717fbcd75f2e5a322d2851bbadeeeb451ae68c36c97c2722fc2825a4e10cf2e8669239788517484c39b2d151  pkgs/vm-fc33/qubes-core-agent-4.1.25-1.fc33.x86_64.buildinfo
+2022-03-16 12:50:17.102762 +0000 build-fedora4: 8e3d48775c7fc826b3cdd0e8336e1169fae5a39b3e8ae11ca722414a8b1faaa8c837a953de85a053fdaf96f2fb54ea2acb88ee6406005d97574b70edb21bd617  pkgs/vm-fc33/qubes-core-agent-4.1.26-1.fc33.x86_64.buildinfo
+2022-03-16 12:50:17.102777 +0000 build-fedora4: 388049f75a8e000d80832022279906a3112ca3069b62bc95ff31beffd86d7e166fd394c5f85c9797fd7ed489a6af4647158c2f5faaf1b78d3600a457e8aa43e9  pkgs/vm-fc33/qubes-core-agent-4.1.27-1.fc33.x86_64.buildinfo
+2022-03-16 12:50:17.102793 +0000 build-fedora4: 7c5803c1f09a5eee709fe64b691a37a857e354fac3c9999ff91ffb0543ee2bdfccc6ee0a0983d05e4def3191d805ee620a245af8cdb5ba8f813c18c79123d9aa  pkgs/vm-fc33/qubes-core-agent-4.1.28-1.fc33.x86_64.buildinfo
+2022-03-16 12:50:17.102809 +0000 build-fedora4: a0318edbf6792e62bee637ddbaa88d1073081efb0a6e9f486d815c5201bc01fa9256fb49ec2f0604e3c1e73b705570c439876a241590c6963896e09287f19b8a  pkgs/vm-fc33/qubes-core-agent-4.1.29-1.fc33.x86_64.buildinfo
+2022-03-16 12:50:17.102825 +0000 build-fedora4: b621a7fcdbbb4f4969cd913bb4716d1004d425d4829bb1c609ee3435d1bca96a75bf7bde9cdc07926e213fda2078334d9a058bb866b3909840815768f77eb6f4  pkgs/vm-fc33/qubes-core-agent-4.1.31-1.fc33.x86_64.buildinfo
+2022-03-16 12:50:17.102841 +0000 build-fedora4: 03b5d63ae9b067e4f08bb3f23e1c748c998a1775b5b663a20867e4d0a7d680c37d6b1a32d6f25df4150aba7aed0ccc9894164859c25ce76c4a29b0ed7dc13bee  pkgs/vm-fc33/qubes-core-agent-4.1.32-1.fc33.x86_64.buildinfo
+2022-03-16 12:50:17.102856 +0000 build-fedora4: 375e0c78854dda87f686e9c5bdcbccbd3b5e7a4174c160d27724cd389771d54d0f7ee57e82f6321e28b049fe538c2c7536f52cc4f9750d2b7a004d0564de334c  pkgs/vm-fc33/qubes-core-agent-4.1.33-1.fc33.src.rpm
+2022-03-16 12:50:17.102872 +0000 build-fedora4: 773e9580bbf5a99d28dc89c45aacab4a270e8ca9beb70a95dd00da27882e17ecad4911d410958bb65d0abac3555a8162487ce999da0424ceb21f42109830cd2a  pkgs/vm-fc33/qubes-core-agent-4.1.33-1.fc33.x86_64.buildinfo
+2022-03-16 12:50:17.102887 +0000 build-fedora4: 8833b4272c8629d069a88a9b9e4945d6fc38eb04874b507fc3788b57f15d20e2a03287001a8548d6ec6f1d2e18f52e5a14db7da05ae488d505a0c8cca4597e66  pkgs/vm-fc33/qubes-core-agent-4.1.33-1.fc33.x86_64.rpm
+2022-03-16 12:50:17.102903 +0000 build-fedora4: d65a7dffbfba9b7f2f12b18cbf05167927367ea78edc82888dc13a0a806ed927cc9981459836b06194260f2f8e52bc6ee9845802ba6cd06561bcfbc80b2234bd  pkgs/vm-fc33/qubes-core-agent-debuginfo-4.1.33-1.fc33.x86_64.rpm
+2022-03-16 12:50:17.102919 +0000 build-fedora4: b80fff370f4faa99c48e798f52c85224ea0bd7c593357969ea78d800dfc8a322a2f980137b3084e6a41e01ce1084d18046ffd7b4ed70c647c1d32cad099b037d  pkgs/vm-fc33/qubes-core-agent-debugsource-4.1.33-1.fc33.x86_64.rpm
+2022-03-16 12:50:17.102936 +0000 build-fedora4: 5c4055288470ff2fb93fdb3f4fa88358ec653cc5e7d9d4df238d89f067ba5109f8a956f6be9fe6ada1951bcd434f793e97179c87112f8fc92d912c73abd10c7b  pkgs/vm-fc33/qubes-core-agent-dom0-updates-4.1.33-1.fc33.x86_64.rpm
+2022-03-16 12:50:17.102952 +0000 build-fedora4: fdef4802287e775d07f45ee730b92feb597b77b9bb2b7f8d74906115524ceb119c885c2433781bb903133a8de462588ce90b548dc9a012499df15f3488426910  pkgs/vm-fc33/qubes-core-agent-nautilus-4.1.33-1.fc33.x86_64.rpm
+2022-03-16 12:50:17.102968 +0000 build-fedora4: 6cc82fad4287121c40118a2e032968a7b2742a4e24b1aaf473212136e5de7fb75979af7c247bd250f05e6cee33be4d4a3578c43abd6b5a037d4b5cc21e120556  pkgs/vm-fc33/qubes-core-agent-network-manager-4.1.33-1.fc33.x86_64.rpm
+2022-03-16 12:50:17.102984 +0000 build-fedora4: b65e804dd2001fc1e46543a498e9d95578733915ed73040345dc2e4782f6356e97db368e2c3f969ac710e67aa8a1974b6ce5b411e954071c7da054c581e4ca42  pkgs/vm-fc33/qubes-core-agent-networking-4.1.33-1.fc33.x86_64.rpm
+2022-03-16 12:50:17.103001 +0000 build-fedora4: fc1ce2fd1d78901ca6203cafee292f3c4fae334500d63c4ab1b14a214b1c4ecd7dc5a28f42bab520c75eff5a1a966808299a10e34ce5e255549e7a25ac6bc1a6  pkgs/vm-fc33/qubes-core-agent-passwordless-root-4.1.33-1.fc33.x86_64.rpm
+2022-03-16 12:50:17.103020 +0000 build-fedora4: a2c94ea11a206cd0e71614f5f9e091eb96f432903eec122f4a29a65cbe36ab70974c6d60b0d361481001915c7973f32911e56c3ae4db8a217934f38aede2e4cd  pkgs/vm-fc33/qubes-core-agent-systemd-4.1.33-1.fc33.x86_64.rpm
+2022-03-16 12:50:17.103036 +0000 build-fedora4: dc5167ebfdb726b0d3fb2097754016d2225d61cf3373579e82db4dbff0bb287d47b9788674692dd6d99a248881d854f2e07f0b3a1963cc470058ee5d0d9a6509  pkgs/vm-fc33/qubes-core-agent-thunar-4.1.33-1.fc33.x86_64.rpm
+2022-03-16 12:50:17.103051 +0000 build-fedora4: fec7e174ed282464a77146801b1f9b71fb0983f322364e58f2ffbf546d38b57bdca32ce46c1ee00f861a4c28d89d79e1a50cc8da6bbb4aa090919a343b45d0b7  pkgs/vm-fc34/core-agent.spec.list
+2022-03-16 12:50:17.103072 +0000 build-fedora4: 412585f5580c692526fe29bae9896fb0f5147ffe462eec9be54b77618618b2790b78838a52eea3123f0a9589c794a668c585d14fd4589036bc1c2c45e13d395c  pkgs/vm-fc34/python2-dnf-plugins-qubes-hooks-4.1.33-1.fc34.x86_64.rpm
+2022-03-16 12:50:17.103089 +0000 build-fedora4: 2f040c744a870f7c05bd2d495af6905e382991aa775f7b0ad03d8166687187db935c21d2bad10eadc3f58e17db76f0573a69dd2b051a0ac87fa573a762da074d  pkgs/vm-fc34/python3-dnf-plugins-qubes-hooks-4.1.33-1.fc34.x86_64.rpm
+2022-03-16 12:50:17.103105 +0000 build-fedora4: 9df07ad71010c15b00cd4af12fd2806c89401715a4e285c4f3bee61f58ded75ec0586233c4c61a1a3fbf539b41c7e8c55cb487b3b6e5eb99589d411b554c1096  pkgs/vm-fc34/qubes-core-agent-4.1.25-1.fc34.x86_64.buildinfo
+2022-03-16 12:50:17.103121 +0000 build-fedora4: 3d87575cb0bbb983a79ec98e75591e650427550cfcda7b841457ba6e8ee3529dea3dd1a2474abf2209fd10647aaffb2d8bc72880f5d8a05e318b6dfa6cdfe196  pkgs/vm-fc34/qubes-core-agent-4.1.26-1.fc34.x86_64.buildinfo
+2022-03-16 12:50:17.103136 +0000 build-fedora4: 4baa2c35e07194149630186c9dfa70d91e0f229aad9082c38420cf312c9ad9f40d2266c5a9ab055388ceb802fc6919b00cdd631990b4c2a5a9103ca382c018da  pkgs/vm-fc34/qubes-core-agent-4.1.27-1.fc34.x86_64.buildinfo
+2022-03-16 12:50:17.103152 +0000 build-fedora4: 14e43e3432125d4d75df9385501f031d0fa54f01abf2c07b0d1870e1934cbb8a3b3770456299cbf2ef85e9db059bfe9659f206f48a9f54832f165d692d317874  pkgs/vm-fc34/qubes-core-agent-4.1.28-1.fc34.x86_64.buildinfo
+2022-03-16 12:50:17.103168 +0000 build-fedora4: d86de436527ffd01098ca3e0d5d91dfd01b3a8f62e36f32a7244a6bbfeed151de6d45aa55f66c9134d84013ec635de0177c5d39a3e9649ea1b3f430cd56a97d5  pkgs/vm-fc34/qubes-core-agent-4.1.29-1.fc34.x86_64.buildinfo
+2022-03-16 12:50:17.103449 +0000 build-fedora4: 4808d3e8614c0c4fb81966aa7e80ef5583948756654bd12a0c6c540e89c13d16b292d3e0084089afd2d2254b592eb76ac8fb2e726b5d8d6b654445d1e375cea9  pkgs/vm-fc34/qubes-core-agent-4.1.31-1.fc34.x86_64.buildinfo
+2022-03-16 12:50:17.104704 +0000 build-fedora4: cdfe014735a9f776668f99375987dc5c96cd881ad7ddb188605a83fc35602d454f3cc2ef58d218fd8f22f73d5e2d858729b98a9e9f335aec36c7a4bfc49c231a  pkgs/vm-fc34/qubes-core-agent-4.1.32-1.fc34.x86_64.buildinfo
+2022-03-16 12:50:17.104744 +0000 build-fedora4: 46e5dbe609c7d5c02c21a7af7d58246bb3d5dd0ea02d889e8a470e1b1edb414274a0da1f79f8f91ec925abb85b06dec6f9a7a8b47449d9968642495ccda1546a  pkgs/vm-fc34/qubes-core-agent-4.1.33-1.fc34.src.rpm
+2022-03-16 12:50:17.104779 +0000 build-fedora4: 2788a283d3672264ccc95a6021847b0c9037f171d4c869bb57d794eb0e8695cd225868b4373c2df2d3e1ca4937061baeedbddaa8144a246294397cfc91d88008  pkgs/vm-fc34/qubes-core-agent-4.1.33-1.fc34.x86_64.buildinfo
+2022-03-16 12:50:17.105804 +0000 build-fedora4: af8b63dd9a2500e40555613dda7bb77c7b2eeea28100878db3e46f4b51f3fe13fbb9661e2a9ef59f4a79cc9b15f25287aa60cf012ec680d99dc66d71380d2e26  pkgs/vm-fc34/qubes-core-agent-4.1.33-1.fc34.x86_64.rpm
+2022-03-16 12:50:17.105841 +0000 build-fedora4: 71235d620eaef992afb32ce62af8bc46ee88be8f4cab7f924ca2140e32e3423f96362e0bdc1990c7832f27cc2a836fd760429352dc17ebe98bc9357d13c4580e  pkgs/vm-fc34/qubes-core-agent-debuginfo-4.1.33-1.fc34.x86_64.rpm
+2022-03-16 12:50:17.105860 +0000 build-fedora4: df3822fcc8814617d763c97081906c32904fe703daeada90c72e82194cd8f3728a4fc9a6360d522eeaac542618e5f7b84ee16a56f43248749ebe9bfbf399c46c  pkgs/vm-fc34/qubes-core-agent-debugsource-4.1.33-1.fc34.x86_64.rpm
+2022-03-16 12:50:17.105889 +0000 build-fedora4: 34606e4d9986f53594ee78892ae79c1bc1f547a8018d62fc2158b634f0ca2f06022476af57ac78bff03b3951145dfe6af260545e5d00f36e415d085eddd2bc74  pkgs/vm-fc34/qubes-core-agent-dom0-updates-4.1.33-1.fc34.x86_64.rpm
+2022-03-16 12:50:17.105906 +0000 build-fedora4: e288c667d6e4e352f29b8eb3446e740894a092f72b4ec97ac61fbf50e1591104e500a4ae05ae4bae20dc28ea822644dbdd6d9b4fefc1126f55aeec873956917d  pkgs/vm-fc34/qubes-core-agent-nautilus-4.1.33-1.fc34.x86_64.rpm
+2022-03-16 12:50:17.105923 +0000 build-fedora4: b2aa9f9a4e11c07f75cda990e99cd6a56dc21c1a60c3a0ef753c3b827e816cbdfeafd92405f2b774f5e0d243f3e2465059eb283dcfbd3a38f715d3475613a1ad  pkgs/vm-fc34/qubes-core-agent-network-manager-4.1.33-1.fc34.x86_64.rpm
+2022-03-16 12:50:17.105939 +0000 build-fedora4: 1e9b3a3c6eaf65579e22344442e9f7b6dfaed0fe1aac16a2a4aebf14bfd1960f905fe8356d0b028e2899e141a2340ab7280517796c027086c69b7b4716e127de  pkgs/vm-fc34/qubes-core-agent-networking-4.1.33-1.fc34.x86_64.rpm
+2022-03-16 12:50:17.105955 +0000 build-fedora4: ea6a9de9b0c82e78b3395b6381eb322642b4d9465f33149a93d6f3ef48257570fa08823525fd1f4133aa3ff7ac8932d559a816e113118aba2ad3df40f5877b30  pkgs/vm-fc34/qubes-core-agent-passwordless-root-4.1.33-1.fc34.x86_64.rpm
+2022-03-16 12:50:17.105971 +0000 build-fedora4: 2f2f2c1b08dd2191feb3086d747afbf8afe26aa5764b8dc19a93b0617153ee6f674b0c8f60eee6db3ed52a05b030a5b474ab5f4bc0f73ee98312a8d3e259b2ff  pkgs/vm-fc34/qubes-core-agent-systemd-4.1.33-1.fc34.x86_64.rpm
+2022-03-16 12:50:17.105986 +0000 build-fedora4: 2b22b4a22a1ebd94829b6772375a637fb6e79350e22e1e329fbb0e6ca585654082ff6eea919a5a41e06a4b47d21b8056ae33d7e167f20828c242375943ae352c  pkgs/vm-fc34/qubes-core-agent-thunar-4.1.33-1.fc34.x86_64.rpm
+2022-03-16 12:50:17.106001 +0000 build-fedora4: 63a2bdfa20af2d771738476d0d3e9fa6cf7cb5f3357c930159799067d0b00667c09b8ead4623e00730eb3b210de3159b80d3c967efb0c528ae8c82d922660e34  pkgs/vm-fc35/core-agent.spec.list
+2022-03-16 12:50:17.107306 +0000 build-fedora4: 797b8b79767d381131aca50e07f92b9c20f3655ffa82984ba22f6f6b41c73624afeb42b8e02bbe44226c2aea2b9ab304b779d8c84b2b1f18928a3cc2b13b7bd7  pkgs/vm-fc35/python2-dnf-plugins-qubes-hooks-4.1.33-1.fc35.x86_64.rpm
+2022-03-16 12:50:17.107347 +0000 build-fedora4: 93c882b87dabc95c3429fbf7392ff0cb31a2a78e988471b1a656e0467befe939fde6c340cb830c7e8ca411b327252dd98b9f13507399cb28258921b15e0205a5  pkgs/vm-fc35/python3-dnf-plugins-qubes-hooks-4.1.33-1.fc35.x86_64.rpm
+2022-03-16 12:50:17.107365 +0000 build-fedora4: 2487030a2ec278be75ebe15894246318376c5eb1bed579e5bb7e9704fae915fb5e017522afe0b342e7b81e885c808ee05935f519edd73741e728e9baf85e91a1  pkgs/vm-fc35/qubes-core-agent-4.1.27-1.fc35.x86_64.buildinfo
+2022-03-16 12:50:17.107382 +0000 build-fedora4: 8816f20611b82f7b22edcec2e6954b9944d82ba8259f7c9fde7df4723be692f182a2d3db2fc0e80ea243e637baa548be37cebabcf0d48e2ea1f710a0afba3dd0  pkgs/vm-fc35/qubes-core-agent-4.1.28-1.fc35.x86_64.buildinfo
+2022-03-16 12:50:17.107398 +0000 build-fedora4: 64706aba9fb6ba08dd5ed64fa54addb6aaa64f434eaf8b45fb0d0fa42385e64b3588e91b1f0fb683be4d08a5083fc595b0378de99377aca8b46a01408f30beda  pkgs/vm-fc35/qubes-core-agent-4.1.29-1.fc35.x86_64.buildinfo
+2022-03-16 12:50:17.107413 +0000 build-fedora4: e42ac80e2274be26df75f6064763ca42c362c8b06d3432ecb3e1fa6469482c1f32cfbbc3a372e96e5ad3870789b944ce30269df74157899d0f70444133b808f6  pkgs/vm-fc35/qubes-core-agent-4.1.31-1.fc35.x86_64.buildinfo
+2022-03-16 12:50:17.107429 +0000 build-fedora4: ff1c5946d30fe6f6f2127425aab12597a124cf486739cd6e25c2270742faf64af932013b0bb5b52a8ccebcf029d5ffd6c7625936c26d4b2a8036dca3f9044da1  pkgs/vm-fc35/qubes-core-agent-4.1.32-1.fc35.x86_64.buildinfo
+2022-03-16 12:50:17.108579 +0000 build-fedora4: 5266cea083a1d98966dbdbf7ece60d3c0354e9eaf6c600517a55c72aab22777f44b7385faf26224f6d36d15d05a6b1d1e88673ce4f06f1a1cac6ec3db806dc85  pkgs/vm-fc35/qubes-core-agent-4.1.33-1.fc35.src.rpm
+2022-03-16 12:50:17.108610 +0000 build-fedora4: 590d6044aecfb29b2b41999dacd1ba3f0d1c87d6f67fafa8ad65e134725836afff6be97221738168d0ec7adbf683697287d55715353b7926c0778da266791474  pkgs/vm-fc35/qubes-core-agent-4.1.33-1.fc35.x86_64.buildinfo
+2022-03-16 12:50:17.108638 +0000 build-fedora4: e20f1f7b6478889eac4d2efdb1567e7fec11f58f95398f95fa0982c2a15b96bed9ddf9cf3f121c54deee428ebbe7300b0f6c9b6fba3c8bf279e1aa96a4a7df30  pkgs/vm-fc35/qubes-core-agent-4.1.33-1.fc35.x86_64.rpm
+2022-03-16 12:50:17.108656 +0000 build-fedora4: 269408bda93104c56ebd84b821d30d60db142278e6fc7f5c0e00f5cd0fc0637a141388c6665ee9a86ca81462fb5761bce908513d2c28dccba3fffcdaebe8b6b1  pkgs/vm-fc35/qubes-core-agent-debuginfo-4.1.33-1.fc35.x86_64.rpm
+2022-03-16 12:50:17.108673 +0000 build-fedora4: d4d1abe4bd0c837ab06843ea4496c2dd5610e26f3aaffbe4025cd1059cae4952c2a1556d2c9742e3ca563cb9842935694cb08e8673496a829923a1a9ee36cc18  pkgs/vm-fc35/qubes-core-agent-debugsource-4.1.33-1.fc35.x86_64.rpm
+2022-03-16 12:50:17.108705 +0000 build-fedora4: 29b4c4618a7b44a7e3e6510309a623f35d519db0e74c93895ca2e0d46e3b17bef981137627bf4bd796dfbeb25dad38473e8d64219a7ce15a8cdf945e13099583  pkgs/vm-fc35/qubes-core-agent-dom0-updates-4.1.33-1.fc35.x86_64.rpm
+2022-03-16 12:50:17.108723 +0000 build-fedora4: 0ed565bd92f002ab1a1bc857cb02c1edb486cbf4fa849c362f3d9de32344409c4e9672f791f9df3cabe8d30d103cc9a5c5bb962fbba1706313cbe3e91f3aba0d  pkgs/vm-fc35/qubes-core-agent-nautilus-4.1.33-1.fc35.x86_64.rpm
+2022-03-16 12:50:17.108739 +0000 build-fedora4: 426a4cad5cc6e3309e3b41d293177ef36a1aaea9df809d687fc556a0ceb886ce7cd5f45903578666311e651b06ff00329e721030761a68d9253a5bbf7f2a274c  pkgs/vm-fc35/qubes-core-agent-network-manager-4.1.33-1.fc35.x86_64.rpm
+2022-03-16 12:50:17.108755 +0000 build-fedora4: fc44d8c28573add8467aa77714049a3b73503b418153c0c3a0fd46629f25900f197b50759f29a3f6f1e53403661be8a09b290dba0888173a1557e187c117dbab  pkgs/vm-fc35/qubes-core-agent-networking-4.1.33-1.fc35.x86_64.rpm
+2022-03-16 12:50:17.109911 +0000 build-fedora4: 9188ee1cb3be1a6c954154e274e4ef3be0d9708575e919deefac600204b8ee7bc21583f56bb7af52a430901dedef7bf4c262d0a239280210df37e6dc0679a428  pkgs/vm-fc35/qubes-core-agent-passwordless-root-4.1.33-1.fc35.x86_64.rpm
+2022-03-16 12:50:17.109948 +0000 build-fedora4: f5f5e4f025c3df716d8c09abe12d145976d127b3e698516b71f0d91bba0445c790a142139dd6cdccd9fb0106b0785fdeda0f998ac672dec33826cb6271fbc68c  pkgs/vm-fc35/qubes-core-agent-systemd-4.1.33-1.fc35.x86_64.rpm
+2022-03-16 12:50:17.109965 +0000 build-fedora4: bb910f435f8b9cbbc1d68908159eecf6cadd06c2cf2fe4567f0e0462a67446acc924fe1fd3fe5edcceb94342cbe6f34ea627f318c052f5398ae6efef645794b9  pkgs/vm-fc35/qubes-core-agent-thunar-4.1.33-1.fc35.x86_64.rpm
+2022-03-16 12:50:17.109980 +0000 build-fedora4: 49d237f760376a96551ade16c0181904886c40c5d7415266dc16d347a550484f6ce0694426f33a8578f2448178e78ef3abe1334f205218b32d7d1ee16f91b95e  pkgs/vm-fc36/core-agent.spec.list
+2022-03-16 12:50:17.109997 +0000 build-fedora4: f2a3679c27549d7ca0136925a1e5e7a1de46e379ec45b11d4b9c2e4ed24a6afb5ad66cc1d18b064e93ae76bbcb815d937de9f2819406ebecd9d38fd1492cd396  pkgs/vm-fc36/python2-dnf-plugins-qubes-hooks-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:17.110015 +0000 build-fedora4: 28565e281cd988c0ce0e0b39470d0400e5daadcc9377406b3e296c822497ebab11bad670dd6d8dffdad12081a7c4b1b5f91ebd8df61f6fe4afd4e888b2856a69  pkgs/vm-fc36/python3-dnf-plugins-qubes-hooks-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:17.110031 +0000 build-fedora4: 5952d486583bc43d6c42c0c150d68cfe96f44417655926358c2dce7a689981448fc93e6c40b294dadaa8acff19fc2268597794639268ff6095435a489c3bc6f9  pkgs/vm-fc36/qubes-core-agent-4.1.33-1.fc36.src.rpm
+2022-03-16 12:50:17.110047 +0000 build-fedora4: 9f42b27d66f454e9d0dfc5ca4ee3c9681f687903a4fde8367bcc0cbbe313af4e84bc42ccafb4f966799b7e358bec3895d6980878f9dcd93a4c795695bc11cf62  pkgs/vm-fc36/qubes-core-agent-4.1.33-1.fc36.x86_64.buildinfo
+2022-03-16 12:50:17.110063 +0000 build-fedora4: ebcb4b0d67ef65cf89d4441926e4fbaf64783bb4b17c7a3c92423cc7bdee48aeb6b18d8543f9ed400c3ec8782696f78d465a8f7bea61c344464e65b65a956600  pkgs/vm-fc36/qubes-core-agent-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:17.111029 +0000 build-fedora4: fb8674b25fbd5a0299e926b850ca2b2a18d0568cd3d647241579fb77b03ae4ea2305d2b52ce6fdfc992d02338116eab36cc0b874f7f455bfc9ded456fb2534df  pkgs/vm-fc36/qubes-core-agent-debuginfo-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:17.111080 +0000 build-fedora4: 93d0fa8913a56739abb76aa674d22202ea69903a74790ae1bd7957ce31922b31d564eded893cf7f53c5b7895a13018d1f9144c02230536240de9b29857059802  pkgs/vm-fc36/qubes-core-agent-debugsource-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:17.111100 +0000 build-fedora4: 9fa66871045bf789097e3d17b4a0c2e3aafaaad742aaf0539d91770a506a8389b74fdacd31d05ebdc370a790a95faa52eac45bbb5a112fcb11bccaa9c75438d8  pkgs/vm-fc36/qubes-core-agent-dom0-updates-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:17.111117 +0000 build-fedora4: f41e369f8bee22158093128791060ef420297e419e2a99f0fcfc1417e91b618778a2cd093d3f38020da98bbcf288ef05c22fc36f77a80ad3ee52b2d1e22b7fdf  pkgs/vm-fc36/qubes-core-agent-nautilus-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:17.112259 +0000 build-fedora4: 26ba0f761395ee0639056175a7a1f25341c9a192e816e68ca4ccd80021f827f1a59b6c3a60af2ab12f4e537d3ef42a5b20e0f24c75f7da1639009b1df390f8de  pkgs/vm-fc36/qubes-core-agent-network-manager-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:17.112299 +0000 build-fedora4: 50b1133b855c6d75ec155fb08dea93e47d2180db9eec717699193bb86a3314bdcfbc7a50a3dd721ba864eb939f41c27c7209127b0945530dbf38e91c47c62b16  pkgs/vm-fc36/qubes-core-agent-networking-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:17.112319 +0000 build-fedora4: 591671b08baaa7e678d1f749214289cf586bf75f433ab51fd8517e9f440ae8f5d417e7d74df7f11d079586292a215b40344e86d5b5a82a815cc2a3bb46941f9e  pkgs/vm-fc36/qubes-core-agent-passwordless-root-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:17.112335 +0000 build-fedora4: 6696b1445e280ed438c63daebddab463c6a27c34889a320dcdc161c33d5c9d3aed2a4dd4264caede1394cb89ee6bf5d76c1f6bdbfbe4d8f252fdfba77e8bfb6b  pkgs/vm-fc36/qubes-core-agent-systemd-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:17.112352 +0000 build-fedora4: 24b70ebd01f7d2f2ce04c745ad964c1499b63a05eb058549c71e73d4bcbd8299452a60d61a822ff87a250d37e58ade36a5253483e30edad5cc675841116e8f7d  pkgs/vm-fc36/qubes-core-agent-thunar-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:17.226702 +0000 build-fedora4: ================================================================================
+2022-03-16 12:50:17.226744 +0000 build-fedora4:                            B U I L D   I N F O                                  
+2022-03-16 12:50:17.226774 +0000 build-fedora4: Items in red indicate it was automatically generated by configuration file(s)
+2022-03-16 12:50:17.226786 +0000 build-fedora4: Items in white indicate it was automatically removed by configuration file(s)
+2022-03-16 12:50:17.226796 +0000 build-fedora4: ================================================================================
+2022-03-16 12:50:17.226802 +0000 build-fedora4: DISTS_VM:
+2022-03-16 12:50:17.229182 +0000 build-fedora4:      fc34, fc35, fc36,
+2022-03-16 12:50:17.230746 +0000 build-fedora4: DISTS_ALL:
+2022-03-16 12:50:17.233272 +0000 build-fedora4:      vm-fc34, vm-fc35, vm-fc36,
+2022-03-16 12:50:17.234631 +0000 build-fedora4: DIST_DOM0:
+2022-03-16 12:50:17.236019 +0000 build-fedora4:     
+2022-03-16 12:50:17.237493 +0000 build-fedora4: BUILDER_PLUGINS:
+2022-03-16 12:50:17.239956 +0000 build-fedora4:      builder-rpm, builder-debian, mgmt-salt, linux-yum, release-configs, builder-github,
+2022-03-16 12:50:17.241495 +0000 build-fedora4: COMPONENTS:
+2022-03-16 12:50:17.244351 +0000 build-fedora4:      core-agent-linux,
+2022-03-16 12:50:17.245769 +0000 build-fedora4: GIT_REPOS:
+2022-03-16 12:50:17.249764 +0000 build-fedora4:      qubes-src/core-agent-linux,
+2022-03-16 12:50:17.249791 +0000 build-fedora4: TEMPLATE:
+2022-03-16 12:50:17.252333 +0000 build-fedora4:     
+2022-03-16 12:50:17.253759 +0000 build-fedora4: TEMPLATE_FLAVOR_DIR:
+2022-03-16 12:50:17.260853 +0000 build-fedora4:     
+2022-03-16 12:50:17.260882 +0000 build-fedora4: TEMPLATE_ALIAS:
+2022-03-16 12:50:17.263869 +0000 build-fedora4:      stretch:stretch+standard, stretch+gnome:stretch+gnome+standard,
+2022-03-16 12:50:17.263919 +0000 build-fedora4:      stretch+minimal:stretch+minimal+no-recommends, buster:buster+standard,
+2022-03-16 12:50:17.263932 +0000 build-fedora4:      buster+gnome:buster+gnome+standard, buster+minimal:buster+minimal+no-recommends,
+2022-03-16 12:50:17.263943 +0000 build-fedora4:      bullseye:bullseye+standard+firmware, bullseye+gnome:bullseye+gnome+standard+firmware,
+2022-03-16 12:50:17.263953 +0000 build-fedora4:      bullseye+minimal:bullseye+minimal+no-recommends, bookworm:bookworm+standard,
+2022-03-16 12:50:17.263964 +0000 build-fedora4:      bookworm+gnome:bookworm+gnome+standard, bookworm+minimal:bookworm+minimal+no-recommends,
+2022-03-16 12:50:17.263981 +0000 build-fedora4:      bionic:bionic+standard, focal:focal+standard, whonix-gateway-15:buster+whonix-gateway+minimal+no-recommends,
+2022-03-16 12:50:17.263992 +0000 build-fedora4:      whonix-workstation-15:buster+whonix-workstation+minimal+no-recommends,
+2022-03-16 12:50:17.264001 +0000 build-fedora4:      whonix-gateway-16:bullseye+whonix-gateway+minimal+no-recommends,
+2022-03-16 12:50:17.264013 +0000 build-fedora4:      whonix-workstation-16:bullseye+whonix-workstation+minimal+no-recommends,
+2022-03-16 12:50:17.264020 +0000 build-fedora4: TEMPLATE_LABEL:
+2022-03-16 12:50:17.267202 +0000 build-fedora4:      fc34:fedora-34, fc35:fedora-35, fc36:fedora-36, fc34+minimal:fedora-34-minimal
+2022-03-16 12:50:17.267232 +0000 build-fedora4:      fc35+minimal:fedora-35-minimal fc36+minimal:fedora-36-minimal fc34+xfce:fedora-34-xfce
+2022-03-16 12:50:17.267245 +0000 build-fedora4:      fc35+xfce:fedora-35-xfce fc36+xfce:fedora-36-xfce stretch:debian-9 stretch+standard:debian-9
+2022-03-16 12:50:17.267258 +0000 build-fedora4:      stretch+xfce:debian-9-xfce buster:debian-10 buster+standard:debian-10 buster+xfce:debian-10-xfce
+2022-03-16 12:50:17.267272 +0000 build-fedora4:      bullseye:debian-11 bullseye+standard+firmware:debian-11 bullseye+xfce:debian-11-xfce
+2022-03-16 12:50:17.267283 +0000 build-fedora4:      bookworm:debian-12 bookworm+standard:debian-12 bookworm+xfce:debian-12-xfce bionic+standard:bionic
+2022-03-16 12:50:17.267293 +0000 build-fedora4:      focal+standard:focal buster+whonix-gateway+minimal+no-recommends:whonix-gw-15
+2022-03-16 12:50:17.267301 +0000 build-fedora4:      buster+whonix-workstation+minimal+no-recommends:whonix-ws-15
+2022-03-16 12:50:17.267310 +0000 build-fedora4:      bullseye+whonix-gateway+minimal+no-recommends:whonix-gw-16
+2022-03-16 12:50:17.267320 +0000 build-fedora4:      bullseye+whonix-workstation+minimal+no-recommends:whonix-ws-16 centos7:centos-7
+2022-03-16 12:50:17.267331 +0000 build-fedora4:      centos7+minimal:centos-7-minimal centos7+xfce:centos-7-xfce centos-stream8:centos-stream-8
+2022-03-16 12:50:17.267341 +0000 build-fedora4:      centos-stream8+minimal:centos-stream-8-minimal centos-stream8+xfce:centos-stream-8-xfce
+2022-03-16 12:50:17.282986 +0000 build-fedora4: > running make
+2022-03-16 12:50:17.300776 +0000 build-fedora4: Makefile:299: target 'sign.vm.fc36.core-agent-linux' does not exist
+2022-03-16 12:50:17.300841 +0000 build-fedora4: if [ -n "core-agent-linux" -a "0" -ne 0 ]; then BRANCH=release4.1; branch_var="BRANCH_core_agent_linux"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/core-agent-linux > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2022-03-16 12:50:17.300854 +0000 build-fedora4: SIGN_KEY=5817A43B283DE5A9181A522E1848792F9E2795E9; \
+2022-03-16 12:50:17.300862 +0000 build-fedora4: sign_key_var="SIGN_KEY_${DIST%%+*}"; \
+2022-03-16 12:50:17.300870 +0000 build-fedora4: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2022-03-16 12:50:17.300879 +0000 build-fedora4: if [ "core-agent-linux" = linux-template-builder ]; then
+2022-03-16 12:50:17.300904 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc36 template-name)
+2022-03-16 12:50:17.300911 +0000 build-fedora4: fi
+2022-03-16 12:50:17.300920 +0000 build-fedora4: if [ -r qubes-src/core-agent-linux/Makefile.builder ]; then \
+2022-03-16 12:50:17.300928 +0000 build-fedora4: .make --no-print-directory -f Makefile.generic \
+2022-03-16 12:50:17.300934 +0000 build-fedora4: ..DIST=fc36 \
+2022-03-16 12:50:17.300940 +0000 build-fedora4: ..PACKAGE_SET=vm \
+2022-03-16 12:50:17.300947 +0000 build-fedora4: ..COMPONENT=core-agent-linux \
+2022-03-16 12:50:17.300953 +0000 build-fedora4: ..SIGN_KEY=$SIGN_KEY \
+2022-03-16 12:50:17.300959 +0000 build-fedora4: ..sign || exit 1; \
+2022-03-16 12:50:17.300967 +0000 build-fedora4: elif [ -d qubes-src/core-agent-linux/rpm ]; then \
+2022-03-16 12:50:17.300974 +0000 build-fedora4: .# Old mechanism supported only for RPM
+2022-03-16 12:50:17.300983 +0000 build-fedora4: FILE_LIST=""; for RPM in qubes-src/core-agent-linux/rpm/*/*.rpm; do \
+2022-03-16 12:50:17.300992 +0000 build-fedora4: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2022-03-16 12:50:17.300999 +0000 build-fedora4: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2022-03-16 12:50:17.301004 +0000 build-fedora4: ..fi ;\
+2022-03-16 12:50:17.301013 +0000 build-fedora4: .done ; \
+2022-03-16 12:50:17.301020 +0000 build-fedora4: .if [ -n "$FILE_LIST" ]; then \
+2022-03-16 12:50:17.301026 +0000 build-fedora4: ..echo "--> Signing..."; \
+2022-03-16 12:50:17.301033 +0000 build-fedora4: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2022-03-16 12:50:17.301040 +0000 build-fedora4: ..if [ -n "$SIGN_KEY" ]; then \
+2022-03-16 12:50:17.301047 +0000 build-fedora4: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2022-03-16 12:50:17.301052 +0000 build-fedora4: ..fi; \
+2022-03-16 12:50:17.301061 +0000 build-fedora4: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2022-03-16 12:50:17.301067 +0000 build-fedora4: .fi; \
+2022-03-16 12:50:17.301072 +0000 build-fedora4: fi
+2022-03-16 12:50:17.320999 +0000 build-fedora4: + ERR_OUTPUT=/dev/stderr
+2022-03-16 12:50:17.321039 +0000 build-fedora4: + '[' 2 -lt 2 ']'
+2022-03-16 12:50:17.321052 +0000 build-fedora4: ++ basename qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in
+2022-03-16 12:50:17.327914 +0000 build-fedora4: + [[ xcore-agent.spec.in == \x\.\i\n ]]
+2022-03-16 12:50:17.329067 +0000 build-fedora4: + '[' -r qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in ']'
+2022-03-16 12:50:17.329102 +0000 build-fedora4: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2022-03-16 12:50:17.329112 +0000 build-fedora4: + tmp_spec=/tmp/tmp.wuDUyd.spec
+2022-03-16 12:50:17.329122 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2022-03-16 12:50:17.329136 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in /tmp/tmp.wuDUyd.spec
+2022-03-16 12:50:17.329144 +0000 build-fedora4: + '[' 2 -lt 2 ']'
+2022-03-16 12:50:17.329151 +0000 build-fedora4: + '[' -z qubes-src/core-agent-linux ']'
+2022-03-16 12:50:17.329163 +0000 build-fedora4: + cp qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:17.331779 +0000 build-fedora4: + read -r ver
+2022-03-16 12:50:17.331813 +0000 build-fedora4: + '[' x = x ']'
+2022-03-16 12:50:17.331826 +0000 build-fedora4: + sed -i 's|@VERSION@|4.1.33|g' qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:17.331833 +0000 build-fedora4: + vnum=1
+2022-03-16 12:50:17.331839 +0000 build-fedora4: + read -r ver
+2022-03-16 12:50:17.331846 +0000 build-fedora4: + '[' -e qubes-src/core-agent-linux/rel ']'
+2022-03-16 12:50:17.331856 +0000 build-fedora4: + grep -q @REL@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:17.335442 +0000 build-fedora4: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:17.336724 +0000 build-fedora4: + grep -q @CHANGELOG@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:17.337207 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2022-03-16 12:50:17.339598 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/core-agent-linux qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:17.816466 +0000 build-fedora4: + cat qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:17.818767 +0000 build-fedora4: + rm -rf qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:17.826413 +0000 build-fedora4: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2022-03-16 12:50:17.829532 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2022-03-16 12:50:17.833738 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.wuDUyd.spec
+2022-03-16 12:50:18.041855 +0000 build-fedora4: + rm -f /tmp/tmp.wuDUyd.spec
+2022-03-16 12:50:18.051840 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:201: target 'sign-prep' does not exist
+2022-03-16 12:50:18.051879 +0000 build-fedora4: if [ -n "qubes-gpg-client-wrapper" ]; then \
+2022-03-16 12:50:18.051890 +0000 build-fedora4: .mkdir -p /home/user/builder-r4.1/keyrings/rpmdb; \
+2022-03-16 12:50:18.051898 +0000 build-fedora4: .tmpname=$(mktemp); \
+2022-03-16 12:50:18.051909 +0000 build-fedora4: .qubes-gpg-client-wrapper --armor --export "5817A43B283DE5A9181A522E1848792F9E2795E9" > "$tmpname"; \
+2022-03-16 12:50:18.051920 +0000 build-fedora4: .rpmkeys --dbpath=/home/user/builder-r4.1/keyrings/rpmdb --import "$tmpname"; \
+2022-03-16 12:50:18.051927 +0000 build-fedora4: .rm -f "$tmpname"; \
+2022-03-16 12:50:18.051932 +0000 build-fedora4: fi
+2022-03-16 12:50:18.108671 +0000 build-fedora4: + ERR_OUTPUT=/dev/stderr
+2022-03-16 12:50:18.108712 +0000 build-fedora4: + '[' 2 -lt 2 ']'
+2022-03-16 12:50:18.108724 +0000 build-fedora4: ++ basename qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in
+2022-03-16 12:50:18.115963 +0000 build-fedora4: + [[ xcore-agent.spec.in == \x\.\i\n ]]
+2022-03-16 12:50:18.116002 +0000 build-fedora4: + '[' -r qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in ']'
+2022-03-16 12:50:18.116015 +0000 build-fedora4: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2022-03-16 12:50:18.120549 +0000 build-fedora4: + tmp_spec=/tmp/tmp.uzb1Ef.spec
+2022-03-16 12:50:18.120586 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2022-03-16 12:50:18.184147 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in /tmp/tmp.uzb1Ef.spec
+2022-03-16 12:50:18.184188 +0000 build-fedora4: + '[' 2 -lt 2 ']'
+2022-03-16 12:50:18.184199 +0000 build-fedora4: + '[' -z qubes-src/core-agent-linux ']'
+2022-03-16 12:50:18.184212 +0000 build-fedora4: + cp qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:18.184219 +0000 build-fedora4: + read -r ver
+2022-03-16 12:50:18.184225 +0000 build-fedora4: + '[' x = x ']'
+2022-03-16 12:50:18.184236 +0000 build-fedora4: + sed -i 's|@VERSION@|4.1.33|g' qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:18.184241 +0000 build-fedora4: + vnum=1
+2022-03-16 12:50:18.184247 +0000 build-fedora4: + read -r ver
+2022-03-16 12:50:18.184254 +0000 build-fedora4: + '[' -e qubes-src/core-agent-linux/rel ']'
+2022-03-16 12:50:18.184264 +0000 build-fedora4: + grep -q @REL@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:18.184274 +0000 build-fedora4: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:18.184298 +0000 build-fedora4: + grep -q @CHANGELOG@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:18.184309 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2022-03-16 12:50:18.184323 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/core-agent-linux qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:19.493530 +0000 build-fedora4: + cat qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:19.506532 +0000 build-fedora4: + rm -rf qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:19.508851 +0000 build-fedora4: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2022-03-16 12:50:19.513238 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2022-03-16 12:50:19.526098 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.uzb1Ef.spec
+2022-03-16 12:50:19.866973 +0000 build-fedora4: + rm -f /tmp/tmp.uzb1Ef.spec
+2022-03-16 12:50:20.213177 +0000 build-fedora4: warning: Found bdb_ro Packages database while attempting sqlite backend: using bdb_ro backend.
+2022-03-16 12:50:20.314072 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:217: update target 'sign' due to: sign-prep
+2022-03-16 12:50:20.314175 +0000 build-fedora4: cd qubes-src/core-agent-linux && for pkg in pkgs/vm-fc36/python2-dnf-plugins-qubes-hooks-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/python3-dnf-plugins-qubes-hooks-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-4.1.33-1.fc36.src.rpm pkgs/vm-fc36/qubes-core-agent-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-debuginfo-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-debugsource-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-dom0-updates-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-nautilus-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-network-manager-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-networking-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-passwordless-root-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-systemd-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-thunar-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-4.1.33-1.fc36.x86_64.buildinfo ; do \
+2022-03-16 12:50:20.314188 +0000 build-fedora4: .if [ "${pkg##*.}" = "buildinfo" ]; then \
+2022-03-16 12:50:20.314207 +0000 build-fedora4: ../home/user/builder-r4.1/qubes-src/builder-rpm/scripts/update-rpmbuildinfo "$pkg" | /usr/bin/qubes-gpg-client-wrapper --clearsign --local-user 5817A43B283DE5A9181A522E1848792F9E2795E9 > "$pkg".tmp && \
+2022-03-16 12:50:20.314216 +0000 build-fedora4: ..mv -f "$pkg".tmp "$pkg"; \
+2022-03-16 12:50:20.314227 +0000 build-fedora4: .elif [ "$(rpmkeys --checksig -- "$pkg")" != "$pkg: digests signatures OK" ]; then \
+2022-03-16 12:50:20.314244 +0000 build-fedora4: ..setsid -w rpmsign --digest-algo=sha256 --key-id=5817A43B283DE5A9181A522E1848792F9E2795E9 --addsign  -- "$pkg" </dev/null || exit 1; \
+2022-03-16 12:50:20.314250 +0000 build-fedora4: .fi; \
+2022-03-16 12:50:20.314255 +0000 build-fedora4: done
+2022-03-16 12:50:20.398635 +0000 build-fedora4: + ERR_OUTPUT=/dev/stderr
+2022-03-16 12:50:20.398678 +0000 build-fedora4: + '[' 2 -lt 2 ']'
+2022-03-16 12:50:20.398704 +0000 build-fedora4: ++ basename qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in
+2022-03-16 12:50:20.398715 +0000 build-fedora4: + [[ xcore-agent.spec.in == \x\.\i\n ]]
+2022-03-16 12:50:20.398725 +0000 build-fedora4: + '[' -r qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in ']'
+2022-03-16 12:50:20.434490 +0000 build-fedora4: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2022-03-16 12:50:20.441010 +0000 build-fedora4: + tmp_spec=/tmp/tmp.clJu9r.spec
+2022-03-16 12:50:20.441045 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2022-03-16 12:50:20.459275 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in /tmp/tmp.clJu9r.spec
+2022-03-16 12:50:20.484968 +0000 build-fedora4: + '[' 2 -lt 2 ']'
+2022-03-16 12:50:20.485007 +0000 build-fedora4: + '[' -z qubes-src/core-agent-linux ']'
+2022-03-16 12:50:20.485023 +0000 build-fedora4: + cp qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:20.499286 +0000 build-fedora4: + read -r ver
+2022-03-16 12:50:20.499320 +0000 build-fedora4: + '[' x = x ']'
+2022-03-16 12:50:20.499334 +0000 build-fedora4: + sed -i 's|@VERSION@|4.1.33|g' qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:20.499341 +0000 build-fedora4: + vnum=1
+2022-03-16 12:50:20.499347 +0000 build-fedora4: + read -r ver
+2022-03-16 12:50:20.499355 +0000 build-fedora4: + '[' -e qubes-src/core-agent-linux/rel ']'
+2022-03-16 12:50:20.499364 +0000 build-fedora4: + grep -q @REL@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:20.499375 +0000 build-fedora4: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:20.502883 +0000 build-fedora4: + grep -q @CHANGELOG@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:20.519164 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2022-03-16 12:50:20.521684 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/core-agent-linux qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:21.890314 +0000 build-fedora4: + cat qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:21.923268 +0000 build-fedora4: + rm -rf qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:21.932565 +0000 build-fedora4: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2022-03-16 12:50:21.938709 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2022-03-16 12:50:21.938750 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.clJu9r.spec
+2022-03-16 12:50:22.213504 +0000 build-fedora4: + rm -f /tmp/tmp.clJu9r.spec
+2022-03-16 12:50:22.339514 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2022-03-16 12:50:22.573290 +0000 build-fedora4: pkgs/vm-fc36/python2-dnf-plugins-qubes-hooks-4.1.33-1.fc36.x86_64.rpm:
+2022-03-16 12:50:22.591781 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2022-03-16 12:50:22.845984 +0000 build-fedora4: pkgs/vm-fc36/python3-dnf-plugins-qubes-hooks-4.1.33-1.fc36.x86_64.rpm:
+2022-03-16 12:50:22.915829 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2022-03-16 12:50:23.087136 +0000 build-fedora4: pkgs/vm-fc36/qubes-core-agent-4.1.33-1.fc36.src.rpm:
+2022-03-16 12:50:23.109333 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2022-03-16 12:50:23.288498 +0000 build-fedora4: pkgs/vm-fc36/qubes-core-agent-4.1.33-1.fc36.x86_64.rpm:
+2022-03-16 12:50:23.312859 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2022-03-16 12:50:23.522331 +0000 build-fedora4: pkgs/vm-fc36/qubes-core-agent-debuginfo-4.1.33-1.fc36.x86_64.rpm:
+2022-03-16 12:50:23.545305 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2022-03-16 12:50:23.723216 +0000 build-fedora4: pkgs/vm-fc36/qubes-core-agent-debugsource-4.1.33-1.fc36.x86_64.rpm:
+2022-03-16 12:50:23.748391 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2022-03-16 12:50:23.940249 +0000 build-fedora4: pkgs/vm-fc36/qubes-core-agent-dom0-updates-4.1.33-1.fc36.x86_64.rpm:
+2022-03-16 12:50:23.960285 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2022-03-16 12:50:24.127304 +0000 build-fedora4: pkgs/vm-fc36/qubes-core-agent-nautilus-4.1.33-1.fc36.x86_64.rpm:
+2022-03-16 12:50:24.150954 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2022-03-16 12:50:24.325718 +0000 build-fedora4: pkgs/vm-fc36/qubes-core-agent-network-manager-4.1.33-1.fc36.x86_64.rpm:
+2022-03-16 12:50:24.352931 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2022-03-16 12:50:24.513812 +0000 build-fedora4: pkgs/vm-fc36/qubes-core-agent-networking-4.1.33-1.fc36.x86_64.rpm:
+2022-03-16 12:50:24.543212 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2022-03-16 12:50:24.727875 +0000 build-fedora4: pkgs/vm-fc36/qubes-core-agent-passwordless-root-4.1.33-1.fc36.x86_64.rpm:
+2022-03-16 12:50:24.746255 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2022-03-16 12:50:24.925815 +0000 build-fedora4: pkgs/vm-fc36/qubes-core-agent-systemd-4.1.33-1.fc36.x86_64.rpm:
+2022-03-16 12:50:24.950303 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2022-03-16 12:50:25.121569 +0000 build-fedora4: pkgs/vm-fc36/qubes-core-agent-thunar-4.1.33-1.fc36.x86_64.rpm:
+2022-03-16 12:50:25.524782 +0000 build-fedora4: Makefile:863: target 'internal-update-repo-current-testing.vm.fc36.core-agent-linux' does not exist
+2022-03-16 12:50:25.524829 +0000 build-fedora4: repo_base_var="LINUX_REPO_${DIST//-/_}_BASEDIR"; \
+2022-03-16 12:50:25.524841 +0000 build-fedora4: if [ "core-agent-linux" = linux-template-builder ]; then \
+2022-03-16 12:50:25.524851 +0000 build-fedora4: .# templates belongs to dom0 repository, even though PACKAGE_SET=vm
+2022-03-16 12:50:25.524859 +0000 build-fedora4: repo_base_var="LINUX_REPO__BASEDIR"; \
+2022-03-16 12:50:25.524865 +0000 build-fedora4: fi; \
+2022-03-16 12:50:25.524872 +0000 build-fedora4: if [ -n "${!repo_base_var}" ]; then \
+2022-03-16 12:50:25.524880 +0000 build-fedora4: .repo_basedir="${!repo_base_var}"; \
+2022-03-16 12:50:25.524885 +0000 build-fedora4: else \
+2022-03-16 12:50:25.524892 +0000 build-fedora4: .repo_basedir="qubes-src/linux-yum/r4.1"; \
+2022-03-16 12:50:25.524897 +0000 build-fedora4: fi; \
+2022-03-16 12:50:25.524906 +0000 build-fedora4: if [ -r qubes-src/core-agent-linux/Makefile.builder ]; then \
+2022-03-16 12:50:25.524914 +0000 build-fedora4: .echo -n "Updating qubes-src/core-agent-linux... "; \
+2022-03-16 12:50:25.524921 +0000 build-fedora4: .if [ "0" -eq 1 ]; then \
+2022-03-16 12:50:25.524930 +0000 build-fedora4: ..vtag=`git -C qubes-src/core-agent-linux tag --points-at HEAD --list v*`; \
+2022-03-16 12:50:25.524937 +0000 build-fedora4: ..if [ -z "$vtag" ]; then \
+2022-03-16 12:50:25.524944 +0000 build-fedora4: ...echo "no version tag"; \
+2022-03-16 12:50:25.524950 +0000 build-fedora4: ...exit 0; \
+2022-03-16 12:50:25.524956 +0000 build-fedora4: ..fi; \
+2022-03-16 12:50:25.524961 +0000 build-fedora4: .fi; \
+2022-03-16 12:50:25.524969 +0000 build-fedora4: .if [ "core-agent-linux" = linux-template-builder ]; then
+2022-03-16 12:50:25.524980 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc36 template-name)
+2022-03-16 12:50:25.524985 +0000 build-fedora4: fi
+2022-03-16 12:50:25.525005 +0000 build-fedora4: component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc36 PACKAGE_SET=vm COMPONENT=`basename qubes-src/core-agent-linux` UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc36 get-var GET_VAR=PACKAGE_LIST); \
+2022-03-16 12:50:25.525016 +0000 build-fedora4: .if [ -z "$component_packages" ]; then \
+2022-03-16 12:50:25.525023 +0000 build-fedora4: ..echo "no packages."; \
+2022-03-16 12:50:25.525029 +0000 build-fedora4: ..exit 0; \
+2022-03-16 12:50:25.525034 +0000 build-fedora4: .fi; \
+2022-03-16 12:50:25.525058 +0000 build-fedora4: .make -s -f Makefile.generic DIST=fc36 PACKAGE_SET=vm \
+2022-03-16 12:50:25.525067 +0000 build-fedora4: ..COMPONENT=`basename qubes-src/core-agent-linux` \
+2022-03-16 12:50:25.525074 +0000 build-fedora4: ..SNAPSHOT_REPO=current-testing \
+2022-03-16 12:50:25.525081 +0000 build-fedora4: ..TARGET_REPO=current-testing \
+2022-03-16 12:50:25.525090 +0000 build-fedora4: ..UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc36 \
+2022-03-16 12:50:25.525103 +0000 build-fedora4: ..SNAPSHOT_FILE=/home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-fc36-`basename qubes-src/core-agent-linux` \
+2022-03-16 12:50:25.525114 +0000 build-fedora4: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2022-03-16_12-49-04 \
+2022-03-16 12:50:25.525121 +0000 build-fedora4: ..update-repo || exit 1; \
+2022-03-16 12:50:25.525132 +0000 build-fedora4: elif make -C qubes-src/core-agent-linux -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2022-03-16 12:50:25.525140 +0000 build-fedora4: .echo "Updating qubes-src/core-agent-linux... "; \
+2022-03-16 12:50:25.525149 +0000 build-fedora4: .DIST=fc36 UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc36 \
+2022-03-16 12:50:25.525160 +0000 build-fedora4: .make -s -C qubes-src/core-agent-linux update-repo-current-testing || exit 1; \
+2022-03-16 12:50:25.525165 +0000 build-fedora4: else \
+2022-03-16 12:50:25.525174 +0000 build-fedora4: .echo -n "Updating qubes-src/core-agent-linux... skipping."; \
+2022-03-16 12:50:25.525179 +0000 build-fedora4: fi; \
+2022-03-16 12:50:25.525184 +0000 build-fedora4: echo
+2022-03-16 12:50:25.559802 +0000 build-fedora4: Updating qubes-src/core-agent-linux... + ERR_OUTPUT=/dev/stderr
+2022-03-16 12:50:25.559844 +0000 build-fedora4: + '[' 2 -lt 2 ']'
+2022-03-16 12:50:25.559857 +0000 build-fedora4: ++ basename qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in
+2022-03-16 12:50:25.561261 +0000 build-fedora4: + [[ xcore-agent.spec.in == \x\.\i\n ]]
+2022-03-16 12:50:25.561297 +0000 build-fedora4: + '[' -r qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in ']'
+2022-03-16 12:50:25.561307 +0000 build-fedora4: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2022-03-16 12:50:25.562535 +0000 build-fedora4: + tmp_spec=/tmp/tmp.1wRisu.spec
+2022-03-16 12:50:25.562570 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2022-03-16 12:50:25.563759 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in /tmp/tmp.1wRisu.spec
+2022-03-16 12:50:25.564997 +0000 build-fedora4: + '[' 2 -lt 2 ']'
+2022-03-16 12:50:25.565033 +0000 build-fedora4: + '[' -z qubes-src/core-agent-linux ']'
+2022-03-16 12:50:25.565049 +0000 build-fedora4: + cp qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:25.566235 +0000 build-fedora4: + read -r ver
+2022-03-16 12:50:25.566266 +0000 build-fedora4: + '[' x = x ']'
+2022-03-16 12:50:25.566279 +0000 build-fedora4: + sed -i 's|@VERSION@|4.1.33|g' qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:25.572193 +0000 build-fedora4: + vnum=1
+2022-03-16 12:50:25.572228 +0000 build-fedora4: + read -r ver
+2022-03-16 12:50:25.572239 +0000 build-fedora4: + '[' -e qubes-src/core-agent-linux/rel ']'
+2022-03-16 12:50:25.572250 +0000 build-fedora4: + grep -q @REL@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:25.581365 +0000 build-fedora4: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:25.590100 +0000 build-fedora4: + grep -q @CHANGELOG@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:25.597460 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2022-03-16 12:50:25.598678 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/core-agent-linux qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:26.307710 +0000 build-fedora4: + cat qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:26.309812 +0000 build-fedora4: + rm -rf qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:26.312741 +0000 build-fedora4: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2022-03-16 12:50:26.315584 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2022-03-16 12:50:26.317611 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.1wRisu.spec
+2022-03-16 12:50:26.419061 +0000 build-fedora4: + rm -f /tmp/tmp.1wRisu.spec
+2022-03-16 12:50:26.439597 +0000 build-fedora4: + ERR_OUTPUT=/dev/stderr
+2022-03-16 12:50:26.439633 +0000 build-fedora4: + '[' 2 -lt 2 ']'
+2022-03-16 12:50:26.439766 +0000 build-fedora4: ++ basename qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in
+2022-03-16 12:50:26.442103 +0000 build-fedora4: + [[ xcore-agent.spec.in == \x\.\i\n ]]
+2022-03-16 12:50:26.442138 +0000 build-fedora4: + '[' -r qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in ']'
+2022-03-16 12:50:26.442148 +0000 build-fedora4: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2022-03-16 12:50:26.442158 +0000 build-fedora4: + tmp_spec=/tmp/tmp.Ztbbs1.spec
+2022-03-16 12:50:26.443658 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2022-03-16 12:50:26.446043 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in /tmp/tmp.Ztbbs1.spec
+2022-03-16 12:50:26.449813 +0000 build-fedora4: + '[' 2 -lt 2 ']'
+2022-03-16 12:50:26.449849 +0000 build-fedora4: + '[' -z qubes-src/core-agent-linux ']'
+2022-03-16 12:50:26.449864 +0000 build-fedora4: + cp qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:26.451309 +0000 build-fedora4: + read -r ver
+2022-03-16 12:50:26.451342 +0000 build-fedora4: + '[' x = x ']'
+2022-03-16 12:50:26.451355 +0000 build-fedora4: + sed -i 's|@VERSION@|4.1.33|g' qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:26.459285 +0000 build-fedora4: + vnum=1
+2022-03-16 12:50:26.459319 +0000 build-fedora4: + read -r ver
+2022-03-16 12:50:26.459329 +0000 build-fedora4: + '[' -e qubes-src/core-agent-linux/rel ']'
+2022-03-16 12:50:26.460588 +0000 build-fedora4: + grep -q @REL@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:26.462959 +0000 build-fedora4: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:26.465830 +0000 build-fedora4: + grep -q @CHANGELOG@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:26.471697 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2022-03-16 12:50:26.473016 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/core-agent-linux qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:26.907979 +0000 build-fedora4: + cat qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:26.909298 +0000 build-fedora4: + rm -rf qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:26.910756 +0000 build-fedora4: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2022-03-16 12:50:26.910810 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2022-03-16 12:50:26.913188 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.Ztbbs1.spec
+2022-03-16 12:50:26.998181 +0000 build-fedora4: + rm -f /tmp/tmp.Ztbbs1.spec
+2022-03-16 12:50:27.046393 +0000 build-fedora4: + ERR_OUTPUT=/dev/stderr
+2022-03-16 12:50:27.046448 +0000 build-fedora4: + '[' 2 -lt 2 ']'
+2022-03-16 12:50:27.046462 +0000 build-fedora4: ++ basename qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in
+2022-03-16 12:50:27.050683 +0000 build-fedora4: + [[ xcore-agent.spec.in == \x\.\i\n ]]
+2022-03-16 12:50:27.050740 +0000 build-fedora4: + '[' -r qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in ']'
+2022-03-16 12:50:27.050751 +0000 build-fedora4: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2022-03-16 12:50:27.053536 +0000 build-fedora4: + tmp_spec=/tmp/tmp.36t135.spec
+2022-03-16 12:50:27.053573 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2022-03-16 12:50:27.056813 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in /tmp/tmp.36t135.spec
+2022-03-16 12:50:27.056848 +0000 build-fedora4: + '[' 2 -lt 2 ']'
+2022-03-16 12:50:27.056859 +0000 build-fedora4: + '[' -z qubes-src/core-agent-linux ']'
+2022-03-16 12:50:27.056872 +0000 build-fedora4: + cp qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:27.058537 +0000 build-fedora4: + read -r ver
+2022-03-16 12:50:27.058570 +0000 build-fedora4: + '[' x = x ']'
+2022-03-16 12:50:27.058584 +0000 build-fedora4: + sed -i 's|@VERSION@|4.1.33|g' qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:27.059614 +0000 build-fedora4: + vnum=1
+2022-03-16 12:50:27.059642 +0000 build-fedora4: + read -r ver
+2022-03-16 12:50:27.059652 +0000 build-fedora4: + '[' -e qubes-src/core-agent-linux/rel ']'
+2022-03-16 12:50:27.059663 +0000 build-fedora4: + grep -q @REL@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:27.060938 +0000 build-fedora4: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:27.063684 +0000 build-fedora4: + grep -q @CHANGELOG@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:27.064966 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2022-03-16 12:50:27.067626 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/core-agent-linux qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:27.498804 +0000 build-fedora4: + cat qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:27.499993 +0000 build-fedora4: + rm -rf qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:27.503632 +0000 build-fedora4: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2022-03-16 12:50:27.503669 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2022-03-16 12:50:27.504832 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.36t135.spec
+2022-03-16 12:50:27.610299 +0000 build-fedora4: + rm -f /tmp/tmp.36t135.spec
+2022-03-16 12:50:27.646682 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:176: target 'update-repo-do' does not exist
+2022-03-16 12:50:27.646743 +0000 build-fedora4: mkdir -p /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/fc36/rpm
+2022-03-16 12:50:27.668990 +0000 build-fedora4: + ERR_OUTPUT=/dev/stderr
+2022-03-16 12:50:27.669028 +0000 build-fedora4: + '[' 2 -lt 2 ']'
+2022-03-16 12:50:27.672384 +0000 build-fedora4: ++ basename qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in
+2022-03-16 12:50:27.672419 +0000 build-fedora4: + [[ xcore-agent.spec.in == \x\.\i\n ]]
+2022-03-16 12:50:27.672430 +0000 build-fedora4: + '[' -r qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in ']'
+2022-03-16 12:50:27.672438 +0000 build-fedora4: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2022-03-16 12:50:27.672446 +0000 build-fedora4: + tmp_spec=/tmp/tmp.7ueHrY.spec
+2022-03-16 12:50:27.672455 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2022-03-16 12:50:27.673618 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in /tmp/tmp.7ueHrY.spec
+2022-03-16 12:50:27.674520 +0000 build-fedora4: + '[' 2 -lt 2 ']'
+2022-03-16 12:50:27.674553 +0000 build-fedora4: + '[' -z qubes-src/core-agent-linux ']'
+2022-03-16 12:50:27.674569 +0000 build-fedora4: + cp qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:27.685241 +0000 build-fedora4: + read -r ver
+2022-03-16 12:50:27.685275 +0000 build-fedora4: + '[' x = x ']'
+2022-03-16 12:50:27.685289 +0000 build-fedora4: + sed -i 's|@VERSION@|4.1.33|g' qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:27.688145 +0000 build-fedora4: + vnum=1
+2022-03-16 12:50:27.688178 +0000 build-fedora4: + read -r ver
+2022-03-16 12:50:27.688188 +0000 build-fedora4: + '[' -e qubes-src/core-agent-linux/rel ']'
+2022-03-16 12:50:27.688199 +0000 build-fedora4: + grep -q @REL@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:27.689978 +0000 build-fedora4: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:27.692455 +0000 build-fedora4: + grep -q @CHANGELOG@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:27.696393 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2022-03-16 12:50:27.698527 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/core-agent-linux qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:28.089929 +0000 build-fedora4: + cat qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:28.089977 +0000 build-fedora4: + rm -rf qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:28.101667 +0000 build-fedora4: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2022-03-16 12:50:28.101724 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2022-03-16 12:50:28.101740 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.7ueHrY.spec
+2022-03-16 12:50:28.189895 +0000 build-fedora4: + rm -f /tmp/tmp.7ueHrY.spec
+2022-03-16 12:50:28.207664 +0000 build-fedora4: if [ -n "pkgs/vm-fc36/python2-dnf-plugins-qubes-hooks-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/python3-dnf-plugins-qubes-hooks-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-4.1.33-1.fc36.src.rpm pkgs/vm-fc36/qubes-core-agent-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-debuginfo-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-debugsource-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-dom0-updates-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-nautilus-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-network-manager-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-networking-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-passwordless-root-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-systemd-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-thunar-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-4.1.33-1.fc36.x86_64.buildinfo" ]; then \
+2022-03-16 12:50:28.207785 +0000 build-fedora4: .cd qubes-src/core-agent-linux && ln -f pkgs/vm-fc36/python2-dnf-plugins-qubes-hooks-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/python3-dnf-plugins-qubes-hooks-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-4.1.33-1.fc36.src.rpm pkgs/vm-fc36/qubes-core-agent-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-debuginfo-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-debugsource-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-dom0-updates-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-nautilus-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-network-manager-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-networking-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-passwordless-root-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-systemd-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-thunar-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-4.1.33-1.fc36.x86_64.buildinfo  /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/fc36/rpm/; \
+2022-03-16 12:50:28.207811 +0000 build-fedora4: else \
+2022-03-16 12:50:28.207825 +0000 build-fedora4: .echo "`tput bold`No packages defined by rpm_spec/core-agent.spec, syntax error?`tput sgr0`"; \
+2022-03-16 12:50:28.207832 +0000 build-fedora4: .exit 1; \
+2022-03-16 12:50:28.207838 +0000 build-fedora4: fi
+2022-03-16 12:50:28.211282 +0000 build-fedora4: cd qubes-src/core-agent-linux && echo pkgs/vm-fc36/python2-dnf-plugins-qubes-hooks-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/python3-dnf-plugins-qubes-hooks-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-4.1.33-1.fc36.src.rpm pkgs/vm-fc36/qubes-core-agent-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-debuginfo-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-debugsource-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-dom0-updates-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-nautilus-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-network-manager-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-networking-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-passwordless-root-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-systemd-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-thunar-4.1.33-1.fc36.x86_64.rpm pkgs/vm-fc36/qubes-core-agent-4.1.33-1.fc36.x86_64.buildinfo  > /home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-fc36-core-agent-linux
+2022-03-16 12:50:28.244758 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-github//Makefile.github:18: target 'notify-github' does not exist
+2022-03-16 12:50:28.244824 +0000 build-fedora4: [ -z "python2-dnf-plugins-qubes-hooks-4.1.33-1.fc36" ] || /home/user/builder-r4.1/qubes-src/builder-github//notify-issues \
+2022-03-16 12:50:28.244840 +0000 build-fedora4: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2022-03-16_12-49-04" \
+2022-03-16 12:50:28.244847 +0000 build-fedora4: .upload \
+2022-03-16 12:50:28.244854 +0000 build-fedora4: ."r4.1" \
+2022-03-16 12:50:28.244861 +0000 build-fedora4: ."qubes-src/core-agent-linux" \
+2022-03-16 12:50:28.244870 +0000 build-fedora4: ."python2-dnf-plugins-qubes-hooks-4.1.33-1.fc36" \
+2022-03-16 12:50:28.244875 +0000 build-fedora4: ."fc36" \
+2022-03-16 12:50:28.244881 +0000 build-fedora4: ."vm" \
+2022-03-16 12:50:28.244887 +0000 build-fedora4: ."current-testing" \
+2022-03-16 12:50:28.244897 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-core-agent-linux-vm-fc36-current-testing" \
+2022-03-16 12:50:28.244907 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-core-agent-linux-vm-fc36-current"
+2022-03-16 12:50:28.269628 +0000 build-fedora4: + ERR_OUTPUT=/dev/stderr
+2022-03-16 12:50:28.269664 +0000 build-fedora4: + '[' 2 -lt 2 ']'
+2022-03-16 12:50:28.270945 +0000 build-fedora4: ++ basename qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in
+2022-03-16 12:50:28.270977 +0000 build-fedora4: + [[ xcore-agent.spec.in == \x\.\i\n ]]
+2022-03-16 12:50:28.270989 +0000 build-fedora4: + '[' -r qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in ']'
+2022-03-16 12:50:28.273490 +0000 build-fedora4: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2022-03-16 12:50:28.274999 +0000 build-fedora4: + tmp_spec=/tmp/tmp.X7WmtH.spec
+2022-03-16 12:50:28.275545 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2022-03-16 12:50:28.280061 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in /tmp/tmp.X7WmtH.spec
+2022-03-16 12:50:28.283069 +0000 build-fedora4: + '[' 2 -lt 2 ']'
+2022-03-16 12:50:28.283103 +0000 build-fedora4: + '[' -z qubes-src/core-agent-linux ']'
+2022-03-16 12:50:28.283118 +0000 build-fedora4: + cp qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:28.285822 +0000 build-fedora4: + read -r ver
+2022-03-16 12:50:28.285855 +0000 build-fedora4: + '[' x = x ']'
+2022-03-16 12:50:28.285868 +0000 build-fedora4: + sed -i 's|@VERSION@|4.1.33|g' qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:28.290516 +0000 build-fedora4: + vnum=1
+2022-03-16 12:50:28.290551 +0000 build-fedora4: + read -r ver
+2022-03-16 12:50:28.290562 +0000 build-fedora4: + '[' -e qubes-src/core-agent-linux/rel ']'
+2022-03-16 12:50:28.290573 +0000 build-fedora4: + grep -q @REL@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:28.290694 +0000 build-fedora4: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:28.296729 +0000 build-fedora4: + grep -q @CHANGELOG@ qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:28.301121 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2022-03-16 12:50:28.301390 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/core-agent-linux qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:28.720929 +0000 build-fedora4: + cat qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:28.721513 +0000 build-fedora4: + rm -rf qubes-src/core-agent-linux/rpm_spec/core-agent.spec.in.tmp
+2022-03-16 12:50:28.722313 +0000 build-fedora4: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2022-03-16 12:50:28.728125 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2022-03-16 12:50:28.728165 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/../tools/spectool --list-files --source 0 /tmp/tmp.X7WmtH.spec
+2022-03-16 12:50:28.850452 +0000 build-fedora4: + rm -f /tmp/tmp.X7WmtH.spec
+2022-03-16 12:50:31.158478 +0000 build-fedora4: WARNING: /home/user/github-notify-state/r4.1-core-agent-linux-vm-fc36-current-testing does not exist, initializing with the current state
+2022-03-16 12:50:31.193610 +0000 build-fedora4: 
+2022-03-16 12:50:31.193661 +0000 build-fedora4: Makefile:834: update target 'internal-update-repo-current-testing.vm.fc36' due to: internal-update-repo-current-testing.vm.fc36.core-agent-linux
+2022-03-16 12:50:31.193671 +0000 build-fedora4: true
+2022-03-16 12:50:31.195239 +0000 build-fedora4: Makefile:923: target 'post-update-repo-current-testing' does not exist
+2022-03-16 12:50:31.195267 +0000 build-fedora4: for dist in  fc36; do \
+2022-03-16 12:50:31.195278 +0000 build-fedora4: .repo_base_var="LINUX_REPO_${dist//-/_}_BASEDIR"; \
+2022-03-16 12:50:31.195287 +0000 build-fedora4: .if [ -n "${!repo_base_var}" ]; then \
+2022-03-16 12:50:31.195294 +0000 build-fedora4: ..repo_basedir="${!repo_base_var}"; \
+2022-03-16 12:50:31.195300 +0000 build-fedora4: .else \
+2022-03-16 12:50:31.195308 +0000 build-fedora4: ..repo_basedir="qubes-src/linux-yum/r4.1"; \
+2022-03-16 12:50:31.195313 +0000 build-fedora4: .fi; \
+2022-03-16 12:50:31.195321 +0000 build-fedora4: .repos_to_update="$repos_to_update $repo_basedir"; \
+2022-03-16 12:50:31.195326 +0000 build-fedora4: done; \
+2022-03-16 12:50:31.195348 +0000 build-fedora4: pkgset_dist= ; \
+2022-03-16 12:50:31.195356 +0000 build-fedora4: for dist in ; do \
+2022-03-16 12:50:31.195363 +0000 build-fedora4: .pkgset_dist="$pkgset_dist dom0/$dist"; \
+2022-03-16 12:50:31.195368 +0000 build-fedora4: done; \
+2022-03-16 12:50:31.195374 +0000 build-fedora4: for dist in fc36; do \
+2022-03-16 12:50:31.195381 +0000 build-fedora4: .pkgset_dist="$pkgset_dist vm/$dist"; \
+2022-03-16 12:50:31.195387 +0000 build-fedora4: done; \
+2022-03-16 12:50:31.195395 +0000 build-fedora4: for repo in `echo $repos_to_update|tr ' ' '\n'|sort|uniq`; do \
+2022-03-16 12:50:31.195402 +0000 build-fedora4: .[ -z "$repo" ] && continue; \
+2022-03-16 12:50:31.195411 +0000 build-fedora4: .[ -x "$repo/../update_repo-current-testing.sh" ] || continue; \
+2022-03-16 12:50:31.195420 +0000 build-fedora4: .(cd $repo/.. && ./update_repo-current-testing.sh r4.1 $pkgset_dist); \
+2022-03-16 12:50:31.195425 +0000 build-fedora4: done
+2022-03-16 12:50:31.245803 +0000 build-fedora4: ~/builder-r4.1/qubes-src/linux-yum ~/builder-r4.1/qubes-src/linux-yum
+2022-03-16 12:50:31.261702 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc36...
+2022-03-16 12:50:31.330478 +0000 build-fedora4: warning: Found bdb_ro Packages database while attempting sqlite backend: using bdb_ro backend.
+2022-03-16 12:50:32.081400 +0000 build-fedora4: Done.
+2022-03-16 12:50:32.095033 +0000 build-fedora4: ~/builder-r4.1/qubes-src/linux-yum ~/builder-r4.1/qubes-src/linux-yum
+2022-03-16 12:50:32.098946 +0000 build-fedora4: Syncing r4.1...
+2022-03-16 12:50:33.026176 +0000 build-fedora4: sending incremental file list
+2022-03-16 12:50:33.078043 +0000 build-fedora4: .d..t...... fc36/
+2022-03-16 12:50:33.078081 +0000 build-fedora4: .d..t...... fc36/repodata/
+2022-03-16 12:50:33.078096 +0000 build-fedora4: <f+++++++++ fc36/repodata/390ab3fea0bc10ddc4eddb272aeaea1b97bc4dbc89b5c3606db58ba31a466537-other.xml.gz
+2022-03-16 12:50:33.078111 +0000 build-fedora4: .          6,666 100%    0.00kB/s    0:00:00  .          6,666 100%    0.00kB/s    0:00:00 (xfr#1, to-chk=75/79)
+2022-03-16 12:50:33.078124 +0000 build-fedora4: <f+++++++++ fc36/repodata/5ec20ab65c72da525ae15caf08d805b433be75d5b1b6c26307ecd270ae4dbc49-filelists.sqlite.bz2
+2022-03-16 12:50:33.078136 +0000 build-fedora4: .         21,041 100%   20.07MB/s    0:00:00  .         21,041 100%   20.07MB/s    0:00:00 (xfr#2, to-chk=74/79)
+2022-03-16 12:50:33.078147 +0000 build-fedora4: <f+++++++++ fc36/repodata/a9663e9ebc4b6b4e65e5cb34831e8351799ca38ee2c58c559259f9e27af13991-filelists.xml.gz
+2022-03-16 12:50:33.078159 +0000 build-fedora4: .         12,803 100%   12.21MB/s    0:00:00  .         12,803 100%   12.21MB/s    0:00:00 (xfr#3, to-chk=73/79)
+2022-03-16 12:50:33.078170 +0000 build-fedora4: <f+++++++++ fc36/repodata/cfec6ac8b2e5edaca9dd38da013de2770c14ecdf909a06d5f7ebebb9a6789a13-other.sqlite.bz2
+2022-03-16 12:50:33.078182 +0000 build-fedora4: .         14,633 100%   13.96MB/s    0:00:00  .         14,633 100%   13.96MB/s    0:00:00 (xfr#4, to-chk=72/79)
+2022-03-16 12:50:33.078193 +0000 build-fedora4: <f+++++++++ fc36/repodata/d7c1ee8faade22589d6c8ebec68121cbced743b440dba2053fbd7769114ff662-primary.xml.gz
+2022-03-16 12:50:33.078205 +0000 build-fedora4: .         12,834 100%   12.24MB/s    0:00:00  .         12,834 100%   12.24MB/s    0:00:00 (xfr#5, to-chk=71/79)
+2022-03-16 12:50:33.078216 +0000 build-fedora4: <f+++++++++ fc36/repodata/f35d11dfdc38e482c9f67248c6c4eb4854466ce53b3a0e82bd5be0703fe0b33d-primary.sqlite.bz2
+2022-03-16 12:50:33.078227 +0000 build-fedora4: .         27,445 100%   26.17MB/s    0:00:00  .         27,445 100%   26.17MB/s    0:00:00 (xfr#6, to-chk=70/79)
+2022-03-16 12:50:33.078235 +0000 build-fedora4: <f.st...... fc36/repodata/repomd.xml
+2022-03-16 12:50:33.078247 +0000 build-fedora4: .          3,089 100%    2.95MB/s    0:00:00  .          3,089 100%    2.95MB/s    0:00:00 (xfr#7, to-chk=69/79)
+2022-03-16 12:50:33.078254 +0000 build-fedora4: <f..t...... fc36/repodata/repomd.xml.asc
+2022-03-16 12:50:33.078265 +0000 build-fedora4: .            833 100%  813.48kB/s    0:00:00  .            833 100%  813.48kB/s    0:00:00 (xfr#8, to-chk=68/79)
+2022-03-16 12:50:33.078286 +0000 build-fedora4: .d..t...... fc36/rpm/
+2022-03-16 12:50:33.078297 +0000 build-fedora4: <f+++++++++ fc36/rpm/python2-dnf-plugins-qubes-hooks-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:33.078309 +0000 build-fedora4: .         15,698 100%   14.97MB/s    0:00:00  .         15,698 100%   14.97MB/s    0:00:00 (xfr#9, to-chk=62/79)
+2022-03-16 12:50:33.078318 +0000 build-fedora4: <f+++++++++ fc36/rpm/python3-dnf-plugins-qubes-hooks-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:33.078330 +0000 build-fedora4: .         16,090 100%   15.34MB/s    0:00:00  .         16,090 100%   15.34MB/s    0:00:00 (xfr#10, to-chk=61/79)
+2022-03-16 12:50:33.078338 +0000 build-fedora4: <f+++++++++ fc36/rpm/qubes-core-agent-4.1.33-1.fc36.src.rpm
+2022-03-16 12:50:33.080998 +0000 build-fedora4: .         32,768  16%   31.25MB/s    0:00:00  .        203,228 100%  193.81MB/s    0:00:00 (xfr#11, to-chk=51/79)
+2022-03-16 12:50:33.081037 +0000 build-fedora4: <f+++++++++ fc36/rpm/qubes-core-agent-4.1.33-1.fc36.x86_64.buildinfo
+2022-03-16 12:50:33.081052 +0000 build-fedora4: .         12,659 100%   12.07MB/s    0:00:00  .         12,659 100%   12.07MB/s    0:00:00 (xfr#12, to-chk=50/79)
+2022-03-16 12:50:33.081062 +0000 build-fedora4: <f+++++++++ fc36/rpm/qubes-core-agent-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:33.081074 +0000 build-fedora4: .         32,768  22%   31.25MB/s    0:00:00  .        148,610 100%  141.73MB/s    0:00:00 (xfr#13, to-chk=49/79)
+2022-03-16 12:50:33.081083 +0000 build-fedora4: <f+++++++++ fc36/rpm/qubes-core-agent-debuginfo-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:33.081095 +0000 build-fedora4: .         32,768  64%   31.25MB/s    0:00:00  .         51,191 100%   48.82MB/s    0:00:00 (xfr#14, to-chk=48/79)
+2022-03-16 12:50:33.081105 +0000 build-fedora4: <f+++++++++ fc36/rpm/qubes-core-agent-debugsource-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:33.081116 +0000 build-fedora4: .         27,386 100%   13.06MB/s    0:00:00  .         27,386 100%   13.06MB/s    0:00:00 (xfr#15, to-chk=47/79)
+2022-03-16 12:50:33.081125 +0000 build-fedora4: <f+++++++++ fc36/rpm/qubes-core-agent-dom0-updates-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:33.081138 +0000 build-fedora4: .         16,590 100%    7.91MB/s    0:00:00  .         16,590 100%    7.91MB/s    0:00:00 (xfr#16, to-chk=46/79)
+2022-03-16 12:50:33.081147 +0000 build-fedora4: <f+++++++++ fc36/rpm/qubes-core-agent-nautilus-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:33.081159 +0000 build-fedora4: .         14,256 100%    6.80MB/s    0:00:00  .         14,256 100%    6.80MB/s    0:00:00 (xfr#17, to-chk=45/79)
+2022-03-16 12:50:33.081168 +0000 build-fedora4: <f+++++++++ fc36/rpm/qubes-core-agent-network-manager-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:33.081180 +0000 build-fedora4: .         15,805 100%    7.54MB/s    0:00:00  .         15,805 100%    7.54MB/s    0:00:00 (xfr#18, to-chk=44/79)
+2022-03-16 12:50:33.081189 +0000 build-fedora4: <f+++++++++ fc36/rpm/qubes-core-agent-networking-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:33.081201 +0000 build-fedora4: .         27,437 100%   13.08MB/s    0:00:00  .         27,437 100%   13.08MB/s    0:00:00 (xfr#19, to-chk=43/79)
+2022-03-16 12:50:33.081211 +0000 build-fedora4: <f+++++++++ fc36/rpm/qubes-core-agent-passwordless-root-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:33.081222 +0000 build-fedora4: .         15,757 100%    7.51MB/s    0:00:00  .         15,757 100%    7.51MB/s    0:00:00 (xfr#20, to-chk=42/79)
+2022-03-16 12:50:33.081232 +0000 build-fedora4: <f+++++++++ fc36/rpm/qubes-core-agent-systemd-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:33.081243 +0000 build-fedora4: .         29,764 100%   14.19MB/s    0:00:00  .         29,764 100%   14.19MB/s    0:00:00 (xfr#21, to-chk=41/79)
+2022-03-16 12:50:33.081252 +0000 build-fedora4: <f+++++++++ fc36/rpm/qubes-core-agent-thunar-4.1.33-1.fc36.x86_64.rpm
+2022-03-16 12:50:33.081263 +0000 build-fedora4: .         14,898 100%    7.10MB/s    0:00:00  .         14,898 100%    7.10MB/s    0:00:00 (xfr#22, to-chk=40/79)
+2022-03-16 12:50:33.810629 +0000 build-fedora4: Makefile:819: update target 'update-repo-current-testing' due to: internal-update-repo-current-testing.vm.fc36 post-update-repo-current-testing
+2022-03-16 12:50:33.810677 +0000 build-fedora4: true
+2022-03-16 12:50:33.812058 +0000 build-fedora4: > done
+2022-03-16 12:50:33.812091 +0000 > closing log
