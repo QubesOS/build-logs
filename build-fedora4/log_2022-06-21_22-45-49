@@ -1,0 +1,747 @@
+2022-06-21 22:45:49.901875 +0000 > starting log
+2022-06-21 22:45:49.902404 +0000 build-fedora4: > starting build with log
+2022-06-21 22:45:49.902432 +0000 build-fedora4: >> make args: DISTS_VM= DIST_DOM0=fc32 BUILD_LOGS_URL= vmm-xen-dom0-fc32=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2022-06-21_22-33-23 GIT_URL_vmm_xen=https://github.com/QubesOS/qubes-vmm-xen sign-all update-repo-current-testing
+2022-06-21 22:45:49.902443 +0000 build-fedora4: >> MAKEFLAGS=
+2022-06-21 22:45:49.902452 +0000 build-fedora4: >> COMPONENTS=vmm-xen
+2022-06-21 22:45:49.902458 +0000 build-fedora4: >> DISTS_VM=
+2022-06-21 22:45:49.902465 +0000 build-fedora4: >> DIST_DOM0=
+2022-06-21 22:45:49.902474 +0000 build-fedora4: >> qubes-builder 20ad3a0690db5a940dc9c0c7f080d1980cf24c83
+2022-06-21 22:45:49.902484 +0000 build-fedora4: >> qubes-builder/qubes-src/vmm-xen 3419377cd9f9a4c2e73da3b377ebb00a4e70a6bf
+2022-06-21 22:45:49.917415 +0000 build-fedora4: !! gc.tar.gz
+2022-06-21 22:45:49.917455 +0000 build-fedora4: !! gmp-4.3.2.tar.bz2
+2022-06-21 22:45:49.917466 +0000 build-fedora4: !! gmp-4.3.2.tar.bz2.sig
+2022-06-21 22:45:49.917473 +0000 build-fedora4: !! grub-0.97.tar.gz
+2022-06-21 22:45:49.917481 +0000 build-fedora4: !! grub-0.97.tar.gz.sig
+2022-06-21 22:45:49.917487 +0000 build-fedora4: !! lwip-1.3.0.tar.gz
+2022-06-21 22:45:49.917495 +0000 build-fedora4: !! lwip-1.3.0.tar.gz.sig
+2022-06-21 22:45:49.917502 +0000 build-fedora4: !! newlib-1.16.0.tar.gz
+2022-06-21 22:45:49.917508 +0000 build-fedora4: !! ocaml-3.11.0.tar.gz
+2022-06-21 22:45:49.917515 +0000 build-fedora4: !! pciutils-2.2.9.tar.bz2
+2022-06-21 22:45:49.917525 +0000 build-fedora4: !! pkgs/dom0-fc32/python3-xen-4.14.1-5.fc32.x86_64.rpm
+2022-06-21 22:45:49.917534 +0000 build-fedora4: !! pkgs/dom0-fc32/python3-xen-4.14.2-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.917543 +0000 build-fedora4: !! pkgs/dom0-fc32/python3-xen-4.14.3-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.917555 +0000 build-fedora4: !! pkgs/dom0-fc32/python3-xen-4.14.3-8.fc32.x86_64.rpm
+2022-06-21 22:45:49.917564 +0000 build-fedora4: !! pkgs/dom0-fc32/python3-xen-4.14.4-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.917573 +0000 build-fedora4: !! pkgs/dom0-fc32/python3-xen-4.14.4-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.917582 +0000 build-fedora4: !! pkgs/dom0-fc32/python3-xen-4.14.5-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.917590 +0000 build-fedora4: !! pkgs/dom0-fc32/python3-xen-4.14.5-3.fc32.x86_64.rpm
+2022-06-21 22:45:49.917599 +0000 build-fedora4: !! pkgs/dom0-fc32/python3-xen-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.917609 +0000 build-fedora4: !! pkgs/dom0-fc32/python3-xen-debuginfo-4.14.1-5.fc32.x86_64.rpm
+2022-06-21 22:45:49.917618 +0000 build-fedora4: !! pkgs/dom0-fc32/python3-xen-debuginfo-4.14.2-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.917627 +0000 build-fedora4: !! pkgs/dom0-fc32/python3-xen-debuginfo-4.14.3-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.917636 +0000 build-fedora4: !! pkgs/dom0-fc32/python3-xen-debuginfo-4.14.3-8.fc32.x86_64.rpm
+2022-06-21 22:45:49.917646 +0000 build-fedora4: !! pkgs/dom0-fc32/python3-xen-debuginfo-4.14.4-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.917655 +0000 build-fedora4: !! pkgs/dom0-fc32/python3-xen-debuginfo-4.14.4-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.917664 +0000 build-fedora4: !! pkgs/dom0-fc32/python3-xen-debuginfo-4.14.5-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.917673 +0000 build-fedora4: !! pkgs/dom0-fc32/python3-xen-debuginfo-4.14.5-3.fc32.x86_64.rpm
+2022-06-21 22:45:49.917683 +0000 build-fedora4: !! pkgs/dom0-fc32/python3-xen-debuginfo-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.917691 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.13.0-3.fc32.x86_64.buildinfo
+2022-06-21 22:45:49.917700 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.13.1-4.fc32.x86_64.buildinfo
+2022-06-21 22:45:49.917709 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.0-1.fc32.x86_64.buildinfo
+2022-06-21 22:45:49.917717 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.0-2.fc32.x86_64.buildinfo
+2022-06-21 22:45:49.917726 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.0-3.fc32.x86_64.buildinfo
+2022-06-21 22:45:49.917734 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.0-4.fc32.x86_64.buildinfo
+2022-06-21 22:45:49.917759 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.0-5.fc32.x86_64.buildinfo
+2022-06-21 22:45:49.917769 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.0-6.fc32.x86_64.buildinfo
+2022-06-21 22:45:49.917777 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.0-7.fc32.x86_64.buildinfo
+2022-06-21 22:45:49.917786 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.0-8.fc32.x86_64.buildinfo
+2022-06-21 22:45:49.917795 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.0-9.fc32.x86_64.buildinfo
+2022-06-21 22:45:49.917803 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.1-1.fc32.x86_64.buildinfo
+2022-06-21 22:45:49.917812 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.1-2.fc32.x86_64.buildinfo
+2022-06-21 22:45:49.917821 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.1-3.fc32.x86_64.buildinfo
+2022-06-21 22:45:49.917829 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.1-4.fc32.x86_64.buildinfo
+2022-06-21 22:45:49.917837 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.1-5.fc32.src.rpm
+2022-06-21 22:45:49.917846 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.1-5.fc32.x86_64.buildinfo
+2022-06-21 22:45:49.917855 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.1-5.fc32.x86_64.rpm
+2022-06-21 22:45:49.917863 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.2-1.fc32.x86_64.buildinfo
+2022-06-21 22:45:49.917871 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.2-2.fc32.src.rpm
+2022-06-21 22:45:49.917880 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.2-2.fc32.x86_64.buildinfo
+2022-06-21 22:45:49.917888 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.2-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.917897 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.3-1.fc32.x86_64.buildinfo
+2022-06-21 22:45:49.917905 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.3-2.fc32.x86_64.buildinfo
+2022-06-21 22:45:49.917914 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.3-3.fc32.x86_64.buildinfo
+2022-06-21 22:45:49.917922 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.3-4.fc32.src.rpm
+2022-06-21 22:45:49.917931 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.3-4.fc32.x86_64.buildinfo
+2022-06-21 22:45:49.917939 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.3-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.917947 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.3-5.fc32.x86_64.buildinfo
+2022-06-21 22:45:49.917956 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.3-6.fc32.x86_64.buildinfo
+2022-06-21 22:45:49.917965 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.3-7.fc32.x86_64.buildinfo
+2022-06-21 22:45:49.917973 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.3-8.fc32.src.rpm
+2022-06-21 22:45:49.917981 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.3-8.fc32.x86_64.buildinfo
+2022-06-21 22:45:49.917990 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.3-8.fc32.x86_64.rpm
+2022-06-21 22:45:49.917998 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.4-1.fc32.x86_64.buildinfo
+2022-06-21 22:45:49.918006 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.4-2.fc32.src.rpm
+2022-06-21 22:45:49.918015 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.4-2.fc32.x86_64.buildinfo
+2022-06-21 22:45:49.918023 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.4-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.918032 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.4-3.fc32.x86_64.buildinfo
+2022-06-21 22:45:49.918041 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.4-4.fc32.src.rpm
+2022-06-21 22:45:49.918050 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.4-4.fc32.x86_64.buildinfo
+2022-06-21 22:45:49.918058 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.4-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.918067 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.5-1.fc32.x86_64.buildinfo
+2022-06-21 22:45:49.918075 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.5-2.fc32.src.rpm
+2022-06-21 22:45:49.918084 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.5-2.fc32.x86_64.buildinfo
+2022-06-21 22:45:49.918092 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.5-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.918100 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.5-3.fc32.src.rpm
+2022-06-21 22:45:49.918115 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.5-3.fc32.x86_64.buildinfo
+2022-06-21 22:45:49.918147 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.5-3.fc32.x86_64.rpm
+2022-06-21 22:45:49.918157 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.5-4.fc32.src.rpm
+2022-06-21 22:45:49.918165 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.5-4.fc32.x86_64.buildinfo
+2022-06-21 22:45:49.918174 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.918183 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-debuginfo-4.14.1-5.fc32.x86_64.rpm
+2022-06-21 22:45:49.918192 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-debuginfo-4.14.2-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.918200 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-debuginfo-4.14.3-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.918215 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-debuginfo-4.14.3-8.fc32.x86_64.rpm
+2022-06-21 22:45:49.918225 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-debuginfo-4.14.4-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.918234 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-debuginfo-4.14.4-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.918242 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-debuginfo-4.14.5-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.918251 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-debuginfo-4.14.5-3.fc32.x86_64.rpm
+2022-06-21 22:45:49.918260 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-debuginfo-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.918269 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-debugsource-4.14.1-5.fc32.x86_64.rpm
+2022-06-21 22:45:49.918278 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-debugsource-4.14.2-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.918287 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-debugsource-4.14.3-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.918296 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-debugsource-4.14.3-8.fc32.x86_64.rpm
+2022-06-21 22:45:49.918305 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-debugsource-4.14.4-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.918314 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-debugsource-4.14.4-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.918323 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-debugsource-4.14.5-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.918332 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-debugsource-4.14.5-3.fc32.x86_64.rpm
+2022-06-21 22:45:49.918341 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-debugsource-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.918350 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-devel-4.14.1-5.fc32.x86_64.rpm
+2022-06-21 22:45:49.918359 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-devel-4.14.2-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.918368 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-devel-4.14.3-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.918376 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-devel-4.14.3-8.fc32.x86_64.rpm
+2022-06-21 22:45:49.918385 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-devel-4.14.4-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.918394 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-devel-4.14.4-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.918402 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-devel-4.14.5-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.918411 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-devel-4.14.5-3.fc32.x86_64.rpm
+2022-06-21 22:45:49.918420 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-devel-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.918432 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-doc-4.14.1-5.fc32.noarch.rpm
+2022-06-21 22:45:49.918441 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-doc-4.14.2-2.fc32.noarch.rpm
+2022-06-21 22:45:49.918449 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-doc-4.14.3-4.fc32.noarch.rpm
+2022-06-21 22:45:49.918458 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-doc-4.14.3-8.fc32.noarch.rpm
+2022-06-21 22:45:49.918469 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-doc-4.14.4-2.fc32.noarch.rpm
+2022-06-21 22:45:49.918478 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-doc-4.14.4-4.fc32.noarch.rpm
+2022-06-21 22:45:49.918487 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-doc-4.14.5-2.fc32.noarch.rpm
+2022-06-21 22:45:49.918496 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-doc-4.14.5-3.fc32.noarch.rpm
+2022-06-21 22:45:49.918509 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-doc-4.14.5-4.fc32.noarch.rpm
+2022-06-21 22:45:49.918535 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-hypervisor-4.14.1-5.fc32.x86_64.rpm
+2022-06-21 22:45:49.918545 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-hypervisor-4.14.2-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.918555 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-hypervisor-4.14.3-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.918564 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-hypervisor-4.14.3-8.fc32.x86_64.rpm
+2022-06-21 22:45:49.918573 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-hypervisor-4.14.4-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.918582 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-hypervisor-4.14.4-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.918591 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-hypervisor-4.14.5-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.918601 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-hypervisor-4.14.5-3.fc32.x86_64.rpm
+2022-06-21 22:45:49.918610 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-hypervisor-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.918618 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-libs-4.14.1-5.fc32.x86_64.rpm
+2022-06-21 22:45:49.918627 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-libs-4.14.2-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.918636 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-libs-4.14.3-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.918644 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-libs-4.14.3-8.fc32.x86_64.rpm
+2022-06-21 22:45:49.918653 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-libs-4.14.4-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.918661 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-libs-4.14.4-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.918670 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-libs-4.14.5-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.918679 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-libs-4.14.5-3.fc32.x86_64.rpm
+2022-06-21 22:45:49.918688 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-libs-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.918697 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-libs-debuginfo-4.14.1-5.fc32.x86_64.rpm
+2022-06-21 22:45:49.918706 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-libs-debuginfo-4.14.2-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.918716 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-libs-debuginfo-4.14.3-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.918725 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-libs-debuginfo-4.14.3-8.fc32.x86_64.rpm
+2022-06-21 22:45:49.918734 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-libs-debuginfo-4.14.4-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.918744 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-libs-debuginfo-4.14.4-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.918753 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-libs-debuginfo-4.14.5-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.918762 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-libs-debuginfo-4.14.5-3.fc32.x86_64.rpm
+2022-06-21 22:45:49.918772 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-libs-debuginfo-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.918781 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-licenses-4.14.1-5.fc32.x86_64.rpm
+2022-06-21 22:45:49.918791 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-licenses-4.14.2-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.918800 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-licenses-4.14.3-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.918809 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-licenses-4.14.3-8.fc32.x86_64.rpm
+2022-06-21 22:45:49.918818 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-licenses-4.14.4-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.918827 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-licenses-4.14.4-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.918835 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-licenses-4.14.5-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.918844 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-licenses-4.14.5-3.fc32.x86_64.rpm
+2022-06-21 22:45:49.918853 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-licenses-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.918862 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-qemu-tools-4.14.1-5.fc32.x86_64.rpm
+2022-06-21 22:45:49.918871 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-qemu-tools-4.14.2-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.918883 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-qemu-tools-4.14.3-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.918893 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-qemu-tools-4.14.3-8.fc32.x86_64.rpm
+2022-06-21 22:45:49.918907 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-qemu-tools-4.14.4-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.918917 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-qemu-tools-4.14.4-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.918926 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-qemu-tools-4.14.5-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.918935 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-qemu-tools-4.14.5-3.fc32.x86_64.rpm
+2022-06-21 22:45:49.918944 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-qemu-tools-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.918953 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-qubes-vm-4.14.1-5.fc32.x86_64.rpm
+2022-06-21 22:45:49.918962 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-qubes-vm-4.14.2-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.918970 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-qubes-vm-4.14.3-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.918979 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-qubes-vm-4.14.3-8.fc32.x86_64.rpm
+2022-06-21 22:45:49.918988 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-qubes-vm-4.14.4-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.918996 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-qubes-vm-4.14.4-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.919005 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-qubes-vm-4.14.5-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.919014 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-qubes-vm-4.14.5-3.fc32.x86_64.rpm
+2022-06-21 22:45:49.919023 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-qubes-vm-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.919032 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-qubes-vm-debuginfo-4.14.1-5.fc32.x86_64.rpm
+2022-06-21 22:45:49.919041 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-qubes-vm-debuginfo-4.14.2-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.919051 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-qubes-vm-debuginfo-4.14.3-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.919060 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-qubes-vm-debuginfo-4.14.3-8.fc32.x86_64.rpm
+2022-06-21 22:45:49.919070 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-qubes-vm-debuginfo-4.14.4-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.919079 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-qubes-vm-debuginfo-4.14.4-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.919089 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-qubes-vm-debuginfo-4.14.5-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.919099 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-qubes-vm-debuginfo-4.14.5-3.fc32.x86_64.rpm
+2022-06-21 22:45:49.919108 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-qubes-vm-debuginfo-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.919117 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-runtime-4.14.1-5.fc32.x86_64.rpm
+2022-06-21 22:45:49.919143 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-runtime-4.14.2-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.919152 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-runtime-4.14.3-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.919161 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-runtime-4.14.3-8.fc32.x86_64.rpm
+2022-06-21 22:45:49.919170 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-runtime-4.14.4-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.919196 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-runtime-4.14.4-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.919204 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-runtime-4.14.5-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.919213 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-runtime-4.14.5-3.fc32.x86_64.rpm
+2022-06-21 22:45:49.919221 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-runtime-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.919230 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-runtime-debuginfo-4.14.1-5.fc32.x86_64.rpm
+2022-06-21 22:45:49.919240 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-runtime-debuginfo-4.14.2-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.919249 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-runtime-debuginfo-4.14.3-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.919258 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-runtime-debuginfo-4.14.3-8.fc32.x86_64.rpm
+2022-06-21 22:45:49.919272 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-runtime-debuginfo-4.14.4-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.919282 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-runtime-debuginfo-4.14.4-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.919291 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-runtime-debuginfo-4.14.5-2.fc32.x86_64.rpm
+2022-06-21 22:45:49.919300 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-runtime-debuginfo-4.14.5-3.fc32.x86_64.rpm
+2022-06-21 22:45:49.919309 +0000 build-fedora4: !! pkgs/dom0-fc32/xen-runtime-debuginfo-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:45:49.919317 +0000 build-fedora4: !! pkgs/dom0-fc32/xen.spec.list
+2022-06-21 22:45:49.919324 +0000 build-fedora4: !! polarssl-1.1.4-gpl.tgz
+2022-06-21 22:45:49.919331 +0000 build-fedora4: !! tboot-20090330.tar.gz
+2022-06-21 22:45:49.919338 +0000 build-fedora4: !! tpm_emulator-0.7.4.tar.gz
+2022-06-21 22:45:49.919345 +0000 build-fedora4: !! xen-4.12.0-rc3.tar.gz
+2022-06-21 22:45:49.919352 +0000 build-fedora4: !! xen-4.12.0-rc3.tar.gz.sig
+2022-06-21 22:45:49.919359 +0000 build-fedora4: !! xen-4.12.0-rc6.tar.gz
+2022-06-21 22:45:49.919366 +0000 build-fedora4: !! xen-4.12.0-rc6.tar.gz.sig
+2022-06-21 22:45:49.919373 +0000 build-fedora4: !! xen-4.12.0.tar.gz
+2022-06-21 22:45:49.919380 +0000 build-fedora4: !! xen-4.12.0.tar.gz.sig
+2022-06-21 22:45:49.919387 +0000 build-fedora4: !! xen-4.12.1.tar.gz
+2022-06-21 22:45:49.919394 +0000 build-fedora4: !! xen-4.12.1.tar.gz.sig
+2022-06-21 22:45:49.919400 +0000 build-fedora4: !! xen-4.13.0.tar.gz
+2022-06-21 22:45:49.919407 +0000 build-fedora4: !! xen-4.13.0.tar.gz.sig
+2022-06-21 22:45:49.919413 +0000 build-fedora4: !! xen-4.13.1.tar.gz
+2022-06-21 22:45:49.919420 +0000 build-fedora4: !! xen-4.13.1.tar.gz.sig
+2022-06-21 22:45:49.919427 +0000 build-fedora4: !! xen-4.14.0.tar.gz
+2022-06-21 22:45:49.919433 +0000 build-fedora4: !! xen-4.14.0.tar.gz.sig
+2022-06-21 22:45:49.919440 +0000 build-fedora4: !! xen-4.14.1.tar.gz
+2022-06-21 22:45:49.919447 +0000 build-fedora4: !! xen-4.14.1.tar.gz.sig
+2022-06-21 22:45:49.919453 +0000 build-fedora4: !! xen-4.14.2.tar.gz
+2022-06-21 22:45:49.919460 +0000 build-fedora4: !! xen-4.14.2.tar.gz.sig
+2022-06-21 22:45:49.919467 +0000 build-fedora4: !! xen-4.14.3.tar.gz
+2022-06-21 22:45:49.919474 +0000 build-fedora4: !! xen-4.14.3.tar.gz.sig
+2022-06-21 22:45:49.919480 +0000 build-fedora4: !! xen-4.14.4.tar.gz
+2022-06-21 22:45:49.919487 +0000 build-fedora4: !! xen-4.14.4.tar.gz.sig
+2022-06-21 22:45:49.919493 +0000 build-fedora4: !! xen-4.14.5.tar.gz
+2022-06-21 22:45:49.919500 +0000 build-fedora4: !! xen-4.14.5.tar.gz.sig
+2022-06-21 22:45:49.919507 +0000 build-fedora4: !! zlib-1.2.3.tar.gz
+2022-06-21 22:45:49.924601 +0000 build-fedora4: 69a9554d2d213392512d4ce41ec8c4993557e65c2b3dc4f568ac18695421cc08b7677c25f9a0ce03e94fb5e68a298fcac7ed09fb90007a2c998ff6ef78d3c651  gc.tar.gz
+2022-06-21 22:45:49.932329 +0000 build-fedora4: 2e0b0fd23e6f10742a5517981e5171c6e88b0a93c83da701b296f5c0861d72c19782daab589a7eac3f9032152a0fc7eff7f5362db8fccc4859564a9aa82329cf  gmp-4.3.2.tar.bz2
+2022-06-21 22:45:49.932866 +0000 build-fedora4: 954408a918d425c89e3b5fce52aa77b94af9e0929e11216dc65b47af0eb258f38ec6ca6e8680675f827a2408439c83d4fab161d8a5684d4617bef98bdd2e3992  gmp-4.3.2.tar.bz2.sig
+2022-06-21 22:45:49.936748 +0000 build-fedora4: c2bc9ffc8583aeae71cee9ddcc4418969768d4e3764d47307da54f93981c0109fb07d84b061b3a3628bd00ba4d14a54742bc04848110eb3ae8ca25dbfbaabadb  grub-0.97.tar.gz
+2022-06-21 22:45:49.937244 +0000 build-fedora4: 1c9365859a3f9220633d12ca6849e7f67c25acd0306111c602d371b634f734e4daf428ea372237679b07b30a4d115fcfea666adfc7bf79e4d786f4754a1f04c1  grub-0.97.tar.gz.sig
+2022-06-21 22:45:49.939982 +0000 build-fedora4: 1465b58279af1647f909450e394fe002ca165f0ff4a0254bfa9fe0e64316f50facdde2729d79a4e632565b4500cf4d6c74192ac0dd3bc9fe09129bbd67ba089d  lwip-1.3.0.tar.gz
+2022-06-21 22:45:49.940026 +0000 build-fedora4: 57a5e2200b822a7215446fab87ef62533b8790cd43fb5f119f5d7dd30c91b7be4eb7e4a00d951a5bddecf26b9f12f34ef55b8fc2dc37b46f006ff368f8618044  lwip-1.3.0.tar.gz.sig
+2022-06-21 22:45:50.030757 +0000 build-fedora4: 40eb96bbc6736a16b6399e0cdb73e853d0d90b685c967e77899183446664d64570277a633fdafdefc351b46ce210a99115769a1d9f47ac749d7e82837d4d1ac3  newlib-1.16.0.tar.gz
+2022-06-21 22:45:50.064337 +0000 build-fedora4: 61cacf14d1d90a11bd0599e7ad323350f3a3f30afb4ef5eaadc2108e5d6007dafbb83e955435ee49eeb0130955215923fa72d4e56196bec2396c166a54641955  ocaml-3.11.0.tar.gz
+2022-06-21 22:45:50.067404 +0000 build-fedora4: 2b3d98d027e46d8c08037366dde6f0781ca03c610ef2b380984639e4ef39899ed8d8b8e4cd9c9dc54df101279b95879bd66bfd4d04ad07fef41e847ea7ae32b5  pciutils-2.2.9.tar.bz2
+2022-06-21 22:45:50.068981 +0000 build-fedora4: 8e9661238617a24746ba45654cdc4c902d164d30539ab4e8f4510d6a36872cbd2b1a5c768f281062d51762ae68b51cd3f906b9f27ae0f591b29087a371006fc7  pkgs/dom0-fc32/python3-xen-4.14.1-5.fc32.x86_64.rpm
+2022-06-21 22:45:50.070519 +0000 build-fedora4: 146a64c49785301c66bfd594405af37d86bc3f702cbda1a512da7ec79a41830335d31263180676e9c4575df89726acad17fb72ca12ff2e6dad9b9e4103a06ee0  pkgs/dom0-fc32/python3-xen-4.14.2-2.fc32.x86_64.rpm
+2022-06-21 22:45:50.072095 +0000 build-fedora4: dfec1abcdb1181e22203815e0d55b1a6cc19cb0d70fbd56ae9e20cf04e4f9c58536b06adcc1868187ffc585929819f9c716848f97bff6c424f8bf004f3410aea  pkgs/dom0-fc32/python3-xen-4.14.3-4.fc32.x86_64.rpm
+2022-06-21 22:45:50.073810 +0000 build-fedora4: b8e22825ea1139c8ac811e4a27fa34517e7c3f61226c5591911719b0c13ddd30bec2f9ae43e1d5ad8346459e8c2624a705939a55da26f20a9511d37909d5da6f  pkgs/dom0-fc32/python3-xen-4.14.3-8.fc32.x86_64.rpm
+2022-06-21 22:45:50.074326 +0000 build-fedora4: c6698f2c7778c30fe7d1690d33dd005b32b5e09bf5a5a39bd0b3436e04f3a721eddf3b5d5d02374bf61a54cd52952dc6e60903bad5ac7cd1cd1a4173bd0329af  pkgs/dom0-fc32/python3-xen-4.14.4-2.fc32.x86_64.rpm
+2022-06-21 22:45:50.075925 +0000 build-fedora4: ede89149c3652c9110d6117a894141c17aea656bf6d2c288d7537dee2d466d3fd3bbd436641d3442dbd2e87c8b260e63e46c589eb898c1c261e69e561fa00c56  pkgs/dom0-fc32/python3-xen-4.14.4-4.fc32.x86_64.rpm
+2022-06-21 22:45:50.077529 +0000 build-fedora4: a17bbe9eb97be5ef489e5e734ff9ea07c9b80c19803f78feaf4de44229189000688242306898cbf48664bf59974a91dc452830696135cd8bc525220f6c439fe4  pkgs/dom0-fc32/python3-xen-4.14.5-2.fc32.x86_64.rpm
+2022-06-21 22:45:50.079306 +0000 build-fedora4: 3f3bea795f2416f5f2a62cee327454abc75f5371f6652fa78f21758947d18b720921d884f405f5e596abb003de11635d99926b06399a112ed97a6d3a34bb6dd4  pkgs/dom0-fc32/python3-xen-4.14.5-3.fc32.x86_64.rpm
+2022-06-21 22:45:50.079350 +0000 build-fedora4: 7626ab4cd866a033ef23e471bf0d931d9e1079a43b587d8dc73cc1c04888e8ee4e1297ad77641af75c79480afffbfc537c36df220ef236cc19a90a9cc3ec5ce8  pkgs/dom0-fc32/python3-xen-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:45:50.080903 +0000 build-fedora4: 1619d1a083af3a3a74b0063ff2e886dd263f4b5e724738f5d32f476b681929134ba9b376ed4d4ee4778939ce6c5b4646bbef7fc9561e3f4102fe925e1a77c17e  pkgs/dom0-fc32/python3-xen-debuginfo-4.14.1-5.fc32.x86_64.rpm
+2022-06-21 22:45:50.082663 +0000 build-fedora4: 758d32446b1a6bc095bf0049f5569d3c8307b3b8a8e3feb677e971882eabf020310bffccb2d002afaf5767c058899d5deda11a729a6e607212dc353d96c41538  pkgs/dom0-fc32/python3-xen-debuginfo-4.14.2-2.fc32.x86_64.rpm
+2022-06-21 22:45:50.084426 +0000 build-fedora4: 99e6f085a75ae1649f73c7f74851ad674d397d4d343f5b81b5b3ef0febfe0e3e7b7376f4946d4ba12c6c336e6a3332f2fcf4b1ac65cffe6f98b29d5036e2e026  pkgs/dom0-fc32/python3-xen-debuginfo-4.14.3-4.fc32.x86_64.rpm
+2022-06-21 22:45:50.085316 +0000 build-fedora4: 6179d5c52e9c279ed42e6a6b9be9790495d52fc6c3afaf6cac5a40c136841cafbdcd2622c662a6320482ab448cc35cb470e4dd0d50e95eab3c36b582ebf10549  pkgs/dom0-fc32/python3-xen-debuginfo-4.14.3-8.fc32.x86_64.rpm
+2022-06-21 22:45:50.088363 +0000 build-fedora4: fc2ba3524e39a7c2613740e64bd36976b60d20686105f834bd9bc4c127ae7ef08eed356c70b33e50bb95c5b625fbc8e9e1c8fe02f196fc3524127649a8008893  pkgs/dom0-fc32/python3-xen-debuginfo-4.14.4-2.fc32.x86_64.rpm
+2022-06-21 22:45:50.090219 +0000 build-fedora4: cfa5f6cb638d1d71690b9c00d2aa19eba6fe9c569c99c0565a8579efe9b3b25c4af8c99629b5aa785d91d5492a559e56b7fb73769b8416ae6d48f302b221fda3  pkgs/dom0-fc32/python3-xen-debuginfo-4.14.4-4.fc32.x86_64.rpm
+2022-06-21 22:45:50.092990 +0000 build-fedora4: 4125a42726c967656411167f8763e49abe4030bb52ca7ce1907db877bb271e52850e697478e2ecce024241093197b1400e28df8ed4e939aa0dbb1b5380f86c95  pkgs/dom0-fc32/python3-xen-debuginfo-4.14.5-2.fc32.x86_64.rpm
+2022-06-21 22:45:50.095885 +0000 build-fedora4: 6bd8d3e186997fb042c6049f6ef6082e853adea52fdc40f5ffbade480cdbc86eb887d15aa7e58ff77983e5a956cf1ac5420e5e934bd14d2b955f89f03a460061  pkgs/dom0-fc32/python3-xen-debuginfo-4.14.5-3.fc32.x86_64.rpm
+2022-06-21 22:45:50.095929 +0000 build-fedora4: 48ca6d6734978f888119527874baf270d96752fdcf2a0c18c34267d94075692f3a912a335bd4d1a8e20ac1e4f044d93fe536ac54041b458b438b884090ab44b3  pkgs/dom0-fc32/python3-xen-debuginfo-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:45:50.098536 +0000 build-fedora4: 7f505083023a83150ae219baf30e7ea190d10f49c72cb980d178597755808c01976506bf6586edbfd71888af5bdb4220b7dfaa2b2f277c8434a66d9fef3dd94d  pkgs/dom0-fc32/xen-4.13.0-3.fc32.x86_64.buildinfo
+2022-06-21 22:45:50.101234 +0000 build-fedora4: c30943d53cb30eac614d0043868cc81930590b561ca4ac38624c3025b998ce39e00b629f492021d1578c87d6bfe93ba6faad3d3bc3edaa17bf876aca0f7091da  pkgs/dom0-fc32/xen-4.13.1-4.fc32.x86_64.buildinfo
+2022-06-21 22:45:50.104980 +0000 build-fedora4: b98873156eaa45c06d8dafd6e5904a8c08aa261e34bd56ac48ec9b7a54257ecbfe122849dad8c3deac2b1e93d68daf40ccdbf029eb7e92bdb329926b8fad822a  pkgs/dom0-fc32/xen-4.14.0-1.fc32.x86_64.buildinfo
+2022-06-21 22:45:50.117453 +0000 build-fedora4: ce6496f4b6d833f2ba64f8681ed2dd406a5665cf8f08f3f48cc2512df2e44d473304f474367994d57292be69e0ffa021365f3fc6129ca052cd18661eda015eca  pkgs/dom0-fc32/xen-4.14.0-2.fc32.x86_64.buildinfo
+2022-06-21 22:45:50.117892 +0000 build-fedora4: ba8c6c3f3eb0f1e5c83b6d248bfdb83344483730ab1dc407be98e87b82045707411165a143040284220a8b7f605a3070e24e1efc39faa943f844ea3c11288bee  pkgs/dom0-fc32/xen-4.14.0-3.fc32.x86_64.buildinfo
+2022-06-21 22:45:50.118238 +0000 build-fedora4: c6946dff52fb0315c5e4d66151e3e91c5544d905fac925632f7473a6cc86cbb8a9043a184bce6b8c0423a550df16ea271856ff9b71eb7bca71990bc53c3482a5  pkgs/dom0-fc32/xen-4.14.0-4.fc32.x86_64.buildinfo
+2022-06-21 22:45:50.118557 +0000 build-fedora4: 496db1b4d25e4fe8ee5ba17fa483cac4ebd0aee6e35e47cfff9bb149b1c4b59141914e00f5cf3c08bb9697006768a253786d617655fdf7c3faea345307ed9988  pkgs/dom0-fc32/xen-4.14.0-5.fc32.x86_64.buildinfo
+2022-06-21 22:45:50.120618 +0000 build-fedora4: 9284b8cc8330d4b7f8416a1ab9535e6bba39332ab6c860e780034527a8f01efad8693e264e698ffcc948cca4c6f454d0680b69e2f7164abc8e31f35fb7a3a64b  pkgs/dom0-fc32/xen-4.14.0-6.fc32.x86_64.buildinfo
+2022-06-21 22:45:50.122081 +0000 build-fedora4: 1e4859d294daaf661e7f53dae021e8d1e514274844abfc87ff2b84d997b248b2d05292bc9e9d5a9bb9232e15421a8a3e451db2398687c95b2bddc28afb56e228  pkgs/dom0-fc32/xen-4.14.0-7.fc32.x86_64.buildinfo
+2022-06-21 22:45:50.122455 +0000 build-fedora4: 53d38f62ac857e376e1adb498c384dbcacb5bfd988b79ccdf2b6a50a9a9229773003e36112b830a45a4217ba8a08fe17914ea9654479e1ccd352954b962a125d  pkgs/dom0-fc32/xen-4.14.0-8.fc32.x86_64.buildinfo
+2022-06-21 22:45:50.124768 +0000 build-fedora4: 28c8e6bccdc6d2d4a191ef91a521b7fc84b041fb7c86f145914e48b1b6e96715b199919fd419d9c7729169c20c0ac86a6bfa0b9b9ed6d8ff24aa4ea62e4e98eb  pkgs/dom0-fc32/xen-4.14.0-9.fc32.x86_64.buildinfo
+2022-06-21 22:45:50.125427 +0000 build-fedora4: 808af621b8d4363081c51453c9827f7471f1fbc394fb7615c855424d53468f8d05624c98e23d5566eb2f9e9142f3bf87401df33d384f0b58f6d6cbd8eee12031  pkgs/dom0-fc32/xen-4.14.1-1.fc32.x86_64.buildinfo
+2022-06-21 22:45:50.125818 +0000 build-fedora4: 0af80015f77a66dc35b105eaf60a367c5caeec3645884f884ef74e2b8363c75d8e5ba56dc52703b28290d0934d9dc380507ae22809f4513c1b1549b31d376979  pkgs/dom0-fc32/xen-4.14.1-2.fc32.x86_64.buildinfo
+2022-06-21 22:45:50.130712 +0000 build-fedora4: 105ee86bef0769020cd55ea3bad35a92a917d6437f02f2b45139d48f8bc36647fa3ef5cf053d721a511cfeed8dc300ab9c69364a0be9bcc4dfa9a5158182f57a  pkgs/dom0-fc32/xen-4.14.1-3.fc32.x86_64.buildinfo
+2022-06-21 22:45:50.130767 +0000 build-fedora4: 7e32cd91a0396d9a1e26657cdc2d7e6eaf30b8b158216e9d93896daf730f581fba45f948f4bc8d3ebcb3b43dbdaba44f820d264ba7788ea4cbdb9cb8ba25dab2  pkgs/dom0-fc32/xen-4.14.1-4.fc32.x86_64.buildinfo
+2022-06-21 22:45:50.342027 +0000 build-fedora4: 797ee73caf7ee52b124f65fefc50dbc68bf56a02289e03c64f6a0ba4bb21594d2cefbcb0a23d3a8cba84c1e938f6806cc556c37a8f81603a31f7ceb13e642794  pkgs/dom0-fc32/xen-4.14.1-5.fc32.src.rpm
+2022-06-21 22:45:50.346468 +0000 build-fedora4: 38286d97f9bcf67829350dea4fc578f491981f860a4616c70a6ca3ac1d2b624b65c958bd41d6dc42b8935ca6ce1d2ca1dd7e25d6618b3918f717a308ebbb11ec  pkgs/dom0-fc32/xen-4.14.1-5.fc32.x86_64.buildinfo
+2022-06-21 22:45:50.346514 +0000 build-fedora4: 452dc7cc9b05a82423809f0a821a421645fed43e3af6cf15d384bddd273b4ee33ae19768d43a615204088a85264391fa18e80d307b385c4da652eebb69140c3d  pkgs/dom0-fc32/xen-4.14.1-5.fc32.x86_64.rpm
+2022-06-21 22:45:50.348502 +0000 build-fedora4: 6aeb396f116c10ed8eac6125986e2855df4dcf60506e63f5a1a68f9f16960db6f9cb1b515fd105c3f9d05f5492929eeafb38f7a3a6dcf85281a4af839efcbf5b  pkgs/dom0-fc32/xen-4.14.2-1.fc32.x86_64.buildinfo
+2022-06-21 22:45:50.571077 +0000 build-fedora4: 97a74c535d1ba71e4f313cc8b6137481e7e0c1493f0ae0aa56f6e11e0ce919b70938407613e332debf13b1a96d56221580ac2287e096e4ba8dffbd20b1aaee0a  pkgs/dom0-fc32/xen-4.14.2-2.fc32.src.rpm
+2022-06-21 22:45:50.572631 +0000 build-fedora4: ec466914d2dff4dbf75f136060b029ce38394e65034f2ef97e4bd471749e37e97e2561a2b660bba15e32d5b3165ed54197c27c37ddabbbd935eed393f12055b7  pkgs/dom0-fc32/xen-4.14.2-2.fc32.x86_64.buildinfo
+2022-06-21 22:45:50.572677 +0000 build-fedora4: f07437fb4142c70544bf7cb298d4c985e1c6839d9ba0eecbbbb73fa891b5a9c83e76a25c3c656750e126ad7ff30d8e17d1b2b3d125fd4a12ffe9d8bfc775acfd  pkgs/dom0-fc32/xen-4.14.2-2.fc32.x86_64.rpm
+2022-06-21 22:45:50.573021 +0000 build-fedora4: ea1c9358d137699959c65fe4ef177435e72d78c88bf64ce8ea05756445fc63d0720e6ce633ac40e793213ca263a8b5410599383288850c805b2161dd7152f95d  pkgs/dom0-fc32/xen-4.14.3-1.fc32.x86_64.buildinfo
+2022-06-21 22:45:50.573052 +0000 build-fedora4: 8ac4ff043ed42efe6bf6d6009997a4fc1d6225ba61d9e997c57dd37b3cfcb23e9aed9b26fdbf0f15eaf3316da9a19ae3b62a882c2e6ce6bc1c1bfad2abf929f5  pkgs/dom0-fc32/xen-4.14.3-2.fc32.x86_64.buildinfo
+2022-06-21 22:45:50.573326 +0000 build-fedora4: 2c53a9ef7c0e9ab697e56e67591ad0f0e5cc2663f25ba1eaf3a1a9554aa26f5d9173f5a423253beaffbd22c0de4d681b7334807a0aaba519c55d902b1bbb1e00  pkgs/dom0-fc32/xen-4.14.3-3.fc32.x86_64.buildinfo
+2022-06-21 22:45:50.885797 +0000 build-fedora4: a966922ea4dc1d949c27c07b4b7fc8c16fb11284e419c0c64c573a728529be27a33c8f75ac694c604ef9f56f9f5fe9b23612ad0f56a6166b8a2187e9fd9d881d  pkgs/dom0-fc32/xen-4.14.3-4.fc32.src.rpm
+2022-06-21 22:45:50.897410 +0000 build-fedora4: 4ea0046da46db4c0ccfbf1b086a7fafc1d4c92ae0b3a90c74db90dbf79b79cc33588174b15a3716430d0a6dcd0057f845f43e35fdc4d76a6256c1ea252015b87  pkgs/dom0-fc32/xen-4.14.3-4.fc32.x86_64.buildinfo
+2022-06-21 22:45:50.898349 +0000 build-fedora4: 501bc74403cb5dffc7f83fbb68b3bc8a2cf20ab72f090a944bcd08c8d208eb3b26db210f23687872dcc4dab74e5ad928300c1b5e08681e169a923745c10565b9  pkgs/dom0-fc32/xen-4.14.3-4.fc32.x86_64.rpm
+2022-06-21 22:45:50.898391 +0000 build-fedora4: 38ffec169c28f7d84adf16e7c6487ef52c5bde5c4dd2983d5bdd9cc8f61d5ae6456b3986754b46f447aa9b3201a8ead04879bd73a2fe12a86408674109378c5c  pkgs/dom0-fc32/xen-4.14.3-5.fc32.x86_64.buildinfo
+2022-06-21 22:45:50.901827 +0000 build-fedora4: c16e84b56a7568f2385c663de3fd351f677000728da6ee9b101e57dc7eebb750f760b1b5519c6b9f7a98dd926d6d3c3dbe37d9a5b0cc0338cfb929d9f24d6da1  pkgs/dom0-fc32/xen-4.14.3-6.fc32.x86_64.buildinfo
+2022-06-21 22:45:50.905466 +0000 build-fedora4: bb375784bdb0acea7a14b8478269a925585e0012e336f3e7adef24599bbbbf041a6623156a5e179c18cb488b523b1dbcc1cc08a5c9842566c6d2b5b756719c56  pkgs/dom0-fc32/xen-4.14.3-7.fc32.x86_64.buildinfo
+2022-06-21 22:45:51.182684 +0000 build-fedora4: 6dc1bddcd39e84cd3a582fe1de0b9e2c368fe6e436929e72faa22d7b9f64313c297bc006a8b85126f454446120ca07e0b480f79e028d342e2c79a40df9b8b7fa  pkgs/dom0-fc32/xen-4.14.3-8.fc32.src.rpm
+2022-06-21 22:45:51.182758 +0000 build-fedora4: d54099dc21df396d424857c847986e98dfb01aba5b49eddbb1bf00d28a387ec07566445d735a71686ef5f63ee8db64d1b82cce9988ca4c893df0828aafeb1cfe  pkgs/dom0-fc32/xen-4.14.3-8.fc32.x86_64.buildinfo
+2022-06-21 22:45:51.182780 +0000 build-fedora4: 3121ac17c8348377499028b2dc697db009735c331fbd53f525244f7d2b518f8bdad8e2b31e5b73c456cccb0c3e103ec51282e3cf9122c69b12678e32323e9270  pkgs/dom0-fc32/xen-4.14.3-8.fc32.x86_64.rpm
+2022-06-21 22:45:51.183264 +0000 build-fedora4: c3ad9496d8ea5e0364df2e84b29429ff71c7d4fa17f3e4ce997a47bb662e59cabd32fe5d97892d21d873d1b56f5f6d0ed277af0dc8ff3c9615a57bf61665221c  pkgs/dom0-fc32/xen-4.14.4-1.fc32.x86_64.buildinfo
+2022-06-21 22:45:51.551491 +0000 build-fedora4: d6632a56a35019681dc7f9ec272e890142c3a8006d36ab22d35d12154099f17a1ce5b65813ba1db96680ff791980b8580b9cdcbacb85608db5eb35071f735969  pkgs/dom0-fc32/xen-4.14.4-2.fc32.src.rpm
+2022-06-21 22:45:51.553402 +0000 build-fedora4: ecd200489386df2c652e514bf2f8c2432804506d4a63f461bf431448fb4f8f4cda09e0f55ac987e2b9a3946faea3c99e4ad80a871673b71ad5595873196655bc  pkgs/dom0-fc32/xen-4.14.4-2.fc32.x86_64.buildinfo
+2022-06-21 22:45:51.555292 +0000 build-fedora4: a0d42f8fc00e9c556876bd8d1e0d2048574113f0fae0f5ec8f6ec6c2f3cf7db9287fac85e17dd6fe86c73824a9ab4334dd3303188f7ad8a0ee0c275afcc7e518  pkgs/dom0-fc32/xen-4.14.4-2.fc32.x86_64.rpm
+2022-06-21 22:45:51.579279 +0000 build-fedora4: b402566e595529962d45a2f04d2de640ab727c3409497b5a4e4d1a0dc0193994aa7b1d12c1f2fb4f9c6985837d3d0f8967d1ea80294288b73cab70e1261bde12  pkgs/dom0-fc32/xen-4.14.4-3.fc32.x86_64.buildinfo
+2022-06-21 22:45:51.920566 +0000 build-fedora4: 0e0e4ba908defebfaed544ac14e30de18ee981a543c901ae43e591031aadc9c67ece926b1505d5604fd05b93918dee9c5fa1795d3b2bd59fae2737828f79d4f9  pkgs/dom0-fc32/xen-4.14.4-4.fc32.src.rpm
+2022-06-21 22:45:51.926907 +0000 build-fedora4: 92827df55ca7720159680d34744ad3625d697aa7c40a11f39e77137801c3b6ebb749a05b93d15f727ff2125a79c2088cbe64ea2b369471bd1ff3f1034592d553  pkgs/dom0-fc32/xen-4.14.4-4.fc32.x86_64.buildinfo
+2022-06-21 22:45:51.929312 +0000 build-fedora4: 89d37f46f7e4046ce3d4c3a471e9ec4a4962b21f1e329e749b67658a9cb6ac91354f89bdab3aeff15c6dd527f780d1e837b3ffeca92453d4ecafe2716126a8e6  pkgs/dom0-fc32/xen-4.14.4-4.fc32.x86_64.rpm
+2022-06-21 22:45:51.931820 +0000 build-fedora4: f06f332089a5244410f027c809d4c21eb8375d652655e615628392faa2f743ec078aa93a070cf8b8ca835d5a575bab21f03e8e04abc3ae7b92bf1290d106a091  pkgs/dom0-fc32/xen-4.14.5-1.fc32.x86_64.buildinfo
+2022-06-21 22:45:52.242167 +0000 build-fedora4: b1a4de500a2538d6b6db07c5e222d4958d36e705d91bab74392aff20b8cb7f8c18d6379fe9b563d0e12f2b251b6106c8b6fd945c7ea6069d693adedbdb958e0a  pkgs/dom0-fc32/xen-4.14.5-2.fc32.src.rpm
+2022-06-21 22:45:52.250361 +0000 build-fedora4: 43094dd46bc27a1a2764d9b88eaa60e619efc5f31fd8fe56f70375a3c953fa6be60cb10bca953c6438f850462f41895f30ee2cde01cab90007b276a758c9f380  pkgs/dom0-fc32/xen-4.14.5-2.fc32.x86_64.buildinfo
+2022-06-21 22:45:52.250407 +0000 build-fedora4: 02f2fbe2783fb24bae9cdcdf3cc8f5cd9d94f34f2254dea32abbe75208256172d00bc495ca1be21844876c0e9b4da664f6802c3ee90e724f42babd8d99571329  pkgs/dom0-fc32/xen-4.14.5-2.fc32.x86_64.rpm
+2022-06-21 22:45:52.630609 +0000 build-fedora4: 9f8c7266e2fb37405c31a05349b2ff16dfe37c4e58a116185ef3b2b1d3bd88d5a9de0ee8193ae0f7b505898b9147608220bd30a44f705d982f545c04109467ee  pkgs/dom0-fc32/xen-4.14.5-3.fc32.src.rpm
+2022-06-21 22:45:52.634871 +0000 build-fedora4: 642d9aa0c9a73564abe9efccd4c9036a154c5801d8376dab840f5dbd9b55814aaca187041660f14d90dac47809f09f5873583a02ea2b9b658874ca85541c4fd0  pkgs/dom0-fc32/xen-4.14.5-3.fc32.x86_64.buildinfo
+2022-06-21 22:45:52.640681 +0000 build-fedora4: bd761a42032b02460c9e5c12beeb70f3f1b315f6c059bc76204ec24e7be856366dea45d6c1e2a00146dc3801a7102012dbb927828f765670e7ace4c7d79da729  pkgs/dom0-fc32/xen-4.14.5-3.fc32.x86_64.rpm
+2022-06-21 22:45:52.860733 +0000 build-fedora4: 26f45f36da0a4991a6d4a692f2fc344b604c52c2e28dbfcec25ebbeb3a40e0ff14b4ad7d652c3c9cbfa389d9d37ab13d44f510fb1c643e896119e63fe5e0b90b  pkgs/dom0-fc32/xen-4.14.5-4.fc32.src.rpm
+2022-06-21 22:45:52.860808 +0000 build-fedora4: fda4086bed05b04a21befdca3240ad8466fd2dd4b76429dd6abbdb456086cb3e3cb776bb7af5be840f10c8e5b287be2a186ac82e7a368e94bf6581b895196912  pkgs/dom0-fc32/xen-4.14.5-4.fc32.x86_64.buildinfo
+2022-06-21 22:45:52.860829 +0000 build-fedora4: 5bed6d3f3d72a03f70862265fcacd6cb0676030588ec2d5a865e4ae4316b0343da302b875ccceb7686d0d45aed435a4d2c05668f4cfffdbb546985df04fdf027  pkgs/dom0-fc32/xen-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:45:52.868436 +0000 build-fedora4: 0a5f4f15e3e8c0a28cb5ccaf6d42073c96992c1fa0f2f70a3c14aafadf2a182624101b57bc19e4cdc5112b6d718593e2fcfe27021a12e563b5f6eb1aeba8be5c  pkgs/dom0-fc32/xen-debuginfo-4.14.1-5.fc32.x86_64.rpm
+2022-06-21 22:45:52.871579 +0000 build-fedora4: dac27f3fd1b2fbb9a6e4772a95fc883573acd865ccfc11f45d397384416cdd8282474af4fbd004f210ea9168e9de5788d163ea72ef7acd5bd1ee875747cf031a  pkgs/dom0-fc32/xen-debuginfo-4.14.2-2.fc32.x86_64.rpm
+2022-06-21 22:45:52.874625 +0000 build-fedora4: ea2c58e07b8114361ec52b10361796f741f96293514fee255cb7895571b5ab3cb2c3da289ece8c6b8c46dfde24ee11a873c1ffe1b904431f1a17e092d03d7ce7  pkgs/dom0-fc32/xen-debuginfo-4.14.3-4.fc32.x86_64.rpm
+2022-06-21 22:45:52.877351 +0000 build-fedora4: b9342b29a56423f397a2036adc19ade32ee3735453a998ca0149f3d55cc89e4592f0c2412b5239c8ce6b341ff064fe849baeccaddd7913be826acf415ebd5107  pkgs/dom0-fc32/xen-debuginfo-4.14.3-8.fc32.x86_64.rpm
+2022-06-21 22:45:52.880215 +0000 build-fedora4: d0d08a09960fd9290ed21b98bb9eddb59bf75d0d827f46744ea61d6b65af9a9f57204a660732ef07f9209bca66692e311526c09af7e647fe2dba59e66c86b796  pkgs/dom0-fc32/xen-debuginfo-4.14.4-2.fc32.x86_64.rpm
+2022-06-21 22:45:52.884958 +0000 build-fedora4: fd1f261126fa73cab1dee785a2ac4cb0b1216ed7fffa15b7031e64f735c4b5dfd7cfadec9e8eae93279c5eb21fc1b2b014b7a4afdf3c6edaa2ff1693ea54131f  pkgs/dom0-fc32/xen-debuginfo-4.14.4-4.fc32.x86_64.rpm
+2022-06-21 22:45:52.888589 +0000 build-fedora4: e71d19cfb23d022b1cb30f77bc895a5c43a9422e39a780a04dd1a9d920ee7fe8f6984d31ef7eb4c5e897ab39dbb59c2c185affa80a13c18cd334f5c9be118c90  pkgs/dom0-fc32/xen-debuginfo-4.14.5-2.fc32.x86_64.rpm
+2022-06-21 22:45:52.892713 +0000 build-fedora4: af18f054c13e71dba93f6d93a6733fd4f42be95ed27c67bb5fc0e28449ce0f854fb0fb05cd9bc08e48668f314b606dd5df2cf11b437fc109b16667caac23bb52  pkgs/dom0-fc32/xen-debuginfo-4.14.5-3.fc32.x86_64.rpm
+2022-06-21 22:45:52.892757 +0000 build-fedora4: e617052509733060db9956ef1fedc6ac66e3664945cfccfe081c0b6b2b91147b850e15a8b15675994bbac96e1c53b6a759072eaf7a3facc3f54d6d8decc7ada6  pkgs/dom0-fc32/xen-debuginfo-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:45:52.901351 +0000 build-fedora4: 195cba1d1050241d047dafaa83cc4df240ccb421709fe6b94fb0080fd17a7e3b781eb669b33b4686ab624ed4b66556f4589fa5c8dab6e1f50efc0ccef7ec535f  pkgs/dom0-fc32/xen-debugsource-4.14.1-5.fc32.x86_64.rpm
+2022-06-21 22:45:52.913126 +0000 build-fedora4: 920c06b790084e1aac11fea51f5b1140f7669b0803ea418c86bcb3b9aba4149e5d9413f6fa8104c603b614080600446a532269d22aad8a6821eac2ea57622540  pkgs/dom0-fc32/xen-debugsource-4.14.2-2.fc32.x86_64.rpm
+2022-06-21 22:45:52.919994 +0000 build-fedora4: 0dfb1817dad6f54cd031d3a2d1190c0651f23953fcc704a1e96d2404c88fd47a58ac6a524b4f1232b785b9e3f14a54431959bbddd3c756703d93db5d1dac9779  pkgs/dom0-fc32/xen-debugsource-4.14.3-4.fc32.x86_64.rpm
+2022-06-21 22:45:52.932418 +0000 build-fedora4: 78d63d6d1c8f32fad2d9f249087d139c0189e8a9dece045b1a09b8ef99211d7482c109c4b05ee7328a5e3a4acb9b3fb202ee9b4681a31d9df7791986ff6dba26  pkgs/dom0-fc32/xen-debugsource-4.14.3-8.fc32.x86_64.rpm
+2022-06-21 22:45:52.941682 +0000 build-fedora4: 30d7411c204771560389a3bf2918dfd7425eced4bfb73c31d077415fcfe1243e3ee0e6349b6542d864b20da1d51d71edfddffcf4377b582782baf92d8781b53c  pkgs/dom0-fc32/xen-debugsource-4.14.4-2.fc32.x86_64.rpm
+2022-06-21 22:45:52.981675 +0000 build-fedora4: 0da65c3b025cfbf08cb828f803c3373bfde2b92a5ff79bbb419269c9a991473bd29d492d75d09a29a6a01ab1c8004e3fb0366927bfc7c915e9e2256e3738db63  pkgs/dom0-fc32/xen-debugsource-4.14.4-4.fc32.x86_64.rpm
+2022-06-21 22:45:52.993676 +0000 build-fedora4: 17ea10ff27b59adab9c8260d70e951bf7c38a7469f4c527e51dc8e15ccb82040159573902cadd2adbd5b033f200d3d1193f52ab026120978da7400cc8736e3fb  pkgs/dom0-fc32/xen-debugsource-4.14.5-2.fc32.x86_64.rpm
+2022-06-21 22:45:53.009786 +0000 build-fedora4: 341fec0f89d77d159b42ee6e2edbac021da00e751962767e27d115465a17c8f9177cef3368df4dc8412a7c2b654192263591d07235e7c824e2bc20515d89c0c8  pkgs/dom0-fc32/xen-debugsource-4.14.5-3.fc32.x86_64.rpm
+2022-06-21 22:45:53.009834 +0000 build-fedora4: 3c441bce1d3790b900d50b1c2eacf7041f731e90f0dc326b478784aff03c6676592053b246ec1d932e9c87140a61ebf28a861afca549cd15b69748aace32fc40  pkgs/dom0-fc32/xen-debugsource-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:45:53.016312 +0000 build-fedora4: b699fc455a0dd7a00c5a76b5ed44415d7192dfd3d59e3907b164e9e198009ade3dd7cd3d5e1af31180e55f760eebadcdd514801481e1ff8ae13fc1d98d9f85c1  pkgs/dom0-fc32/xen-devel-4.14.1-5.fc32.x86_64.rpm
+2022-06-21 22:45:53.021366 +0000 build-fedora4: 90062c2a12856a84ce63903b46b6f1a07269836bdd0dc15ae12a8f79c038513cb31e48f1197c6afb341b0b4c7f55328a4dc2019d19ef38e1612487e017cd2fa0  pkgs/dom0-fc32/xen-devel-4.14.2-2.fc32.x86_64.rpm
+2022-06-21 22:45:53.028519 +0000 build-fedora4: 716821e85bb8cb0b4c9bba23291baab494607a58413bd207d605950efd17fe9c54e516d73b42f3bb5dba30dcfacc55fda737b2fbbc8f4c9e9c4ab3401024c604  pkgs/dom0-fc32/xen-devel-4.14.3-4.fc32.x86_64.rpm
+2022-06-21 22:45:53.038731 +0000 build-fedora4: ced34836ec04516880f9ead33f775e1c43a7fa2c1bdd66f72bd29c2d1b3aa621d3797866af44d0d0d50573315bdc996135ebfc293f3d5ee60946391d0e214e83  pkgs/dom0-fc32/xen-devel-4.14.3-8.fc32.x86_64.rpm
+2022-06-21 22:45:53.047497 +0000 build-fedora4: 40aed1ed9d77f5eb8fba229f37f6c140fe6bcb1c73a0ded5e236c23aca2599616aa50fbd78adeaafa8cdab242a1c5f9897895801e032f8ced59d637e17d4eff9  pkgs/dom0-fc32/xen-devel-4.14.4-2.fc32.x86_64.rpm
+2022-06-21 22:45:53.052305 +0000 build-fedora4: 4adf8f14856b6da1b8103fb3b22c4e7a4136f084320abc800d32d063c0705ede3ffc84bd4c938029ca90ca86136f3ebd6c6c42365eb952dd56cba459fd544b08  pkgs/dom0-fc32/xen-devel-4.14.4-4.fc32.x86_64.rpm
+2022-06-21 22:45:53.063278 +0000 build-fedora4: aeebe7411791975b3b909a09026159c64dd61183cc381e780e18ea4934b75b904791d44a2f466434c0c25c41f55660f4db39ecd50a98a53aaf8400988555c58a  pkgs/dom0-fc32/xen-devel-4.14.5-2.fc32.x86_64.rpm
+2022-06-21 22:45:53.076093 +0000 build-fedora4: ab14c431a2eaea6a42187282fd15ec83d5688282e1881045f32163e12ca98a97eab6f2f0c18f7786bf3ab5ede37c8e003d69d67637ffee18799f360303fad0a3  pkgs/dom0-fc32/xen-devel-4.14.5-3.fc32.x86_64.rpm
+2022-06-21 22:45:53.076161 +0000 build-fedora4: dd38c0addac27611cb685181a8879d15faae842b8364a3c19b8b1823dac0d6ebbc84ce89157338545cd26aa9f694097a130ec4314b914be4b04a5f9ba6ccb2ce  pkgs/dom0-fc32/xen-devel-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:45:53.085422 +0000 build-fedora4: a3f3b2c04fcd9fe260ca27d7335dcb6426cb38407aaa73341f1e376a234b53f2e14663a3047b4f4fd8afc45dfee66e1caeba15024834481b5591b9d1395501bb  pkgs/dom0-fc32/xen-doc-4.14.1-5.fc32.noarch.rpm
+2022-06-21 22:45:53.091624 +0000 build-fedora4: cab0e8cf034ea3922b3de62c4b353a149863d7aa52df8a22a878313382f764380e89f95050c6ba79579883ac1f55670934979ba981a6ae6a47f4948427eceba3  pkgs/dom0-fc32/xen-doc-4.14.2-2.fc32.noarch.rpm
+2022-06-21 22:45:53.102849 +0000 build-fedora4: 62bf6e037309175f7d44fb7fe62ee95152debaf4bc2f64123dfcada386c73d85e60cf7dc6e7b609a89bc21a7bfb5f2529275696e87cdeec43d998d1d9f418838  pkgs/dom0-fc32/xen-doc-4.14.3-4.fc32.noarch.rpm
+2022-06-21 22:45:53.110623 +0000 build-fedora4: 9a82adb88fde457b593c5b569850d701cfbcc0abc6acb019ae336fbb284d1246b9cb35924cf564b74d7f2721b2d1c42de54d02d123b3ade392b619a3fa40fa56  pkgs/dom0-fc32/xen-doc-4.14.3-8.fc32.noarch.rpm
+2022-06-21 22:45:53.149141 +0000 build-fedora4: 9c06c631e6fc6527bd345a31cbb5612b3eeb3493dcad358b4d8a22990bd9b6d533994710b730f108844dc4ddf30dda6e7433b5d505fc101f02f65484916cbcdb  pkgs/dom0-fc32/xen-doc-4.14.4-2.fc32.noarch.rpm
+2022-06-21 22:45:53.176204 +0000 build-fedora4: 80cf11f69eb96cbd5b306e88e0e351816b21216d0006fa65bec49b190449c670b3abb9d25ce7979b209e758d4c7817bc0907af39accdd41e7e6e2d487f7d2f72  pkgs/dom0-fc32/xen-doc-4.14.4-4.fc32.noarch.rpm
+2022-06-21 22:45:53.197555 +0000 build-fedora4: 8a838a5e9a56ba6ea25d347a2b56908cf03caec46be44eb47f7585e3eb0c16dbd7692da8921d4ffa088002f1456b0ac12b3ba55b12bf2cea53871f4cac959686  pkgs/dom0-fc32/xen-doc-4.14.5-2.fc32.noarch.rpm
+2022-06-21 22:45:53.216389 +0000 build-fedora4: a2d0134ecec20caa7b5ff66b6dface03b5c8a2c5d781ca6ebec3d96c73c56aab75383ceaf1a6c4bdf4064d109c716f89df4ab3c86ca99464f320df9b2af05498  pkgs/dom0-fc32/xen-doc-4.14.5-3.fc32.noarch.rpm
+2022-06-21 22:45:53.216435 +0000 build-fedora4: 6b2180eb7164932eca61bfe2069271005d89f91d64654756efcfe2acc253287313f8d33fa1dab19ed2b4bbb18bf3f1187b57447d1e8ae204d9697532cd25677c  pkgs/dom0-fc32/xen-doc-4.14.5-4.fc32.noarch.rpm
+2022-06-21 22:45:53.334808 +0000 build-fedora4: 7e69bfa1f9463c18e028a1f8135f42f832543c793fb0be2228d69b59f26480377fed9fe9fcf9187a4b00d066bdeb722b172a4261028ce953a697b87de33318bb  pkgs/dom0-fc32/xen-hypervisor-4.14.1-5.fc32.x86_64.rpm
+2022-06-21 22:45:53.396402 +0000 build-fedora4: 7ed041442e3374c5dfc6bc9870083ec926d555fd76eb46a65d99e642f3145e84a56ccb9c02539473631c3b483777d823e15574e56d100eca16fcc2f25eacea4f  pkgs/dom0-fc32/xen-hypervisor-4.14.2-2.fc32.x86_64.rpm
+2022-06-21 22:45:53.492003 +0000 build-fedora4: edfa7716dc1d57ddeb1491e50eeec4210123408a590e3e7d7b0fcb59722083bed6f51e1210f6ea95137483a897eb30395b95f96320f1120d94a7ff587e6becc6  pkgs/dom0-fc32/xen-hypervisor-4.14.3-4.fc32.x86_64.rpm
+2022-06-21 22:45:53.542739 +0000 build-fedora4: 4a2ec01535a318d4589e6786e388b00eb33e84cbfbcc5664ff577143e2aa0bb9e34e521ac45f4f46c2a59ab9224c4b3fc4b5c203bb70ac890f99573db195678e  pkgs/dom0-fc32/xen-hypervisor-4.14.3-8.fc32.x86_64.rpm
+2022-06-21 22:45:53.598638 +0000 build-fedora4: ee2a1065123a557e0f37e63884f622396117cdae6a45caa1f28037866b95cc2c7107d6293fb450347f66cb65096b3ee712785fd40b1efb8c8518263fe36bd6c8  pkgs/dom0-fc32/xen-hypervisor-4.14.4-2.fc32.x86_64.rpm
+2022-06-21 22:45:53.688001 +0000 build-fedora4: 24c2402e07a5d00c8908d69d8f879e265e6ac820733c3ad81db30c80775e48bc460ebbb808d47e6080ef83e9b4ddb23154826ccce6eb8cc9bed6c7b7bd191635  pkgs/dom0-fc32/xen-hypervisor-4.14.4-4.fc32.x86_64.rpm
+2022-06-21 22:45:53.767554 +0000 build-fedora4: cd5d2aa93111005d7c6a09bcaa3e930411cadf3dc604282c71e950c792fe4f1cb82cc36828378dcb1b0d502c6290373db92213e7fe8da24c945a153f554d2665  pkgs/dom0-fc32/xen-hypervisor-4.14.5-2.fc32.x86_64.rpm
+2022-06-21 22:45:53.843833 +0000 build-fedora4: d72d741604e4c39f37ac27906747b6d728f2ba1f27299bd13e67d777316d18b5b75efb50387a2a23d274c06d438a90d4b4c808d16e5fa056d4396c57de54e0ef  pkgs/dom0-fc32/xen-hypervisor-4.14.5-3.fc32.x86_64.rpm
+2022-06-21 22:45:53.855325 +0000 build-fedora4: 5f87abd8fdb598098f9554a1de1c340bd619f77679dea8d684e496e494a692462d35b6b77dc31732fefda574b28cbd67bbc3b8951146a996ea1e7a892685a860  pkgs/dom0-fc32/xen-hypervisor-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:45:53.866190 +0000 build-fedora4: a4ebcae4f8fe7bcf9221bf827b951274cdb1ea26462efaf42972c6885a4945b017eee5b9b27557b4647b2f9a8571e9361ad6869742e3ace36747e21691da0433  pkgs/dom0-fc32/xen-libs-4.14.1-5.fc32.x86_64.rpm
+2022-06-21 22:45:53.875533 +0000 build-fedora4: a49d6dbad6d3c0688ccdb366398249eeec0e2a0e7eb85cea42aba5833ea4a92cbd80a890bde5a455a5ae951992e3e761fa6e54dcf0d60dd5e4dbfcbb4e8ac6ad  pkgs/dom0-fc32/xen-libs-4.14.2-2.fc32.x86_64.rpm
+2022-06-21 22:45:53.882710 +0000 build-fedora4: 268e619fd092bffe4c7a969c8317e381475291ad9e3adac2e5ff940564dbfd86047fa7dbd4f2eb6869914ed75bdf1da86da870f08a733fad867aa21c0d9091c2  pkgs/dom0-fc32/xen-libs-4.14.3-4.fc32.x86_64.rpm
+2022-06-21 22:45:53.891645 +0000 build-fedora4: 185038bd6930d84fe46195184936b0db8e13c45423941f5eba697db96794bbcff0723ae609777be730d6e120d6f9e451708c7bb0e48962ebb1f780abba714794  pkgs/dom0-fc32/xen-libs-4.14.3-8.fc32.x86_64.rpm
+2022-06-21 22:45:53.901574 +0000 build-fedora4: 4a031c492db3dd0b0bd999ec2ba34a2c9570d67432d3467334845947ba1f4e36ed70a94c494628225dc24a3fba0bc6965d7cab2f3c7d50739b69ab67274653b2  pkgs/dom0-fc32/xen-libs-4.14.4-2.fc32.x86_64.rpm
+2022-06-21 22:45:53.914403 +0000 build-fedora4: 00f89dfae113d47ab11dd3d577ac6aa9f6c712750d25ea5ade3672da107daca57f9fa1eb25f295368eab284b6fa35f4300fbb37bdb4ae17532227f4c7f27197b  pkgs/dom0-fc32/xen-libs-4.14.4-4.fc32.x86_64.rpm
+2022-06-21 22:45:53.921709 +0000 build-fedora4: 3a6fc984f69631d9c652c269c04583eebd528a2357968681c1b76e87e3a12ff80808d1a42e5e07a5589027a7d717279c1be7f24985e06dce9caf5b27bbe53620  pkgs/dom0-fc32/xen-libs-4.14.5-2.fc32.x86_64.rpm
+2022-06-21 22:45:53.933680 +0000 build-fedora4: ea5a5b1a0bbb8ec27859797d0d7457dd89414317ea93fecaf8d9b42ec5a3d6b9332a7bd96c67f1ae42ddc7652255d83ac4115ad8481f550fd4af58bcde4111bb  pkgs/dom0-fc32/xen-libs-4.14.5-3.fc32.x86_64.rpm
+2022-06-21 22:45:53.933726 +0000 build-fedora4: 66b4d38e1d606c0dfbe10798b0ccf02ab6bd28ec04c65ce8190dfd8a3d55faa39aa08733f7649f1ed8ba401795c1787dfb3267f9c9dc9b50555450f4121fd88a  pkgs/dom0-fc32/xen-libs-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:45:53.949697 +0000 build-fedora4: cf2ac281197a0d1dd9617540bceb8db3b8697d71eebf52f23aa3afabad4d84a453885ea44cf374db74eaf410c317fa43e84b1a28a9ed4fc8525049484cb63c60  pkgs/dom0-fc32/xen-libs-debuginfo-4.14.1-5.fc32.x86_64.rpm
+2022-06-21 22:45:53.969284 +0000 build-fedora4: 6fa94056d88b409fc9db16376e5aebbe91ab5ff95b521e19eec9f44923b345f3ddc86e05a09933c1a0ef20ae332610529f06c8fddf9a20d8ec501f63d468dcf0  pkgs/dom0-fc32/xen-libs-debuginfo-4.14.2-2.fc32.x86_64.rpm
+2022-06-21 22:45:53.994314 +0000 build-fedora4: c94c1c3145d997193c8bd3e2a5cdc1311264570ab9f45f91f0ea84fe3c330e7d9ce9438478e6bce99bed10146fc185d3dc811864948e77c92a0b79f62fe8cd82  pkgs/dom0-fc32/xen-libs-debuginfo-4.14.3-4.fc32.x86_64.rpm
+2022-06-21 22:45:54.013835 +0000 build-fedora4: fc5224d482d62b94a90089aa99a77ba56edfd140048fc1f3939c63e51550e8a3db5f57107126d1a83f1d4d93e283bc1c727975c73464314fda9c26fcacd6820c  pkgs/dom0-fc32/xen-libs-debuginfo-4.14.3-8.fc32.x86_64.rpm
+2022-06-21 22:45:54.042045 +0000 build-fedora4: 9a0f754f313448673c3a097627b3d39a679b7d59d9a5cad47c7d33b6ed7d0ad17c6eb3e19789b3b1afdd42afec10f557f6d5f325371ea1caa6c3409c15d01c17  pkgs/dom0-fc32/xen-libs-debuginfo-4.14.4-2.fc32.x86_64.rpm
+2022-06-21 22:45:54.054267 +0000 build-fedora4: 066ea7c151763cb4bb8497e3d32e5da1dcfba78cee5b5724579c6772f1c80532e0002305a9efcbefb77f2e05ca4a862e66b1ea71a5824639e14482695e42d659  pkgs/dom0-fc32/xen-libs-debuginfo-4.14.4-4.fc32.x86_64.rpm
+2022-06-21 22:45:54.073815 +0000 build-fedora4: 12559881a117a3ab8bf6d7378e02a7a1a79fc56a788c6f9c85e85d60874ac6fdb66fd884cf8aab6f8d64468c83d99f15e6cd078c4eb2ad1650b15d3e978b5679  pkgs/dom0-fc32/xen-libs-debuginfo-4.14.5-2.fc32.x86_64.rpm
+2022-06-21 22:45:54.117236 +0000 build-fedora4: b63c4d1b50441bf84747044c8321c33c7e2b492d02dd0465b10640df50760863633d4bf14135895d9b9ba88578d2c61cc0f20bdcf7cb225b742eb858ea85fbe5  pkgs/dom0-fc32/xen-libs-debuginfo-4.14.5-3.fc32.x86_64.rpm
+2022-06-21 22:45:54.136381 +0000 build-fedora4: 7ba994c9c0e1a2fd5d5978e13d773d37687c0b14c807b199d6227df003275d7c6e7bd341a608cd841e19f12f788461e023ad46eb0828156c526a7e9c6491204b  pkgs/dom0-fc32/xen-libs-debuginfo-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:45:54.138835 +0000 build-fedora4: 19ae0b4162b45ccf23981e140f297c7210cf8116bade7d55d4bc244346e154e549efeac02bcb889b4668f551d6ff46e113209e69b04d5afe9c2569425ba1db10  pkgs/dom0-fc32/xen-licenses-4.14.1-5.fc32.x86_64.rpm
+2022-06-21 22:45:54.142129 +0000 build-fedora4: dc0b7ea345713f84ed35be6d35fb3bef342dc796e70a45f172a5726cf5ed352dc864e2f0baf445b6384aba8783359e21a6257432676be16c776b0d4c2322c2e9  pkgs/dom0-fc32/xen-licenses-4.14.2-2.fc32.x86_64.rpm
+2022-06-21 22:45:54.144832 +0000 build-fedora4: 1ce783fb3734ea61a3298aaf3eea8f2b34c9e1be289ce0fd8e38e82676b321e601b6aaa9613186f5681ec3e380eee741287a4f03c410f5d6b67cebdca399a14d  pkgs/dom0-fc32/xen-licenses-4.14.3-4.fc32.x86_64.rpm
+2022-06-21 22:45:54.148290 +0000 build-fedora4: 2efdfb2b2195c3ecc0c37f52a9f48f36992b68ab5a4be5fdadc6031df9206a0268972d3f22c761e6f46aff81af9f51a2a9721cc0fc28f00ad4069a5fe1cac662  pkgs/dom0-fc32/xen-licenses-4.14.3-8.fc32.x86_64.rpm
+2022-06-21 22:45:54.150917 +0000 build-fedora4: acd3cf4020d42bdbb7fc99d3c2334893e0108d005bb66b80489e49d4d165510a20ec33dd4baff5472e667bb7d396536f2075b6bb8ceaef0413bc304f875d54c0  pkgs/dom0-fc32/xen-licenses-4.14.4-2.fc32.x86_64.rpm
+2022-06-21 22:45:54.153178 +0000 build-fedora4: 843016e645049fdd77b442277b3f038c893db2aaba48969b669c50f62a3da5b02ea6429b4ba1a7f5443ae70c2ab6d70e47dde54f430981778d825504a0431c91  pkgs/dom0-fc32/xen-licenses-4.14.4-4.fc32.x86_64.rpm
+2022-06-21 22:45:54.156143 +0000 build-fedora4: 48aa1e59889abe0f2cd1735c56a2b48e679a993f00384822a05decb37436ca04abea11819ab39a46486e862bfb79ff1cdb90d6884747d1e05583129d22f459c2  pkgs/dom0-fc32/xen-licenses-4.14.5-2.fc32.x86_64.rpm
+2022-06-21 22:45:54.158554 +0000 build-fedora4: e08ae72321ca848ec2fb9925599e88dfb89848ddd1a17cc0851354a91f4cb78146e92603a7823b2b8c523f1907a1c63ed260417e2a3e3e521d5d021f7f8197fc  pkgs/dom0-fc32/xen-licenses-4.14.5-3.fc32.x86_64.rpm
+2022-06-21 22:45:54.158597 +0000 build-fedora4: 8eb4191d02548dd75fafd78015e68dbfeee668178e735304d98e38892f55ae16dac0610db7f439c8e6e0df0cb3a5305556165cf2483bcb63a2ca163e6f6944e4  pkgs/dom0-fc32/xen-licenses-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:45:54.159839 +0000 build-fedora4: 3b7a62923633ba81db0f64dbf3d484577c17d6742f9c5f219a420cb445095df912b24e98ef20fd79fac525f22845268d45fad74e77c2c44fe26f56634d254a48  pkgs/dom0-fc32/xen-qemu-tools-4.14.1-5.fc32.x86_64.rpm
+2022-06-21 22:45:54.162163 +0000 build-fedora4: a216ada2158dd1ee3060ef73fab483c79dc540feb87e106e9032f45afda1672728d7806d3391e90635b693f3ea145b637eccc88880ec4fec2865127e25c3fcad  pkgs/dom0-fc32/xen-qemu-tools-4.14.2-2.fc32.x86_64.rpm
+2022-06-21 22:45:54.169958 +0000 build-fedora4: 21c15b061ef784e04874794cafbe3242adde28f9d025767f1d06ed293672769677113113b9b8944fd8cc49d9611beb8482810c1e7c6c241f9c634d00b6c18b54  pkgs/dom0-fc32/xen-qemu-tools-4.14.3-4.fc32.x86_64.rpm
+2022-06-21 22:45:54.171278 +0000 build-fedora4: 9cdc5dfa2b9650576e9b521b97e69a2cf262cf9966b649a8b8b7a7c35091d15d73a4fbc314daa41f279f020b86347325b73109fb8fad267fe6da733caf47ef84  pkgs/dom0-fc32/xen-qemu-tools-4.14.3-8.fc32.x86_64.rpm
+2022-06-21 22:45:54.173057 +0000 build-fedora4: 32a4eba876a88d8e619cfda61605727d7be5a3bb64e42887ae076cd738e2f82c536d9557a717e8e6982fe6c4f89269f91bd2003346c2839189d9839efd2b9530  pkgs/dom0-fc32/xen-qemu-tools-4.14.4-2.fc32.x86_64.rpm
+2022-06-21 22:45:54.175773 +0000 build-fedora4: dbbafafebf413df7e4528653f9400472416c3af142c79803d40f562ba2eca81173072b79ea373e8f013f76914f6952a8ac2c8d8fde2d73686674251806b478bf  pkgs/dom0-fc32/xen-qemu-tools-4.14.4-4.fc32.x86_64.rpm
+2022-06-21 22:45:54.177905 +0000 build-fedora4: f0893b83cf334d48f700a8bd693a0e12b8e8077713288fcf1afeab0d91566bf8d6df4ff86d49fc579a245c80fab67ae244e908206a14887874134034ad317383  pkgs/dom0-fc32/xen-qemu-tools-4.14.5-2.fc32.x86_64.rpm
+2022-06-21 22:45:54.180575 +0000 build-fedora4: a6c36f4a563d9dc6f3979c8d7761951763e29d222df18f3d376cf1ebd14c597a11557e4a02bf3527ad862ff74aa8ebd9d1e7782d419ffbaaa3b1696ee3c1c2c1  pkgs/dom0-fc32/xen-qemu-tools-4.14.5-3.fc32.x86_64.rpm
+2022-06-21 22:45:54.180619 +0000 build-fedora4: 54e03cd7da5bae83e2eae0c802bb7e7b2884f0d9745549276901c1ae21a90ae50176b217c0c79998d5f24496baaa456c870760246d394cf0fdf4c91b2fd6744a  pkgs/dom0-fc32/xen-qemu-tools-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:45:54.186502 +0000 build-fedora4: 06423c0903baf61d6541edf4e77b765bceea7868d43674b159f35ce2efbce4b43030f1d5f0aa76993a3b086a5e91c1aa443bdca3c25a4f16ff5da596ccb34a1c  pkgs/dom0-fc32/xen-qubes-vm-4.14.1-5.fc32.x86_64.rpm
+2022-06-21 22:45:54.190980 +0000 build-fedora4: 8fe4fbd6b1fddb951fce61952d355ac72a99b041fd4f51b2966df5c350554be4f9e4ee559215c9663c394d1f520532b3f29e326599a40466b4a03d2380974ece  pkgs/dom0-fc32/xen-qubes-vm-4.14.2-2.fc32.x86_64.rpm
+2022-06-21 22:45:54.216249 +0000 build-fedora4: 6e159b6c565d2aa0ce01810e22e53bd2327483b10c16bc0d37228a30faffd4503804f102458216bb47781086ba503da4a9185c21bc89b90644c72bde8635b5c3  pkgs/dom0-fc32/xen-qubes-vm-4.14.3-4.fc32.x86_64.rpm
+2022-06-21 22:45:54.226885 +0000 build-fedora4: ab13c5081076f4efb6f1867d3e7d6db710b79d48941833e201004766d8cd53458d8e6d45600830d20be7bb99f8e23d06548d18eaed34c1f54feb2fc05c87bae3  pkgs/dom0-fc32/xen-qubes-vm-4.14.3-8.fc32.x86_64.rpm
+2022-06-21 22:45:54.231441 +0000 build-fedora4: 630088b24115351b6d7b664acd9af48c2d1dec67fb83bcdc0496707cf01fd6e22cdacdb588a67a8779077ce5f7d03807fdc4ce4d0a041e7446940d9bdbceefe6  pkgs/dom0-fc32/xen-qubes-vm-4.14.4-2.fc32.x86_64.rpm
+2022-06-21 22:45:54.236169 +0000 build-fedora4: ee2a873fc04de8cc0cc87e7b2e02eb800abf485e0d9306459b579423370387d97bb5e5536255caba7fe0bbef2447c50596338ed599339f2734eb759e773a6baf  pkgs/dom0-fc32/xen-qubes-vm-4.14.4-4.fc32.x86_64.rpm
+2022-06-21 22:45:54.238895 +0000 build-fedora4: 06136bb271641ed67be5cfd46e6fdd59bf9fe24089a3d6395ec0debd16970598a9472705452fc504c2a754964a0bdfc098cbd6658926605f98edab19946d4297  pkgs/dom0-fc32/xen-qubes-vm-4.14.5-2.fc32.x86_64.rpm
+2022-06-21 22:45:54.241468 +0000 build-fedora4: c01c84a4628e908fabccb7de25f451f865d90c25bdd05727a4a4a16cb689f0e68fb0b78a393e7f1db2c04a7ea91bd3497a05e989ac18963aa2993f79070af5c6  pkgs/dom0-fc32/xen-qubes-vm-4.14.5-3.fc32.x86_64.rpm
+2022-06-21 22:45:54.241512 +0000 build-fedora4: ca3c0c2a6a95a8dbbf5aa02d870e7c603478e4aff1896ce1a5299b3eafb04a6c5a27b7e6242b90781eb3a7a0b9bfaf78402e38cae7d8e70472d266fcb43dd703  pkgs/dom0-fc32/xen-qubes-vm-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:45:54.245852 +0000 build-fedora4: 1af48f0c8951b718feb271f7a5b14a3ac9bdbba2b1ebb79f28ebcb0e983834320c2ecab25d1ea5f4cf4f5cd3f3867646ba835a187a97760214ace854cfba219d  pkgs/dom0-fc32/xen-qubes-vm-debuginfo-4.14.1-5.fc32.x86_64.rpm
+2022-06-21 22:45:54.254318 +0000 build-fedora4: 6e012c490b86ea2eb950bf46e7b17340e81caaaf64c65d04bf4a218a24b75434c820f307184812b8c890f4bce4a6fd2393a543c955b48be9f31512e5957fd5c9  pkgs/dom0-fc32/xen-qubes-vm-debuginfo-4.14.2-2.fc32.x86_64.rpm
+2022-06-21 22:45:54.259589 +0000 build-fedora4: b3c98b588fcc4f0a7ce8421245ca42e3f33e965f103e6877310c3c1abcac0a3f3a43d103db62550ce1ea22dd9c355b718565009db70c3d13a0ce4c07ca0a2a24  pkgs/dom0-fc32/xen-qubes-vm-debuginfo-4.14.3-4.fc32.x86_64.rpm
+2022-06-21 22:45:54.264513 +0000 build-fedora4: 3f7ab2ec363cfb74073d8e524778268b19b80f52cfc7e2fd90f67ada1499dcfa8f95d1adb89bd7205e2b9006185b3b8cd992877c3c308eead86693e390b93ead  pkgs/dom0-fc32/xen-qubes-vm-debuginfo-4.14.3-8.fc32.x86_64.rpm
+2022-06-21 22:45:54.266965 +0000 build-fedora4: b77c75f739706171501d048661a939eab87019905bc80114aaed4a3a87ffdec7c4a6bd48b9aa1cec8d47b0096fad10a986ef978fedd7189094f98e5acb825f9c  pkgs/dom0-fc32/xen-qubes-vm-debuginfo-4.14.4-2.fc32.x86_64.rpm
+2022-06-21 22:45:54.274786 +0000 build-fedora4: ce5b22580fef488e92e1b8ce0cf82e3d2cc92ed318721e7112be726fa31691e8ff1d03845cc644e50eb77ee24896414c278a88f2e0840d7367ef9ee50f0402f5  pkgs/dom0-fc32/xen-qubes-vm-debuginfo-4.14.4-4.fc32.x86_64.rpm
+2022-06-21 22:45:54.278667 +0000 build-fedora4: afda737651118b65cc15b9083671d09c985de46ed65b85f6d9ca2329ef7617f328d168bedc17fafddb5f51c1ec207be503d910bceb874be53bbd1b2f13ea5f1b  pkgs/dom0-fc32/xen-qubes-vm-debuginfo-4.14.5-2.fc32.x86_64.rpm
+2022-06-21 22:45:54.290557 +0000 build-fedora4: b3a8a740319c580145eacf9de32de59fce17ed26590565e699f5eedcfe7650c419257e81281d0e2f8d964b5351c3978504d16f67333de554c1be8ef0adfbdaf3  pkgs/dom0-fc32/xen-qubes-vm-debuginfo-4.14.5-3.fc32.x86_64.rpm
+2022-06-21 22:45:54.290603 +0000 build-fedora4: fcd4ab4420be3ebb033d1e64ff84b6097c1774f774f84885b450ce535f9fd2d72ea07ee84088327971cc135d5cc5c5e907534f58fc845911ca7df0a8eb156452  pkgs/dom0-fc32/xen-qubes-vm-debuginfo-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:45:54.429404 +0000 build-fedora4: dfc5754160afe95cb6209f3f77f74de166c71f6b8efbef809fa26683856b5aeedce6cfc1572270d90d5c4d300915dde5e2238e17a072f71660b24263abf9dc32  pkgs/dom0-fc32/xen-runtime-4.14.1-5.fc32.x86_64.rpm
+2022-06-21 22:45:54.624258 +0000 build-fedora4: 1796fe65e8b5616d4f0417b766fb748fd63fb153a5d8568409d8c7e8e8f221af1118bea32b869f0e6f8b2bc9d0bae531eff1d637f813441f0b237c2c698d4bb8  pkgs/dom0-fc32/xen-runtime-4.14.2-2.fc32.x86_64.rpm
+2022-06-21 22:45:54.764074 +0000 build-fedora4: 16418c067c06f6000fe93f8ae77abb3e8e01392ebe22ca3013b193e9ea0a9d5d79dae8fc3203143e4c42ec2037f9e3c00bacff0f18aa35fec464cadab60d955e  pkgs/dom0-fc32/xen-runtime-4.14.3-4.fc32.x86_64.rpm
+2022-06-21 22:45:54.882403 +0000 build-fedora4: 2f89d9b5c5b918eb50ba2d1b0b2edd1202640dd931e4dcc3a95d8de1db0aabcff3e8c548e78ba4878ebe6ba76bc9dd424e1614f9d8f37eba8aa85dfef5f4ba3f  pkgs/dom0-fc32/xen-runtime-4.14.3-8.fc32.x86_64.rpm
+2022-06-21 22:45:55.039260 +0000 build-fedora4: c93378752dbea1af636206c2d5906b0f5cbd9797c77f4be3425a10c78acfcbf18ec633c97711c665c61b9e9df36aaedfd964da53e9e2fba77444e956252db0b1  pkgs/dom0-fc32/xen-runtime-4.14.4-2.fc32.x86_64.rpm
+2022-06-21 22:45:55.208227 +0000 build-fedora4: 761a852582dffb29c7c8df44e60755f18931daa4ed59c8f6f9ff053b6a303af969e55e9297dbae103addad9ffae545e8669ebefcb6bc46da3c53a6ab8323189a  pkgs/dom0-fc32/xen-runtime-4.14.4-4.fc32.x86_64.rpm
+2022-06-21 22:45:55.318039 +0000 build-fedora4: ec83dbdd8912fbe3db3db66026519d3e5244b4a1281ab52b90aaa011197676b03c20b94e167951ce81df3ee129af5d1593b0a0dfc002c11c048b7dc48ed76ba3  pkgs/dom0-fc32/xen-runtime-4.14.5-2.fc32.x86_64.rpm
+2022-06-21 22:45:55.473065 +0000 build-fedora4: ea11660c060f6806eac5f9799cfca59b490ab7e7ce74e64c1bf5b7a1ac782ae9682acc5b9584e640672cb6115fc7294f0cd8daea0592bd3f61967fb4e14dc453  pkgs/dom0-fc32/xen-runtime-4.14.5-3.fc32.x86_64.rpm
+2022-06-21 22:45:55.542669 +0000 build-fedora4: 434c1711bcdcc110aff37c3475b18727dec822afd6639879d2b68f1202afe510fcffacf8cd03a2c32b9bab7e2c439ad76b739305fb26c04ad82195c879d17f6d  pkgs/dom0-fc32/xen-runtime-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:45:55.551389 +0000 build-fedora4: ccce7902110c63983e0fb7c82de8ae9ad9b1c5571573d6df6dedfa707f1747c157975581c20a10b3a9df681eadfeed4b46665c7b4c8cd08ba26f4641939d9de4  pkgs/dom0-fc32/xen-runtime-debuginfo-4.14.1-5.fc32.x86_64.rpm
+2022-06-21 22:45:55.561665 +0000 build-fedora4: eea2ab6ef1a7ebe3c35b2e4300e7eadf7353bab5b3e558c6bfe2b527dc93a42d7b14dd9090b160737efe033510a4cc6e4774da8352c453f903551245894e071b  pkgs/dom0-fc32/xen-runtime-debuginfo-4.14.2-2.fc32.x86_64.rpm
+2022-06-21 22:45:55.571639 +0000 build-fedora4: 81e3076943178bbf95fc8cbc4c295e3e78c5d4f41eb92fb5b44ce1e04dfc106692c4398f0d07ddb7573e96b454d89ad07e1304b1b2541b2d4d2e4114b2be4e50  pkgs/dom0-fc32/xen-runtime-debuginfo-4.14.3-4.fc32.x86_64.rpm
+2022-06-21 22:45:55.615389 +0000 build-fedora4: 2b5fc780aeded0129cf30de78a7c0022f0d6151392364312ae8d5ae358ec73d2e9eeb4bc944166e099de0c1e894096ee135ea054779925f363c95f5c0c26985f  pkgs/dom0-fc32/xen-runtime-debuginfo-4.14.3-8.fc32.x86_64.rpm
+2022-06-21 22:45:55.633844 +0000 build-fedora4: 246d3aae1bf7eb000f79244acf136a265192e4ca9419c753a80707a952572441600790122d7a7bf3856d051a12057488cd3b9faf497bca16472b334c985afa43  pkgs/dom0-fc32/xen-runtime-debuginfo-4.14.4-2.fc32.x86_64.rpm
+2022-06-21 22:45:55.642018 +0000 build-fedora4: 6753c852830f275bb65ab7268652d0c50e5f97899a58486902e55afab43e516f8725794805b001b9bd13052ced9ecde29121aa60d4ea18b83b8cfe00d1c1243b  pkgs/dom0-fc32/xen-runtime-debuginfo-4.14.4-4.fc32.x86_64.rpm
+2022-06-21 22:45:55.648448 +0000 build-fedora4: 5522efa219ee0697c9831c7b7fde47cb2b490ab13dad5e2fc38283c7151ce542bb85ed511eb4e2fd21154017a4c8417e79b0d6cc876922fa2123652b34bb87ac  pkgs/dom0-fc32/xen-runtime-debuginfo-4.14.5-2.fc32.x86_64.rpm
+2022-06-21 22:45:55.658511 +0000 build-fedora4: acdcf39c38d1cdb3ddff9b7108a911b5b798c749f6a7c866fb0d3552e4acde09af16457af7a331692c8de5cca2c8fdd200e942fabd1595c2ed0cfaaff52f051b  pkgs/dom0-fc32/xen-runtime-debuginfo-4.14.5-3.fc32.x86_64.rpm
+2022-06-21 22:45:55.658562 +0000 build-fedora4: 9d45ec1ef5c52eb649dabf1ac4e3c0b2077f06341b673aa42e5a4d223669f21451056f52150a6ac1927e178accda70522655134001c1dfe38075d08e9715018f  pkgs/dom0-fc32/xen-runtime-debuginfo-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:45:55.658599 +0000 build-fedora4: 13da0397389b9130be1ba0e58d85966c10257b8c0911ef9085e022ffc6d5c0ea220f7dcf7760d2a4fe27d6670c49d72c5891c138e045d6108e8d2f83dfae05ac  pkgs/dom0-fc32/xen.spec.list
+2022-06-21 22:45:55.665210 +0000 build-fedora4: 88da614e4d3f4409c4fd3bb3e44c7587ba051e3fed4e33d526069a67e8180212e1ea22da984656f50e290049f60ddca65383e5983c0f8884f648d71f698303ad  polarssl-1.1.4-gpl.tgz
+2022-06-21 22:45:55.671749 +0000 build-fedora4: faa3af2ef1241fd908da6fb7f826dee0dad39de697fe14a35b2582a0b0baae29b41e824a0737b57809177b1fe09fdd73fd41a54e59ae98c2be77bd7dfccf93e6  tboot-20090330.tar.gz
+2022-06-21 22:45:55.677240 +0000 build-fedora4: 4928b5b82f57645be9408362706ff2c4d9baa635b21b0d41b1c82930e8c60a759b1ea4fa74d7e6c7cae1b7692d006aa5cb72df0c3b88bf049779aa2b566f9d35  tpm_emulator-0.7.4.tar.gz
+2022-06-21 22:45:55.944952 +0000 build-fedora4: 6e94ba07b6c7b032b342820055b9ab7c76c5582a7ea3136af7a2f8fac251ed3dbe9a88f36c1652eb8006d3d04f44f90abff0f5d6159bf1cd6b784d04149f5239  xen-4.12.0-rc3.tar.gz
+2022-06-21 22:45:55.946781 +0000 build-fedora4: d19a937d90976d1c925a693072c30c42ce7b06f5b8d810492c6468e4762dbac235a0d6a1a59e5ccbfcd04faf737e5cd7838bc9bd34bb07fc7003be2d46a5d2a0  xen-4.12.0-rc3.tar.gz.sig
+2022-06-21 22:45:56.134985 +0000 build-fedora4: 28577614dfeb40724e7ec581cc7764cd62f35d93457465b7880855dd6dc8fc72bba83078fe9b187e8c851397f6f1eb6e33e01e9f65bcc13aacacae9a928b1afe  xen-4.12.0-rc6.tar.gz
+2022-06-21 22:45:56.136498 +0000 build-fedora4: a481643e11e49e3163710472ef5795abdb18b831b693e766a805593bbebe874bc2ea2d192857dfc6f8c5d38643fde1aa5ccfc7539a3f7fb5965e052c4cd3b84e  xen-4.12.0-rc6.tar.gz.sig
+2022-06-21 22:45:56.305331 +0000 build-fedora4: 0ce366dcac607c9b592c5e9c0f40652eef743913b246bed4b0c380b8d59ac23a6adcd05befec37fc799a61476f47df76d4911cbf1da6ceb51441c546bf2464de  xen-4.12.0.tar.gz
+2022-06-21 22:45:56.306938 +0000 build-fedora4: c51718cd5270029e24fe53bf3ac1245994b381d9d960e1e8bdead50ecd2ee8442314b829cd13ca9c827c692de396a12b6443257c6a937e01259c6141fc368f83  xen-4.12.0.tar.gz.sig
+2022-06-21 22:45:56.499920 +0000 build-fedora4: be15d3af6b109771aaf59b3621e4e1560b7d9a963d9b7f6a1f6f4a1c907fd97434b060c15f75849b44fbda33f26eb51b030d14d068c6ad5103ad240fe7a98f40  xen-4.12.1.tar.gz
+2022-06-21 22:45:56.502028 +0000 build-fedora4: 7ac5a613df249245f8ac4bca0b3f0573016668c7924f11cd05a5e06f0b63efc4acacf86f89dfe8dd1dd4880b9046d845ef9ce065c62feb53890e659e5e0bc7c4  xen-4.12.1.tar.gz.sig
+2022-06-21 22:45:56.758171 +0000 build-fedora4: 5b2ded9a2fe3f7ddf40eed1fa9858baead06233a01eb6099cc45b3c78b6c3823acfe7b731910733e87125dfa49d08c53f74c215fb1b320a92b44b87a0a105225  xen-4.13.0.tar.gz
+2022-06-21 22:45:56.759606 +0000 build-fedora4: da43075e8e0a1c8e88fc1135c019f4dfcbdc7762c83088143281cad535181bdcdc157d0a5b04676495ef3a1d790493272f36f52d0fd1a760d163fc5f9b7dd7ed  xen-4.13.0.tar.gz.sig
+2022-06-21 22:45:57.019723 +0000 build-fedora4: b56d20704155d98d803496cba83eb928e0f986a750831cd5600fc88d0ae772fe1456571654375054043d2da8daca255cc98385ebf08b1b1a75ecf7f4b7a0ee90  xen-4.13.1.tar.gz
+2022-06-21 22:45:57.021691 +0000 build-fedora4: 91dcb2c8bac76bfeac00bd93b8a261e109fa945217988161901ccfe361f9f5991df713964a37e16d0cecf8f8225753386188e13b14adb0fc5c8d93cb6ddf8772  xen-4.13.1.tar.gz.sig
+2022-06-21 22:45:57.269307 +0000 build-fedora4: ebce47a2f754955d8517123d69f62006634d97620fbbe3784869a0667466e586a249f57ffaf7846d5bcb45d69377cde43354c82c233fbb5407e55653b9a33ac0  xen-4.14.0.tar.gz
+2022-06-21 22:45:57.270821 +0000 build-fedora4: f25dfe8583c40b09b8a3fae605b96a415a8a996c42d97ca01338e2fac80aaef106e58a0e1a279034a1e4eeed85e10f511bc6c9ac7159fd9b4584026aad15c015  xen-4.14.0.tar.gz.sig
+2022-06-21 22:45:57.582739 +0000 build-fedora4: c75cbec82793435f5a7026626ffdb2e9a2166b42d2be4b2f1194240e0312458124f0ebd53eeb02ce7330c22afe402a28a96b32f8af66e41e9416fe94535724c9  xen-4.14.1.tar.gz
+2022-06-21 22:45:57.585020 +0000 build-fedora4: 56d26d82ab9c96051ac8052b9d0dea12bec1e3141fe4fcc9b4968247daa0822929af5ae42fb43e9cd67defb89d6b83a97564d86250c401c4cc044ec963bb8397  xen-4.14.1.tar.gz.sig
+2022-06-21 22:45:57.839266 +0000 build-fedora4: 83c9333b70dbee3e29c6bf08e5ad030676e6c4a32b976f3f5e6a8f8d0dd9e4898bac88dd8e1c9d2ad3509cebb5d212e1745f9392a469d7afeb841d79801ccf39  xen-4.14.2.tar.gz
+2022-06-21 22:45:57.840881 +0000 build-fedora4: fd5ac3e9e8465a46812cc856bed1449c58f528f4d2d982cd4f4c152ca28911aebf2745bd3cbe2db13be6968ea6015547a2b5d681b46533ef34b8cf0ad2a58f4c  xen-4.14.2.tar.gz.sig
+2022-06-21 22:45:58.121072 +0000 build-fedora4: b462fcc1549f6e57f7f2a4fd10ce1e957a25a6a7c0319672b62699468f6c4330b9cd0cf2b0231b5cce94f4bb142a957eb8aa58aa0ffb5c85b37211d6b34ccf16  xen-4.14.3.tar.gz
+2022-06-21 22:45:58.123450 +0000 build-fedora4: 7e3a508fd60d4cee0d13be8aff01334dd0eefb93c845a85545df20a8ae4ce31818b53dbb0db7fb15d53487a13ac57a942d229f3dacef0f13618e6604a144c370  xen-4.14.3.tar.gz.sig
+2022-06-21 22:45:58.410402 +0000 build-fedora4: 7c8b86f204a30b82ffde2e1bd6da07d609f6721db2261eab01b8dc453a4cb66c9bde79212a44d066e947612aa0edd0051e1188abfaa3b646a76898720751dede  xen-4.14.4.tar.gz
+2022-06-21 22:45:58.411057 +0000 build-fedora4: 683daf46d6f443de95f29878d2a54f0bf89307684a6e36bad32f70973a472cc1da38eeb9f604e5d05a53d89a51c953574b96c834f5073fb1d268343dc65b3bcd  xen-4.14.4.tar.gz.sig
+2022-06-21 22:45:58.765715 +0000 build-fedora4: 7fc1c98b5e135e14a1902786d6cf44304c1c1e9b600195592aa3d12ba937bc307eaae984596c30544519f181d2a02f2c9ad9c94d6b2b6fac2091b54568b0705e  xen-4.14.5.tar.gz
+2022-06-21 22:45:58.768119 +0000 build-fedora4: ea0705f0a25661871618eb555d41cb8cc70179410e58091ca64632d779bf59df1e1c36dae2fbe969a7ffa0278526490904c66591cade6acf3e391429c9d7d203  xen-4.14.5.tar.gz.sig
+2022-06-21 22:45:58.779787 +0000 build-fedora4: 021b958fcd0d346c4ba761bcf0cc40f3522de6186cf5a0a6ea34a70504ce9622b1c2626fce40675bc8282cf5f5ade18473656abc38050f72f5d6480507a2106e  zlib-1.2.3.tar.gz
+2022-06-21 22:45:58.884203 +0000 build-fedora4: ================================================================================
+2022-06-21 22:45:58.884255 +0000 build-fedora4:                            B U I L D   I N F O                                  
+2022-06-21 22:45:58.884270 +0000 build-fedora4: Items in red indicate it was automatically generated by configuration file(s)
+2022-06-21 22:45:58.884281 +0000 build-fedora4: Items in white indicate it was automatically removed by configuration file(s)
+2022-06-21 22:45:58.884292 +0000 build-fedora4: ================================================================================
+2022-06-21 22:45:58.884299 +0000 build-fedora4: DISTS_VM:
+2022-06-21 22:45:58.910620 +0000 build-fedora4:     
+2022-06-21 22:45:58.910657 +0000 build-fedora4: DISTS_ALL:
+2022-06-21 22:45:58.916608 +0000 build-fedora4:      dom0-fc32,
+2022-06-21 22:45:58.916643 +0000 build-fedora4: DIST_DOM0:
+2022-06-21 22:45:58.930363 +0000 build-fedora4:      fc32,
+2022-06-21 22:45:58.930400 +0000 build-fedora4: BUILDER_PLUGINS:
+2022-06-21 22:45:58.935860 +0000 build-fedora4:      builder-rpm, builder-debian, mgmt-salt, linux-yum, release-configs, builder-github,
+2022-06-21 22:45:58.935895 +0000 build-fedora4: COMPONENTS:
+2022-06-21 22:45:58.935904 +0000 build-fedora4:      vmm-xen,
+2022-06-21 22:45:58.937059 +0000 build-fedora4: GIT_REPOS:
+2022-06-21 22:45:58.939140 +0000 build-fedora4:      qubes-src/vmm-xen,
+2022-06-21 22:45:58.940799 +0000 build-fedora4: TEMPLATE:
+2022-06-21 22:45:58.942173 +0000 build-fedora4:     
+2022-06-21 22:45:58.944710 +0000 build-fedora4: TEMPLATE_FLAVOR_DIR:
+2022-06-21 22:45:58.944749 +0000 build-fedora4:     
+2022-06-21 22:45:58.950475 +0000 build-fedora4: TEMPLATE_ALIAS:
+2022-06-21 22:45:58.950514 +0000 build-fedora4:      stretch:stretch+standard, stretch+gnome:stretch+gnome+standard,
+2022-06-21 22:45:58.950527 +0000 build-fedora4:      stretch+minimal:stretch+minimal+no-recommends, buster:buster+standard,
+2022-06-21 22:45:58.950539 +0000 build-fedora4:      buster+gnome:buster+gnome+standard, buster+minimal:buster+minimal+no-recommends,
+2022-06-21 22:45:58.950570 +0000 build-fedora4:      bullseye:bullseye+standard+firmware, bullseye+gnome:bullseye+gnome+standard+firmware,
+2022-06-21 22:45:58.950582 +0000 build-fedora4:      bullseye+minimal:bullseye+minimal+no-recommends, bookworm:bookworm+standard,
+2022-06-21 22:45:58.950593 +0000 build-fedora4:      bookworm+gnome:bookworm+gnome+standard, bookworm+minimal:bookworm+minimal+no-recommends,
+2022-06-21 22:45:58.950606 +0000 build-fedora4:      bionic:bionic+standard, focal:focal+standard, whonix-gateway-15:buster+whonix-gateway+minimal+no-recommends,
+2022-06-21 22:45:58.950617 +0000 build-fedora4:      whonix-workstation-15:buster+whonix-workstation+minimal+no-recommends,
+2022-06-21 22:45:58.950627 +0000 build-fedora4:      whonix-gateway-16:bullseye+whonix-gateway+minimal+no-recommends,
+2022-06-21 22:45:58.950637 +0000 build-fedora4:      whonix-workstation-16:bullseye+whonix-workstation+minimal+no-recommends,
+2022-06-21 22:45:58.950644 +0000 build-fedora4: TEMPLATE_LABEL:
+2022-06-21 22:45:58.950656 +0000 build-fedora4:      fc34:fedora-34 fc35:fedora-35 fc36:fedora-36 fc34+minimal:fedora-34-minimal fc35+minimal:fedora-35-minimal
+2022-06-21 22:45:58.950668 +0000 build-fedora4:      fc36+minimal:fedora-36-minimal fc34+xfce:fedora-34-xfce fc35+xfce:fedora-35-xfce fc36+xfce:fedora-36-xfce
+2022-06-21 22:45:58.950679 +0000 build-fedora4:      stretch:debian-9 stretch+standard:debian-9 stretch+xfce:debian-9-xfce buster:debian-10
+2022-06-21 22:45:58.950691 +0000 build-fedora4:      buster+standard:debian-10 buster+xfce:debian-10-xfce bullseye:debian-11 bullseye+standard+firmware:debian-11
+2022-06-21 22:45:58.950703 +0000 build-fedora4:      bullseye+xfce:debian-11-xfce bookworm:debian-12 bookworm+standard:debian-12 bookworm+xfce:debian-12-xfce
+2022-06-21 22:45:58.950714 +0000 build-fedora4:      bionic+standard:bionic focal+standard:focal buster+whonix-gateway+minimal+no-recommends:whonix-gw-15
+2022-06-21 22:45:58.950724 +0000 build-fedora4:      buster+whonix-workstation+minimal+no-recommends:whonix-ws-15
+2022-06-21 22:45:58.950733 +0000 build-fedora4:      bullseye+whonix-gateway+minimal+no-recommends:whonix-gw-16
+2022-06-21 22:45:58.950744 +0000 build-fedora4:      bullseye+whonix-workstation+minimal+no-recommends:whonix-ws-16 centos7:centos-7
+2022-06-21 22:45:58.950755 +0000 build-fedora4:      centos7+minimal:centos-7-minimal centos7+xfce:centos-7-xfce centos-stream8:centos-stream-8
+2022-06-21 22:45:58.950766 +0000 build-fedora4:      centos-stream8+minimal:centos-stream-8-minimal centos-stream8+xfce:centos-stream-8-xfce
+2022-06-21 22:45:58.971896 +0000 build-fedora4: > running make
+2022-06-21 22:45:59.029261 +0000 build-fedora4: Makefile:299: target 'sign.dom0.fc32.vmm-xen' does not exist
+2022-06-21 22:45:59.029658 +0000 build-fedora4: if [ -n "vmm-xen" -a "0" -ne 0 ]; then BRANCH=release4.1; branch_var="BRANCH_vmm_xen"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/vmm-xen > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2022-06-21 22:45:59.029681 +0000 build-fedora4: SIGN_KEY=5817A43B283DE5A9181A522E1848792F9E2795E9; \
+2022-06-21 22:45:59.029692 +0000 build-fedora4: sign_key_var="SIGN_KEY_${DIST%%+*}"; \
+2022-06-21 22:45:59.029703 +0000 build-fedora4: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2022-06-21 22:45:59.029711 +0000 build-fedora4: if [ "vmm-xen" = linux-template-builder ]; then
+2022-06-21 22:45:59.029724 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc32 template-name)
+2022-06-21 22:45:59.029731 +0000 build-fedora4: fi
+2022-06-21 22:45:59.029740 +0000 build-fedora4: if [ -r qubes-src/vmm-xen/Makefile.builder ]; then \
+2022-06-21 22:45:59.029750 +0000 build-fedora4: .make --no-print-directory -f Makefile.generic \
+2022-06-21 22:45:59.029770 +0000 build-fedora4: ..DIST=fc32 \
+2022-06-21 22:45:59.029778 +0000 build-fedora4: ..PACKAGE_SET=dom0 \
+2022-06-21 22:45:59.029786 +0000 build-fedora4: ..COMPONENT=vmm-xen \
+2022-06-21 22:45:59.029793 +0000 build-fedora4: ..SIGN_KEY=$SIGN_KEY \
+2022-06-21 22:45:59.029800 +0000 build-fedora4: ..sign || exit 1; \
+2022-06-21 22:45:59.029808 +0000 build-fedora4: elif [ -d qubes-src/vmm-xen/rpm ]; then \
+2022-06-21 22:45:59.029817 +0000 build-fedora4: .# Old mechanism supported only for RPM
+2022-06-21 22:45:59.029826 +0000 build-fedora4: FILE_LIST=""; for RPM in qubes-src/vmm-xen/rpm/*/*.rpm; do \
+2022-06-21 22:45:59.029837 +0000 build-fedora4: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2022-06-21 22:45:59.029845 +0000 build-fedora4: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2022-06-21 22:45:59.029851 +0000 build-fedora4: ..fi ;\
+2022-06-21 22:45:59.029858 +0000 build-fedora4: .done ; \
+2022-06-21 22:45:59.029866 +0000 build-fedora4: .if [ -n "$FILE_LIST" ]; then \
+2022-06-21 22:45:59.029873 +0000 build-fedora4: ..echo "--> Signing..."; \
+2022-06-21 22:45:59.029882 +0000 build-fedora4: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2022-06-21 22:45:59.029889 +0000 build-fedora4: ..if [ -n "$SIGN_KEY" ]; then \
+2022-06-21 22:45:59.029898 +0000 build-fedora4: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2022-06-21 22:45:59.029904 +0000 build-fedora4: ..fi; \
+2022-06-21 22:45:59.029914 +0000 build-fedora4: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2022-06-21 22:45:59.029921 +0000 build-fedora4: .fi; \
+2022-06-21 22:45:59.029927 +0000 build-fedora4: fi
+2022-06-21 22:45:59.071683 +0000 build-fedora4: /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/Makefile.rpmbuilder:201: target 'sign-prep' does not exist
+2022-06-21 22:45:59.071725 +0000 build-fedora4: if [ -n "qubes-gpg-client-wrapper" ]; then \
+2022-06-21 22:45:59.071739 +0000 build-fedora4: .mkdir -p /home/user/builder-r4.1-dom0/keyrings/rpmdb; \
+2022-06-21 22:45:59.071747 +0000 build-fedora4: .tmpname=$(mktemp); \
+2022-06-21 22:45:59.071760 +0000 build-fedora4: .qubes-gpg-client-wrapper --armor --export "5817A43B283DE5A9181A522E1848792F9E2795E9" > "$tmpname"; \
+2022-06-21 22:45:59.071773 +0000 build-fedora4: .rpmkeys --dbpath=/home/user/builder-r4.1-dom0/keyrings/rpmdb --import "$tmpname"; \
+2022-06-21 22:45:59.071781 +0000 build-fedora4: .rm -f "$tmpname"; \
+2022-06-21 22:45:59.071787 +0000 build-fedora4: fi
+2022-06-21 22:45:59.406486 +0000 build-fedora4: warning: Found bdb_ro Packages database while attempting sqlite backend: using bdb_ro backend.
+2022-06-21 22:45:59.475559 +0000 build-fedora4: /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/Makefile.rpmbuilder:217: update target 'sign' due to: sign-prep
+2022-06-21 22:45:59.475672 +0000 build-fedora4: cd qubes-src/vmm-xen && for pkg in pkgs/dom0-fc32/python3-xen-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/python3-xen-debuginfo-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-4.14.5-4.fc32.src.rpm pkgs/dom0-fc32/xen-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-debuginfo-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-debugsource-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-devel-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-doc-4.14.5-4.fc32.noarch.rpm pkgs/dom0-fc32/xen-hypervisor-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-libs-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-libs-debuginfo-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-licenses-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-qemu-tools-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-qubes-vm-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-qubes-vm-debuginfo-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-runtime-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-runtime-debuginfo-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-4.14.5-4.fc32.x86_64.buildinfo ; do \
+2022-06-21 22:45:59.475686 +0000 build-fedora4: .if [ "${pkg##*.}" = "buildinfo" ]; then \
+2022-06-21 22:45:59.475707 +0000 build-fedora4: ../home/user/builder-r4.1-dom0/qubes-src/builder-rpm/scripts/update-rpmbuildinfo "$pkg" | /usr/bin/qubes-gpg-client-wrapper --clearsign --local-user 5817A43B283DE5A9181A522E1848792F9E2795E9 > "$pkg".tmp && \
+2022-06-21 22:45:59.475731 +0000 build-fedora4: ..mv -f "$pkg".tmp "$pkg"; \
+2022-06-21 22:45:59.475744 +0000 build-fedora4: .elif [ "$(rpmkeys --checksig -- "$pkg")" != "$pkg: digests signatures OK" ]; then \
+2022-06-21 22:45:59.475759 +0000 build-fedora4: ..setsid -w rpmsign --digest-algo=sha256 --key-id=5817A43B283DE5A9181A522E1848792F9E2795E9 --addsign  -- "$pkg" </dev/null || exit 1; \
+2022-06-21 22:45:59.475769 +0000 build-fedora4: .fi; \
+2022-06-21 22:45:59.475775 +0000 build-fedora4: done
+2022-06-21 22:45:59.576392 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2022-06-21 22:45:59.779565 +0000 build-fedora4: pkgs/dom0-fc32/python3-xen-4.14.5-4.fc32.x86_64.rpm:
+2022-06-21 22:45:59.798577 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2022-06-21 22:46:00.024680 +0000 build-fedora4: pkgs/dom0-fc32/python3-xen-debuginfo-4.14.5-4.fc32.x86_64.rpm:
+2022-06-21 22:46:00.600635 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2022-06-21 22:46:00.844428 +0000 build-fedora4: pkgs/dom0-fc32/xen-4.14.5-4.fc32.src.rpm:
+2022-06-21 22:46:00.864781 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2022-06-21 22:46:01.058427 +0000 build-fedora4: pkgs/dom0-fc32/xen-4.14.5-4.fc32.x86_64.rpm:
+2022-06-21 22:46:01.101397 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2022-06-21 22:46:01.309745 +0000 build-fedora4: pkgs/dom0-fc32/xen-debuginfo-4.14.5-4.fc32.x86_64.rpm:
+2022-06-21 22:46:01.335073 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2022-06-21 22:46:01.540945 +0000 build-fedora4: pkgs/dom0-fc32/xen-debugsource-4.14.5-4.fc32.x86_64.rpm:
+2022-06-21 22:46:01.559872 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2022-06-21 22:46:01.785655 +0000 build-fedora4: pkgs/dom0-fc32/xen-devel-4.14.5-4.fc32.x86_64.rpm:
+2022-06-21 22:46:01.808846 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2022-06-21 22:46:01.998317 +0000 build-fedora4: pkgs/dom0-fc32/xen-doc-4.14.5-4.fc32.noarch.rpm:
+2022-06-21 22:46:02.129088 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2022-06-21 22:46:02.318877 +0000 build-fedora4: pkgs/dom0-fc32/xen-hypervisor-4.14.5-4.fc32.x86_64.rpm:
+2022-06-21 22:46:02.367946 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2022-06-21 22:46:02.572311 +0000 build-fedora4: pkgs/dom0-fc32/xen-libs-4.14.5-4.fc32.x86_64.rpm:
+2022-06-21 22:46:02.634422 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2022-06-21 22:46:02.842302 +0000 build-fedora4: pkgs/dom0-fc32/xen-libs-debuginfo-4.14.5-4.fc32.x86_64.rpm:
+2022-06-21 22:46:02.862513 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2022-06-21 22:46:03.051544 +0000 build-fedora4: pkgs/dom0-fc32/xen-licenses-4.14.5-4.fc32.x86_64.rpm:
+2022-06-21 22:46:03.069231 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2022-06-21 22:46:03.279098 +0000 build-fedora4: pkgs/dom0-fc32/xen-qemu-tools-4.14.5-4.fc32.x86_64.rpm:
+2022-06-21 22:46:03.299614 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2022-06-21 22:46:03.506927 +0000 build-fedora4: pkgs/dom0-fc32/xen-qubes-vm-4.14.5-4.fc32.x86_64.rpm:
+2022-06-21 22:46:03.525842 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2022-06-21 22:46:03.737044 +0000 build-fedora4: pkgs/dom0-fc32/xen-qubes-vm-debuginfo-4.14.5-4.fc32.x86_64.rpm:
+2022-06-21 22:46:04.009354 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2022-06-21 22:46:04.216844 +0000 build-fedora4: pkgs/dom0-fc32/xen-runtime-4.14.5-4.fc32.x86_64.rpm:
+2022-06-21 22:46:04.249398 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2022-06-21 22:46:04.517869 +0000 build-fedora4: pkgs/dom0-fc32/xen-runtime-debuginfo-4.14.5-4.fc32.x86_64.rpm:
+2022-06-21 22:46:05.107181 +0000 build-fedora4: Makefile:863: target 'internal-update-repo-current-testing.dom0.fc32.vmm-xen' does not exist
+2022-06-21 22:46:05.107233 +0000 build-fedora4: repo_base_var="LINUX_REPO_${DIST//-/_}_BASEDIR"; \
+2022-06-21 22:46:05.107245 +0000 build-fedora4: if [ "vmm-xen" = linux-template-builder ]; then \
+2022-06-21 22:46:05.107257 +0000 build-fedora4: .# templates belongs to dom0 repository, even though PACKAGE_SET=vm
+2022-06-21 22:46:05.107265 +0000 build-fedora4: repo_base_var="LINUX_REPO_fc32_BASEDIR"; \
+2022-06-21 22:46:05.107276 +0000 build-fedora4: fi; \
+2022-06-21 22:46:05.107284 +0000 build-fedora4: if [ -n "${!repo_base_var}" ]; then \
+2022-06-21 22:46:05.107292 +0000 build-fedora4: .repo_basedir="${!repo_base_var}"; \
+2022-06-21 22:46:05.107298 +0000 build-fedora4: else \
+2022-06-21 22:46:05.107306 +0000 build-fedora4: .repo_basedir="qubes-src/linux-yum/r4.1"; \
+2022-06-21 22:46:05.107311 +0000 build-fedora4: fi; \
+2022-06-21 22:46:05.107320 +0000 build-fedora4: if [ -r qubes-src/vmm-xen/Makefile.builder ]; then \
+2022-06-21 22:46:05.107333 +0000 build-fedora4: .echo -n "Updating qubes-src/vmm-xen... "; \
+2022-06-21 22:46:05.107341 +0000 build-fedora4: .if [ "0" -eq 1 ]; then \
+2022-06-21 22:46:05.107351 +0000 build-fedora4: ..vtag=`git -C qubes-src/vmm-xen tag --points-at HEAD --list v*`; \
+2022-06-21 22:46:05.107358 +0000 build-fedora4: ..if [ -z "$vtag" ]; then \
+2022-06-21 22:46:05.107365 +0000 build-fedora4: ...echo "no version tag"; \
+2022-06-21 22:46:05.107372 +0000 build-fedora4: ...exit 0; \
+2022-06-21 22:46:05.107378 +0000 build-fedora4: ..fi; \
+2022-06-21 22:46:05.107384 +0000 build-fedora4: .fi; \
+2022-06-21 22:46:05.107392 +0000 build-fedora4: .if [ "vmm-xen" = linux-template-builder ]; then
+2022-06-21 22:46:05.107403 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc32 template-name)
+2022-06-21 22:46:05.107410 +0000 build-fedora4: fi
+2022-06-21 22:46:05.107433 +0000 build-fedora4: component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc32 PACKAGE_SET=dom0 COMPONENT=`basename qubes-src/vmm-xen` UPDATE_REPO=/home/user/builder-r4.1-dom0/$repo_basedir/current-testing/dom0/fc32 get-var GET_VAR=PACKAGE_LIST); \
+2022-06-21 22:46:05.107443 +0000 build-fedora4: .if [ -z "$component_packages" ]; then \
+2022-06-21 22:46:05.107450 +0000 build-fedora4: ..echo "no packages."; \
+2022-06-21 22:46:05.107456 +0000 build-fedora4: ..exit 0; \
+2022-06-21 22:46:05.107462 +0000 build-fedora4: .fi; \
+2022-06-21 22:46:05.107471 +0000 build-fedora4: .make -s -f Makefile.generic DIST=fc32 PACKAGE_SET=dom0 \
+2022-06-21 22:46:05.107479 +0000 build-fedora4: ..COMPONENT=`basename qubes-src/vmm-xen` \
+2022-06-21 22:46:05.107486 +0000 build-fedora4: ..SNAPSHOT_REPO=current-testing \
+2022-06-21 22:46:05.107494 +0000 build-fedora4: ..TARGET_REPO=current-testing \
+2022-06-21 22:46:05.107504 +0000 build-fedora4: ..UPDATE_REPO=/home/user/builder-r4.1-dom0/$repo_basedir/current-testing/dom0/fc32 \
+2022-06-21 22:46:05.107517 +0000 build-fedora4: ..SNAPSHOT_FILE=/home/user/builder-r4.1-dom0/repo-latest-snapshot/current-testing-dom0-fc32-`basename qubes-src/vmm-xen` \
+2022-06-21 22:46:05.107529 +0000 build-fedora4: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2022-06-21_22-33-23 \
+2022-06-21 22:46:05.107536 +0000 build-fedora4: ..update-repo || exit 1; \
+2022-06-21 22:46:05.107547 +0000 build-fedora4: elif make -C qubes-src/vmm-xen -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2022-06-21 22:46:05.107555 +0000 build-fedora4: .echo "Updating qubes-src/vmm-xen... "; \
+2022-06-21 22:46:05.107586 +0000 build-fedora4: .DIST=fc32 UPDATE_REPO=/home/user/builder-r4.1-dom0/$repo_basedir/current-testing/dom0/fc32 \
+2022-06-21 22:46:05.107597 +0000 build-fedora4: .make -s -C qubes-src/vmm-xen update-repo-current-testing || exit 1; \
+2022-06-21 22:46:05.107603 +0000 build-fedora4: else \
+2022-06-21 22:46:05.107612 +0000 build-fedora4: .echo -n "Updating qubes-src/vmm-xen... skipping."; \
+2022-06-21 22:46:05.107618 +0000 build-fedora4: fi; \
+2022-06-21 22:46:05.107623 +0000 build-fedora4: echo
+2022-06-21 22:46:05.209111 +0000 build-fedora4: Updating qubes-src/vmm-xen... /home/user/builder-r4.1-dom0/qubes-src/builder-rpm/Makefile.rpmbuilder:176: target 'update-repo-do' does not exist
+2022-06-21 22:46:05.209178 +0000 build-fedora4: mkdir -p /home/user/builder-r4.1-dom0/qubes-src/linux-yum/r4.1/current-testing/dom0/fc32/rpm
+2022-06-21 22:46:05.247546 +0000 build-fedora4: if [ -n "pkgs/dom0-fc32/python3-xen-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/python3-xen-debuginfo-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-4.14.5-4.fc32.src.rpm pkgs/dom0-fc32/xen-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-debuginfo-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-debugsource-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-devel-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-doc-4.14.5-4.fc32.noarch.rpm pkgs/dom0-fc32/xen-hypervisor-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-libs-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-libs-debuginfo-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-licenses-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-qemu-tools-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-qubes-vm-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-qubes-vm-debuginfo-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-runtime-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-runtime-debuginfo-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-4.14.5-4.fc32.x86_64.buildinfo" ]; then \
+2022-06-21 22:46:05.247658 +0000 build-fedora4: .cd qubes-src/vmm-xen && ln -f pkgs/dom0-fc32/python3-xen-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/python3-xen-debuginfo-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-4.14.5-4.fc32.src.rpm pkgs/dom0-fc32/xen-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-debuginfo-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-debugsource-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-devel-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-doc-4.14.5-4.fc32.noarch.rpm pkgs/dom0-fc32/xen-hypervisor-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-libs-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-libs-debuginfo-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-licenses-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-qemu-tools-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-qubes-vm-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-qubes-vm-debuginfo-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-runtime-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-runtime-debuginfo-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-4.14.5-4.fc32.x86_64.buildinfo  /home/user/builder-r4.1-dom0/qubes-src/linux-yum/r4.1/current-testing/dom0/fc32/rpm/; \
+2022-06-21 22:46:05.247669 +0000 build-fedora4: else \
+2022-06-21 22:46:05.247681 +0000 build-fedora4: .echo "`tput bold`No packages defined by xen.spec, syntax error?`tput sgr0`"; \
+2022-06-21 22:46:05.247688 +0000 build-fedora4: .exit 1; \
+2022-06-21 22:46:05.247695 +0000 build-fedora4: fi
+2022-06-21 22:46:05.265280 +0000 build-fedora4: cd qubes-src/vmm-xen && echo pkgs/dom0-fc32/python3-xen-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/python3-xen-debuginfo-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-4.14.5-4.fc32.src.rpm pkgs/dom0-fc32/xen-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-debuginfo-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-debugsource-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-devel-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-doc-4.14.5-4.fc32.noarch.rpm pkgs/dom0-fc32/xen-hypervisor-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-libs-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-libs-debuginfo-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-licenses-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-qemu-tools-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-qubes-vm-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-qubes-vm-debuginfo-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-runtime-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-runtime-debuginfo-4.14.5-4.fc32.x86_64.rpm pkgs/dom0-fc32/xen-4.14.5-4.fc32.x86_64.buildinfo  > /home/user/builder-r4.1-dom0/repo-latest-snapshot/current-testing-dom0-fc32-vmm-xen
+2022-06-21 22:46:05.302978 +0000 build-fedora4: /home/user/builder-r4.1-dom0/qubes-src/builder-github//Makefile.github:18: target 'notify-github' does not exist
+2022-06-21 22:46:05.303023 +0000 build-fedora4: [ -z "python3-xen-4.14.5-4.fc32" ] || /home/user/builder-r4.1-dom0/qubes-src/builder-github//notify-issues \
+2022-06-21 22:46:05.303039 +0000 build-fedora4: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2022-06-21_22-33-23" \
+2022-06-21 22:46:05.303047 +0000 build-fedora4: .upload \
+2022-06-21 22:46:05.303054 +0000 build-fedora4: ."r4.1" \
+2022-06-21 22:46:05.303062 +0000 build-fedora4: ."qubes-src/vmm-xen" \
+2022-06-21 22:46:05.303070 +0000 build-fedora4: ."python3-xen-4.14.5-4.fc32" \
+2022-06-21 22:46:05.303076 +0000 build-fedora4: ."fc32" \
+2022-06-21 22:46:05.303082 +0000 build-fedora4: ."dom0" \
+2022-06-21 22:46:05.303089 +0000 build-fedora4: ."current-testing" \
+2022-06-21 22:46:05.303099 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-vmm-xen-dom0-fc32-current-testing" \
+2022-06-21 22:46:05.303109 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-vmm-xen-dom0-fc32-current"
+2022-06-21 22:46:32.922747 +0000 build-fedora4: 
+2022-06-21 22:46:32.922794 +0000 build-fedora4: Makefile:923: target 'post-update-repo-current-testing' does not exist
+2022-06-21 22:46:32.922804 +0000 build-fedora4: for dist in fc32 ; do \
+2022-06-21 22:46:32.922814 +0000 build-fedora4: .repo_base_var="LINUX_REPO_${dist//-/_}_BASEDIR"; \
+2022-06-21 22:46:32.922821 +0000 build-fedora4: .if [ -n "${!repo_base_var}" ]; then \
+2022-06-21 22:46:32.922829 +0000 build-fedora4: ..repo_basedir="${!repo_base_var}"; \
+2022-06-21 22:46:32.922834 +0000 build-fedora4: .else \
+2022-06-21 22:46:32.922842 +0000 build-fedora4: ..repo_basedir="qubes-src/linux-yum/r4.1"; \
+2022-06-21 22:46:32.922848 +0000 build-fedora4: .fi; \
+2022-06-21 22:46:32.922856 +0000 build-fedora4: .repos_to_update="$repos_to_update $repo_basedir"; \
+2022-06-21 22:46:32.922862 +0000 build-fedora4: done; \
+2022-06-21 22:46:32.922868 +0000 build-fedora4: pkgset_dist= ; \
+2022-06-21 22:46:32.922875 +0000 build-fedora4: for dist in fc32; do \
+2022-06-21 22:46:32.922882 +0000 build-fedora4: .pkgset_dist="$pkgset_dist dom0/$dist"; \
+2022-06-21 22:46:32.922888 +0000 build-fedora4: done; \
+2022-06-21 22:46:32.922894 +0000 build-fedora4: for dist in ; do \
+2022-06-21 22:46:32.922901 +0000 build-fedora4: .pkgset_dist="$pkgset_dist vm/$dist"; \
+2022-06-21 22:46:32.922907 +0000 build-fedora4: done; \
+2022-06-21 22:46:32.922915 +0000 build-fedora4: for repo in `echo $repos_to_update|tr ' ' '\n'|sort|uniq`; do \
+2022-06-21 22:46:32.922926 +0000 build-fedora4: .[ -z "$repo" ] && continue; \
+2022-06-21 22:46:32.922935 +0000 build-fedora4: .[ -x "$repo/../update_repo-current-testing.sh" ] || continue; \
+2022-06-21 22:46:32.922945 +0000 build-fedora4: .(cd $repo/.. && ./update_repo-current-testing.sh r4.1 $pkgset_dist); \
+2022-06-21 22:46:32.922951 +0000 build-fedora4: done
+2022-06-21 22:46:32.930178 +0000 build-fedora4: ~/builder-r4.1-dom0/qubes-src/linux-yum ~/builder-r4.1-dom0/qubes-src/linux-yum
+2022-06-21 22:46:32.936575 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/dom0/fc32...
+2022-06-21 22:46:32.995278 +0000 build-fedora4: warning: Found bdb_ro Packages database while attempting sqlite backend: using bdb_ro backend.
+2022-06-21 22:46:51.044780 +0000 build-fedora4: Done.
+2022-06-21 22:46:51.053660 +0000 build-fedora4: ~/builder-r4.1-dom0/qubes-src/linux-yum ~/builder-r4.1-dom0/qubes-src/linux-yum
+2022-06-21 22:46:51.054684 +0000 build-fedora4: Syncing r4.1...
+2022-06-21 22:46:51.968026 +0000 build-fedora4: sending incremental file list
+2022-06-21 22:46:52.058658 +0000 build-fedora4: .d..t...... fc32/
+2022-06-21 22:46:52.058696 +0000 build-fedora4: .d..t...... fc32/repodata/
+2022-06-21 22:46:52.058711 +0000 build-fedora4: <f..t...... fc32/repodata/1d04d3f476b9039f9ec511570a5a0606b57225382d9d9788d5305156041dd1f8-comps.xml
+2022-06-21 22:46:52.058726 +0000 build-fedora4: .            700   0%    0.00kB/s    0:00:00  .        107,187 100%  101.55MB/s    0:00:00 (xfr#1, to-chk=1052/1058)
+2022-06-21 22:46:52.058738 +0000 build-fedora4: <f+++++++++ fc32/repodata/864bbc88ea6ec95dc47cb123f4f90433ac8613ed63d0d36f2a41f9fb64cab46e-primary.sqlite.bz2
+2022-06-21 22:46:52.061420 +0000 build-fedora4: .         32,768   8%   31.25MB/s    0:00:00  .        408,192 100%  129.76MB/s    0:00:00 (xfr#2, to-chk=1051/1058)
+2022-06-21 22:46:52.061461 +0000 build-fedora4: <f+++++++++ fc32/repodata/a48a3bc01b4b3adf14cbd7f213047e05ef72abfe80d98e9a106c8aedece787b2-other.sqlite.bz2
+2022-06-21 22:46:52.062611 +0000 build-fedora4: .         32,768  32%   10.42MB/s    0:00:00  .        101,184 100%   32.17MB/s    0:00:00 (xfr#3, to-chk=1050/1058)
+2022-06-21 22:46:52.062646 +0000 build-fedora4: <f+++++++++ fc32/repodata/b3e7423f4a51438ce96132ad389de80ef18d9138316a4d7ae88849310f72c329-other.xml.gz
+2022-06-21 22:46:52.062662 +0000 build-fedora4: .         32,768  65%    7.81MB/s    0:00:00  .         50,325 100%   12.00MB/s    0:00:00 (xfr#4, to-chk=1049/1058)
+2022-06-21 22:46:52.062674 +0000 build-fedora4: <f+++++++++ fc32/repodata/bd09f62e971446f48fe9f4c7ac9330dfc9843e60030756bf75cea1b379f77a7e-filelists.xml.gz
+2022-06-21 22:46:52.067986 +0000 build-fedora4: .         32,768   5%    7.81MB/s    0:00:00  .        559,025 100%   59.24MB/s    0:00:00 (xfr#5, to-chk=1048/1058)
+2022-06-21 22:46:52.068026 +0000 build-fedora4: <f+++++++++ fc32/repodata/d1411ceb08420fa057a84b91f569c70b1f42c7e0e52fee8f4776d784349c36a5-filelists.sqlite.bz2
+2022-06-21 22:46:52.086449 +0000 build-fedora4: .         32,768   4%    3.12MB/s    0:00:00  .        698,576 100%   23.79MB/s    0:00:00 (xfr#6, to-chk=1047/1058)
+2022-06-21 22:46:52.086506 +0000 build-fedora4: <f+++++++++ fc32/repodata/e184fe3a9292e69c4fb8d849158ac3280715e56e871a48d185f885e4f776beb3-primary.xml.gz
+2022-06-21 22:46:52.095279 +0000 build-fedora4: .         32,768  20%    1.04MB/s    0:00:00  .        163,389 100%    4.21MB/s    0:00:00 (xfr#7, to-chk=1046/1058)
+2022-06-21 22:46:52.095318 +0000 build-fedora4: <f..t...... fc32/repodata/ff1728e943d67d8cbe098281df44e4a96b9f1cb74d7914c07acfaead64f1aee4-comps.xml.gz
+2022-06-21 22:46:52.095334 +0000 build-fedora4: .            700   2%   18.48kB/s    0:00:01  .         25,276 100%  667.12kB/s    0:00:00 (xfr#8, to-chk=1045/1058)
+2022-06-21 22:46:52.095343 +0000 build-fedora4: <f.st...... fc32/repodata/repomd.xml
+2022-06-21 22:46:52.097081 +0000 build-fedora4: .          3,862 100%   96.70kB/s    0:00:00  .          3,862 100%   96.70kB/s    0:00:00 (xfr#9, to-chk=1044/1058)
+2022-06-21 22:46:52.097115 +0000 build-fedora4: <f..t...... fc32/repodata/repomd.xml.asc
+2022-06-21 22:46:52.097145 +0000 build-fedora4: .            833 100%   20.86kB/s    0:00:00  .            833 100%   20.86kB/s    0:00:00 (xfr#10, to-chk=1043/1058)
+2022-06-21 22:46:52.097153 +0000 build-fedora4: .d..t...... fc32/rpm/
+2022-06-21 22:46:52.097163 +0000 build-fedora4: <f+++++++++ fc32/rpm/python3-xen-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:46:52.101865 +0000 build-fedora4: .         32,768  50%  820.51kB/s    0:00:00  .         64,565 100%    1.40MB/s    0:00:00 (xfr#11, to-chk=627/1058)
+2022-06-21 22:46:52.101902 +0000 build-fedora4: <f+++++++++ fc32/rpm/python3-xen-debuginfo-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:46:52.104325 +0000 build-fedora4: .         32,768  52%  727.27kB/s    0:00:00  .         62,998 100%    1.31MB/s    0:00:00 (xfr#12, to-chk=625/1058)
+2022-06-21 22:46:52.104361 +0000 build-fedora4: <f+++++++++ fc32/rpm/xen-4.14.5-4.fc32.src.rpm
+2022-06-21 22:47:03.614331 +0000 build-fedora4: .         32,768   0%  695.65kB/s    0:00:57  .      3,440,640   8%    3.23MB/s    0:00:11  .      6,979,584  17%    3.26MB/s    0:00:09  .     10,518,528  26%    3.27MB/s    0:00:08  .     13,991,936  35%    3.27MB/s    0:00:07  .     17,530,880  43%    3.29MB/s    0:00:06  .     21,069,824  52%    3.29MB/s    0:00:05  .     24,608,768  61%    3.30MB/s    0:00:04  .     28,180,480  70%    3.30MB/s    0:00:03  .     31,719,424  79%    3.30MB/s    0:00:02  .     35,258,368  88%    3.29MB/s    0:00:01  .     38,797,312  97%    3.30MB/s    0:00:00  .     39,898,359 100%    3.29MB/s    0:00:11 (xfr#13, to-chk=77/1058)
+2022-06-21 22:47:03.614375 +0000 build-fedora4: <f+++++++++ fc32/rpm/xen-4.14.5-4.fc32.x86_64.buildinfo
+2022-06-21 22:47:03.615524 +0000 build-fedora4: .          5,203 100%   16.66kB/s    0:00:00  .          5,203 100%   16.66kB/s    0:00:00 (xfr#14, to-chk=76/1058)
+2022-06-21 22:47:03.615560 +0000 build-fedora4: <f+++++++++ fc32/rpm/xen-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:47:03.615575 +0000 build-fedora4: .         24,128 100%   77.25kB/s    0:00:00  .         24,128 100%   77.25kB/s    0:00:00 (xfr#15, to-chk=75/1058)
+2022-06-21 22:47:03.615585 +0000 build-fedora4: <f+++++++++ fc32/rpm/xen-debuginfo-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:47:03.652814 +0000 build-fedora4: .         32,768  47%  104.92kB/s    0:00:00  .         68,641 100%  196.00kB/s    0:00:00 (xfr#16, to-chk=73/1058)
+2022-06-21 22:47:03.652854 +0000 build-fedora4: <f+++++++++ fc32/rpm/xen-debugsource-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:47:03.954653 +0000 build-fedora4: .         32,768   3%   93.57kB/s    0:00:10  .      1,020,617 100%    1.51MB/s    0:00:00 (xfr#17, to-chk=71/1058)
+2022-06-21 22:47:03.954695 +0000 build-fedora4: <f+++++++++ fc32/rpm/xen-devel-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:47:04.031404 +0000 build-fedora4: .         32,768  11%   49.69kB/s    0:00:04  .        276,792 100%  375.42kB/s    0:00:00 (xfr#18, to-chk=69/1058)
+2022-06-21 22:47:04.031449 +0000 build-fedora4: <f+++++++++ fc32/rpm/xen-doc-4.14.5-4.fc32.noarch.rpm
+2022-06-21 22:47:04.183423 +0000 build-fedora4: .         32,768   5%   44.38kB/s    0:00:12  .        568,409 100%  636.57kB/s    0:00:00 (xfr#19, to-chk=67/1058)
+2022-06-21 22:47:04.183468 +0000 build-fedora4: <f+++++++++ fc32/rpm/xen-hypervisor-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:47:06.555069 +0000 build-fedora4: .         32,768   0%   36.66kB/s    0:03:40  .        458,752   5%  437.93kB/s    0:00:17  .      4,030,464  49%    1.87MB/s    0:00:02  .      7,569,408  93%    2.34MB/s    0:00:00  .      8,099,442 100%    2.38MB/s    0:00:03 (xfr#20, to-chk=50/1058)
+2022-06-21 22:47:06.555117 +0000 build-fedora4: <f+++++++++ fc32/rpm/xen-libs-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:47:06.705095 +0000 build-fedora4: .         32,768   5%  205.13kB/s    0:00:02  .        642,388 100%    1.99MB/s    0:00:00 (xfr#21, to-chk=48/1058)
+2022-06-21 22:47:06.705164 +0000 build-fedora4: <f+++++++++ fc32/rpm/xen-libs-debuginfo-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:47:07.236476 +0000 build-fedora4: .         32,768   1%   92.49kB/s    0:00:18  .      1,728,977 100%    1.97MB/s    0:00:00 (xfr#22, to-chk=46/1058)
+2022-06-21 22:47:07.236522 +0000 build-fedora4: <f+++++++++ fc32/rpm/xen-licenses-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:47:07.236538 +0000 build-fedora4: .         32,768  89%   38.14kB/s    0:00:00  .         36,759 100%   42.79kB/s    0:00:00 (xfr#23, to-chk=44/1058)
+2022-06-21 22:47:07.236571 +0000 build-fedora4: <f+++++++++ fc32/rpm/xen-qemu-tools-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:47:07.236586 +0000 build-fedora4: .         12,126 100%   14.11kB/s    0:00:00  .         12,126 100%   14.11kB/s    0:00:00 (xfr#24, to-chk=42/1058)
+2022-06-21 22:47:07.236595 +0000 build-fedora4: <f+++++++++ fc32/rpm/xen-qubes-vm-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:47:07.274697 +0000 build-fedora4: .         32,768  19%   38.10kB/s    0:00:03  .        169,760 100%  188.82kB/s    0:00:00 (xfr#25, to-chk=40/1058)
+2022-06-21 22:47:07.274734 +0000 build-fedora4: <f+++++++++ fc32/rpm/xen-qubes-vm-debuginfo-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:47:07.387596 +0000 build-fedora4: .         32,768  11%   34.86kB/s    0:00:07  .        297,598 100%  293.26kB/s    0:00:00 (xfr#26, to-chk=38/1058)
+2022-06-21 22:47:07.387641 +0000 build-fedora4: <f+++++++++ fc32/rpm/xen-runtime-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:47:13.057172 +0000 build-fedora4: .         32,768   0%   32.29kB/s    0:10:06  .        131,072   0%  124.39kB/s    0:02:36  .      3,637,248  18%    1.69MB/s    0:00:09  .      7,176,192  36%    2.22MB/s    0:00:05  .     10,715,136  54%    2.49MB/s    0:00:03  .     14,254,080  72%    3.29MB/s    0:00:01  .     17,793,024  90%    3.25MB/s    0:00:00  .     19,633,149 100%    2.81MB/s    0:00:06 (xfr#27, to-chk=36/1058)
+2022-06-21 22:47:13.057217 +0000 build-fedora4: <f+++++++++ fc32/rpm/xen-runtime-debuginfo-4.14.5-4.fc32.x86_64.rpm
+2022-06-21 22:47:13.360640 +0000 build-fedora4: .         32,768   3%   69.87kB/s    0:00:13  .        998,126 100%    1.25MB/s    0:00:00 (xfr#28, to-chk=34/1058)
+2022-06-21 22:47:14.768559 +0000 build-fedora4: Makefile:819: update target 'update-repo-current-testing' due to: internal-update-repo-current-testing.dom0.fc32.vmm-xen post-update-repo-current-testing
+2022-06-21 22:47:14.768603 +0000 build-fedora4: true
+2022-06-21 22:47:14.769213 +0000 build-fedora4: > done
+2022-06-21 22:47:14.769234 +0000 > closing log
