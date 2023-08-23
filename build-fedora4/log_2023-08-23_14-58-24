@@ -1,0 +1,669 @@
+2023-08-23 14:58:24.727562 +0000 > starting log
+2023-08-23 14:58:24.727835 +0000 build-fedora4: > starting build with log
+2023-08-23 14:58:24.727861 +0000 build-fedora4: >> make args: DISTS_VM= fc37 fc38 DIST_DOM0= BUILD_LOGS_URL= salt-vm-fc37=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2023-08-23_14-47-41 salt-vm-fc38=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2023-08-23_14-52-29 GIT_URL_salt=https://github.com/QubesOS/qubes-salt sign-all update-repo-current-testing
+2023-08-23 14:58:24.727870 +0000 build-fedora4: >> MAKEFLAGS=
+2023-08-23 14:58:24.727877 +0000 build-fedora4: >> COMPONENTS=salt
+2023-08-23 14:58:24.727884 +0000 build-fedora4: >> DISTS_VM=
+2023-08-23 14:58:24.727890 +0000 build-fedora4: >> DIST_DOM0=
+2023-08-23 14:58:24.727898 +0000 build-fedora4: >> qubes-builder 5407d687d1b542537e873f3b69f4985eaec360ba
+2023-08-23 14:58:24.727912 +0000 build-fedora4: >> qubes-builder/qubes-src/salt 394a6377c3c7db465a787962d308c2dd27d21217
+2023-08-23 14:58:24.727920 +0000 build-fedora4: !! pkgs/vm-fc32/salt-3000.3-2.fc32.noarch.rpm
+2023-08-23 14:58:24.727927 +0000 build-fedora4: !! pkgs/vm-fc32/salt-3000.3-2.fc32.src.rpm
+2023-08-23 14:58:24.727934 +0000 build-fedora4: !! pkgs/vm-fc32/salt-3000.3-2.fc32.x86_64.buildinfo
+2023-08-23 14:58:24.727942 +0000 build-fedora4: !! pkgs/vm-fc32/salt-api-3000.3-2.fc32.noarch.rpm
+2023-08-23 14:58:24.727949 +0000 build-fedora4: !! pkgs/vm-fc32/salt-cloud-3000.3-2.fc32.noarch.rpm
+2023-08-23 14:58:24.727956 +0000 build-fedora4: !! pkgs/vm-fc32/salt-master-3000.3-2.fc32.noarch.rpm
+2023-08-23 14:58:24.727963 +0000 build-fedora4: !! pkgs/vm-fc32/salt-minion-3000.3-2.fc32.noarch.rpm
+2023-08-23 14:58:24.727971 +0000 build-fedora4: !! pkgs/vm-fc32/salt-ssh-3000.3-2.fc32.noarch.rpm
+2023-08-23 14:58:24.727978 +0000 build-fedora4: !! pkgs/vm-fc32/salt-syndic-3000.3-2.fc32.noarch.rpm
+2023-08-23 14:58:24.727984 +0000 build-fedora4: !! pkgs/vm-fc32/salt.spec.list
+2023-08-23 14:58:24.727992 +0000 build-fedora4: !! pkgs/vm-fc37/salt-3005.1-4.fc37.x86_64.buildinfo
+2023-08-23 14:58:24.727999 +0000 build-fedora4: !! pkgs/vm-fc37/salt-3006.1-2.fc37.noarch.rpm
+2023-08-23 14:58:24.728006 +0000 build-fedora4: !! pkgs/vm-fc37/salt-3006.1-2.fc37.src.rpm
+2023-08-23 14:58:24.728013 +0000 build-fedora4: !! pkgs/vm-fc37/salt-3006.1-2.fc37.x86_64.buildinfo
+2023-08-23 14:58:24.728020 +0000 build-fedora4: !! pkgs/vm-fc37/salt-3006.2-2.fc37.noarch.rpm
+2023-08-23 14:58:24.728027 +0000 build-fedora4: !! pkgs/vm-fc37/salt-3006.2-2.fc37.src.rpm
+2023-08-23 14:58:24.728034 +0000 build-fedora4: !! pkgs/vm-fc37/salt-3006.2-2.fc37.x86_64.buildinfo
+2023-08-23 14:58:24.728041 +0000 build-fedora4: !! pkgs/vm-fc37/salt-api-3006.1-2.fc37.noarch.rpm
+2023-08-23 14:58:24.728048 +0000 build-fedora4: !! pkgs/vm-fc37/salt-api-3006.2-2.fc37.noarch.rpm
+2023-08-23 14:58:24.728055 +0000 build-fedora4: !! pkgs/vm-fc37/salt-cloud-3006.1-2.fc37.noarch.rpm
+2023-08-23 14:58:24.728062 +0000 build-fedora4: !! pkgs/vm-fc37/salt-cloud-3006.2-2.fc37.noarch.rpm
+2023-08-23 14:58:24.728070 +0000 build-fedora4: !! pkgs/vm-fc37/salt-master-3006.1-2.fc37.noarch.rpm
+2023-08-23 14:58:24.728077 +0000 build-fedora4: !! pkgs/vm-fc37/salt-master-3006.2-2.fc37.noarch.rpm
+2023-08-23 14:58:24.728084 +0000 build-fedora4: !! pkgs/vm-fc37/salt-minion-3006.1-2.fc37.noarch.rpm
+2023-08-23 14:58:24.728091 +0000 build-fedora4: !! pkgs/vm-fc37/salt-minion-3006.2-2.fc37.noarch.rpm
+2023-08-23 14:58:24.728099 +0000 build-fedora4: !! pkgs/vm-fc37/salt-ssh-3006.1-2.fc37.noarch.rpm
+2023-08-23 14:58:24.728106 +0000 build-fedora4: !! pkgs/vm-fc37/salt-ssh-3006.2-2.fc37.noarch.rpm
+2023-08-23 14:58:24.728113 +0000 build-fedora4: !! pkgs/vm-fc37/salt-syndic-3006.1-2.fc37.noarch.rpm
+2023-08-23 14:58:24.728120 +0000 build-fedora4: !! pkgs/vm-fc37/salt-syndic-3006.2-2.fc37.noarch.rpm
+2023-08-23 14:58:24.728126 +0000 build-fedora4: !! pkgs/vm-fc37/salt.spec.list
+2023-08-23 14:58:24.728133 +0000 build-fedora4: !! pkgs/vm-fc38/salt-3006.1-2.fc38.noarch.rpm
+2023-08-23 14:58:24.728140 +0000 build-fedora4: !! pkgs/vm-fc38/salt-3006.1-2.fc38.src.rpm
+2023-08-23 14:58:24.728147 +0000 build-fedora4: !! pkgs/vm-fc38/salt-3006.1-2.fc38.x86_64.buildinfo
+2023-08-23 14:58:24.728161 +0000 build-fedora4: !! pkgs/vm-fc38/salt-3006.2-2.fc38.noarch.rpm
+2023-08-23 14:58:24.728169 +0000 build-fedora4: !! pkgs/vm-fc38/salt-3006.2-2.fc38.src.rpm
+2023-08-23 14:58:24.728176 +0000 build-fedora4: !! pkgs/vm-fc38/salt-3006.2-2.fc38.x86_64.buildinfo
+2023-08-23 14:58:24.728184 +0000 build-fedora4: !! pkgs/vm-fc38/salt-api-3006.1-2.fc38.noarch.rpm
+2023-08-23 14:58:24.728191 +0000 build-fedora4: !! pkgs/vm-fc38/salt-api-3006.2-2.fc38.noarch.rpm
+2023-08-23 14:58:24.728198 +0000 build-fedora4: !! pkgs/vm-fc38/salt-cloud-3006.1-2.fc38.noarch.rpm
+2023-08-23 14:58:24.728205 +0000 build-fedora4: !! pkgs/vm-fc38/salt-cloud-3006.2-2.fc38.noarch.rpm
+2023-08-23 14:58:24.728212 +0000 build-fedora4: !! pkgs/vm-fc38/salt-master-3006.1-2.fc38.noarch.rpm
+2023-08-23 14:58:24.728220 +0000 build-fedora4: !! pkgs/vm-fc38/salt-master-3006.2-2.fc38.noarch.rpm
+2023-08-23 14:58:24.728227 +0000 build-fedora4: !! pkgs/vm-fc38/salt-minion-3006.1-2.fc38.noarch.rpm
+2023-08-23 14:58:24.728234 +0000 build-fedora4: !! pkgs/vm-fc38/salt-minion-3006.2-2.fc38.noarch.rpm
+2023-08-23 14:58:24.728242 +0000 build-fedora4: !! pkgs/vm-fc38/salt-ssh-3006.1-2.fc38.noarch.rpm
+2023-08-23 14:58:24.728249 +0000 build-fedora4: !! pkgs/vm-fc38/salt-ssh-3006.2-2.fc38.noarch.rpm
+2023-08-23 14:58:24.728256 +0000 build-fedora4: !! pkgs/vm-fc38/salt-syndic-3006.1-2.fc38.noarch.rpm
+2023-08-23 14:58:24.728263 +0000 build-fedora4: !! pkgs/vm-fc38/salt-syndic-3006.2-2.fc38.noarch.rpm
+2023-08-23 14:58:24.728270 +0000 build-fedora4: !! pkgs/vm-fc38/salt.spec.list
+2023-08-23 14:58:24.728276 +0000 build-fedora4: !! salt-2019.2.2.tar.gz
+2023-08-23 14:58:24.728283 +0000 build-fedora4: !! salt-3000.3.tar.gz
+2023-08-23 14:58:24.728289 +0000 build-fedora4: !! salt-3005.1.tar.gz
+2023-08-23 14:58:24.728295 +0000 build-fedora4: !! salt-3006.1.tar.gz
+2023-08-23 14:58:24.728302 +0000 build-fedora4: !! salt-3006.2.tar.gz
+2023-08-23 14:58:24.728313 +0000 build-fedora4: 5b20b652e29cb7fbb615b9161276ba9e60033d3095e02538b6e24e4064d50ae3bcb9f629eb465af863b8b62c8746db2a1cc0055060c3dc1a279b621fef8a90a3  pkgs/vm-fc32/salt-3000.3-2.fc32.noarch.rpm
+2023-08-23 14:58:24.728326 +0000 build-fedora4: c9dc70c72ec71eb5d6480ac8e636db8a0ec3263c3bb96ee3e772590b90c3ab844b306cc35554e9ba6385b00f5c91cab9cb3d3db28a5f83f9177525c6e8e7fb63  pkgs/vm-fc32/salt-3000.3-2.fc32.src.rpm
+2023-08-23 14:58:24.728338 +0000 build-fedora4: 1d6938f30a9498c41a4693c11cabc6537dc8b1dbd4add51fb32fd52e77b8dcd7df476f245a6af8e370cbb07207577ce5eacd7d3d5d155eacd51574bb7f91f976  pkgs/vm-fc32/salt-3000.3-2.fc32.x86_64.buildinfo
+2023-08-23 14:58:24.728350 +0000 build-fedora4: 459dea630de0f74dfc84b34d26879578cb65fcffc6d162fe2b76036fac1da0ff982b08ba57d8b636c62b68993540ddff6a6d8b7e942f6893fe63a508e59c9377  pkgs/vm-fc32/salt-api-3000.3-2.fc32.noarch.rpm
+2023-08-23 14:58:24.728362 +0000 build-fedora4: 23722c100f8f9515b6643c1563481e972f97b2ff9811de1ab064fdd1d05e54b4eb7f8f1511c9203b6991a70cbf4c1222ea753251340218c58e323dbc27e32416  pkgs/vm-fc32/salt-cloud-3000.3-2.fc32.noarch.rpm
+2023-08-23 14:58:24.728384 +0000 build-fedora4: 8ccadfae30e94fd20eba8c48af5477e52a98bdd557107d9f60022173b2a8152e14bf50c0e7a76c3bdd96f38fdde3358f952ffe259f8f53186688031ea205024f  pkgs/vm-fc32/salt-master-3000.3-2.fc32.noarch.rpm
+2023-08-23 14:58:24.728398 +0000 build-fedora4: c6ac07b1de5de4ea23c3ef99bf504beb1ee12d2d26872a50181bd8128554b44ee70dc39ec75d2ccaf1fa53ec594d04c4dd94d027f94e48a383ca38bb34b9ea2e  pkgs/vm-fc32/salt-minion-3000.3-2.fc32.noarch.rpm
+2023-08-23 14:58:24.728409 +0000 build-fedora4: bb485b1a57cc11130428a4f2dd29cd66fd744ec31584b167a0a10e88bc0b981322a5db4ae207745290575e850d523f085b0376dce514ca840e9b1d045523aab3  pkgs/vm-fc32/salt-ssh-3000.3-2.fc32.noarch.rpm
+2023-08-23 14:58:24.728421 +0000 build-fedora4: 1bfb9754a07da6e01867196901a45145cd3c01fb1cc25e73b06ba0817a064819b2d60711c85fb2b242f38bfe6243e83d58b012282c9fee39d631b27b88cfa7b6  pkgs/vm-fc32/salt-syndic-3000.3-2.fc32.noarch.rpm
+2023-08-23 14:58:24.728433 +0000 build-fedora4: 0703a4847e0eb0733bb94719c45b61a7b0a9454aeb7c34dc21f9a9f4170eda839a78102a44eae583019287cb99ff25910121fe1774a9ef50eb07332a31749a9d  pkgs/vm-fc32/salt.spec.list
+2023-08-23 14:58:24.728450 +0000 build-fedora4: 70b5831e5b4d1e04e0a00dc86a7fcc477a86224a452eb1d4fc5de9e9b65e9382bfc2596c41a38b0b779e78355ff5b76a191ebc7436b75abc3e4e77b0e1c7335c  pkgs/vm-fc37/salt-3005.1-4.fc37.x86_64.buildinfo
+2023-08-23 14:58:24.728463 +0000 build-fedora4: c617f2f609e8ab63f83aa727a7e5af23723a667dfbec2b552f6e34a2e3dab64e43f2e23a35c3244e45381fa6c6b4a4c174d3f1ca64c34f83561d98c47b88ca09  pkgs/vm-fc37/salt-3006.1-2.fc37.noarch.rpm
+2023-08-23 14:58:24.728475 +0000 build-fedora4: 19793ddebce4e218588651cce6fd5a9abc61f38f5a7409a7a31f921631a5f27ea561354d5166d4aca9ccb30931b6039b134269ebabf0fd1547f0c37dabdd2133  pkgs/vm-fc37/salt-3006.1-2.fc37.src.rpm
+2023-08-23 14:58:24.728487 +0000 build-fedora4: f21ab446765075c87b83ea99dfaa4e631bf4e8d7aaf409c0b286e3d2e5004913a62ec84fb4bfd8f92a41e30a93cc6f73c1f40c3cc9ff4abfd9162c16b066edce  pkgs/vm-fc37/salt-3006.1-2.fc37.x86_64.buildinfo
+2023-08-23 14:58:24.728498 +0000 build-fedora4: daa09af1cf19a27c2e4ee3a64ce6020310c2d886492fd22193634e9d197dc7c14dac466c0595ecc9a6d7b75e3692b68376071169ced2886219e19d78a1a7d718  pkgs/vm-fc37/salt-3006.2-2.fc37.noarch.rpm
+2023-08-23 14:58:24.728510 +0000 build-fedora4: b84a9093ef8a3c178715ec9fddb7a43a33d6f4b18123611c11b1467f2bb10639f7149cc6939dbbfe143cdaf075f563a32e9d5e36eaade082f886383e9d4e7cba  pkgs/vm-fc37/salt-3006.2-2.fc37.src.rpm
+2023-08-23 14:58:24.728522 +0000 build-fedora4: 19aafbc46574fc9764fb132a5af5bceb80288a35c4131ca104b2fd8a3f60d2c9d08d2c63e5dd797bebbccbcf70b0ed5a312fe06c4b602c8f0741caca2e717e45  pkgs/vm-fc37/salt-3006.2-2.fc37.x86_64.buildinfo
+2023-08-23 14:58:24.728534 +0000 build-fedora4: cf4163f1505b89d34a628d68864ea64e4657af7f86469067e4a7db0b36e7725aca3d67b289b066b0fc08aa8e745fec548fb3e684ba2de662e78c5cfb02251215  pkgs/vm-fc37/salt-api-3006.1-2.fc37.noarch.rpm
+2023-08-23 14:58:24.728545 +0000 build-fedora4: c822675af91e09f43a5004938071ee9b194c1abf19181d536dcf194d4bef138d249426dd230962caaff2ae2e93603a09aa83dd8b2a7d524235e1dd811a8a53ca  pkgs/vm-fc37/salt-api-3006.2-2.fc37.noarch.rpm
+2023-08-23 14:58:24.728557 +0000 build-fedora4: be2ba38d3c01da17499a47b87dc27e7c2e43b2cc22db8d14b3f064c0a312f9db74f1637ebc005f4cd26d7b84384c8d4c7b0fcbec15c9e5b649616d9784bdec19  pkgs/vm-fc37/salt-cloud-3006.1-2.fc37.noarch.rpm
+2023-08-23 14:58:24.728569 +0000 build-fedora4: 9df9df647363c415d3e17a3cecaa226f748e654dcf76131d9f8b9033008698887a1946eef5963c8ffe1f8d16045fb70c8c27a6109a7c4818cbffcc3859c65594  pkgs/vm-fc37/salt-cloud-3006.2-2.fc37.noarch.rpm
+2023-08-23 14:58:24.728581 +0000 build-fedora4: a3ed3fe3d99b7ef7d7177e1354de86472ae198e8b59349cbffdef0a29a5b85973e5073dac7bb8d4ef2489a7ddc859a8894cf045bb0da32c4e471bd2be86510d0  pkgs/vm-fc37/salt-master-3006.1-2.fc37.noarch.rpm
+2023-08-23 14:58:24.728593 +0000 build-fedora4: 25d7b211796dbe169c8dcda1d26a31e35116f7715a1aee341a9ce3d7c9c12dba7f3fbc1b4a260a3723aa12790b02db0e91a1c2770678b6c340c9161d3ea6fabd  pkgs/vm-fc37/salt-master-3006.2-2.fc37.noarch.rpm
+2023-08-23 14:58:24.728623 +0000 build-fedora4: 3004fbf8a09b9e41be840de810c99a647898981b724ff2f1a05858054dd86f312139b7fe729e695e35ea9b53d7493fd8650907e2d218deaff186ad83c690ec49  pkgs/vm-fc37/salt-minion-3006.1-2.fc37.noarch.rpm
+2023-08-23 14:58:24.728636 +0000 build-fedora4: 8f085c3f516fe377d4040dd946e9b7482290b519be12af738a5cf9a564dc528e42ee440fc303b03e2e9d9f9df8fc5a0b23a8dcb096b25922cc033f24df83a8b2  pkgs/vm-fc37/salt-minion-3006.2-2.fc37.noarch.rpm
+2023-08-23 14:58:24.728648 +0000 build-fedora4: bbdd380d1842ba8fe21a99923f4ea95dfbe8ba22b033714e06fdc65f57bf40c97d9fffaf3acb4de1ce9598bbfe8ea8fcc8c2b4c27d4c219da17783af1ceb6572  pkgs/vm-fc37/salt-ssh-3006.1-2.fc37.noarch.rpm
+2023-08-23 14:58:24.728660 +0000 build-fedora4: 93f5eba3f773ff2cc4bef953dd9e6decc00fdd4a12ca790f9175fe586e9a77466ca887e23ff8ca2a40f679e9dee87cb0b995d1cdd91c937c994686c428a8d898  pkgs/vm-fc37/salt-ssh-3006.2-2.fc37.noarch.rpm
+2023-08-23 14:58:24.728672 +0000 build-fedora4: 27eff0447a08bbf5acfe1abe5faed0ba658c6700405f96a3aeb6bcab5a91be149a59ca205816935615b40f12db770cc50f7702b3f672ad55aa94b2b36033bd19  pkgs/vm-fc37/salt-syndic-3006.1-2.fc37.noarch.rpm
+2023-08-23 14:58:24.728695 +0000 build-fedora4: 0f934b5d4d6f2d3e2c277606ea9251894927e5fff33dc57a61f05aeedb2e1db05d888aeaaf37dc3289a335520d44872b259d54218128e0ea027dbfbe830cb407  pkgs/vm-fc37/salt-syndic-3006.2-2.fc37.noarch.rpm
+2023-08-23 14:58:24.728708 +0000 build-fedora4: dfbdb8bb2a2ae347041a6ada338bbcb937b17351722ac7ba3b039e17ab3c55f60754492dab7e52d790a6ac7c7e6ffc0afbf913f447debcff755196ae7a317d15  pkgs/vm-fc37/salt.spec.list
+2023-08-23 14:58:24.728720 +0000 build-fedora4: 4c5aa44983246944a57b5e6c2df91d72d21c30228da7c9193bc996eb536673d0c2b1aaaf9d80e251670eb47244412a039b99bab5bd5a2002a3606e105f8e9606  pkgs/vm-fc38/salt-3006.1-2.fc38.noarch.rpm
+2023-08-23 14:58:24.757727 +0000 build-fedora4: cc230a435b3a1f30c4122b16b36e8fe63e5a294466918f3f08558fe03bb4e34ac989fab776354b29538ef7b7de497395c9fa9d56dcbb2c9561b0deb29aedee70  pkgs/vm-fc38/salt-3006.1-2.fc38.src.rpm
+2023-08-23 14:58:24.757782 +0000 build-fedora4: c47b8f7f4041e3b6fa9274ff64a4620d62cbfb9dddc5b049b9fc8222ad5debc34dd514ab3eab6b261c1857188813377b077931ed6cfe99d84d708ed56100285d  pkgs/vm-fc38/salt-3006.1-2.fc38.x86_64.buildinfo
+2023-08-23 14:58:24.796418 +0000 build-fedora4: baeb14146aaca60832f79a0134d8a96e3efff0e9077c2a8a7a646b8f22d8380dcb93d7471d7de42c6631cd5d9c8fd41da24b3875522289d1718c032c60f677f7  pkgs/vm-fc38/salt-3006.2-2.fc38.noarch.rpm
+2023-08-23 14:58:24.856272 +0000 build-fedora4: 1e8ca5e912b97b2724760be7c1bda997691e5a48420b1887d4f8439216afc7fea63eae61254e6a8d2f986363bde1a1ed2ca092197e084dad127481f61fd996d9  pkgs/vm-fc38/salt-3006.2-2.fc38.src.rpm
+2023-08-23 14:58:24.856445 +0000 build-fedora4: e3fe6bd17e47252e98c1d49e6317716742e29f1e69599423f9c8500666477f4568a310dedea0a6efccb16d553afa651e75c43eaf764929982c638ddc659294f4  pkgs/vm-fc38/salt-3006.2-2.fc38.x86_64.buildinfo
+2023-08-23 14:58:24.856467 +0000 build-fedora4: f4be3dc93667ac42cb31eb038b2e7a6f3858d43352bfdbf19c03b6fb9b61cf8f3c6e7a98bdc2f20a21f2e4f6e0bf26624375189f781709294359dae04d825d8d  pkgs/vm-fc38/salt-api-3006.1-2.fc38.noarch.rpm
+2023-08-23 14:58:24.856480 +0000 build-fedora4: 13080757df9cdbdacb796a9ed72b4b2361413a580f5b623d5e1be040334f88ebf03391e72ad4a0d60c65e2cb1fdebbd451d7575af5854a3b7270112878696fc5  pkgs/vm-fc38/salt-api-3006.2-2.fc38.noarch.rpm
+2023-08-23 14:58:24.856621 +0000 build-fedora4: 13ae59bcdd2021ada306ee5dca19b9dd5841da50bb2b5cf276dfdd056435122e9d3a402b5a2997d2912bb26bc44729291447e7c4564e69c8d99c67e059a4a521  pkgs/vm-fc38/salt-cloud-3006.1-2.fc38.noarch.rpm
+2023-08-23 14:58:24.856643 +0000 build-fedora4: bc170565b4a937b56fcf71d77fef14cd3c9ee468569f4a956f4ae432b3aa36bf0aba0d7530e9d4eca2b473d1839153c1e9dd2b673079162993c1625243a04199  pkgs/vm-fc38/salt-cloud-3006.2-2.fc38.noarch.rpm
+2023-08-23 14:58:24.867759 +0000 build-fedora4: f8b2d7e2297c5e48e214fbf7e46076039ea339a2db012ccfebdfeb2e09c321326c577169e5e031659d2ce7649022871e879b648290d4006d2c3fab04c3e3baae  pkgs/vm-fc38/salt-master-3006.1-2.fc38.noarch.rpm
+2023-08-23 14:58:24.893829 +0000 build-fedora4: 611398ab006059d5716436078b592f0ed73a7b4904b5a7d1e8c3db081eddb44fb21d9cd5a78684d30a1b44eeb58f05fce320c1f79143c277b290ba39a87a688b  pkgs/vm-fc38/salt-master-3006.2-2.fc38.noarch.rpm
+2023-08-23 14:58:24.893872 +0000 build-fedora4: 0b2d0359836cd964c867e25e889ec1a36dfbfb0071e9539cfed890fb97d082187bb9a8b782b94458274345d4219257ee225c72497be0b37a395b07fa91bdccda  pkgs/vm-fc38/salt-minion-3006.1-2.fc38.noarch.rpm
+2023-08-23 14:58:24.893886 +0000 build-fedora4: 3fcbb3825edcb96e51cb99ae7f5b8329b41d7c5be4ddf35e99e921a7d90e8ac9eb4966e9c6119479b0404537c564d786345a58c1473379e4cbc48051b41d5125  pkgs/vm-fc38/salt-minion-3006.2-2.fc38.noarch.rpm
+2023-08-23 14:58:24.893898 +0000 build-fedora4: 09866e3bcf448750522cfc30800f084c97d965fd52319f05d1024e03d6b740ccf1694395ecd5fbd102944d6a67bae7a180fc85026acf0a60e8114042569fce57  pkgs/vm-fc38/salt-ssh-3006.1-2.fc38.noarch.rpm
+2023-08-23 14:58:24.893910 +0000 build-fedora4: 0e46872ac5ab7cf765e47e07e4681b616a1c37843b75b7134890def3582f14a9cf3679de4f6b2603a77d1f97ac8171f174a99e6e0b853b3b51087dbf62db6e0e  pkgs/vm-fc38/salt-ssh-3006.2-2.fc38.noarch.rpm
+2023-08-23 14:58:24.893937 +0000 build-fedora4: 3ae96e12fd68e13b79111c70fd3ec3f3b5336515db2d8bbcde32ff9704ab083615fe0944807e7716db80f04391c179b2a56f8e367ce40de9c581479b1ca8e9aa  pkgs/vm-fc38/salt-syndic-3006.1-2.fc38.noarch.rpm
+2023-08-23 14:58:24.893950 +0000 build-fedora4: 4964e2ccd6894fa7576b58e1ba55919cf4f69c67817489f8eba9421574aeae664f398d50ee58c901805c4975fd5f57297d9e7efafde138b787939cc9989f1aa9  pkgs/vm-fc38/salt-syndic-3006.2-2.fc38.noarch.rpm
+2023-08-23 14:58:24.893962 +0000 build-fedora4: 66aa1ba8f19b59814d2ed5be873259538612c681240cc11c6c3b418443230208a325e270b7d36e7c197e8c5520b5e6c06464e76f2fd8cc3eb343ee3e60139075  pkgs/vm-fc38/salt.spec.list
+2023-08-23 14:58:24.920845 +0000 build-fedora4: 2bbf9765384f1f6c2336a3f421298c8900cf459e6d1ebc7fb89284014ef8db9f5215a68de2bb06dfa3404983160a0c4c589ffa3dc046611dd5409bd502938677  salt-2019.2.2.tar.gz
+2023-08-23 14:58:24.950844 +0000 build-fedora4: a4697da9a2f7d484b72145e8b83f6d9032369f87e2e7119a9d51f59b989488285406543f79142fc686c41c144f5878eefba37927137581c892c88f03fc3a8208  salt-3000.3.tar.gz
+2023-08-23 14:58:24.977806 +0000 build-fedora4: 391f995f0129f3d7104a0eea4fd83b18aa6ecae0fd7a2c77c1154e24b0bcd52cef4b63db12597c85737bb33ddf605e0c23370cef3bf47f9ea85af5b77d74dc50  salt-3005.1.tar.gz
+2023-08-23 14:58:25.009619 +0000 build-fedora4: edfb60c93e2c5b03e4945870bd394b70bdc7598abe12056124bbf912dc29f23e08f6ef569352e3bcdd4d96f092bb6b8ab1765d13f582ea2d3512f85a92de5e95  salt-3006.1.tar.gz
+2023-08-23 14:58:25.043694 +0000 build-fedora4: 2626cb5beb1b30fc63f554f5804f0d9b7e36b7c569c5f9049e5f5ac5a413e9d99a98b3d91089683338e3d3890ec973dff80782b4e41acb291872e45084fd2546  salt-3006.2.tar.gz
+2023-08-23 14:58:25.108817 +0000 build-fedora4: ================================================================================
+2023-08-23 14:58:25.108860 +0000 build-fedora4:                            B U I L D   I N F O                                  
+2023-08-23 14:58:25.108872 +0000 build-fedora4: Items in red indicate it was automatically generated by configuration file(s)
+2023-08-23 14:58:25.108881 +0000 build-fedora4: Items in white indicate it was automatically removed by configuration file(s)
+2023-08-23 14:58:25.108890 +0000 build-fedora4: ================================================================================
+2023-08-23 14:58:25.108896 +0000 build-fedora4: DISTS_VM:
+2023-08-23 14:58:25.113686 +0000 build-fedora4:      fc37, fc38,
+2023-08-23 14:58:25.113742 +0000 build-fedora4: DISTS_ALL:
+2023-08-23 14:58:25.116032 +0000 build-fedora4:      vm-fc37, vm-fc38,
+2023-08-23 14:58:25.116064 +0000 build-fedora4: DIST_DOM0:
+2023-08-23 14:58:25.119311 +0000 build-fedora4:     
+2023-08-23 14:58:25.119350 +0000 build-fedora4: BUILDER_PLUGINS:
+2023-08-23 14:58:25.123461 +0000 build-fedora4:      builder-rpm, builder-debian, mgmt-salt, linux-yum, release-configs, builder-github,
+2023-08-23 14:58:25.123493 +0000 build-fedora4: COMPONENTS:
+2023-08-23 14:58:25.125656 +0000 build-fedora4:      salt,
+2023-08-23 14:58:25.129203 +0000 build-fedora4: GIT_REPOS:
+2023-08-23 14:58:25.129346 +0000 build-fedora4:      qubes-src/salt,
+2023-08-23 14:58:25.132906 +0000 build-fedora4: TEMPLATE:
+2023-08-23 14:58:25.132943 +0000 build-fedora4:     
+2023-08-23 14:58:25.134833 +0000 build-fedora4: TEMPLATE_FLAVOR_DIR:
+2023-08-23 14:58:25.137595 +0000 build-fedora4:     
+2023-08-23 14:58:25.137649 +0000 build-fedora4: TEMPLATE_ALIAS:
+2023-08-23 14:58:25.140839 +0000 build-fedora4:      stretch:stretch+standard, stretch+gnome:stretch+gnome+standard,
+2023-08-23 14:58:25.140874 +0000 build-fedora4:      stretch+minimal:stretch+minimal+no-recommends, buster:buster+gnome,
+2023-08-23 14:58:25.140884 +0000 build-fedora4:      buster+minimal:buster+minimal+no-recommends, bullseye:bullseye+gnome+firmware,
+2023-08-23 14:58:25.140894 +0000 build-fedora4:      bullseye+minimal:bullseye+minimal+no-recommends, bookworm:bookworm+gnome+firmware,
+2023-08-23 14:58:25.140918 +0000 build-fedora4:      bookworm+minimal:bookworm+minimal+no-recommends, bionic:bionic+standard,
+2023-08-23 14:58:25.140929 +0000 build-fedora4:      focal:focal+standard, whonix-gateway-15:buster+whonix-gateway+minimal+no-recommends,
+2023-08-23 14:58:25.140938 +0000 build-fedora4:      whonix-workstation-15:buster+whonix-workstation+minimal+no-recommends,
+2023-08-23 14:58:25.140946 +0000 build-fedora4:      whonix-gateway-16:bullseye+whonix-gateway+minimal+no-recommends,
+2023-08-23 14:58:25.140955 +0000 build-fedora4:      whonix-workstation-16:bullseye+whonix-workstation+minimal+no-recommends,
+2023-08-23 14:58:25.140962 +0000 build-fedora4: TEMPLATE_LABEL:
+2023-08-23 14:58:25.143943 +0000 build-fedora4:      fc37:fedora-37, fc38:fedora-38, fc34:fedora-34 fc35:fedora-35 fc36:fedora-36 fc34+minimal:fedora-34-minimal
+2023-08-23 14:58:25.143979 +0000 build-fedora4:      fc35+minimal:fedora-35-minimal fc36+minimal:fedora-36-minimal fc37+minimal:fedora-37-minimal
+2023-08-23 14:58:25.143991 +0000 build-fedora4:      fc38+minimal:fedora-38-minimal fc34+xfce:fedora-34-xfce fc35+xfce:fedora-35-xfce fc36+xfce:fedora-36-xfce
+2023-08-23 14:58:25.144001 +0000 build-fedora4:      fc37+xfce:fedora-37-xfce fc38+xfce:fedora-38-xfce stretch:debian-9 stretch+standard:debian-9
+2023-08-23 14:58:25.144010 +0000 build-fedora4:      stretch+xfce:debian-9-xfce buster+gnome:debian-10 buster+xfce:debian-10-xfce bullseye:debian-11
+2023-08-23 14:58:25.144020 +0000 build-fedora4:      bullseye+standard+firmware:debian-11 bullseye+xfce:debian-11-xfce bookworm:debian-12
+2023-08-23 14:58:25.144029 +0000 build-fedora4:      bookworm+standard:debian-12 bookworm+xfce:debian-12-xfce bionic+standard:bionic
+2023-08-23 14:58:25.144038 +0000 build-fedora4:      focal+standard:focal buster+whonix-gateway+minimal+no-recommends:whonix-gw-15
+2023-08-23 14:58:25.144046 +0000 build-fedora4:      buster+whonix-workstation+minimal+no-recommends:whonix-ws-15
+2023-08-23 14:58:25.144054 +0000 build-fedora4:      bullseye+whonix-gateway+minimal+no-recommends:whonix-gw-16
+2023-08-23 14:58:25.144063 +0000 build-fedora4:      bullseye+whonix-workstation+minimal+no-recommends:whonix-ws-16 centos7:centos-7
+2023-08-23 14:58:25.144072 +0000 build-fedora4:      centos7+minimal:centos-7-minimal centos7+xfce:centos-7-xfce centos-stream8:centos-stream-8
+2023-08-23 14:58:25.144081 +0000 build-fedora4:      centos-stream8+minimal:centos-stream-8-minimal centos-stream8+xfce:centos-stream-8-xfce
+2023-08-23 14:58:25.164695 +0000 build-fedora4: > running make
+2023-08-23 14:58:25.175707 +0000 build-fedora4: Makefile:299: update target 'sign.vm.fc37.salt' due to: target does not exist
+2023-08-23 14:58:25.175761 +0000 build-fedora4: if [ -n "salt" -a "0" -ne 0 ]; then BRANCH=release4.1; branch_var="BRANCH_salt"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/salt > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2023-08-23 14:58:25.175773 +0000 build-fedora4: SIGN_KEY=5817A43B283DE5A9181A522E1848792F9E2795E9; \
+2023-08-23 14:58:25.175781 +0000 build-fedora4: sign_key_var="SIGN_KEY_${DIST%%+*}"; \
+2023-08-23 14:58:25.175790 +0000 build-fedora4: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2023-08-23 14:58:25.175802 +0000 build-fedora4: if [ "salt" = linux-template-builder ]; then
+2023-08-23 14:58:25.175812 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc37 template-name)
+2023-08-23 14:58:25.175819 +0000 build-fedora4: fi
+2023-08-23 14:58:25.175827 +0000 build-fedora4: if [ -r qubes-src/salt/Makefile.builder ]; then \
+2023-08-23 14:58:25.175835 +0000 build-fedora4: .make --no-print-directory -f Makefile.generic \
+2023-08-23 14:58:25.175842 +0000 build-fedora4: ..DIST=fc37 \
+2023-08-23 14:58:25.175862 +0000 build-fedora4: ..PACKAGE_SET=vm \
+2023-08-23 14:58:25.175870 +0000 build-fedora4: ..COMPONENT=salt \
+2023-08-23 14:58:25.175877 +0000 build-fedora4: ..SIGN_KEY=$SIGN_KEY \
+2023-08-23 14:58:25.175884 +0000 build-fedora4: ..sign || exit 1; \
+2023-08-23 14:58:25.175891 +0000 build-fedora4: elif [ -d qubes-src/salt/rpm ]; then \
+2023-08-23 14:58:25.175898 +0000 build-fedora4: .# Old mechanism supported only for RPM
+2023-08-23 14:58:25.175906 +0000 build-fedora4: FILE_LIST=""; for RPM in qubes-src/salt/rpm/*/*.rpm; do \
+2023-08-23 14:58:25.175915 +0000 build-fedora4: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2023-08-23 14:58:25.175922 +0000 build-fedora4: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2023-08-23 14:58:25.175928 +0000 build-fedora4: ..fi ;\
+2023-08-23 14:58:25.175935 +0000 build-fedora4: .done ; \
+2023-08-23 14:58:25.175941 +0000 build-fedora4: .if [ -n "$FILE_LIST" ]; then \
+2023-08-23 14:58:25.175948 +0000 build-fedora4: ..echo "--> Signing..."; \
+2023-08-23 14:58:25.175956 +0000 build-fedora4: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2023-08-23 14:58:25.175963 +0000 build-fedora4: ..if [ -n "$SIGN_KEY" ]; then \
+2023-08-23 14:58:25.175970 +0000 build-fedora4: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2023-08-23 14:58:25.175977 +0000 build-fedora4: ..fi; \
+2023-08-23 14:58:25.175985 +0000 build-fedora4: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2023-08-23 14:58:25.175992 +0000 build-fedora4: .fi; \
+2023-08-23 14:58:25.175998 +0000 build-fedora4: fi
+2023-08-23 14:58:25.195995 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:204: update target 'sign-prep' due to: target does not exist
+2023-08-23 14:58:25.196035 +0000 build-fedora4: if [ -n "qubes-gpg-client-wrapper" ]; then \
+2023-08-23 14:58:25.196047 +0000 build-fedora4: .mkdir -p /home/user/builder-r4.1/keyrings/rpmdb; \
+2023-08-23 14:58:25.196055 +0000 build-fedora4: .tmpname=$(mktemp); \
+2023-08-23 14:58:25.196065 +0000 build-fedora4: .qubes-gpg-client-wrapper --armor --export "5817A43B283DE5A9181A522E1848792F9E2795E9" > "$tmpname"; \
+2023-08-23 14:58:25.196075 +0000 build-fedora4: .rpmkeys --dbpath=/home/user/builder-r4.1/keyrings/rpmdb --import "$tmpname"; \
+2023-08-23 14:58:25.196082 +0000 build-fedora4: .rm -f "$tmpname"; \
+2023-08-23 14:58:25.196088 +0000 build-fedora4: fi
+2023-08-23 14:58:25.687102 +0000 build-fedora4: warning: Found bdb_ro Packages database while attempting sqlite backend: using bdb_ro backend.
+2023-08-23 14:58:25.821122 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:25.821168 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:25.894970 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:25.895016 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:25.961540 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:25.961589 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:26.000954 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:26.003251 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:26.071224 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:220: update target 'sign' due to: sign-prep
+2023-08-23 14:58:26.071289 +0000 build-fedora4: cd qubes-src/salt && for pkg in pkgs/vm-fc37/salt-3006.2-2.fc37.noarch.rpm pkgs/vm-fc37/salt-3006.2-2.fc37.src.rpm pkgs/vm-fc37/salt-api-3006.2-2.fc37.noarch.rpm pkgs/vm-fc37/salt-cloud-3006.2-2.fc37.noarch.rpm pkgs/vm-fc37/salt-master-3006.2-2.fc37.noarch.rpm pkgs/vm-fc37/salt-minion-3006.2-2.fc37.noarch.rpm pkgs/vm-fc37/salt-ssh-3006.2-2.fc37.noarch.rpm pkgs/vm-fc37/salt-syndic-3006.2-2.fc37.noarch.rpm pkgs/vm-fc37/salt-3006.2-2.fc37.x86_64.buildinfo ; do \
+2023-08-23 14:58:26.071319 +0000 build-fedora4: .if [ "${pkg##*.}" = "buildinfo" ]; then \
+2023-08-23 14:58:26.071336 +0000 build-fedora4: ../home/user/builder-r4.1/qubes-src/builder-rpm/scripts/update-rpmbuildinfo "$pkg" | /usr/bin/qubes-gpg-client-wrapper --clearsign --local-user 5817A43B283DE5A9181A522E1848792F9E2795E9 > "$pkg".tmp && \
+2023-08-23 14:58:26.071345 +0000 build-fedora4: ..mv -f "$pkg".tmp "$pkg"; \
+2023-08-23 14:58:26.071354 +0000 build-fedora4: .elif [ "$(rpmkeys --checksig -- "$pkg")" != "$pkg: digests signatures OK" ]; then \
+2023-08-23 14:58:26.071365 +0000 build-fedora4: ..setsid -w rpmsign --digest-algo=sha256 --key-id=5817A43B283DE5A9181A522E1848792F9E2795E9 --addsign  -- "$pkg" </dev/null || exit 1; \
+2023-08-23 14:58:26.071371 +0000 build-fedora4: .fi; \
+2023-08-23 14:58:26.071377 +0000 build-fedora4: done
+2023-08-23 14:58:26.364029 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2023-08-23 14:58:26.612471 +0000 build-fedora4: pkgs/vm-fc37/salt-3006.2-2.fc37.noarch.rpm:
+2023-08-23 14:58:26.922263 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2023-08-23 14:58:27.159734 +0000 build-fedora4: pkgs/vm-fc37/salt-3006.2-2.fc37.src.rpm:
+2023-08-23 14:58:27.193785 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2023-08-23 14:58:27.439031 +0000 build-fedora4: pkgs/vm-fc37/salt-api-3006.2-2.fc37.noarch.rpm:
+2023-08-23 14:58:27.468738 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2023-08-23 14:58:27.710635 +0000 build-fedora4: pkgs/vm-fc37/salt-cloud-3006.2-2.fc37.noarch.rpm:
+2023-08-23 14:58:27.795765 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2023-08-23 14:58:28.032246 +0000 build-fedora4: pkgs/vm-fc37/salt-master-3006.2-2.fc37.noarch.rpm:
+2023-08-23 14:58:28.070378 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2023-08-23 14:58:28.321207 +0000 build-fedora4: pkgs/vm-fc37/salt-minion-3006.2-2.fc37.noarch.rpm:
+2023-08-23 14:58:28.384330 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2023-08-23 14:58:29.208324 +0000 build-fedora4: pkgs/vm-fc37/salt-ssh-3006.2-2.fc37.noarch.rpm:
+2023-08-23 14:58:29.245876 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2023-08-23 14:58:29.722705 +0000 build-fedora4: pkgs/vm-fc37/salt-syndic-3006.2-2.fc37.noarch.rpm:
+2023-08-23 14:58:30.101990 +0000 build-fedora4: Makefile:299: update target 'sign.vm.fc38.salt' due to: target does not exist
+2023-08-23 14:58:30.102057 +0000 build-fedora4: if [ -n "salt" -a "0" -ne 0 ]; then BRANCH=release4.1; branch_var="BRANCH_salt"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/salt > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2023-08-23 14:58:30.102070 +0000 build-fedora4: SIGN_KEY=5817A43B283DE5A9181A522E1848792F9E2795E9; \
+2023-08-23 14:58:30.102078 +0000 build-fedora4: sign_key_var="SIGN_KEY_${DIST%%+*}"; \
+2023-08-23 14:58:30.102085 +0000 build-fedora4: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2023-08-23 14:58:30.102092 +0000 build-fedora4: if [ "salt" = linux-template-builder ]; then
+2023-08-23 14:58:30.102101 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc38 template-name)
+2023-08-23 14:58:30.102126 +0000 build-fedora4: fi
+2023-08-23 14:58:30.102135 +0000 build-fedora4: if [ -r qubes-src/salt/Makefile.builder ]; then \
+2023-08-23 14:58:30.102144 +0000 build-fedora4: .make --no-print-directory -f Makefile.generic \
+2023-08-23 14:58:30.102150 +0000 build-fedora4: ..DIST=fc38 \
+2023-08-23 14:58:30.102156 +0000 build-fedora4: ..PACKAGE_SET=vm \
+2023-08-23 14:58:30.102164 +0000 build-fedora4: ..COMPONENT=salt \
+2023-08-23 14:58:30.102170 +0000 build-fedora4: ..SIGN_KEY=$SIGN_KEY \
+2023-08-23 14:58:30.102177 +0000 build-fedora4: ..sign || exit 1; \
+2023-08-23 14:58:30.102183 +0000 build-fedora4: elif [ -d qubes-src/salt/rpm ]; then \
+2023-08-23 14:58:30.102190 +0000 build-fedora4: .# Old mechanism supported only for RPM
+2023-08-23 14:58:30.102198 +0000 build-fedora4: FILE_LIST=""; for RPM in qubes-src/salt/rpm/*/*.rpm; do \
+2023-08-23 14:58:30.102206 +0000 build-fedora4: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2023-08-23 14:58:30.102213 +0000 build-fedora4: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2023-08-23 14:58:30.102219 +0000 build-fedora4: ..fi ;\
+2023-08-23 14:58:30.102225 +0000 build-fedora4: .done ; \
+2023-08-23 14:58:30.102232 +0000 build-fedora4: .if [ -n "$FILE_LIST" ]; then \
+2023-08-23 14:58:30.102238 +0000 build-fedora4: ..echo "--> Signing..."; \
+2023-08-23 14:58:30.102244 +0000 build-fedora4: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2023-08-23 14:58:30.102251 +0000 build-fedora4: ..if [ -n "$SIGN_KEY" ]; then \
+2023-08-23 14:58:30.102258 +0000 build-fedora4: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2023-08-23 14:58:30.102263 +0000 build-fedora4: ..fi; \
+2023-08-23 14:58:30.102271 +0000 build-fedora4: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2023-08-23 14:58:30.102277 +0000 build-fedora4: .fi; \
+2023-08-23 14:58:30.102282 +0000 build-fedora4: fi
+2023-08-23 14:58:30.134878 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:204: update target 'sign-prep' due to: target does not exist
+2023-08-23 14:58:30.134924 +0000 build-fedora4: if [ -n "qubes-gpg-client-wrapper" ]; then \
+2023-08-23 14:58:30.134935 +0000 build-fedora4: .mkdir -p /home/user/builder-r4.1/keyrings/rpmdb; \
+2023-08-23 14:58:30.134942 +0000 build-fedora4: .tmpname=$(mktemp); \
+2023-08-23 14:58:30.134952 +0000 build-fedora4: .qubes-gpg-client-wrapper --armor --export "5817A43B283DE5A9181A522E1848792F9E2795E9" > "$tmpname"; \
+2023-08-23 14:58:30.134961 +0000 build-fedora4: .rpmkeys --dbpath=/home/user/builder-r4.1/keyrings/rpmdb --import "$tmpname"; \
+2023-08-23 14:58:30.134968 +0000 build-fedora4: .rm -f "$tmpname"; \
+2023-08-23 14:58:30.134974 +0000 build-fedora4: fi
+2023-08-23 14:58:30.624597 +0000 build-fedora4: warning: Found bdb_ro Packages database while attempting sqlite backend: using bdb_ro backend.
+2023-08-23 14:58:30.663664 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:30.663709 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:30.685741 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:30.685796 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:30.706354 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:30.706397 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:30.731520 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:30.731568 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:30.757520 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:220: update target 'sign' due to: sign-prep
+2023-08-23 14:58:30.757584 +0000 build-fedora4: cd qubes-src/salt && for pkg in pkgs/vm-fc38/salt-3006.2-2.fc38.noarch.rpm pkgs/vm-fc38/salt-3006.2-2.fc38.src.rpm pkgs/vm-fc38/salt-api-3006.2-2.fc38.noarch.rpm pkgs/vm-fc38/salt-cloud-3006.2-2.fc38.noarch.rpm pkgs/vm-fc38/salt-master-3006.2-2.fc38.noarch.rpm pkgs/vm-fc38/salt-minion-3006.2-2.fc38.noarch.rpm pkgs/vm-fc38/salt-ssh-3006.2-2.fc38.noarch.rpm pkgs/vm-fc38/salt-syndic-3006.2-2.fc38.noarch.rpm pkgs/vm-fc38/salt-3006.2-2.fc38.x86_64.buildinfo ; do \
+2023-08-23 14:58:30.757636 +0000 build-fedora4: .if [ "${pkg##*.}" = "buildinfo" ]; then \
+2023-08-23 14:58:30.757653 +0000 build-fedora4: ../home/user/builder-r4.1/qubes-src/builder-rpm/scripts/update-rpmbuildinfo "$pkg" | /usr/bin/qubes-gpg-client-wrapper --clearsign --local-user 5817A43B283DE5A9181A522E1848792F9E2795E9 > "$pkg".tmp && \
+2023-08-23 14:58:30.757662 +0000 build-fedora4: ..mv -f "$pkg".tmp "$pkg"; \
+2023-08-23 14:58:30.757672 +0000 build-fedora4: .elif [ "$(rpmkeys --checksig -- "$pkg")" != "$pkg: digests signatures OK" ]; then \
+2023-08-23 14:58:30.757682 +0000 build-fedora4: ..setsid -w rpmsign --digest-algo=sha256 --key-id=5817A43B283DE5A9181A522E1848792F9E2795E9 --addsign  -- "$pkg" </dev/null || exit 1; \
+2023-08-23 14:58:30.757688 +0000 build-fedora4: .fi; \
+2023-08-23 14:58:30.757694 +0000 build-fedora4: done
+2023-08-23 14:58:30.947580 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2023-08-23 14:58:31.428147 +0000 build-fedora4: pkgs/vm-fc38/salt-3006.2-2.fc38.noarch.rpm:
+2023-08-23 14:58:31.797172 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2023-08-23 14:58:32.086030 +0000 build-fedora4: pkgs/vm-fc38/salt-3006.2-2.fc38.src.rpm:
+2023-08-23 14:58:32.115347 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2023-08-23 14:58:32.398074 +0000 build-fedora4: pkgs/vm-fc38/salt-api-3006.2-2.fc38.noarch.rpm:
+2023-08-23 14:58:32.429596 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2023-08-23 14:58:32.703230 +0000 build-fedora4: pkgs/vm-fc38/salt-cloud-3006.2-2.fc38.noarch.rpm:
+2023-08-23 14:58:32.773264 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2023-08-23 14:58:33.027553 +0000 build-fedora4: pkgs/vm-fc38/salt-master-3006.2-2.fc38.noarch.rpm:
+2023-08-23 14:58:33.059263 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2023-08-23 14:58:33.363251 +0000 build-fedora4: pkgs/vm-fc38/salt-minion-3006.2-2.fc38.noarch.rpm:
+2023-08-23 14:58:33.388800 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2023-08-23 14:58:33.644031 +0000 build-fedora4: pkgs/vm-fc38/salt-ssh-3006.2-2.fc38.noarch.rpm:
+2023-08-23 14:58:33.678662 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2023-08-23 14:58:33.969073 +0000 build-fedora4: pkgs/vm-fc38/salt-syndic-3006.2-2.fc38.noarch.rpm:
+2023-08-23 14:58:34.330852 +0000 build-fedora4: Makefile:863: update target 'internal-update-repo-current-testing.vm.fc37.salt' due to: target does not exist
+2023-08-23 14:58:34.330899 +0000 build-fedora4: repo_base_var="LINUX_REPO_${DIST//-/_}_BASEDIR"; \
+2023-08-23 14:58:34.330908 +0000 build-fedora4: if [ "salt" = linux-template-builder ]; then \
+2023-08-23 14:58:34.330917 +0000 build-fedora4: .# templates belongs to dom0 repository, even though PACKAGE_SET=vm
+2023-08-23 14:58:34.330924 +0000 build-fedora4: repo_base_var="LINUX_REPO__BASEDIR"; \
+2023-08-23 14:58:34.330930 +0000 build-fedora4: fi; \
+2023-08-23 14:58:34.330937 +0000 build-fedora4: if [ -n "${!repo_base_var}" ]; then \
+2023-08-23 14:58:34.330944 +0000 build-fedora4: .repo_basedir="${!repo_base_var}"; \
+2023-08-23 14:58:34.330950 +0000 build-fedora4: else \
+2023-08-23 14:58:34.330957 +0000 build-fedora4: .repo_basedir="qubes-src/linux-yum/r4.1"; \
+2023-08-23 14:58:34.330962 +0000 build-fedora4: fi; \
+2023-08-23 14:58:34.330969 +0000 build-fedora4: if [ -r qubes-src/salt/Makefile.builder ]; then \
+2023-08-23 14:58:34.330992 +0000 build-fedora4: .echo -n "Updating qubes-src/salt... "; \
+2023-08-23 14:58:34.330999 +0000 build-fedora4: .if [ "0" -eq 1 ]; then \
+2023-08-23 14:58:34.331007 +0000 build-fedora4: ..vtag=`git -C qubes-src/salt tag --points-at HEAD --list v*`; \
+2023-08-23 14:58:34.331014 +0000 build-fedora4: ..if [ -z "$vtag" ]; then \
+2023-08-23 14:58:34.331020 +0000 build-fedora4: ...echo "no version tag"; \
+2023-08-23 14:58:34.331026 +0000 build-fedora4: ...exit 0; \
+2023-08-23 14:58:34.331032 +0000 build-fedora4: ..fi; \
+2023-08-23 14:58:34.331037 +0000 build-fedora4: .fi; \
+2023-08-23 14:58:34.331044 +0000 build-fedora4: .if [ "salt" = linux-template-builder ]; then
+2023-08-23 14:58:34.331058 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc37 template-name)
+2023-08-23 14:58:34.331065 +0000 build-fedora4: fi
+2023-08-23 14:58:34.331080 +0000 build-fedora4: component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc37 PACKAGE_SET=vm COMPONENT=`basename qubes-src/salt` UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc37 get-var GET_VAR=PACKAGE_LIST); \
+2023-08-23 14:58:34.331088 +0000 build-fedora4: .if [ -z "$component_packages" ]; then \
+2023-08-23 14:58:34.331094 +0000 build-fedora4: ..echo "no packages."; \
+2023-08-23 14:58:34.331101 +0000 build-fedora4: ..exit 0; \
+2023-08-23 14:58:34.331106 +0000 build-fedora4: .fi; \
+2023-08-23 14:58:34.331113 +0000 build-fedora4: .make -s -f Makefile.generic DIST=fc37 PACKAGE_SET=vm \
+2023-08-23 14:58:34.331120 +0000 build-fedora4: ..COMPONENT=`basename qubes-src/salt` \
+2023-08-23 14:58:34.331127 +0000 build-fedora4: ..SNAPSHOT_REPO=current-testing \
+2023-08-23 14:58:34.331133 +0000 build-fedora4: ..TARGET_REPO=current-testing \
+2023-08-23 14:58:34.331141 +0000 build-fedora4: ..UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc37 \
+2023-08-23 14:58:34.331151 +0000 build-fedora4: ..SNAPSHOT_FILE=/home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-fc37-`basename qubes-src/salt` \
+2023-08-23 14:58:34.331160 +0000 build-fedora4: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2023-08-23_14-47-41 \
+2023-08-23 14:58:34.331167 +0000 build-fedora4: ..update-repo || exit 1; \
+2023-08-23 14:58:34.331176 +0000 build-fedora4: elif make -C qubes-src/salt -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2023-08-23 14:58:34.331183 +0000 build-fedora4: .echo "Updating qubes-src/salt... "; \
+2023-08-23 14:58:34.331192 +0000 build-fedora4: .DIST=fc37 UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc37 \
+2023-08-23 14:58:34.331199 +0000 build-fedora4: .make -s -C qubes-src/salt update-repo-current-testing || exit 1; \
+2023-08-23 14:58:34.331205 +0000 build-fedora4: else \
+2023-08-23 14:58:34.331212 +0000 build-fedora4: .echo -n "Updating qubes-src/salt... skipping."; \
+2023-08-23 14:58:34.331218 +0000 build-fedora4: fi; \
+2023-08-23 14:58:34.331224 +0000 build-fedora4: echo
+2023-08-23 14:58:34.422698 +0000 build-fedora4: Updating qubes-src/salt... error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:34.422744 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:34.445678 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:34.445725 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:34.467957 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:34.468002 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:34.490447 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:34.490493 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:34.520384 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:34.520447 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:34.543709 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:34.543770 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:34.580631 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:34.580678 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:34.605765 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:34.605810 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:34.639031 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:34.639077 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:34.661407 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:34.661451 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:34.681710 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:34.681755 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:34.708086 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:34.708131 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:34.718876 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:179: update target 'update-repo-do' due to: target does not exist
+2023-08-23 14:58:34.718922 +0000 build-fedora4: mkdir -p /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/fc37/rpm
+2023-08-23 14:58:34.731752 +0000 build-fedora4: if [ -n "pkgs/vm-fc37/salt-3006.2-2.fc37.noarch.rpm pkgs/vm-fc37/salt-3006.2-2.fc37.src.rpm pkgs/vm-fc37/salt-api-3006.2-2.fc37.noarch.rpm pkgs/vm-fc37/salt-cloud-3006.2-2.fc37.noarch.rpm pkgs/vm-fc37/salt-master-3006.2-2.fc37.noarch.rpm pkgs/vm-fc37/salt-minion-3006.2-2.fc37.noarch.rpm pkgs/vm-fc37/salt-ssh-3006.2-2.fc37.noarch.rpm pkgs/vm-fc37/salt-syndic-3006.2-2.fc37.noarch.rpm pkgs/vm-fc37/salt-3006.2-2.fc37.x86_64.buildinfo" ]; then \
+2023-08-23 14:58:34.731819 +0000 build-fedora4: .cd qubes-src/salt && ln -f pkgs/vm-fc37/salt-3006.2-2.fc37.noarch.rpm pkgs/vm-fc37/salt-3006.2-2.fc37.src.rpm pkgs/vm-fc37/salt-api-3006.2-2.fc37.noarch.rpm pkgs/vm-fc37/salt-cloud-3006.2-2.fc37.noarch.rpm pkgs/vm-fc37/salt-master-3006.2-2.fc37.noarch.rpm pkgs/vm-fc37/salt-minion-3006.2-2.fc37.noarch.rpm pkgs/vm-fc37/salt-ssh-3006.2-2.fc37.noarch.rpm pkgs/vm-fc37/salt-syndic-3006.2-2.fc37.noarch.rpm pkgs/vm-fc37/salt-3006.2-2.fc37.x86_64.buildinfo  /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/fc37/rpm/; \
+2023-08-23 14:58:34.731829 +0000 build-fedora4: else \
+2023-08-23 14:58:34.731840 +0000 build-fedora4: .echo "`tput bold`No packages defined by salt.spec, syntax error?`tput sgr0`"; \
+2023-08-23 14:58:34.731847 +0000 build-fedora4: .exit 1; \
+2023-08-23 14:58:34.731853 +0000 build-fedora4: fi
+2023-08-23 14:58:34.748181 +0000 build-fedora4: cd qubes-src/salt && echo pkgs/vm-fc37/salt-3006.2-2.fc37.noarch.rpm pkgs/vm-fc37/salt-3006.2-2.fc37.src.rpm pkgs/vm-fc37/salt-api-3006.2-2.fc37.noarch.rpm pkgs/vm-fc37/salt-cloud-3006.2-2.fc37.noarch.rpm pkgs/vm-fc37/salt-master-3006.2-2.fc37.noarch.rpm pkgs/vm-fc37/salt-minion-3006.2-2.fc37.noarch.rpm pkgs/vm-fc37/salt-ssh-3006.2-2.fc37.noarch.rpm pkgs/vm-fc37/salt-syndic-3006.2-2.fc37.noarch.rpm pkgs/vm-fc37/salt-3006.2-2.fc37.x86_64.buildinfo  > /home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-fc37-salt
+2023-08-23 14:58:34.768113 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:34.768155 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:34.790393 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:34.790438 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:34.811887 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:34.811938 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:34.836750 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:34.836795 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:34.869905 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:34.869952 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:34.894704 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:34.894751 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:34.916107 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:34.916152 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:34.941286 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:34.941332 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:34.970493 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-github//Makefile.github:18: update target 'notify-github' due to: target does not exist
+2023-08-23 14:58:34.970542 +0000 build-fedora4: [ -z "salt-3006.2-2.fc37" ] || /home/user/builder-r4.1/qubes-src/builder-github//notify-issues \
+2023-08-23 14:58:34.970560 +0000 build-fedora4: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2023-08-23_14-47-41" \
+2023-08-23 14:58:34.970568 +0000 build-fedora4: .upload \
+2023-08-23 14:58:34.970574 +0000 build-fedora4: ."r4.1" \
+2023-08-23 14:58:34.970581 +0000 build-fedora4: ."qubes-src/salt" \
+2023-08-23 14:58:34.970588 +0000 build-fedora4: ."salt-3006.2-2.fc37" \
+2023-08-23 14:58:34.970594 +0000 build-fedora4: ."fc37" \
+2023-08-23 14:58:34.970627 +0000 build-fedora4: ."vm" \
+2023-08-23 14:58:34.970638 +0000 build-fedora4: ."current-testing" \
+2023-08-23 14:58:34.970646 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-salt-vm-fc37-current-testing" \
+2023-08-23 14:58:34.970655 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-salt-vm-fc37-current"
+2023-08-23 14:58:34.974789 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:34.974827 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:35.017100 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:35.017146 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:35.042218 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:35.042263 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:35.066498 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:35.066544 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:35.089852 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:35.089897 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:35.133587 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:35.133660 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:40.379292 +0000 build-fedora4: WARNING: message template /home/user/builder-r4.1/qubes-src/builder-github/templates/message-current-testing-vm doesn't exist, not adding comments
+2023-08-23 14:58:40.416061 +0000 build-fedora4: 
+2023-08-23 14:58:40.416112 +0000 build-fedora4: Makefile:834: update target 'internal-update-repo-current-testing.vm.fc37' due to: internal-update-repo-current-testing.vm.fc37.salt
+2023-08-23 14:58:40.416121 +0000 build-fedora4: true
+2023-08-23 14:58:40.423242 +0000 build-fedora4: Makefile:863: update target 'internal-update-repo-current-testing.vm.fc38.salt' due to: target does not exist
+2023-08-23 14:58:40.423286 +0000 build-fedora4: repo_base_var="LINUX_REPO_${DIST//-/_}_BASEDIR"; \
+2023-08-23 14:58:40.423295 +0000 build-fedora4: if [ "salt" = linux-template-builder ]; then \
+2023-08-23 14:58:40.423303 +0000 build-fedora4: .# templates belongs to dom0 repository, even though PACKAGE_SET=vm
+2023-08-23 14:58:40.423310 +0000 build-fedora4: repo_base_var="LINUX_REPO__BASEDIR"; \
+2023-08-23 14:58:40.423316 +0000 build-fedora4: fi; \
+2023-08-23 14:58:40.423323 +0000 build-fedora4: if [ -n "${!repo_base_var}" ]; then \
+2023-08-23 14:58:40.423334 +0000 build-fedora4: .repo_basedir="${!repo_base_var}"; \
+2023-08-23 14:58:40.423340 +0000 build-fedora4: else \
+2023-08-23 14:58:40.423347 +0000 build-fedora4: .repo_basedir="qubes-src/linux-yum/r4.1"; \
+2023-08-23 14:58:40.423352 +0000 build-fedora4: fi; \
+2023-08-23 14:58:40.423359 +0000 build-fedora4: if [ -r qubes-src/salt/Makefile.builder ]; then \
+2023-08-23 14:58:40.423366 +0000 build-fedora4: .echo -n "Updating qubes-src/salt... "; \
+2023-08-23 14:58:40.423373 +0000 build-fedora4: .if [ "0" -eq 1 ]; then \
+2023-08-23 14:58:40.423381 +0000 build-fedora4: ..vtag=`git -C qubes-src/salt tag --points-at HEAD --list v*`; \
+2023-08-23 14:58:40.423387 +0000 build-fedora4: ..if [ -z "$vtag" ]; then \
+2023-08-23 14:58:40.423394 +0000 build-fedora4: ...echo "no version tag"; \
+2023-08-23 14:58:40.423400 +0000 build-fedora4: ...exit 0; \
+2023-08-23 14:58:40.423405 +0000 build-fedora4: ..fi; \
+2023-08-23 14:58:40.423411 +0000 build-fedora4: .fi; \
+2023-08-23 14:58:40.423418 +0000 build-fedora4: .if [ "salt" = linux-template-builder ]; then
+2023-08-23 14:58:40.423426 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc38 template-name)
+2023-08-23 14:58:40.423433 +0000 build-fedora4: fi
+2023-08-23 14:58:40.423447 +0000 build-fedora4: component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc38 PACKAGE_SET=vm COMPONENT=`basename qubes-src/salt` UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc38 get-var GET_VAR=PACKAGE_LIST); \
+2023-08-23 14:58:40.423455 +0000 build-fedora4: .if [ -z "$component_packages" ]; then \
+2023-08-23 14:58:40.423462 +0000 build-fedora4: ..echo "no packages."; \
+2023-08-23 14:58:40.423467 +0000 build-fedora4: ..exit 0; \
+2023-08-23 14:58:40.423473 +0000 build-fedora4: .fi; \
+2023-08-23 14:58:40.423480 +0000 build-fedora4: .make -s -f Makefile.generic DIST=fc38 PACKAGE_SET=vm \
+2023-08-23 14:58:40.423487 +0000 build-fedora4: ..COMPONENT=`basename qubes-src/salt` \
+2023-08-23 14:58:40.423494 +0000 build-fedora4: ..SNAPSHOT_REPO=current-testing \
+2023-08-23 14:58:40.423500 +0000 build-fedora4: ..TARGET_REPO=current-testing \
+2023-08-23 14:58:40.423508 +0000 build-fedora4: ..UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc38 \
+2023-08-23 14:58:40.423518 +0000 build-fedora4: ..SNAPSHOT_FILE=/home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-fc38-`basename qubes-src/salt` \
+2023-08-23 14:58:40.423527 +0000 build-fedora4: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2023-08-23_14-52-29 \
+2023-08-23 14:58:40.423533 +0000 build-fedora4: ..update-repo || exit 1; \
+2023-08-23 14:58:40.423542 +0000 build-fedora4: elif make -C qubes-src/salt -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2023-08-23 14:58:40.423549 +0000 build-fedora4: .echo "Updating qubes-src/salt... "; \
+2023-08-23 14:58:40.423574 +0000 build-fedora4: .DIST=fc38 UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc38 \
+2023-08-23 14:58:40.423583 +0000 build-fedora4: .make -s -C qubes-src/salt update-repo-current-testing || exit 1; \
+2023-08-23 14:58:40.423589 +0000 build-fedora4: else \
+2023-08-23 14:58:40.423596 +0000 build-fedora4: .echo -n "Updating qubes-src/salt... skipping."; \
+2023-08-23 14:58:40.423624 +0000 build-fedora4: fi; \
+2023-08-23 14:58:40.423632 +0000 build-fedora4: echo
+2023-08-23 14:58:40.545539 +0000 build-fedora4: Updating qubes-src/salt... error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:40.545582 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:40.579662 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:40.579706 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:40.610623 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:40.610670 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:40.656312 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:40.658922 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:40.704244 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:40.704290 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:40.731031 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:40.731078 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:40.760216 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:40.762988 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:40.799075 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:40.799123 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:40.858534 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:40.858583 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:40.889759 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:40.889806 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:40.915971 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:40.916016 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:40.950657 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:40.954717 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:40.974737 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:179: update target 'update-repo-do' due to: target does not exist
+2023-08-23 14:58:40.974783 +0000 build-fedora4: mkdir -p /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/fc38/rpm
+2023-08-23 14:58:41.005535 +0000 build-fedora4: if [ -n "pkgs/vm-fc38/salt-3006.2-2.fc38.noarch.rpm pkgs/vm-fc38/salt-3006.2-2.fc38.src.rpm pkgs/vm-fc38/salt-api-3006.2-2.fc38.noarch.rpm pkgs/vm-fc38/salt-cloud-3006.2-2.fc38.noarch.rpm pkgs/vm-fc38/salt-master-3006.2-2.fc38.noarch.rpm pkgs/vm-fc38/salt-minion-3006.2-2.fc38.noarch.rpm pkgs/vm-fc38/salt-ssh-3006.2-2.fc38.noarch.rpm pkgs/vm-fc38/salt-syndic-3006.2-2.fc38.noarch.rpm pkgs/vm-fc38/salt-3006.2-2.fc38.x86_64.buildinfo" ]; then \
+2023-08-23 14:58:41.005630 +0000 build-fedora4: .cd qubes-src/salt && ln -f pkgs/vm-fc38/salt-3006.2-2.fc38.noarch.rpm pkgs/vm-fc38/salt-3006.2-2.fc38.src.rpm pkgs/vm-fc38/salt-api-3006.2-2.fc38.noarch.rpm pkgs/vm-fc38/salt-cloud-3006.2-2.fc38.noarch.rpm pkgs/vm-fc38/salt-master-3006.2-2.fc38.noarch.rpm pkgs/vm-fc38/salt-minion-3006.2-2.fc38.noarch.rpm pkgs/vm-fc38/salt-ssh-3006.2-2.fc38.noarch.rpm pkgs/vm-fc38/salt-syndic-3006.2-2.fc38.noarch.rpm pkgs/vm-fc38/salt-3006.2-2.fc38.x86_64.buildinfo  /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/fc38/rpm/; \
+2023-08-23 14:58:41.005657 +0000 build-fedora4: else \
+2023-08-23 14:58:41.005669 +0000 build-fedora4: .echo "`tput bold`No packages defined by salt.spec, syntax error?`tput sgr0`"; \
+2023-08-23 14:58:41.005676 +0000 build-fedora4: .exit 1; \
+2023-08-23 14:58:41.005682 +0000 build-fedora4: fi
+2023-08-23 14:58:41.028730 +0000 build-fedora4: cd qubes-src/salt && echo pkgs/vm-fc38/salt-3006.2-2.fc38.noarch.rpm pkgs/vm-fc38/salt-3006.2-2.fc38.src.rpm pkgs/vm-fc38/salt-api-3006.2-2.fc38.noarch.rpm pkgs/vm-fc38/salt-cloud-3006.2-2.fc38.noarch.rpm pkgs/vm-fc38/salt-master-3006.2-2.fc38.noarch.rpm pkgs/vm-fc38/salt-minion-3006.2-2.fc38.noarch.rpm pkgs/vm-fc38/salt-ssh-3006.2-2.fc38.noarch.rpm pkgs/vm-fc38/salt-syndic-3006.2-2.fc38.noarch.rpm pkgs/vm-fc38/salt-3006.2-2.fc38.x86_64.buildinfo  > /home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-fc38-salt
+2023-08-23 14:58:41.074839 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:41.074886 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:41.102837 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:41.102883 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:41.136366 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:41.136411 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:41.166965 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:41.167011 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:41.215293 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:41.215337 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:41.243876 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:41.243922 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:41.277733 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:41.277778 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:41.321124 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:41.325135 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:41.349885 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-github//Makefile.github:18: update target 'notify-github' due to: target does not exist
+2023-08-23 14:58:41.349932 +0000 build-fedora4: [ -z "salt-3006.2-2.fc38" ] || /home/user/builder-r4.1/qubes-src/builder-github//notify-issues \
+2023-08-23 14:58:41.349945 +0000 build-fedora4: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2023-08-23_14-52-29" \
+2023-08-23 14:58:41.349952 +0000 build-fedora4: .upload \
+2023-08-23 14:58:41.349958 +0000 build-fedora4: ."r4.1" \
+2023-08-23 14:58:41.349965 +0000 build-fedora4: ."qubes-src/salt" \
+2023-08-23 14:58:41.349972 +0000 build-fedora4: ."salt-3006.2-2.fc38" \
+2023-08-23 14:58:41.349977 +0000 build-fedora4: ."fc38" \
+2023-08-23 14:58:41.349983 +0000 build-fedora4: ."vm" \
+2023-08-23 14:58:41.349989 +0000 build-fedora4: ."current-testing" \
+2023-08-23 14:58:41.349997 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-salt-vm-fc38-current-testing" \
+2023-08-23 14:58:41.350022 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-salt-vm-fc38-current"
+2023-08-23 14:58:41.368583 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:41.371500 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:41.442311 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:41.442355 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:41.466773 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:41.466819 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:41.501169 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:41.501321 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:41.537153 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:41.537196 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:41.582927 +0000 build-fedora4: error: Unable to open salt.spec: No such file or directory
+2023-08-23 14:58:41.582972 +0000 build-fedora4: error: query of specfile salt.spec failed, can't parse
+2023-08-23 14:58:44.523912 +0000 build-fedora4: WARNING: message template /home/user/builder-r4.1/qubes-src/builder-github/templates/message-current-testing-vm doesn't exist, not adding comments
+2023-08-23 14:58:44.552039 +0000 build-fedora4: 
+2023-08-23 14:58:44.552094 +0000 build-fedora4: Makefile:834: update target 'internal-update-repo-current-testing.vm.fc38' due to: internal-update-repo-current-testing.vm.fc38.salt
+2023-08-23 14:58:44.552104 +0000 build-fedora4: true
+2023-08-23 14:58:44.555448 +0000 build-fedora4: Makefile:923: update target 'post-update-repo-current-testing' due to: target does not exist
+2023-08-23 14:58:44.555483 +0000 build-fedora4: for dist in  fc37 fc38; do \
+2023-08-23 14:58:44.555494 +0000 build-fedora4: .repo_base_var="LINUX_REPO_${dist//-/_}_BASEDIR"; \
+2023-08-23 14:58:44.555502 +0000 build-fedora4: .if [ -n "${!repo_base_var}" ]; then \
+2023-08-23 14:58:44.555509 +0000 build-fedora4: ..repo_basedir="${!repo_base_var}"; \
+2023-08-23 14:58:44.555515 +0000 build-fedora4: .else \
+2023-08-23 14:58:44.555522 +0000 build-fedora4: ..repo_basedir="qubes-src/linux-yum/r4.1"; \
+2023-08-23 14:58:44.555528 +0000 build-fedora4: .fi; \
+2023-08-23 14:58:44.555535 +0000 build-fedora4: .repos_to_update="$repos_to_update $repo_basedir"; \
+2023-08-23 14:58:44.555541 +0000 build-fedora4: done; \
+2023-08-23 14:58:44.555550 +0000 build-fedora4: pkgset_dist= ; \
+2023-08-23 14:58:44.555556 +0000 build-fedora4: for dist in ; do \
+2023-08-23 14:58:44.555563 +0000 build-fedora4: .pkgset_dist="$pkgset_dist dom0/$dist"; \
+2023-08-23 14:58:44.555569 +0000 build-fedora4: done; \
+2023-08-23 14:58:44.555575 +0000 build-fedora4: for dist in fc37 fc38; do \
+2023-08-23 14:58:44.555582 +0000 build-fedora4: .pkgset_dist="$pkgset_dist vm/$dist"; \
+2023-08-23 14:58:44.555587 +0000 build-fedora4: done; \
+2023-08-23 14:58:44.555595 +0000 build-fedora4: for repo in `echo $repos_to_update|tr ' ' '\n'|sort|uniq`; do \
+2023-08-23 14:58:44.555624 +0000 build-fedora4: .[ -z "$repo" ] && continue; \
+2023-08-23 14:58:44.555634 +0000 build-fedora4: .[ -x "$repo/../update_repo-current-testing.sh" ] || continue; \
+2023-08-23 14:58:44.555642 +0000 build-fedora4: .(cd $repo/.. && ./update_repo-current-testing.sh r4.1 $pkgset_dist); \
+2023-08-23 14:58:44.555648 +0000 build-fedora4: done
+2023-08-23 14:58:44.566455 +0000 build-fedora4: ~/builder-r4.1/qubes-src/linux-yum ~/builder-r4.1/qubes-src/linux-yum
+2023-08-23 14:58:44.572248 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc37...
+2023-08-23 14:58:44.608774 +0000 build-fedora4: warning: Found bdb_ro Packages database while attempting sqlite backend: using bdb_ro backend.
+2023-08-23 14:58:51.614007 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc38...
+2023-08-23 14:58:51.657119 +0000 build-fedora4: warning: Found bdb_ro Packages database while attempting sqlite backend: using bdb_ro backend.
+2023-08-23 14:58:59.597268 +0000 build-fedora4: Done.
+2023-08-23 14:58:59.617952 +0000 build-fedora4: ~/builder-r4.1/qubes-src/linux-yum ~/builder-r4.1/qubes-src/linux-yum
+2023-08-23 14:58:59.619622 +0000 build-fedora4: Syncing r4.1...
+2023-08-23 14:59:00.807755 +0000 build-fedora4: sending incremental file list
+2023-08-23 14:59:00.868645 +0000 build-fedora4: .d..t...... fc37/
+2023-08-23 14:59:00.868693 +0000 build-fedora4: .d..t...... fc37/repodata/
+2023-08-23 14:59:00.868780 +0000 build-fedora4: <f..t...... fc37/repodata/0a4d9ec5911f793f87955cf8bbc866b0c930c8f9aa2384ec29cc1f360a31da93-comps.xml.gz
+2023-08-23 14:59:00.868934 +0000 build-fedora4: .            700   8%    0.00kB/s    0:00:00  .          8,416 100%    7.36MB/s    0:00:00 (xfr#1, to-chk=380/386)
+2023-08-23 14:59:00.869221 +0000 build-fedora4: <f..t...... fc37/repodata/397e43a81ad38941589caaed70c4fabc438fb360cee27a55821a1db270bacaa3-comps.xml
+2023-08-23 14:59:00.869242 +0000 build-fedora4: .            700   2%  683.59kB/s    0:00:00  .         25,819 100%   24.62MB/s    0:00:00 (xfr#2, to-chk=379/386)
+2023-08-23 14:59:00.869253 +0000 build-fedora4: <f+++++++++ fc37/repodata/45b530799f94118f6f7d778bfd1969b20da7d579b4a659c625c438884f2977a6-filelists.xml.gz
+2023-08-23 14:59:00.869975 +0000 build-fedora4: .         32,768  23%   31.25MB/s    0:00:00  .        138,177 100%  131.78MB/s    0:00:00 (xfr#3, to-chk=378/386)
+2023-08-23 14:59:00.870002 +0000 build-fedora4: <f+++++++++ fc37/repodata/6de558b206e9fec3a307b664b8f4b464b19b363ea5f6dd1add446160e650cd3e-filelists.sqlite.bz2
+2023-08-23 14:59:00.870228 +0000 build-fedora4: .         32,768  21%   31.25MB/s    0:00:00  .        151,944 100%  144.91MB/s    0:00:00 (xfr#4, to-chk=377/386)
+2023-08-23 14:59:00.870249 +0000 build-fedora4: <f+++++++++ fc37/repodata/afd13853981177dddc8e59e55db87ae8ed17950fddc3b25e152c962fced38f2b-primary.sqlite.bz2
+2023-08-23 14:59:00.870631 +0000 build-fedora4: .         32,768  34%   31.25MB/s    0:00:00  .         93,648 100%   89.31MB/s    0:00:00 (xfr#5, to-chk=376/386)
+2023-08-23 14:59:00.870653 +0000 build-fedora4: <f+++++++++ fc37/repodata/da7d03c9042ddfc46c9268c7be976d003a8229edff58ffc40a84586e1c8a7f75-other.xml.gz
+2023-08-23 14:59:00.870869 +0000 build-fedora4: .         28,309 100%   27.00MB/s    0:00:00  .         28,309 100%   27.00MB/s    0:00:00 (xfr#6, to-chk=375/386)
+2023-08-23 14:59:00.870889 +0000 build-fedora4: <f+++++++++ fc37/repodata/df54a23556ea7ce766d1a284a33abfe97c661690526c277ce003e97b11a37a8a-primary.xml.gz
+2023-08-23 14:59:00.871094 +0000 build-fedora4: .         32,768  68%   31.25MB/s    0:00:00  .         47,837 100%   22.81MB/s    0:00:00 (xfr#7, to-chk=374/386)
+2023-08-23 14:59:00.871115 +0000 build-fedora4: <f+++++++++ fc37/repodata/f01e4dcc3fb759ecdd9c3cc99272b61ef2525e9a2da632cb154476916e64af02-other.sqlite.bz2
+2023-08-23 14:59:00.873824 +0000 build-fedora4: .         32,768  60%   15.62MB/s    0:00:00  .         53,861 100%   17.12MB/s    0:00:00 (xfr#8, to-chk=373/386)
+2023-08-23 14:59:00.873861 +0000 build-fedora4: <f..t...... fc37/repodata/repomd.xml
+2023-08-23 14:59:00.873873 +0000 build-fedora4: .          3,853 100%    1.22MB/s    0:00:00  .          3,853 100%  940.67kB/s    0:00:00 (xfr#9, to-chk=372/386)
+2023-08-23 14:59:00.873881 +0000 build-fedora4: <f..t...... fc37/repodata/repomd.xml.asc
+2023-08-23 14:59:00.873891 +0000 build-fedora4: .            833 100%  203.37kB/s    0:00:00  .            833 100%  203.37kB/s    0:00:00 (xfr#10, to-chk=371/386)
+2023-08-23 14:59:00.873898 +0000 build-fedora4: .d..t...... fc37/rpm/
+2023-08-23 14:59:00.873906 +0000 build-fedora4: <f+++++++++ fc37/rpm/salt-3006.2-2.fc37.noarch.rpm
+2023-08-23 14:59:04.164382 +0000 build-fedora4: .         32,768   0%    7.81MB/s    0:00:01  .      4,620,288  37%    4.20MB/s    0:00:01  .      8,159,232  65%    3.77MB/s    0:00:01  .     11,567,104  93%    3.60MB/s    0:00:00  .     12,433,738 100%    3.60MB/s    0:00:03 (xfr#11, to-chk=39/386)
+2023-08-23 14:59:04.164446 +0000 build-fedora4: <f+++++++++ fc37/rpm/salt-3006.2-2.fc37.src.rpm
+2023-08-23 14:59:10.184921 +0000 build-fedora4: .         32,768   0%  140.35kB/s    0:02:25  .      2,686,976  13%    2.48MB/s    0:00:07  .      6,193,152  30%    2.86MB/s    0:00:04  .      9,601,024  46%    2.98MB/s    0:00:03  .     13,041,664  63%    3.05MB/s    0:00:02  .     16,449,536  80%    3.24MB/s    0:00:01  .     19,857,408  96%    3.23MB/s    0:00:00  .     20,504,048 100%    3.13MB/s    0:00:06 (xfr#12, to-chk=38/386)
+2023-08-23 14:59:10.184968 +0000 build-fedora4: <f+++++++++ fc37/rpm/salt-3006.2-2.fc37.x86_64.buildinfo
+2023-08-23 14:59:10.225574 +0000 build-fedora4: .          9,372 100%   46.70kB/s    0:00:00  .          9,372 100%   46.70kB/s    0:00:00 (xfr#13, to-chk=37/386)
+2023-08-23 14:59:10.225645 +0000 build-fedora4: <f+++++++++ fc37/rpm/salt-api-3006.2-2.fc37.noarch.rpm
+2023-08-23 14:59:10.225658 +0000 build-fedora4: .         11,507 100%   57.33kB/s    0:00:00  .         11,507 100%   57.33kB/s    0:00:00 (xfr#14, to-chk=35/386)
+2023-08-23 14:59:10.225667 +0000 build-fedora4: <f+++++++++ fc37/rpm/salt-cloud-3006.2-2.fc37.noarch.rpm
+2023-08-23 14:59:10.225677 +0000 build-fedora4: .         14,407 100%   71.78kB/s    0:00:00  .         14,407 100%   71.78kB/s    0:00:00 (xfr#15, to-chk=33/386)
+2023-08-23 14:59:10.225684 +0000 build-fedora4: <f+++++++++ fc37/rpm/salt-master-3006.2-2.fc37.noarch.rpm
+2023-08-23 14:59:11.221753 +0000 build-fedora4: .         32,768   0%  163.27kB/s    0:00:20  .      2,719,744  80%    2.59MB/s    0:00:00  .      3,388,884 100%    2.71MB/s    0:00:01 (xfr#16, to-chk=31/386)
+2023-08-23 14:59:11.221801 +0000 build-fedora4: <f+++++++++ fc37/rpm/salt-minion-3006.2-2.fc37.noarch.rpm
+2023-08-23 14:59:11.221814 +0000 build-fedora4: .         31,244 100%  161.44kB/s    0:00:00  .         31,244 100%  161.44kB/s    0:00:00 (xfr#17, to-chk=29/386)
+2023-08-23 14:59:11.221823 +0000 build-fedora4: <f+++++++++ fc37/rpm/salt-ssh-3006.2-2.fc37.noarch.rpm
+2023-08-23 14:59:11.221833 +0000 build-fedora4: .         13,252 100%   68.47kB/s    0:00:00  .         13,252 100%   68.47kB/s    0:00:00 (xfr#18, to-chk=27/386)
+2023-08-23 14:59:11.221841 +0000 build-fedora4: <f+++++++++ fc37/rpm/salt-syndic-3006.2-2.fc37.noarch.rpm
+2023-08-23 14:59:11.221851 +0000 build-fedora4: .         11,398 100%   58.89kB/s    0:00:00  .         11,398 100%   58.89kB/s    0:00:00 (xfr#19, to-chk=25/386)
+2023-08-23 14:59:12.149780 +0000 build-fedora4: sending incremental file list
+2023-08-23 14:59:12.217434 +0000 build-fedora4: .d..t...... fc38/
+2023-08-23 14:59:12.217479 +0000 build-fedora4: .d..t...... fc38/repodata/
+2023-08-23 14:59:12.217490 +0000 build-fedora4: <f..t...... fc38/repodata/0a4d9ec5911f793f87955cf8bbc866b0c930c8f9aa2384ec29cc1f360a31da93-comps.xml.gz
+2023-08-23 14:59:12.217502 +0000 build-fedora4: .            700   8%    0.00kB/s    0:00:00  .          8,416 100%    7.36MB/s    0:00:00 (xfr#1, to-chk=310/316)
+2023-08-23 14:59:12.217513 +0000 build-fedora4: <f+++++++++ fc38/repodata/16a52ee611111d3e45c98f896c5921e1e70ee16931303b0687aa4696301f1711-other.sqlite.bz2
+2023-08-23 14:59:12.217523 +0000 build-fedora4: .         32,768  62%   31.25MB/s    0:00:00  .         52,418 100%   49.99MB/s    0:00:00 (xfr#2, to-chk=309/316)
+2023-08-23 14:59:12.217532 +0000 build-fedora4: <f+++++++++ fc38/repodata/1afb29a5dbd6688e167260502ccf2c9b111a26e981c9bd86cca5179128b9f85c-primary.sqlite.bz2
+2023-08-23 14:59:12.218470 +0000 build-fedora4: .         32,768  36%   31.25MB/s    0:00:00  .         89,102 100%   84.97MB/s    0:00:00 (xfr#3, to-chk=308/316)
+2023-08-23 14:59:12.218499 +0000 build-fedora4: <f+++++++++ fc38/repodata/33d71806db47c4359482256c7ca535b3a65482514e0522f789ccd2a0ef668c35-filelists.sqlite.bz2
+2023-08-23 14:59:12.219061 +0000 build-fedora4: .         32,768  25%   31.25MB/s    0:00:00  .        128,733 100%  122.77MB/s    0:00:00 (xfr#4, to-chk=307/316)
+2023-08-23 14:59:12.219100 +0000 build-fedora4: <f..t...... fc38/repodata/397e43a81ad38941589caaed70c4fabc438fb360cee27a55821a1db270bacaa3-comps.xml
+2023-08-23 14:59:12.219112 +0000 build-fedora4: .            700   2%  683.59kB/s    0:00:00  .         25,819 100%   24.62MB/s    0:00:00 (xfr#5, to-chk=306/316)
+2023-08-23 14:59:12.219121 +0000 build-fedora4: <f+++++++++ fc38/repodata/4e72e95abbdcf0d58e3c00aa05a9c51bdc97fb40ab1ceb575132c019a1921c44-filelists.xml.gz
+2023-08-23 14:59:12.219846 +0000 build-fedora4: .         32,768  27%   15.62MB/s    0:00:00  .        121,231 100%   57.81MB/s    0:00:00 (xfr#6, to-chk=305/316)
+2023-08-23 14:59:12.219868 +0000 build-fedora4: <f+++++++++ fc38/repodata/60b5897567483213b75b63cd221db97f8aa8bc7d418e1dd5de48f70f0de2bfd2-other.xml.gz
+2023-08-23 14:59:12.220263 +0000 build-fedora4: .         27,733 100%    8.82MB/s    0:00:00  .         27,733 100%    8.82MB/s    0:00:00 (xfr#7, to-chk=304/316)
+2023-08-23 14:59:12.220285 +0000 build-fedora4: <f+++++++++ fc38/repodata/f25fe7500b80693a99c1bcbd311c155444a26c208ac99618778a22f33be09075-primary.xml.gz
+2023-08-23 14:59:12.220957 +0000 build-fedora4: .         32,768  71%   10.42MB/s    0:00:00  .         45,771 100%   14.55MB/s    0:00:00 (xfr#8, to-chk=303/316)
+2023-08-23 14:59:12.220982 +0000 build-fedora4: <f..t...... fc38/repodata/repomd.xml
+2023-08-23 14:59:12.220992 +0000 build-fedora4: .          3,853 100%    1.22MB/s    0:00:00  .          3,853 100%    1.22MB/s    0:00:00 (xfr#9, to-chk=302/316)
+2023-08-23 14:59:12.221000 +0000 build-fedora4: <f..t...... fc38/repodata/repomd.xml.asc
+2023-08-23 14:59:12.221009 +0000 build-fedora4: .            833 100%  271.16kB/s    0:00:00  .            833 100%  271.16kB/s    0:00:00 (xfr#10, to-chk=301/316)
+2023-08-23 14:59:12.221016 +0000 build-fedora4: .d..t...... fc38/rpm/
+2023-08-23 14:59:12.221024 +0000 build-fedora4: <f+++++++++ fc38/rpm/salt-3006.2-2.fc38.noarch.rpm
+2023-08-23 14:59:15.224697 +0000 build-fedora4: .         32,768   0%   10.42MB/s    0:00:01  .      4,816,896  41%    4.52MB/s    0:00:01  .      8,355,840  71%    3.89MB/s    0:00:00  .     11,635,629 100%    3.69MB/s    0:00:03 (xfr#11, to-chk=35/316)
+2023-08-23 14:59:15.224738 +0000 build-fedora4: <f+++++++++ fc38/rpm/salt-3006.2-2.fc38.src.rpm
+2023-08-23 14:59:21.227298 +0000 build-fedora4: .         32,768   0%   33.37kB/s    0:10:13  .        262,144   1%  248.06kB/s    0:01:21  .      3,801,088  18%    1.75MB/s    0:00:09  .      7,208,960  35%    2.24MB/s    0:00:05  .     10,616,832  51%    2.49MB/s    0:00:03  .     14,155,776  69%    3.25MB/s    0:00:01  .     17,563,648  85%    3.25MB/s    0:00:00  .     20,504,048 100%    2.81MB/s    0:00:06 (xfr#12, to-chk=34/316)
+2023-08-23 14:59:21.227341 +0000 build-fedora4: <f+++++++++ fc38/rpm/salt-3006.2-2.fc38.x86_64.buildinfo
+2023-08-23 14:59:21.227353 +0000 build-fedora4: .          9,334 100%   10.71kB/s    0:00:00  .          9,334 100%   10.71kB/s    0:00:00 (xfr#13, to-chk=33/316)
+2023-08-23 14:59:21.227363 +0000 build-fedora4: <f+++++++++ fc38/rpm/salt-api-3006.2-2.fc38.noarch.rpm
+2023-08-23 14:59:21.227373 +0000 build-fedora4: .         11,579 100%   13.29kB/s    0:00:00  .         11,579 100%   13.29kB/s    0:00:00 (xfr#14, to-chk=31/316)
+2023-08-23 14:59:21.227380 +0000 build-fedora4: <f+++++++++ fc38/rpm/salt-cloud-3006.2-2.fc38.noarch.rpm
+2023-08-23 14:59:21.227390 +0000 build-fedora4: .         14,479 100%   16.62kB/s    0:00:00  .         14,479 100%   16.62kB/s    0:00:00 (xfr#15, to-chk=29/316)
+2023-08-23 14:59:21.227397 +0000 build-fedora4: <f+++++++++ fc38/rpm/salt-master-3006.2-2.fc38.noarch.rpm
+2023-08-23 14:59:22.229731 +0000 build-fedora4: .         32,768   0%   36.00kB/s    0:01:33  .        425,984  12%  414.34kB/s    0:00:07  .      3,388,956 100%    1.74MB/s    0:00:01 (xfr#16, to-chk=27/316)
+2023-08-23 14:59:22.229776 +0000 build-fedora4: <f+++++++++ fc38/rpm/salt-minion-3006.2-2.fc38.noarch.rpm
+2023-08-23 14:59:22.229806 +0000 build-fedora4: .         31,316 100%   36.02kB/s    0:00:00  .         31,316 100%   36.02kB/s    0:00:00 (xfr#17, to-chk=25/316)
+2023-08-23 14:59:22.229817 +0000 build-fedora4: <f+++++++++ fc38/rpm/salt-ssh-3006.2-2.fc38.noarch.rpm
+2023-08-23 14:59:22.229827 +0000 build-fedora4: .         13,324 100%   15.33kB/s    0:00:00  .         13,324 100%   15.33kB/s    0:00:00 (xfr#18, to-chk=23/316)
+2023-08-23 14:59:22.229835 +0000 build-fedora4: <f+++++++++ fc38/rpm/salt-syndic-3006.2-2.fc38.noarch.rpm
+2023-08-23 14:59:22.229845 +0000 build-fedora4: .         11,466 100%   13.19kB/s    0:00:00  .         11,466 100%   13.19kB/s    0:00:00 (xfr#19, to-chk=21/316)
+2023-08-23 14:59:23.534429 +0000 build-fedora4: Makefile:819: update target 'update-repo-current-testing' due to: internal-update-repo-current-testing.vm.fc37 internal-update-repo-current-testing.vm.fc38 post-update-repo-current-testing
+2023-08-23 14:59:23.534473 +0000 build-fedora4: true
+2023-08-23 14:59:23.537364 +0000 build-fedora4: > done
+2023-08-23 14:59:23.537400 +0000 > closing log
