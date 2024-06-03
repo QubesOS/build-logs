@@ -1,0 +1,931 @@
+2024-06-03 08:42:06.386792 +0000 > starting log
+2024-06-03 08:42:06.387348 +0000 build-fedora4: > starting build with log
+2024-06-03 08:42:06.387419 +0000 build-fedora4: >> make args: DISTS_VM= fc38 fc39 DIST_DOM0= BUILD_LOGS_URL= video-companion-vm-fc37=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2024-06-03_08-37-32 video-companion-vm-fc38=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2024-06-03_08-38-17 video-companion-vm-fc39=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2024-06-03_08-40-05 GIT_URL_video_companion=https://github.com/QubesOS/qubes-video-companion sign-all update-repo-current-testing
+2024-06-03 08:42:06.387439 +0000 build-fedora4: >> MAKEFLAGS=
+2024-06-03 08:42:06.387453 +0000 build-fedora4: >> COMPONENTS=video-companion
+2024-06-03 08:42:06.387466 +0000 build-fedora4: >> DISTS_VM=
+2024-06-03 08:42:06.387478 +0000 build-fedora4: >> DIST_DOM0=
+2024-06-03 08:42:06.387491 +0000 build-fedora4: >> qubes-builder 3678e5fc7d685cf1ccbdc720f6e9ee2146a2a92e
+2024-06-03 08:42:06.387506 +0000 build-fedora4: >> qubes-builder/qubes-src/video-companion 04aa2d3c5d7f5789dc4467359cfe2ae7b5a02062
+2024-06-03 08:42:06.387521 +0000 build-fedora4: !! pkgs/vm-fc36/qubes-video-companion-1.0.1-1.fc36.x86_64.buildinfo
+2024-06-03 08:42:06.387535 +0000 build-fedora4: !! pkgs/vm-fc36/qubes-video-companion-1.0.2-1.fc36.src.rpm
+2024-06-03 08:42:06.387548 +0000 build-fedora4: !! pkgs/vm-fc36/qubes-video-companion-1.0.2-1.fc36.x86_64.buildinfo
+2024-06-03 08:42:06.387562 +0000 build-fedora4: !! pkgs/vm-fc36/qubes-video-companion-docs-1.0.2-1.fc36.noarch.rpm
+2024-06-03 08:42:06.387576 +0000 build-fedora4: !! pkgs/vm-fc36/qubes-video-companion-license-1.0.2-1.fc36.noarch.rpm
+2024-06-03 08:42:06.387590 +0000 build-fedora4: !! pkgs/vm-fc36/qubes-video-companion-receiver-1.0.2-1.fc36.noarch.rpm
+2024-06-03 08:42:06.387604 +0000 build-fedora4: !! pkgs/vm-fc36/qubes-video-companion-sender-1.0.2-1.fc36.noarch.rpm
+2024-06-03 08:42:06.387617 +0000 build-fedora4: !! pkgs/vm-fc36/qubes-video-companion.spec.list
+2024-06-03 08:42:06.387632 +0000 build-fedora4: !! pkgs/vm-fc37/qubes-video-companion-1.0.1-1.fc37.x86_64.buildinfo
+2024-06-03 08:42:06.387646 +0000 build-fedora4: !! pkgs/vm-fc37/qubes-video-companion-1.0.2-1.fc37.x86_64.buildinfo
+2024-06-03 08:42:06.387660 +0000 build-fedora4: !! pkgs/vm-fc37/qubes-video-companion-1.0.3-1.fc37.x86_64.buildinfo
+2024-06-03 08:42:06.387674 +0000 build-fedora4: !! pkgs/vm-fc37/qubes-video-companion-1.0.4-1.fc37.x86_64.buildinfo
+2024-06-03 08:42:06.387688 +0000 build-fedora4: !! pkgs/vm-fc37/qubes-video-companion-1.0.5-1.fc37.x86_64.buildinfo
+2024-06-03 08:42:06.387702 +0000 build-fedora4: !! pkgs/vm-fc37/qubes-video-companion-1.0.6-1.fc37.x86_64.buildinfo
+2024-06-03 08:42:06.387716 +0000 build-fedora4: !! pkgs/vm-fc37/qubes-video-companion-1.0.7-1.fc37.noarch.rpm
+2024-06-03 08:42:06.387736 +0000 build-fedora4: !! pkgs/vm-fc37/qubes-video-companion-1.0.7-1.fc37.src.rpm
+2024-06-03 08:42:06.387751 +0000 build-fedora4: !! pkgs/vm-fc37/qubes-video-companion-1.0.7-1.fc37.x86_64.buildinfo
+2024-06-03 08:42:06.387765 +0000 build-fedora4: !! pkgs/vm-fc37/qubes-video-companion-1.1.0-1.fc37.noarch.rpm
+2024-06-03 08:42:06.387779 +0000 build-fedora4: !! pkgs/vm-fc37/qubes-video-companion-1.1.0-1.fc37.src.rpm
+2024-06-03 08:42:06.387794 +0000 build-fedora4: !! pkgs/vm-fc37/qubes-video-companion-1.1.0-1.fc37.x86_64.buildinfo
+2024-06-03 08:42:06.387808 +0000 build-fedora4: !! pkgs/vm-fc37/qubes-video-companion-docs-1.0.7-1.fc37.noarch.rpm
+2024-06-03 08:42:06.387822 +0000 build-fedora4: !! pkgs/vm-fc37/qubes-video-companion-docs-1.1.0-1.fc37.noarch.rpm
+2024-06-03 08:42:06.387837 +0000 build-fedora4: !! pkgs/vm-fc37/qubes-video-companion-license-1.0.7-1.fc37.noarch.rpm
+2024-06-03 08:42:06.387851 +0000 build-fedora4: !! pkgs/vm-fc37/qubes-video-companion-license-1.1.0-1.fc37.noarch.rpm
+2024-06-03 08:42:06.387865 +0000 build-fedora4: !! pkgs/vm-fc37/qubes-video-companion-receiver-1.0.7-1.fc37.noarch.rpm
+2024-06-03 08:42:06.387905 +0000 build-fedora4: !! pkgs/vm-fc37/qubes-video-companion-receiver-1.1.0-1.fc37.noarch.rpm
+2024-06-03 08:42:06.387932 +0000 build-fedora4: !! pkgs/vm-fc37/qubes-video-companion-sender-1.0.7-1.fc37.noarch.rpm
+2024-06-03 08:42:06.387948 +0000 build-fedora4: !! pkgs/vm-fc37/qubes-video-companion-sender-1.1.0-1.fc37.noarch.rpm
+2024-06-03 08:42:06.387961 +0000 build-fedora4: !! pkgs/vm-fc37/qubes-video-companion.spec.list
+2024-06-03 08:42:06.387975 +0000 build-fedora4: !! pkgs/vm-fc38/qubes-video-companion-1.0.1-1.fc38.x86_64.buildinfo
+2024-06-03 08:42:06.387989 +0000 build-fedora4: !! pkgs/vm-fc38/qubes-video-companion-1.0.2-1.fc38.x86_64.buildinfo
+2024-06-03 08:42:06.388003 +0000 build-fedora4: !! pkgs/vm-fc38/qubes-video-companion-1.0.3-1.fc38.x86_64.buildinfo
+2024-06-03 08:42:06.388017 +0000 build-fedora4: !! pkgs/vm-fc38/qubes-video-companion-1.0.4-1.fc38.x86_64.buildinfo
+2024-06-03 08:42:06.388031 +0000 build-fedora4: !! pkgs/vm-fc38/qubes-video-companion-1.0.5-1.fc38.x86_64.buildinfo
+2024-06-03 08:42:06.388045 +0000 build-fedora4: !! pkgs/vm-fc38/qubes-video-companion-1.0.6-1.fc38.x86_64.buildinfo
+2024-06-03 08:42:06.388059 +0000 build-fedora4: !! pkgs/vm-fc38/qubes-video-companion-1.0.7-1.fc38.noarch.rpm
+2024-06-03 08:42:06.388073 +0000 build-fedora4: !! pkgs/vm-fc38/qubes-video-companion-1.0.7-1.fc38.src.rpm
+2024-06-03 08:42:06.388087 +0000 build-fedora4: !! pkgs/vm-fc38/qubes-video-companion-1.0.7-1.fc38.x86_64.buildinfo
+2024-06-03 08:42:06.388101 +0000 build-fedora4: !! pkgs/vm-fc38/qubes-video-companion-1.1.0-1.fc38.noarch.rpm
+2024-06-03 08:42:06.388115 +0000 build-fedora4: !! pkgs/vm-fc38/qubes-video-companion-1.1.0-1.fc38.src.rpm
+2024-06-03 08:42:06.388129 +0000 build-fedora4: !! pkgs/vm-fc38/qubes-video-companion-1.1.0-1.fc38.x86_64.buildinfo
+2024-06-03 08:42:06.388143 +0000 build-fedora4: !! pkgs/vm-fc38/qubes-video-companion-1.1.1-1.fc38.noarch.rpm
+2024-06-03 08:42:06.388158 +0000 build-fedora4: !! pkgs/vm-fc38/qubes-video-companion-1.1.1-1.fc38.src.rpm
+2024-06-03 08:42:06.388172 +0000 build-fedora4: !! pkgs/vm-fc38/qubes-video-companion-1.1.1-1.fc38.x86_64.buildinfo
+2024-06-03 08:42:06.388186 +0000 build-fedora4: !! pkgs/vm-fc38/qubes-video-companion-docs-1.0.7-1.fc38.noarch.rpm
+2024-06-03 08:42:06.388200 +0000 build-fedora4: !! pkgs/vm-fc38/qubes-video-companion-docs-1.1.0-1.fc38.noarch.rpm
+2024-06-03 08:42:06.388214 +0000 build-fedora4: !! pkgs/vm-fc38/qubes-video-companion-docs-1.1.1-1.fc38.noarch.rpm
+2024-06-03 08:42:06.388228 +0000 build-fedora4: !! pkgs/vm-fc38/qubes-video-companion-license-1.0.7-1.fc38.noarch.rpm
+2024-06-03 08:42:06.388242 +0000 build-fedora4: !! pkgs/vm-fc38/qubes-video-companion-license-1.1.0-1.fc38.noarch.rpm
+2024-06-03 08:42:06.388257 +0000 build-fedora4: !! pkgs/vm-fc38/qubes-video-companion-license-1.1.1-1.fc38.noarch.rpm
+2024-06-03 08:42:06.388278 +0000 build-fedora4: !! pkgs/vm-fc38/qubes-video-companion-receiver-1.0.7-1.fc38.noarch.rpm
+2024-06-03 08:42:06.388292 +0000 build-fedora4: !! pkgs/vm-fc38/qubes-video-companion-receiver-1.1.0-1.fc38.noarch.rpm
+2024-06-03 08:42:06.388306 +0000 build-fedora4: !! pkgs/vm-fc38/qubes-video-companion-receiver-1.1.1-1.fc38.noarch.rpm
+2024-06-03 08:42:06.388319 +0000 build-fedora4: !! pkgs/vm-fc38/qubes-video-companion-sender-1.0.7-1.fc38.noarch.rpm
+2024-06-03 08:42:06.388333 +0000 build-fedora4: !! pkgs/vm-fc38/qubes-video-companion-sender-1.1.0-1.fc38.noarch.rpm
+2024-06-03 08:42:06.388346 +0000 build-fedora4: !! pkgs/vm-fc38/qubes-video-companion-sender-1.1.1-1.fc38.noarch.rpm
+2024-06-03 08:42:06.388359 +0000 build-fedora4: !! pkgs/vm-fc38/qubes-video-companion.spec.list
+2024-06-03 08:42:06.388372 +0000 build-fedora4: !! pkgs/vm-fc39/qubes-video-companion-1.0.5-1.fc39.x86_64.buildinfo
+2024-06-03 08:42:06.388386 +0000 build-fedora4: !! pkgs/vm-fc39/qubes-video-companion-1.0.6-1.fc39.x86_64.buildinfo
+2024-06-03 08:42:06.388399 +0000 build-fedora4: !! pkgs/vm-fc39/qubes-video-companion-1.0.7-1.fc39.noarch.rpm
+2024-06-03 08:42:06.388412 +0000 build-fedora4: !! pkgs/vm-fc39/qubes-video-companion-1.0.7-1.fc39.src.rpm
+2024-06-03 08:42:06.388426 +0000 build-fedora4: !! pkgs/vm-fc39/qubes-video-companion-1.0.7-1.fc39.x86_64.buildinfo
+2024-06-03 08:42:06.388447 +0000 build-fedora4: !! pkgs/vm-fc39/qubes-video-companion-1.1.0-1.fc39.noarch.rpm
+2024-06-03 08:42:06.388462 +0000 build-fedora4: !! pkgs/vm-fc39/qubes-video-companion-1.1.0-1.fc39.src.rpm
+2024-06-03 08:42:06.388475 +0000 build-fedora4: !! pkgs/vm-fc39/qubes-video-companion-1.1.0-1.fc39.x86_64.buildinfo
+2024-06-03 08:42:06.388489 +0000 build-fedora4: !! pkgs/vm-fc39/qubes-video-companion-1.1.1-1.fc39.noarch.rpm
+2024-06-03 08:42:06.388502 +0000 build-fedora4: !! pkgs/vm-fc39/qubes-video-companion-1.1.1-1.fc39.src.rpm
+2024-06-03 08:42:06.388515 +0000 build-fedora4: !! pkgs/vm-fc39/qubes-video-companion-1.1.1-1.fc39.x86_64.buildinfo
+2024-06-03 08:42:06.388529 +0000 build-fedora4: !! pkgs/vm-fc39/qubes-video-companion-docs-1.0.7-1.fc39.noarch.rpm
+2024-06-03 08:42:06.388542 +0000 build-fedora4: !! pkgs/vm-fc39/qubes-video-companion-docs-1.1.0-1.fc39.noarch.rpm
+2024-06-03 08:42:06.388556 +0000 build-fedora4: !! pkgs/vm-fc39/qubes-video-companion-docs-1.1.1-1.fc39.noarch.rpm
+2024-06-03 08:42:06.388570 +0000 build-fedora4: !! pkgs/vm-fc39/qubes-video-companion-license-1.0.7-1.fc39.noarch.rpm
+2024-06-03 08:42:06.388584 +0000 build-fedora4: !! pkgs/vm-fc39/qubes-video-companion-license-1.1.0-1.fc39.noarch.rpm
+2024-06-03 08:42:06.388597 +0000 build-fedora4: !! pkgs/vm-fc39/qubes-video-companion-license-1.1.1-1.fc39.noarch.rpm
+2024-06-03 08:42:06.388611 +0000 build-fedora4: !! pkgs/vm-fc39/qubes-video-companion-receiver-1.0.7-1.fc39.noarch.rpm
+2024-06-03 08:42:06.388625 +0000 build-fedora4: !! pkgs/vm-fc39/qubes-video-companion-receiver-1.1.0-1.fc39.noarch.rpm
+2024-06-03 08:42:06.388639 +0000 build-fedora4: !! pkgs/vm-fc39/qubes-video-companion-receiver-1.1.1-1.fc39.noarch.rpm
+2024-06-03 08:42:06.388653 +0000 build-fedora4: !! pkgs/vm-fc39/qubes-video-companion-sender-1.0.7-1.fc39.noarch.rpm
+2024-06-03 08:42:06.388667 +0000 build-fedora4: !! pkgs/vm-fc39/qubes-video-companion-sender-1.1.0-1.fc39.noarch.rpm
+2024-06-03 08:42:06.388682 +0000 build-fedora4: !! pkgs/vm-fc39/qubes-video-companion-sender-1.1.1-1.fc39.noarch.rpm
+2024-06-03 08:42:06.388695 +0000 build-fedora4: !! pkgs/vm-fc39/qubes-video-companion.spec.list
+2024-06-03 08:42:06.388716 +0000 build-fedora4: 7c548987e940e917dd423a610f5a33e40393f2145f42889738ceffad30ed6f3b77061f1bc032d80c3acb182936f979f3e26a8e047f9bc80a75132d16f42402bb  pkgs/vm-fc36/qubes-video-companion-1.0.1-1.fc36.x86_64.buildinfo
+2024-06-03 08:42:06.388737 +0000 build-fedora4: 90c04098606a72e1da7158ed2ad646912fa450f6a20a19ba0da9803f0682ba4068a7d7ef146ec5db6cd3f9172f8ca33071b020a23ca8a710a85535cdb1957f77  pkgs/vm-fc36/qubes-video-companion-1.0.2-1.fc36.src.rpm
+2024-06-03 08:42:06.388758 +0000 build-fedora4: bf7dc0569d573ce68398055bb7c38bc7f49929d25a58409baf4a8a8192c4c0c0416a6658dafd6dbf6681773ff554f7ca3f2038e5a9c124d7811221d2c088dc96  pkgs/vm-fc36/qubes-video-companion-1.0.2-1.fc36.x86_64.buildinfo
+2024-06-03 08:42:06.388778 +0000 build-fedora4: 20cbab57bcf425e29643d684396ea6827a16421010129c1ffd50e0b134eb0c22d9858eef96602cb56eb2854e1e2ef4543f15c55d4080a746da143cab6920ff0a  pkgs/vm-fc36/qubes-video-companion-docs-1.0.2-1.fc36.noarch.rpm
+2024-06-03 08:42:06.388797 +0000 build-fedora4: cb39365364f1885577fe97ca8e9b18e80b2559f8792524abb60f4e88e56825a3033917986af9fbf81960f679395d95be3bea74523942ac9f7e9ddeef22f4bd4f  pkgs/vm-fc36/qubes-video-companion-license-1.0.2-1.fc36.noarch.rpm
+2024-06-03 08:42:06.388818 +0000 build-fedora4: 9ed10b6c5e5a982a59c4ee72fcaf8872fd34b29d2437b0a4899570c8c54489788cd4294a3e37565302992dd4a65222fc7301e7fb3c438a10ee168c812934bc6b  pkgs/vm-fc36/qubes-video-companion-receiver-1.0.2-1.fc36.noarch.rpm
+2024-06-03 08:42:06.388837 +0000 build-fedora4: ecd7694327f8873ab832f56d3270f6121de7c6bcd0e7918b83f099262e198cd2102d8ddb52bd240d4626a19e0d2d2ca4b8b7eb1e3d90d11a93e01442f73975ce  pkgs/vm-fc36/qubes-video-companion-sender-1.0.2-1.fc36.noarch.rpm
+2024-06-03 08:42:06.388857 +0000 build-fedora4: 186448a8e51d79835917f2e59c68cccd8110352b862fa355f4071d7f2bd71eaaaa0566b1431a638491e99f3870f63afe341f855a76b0a40758501e8f4eed89f5  pkgs/vm-fc36/qubes-video-companion.spec.list
+2024-06-03 08:42:06.388963 +0000 build-fedora4: 4e63e825787d3db375bf3ab1ce4323cb6e01c76c4dad478ebb888a35ddc5907e4a87f68867d9a0462a923de2d1da53cfc57d06334e1bf653a739221fae1ef646  pkgs/vm-fc37/qubes-video-companion-1.0.1-1.fc37.x86_64.buildinfo
+2024-06-03 08:42:06.388989 +0000 build-fedora4: 7dbb457be7f81d5fbc20fe891e520c9a4139167f3f1b0a6aedd8d69aba21582796450a4b7b8a4ec2a31347322e48d0ae7b05b80ec3837aa7e1e1a1d46026cdb5  pkgs/vm-fc37/qubes-video-companion-1.0.2-1.fc37.x86_64.buildinfo
+2024-06-03 08:42:06.389015 +0000 build-fedora4: 44f5a7d3e4ebb06f0fff1ed333de34ec54a01e1e44a993ee16dc35ac10e30aab602ada33f4cc1ecfde0c4019cfbf0142992ffbad310ba2cba879707d6c1eb992  pkgs/vm-fc37/qubes-video-companion-1.0.3-1.fc37.x86_64.buildinfo
+2024-06-03 08:42:06.389036 +0000 build-fedora4: f10c09679f8494115587344da55aef713fb132dcc785eb89326d246e4f0857eeffd8fc22fcce36b409e03892c9a7ce6e2027df266619c3066c63171168332040  pkgs/vm-fc37/qubes-video-companion-1.0.4-1.fc37.x86_64.buildinfo
+2024-06-03 08:42:06.389056 +0000 build-fedora4: f0a9f58b02fc00b921989e721036d93f85c03eb5cbb5733244324ff680b3e4d121859d26caaab3eda35ebdd8eab6410b51fdef4d2aec502b539192c6ba58b6d1  pkgs/vm-fc37/qubes-video-companion-1.0.5-1.fc37.x86_64.buildinfo
+2024-06-03 08:42:06.389076 +0000 build-fedora4: 5c631697966c587be27685c7afc4b105ebc0d8003901ffe3df4ef7b870d8a342ea77e951dba84de83fc1fc17bc2e5d2f2770c5ad06e512973f080385f1054df9  pkgs/vm-fc37/qubes-video-companion-1.0.6-1.fc37.x86_64.buildinfo
+2024-06-03 08:42:06.389096 +0000 build-fedora4: 46bb98710989bd5c0b7c8913dbcdbfe69a968c3aa54d12de92d7c929d1f704a42e85edae4d5ac068915720fee26bbdc7c2d12f33ab4a707bb0b59339183d76c7  pkgs/vm-fc37/qubes-video-companion-1.0.7-1.fc37.noarch.rpm
+2024-06-03 08:42:06.389116 +0000 build-fedora4: 4731ad42d99add0b5ddb5e20f52546a10cab2e69223ff7792a17a2ce0864e18093f193fb6c6e2206f9d0c16e4d7e0e2bca657fe720632bfceb3c348d3569bd93  pkgs/vm-fc37/qubes-video-companion-1.0.7-1.fc37.src.rpm
+2024-06-03 08:42:06.389149 +0000 build-fedora4: c650338cd608d9f455062ed52e3c1e61fb58c06848e65b8a2aa5efbc0ba333122a40bd37916ca615fa7dd07a04de56ee9674d14ad55592aaf720f1a633c03793  pkgs/vm-fc37/qubes-video-companion-1.0.7-1.fc37.x86_64.buildinfo
+2024-06-03 08:42:06.389170 +0000 build-fedora4: 35099b24223d2db8dfafc397cdd0d08cca66bcf0cc540fedee5b17fb0640a4f6f289ac266e4a428ae289c2b3bcfad3151d989f226032950a367c97d4ba7a84c5  pkgs/vm-fc37/qubes-video-companion-1.1.0-1.fc37.noarch.rpm
+2024-06-03 08:42:06.389190 +0000 build-fedora4: db47265204306c350fe7301e2185adf055e0f512e1c43da4c6c4721db59d5ebba6fa074eb80219804070c5cc5b9bb5d5c92b41af39fc5bab6c69033dcaff427a  pkgs/vm-fc37/qubes-video-companion-1.1.0-1.fc37.src.rpm
+2024-06-03 08:42:06.389211 +0000 build-fedora4: 0bd00e7fa5e9172033a5ea1491ca145fb30b20f36f7d23ebc0519cdeb140cfc714e591b41aadd98719aba3be9ee00a35d4baff3c3438e9073e037f1cefb2590a  pkgs/vm-fc37/qubes-video-companion-1.1.0-1.fc37.x86_64.buildinfo
+2024-06-03 08:42:06.389232 +0000 build-fedora4: 8f15964be1b0ac67eb7d8225a0adc32a72dbde772f5067a32e9814e55034b143b6fe19ab7c402c0f564be70bcf928e0ea1f218b7273cc28b95a92fb5f832137d  pkgs/vm-fc37/qubes-video-companion-docs-1.0.7-1.fc37.noarch.rpm
+2024-06-03 08:42:06.389253 +0000 build-fedora4: 9aa627bc024af944cac1b65b96a993ac0661646370d0fbfb8db5aaf23f89590b52d4bd9f81a63c7b2f5e096279f9a97ebfd381c573f5239c1ef55b6f60407fea  pkgs/vm-fc37/qubes-video-companion-docs-1.1.0-1.fc37.noarch.rpm
+2024-06-03 08:42:06.389274 +0000 build-fedora4: 5662ccc496402bfac1ddc487c8962c01435f9a9c8868e07e67948d6b7c8d841f139a091a82888c06eebafaab0530543146422709e0ddebc1ad71c61ce3ef18cd  pkgs/vm-fc37/qubes-video-companion-license-1.0.7-1.fc37.noarch.rpm
+2024-06-03 08:42:06.389295 +0000 build-fedora4: c9b297e79b7c1932bc07d1668a262bedffe2e85d259b1e49ecfcab097b9557dceb0387afc8a5cfa801a09646742b28838253ad2066efb2f581e54ea089c1a8db  pkgs/vm-fc37/qubes-video-companion-license-1.1.0-1.fc37.noarch.rpm
+2024-06-03 08:42:06.389316 +0000 build-fedora4: 9426079aeae4b4c3dd9ef13a94791b5b873d99d77d9b764329f434c11e481b9dd5b5e42ee9d3560808c8cca980ab51785578716f1929aee379137a68233526f5  pkgs/vm-fc37/qubes-video-companion-receiver-1.0.7-1.fc37.noarch.rpm
+2024-06-03 08:42:06.389344 +0000 build-fedora4: b6fd7011899b9f643d03d643cd641b6b76b5e419a5250a856bbc795481db67fef6fb4cb411cd00a406c7e8cb37aac948ec126d47badc1deaf14eb41c19fa0ab7  pkgs/vm-fc37/qubes-video-companion-receiver-1.1.0-1.fc37.noarch.rpm
+2024-06-03 08:42:06.389366 +0000 build-fedora4: 3f8f634f720850fc68f5e00fd0e8769a7c843316783183e78d048a49bebe50f324c9d2942958b4e8ae9482b233f17bbb1ca46a895dc719f71409ffee8ba1c6b4  pkgs/vm-fc37/qubes-video-companion-sender-1.0.7-1.fc37.noarch.rpm
+2024-06-03 08:42:06.389387 +0000 build-fedora4: 66f0534114c80f6419ce41b6f2fb8a4bfe4ce118d4f985d86fdcec0b4810cf7b06b6813666e24eb83f4369eddbd607b3cd251826cebcd5f773cd85635682eb25  pkgs/vm-fc37/qubes-video-companion-sender-1.1.0-1.fc37.noarch.rpm
+2024-06-03 08:42:06.389407 +0000 build-fedora4: 7d7ab9388b7015321e6f535ecef662098aa572e52d28766c1133cc6b14a990218370b4620e83b879841d443fd2b7794ade46a7f9afae5d62de336767f54c2972  pkgs/vm-fc37/qubes-video-companion.spec.list
+2024-06-03 08:42:06.389428 +0000 build-fedora4: 26c5428a854263d0215ea070444197814b4056f5c37dc024a53c669338a50c641b8edaa23bc7f6663863da2e2639b8195990fc436820b2aea31b0713fbbae0d1  pkgs/vm-fc38/qubes-video-companion-1.0.1-1.fc38.x86_64.buildinfo
+2024-06-03 08:42:06.389448 +0000 build-fedora4: a78b924f2ff031f7a36fb917cc5e29ef0f756403aa63e3d827c73f129a1344440664920f35fff62fa8194ebff5ab9b9635b94a91030e877107b5af3aa5e4ddf3  pkgs/vm-fc38/qubes-video-companion-1.0.2-1.fc38.x86_64.buildinfo
+2024-06-03 08:42:06.389470 +0000 build-fedora4: fe86040361396b85cb396e12542a2bc884a9a2287111bb546ab5c175470227f33db3f078ec25dca54334c899d567329290a71a5eed12941a523671316d8b2c64  pkgs/vm-fc38/qubes-video-companion-1.0.3-1.fc38.x86_64.buildinfo
+2024-06-03 08:42:06.389496 +0000 build-fedora4: aa871f9f942ea20bf66e836cdf314bd9cbf996a0481f50a441c5dce1e55e2490bda5de1b2f789b3a702341204c84c52c49be8c26814c5d58d11ca3e85c073dbb  pkgs/vm-fc38/qubes-video-companion-1.0.4-1.fc38.x86_64.buildinfo
+2024-06-03 08:42:06.389517 +0000 build-fedora4: a1ab6c861cd0ed426b3a79b67f840a7a159a9b8b6c0a93c47a8b2ad7ad45347dc34bd62eedde8b368f3771b3d5b0135a4d7872ff4ae365588c448d29cbc82241  pkgs/vm-fc38/qubes-video-companion-1.0.5-1.fc38.x86_64.buildinfo
+2024-06-03 08:42:06.389538 +0000 build-fedora4: 5f8845115b159b8368264fc3e5e9a7fbba56ba7226a6551a421df35b77edd241d30104210c900f61c1d7e24385307ed08410025b35f52fac0fb8275005056f04  pkgs/vm-fc38/qubes-video-companion-1.0.6-1.fc38.x86_64.buildinfo
+2024-06-03 08:42:06.389558 +0000 build-fedora4: fe9f683581ffb3abe272de76b55b5311065878645359356d3fb8f9f27cbd5f3f17004c30b98f7bc6f4603471abd3eccb0dd0f820dd8f573e4cdd49617f28d637  pkgs/vm-fc38/qubes-video-companion-1.0.7-1.fc38.noarch.rpm
+2024-06-03 08:42:06.389578 +0000 build-fedora4: b7fc85004502b973d496f03bb7282007c081c1638949cf220acbbf77a528b10d7adf2ee451bbd0d7b0e01949a4fa75fec2aa2cde4b38a9771c38cbd057764d8f  pkgs/vm-fc38/qubes-video-companion-1.0.7-1.fc38.src.rpm
+2024-06-03 08:42:06.389599 +0000 build-fedora4: 4a5bf51b3e6452bef59ede8b82fd0e7aa70e3f47c7282cc31f8591358c6dbf22d0893dae9af9f095aaacaa3dc4be604841a6b832d16336d1daa37516b3cc40b7  pkgs/vm-fc38/qubes-video-companion-1.0.7-1.fc38.x86_64.buildinfo
+2024-06-03 08:42:06.389619 +0000 build-fedora4: fe93c0f3342831ff6c13135ae70e99539c6d317de11308468f35c0038b72b57b20d16a13084dcf05c3898c6ec5870446028ff212b662bc634d194ea3edd00894  pkgs/vm-fc38/qubes-video-companion-1.1.0-1.fc38.noarch.rpm
+2024-06-03 08:42:06.389639 +0000 build-fedora4: 4d0a3e2fc6e7ecd3b7c1ac6dc42cd56feaca182bc3bbf835f3fd53386d718c284dd4392de1d453eaab9682b0379b7d01bd1e8bb8e28cf06fe323afa92c75710d  pkgs/vm-fc38/qubes-video-companion-1.1.0-1.fc38.src.rpm
+2024-06-03 08:42:06.389660 +0000 build-fedora4: e30566c26946e2dda053eed716b2879d75d517be8fa23eacbed8386bba2e659727fa69cd0e623225ac1129e7c2f6fcd4ceb95d4d986fa43eeea61c56c544f1da  pkgs/vm-fc38/qubes-video-companion-1.1.0-1.fc38.x86_64.buildinfo
+2024-06-03 08:42:06.389681 +0000 build-fedora4: d96bf8f7f137634d5cc52f254a044af81a84f8e9503779e40e38eb22a3bcbc45f5db6405b7e7d77f56d9c64692d68d6e81fa23c537d1c4c563c49b01f424fbb8  pkgs/vm-fc38/qubes-video-companion-1.1.1-1.fc38.noarch.rpm
+2024-06-03 08:42:06.389706 +0000 build-fedora4: 4dfa95df7e1889b61bd10ef6a07edcd105bec0330334c43cbdbef8211ebef729d1f9843797b74e42170e90a429034d8b585d6a59b6e3ea4e3dfb560a372d48a3  pkgs/vm-fc38/qubes-video-companion-1.1.1-1.fc38.src.rpm
+2024-06-03 08:42:06.389728 +0000 build-fedora4: 9d0141b1ed9adc211a59fb60d89d4d9225f621d43cc3852d33177164a609af207335ab5558802b89c761cacc8692237aa921faa255a3b2b4e0afa1f2f7b46de9  pkgs/vm-fc38/qubes-video-companion-1.1.1-1.fc38.x86_64.buildinfo
+2024-06-03 08:42:06.389748 +0000 build-fedora4: 14845affdf4d3458b2b66d8d32940a311c7fb1f0b8f6cb8c18a8c725b8c74f473a7adbba2d581c8a3231258c697f86d75bceb902ca99a0cedb548e2886d211e4  pkgs/vm-fc38/qubes-video-companion-docs-1.0.7-1.fc38.noarch.rpm
+2024-06-03 08:42:06.389769 +0000 build-fedora4: e14b79f198ec5900c620378e237be59b16d1aac1550d4a18dbf79558ce0c143072fff0861e4ce0d7422fef97aae90fce26fd11ce676e85bdf302613657bce141  pkgs/vm-fc38/qubes-video-companion-docs-1.1.0-1.fc38.noarch.rpm
+2024-06-03 08:42:06.389789 +0000 build-fedora4: 9cbce5a221f6381ce491b0ecb78764cfb1182920b1e6ea3d9519f39076cff2ba81026c69c660f237e8533cf328b3f03f0e857daf052a8c37813948ac608c755a  pkgs/vm-fc38/qubes-video-companion-docs-1.1.1-1.fc38.noarch.rpm
+2024-06-03 08:42:06.389810 +0000 build-fedora4: 4f39404be997d5157cfc391bbc4cc992abc8d5debb26f73e9950aa74ee47c7d7bb29aa6c75636e2fd70d5f84188ca422f6f367dbb0e59ea7a8920630cf672f78  pkgs/vm-fc38/qubes-video-companion-license-1.0.7-1.fc38.noarch.rpm
+2024-06-03 08:42:06.389830 +0000 build-fedora4: 9873d3640b0d5953818383c1f6997b75a9f354998d1d7933c938fd6236676ac5fab99dc29d046d8c042b099986b86ffb40da7faf65d27c0ef3691e0e51823dae  pkgs/vm-fc38/qubes-video-companion-license-1.1.0-1.fc38.noarch.rpm
+2024-06-03 08:42:06.389851 +0000 build-fedora4: 3ecea617eaf9817de81026d994e87c1df2c52399e643e5d45753d7d932b0ac0f24a55232af4589c75aeefd4bbd2715e5df36ab2924b7efd78e35ae8d9ecc96bc  pkgs/vm-fc38/qubes-video-companion-license-1.1.1-1.fc38.noarch.rpm
+2024-06-03 08:42:06.389894 +0000 build-fedora4: 1496aeb12e081a3a19cc42c484ceffe744402738d2d431df3098e893a0df4eb7c09ca56809f8df64138cb4604ab9adb9ef3c2538a9c31c66524bfef0b213a370  pkgs/vm-fc38/qubes-video-companion-receiver-1.0.7-1.fc38.noarch.rpm
+2024-06-03 08:42:06.389918 +0000 build-fedora4: b9efeaa7743642116a94803177656d9979e781ce89276a4f949fb1984027ba06bb67021fa6afdbe4dec3d51440b2ebbf587e12e1a61c7276702f9259a21756cb  pkgs/vm-fc38/qubes-video-companion-receiver-1.1.0-1.fc38.noarch.rpm
+2024-06-03 08:42:06.389939 +0000 build-fedora4: 9a34ff2b629f2c12ad0fa1e430c17dca739def6390f338e822e40d105f30b425bd3b4209831bbe8b1e266066b1828c8b29062e6a90b653a08def5368deb9e4b6  pkgs/vm-fc38/qubes-video-companion-receiver-1.1.1-1.fc38.noarch.rpm
+2024-06-03 08:42:06.389965 +0000 build-fedora4: 68b4d8885e5cd77f045ae7fee39692981c032aeb5a9531c4087c2b3cb598de2b63f28db6e1867812a3fd3518a00eff6c42438b2c79798a812fa7eda0a30cfb37  pkgs/vm-fc38/qubes-video-companion-sender-1.0.7-1.fc38.noarch.rpm
+2024-06-03 08:42:06.389986 +0000 build-fedora4: 466c63bc52490b74b906806f8d49b0ff6306aebc70e6204d6c435ebe774d3d7699f7761066e85e5376792c6e7e89ad2810f4b95c8ad33b79206f9dc7b669ed02  pkgs/vm-fc38/qubes-video-companion-sender-1.1.0-1.fc38.noarch.rpm
+2024-06-03 08:42:06.390008 +0000 build-fedora4: 10039215364a42b2b05780fa607765560054233eecfcc9ee81382c846c5954fd43556c69bc9d482b57d576f2fdc015444ca0535ff0bb6ab13d221228ab44bd11  pkgs/vm-fc38/qubes-video-companion-sender-1.1.1-1.fc38.noarch.rpm
+2024-06-03 08:42:06.390028 +0000 build-fedora4: 2f55520ed63b7dcd21574e2d9659543929d65b45c35f18fb173d43a05a8e691677f1d5fe563e6338f5df9d36b8b81e8bd14e1063757048b3892ba4be9cfc1e77  pkgs/vm-fc38/qubes-video-companion.spec.list
+2024-06-03 08:42:06.390049 +0000 build-fedora4: 1009d7fac886e4092b20e4f6792a392102ef6f61b99b8a897cbb6eb4321156808f2e9b1b6f6f37d2765ffcfa7ae09f8aae54a6084ce47580694fb9266a99779f  pkgs/vm-fc39/qubes-video-companion-1.0.5-1.fc39.x86_64.buildinfo
+2024-06-03 08:42:06.390076 +0000 build-fedora4: 6f4c49af3f98c784e2e339bbe08f440446c89eb5a5f2c6992b581f1f927c2ade0f6f949823ea831eb7dbf1f1e5a66fde4bc070c1e46b33c37455cb02c0f2af9f  pkgs/vm-fc39/qubes-video-companion-1.0.6-1.fc39.x86_64.buildinfo
+2024-06-03 08:42:06.390098 +0000 build-fedora4: 8619d86871d5107bc39c0a8406f2ba2555b08d6720abca8ae692de82bb25bdfd1ffa42310925973fd1d64bf6cf30a0219fbbae88347ae8b6f6ee57c70c31ccd4  pkgs/vm-fc39/qubes-video-companion-1.0.7-1.fc39.noarch.rpm
+2024-06-03 08:42:06.390118 +0000 build-fedora4: e5dc61e70e0c261e907a2f283a2c378f3b195c76c13918b399585eea2f1d5d4bb97fdb7db77b47e1712eab44694cb8933c45b8cf9a2944b1f1b4af68a71bbb82  pkgs/vm-fc39/qubes-video-companion-1.0.7-1.fc39.src.rpm
+2024-06-03 08:42:06.390139 +0000 build-fedora4: 1f5ab4cff8b9a323362855f7a82d4c915cb157f8b1065fb9451a07e4c4d91d89bc0fd234305c28afe6cb783690ad58eff89e265c6736df8ccef3bdf4137af2e9  pkgs/vm-fc39/qubes-video-companion-1.0.7-1.fc39.x86_64.buildinfo
+2024-06-03 08:42:06.390160 +0000 build-fedora4: 32f722d518f34a9d2f2a3df751087cfc098ab49b1ec095229ebf17b65b3161b833285d207d6c75f75f2ad774c933388961256196bc289cd21359e9c653ac109d  pkgs/vm-fc39/qubes-video-companion-1.1.0-1.fc39.noarch.rpm
+2024-06-03 08:42:06.390180 +0000 build-fedora4: 1bcf6b71cab3f0ec87c6ef443a15f81ef2e96f85b9723af56275c41d33c1e762de5695d49b778a8c4db49434bc78c2173ec27fea1eb75b1a39098c9b4210dd60  pkgs/vm-fc39/qubes-video-companion-1.1.0-1.fc39.src.rpm
+2024-06-03 08:42:06.390201 +0000 build-fedora4: 56151b88ca38ff9523041f36f5a8ea43d44f4868e4f56fc54242e5451f350aea1d7de01b183fbf8a222594d8e0d9500eea1e53184b1abeccb4cbde471333c7ad  pkgs/vm-fc39/qubes-video-companion-1.1.0-1.fc39.x86_64.buildinfo
+2024-06-03 08:42:06.390222 +0000 build-fedora4: 8afe754402d8445ae21b31948039dc6decce6fd26a509d2d460964eaf429006713364d5c99785e4c2816943727b218a507b447f6cde87fa759c5cd9b80fcfc40  pkgs/vm-fc39/qubes-video-companion-1.1.1-1.fc39.noarch.rpm
+2024-06-03 08:42:06.390242 +0000 build-fedora4: 7fccdb23436752a21e7204e5ff0f1f6bc23e37ee0c8baba2146078a937a5acb4dac8d87bb083e15c269848d630f0259e93acfe2f13127fbeae7b917050b9cb71  pkgs/vm-fc39/qubes-video-companion-1.1.1-1.fc39.src.rpm
+2024-06-03 08:42:06.390263 +0000 build-fedora4: fdae37b0f00d6bc1cd245310ea814e898ab9391037f3083cfe22ab77ecfdda5c9d9c6260d9d9f75dc90b2f750925f6969056f0073adcb019709d9f3a7baff07e  pkgs/vm-fc39/qubes-video-companion-1.1.1-1.fc39.x86_64.buildinfo
+2024-06-03 08:42:06.390285 +0000 build-fedora4: c3456caaee556c7e7ea3ad23a21283364cafada7e7ecaf38f812fd6489c511ad5d0446654bb12d2f40fbf0aaeab536bff02ec0ed1373b70a5fcbed9bb3483cde  pkgs/vm-fc39/qubes-video-companion-docs-1.0.7-1.fc39.noarch.rpm
+2024-06-03 08:42:06.390305 +0000 build-fedora4: 6141c4e86c832548a38e884b235d4ad77d4fd58d2ac8248f2714cbba444a43b99ad2a5deeb75f8f8cd78baa78cd106e0c33218099f77fa0be7ef67c715d2a2fb  pkgs/vm-fc39/qubes-video-companion-docs-1.1.0-1.fc39.noarch.rpm
+2024-06-03 08:42:06.390326 +0000 build-fedora4: f11f3228090f24bee9be0d02a0d44e24a89007ebc5099c528357f6e5d47630ccda6ce799bdf4e4436dd6820913a5a8213b24f6bcf3907467831f85952e0edf22  pkgs/vm-fc39/qubes-video-companion-docs-1.1.1-1.fc39.noarch.rpm
+2024-06-03 08:42:06.390347 +0000 build-fedora4: 310fefd58edc09bc290018629f0aa461766bf5a37cb41af47f76b69a06f4605d4f026470bacb22965d956723e171cd27d5c43e97bcabe5431faf995aa7a55a59  pkgs/vm-fc39/qubes-video-companion-license-1.0.7-1.fc39.noarch.rpm
+2024-06-03 08:42:06.390368 +0000 build-fedora4: ca8bc081029997b6f2cbf25d4fb5f7dd5f4c86556dc2a1c7b2b978f66e232d61f2b5f930a908f645a3e70116e7ae6b8aec5984fb5547092a98b4ed6e86a7fa3f  pkgs/vm-fc39/qubes-video-companion-license-1.1.0-1.fc39.noarch.rpm
+2024-06-03 08:42:06.390389 +0000 build-fedora4: ffdccea7d92bacfe61341594637684011708854fbf958cee65f6f1b14878996f6c2cbdf94b2122c454e646c9016723df12415c1fcbf72e456fb1f41ace7c646d  pkgs/vm-fc39/qubes-video-companion-license-1.1.1-1.fc39.noarch.rpm
+2024-06-03 08:42:06.390414 +0000 build-fedora4: 312319e963d9d6b226d1eb77b58dfe24dcc452f3ae111410629af049bec2dab71a6816a6d8fda741259a16f60f6ed8789f714cac1ca3498561a877b2c74a5835  pkgs/vm-fc39/qubes-video-companion-receiver-1.0.7-1.fc39.noarch.rpm
+2024-06-03 08:42:06.390441 +0000 build-fedora4: 1a17c4e91b2eed5c1f34e228194884e0375017fc2130f882f3b309d46e8a225766544c5f64ef7bcd07289c5ec387eaa96003e3ff99586a1ffe0bdab13c5326f8  pkgs/vm-fc39/qubes-video-companion-receiver-1.1.0-1.fc39.noarch.rpm
+2024-06-03 08:42:06.390463 +0000 build-fedora4: c9052c2fa1e2a3a417f5ed7617a01d3842c44cb50d8c792ab5b3b481948cd62e9949cc9a72053ddf759abf633a112d5aeaaa610bf3a131122e26ca12b0aaff75  pkgs/vm-fc39/qubes-video-companion-receiver-1.1.1-1.fc39.noarch.rpm
+2024-06-03 08:42:06.390484 +0000 build-fedora4: 0d69a8d00dcf23c479858ebe1c16a3ef7ba879f8317e09fde584d34258640754ecb786ff6f9166542dbddde919184d47fb51c3a30aff8d19fb57ce37c1525044  pkgs/vm-fc39/qubes-video-companion-sender-1.0.7-1.fc39.noarch.rpm
+2024-06-03 08:42:06.390505 +0000 build-fedora4: 2cda61fd15f90e1c2e5c08f74eb1f549b960ca6542d5701a230deef4e2fdbcc41c146e8058ea7b2128870b74e6771911252df096471b7f67ee032e785bd4081b  pkgs/vm-fc39/qubes-video-companion-sender-1.1.0-1.fc39.noarch.rpm
+2024-06-03 08:42:06.390526 +0000 build-fedora4: 27676abc05df59036a2fa76e8936b3774ee3eb10d2936acdd32285b88e47cfa99abcee53c1e8ba8747e62d7320cbbb953e07d51f93238343010e00375a19796a  pkgs/vm-fc39/qubes-video-companion-sender-1.1.1-1.fc39.noarch.rpm
+2024-06-03 08:42:06.390546 +0000 build-fedora4: 72098db83791d53b412aec9d2e0b0b750155ffebd50ffc038267c000cf2361b786085628211bcf9295e049e4acc338302c5f3e07e0a77156438f10cad172562a  pkgs/vm-fc39/qubes-video-companion.spec.list
+2024-06-03 08:42:06.390562 +0000 build-fedora4: ================================================================================
+2024-06-03 08:42:06.390577 +0000 build-fedora4:                            B U I L D   I N F O                                  
+2024-06-03 08:42:06.390592 +0000 build-fedora4: Items in red indicate it was automatically generated by configuration file(s)
+2024-06-03 08:42:06.390607 +0000 build-fedora4: Items in white indicate it was automatically removed by configuration file(s)
+2024-06-03 08:42:06.390622 +0000 build-fedora4: ================================================================================
+2024-06-03 08:42:06.390634 +0000 build-fedora4: DISTS_VM:
+2024-06-03 08:42:06.390647 +0000 build-fedora4:      fc37, fc38, fc39,
+2024-06-03 08:42:06.390659 +0000 build-fedora4: DISTS_ALL:
+2024-06-03 08:42:06.390672 +0000 build-fedora4:      vm-fc37, vm-fc38, vm-fc39,
+2024-06-03 08:42:06.390684 +0000 build-fedora4: DIST_DOM0:
+2024-06-03 08:42:06.390695 +0000 build-fedora4:     
+2024-06-03 08:42:06.390708 +0000 build-fedora4: BUILDER_PLUGINS:
+2024-06-03 08:42:06.390724 +0000 build-fedora4:      builder-rpm, builder-debian, mgmt-salt, linux-yum, release-configs, builder-github,
+2024-06-03 08:42:06.390735 +0000 build-fedora4: COMPONENTS:
+2024-06-03 08:42:06.390753 +0000 build-fedora4:      video-companion,
+2024-06-03 08:42:06.390765 +0000 build-fedora4: GIT_REPOS:
+2024-06-03 08:42:06.390778 +0000 build-fedora4:      qubes-src/video-companion,
+2024-06-03 08:42:06.390789 +0000 build-fedora4: TEMPLATE:
+2024-06-03 08:42:06.390800 +0000 build-fedora4:     
+2024-06-03 08:42:06.390812 +0000 build-fedora4: TEMPLATE_FLAVOR_DIR:
+2024-06-03 08:42:06.390824 +0000 build-fedora4:     
+2024-06-03 08:42:06.390836 +0000 build-fedora4: TEMPLATE_ALIAS:
+2024-06-03 08:42:06.390850 +0000 build-fedora4:      stretch:stretch+standard, stretch+gnome:stretch+gnome+standard,
+2024-06-03 08:42:06.390865 +0000 build-fedora4:      stretch+minimal:stretch+minimal+no-recommends, buster:buster+gnome,
+2024-06-03 08:42:06.390905 +0000 build-fedora4:      buster+minimal:buster+minimal+no-recommends, bullseye:bullseye+gnome+firmware,
+2024-06-03 08:42:06.390921 +0000 build-fedora4:      bullseye+minimal:bullseye+minimal+no-recommends, bookworm:bookworm+gnome+firmware,
+2024-06-03 08:42:06.390936 +0000 build-fedora4:      bookworm+minimal:bookworm+minimal+no-recommends, bionic:bionic+standard,
+2024-06-03 08:42:06.390959 +0000 build-fedora4:      focal:focal+standard, whonix-gateway-15:buster+whonix-gateway+minimal+no-recommends,
+2024-06-03 08:42:06.390975 +0000 build-fedora4:      whonix-workstation-15:buster+whonix-workstation+minimal+no-recommends,
+2024-06-03 08:42:06.390989 +0000 build-fedora4:      whonix-gateway-16:bullseye+whonix-gateway+minimal+no-recommends,
+2024-06-03 08:42:06.391004 +0000 build-fedora4:      whonix-workstation-16:bullseye+whonix-workstation+minimal+no-recommends,
+2024-06-03 08:42:06.391016 +0000 build-fedora4: TEMPLATE_LABEL:
+2024-06-03 08:42:06.391033 +0000 build-fedora4:      fc37:fedora-37, fc38:fedora-38, fc34:fedora-34 fc35:fedora-35 fc36:fedora-36 fc34+minimal:fedora-34-minimal
+2024-06-03 08:42:06.391049 +0000 build-fedora4:      fc35+minimal:fedora-35-minimal fc36+minimal:fedora-36-minimal fc37+minimal:fedora-37-minimal
+2024-06-03 08:42:06.391066 +0000 build-fedora4:      fc38+minimal:fedora-38-minimal fc34+xfce:fedora-34-xfce fc35+xfce:fedora-35-xfce fc36+xfce:fedora-36-xfce
+2024-06-03 08:42:06.391095 +0000 build-fedora4:      fc37+xfce:fedora-37-xfce fc38+xfce:fedora-38-xfce stretch:debian-9 stretch+standard:debian-9
+2024-06-03 08:42:06.391112 +0000 build-fedora4:      stretch+xfce:debian-9-xfce buster+gnome:debian-10 buster+xfce:debian-10-xfce bullseye:debian-11
+2024-06-03 08:42:06.391128 +0000 build-fedora4:      bullseye+standard+firmware:debian-11 bullseye+xfce:debian-11-xfce bookworm:debian-12
+2024-06-03 08:42:06.391144 +0000 build-fedora4:      bookworm+standard:debian-12 bookworm+xfce:debian-12-xfce bionic+standard:bionic
+2024-06-03 08:42:06.391160 +0000 build-fedora4:      focal+standard:focal buster+whonix-gateway+minimal+no-recommends:whonix-gw-15
+2024-06-03 08:42:06.391174 +0000 build-fedora4:      buster+whonix-workstation+minimal+no-recommends:whonix-ws-15
+2024-06-03 08:42:06.391189 +0000 build-fedora4:      bullseye+whonix-gateway+minimal+no-recommends:whonix-gw-16
+2024-06-03 08:42:06.391205 +0000 build-fedora4:      bullseye+whonix-workstation+minimal+no-recommends:whonix-ws-16 centos7:centos-7
+2024-06-03 08:42:06.391221 +0000 build-fedora4:      centos7+minimal:centos-7-minimal centos7+xfce:centos-7-xfce centos-stream8:centos-stream-8
+2024-06-03 08:42:06.391237 +0000 build-fedora4:      centos-stream8+minimal:centos-stream-8-minimal centos-stream8+xfce:centos-stream-8-xfce
+2024-06-03 08:42:06.391249 +0000 build-fedora4: > running make
+2024-06-03 08:42:06.391265 +0000 build-fedora4: Makefile:299: update target 'sign.vm.fc38.video-companion' due to: target does not exist
+2024-06-03 08:42:06.391320 +0000 build-fedora4: if [ -n "video-companion" -a "0" -ne 0 ]; then BRANCH=release4.1; branch_var="BRANCH_video_companion"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/video-companion > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2024-06-03 08:42:06.391337 +0000 build-fedora4: SIGN_KEY=5817A43B283DE5A9181A522E1848792F9E2795E9; \
+2024-06-03 08:42:06.391351 +0000 build-fedora4: sign_key_var="SIGN_KEY_${DIST%%+*}"; \
+2024-06-03 08:42:06.391365 +0000 build-fedora4: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2024-06-03 08:42:06.391380 +0000 build-fedora4: if [ "video-companion" = linux-template-builder ]; then
+2024-06-03 08:42:06.391396 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc38 template-name)
+2024-06-03 08:42:06.391408 +0000 build-fedora4: fi
+2024-06-03 08:42:06.391423 +0000 build-fedora4: if [ -r qubes-src/video-companion/Makefile.builder ]; then \
+2024-06-03 08:42:06.391437 +0000 build-fedora4: .make --no-print-directory -f Makefile.generic \
+2024-06-03 08:42:06.391449 +0000 build-fedora4: ..DIST=fc38 \
+2024-06-03 08:42:06.391462 +0000 build-fedora4: ..PACKAGE_SET=vm \
+2024-06-03 08:42:06.391482 +0000 build-fedora4: ..COMPONENT=video-companion \
+2024-06-03 08:42:06.391496 +0000 build-fedora4: ..SIGN_KEY=$SIGN_KEY \
+2024-06-03 08:42:06.391508 +0000 build-fedora4: ..sign || exit 1; \
+2024-06-03 08:42:06.391522 +0000 build-fedora4: elif [ -d qubes-src/video-companion/rpm ]; then \
+2024-06-03 08:42:06.391536 +0000 build-fedora4: .# Old mechanism supported only for RPM
+2024-06-03 08:42:06.391551 +0000 build-fedora4: FILE_LIST=""; for RPM in qubes-src/video-companion/rpm/*/*.rpm; do \
+2024-06-03 08:42:06.391566 +0000 build-fedora4: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2024-06-03 08:42:06.391579 +0000 build-fedora4: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2024-06-03 08:42:06.391591 +0000 build-fedora4: ..fi ;\
+2024-06-03 08:42:06.391602 +0000 build-fedora4: .done ; \
+2024-06-03 08:42:06.391616 +0000 build-fedora4: .if [ -n "$FILE_LIST" ]; then \
+2024-06-03 08:42:06.391628 +0000 build-fedora4: ..echo "--> Signing..."; \
+2024-06-03 08:42:06.391642 +0000 build-fedora4: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2024-06-03 08:42:06.391655 +0000 build-fedora4: ..if [ -n "$SIGN_KEY" ]; then \
+2024-06-03 08:42:06.391668 +0000 build-fedora4: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2024-06-03 08:42:06.391680 +0000 build-fedora4: ..fi; \
+2024-06-03 08:42:06.391695 +0000 build-fedora4: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2024-06-03 08:42:06.391707 +0000 build-fedora4: .fi; \
+2024-06-03 08:42:06.391718 +0000 build-fedora4: fi
+2024-06-03 08:42:06.391731 +0000 build-fedora4: + ERR_OUTPUT=/dev/stderr
+2024-06-03 08:42:06.391744 +0000 build-fedora4: + source_dir=qubes-src/video-companion
+2024-06-03 08:42:06.391760 +0000 build-fedora4: + spec_file=qubes-src/video-companion/rpm_spec/qubes-video-companion.spec
+2024-06-03 08:42:06.391772 +0000 build-fedora4: + query_field='%{SOURCE0}'
+2024-06-03 08:42:06.391784 +0000 build-fedora4: + dist=fc38
+2024-06-03 08:42:06.391796 +0000 build-fedora4: + '[' 4 -lt 4 ']'
+2024-06-03 08:42:06.391811 +0000 build-fedora4: ++ basename qubes-src/video-companion/rpm_spec/qubes-video-companion.spec
+2024-06-03 08:42:06.391825 +0000 build-fedora4: + spec_file_bn=qubes-video-companion.spec
+2024-06-03 08:42:06.391839 +0000 build-fedora4: + [[ qubes-video-companion.spec.in == \.\i\n ]]
+2024-06-03 08:42:06.391854 +0000 build-fedora4: + '[' -r qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in ']'
+2024-06-03 08:42:06.391867 +0000 build-fedora4: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2024-06-03 08:42:06.391901 +0000 build-fedora4: + tmp_spec=/tmp/tmp.Sdp1Bj.spec
+2024-06-03 08:42:06.391916 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2024-06-03 08:42:06.391938 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/video-companion qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in /tmp/tmp.Sdp1Bj.spec
+2024-06-03 08:42:06.391950 +0000 build-fedora4: + '[' 3 -lt 3 ']'
+2024-06-03 08:42:06.391964 +0000 build-fedora4: + source_dir=qubes-src/video-companion
+2024-06-03 08:42:06.391979 +0000 build-fedora4: + input=qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in
+2024-06-03 08:42:06.391992 +0000 build-fedora4: + output=/tmp/tmp.Sdp1Bj.spec
+2024-06-03 08:42:06.392008 +0000 build-fedora4: + '[' '!' -e qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in ']'
+2024-06-03 08:42:06.392027 +0000 build-fedora4: + cp qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:06.392039 +0000 build-fedora4: + read -r ver
+2024-06-03 08:42:06.392052 +0000 build-fedora4: + '[' -z '' ']'
+2024-06-03 08:42:06.392069 +0000 build-fedora4: + sed -i 's|@VERSION@|1.1.1|g' qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:06.392082 +0000 build-fedora4: + vnum=1
+2024-06-03 08:42:06.392094 +0000 build-fedora4: + read -r ver
+2024-06-03 08:42:06.392108 +0000 build-fedora4: + '[' -e qubes-src/video-companion/rel ']'
+2024-06-03 08:42:06.392127 +0000 build-fedora4: + read -r rel
+2024-06-03 08:42:06.392140 +0000 build-fedora4: + '[' -z '' ']'
+2024-06-03 08:42:06.392157 +0000 build-fedora4: + sed -i 's|@REL@|1|g' qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:06.392169 +0000 build-fedora4: + rnum=1
+2024-06-03 08:42:06.392181 +0000 build-fedora4: + read -r rel
+2024-06-03 08:42:06.392198 +0000 build-fedora4: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:06.392214 +0000 build-fedora4: + grep -q @CHANGELOG@ qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:06.392229 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2024-06-03 08:42:06.392250 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/video-companion qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:06.734004 +0000 build-fedora4: + cat qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:06.734131 +0000 build-fedora4: + rm -rf qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:06.734150 +0000 build-fedora4: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2024-06-03 08:42:06.734166 +0000 build-fedora4: + spectool --list-files --source 0 /tmp/tmp.Sdp1Bj.spec
+2024-06-03 08:42:07.303810 +0000 build-fedora4: + rm -f /tmp/tmp.Sdp1Bj.spec
+2024-06-03 08:42:07.303909 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:204: update target 'sign-prep' due to: target does not exist
+2024-06-03 08:42:07.303934 +0000 build-fedora4: if [ -n "qubes-gpg-client-wrapper" ]; then \
+2024-06-03 08:42:07.303951 +0000 build-fedora4: .mkdir -p /home/user/builder-r4.1/keyrings/rpmdb; \
+2024-06-03 08:42:07.303964 +0000 build-fedora4: .tmpname=$(mktemp); \
+2024-06-03 08:42:07.303981 +0000 build-fedora4: .qubes-gpg-client-wrapper --armor --export "5817A43B283DE5A9181A522E1848792F9E2795E9" > "$tmpname"; \
+2024-06-03 08:42:07.303998 +0000 build-fedora4: .rpmkeys --dbpath=/home/user/builder-r4.1/keyrings/rpmdb --import "$tmpname"; \
+2024-06-03 08:42:07.304011 +0000 build-fedora4: .rm -f "$tmpname"; \
+2024-06-03 08:42:07.304022 +0000 build-fedora4: fi
+2024-06-03 08:42:08.026640 +0000 build-fedora4: warning: Found bdb_ro Packages database while attempting sqlite backend: using bdb_ro backend.
+2024-06-03 08:42:08.082732 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:08.082792 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:08.153064 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:08.153125 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:08.214811 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:08.214899 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:08.280694 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:08.280754 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:08.344681 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:220: update target 'sign' due to: target does not exist
+2024-06-03 08:42:08.344765 +0000 build-fedora4: cd qubes-src/video-companion && for pkg in pkgs/vm-fc38/qubes-video-companion-1.1.1-1.fc38.noarch.rpm pkgs/vm-fc38/qubes-video-companion-1.1.1-1.fc38.src.rpm pkgs/vm-fc38/qubes-video-companion-docs-1.1.1-1.fc38.noarch.rpm pkgs/vm-fc38/qubes-video-companion-license-1.1.1-1.fc38.noarch.rpm pkgs/vm-fc38/qubes-video-companion-receiver-1.1.1-1.fc38.noarch.rpm pkgs/vm-fc38/qubes-video-companion-sender-1.1.1-1.fc38.noarch.rpm pkgs/vm-fc38/qubes-video-companion-1.1.1-1.fc38.x86_64.buildinfo ; do \
+2024-06-03 08:42:08.344808 +0000 build-fedora4: .if [ "${pkg##*.}" = "buildinfo" ]; then \
+2024-06-03 08:42:08.344834 +0000 build-fedora4: ../home/user/builder-r4.1/qubes-src/builder-rpm/scripts/update-rpmbuildinfo "$pkg" | /usr/bin/qubes-gpg-client-wrapper --clearsign --local-user 5817A43B283DE5A9181A522E1848792F9E2795E9 > "$pkg".tmp && \
+2024-06-03 08:42:08.344848 +0000 build-fedora4: ..mv -f "$pkg".tmp "$pkg"; \
+2024-06-03 08:42:08.344864 +0000 build-fedora4: .elif [ "$(rpmkeys --checksig -- "$pkg")" != "$pkg: digests signatures OK" ]; then \
+2024-06-03 08:42:08.344909 +0000 build-fedora4: ..setsid -w rpmsign --digest-algo=sha256 --key-id=5817A43B283DE5A9181A522E1848792F9E2795E9 --addsign  -- "$pkg" </dev/null || exit 1; \
+2024-06-03 08:42:08.344922 +0000 build-fedora4: .fi; \
+2024-06-03 08:42:08.344934 +0000 build-fedora4: done
+2024-06-03 08:42:08.413933 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2024-06-03 08:42:09.167631 +0000 build-fedora4: pkgs/vm-fc38/qubes-video-companion-1.1.1-1.fc38.noarch.rpm:
+2024-06-03 08:42:09.231722 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2024-06-03 08:42:10.337744 +0000 build-fedora4: pkgs/vm-fc38/qubes-video-companion-1.1.1-1.fc38.src.rpm:
+2024-06-03 08:42:10.456042 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2024-06-03 08:42:11.233164 +0000 build-fedora4: pkgs/vm-fc38/qubes-video-companion-docs-1.1.1-1.fc38.noarch.rpm:
+2024-06-03 08:42:11.295068 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2024-06-03 08:42:11.947805 +0000 build-fedora4: pkgs/vm-fc38/qubes-video-companion-license-1.1.1-1.fc38.noarch.rpm:
+2024-06-03 08:42:12.010284 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2024-06-03 08:42:12.679042 +0000 build-fedora4: pkgs/vm-fc38/qubes-video-companion-receiver-1.1.1-1.fc38.noarch.rpm:
+2024-06-03 08:42:12.736442 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2024-06-03 08:42:13.487638 +0000 build-fedora4: pkgs/vm-fc38/qubes-video-companion-sender-1.1.1-1.fc38.noarch.rpm:
+2024-06-03 08:42:14.105946 +0000 build-fedora4: Makefile:299: update target 'sign.vm.fc39.video-companion' due to: target does not exist
+2024-06-03 08:42:14.106032 +0000 build-fedora4: if [ -n "video-companion" -a "0" -ne 0 ]; then BRANCH=release4.1; branch_var="BRANCH_video_companion"; [ -n "${!branch_var}" ] && BRANCH="${!branch_var}"; pushd qubes-src/video-companion > /dev/null; CURRENT_BRANCH=`git symbolic-ref --short HEAD 2>/dev/null || git describe --tags --exact-match HEAD`; if [ "$BRANCH" != "$CURRENT_BRANCH" ]; then echo "-> ERROR: Wrong branch $branch_var=$CURRENT_BRANCH (expected $BRANCH)"; exit 1; fi; popd > /dev/null; fi
+2024-06-03 08:42:14.106053 +0000 build-fedora4: SIGN_KEY=5817A43B283DE5A9181A522E1848792F9E2795E9; \
+2024-06-03 08:42:14.106068 +0000 build-fedora4: sign_key_var="SIGN_KEY_${DIST%%+*}"; \
+2024-06-03 08:42:14.106146 +0000 build-fedora4: [ -n "${!sign_key_var}" ] && SIGN_KEY="${!sign_key_var}"; \
+2024-06-03 08:42:14.106164 +0000 build-fedora4: if [ "video-companion" = linux-template-builder ]; then
+2024-06-03 08:42:14.106180 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc39 template-name)
+2024-06-03 08:42:14.106192 +0000 build-fedora4: fi
+2024-06-03 08:42:14.106206 +0000 build-fedora4: if [ -r qubes-src/video-companion/Makefile.builder ]; then \
+2024-06-03 08:42:14.106239 +0000 build-fedora4: .make --no-print-directory -f Makefile.generic \
+2024-06-03 08:42:14.106253 +0000 build-fedora4: ..DIST=fc39 \
+2024-06-03 08:42:14.106266 +0000 build-fedora4: ..PACKAGE_SET=vm \
+2024-06-03 08:42:14.106279 +0000 build-fedora4: ..COMPONENT=video-companion \
+2024-06-03 08:42:14.106291 +0000 build-fedora4: ..SIGN_KEY=$SIGN_KEY \
+2024-06-03 08:42:14.106303 +0000 build-fedora4: ..sign || exit 1; \
+2024-06-03 08:42:14.106316 +0000 build-fedora4: elif [ -d qubes-src/video-companion/rpm ]; then \
+2024-06-03 08:42:14.106329 +0000 build-fedora4: .# Old mechanism supported only for RPM
+2024-06-03 08:42:14.106343 +0000 build-fedora4: FILE_LIST=""; for RPM in qubes-src/video-companion/rpm/*/*.rpm; do \
+2024-06-03 08:42:14.106362 +0000 build-fedora4: ..if ! qubes-src/installer-qubes-os/rpm_verify $RPM > /dev/null; then \
+2024-06-03 08:42:14.106376 +0000 build-fedora4: ...FILE_LIST="$FILE_LIST $RPM" ;\
+2024-06-03 08:42:14.106387 +0000 build-fedora4: ..fi ;\
+2024-06-03 08:42:14.106399 +0000 build-fedora4: .done ; \
+2024-06-03 08:42:14.106411 +0000 build-fedora4: .if [ -n "$FILE_LIST" ]; then \
+2024-06-03 08:42:14.106423 +0000 build-fedora4: ..echo "--> Signing..."; \
+2024-06-03 08:42:14.106436 +0000 build-fedora4: ..RPMSIGN_OPTS=--digest-algo=sha256; \
+2024-06-03 08:42:14.106448 +0000 build-fedora4: ..if [ -n "$SIGN_KEY" ]; then \
+2024-06-03 08:42:14.106461 +0000 build-fedora4: ...RPMSIGN_OPTS="--key-id=$SIGN_KEY"; \
+2024-06-03 08:42:14.106473 +0000 build-fedora4: ..fi; \
+2024-06-03 08:42:14.106487 +0000 build-fedora4: ..setsid -w rpmsign "$RPMSIGN_OPTS" --addsign $FILE_LIST </dev/null ;\
+2024-06-03 08:42:14.106498 +0000 build-fedora4: .fi; \
+2024-06-03 08:42:14.106510 +0000 build-fedora4: fi
+2024-06-03 08:42:14.146152 +0000 build-fedora4: + ERR_OUTPUT=/dev/stderr
+2024-06-03 08:42:14.146209 +0000 build-fedora4: + source_dir=qubes-src/video-companion
+2024-06-03 08:42:14.146231 +0000 build-fedora4: + spec_file=qubes-src/video-companion/rpm_spec/qubes-video-companion.spec
+2024-06-03 08:42:14.146246 +0000 build-fedora4: + query_field='%{SOURCE0}'
+2024-06-03 08:42:14.146259 +0000 build-fedora4: + dist=fc39
+2024-06-03 08:42:14.146272 +0000 build-fedora4: + '[' 4 -lt 4 ']'
+2024-06-03 08:42:14.146287 +0000 build-fedora4: ++ basename qubes-src/video-companion/rpm_spec/qubes-video-companion.spec
+2024-06-03 08:42:14.152834 +0000 build-fedora4: + spec_file_bn=qubes-video-companion.spec
+2024-06-03 08:42:14.152912 +0000 build-fedora4: + [[ qubes-video-companion.spec.in == \.\i\n ]]
+2024-06-03 08:42:14.152936 +0000 build-fedora4: + '[' -r qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in ']'
+2024-06-03 08:42:14.152952 +0000 build-fedora4: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2024-06-03 08:42:14.152965 +0000 build-fedora4: + tmp_spec=/tmp/tmp.s8Umtg.spec
+2024-06-03 08:42:14.154374 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2024-06-03 08:42:14.161633 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/video-companion qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in /tmp/tmp.s8Umtg.spec
+2024-06-03 08:42:14.167489 +0000 build-fedora4: + '[' 3 -lt 3 ']'
+2024-06-03 08:42:14.167538 +0000 build-fedora4: + source_dir=qubes-src/video-companion
+2024-06-03 08:42:14.167558 +0000 build-fedora4: + input=qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in
+2024-06-03 08:42:14.167572 +0000 build-fedora4: + output=/tmp/tmp.s8Umtg.spec
+2024-06-03 08:42:14.167588 +0000 build-fedora4: + '[' '!' -e qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in ']'
+2024-06-03 08:42:14.167607 +0000 build-fedora4: + cp qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:14.174155 +0000 build-fedora4: + read -r ver
+2024-06-03 08:42:14.174201 +0000 build-fedora4: + '[' -z '' ']'
+2024-06-03 08:42:14.174223 +0000 build-fedora4: + sed -i 's|@VERSION@|1.1.1|g' qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:14.180000 +0000 build-fedora4: + vnum=1
+2024-06-03 08:42:14.180048 +0000 build-fedora4: + read -r ver
+2024-06-03 08:42:14.180067 +0000 build-fedora4: + '[' -e qubes-src/video-companion/rel ']'
+2024-06-03 08:42:14.180081 +0000 build-fedora4: + read -r rel
+2024-06-03 08:42:14.180093 +0000 build-fedora4: + '[' -z '' ']'
+2024-06-03 08:42:14.180110 +0000 build-fedora4: + sed -i 's|@REL@|1|g' qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:14.184933 +0000 build-fedora4: + rnum=1
+2024-06-03 08:42:14.184980 +0000 build-fedora4: + read -r rel
+2024-06-03 08:42:14.185001 +0000 build-fedora4: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:14.189483 +0000 build-fedora4: + grep -q @CHANGELOG@ qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:14.191270 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2024-06-03 08:42:14.199486 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/video-companion qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:14.778636 +0000 build-fedora4: + cat qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:14.781229 +0000 build-fedora4: + rm -rf qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:14.786894 +0000 build-fedora4: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2024-06-03 08:42:14.786946 +0000 build-fedora4: + spectool --list-files --source 0 /tmp/tmp.s8Umtg.spec
+2024-06-03 08:42:15.190604 +0000 build-fedora4: + rm -f /tmp/tmp.s8Umtg.spec
+2024-06-03 08:42:15.197796 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:204: update target 'sign-prep' due to: target does not exist
+2024-06-03 08:42:15.197844 +0000 build-fedora4: if [ -n "qubes-gpg-client-wrapper" ]; then \
+2024-06-03 08:42:15.197863 +0000 build-fedora4: .mkdir -p /home/user/builder-r4.1/keyrings/rpmdb; \
+2024-06-03 08:42:15.197912 +0000 build-fedora4: .tmpname=$(mktemp); \
+2024-06-03 08:42:15.197932 +0000 build-fedora4: .qubes-gpg-client-wrapper --armor --export "5817A43B283DE5A9181A522E1848792F9E2795E9" > "$tmpname"; \
+2024-06-03 08:42:15.197948 +0000 build-fedora4: .rpmkeys --dbpath=/home/user/builder-r4.1/keyrings/rpmdb --import "$tmpname"; \
+2024-06-03 08:42:15.197960 +0000 build-fedora4: .rm -f "$tmpname"; \
+2024-06-03 08:42:15.197972 +0000 build-fedora4: fi
+2024-06-03 08:42:15.746172 +0000 build-fedora4: warning: Found bdb_ro Packages database while attempting sqlite backend: using bdb_ro backend.
+2024-06-03 08:42:15.794042 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:15.794160 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:15.828673 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:15.828727 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:15.887768 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:15.887824 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:15.945930 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:15.945986 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:16.017863 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:220: update target 'sign' due to: target does not exist
+2024-06-03 08:42:16.017984 +0000 build-fedora4: cd qubes-src/video-companion && for pkg in pkgs/vm-fc39/qubes-video-companion-1.1.1-1.fc39.noarch.rpm pkgs/vm-fc39/qubes-video-companion-1.1.1-1.fc39.src.rpm pkgs/vm-fc39/qubes-video-companion-docs-1.1.1-1.fc39.noarch.rpm pkgs/vm-fc39/qubes-video-companion-license-1.1.1-1.fc39.noarch.rpm pkgs/vm-fc39/qubes-video-companion-receiver-1.1.1-1.fc39.noarch.rpm pkgs/vm-fc39/qubes-video-companion-sender-1.1.1-1.fc39.noarch.rpm pkgs/vm-fc39/qubes-video-companion-1.1.1-1.fc39.x86_64.buildinfo ; do \
+2024-06-03 08:42:16.018026 +0000 build-fedora4: .if [ "${pkg##*.}" = "buildinfo" ]; then \
+2024-06-03 08:42:16.018059 +0000 build-fedora4: ../home/user/builder-r4.1/qubes-src/builder-rpm/scripts/update-rpmbuildinfo "$pkg" | /usr/bin/qubes-gpg-client-wrapper --clearsign --local-user 5817A43B283DE5A9181A522E1848792F9E2795E9 > "$pkg".tmp && \
+2024-06-03 08:42:16.018156 +0000 build-fedora4: ..mv -f "$pkg".tmp "$pkg"; \
+2024-06-03 08:42:16.018175 +0000 build-fedora4: .elif [ "$(rpmkeys --checksig -- "$pkg")" != "$pkg: digests signatures OK" ]; then \
+2024-06-03 08:42:16.018193 +0000 build-fedora4: ..setsid -w rpmsign --digest-algo=sha256 --key-id=5817A43B283DE5A9181A522E1848792F9E2795E9 --addsign  -- "$pkg" </dev/null || exit 1; \
+2024-06-03 08:42:16.018204 +0000 build-fedora4: .fi; \
+2024-06-03 08:42:16.018215 +0000 build-fedora4: done
+2024-06-03 08:42:16.092580 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2024-06-03 08:42:16.639670 +0000 build-fedora4: pkgs/vm-fc39/qubes-video-companion-1.1.1-1.fc39.noarch.rpm:
+2024-06-03 08:42:16.694499 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2024-06-03 08:42:17.199538 +0000 build-fedora4: pkgs/vm-fc39/qubes-video-companion-1.1.1-1.fc39.src.rpm:
+2024-06-03 08:42:17.245605 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2024-06-03 08:42:17.511468 +0000 build-fedora4: pkgs/vm-fc39/qubes-video-companion-docs-1.1.1-1.fc39.noarch.rpm:
+2024-06-03 08:42:17.555695 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2024-06-03 08:42:17.818155 +0000 build-fedora4: pkgs/vm-fc39/qubes-video-companion-license-1.1.1-1.fc39.noarch.rpm:
+2024-06-03 08:42:17.860021 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2024-06-03 08:42:18.133407 +0000 build-fedora4: pkgs/vm-fc39/qubes-video-companion-receiver-1.1.1-1.fc39.noarch.rpm:
+2024-06-03 08:42:18.181577 +0000 build-fedora4: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2024-06-03 08:42:18.461369 +0000 build-fedora4: pkgs/vm-fc39/qubes-video-companion-sender-1.1.1-1.fc39.noarch.rpm:
+2024-06-03 08:42:19.082946 +0000 build-fedora4: Makefile:863: update target 'internal-update-repo-current-testing.vm.fc38.video-companion' due to: target does not exist
+2024-06-03 08:42:19.083006 +0000 build-fedora4: repo_base_var="LINUX_REPO_${DIST//-/_}_BASEDIR"; \
+2024-06-03 08:42:19.083025 +0000 build-fedora4: if [ "video-companion" = linux-template-builder ]; then \
+2024-06-03 08:42:19.083041 +0000 build-fedora4: .# templates belongs to dom0 repository, even though PACKAGE_SET=vm
+2024-06-03 08:42:19.083054 +0000 build-fedora4: repo_base_var="LINUX_REPO__BASEDIR"; \
+2024-06-03 08:42:19.083066 +0000 build-fedora4: fi; \
+2024-06-03 08:42:19.083079 +0000 build-fedora4: if [ -n "${!repo_base_var}" ]; then \
+2024-06-03 08:42:19.083092 +0000 build-fedora4: .repo_basedir="${!repo_base_var}"; \
+2024-06-03 08:42:19.083103 +0000 build-fedora4: else \
+2024-06-03 08:42:19.083115 +0000 build-fedora4: .repo_basedir="qubes-src/linux-yum/r4.1"; \
+2024-06-03 08:42:19.083126 +0000 build-fedora4: fi; \
+2024-06-03 08:42:19.083140 +0000 build-fedora4: if [ -r qubes-src/video-companion/Makefile.builder ]; then \
+2024-06-03 08:42:19.083153 +0000 build-fedora4: .echo -n "Updating qubes-src/video-companion... "; \
+2024-06-03 08:42:19.083165 +0000 build-fedora4: .if [ "0" -eq 1 ]; then \
+2024-06-03 08:42:19.083180 +0000 build-fedora4: ..vtag=`git -C qubes-src/video-companion tag --points-at HEAD --list v*`; \
+2024-06-03 08:42:19.083212 +0000 build-fedora4: ..if [ -z "$vtag" ]; then \
+2024-06-03 08:42:19.083226 +0000 build-fedora4: ...echo "no version tag"; \
+2024-06-03 08:42:19.083238 +0000 build-fedora4: ...exit 0; \
+2024-06-03 08:42:19.083250 +0000 build-fedora4: ..fi; \
+2024-06-03 08:42:19.083261 +0000 build-fedora4: .fi; \
+2024-06-03 08:42:19.083275 +0000 build-fedora4: .if [ "video-companion" = linux-template-builder ]; then
+2024-06-03 08:42:19.083290 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc38 template-name)
+2024-06-03 08:42:19.083302 +0000 build-fedora4: fi
+2024-06-03 08:42:19.083326 +0000 build-fedora4: component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc38 PACKAGE_SET=vm COMPONENT=`basename qubes-src/video-companion` UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc38 get-var GET_VAR=PACKAGE_LIST); \
+2024-06-03 08:42:19.083340 +0000 build-fedora4: .if [ -z "$component_packages" ]; then \
+2024-06-03 08:42:19.083352 +0000 build-fedora4: ..echo "no packages."; \
+2024-06-03 08:42:19.083368 +0000 build-fedora4: ..exit 0; \
+2024-06-03 08:42:19.083380 +0000 build-fedora4: .fi; \
+2024-06-03 08:42:19.083394 +0000 build-fedora4: .make -s -f Makefile.generic DIST=fc38 PACKAGE_SET=vm \
+2024-06-03 08:42:19.083407 +0000 build-fedora4: ..COMPONENT=`basename qubes-src/video-companion` \
+2024-06-03 08:42:19.083420 +0000 build-fedora4: ..SNAPSHOT_REPO=current-testing \
+2024-06-03 08:42:19.083432 +0000 build-fedora4: ..TARGET_REPO=current-testing \
+2024-06-03 08:42:19.083447 +0000 build-fedora4: ..UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc38 \
+2024-06-03 08:42:19.083464 +0000 build-fedora4: ..SNAPSHOT_FILE=/home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-fc38-`basename qubes-src/video-companion` \
+2024-06-03 08:42:19.083481 +0000 build-fedora4: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2024-06-03_08-38-17 \
+2024-06-03 08:42:19.083494 +0000 build-fedora4: ..update-repo || exit 1; \
+2024-06-03 08:42:19.083510 +0000 build-fedora4: elif make -C qubes-src/video-companion -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2024-06-03 08:42:19.083523 +0000 build-fedora4: .echo "Updating qubes-src/video-companion... "; \
+2024-06-03 08:42:19.083538 +0000 build-fedora4: .DIST=fc38 UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc38 \
+2024-06-03 08:42:19.083553 +0000 build-fedora4: .make -s -C qubes-src/video-companion update-repo-current-testing || exit 1; \
+2024-06-03 08:42:19.083565 +0000 build-fedora4: else \
+2024-06-03 08:42:19.083579 +0000 build-fedora4: .echo -n "Updating qubes-src/video-companion... skipping."; \
+2024-06-03 08:42:19.083590 +0000 build-fedora4: fi; \
+2024-06-03 08:42:19.083601 +0000 build-fedora4: echo
+2024-06-03 08:42:19.136111 +0000 build-fedora4: Updating qubes-src/video-companion... + ERR_OUTPUT=/dev/stderr
+2024-06-03 08:42:19.138463 +0000 build-fedora4: + source_dir=qubes-src/video-companion
+2024-06-03 08:42:19.138512 +0000 build-fedora4: + spec_file=qubes-src/video-companion/rpm_spec/qubes-video-companion.spec
+2024-06-03 08:42:19.138676 +0000 build-fedora4: + query_field='%{SOURCE0}'
+2024-06-03 08:42:19.138701 +0000 build-fedora4: + dist=fc38
+2024-06-03 08:42:19.138715 +0000 build-fedora4: + '[' 4 -lt 4 ']'
+2024-06-03 08:42:19.142701 +0000 build-fedora4: ++ basename qubes-src/video-companion/rpm_spec/qubes-video-companion.spec
+2024-06-03 08:42:19.143856 +0000 build-fedora4: + spec_file_bn=qubes-video-companion.spec
+2024-06-03 08:42:19.143920 +0000 build-fedora4: + [[ qubes-video-companion.spec.in == \.\i\n ]]
+2024-06-03 08:42:19.143937 +0000 build-fedora4: + '[' -r qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in ']'
+2024-06-03 08:42:19.143951 +0000 build-fedora4: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2024-06-03 08:42:19.151641 +0000 build-fedora4: + tmp_spec=/tmp/tmp.dxm1vH.spec
+2024-06-03 08:42:19.151708 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2024-06-03 08:42:19.151734 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/video-companion qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in /tmp/tmp.dxm1vH.spec
+2024-06-03 08:42:19.151748 +0000 build-fedora4: + '[' 3 -lt 3 ']'
+2024-06-03 08:42:19.151762 +0000 build-fedora4: + source_dir=qubes-src/video-companion
+2024-06-03 08:42:19.151776 +0000 build-fedora4: + input=qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in
+2024-06-03 08:42:19.151789 +0000 build-fedora4: + output=/tmp/tmp.dxm1vH.spec
+2024-06-03 08:42:19.151804 +0000 build-fedora4: + '[' '!' -e qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in ']'
+2024-06-03 08:42:19.151822 +0000 build-fedora4: + cp qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:19.151834 +0000 build-fedora4: + read -r ver
+2024-06-03 08:42:19.151846 +0000 build-fedora4: + '[' -z '' ']'
+2024-06-03 08:42:19.151861 +0000 build-fedora4: + sed -i 's|@VERSION@|1.1.1|g' qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:19.167418 +0000 build-fedora4: + vnum=1
+2024-06-03 08:42:19.167466 +0000 build-fedora4: + read -r ver
+2024-06-03 08:42:19.167484 +0000 build-fedora4: + '[' -e qubes-src/video-companion/rel ']'
+2024-06-03 08:42:19.167499 +0000 build-fedora4: + read -r rel
+2024-06-03 08:42:19.167511 +0000 build-fedora4: + '[' -z '' ']'
+2024-06-03 08:42:19.167528 +0000 build-fedora4: + sed -i 's|@REL@|1|g' qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:19.172498 +0000 build-fedora4: + rnum=1
+2024-06-03 08:42:19.172544 +0000 build-fedora4: + read -r rel
+2024-06-03 08:42:19.172564 +0000 build-fedora4: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:19.179119 +0000 build-fedora4: + grep -q @CHANGELOG@ qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:19.208636 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2024-06-03 08:42:19.225006 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/video-companion qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:20.086327 +0000 build-fedora4: + cat qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:20.110747 +0000 build-fedora4: + rm -rf qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:20.110810 +0000 build-fedora4: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2024-06-03 08:42:20.110830 +0000 build-fedora4: + spectool --list-files --source 0 /tmp/tmp.dxm1vH.spec
+2024-06-03 08:42:20.706079 +0000 build-fedora4: + rm -f /tmp/tmp.dxm1vH.spec
+2024-06-03 08:42:20.798917 +0000 build-fedora4: + ERR_OUTPUT=/dev/stderr
+2024-06-03 08:42:20.809213 +0000 build-fedora4: + source_dir=qubes-src/video-companion
+2024-06-03 08:42:20.809269 +0000 build-fedora4: + spec_file=qubes-src/video-companion/rpm_spec/qubes-video-companion.spec
+2024-06-03 08:42:20.809288 +0000 build-fedora4: + query_field='%{SOURCE0}'
+2024-06-03 08:42:20.809301 +0000 build-fedora4: + dist=fc38
+2024-06-03 08:42:20.809314 +0000 build-fedora4: + '[' 4 -lt 4 ']'
+2024-06-03 08:42:20.809329 +0000 build-fedora4: ++ basename qubes-src/video-companion/rpm_spec/qubes-video-companion.spec
+2024-06-03 08:42:20.809342 +0000 build-fedora4: + spec_file_bn=qubes-video-companion.spec
+2024-06-03 08:42:20.809355 +0000 build-fedora4: + [[ qubes-video-companion.spec.in == \.\i\n ]]
+2024-06-03 08:42:20.809375 +0000 build-fedora4: + '[' -r qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in ']'
+2024-06-03 08:42:20.809388 +0000 build-fedora4: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2024-06-03 08:42:20.809419 +0000 build-fedora4: + tmp_spec=/tmp/tmp.X5qsHi.spec
+2024-06-03 08:42:20.809434 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2024-06-03 08:42:20.815179 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/video-companion qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in /tmp/tmp.X5qsHi.spec
+2024-06-03 08:42:20.819700 +0000 build-fedora4: + '[' 3 -lt 3 ']'
+2024-06-03 08:42:20.819756 +0000 build-fedora4: + source_dir=qubes-src/video-companion
+2024-06-03 08:42:20.819775 +0000 build-fedora4: + input=qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in
+2024-06-03 08:42:20.819789 +0000 build-fedora4: + output=/tmp/tmp.X5qsHi.spec
+2024-06-03 08:42:20.819805 +0000 build-fedora4: + '[' '!' -e qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in ']'
+2024-06-03 08:42:20.819823 +0000 build-fedora4: + cp qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:20.826838 +0000 build-fedora4: + read -r ver
+2024-06-03 08:42:20.826910 +0000 build-fedora4: + '[' -z '' ']'
+2024-06-03 08:42:20.826933 +0000 build-fedora4: + sed -i 's|@VERSION@|1.1.1|g' qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:20.832576 +0000 build-fedora4: + vnum=1
+2024-06-03 08:42:20.832625 +0000 build-fedora4: + read -r ver
+2024-06-03 08:42:20.832642 +0000 build-fedora4: + '[' -e qubes-src/video-companion/rel ']'
+2024-06-03 08:42:20.832655 +0000 build-fedora4: + read -r rel
+2024-06-03 08:42:20.832667 +0000 build-fedora4: + '[' -z '' ']'
+2024-06-03 08:42:20.832683 +0000 build-fedora4: + sed -i 's|@REL@|1|g' qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:20.844011 +0000 build-fedora4: + rnum=1
+2024-06-03 08:42:20.844065 +0000 build-fedora4: + read -r rel
+2024-06-03 08:42:20.844085 +0000 build-fedora4: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:20.847503 +0000 build-fedora4: + grep -q @CHANGELOG@ qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:20.849914 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2024-06-03 08:42:20.855038 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/video-companion qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:21.769954 +0000 build-fedora4: + cat qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:21.770011 +0000 build-fedora4: + rm -rf qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:21.782837 +0000 build-fedora4: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2024-06-03 08:42:21.782917 +0000 build-fedora4: + spectool --list-files --source 0 /tmp/tmp.X5qsHi.spec
+2024-06-03 08:42:22.313962 +0000 build-fedora4: + rm -f /tmp/tmp.X5qsHi.spec
+2024-06-03 08:42:22.370963 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:22.371025 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:22.429759 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:22.429814 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:22.484828 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:22.484929 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:22.554117 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:22.554197 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:22.632139 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:22.632198 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:22.664405 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:22.664466 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:22.725679 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:22.725740 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:22.783906 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:22.787011 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:22.867998 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:22.868058 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:22.916983 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:22.917031 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:22.952619 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:22.952677 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:23.005692 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:23.005751 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:23.042194 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:179: update target 'update-repo-do' due to: target does not exist
+2024-06-03 08:42:23.042252 +0000 build-fedora4: mkdir -p /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/fc38/rpm
+2024-06-03 08:42:23.079431 +0000 build-fedora4: if [ -n "pkgs/vm-fc38/qubes-video-companion-1.1.1-1.fc38.noarch.rpm pkgs/vm-fc38/qubes-video-companion-1.1.1-1.fc38.src.rpm pkgs/vm-fc38/qubes-video-companion-docs-1.1.1-1.fc38.noarch.rpm pkgs/vm-fc38/qubes-video-companion-license-1.1.1-1.fc38.noarch.rpm pkgs/vm-fc38/qubes-video-companion-receiver-1.1.1-1.fc38.noarch.rpm pkgs/vm-fc38/qubes-video-companion-sender-1.1.1-1.fc38.noarch.rpm pkgs/vm-fc38/qubes-video-companion-1.1.1-1.fc38.x86_64.buildinfo" ]; then \
+2024-06-03 08:42:23.079523 +0000 build-fedora4: .cd qubes-src/video-companion && ln -f pkgs/vm-fc38/qubes-video-companion-1.1.1-1.fc38.noarch.rpm pkgs/vm-fc38/qubes-video-companion-1.1.1-1.fc38.src.rpm pkgs/vm-fc38/qubes-video-companion-docs-1.1.1-1.fc38.noarch.rpm pkgs/vm-fc38/qubes-video-companion-license-1.1.1-1.fc38.noarch.rpm pkgs/vm-fc38/qubes-video-companion-receiver-1.1.1-1.fc38.noarch.rpm pkgs/vm-fc38/qubes-video-companion-sender-1.1.1-1.fc38.noarch.rpm pkgs/vm-fc38/qubes-video-companion-1.1.1-1.fc38.x86_64.buildinfo  /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/fc38/rpm/; \
+2024-06-03 08:42:23.079541 +0000 build-fedora4: else \
+2024-06-03 08:42:23.079560 +0000 build-fedora4: .echo "`tput bold`No packages defined by rpm_spec/qubes-video-companion.spec, syntax error?`tput sgr0`"; \
+2024-06-03 08:42:23.079573 +0000 build-fedora4: .exit 1; \
+2024-06-03 08:42:23.079585 +0000 build-fedora4: fi
+2024-06-03 08:42:23.079650 +0000 build-fedora4: cd qubes-src/video-companion && echo pkgs/vm-fc38/qubes-video-companion-1.1.1-1.fc38.noarch.rpm pkgs/vm-fc38/qubes-video-companion-1.1.1-1.fc38.src.rpm pkgs/vm-fc38/qubes-video-companion-docs-1.1.1-1.fc38.noarch.rpm pkgs/vm-fc38/qubes-video-companion-license-1.1.1-1.fc38.noarch.rpm pkgs/vm-fc38/qubes-video-companion-receiver-1.1.1-1.fc38.noarch.rpm pkgs/vm-fc38/qubes-video-companion-sender-1.1.1-1.fc38.noarch.rpm pkgs/vm-fc38/qubes-video-companion-1.1.1-1.fc38.x86_64.buildinfo  > /home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-fc38-video-companion
+2024-06-03 08:42:23.117075 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:23.117132 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:23.193972 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:23.194031 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:23.236087 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:23.236135 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:23.281185 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:23.281243 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:23.357038 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:23.357095 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:23.404890 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:23.404956 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:23.444621 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:23.444678 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:23.493224 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:23.493283 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:23.524219 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-github//Makefile.github:18: update target 'notify-github' due to: target does not exist
+2024-06-03 08:42:23.524275 +0000 build-fedora4: [ -z "qubes-video-companion-1.1.1-1.fc38" ] || /home/user/builder-r4.1/qubes-src/builder-github//notify-issues \
+2024-06-03 08:42:23.524297 +0000 build-fedora4: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2024-06-03_08-38-17" \
+2024-06-03 08:42:23.524310 +0000 build-fedora4: .upload \
+2024-06-03 08:42:23.524322 +0000 build-fedora4: ."r4.1" \
+2024-06-03 08:42:23.524335 +0000 build-fedora4: ."qubes-src/video-companion" \
+2024-06-03 08:42:23.524348 +0000 build-fedora4: ."qubes-video-companion-1.1.1-1.fc38" \
+2024-06-03 08:42:23.524359 +0000 build-fedora4: ."fc38" \
+2024-06-03 08:42:23.524371 +0000 build-fedora4: ."vm" \
+2024-06-03 08:42:23.524383 +0000 build-fedora4: ."current-testing" \
+2024-06-03 08:42:23.524398 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-video-companion-vm-fc38-current-testing" \
+2024-06-03 08:42:23.524412 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-video-companion-vm-fc38-current"
+2024-06-03 08:42:23.567538 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:23.567616 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:23.678653 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:23.678715 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:23.724269 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:23.724332 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:23.783939 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:23.783999 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:23.845223 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:23.845282 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:23.943311 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:23.943371 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:39.449267 +0000 build-fedora4: WARNING: message template /home/user/builder-r4.1/qubes-src/builder-github/templates/message-current-testing-vm doesn't exist, not adding comments
+2024-06-03 08:42:39.500977 +0000 build-fedora4: 
+2024-06-03 08:42:39.501037 +0000 build-fedora4: Makefile:834: update target 'internal-update-repo-current-testing.vm.fc38' due to: target does not exist
+2024-06-03 08:42:39.501054 +0000 build-fedora4: true
+2024-06-03 08:42:39.506767 +0000 build-fedora4: Makefile:863: update target 'internal-update-repo-current-testing.vm.fc39.video-companion' due to: target does not exist
+2024-06-03 08:42:39.506822 +0000 build-fedora4: repo_base_var="LINUX_REPO_${DIST//-/_}_BASEDIR"; \
+2024-06-03 08:42:39.506839 +0000 build-fedora4: if [ "video-companion" = linux-template-builder ]; then \
+2024-06-03 08:42:39.506855 +0000 build-fedora4: .# templates belongs to dom0 repository, even though PACKAGE_SET=vm
+2024-06-03 08:42:39.506867 +0000 build-fedora4: repo_base_var="LINUX_REPO__BASEDIR"; \
+2024-06-03 08:42:39.506921 +0000 build-fedora4: fi; \
+2024-06-03 08:42:39.506935 +0000 build-fedora4: if [ -n "${!repo_base_var}" ]; then \
+2024-06-03 08:42:39.506947 +0000 build-fedora4: .repo_basedir="${!repo_base_var}"; \
+2024-06-03 08:42:39.506957 +0000 build-fedora4: else \
+2024-06-03 08:42:39.506970 +0000 build-fedora4: .repo_basedir="qubes-src/linux-yum/r4.1"; \
+2024-06-03 08:42:39.506980 +0000 build-fedora4: fi; \
+2024-06-03 08:42:39.506993 +0000 build-fedora4: if [ -r qubes-src/video-companion/Makefile.builder ]; then \
+2024-06-03 08:42:39.507006 +0000 build-fedora4: .echo -n "Updating qubes-src/video-companion... "; \
+2024-06-03 08:42:39.507018 +0000 build-fedora4: .if [ "0" -eq 1 ]; then \
+2024-06-03 08:42:39.507033 +0000 build-fedora4: ..vtag=`git -C qubes-src/video-companion tag --points-at HEAD --list v*`; \
+2024-06-03 08:42:39.507044 +0000 build-fedora4: ..if [ -z "$vtag" ]; then \
+2024-06-03 08:42:39.507056 +0000 build-fedora4: ...echo "no version tag"; \
+2024-06-03 08:42:39.507067 +0000 build-fedora4: ...exit 0; \
+2024-06-03 08:42:39.507078 +0000 build-fedora4: ..fi; \
+2024-06-03 08:42:39.507088 +0000 build-fedora4: .fi; \
+2024-06-03 08:42:39.507101 +0000 build-fedora4: .if [ "video-companion" = linux-template-builder ]; then
+2024-06-03 08:42:39.507116 +0000 build-fedora4: export TEMPLATE_NAME=$(MAKEFLAGS= make -s -C qubes-src/linux-template-builder DIST=fc39 template-name)
+2024-06-03 08:42:39.507128 +0000 build-fedora4: fi
+2024-06-03 08:42:39.507150 +0000 build-fedora4: component_packages=$(MAKEFLAGS= make -s -f Makefile.generic DIST=fc39 PACKAGE_SET=vm COMPONENT=`basename qubes-src/video-companion` UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc39 get-var GET_VAR=PACKAGE_LIST); \
+2024-06-03 08:42:39.507183 +0000 build-fedora4: .if [ -z "$component_packages" ]; then \
+2024-06-03 08:42:39.507196 +0000 build-fedora4: ..echo "no packages."; \
+2024-06-03 08:42:39.507207 +0000 build-fedora4: ..exit 0; \
+2024-06-03 08:42:39.507218 +0000 build-fedora4: .fi; \
+2024-06-03 08:42:39.507231 +0000 build-fedora4: .make -s -f Makefile.generic DIST=fc39 PACKAGE_SET=vm \
+2024-06-03 08:42:39.507244 +0000 build-fedora4: ..COMPONENT=`basename qubes-src/video-companion` \
+2024-06-03 08:42:39.507255 +0000 build-fedora4: ..SNAPSHOT_REPO=current-testing \
+2024-06-03 08:42:39.507267 +0000 build-fedora4: ..TARGET_REPO=current-testing \
+2024-06-03 08:42:39.507281 +0000 build-fedora4: ..UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc39 \
+2024-06-03 08:42:39.507297 +0000 build-fedora4: ..SNAPSHOT_FILE=/home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-fc39-`basename qubes-src/video-companion` \
+2024-06-03 08:42:39.507313 +0000 build-fedora4: ..BUILD_LOG_URL=https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2024-06-03_08-40-05 \
+2024-06-03 08:42:39.507325 +0000 build-fedora4: ..update-repo || exit 1; \
+2024-06-03 08:42:39.507340 +0000 build-fedora4: elif make -C qubes-src/video-companion -n update-repo-current-testing >/dev/null 2>/dev/null; then \
+2024-06-03 08:42:39.507352 +0000 build-fedora4: .echo "Updating qubes-src/video-companion... "; \
+2024-06-03 08:42:39.507370 +0000 build-fedora4: .DIST=fc39 UPDATE_REPO=/home/user/builder-r4.1/$repo_basedir/current-testing/vm/fc39 \
+2024-06-03 08:42:39.507384 +0000 build-fedora4: .make -s -C qubes-src/video-companion update-repo-current-testing || exit 1; \
+2024-06-03 08:42:39.507395 +0000 build-fedora4: else \
+2024-06-03 08:42:39.507408 +0000 build-fedora4: .echo -n "Updating qubes-src/video-companion... skipping."; \
+2024-06-03 08:42:39.507419 +0000 build-fedora4: fi; \
+2024-06-03 08:42:39.507430 +0000 build-fedora4: echo
+2024-06-03 08:42:39.546944 +0000 build-fedora4: Updating qubes-src/video-companion... + ERR_OUTPUT=/dev/stderr
+2024-06-03 08:42:39.553178 +0000 build-fedora4: + source_dir=qubes-src/video-companion
+2024-06-03 08:42:39.553233 +0000 build-fedora4: + spec_file=qubes-src/video-companion/rpm_spec/qubes-video-companion.spec
+2024-06-03 08:42:39.553248 +0000 build-fedora4: + query_field='%{SOURCE0}'
+2024-06-03 08:42:39.553261 +0000 build-fedora4: + dist=fc39
+2024-06-03 08:42:39.553273 +0000 build-fedora4: + '[' 4 -lt 4 ']'
+2024-06-03 08:42:39.553287 +0000 build-fedora4: ++ basename qubes-src/video-companion/rpm_spec/qubes-video-companion.spec
+2024-06-03 08:42:39.553299 +0000 build-fedora4: + spec_file_bn=qubes-video-companion.spec
+2024-06-03 08:42:39.553311 +0000 build-fedora4: + [[ qubes-video-companion.spec.in == \.\i\n ]]
+2024-06-03 08:42:39.553324 +0000 build-fedora4: + '[' -r qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in ']'
+2024-06-03 08:42:39.553335 +0000 build-fedora4: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2024-06-03 08:42:39.553347 +0000 build-fedora4: + tmp_spec=/tmp/tmp.YH1wZ0.spec
+2024-06-03 08:42:39.553364 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2024-06-03 08:42:39.557143 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/video-companion qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in /tmp/tmp.YH1wZ0.spec
+2024-06-03 08:42:39.559526 +0000 build-fedora4: + '[' 3 -lt 3 ']'
+2024-06-03 08:42:39.559578 +0000 build-fedora4: + source_dir=qubes-src/video-companion
+2024-06-03 08:42:39.559597 +0000 build-fedora4: + input=qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in
+2024-06-03 08:42:39.559611 +0000 build-fedora4: + output=/tmp/tmp.YH1wZ0.spec
+2024-06-03 08:42:39.559627 +0000 build-fedora4: + '[' '!' -e qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in ']'
+2024-06-03 08:42:39.559663 +0000 build-fedora4: + cp qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:39.562472 +0000 build-fedora4: + read -r ver
+2024-06-03 08:42:39.562520 +0000 build-fedora4: + '[' -z '' ']'
+2024-06-03 08:42:39.562539 +0000 build-fedora4: + sed -i 's|@VERSION@|1.1.1|g' qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:39.565709 +0000 build-fedora4: + vnum=1
+2024-06-03 08:42:39.565758 +0000 build-fedora4: + read -r ver
+2024-06-03 08:42:39.565774 +0000 build-fedora4: + '[' -e qubes-src/video-companion/rel ']'
+2024-06-03 08:42:39.565786 +0000 build-fedora4: + read -r rel
+2024-06-03 08:42:39.565797 +0000 build-fedora4: + '[' -z '' ']'
+2024-06-03 08:42:39.565812 +0000 build-fedora4: + sed -i 's|@REL@|1|g' qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:39.578421 +0000 build-fedora4: + rnum=1
+2024-06-03 08:42:39.578472 +0000 build-fedora4: + read -r rel
+2024-06-03 08:42:39.578491 +0000 build-fedora4: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:39.578509 +0000 build-fedora4: + grep -q @CHANGELOG@ qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:39.578523 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2024-06-03 08:42:39.578542 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/video-companion qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:40.056153 +0000 build-fedora4: + cat qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:40.060061 +0000 build-fedora4: + rm -rf qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:40.068193 +0000 build-fedora4: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2024-06-03 08:42:40.068245 +0000 build-fedora4: + spectool --list-files --source 0 /tmp/tmp.YH1wZ0.spec
+2024-06-03 08:42:40.359018 +0000 build-fedora4: + rm -f /tmp/tmp.YH1wZ0.spec
+2024-06-03 08:42:40.407215 +0000 build-fedora4: + ERR_OUTPUT=/dev/stderr
+2024-06-03 08:42:40.407269 +0000 build-fedora4: + source_dir=qubes-src/video-companion
+2024-06-03 08:42:40.407289 +0000 build-fedora4: + spec_file=qubes-src/video-companion/rpm_spec/qubes-video-companion.spec
+2024-06-03 08:42:40.407302 +0000 build-fedora4: + query_field='%{SOURCE0}'
+2024-06-03 08:42:40.407313 +0000 build-fedora4: + dist=fc39
+2024-06-03 08:42:40.407325 +0000 build-fedora4: + '[' 4 -lt 4 ']'
+2024-06-03 08:42:40.407339 +0000 build-fedora4: ++ basename qubes-src/video-companion/rpm_spec/qubes-video-companion.spec
+2024-06-03 08:42:40.410052 +0000 build-fedora4: + spec_file_bn=qubes-video-companion.spec
+2024-06-03 08:42:40.410106 +0000 build-fedora4: + [[ qubes-video-companion.spec.in == \.\i\n ]]
+2024-06-03 08:42:40.410125 +0000 build-fedora4: + '[' -r qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in ']'
+2024-06-03 08:42:40.410140 +0000 build-fedora4: ++ mktemp --tmpdir tmp.XXXXXX.spec
+2024-06-03 08:42:40.412373 +0000 build-fedora4: + tmp_spec=/tmp/tmp.VOrwCm.spec
+2024-06-03 08:42:40.412426 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/query-spec
+2024-06-03 08:42:40.414806 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec qubes-src/video-companion qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in /tmp/tmp.VOrwCm.spec
+2024-06-03 08:42:40.418538 +0000 build-fedora4: + '[' 3 -lt 3 ']'
+2024-06-03 08:42:40.418592 +0000 build-fedora4: + source_dir=qubes-src/video-companion
+2024-06-03 08:42:40.418611 +0000 build-fedora4: + input=qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in
+2024-06-03 08:42:40.418624 +0000 build-fedora4: + output=/tmp/tmp.VOrwCm.spec
+2024-06-03 08:42:40.418658 +0000 build-fedora4: + '[' '!' -e qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in ']'
+2024-06-03 08:42:40.418678 +0000 build-fedora4: + cp qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:40.420673 +0000 build-fedora4: + read -r ver
+2024-06-03 08:42:40.420724 +0000 build-fedora4: + '[' -z '' ']'
+2024-06-03 08:42:40.420744 +0000 build-fedora4: + sed -i 's|@VERSION@|1.1.1|g' qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:40.424541 +0000 build-fedora4: + vnum=1
+2024-06-03 08:42:40.424592 +0000 build-fedora4: + read -r ver
+2024-06-03 08:42:40.424609 +0000 build-fedora4: + '[' -e qubes-src/video-companion/rel ']'
+2024-06-03 08:42:40.424622 +0000 build-fedora4: + read -r rel
+2024-06-03 08:42:40.424633 +0000 build-fedora4: + '[' -z '' ']'
+2024-06-03 08:42:40.424649 +0000 build-fedora4: + sed -i 's|@REL@|1|g' qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:40.428159 +0000 build-fedora4: + rnum=1
+2024-06-03 08:42:40.428211 +0000 build-fedora4: + read -r rel
+2024-06-03 08:42:40.428231 +0000 build-fedora4: + sed -i -e s:@BACKEND_VMM@:xen:g qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:40.431355 +0000 build-fedora4: + grep -q @CHANGELOG@ qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:40.435738 +0000 build-fedora4: ++ dirname /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-spec
+2024-06-03 08:42:40.437722 +0000 build-fedora4: + /home/user/builder-r4.1/qubes-src/builder-rpm/scripts/generate-changelog qubes-src/video-companion qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:40.905478 +0000 build-fedora4: + cat qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:40.907861 +0000 build-fedora4: + rm -rf qubes-src/video-companion/rpm_spec/qubes-video-companion.spec.in.tmp
+2024-06-03 08:42:40.910478 +0000 build-fedora4: + '[' '%{SOURCE0}' = '%{SOURCE0}' ']'
+2024-06-03 08:42:40.910532 +0000 build-fedora4: + spectool --list-files --source 0 /tmp/tmp.VOrwCm.spec
+2024-06-03 08:42:41.228210 +0000 build-fedora4: + rm -f /tmp/tmp.VOrwCm.spec
+2024-06-03 08:42:41.260234 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:41.260289 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:41.291553 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:41.291605 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:41.317992 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:41.318042 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:41.346939 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:41.346993 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:41.385750 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:41.385805 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:41.413537 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:41.415951 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:41.445961 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:41.446034 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:41.479635 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:41.479687 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:41.515012 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:41.515063 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:41.546410 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:41.546463 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:41.575397 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:41.575449 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:41.607314 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:41.607371 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:41.617910 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-rpm/Makefile.rpmbuilder:179: update target 'update-repo-do' due to: target does not exist
+2024-06-03 08:42:41.617962 +0000 build-fedora4: mkdir -p /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/fc39/rpm
+2024-06-03 08:42:41.638732 +0000 build-fedora4: if [ -n "pkgs/vm-fc39/qubes-video-companion-1.1.1-1.fc39.noarch.rpm pkgs/vm-fc39/qubes-video-companion-1.1.1-1.fc39.src.rpm pkgs/vm-fc39/qubes-video-companion-docs-1.1.1-1.fc39.noarch.rpm pkgs/vm-fc39/qubes-video-companion-license-1.1.1-1.fc39.noarch.rpm pkgs/vm-fc39/qubes-video-companion-receiver-1.1.1-1.fc39.noarch.rpm pkgs/vm-fc39/qubes-video-companion-sender-1.1.1-1.fc39.noarch.rpm pkgs/vm-fc39/qubes-video-companion-1.1.1-1.fc39.x86_64.buildinfo" ]; then \
+2024-06-03 08:42:41.638817 +0000 build-fedora4: .cd qubes-src/video-companion && ln -f pkgs/vm-fc39/qubes-video-companion-1.1.1-1.fc39.noarch.rpm pkgs/vm-fc39/qubes-video-companion-1.1.1-1.fc39.src.rpm pkgs/vm-fc39/qubes-video-companion-docs-1.1.1-1.fc39.noarch.rpm pkgs/vm-fc39/qubes-video-companion-license-1.1.1-1.fc39.noarch.rpm pkgs/vm-fc39/qubes-video-companion-receiver-1.1.1-1.fc39.noarch.rpm pkgs/vm-fc39/qubes-video-companion-sender-1.1.1-1.fc39.noarch.rpm pkgs/vm-fc39/qubes-video-companion-1.1.1-1.fc39.x86_64.buildinfo  /home/user/builder-r4.1/qubes-src/linux-yum/r4.1/current-testing/vm/fc39/rpm/; \
+2024-06-03 08:42:41.638834 +0000 build-fedora4: else \
+2024-06-03 08:42:41.638853 +0000 build-fedora4: .echo "`tput bold`No packages defined by rpm_spec/qubes-video-companion.spec, syntax error?`tput sgr0`"; \
+2024-06-03 08:42:41.638865 +0000 build-fedora4: .exit 1; \
+2024-06-03 08:42:41.638910 +0000 build-fedora4: fi
+2024-06-03 08:42:41.638958 +0000 build-fedora4: cd qubes-src/video-companion && echo pkgs/vm-fc39/qubes-video-companion-1.1.1-1.fc39.noarch.rpm pkgs/vm-fc39/qubes-video-companion-1.1.1-1.fc39.src.rpm pkgs/vm-fc39/qubes-video-companion-docs-1.1.1-1.fc39.noarch.rpm pkgs/vm-fc39/qubes-video-companion-license-1.1.1-1.fc39.noarch.rpm pkgs/vm-fc39/qubes-video-companion-receiver-1.1.1-1.fc39.noarch.rpm pkgs/vm-fc39/qubes-video-companion-sender-1.1.1-1.fc39.noarch.rpm pkgs/vm-fc39/qubes-video-companion-1.1.1-1.fc39.x86_64.buildinfo  > /home/user/builder-r4.1/repo-latest-snapshot/current-testing-vm-fc39-video-companion
+2024-06-03 08:42:41.662653 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:41.662705 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:41.692213 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:41.692265 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:41.719736 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:41.719788 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:41.751763 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:41.751815 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:41.788425 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:41.788479 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:41.819005 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:41.819056 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:41.848244 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:41.848297 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:41.878818 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:41.878904 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:41.897682 +0000 build-fedora4: /home/user/builder-r4.1/qubes-src/builder-github//Makefile.github:18: update target 'notify-github' due to: target does not exist
+2024-06-03 08:42:41.897734 +0000 build-fedora4: [ -z "qubes-video-companion-1.1.1-1.fc39" ] || /home/user/builder-r4.1/qubes-src/builder-github//notify-issues \
+2024-06-03 08:42:41.897756 +0000 build-fedora4: .--build-log="https://github.com/QubesOS/build-logs/tree/master/build-fedora4/log_2024-06-03_08-40-05" \
+2024-06-03 08:42:41.897769 +0000 build-fedora4: .upload \
+2024-06-03 08:42:41.897782 +0000 build-fedora4: ."r4.1" \
+2024-06-03 08:42:41.897795 +0000 build-fedora4: ."qubes-src/video-companion" \
+2024-06-03 08:42:41.897808 +0000 build-fedora4: ."qubes-video-companion-1.1.1-1.fc39" \
+2024-06-03 08:42:41.897820 +0000 build-fedora4: ."fc39" \
+2024-06-03 08:42:41.897831 +0000 build-fedora4: ."vm" \
+2024-06-03 08:42:41.897843 +0000 build-fedora4: ."current-testing" \
+2024-06-03 08:42:41.897858 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-video-companion-vm-fc39-current-testing" \
+2024-06-03 08:42:41.897896 +0000 build-fedora4: ."/home/user/github-notify-state/r4.1-video-companion-vm-fc39-current"
+2024-06-03 08:42:41.916643 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:41.916695 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:41.971963 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:41.972016 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:41.999630 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:41.999683 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:42.027899 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:42.027953 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:42.058427 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:42.058479 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:42.110642 +0000 build-fedora4: error: Unable to open rpm_spec/qubes-video-companion.spec: No such file or directory
+2024-06-03 08:42:42.110695 +0000 build-fedora4: error: query of specfile rpm_spec/qubes-video-companion.spec failed, can't parse
+2024-06-03 08:42:49.558777 +0000 build-fedora4: WARNING: message template /home/user/builder-r4.1/qubes-src/builder-github/templates/message-current-testing-vm doesn't exist, not adding comments
+2024-06-03 08:42:49.628000 +0000 build-fedora4: 
+2024-06-03 08:42:49.628060 +0000 build-fedora4: Makefile:834: update target 'internal-update-repo-current-testing.vm.fc39' due to: target does not exist
+2024-06-03 08:42:49.628076 +0000 build-fedora4: true
+2024-06-03 08:42:49.628092 +0000 build-fedora4: Makefile:923: update target 'post-update-repo-current-testing' due to: target does not exist
+2024-06-03 08:42:49.628105 +0000 build-fedora4: for dist in  fc38 fc39; do \
+2024-06-03 08:42:49.628119 +0000 build-fedora4: .repo_base_var="LINUX_REPO_${dist//-/_}_BASEDIR"; \
+2024-06-03 08:42:49.628131 +0000 build-fedora4: .if [ -n "${!repo_base_var}" ]; then \
+2024-06-03 08:42:49.628143 +0000 build-fedora4: ..repo_basedir="${!repo_base_var}"; \
+2024-06-03 08:42:49.628153 +0000 build-fedora4: .else \
+2024-06-03 08:42:49.628165 +0000 build-fedora4: ..repo_basedir="qubes-src/linux-yum/r4.1"; \
+2024-06-03 08:42:49.628175 +0000 build-fedora4: .fi; \
+2024-06-03 08:42:49.628188 +0000 build-fedora4: .repos_to_update="$repos_to_update $repo_basedir"; \
+2024-06-03 08:42:49.628198 +0000 build-fedora4: done; \
+2024-06-03 08:42:49.628209 +0000 build-fedora4: pkgset_dist= ; \
+2024-06-03 08:42:49.628220 +0000 build-fedora4: for dist in ; do \
+2024-06-03 08:42:49.628231 +0000 build-fedora4: .pkgset_dist="$pkgset_dist dom0/$dist"; \
+2024-06-03 08:42:49.628247 +0000 build-fedora4: done; \
+2024-06-03 08:42:49.628258 +0000 build-fedora4: for dist in fc38 fc39; do \
+2024-06-03 08:42:49.628270 +0000 build-fedora4: .pkgset_dist="$pkgset_dist vm/$dist"; \
+2024-06-03 08:42:49.628280 +0000 build-fedora4: done; \
+2024-06-03 08:42:49.628293 +0000 build-fedora4: for repo in `echo $repos_to_update|tr ' ' '\n'|sort|uniq`; do \
+2024-06-03 08:42:49.628304 +0000 build-fedora4: .[ -z "$repo" ] && continue; \
+2024-06-03 08:42:49.628317 +0000 build-fedora4: .[ -x "$repo/../update_repo-current-testing.sh" ] || continue; \
+2024-06-03 08:42:49.628330 +0000 build-fedora4: .(cd $repo/.. && ./update_repo-current-testing.sh r4.1 $pkgset_dist); \
+2024-06-03 08:42:49.628340 +0000 build-fedora4: done
+2024-06-03 08:42:49.641209 +0000 build-fedora4: ~/builder-r4.1/qubes-src/linux-yum ~/builder-r4.1/qubes-src/linux-yum
+2024-06-03 08:42:49.654026 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc38...
+2024-06-03 08:42:49.718549 +0000 build-fedora4: warning: Found bdb_ro Packages database while attempting sqlite backend: using bdb_ro backend.
+2024-06-03 08:42:55.226073 +0000 build-fedora4: --> Processing repo: r4.1/current-testing/vm/fc39...
+2024-06-03 08:42:55.299243 +0000 build-fedora4: warning: Found bdb_ro Packages database while attempting sqlite backend: using bdb_ro backend.
+2024-06-03 08:42:59.544330 +0000 build-fedora4: Done.
+2024-06-03 08:42:59.553515 +0000 build-fedora4: ~/builder-r4.1/qubes-src/linux-yum ~/builder-r4.1/qubes-src/linux-yum
+2024-06-03 08:42:59.556790 +0000 build-fedora4: Syncing r4.1...
+2024-06-03 08:43:00.807282 +0000 build-fedora4: sending incremental file list
+2024-06-03 08:43:00.885023 +0000 build-fedora4: .d..t...... fc38/
+2024-06-03 08:43:00.885166 +0000 build-fedora4: .d..t...... fc38/repodata/
+2024-06-03 08:43:00.885187 +0000 build-fedora4: <f+++++++++ fc38/repodata/663d8b5f39711b6d8ced1bd9a23f970e6096b509371386aa9144a36ef1132c91-filelists.xml.zst
+2024-06-03 08:43:00.885224 +0000 build-fedora4: .         32,768  37%    0.00kB/s    0:00:00  .         88,241 100%   52.90MB/s    0:00:00 (xfr#1, to-chk=366/372)
+2024-06-03 08:43:00.885241 +0000 build-fedora4: <f..t...... fc38/repodata/8359af93086eb7ed8f6083894c27260456a41a18ee9c7a77d0b9765088d96b3f-comps.xml.zst
+2024-06-03 08:43:00.885256 +0000 build-fedora4: .            700   7%  683.59kB/s    0:00:00  .          8,788 100%    8.38MB/s    0:00:00 (xfr#2, to-chk=365/372)
+2024-06-03 08:43:00.885270 +0000 build-fedora4: <f+++++++++ fc38/repodata/cdbdbf915938768b68e73f60cce7c7fed73d3244c7b6eef5aeb8338a3e7fedd7-other.xml.zst
+2024-06-03 08:43:00.885285 +0000 build-fedora4: .         22,822 100%   21.76MB/s    0:00:00  .         22,822 100%   21.76MB/s    0:00:00 (xfr#3, to-chk=364/372)
+2024-06-03 08:43:00.885299 +0000 build-fedora4: <f+++++++++ fc38/repodata/eb033d326d97c80bfb2d69aafcdd64480d89204adac484c40576001a6b9f4f33-primary.xml.zst
+2024-06-03 08:43:00.885314 +0000 build-fedora4: .         32,768  77%   31.25MB/s    0:00:00  .         42,153 100%   40.20MB/s    0:00:00 (xfr#4, to-chk=363/372)
+2024-06-03 08:43:00.885325 +0000 build-fedora4: <f..t...... fc38/repodata/repomd.xml
+2024-06-03 08:43:00.886059 +0000 build-fedora4: .          2,018 100%    1.92MB/s    0:00:00  .          2,018 100%    1.92MB/s    0:00:00 (xfr#5, to-chk=362/372)
+2024-06-03 08:43:00.886097 +0000 build-fedora4: <f..t...... fc38/repodata/repomd.xml.asc
+2024-06-03 08:43:00.886117 +0000 build-fedora4: .            833 100%  813.48kB/s    0:00:00  .            833 100%  813.48kB/s    0:00:00 (xfr#6, to-chk=361/372)
+2024-06-03 08:43:00.886129 +0000 build-fedora4: .d..t...... fc38/rpm/
+2024-06-03 08:43:00.887043 +0000 build-fedora4: <f+++++++++ fc38/rpm/qubes-video-companion-1.1.1-1.fc38.noarch.rpm
+2024-06-03 08:43:00.887085 +0000 build-fedora4: .         12,777 100%   12.19MB/s    0:00:00  .         12,777 100%    6.09MB/s    0:00:00 (xfr#7, to-chk=60/372)
+2024-06-03 08:43:00.887099 +0000 build-fedora4: <f+++++++++ fc38/rpm/qubes-video-companion-1.1.1-1.fc38.src.rpm
+2024-06-03 08:43:00.888018 +0000 build-fedora4: .         32,768  14%   15.62MB/s    0:00:00  .        229,731 100%   73.03MB/s    0:00:00 (xfr#8, to-chk=59/372)
+2024-06-03 08:43:00.888053 +0000 build-fedora4: <f+++++++++ fc38/rpm/qubes-video-companion-1.1.1-1.fc38.x86_64.buildinfo
+2024-06-03 08:43:00.888068 +0000 build-fedora4: .          8,027 100%    2.55MB/s    0:00:00  .          8,027 100%    2.55MB/s    0:00:00 (xfr#9, to-chk=58/372)
+2024-06-03 08:43:00.888080 +0000 build-fedora4: <f+++++++++ fc38/rpm/qubes-video-companion-docs-1.1.1-1.fc38.noarch.rpm
+2024-06-03 08:43:00.890428 +0000 build-fedora4: .         32,768  30%   10.42MB/s    0:00:00  .        106,812 100%   20.37MB/s    0:00:00 (xfr#10, to-chk=55/372)
+2024-06-03 08:43:00.890474 +0000 build-fedora4: <f+++++++++ fc38/rpm/qubes-video-companion-license-1.1.1-1.fc38.noarch.rpm
+2024-06-03 08:43:00.890489 +0000 build-fedora4: .         12,991 100%    2.48MB/s    0:00:00  .         12,991 100%    2.48MB/s    0:00:00 (xfr#11, to-chk=52/372)
+2024-06-03 08:43:00.890502 +0000 build-fedora4: <f+++++++++ fc38/rpm/qubes-video-companion-receiver-1.1.1-1.fc38.noarch.rpm
+2024-06-03 08:43:00.890517 +0000 build-fedora4: .         18,616 100%    3.55MB/s    0:00:00  .         18,616 100%    3.55MB/s    0:00:00 (xfr#12, to-chk=49/372)
+2024-06-03 08:43:00.890529 +0000 build-fedora4: <f+++++++++ fc38/rpm/qubes-video-companion-sender-1.1.1-1.fc38.noarch.rpm
+2024-06-03 08:43:00.890543 +0000 build-fedora4: .         19,706 100%    3.76MB/s    0:00:00  .         19,706 100%    3.76MB/s    0:00:00 (xfr#13, to-chk=46/372)
+2024-06-03 08:43:01.389624 +0000 build-fedora4: sending incremental file list
+2024-06-03 08:43:01.433588 +0000 build-fedora4: .d..t...... fc39/
+2024-06-03 08:43:01.433642 +0000 build-fedora4: .d..t...... fc39/repodata/
+2024-06-03 08:43:01.433662 +0000 build-fedora4: <f+++++++++ fc39/repodata/7e59cc739ff0465303e841e05c58945067c487a1bea421fe80def3bf409391cb-filelists.xml.zst
+2024-06-03 08:43:01.433700 +0000 build-fedora4: .         32,768  53%    0.00kB/s    0:00:00  .         61,808 100%   27.69MB/s    0:00:00 (xfr#1, to-chk=302/308)
+2024-06-03 08:43:01.433719 +0000 build-fedora4: <f..t...... fc39/repodata/8359af93086eb7ed8f6083894c27260456a41a18ee9c7a77d0b9765088d96b3f-comps.xml.zst
+2024-06-03 08:43:01.433735 +0000 build-fedora4: .            700   7%  683.59kB/s    0:00:00  .          8,788 100%    8.38MB/s    0:00:00 (xfr#2, to-chk=301/308)
+2024-06-03 08:43:01.433751 +0000 build-fedora4: <f+++++++++ fc39/repodata/d9bb3aeb94fe683057876208e047ff9187cee03131657560ab312662e6fb7fd8-primary.xml.zst
+2024-06-03 08:43:01.433766 +0000 build-fedora4: .         32,768  82%   31.25MB/s    0:00:00  .         39,748 100%   37.91MB/s    0:00:00 (xfr#3, to-chk=300/308)
+2024-06-03 08:43:01.433781 +0000 build-fedora4: <f+++++++++ fc39/repodata/f892913d2304e54ea7520ca306da2724441328262801fbc258b5209bd9f3c877-other.xml.zst
+2024-06-03 08:43:01.433796 +0000 build-fedora4: .         22,086 100%   21.06MB/s    0:00:00  .         22,086 100%   21.06MB/s    0:00:00 (xfr#4, to-chk=299/308)
+2024-06-03 08:43:01.433808 +0000 build-fedora4: <f..t...... fc39/repodata/repomd.xml
+2024-06-03 08:43:01.433824 +0000 build-fedora4: .          2,017 100%    1.92MB/s    0:00:00  .          2,017 100%    1.92MB/s    0:00:00 (xfr#5, to-chk=298/308)
+2024-06-03 08:43:01.433836 +0000 build-fedora4: <f..t...... fc39/repodata/repomd.xml.asc
+2024-06-03 08:43:01.433852 +0000 build-fedora4: .            833 100%  813.48kB/s    0:00:00  .            833 100%  813.48kB/s    0:00:00 (xfr#6, to-chk=297/308)
+2024-06-03 08:43:01.433863 +0000 build-fedora4: .d..t...... fc39/rpm/
+2024-06-03 08:43:01.435972 +0000 build-fedora4: <f+++++++++ fc39/rpm/qubes-video-companion-1.1.1-1.fc39.noarch.rpm
+2024-06-03 08:43:01.436023 +0000 build-fedora4: .         12,809 100%    6.11MB/s    0:00:00  .         12,809 100%    6.11MB/s    0:00:00 (xfr#7, to-chk=46/308)
+2024-06-03 08:43:01.436039 +0000 build-fedora4: <f+++++++++ fc39/rpm/qubes-video-companion-1.1.1-1.fc39.src.rpm
+2024-06-03 08:43:01.443475 +0000 build-fedora4: .         32,768  14%   15.62MB/s    0:00:00  .        229,855 100%   24.36MB/s    0:00:00 (xfr#8, to-chk=45/308)
+2024-06-03 08:43:01.443527 +0000 build-fedora4: <f+++++++++ fc39/rpm/qubes-video-companion-1.1.1-1.fc39.x86_64.buildinfo
+2024-06-03 08:43:01.443544 +0000 build-fedora4: .          7,970 100%  864.80kB/s    0:00:00  .          7,970 100%  864.80kB/s    0:00:00 (xfr#9, to-chk=44/308)
+2024-06-03 08:43:01.443558 +0000 build-fedora4: <f+++++++++ fc39/rpm/qubes-video-companion-docs-1.1.1-1.fc39.noarch.rpm
+2024-06-03 08:43:01.445923 +0000 build-fedora4: .         32,768  30%    2.84MB/s    0:00:00  .        106,840 100%    8.49MB/s    0:00:00 (xfr#10, to-chk=41/308)
+2024-06-03 08:43:01.446004 +0000 build-fedora4: <f+++++++++ fc39/rpm/qubes-video-companion-license-1.1.1-1.fc39.noarch.rpm
+2024-06-03 08:43:01.446021 +0000 build-fedora4: .         13,019 100%    1.03MB/s    0:00:00  .         13,019 100%    1.03MB/s    0:00:00 (xfr#11, to-chk=38/308)
+2024-06-03 08:43:01.446035 +0000 build-fedora4: <f+++++++++ fc39/rpm/qubes-video-companion-receiver-1.1.1-1.fc39.noarch.rpm
+2024-06-03 08:43:01.446051 +0000 build-fedora4: .         18,644 100%    1.48MB/s    0:00:00  .         18,644 100%    1.48MB/s    0:00:00 (xfr#12, to-chk=35/308)
+2024-06-03 08:43:01.446065 +0000 build-fedora4: <f+++++++++ fc39/rpm/qubes-video-companion-sender-1.1.1-1.fc39.noarch.rpm
+2024-06-03 08:43:01.446080 +0000 build-fedora4: .         19,734 100%    1.57MB/s    0:00:00  .         19,734 100%    1.57MB/s    0:00:00 (xfr#13, to-chk=32/308)
+2024-06-03 08:43:02.266859 +0000 build-fedora4: Makefile:819: update target 'update-repo-current-testing' due to: target does not exist
+2024-06-03 08:43:02.266950 +0000 build-fedora4: true
+2024-06-03 08:43:02.269276 +0000 build-fedora4: > done
+2024-06-03 08:43:02.269330 +0000 > closing log
